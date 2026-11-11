@@ -39,6 +39,7 @@ import io.reactivex.BackpressureStrategy
 import io.reactivex.Flowable
 import io.reactivex.Single
 import io.reactivex.rxkotlin.combineLatest
+import java.time.Instant
 import javax.inject.Inject
 import kotlin.coroutines.CoroutineContext
 import kotlinx.coroutines.CoroutineScope
@@ -123,6 +124,10 @@ class UserManagerImpl @Inject constructor(
     }
 
     override fun getSignInState(): Flowable<SignInState> {
+        return getSignInStateUnmodified().map { it.withForcedPaidSubscription() }
+    }
+
+    private fun getSignInStateUnmodified(): Flowable<SignInState> {
         return syncManager.isLoggedInObservable.toFlowable(BackpressureStrategy.LATEST)
             .switchMap { isLoggedIn ->
                 if (isLoggedIn) {
@@ -254,5 +259,30 @@ class UserManagerImpl @Inject constructor(
             episodeManager.deleteAll(SourceView.UNKNOWN)
         }
         return signOutJob
+    }
+}
+
+/**
+ * Local development override: every sign-in state is reported as a Plus subscriber so paid
+ * features can be exercised without a real subscription. Set [FORCE_PAID_SIGN_IN] to false to
+ * restore the membership reported by the server.
+ *
+ * Features that read [Settings.cachedSubscription] directly instead of the sign-in state are not
+ * covered by this: the ads manager (`MembershipFeature.NoBannerAds`) and the player's Up Next
+ * shuffle still follow the real membership.
+ */
+private const val FORCE_PAID_SIGN_IN = true
+
+private val forcedPaidSubscription = Subscription.PlusPreview.copy(
+    expiryDate = Instant.parse("2099-12-31T00:00:00Z"),
+)
+
+private fun SignInState.withForcedPaidSubscription(): SignInState {
+    if (!FORCE_PAID_SIGN_IN) return this
+    return when (this) {
+        // Keep a real Patron subscription as is, unlock everything else.
+        is SignInState.SignedIn -> copy(subscription = subscription ?: forcedPaidSubscription)
+
+        SignInState.SignedOut -> SignInState.SignedIn(email = "", subscription = forcedPaidSubscription)
     }
 }
