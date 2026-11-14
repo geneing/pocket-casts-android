@@ -25,10 +25,13 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.NonCancellable
+import kotlinx.coroutines.flow.firstOrNull
+import kotlinx.coroutines.flow.mapNotNull
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.withTimeoutOrNull
 import timber.log.Timber
 
 /**
@@ -82,15 +85,15 @@ class TranscriptAdAnalyzer @Inject constructor(
     private suspend fun runAnalysis(episodeUuid: String): Boolean {
         val startedAt = System.currentTimeMillis()
         val episode = episodeManager.findByUuid(episodeUuid) ?: return false
-        val localFile = resolveAudioFile(episode)
-        if (localFile == null) {
-            Timber.tag(TAG).d("Episode %s is not downloaded; transcription is file-only", episodeUuid)
+        val source = resolveSource(episode)
+        if (source == null) {
+            Timber.tag(TAG).d("Episode %s has no audio to transcribe", episodeUuid)
             return false
         }
         if (!transcriber.isAvailable()) return false
 
         val model = jevAdModelStore.selectedJevAdModel()
-        val signature = AnalysisIdentity.audioSignature(localFile)
+        val signature = AnalysisIdentity.audioSignature(source)
         val sttVersion = transcriber.version
         val state = adAnalysisDao.findState(episodeUuid)
         val hasTranscript = transcriptStore.hasTranscript(episodeUuid)
@@ -109,7 +112,7 @@ class TranscriptAdAnalyzer @Inject constructor(
             }
         }
 
-        val result = transcriber.transcribe(episodeUuid, localFile, episode.durationMs.toLong())
+        val result = transcriber.transcribe(episodeUuid, source, episode.durationMs.toLong())
         val cues = when (result) {
             is TranscriptResult.Success -> result.cues
 
@@ -201,23 +204,48 @@ class TranscriptAdAnalyzer @Inject constructor(
     }
 
     /**
-     * The audio file to transcribe.
+     * Where to transcribe from, preferring the downloaded file.
      *
      * The download worker asks for the analysis as soon as the file is written, before the episode
      * row records its path, so the recorded path is often still empty at this point. The download
-     * location is deterministic from the episode uuid, so fall back to it rather than skipping the
-     * episode and leaving its ad analysis to whatever runs next.
+     * location is deterministic from the episode uuid, and a downloaded episode whose file is not
+     * resolvable yet is given a bounded wait for the row to catch up. An episode that is not
+     * downloaded at all is transcribed straight from its stream.
      */
+    private suspend fun resolveSource(episode: BaseEpisode): TranscriptSource? {
+        resolveAudioFile(episode)?.let { return TranscriptSource.Downloaded(it) }
+        if (episode.isDownloaded) {
+            awaitAudioFile(episode.uuid)?.let { return TranscriptSource.Downloaded(it) }
+        }
+        return episode.streamUrl
+            ?.takeIf { it.isNotBlank() && !episode.isStreamUrlHls }
+            ?.let(TranscriptSource::Stream)
+    }
+
     private fun resolveAudioFile(episode: BaseEpisode): File? {
         val recorded = episode.downloadedFilePath?.let(::File)?.takeIf { it.isFile }
         if (recorded != null) return recorded
         return fileStorage.getOrCreatePodcastEpisodeFile(episode)?.takeIf { it.isFile && it.length() > 0L }
     }
 
+    /**
+     * Waits for the download row to point at the file before giving up, so a download that has just
+     * finished is never skipped. The wait is bounded so a cancelled or failed download does not
+     * hold the analysis.
+     */
+    private suspend fun awaitAudioFile(episodeUuid: String): File? = withTimeoutOrNull(WAIT_FOR_DOWNLOAD_MS) {
+        episodeManager.findEpisodeByUuidFlow(episodeUuid)
+            .mapNotNull { resolveAudioFile(it) }
+            .firstOrNull()
+    }
+
     companion object {
         private const val TAG = "TranscriptAdAnalyzer"
         private const val MIN_POD_MS = 8_000L
         private const val UNKNOWN_SHOW = "Unknown podcast"
+
+        /** How long the analysis waits for a download to be recorded before giving up. */
+        private const val WAIT_FOR_DOWNLOAD_MS = 30_000L
 
         // Keeps every pod strictly below AdSegment.MIN_AUTO_SKIP_CONFIDENCE; the model is not calibrated.
         private const val CONFIDENCE_MARGIN = 0.01f

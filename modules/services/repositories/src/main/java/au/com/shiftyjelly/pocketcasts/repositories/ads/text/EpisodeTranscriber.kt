@@ -11,9 +11,18 @@ sealed interface TranscriptResult {
     data class Failed(val message: String) : TranscriptResult
 }
 
+/** Where the audio being transcribed comes from. */
+sealed interface TranscriptSource {
+    /** A downloaded episode file. */
+    data class Downloaded(val file: File) : TranscriptSource
+
+    /** An episode played from its stream; the recognizer fetches it, nothing is stored locally. */
+    data class Stream(val url: String) : TranscriptSource
+}
+
 /**
- * Offline speech-to-text for a downloaded episode. Implementations must not touch the network
- * and must return timestamps in the same timeline as the downloaded file.
+ * On-device speech-to-text for an episode. Implementations return timestamps in the timeline of
+ * the audio they were given, which is the episode timeline in both cases.
  */
 interface EpisodeTranscriber {
     /** Identifies the recognizer and its settings; analyses made with another version are stale. */
@@ -21,5 +30,5 @@ interface EpisodeTranscriber {
 
     fun isAvailable(): Boolean
 
-    suspend fun transcribe(episodeUuid: String, file: File, durationMs: Long): TranscriptResult
+    suspend fun transcribe(episodeUuid: String, source: TranscriptSource, durationMs: Long): TranscriptResult
 }

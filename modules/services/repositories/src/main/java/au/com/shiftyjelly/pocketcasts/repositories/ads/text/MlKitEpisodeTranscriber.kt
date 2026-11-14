@@ -1,6 +1,11 @@
 package au.com.shiftyjelly.pocketcasts.repositories.ads.text
 
+import android.Manifest
+import android.content.Context
+import android.content.pm.PackageManager
 import android.media.MediaExtractor
+import androidx.core.content.ContextCompat
+import androidx.core.net.toUri
 import au.com.shiftyjelly.pocketcasts.repositories.ads.AudioAdDecoder
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
 import com.google.mlkit.genai.common.DownloadStatus
@@ -12,6 +17,7 @@ import com.google.mlkit.genai.speechrecognition.SpeechRecognizerOptions
 import com.google.mlkit.genai.speechrecognition.SpeechRecognizerResponse
 import com.google.mlkit.genai.speechrecognition.speechRecognizerOptions
 import com.google.mlkit.genai.speechrecognition.speechRecognizerRequest
+import dagger.hilt.android.qualifiers.ApplicationContext
 import java.io.File
 import java.util.Locale
 import javax.inject.Inject
@@ -46,7 +52,9 @@ import timber.log.Timber
  * that segment's boundaries towards its neighbours, and episodes whose audio has no usable dynamic
  * range collapse to one region covering the whole clip.
  */
-class MlKitEpisodeTranscriber @Inject constructor() : EpisodeTranscriber {
+class MlKitEpisodeTranscriber @Inject constructor(
+    @ApplicationContext private val context: Context,
+) : EpisodeTranscriber {
     override val version: String = ENGINE
 
     /**
@@ -58,10 +66,21 @@ class MlKitEpisodeTranscriber @Inject constructor() : EpisodeTranscriber {
     @Volatile
     private var featureStatus: Int? = null
 
-    override fun isAvailable(): Boolean = featureStatus != FeatureStatus.UNAVAILABLE
+    /**
+     * The recognizer refuses to run without the record-audio permission, even when the audio comes
+     * from a file, so an ungranted permission makes the feature unavailable rather than failing
+     * every episode.
+     */
+    override fun isAvailable(): Boolean {
+        if (featureStatus == FeatureStatus.UNAVAILABLE) return false
+        return ContextCompat.checkSelfPermission(context, Manifest.permission.RECORD_AUDIO) ==
+            PackageManager.PERMISSION_GRANTED
+    }
 
-    override suspend fun transcribe(episodeUuid: String, file: File, durationMs: Long): TranscriptResult {
-        if (!file.exists()) return TranscriptResult.Failed("missing audio file")
+    override suspend fun transcribe(episodeUuid: String, source: TranscriptSource, durationMs: Long): TranscriptResult {
+        if (source is TranscriptSource.Downloaded && !source.file.exists()) {
+            return TranscriptResult.Failed("missing audio file")
+        }
         return withContext(Dispatchers.IO) {
             try {
                 val recognizer = SpeechRecognition.getClient(
@@ -81,7 +100,7 @@ class MlKitEpisodeTranscriber @Inject constructor() : EpisodeTranscriber {
                         else -> TranscriptResult.Unavailable("advanced speech model unavailable (status=$status)")
                     }
                     if (modelProblem != null) return@withContext modelProblem
-                    transcribeWithModel(episodeUuid, file, durationMs, recognizer)
+                    transcribeWithModel(episodeUuid, source, durationMs, recognizer)
                 } finally {
                     runCatching { recognizer.close() }
                 }
@@ -96,17 +115,20 @@ class MlKitEpisodeTranscriber @Inject constructor() : EpisodeTranscriber {
 
     private suspend fun transcribeWithModel(
         episodeUuid: String,
-        file: File,
+        source: TranscriptSource,
         durationMs: Long,
         recognizer: SpeechRecognizer,
     ): TranscriptResult {
         val startedAt = System.currentTimeMillis()
-        val segments = recognize(file, recognizer)
+        val segments = recognize(source, recognizer)
         val recognizeMs = System.currentTimeMillis() - startedAt
         if (segments.isEmpty()) return TranscriptResult.Failed("recognizer returned no speech")
 
         val context = currentCoroutineContext()
-        val profile = runCatching { profileSpeech(file) { context.isActive } }.getOrNull()
+        // Only a local file can be profiled; a stream has no audio here to measure, so its cues
+        // fall back to being spread over the episode duration.
+        val profile = (source as? TranscriptSource.Downloaded)
+            ?.let { downloaded -> runCatching { profileSpeech(downloaded.file) { context.isActive } }.getOrNull() }
         context.ensureActive()
         if (profile == null) {
             LogBuffer.w(TAG, "No audio profile for $episodeUuid; falling back to proportional cue times")
@@ -123,13 +145,16 @@ class MlKitEpisodeTranscriber @Inject constructor() : EpisodeTranscriber {
         return TranscriptResult.Success(cues, version)
     }
 
-    /** Runs one one-shot recognition over the file and returns its segments in speaking order. */
-    private suspend fun recognize(file: File, recognizer: SpeechRecognizer): List<RecognizedSegment> {
-        val source = AudioSource.fromFile(file)
+    /** Runs one one-shot recognition over the source and returns its segments in speaking order. */
+    private suspend fun recognize(source: TranscriptSource, recognizer: SpeechRecognizer): List<RecognizedSegment> {
+        val input = when (source) {
+            is TranscriptSource.Downloaded -> AudioSource.fromFile(source.file)
+            is TranscriptSource.Stream -> AudioSource.fromUri(context, source.url.toUri())
+        }
         val segments = ArrayList<RecognizedSegment>()
         try {
             // Word timing is not supported for one-shot sources, so recognitionOptions stay default.
-            val request = speechRecognizerRequest { audioSource = source }
+            val request = speechRecognizerRequest { audioSource = input }
             recognizer.startRecognition(request).collect { response ->
                 when (response) {
                     is SpeechRecognizerResponse.FinalTextResponse -> {
@@ -151,7 +176,7 @@ class MlKitEpisodeTranscriber @Inject constructor() : EpisodeTranscriber {
                 }
             }
         } finally {
-            runCatching { source.close() }
+            runCatching { input.close() }
         }
         return segments
     }

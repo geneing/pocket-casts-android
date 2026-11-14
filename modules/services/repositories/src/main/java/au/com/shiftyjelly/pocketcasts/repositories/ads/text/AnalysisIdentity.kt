@@ -14,6 +14,12 @@ import java.io.File
 internal object AnalysisIdentity {
     fun audioSignature(file: File): String = "${file.length()}:${file.lastModified()}"
 
+    /** A stream has no file to measure; the URL identifies it well enough for reuse and staleness. */
+    fun audioSignature(source: TranscriptSource): String = when (source) {
+        is TranscriptSource.Downloaded -> audioSignature(source.file)
+        is TranscriptSource.Stream -> "stream:${source.url.hashCode()}"
+    }
+
     /**
      * True when a complete transcript analysis exists for the same audio file, recognizer, model
      * and prompt revision, so the transcript is not classified twice. State written by the audio
