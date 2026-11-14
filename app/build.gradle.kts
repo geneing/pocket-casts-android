@@ -38,6 +38,8 @@ android {
     defaultConfig {
         applicationId = project.property("applicationId").toString()
         targetSdk = project.property("targetSdkVersion") as Int
+        // The phone app targets API 33+; shared library modules stay lower for wear/tv/automotive.
+        minSdk = project.property("minSdkVersionApp") as Int
         multiDexEnabled = true
 
         buildConfigField("String", "OPENROUTER_API_KEY", "\"\"")

@@ -66,7 +66,10 @@ project.apply {
         set("buildPlatform", getBuildPlatform())
 
         // Android
-        set("minSdkVersion", 33)
+        // Shared library modules stay at the lowest floor any app variant supports (wear is 26), so
+        // the phone app raises its own minSdk on top of this in app/build.gradle.kts.
+        set("minSdkVersion", 26)
+        set("minSdkVersionApp", 33)
         set("minSdkVersionWear", 26)
         set("minSdkVersionAutomotive", 28)
         set("minSdkVersionTv", 28)
