@@ -66,23 +66,36 @@ The model asset is 2.5 MB of JSON (~1 MB gzipped in the APK). Parity is enforced
 
 ### Speech to text
 
-`SpeechRecognizerEpisodeTranscriber` decodes the downloaded file with
-MediaExtractor/MediaCodec to PCM on disk (memory stays at one chunk), feeds it to the
-platform's **on-device** recognizer in 15 s chunks (`RecognizerIntent.EXTRA_AUDIO_SOURCE`,
-API 33+), and shifts chunk timestamps into the episode timeline.
+`MlKitEpisodeTranscriber` hands the downloaded file to ML Kit GenAI **Advanced** speech
+recognition (`com.google.mlkit:genai-speech-recognition`) as a one-shot audio source
+(`AudioSource.fromFile`): the SDK decodes mp3/m4a/ogg itself and transcribes faster than
+real time. One-shot sources cannot report word timings, so the recognizer returns only
+ordered final segments, with no clock of their own.
 
-Chunk outcomes are classified: `ERROR_NO_MATCH` / `ERROR_SPEECH_TIMEOUT` and empty results
-are `NoSpeech` and the pass continues; a recognizer failure is `Fatal` and fails the whole
-pass, so the analyzer never saves a partial transcript or marks the episode complete and
-the audio analyzer takes over. Missing recognizer or permissions report `Unavailable`.
-Recognizer, file descriptor and temp PCM are released in `finally`, including on
-cancellation. `TranscriptionChunkLoop` holds this logic and is unit tested with fake chunk
-results (partial failure, no-speech chunks, cancellation cleanup).
+Cue times are reconstructed from the audio. The file is decoded once with the existing
+`AudioAdDecoder` (MediaExtractor/MediaCodec, no second decoder) into 20 ms energy frames;
+the speech threshold comes from the clip's own level distribution (15th to 90th
+percentile), above-threshold runs closer than 400 ms are merged, and runs shorter than
+200 ms are dropped. `alignSegmentsToRegions` maps the ordered segments onto the ordered
+regions: one region per segment when the counts match, otherwise the segments are spread
+over the concatenated speech time in proportion to their text length, contiguously and
+clamped to the episode duration. When no audio track can be decoded, the cues are spread
+across the episode duration by text length instead. Each pass logs segment and region
+counts, speech coverage and the median region length so a device run can be judged.
 
-Caveat: the platform recognizer currently exposes no per-word clock, so cue timestamps are
-chunk-granular (15 s) and evenly split among returned segments. Faster-whisper-small
-segments used in research are ~5-8 s. That reduces edge precision on device and should be
-revisited with a bundled offline engine (whisper.cpp/sherpa-onnx) if edge accuracy matters.
+Accuracy: cues are **speech-region accurate, not word accurate**. A segment starts where
+speech resumed around it, a pause inside a long segment pulls its edges towards its
+neighbours, and audio with no usable dynamic range collapses into one region covering the
+whole clip.
+
+`ErrorResponse` fails the pass, `CompletedResponse` completes it, and partial text and
+audio levels are ignored. `AudioSource` and the recognizer are released in `finally`,
+including on cancellation. The model downloads on first use when `checkStatus()` reports
+`DOWNLOADABLE`; a failed download reports `Failed` with a reason. Advanced mode needs a
+Pixel 10/11-class device, and the phone app's minSdk is 26 (raised from 24 for this SDK),
+so the transcriber is compiled into every build and simply reports `Unavailable` where
+the model cannot run.
+
 
 ### Pipeline and storage
 

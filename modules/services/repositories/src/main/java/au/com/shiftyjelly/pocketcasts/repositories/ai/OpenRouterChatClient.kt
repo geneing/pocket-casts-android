@@ -1,7 +1,7 @@
 package au.com.shiftyjelly.pocketcasts.repositories.ai
 
 import androidx.annotation.VisibleForTesting
-import au.com.shiftyjelly.pocketcasts.repositories.di.JevApiKey
+import au.com.shiftyjelly.pocketcasts.repositories.di.OpenRouterApiKey
 import au.com.shiftyjelly.pocketcasts.servers.di.NoCache
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
 import com.squareup.moshi.Json
@@ -49,7 +49,7 @@ import okhttp3.Response
 @Singleton
 class OpenRouterChatClient @Inject constructor(
     @NoCache private val okHttpClient: OkHttpClient,
-    @JevApiKey private val apiKey: Optional<String>,
+    @OpenRouterApiKey private val apiKey: Optional<String>,
     moshi: Moshi,
 ) : AiChatClient {
     @VisibleForTesting

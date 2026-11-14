@@ -60,6 +60,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.media3.datasource.okhttp)
     implementation(libs.media3.exoplayer.hls)
+    implementation(libs.mlkit.genai.speech.recognition)
     api(libs.media3.session)
     implementation(libs.media3.ui)
     implementation(libs.play.auth)

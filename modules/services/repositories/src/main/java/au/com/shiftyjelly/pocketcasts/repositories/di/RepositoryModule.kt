@@ -15,7 +15,7 @@ import au.com.shiftyjelly.pocketcasts.repositories.ads.AdSegmentManagerImpl
 import au.com.shiftyjelly.pocketcasts.repositories.ads.BlazeAdsManager
 import au.com.shiftyjelly.pocketcasts.repositories.ads.BlazeAdsManagerImpl
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.EpisodeTranscriber
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.SpeechRecognizerEpisodeTranscriber
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.MlKitEpisodeTranscriber
 import au.com.shiftyjelly.pocketcasts.repositories.analytics.AnalyticsLiveDebugListener
 import au.com.shiftyjelly.pocketcasts.repositories.appreview.AppReviewAnalyticsListener
 import au.com.shiftyjelly.pocketcasts.repositories.appreview.AppReviewManager
@@ -127,8 +127,8 @@ abstract class RepositoryModule {
      * from `BuildConfig`, and a variant without one simply has no remote ad classifier.
      */
     @BindsOptionalOf
-    @JevApiKey
-    abstract fun optionalJevApiKey(): String
+    @OpenRouterApiKey
+    abstract fun optionalOpenRouterApiKey(): String
 
     @Binds
     @Singleton
@@ -230,7 +230,7 @@ abstract class RepositoryModule {
 
     @Binds
     @Singleton
-    abstract fun provideEpisodeTranscriber(impl: SpeechRecognizerEpisodeTranscriber): EpisodeTranscriber
+    abstract fun provideEpisodeTranscriber(impl: MlKitEpisodeTranscriber): EpisodeTranscriber
 
     @Binds
     abstract fun provideAlternateEnclosureManager(impl: AlternateEnclosureManagerImpl): AlternateEnclosureManager

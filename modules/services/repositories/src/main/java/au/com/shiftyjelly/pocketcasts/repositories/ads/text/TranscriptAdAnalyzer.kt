@@ -39,9 +39,8 @@ import timber.log.Timber
  * are unchanged. Pods are written as [DbAdSegment]s with [AdSegmentOrigin.Transcript].
  *
  * Confidence is deliberately capped below [AdSegment.MIN_AUTO_SKIP_CONFIDENCE]: the model is not
- * calibrated and the device timestamps are only accurate to about half a recognizer chunk, so
- * every transcript pod stays a suggestion until an independently labelled evaluation clears the
- * product bar.
+ * calibrated and the on-device cue timings are only speech-region accurate, so every transcript
+ * pod stays a suggestion until an independently labelled evaluation clears the product bar.
  *
  * When the classifier is unavailable or fails, [run] reports `false` without writing state, so
  * [au.com.shiftyjelly.pocketcasts.repositories.ads.AudioAdAnalyzer] still produces segments.
