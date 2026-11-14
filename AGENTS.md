@@ -22,6 +22,15 @@ This file provides guidance to AI coding assistants (Claude Code, Cursor, Windsu
 ./gradlew :app:installDebugProd
 ```
 
+**Device builds on this machine use `debugProd`, always.** It points at the
+production servers, so the installed app sees the real library and account; the
+staging `debug` build does not. Both carry the `.debug` application id, so
+installing one replaces the other:
+
+```bash
+./gradlew :app:assembleDebugProd && adb install -r app/build/outputs/apk/debugProd/app-debugProd.apk
+```
+
 ### Testing
 ```bash
 # Run unit tests for the app module
