@@ -702,6 +702,15 @@ class SettingsImpl @Inject constructor(
         sharedPrefs = sharedPreferences,
     )
 
+    // Defaults to JevAdModel.SPAN_02 ("respan/span-02"); the enum lives in the repositories module.
+    override val jevAdModel = UserSetting.PrefFromString(
+        sharedPrefKey = "jevAdModel",
+        defaultValue = "respan/span-02",
+        sharedPrefs = sharedPreferences,
+        fromString = { it },
+        toString = { it },
+    )
+
     override val showWhatsNewDot: UserSetting<Boolean> = UserSetting.BoolPref(
         sharedPrefKey = "showWhatsNewDot",
         defaultValue = true,

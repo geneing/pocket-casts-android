@@ -79,6 +79,8 @@ fun DeveloperPage(
     onResetEpisodeChatSurvey: () -> Unit,
     onTriggerPlaybackError: () -> Unit,
     onTriggerConnectionError: () -> Unit,
+    jevAdModel: String,
+    onCycleJevAdModel: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
     var openCrashMessageDialog by remember { mutableStateOf(false) }
@@ -106,6 +108,13 @@ fun DeveloperPage(
         }
         item {
             TriggerUpdateEpisodeDetails(onClick = onTriggerUpdateEpisodeDetails)
+        }
+
+        item {
+            SectionHeader(text = "Ad analysis", showDivider = false)
+        }
+        item {
+            JevAdModelSetting(model = jevAdModel, onClick = onCycleJevAdModel)
         }
 
         item {
@@ -253,6 +262,20 @@ private fun TriggerUpdateEpisodeDetails(
         primaryText = "Trigger update episode details",
         secondaryText = "Test the update episode details task with 5 random episodes",
         icon = rememberVectorPainter(Icons.Outlined.Downloading),
+        modifier = modifier.clickable { onClick() },
+    )
+}
+
+@Composable
+private fun JevAdModelSetting(
+    model: String,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    SettingRow(
+        primaryText = "jev ad classifier model",
+        secondaryText = "$model (tap to switch)",
+        icon = rememberVectorPainter(Icons.Outlined.BugReport),
         modifier = modifier.clickable { onClick() },
     )
 }
@@ -607,6 +630,8 @@ private fun DeveloperPagePreview() {
         onResetEpisodeChatSurvey = {},
         onTriggerPlaybackError = {},
         onTriggerConnectionError = {},
+        jevAdModel = "respan/span-02",
+        onCycleJevAdModel = {},
     )
 }
 

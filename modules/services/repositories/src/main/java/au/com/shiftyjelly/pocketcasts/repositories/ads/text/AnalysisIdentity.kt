@@ -1,6 +1,7 @@
 package au.com.shiftyjelly.pocketcasts.repositories.ads.text
 
 import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
+import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevAdModel
 import java.io.File
 
 /**
@@ -13,19 +14,41 @@ import java.io.File
 internal object AnalysisIdentity {
     fun audioSignature(file: File): String = "${file.length()}:${file.lastModified()}"
 
-    fun isReusable(
+    /**
+     * True when a complete transcript analysis exists for the same audio file, recognizer, model
+     * and prompt revision, so the transcript is not classified twice. State written by the audio
+     * analyzer carries no transcript identity and is never reused.
+     */
+    fun isReusableTranscript(
         state: AdAnalysisState?,
         audioSignature: String,
-        modelVersion: String,
         sttVersion: String,
+        model: JevAdModel,
+        promptVersion: Int,
     ): Boolean = state?.isComplete == true &&
         state.audioSignature == audioSignature &&
-        state.modelVersion == modelVersion &&
-        state.sttVersion == sttVersion
+        state.sttVersion == sttVersion &&
+        isTranscriptModelVersion(state.modelVersion, model, promptVersion)
 
     /**
      * True when the stored state came from the transcript pipeline. Audio-only analyses carry
      * empty versions and must not be deleted just because the transcript model changed.
      */
     fun isTranscriptAnalysis(state: AdAnalysisState?): Boolean = state != null && (state.modelVersion.isNotEmpty() || state.sttVersion.isNotEmpty())
+
+    /**
+     * The analysis identity of a jev run: the model that actually answered (responses carry a
+     * dated suffix such as `respan/span-02-20261015`) and the prompt revision. Falling back to the
+     * requested slug keeps a run that received no `model` field attributable.
+     */
+    fun transcriptModelVersion(responseModel: String?, model: JevAdModel, promptVersion: Int): String {
+        val name = responseModel?.takeIf { it.isNotBlank() } ?: model.slug
+        return "$name#prompt$promptVersion"
+    }
+
+    /**
+     * True when [version] was produced by [model] at [promptVersion]. A response model is matched
+     * by prefix because its dated suffix changes without the model changing.
+     */
+    fun isTranscriptModelVersion(version: String, model: JevAdModel, promptVersion: Int): Boolean = version.startsWith(model.slug) && version.endsWith("#prompt$promptVersion")
 }

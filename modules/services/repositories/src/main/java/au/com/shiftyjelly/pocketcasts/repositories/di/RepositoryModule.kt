@@ -104,6 +104,7 @@ import com.google.android.play.core.review.ReviewManager
 import com.google.android.play.core.review.ReviewManagerFactory
 import com.squareup.moshi.Moshi
 import dagger.Binds
+import dagger.BindsOptionalOf
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -120,6 +121,14 @@ abstract class RepositoryModule {
     @Binds
     @Singleton
     abstract fun provideWorkerFactory(castsWorkerFactory: CastsWorkerFactory): WorkerFactory
+
+    /**
+     * The OpenRouter key is optional so every app variant's graph stays valid: the app binds it
+     * from `BuildConfig`, and a variant without one simply has no remote ad classifier.
+     */
+    @BindsOptionalOf
+    @JevApiKey
+    abstract fun optionalJevApiKey(): String
 
     @Binds
     @Singleton
