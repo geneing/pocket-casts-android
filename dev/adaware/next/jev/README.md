@@ -1,74 +1,73 @@
 # JEV — OpenCode "System One" client (M1)
 
-A minimal, dependency-free client for the OpenCode System One inference API, used to ask
-one question per request: **is this podcast material an `advertisement`, `content`, or a
-`transition` into/out of an ad break?**
+Minimal stdlib-only client for the OpenCode System One classifier. One request sends a
+podcast name, a list of sentences and **one multiple-choice question per sentence**, and
+returns a label (`advertisement`, `content`, `transition`) plus the full probability
+distribution for each.
 
-This is a *transport and parsing* layer only. It does not decide how to chunk episodes, how
-to aggregate sentence labels into segments, or how to evaluate the model.
+This module is transport and parsing only. It does not chunk episodes, merge sentence
+labels into segments, or evaluate the model.
 
-> **Status: not yet exercised against the live service.** No `OPENCODE_API_KEY` was
-> available when this was written, so every claim below about the *response* is an
-> assumption derived from the vendor's request contract, not an observation. The offline
-> tests prove the client's behaviour against mocked responses only.
+> **Status: measured against the live service** with `jev-1.13-free`. Every claim below is
+> an observation, not an inference. Only the response shape documented here is supported;
+> anything else raises `SystemOneError` with the raw body attached.
 
 ## Files
 
 | File | Purpose |
 | --- | --- |
-| `jev_client.py` | The client: `build_request`, `classify_sentences`, `SystemOneError`/`MissingApiKey`, response normalisation, smoke `main()`. |
-| `smoke.py` | The obvious entry point; delegates to `jev_client.main()` so both commands behave identically. |
+| `jev_client.py` | `build_request()`, `classify_batch()`, `BatchResult`, errors. |
+| `smoke.py` | Five-sentence CLI sample; exit codes below. |
+| `bench.py` | Two timed batches (K=10, K=40) with accuracy against known labels. |
 | `test_jev_client.py` | Offline pytest suite (patches `urllib.request.urlopen`). |
-| `conftest.py` | Puts this directory on `sys.path` so `import jev_client` works from any pytest rootdir. |
 
 ## Set the key
 
-The key is read from the environment only. It is never written to disk, printed, or
-included in an exception message; error bodies are scrubbed before they are surfaced.
+The key lives at `secrets/opencode.key` in the repo root and is gitignored. Never print
+it. The client reads it from `OPENCODE_API_KEY` only, never from disk, and scrubs it from
+every error body and message.
 
 ```bash
-# WSL / bash
-export OPENCODE_API_KEY="<your key>"
-
-# PowerShell
-$env:OPENCODE_API_KEY = "<your key>"
+# From dev/adaware, WSL / bash:
+export OPENCODE_API_KEY=$(tr -d '\r\n' < ../../secrets/opencode.key)
 ```
 
-Optional: `JEV_MODEL` overrides the model id for every call (default `jev-1.13-free`).
-`classify_sentences(..., model=...)` and `--model` override `JEV_MODEL`.
+The same one-liner without `export`, as used for the smoke command:
+
+```bash
+OPENCODE_API_KEY=$(tr -d '\r\n' < ../../secrets/opencode.key) \
+    uv run python next/jev/smoke.py
+```
+
+PowerShell: `$env:OPENCODE_API_KEY = "<key>"`.
 
 ## Run
 
-All commands are run from `dev/adaware`.
+All commands run from `dev/adaware`.
 
 ```bash
-# smoke test (5 fixed sentences, one call)
-uv run python next/jev/smoke.py
-
-# same thing through the library module
-uv run python next/jev/jev_client.py
+# 5-sentence smoke sample (one request)
+uv run python next/jev/smoke.py [--model ID] [--timeout SECONDS] [--raw]
 
 # offline tests
 uv run python -m pytest next/jev -q
+
+# timing and accuracy on synthetic batches (two requests)
+uv run python next/jev/bench.py
 ```
 
-Useful smoke flags: `--model`, `--timeout`, `--raw` (print the raw JSON even when parsing
-worked), `--save-raw PATH` (keep the first real response body for review).
+Smoke exit codes: `0` ok, `1` request failed, `2` key missing or rejected (401/403),
+`4` at least one sentence got no answer.
 
-### Exit codes
+## Request contract
 
-| Code | Meaning |
-| --- | --- |
-| 0 | Request succeeded and at least one sentence got a label. |
-| 1 | Transport failure, unexpected HTTP status, or a request that could not be built. |
-| 2 | `OPENCODE_API_KEY` is unset or was rejected (401/403). No request is made when it is unset. |
-| 3 | Both `jev-1.13-free` and `jev-1.13` were rejected as unknown models. |
-| 4 | The API answered, but no answer could be parsed from the body. The raw body is printed. This is a client parser gap, not a failed call. |
+`POST https://opencode.ai/inference/systemone/v1/systemone`
 
-## Request shape
-
-One POST to `https://opencode.ai/inference/systemone/v1/systemone` with
-`Authorization: Bearer $OPENCODE_API_KEY` and `Content-Type: application/json`:
+```http
+Authorization: Bearer $OPENCODE_API_KEY
+Content-Type: application/json
+User-Agent: pocket-casts-adaware/0.1
+```
 
 ```json
 {
@@ -81,9 +80,9 @@ One POST to `https://opencode.ai/inference/systemone/v1/systemone` with
     ]
   },
   "questions": {
-    "segment_type": {
+    "sentence_2": {
       "type": "choice",
-      "instructions": "Classify the supplied podcast material according to whether it is an advertisement or editorial content.",
+      "instructions": "Classify only the sentence with id 2. Judge that sentence on its own wording, using the rest of the transcript only as context. Ignore every other sentence: they are separate questions.",
       "criteria": {
         "advertisement": "Paid sponsorship, promotional content, commercial offer or call to action.",
         "content": "Normal editorial podcast discussion.",
@@ -94,122 +93,99 @@ One POST to `https://opencode.ai/inference/systemone/v1/systemone` with
 }
 ```
 
-`build_request()` is a pure function that returns exactly this dict (it validates the
-sentences, defaults missing `id`s to the 1-based position, and never mutates the caller's
-list), which is what the request-shape test asserts.
+**The User-Agent is mandatory.** Python's default `Python-urllib/3.x` is rejected by
+Cloudflare with `403 error_code 1010 browser_signature_banned`. `curl/8.5.0`, a Chrome UA
+and `pocket-casts-adaware/0.1` all work; the client sends the last one explicitly.
 
-**The endpoint is stateless per request.** The service does not remember anything from a
-previous call, so a request must carry every sentence the model needs for context; asking
-about one sentence in isolation will not see the ones sent earlier. Prompt/prefix caching
-is not documented and is not assumed here — no request relies on a previous one having
-warmed a cache.
+The endpoint is stateless: nothing from a previous call is remembered. Every request
+carries the whole sentence list the model needs for context.
 
-## Response handling
+## Response contract
 
-The vendor does not document the response body, so `classify_sentences()` **never assumes
-one layout and never raises on an unknown one**. It walks the decoded JSON tree for
-answer-like objects, then maps them onto the caller's sentence ids.
-
-Accepted, with the shapes the tests cover:
-
-```jsonc
-// 1. one answer per question (no ids: applies to the whole request)
-{"answers": {"segment_type": {"value": "advertisement", "probability": 0.91}}}
-
-// 2. a list of per-sentence answers
-{"results": [{"sentence_id": 2, "label": "advertisement", "confidence": 0.97}, ...]}
-
-// 3. a label -> probability map per sentence
-{"answers": [{"id": 2, "probabilities": {"advertisement": 0.9, "content": 0.05, "transition": 0.05}}]}
-
-// 4. a nested envelope
-{"response": {"segment_type": {"answer": "transition", "scores": {"transition": 0.7, "content": 0.2}}}}
-
-// 5. answers keyed by sentence id
-{"answers": {"1": {"value": "content", "probability": 0.9}}}
-
-// 6. a full distribution over the three labels (collapsed to its arg-max)
-{"answers": {"segment_type": [{"label": "content", "probability": 0.12},
-                              {"label": "advertisement", "probability": 0.81},
-                              {"label": "transition", "probability": 0.07}]}}
-```
-
-When exactly one candidate per label comes back with no ids, the three are read as one
-answer (a distribution), not as three sentences: the arg-max becomes the label and the
-whole distribution is kept in `scores`.
-
-Details of the parser:
-
-* Label keys: `value`, `label`, `answer`, `choice`, `classification`, `class`,
-  `prediction`, `verdict`. Probability keys: `probability`, `prob`, `confidence`,
-  `score`, `likelihood`, `p`; label→probability maps are also accepted
-  (`probabilities`, `scores`, `distribution`, …) and the arg-max is used.
-* Labels are normalised (`Sponsored` → `advertisement`, `EDITORIAL` → `content`,
-  `intro`/`outro` → `transition`). An unrecognised label is kept verbatim and flagged
-  `known_label: false` rather than dropped.
-* Percent-style probabilities (`92`) and numeric strings (`"0.87"`) are coerced to
-  `[0, 1]`.
-* Ids are matched after `str()` coercion, so `"2"` matches `{"id": 2}`. If no id matches
-  and the returned ids are a dense `0..n-1` range, they are treated as 0-based indices and
-  shifted by one. Answers without ids are assigned in document order. Ids that match no
-  sentence are returned under `unmatched`, not discarded.
-* An echoed `questions`/`criteria`/`state` subtree is never mistaken for an answer.
-* If the body is not JSON, or contains nothing answer-like, `parsed` is `false`, `error`
-  says why, `raw`/`raw_text` keep the body intact, and the smoke test prints it and exits
-  with code 4.
-
-`classify_sentences()` returns:
-
-```python
+```json
 {
   "model": "jev-1.13-free",
-  "podcast": "Technology Today",
-  "question": "segment_type",
-  "status": 200,
-  "elapsed_ms": 812.4,          # client-side round trip
-  "parsed": True,
-  "scope": "sentence",          # "sentence" | "request" | "none"
-  "per_sentence": True,         # False when one answer covered the whole request
-  "answered": 5,
-  "shape": "$.results[0]",      # where the first answer was found
-  "summary": {"advertisement": 3, "content": 2, "transition": 0},
-  "sentences": [
-      {"id": 1, "text": "...", "label": "content", "probability": 0.95,
-       "known_label": True, "scores": {...}, "shape": "$.results[0]"}
-  ],
-  "unmatched": [],
-  "error": None,
-  "raw": {...},                 # decoded JSON, or None if the body was not JSON
-  "raw_text": "..."
+  "answers": {
+    "sentence_2": {
+      "type": "choice",
+      "choice": "advertisement",
+      "confidence": 0.86,
+      "probabilities": {"advertisement": 0.91, "content": 0.01, "transition": 0.08}
+    }
+  },
+  "usage": {
+    "input_tokens": 396,
+    "output_tokens": 45,
+    "cost": 0,
+    "opencode": {
+      "billing_source": "free",
+      "list_cost": 0,
+      "tokens": {"input": 396, "output": 45, "reasoning": 0, "cache_read": 0,
+                 "cache_write_5m": 0, "cache_write_1h": 0}
+    }
+  }
 }
 ```
 
-**Scope caveat:** if the service returns a single answer for the whole material, the client
-applies it to every sentence, sets `per_sentence: false`, and the smoke test prints a
-warning. That is a parsing convenience, not evidence that the API classifies per sentence.
+`answers[key].probabilities` is the real signal. `confidence` is close to the largest
+probability and is kept in `raw` but not interpreted. A missing answer for one id sets
+`SentenceResult.missing = True` with `label = None`; the client never invents a label.
+Malformed answers, a non-JSON body or a missing `answers` object raise `SystemOneError`
+with the raw body attached.
 
-## Model id
+`classify_batch()` returns a `BatchResult`:
 
-`JEV_MODEL` / `--model` / `model=` select the id; the default is `jev-1.13-free`. On a
-400/404/422 whose body names the model (`unknown model`, `not found`, `unsupported`, …),
-`is_unknown_model_error()` returns true and the smoke test retries once with `jev-1.13`
-(the plausible fallback). It never retries more than once, and never retries when the
-error does not look model-related.
+| Field | Meaning |
+| --- | --- |
+| `per_sentence` | `list[SentenceResult]` in request order (`id`, `text`, `label`, `probabilities`, `ad_score`, `missing`). |
+| `usage` | The response's `usage` object. |
+| `model` | The model id echoed by the service. |
+| `elapsed_ms` | Client-side round trip. |
+| `raw` | Decoded response JSON. |
 
-## What is not proven yet
+## Granularity and batching
 
-* **Which model id is correct.** `jev-1.13-free` vs `jev-1.13` is unverified; the fallback
-  exists precisely because this is unknown.
-* **The response shape.** Everything above is defensive inference. The first real call
-  (ideally with `--save-raw`) should be inspected before anyone trusts `per_sentence`.
-* **Probability semantics.** It is unknown whether a reported probability is calibrated,
-  per-label, per-sentence or per-request, or whether it is a confidence over the chosen
-  choice only. The client reports the number it was given and does not reinterpret it.
-* **Whether one request can carry many sentences usefully.** The contract accepts a list,
-  but the answer may cover the whole list rather than each item.
-* **Rate limits, quotas, maximum sentence count and token limits.** None are documented
-  here; the smoke test sends 5 sentences and one question.
-* **Caching / idempotency.** Not documented. This client assumes statelessness and sends
-  full context every time; it does not assume prefix caching.
-* **Retry/backoff on 429/5xx.** Deliberately absent: the client reports the error and lets
-  the caller decide.
+One answer per **question**, not per sentence. Five sentences with one question yield one
+label for the whole state; `classify_batch()` therefore asks one question per sentence,
+keyed `sentence_<id>`, with instructions naming that id.
+
+* Verified at K=40: 40/40 answers returned, 381 ms, ~6.2k input tokens.
+* Verified accuracy on a synthetic 40-sentence mix: 40/40.
+* Latency is ~300-800 ms per request.
+* A sentence is always sent with its neighbours in `state`, because context changes the
+  answer: "Acme makes tools for developers." scores content 0.90 alone, but advertisement
+  0.99 when the two neighbouring ad sentences are present.
+
+`bench.py` re-checks this on its own mix. One measured run: K=10 9/10 (514 ms, 1.7k input
+tokens), K=40 37/40 (1109 ms, 6.2k input tokens). Every answer came back; the three misses
+were segment hand-offs and a sponsor announcement ("Our final sponsor is Summit Outdoor
+Gear." answered `transition`), so the weak spot is the advertisement/transition boundary,
+not answer retrieval.
+
+`"type": "score"` questions are not supported: the service answers HTTP 422
+`Upstream request failed: Endpoint is unavailable.` Only `choice` is offered.
+
+Sampling is nondeterministic: the same sentence scored 0.92 and 0.96 on different runs.
+Nothing about temperature or seed is exposed, so treat probabilities as noisy scores.
+
+Billing is free: `billing_source: "free"`, `cost: 0`.
+
+## Errors and retries
+
+* `MissingApiKey` — `OPENCODE_API_KEY` unset (no request is made) or rejected with
+  401/403. The message never contains the key, and error bodies are scrubbed.
+* `SystemOneError(status, body)` — any other HTTP, transport or response-shape failure.
+* The client does not retry, except for a single fallback from the requested model id to
+  `jev-1.13` when the error body shows the model id itself was rejected. The measured
+  rejection is HTTP 400 `Upstream request failed: Model is unavailable.` On this account
+  `jev-1.13` then answers 402 `Insufficient balance`, so the free model is currently the
+  only usable id; the fallback is one attempt, not a guaranteed path.
+
+## Not yet known
+
+* The true batch ceiling — K=40 works; larger K is untested.
+* Rate limits and quotas.
+* Whether responses are cached (the endpoint behaves statelessly).
+* Probability calibration; `confidence` and `probabilities` are reported, not trusted.
+* Whether `transition` is reliable at the edges of an ad pod, as opposed to the pod's
+  interior.
