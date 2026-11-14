@@ -23,6 +23,7 @@ import au.com.shiftyjelly.pocketcasts.models.entity.UserEpisode
 import au.com.shiftyjelly.pocketcasts.models.type.DownloadStatusUpdate
 import au.com.shiftyjelly.pocketcasts.models.type.EpisodeDownloadStatus
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
+import au.com.shiftyjelly.pocketcasts.repositories.ads.AdAnalysisCleanup
 import au.com.shiftyjelly.pocketcasts.repositories.download.task.UpdateShowNotesTask
 import au.com.shiftyjelly.pocketcasts.repositories.fingerprint.FingerprintMappingCache
 import au.com.shiftyjelly.pocketcasts.repositories.fingerprint.FingerprintReferenceRetriever
@@ -74,6 +75,7 @@ class DownloadManager @Inject constructor(
     clock: Clock,
     progressCache: DownloadProgressCache,
     eventHorizon: EventHorizon,
+    adAnalysisCleanup: AdAnalysisCleanup,
     @ApplicationContext private val context: Context,
     @ApplicationScope private val scope: CoroutineScope,
 ) : DownloadQueue,
@@ -96,6 +98,7 @@ class DownloadManager @Inject constructor(
     private val queueController = DownloadQueueController(
         downloadDao = downloadDao,
         transcriptDao = appDatabase.transcriptDao(),
+        adAnalysisCleanup = adAnalysisCleanup,
         progressCache = progressCache,
         settings = settings,
         analytics = analytics,
@@ -156,6 +159,7 @@ class DownloadManager @Inject constructor(
 private class DownloadQueueController(
     private val downloadDao: EpisodeDownloadDao,
     private val transcriptDao: TranscriptDao,
+    private val adAnalysisCleanup: AdAnalysisCleanup,
     private val progressCache: DownloadProgressCache,
     private val settings: Settings,
     private val analytics: DownloadAnalytics,
@@ -259,6 +263,7 @@ private class DownloadQueueController(
         coroutineScope.launch {
             progressCache.clearProgress(episodes.keys)
             transcriptDao.deleteForEpisodes(episodes.keys)
+            adAnalysisCleanup.deleteForEpisodes(episodes.keys)
             val deletedEpisodes = episodes.mapNotNull { (_, episode) ->
                 val deletedEpisode = runCatching {
                     val isFileDeleted = episode.downloadedFilePath?.let { filePath ->
