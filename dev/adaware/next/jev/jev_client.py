@@ -48,7 +48,11 @@ import urllib.request
 from dataclasses import dataclass
 from typing import Any, Sequence
 
-ENDPOINT = "https://opencode.ai/inference/systemone/v1/systemone"
+OPENCODE_ENDPOINT = "https://opencode.ai/inference/systemone/v1/systemone"
+#: OpenRouter exposes the same System One contract; the app uses this one.
+OPENROUTER_ENDPOINT = "https://openrouter.ai/api/v1/systemone"
+ENDPOINT = OPENCODE_ENDPOINT
+ENDPOINT_ENV = "JEV_ENDPOINT"
 DEFAULT_MODEL = "jev-1.13-free"
 FALLBACK_MODEL = "jev-1.13"
 KEY_ENV = "OPENCODE_API_KEY"
@@ -153,14 +157,30 @@ def _normalise_sentences(sentences: Sequence[dict]) -> list[dict]:
     return result
 
 
+def resolve_endpoint(endpoint: str | None = None) -> str:
+    """Endpoint choice: argument, then ``JEV_ENDPOINT``, then the opencode default."""
+    if isinstance(endpoint, str) and endpoint.strip():
+        return endpoint.strip()
+    return (os.environ.get(ENDPOINT_ENV) or "").strip() or ENDPOINT
+
+
+def is_openrouter(endpoint: str) -> bool:
+    return "openrouter.ai" in endpoint
+
+
 # --- Transport -----------------------------------------------------------------------
 
 
-def _api_key() -> str:
-    key = os.environ.get(KEY_ENV, "").strip()
-    if not key:
-        raise MissingApiKey(None, "", MISSING_KEY_MESSAGE)
-    return key
+def _api_key(endpoint: str) -> str:
+    """Read the key for this endpoint; OpenRouter and opencode use different variables."""
+    names = ["JEV_API_KEY"]
+    names.append("OPENROUTER_API_KEY" if is_openrouter(endpoint) else KEY_ENV)
+    names.append(KEY_ENV)
+    for name in names:
+        key = os.environ.get(name, "").strip()
+        if key:
+            return key
+    raise MissingApiKey(None, "", MISSING_KEY_MESSAGE)
 
 
 def _scrub(text: str, secret: str) -> str:
@@ -187,10 +207,10 @@ def _rejected_message(status: int, body: str) -> str:
     )
 
 
-def _post(payload: dict, api_key: str, timeout: float) -> tuple[int, str]:
+def _post(payload: dict, api_key: str, timeout: float, endpoint: str = ENDPOINT) -> tuple[int, str]:
     """POST the body, returning ``(status, text)`` or raising a client error."""
     request = urllib.request.Request(
-        ENDPOINT,
+        endpoint,
         data=json.dumps(payload).encode("utf-8"),
         method="POST",
         headers={
@@ -211,7 +231,7 @@ def _post(payload: dict, api_key: str, timeout: float) -> tuple[int, str]:
         raise SystemOneError(exc.code, body, f"System One returned HTTP {exc.code}") from None
     except (urllib.error.URLError, TimeoutError, OSError) as exc:
         reason = getattr(exc, "reason", exc)
-        raise SystemOneError(None, "", f"could not reach {ENDPOINT}: {reason}") from None
+        raise SystemOneError(None, "", f"could not reach {endpoint}: {reason}") from None
 
 
 def _model_rejected(exc: SystemOneError) -> bool:
@@ -268,20 +288,22 @@ def classify_batch(
     sentences: Sequence[dict],
     model: str | None = None,
     timeout: float = 120.0,
+    endpoint: str | None = None,
 ) -> BatchResult:
     """Classify every sentence in one request, one question per sentence.
 
     Retries once with :data:`FALLBACK_MODEL` only when the model id itself is rejected;
-    every other failure is raised immediately.
+    every other failure is raised immediately. ``endpoint`` overrides ``JEV_ENDPOINT``.
     """
+    target = resolve_endpoint(endpoint)
     request = build_request(podcast, sentences, model=model)
-    api_key = _api_key()
+    api_key = _api_key(target)
     started = time.perf_counter()
     try:
-        _status, text = _post(request, api_key, timeout)
+        _status, text = _post(request, api_key, timeout, target)
     except SystemOneError as exc:
         if request["model"] == FALLBACK_MODEL or not _model_rejected(exc):
             raise
         request = build_request(podcast, sentences, model=FALLBACK_MODEL)
-        _status, text = _post(request, api_key, timeout)
+        _status, text = _post(request, api_key, timeout, target)
     return _parse(text, request, (time.perf_counter() - started) * 1000.0)

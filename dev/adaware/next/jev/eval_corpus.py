@@ -30,6 +30,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 import threading
@@ -255,10 +256,26 @@ def read_cache(path: Path) -> dict[int, dict]:
 
 
 def write_cache(path: Path, rows: dict[int, dict]) -> None:
-    """Rewrite the file in cue order. Small (one line per cue), so cheap and crash-safe enough."""
+    """Rewrite the file in cue order. Small (one line per cue), so cheap and crash-safe enough.
+
+    Written through a temp file and replaced, with a few retries: writing into the Windows
+    drive from WSL occasionally fails with ``OSError: [Errno 22]`` while Defender scans the
+    new file, and a half-written cache would silently poison a resume.
+    """
     path.parent.mkdir(parents=True, exist_ok=True)
     lines = [json.dumps(rows[idx], ensure_ascii=False) for idx in sorted(rows)]
-    path.write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8")
+    payload = "\n".join(lines) + ("\n" if lines else "")
+    temp = path.with_name(path.name + ".tmp")
+    last_error: OSError | None = None
+    for attempt in range(5):
+        try:
+            temp.write_text(payload, encoding="utf-8")
+            os.replace(temp, path)
+            return
+        except OSError as exc:
+            last_error = exc
+            time.sleep(0.2 * (attempt + 1))
+    raise last_error if last_error else OSError(f"could not write {path}")
 
 
 def cached_window(rows: dict[int, dict], cues: Sequence[Cue], start: int, stop: int) -> bool:
@@ -1125,10 +1142,9 @@ def build_report(
         "  cautionary-tales slot at 14:07 covers 21 s of a 94 s CA tourism ad, so 70 s of real ad",
         "  is gold content; `odd-lots__what-nvidia-s-megaspeed-scandal-is-really` take 0 has a single",
         "  1431 s slot (38% of the episode). Cue precision is a lower bound wherever this happens.",
-        "- The full 47-episode run did not finish: the free model returned HTTP 429",
-        "  `FreeUsageLimitError` after about 200 requests. Only 5 episodes are scored in this",
-        "  report, which is far too few for a corpus-level claim; the per-episode table shows how",
-        "  much the numbers move between shows.",
+        "- The scored set is whatever had a complete cache when the report was built; anything",
+        "  not scored is listed above with the reason, and a run interrupted by a quota or a",
+        "  network failure resumes rather than restarts.",
         "- Sentences are scored inside a window of K cues, so a pod's first cue has no ad neighbour",
         "  for context; the README records that context changes the answer.",
         "- The model is nondeterministic (the same sentence measured 0.92 and 0.96 on two runs), so",
