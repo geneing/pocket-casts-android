@@ -3,6 +3,7 @@ package au.com.shiftyjelly.pocketcasts.repositories.ads.text
 import au.com.shiftyjelly.pocketcasts.coroutines.di.ApplicationScope
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdAnalysisDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdSegmentDao
+import au.com.shiftyjelly.pocketcasts.models.entity.BaseEpisode
 import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegmentKind
@@ -13,6 +14,7 @@ import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevAdModelStore
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevClassification
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevPrompt
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.buildPods
+import au.com.shiftyjelly.pocketcasts.repositories.file.FileStorage
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.PodcastManager
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
@@ -54,6 +56,7 @@ class TranscriptAdAnalyzer @Inject constructor(
     private val transcriber: EpisodeTranscriber,
     private val transcriptStore: LocalTranscriptStore,
     private val jevAdModelStore: JevAdModelStore,
+    private val fileStorage: FileStorage,
     @ApplicationScope private val scope: CoroutineScope,
 ) {
     private val mutex = Mutex()
@@ -79,7 +82,7 @@ class TranscriptAdAnalyzer @Inject constructor(
     private suspend fun runAnalysis(episodeUuid: String): Boolean {
         val startedAt = System.currentTimeMillis()
         val episode = episodeManager.findByUuid(episodeUuid) ?: return false
-        val localFile = episode.downloadedFilePath?.let(::File)?.takeIf { it.exists() }
+        val localFile = resolveAudioFile(episode)
         if (localFile == null) {
             Timber.tag(TAG).d("Episode %s is not downloaded; transcription is file-only", episodeUuid)
             return false
@@ -195,6 +198,20 @@ class TranscriptAdAnalyzer @Inject constructor(
             )
         }
         return true
+    }
+
+    /**
+     * The audio file to transcribe.
+     *
+     * The download worker asks for the analysis as soon as the file is written, before the episode
+     * row records its path, so the recorded path is often still empty at this point. The download
+     * location is deterministic from the episode uuid, so fall back to it rather than skipping the
+     * episode and leaving its ad analysis to whatever runs next.
+     */
+    private fun resolveAudioFile(episode: BaseEpisode): File? {
+        val recorded = episode.downloadedFilePath?.let(::File)?.takeIf { it.isFile }
+        if (recorded != null) return recorded
+        return fileStorage.getOrCreatePodcastEpisodeFile(episode)?.takeIf { it.isFile && it.length() > 0L }
     }
 
     companion object {
