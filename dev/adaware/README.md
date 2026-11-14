@@ -7,6 +7,11 @@ recall 0.9 with 5 s boundary tolerance).
 Everything here is research code. The phone-ready artifact is a small linear model over
 cheap spectral features, exported by `scripts/06_export_kotlin.py`.
 
+> **Retired (branch `feature/adaware_jev`):** the transcript TF-IDF detector and the
+> exported phone model described below are history. Detection is now the `jev` classifier
+> served by the OpenCode System One API; the retired training code is in
+> `next/m0/retired_tfidf/`.
+
 ## Pipeline
 
 | step | script | output |

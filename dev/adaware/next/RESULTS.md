@@ -1,5 +1,10 @@
 # Offline ad interval research: current result
 
+> **Superseded (branch `feature/adaware_jev`):** the TF-IDF detector described below is
+> retired in favour of the `jev` classifier served by the OpenCode System One API. Its
+> training/export code is in `next/m0/retired_tfidf/`; `next/m0/corpus` is now the
+> labelling/evaluation corpus. Numbers below are the last TF-IDF run, kept for reference.
+
 ## Decision
 
 The requested precision and recall of 0.90, with both pod boundaries within

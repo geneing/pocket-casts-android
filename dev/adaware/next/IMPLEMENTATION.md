@@ -14,7 +14,8 @@ Code: `dev/adaware/next/m0/`
   training data (test shows excluded).
 - `train.py` — word 1-2 gram + `char_wb` 3-5 gram TF-IDF, balanced logistic classifier,
   semi-Markov pod decoder tuned on episode-grouped inner folds, held-out-show evaluation,
-  exports `bundle/model.json` and Kotlin parity fixtures.
+  exports `bundle/model.json` and Kotlin parity fixtures. **Retired** on branch
+  `feature/adaware_jev` (jev classifier instead); moved to `next/m0/retired_tfidf/`.
 
 Commands:
 
@@ -22,7 +23,6 @@ Commands:
 cd dev/adaware
 uv run python -u next/m0/collect.py --per-show 1 --limit 150
 uv run python next/m0/merge_legacy.py
-uv run python -u next/m0/train.py --out-dir next/m0/bundle
 ```
 
 ### Evaluated so far
@@ -42,8 +42,9 @@ a different test set). This is consistent with RESULTS.md: the transcript signal
 ad copy well (frame AP) but edges and isolated hosted promos are hard, and sibling-diff
 labels are narrower than real pods.
 
-`publish.py` retrains and copies the bundle into the Android module and test resources in
-one step. `finish.sh` waits for the collector, then merges and publishes.
+`publish.py` retrained and copied the bundle into the Android module and test resources in
+one step. `finish.sh` waited for the collector, then merged and published. Both are retired
+on `feature/adaware_jev` and sit in `next/m0/retired_tfidf/`; the exported bundle is gone.
 
 ## M1 — on-device detector
 

@@ -32,9 +32,10 @@ class AdSegmentManagerImpl @Inject constructor(
     }
 
     /**
-     * Downloaded episodes are analysed from an on-device transcript; when that is not possible
-     * (no local file, no recognizer, or a failed STT pass) the audio analyser takes over. Streams
-     * keep using the audio path, which follows the player cache.
+     * Downloaded episodes first get an on-device transcript, which the remote classifier will score
+     * later; until then the transcript analyser never claims the episode, so the audio analyser
+     * produces the segments. Streams skip transcription and use the audio path, which follows the
+     * player cache.
      */
     override fun analyze(episodeUuid: String) {
         scope.launch(Dispatchers.IO) {

@@ -18,7 +18,7 @@ internal data class ChunkCue(val startMs: Long, val endMs: Long, val text: Strin
  *
  * A chunk with no speech is expected (music, silence, a break) and does not fail the episode.
  * A fatal error does: returning a transcript built from the chunks that happened to succeed
- * would let [TranscriptAdAnalyzer] persist partial results and mark the episode complete.
+ * would let [TranscriptAdAnalyzer] cache a partial transcript as a finished pass.
  * The `close` callback always runs, including on cancellation.
  */
 internal class TranscriptionChunkLoop(

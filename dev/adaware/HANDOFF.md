@@ -3,6 +3,15 @@
 State of the work on branch `feature/adaware_dev_M0`, folder `dev/adaware/`. Everything
 below is measured, not planned. Where something is a hypothesis it says so.
 
+> **Retired (branch `feature/adaware_jev`):** the transcript TF-IDF detector is no longer
+> the method. Ad detection is now the `jev` classifier served by the OpenCode System One
+> API. The TF-IDF training/export scripts (`train.py`, `publish.py`, `finish.sh`), the
+> exported `bundle/` and `legacy/` bundles were removed and the scripts moved intact to
+> `next/m0/retired_tfidf/` (git history has the runnable version). `next/m0/corpus` — the
+> per-episode transcripts, sibling-take ad labels, manifest and plan — is now the
+> labelling/evaluation corpus for `jev`. Sections 5-11 below describe the earlier
+> audio-feature pipeline and are history only.
+
 ## 1. Problem and acceptance criterion
 
 Given a downloaded podcast episode (mp3, mono/stereo 16 kHz decodable), find the time

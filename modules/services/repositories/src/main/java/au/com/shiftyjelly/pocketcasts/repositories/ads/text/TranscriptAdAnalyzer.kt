@@ -4,9 +4,6 @@ import au.com.shiftyjelly.pocketcasts.coroutines.di.ApplicationScope
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdAnalysisDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdSegmentDao
 import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
-import au.com.shiftyjelly.pocketcasts.models.to.AdSegmentKind
-import au.com.shiftyjelly.pocketcasts.models.to.AdSegmentOrigin
-import au.com.shiftyjelly.pocketcasts.models.to.DbAdSegment
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
 import java.io.File
@@ -16,7 +13,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.NonCancellable
-import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -24,19 +20,23 @@ import kotlinx.coroutines.withContext
 import timber.log.Timber
 
 /**
- * Ad analysis for downloaded episodes using on-device speech recognition and the transcript
- * TF-IDF detector. Runs off the playback thread, caches the transcript, and writes pods as
- * [DbAdSegment]s with [AdSegmentOrigin.Transcript].
+ * On-device transcription for downloaded episodes.
  *
- * Confidence is deliberately kept below the auto-skip threshold: the research model is
- * suggestion-only until an independently labelled evaluation clears the product bar.
+ * Speech recognition and the transcript cache stay on the device, but the classification step is
+ * delegated to the remote jev classifier (next step), so this analyzer never owns an episode: [run]
+ * transcribes and caches, then reports `false` so
+ * [au.com.shiftyjelly.pocketcasts.repositories.ads.AudioAdAnalyzer] keeps producing ad segments
+ * from the audio path until the classifier lands.
+ *
+ * The transcript is cached by [LocalTranscriptStore] and reused while the audio file, the local
+ * transcript identity and the recognizer version are unchanged. Analysis state left behind by the
+ * removed TF-IDF detector is invalidated so its segments disappear from existing databases.
  */
 @Singleton
 class TranscriptAdAnalyzer @Inject constructor(
     private val episodeManager: EpisodeManager,
     private val adSegmentDao: AdSegmentDao,
     private val adAnalysisDao: AdAnalysisDao,
-    private val detector: AdTextDetector,
     private val transcriber: EpisodeTranscriber,
     private val transcriptStore: LocalTranscriptStore,
     @ApplicationScope private val scope: CoroutineScope,
@@ -57,7 +57,8 @@ class TranscriptAdAnalyzer @Inject constructor(
 
     /**
      * Runs inside the caller's coroutine and reports whether this analyzer owned the episode, so
-     * the audio analyzer can take over when transcription is unavailable.
+     * the audio analyzer can take over when transcription is unavailable. Ownership is never
+     * claimed while classification is remote, so the caller always falls back to audio.
      */
     suspend fun run(episodeUuid: String): Boolean = mutex.withLock { runAnalysis(episodeUuid) }
 
@@ -66,23 +67,13 @@ class TranscriptAdAnalyzer @Inject constructor(
         val episode = episodeManager.findByUuid(episodeUuid) ?: return false
         val localFile = episode.downloadedFilePath?.let(::File)?.takeIf { it.exists() }
         if (localFile == null) {
-            Timber.tag(TAG).d("Episode %s is not downloaded; transcript analysis is file-only", episodeUuid)
+            Timber.tag(TAG).d("Episode %s is not downloaded; transcription is file-only", episodeUuid)
             return false
         }
         if (!transcriber.isAvailable()) return false
-        val model = detector.model() ?: run {
-            LogBuffer.e(TAG, "Ad model unavailable; skipping transcript analysis for $episodeUuid")
-            return false
-        }
         val signature = AnalysisIdentity.audioSignature(localFile)
         val sttVersion = transcriber.version
         val state = adAnalysisDao.findState(episodeUuid)
-        val reusable = AnalysisIdentity.isReusable(state, signature, model.identity, sttVersion) &&
-            transcriptStore.hasTranscript(episodeUuid)
-        if (reusable) {
-            Timber.tag(TAG).d("Episode %s already analysed with this audio, model and recognizer", episodeUuid)
-            return true
-        }
         if (AnalysisIdentity.isTranscriptAnalysis(state)) {
             Timber.tag(TAG).d("Invalidating stale transcript analysis for %s", episodeUuid)
             withContext(NonCancellable) {
@@ -90,6 +81,9 @@ class TranscriptAdAnalyzer @Inject constructor(
                 transcriptStore.delete(episodeUuid)
                 adAnalysisDao.delete(episodeUuid)
             }
+        } else if (transcriptStore.hasTranscript(episodeUuid) && state.recordsTranscriptOf(signature, sttVersion)) {
+            Timber.tag(TAG).d("Episode %s already has a transcript for this audio and recognizer", episodeUuid)
+            return false
         }
 
         val result = transcriber.transcribe(episodeUuid, localFile, episode.durationMs.toLong())
@@ -109,64 +103,31 @@ class TranscriptAdAnalyzer @Inject constructor(
         if (cues.isEmpty()) return false
 
         transcriptStore.save(episodeUuid, cues)
-        val segments = cues.map {
-            AdTranscriptSegment(it.startMs / 1000.0, it.endMs / 1000.0, it.text)
-        }
-        val pods = model.detect(segments)
-        val totalMs = cues.maxOf { it.endMs }
-        val confidence = SUGGESTION_CONFIDENCE
-        val stored = pods.mapIndexedNotNull { index, pod ->
-            val start = pod.startMs.coerceIn(0, totalMs)
-            val end = pod.endMs.coerceIn(0, totalMs)
-            if (end - start < MIN_POD_MS) {
-                null
-            } else {
-                DbAdSegment(
-                    index = index,
-                    episodeUuid = episodeUuid,
-                    startTimeMs = start,
-                    endTimeMs = end,
-                    kind = AdSegmentKind.Ad,
-                    origin = AdSegmentOrigin.Transcript,
-                    confidence = confidence,
-                    createdAt = System.currentTimeMillis(),
-                )
-            }
-        }
+        LogBuffer.i(
+            TAG,
+            "Cached transcript for $episodeUuid: ${cues.size} cues, " +
+                "${System.currentTimeMillis() - startedAt}ms",
+        )
+        // TODO: plug the remote jev classifier in here, using the cached transcript as its input.
+        return false
+    }
 
-        withContext(NonCancellable) {
-            val existing = adSegmentDao.findSegmentsForEpisode(episodeUuid)
-            val deselected = existing.filter { it.deselected }.associateBy { it.startTimeMs / 1000 }
-            val merged = stored.map { segment ->
-                val previousChoice = deselected[segment.startTimeMs / 1000]
-                if (previousChoice != null) segment.copy(deselected = true) else segment
-            }
-            adSegmentDao.replaceAll(episodeUuid, merged)
-            adAnalysisDao.upsert(
-                AdAnalysisState(
-                    episodeUuid = episodeUuid,
-                    analyzedUntilMs = totalMs,
-                    isComplete = true,
-                    updatedAt = System.currentTimeMillis(),
-                    audioSignature = signature,
-                    modelVersion = model.identity,
-                    sttVersion = sttVersion,
-                ),
-            )
-            LogBuffer.i(
-                TAG,
-                "Transcript ad analysis for $episodeUuid: ${cues.size} cues, ${merged.size} pods, " +
-                    "${System.currentTimeMillis() - startedAt}ms",
-            )
-        }
-        return true
+    /**
+     * True when the stored analysis row does not contradict a cached transcript. The audio
+     * analyzer also writes [AdAnalysisState] rows for the same episode and those carry no
+     * transcript identity, so their empty fields mean "unknown" rather than a mismatch.
+     */
+    private fun AdAnalysisState?.recordsTranscriptOf(signature: String, recognizerVersion: String): Boolean {
+        if (this == null) return true
+        if (audioSignature.isNotEmpty() && audioSignature != signature) return false
+        if (modelVersion.isNotEmpty() && modelVersion != TRANSCRIPT_IDENTITY) return false
+        return sttVersion.isEmpty() || sttVersion == recognizerVersion
     }
 
     companion object {
         private const val TAG = "TranscriptAdAnalyzer"
-        private const val MIN_POD_MS = 8_000L
 
-        // Below AdSegment.AUTO_SKIP_CONFIDENCE; the model is not calibrated.
-        private const val SUGGESTION_CONFIDENCE = 0.4f
+        // Identity of the on-device transcript cache, replaced by the jev classifier identity later.
+        private const val TRANSCRIPT_IDENTITY = "transcript-cache-v1"
     }
 }

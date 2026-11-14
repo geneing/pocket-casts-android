@@ -1,7 +1,7 @@
 """M0 data collection: download sibling takes, transcribe, label, delete audio.
 
-The TF-IDF detector learns from transcripts only, so audio is needed just long enough to
-run STT and to compare siblings. Every episode is processed as:
+Detection works on transcripts only (TF-IDF before, the jev classifier now), so audio is
+needed just long enough to run STT and to compare siblings. Every episode is processed as:
 
   download take0, take1 -> transcribe -> derive ads by sibling diff -> drop mp3s
 
