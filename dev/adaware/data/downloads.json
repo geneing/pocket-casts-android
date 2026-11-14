@@ -1,0 +1,522 @@
+{
+ "hard-fork__jensen-huang-is-out-at-nvidia": {
+  "episode": {
+   "feed": "Hard Fork",
+   "feed_url": "https://feeds.simplecast.com/6HKOhNgS",
+   "host": "simplecast",
+   "title": "Jensen Huang Is Out at Nvidia",
+   "published": "Thu, 12 Nov 2026 23:55:00 +0000",
+   "duration": "00:39:22",
+   "audio": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/66354d0c-214e-4370-a0df-240d93e522f8/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=66354d0c-214e-4370-a0df-240d93e522f8&feed=6HKOhNgS"
+  },
+  "takes": [
+   {
+    "take": 0,
+    "request_url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/66354d0c-214e-4370-a0df-240d93e522f8/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=66354d0c-214e-4370-a0df-240d93e522f8&feed=6HKOhNgS&_take=0",
+    "final_url": "https://nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/66354d0c-214e-4370-a0df-240d93e522f8/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_aa71157b43ac971d5180a67014047336_43369630.mp3?_take=0&aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=66354d0c-214e-4370-a0df-240d93e522f8&feed=6HKOhNgS&hash_redirect=1&x-total-bytes=43369630&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__7aae407a3e9c8b0fde1293d52a06a0321c31f3eb",
+    "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+    "status": 200,
+    "bytes": 43369630,
+    "seconds": 32.2,
+    "fetched_at": "2026-11-12T16:49:19",
+    "file": "audio/hard-fork__jensen-huang-is-out-at-nvidia/take0.mp3",
+    "md5": "126eb60a7c3fba730d6aeb5618b29d22",
+    "duration": 2710.6
+   },
+   {
+    "take": 1,
+    "request_url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/66354d0c-214e-4370-a0df-240d93e522f8/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=66354d0c-214e-4370-a0df-240d93e522f8&feed=6HKOhNgS&_take=1",
+    "final_url": "https://nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/66354d0c-214e-4370-a0df-240d93e522f8/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_58a39228ef6e1de08dd37d67c501ec46_43369630.mp3?_take=1&aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=66354d0c-214e-4370-a0df-240d93e522f8&feed=6HKOhNgS&hash_redirect=1&x-total-bytes=43369630&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__c2d26de3a3235453d4995c22d156433d0714d617",
+    "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+    "status": 200,
+    "bytes": 43369630,
+    "seconds": 18.3,
+    "fetched_at": "2026-11-12T16:49:38",
+    "file": "audio/hard-fork__jensen-huang-is-out-at-nvidia/take1.mp3",
+    "md5": "4de08e4534e1aaf5eddd33f032ab18ba",
+    "duration": 2710.6
+   },
+   {
+    "take": 2,
+    "request_url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/66354d0c-214e-4370-a0df-240d93e522f8/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=66354d0c-214e-4370-a0df-240d93e522f8&feed=6HKOhNgS&_take=2",
+    "final_url": "https://nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/66354d0c-214e-4370-a0df-240d93e522f8/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_fbe200b8dba522c1b3f9e8cb82d6dab7_43348732.mp3?_take=2&aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=66354d0c-214e-4370-a0df-240d93e522f8&feed=6HKOhNgS&hash_redirect=1&x-total-bytes=43348732&x-ais-classified=streaming&listeningSessionID=0CD_382_316__fa704765b0a74a44bd6fa7a5d59c7e99c2af3727",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
+    "status": 200,
+    "bytes": 43348732,
+    "seconds": 21.9,
+    "fetched_at": "2026-11-12T16:50:00",
+    "file": "audio/hard-fork__jensen-huang-is-out-at-nvidia/take2.mp3",
+    "md5": "c99dff7c0e793451cf1df068100f65db",
+    "duration": 2709.29
+   }
+  ]
+ },
+ "the-daily__what-jensen-huang-s-resignation-will-mea": {
+  "episode": {
+   "feed": "The Daily",
+   "feed_url": "https://feeds.simplecast.com/Sl5CSM3S",
+   "host": "simplecast",
+   "title": "What Jensen Huang’s Resignation Will Mean for A.I.",
+   "published": "Thu, 12 Nov 2026 10:52:06 +0000",
+   "duration": "00:24:40",
+   "audio": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/81baedea-f263-4b69-9789-fef913b31bee/audio/128/default.mp3?aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=81baedea-f263-4b69-9789-fef913b31bee&feed=Sl5CSM3S"
+  },
+  "takes": [
+   {
+    "take": 0,
+    "request_url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/81baedea-f263-4b69-9789-fef913b31bee/audio/128/default.mp3?aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=81baedea-f263-4b69-9789-fef913b31bee&feed=Sl5CSM3S&_take=0",
+    "final_url": "https://nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/81baedea-f263-4b69-9789-fef913b31bee/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_79a802f5b5e80042d36ca8ec6403cd7e_27805306.mp3?_take=0&aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=81baedea-f263-4b69-9789-fef913b31bee&feed=Sl5CSM3S&hash_redirect=1&x-total-bytes=27805306&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__56f9a4776b32deaa97158299b604cad314ca1c17",
+    "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+    "status": 200,
+    "bytes": 27805306,
+    "seconds": 14.5,
+    "fetched_at": "2026-11-12T16:50:15",
+    "file": "audio/the-daily__what-jensen-huang-s-resignation-will-mea/take0.mp3",
+    "md5": "ff0fba591cf3adea1efa19187e32f03c",
+    "duration": 1737.82
+   },
+   {
+    "take": 1,
+    "request_url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/81baedea-f263-4b69-9789-fef913b31bee/audio/128/default.mp3?aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=81baedea-f263-4b69-9789-fef913b31bee&feed=Sl5CSM3S&_take=1",
+    "final_url": "https://nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/81baedea-f263-4b69-9789-fef913b31bee/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_347061f82c29bbede09aa01401c02e30_27318802.mp3?_take=1&aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=81baedea-f263-4b69-9789-fef913b31bee&feed=Sl5CSM3S&hash_redirect=1&x-total-bytes=27318802&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__c1f8651e505e88d1ed55499eef7ced6c5b20a16f",
+    "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+    "status": 200,
+    "bytes": 27318802,
+    "seconds": 69.9,
+    "fetched_at": "2026-11-12T16:51:25",
+    "file": "audio/the-daily__what-jensen-huang-s-resignation-will-mea/take1.mp3",
+    "md5": "7f909609ab061cd78af330a243c06560",
+    "duration": 1707.42
+   },
+   {
+    "take": 2,
+    "request_url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/81baedea-f263-4b69-9789-fef913b31bee/audio/128/default.mp3?aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=81baedea-f263-4b69-9789-fef913b31bee&feed=Sl5CSM3S&_take=2",
+    "final_url": "https://nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/81baedea-f263-4b69-9789-fef913b31bee/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_f1e3aae9cc1f9de8caaed41056b9308a_27721714.mp3?_take=2&aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=81baedea-f263-4b69-9789-fef913b31bee&feed=Sl5CSM3S&hash_redirect=1&x-total-bytes=27721714&x-ais-classified=streaming&listeningSessionID=0CD_382_316__5fb0831038c6d5ef652f67286b1ab861bb68437d",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
+    "status": 200,
+    "bytes": 27721714,
+    "seconds": 53.3,
+    "fetched_at": "2026-11-12T16:52:19",
+    "file": "audio/the-daily__what-jensen-huang-s-resignation-will-mea/take2.mp3",
+    "md5": "dd9631621aed33f4265c4db9d73ae21f",
+    "duration": 1732.6
+   }
+  ]
+ },
+ "planet-money__how-bodegas-led-to-the-yemeni-coffeehous": {
+  "episode": {
+   "feed": "Planet Money",
+   "feed_url": "https://feeds.npr.org/510289/podcast.xml",
+   "host": "npr",
+   "title": "How bodegas led to the Yemeni coffeehouse explosion",
+   "published": "Wed, 11 Nov 2026 13:03:29 +0000",
+   "duration": "1441",
+   "audio": "https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510289/npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7/audio/128/default.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7&feed=hvWWWzRv&t=podcast&e=nx-s1-6036839&p=510289&d=1441&size=23060985"
+  },
+  "takes": [
+   {
+    "take": 0,
+    "request_url": "https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510289/npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7/audio/128/default.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7&feed=hvWWWzRv&t=podcast&e=nx-s1-6036839&p=510289&d=1441&size=23060985&_take=0",
+    "final_url": "https://npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_9608eb93ab1929c6ca6c4544daa991b7_26518328.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7&feed=hvWWWzRv&t=podcast&e=nx-s1-6036839&p=510289&d=1441&size=23060985&_take=0&hash_redirect=1&x-total-bytes=26518328&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__7b392a214cfed6ca454c0eaf8a4690b1f0bc25c3",
+    "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+    "status": 200,
+    "bytes": 26518328,
+    "seconds": 24.1,
+    "fetched_at": "2026-11-12T16:52:43",
+    "file": "audio/planet-money__how-bodegas-led-to-the-yemeni-coffeehous/take0.mp3",
+    "md5": "b965beaaaf77279ff6d5b76aef063269",
+    "duration": 1657.39
+   },
+   {
+    "take": 1,
+    "request_url": "https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510289/npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7/audio/128/default.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7&feed=hvWWWzRv&t=podcast&e=nx-s1-6036839&p=510289&d=1441&size=23060985&_take=1",
+    "final_url": "https://npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_40fcc246d7189159949647ee89acf2fc_26405894.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7&feed=hvWWWzRv&t=podcast&e=nx-s1-6036839&p=510289&d=1441&size=23060985&_take=1&hash_redirect=1&x-total-bytes=26405894&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__b425058a729d9e8337b9871ab6ecb52791a9411e",
+    "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+    "status": 200,
+    "bytes": 26405894,
+    "seconds": 24.8,
+    "fetched_at": "2026-11-12T16:53:08",
+    "file": "audio/planet-money__how-bodegas-led-to-the-yemeni-coffeehous/take1.mp3",
+    "md5": "c8ac29f09b1faed7886f31f94cd94dbe",
+    "duration": 1650.36
+   },
+   {
+    "take": 2,
+    "request_url": "https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510289/npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7/audio/128/default.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7&feed=hvWWWzRv&t=podcast&e=nx-s1-6036839&p=510289&d=1441&size=23060985&_take=2",
+    "final_url": "https://npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_e2e264827546a454b2823fc6cbf8e237_26334007.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7&feed=hvWWWzRv&t=podcast&e=nx-s1-6036839&p=510289&d=1441&size=23060985&_take=2&hash_redirect=1&x-total-bytes=26334007&x-ais-classified=streaming&listeningSessionID=0CD_382_316__4b7294774ff8a7a50487dae67d03ebfaed4ab482",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
+    "status": 200,
+    "bytes": 26334007,
+    "seconds": 23.6,
+    "fetched_at": "2026-11-12T16:53:32",
+    "file": "audio/planet-money__how-bodegas-led-to-the-yemeni-coffeehous/take2.mp3",
+    "md5": "051a193cec997a5fe5cf8d7af40ff340",
+    "duration": 1645.87
+   }
+  ]
+ },
+ "99-invisible__perfectly-leveraged-for-the-squat": {
+  "episode": {
+   "feed": "99% Invisible",
+   "feed_url": "https://feeds.simplecast.com/BqbsxVfO",
+   "host": "simplecast",
+   "title": "Perfectly Leveraged for the Squat",
+   "published": "Tue, 10 Nov 2026 09:00:00 +0000",
+   "duration": "00:35:35",
+   "audio": "https://mgln.ai/e/2/dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/3bb687b0-04af-4257-90f1-39eef4e631b6/episodes/532fa21d-9d3e-488d-8f78-72d2885c900b/audio/128/default.mp3?aid=rss_feed&awCollectionId=3bb687b0-04af-4257-90f1-39eef4e631b6&awEpisodeId=532fa21d-9d3e-488d-8f78-72d2885c900b&feed=BqbsxVfO"
+  },
+  "takes": [
+   {
+    "take": 0,
+    "request_url": "https://mgln.ai/e/2/dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/3bb687b0-04af-4257-90f1-39eef4e631b6/episodes/532fa21d-9d3e-488d-8f78-72d2885c900b/audio/128/default.mp3?aid=rss_feed&awCollectionId=3bb687b0-04af-4257-90f1-39eef4e631b6&awEpisodeId=532fa21d-9d3e-488d-8f78-72d2885c900b&feed=BqbsxVfO&_take=0",
+    "final_url": "https://stitcher.simplecastaudio.com/3bb687b0-04af-4257-90f1-39eef4e631b6/episodes/532fa21d-9d3e-488d-8f78-72d2885c900b/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_1e6afd5e900752a5e8ac633dc8039aa7_39065493.mp3?aid=rss_feed&awCollectionId=3bb687b0-04af-4257-90f1-39eef4e631b6&awEpisodeId=532fa21d-9d3e-488d-8f78-72d2885c900b&feed=BqbsxVfO&_take=0&hash_redirect=1&x-total-bytes=39065493&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__1035882de817f1fe7e2a43f5cd1f41f612687b9b",
+    "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+    "status": 200,
+    "bytes": 39065493,
+    "seconds": 40.7,
+    "fetched_at": "2026-11-12T16:54:13",
+    "file": "audio/99-invisible__perfectly-leveraged-for-the-squat/take0.mp3",
+    "md5": "aa2e50d462618b5e258838904a56b061",
+    "duration": 2441.59
+   },
+   {
+    "take": 1,
+    "request_url": "https://mgln.ai/e/2/dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/3bb687b0-04af-4257-90f1-39eef4e631b6/episodes/532fa21d-9d3e-488d-8f78-72d2885c900b/audio/128/default.mp3?aid=rss_feed&awCollectionId=3bb687b0-04af-4257-90f1-39eef4e631b6&awEpisodeId=532fa21d-9d3e-488d-8f78-72d2885c900b&feed=BqbsxVfO&_take=1",
+    "final_url": "https://stitcher.simplecastaudio.com/3bb687b0-04af-4257-90f1-39eef4e631b6/episodes/532fa21d-9d3e-488d-8f78-72d2885c900b/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_3886862623cdc1612447f0127195101f_38454436.mp3?aid=rss_feed&awCollectionId=3bb687b0-04af-4257-90f1-39eef4e631b6&awEpisodeId=532fa21d-9d3e-488d-8f78-72d2885c900b&feed=BqbsxVfO&_take=1&hash_redirect=1&x-total-bytes=38454436&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__ab0157801eb7e73ae5b796c59d5ac5f74c5d4291",
+    "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+    "status": 200,
+    "bytes": 38454436,
+    "seconds": 34.4,
+    "fetched_at": "2026-11-12T16:54:48",
+    "file": "audio/99-invisible__perfectly-leveraged-for-the-squat/take1.mp3",
+    "md5": "80dfe23860de99bd0a80a51af313e013",
+    "duration": 2403.4
+   },
+   {
+    "take": 2,
+    "request_url": "https://mgln.ai/e/2/dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/3bb687b0-04af-4257-90f1-39eef4e631b6/episodes/532fa21d-9d3e-488d-8f78-72d2885c900b/audio/128/default.mp3?aid=rss_feed&awCollectionId=3bb687b0-04af-4257-90f1-39eef4e631b6&awEpisodeId=532fa21d-9d3e-488d-8f78-72d2885c900b&feed=BqbsxVfO&_take=2",
+    "final_url": "https://stitcher.simplecastaudio.com/3bb687b0-04af-4257-90f1-39eef4e631b6/episodes/532fa21d-9d3e-488d-8f78-72d2885c900b/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_ac03114c3614c2101de54f74718f95bc_38781699.mp3?aid=rss_feed&awCollectionId=3bb687b0-04af-4257-90f1-39eef4e631b6&awEpisodeId=532fa21d-9d3e-488d-8f78-72d2885c900b&feed=BqbsxVfO&_take=2&hash_redirect=1&x-total-bytes=38781699&x-ais-classified=streaming&listeningSessionID=0CD_382_316__898e57574e93ea5bb4f43069fae44b32d2dcd5cc",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
+    "status": 200,
+    "bytes": 38781699,
+    "seconds": 23.7,
+    "fetched_at": "2026-11-12T16:55:12",
+    "file": "audio/99-invisible__perfectly-leveraged-for-the-squat/take2.mp3",
+    "md5": "bf7186441c91d894dc30a4eb13895b6c",
+    "duration": 2423.85
+   }
+  ]
+ },
+ "freakonomics-radio__694-does-democracy-really-need-elections": {
+  "episode": {
+   "feed": "Freakonomics Radio",
+   "feed_url": "https://feeds.simplecast.com/Y8lFbOT4",
+   "host": "simplecast",
+   "title": "694. Does Democracy Really Need Elections?",
+   "published": "Fri, 6 Nov 2026 11:00:00 +0000",
+   "duration": "01:04:35",
+   "audio": "https://mgln.ai/e/2/pdst.fm/e/dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/2be48404-a43c-4fa8-a32c-760a3216272e/episodes/5b1efac3-9ff4-451c-b6c0-9d711de24b8a/audio/128/default.mp3?aid=rss_feed&awCollectionId=2be48404-a43c-4fa8-a32c-760a3216272e&awEpisodeId=5b1efac3-9ff4-451c-b6c0-9d711de24b8a&feed=Y8lFbOT4"
+  },
+  "takes": [
+   {
+    "take": 0,
+    "request_url": "https://mgln.ai/e/2/pdst.fm/e/dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/2be48404-a43c-4fa8-a32c-760a3216272e/episodes/5b1efac3-9ff4-451c-b6c0-9d711de24b8a/audio/128/default.mp3?aid=rss_feed&awCollectionId=2be48404-a43c-4fa8-a32c-760a3216272e&awEpisodeId=5b1efac3-9ff4-451c-b6c0-9d711de24b8a&feed=Y8lFbOT4&_take=0",
+    "final_url": "https://stitcher.simplecastaudio.com/2be48404-a43c-4fa8-a32c-760a3216272e/episodes/5b1efac3-9ff4-451c-b6c0-9d711de24b8a/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_b66b6559eb1efef170a4f0b299319be4_69665253.mp3?aid=rss_feed&awCollectionId=2be48404-a43c-4fa8-a32c-760a3216272e&awEpisodeId=5b1efac3-9ff4-451c-b6c0-9d711de24b8a&feed=Y8lFbOT4&_take=0&hash_redirect=1&x-total-bytes=69665253&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__f7f5aaa383fdcb6b72311682918f49a7add4f317",
+    "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+    "status": 200,
+    "bytes": 69665253,
+    "seconds": 30.8,
+    "fetched_at": "2026-11-12T16:55:43",
+    "file": "audio/freakonomics-radio__694-does-democracy-really-need-elections/take0.mp3",
+    "md5": "6b70e325ea033b4f704933c0a353b9af",
+    "duration": 4354.06
+   },
+   {
+    "take": 1,
+    "request_url": "https://mgln.ai/e/2/pdst.fm/e/dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/2be48404-a43c-4fa8-a32c-760a3216272e/episodes/5b1efac3-9ff4-451c-b6c0-9d711de24b8a/audio/128/default.mp3?aid=rss_feed&awCollectionId=2be48404-a43c-4fa8-a32c-760a3216272e&awEpisodeId=5b1efac3-9ff4-451c-b6c0-9d711de24b8a&feed=Y8lFbOT4&_take=1",
+    "final_url": "https://stitcher.simplecastaudio.com/2be48404-a43c-4fa8-a32c-760a3216272e/episodes/5b1efac3-9ff4-451c-b6c0-9d711de24b8a/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_3acd65ed4882d4976f640c63c2024197_69683643.mp3?aid=rss_feed&awCollectionId=2be48404-a43c-4fa8-a32c-760a3216272e&awEpisodeId=5b1efac3-9ff4-451c-b6c0-9d711de24b8a&feed=Y8lFbOT4&_take=1&hash_redirect=1&x-total-bytes=69683643&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__07a2540ba6450009743d89262395e945e8eac9de",
+    "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+    "status": 200,
+    "bytes": 69683643,
+    "seconds": 30.5,
+    "fetched_at": "2026-11-12T16:56:14",
+    "file": "audio/freakonomics-radio__694-does-democracy-really-need-elections/take1.mp3",
+    "md5": "7804dc2c51a74bf770516a039e839b61",
+    "duration": 4355.21
+   },
+   {
+    "take": 2,
+    "request_url": "https://mgln.ai/e/2/pdst.fm/e/dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/2be48404-a43c-4fa8-a32c-760a3216272e/episodes/5b1efac3-9ff4-451c-b6c0-9d711de24b8a/audio/128/default.mp3?aid=rss_feed&awCollectionId=2be48404-a43c-4fa8-a32c-760a3216272e&awEpisodeId=5b1efac3-9ff4-451c-b6c0-9d711de24b8a&feed=Y8lFbOT4&_take=2",
+    "final_url": "https://stitcher.simplecastaudio.com/2be48404-a43c-4fa8-a32c-760a3216272e/episodes/5b1efac3-9ff4-451c-b6c0-9d711de24b8a/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_1e305464dda4bcbc8ca067a6764c00cd_69683643.mp3?aid=rss_feed&awCollectionId=2be48404-a43c-4fa8-a32c-760a3216272e&awEpisodeId=5b1efac3-9ff4-451c-b6c0-9d711de24b8a&feed=Y8lFbOT4&_take=2&hash_redirect=1&x-total-bytes=69683643&x-ais-classified=streaming&listeningSessionID=0CD_382_316__25513bad4b409883597163bd10ce5093b0026585",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
+    "status": 200,
+    "bytes": 69683643,
+    "seconds": 39.7,
+    "fetched_at": "2026-11-12T16:56:54",
+    "file": "audio/freakonomics-radio__694-does-democracy-really-need-elections/take2.mp3",
+    "md5": "b0296b2d0d268c94077c15d876488b8d",
+    "duration": 4355.21
+   }
+  ]
+ },
+ "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with": {
+  "episode": {
+   "feed": "Dan Snow's History Hit",
+   "feed_url": "https://access.acast.com/rss/c939f8d1-c4bc-478e-8bb9-e5343f9a7ab5",
+   "host": "acast",
+   "title": "How Rasputin Destroyed the Romanovs with Anthony Beevor",
+   "published": "Thu, 12 Nov 2026 03:00:00 GMT",
+   "duration": "45:29",
+   "audio": "https://sphinx.acast.com/p/acast/s/dansnowshistoryhit/e/6af1c7eced870dba3df8f172/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=gdPms8W8iRtmWY-aYmBJ8SbFIinsK-2VVVsZuEBz-4w"
+  },
+  "takes": [
+   {
+    "take": 0,
+    "request_url": "https://sphinx.acast.com/p/acast/s/dansnowshistoryhit/e/6af1c7eced870dba3df8f172/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=gdPms8W8iRtmWY-aYmBJ8SbFIinsK-2VVVsZuEBz-4w&_take=0",
+    "final_url": "https://stitcher2.acast.com/livestitches/5a8f1c2fb853919ef02891340290e9a8.mp3?aid=6af1c7eced870dba3df8f172&chid=c939f8d1-c4bc-478e-8bb9-e5343f9a7ab5&ci=NoYbohiFrCgECmvz4lFwWnWKi6Luo-mUhrZxQNAcLPLHE31BxWEyZQ%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=6639f30ea1a26687f27e3a9330327c8b&Expires=1794543116&Key-Pair-Id=K38CTQXUSD0VVB&Signature=GaWhIxMjx9r9Wiuz7Nhn3usTqUDAwNAQlXIiG7P2fJnxZT8VyhYfRKsjGcgydP6msPPsljImrjW-iGzMBMfp1GrERbvsam6A2ucnjsMH-vFe2RVEEIExsEWTdujqnJDlJm0J3suVzZQFuUnTZCI6PQfgwi0Sc3OjmkREIJBxjMbFXhus~2hoYQvb00dPbBGsyiWGV89y1~1qVv0V6j~ei~WgVFvMxKk55l7Tqxd4CCdO-x~9wwkkC9tm4YCvQ6c3BJw4HPSZcOSsymZLUM3pFKV~MzzToZalFzl-UIm3hk~71DBxsfo484Q-hWfmqhx4TPVWV9AIu~fm3tQeAr16pw__",
+    "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+    "status": 200,
+    "bytes": 50698952,
+    "seconds": 23.9,
+    "fetched_at": "2026-11-12T16:57:18",
+    "file": "audio/dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with/take0.mp3",
+    "md5": "dd2852f7c7934bb31a6fc54844789375",
+    "duration": 3168.66
+   },
+   {
+    "take": 1,
+    "request_url": "https://sphinx.acast.com/p/acast/s/dansnowshistoryhit/e/6af1c7eced870dba3df8f172/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=gdPms8W8iRtmWY-aYmBJ8SbFIinsK-2VVVsZuEBz-4w&_take=1",
+    "final_url": "https://stitcher2.acast.com/livestitches/da0a97d9ae921efc1f73aaeff00c967a.mp3?aid=6af1c7eced870dba3df8f172&chid=c939f8d1-c4bc-478e-8bb9-e5343f9a7ab5&ci=OrdB1Ze8AQWaQQsoMFCr8ArtDwdN541gKtxvPv6eTn6D4FSgK3ehJA%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=8fe1c1b596a1a6462ec4209f0807e18b&Expires=1794543140&Key-Pair-Id=K38CTQXUSD0VVB&Signature=OakRubu4JZjzLX04OrrH7umuynVKLt9WeSDx7y7Uq1jglx9UFHyfE~AZ7lcNDUjtAPtwEcQ~ZpGQnCGc3FAJO0BVGfK2oZg3tUXWoV5DJ-GTrbndfRV17egGf1DSZ1ObG9nDvKjtiEopTqjmA9feDCFCVIU98V~~Stx9KbrbKEzO9JRQMsa89cPFgCIrn8Mn02tqLYUuRGnnrsgLfxEe6iDLbrBQUHwffSDPKeDqjGMmClkdeGVBNLYovndMKacBqOwBPgarmydpOhfx-gaLcZj9~DwxbC~-vL8XkChk76y24oMCNxqjbOZQacB20VLA0oH8X8Po1amfbeupIORDRg__",
+    "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+    "status": 200,
+    "bytes": 52307102,
+    "seconds": 25.5,
+    "fetched_at": "2026-11-12T16:57:44",
+    "file": "audio/dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with/take1.mp3",
+    "md5": "e57a8f8edfcb8172102154038c355196",
+    "duration": 3269.17
+   },
+   {
+    "take": 2,
+    "request_url": "https://sphinx.acast.com/p/acast/s/dansnowshistoryhit/e/6af1c7eced870dba3df8f172/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=gdPms8W8iRtmWY-aYmBJ8SbFIinsK-2VVVsZuEBz-4w&_take=2",
+    "final_url": "https://stitcher2.acast.com/livestitches/4569e2e82d4f9b1b6ae094082b347978.mp3?aid=6af1c7eced870dba3df8f172&chid=c939f8d1-c4bc-478e-8bb9-e5343f9a7ab5&ci=pkeApAne_l-c1W8OyTyuujaMbqPQshXjj0uNtzZVsdK4gHlIeZ_-og%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=6ef1c81164b722d9df2a4860bf127b90&Expires=1794543166&Key-Pair-Id=K38CTQXUSD0VVB&Signature=jshvHJD8Wthf1DLzNw2dUkwBo~zeZNOW1FhpNRdAlzZkfg15EB-M~FICcjItGRQnHlXpzC1iWBh~KYaVSX2Ejnjj1lmnO6hCbfkG-lhYd9Ogr91Bqp3TjQizV6LJLNWX9OOZ2Zaf75ZvIhLmR93kDrwiyZCtzFixk3YjRUSzvrDUNImPcr9q4u6EtfboZ6Exi9irZK7S0cp4WVkHlhX~J6Pmvi4u0GuFBsiIT8zFsJjpQgR-KXLUgW~KPKUJTO~ruZtO~OBIKxsh80R5NYzcyMQsitXEYyX84JJPmuDq9Aq1Oa3cN~hbuLuX7sASDYQUU5NzerjouMh-OnkZbI-5dg__",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
+    "status": 200,
+    "bytes": 52153412,
+    "seconds": 38.9,
+    "fetched_at": "2026-11-12T16:58:23",
+    "file": "audio/dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with/take2.mp3",
+    "md5": "96dd9e06a86384acffa454884abddef9",
+    "duration": 3259.57
+   }
+  ]
+ },
+ "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell": {
+  "episode": {
+   "feed": "The Economics Show with Soumaya Keynes",
+   "feed_url": "https://feeds.acast.com/public/shows/664394a442f6710013618119",
+   "host": "acast",
+   "title": "Can economics fight fascism? With Isabella Weber",
+   "published": "Fri, 06 Nov 2026 05:00:00 GMT",
+   "duration": "34:50",
+   "audio": "https://sphinx.acast.com/p/open/s/664394a442f6710013618119/e/6aece0eb4cac7bbabb2bd5ba/media.mp3"
+  },
+  "takes": [
+   {
+    "take": 0,
+    "request_url": "https://sphinx.acast.com/p/open/s/664394a442f6710013618119/e/6aece0eb4cac7bbabb2bd5ba/media.mp3?_take=0",
+    "final_url": "https://stitcher2.acast.com/livestitches/8e72a7913635d1a28946ed2feddafa0d.mp3?aid=6aece0eb4cac7bbabb2bd5ba&chid=664394a442f6710013618119&ci=V6QpHvpWX5m_GNgteQNA8mS4te09httNMxkGlgSpjx1oe7MqjD6vNQ%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=9923fe83bbe0a0e9f1cdfb9cc1152cc3&Expires=1794543206&Key-Pair-Id=K38CTQXUSD0VVB&Signature=Rrijwf1pfPs5m-TYyNupwSmHmrkzmDh6nu7oiZyj8GtsPOrbwwJyb4d4APlQg0PevDJFCppUjwhVYzTk4uCVOjgl0-nzym6Lwr0dlq2yhS59OV~7nF3ttgdK4ryTZf40zJtDC1IKis0NuX6MnZWsHH-FrX81ktw8aaXOoeCPTi2nHGWn4r5JMVG3jVxbBCkaYseVquLZV7dR6x9t5Iv8zPQWmwBBHV1Pi4To5aFImIFs5pVDrOsETdNk6l6YCSFd8xz6nBnLsjkhbMfYIbYISLz2CmDhSvtdROcOUL6I411qugEIgBEN~Zex5NwLEVyiYN5BGjvcJCArp37w46f6jw__",
+    "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+    "status": 200,
+    "bytes": 35956436,
+    "seconds": 31.3,
+    "fetched_at": "2026-11-12T16:58:55",
+    "file": "audio/the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell/take0.mp3",
+    "md5": "8b131ede2cbaac745ac6052aa3cddeea",
+    "duration": 2247.26
+   },
+   {
+    "take": 1,
+    "request_url": "https://sphinx.acast.com/p/open/s/664394a442f6710013618119/e/6aece0eb4cac7bbabb2bd5ba/media.mp3?_take=1",
+    "final_url": "https://stitcher2.acast.com/livestitches/b491b33aa4a507620d1c9824d5bbf038.mp3?aid=6aece0eb4cac7bbabb2bd5ba&chid=664394a442f6710013618119&ci=Du4snSYnaq-7CtqrLKSdYewoT2uFV9k3WY_Tfpbq9uAJKtdRxrn8Mg%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=be5c4685a377b681a47790d5f44b66e0&Expires=1794543238&Key-Pair-Id=K38CTQXUSD0VVB&Signature=XpkxBIEFFVJhnznR0c2z87-o8gQZpZKKQmDjG1UcYjprmi9YNF5Y~5hHX0x8idzHFC0YIV~ksVskYYN5yQ~yhOrQONiKQsqaBGc-f~ovddQtV1LccPoiXaloEqkipgfRxbT0Zm1zA0mfNZ4hA9CewRzJsis82yTsxr~xrQItV-1Z4DACsOcPASdjaQUuXt7APxkiDmVwb7uR8bq4AcyYvNRoR40oGu3UWXT-7hVFea2VvbP74Fji2o~OjGPmCC3lhII4mEUzayR1dgpSMXrzIqS-dd7GKLHWiZBSprtlAwUu62Hjzns7HO39GlNaT9w13sA6J8VCa1tb8uilPyVyyg__",
+    "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+    "status": 200,
+    "bytes": 35843237,
+    "seconds": 34.1,
+    "fetched_at": "2026-11-12T16:59:29",
+    "file": "audio/the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell/take1.mp3",
+    "md5": "140e0eb2e60f265394c7093929176e15",
+    "duration": 2240.19
+   },
+   {
+    "take": 2,
+    "request_url": "https://sphinx.acast.com/p/open/s/664394a442f6710013618119/e/6aece0eb4cac7bbabb2bd5ba/media.mp3?_take=2",
+    "final_url": "https://stitcher2.acast.com/livestitches/e1a7ac647c46a4ac816444f32fd31c26.mp3?aid=6aece0eb4cac7bbabb2bd5ba&chid=664394a442f6710013618119&ci=ZgJN-L3j1EMrzHaVnn6U2O7f3D4Czd5OA6u0m4hg6FKzkh-hXvA-ZA%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=8b81dea486edc9f48a7a608194f21250&Expires=1794543272&Key-Pair-Id=K38CTQXUSD0VVB&Signature=foUr70ZL9Bgj6NPRdZkW4XwOlfZT~CfDuZgy21fJeFcuoNBf1sJ6JTh6fVpND1wDNFUzv~IYP5T34la9abvEcHtwKO6LYpOhuI0DcJCv1fmHDeFFQdWU-hvWJpCwG12GsBRqc3yjzEr34nnDDtVnm1l0Gye~iM6-XaLLcganAyk9ccVof4Q4bJy3ABig5TNqhWLgK59G~z2ddAH2A~F55oIYHTqtKH6~-2FQpl7G2e2DArKW16wZQb9e0iX1bfehFb~SAJTyESJNzNVMfAB7li42GIFVSRe~kZSgTIzjxCiSVI0QOSRmCWDx~T7QXLNVkeftRgzs2nSBbU4q43~qTA__",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
+    "status": 200,
+    "bytes": 36069797,
+    "seconds": 31.6,
+    "fetched_at": "2026-11-12T17:00:01",
+    "file": "audio/the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell/take2.mp3",
+    "md5": "28f5c1ca46034228b633a69af5830b70",
+    "duration": 2254.35
+   }
+  ]
+ },
+ "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall": {
+  "episode": {
+   "feed": "Odd Lots",
+   "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/982f5071-765c-403d-969d-ae27003a8d83/podcast.rss",
+   "host": "omnycontent",
+   "title": "What Nvidia's Megaspeed Scandal Is Really All About",
+   "published": "Thu, 12 Nov 2026 09:00:00 +0000",
+   "duration": "3249",
+   "audio": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/UVBrz8bN8aM2Xe47PEPu/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/9390c1d9-8076-46f9-89ef-b500001b8ce0/audio.mp3?utm_source=Podcast&in_playlist=982f5071-765c-403d-969d-ae27003a8d83"
+  },
+  "takes": [
+   {
+    "take": 0,
+    "request_url": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/UVBrz8bN8aM2Xe47PEPu/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/9390c1d9-8076-46f9-89ef-b500001b8ce0/audio.mp3?utm_source=Podcast&in_playlist=982f5071-765c-403d-969d-ae27003a8d83",
+    "final_url": "https://27073.mc.tritondigital.com/OMNY_ODDLOTS_PODCAST_P/media-session/1726ec41-c174-4c38-99ca-69140d49dbd8/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/9390c1d9-8076-46f9-89ef-b500001b8ce0/audio/direct/t1794474097/What_Nvidia's_Megaspeed_Scandal_Is_Really_All_About.mp3?t=1794474097&starship-episode-id=e6f6db3b-1435-42a5-b9e8-64e15809ad15&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&utm_source=Podcast",
+    "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+    "status": 200,
+    "bytes": 61426735,
+    "seconds": 43.1,
+    "fetched_at": "2026-11-12T17:00:45",
+    "file": "audio/odd-lots__what-nvidia-s-megaspeed-scandal-is-reall/take0.mp3",
+    "md5": "7adae99da329a1b66ded7eea9048de97",
+    "duration": 3835.69
+   },
+   {
+    "take": 1,
+    "request_url": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/UVBrz8bN8aM2Xe47PEPu/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/9390c1d9-8076-46f9-89ef-b500001b8ce0/audio.mp3?utm_source=Podcast&in_playlist=982f5071-765c-403d-969d-ae27003a8d83",
+    "final_url": "https://27073.mc.tritondigital.com/OMNY_ODDLOTS_PODCAST_P/media-session/7a6ee9f1-7294-4bdf-804f-7a30dde6b42c/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/9390c1d9-8076-46f9-89ef-b500001b8ce0/audio/direct/t1794474097/What_Nvidia's_Megaspeed_Scandal_Is_Really_All_About.mp3?t=1794474097&starship-episode-id=e6f6db3b-1435-42a5-b9e8-64e15809ad15&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&utm_source=Podcast",
+    "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+    "status": 200,
+    "bytes": 59224928,
+    "seconds": 33.5,
+    "fetched_at": "2026-11-12T17:01:19",
+    "file": "audio/odd-lots__what-nvidia-s-megaspeed-scandal-is-reall/take1.mp3",
+    "md5": "a1f72a4e0f7c770a6fd170017118c180",
+    "duration": 3698.08
+   },
+   {
+    "take": 2,
+    "request_url": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/UVBrz8bN8aM2Xe47PEPu/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/9390c1d9-8076-46f9-89ef-b500001b8ce0/audio.mp3?utm_source=Podcast&in_playlist=982f5071-765c-403d-969d-ae27003a8d83",
+    "final_url": "https://27073.mc.tritondigital.com/OMNY_ODDLOTS_PODCAST_P/media-session/5dd80cb7-6f6c-4a60-b0e0-b3bf690255fa/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/9390c1d9-8076-46f9-89ef-b500001b8ce0/audio/direct/t1794474097/What_Nvidia's_Megaspeed_Scandal_Is_Really_All_About.mp3?t=1794474097&starship-episode-id=e6f6db3b-1435-42a5-b9e8-64e15809ad15&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&utm_source=Podcast",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
+    "status": 200,
+    "bytes": 61660791,
+    "seconds": 36.3,
+    "fetched_at": "2026-11-12T17:01:56",
+    "file": "audio/odd-lots__what-nvidia-s-megaspeed-scandal-is-reall/take2.mp3",
+    "md5": "267a604c726972e85161678af0df7681",
+    "duration": 3850.32
+   }
+  ]
+ },
+ "revisionist-history__from-the-big-dig-mitt-ted": {
+  "episode": {
+   "feed": "Revisionist History",
+   "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/0e563f45-9d14-4ce8-8ef0-ae32006cd7e7/0d4cc74d-fff7-4b89-8818-ae32006cd7f0/podcast.rss",
+   "host": "omnycontent",
+   "title": "From The Big Dig: Mitt & Ted",
+   "published": "Tue, 10 Nov 2026 08:00:00 +0000",
+   "duration": "1652",
+   "audio": "https://pdrl.fm/ebe9fc/podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/0e563f45-9d14-4ce8-8ef0-ae32006cd7e7/5dd35aec-81d4-4bc9-a519-b4ef010b8668/audio.mp3?utm_source=Podcast&in_playlist=0d4cc74d-fff7-4b89-8818-ae32006cd7f0"
+  },
+  "takes": [
+   {
+    "take": 0,
+    "request_url": "https://pdrl.fm/ebe9fc/podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/0e563f45-9d14-4ce8-8ef0-ae32006cd7e7/5dd35aec-81d4-4bc9-a519-b4ef010b8668/audio.mp3?utm_source=Podcast&in_playlist=0d4cc74d-fff7-4b89-8818-ae32006cd7f0",
+    "final_url": "https://26063.mc.tritondigital.com/OMNY_REVISIONISTHISTORY_PODCAST_P/media-session/d5926c42-ba6c-4852-9fd0-7140a0aa753c/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/0e563f45-9d14-4ce8-8ef0-ae32006cd7e7/5dd35aec-81d4-4bc9-a519-b4ef010b8668/audio/direct/t1794297678/From_The_Big_Dig_Mitt_Ted.mp3?t=1794297678&starship-episode-id=34ddebd6-5bfd-4c03-b723-b5e2ce1c48f0&in_playlist=0d4cc74d-fff7-4b89-8818-ae32006cd7f0&utm_source=Podcast",
+    "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+    "status": 200,
+    "bytes": 31612985,
+    "seconds": 21.6,
+    "fetched_at": "2026-11-12T17:02:18",
+    "file": "audio/revisionist-history__from-the-big-dig-mitt-ted/take0.mp3",
+    "md5": "8901c6fbd467b7fcc39e9992f3ecc55f",
+    "duration": 1972.3
+   },
+   {
+    "take": 1,
+    "request_url": "https://pdrl.fm/ebe9fc/podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/0e563f45-9d14-4ce8-8ef0-ae32006cd7e7/5dd35aec-81d4-4bc9-a519-b4ef010b8668/audio.mp3?utm_source=Podcast&in_playlist=0d4cc74d-fff7-4b89-8818-ae32006cd7f0",
+    "final_url": "https://26063.mc.tritondigital.com/OMNY_REVISIONISTHISTORY_PODCAST_P/media-session/0078f1f4-bd4d-4260-9c01-2fab605c0ea1/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/0e563f45-9d14-4ce8-8ef0-ae32006cd7e7/5dd35aec-81d4-4bc9-a519-b4ef010b8668/audio/direct/t1794297678/From_The_Big_Dig_Mitt_Ted.mp3?t=1794297678&starship-episode-id=34ddebd6-5bfd-4c03-b723-b5e2ce1c48f0&in_playlist=0d4cc74d-fff7-4b89-8818-ae32006cd7f0&utm_source=Podcast",
+    "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+    "status": 200,
+    "bytes": 31853729,
+    "seconds": 21.6,
+    "fetched_at": "2026-11-12T17:02:41",
+    "file": "audio/revisionist-history__from-the-big-dig-mitt-ted/take1.mp3",
+    "md5": "36ad7404122d9306ddeb2824b57e9dff",
+    "duration": 1987.34
+   },
+   {
+    "take": 2,
+    "request_url": "https://pdrl.fm/ebe9fc/podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/0e563f45-9d14-4ce8-8ef0-ae32006cd7e7/5dd35aec-81d4-4bc9-a519-b4ef010b8668/audio.mp3?utm_source=Podcast&in_playlist=0d4cc74d-fff7-4b89-8818-ae32006cd7f0",
+    "final_url": "https://26063.mc.tritondigital.com/OMNY_REVISIONISTHISTORY_PODCAST_P/media-session/f70dad5c-f209-44a5-9daf-1b6d507f2fd5/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/0e563f45-9d14-4ce8-8ef0-ae32006cd7e7/5dd35aec-81d4-4bc9-a519-b4ef010b8668/audio/direct/t1794297678/From_The_Big_Dig_Mitt_Ted.mp3?t=1794297678&starship-episode-id=34ddebd6-5bfd-4c03-b723-b5e2ce1c48f0&in_playlist=0d4cc74d-fff7-4b89-8818-ae32006cd7f0&utm_source=Podcast",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
+    "status": 200,
+    "bytes": 32212756,
+    "seconds": 20.7,
+    "fetched_at": "2026-11-12T17:03:02",
+    "file": "audio/revisionist-history__from-the-big-dig-mitt-ted/take2.mp3",
+    "md5": "58ee054d74229280247487deeaef303e",
+    "duration": 2009.78
+   }
+  ]
+ },
+ "the-rest-is-politics__what-living-under-isis-taught-me-about-e": {
+  "episode": {
+   "feed": "The Rest Is Politics",
+   "feed_url": "https://feeds.megaphone.fm/GLT9190936013",
+   "host": "megaphone",
+   "title": "What Living Under ISIS Taught Me About Extremism",
+   "published": "Fri, 13 Nov 2026 00:05:00 -0000",
+   "duration": "902",
+   "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT5580238684.mp3"
+  },
+  "takes": [
+   {
+    "take": 0,
+    "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT5580238684.mp3?_take=0",
+    "final_url": "https://dcs-cached.megaphone.fm/GLT5580238684.mp3?key=874c0f87db77e6b9e202a13c5725b75f&request_event_id=972f177a-30ff-491e-861b-58811022abc2&session_id=cd2620b3-3c84-4564-9cd4-2bcd21582eff&timetoken=1794539141_5213ECBFBADD6878B61DE2A7D20634EC",
+    "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+    "status": 200,
+    "bytes": 36178248,
+    "seconds": 17.1,
+    "fetched_at": "2026-11-12T17:05:56",
+    "file": "audio/the-rest-is-politics__what-living-under-isis-taught-me-about-e/take0.mp3",
+    "md5": "eaf8c38083b5a4b15aae3d94b572b621",
+    "duration": 902.97
+   },
+   {
+    "take": 1,
+    "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT5580238684.mp3?_take=1",
+    "final_url": "https://dcs-cached.megaphone.fm/GLT5580238684.mp3?key=874c0f87db77e6b9e202a13c5725b75f&request_event_id=70fc756f-eb24-4824-8b8c-b117d085de4f&session_id=fc22256d-3ea0-4be7-a3bc-da26ee285fa0&timetoken=1794539158_899756553A347163DFC9B6FAA7B57F69",
+    "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+    "status": 200,
+    "bytes": 36178248,
+    "seconds": 14.8,
+    "fetched_at": "2026-11-12T17:06:12",
+    "file": "audio/the-rest-is-politics__what-living-under-isis-taught-me-about-e/take1.mp3",
+    "md5": "eaf8c38083b5a4b15aae3d94b572b621",
+    "duration": 902.97
+   },
+   {
+    "take": 2,
+    "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT5580238684.mp3?_take=2",
+    "final_url": "https://dcs-cached.megaphone.fm/GLT5580238684.mp3?key=874c0f87db77e6b9e202a13c5725b75f&request_event_id=b9a00a28-2912-4216-83b3-3f29b5780900&session_id=3038edaa-d4e4-421e-8031-c781a3e5e372&timetoken=1794539173_9441FE753B6BB31C02F7B6E49ADC2D69",
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
+    "status": 200,
+    "bytes": 36178248,
+    "seconds": 16.1,
+    "fetched_at": "2026-11-12T17:06:28",
+    "file": "audio/the-rest-is-politics__what-living-under-isis-taught-me-about-e/take2.mp3",
+    "md5": "eaf8c38083b5a4b15aae3d94b572b621",
+    "duration": 902.97
+   }
+  ]
+ }
+}

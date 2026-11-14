@@ -47,6 +47,8 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Text
+import androidx.compose.material.TextButton
 import androidx.compose.material3.adaptive.currentWindowAdaptiveInfoV2
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -66,10 +68,12 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalWindowInfo
 import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -834,6 +838,10 @@ class PlayerHeaderFragment :
                     Spacer(
                         modifier = Modifier.height(8.dp),
                     )
+                    SkipAdButton(
+                        headerData = headerData,
+                        playerColors = playerColors,
+                    )
                     PlayerSeekBar(
                         headerData = headerData,
                         playerColors = playerColors,
@@ -1249,6 +1257,27 @@ class PlayerHeaderFragment :
     }
 
     @Composable
+    private fun SkipAdButton(
+        headerData: PlayerViewModel.PlayerHeader,
+        playerColors: PlayerColors,
+    ) {
+        val activeAd = remember(headerData.adSegments, headerData.positionMs) {
+            headerData.adSegments.firstOrNull { segment ->
+                headerData.positionMs.milliseconds in segment
+            }
+        }
+        AnimatedVisibility(visible = activeAd != null) {
+            TextButton(onClick = { playbackManager.skipCurrentAd() }) {
+                Text(
+                    text = stringResource(LR.string.player_skip_ad),
+                    color = playerColors.highlight01,
+                    fontSize = 13.sp,
+                )
+            }
+        }
+    }
+
+    @Composable
     private fun PlayerSeekBar(
         headerData: PlayerViewModel.PlayerHeader,
         playerColors: PlayerColors,
@@ -1260,6 +1289,7 @@ class PlayerHeaderFragment :
             adjustPlaybackDuration = headerData.adjustRemainingTimeDuration,
             playbackSpeed = headerData.playbackEffects.playbackSpeed,
             chapters = headerData.chapters,
+            adSegments = headerData.adSegments,
             isBuffering = headerData.isBuffering,
             bufferedUpTo = headerData.bufferedUpToMs.milliseconds,
             playerColors = playerColors,

@@ -1,0 +1,4549 @@
+{
+ "duration": 3978.84,
+ "language": "en",
+ "segments": [
+  {
+   "start": 1.71,
+   "end": 5.83,
+   "text": "from long-lost Viking ships and kings buried in unexpected places,"
+  },
+  {
+   "start": 5.95,
+   "end": 12.55,
+   "text": "to tales of murder, power, faith, and the lives of ordinary people across medieval Europe and beyond."
+  },
+  {
+   "start": 13.03,
+   "end": 21.27,
+   "text": "Join me, Matt Lewis, Dr. Ellen Ayanaga, and some of the world's leading historians as we bring history's most fascinating stories to life,"
+  },
+  {
+   "start": 21.55,
+   "end": 23.11,
+   "text": "only on HistoryHit."
+  },
+  {
+   "start": 23.11,
+   "end": 30.03,
+   "text": "With your subscription, you'll unlock hundreds of hours of exclusive documentaries with a brand new release every week exploring"
+  },
+  {
+   "start": 30.03,
+   "end": 33.37,
+   "text": "everything from the ancient world to World War II."
+  },
+  {
+   "start": 33.37,
+   "end": 38.37,
+   "text": "Just visit historyhit.com forward slash subscribe."
+  },
+  {
+   "start": 38.37,
+   "end": 44.92,
+   "text": "Verizon knows that holiday math can be complicated."
+  },
+  {
+   "start": 44.92,
+   "end": 46.82,
+   "text": "Okay, let's see, we got the four kids."
+  },
+  {
+   "start": 46.82,
+   "end": 48.66,
+   "text": "Four gifts each."
+  },
+  {
+   "start": 48.66,
+   "end": 51.06,
+   "text": "Six teacher gifts?"
+  },
+  {
+   "start": 51.06,
+   "end": 52.86,
+   "text": "Wait, oh, what do we get and Sandy?"
+  },
+  {
+   "start": 52.86,
+   "end": 54.06,
+   "text": "And the dogs."
+  },
+  {
+   "start": 54.06,
+   "end": 55.8,
+   "text": "Oh, can't forget the dogs."
+  },
+  {
+   "start": 55.8,
+   "end": 57.06,
+   "text": "Know what doesn't need math?"
+  },
+  {
+   "start": 57.06,
+   "end": 58.74,
+   "text": "Simplicity plan from Verizon."
+  },
+  {
+   "start": 58.74,
+   "end": 60.3,
+   "text": "One plan, one price."
+  },
+  {
+   "start": 60.3,
+   "end": 63.1,
+   "text": "Just $30 a line per month for you or the whole family."
+  },
+  {
+   "start": 63.1,
+   "end": 65.1,
+   "text": "The holidays are complicated."
+  },
+  {
+   "start": 65.1,
+   "end": 68.1,
+   "text": "Shopping our best deals and switching to Verizon is simple."
+  },
+  {
+   "start": 68.1,
+   "end": 72.1,
+   "text": "For new customers, $30 per line includes auto pay and switch discount, additional taxes fees and terms apply."
+  },
+  {
+   "start": 72.1,
+   "end": 76.1,
+   "text": "This message is brought to you by today's sponsor, Walden University."
+  },
+  {
+   "start": 76.1,
+   "end": 78.1,
+   "text": "Set a course for change."
+  },
+  {
+   "start": 78.1,
+   "end": 83.1,
+   "text": "Now is the time to make a real change in your life, career and community."
+  },
+  {
+   "start": 83.1,
+   "end": 87.1,
+   "text": "At Walden University, we give you the support and flexibility to get the W."
+  },
+  {
+   "start": 87.1,
+   "end": 91.1,
+   "text": "Walden's online programs are designed for working professionals like you."
+  },
+  {
+   "start": 91.1,
+   "end": 95.78,
+   "text": "You'll gain hands-on skills to take on real-world challenges and succeed."
+  },
+  {
+   "start": 95.78,
+   "end": 99.26,
+   "text": "Your future is waiting and Walden is here to help you achieve it."
+  },
+  {
+   "start": 99.26,
+   "end": 101.66,
+   "text": "Take the first step to make your impact."
+  },
+  {
+   "start": 101.66,
+   "end": 103.66,
+   "text": "Visit waldenu.edu."
+  },
+  {
+   "start": 103.66,
+   "end": 105.16,
+   "text": "Walden University."
+  },
+  {
+   "start": 105.16,
+   "end": 106.46,
+   "text": "Set a course for change."
+  },
+  {
+   "start": 106.46,
+   "end": 109.06,
+   "text": "Certified to operate by Chev."
+  },
+  {
+   "start": 109.06,
+   "end": 112.5,
+   "text": "Guessing is for game shows, not your business."
+  },
+  {
+   "start": 112.5,
+   "end": 117.1,
+   "text": "Workday is the enterprise AI platform for HR, Finance and IT."
+  },
+  {
+   "start": 117.1,
+   "end": 122.86,
+   "text": "AI grounded in your context to get work done and done right. It's a new workday."
+  },
+  {
+   "start": 151.67,
+   "end": 158.47,
+   "text": "plots and murders that tell us who we really were. And how we got here."
+  },
+  {
+   "start": 158.47,
+   "end": 171.18,
+   "text": "Who were the Vikings, really? When I say the word Viking, the image that probably comes"
+  },
+  {
+   "start": 171.18,
+   "end": 178.42,
+   "text": "to mind immediately is that of bloodthirsty, axe-wielding pirates who descend without warning"
+  },
+  {
+   "start": 178.42,
+   "end": 186.42,
+   "text": "from the sea, pillaging communities and burning monasteries. But perhaps we've been looking"
+  },
+  {
+   "start": 186.42,
+   "end": 190.03,
+   "text": "at the wrong people all along."
+  },
+  {
+   "start": 190.03,
+   "end": 194.67,
+   "text": "What if those fearsome warriors were only a tiny fraction"
+  },
+  {
+   "start": 194.67,
+   "end": 199.67,
+   "text": "of a much bigger, stranger, and far more fascinating world?"
+  },
+  {
+   "start": 200.88,
+   "end": 203.72,
+   "text": "Was there ever such a thing as a Viking people"
+  },
+  {
+   "start": 203.72,
+   "end": 206.78,
+   "text": "as we've come to know them?"
+  },
+  {
+   "start": 206.78,
+   "end": 210.12,
+   "text": "My guest today is distinguished professor Neil Price,"
+  },
+  {
+   "start": 210.12,
+   "end": 214.44,
+   "text": "Chair of Archeology at Uppsala University in Sweden."
+  },
+  {
+   "start": 214.44,
+   "end": 219.1,
+   "text": "He has spent decades literally excavating the Viking world"
+  },
+  {
+   "start": 219.1,
+   "end": 223.82,
+   "text": "and in his remarkable new book, The Sea King and the Sorceress,"
+  },
+  {
+   "start": 223.82,
+   "end": 227.58,
+   "text": "he does something that few historians have attempted,"
+  },
+  {
+   "start": 227.58,
+   "end": 231.34,
+   "text": "rather than writing the story of Viking conquests."
+  },
+  {
+   "start": 231.34,
+   "end": 235.77,
+   "text": "He dismantles almost every cliche."
+  },
+  {
+   "start": 235.77,
+   "end": 237.45,
+   "text": "What emerges is a civilization"
+  },
+  {
+   "start": 237.45,
+   "end": 240.45,
+   "text": "that is startlingly cosmopolitan,"
+  },
+  {
+   "start": 240.45,
+   "end": 244.41,
+   "text": "connected across Europe, Asia, and the North Atlantic."
+  },
+  {
+   "start": 244.41,
+   "end": 248.45,
+   "text": "And it's shaped by trade as much as warfare,"
+  },
+  {
+   "start": 248.45,
+   "end": 250.29,
+   "text": "by household as much as kings,"
+  },
+  {
+   "start": 250.29,
+   "end": 254.26,
+   "text": "and by ritual as much as politics."
+  },
+  {
+   "start": 254.26,
+   "end": 256.26,
+   "text": "In fact, he argues that we should stop thinking"
+  },
+  {
+   "start": 256.26,
+   "end": 261.09,
+   "text": "about the Vikings as a single people all together."
+  },
+  {
+   "start": 261.09,
+   "end": 264.74,
+   "text": "Instead, his research brings to life individuals."
+  },
+  {
+   "start": 264.74,
+   "end": 268.46,
+   "text": "People who loved and grieved, farmed and fought,"
+  },
+  {
+   "start": 268.46,
+   "end": 271.54,
+   "text": "traded and traveled worshipped old gods"
+  },
+  {
+   "start": 271.54,
+   "end": 273.5,
+   "text": "and embraced new faiths."
+  },
+  {
+   "start": 273.5,
+   "end": 275.66,
+   "text": "They crossed the boundaries of language, religion,"
+  },
+  {
+   "start": 275.66,
+   "end": 278.3,
+   "text": "identity and geography."
+  },
+  {
+   "start": 278.3,
+   "end": 281.54,
+   "text": "And in doing so, they are continually reinventing"
+  },
+  {
+   "start": 281.54,
+   "end": 284.9,
+   "text": "what it means to be Norse."
+  },
+  {
+   "start": 284.9,
+   "end": 287.5,
+   "text": "So today we're traveling across a world"
+  },
+  {
+   "start": 287.5,
+   "end": 290.06,
+   "text": "that stretched from the forests of Scandinavia"
+  },
+  {
+   "start": 290.06,
+   "end": 292.51,
+   "text": "to the markets of Baghdad,"
+  },
+  {
+   "start": 292.51,
+   "end": 293.87,
+   "text": "from the court of Muslim Spain"
+  },
+  {
+   "start": 293.87,
+   "end": 296.68,
+   "text": "to the frozen coasts of Greenland,"
+  },
+  {
+   "start": 296.68,
+   "end": 299.6,
+   "text": "to discover the extraordinary men and women"
+  },
+  {
+   "start": 299.6,
+   "end": 302.4,
+   "text": "who have been hidden for a thousand years"
+  },
+  {
+   "start": 302.4,
+   "end": 307.8,
+   "text": "behind one of history's most enduring stereotypes."
+  },
+  {
+   "start": 307.8,
+   "end": 309.52,
+   "text": "Neil, welcome to Gone Medieval."
+  },
+  {
+   "start": 309.52,
+   "end": 310.89,
+   "text": "Thank you."
+  },
+  {
+   "start": 310.89,
+   "end": 312.85,
+   "text": "I'm really excited to talk to you today"
+  },
+  {
+   "start": 312.85,
+   "end": 316.73,
+   "text": "because I think this is a really important book"
+  },
+  {
+   "start": 316.73,
+   "end": 320.45,
+   "text": "that at least for me, it's really expanded"
+  },
+  {
+   "start": 320.45,
+   "end": 322.97,
+   "text": "my understanding of the way we should think"
+  },
+  {
+   "start": 322.97,
+   "end": 324.81,
+   "text": "about the Norse world."
+  },
+  {
+   "start": 324.81,
+   "end": 327.05,
+   "text": "And I mean, we can begin at the beginning"
+  },
+  {
+   "start": 327.05,
+   "end": 330.29,
+   "text": "and with something that I think is incredibly important,"
+  },
+  {
+   "start": 330.29,
+   "end": 335.24,
+   "text": "which is you say that there never were the Vikings"
+  },
+  {
+   "start": 335.24,
+   "end": 336.32,
+   "text": "at the beginning of the book,"
+  },
+  {
+   "start": 336.32,
+   "end": 337.52,
+   "text": "which is something I agree with."
+  },
+  {
+   "start": 337.52,
+   "end": 342.58,
+   "text": "But I think that we could start by thinking about"
+  },
+  {
+   "start": 343.46,
+   "end": 349.54,
+   "text": "But why have we been having this sort of misunderstanding about this culture for the"
+  },
+  {
+   "start": 349.54,
+   "end": 351.78,
+   "text": "last few centuries?"
+  },
+  {
+   "start": 351.78,
+   "end": 356.94,
+   "text": "What is it about us that really has wanted everything to boil down to raiders?"
+  },
+  {
+   "start": 356.94,
+   "end": 359.9,
+   "text": "It's a good question and a difficult question."
+  },
+  {
+   "start": 359.9,
+   "end": 364.98,
+   "text": "I think the short answer is that if there was a useful alternative word for the peoples"
+  },
+  {
+   "start": 364.98,
+   "end": 369.9,
+   "text": "that we really shouldn't call the Vikings, we'd all have been using it for years."
+  },
+  {
+   "start": 369.9,
+   "end": 376.46,
+   "text": "there isn't one, it's hard to say what they would have called themselves. They'd have identified by"
+  },
+  {
+   "start": 377.18,
+   "end": 385.34,
+   "text": "their local region, maybe by who their local ruler was, or their family, or their farm,"
+  },
+  {
+   "start": 385.34,
+   "end": 391.1,
+   "text": "all kinds of things, often at the same time. But there isn't really a collective word. Even"
+  },
+  {
+   "start": 391.1,
+   "end": 397.26,
+   "text": "things like Norwegians or Swedes or Danes don't mean quite the same at the time as they do now."
+  },
+  {
+   "start": 397.26,
+   "end": 407.26,
+   "text": "And this idea that everybody is a Viking has come in in the last of 200 years, really, since the early 1800s."
+  },
+  {
+   "start": 407.26,
+   "end": 414.26,
+   "text": "And it's partly popularised by things like Wagner, his operas, this idea of a heroic past."
+  },
+  {
+   "start": 414.26,
+   "end": 419.26,
+   "text": "And there's several different European countries, especially in the northwest of Europe,"
+  },
+  {
+   "start": 419.26,
+   "end": 424.26,
+   "text": "started to form their own identities in the late 18th, 19th century."
+  },
+  {
+   "start": 424.26,
+   "end": 431.14,
+   "text": "They reached to this kind of semi-mythical past and Vikings became a sort of general label"
+  },
+  {
+   "start": 431.14,
+   "end": 438.02,
+   "text": "for those people. But the one thing it never ever was is the name of a culture or a people."
+  },
+  {
+   "start": 438.02,
+   "end": 442.34,
+   "text": "So it's kind of weird really because we, I mean the Vikings are one of the very few cultures in"
+  },
+  {
+   "start": 442.34,
+   "end": 449.62,
+   "text": "world history that we call with a word that the people of the time certainly wouldn't have identified"
+  },
+  {
+   "start": 449.62,
+   "end": 456.74,
+   "text": "with or maybe not even recognized. Viking itself means pirate, really. It's a sort of job description,"
+  },
+  {
+   "start": 457.38,
+   "end": 463.54,
+   "text": "so really not the way we use it. On the other hand, it's very, very hard to get rid of."
+  },
+  {
+   "start": 463.54,
+   "end": 468.58,
+   "text": "I think this is an incredibly important point about how Viking is essentially a job description."
+  },
+  {
+   "start": 468.58,
+   "end": 473.86,
+   "text": "And indeed, this is something that you talk about in the book, that Viking art, that just"
+  },
+  {
+   "start": 473.86,
+   "end": 478.9,
+   "text": "means someone who's involved in maritime raiding. And that's not an identity necessarily,"
+  },
+  {
+   "start": 478.9,
+   "end": 483.86,
+   "text": "and it's something that one might have done for a while and then you sort of go back to your farm."
+  },
+  {
+   "start": 484.74,
+   "end": 492.71,
+   "text": "And I think this is quite interesting because we're trying to sort of frame out an entire"
+  },
+  {
+   "start": 492.71,
+   "end": 497.43,
+   "text": "identity based on something that someone might have done for a couple of seasons for a few years."
+  },
+  {
+   "start": 498.15,
+   "end": 506.29,
+   "text": "And I think that distinction is an incredibly important one. Job is not necessarily identity"
+  },
+  {
+   "start": 506.29,
+   "end": 511.25,
+   "text": "to these people and it certainly isn't if you did it for a few years. I used to work in sushi"
+  },
+  {
+   "start": 511.25,
+   "end": 517.01,
+   "text": "restaurants and I don't think that's the way that people would necessarily think about me now."
+  },
+  {
+   "start": 517.73,
+   "end": 525.41,
+   "text": "We also tend to have a monolithic view even of individuals. So when we excavate a burial,"
+  },
+  {
+   "start": 525.41,
+   "end": 531.09,
+   "text": "for example, and we try and work out what kind of person this dead individual had been,"
+  },
+  {
+   "start": 531.09,
+   "end": 534.53,
+   "text": "We're very bad at accessing their whole life course."
+  },
+  {
+   "start": 534.53,
+   "end": 538.21,
+   "text": "So if you can imagine if somebody was a teenage raider,"
+  },
+  {
+   "start": 539.28,
+   "end": 543.28,
+   "text": "but they lived to be 65, were they necessarily buried with all the gear?"
+  },
+  {
+   "start": 544.0,
+   "end": 548.88,
+   "text": "So there's that as well. We need to think of, just as you said with your"
+  },
+  {
+   "start": 548.88,
+   "end": 554.08,
+   "text": "sushi career, that we do other things, right? I mean, we go on in life."
+  },
+  {
+   "start": 554.08,
+   "end": 556.08,
+   "text": "And they do it in the past as well."
+  },
+  {
+   "start": 556.08,
+   "end": 561.36,
+   "text": "I think that one of the strengths of your work here is that you do have this"
+  },
+  {
+   "start": 561.36,
+   "end": 566.62,
+   "text": "incredible archaeological information, which is, you know, as historians, this is the trouble"
+  },
+  {
+   "start": 566.62,
+   "end": 571.16,
+   "text": "with us as, you know, historians, we work with texts, and then all you can do is analyze"
+  },
+  {
+   "start": 571.16,
+   "end": 577.36,
+   "text": "the text, and we're really dependent on archaeologists to flesh that out for us, especially in this"
+  },
+  {
+   "start": 577.36,
+   "end": 578.36,
+   "text": "period."
+  },
+  {
+   "start": 578.36,
+   "end": 583.4,
+   "text": "So, what would you say it is that, especially, you know, you've done a lot of works specifically"
+  },
+  {
+   "start": 583.4,
+   "end": 585.96,
+   "text": "on excavating graves."
+  },
+  {
+   "start": 585.96,
+   "end": 589.32,
+   "text": "What is it that they tell us that written works are chronicles?"
+  },
+  {
+   "start": 589.32,
+   "end": 591.72,
+   "text": "like this simply catch tell us."
+  },
+  {
+   "start": 591.72,
+   "end": 597.52,
+   "text": "I think above all it's that we're looking at individuals every time we excavate a grave."
+  },
+  {
+   "start": 597.52,
+   "end": 604.16,
+   "text": "In the past archaeologists would make a plan drawing and write a description and then this"
+  },
+  {
+   "start": 604.16,
+   "end": 607.76,
+   "text": "would be published almost like a kind of catalogue, like a list."
+  },
+  {
+   "start": 607.76,
+   "end": 612.48,
+   "text": "Here is a dead person and here's a list of stuff that was in the grave."
+  },
+  {
+   "start": 612.48,
+   "end": 619.28,
+   "text": "But now we look at burials for what they really were, which is people looking after the body"
+  },
+  {
+   "start": 619.28,
+   "end": 625.44,
+   "text": "of someone that they knew with all the different range of emotions that that brings up. Everything"
+  },
+  {
+   "start": 625.44,
+   "end": 631.44,
+   "text": "that's in those graves is in there for a reason. So we get down to that really, really personal"
+  },
+  {
+   "start": 631.44,
+   "end": 638.8,
+   "text": "level. It's this grave for this person in this place on this day at this time. And it gives"
+  },
+  {
+   "start": 638.8,
+   "end": 645.36,
+   "text": "us this much finer grain view of the people of the Viking Age when you look at these"
+  },
+  {
+   "start": 645.36,
+   "end": 651.16,
+   "text": "barriers collectively than a text which will probably have a quite different agenda, a"
+  },
+  {
+   "start": 651.16,
+   "end": 655.8,
+   "text": "different reason for relating the stories that it does."
+  },
+  {
+   "start": 655.8,
+   "end": 663.02,
+   "text": "I find this to be a really interesting way of thinking about graves because we have the"
+  },
+  {
+   "start": 663.02,
+   "end": 667.48,
+   "text": "possibility of getting a real snapshot of what this person's life was like when they're"
+  },
+  {
+   "start": 667.48,
+   "end": 674.84,
+   "text": "buried, but also it seems that we do feel that perhaps offerings accumulated over time"
+  },
+  {
+   "start": 674.84,
+   "end": 680.6,
+   "text": "at graves. Sometimes you can have burial chambers reopen, things like this. So what"
+  },
+  {
+   "start": 680.6,
+   "end": 684.96,
+   "text": "does that sort of tell us about the relationship between living people and their dead within"
+  },
+  {
+   "start": 684.96,
+   "end": 687.08,
+   "text": "this world?"
+  },
+  {
+   "start": 687.08,
+   "end": 692.92,
+   "text": "Quite a lot, I think. It's not just a matter of burials being reused or reopened. The"
+  },
+  {
+   "start": 692.92,
+   "end": 699.28,
+   "text": "original funeral itself could take days, even months. So some of the graves are open for"
+  },
+  {
+   "start": 699.28,
+   "end": 705.88,
+   "text": "some time, even when they're burying the original occupant. So they're kind of like stages."
+  },
+  {
+   "start": 705.88,
+   "end": 710.4,
+   "text": "where performance is enacted, people are coming and going and bringing things"
+  },
+  {
+   "start": 710.4,
+   "end": 712.32,
+   "text": "and probably taking them away as well."
+  },
+  {
+   "start": 712.32,
+   "end": 714.84,
+   "text": "And in some cases that's going on for months."
+  },
+  {
+   "start": 714.84,
+   "end": 720.56,
+   "text": "And then as you say, even when the burial is sort of, as we would see it, sort of finished or done,"
+  },
+  {
+   "start": 720.56,
+   "end": 723.6,
+   "text": "they've built their burial mound, they've gone away."
+  },
+  {
+   "start": 723.6,
+   "end": 728.08,
+   "text": "Sometimes months later, years later, maybe a century later,"
+  },
+  {
+   "start": 728.08,
+   "end": 734.24,
+   "text": "people will come and do more things at that gravesite, including burying other people."
+  },
+  {
+   "start": 734.24,
+   "end": 744.0,
+   "text": "And it's clear that in some way or another there's a memory of who is there, what kind of person they were, who they were in their society."
+  },
+  {
+   "start": 744.0,
+   "end": 750.72,
+   "text": "And that memory is really important because the Vikings are not a culture that used books."
+  },
+  {
+   "start": 750.72,
+   "end": 762.24,
+   "text": "They didn't have conventional record keeping. They had runes, runic inscriptions, but they're mainly used either for kind of the equivalent of post-it notes where you scribble something on a bit of wood,"
+  },
+  {
+   "start": 762.24,
+   "end": 768.64,
+   "text": "or for runic memorials. There's no history books for the Vikings, which means that their histories"
+  },
+  {
+   "start": 769.2,
+   "end": 774.56,
+   "text": "are remembered. They're oral, they're spoken. And I think one of the things we're seeing with"
+  },
+  {
+   "start": 774.56,
+   "end": 782.96,
+   "text": "burials is that they're kind of memory machines. They're designed to remember each of those people"
+  },
+  {
+   "start": 782.96,
+   "end": 786.96,
+   "text": "so that there would be something left behind after they were gone."
+  },
+  {
+   "start": 786.96,
+   "end": 793.16,
+   "text": "I absolutely love that term and will be tucking it away in my back pocket to use now. Thank you for memory machine"
+  },
+  {
+   "start": 793.48,
+   "end": 795.48,
+   "text": "That's really wonderful"
+  },
+  {
+   "start": 795.48,
+   "end": 799.44,
+   "text": "but I was incredibly interested in particular in the"
+  },
+  {
+   "start": 800.24,
+   "end": 808.08,
+   "text": "Salmships that you speak about because this really does seem in in terms of both of burials in terms of ships and"
+  },
+  {
+   "start": 808.96,
+   "end": 814.8,
+   "text": "Just in terms of how we think about Viking history like this. This is something that absolutely"
+  },
+  {
+   "start": 814.8,
+   "end": 821.92,
+   "text": "rewrites our understanding of the Viking Age and when it began."
+  },
+  {
+   "start": 821.92,
+   "end": 825.26,
+   "text": "Can you introduce us to these ships?"
+  },
+  {
+   "start": 825.26,
+   "end": 826.26,
+   "text": "Not in Scandinavia."
+  },
+  {
+   "start": 826.26,
+   "end": 831.52,
+   "text": "We're going across the Baltic to an island called Saramar, which is off the coast of"
+  },
+  {
+   "start": 831.52,
+   "end": 833.32,
+   "text": "Estonia."
+  },
+  {
+   "start": 833.32,
+   "end": 840.88,
+   "text": "And back in 2008, some road workers were digging a cable trench and they disturbed a boat burial."
+  },
+  {
+   "start": 840.88,
+   "end": 842.88,
+   "text": "It took a while to realize that that's what it was,"
+  },
+  {
+   "start": 842.88,
+   "end": 845.32,
+   "text": "but it's a really remarkable find."
+  },
+  {
+   "start": 845.32,
+   "end": 847.28,
+   "text": "And right from the beginning,"
+  },
+  {
+   "start": 847.28,
+   "end": 850.44,
+   "text": "people like me were getting very excited about this"
+  },
+  {
+   "start": 850.44,
+   "end": 852.32,
+   "text": "because until that point,"
+  },
+  {
+   "start": 852.32,
+   "end": 855.0,
+   "text": "the largest number of individuals we'd found"
+  },
+  {
+   "start": 855.0,
+   "end": 857.52,
+   "text": "in a boat grave was four."
+  },
+  {
+   "start": 857.52,
+   "end": 861.68,
+   "text": "And there were seven later understood to be eight people"
+  },
+  {
+   "start": 861.68,
+   "end": 863.12,
+   "text": "in this grave."
+  },
+  {
+   "start": 863.12,
+   "end": 865.12,
+   "text": "And they'd been buried, they're all men,"
+  },
+  {
+   "start": 865.12,
+   "end": 867.64,
+   "text": "and they'd been buried kind of sitting up"
+  },
+  {
+   "start": 867.64,
+   "end": 870.76,
+   "text": "at the ore positions of this rowing boat."
+  },
+  {
+   "start": 870.76,
+   "end": 873.16,
+   "text": "and then lots of stuff buried inside it."
+  },
+  {
+   "start": 873.16,
+   "end": 875.98,
+   "text": "So this was unusual and interesting in itself."
+  },
+  {
+   "start": 875.98,
+   "end": 877.2,
+   "text": "But then a few years later,"
+  },
+  {
+   "start": 877.2,
+   "end": 880.6,
+   "text": "when the same road workers were extending their cable trench,"
+  },
+  {
+   "start": 880.6,
+   "end": 883.26,
+   "text": "they found a much bigger, not just a boat,"
+  },
+  {
+   "start": 883.26,
+   "end": 886.06,
+   "text": "an actual ship, an ocean-going ship."
+  },
+  {
+   "start": 886.06,
+   "end": 890.34,
+   "text": "And inside that were 34 dead men."
+  },
+  {
+   "start": 890.34,
+   "end": 892.22,
+   "text": "So right there, just those numbers,"
+  },
+  {
+   "start": 892.22,
+   "end": 894.76,
+   "text": "this is something that had never ever been seen"
+  },
+  {
+   "start": 894.76,
+   "end": 897.2,
+   "text": "in Viking archeology before."
+  },
+  {
+   "start": 897.2,
+   "end": 900.14,
+   "text": "The finds date from the very beginning of the Viking Age,"
+  },
+  {
+   "start": 900.14,
+   "end": 906.18,
+   "text": "about 750 or so. And there's a big question of what is it that we're seeing in these"
+  },
+  {
+   "start": 906.18,
+   "end": 907.18,
+   "text": "burials?"
+  },
+  {
+   "start": 907.18,
+   "end": 913.38,
+   "text": "For me, it's incredibly exciting that there's this many people in these barriers. But from"
+  },
+  {
+   "start": 913.38,
+   "end": 920.03,
+   "text": "I think an archaeological perspective, it's the stuff that's in there that's also quite"
+  },
+  {
+   "start": 920.03,
+   "end": 924.67,
+   "text": "telling because it seems like they have a lot of aristocratic goods. They have very"
+  },
+  {
+   "start": 924.67,
+   "end": 928.39,
+   "text": "nice things in these ships as well."
+  },
+  {
+   "start": 928.39,
+   "end": 933.74,
+   "text": "Yeah, it's the stuff and the circumstances and the circumstances and the stuff for that"
+  },
+  {
+   "start": 933.74,
+   "end": 940.1,
+   "text": "matter are violent. Almost all of the men in these two boats have died fighting. They"
+  },
+  {
+   "start": 940.1,
+   "end": 946.34,
+   "text": "are covered in very serious weapon injuries. And particularly in the larger boat, the one"
+  },
+  {
+   "start": 946.34,
+   "end": 952.94,
+   "text": "with the 34 men, there are so many swords. There's more swords than people, which is"
+  },
+  {
+   "start": 952.94,
+   "end": 958.96,
+   "text": "really unusual. The weapons are decorated with gilding and jewels and things. One of"
+  },
+  {
+   "start": 958.96,
+   "end": 965.12,
+   "text": "them has a design in gold in the blade on the blade. It's a really remarkable thing."
+  },
+  {
+   "start": 965.12,
+   "end": 970.56,
+   "text": "And if we're trying to find an explanation for this, it really does seem like this is"
+  },
+  {
+   "start": 970.56,
+   "end": 975.68,
+   "text": "possibly the remains of something like a raid. Presumably these guys are buried by their"
+  },
+  {
+   "start": 975.68,
+   "end": 980.24,
+   "text": "friends because it's very hard to imagine their enemies treating their bodies with such"
+  },
+  {
+   "start": 980.24,
+   "end": 1006.58,
+   "text": "respect. And it's also the stuff itself, but also the way in which the stuff has been laid down in the grave. So these 34 men are buried in a sort of circular heap in several layers at one end of the ship. And this sort of pile of bodies is then covered with shields. So the shields overlap to make a sort of wooden burial mound. If you can picture it in the"
+  },
+  {
+   "start": 1006.58,
+   "end": 1010.77,
+   "text": "all at the ship, with the mast sticking up to one side."
+  },
+  {
+   "start": 1010.77,
+   "end": 1013.77,
+   "text": "And then we know from the corrosion on the shield bosses,"
+  },
+  {
+   "start": 1013.77,
+   "end": 1015.57,
+   "text": "this is the thing in the middle of the shield"
+  },
+  {
+   "start": 1015.57,
+   "end": 1017.97,
+   "text": "that protects your hand when you hold it,"
+  },
+  {
+   "start": 1017.97,
+   "end": 1022.09,
+   "text": "that this pile of shields was covered with a single piece"
+  },
+  {
+   "start": 1022.09,
+   "end": 1024.21,
+   "text": "of rather coarse textile."
+  },
+  {
+   "start": 1024.21,
+   "end": 1028.23,
+   "text": "And the only thing that big has got to be the sail."
+  },
+  {
+   "start": 1028.23,
+   "end": 1029.87,
+   "text": "And this is weighted down with stones."
+  },
+  {
+   "start": 1029.87,
+   "end": 1033.03,
+   "text": "There's also loads of animals in these burials,"
+  },
+  {
+   "start": 1033.03,
+   "end": 1038.79,
+   "text": "offerings of birds, sea birds, fish, dogs, all kinds of things."
+  },
+  {
+   "start": 1039.11,
+   "end": 1040.79,
+   "text": "Most extraordinary variety."
+  },
+  {
+   "start": 1041.63,
+   "end": 1042.95,
+   "text": "And it's all deliberate."
+  },
+  {
+   "start": 1042.99,
+   "end": 1047.15,
+   "text": "None of it is haphazard either in the way it's laid down or also in sourcing it,"
+  },
+  {
+   "start": 1047.15,
+   "end": 1048.87,
+   "text": "because there's so many species of fish."
+  },
+  {
+   "start": 1049.07,
+   "end": 1050.59,
+   "text": "They don't just have all these things."
+  },
+  {
+   "start": 1050.59,
+   "end": 1051.79,
+   "text": "They've gone out to get them."
+  },
+  {
+   "start": 1052.35,
+   "end": 1058.23,
+   "text": "So Selma is a very good indication of how long these burials might have taken,"
+  },
+  {
+   "start": 1058.23,
+   "end": 1061.31,
+   "text": "because this thing we're talking, you know, a week at least."
+  },
+  {
+   "start": 1061.31,
+   "end": 1064.67,
+   "text": "It's a long time to build this."
+  },
+  {
+   "start": 1064.67,
+   "end": 1073.51,
+   "text": "I find that to be remarkable in that we're seeing these people who died during a raid,"
+  },
+  {
+   "start": 1073.51,
+   "end": 1077.99,
+   "text": "but we're also having the time to bury them in this incredible way."
+  },
+  {
+   "start": 1077.99,
+   "end": 1081.07,
+   "text": "So would we think that this is them?"
+  },
+  {
+   "start": 1081.07,
+   "end": 1084.95,
+   "text": "They've left the scene of the raid with their dad and they've done this?"
+  },
+  {
+   "start": 1084.95,
+   "end": 1090.75,
+   "text": "Or are they able somehow to establish some kind of perimeter in hostile territory in"
+  },
+  {
+   "start": 1090.75,
+   "end": 1091.75,
+   "text": "order to do this?"
+  },
+  {
+   "start": 1091.75,
+   "end": 1095.97,
+   "text": "It seems to me that this is a project that is going to take a few days at the very, very"
+  },
+  {
+   "start": 1095.97,
+   "end": 1097.85,
+   "text": "least in order to get it together."
+  },
+  {
+   "start": 1097.85,
+   "end": 1104.17,
+   "text": "And I find that to contrast a bit with the violence of the people who died."
+  },
+  {
+   "start": 1104.17,
+   "end": 1105.17,
+   "text": "Yeah."
+  },
+  {
+   "start": 1105.17,
+   "end": 1108.97,
+   "text": "I mean, it's the big question for Selma what is actually going on here."
+  },
+  {
+   "start": 1108.97,
+   "end": 1114.07,
+   "text": "There's also the fact that the burials are left alone, so nobody has come in and dug"
+  },
+  {
+   "start": 1114.07,
+   "end": 1119.29,
+   "text": "them up and taken the swords, for example, because the local people of the island must"
+  },
+  {
+   "start": 1119.29,
+   "end": 1123.21,
+   "text": "have known what they were doing must be very visible when they were building this thing."
+  },
+  {
+   "start": 1123.85,
+   "end": 1129.85,
+   "text": "We know from written sources that there was raiding against Estonia from central Sweden"
+  },
+  {
+   "start": 1129.85,
+   "end": 1134.89,
+   "text": "and the origin of these guys in the Salma boats really does seem to have been the central area"
+  },
+  {
+   "start": 1134.89,
+   "end": 1140.81,
+   "text": "of Sweden more or less around Opsala where I'm speaking from now and we know this due to strontium"
+  },
+  {
+   "start": 1140.81,
+   "end": 1147.77,
+   "text": "isotopes and DNA analysis. So plus also the different kinds of weapons and things some of them are"
+  },
+  {
+   "start": 1147.77,
+   "end": 1154.65,
+   "text": "made in the same moulds as weapons that are found in central Sweden. So it looks like a Swedish"
+  },
+  {
+   "start": 1155.53,
+   "end": 1160.09,
+   "text": "raiding party. Some people have suggested it's a diplomatic expedition that's gone wrong,"
+  },
+  {
+   "start": 1160.09,
+   "end": 1169.56,
+   "text": "presumably very wrong, but it's this idea of longevity. So maybe the Swedes had some longer"
+  },
+  {
+   "start": 1169.56,
+   "end": 1175.64,
+   "text": "term presence there. Maybe there was some kind of tribute relationship going on. And for that"
+  },
+  {
+   "start": 1175.64,
+   "end": 1180.6,
+   "text": "matter, we don't know that much about the Estonians in this part of the coast. So there are a lot of"
+  },
+  {
+   "start": 1181.48,
+   "end": 1187.72,
+   "text": "big questions that remain amongst Salma. It must have been an expedition at a fairly high level"
+  },
+  {
+   "start": 1187.72,
+   "end": 1194.84,
+   "text": "because the focus of the chapter on this in my book is about one of the individuals at Salma"
+  },
+  {
+   "start": 1195.4,
+   "end": 1201.16,
+   "text": "who was buried in the middle of this pile of bodies under the mound of shields. He has some of"
+  },
+  {
+   "start": 1201.16,
+   "end": 1207.32,
+   "text": "one of the worst injuries, he has some of the best weapons, but there's one characteristic"
+  },
+  {
+   "start": 1207.32,
+   "end": 1211.0,
+   "text": "of his burial that sets it apart from all the others."
+  },
+  {
+   "start": 1211.0,
+   "end": 1216.04,
+   "text": "Because one of the things we find a lot at Selma is gaming pieces. These are really big"
+  },
+  {
+   "start": 1216.04,
+   "end": 1221.6,
+   "text": "pieces of often whale bone about the size of, oh I don't know, they're about two inches"
+  },
+  {
+   "start": 1221.6,
+   "end": 1226.04,
+   "text": "across, something like that, so very big. And they're used for playing strategy games,"
+  },
+  {
+   "start": 1226.04,
+   "end": 1231.12,
+   "text": "a little bit like chess, something called Nefertarfall probably. And there are hundreds"
+  },
+  {
+   "start": 1231.12,
+   "end": 1236.92,
+   "text": "of these gaming pieces and they're sort of scattered over the dead in the burial."
+  },
+  {
+   "start": 1236.92,
+   "end": 1239.96,
+   "text": "But not this guy in the middle of the mound."
+  },
+  {
+   "start": 1239.96,
+   "end": 1245.76,
+   "text": "He has just one gaming piece and it's the king and it's in his mouth."
+  },
+  {
+   "start": 1245.76,
+   "end": 1251.2,
+   "text": "And when you put that together with his wonderful weapons and the central position in the burial,"
+  },
+  {
+   "start": 1251.2,
+   "end": 1257.96,
+   "text": "it's hard to avoid the idea that this is some kind of leader, perhaps the leader of the expedition."
+  },
+  {
+   "start": 1257.96,
+   "end": 1267.44,
+   "text": "What incredible symbolism to having the gaming piece in your mouth as a dead person is are"
+  },
+  {
+   "start": 1267.44,
+   "end": 1274.8,
+   "text": "we thinking about the strategy involved that he was using in raids and in this raid that's"
+  },
+  {
+   "start": 1274.8,
+   "end": 1275.8,
+   "text": "gone wrong?"
+  },
+  {
+   "start": 1275.8,
+   "end": 1277.72,
+   "text": "Is this a critique of what's happened?"
+  },
+  {
+   "start": 1277.72,
+   "end": 1279.72,
+   "text": "Oh, I don't know how your archaeologists do it."
+  },
+  {
+   "start": 1279.72,
+   "end": 1284.48,
+   "text": "I would be up for days just sort of staring into the dark thinking about these things."
+  },
+  {
+   "start": 1284.48,
+   "end": 1286.51,
+   "text": "Yeah, we do that too."
+  },
+  {
+   "start": 1286.51,
+   "end": 1288.19,
+   "text": "Okay, that's good enough."
+  },
+  {
+   "start": 1288.19,
+   "end": 1289.19,
+   "text": "That's good enough."
+  },
+  {
+   "start": 1289.19,
+   "end": 1290.19,
+   "text": "We're carrying into the dock."
+  },
+  {
+   "start": 1290.19,
+   "end": 1291.19,
+   "text": "Yeah."
+  },
+  {
+   "start": 1291.19,
+   "end": 1297.39,
+   "text": "Salma is so important though as well because in terms of dating, it also helps to, I think"
+  },
+  {
+   "start": 1297.39,
+   "end": 1303.47,
+   "text": "quite rightly, reorient the way we talk about the so-called Viking Age because obviously"
+  },
+  {
+   "start": 1303.47,
+   "end": 1309.95,
+   "text": "I think there's a kind of chauvinistic Western European way of looking at this as, oh, it"
+  },
+  {
+   "start": 1309.95,
+   "end": 1310.95,
+   "text": "starts with Lindisfarne."
+  },
+  {
+   "start": 1310.95,
+   "end": 1315.39,
+   "text": "Lindisfarne is the thing that kicks off the entire age."
+  },
+  {
+   "start": 1315.39,
+   "end": 1320.51,
+   "text": "And clearly what you're seeing at Salma is actually people have been rating already."
+  },
+  {
+   "start": 1320.51,
+   "end": 1321.51,
+   "text": "That's something that's happening."
+  },
+  {
+   "start": 1321.51,
+   "end": 1322.51,
+   "text": "It's just this is..."
+  },
+  {
+   "start": 1322.51,
+   "end": 1325.19,
+   "text": "Lindisfarne is what English people noticed."
+  },
+  {
+   "start": 1325.19,
+   "end": 1328.55,
+   "text": "And that's not the same thing as the age existing."
+  },
+  {
+   "start": 1328.55,
+   "end": 1329.55,
+   "text": "You know?"
+  },
+  {
+   "start": 1329.55,
+   "end": 1330.55,
+   "text": "Exactly."
+  },
+  {
+   "start": 1330.55,
+   "end": 1335.07,
+   "text": "When I started studying the Vikings a very long time ago, decades ago, we were taught"
+  },
+  {
+   "start": 1335.07,
+   "end": 1340.47,
+   "text": "that Lindisfarne was the start of the Viking Age, 7th of June, 793."
+  },
+  {
+   "start": 1340.47,
+   "end": 1343.69,
+   "text": "the idea that it didn't start two days earlier or something."
+  },
+  {
+   "start": 1343.69,
+   "end": 1346.75,
+   "text": "I mean, it was as dark as it was town."
+  },
+  {
+   "start": 1346.75,
+   "end": 1350.47,
+   "text": "And yet it's not even just in a sort of metaphorical sense."
+  },
+  {
+   "start": 1350.47,
+   "end": 1353.57,
+   "text": "We've got Selma, which is decades earlier."
+  },
+  {
+   "start": 1353.57,
+   "end": 1355.77,
+   "text": "There is clearly raiding going on"
+  },
+  {
+   "start": 1355.77,
+   "end": 1358.77,
+   "text": "and it's raiding to the east, into the Baltic."
+  },
+  {
+   "start": 1358.77,
+   "end": 1361.53,
+   "text": "And it's very important not to see the Selma guys"
+  },
+  {
+   "start": 1361.53,
+   "end": 1364.17,
+   "text": "as literally the first Vikings,"
+  },
+  {
+   "start": 1364.17,
+   "end": 1366.11,
+   "text": "but in a sort of symbolic sense."
+  },
+  {
+   "start": 1366.11,
+   "end": 1369.13,
+   "text": "These are the earliest ones we can see."
+  },
+  {
+   "start": 1369.13,
+   "end": 1372.59,
+   "text": "But I think the truth is that raiding has been going on"
+  },
+  {
+   "start": 1372.59,
+   "end": 1375.17,
+   "text": "within Scandinavia for a very long time"
+  },
+  {
+   "start": 1375.17,
+   "end": 1377.93,
+   "text": "and probably around the waters of the Baltic as well."
+  },
+  {
+   "start": 1377.93,
+   "end": 1381.41,
+   "text": "I mean, piracy is not an invention of the Viking Age."
+  },
+  {
+   "start": 1381.41,
+   "end": 1384.29,
+   "text": "So I think it's really an escalation"
+  },
+  {
+   "start": 1384.29,
+   "end": 1386.93,
+   "text": "and a more drastic kind of export"
+  },
+  {
+   "start": 1386.93,
+   "end": 1389.41,
+   "text": "of something that's been going on for a very long time."
+  },
+  {
+   "start": 1389.41,
+   "end": 1393.37,
+   "text": "But Selma really does give us our first solid glimpse"
+  },
+  {
+   "start": 1393.37,
+   "end": 1395.45,
+   "text": "of what that looked like in reality."
+  },
+  {
+   "start": 1395.45,
+   "end": 1397.29,
+   "text": "And it's earlier than Lindisfarne"
+  },
+  {
+   "start": 1397.29,
+   "end": 1399.25,
+   "text": "and it's in the opposite direction."
+  },
+  {
+   "start": 1399.25,
+   "end": 1402.69,
+   "text": "This makes sense to me, but also one of the things"
+  },
+  {
+   "start": 1402.69,
+   "end": 1406.13,
+   "text": "that I thought was really important in this book"
+  },
+  {
+   "start": 1406.13,
+   "end": 1410.53,
+   "text": "is you also have a long discussion about how these people"
+  },
+  {
+   "start": 1410.53,
+   "end": 1414.25,
+   "text": "are also making rather a lot of inroads into the Arctic."
+  },
+  {
+   "start": 1414.25,
+   "end": 1416.77,
+   "text": "And I think traditionally we sort of see the Arctic"
+  },
+  {
+   "start": 1416.77,
+   "end": 1419.13,
+   "text": "as a bit of a hard border."
+  },
+  {
+   "start": 1419.13,
+   "end": 1423.69,
+   "text": "And we indeed imagine as though there are these"
+  },
+  {
+   "start": 1423.69,
+   "end": 1425.29,
+   "text": "quote unquote Viking peoples,"
+  },
+  {
+   "start": 1425.29,
+   "end": 1430.29,
+   "text": "And then there are the Sami who are doing the reindeer herding"
+  },
+  {
+   "start": 1430.73,
+   "end": 1433.41,
+   "text": "and the hunting up north and never the twain shall meet."
+  },
+  {
+   "start": 1433.41,
+   "end": 1436.41,
+   "text": "And actually what the archeology is telling us"
+  },
+  {
+   "start": 1436.41,
+   "end": 1441.41,
+   "text": "is that we have this huge crossover amongst these people."
+  },
+  {
+   "start": 1442.01,
+   "end": 1444.89,
+   "text": "And I don't even, I mean, it's almost at this point,"
+  },
+  {
+   "start": 1444.89,
+   "end": 1446.49,
+   "text": "I'm kind of wondering if this is an increasingly"
+  },
+  {
+   "start": 1446.49,
+   "end": 1451.56,
+   "text": "a modern wave of dividing a difference between the two."
+  },
+  {
+   "start": 1451.56,
+   "end": 1457.56,
+   "text": "Yeah, I mean, when we think of reconstructions of the Viking Age, when we see them on TV"
+  },
+  {
+   "start": 1457.56,
+   "end": 1463.4,
+   "text": "or whatever, it's usually sunny and it's usually somewhere in southern Scandinavia."
+  },
+  {
+   "start": 1463.4,
+   "end": 1470.16,
+   "text": "And if you've ever been there, I mean, a life in the Jutland Peninsula of Denmark is very,"
+  },
+  {
+   "start": 1470.16,
+   "end": 1474.12,
+   "text": "very different from a life in high Arctic Norway."
+  },
+  {
+   "start": 1474.12,
+   "end": 1477.48,
+   "text": "And people are living the whole length of the Scandinavian Peninsula."
+  },
+  {
+   "start": 1477.48,
+   "end": 1479.48,
+   "text": "They just live in slightly different ways."
+  },
+  {
+   "start": 1479.48,
+   "end": 1482.12,
+   "text": "They adapt to different weather conditions."
+  },
+  {
+   "start": 1482.12,
+   "end": 1485.44,
+   "text": "So I mean, arable farming is not something you really do"
+  },
+  {
+   "start": 1485.44,
+   "end": 1486.92,
+   "text": "up in the far North."
+  },
+  {
+   "start": 1486.92,
+   "end": 1490.84,
+   "text": "People are much more dependent on fishing, hunting,"
+  },
+  {
+   "start": 1490.84,
+   "end": 1493.12,
+   "text": "all kinds of game, including sea games,"
+  },
+  {
+   "start": 1493.12,
+   "end": 1496.28,
+   "text": "sea mammals like seals and walruses and things."
+  },
+  {
+   "start": 1496.28,
+   "end": 1497.76,
+   "text": "And it's a different rhythm of life,"
+  },
+  {
+   "start": 1497.76,
+   "end": 1501.16,
+   "text": "especially seasonally when the winters are very harsh,"
+  },
+  {
+   "start": 1501.16,
+   "end": 1504.28,
+   "text": "they're very dark, the summers are the opposite,"
+  },
+  {
+   "start": 1504.28,
+   "end": 1506.56,
+   "text": "they're almost permanent daylight."
+  },
+  {
+   "start": 1506.56,
+   "end": 1509.6,
+   "text": "So there's a very different rhythm to life."
+  },
+  {
+   "start": 1509.6,
+   "end": 1512.8,
+   "text": "And this idea of the Sámi is being a sort of people"
+  },
+  {
+   "start": 1512.8,
+   "end": 1515.7,
+   "text": "of the far North, people of the reindeer, et cetera."
+  },
+  {
+   "start": 1515.7,
+   "end": 1518.58,
+   "text": "It's a cliche, and as you say,"
+  },
+  {
+   "start": 1518.58,
+   "end": 1520.04,
+   "text": "and it's a kind of stereotype"
+  },
+  {
+   "start": 1520.04,
+   "end": 1522.66,
+   "text": "that they've suffered for a very long time."
+  },
+  {
+   "start": 1522.66,
+   "end": 1524.68,
+   "text": "And it simply doesn't play out."
+  },
+  {
+   "start": 1524.68,
+   "end": 1528.1,
+   "text": "I mean, we know that Sámi and North people"
+  },
+  {
+   "start": 1528.1,
+   "end": 1532.16,
+   "text": "are living side by side for most of the Scandinavian"
+  },
+  {
+   "start": 1532.16,
+   "end": 1534.64,
+   "text": "peninsula and far into what is now Finland"
+  },
+  {
+   "start": 1534.64,
+   "end": 1536.76,
+   "text": "as well as a Fenno Scandia."
+  },
+  {
+   "start": 1536.76,
+   "end": 1540.72,
+   "text": "And in some places, I think we impose those"
+  },
+  {
+   "start": 1540.72,
+   "end": 1544.08,
+   "text": "kind of ethnic distinctions that weren't really there."
+  },
+  {
+   "start": 1544.08,
+   "end": 1547.52,
+   "text": "People are living their lives in different ways"
+  },
+  {
+   "start": 1547.52,
+   "end": 1549.04,
+   "text": "alongside each other."
+  },
+  {
+   "start": 1549.04,
+   "end": 1552.35,
+   "text": "And I think we should be quite cautious"
+  },
+  {
+   "start": 1552.35,
+   "end": 1554.43,
+   "text": "about how to apply those labels,"
+  },
+  {
+   "start": 1554.43,
+   "end": 1555.87,
+   "text": "which isn't to say that, I mean,"
+  },
+  {
+   "start": 1555.87,
+   "end": 1558.47,
+   "text": "we're not talking the Sámi out of existence here,"
+  },
+  {
+   "start": 1558.47,
+   "end": 1561.71,
+   "text": "by any means, there is absolutely a Sámi culture."
+  },
+  {
+   "start": 1561.71,
+   "end": 1567.67,
+   "text": "But the borders between them, when people are marrying across a cultural border or living"
+  },
+  {
+   "start": 1567.67,
+   "end": 1572.15,
+   "text": "together, having children, what have you, trading, these are tight-knit communities"
+  },
+  {
+   "start": 1572.15,
+   "end": 1576.26,
+   "text": "in a place that requires that in order to live in it."
+  },
+  {
+   "start": 1576.26,
+   "end": 1586.75,
+   "text": "Why do you think it is that we have tended to call these two cultures entirely separate"
+  },
+  {
+   "start": 1586.75,
+   "end": 1587.75,
+   "text": "from each other?"
+  },
+  {
+   "start": 1587.75,
+   "end": 1590.05,
+   "text": "Certainly, as you say, they are different cultures."
+  },
+  {
+   "start": 1590.05,
+   "end": 1597.05,
+   "text": "But what is it you think that has compelled us to draw a line as though there is a wall"
+  },
+  {
+   "start": 1597.05,
+   "end": 1598.05,
+   "text": "between them?"
+  },
+  {
+   "start": 1598.05,
+   "end": 1601.97,
+   "text": "When we look at the archaeology up in the High Arctic, one of the chapters in the book"
+  },
+  {
+   "start": 1601.97,
+   "end": 1606.37,
+   "text": "deals with a burial on an island called Hylisoya."
+  },
+  {
+   "start": 1606.37,
+   "end": 1608.97,
+   "text": "This is way up north in Norway."
+  },
+  {
+   "start": 1608.97,
+   "end": 1616.21,
+   "text": "And it's a man buried on a beach in a little boat, a little fishing boat, and he has lots"
+  },
+  {
+   "start": 1616.21,
+   "end": 1618.89,
+   "text": "of weapons and various others, or bits and pieces."
+  },
+  {
+   "start": 1618.89,
+   "end": 1626.09,
+   "text": "In that sense, the burial looks rather Norse, but he also has a so far unique find in the"
+  },
+  {
+   "start": 1626.09,
+   "end": 1629.89,
+   "text": "archaeological record, which is a bear spear."
+  },
+  {
+   "start": 1629.89,
+   "end": 1635.77,
+   "text": "This is a really massive spear used for killing bears."
+  },
+  {
+   "start": 1635.77,
+   "end": 1639.97,
+   "text": "Up in the far north, this is a very charged thing to do."
+  },
+  {
+   "start": 1639.97,
+   "end": 1644.61,
+   "text": "It's not very a matter of providing food and furs and things like that."
+  },
+  {
+   "start": 1644.61,
+   "end": 1649.59,
+   "text": "The bear is a sacred animal and it's very, very important to the Sámi."
+  },
+  {
+   "start": 1649.59,
+   "end": 1653.89,
+   "text": "And to be a bear hunter was really quite a special thing to be, something that's sort"
+  },
+  {
+   "start": 1653.89,
+   "end": 1659.3,
+   "text": "of full up with ritual and spiritual power."
+  },
+  {
+   "start": 1659.3,
+   "end": 1665.98,
+   "text": "And for this man to be doing this, he's kind of crossing that cultural divide, if it was"
+  },
+  {
+   "start": 1665.98,
+   "end": 1667.18,
+   "text": "a divide."
+  },
+  {
+   "start": 1667.18,
+   "end": 1672.18,
+   "text": "And it's really impossible to say whether this man was a Sámi or a Norse person or"
+  },
+  {
+   "start": 1672.18,
+   "end": 1674.66,
+   "text": "whether he'd have made the distinction at all."
+  },
+  {
+   "start": 1674.66,
+   "end": 1680.42,
+   "text": "So it's quite useful to look at that grave in that place, which is very much part of"
+  },
+  {
+   "start": 1680.42,
+   "end": 1686.78,
+   "text": "Arctic Norway, but also Sapmi, which is the Sami word for their homeland."
+  },
+  {
+   "start": 1686.78,
+   "end": 1690.62,
+   "text": "So places are part of both at the same time."
+  },
+  {
+   "start": 1690.62,
+   "end": 1695.75,
+   "text": "And so are the people who live there, and this grave really gets to the heart of that."
+  },
+  {
+   "start": 1695.75,
+   "end": 1703.07,
+   "text": "I love this because it does introduce questions about identity, but also it shows us that"
+  },
+  {
+   "start": 1703.07,
+   "end": 1708.23,
+   "text": "there perhaps is a fluidity to that. And I suppose that's the difficulty with being"
+  },
+  {
+   "start": 1708.23,
+   "end": 1712.47,
+   "text": "an archaeologist, as we've already kind of said, is that we're looking at objects and"
+  },
+  {
+   "start": 1712.47,
+   "end": 1721.58,
+   "text": "trying to then reconstruct ideas about identity or belief with grave goods. And that's quite,"
+  },
+  {
+   "start": 1721.58,
+   "end": 1725.62,
+   "text": "it's a difficult road to hoe there, because you have to put together the pieces of the"
+  },
+  {
+   "start": 1725.62,
+   "end": 1729.38,
+   "text": "puzzle. There's no explanation for what it means, and we're desperate to find meaning"
+  },
+  {
+   "start": 1729.38,
+   "end": 1730.38,
+   "text": "within it."
+  },
+  {
+   "start": 1730.38,
+   "end": 1735.98,
+   "text": "Yeah, I mean, there's this thing that archaeologists have been saying for so long that it's become"
+  },
+  {
+   "start": 1735.98,
+   "end": 1741.82,
+   "text": "a cliche in its own right. The dead don't bury themselves. And of course they don't."
+  },
+  {
+   "start": 1741.82,
+   "end": 1746.98,
+   "text": "So burials tell us as much about the people doing the burying as it does about the dead"
+  },
+  {
+   "start": 1746.98,
+   "end": 1754.26,
+   "text": "themselves. And trying to read the lives of the dead from their burials is a bit of a"
+  },
+  {
+   "start": 1754.26,
+   "end": 1761.8,
+   "text": "I mean, there's a whole series of interpretations and educated guesses that we make."
+  },
+  {
+   "start": 1761.8,
+   "end": 1767.56,
+   "text": "And there's the question of to what degree those graves reflect the lived life of the"
+  },
+  {
+   "start": 1767.56,
+   "end": 1769.82,
+   "text": "deceased or not."
+  },
+  {
+   "start": 1769.82,
+   "end": 1772.8,
+   "text": "And there's no one answer that fits them all."
+  },
+  {
+   "start": 1772.8,
+   "end": 1775.52,
+   "text": "It's probably a sort of sliding scale for all of them."
+  },
+  {
+   "start": 1775.52,
+   "end": 1780.84,
+   "text": "So that's part of the journey that we go on when we try to look at the burial record of"
+  },
+  {
+   "start": 1780.84,
+   "end": 1787.67,
+   "text": "of Viking Age and use that as a source for the lives of Viking Age people."
+  },
+  {
+   "start": 1787.67,
+   "end": 1794.19,
+   "text": "I was also really struck by, I really liked the discussion with Birka because I'm quite"
+  },
+  {
+   "start": 1794.19,
+   "end": 1798.31,
+   "text": "interested in towns, I'm quite interested in cities and settlements and I do think there's"
+  },
+  {
+   "start": 1798.31,
+   "end": 1804.75,
+   "text": "this tendency to imagine Vikings as living in these isolated fjords and have this sort"
+  },
+  {
+   "start": 1804.75,
+   "end": 1809.23,
+   "text": "of, you know, oh, we're in a forest or, you know, there's no one's around."
+  },
+  {
+   "start": 1809.23,
+   "end": 1816.03,
+   "text": "Birkensted is showing us a town with a fairly cosmopolitan character."
+  },
+  {
+   "start": 1816.03,
+   "end": 1817.23,
+   "text": "Very much so."
+  },
+  {
+   "start": 1817.23,
+   "end": 1825.03,
+   "text": "Birkensted is situated on an island in Lake Melloran, which is the central lake of Sweden."
+  },
+  {
+   "start": 1825.03,
+   "end": 1832.19,
+   "text": "The modern city of Stockholm sits at the point where that lake opens out into the sea."
+  },
+  {
+   "start": 1832.19,
+   "end": 1837.47,
+   "text": "The thing about Birkensted and other sites like it, there are several dotted around Scandinavia,"
+  },
+  {
+   "start": 1837.47,
+   "end": 1843.25,
+   "text": "that they get going right at the start of the Viking Age before the famous raids, before"
+  },
+  {
+   "start": 1843.25,
+   "end": 1849.97,
+   "text": "Lindisfarne, even before Selma in some cases. So this idea of urban Vikings, which as you"
+  },
+  {
+   "start": 1849.97,
+   "end": 1855.13,
+   "text": "say is not a kind of connection that I think a lot of people would make, that's there right"
+  },
+  {
+   "start": 1855.13,
+   "end": 1862.92,
+   "text": "from the start. So the kind of trading connections that a place like Birka represents, because"
+  },
+  {
+   "start": 1862.92,
+   "end": 1866.56,
+   "text": "there's a place where people come to buy and sell, that's what it really boils down to."
+  },
+  {
+   "start": 1866.56,
+   "end": 1871.28,
+   "text": "They're an absolutely integral part of what the Viking Age is."
+  },
+  {
+   "start": 1871.28,
+   "end": 1877.12,
+   "text": "And over time, probably quite quickly, you get to see an urban way of life."
+  },
+  {
+   "start": 1877.12,
+   "end": 1881.84,
+   "text": "There are people, just as they are now, if you've spent all your life in a town, that's"
+  },
+  {
+   "start": 1881.84,
+   "end": 1886.0,
+   "text": "a little bit different from living on a farm in the countryside."
+  },
+  {
+   "start": 1886.0,
+   "end": 1889.04,
+   "text": "And you can see it in the Viking Age as well."
+  },
+  {
+   "start": 1889.04,
+   "end": 1893.48,
+   "text": "What I find quite interesting about Birka is that, as you say, it does seem as though"
+  },
+  {
+   "start": 1893.48,
+   "end": 1898.6,
+   "text": "it's a place where people come to buy and sell and we're looking a lot more at trade"
+  },
+  {
+   "start": 1898.6,
+   "end": 1907.02,
+   "text": "here than we are at raiding necessarily. And that is a real distinction in terms of"
+  },
+  {
+   "start": 1907.02,
+   "end": 1912.38,
+   "text": "both goods and movement. And I think it's quite striking that this is something that"
+  },
+  {
+   "start": 1912.38,
+   "end": 1919.3,
+   "text": "we don't talk about as much when we do discuss these people. There is always this tendency"
+  },
+  {
+   "start": 1919.3,
+   "end": 1923.62,
+   "text": "to focus on the violence or the raiding or plunder as opposed to trade."
+  },
+  {
+   "start": 1923.62,
+   "end": 1930.34,
+   "text": "I think it's all kind of mixed up really because when we think about trade, we think about commodities,"
+  },
+  {
+   "start": 1930.34,
+   "end": 1936.66,
+   "text": "you know, products, basically surplus, whether it's agricultural surplus or manufactured goods,"
+  },
+  {
+   "start": 1936.66,
+   "end": 1942.58,
+   "text": "long distance imports, things like that. But one of the biggest, it's horrible to talk about"
+  },
+  {
+   "start": 1942.58,
+   "end": 1949.86,
+   "text": "them like this, but one of the biggest trade items is enslaved people. And they are something that"
+  },
+  {
+   "start": 1949.86,
+   "end": 1955.78,
+   "text": "is really central to the raiding. We think of raiding as being about sort of carrying off"
+  },
+  {
+   "start": 1955.78,
+   "end": 1962.56,
+   "text": "silver or portable wealth, but they also carried off people. The idea of slavery as a kind of"
+  },
+  {
+   "start": 1962.56,
+   "end": 1967.04,
+   "text": "building block of the Viking Age economy is very important. It's something we shouldn't forget."
+  },
+  {
+   "start": 1967.76,
+   "end": 1972.08,
+   "text": "So at places like Birka, they're trading in regular commodities, but they're also trading"
+  },
+  {
+   "start": 1972.08,
+   "end": 1978.91,
+   "text": "in people. And I think over time this starts to have a really major influence on the economy"
+  },
+  {
+   "start": 1978.91,
+   "end": 1995.13,
+   "text": "of the North."
+  },
+  {
+   "start": 1995.13,
+   "end": 1997.87,
+   "text": "Verizon knows that holiday math can be complicated."
+  },
+  {
+   "start": 1997.87,
+   "end": 2004.31,
+   "text": "Okay, let's see, we got the four kids. Four gifts each. Six teacher gifts? Wait, oh, what"
+  },
+  {
+   "start": 2004.31,
+   "end": 2008.95,
+   "text": "do we get and Sandy? And the dogs. Oh, can't forget the dogs."
+  },
+  {
+   "start": 2008.95,
+   "end": 2014.03,
+   "text": "Know what doesn't need math? Simplicity plan from Verizon. One plan, one price. Just $30"
+  },
+  {
+   "start": 2014.03,
+   "end": 2016.15,
+   "text": "the line per month for you or the whole family."
+  },
+  {
+   "start": 2016.15,
+   "end": 2017.59,
+   "text": "The holidays are complicated."
+  },
+  {
+   "start": 2017.59,
+   "end": 2020.79,
+   "text": "Shopping our best deals and switching to Verizon is simple."
+  },
+  {
+   "start": 2020.79,
+   "end": 2022.59,
+   "text": "For new customers, $30 per line includes"
+  },
+  {
+   "start": 2022.59,
+   "end": 2024.31,
+   "text": "auto pay and switch discount additional taxes fees"
+  },
+  {
+   "start": 2024.31,
+   "end": 2025.19,
+   "text": "in terms of apply."
+  },
+  {
+   "start": 2025.19,
+   "end": 2027.91,
+   "text": "Are you ever shopping online and suddenly a discount"
+  },
+  {
+   "start": 2027.91,
+   "end": 2029.55,
+   "text": "that helps you save pops up?"
+  },
+  {
+   "start": 2029.55,
+   "end": 2030.67,
+   "text": "It makes your day."
+  },
+  {
+   "start": 2030.67,
+   "end": 2032.67,
+   "text": "Sometimes even your week."
+  },
+  {
+   "start": 2032.67,
+   "end": 2034.79,
+   "text": "Want that feeling month after month?"
+  },
+  {
+   "start": 2034.79,
+   "end": 2037.11,
+   "text": "Well, new customers who save by switching their home"
+  },
+  {
+   "start": 2037.11,
+   "end": 2039.79,
+   "text": "and auto insurance to progressive save hundreds."
+  },
+  {
+   "start": 2039.79,
+   "end": 2042.07,
+   "text": "Cue your happy dance."
+  },
+  {
+   "start": 2042.07,
+   "end": 2044.63,
+   "text": "Get your quote today at Progressive.com."
+  },
+  {
+   "start": 2044.63,
+   "end": 2046.87,
+   "text": "Progressive Casualty Insurance Company affiliates"
+  },
+  {
+   "start": 2046.87,
+   "end": 2049.39,
+   "text": "and other insurers, not available in all states."
+  },
+  {
+   "start": 2049.39,
+   "end": 2051.99,
+   "text": "This message is brought to you by today's sponsor,"
+  },
+  {
+   "start": 2051.99,
+   "end": 2054.87,
+   "text": "Walden University, set a course for change."
+  },
+  {
+   "start": 2054.87,
+   "end": 2057.11,
+   "text": "Now is the time to make a real change"
+  },
+  {
+   "start": 2057.11,
+   "end": 2059.75,
+   "text": "in your life, career, and community."
+  },
+  {
+   "start": 2059.75,
+   "end": 2062.07,
+   "text": "At Walden University, we give you the support"
+  },
+  {
+   "start": 2062.07,
+   "end": 2063.91,
+   "text": "and flexibility to get the W."
+  },
+  {
+   "start": 2063.91,
+   "end": 2066.23,
+   "text": "Walden's online programs are designed"
+  },
+  {
+   "start": 2066.23,
+   "end": 2068.03,
+   "text": "for working professionals like you."
+  },
+  {
+   "start": 2068.03,
+   "end": 2071.31,
+   "text": "You'll gain hands-on skills to take on real-world challenges"
+  },
+  {
+   "start": 2071.31,
+   "end": 2072.27,
+   "text": "and succeed."
+  },
+  {
+   "start": 2072.27,
+   "end": 2074.55,
+   "text": "Your future is waiting and Walden is here"
+  },
+  {
+   "start": 2074.55,
+   "end": 2075.73,
+   "text": "to help you achieve it."
+  },
+  {
+   "start": 2075.73,
+   "end": 2078.03,
+   "text": "Take the first step to make your impact."
+  },
+  {
+   "start": 2078.03,
+   "end": 2080.23,
+   "text": "Visit waldenu.edu."
+  },
+  {
+   "start": 2080.23,
+   "end": 2083.03,
+   "text": "Walden University, set a course for change,"
+  },
+  {
+   "start": 2083.03,
+   "end": 2085.63,
+   "text": "certified to operate by Chev."
+  },
+  {
+   "start": 2085.63,
+   "end": 2088.95,
+   "text": "Guessing is for game shows, not your business."
+  },
+  {
+   "start": 2088.95,
+   "end": 2092.11,
+   "text": "Workday is the enterprise AI platform for HR,"
+  },
+  {
+   "start": 2092.11,
+   "end": 2095.71,
+   "text": "finance and IT, with AI grounded in your context"
+  },
+  {
+   "start": 2095.71,
+   "end": 2098.39,
+   "text": "to get work done and done right."
+  },
+  {
+   "start": 2098.39,
+   "end": 2116.96,
+   "text": "It's a new workday."
+  },
+  {
+   "start": 2116.96,
+   "end": 2123.4,
+   "text": "I think that we sometimes shy away from it because it's somewhat uncomfortable to talk"
+  },
+  {
+   "start": 2123.4,
+   "end": 2131.24,
+   "text": "about the massive displacements of people that we do see as a result of enslavement."
+  },
+  {
+   "start": 2131.24,
+   "end": 2137.28,
+   "text": "And it's also an interesting one because I suppose as archaeologists, you can find goods,"
+  },
+  {
+   "start": 2137.28,
+   "end": 2138.28,
+   "text": "right?"
+  },
+  {
+   "start": 2138.28,
+   "end": 2143.56,
+   "text": "You can find coins, you can find jewelry, things of this nature."
+  },
+  {
+   "start": 2143.56,
+   "end": 2148.52,
+   "text": "we can discuss that we have to find enslaved people in their graves and then we have to"
+  },
+  {
+   "start": 2148.52,
+   "end": 2154.31,
+   "text": "figure out if they were enslaved based on what they have with them. You know, you can't find"
+  },
+  {
+   "start": 2154.87,
+   "end": 2163.27,
+   "text": "a ship with some people. It's difficult in terms of what gets left behind and that really does,"
+  },
+  {
+   "start": 2163.27,
+   "end": 2166.79,
+   "text": "I think, skew the way that we think and talk about these things."
+  },
+  {
+   "start": 2166.79,
+   "end": 2173.99,
+   "text": "Yeah, the archaeology of the enslaved is hugely difficult. And you talked about, you know,"
+  },
+  {
+   "start": 2173.99,
+   "end": 2178.43,
+   "text": "the burials of enslaved people in terms of the things they left behind, but they didn't"
+  },
+  {
+   "start": 2178.43,
+   "end": 2182.95,
+   "text": "really have any things. That's the problem. They didn't own property. I mean, in a basic"
+  },
+  {
+   "start": 2182.95,
+   "end": 2188.39,
+   "text": "clothing and spoons and things like that. But sort of serious property is not something"
+  },
+  {
+   "start": 2188.39,
+   "end": 2195.61,
+   "text": "that enslaved people had by definition. We do find them in burials, we think, in the"
+  },
+  {
+   "start": 2195.61,
+   "end": 2201.85,
+   "text": "The worst of circumstances, because this isn't exactly common, but it's not super rare either,"
+  },
+  {
+   "start": 2201.85,
+   "end": 2208.61,
+   "text": "that as part of the funeral ceremonies, not only animals have been killed, but also people."
+  },
+  {
+   "start": 2208.61,
+   "end": 2214.57,
+   "text": "So we find sometimes kind of extra individuals in a burial, and maybe their hands are tied"
+  },
+  {
+   "start": 2214.57,
+   "end": 2219.13,
+   "text": "or they've been decapitated or hanged or all kinds of things."
+  },
+  {
+   "start": 2219.13,
+   "end": 2225.91,
+   "text": "And it's very hard to see those people as the primary occupant of the grave."
+  },
+  {
+   "start": 2225.91,
+   "end": 2232.11,
+   "text": "And they might be prisoners of war, they might be criminals, it's very hard to tell."
+  },
+  {
+   "start": 2232.11,
+   "end": 2238.07,
+   "text": "But in some cases, when there have been studies of the diet of the dead, we find that these"
+  },
+  {
+   "start": 2238.07,
+   "end": 2244.39,
+   "text": "people who've clearly been killed as part of the funeral have had a much poorer quality"
+  },
+  {
+   "start": 2244.39,
+   "end": 2251.03,
+   "text": "diet than the other people present, which implies a very big difference in status, in"
+  },
+  {
+   "start": 2251.03,
+   "end": 2253.19,
+   "text": "nutrition and so on."
+  },
+  {
+   "start": 2253.19,
+   "end": 2257.43,
+   "text": "And that is one of the things that makes us think that these people may well have been"
+  },
+  {
+   "start": 2257.43,
+   "end": 2258.43,
+   "text": "enslaved."
+  },
+  {
+   "start": 2258.43,
+   "end": 2268.98,
+   "text": "This is, I think, the crux of why archaeology is so incredibly important when we're looking"
+  },
+  {
+   "start": 2268.98,
+   "end": 2269.98,
+   "text": "at these things."
+  },
+  {
+   "start": 2269.98,
+   "end": 2274.26,
+   "text": "Because unfortunately, as I say, because historians, you know, we're used to working"
+  },
+  {
+   "start": 2274.26,
+   "end": 2280.98,
+   "text": "with texts and we're depending on texts, texts record this infinititionally small part of"
+  },
+  {
+   "start": 2280.98,
+   "end": 2287.5,
+   "text": "society who are the people who are powerful, who are incredibly wealthy, who can pay to"
+  },
+  {
+   "start": 2287.5,
+   "end": 2294.86,
+   "text": "be written about essentially, who can commission chronicles or sagas and things of this nature."
+  },
+  {
+   "start": 2294.86,
+   "end": 2300.86,
+   "text": "When the great majority of individuals are actually ordinary and you're much more likely"
+  },
+  {
+   "start": 2300.86,
+   "end": 2307.1,
+   "text": "where you to go back to this society to be an enslaved person, then you are to be, you"
+  },
+  {
+   "start": 2307.1,
+   "end": 2311.58,
+   "text": "know, one of these great warriors who's memorialized in this particular way."
+  },
+  {
+   "start": 2311.58,
+   "end": 2317.98,
+   "text": "And I think that archaeology is such an important antidote to the fact that a sort of mythical"
+  },
+  {
+   "start": 2317.98,
+   "end": 2324.3,
+   "text": "world is created wherein everyone is important, everyone is a king or something of this nature."
+  },
+  {
+   "start": 2324.3,
+   "end": 2328.22,
+   "text": "And that's why I find these things so important."
+  },
+  {
+   "start": 2328.22,
+   "end": 2338.98,
+   "text": "It's almost a puncturing of this ideal of a romantic society full of warrior traders,"
+  },
+  {
+   "start": 2338.98,
+   "end": 2339.98,
+   "text": "as it were."
+  },
+  {
+   "start": 2339.98,
+   "end": 2344.62,
+   "text": "I think one of the things about the Vikings is that huge numbers of people are interested"
+  },
+  {
+   "start": 2344.62,
+   "end": 2349.67,
+   "text": "in them, but interesting is not the same as admirable."
+  },
+  {
+   "start": 2349.67,
+   "end": 2353.19,
+   "text": "And there is this kind of heroic image of the Vikings."
+  },
+  {
+   "start": 2353.19,
+   "end": 2358.19,
+   "text": "But as you just said, you know, that these warrior kings and queens and so on."
+  },
+  {
+   "start": 2358.69,
+   "end": 2361.03,
+   "text": "And we do see people like that in the archaeology too."
+  },
+  {
+   "start": 2361.07,
+   "end": 2367.11,
+   "text": "And not surprisingly, their burials are easier to understand and access simply"
+  },
+  {
+   "start": 2367.11,
+   "end": 2370.51,
+   "text": "because they contain so many more things because they're richer."
+  },
+  {
+   "start": 2371.19,
+   "end": 2377.19,
+   "text": "But certainly the archaeology gives us a much bigger spectrum of society."
+  },
+  {
+   "start": 2377.87,
+   "end": 2382.11,
+   "text": "But I think the ideal thing is to combine archaeology and text."
+  },
+  {
+   "start": 2382.11,
+   "end": 2386.11,
+   "text": "They tell us different things, but they're complementary things."
+  },
+  {
+   "start": 2386.11,
+   "end": 2390.83,
+   "text": "And each of them have their own problems of source critique as well."
+  },
+  {
+   "start": 2390.83,
+   "end": 2394.55,
+   "text": "You know, just as we can't take the archaeology of face value, here's a thing,"
+  },
+  {
+   "start": 2394.55,
+   "end": 2397.39,
+   "text": "it means this, it's very rarely that simple."
+  },
+  {
+   "start": 2397.39,
+   "end": 2398.47,
+   "text": "And the same with texts."
+  },
+  {
+   "start": 2398.47,
+   "end": 2402.79,
+   "text": "I mean, you're a historian, you know that you don't just, oh, it says here,"
+  },
+  {
+   "start": 2402.79,
+   "end": 2406.83,
+   "text": "you know, there's a whole series of questions that you ask about,"
+  },
+  {
+   "start": 2406.83,
+   "end": 2408.63,
+   "text": "why has this thing been written?"
+  },
+  {
+   "start": 2408.63,
+   "end": 2411.07,
+   "text": "Do we have it in its original form?"
+  },
+  {
+   "start": 2411.07,
+   "end": 2415.95,
+   "text": "was someone's agenda when they were writing this? Why has it been preserved? All of that."
+  },
+  {
+   "start": 2415.95,
+   "end": 2421.47,
+   "text": "Archaeology comes into that as well. One of the things with archaeological finds is that usually"
+  },
+  {
+   "start": 2421.47,
+   "end": 2426.83,
+   "text": "they're kind of random. We find things that are broken, things that have been lost, things that have"
+  },
+  {
+   "start": 2426.83,
+   "end": 2432.11,
+   "text": "been thrown away, things that have survived when a building is burned down, something like that."
+  },
+  {
+   "start": 2432.83,
+   "end": 2438.43,
+   "text": "But what makes burials different is that the things we find in them have been put there"
+  },
+  {
+   "start": 2438.43,
+   "end": 2444.75,
+   "text": "there, to be there, to look like that. So what we find is what they wanted it to look"
+  },
+  {
+   "start": 2444.75,
+   "end": 2449.67,
+   "text": "like. And that's a really big difference. That's one of the reasons why burials are"
+  },
+  {
+   "start": 2449.67,
+   "end": 2456.43,
+   "text": "such a fantastic window on the lives of those people. Ironically, because of course we've"
+  },
+  {
+   "start": 2456.43,
+   "end": 2462.75,
+   "text": "seen them when they're dead, but this sort of mirror of their attitudes to life in the"
+  },
+  {
+   "start": 2462.75,
+   "end": 2468.47,
+   "text": "way they thought about death is one of the really important aspects of burial archaeology."
+  },
+  {
+   "start": 2468.47,
+   "end": 2475.7,
+   "text": "Speaking of people that we don't often see in histories, you talk a lot quite rightly,"
+  },
+  {
+   "start": 2475.7,
+   "end": 2481.9,
+   "text": "I would argue, about farming in the book, which is the thing that every single person"
+  },
+  {
+   "start": 2481.9,
+   "end": 2486.56,
+   "text": "who studies the Middle Ages would tell you makes the medieval world run."
+  },
+  {
+   "start": 2486.56,
+   "end": 2491.9,
+   "text": "But it's something that is ordinarily not talked about in conjunction with this particular"
+  },
+  {
+   "start": 2491.9,
+   "end": 2495.82,
+   "text": "society. So, I mean, would you say that you need to spend as much time looking at plows"
+  },
+  {
+   "start": 2495.82,
+   "end": 2499.58,
+   "text": "to understand these people as you do looking at swords?"
+  },
+  {
+   "start": 2499.58,
+   "end": 2503.66,
+   "text": "Maybe not plows. Not plows, Eleanor. No."
+  },
+  {
+   "start": 2503.66,
+   "end": 2505.18,
+   "text": "Not for you guys."
+  },
+  {
+   "start": 2505.18,
+   "end": 2512.42,
+   "text": "But we have this cliche of the Viking adventurer, whether it's raiding or trading or discovering"
+  },
+  {
+   "start": 2512.42,
+   "end": 2517.98,
+   "text": "new lands and all of this. But the vast majority of the Viking age population, as you say,"
+  },
+  {
+   "start": 2517.98,
+   "end": 2523.82,
+   "text": "farmers who never really went anywhere or did much harm to anyone and they are the backbone"
+  },
+  {
+   "start": 2523.82,
+   "end": 2530.52,
+   "text": "of the economy. But all of those raiders who though they're a minority, they were real,"
+  },
+  {
+   "start": 2530.52,
+   "end": 2536.68,
+   "text": "all of those kind of cliched Vikings, they came out of a farming society. And even though there"
+  },
+  {
+   "start": 2536.68,
+   "end": 2543.16,
+   "text": "are towns like Birka that we talked about, this is still an agrarian, a rural society. And it will"
+  },
+  {
+   "start": 2543.16,
+   "end": 2545.72,
+   "text": "or say that way for hundreds of years."
+  },
+  {
+   "start": 2545.72,
+   "end": 2549.48,
+   "text": "And we find that one of the things I talk about in the book"
+  },
+  {
+   "start": 2549.48,
+   "end": 2553.68,
+   "text": "is we have a kind of very typical village in Denmark"
+  },
+  {
+   "start": 2553.68,
+   "end": 2556.64,
+   "text": "with very modest burials for very modest people,"
+  },
+  {
+   "start": 2556.64,
+   "end": 2558.96,
+   "text": "people who live their lives on the land"
+  },
+  {
+   "start": 2558.96,
+   "end": 2561.2,
+   "text": "who probably didn't travel very much."
+  },
+  {
+   "start": 2561.2,
+   "end": 2565.08,
+   "text": "But some of them did because you can see that the loot,"
+  },
+  {
+   "start": 2565.08,
+   "end": 2566.8,
+   "text": "especially from the raids in the West,"
+  },
+  {
+   "start": 2566.8,
+   "end": 2568.8,
+   "text": "in England, for example,"
+  },
+  {
+   "start": 2568.8,
+   "end": 2571.56,
+   "text": "is turning up on those little villages."
+  },
+  {
+   "start": 2571.56,
+   "end": 2575.08,
+   "text": "So it's still trickling down into that economy."
+  },
+  {
+   "start": 2575.08,
+   "end": 2579.36,
+   "text": "If you really wanted a special button made out of something"
+  },
+  {
+   "start": 2579.36,
+   "end": 2581.8,
+   "text": "that somebody had ripped off a book or whatever"
+  },
+  {
+   "start": 2581.8,
+   "end": 2583.84,
+   "text": "in an English monastery,"
+  },
+  {
+   "start": 2583.84,
+   "end": 2586.04,
+   "text": "you could probably get ahold of it ultimately"
+  },
+  {
+   "start": 2586.04,
+   "end": 2587.9,
+   "text": "in a little Danish village."
+  },
+  {
+   "start": 2587.9,
+   "end": 2589.6,
+   "text": "So they are connected."
+  },
+  {
+   "start": 2589.6,
+   "end": 2593.12,
+   "text": "Even these relatively static rural lives"
+  },
+  {
+   "start": 2593.12,
+   "end": 2598.8,
+   "text": "are absolutely plugged in to that wider Viking world."
+  },
+  {
+   "start": 2598.8,
+   "end": 2601.0,
+   "text": "And I suppose it is also true that in some cases"
+  },
+  {
+   "start": 2601.0,
+   "end": 2605.84,
+   "text": "We do have these farmers, these people who are quietly getting everything done and feeding"
+  },
+  {
+   "start": 2605.84,
+   "end": 2612.96,
+   "text": "everyone in the background, but occasionally they also are part of the diaspora at the"
+  },
+  {
+   "start": 2612.96,
+   "end": 2618.14,
+   "text": "very least of these people because we see these migration stories happening all the"
+  },
+  {
+   "start": 2618.14,
+   "end": 2620.96,
+   "text": "time with these people."
+  },
+  {
+   "start": 2620.96,
+   "end": 2626.5,
+   "text": "One of your recurrent themes in the book is how we have these patterns of migration,"
+  },
+  {
+   "start": 2626.5,
+   "end": 2630.88,
+   "text": "but the interesting thing about the migration is it changes those people as they do it."
+  },
+  {
+   "start": 2630.88,
+   "end": 2636.0,
+   "text": "And I think in particular, we can see that really in the book when you're discussing"
+  },
+  {
+   "start": 2636.0,
+   "end": 2638.04,
+   "text": "these settlements in Iceland."
+  },
+  {
+   "start": 2638.04,
+   "end": 2639.4,
+   "text": "Can you talk a little bit about that?"
+  },
+  {
+   "start": 2639.4,
+   "end": 2640.4,
+   "text": "Yeah."
+  },
+  {
+   "start": 2640.4,
+   "end": 2646.52,
+   "text": "I mean, in recent years, there's been an awful lot of genomic analyses, DNA analyses, and"
+  },
+  {
+   "start": 2646.52,
+   "end": 2649.08,
+   "text": "there's a lot of controversy about them, a lot of discussion."
+  },
+  {
+   "start": 2649.08,
+   "end": 2653.96,
+   "text": "But the one thing that comes through without any doubt is that people are on the move all"
+  },
+  {
+   "start": 2653.96,
+   "end": 2654.96,
+   "text": "the time."
+  },
+  {
+   "start": 2654.96,
+   "end": 2659.36,
+   "text": "So, the Viking Age really is a time of movement."
+  },
+  {
+   "start": 2659.36,
+   "end": 2663.38,
+   "text": "And people are coming into Scandinavia as well as leaving it."
+  },
+  {
+   "start": 2663.38,
+   "end": 2665.54,
+   "text": "So you've got this constant feedback."
+  },
+  {
+   "start": 2665.54,
+   "end": 2669.66,
+   "text": "And Iceland is a really interesting sort of case study like that."
+  },
+  {
+   "start": 2669.66,
+   "end": 2674.86,
+   "text": "It also has another resonance because most of our literature about the Viking Age, the"
+  },
+  {
+   "start": 2674.86,
+   "end": 2677.58,
+   "text": "famous sagas, they come out of Iceland."
+  },
+  {
+   "start": 2677.58,
+   "end": 2682.9,
+   "text": "This is an Icelandic memory culture, which is really very special."
+  },
+  {
+   "start": 2682.9,
+   "end": 2686.86,
+   "text": "And the thing that's quite important about Iceland, or to remember about Iceland, is"
+  },
+  {
+   "start": 2686.86,
+   "end": 2690.02,
+   "text": "that it's not settled when the Norse get there."
+  },
+  {
+   "start": 2690.02,
+   "end": 2693.26,
+   "text": "They may be some monks, some Irish monks"
+  },
+  {
+   "start": 2693.26,
+   "end": 2694.7,
+   "text": "sort of living as hermits there,"
+  },
+  {
+   "start": 2694.7,
+   "end": 2696.2,
+   "text": "but we're not sure about that."
+  },
+  {
+   "start": 2696.2,
+   "end": 2698.3,
+   "text": "And if they were, they left very quickly"
+  },
+  {
+   "start": 2698.3,
+   "end": 2699.88,
+   "text": "when the Norse arrived."
+  },
+  {
+   "start": 2699.88,
+   "end": 2703.89,
+   "text": "So you have this kind of, this sort of,"
+  },
+  {
+   "start": 2703.89,
+   "end": 2706.61,
+   "text": "sort of colony really in the North Atlantic"
+  },
+  {
+   "start": 2706.61,
+   "end": 2709.16,
+   "text": "making a new society."
+  },
+  {
+   "start": 2709.16,
+   "end": 2710.68,
+   "text": "There's all kinds of puzzles"
+  },
+  {
+   "start": 2710.68,
+   "end": 2713.04,
+   "text": "in the genetic picture of Iceland."
+  },
+  {
+   "start": 2713.04,
+   "end": 2714.28,
+   "text": "And one of the biggest ones"
+  },
+  {
+   "start": 2714.28,
+   "end": 2716.88,
+   "text": "that has quite dark overtones, I think,"
+  },
+  {
+   "start": 2716.88,
+   "end": 2724.8,
+   "text": "is that the majority of the male founding population are of Norwegian descent. They either directly"
+  },
+  {
+   "start": 2724.8,
+   "end": 2731.2,
+   "text": "come from Norway or one generation away, something like that. And the majority of the female founding"
+  },
+  {
+   "start": 2731.2,
+   "end": 2738.24,
+   "text": "population come from the the Irish Sea area or up into the Northern Isles, Orkney and Shetland."
+  },
+  {
+   "start": 2739.45,
+   "end": 2746.92,
+   "text": "And we shouldn't be too sort of categorical about what that means, but it is clearly an imbalance."
+  },
+  {
+   "start": 2746.92,
+   "end": 2754.28,
+   "text": "it is real and the likelihood that thousands of women from the Irish Sea get nice Norwegian"
+  },
+  {
+   "start": 2754.28,
+   "end": 2761.08,
+   "text": "boyfriends and make a new life in a different kind of is fairly low, I think. And there are"
+  },
+  {
+   "start": 2762.36,
+   "end": 2769.48,
+   "text": "well, I'd say there's a darker currents of of coercion and perhaps enslavement and kidnapping"
+  },
+  {
+   "start": 2769.48,
+   "end": 2777.28,
+   "text": "force going on there. But in the process, it turns into a different kind of society."
+  },
+  {
+   "start": 2777.28,
+   "end": 2781.92,
+   "text": "And Iceland is just the most fascinating place. It's a wonderful place as well. Go there,"
+  },
+  {
+   "start": 2781.92,
+   "end": 2783.4,
+   "text": "if you haven't been around in."
+  },
+  {
+   "start": 2783.4,
+   "end": 2788.92,
+   "text": "Well, I think this is an incredibly well-made point, because I suppose what we're seeing"
+  },
+  {
+   "start": 2788.92,
+   "end": 2793.12,
+   "text": "here is that Iceland is its own place. You know, it's its own culture. It's got these"
+  },
+  {
+   "start": 2793.12,
+   "end": 2801.36,
+   "text": "particular influences, if not all of them necessarily the best vibes. But I do think that sometimes"
+  },
+  {
+   "start": 2801.36,
+   "end": 2807.52,
+   "text": "there's a tendency to just see Icelanders though, it's kind of an extension of Norwegian culture,"
+  },
+  {
+   "start": 2807.52,
+   "end": 2814.0,
+   "text": "as opposed to its own thing. And really what you're able to see here through these processes is that"
+  },
+  {
+   "start": 2814.0,
+   "end": 2818.4,
+   "text": "this is a new thing, which is actually, I would argue, a little bit more exciting."
+  },
+  {
+   "start": 2818.4,
+   "end": 2825.36,
+   "text": "Very much so. The Icelanders in the process of becoming Icelanders, of creating that identity,"
+  },
+  {
+   "start": 2825.36,
+   "end": 2831.68,
+   "text": "they're creating a new world. The thing about Iceland is that unlike Norway, unlike the rest of"
+  },
+  {
+   "start": 2831.68,
+   "end": 2838.56,
+   "text": "Scandinavia, there are no kings, there is no nobility. There's a different kind of cliche"
+  },
+  {
+   "start": 2838.56,
+   "end": 2842.16,
+   "text": "that they're all free farmers and that's not quite right either because there are certainly"
+  },
+  {
+   "start": 2842.16,
+   "end": 2848.64,
+   "text": "hierarchy is there. But they are making a new kind of life. And Iceland comes to be the dominant"
+  },
+  {
+   "start": 2848.64,
+   "end": 2853.84,
+   "text": "place in the North Atlantic. And you have it in the in the orbit of the pharaohs of"
+  },
+  {
+   "start": 2853.84,
+   "end": 2861.12,
+   "text": "Orkney and Shetland. And it's the springboard for the later settlement of Greenland and"
+  },
+  {
+   "start": 2861.12,
+   "end": 2868.16,
+   "text": "ultimately the expeditions to the the eastern seaboard of North America. So it's an incredibly"
+  },
+  {
+   "start": 2868.16,
+   "end": 2869.16,
+   "text": "important place."
+  },
+  {
+   "start": 2869.16,
+   "end": 2885.99,
+   "text": "Verizon knows that holiday math can be complicated."
+  },
+  {
+   "start": 2885.99,
+   "end": 2891.79,
+   "text": "Okay, let's see, we got the four kids, four gifts each, six teacher gifts?"
+  },
+  {
+   "start": 2891.79,
+   "end": 2894.35,
+   "text": "Wait, oh, what do we get and Sandy?"
+  },
+  {
+   "start": 2894.35,
+   "end": 2895.35,
+   "text": "And the dogs."
+  },
+  {
+   "start": 2895.35,
+   "end": 2897.39,
+   "text": "Oh, can't forget the dogs."
+  },
+  {
+   "start": 2897.39,
+   "end": 2898.95,
+   "text": "Know what doesn't need math?"
+  },
+  {
+   "start": 2898.95,
+   "end": 2900.39,
+   "text": "Simplicity plan from Verizon."
+  },
+  {
+   "start": 2900.39,
+   "end": 2901.87,
+   "text": "One plan, one price."
+  },
+  {
+   "start": 2901.87,
+   "end": 2904.59,
+   "text": "Just $30 a line per month for you or the whole family."
+  },
+  {
+   "start": 2904.59,
+   "end": 2906.11,
+   "text": "The holidays are complicated."
+  },
+  {
+   "start": 2906.11,
+   "end": 2909.27,
+   "text": "Shopping our best deals and switching to Verizon is simple."
+  },
+  {
+   "start": 2909.27,
+   "end": 2912.41,
+   "text": "For new customers, $30 per line includes auto pay and switch discount, additional taxes"
+  },
+  {
+   "start": 2912.41,
+   "end": 2913.91,
+   "text": "fees in terms of apply."
+  },
+  {
+   "start": 2913.91,
+   "end": 2916.95,
+   "text": "Life is all about making decisions."
+  },
+  {
+   "start": 2916.95,
+   "end": 2920.39,
+   "text": "Sometimes you make questionable ones, like buying a new TV that's too big for the wall"
+  },
+  {
+   "start": 2920.39,
+   "end": 2924.71,
+   "text": "because the electronic store employee was a little too good at their job."
+  },
+  {
+   "start": 2924.71,
+   "end": 2928.91,
+   "text": "Then sometimes you make great ones, like protecting your home and auto with Progressive."
+  },
+  {
+   "start": 2928.91,
+   "end": 2932.63,
+   "text": "You get customized coverage options so you can be sure you have the right coverage."
+  },
+  {
+   "start": 2932.63,
+   "end": 2935.47,
+   "text": "Get your quote today at Progressive.com."
+  },
+  {
+   "start": 2935.47,
+   "end": 2938.35,
+   "text": "Progressive Casualty Insurance Company affiliates and other insurers."
+  },
+  {
+   "start": 2938.35,
+   "end": 2957.59,
+   "text": "available in all states."
+  },
+  {
+   "start": 2957.59,
+   "end": 2961.91,
+   "text": "I am slightly obsessed with Iceland, so I'm an unfair person to ask about that because"
+  },
+  {
+   "start": 2961.91,
+   "end": 2964.15,
+   "text": "I'll only agree with you."
+  },
+  {
+   "start": 2964.15,
+   "end": 2965.15,
+   "text": "So..."
+  },
+  {
+   "start": 2965.15,
+   "end": 2966.15,
+   "text": "Have you been there?"
+  },
+  {
+   "start": 2966.15,
+   "end": 2967.23,
+   "text": "I have, I have."
+  },
+  {
+   "start": 2967.23,
+   "end": 2974.95,
+   "text": "So I wish very much that I was a little bit better at speaking Icelandic, for example,"
+  },
+  {
+   "start": 2974.95,
+   "end": 2979.23,
+   "text": "and that sort of thing, but they're all very kind to those of us who would attempt to stumble"
+  },
+  {
+   "start": 2979.23,
+   "end": 2981.07,
+   "text": "through it for five seconds."
+  },
+  {
+   "start": 2981.07,
+   "end": 2984.85,
+   "text": "I do a good line in being obsessed with their ghost stories, you see."
+  },
+  {
+   "start": 2984.85,
+   "end": 2986.85,
+   "text": "So, you know, I'm popular."
+  },
+  {
+   "start": 2986.85,
+   "end": 2991.93,
+   "text": "Yeah, I'm a great person to talk to in the pub in Iceland, you know."
+  },
+  {
+   "start": 2991.93,
+   "end": 2995.29,
+   "text": "But having said that, you know, I like Iceland."
+  },
+  {
+   "start": 2995.29,
+   "end": 2996.97,
+   "text": "I'm quite interested in it."
+  },
+  {
+   "start": 2996.97,
+   "end": 3000.93,
+   "text": "I'm quite interested in basically the cultural memory that we get from there, because since"
+  },
+  {
+   "start": 3000.93,
+   "end": 3006.05,
+   "text": "we do have such great written records, right, we're able to look into these things."
+  },
+  {
+   "start": 3006.05,
+   "end": 3009.89,
+   "text": "However, I think one of the things that you've done really well in your book has pointed"
+  },
+  {
+   "start": 3009.89,
+   "end": 3017.29,
+   "text": "out that actually there is as much stuff going on for these cultures in the West as there"
+  },
+  {
+   "start": 3017.29,
+   "end": 3018.29,
+   "text": "is in the East."
+  },
+  {
+   "start": 3018.29,
+   "end": 3024.73,
+   "text": "You've talked about Estonia already, but we also have the Rus and these incredibly important"
+  },
+  {
+   "start": 3024.73,
+   "end": 3027.53,
+   "text": "eastern river routes."
+  },
+  {
+   "start": 3027.53,
+   "end": 3034.63,
+   "text": "These are sort of lynchpins of the economy in a way that I hadn't really thought of before"
+  },
+  {
+   "start": 3034.63,
+   "end": 3039.43,
+   "text": "because I do tend to just sort of rush towards Iceland in the way that I think about it."
+  },
+  {
+   "start": 3039.43,
+   "end": 3042.73,
+   "text": "I think there is a kind of, I don't know what the word is,"
+  },
+  {
+   "start": 3042.73,
+   "end": 3048.73,
+   "text": "Eurocentric view of the Viking Age extending west into the North Atlantic."
+  },
+  {
+   "start": 3048.73,
+   "end": 3054.83,
+   "text": "And the eastern parts of the diaspora actually stretch a lot further,"
+  },
+  {
+   "start": 3054.83,
+   "end": 3059.63,
+   "text": "far into the Asian steppe, possibly into eastern Asia itself."
+  },
+  {
+   "start": 3059.63,
+   "end": 3063.73,
+   "text": "Not on the same scale we're not talking about enormous armies and fleets,"
+  },
+  {
+   "start": 3063.73,
+   "end": 3068.53,
+   "text": "though sometimes those things are present, but very much more to do with trade"
+  },
+  {
+   "start": 3068.53,
+   "end": 3074.61,
+   "text": "and the Russ, this identity that grows up around trade on the Eastern European rivers, is very"
+  },
+  {
+   "start": 3074.61,
+   "end": 3079.89,
+   "text": "important there. And one of the things I wanted to show with this book really is, we've already"
+  },
+  {
+   "start": 3079.89,
+   "end": 3085.09,
+   "text": "talked about, get away from the idea of the Viking as the archetypal person of that period"
+  },
+  {
+   "start": 3085.09,
+   "end": 3090.53,
+   "text": "and show all these different kinds of people at different times and different parts of the"
+  },
+  {
+   "start": 3090.53,
+   "end": 3097.48,
+   "text": "Norse world. We talked earlier about that farming was a really central occupation,"
+  },
+  {
+   "start": 3097.48,
+   "end": 3102.28,
+   "text": "But it's also something that can be a temporary occupation just like fighting or being a warrior."
+  },
+  {
+   "start": 3102.84,
+   "end": 3107.56,
+   "text": "There's another group of people called the Varangians who are essentially Norse mercenaries"
+  },
+  {
+   "start": 3107.56,
+   "end": 3115.32,
+   "text": "in the pay of the Byzantine Empire, the successors to western Rome. And there is a wonderful monument"
+  },
+  {
+   "start": 3115.32,
+   "end": 3123.32,
+   "text": "to a dead Varangium carved onto an enormous stone lion that is now outside the arsenal in Venice,"
+  },
+  {
+   "start": 3123.32,
+   "end": 3130.36,
+   "text": "but once stood in the harbour at Athens. And it commemorates a guy called Horsi. And this sort of"
+  },
+  {
+   "start": 3130.92,
+   "end": 3137.32,
+   "text": "memorial inscription to this dead guy is written by his friends, by his comrades. But it actually"
+  },
+  {
+   "start": 3137.32,
+   "end": 3144.6,
+   "text": "describes him as Horsi the farmer. So that's who he really was. But he's died as a mercenary in Greece."
+  },
+  {
+   "start": 3145.54,
+   "end": 3151.06,
+   "text": "So presumably he was intending to go back. And this this sort of relationship between even somewhere"
+  },
+  {
+   "start": 3151.06,
+   "end": 3158.1,
+   "text": "so far away and a farm back in Sweden where he came from is also sort of found in that inscription"
+  },
+  {
+   "start": 3158.1,
+   "end": 3165.14,
+   "text": "because it said he died before he got paid. So it's actually a record and we want the money"
+  },
+  {
+   "start": 3165.14,
+   "end": 3171.7,
+   "text": "to take home to his folks. So it's a kind of a contractual reminder as well. So there's very"
+  },
+  {
+   "start": 3171.7,
+   "end": 3177.86,
+   "text": "much this kind of connection all across these vast distances and the idea that if your house is"
+  },
+  {
+   "start": 3177.86,
+   "end": 3185.14,
+   "text": "relatives in a farm in Upland in central Sweden, for example. If you really wanted to, it wouldn't"
+  },
+  {
+   "start": 3185.14,
+   "end": 3190.66,
+   "text": "be that hard to go down to Athens and find the enormous lion statue in the harbour. Someone"
+  },
+  {
+   "start": 3190.66,
+   "end": 3195.46,
+   "text": "could just tell you about it and then you could find the memorial to your dead relative. So these"
+  },
+  {
+   "start": 3195.46,
+   "end": 3201.3,
+   "text": "stories, it's not just people that are moving, it's stories and a kind of narrative about what"
+  },
+  {
+   "start": 3201.3,
+   "end": 3204.74,
+   "text": "they're doing, but is also crossing that huge diaspora."
+  },
+  {
+   "start": 3204.74,
+   "end": 3212.0,
+   "text": "This is absolutely lovely, I think."
+  },
+  {
+   "start": 3212.0,
+   "end": 3217.92,
+   "text": "I love the fact that we have these interconnected and overlapping histories that you see within"
+  },
+  {
+   "start": 3217.92,
+   "end": 3224.88,
+   "text": "that because it's people living within the Byzantine sphere, they are in Athens, it ends"
+  },
+  {
+   "start": 3224.88,
+   "end": 3229.52,
+   "text": "up in Venice, and you really do see how interconnected this world is."
+  },
+  {
+   "start": 3229.52,
+   "end": 3233.52,
+   "text": "You know, and granted, this is over a course of hundreds of years, I will say that."
+  },
+  {
+   "start": 3233.52,
+   "end": 3239.04,
+   "text": "But it does show you how these things can change and how people do move."
+  },
+  {
+   "start": 3239.04,
+   "end": 3243.28,
+   "text": "And we have different ways of relating to monuments."
+  },
+  {
+   "start": 3243.28,
+   "end": 3245.08,
+   "text": "It's absolutely fascinating."
+  },
+  {
+   "start": 3245.08,
+   "end": 3246.08,
+   "text": "I agree."
+  },
+  {
+   "start": 3246.08,
+   "end": 3257.73,
+   "text": "I did want to ask you a little bit though about the Vova and looking at the kind of later"
+  },
+  {
+   "start": 3257.73,
+   "end": 3263.67,
+   "text": "aspects of Old Norse culture and what we kind of see about this."
+  },
+  {
+   "start": 3263.67,
+   "end": 3274.18,
+   "text": "Because there is great debate about what we can see if we look at these particular burials."
+  },
+  {
+   "start": 3274.18,
+   "end": 3276.25,
+   "text": "Can you tell us a little bit about that?"
+  },
+  {
+   "start": 3276.25,
+   "end": 3281.61,
+   "text": "Yeah, this is sort of excavating my own personal kind of research history, because these are"
+  },
+  {
+   "start": 3281.61,
+   "end": 3286.33,
+   "text": "the people I did my doctorate on decades ago."
+  },
+  {
+   "start": 3286.33,
+   "end": 3292.41,
+   "text": "The Verlor, that's the plural, Verlor is the singular."
+  },
+  {
+   "start": 3292.41,
+   "end": 3295.85,
+   "text": "These are kind of sorceresses."
+  },
+  {
+   "start": 3295.85,
+   "end": 3299.05,
+   "text": "These are women of magical power."
+  },
+  {
+   "start": 3299.05,
+   "end": 3302.97,
+   "text": "And when we talk about Norse mythology or Norse religion, we often just think of the"
+  },
+  {
+   "start": 3302.97,
+   "end": 3307.73,
+   "text": "gods and they're still famous, you know, whether you read the poetry or watch Marvel movies,"
+  },
+  {
+   "start": 3307.73,
+   "end": 3309.61,
+   "text": "we all know their names."
+  },
+  {
+   "start": 3309.61,
+   "end": 3316.49,
+   "text": "And yet the kind of really constant part of that religion for ordinary people in the Viking"
+  },
+  {
+   "start": 3316.49,
+   "end": 3323.77,
+   "text": "edge was not going to a temple and worshipping Odin or whoever. It's a very direct relationship"
+  },
+  {
+   "start": 3323.77,
+   "end": 3329.21,
+   "text": "with the supernatural world that was all around them, whether it's the elves that live behind"
+  },
+  {
+   "start": 3329.21,
+   "end": 3333.85,
+   "text": "your house and you've got to be nicer and otherwise maybe your cattle get sick or whatever."
+  },
+  {
+   "start": 3333.85,
+   "end": 3339.77,
+   "text": "And you need people who can make those connections. And this is where this kind of everyday magic,"
+  },
+  {
+   "start": 3339.77,
+   "end": 3344.89,
+   "text": "for want of a better word, came into it. And the Verlo were the women who performed that."
+  },
+  {
+   "start": 3344.89,
+   "end": 3350.89,
+   "text": "the idea of access to the supernatural is very much a feminine power in the Viking Age, a very"
+  },
+  {
+   "start": 3350.89,
+   "end": 3360.44,
+   "text": "strong source of social power for women. And vulva means staff bearer, someone who carries a staff,"
+  },
+  {
+   "start": 3360.44,
+   "end": 3365.32,
+   "text": "and when we have descriptions of them in the sagas, the medieval sagas, their staffs are quite"
+  },
+  {
+   "start": 3365.32,
+   "end": 3371.96,
+   "text": "prominent. And there are a little bit over 50 burials now from across Scandinavia and other"
+  },
+  {
+   "start": 3371.96,
+   "end": 3379.08,
+   "text": "parts of the diaspora of women buried with iron staffs, with different kinds of decorations on"
+  },
+  {
+   "start": 3379.08,
+   "end": 3385.16,
+   "text": "them and things, and also other bits and pieces that are bags full of animal body parts or sometimes"
+  },
+  {
+   "start": 3385.16,
+   "end": 3392.28,
+   "text": "hallucinogenic drugs, striking items of clothing, things like that. And these are the people that"
+  },
+  {
+   "start": 3392.28,
+   "end": 3397.56,
+   "text": "I think you mentioned there's debate about them. It's very hard to be sure exactly who these people"
+  },
+  {
+   "start": 3397.56,
+   "end": 3405.56,
+   "text": "and especially to take the terminologies from the sagas centuries later and then kind of throw them at the graves and imagine they're the same thing."
+  },
+  {
+   "start": 3405.56,
+   "end": 3409.56,
+   "text": "Maybe they won't be, you know, they probably won't sort of fit directly."
+  },
+  {
+   "start": 3409.56,
+   "end": 3412.56,
+   "text": "But these are clearly women of power."
+  },
+  {
+   "start": 3412.56,
+   "end": 3413.56,
+   "text": "They have status."
+  },
+  {
+   "start": 3413.56,
+   "end": 3421.56,
+   "text": "The fact that they're buried with these very unusual staffs, which does match the written descriptions, it's quite suggestive."
+  },
+  {
+   "start": 3421.56,
+   "end": 3423.56,
+   "text": "And they're buried in prominent places as well."
+  },
+  {
+   "start": 3423.56,
+   "end": 3430.24,
+   "text": "as well. Sometimes the example I use in the book is a woman who has the richest and central"
+  },
+  {
+   "start": 3430.24,
+   "end": 3436.04,
+   "text": "burial in the entire cemetery connected to a fortress in Denmark. She's a really remarkable"
+  },
+  {
+   "start": 3436.04,
+   "end": 3443.79,
+   "text": "person. So they're clearly very prominent people and very important in Viking-age culture."
+  },
+  {
+   "start": 3443.79,
+   "end": 3451.95,
+   "text": "I am slightly obsessed with them because I like magic users and also women. So that's"
+  },
+  {
+   "start": 3451.95,
+   "end": 3458.22,
+   "text": "It's neither here nor there, but I do think it's quite interesting that we do see them,"
+  },
+  {
+   "start": 3458.22,
+   "end": 3466.82,
+   "text": "absolutely, I would say, given burials that show us they are important culturally and"
+  },
+  {
+   "start": 3466.82,
+   "end": 3469.5,
+   "text": "even possibly quite close to political power."
+  },
+  {
+   "start": 3469.5,
+   "end": 3475.26,
+   "text": "I think that is an interesting thing to think about because I think there's a modern tendency"
+  },
+  {
+   "start": 3475.26,
+   "end": 3481.3,
+   "text": "to attempt to sort of separate politics from religion in the first place."
+  },
+  {
+   "start": 3481.3,
+   "end": 3485.14,
+   "text": "certainly from anything that is considered to be magical or"
+  },
+  {
+   "start": 3485.14,
+   "end": 3490.06,
+   "text": "irracular. And I just don't think that is something that"
+  },
+  {
+   "start": 3490.06,
+   "end": 3494.18,
+   "text": "these people would have recognized. And when we kind of see"
+  },
+  {
+   "start": 3494.18,
+   "end": 3496.34,
+   "text": "these graves, they say that, well, that's all the same thing."
+  },
+  {
+   "start": 3496.34,
+   "end": 3496.7,
+   "text": "No?"
+  },
+  {
+   "start": 3497.1,
+   "end": 3499.46,
+   "text": "Yeah, I don't think they'd have recognized that distinction"
+  },
+  {
+   "start": 3499.46,
+   "end": 3501.54,
+   "text": "either. And for that matter, I don't think they'd have"
+  },
+  {
+   "start": 3501.54,
+   "end": 3503.86,
+   "text": "recognized the difference between the natural and the"
+  },
+  {
+   "start": 3503.86,
+   "end": 3507.94,
+   "text": "supernatural. I think these things blended together into"
+  },
+  {
+   "start": 3508.1,
+   "end": 3511.62,
+   "text": "different kinds of worlds that intersect. And one of those"
+  },
+  {
+   "start": 3511.62,
+   "end": 3517.26,
+   "text": "world is just the political world. So I think that they power is something that is one of"
+  },
+  {
+   "start": 3517.26,
+   "end": 3522.38,
+   "text": "the motors of these societies operating at lots of different levels from individual farms"
+  },
+  {
+   "start": 3522.38,
+   "end": 3527.7,
+   "text": "and the influence of farmers over their district and that kind of popular democracy and legal"
+  },
+  {
+   "start": 3527.7,
+   "end": 3530.38,
+   "text": "systems and things all the way up to kings and queens."
+  },
+  {
+   "start": 3530.38,
+   "end": 3537.92,
+   "text": "Now, I suppose, unfortunately, we eventually have to stop having this discussion. But before"
+  },
+  {
+   "start": 3537.92,
+   "end": 3545.6,
+   "text": "we do, I wanted to talk a little bit about your discussion of a sap me and your argument"
+  },
+  {
+   "start": 3545.6,
+   "end": 3552.26,
+   "text": "that I think is very persuasive that the Viking Age doesn't really have this very"
+  },
+  {
+   "start": 3552.26,
+   "end": 3555.98,
+   "text": "clean neat ending and then nobody woke up and said, well, you guys, I guess that's not"
+  },
+  {
+   "start": 3555.98,
+   "end": 3556.98,
+   "text": "happening anymore."
+  },
+  {
+   "start": 3556.98,
+   "end": 3560.14,
+   "text": "No, you know, not less least because they probably wouldn't understand what we meant"
+  },
+  {
+   "start": 3560.14,
+   "end": 3561.14,
+   "text": "by Viking Age."
+  },
+  {
+   "start": 3561.14,
+   "end": 3568.7,
+   "text": "I do think this is a quite important insight because we usually say, oh, it's 1050."
+  },
+  {
+   "start": 3568.7,
+   "end": 3572.22,
+   "text": "It's Lindisfarne is the beginning and then 1050 is the end."
+  },
+  {
+   "start": 3572.22,
+   "end": 3578.62,
+   "text": "But in Satme, you're finding that older ways of life are continuing for longer than people"
+  },
+  {
+   "start": 3578.62,
+   "end": 3581.36,
+   "text": "would have thought."
+  },
+  {
+   "start": 3581.36,
+   "end": 3582.36,
+   "text": "Not just in Satme."
+  },
+  {
+   "start": 3582.36,
+   "end": 3587.6,
+   "text": "I mean, there's the material culture and life ways."
+  },
+  {
+   "start": 3587.6,
+   "end": 3593.68,
+   "text": "Well, over Scandinavia are remaining fairly consistent into what we would call the Middle Ages."
+  },
+  {
+   "start": 3593.68,
+   "end": 3599.56,
+   "text": "But Sackmi is a place that exists as much in the mind as it does on the ground."
+  },
+  {
+   "start": 3599.56,
+   "end": 3601.52,
+   "text": "It is the Sámi homeland."
+  },
+  {
+   "start": 3601.52,
+   "end": 3610.36,
+   "text": "And it today stretches across sort of northern and central Sweden and Norway, parts of Finland,"
+  },
+  {
+   "start": 3610.36,
+   "end": 3612.92,
+   "text": "and into the Kola Peninsula of Russia."
+  },
+  {
+   "start": 3612.92,
+   "end": 3615.92,
+   "text": "And in the Viking age, it probably extended quite a lot further south,"
+  },
+  {
+   "start": 3615.92,
+   "end": 3621.6,
+   "text": "and enclose the White Sea as well in the northeast. And Sápmi exists now, you know,"
+  },
+  {
+   "start": 3621.6,
+   "end": 3627.44,
+   "text": "is still the Sámiha land. And I think this cultural continuity is something that's very"
+  },
+  {
+   "start": 3627.44,
+   "end": 3635.36,
+   "text": "important. And it can be a bit problematic to draw very direct connections between, say,"
+  },
+  {
+   "start": 3635.36,
+   "end": 3642.32,
+   "text": "the life of modern Nordic people and the Vikings. That is a very tenuous link other than time."
+  },
+  {
+   "start": 3642.32,
+   "end": 3648.04,
+   "text": "time. But if we do that, exactly the same links exist between the Sami now and then."
+  },
+  {
+   "start": 3648.04,
+   "end": 3653.88,
+   "text": "So the Sami cultural heritage is very much part of the heritage of Fennest Ghandia, just"
+  },
+  {
+   "start": 3653.88,
+   "end": 3657.7,
+   "text": "as much as the Viking Age."
+  },
+  {
+   "start": 3657.7,
+   "end": 3664.1,
+   "text": "And I do think that there is this tendency to, when we try to draw a hard line under"
+  },
+  {
+   "start": 3664.1,
+   "end": 3670.39,
+   "text": "these things to talk about, well, part of what ends the age is that there is an end"
+  },
+  {
+   "start": 3670.39,
+   "end": 3675.23,
+   "text": "to the movement of people. Everyone is just in this neat place where they're meant to"
+  },
+  {
+   "start": 3675.23,
+   "end": 3682.95,
+   "text": "stand and then we're having no more immigration. We're having no more moving about from place"
+  },
+  {
+   "start": 3682.95,
+   "end": 3689.03,
+   "text": "to place. But what you're tending to see is that we still have these highly movable and"
+  },
+  {
+   "start": 3689.03,
+   "end": 3693.87,
+   "text": "mobile households from all different directions for quite some time."
+  },
+  {
+   "start": 3693.87,
+   "end": 3696.27,
+   "text": "Yeah, I think it's still a mobile society."
+  },
+  {
+   "start": 3696.27,
+   "end": 3702.75,
+   "text": "I think the biggest transformation of the Viking Age is, and this is hardly a new observation,"
+  },
+  {
+   "start": 3702.75,
+   "end": 3709.11,
+   "text": "but it's the transition to Christianity, the transition to single monarchies."
+  },
+  {
+   "start": 3709.11,
+   "end": 3714.03,
+   "text": "This idea of church and state as two halves of the same thing, they really go hand in"
+  },
+  {
+   "start": 3714.03,
+   "end": 3715.47,
+   "text": "hand."
+  },
+  {
+   "start": 3715.47,
+   "end": 3721.71,
+   "text": "And we see Scandinavia taking its place on the stage of literate Christian Europe."
+  },
+  {
+   "start": 3721.71,
+   "end": 3725.39,
+   "text": "what is really happening when you get into the 11th century."
+  },
+  {
+   "start": 3725.39,
+   "end": 3729.79,
+   "text": "But the ways of life of individual Scandinavians are probably not changing very much."
+  },
+  {
+   "start": 3729.79,
+   "end": 3735.23,
+   "text": "So there is continuity and in some places like some of the islands, for example,"
+  },
+  {
+   "start": 3735.23,
+   "end": 3741.23,
+   "text": "or in some of the Baltic islands in Ireland itself in the West, you know, there are"
+  },
+  {
+   "start": 3741.23,
+   "end": 3746.83,
+   "text": "what we would think of as Viking Age art styles or objects that are continuing in use for 100 years"
+  },
+  {
+   "start": 3746.83,
+   "end": 3752.39,
+   "text": "or more beyond the classic end of the Viking Age. So just as Lindisfarne is a very poor"
+  },
+  {
+   "start": 3752.39,
+   "end": 3758.55,
+   "text": "way to think about the start of it, say Stanford Bridge, just before the Battle of Hastings,"
+  },
+  {
+   "start": 3758.55,
+   "end": 3763.15,
+   "text": "is not really an adequate way to think about the end of it either. The Viking Age winds"
+  },
+  {
+   "start": 3763.15,
+   "end": 3771.85,
+   "text": "down at different rates in different places at different times. So it fades out rather"
+  },
+  {
+   "start": 3771.85,
+   "end": 3772.85,
+   "text": "than ends."
+  },
+  {
+   "start": 3772.85,
+   "end": 3776.45,
+   "text": "Just to wrap us up, I've got a bit of a treat question for you."
+  },
+  {
+   "start": 3776.45,
+   "end": 3780.17,
+   "text": "And which is, you know, from all the work you've done"
+  },
+  {
+   "start": 3780.17,
+   "end": 3783.39,
+   "text": "and everything that you've sort of shared,"
+  },
+  {
+   "start": 3783.39,
+   "end": 3788.68,
+   "text": "what is it, what stereotype would you hope would disappear"
+  },
+  {
+   "start": 3792.02,
+   "end": 3793.08,
+   "text": "about this time period?"
+  },
+  {
+   "start": 3793.08,
+   "end": 3794.28,
+   "text": "If you could wave a magic wand"
+  },
+  {
+   "start": 3794.28,
+   "end": 3797.56,
+   "text": "and people would stop believing one thing, what would it be?"
+  },
+  {
+   "start": 3797.56,
+   "end": 3803.51,
+   "text": "I think it would be quite simply that everybody is a Viking"
+  },
+  {
+   "start": 3803.51,
+   "end": 3805.61,
+   "text": "because they're not."
+  },
+  {
+   "start": 3805.61,
+   "end": 3808.41,
+   "text": "I don't think we're ever gonna lose that word."
+  },
+  {
+   "start": 3808.41,
+   "end": 3811.93,
+   "text": "There are plenty of academics who really, really would like to,"
+  },
+  {
+   "start": 3811.93,
+   "end": 3816.33,
+   "text": "but I'd just say good luck because it's not going away."
+  },
+  {
+   "start": 3816.33,
+   "end": 3819.37,
+   "text": "But I don't think it's very hard to understand this,"
+  },
+  {
+   "start": 3819.37,
+   "end": 3822.09,
+   "text": "especially when you know that it means pirate,"
+  },
+  {
+   "start": 3822.09,
+   "end": 3824.45,
+   "text": "people grasp rather easily that, okay,"
+  },
+  {
+   "start": 3824.45,
+   "end": 3826.17,
+   "text": "maybe not everybody was a Viking,"
+  },
+  {
+   "start": 3826.17,
+   "end": 3828.37,
+   "text": "but that's the name we still use"
+  },
+  {
+   "start": 3828.37,
+   "end": 3831.05,
+   "text": "for most people over there in those days."
+  },
+  {
+   "start": 3831.05,
+   "end": 3833.45,
+   "text": "But I would like to get rid of that if I could."
+  },
+  {
+   "start": 3833.45,
+   "end": 3836.25,
+   "text": "Well, I'm going to join you in that."
+  },
+  {
+   "start": 3836.25,
+   "end": 3841.69,
+   "text": "I would like to thank you so much for an excellent conversation and a wonderful book."
+  },
+  {
+   "start": 3841.69,
+   "end": 3848.93,
+   "text": "I think you're going a long way to dispelling those myths if people would but heed your"
+  },
+  {
+   "start": 3848.93,
+   "end": 3849.93,
+   "text": "words."
+  },
+  {
+   "start": 3849.93,
+   "end": 3852.05,
+   "text": "Thank you."
+  },
+  {
+   "start": 3852.05,
+   "end": 3855.09,
+   "text": "Thank you so much, Neil, once again for joining me."
+  },
+  {
+   "start": 3855.09,
+   "end": 3859.96,
+   "text": "And thank you for listening to Gaunt Medieval from History Head."
+  },
+  {
+   "start": 3859.96,
+   "end": 3863.68,
+   "text": "If you're interested in the topics we covered in this episode, you might want to go back"
+  },
+  {
+   "start": 3863.68,
+   "end": 3867.08,
+   "text": "and listen to our many past episodes on the Vikings,"
+  },
+  {
+   "start": 3867.08,
+   "end": 3870.7,
+   "text": "including what caused the Viking Age."
+  },
+  {
+   "start": 3870.7,
+   "end": 3872.86,
+   "text": "Remember, you can enjoy unlimited access"
+  },
+  {
+   "start": 3872.86,
+   "end": 3875.98,
+   "text": "to award-winning original TV documentaries,"
+  },
+  {
+   "start": 3875.98,
+   "end": 3879.46,
+   "text": "including my recent film with Matt, Medieval Summer,"
+  },
+  {
+   "start": 3879.46,
+   "end": 3883.18,
+   "text": "and Adfree Podcasts by signing up at historyhit.com"
+  },
+  {
+   "start": 3883.18,
+   "end": 3885.78,
+   "text": "forward slash subscription."
+  },
+  {
+   "start": 3885.78,
+   "end": 3887.38,
+   "text": "You can follow Gone Medieval on Spotify,"
+  },
+  {
+   "start": 3887.38,
+   "end": 3888.94,
+   "text": "where you can leave us comments and suggestions"
+  },
+  {
+   "start": 3888.94,
+   "end": 3891.14,
+   "text": "or wherever you get your podcasts."
+  },
+  {
+   "start": 3891.14,
+   "end": 3893.98,
+   "text": "And tell all your friends and family that you,"
+  },
+  {
+   "start": 3893.98,
+   "end": 3895.94,
+   "text": "I'm gone medieval."
+  },
+  {
+   "start": 3895.94,
+   "end": 3917.24,
+   "text": "Until next time."
+  },
+  {
+   "start": 3917.24,
+   "end": 3920.04,
+   "text": "Ryzen knows that holiday math can be complicated."
+  },
+  {
+   "start": 3920.04,
+   "end": 3920.56,
+   "text": "OK, let's see."
+  },
+  {
+   "start": 3920.56,
+   "end": 3926.16,
+   "text": "We got the four kids, four gifts each, six teacher gifts."
+  },
+  {
+   "start": 3926.16,
+   "end": 3927.96,
+   "text": "Wait, oh, what do we get and Sandy?"
+  },
+  {
+   "start": 3927.96,
+   "end": 3928.52,
+   "text": "And the dogs."
+  },
+  {
+   "start": 3928.52,
+   "end": 3930.92,
+   "text": "Oh, can't forget the dogs."
+  },
+  {
+   "start": 3930.92,
+   "end": 3932.16,
+   "text": "Know what doesn't need math?"
+  },
+  {
+   "start": 3932.16,
+   "end": 3933.88,
+   "text": "Simplicity plan from Verizon."
+  },
+  {
+   "start": 3933.88,
+   "end": 3935.32,
+   "text": "One plan, one price."
+  },
+  {
+   "start": 3935.32,
+   "end": 3938.16,
+   "text": "Just $30 a line per month for you or the whole family."
+  },
+  {
+   "start": 3938.16,
+   "end": 3939.64,
+   "text": "The holidays are complicated."
+  },
+  {
+   "start": 3939.64,
+   "end": 3942.8,
+   "text": "Shopping our best deals and switching to Verizon is simple."
+  },
+  {
+   "start": 3942.8,
+   "end": 3944.56,
+   "text": "For new customers, $30 per line includes"
+  },
+  {
+   "start": 3944.56,
+   "end": 3945.52,
+   "text": "auto pay and switch discount,"
+  },
+  {
+   "start": 3945.52,
+   "end": 3947.52,
+   "text": "additional taxes fees in terms apply."
+  },
+  {
+   "start": 3947.52,
+   "end": 3950.98,
+   "text": "Big news, Wayfair's Black Friday sale is here, early."
+  },
+  {
+   "start": 3950.98,
+   "end": 3954.12,
+   "text": "Right now at Wayfair, get up to 70% off everything you need"
+  },
+  {
+   "start": 3954.12,
+   "end": 3955.28,
+   "text": "for the season ahead."
+  },
+  {
+   "start": 3955.28,
+   "end": 3958.2,
+   "text": "Save on kitchen and dining, bedroom furniture and mattresses,"
+  },
+  {
+   "start": 3958.2,
+   "end": 3960.44,
+   "text": "holiday decor, and way more."
+  },
+  {
+   "start": 3960.44,
+   "end": 3963.36,
+   "text": "Now is the time to score big from seasonal fines"
+  },
+  {
+   "start": 3963.36,
+   "end": 3965.48,
+   "text": "to favorites you'll use all year long."
+  },
+  {
+   "start": 3965.48,
+   "end": 3968.0,
+   "text": "Plus with Wayfair, enjoy fast and easy shipping,"
+  },
+  {
+   "start": 3968.0,
+   "end": 3970.2,
+   "text": "with delivery and time for the holidays."
+  },
+  {
+   "start": 3970.2,
+   "end": 3972.98,
+   "text": "Save up to 70% off early Black Friday deals."
+  },
+  {
+   "start": 3972.98,
+   "end": 3975.1,
+   "text": "Shop now at Wayfair.com."
+  },
+  {
+   "start": 3975.1,
+   "end": 3977.64,
+   "text": "Wayfair, every style, every home."
+  }
+ ],
+ "seconds": 101.5,
+ "file": "gone-medieval__investigating-viking-burials/take0.mp3",
+ "model": "small"
+}

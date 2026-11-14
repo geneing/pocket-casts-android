@@ -1,0 +1,6119 @@
+{
+ "duration": 3921.55,
+ "language": "en",
+ "segments": [
+  {
+   "start": 0.46,
+   "end": 5.74,
+   "text": "Finance is increasingly being built on digital rails, but as the adoption of virtual assets,"
+  },
+  {
+   "start": 5.74,
+   "end": 12.22,
+   "text": "tokenization and stable coins grows, can regulation not only keep pace but help accelerate it?"
+  },
+  {
+   "start": 12.22,
+   "end": 14.18,
+   "text": "Find out more later in the podcast."
+  },
+  {
+   "start": 30.78,
+   "end": 34.94,
+   "text": "Like earning eight times points on Chase Travel, Chase Sapphire Reserve for Business,"
+  },
+  {
+   "start": 34.94,
+   "end": 36.94,
+   "text": "the business card that gives back all you put in."
+  },
+  {
+   "start": 38.94,
+   "end": 41.58,
+   "text": "Visit chase.com slash reserve business to learn more."
+  },
+  {
+   "start": 41.58,
+   "end": 45.18,
+   "text": "Cards issued by JP Morgan Chase Bank, any member of DIC subject to credit approval terms apply."
+  },
+  {
+   "start": 45.18,
+   "end": 47.98,
+   "text": "Kia, always forward, life in motion."
+  },
+  {
+   "start": 47.98,
+   "end": 51.82,
+   "text": "Whether I'm heading into the city, meeting friends, or planning a weekend getaway,"
+  },
+  {
+   "start": 51.82,
+   "end": 57.02,
+   "text": "I love having an SUV that's ready for everything, from daily errands to spontaneous adventures."
+  },
+  {
+   "start": 57.02,
+   "end": 61.74,
+   "text": "The all new 2027 Kia Seltos offers class leading interior space,"
+  },
+  {
+   "start": 61.74,
+   "end": 64.78,
+   "text": "and the flexibility to keep up with your busy lifestyle."
+  },
+  {
+   "start": 64.78,
+   "end": 67.22,
+   "text": "With smart design and everyday versatility,"
+  },
+  {
+   "start": 67.22,
+   "end": 69.3,
+   "text": "it's built for wherever life takes you."
+  },
+  {
+   "start": 69.3,
+   "end": 72.7,
+   "text": "Visit kia.com or your local Kia retailer today."
+  },
+  {
+   "start": 72.7,
+   "end": 74.98,
+   "text": "Kia, movement that inspires."
+  },
+  {
+   "start": 74.98,
+   "end": 81.04,
+   "text": "Bloomberg Audio Studios."
+  },
+  {
+   "start": 81.04,
+   "end": 94.29,
+   "text": "Podcasts, radio, news."
+  },
+  {
+   "start": 94.29,
+   "end": 96.49,
+   "text": "Hello and welcome to another episode"
+  },
+  {
+   "start": 96.49,
+   "end": 98.37,
+   "text": "of the OddLots podcast."
+  },
+  {
+   "start": 98.37,
+   "end": 99.77,
+   "text": "I'm Joe Wessenthal."
+  },
+  {
+   "start": 99.77,
+   "end": 101.53,
+   "text": "And I'm Tracy Allaway."
+  },
+  {
+   "start": 101.53,
+   "end": 104.85,
+   "text": "Tracy, I gotta say, this Jensen Wong story,"
+  },
+  {
+   "start": 104.85,
+   "end": 106.67,
+   "text": "I think it's one of the biggest stories ever."
+  },
+  {
+   "start": 106.67,
+   "end": 107.51,
+   "text": "Yeah."
+  },
+  {
+   "start": 107.51,
+   "end": 109.69,
+   "text": "Like just as a news story,"
+  },
+  {
+   "start": 109.69,
+   "end": 111.75,
+   "text": "it's about as big as it could possibly get."
+  },
+  {
+   "start": 111.75,
+   "end": 112.59,
+   "text": "It has everything."
+  },
+  {
+   "start": 112.59,
+   "end": 113.51,
+   "text": "It has everything."
+  },
+  {
+   "start": 113.51,
+   "end": 117.35,
+   "text": "Alleged, Chinese spies, chip smuggling."
+  },
+  {
+   "start": 117.35,
+   "end": 118.43,
+   "text": "It's exciting stuff."
+  },
+  {
+   "start": 118.43,
+   "end": 121.35,
+   "text": "Also, it's birthed like 5,000 memes,"
+  },
+  {
+   "start": 121.35,
+   "end": 122.75,
+   "text": "some of which are quite good."
+  },
+  {
+   "start": 122.75,
+   "end": 124.79,
+   "text": "There have been, I've definitely seen some good memes."
+  },
+  {
+   "start": 124.79,
+   "end": 126.75,
+   "text": "But actually, so on a serious note,"
+  },
+  {
+   "start": 126.75,
+   "end": 128.55,
+   "text": "if you think about the AI trade,"
+  },
+  {
+   "start": 128.55,
+   "end": 133.45,
+   "text": "I mean, the sun around which it all revolves is Nvidia,"
+  },
+  {
+   "start": 133.45,
+   "end": 135.97,
+   "text": "both in terms of like providing the actual chips"
+  },
+  {
+   "start": 135.97,
+   "end": 137.65,
+   "text": "that powers a lot of this technology"
+  },
+  {
+   "start": 137.65,
+   "end": 140.29,
+   "text": "and also providing a lot of the financing"
+  },
+  {
+   "start": 140.29,
+   "end": 142.33,
+   "text": "and investments for these companies."
+  },
+  {
+   "start": 142.33,
+   "end": 144.97,
+   "text": "And so any hint of a scandal"
+  },
+  {
+   "start": 144.97,
+   "end": 148.25,
+   "text": "has big implications for AI as a whole."
+  },
+  {
+   "start": 148.25,
+   "end": 150.01,
+   "text": "No, I really liked the way you put that,"
+  },
+  {
+   "start": 150.01,
+   "end": 152.69,
+   "text": "that they are the sun of the universe,"
+  },
+  {
+   "start": 152.69,
+   "end": 156.13,
+   "text": "both from it, they have the crown jewel technology,"
+  },
+  {
+   "start": 156.13,
+   "end": 159.77,
+   "text": "the chips, they have the financing to, you know,"
+  },
+  {
+   "start": 159.77,
+   "end": 161.81,
+   "text": "back all kinds of partners and Neoclouds"
+  },
+  {
+   "start": 161.81,
+   "end": 163.21,
+   "text": "and everything all around the world,"
+  },
+  {
+   "start": 163.21,
+   "end": 164.65,
+   "text": "Everyone wants it."
+  },
+  {
+   "start": 164.65,
+   "end": 169.09,
+   "text": "And it is a technology that is both commercially,"
+  },
+  {
+   "start": 169.09,
+   "end": 172.17,
+   "text": "intensely in demand and geopolitically in demand."
+  },
+  {
+   "start": 172.17,
+   "end": 174.17,
+   "text": "And so in addition to the fact that the tech is good"
+  },
+  {
+   "start": 174.17,
+   "end": 175.61,
+   "text": "and they have the financing,"
+  },
+  {
+   "start": 175.61,
+   "end": 179.41,
+   "text": "there are all these fights about who they can even sell it to"
+  },
+  {
+   "start": 179.41,
+   "end": 180.81,
+   "text": "starting, you know, there are all these things"
+  },
+  {
+   "start": 180.81,
+   "end": 182.89,
+   "text": "of the Biden administration, lobbying of the Trump"
+  },
+  {
+   "start": 182.89,
+   "end": 185.77,
+   "text": "administration, how liberal should the policies be"
+  },
+  {
+   "start": 185.77,
+   "end": 188.13,
+   "text": "about who gets to buy them, et cetera."
+  },
+  {
+   "start": 188.13,
+   "end": 193.45,
+   "text": "That is why this story is just like so, it's huge."
+  },
+  {
+   "start": 193.53,
+   "end": 195.85,
+   "text": "Yeah, and just on the geopolitical,"
+  },
+  {
+   "start": 195.85,
+   "end": 198.69,
+   "text": "atomic's a good word, on the geopolitical angle itself,"
+  },
+  {
+   "start": 198.69,
+   "end": 201.89,
+   "text": "I mean, there's this tension that we've seen more and more"
+  },
+  {
+   "start": 201.89,
+   "end": 204.89,
+   "text": "in recent years where some people will argue that,"
+  },
+  {
+   "start": 204.89,
+   "end": 208.29,
+   "text": "well, you want the US, you want a company like Nvidia"
+  },
+  {
+   "start": 208.29,
+   "end": 212.29,
+   "text": "to be the backbone of like the AI tech stack, right?"
+  },
+  {
+   "start": 212.29,
+   "end": 215.05,
+   "text": "And so maybe you want lots of people using their chip."
+  },
+  {
+   "start": 215.05,
+   "end": 215.89,
+   "text": "Totally, totally."
+  },
+  {
+   "start": 215.89,
+   "end": 218.37,
+   "text": "But on the other hand, you know, you have people"
+  },
+  {
+   "start": 218.37,
+   "end": 220.85,
+   "text": "in the Trump administration who argue that we are"
+  },
+  {
+   "start": 220.85,
+   "end": 224.17,
+   "text": "in this existential AI race with China."
+  },
+  {
+   "start": 224.17,
+   "end": 225.73,
+   "text": "And therefore it's really important"
+  },
+  {
+   "start": 225.73,
+   "end": 229.69,
+   "text": "that China does not have access to the most advanced chips."
+  },
+  {
+   "start": 229.69,
+   "end": 232.09,
+   "text": "And so we're seeing that sort of play out"
+  },
+  {
+   "start": 232.09,
+   "end": 233.17,
+   "text": "in a lot of the discussion"
+  },
+  {
+   "start": 233.17,
+   "end": 235.17,
+   "text": "on what's going on with Nvidia right now."
+  },
+  {
+   "start": 235.17,
+   "end": 237.09,
+   "text": "The other thing that's very important,"
+  },
+  {
+   "start": 237.09,
+   "end": 239.53,
+   "text": "and this will allow us to get into the guest,"
+  },
+  {
+   "start": 239.53,
+   "end": 243.34,
+   "text": "is that in some sense, there's actually,"
+  },
+  {
+   "start": 243.34,
+   "end": 245.18,
+   "text": "like the story's kind of old news, right?"
+  },
+  {
+   "start": 245.18,
+   "end": 248.46,
+   "text": "There's been a lot of reporting on this company,"
+  },
+  {
+   "start": 248.46,
+   "end": 256.38,
+   "text": "Megaspeed and its CEO and the company's closeness to NVIDIA and Jensen specifically and where they"
+  },
+  {
+   "start": 256.38,
+   "end": 261.74,
+   "text": "know. So like in a way like what is the new news here is part of the question but whatever you"
+  },
+  {
+   "start": 261.74,
+   "end": 269.66,
+   "text": "know. I guess on some level the new news is just specifically Jensen Wong admitting to NVIDIA that"
+  },
+  {
+   "start": 269.66,
+   "end": 277.74,
+   "text": "he had this relationship and affair with the uh this executive or someone associated with Megaspeed"
+  },
+  {
+   "start": 277.74,
+   "end": 282.92,
+   "text": "and the investigation into it. Anyway, without further ado, we really do have the perfect guest,"
+  },
+  {
+   "start": 282.92,
+   "end": 287.96,
+   "text": "someone who I think is like the best beat in the world. Whenever we get a chance to chat,"
+  },
+  {
+   "start": 287.96,
+   "end": 294.84,
+   "text": "I'm always learning more about both these sort of like politics, geopolitics of chip flows"
+  },
+  {
+   "start": 294.84,
+   "end": 300.44,
+   "text": "around the world, someone who's reported on chips all around the world from DC to San Francisco,"
+  },
+  {
+   "start": 300.44,
+   "end": 304.6,
+   "text": "and now based in Hong Kong. We're going to be speaking with tech reporter here at Bloomberg News,"
+  },
+  {
+   "start": 304.6,
+   "end": 308.68,
+   "text": "Mackenzie Hawkins. So Mackenzie, thank you so much for coming on OddLots."
+  },
+  {
+   "start": 309.77,
+   "end": 311.69,
+   "text": "Thank you so much for having me, quite a week."
+  },
+  {
+   "start": 311.69,
+   "end": 316.01,
+   "text": "Staying up late and coming on OddLots because you're based in Hong Kong, so thank you."
+  },
+  {
+   "start": 316.01,
+   "end": 320.25,
+   "text": "And you were just in the U.S., your price still kind of jet lagged. So and it's the biggest..."
+  },
+  {
+   "start": 320.25,
+   "end": 324.41,
+   "text": "You know, I'm actually like... Just think I've gone back to working U.S. hours."
+  },
+  {
+   "start": 324.41,
+   "end": 328.89,
+   "text": "So I feel like I never left the U.S. I finally got over the jet lag and Jensen Wong is jet lagging me."
+  },
+  {
+   "start": 328.89,
+   "end": 332.89,
+   "text": "I can't believe how fried you must be. So again, thank you for taking the time."
+  },
+  {
+   "start": 332.89,
+   "end": 335.92,
+   "text": "Let me start with this question."
+  },
+  {
+   "start": 335.92,
+   "end": 339.16,
+   "text": "You know, reporters always think they know a little bit more"
+  },
+  {
+   "start": 339.16,
+   "end": 342.76,
+   "text": "than what they can write at any given moment, et cetera,"
+  },
+  {
+   "start": 342.76,
+   "end": 344.88,
+   "text": "because you know you're waiting for verification."
+  },
+  {
+   "start": 344.88,
+   "end": 348.12,
+   "text": "Let's say we were talking a week ago."
+  },
+  {
+   "start": 348.12,
+   "end": 351.08,
+   "text": "And so based on only what you're allowed to report,"
+  },
+  {
+   "start": 351.08,
+   "end": 352.6,
+   "text": "let's say this conversation is happening"
+  },
+  {
+   "start": 352.6,
+   "end": 354.64,
+   "text": "sometime in October, and we say,"
+  },
+  {
+   "start": 354.64,
+   "end": 357.76,
+   "text": "Mackenzie, what's the deal with this company, Megaspede?"
+  },
+  {
+   "start": 357.76,
+   "end": 360.4,
+   "text": "What was the answer you gave me a week ago,"
+  },
+  {
+   "start": 360.4,
+   "end": 363.16,
+   "text": "Just that you're totally able, who is Megaspeed?"
+  },
+  {
+   "start": 363.16,
+   "end": 367.52,
+   "text": "And why should we care about this company called Megaspeed?"
+  },
+  {
+   "start": 367.52,
+   "end": 372.04,
+   "text": "So pre-affair admission, Megaspeed is the single largest"
+  },
+  {
+   "start": 372.04,
+   "end": 374.0,
+   "text": "Southeast Asian buyer of Nvidia chips."
+  },
+  {
+   "start": 374.0,
+   "end": 376.96,
+   "text": "It's a major supplier of AI compute to Alibaba,"
+  },
+  {
+   "start": 376.96,
+   "end": 379.48,
+   "text": "which is one of the most important tech companies"
+  },
+  {
+   "start": 379.48,
+   "end": 381.92,
+   "text": "and frontier AI leaders in China."
+  },
+  {
+   "start": 381.92,
+   "end": 386.12,
+   "text": "It purchased $4.6 billion worth of Nvidia hardware"
+  },
+  {
+   "start": 386.12,
+   "end": 388.96,
+   "text": "after being spun off from a Chinese gaming company"
+  },
+  {
+   "start": 388.96,
+   "end": 394.36,
+   "text": "passing through a BVI shell and incorporating in Singapore than becoming an official NVIDIA"
+  },
+  {
+   "start": 394.36,
+   "end": 396.08,
+   "text": "partner four days later."
+  },
+  {
+   "start": 396.08,
+   "end": 400.64,
+   "text": "Its executive had a close relationship with Jensen."
+  },
+  {
+   "start": 400.64,
+   "end": 403.08,
+   "text": "We didn't know quite how close."
+  },
+  {
+   "start": 403.08,
+   "end": 407.76,
+   "text": "And it had been under US investigation and Singapore investigation for, if we're talking"
+  },
+  {
+   "start": 407.76,
+   "end": 411.24,
+   "text": "a week ago, at least a year."
+  },
+  {
+   "start": 411.24,
+   "end": 415.0,
+   "text": "So why did this raise eyebrows in the first place?"
+  },
+  {
+   "start": 415.0,
+   "end": 420.76,
+   "text": "So, Megaspeed renting out GPU capacity to a company like Alibaba, my understanding is"
+  },
+  {
+   "start": 420.76,
+   "end": 422.8,
+   "text": "like, okay, that's allowed."
+  },
+  {
+   "start": 422.8,
+   "end": 425.12,
+   "text": "People know that this is happening."
+  },
+  {
+   "start": 425.12,
+   "end": 429.72,
+   "text": "But at the same time, if you're worried about Chinese companies having access to technologically"
+  },
+  {
+   "start": 429.72,
+   "end": 433.79,
+   "text": "advanced NVIDIA trips, it seems like a pretty big loophole."
+  },
+  {
+   "start": 433.79,
+   "end": 434.79,
+   "text": "Yeah."
+  },
+  {
+   "start": 434.79,
+   "end": 440.39,
+   "text": "So, I mean, the arrangement that Megaspeed has with Alibaba is extraordinarily common"
+  },
+  {
+   "start": 440.39,
+   "end": 443.55,
+   "text": "across the Southeast Asian data center ecosystem."
+  },
+  {
+   "start": 443.55,
+   "end": 447.51,
+   "text": "In some ways, the backbone of Chinese compute is like Jehoir, Malaysia."
+  },
+  {
+   "start": 447.51,
+   "end": 453.27,
+   "text": "So it's not actually the remote access cloud computing arrangement that got Megaspeed sort"
+  },
+  {
+   "start": 453.27,
+   "end": 456.71,
+   "text": "of looked at by the US government, later in the Singapore government."
+  },
+  {
+   "start": 456.71,
+   "end": 461.67,
+   "text": "It's the suspicion that the company has not just rented compute to Chinese off-takers,"
+  },
+  {
+   "start": 461.67,
+   "end": 467.31,
+   "text": "but actually diverted those, like the physical hardware into mainland China."
+  },
+  {
+   "start": 467.31,
+   "end": 469.59,
+   "text": "So that's the focus of the US investigation."
+  },
+  {
+   "start": 469.59,
+   "end": 472.95,
+   "text": "It was looking at whether Megaspeed had smuggled ships, which the company has categorically"
+  },
+  {
+   "start": 472.95,
+   "end": 478.55,
+   "text": "denied having ever done and also looking into its ownership structure because even if Megaspeed"
+  },
+  {
+   "start": 478.55,
+   "end": 483.67,
+   "text": "is a Singaporean entity, if it were owned by a Chinese company, it would also be illegal to sell"
+  },
+  {
+   "start": 483.67,
+   "end": 488.79,
+   "text": "advanced invidia chips to Megaspeed without a US license. It is 100% Singapore owned, but by a shell."
+  },
+  {
+   "start": 489.59,
+   "end": 496.79,
+   "text": "Let's get into like, there is this question of, you know, what do chip restrictions even mean?"
+  },
+  {
+   "start": 496.79,
+   "end": 501.99,
+   "text": "If you could still just access a cloud in a different country and like, is this the mother"
+  },
+  {
+   "start": 501.99,
+   "end": 507.95,
+   "text": "of all loopholes. But let's actually just start on the smuggling question. Why would"
+  },
+  {
+   "start": 507.95,
+   "end": 513.95,
+   "text": "my investigators have been concerned that mega speed was literally smuggling chips or"
+  },
+  {
+   "start": 513.95,
+   "end": 519.47,
+   "text": "not? Like what are the details that we know around this question, the actual, the physical"
+  },
+  {
+   "start": 519.47,
+   "end": 526.19,
+   "text": "movement of chips from say a delivery address in Malaysia to an address inside of mainland"
+  },
+  {
+   "start": 526.19,
+   "end": 527.19,
+   "text": "China?"
+  },
+  {
+   "start": 527.19,
+   "end": 533.59,
+   "text": "Yeah, so I mean, the US government has a handful of export control officers overseas, including"
+  },
+  {
+   "start": 533.59,
+   "end": 534.59,
+   "text": "in Southeast Asia."
+  },
+  {
+   "start": 534.59,
+   "end": 536.07,
+   "text": "And when I say a handful, it's really a handful."
+  },
+  {
+   "start": 536.07,
+   "end": 537.07,
+   "text": "It's like a dozen."
+  },
+  {
+   "start": 537.07,
+   "end": 539.99,
+   "text": "They're going to more than double the number this year to 25 for context."
+  },
+  {
+   "start": 539.99,
+   "end": 544.35,
+   "text": "So, you know, when we did our investigation into Megaspeed last year, I think I was on"
+  },
+  {
+   "start": 544.35,
+   "end": 548.03,
+   "text": "singular email chains that had like 50 Bloomberg people."
+  },
+  {
+   "start": 548.03,
+   "end": 550.99,
+   "text": "So the capacity of the US government."
+  },
+  {
+   "start": 550.99,
+   "end": 553.03,
+   "text": "We all, hold up, hold up."
+  },
+  {
+   "start": 553.03,
+   "end": 554.03,
+   "text": "Probably says more about Bloomberg."
+  },
+  {
+   "start": 554.03,
+   "end": 560.95,
+   "text": "All of us in this room have been on email change with 50 Bloomberg people inside baseball"
+  },
+  {
+   "start": 560.95,
+   "end": 562.59,
+   "text": "here, but this is a real phenomenon."
+  },
+  {
+   "start": 562.59,
+   "end": 563.59,
+   "text": "All right, keep going."
+  },
+  {
+   "start": 563.59,
+   "end": 569.35,
+   "text": "But no one else seriousness, the US government has fairly limited enforcement capacity overseas,"
+  },
+  {
+   "start": 569.35,
+   "end": 571.35,
+   "text": "but they do checks."
+  },
+  {
+   "start": 571.35,
+   "end": 576.79,
+   "text": "And there's unfortunately not a ton that I can say about the initial trigger for the"
+  },
+  {
+   "start": 576.79,
+   "end": 578.27,
+   "text": "probe into mega speed."
+  },
+  {
+   "start": 578.27,
+   "end": 582.71,
+   "text": "But through the course of looking at shipments through Southeast Asia, they thought that"
+  },
+  {
+   "start": 582.71,
+   "end": 584.67,
+   "text": "this company was worth digging into more."
+  },
+  {
+   "start": 584.67,
+   "end": 586.79,
+   "text": "I can talk a little about why I started looking into it."
+  },
+  {
+   "start": 586.79,
+   "end": 587.71,
+   "text": "Sure, go for it."
+  },
+  {
+   "start": 587.71,
+   "end": 588.55,
+   "text": "If that would be helpful."
+  },
+  {
+   "start": 588.55,
+   "end": 589.39,
+   "text": "Yeah."
+  },
+  {
+   "start": 589.39,
+   "end": 593.43,
+   "text": "So in April or May of last year,"
+  },
+  {
+   "start": 593.43,
+   "end": 595.19,
+   "text": "I had sort of recently arrived in Hong Kong"
+  },
+  {
+   "start": 595.19,
+   "end": 597.87,
+   "text": "and I was working with a couple of colleagues here"
+  },
+  {
+   "start": 597.87,
+   "end": 602.07,
+   "text": "and in the mainland on a story about this cluster"
+  },
+  {
+   "start": 602.07,
+   "end": 604.63,
+   "text": "of data center operators in China's Western deserts"
+  },
+  {
+   "start": 604.63,
+   "end": 607.25,
+   "text": "that had issued procurement orders"
+  },
+  {
+   "start": 607.25,
+   "end": 610.99,
+   "text": "and local government tender notices that they had fulfilled"
+  },
+  {
+   "start": 610.99,
+   "end": 614.87,
+   "text": "to build data centers seeking 115,000 restricted Nvidia chips."
+  },
+  {
+   "start": 614.87,
+   "end": 619.11,
+   "text": "This was in order of magnitude larger than what anybody"
+  },
+  {
+   "start": 619.11,
+   "end": 621.03,
+   "text": "thought might be in China."
+  },
+  {
+   "start": 621.03,
+   "end": 623.67,
+   "text": "And so a big question that we were trying to probe"
+  },
+  {
+   "start": 623.67,
+   "end": 628.07,
+   "text": "is it's one thing for them to be constructing buildings."
+  },
+  {
+   "start": 628.07,
+   "end": 630.43,
+   "text": "Chinese companies love to construct shells."
+  },
+  {
+   "start": 630.43,
+   "end": 632.03,
+   "text": "I mean, not physically in this sense,"
+  },
+  {
+   "start": 632.03,
+   "end": 634.75,
+   "text": "but obviously that is the case for shell companies as well."
+  },
+  {
+   "start": 634.75,
+   "end": 636.39,
+   "text": "But it's one thing to build the buildings."
+  },
+  {
+   "start": 636.39,
+   "end": 637.99,
+   "text": "It's another thing to put the chips inside."
+  },
+  {
+   "start": 637.99,
+   "end": 640.15,
+   "text": "And so one of the big questions that we were trying to tease"
+  },
+  {
+   "start": 640.15,
+   "end": 642.71,
+   "text": "out that we weren't able to answer in that investigation"
+  },
+  {
+   "start": 642.71,
+   "end": 647.11,
+   "text": "was whether these particular operators had the supply chain,"
+  },
+  {
+   "start": 647.11,
+   "end": 648.23,
+   "text": "the black market supply chain,"
+  },
+  {
+   "start": 648.23,
+   "end": 650.11,
+   "text": "necessary to get the GPUs."
+  },
+  {
+   "start": 650.11,
+   "end": 654.19,
+   "text": "And when I was asking around in South Asia supply chains,"
+  },
+  {
+   "start": 654.19,
+   "end": 655.27,
+   "text": "everyone just kept saying,"
+  },
+  {
+   "start": 655.27,
+   "end": 657.27,
+   "text": "look at this company called Megaspeed."
+  },
+  {
+   "start": 657.27,
+   "end": 661.39,
+   "text": "And so we started looking at them a year and a half ago,"
+  },
+  {
+   "start": 661.39,
+   "end": 663.07,
+   "text": "maybe a bit over a year and a half ago,"
+  },
+  {
+   "start": 663.07,
+   "end": 666.11,
+   "text": "and found out several months actually"
+  },
+  {
+   "start": 666.11,
+   "end": 667.47,
+   "text": "into our own investigation"
+  },
+  {
+   "start": 667.47,
+   "end": 669.95,
+   "text": "that the US government had been looking into them as well."
+  },
+  {
+   "start": 669.95,
+   "end": 673.79,
+   "text": "The US investigation remains ongoing in a complicated way,"
+  },
+  {
+   "start": 673.79,
+   "end": 675.51,
+   "text": "which you can get into a bit later."
+  },
+  {
+   "start": 675.51,
+   "end": 677.99,
+   "text": "In our reporting, we didn't find concrete evidence"
+  },
+  {
+   "start": 677.99,
+   "end": 680.55,
+   "text": "that Megaspeed had smuggled any GPUs to China."
+  },
+  {
+   "start": 680.55,
+   "end": 683.91,
+   "text": "We found an extraordinary number of inconsistencies"
+  },
+  {
+   "start": 683.91,
+   "end": 686.87,
+   "text": "in their data center footprint that neither the company nor"
+  },
+  {
+   "start": 686.87,
+   "end": 688.67,
+   "text": "NVIDIA have been able to explain."
+  },
+  {
+   "start": 688.67,
+   "end": 690.51,
+   "text": "I want to ask about those inconsistencies."
+  },
+  {
+   "start": 690.51,
+   "end": 692.43,
+   "text": "But before we do, can you just describe"
+  },
+  {
+   "start": 692.43,
+   "end": 695.27,
+   "text": "how chip smuggling typically works?"
+  },
+  {
+   "start": 695.27,
+   "end": 699.63,
+   "text": "Like how do people in the black market actually do this?"
+  },
+  {
+   "start": 699.63,
+   "end": 704.63,
+   "text": "Yeah, so we have enough examples of public allegations,"
+  },
+  {
+   "start": 704.63,
+   "end": 706.59,
+   "text": "things that are being actively prosecuted"
+  },
+  {
+   "start": 706.59,
+   "end": 709.87,
+   "text": "to draw some thematic conclusions."
+  },
+  {
+   "start": 709.87,
+   "end": 712.87,
+   "text": "There is a secondary market for NVIDIA hardware,"
+  },
+  {
+   "start": 712.87,
+   "end": 715.95,
+   "text": "but most NVIDIA chips get to customers"
+  },
+  {
+   "start": 715.95,
+   "end": 718.79,
+   "text": "via official allocation from NVIDIA."
+  },
+  {
+   "start": 718.79,
+   "end": 721.63,
+   "text": "And NVIDIA doesn't sell chips directly to the end user."
+  },
+  {
+   "start": 721.63,
+   "end": 723.91,
+   "text": "Like they wouldn't be selling hardware directly to Megaspede"
+  },
+  {
+   "start": 723.91,
+   "end": 725.75,
+   "text": "or directly to CoreWeaver, whoever."
+  },
+  {
+   "start": 725.75,
+   "end": 729.71,
+   "text": "They sell to OEMs, original equipment manufacturers,"
+  },
+  {
+   "start": 729.71,
+   "end": 733.07,
+   "text": "server makers like SuperMicro or Dell or HP."
+  },
+  {
+   "start": 733.07,
+   "end": 735.27,
+   "text": "Those server makers typically sell to distributors."
+  },
+  {
+   "start": 735.27,
+   "end": 737.35,
+   "text": "Those distributors might sell to another distributor."
+  },
+  {
+   "start": 737.35,
+   "end": 738.59,
+   "text": "Then they go into a data center"
+  },
+  {
+   "start": 738.59,
+   "end": 740.47,
+   "text": "and then they're often rented to another company."
+  },
+  {
+   "start": 740.47,
+   "end": 742.99,
+   "text": "So it's this extremely vast distribution network"
+  },
+  {
+   "start": 742.99,
+   "end": 744.43,
+   "text": "for NVIDIA chips."
+  },
+  {
+   "start": 744.43,
+   "end": 747.51,
+   "text": "But ultimately, in order to place an order"
+  },
+  {
+   "start": 747.51,
+   "end": 749.67,
+   "text": "and get your order approved by NVIDIA,"
+  },
+  {
+   "start": 749.67,
+   "end": 751.95,
+   "text": "you need to say like, this is where they're going."
+  },
+  {
+   "start": 751.95,
+   "end": 755.03,
+   "text": "Like this is the customer, this is the data center location."
+  },
+  {
+   "start": 755.03,
+   "end": 760.15,
+   "text": "And a consistent theme across what's now like half a dozen cases being prosecuted,"
+  },
+  {
+   "start": 760.15,
+   "end": 766.23,
+   "text": "and this is certainly the case in the indictment of Supermicro's co-founder earlier this year,"
+  },
+  {
+   "start": 766.23,
+   "end": 771.11,
+   "text": "the stated location of where the chips are going to wind up was not the intended location."
+  },
+  {
+   "start": 771.11,
+   "end": 776.55,
+   "text": "It's not that there was some sort of rogue person at one node in the supply chain that was like,"
+  },
+  {
+   "start": 776.55,
+   "end": 782.31,
+   "text": "yeah, I'm just going to grab them. You have companies or individual actors that place orders"
+  },
+  {
+   "start": 782.31,
+   "end": 786.47,
+   "text": "that are purportedly for a destination outside of China with the intent of diverting that"
+  },
+  {
+   "start": 786.47,
+   "end": 791.03,
+   "text": "harbor to China the entire time is at least the allegation that's sort of laid out in"
+  },
+  {
+   "start": 791.03,
+   "end": 796.79,
+   "text": "several indictments. And then it's a question of, well, how much work does NVIDIA need to do"
+  },
+  {
+   "start": 796.79,
+   "end": 801.19,
+   "text": "and do the server manufacturers need to do to make sure that the actual state of destination of the"
+  },
+  {
+   "start": 801.19,
+   "end": 806.71,
+   "text": "chips exists. And there are some cases where prosecutors have alleged the data center like"
+  },
+  {
+   "start": 806.71,
+   "end": 810.71,
+   "text": "literally didn't exist. There was never a place for those chips to go. They were just always"
+  },
+  {
+   "start": 810.71,
+   "end": 812.27,
+   "text": "is intended to go to China."
+  },
+  {
+   "start": 812.27,
+   "end": 814.55,
+   "text": "Wait, can I just, I'm a little bit disappointed."
+  },
+  {
+   "start": 814.55,
+   "end": 817.67,
+   "text": "Are there no like chip mules out there,"
+  },
+  {
+   "start": 817.67,
+   "end": 819.71,
+   "text": "people who are just like, I don't know."
+  },
+  {
+   "start": 819.71,
+   "end": 821.63,
+   "text": "I have this vision of someone in a trench coat"
+  },
+  {
+   "start": 821.63,
+   "end": 824.79,
+   "text": "and they like open it up and it's lined with like,"
+  },
+  {
+   "start": 824.79,
+   "end": 828.18,
+   "text": "probably not H100s with blackwells or something."
+  },
+  {
+   "start": 828.18,
+   "end": 829.82,
+   "text": "Well, you know, it's funny that you say that"
+  },
+  {
+   "start": 829.82,
+   "end": 833.14,
+   "text": "because, you know, in one of Jensen's many denials"
+  },
+  {
+   "start": 833.14,
+   "end": 834.82,
+   "text": "of chip smuggling as an issue,"
+  },
+  {
+   "start": 834.82,
+   "end": 836.86,
+   "text": "he said, you know, the Grace Blackwell system"
+  },
+  {
+   "start": 836.86,
+   "end": 838.14,
+   "text": "weighs two tons, you're not putting that"
+  },
+  {
+   "start": 838.14,
+   "end": 840.7,
+   "text": "in your backpack in your pocket anytime soon."
+  },
+  {
+   "start": 840.7,
+   "end": 843.58,
+   "text": "We reported a couple months ago that the US government"
+  },
+  {
+   "start": 843.58,
+   "end": 845.38,
+   "text": "has been investigating a Singapore Headquarter"
+  },
+  {
+   "start": 845.38,
+   "end": 848.62,
+   "text": "logistics company that literally specializes"
+  },
+  {
+   "start": 848.62,
+   "end": 852.34,
+   "text": "in tech hardware transportation through complicated logistics."
+  },
+  {
+   "start": 852.34,
+   "end": 855.1,
+   "text": "These are fragile systems and transported,"
+  },
+  {
+   "start": 855.1,
+   "end": 858.18,
+   "text": "or is believed to have transported, restricted hardware."
+  },
+  {
+   "start": 858.18,
+   "end": 860.18,
+   "text": "And then it's a question of, OK, if you're a logistics"
+  },
+  {
+   "start": 860.18,
+   "end": 862.9,
+   "text": "company, then how much is it your job to know"
+  },
+  {
+   "start": 862.9,
+   "end": 864.3,
+   "text": "what's in the package?"
+  },
+  {
+   "start": 864.3,
+   "end": 868.5,
+   "text": "So a lot of these cases also involve false declaration,"
+  },
+  {
+   "start": 868.5,
+   "end": 870.9,
+   "text": "allegedly involve false declaration,"
+  },
+  {
+   "start": 870.9,
+   "end": 873.94,
+   "text": "putting on customs forms that it's just a computer server,"
+  },
+  {
+   "start": 873.94,
+   "end": 876.22,
+   "text": "ambiguous what type of computer server."
+  },
+  {
+   "start": 876.22,
+   "end": 877.62,
+   "text": "Sometimes random electronics,"
+  },
+  {
+   "start": 877.62,
+   "end": 879.9,
+   "text": "there was one case where,"
+  },
+  {
+   "start": 879.9,
+   "end": 881.74,
+   "text": "and this is a case where one person's actually"
+  },
+  {
+   "start": 881.74,
+   "end": 882.94,
+   "text": "plugged guilty already,"
+  },
+  {
+   "start": 882.94,
+   "end": 886.28,
+   "text": "where they declared restricted NVIDIA hardware"
+  },
+  {
+   "start": 886.28,
+   "end": 887.94,
+   "text": "to be quote unquote, adapter modules."
+  },
+  {
+   "start": 887.94,
+   "end": 889.82,
+   "text": "This is a category of electronics that includes"
+  },
+  {
+   "start": 889.82,
+   "end": 891.94,
+   "text": "like the thing you use to plug your phone"
+  },
+  {
+   "start": 891.94,
+   "end": 893.22,
+   "text": "into a foreign phone outlet."
+  },
+  {
+   "start": 893.22,
+   "end": 895.94,
+   "text": "Like really, adapter modules that weigh 2,000 pounds."
+  },
+  {
+   "start": 895.94,
+   "end": 901.94,
+   "text": "So there are lots of cases where it's like, really, that's an eyebrow-raising declaration."
+  },
+  {
+   "start": 901.94,
+   "end": 906.94,
+   "text": "But there are lots of colorful characters in broker markets."
+  },
+  {
+   "start": 906.94,
+   "end": 910.94,
+   "text": "It's actually a very sophisticated black market."
+  },
+  {
+   "start": 910.94,
+   "end": 916.94,
+   "text": "There are contracts. Brokers go and solicit hardware on behalf of specific suppliers."
+  },
+  {
+   "start": 916.94,
+   "end": 923.94,
+   "text": "There was one broker who complained to us that the trade is so good and so many people are trying to get it on it,"
+  },
+  {
+   "start": 923.94,
+   "end": 927.74,
+   "text": "Now you have these scammers in the black market who are like purporting to have hardware."
+  },
+  {
+   "start": 927.74,
+   "end": 928.74,
+   "text": "Oh yeah, I'm sure."
+  },
+  {
+   "start": 928.74,
+   "end": 930.82,
+   "text": "Not like the good honest black market smartwares."
+  },
+  {
+   "start": 930.82,
+   "end": 933.74,
+   "text": "For like legitimate honest black market brokers."
+  },
+  {
+   "start": 933.74,
+   "end": 953.03,
+   "text": "No, it's a pretty extraordinary and sophisticated sprawling ecosystem."
+  },
+  {
+   "start": 953.03,
+   "end": 954.99,
+   "text": "What's next for Virtual Assets?"
+  },
+  {
+   "start": 954.99,
+   "end": 960.27,
+   "text": "I'm Jacob Greese, host of Economy Scale, a series exploring growth in key global sectors."
+  },
+  {
+   "start": 960.27,
+   "end": 964.51,
+   "text": "And this episode, we're diving into the digital forces shaping finance."
+  },
+  {
+   "start": 964.51,
+   "end": 968.91,
+   "text": "Sean McHugh from Dubai-based Virtual Assets Regulatory Authority has this to say."
+  },
+  {
+   "start": 968.91,
+   "end": 973.11,
+   "text": "We're seeing a lot of in-social players come in, digital asset dedicated hedge funds, high"
+  },
+  {
+   "start": 973.11,
+   "end": 977.55,
+   "text": "frequency traders and that sort of thing, and folks who service in-social clients."
+  },
+  {
+   "start": 977.55,
+   "end": 982.63,
+   "text": "As more capital enters the market, adaptive regulation is likely to become increasingly"
+  },
+  {
+   "start": 982.63,
+   "end": 983.63,
+   "text": "key."
+  },
+  {
+   "start": 983.63,
+   "end": 985.15,
+   "text": "Rees Merrick of Ripple says,"
+  },
+  {
+   "start": 985.15,
+   "end": 990.11,
+   "text": "A lot of regulators globally would like to keep the industry at arm's length."
+  },
+  {
+   "start": 990.11,
+   "end": 991.11,
+   "text": "That's the opposite here."
+  },
+  {
+   "start": 991.11,
+   "end": 996.11,
+   "text": "I think also what you'll find is that regulation and frameworks can come out, but some of them"
+  },
+  {
+   "start": 996.11,
+   "end": 1000.95,
+   "text": "are maybe a slight iteration on some 80-year-old policy and not actually in line with what"
+  },
+  {
+   "start": 1000.95,
+   "end": 1002.59,
+   "text": "the technology can do and offer."
+  },
+  {
+   "start": 1002.59,
+   "end": 1004.83,
+   "text": "And again, that's very different in Dubai."
+  },
+  {
+   "start": 1004.83,
+   "end": 1007.51,
+   "text": "Listen to the full episode wherever you get your podcasts."
+  },
+  {
+   "start": 1007.51,
+   "end": 1011.07,
+   "text": "This series is brought to you by Bloomberg Media Studios and the Dubai Department of"
+  },
+  {
+   "start": 1011.07,
+   "end": 1013.39,
+   "text": "Economy and Tourism."
+  },
+  {
+   "start": 1013.39,
+   "end": 1014.39,
+   "text": "Games on a break?"
+  },
+  {
+   "start": 1014.39,
+   "end": 1015.39,
+   "text": "Don't doom scroll."
+  },
+  {
+   "start": 1015.39,
+   "end": 1016.83,
+   "text": "Try Rips on Underdog."
+  },
+  {
+   "start": 1016.83,
+   "end": 1020.59,
+   "text": "Buy a digital pack, rip it open, and reveal a real physical card."
+  },
+  {
+   "start": 1020.59,
+   "end": 1022.55,
+   "text": "Football, basketball, even Pokemon."
+  },
+  {
+   "start": 1022.55,
+   "end": 1025.83,
+   "text": "Packs start at just $5, ship it straight to your door,"
+  },
+  {
+   "start": 1025.83,
+   "end": 1028.29,
+   "text": "or sell it back instantly at full market value."
+  },
+  {
+   "start": 1028.29,
+   "end": 1031.63,
+   "text": "Max value up to $125,000."
+  },
+  {
+   "start": 1031.63,
+   "end": 1033.95,
+   "text": "Download Underdog and get in on the chase."
+  },
+  {
+   "start": 1033.95,
+   "end": 1036.75,
+   "text": "Deposit $5, get five free packs."
+  },
+  {
+   "start": 1036.75,
+   "end": 1039.15,
+   "text": "Real rips, real cards, real cash."
+  },
+  {
+   "start": 1039.15,
+   "end": 1041.63,
+   "text": "Only on Underdog, unleash your dog."
+  },
+  {
+   "start": 1041.63,
+   "end": 1043.87,
+   "text": "18 plus terms apply, top grails are extremely rare."
+  },
+  {
+   "start": 1043.87,
+   "end": 1046.31,
+   "text": "Running a small business takes everything you've got."
+  },
+  {
+   "start": 1046.31,
+   "end": 1048.71,
+   "text": "But with Chase for business, you're not alone."
+  },
+  {
+   "start": 1048.71,
+   "end": 1052.91,
+   "text": "They bring together local support and a broad range of resources to more than 7 million"
+  },
+  {
+   "start": 1052.91,
+   "end": 1053.91,
+   "text": "customers."
+  },
+  {
+   "start": 1053.91,
+   "end": 1057.55,
+   "text": "With a deep understanding of your day-to-day needs, they provide products and guidance"
+  },
+  {
+   "start": 1057.55,
+   "end": 1059.35,
+   "text": "built to help you thrive."
+  },
+  {
+   "start": 1059.35,
+   "end": 1064.23,
+   "text": "Right now, earn $500 when you open a new Chase Business Complete Checking account for new"
+  },
+  {
+   "start": 1064.23,
+   "end": 1067.47,
+   "text": "business checking customers with qualifying activities."
+  },
+  {
+   "start": 1067.47,
+   "end": 1070.55,
+   "text": "Offer expires January 21st, 2027."
+  },
+  {
+   "start": 1070.55,
+   "end": 1075.91,
+   "text": "Chase Business Complete Checking has the flexible tools you need to accept payments, make deposits,"
+  },
+  {
+   "start": 1075.91,
+   "end": 1078.15,
+   "text": "and manage your finances with confidence."
+  },
+  {
+   "start": 1078.15,
+   "end": 1081.43,
+   "text": "Learn more at Chase.com slash podcast biz offer."
+  },
+  {
+   "start": 1081.43,
+   "end": 1083.79,
+   "text": "Chase, make more of what's yours."
+  },
+  {
+   "start": 1083.79,
+   "end": 1086.55,
+   "text": "Fees may apply to Chase Business Complete Checking Accounts."
+  },
+  {
+   "start": 1086.55,
+   "end": 1091.35,
+   "text": "The $500 offer is available for new business checking accounts with qualifying activities"
+  },
+  {
+   "start": 1091.35,
+   "end": 1093.51,
+   "text": "through 1.21.2027."
+  },
+  {
+   "start": 1093.51,
+   "end": 1096.23,
+   "text": "Eligibility and qualification requirements must be met."
+  },
+  {
+   "start": 1096.23,
+   "end": 1098.07,
+   "text": "Additional restrictions may apply."
+  },
+  {
+   "start": 1098.07,
+   "end": 1102.55,
+   "text": "Please speak with a business banker for more information, JPMorgan Chase Bank NA, member"
+  },
+  {
+   "start": 1102.55,
+   "end": 1103.71,
+   "text": "FDIC."
+  },
+  {
+   "start": 1103.71,
+   "end": 1108.39,
+   "text": "For big business, AI opened up a world of promise, but that world of promise turned"
+  },
+  {
+   "start": 1108.39,
+   "end": 1110.53,
+   "text": "into a world of pain."
+  },
+  {
+   "start": 1110.53,
+   "end": 1115.71,
+   "text": "Cost-spiraling data scattered across disconnected systems, security and governance increasingly"
+  },
+  {
+   "start": 1115.71,
+   "end": 1121.55,
+   "text": "complex, AI initiatives struggling to scale, and ROI that remains frustratingly out of"
+  },
+  {
+   "start": 1121.55,
+   "end": 1122.55,
+   "text": "reach."
+  },
+  {
+   "start": 1122.55,
+   "end": 1127.23,
+   "text": "The challenge is in AI itself, it's having the infrastructure AI needs to succeed, which"
+  },
+  {
+   "start": 1127.23,
+   "end": 1130.39,
+   "text": "is right where Bumi says we got you."
+  },
+  {
+   "start": 1130.39,
+   "end": 1135.31,
+   "text": "Thousands of thousands of enterprises trust Bumi to connect data, applications, processes,"
+  },
+  {
+   "start": 1135.31,
+   "end": 1136.31,
+   "text": "and AI."
+  },
+  {
+   "start": 1136.31,
+   "end": 1141.33,
+   "text": "With Bumi, businesses can eliminate silos, automate workflows, strengthen governance,"
+  },
+  {
+   "start": 1141.33,
+   "end": 1144.97,
+   "text": "and create the foundation AI needs to perform at scale."
+  },
+  {
+   "start": 1144.97,
+   "end": 1145.97,
+   "text": "The result?"
+  },
+  {
+   "start": 1145.97,
+   "end": 1149.91,
+   "text": "Faster innovation, more efficiency, better business outcomes."
+  },
+  {
+   "start": 1149.91,
+   "end": 1154.41,
+   "text": "Bumi turns a world of AI pain into a world of AI gain."
+  },
+  {
+   "start": 1154.41,
+   "end": 1156.83,
+   "text": "As Bumi says, we got you."
+  },
+  {
+   "start": 1156.83,
+   "end": 1162.43,
+   "text": "to boomie.com to learn more. That's B-O-O-M-I dot com."
+  },
+  {
+   "start": 1162.43,
+   "end": 1167.95,
+   "text": "Just one slight detail. You said that technically an entity like a Megaspeed or even a Core"
+  },
+  {
+   "start": 1167.95,
+   "end": 1173.67,
+   "text": "Wave does not actually buy the chips from Nvidia directly. Is that, and that actually"
+  },
+  {
+   "start": 1173.67,
+   "end": 1177.11,
+   "text": "the first buyer of the chips is the server maker?"
+  },
+  {
+   "start": 1177.11,
+   "end": 1181.4,
+   "text": "Yeah. Typically speaking, Nvidia is not selling directly to the end user."
+  },
+  {
+   "start": 1181.4,
+   "end": 1184.76,
+   "text": "But the end user gets the allocation."
+  },
+  {
+   "start": 1184.76,
+   "end": 1190.56,
+   "text": "So the end user, a core weave, a mega speed, whoever will get some allocation that Nvidia"
+  },
+  {
+   "start": 1190.56,
+   "end": 1192.6,
+   "text": "decides, OK, they're going to get this many."
+  },
+  {
+   "start": 1192.6,
+   "end": 1197.96,
+   "text": "But the actual chain first goes through one of the server makers like Adele or Super Micro"
+  },
+  {
+   "start": 1197.96,
+   "end": 1198.96,
+   "text": "or something like that."
+  },
+  {
+   "start": 1198.96,
+   "end": 1199.96,
+   "text": "Correct."
+  },
+  {
+   "start": 1199.96,
+   "end": 1200.96,
+   "text": "OK."
+  },
+  {
+   "start": 1200.96,
+   "end": 1201.96,
+   "text": "Yeah, that's what makes Invade the Kingmaker."
+  },
+  {
+   "start": 1201.96,
+   "end": 1202.96,
+   "text": "Got it."
+  },
+  {
+   "start": 1202.96,
+   "end": 1203.96,
+   "text": "All right."
+  },
+  {
+   "start": 1203.96,
+   "end": 1208.6,
+   "text": "Explain, as you said, there's like this question of smuggling is like not locked down."
+  },
+  {
+   "start": 1208.6,
+   "end": 1212.26,
+   "text": "But you said inconsistencies discovered in your reporting."
+  },
+  {
+   "start": 1212.26,
+   "end": 1214.06,
+   "text": "Let's talk about these inconsistencies."
+  },
+  {
+   "start": 1214.06,
+   "end": 1214.78,
+   "text": "On Megaspine?"
+  },
+  {
+   "start": 1214.78,
+   "end": 1215.28,
+   "text": "Yeah."
+  },
+  {
+   "start": 1215.28,
+   "end": 1215.78,
+   "text": "All right."
+  },
+  {
+   "start": 1215.78,
+   "end": 1216.96,
+   "text": "Let's get into it."
+  },
+  {
+   "start": 1216.96,
+   "end": 1221.08,
+   "text": "So one of the first ports of call"
+  },
+  {
+   "start": 1221.08,
+   "end": 1223.92,
+   "text": "that I look at when I'm investing in a company"
+  },
+  {
+   "start": 1223.92,
+   "end": 1226.88,
+   "text": "for smuggling, which has now become a big part of my job,"
+  },
+  {
+   "start": 1226.88,
+   "end": 1230.9,
+   "text": "is do they have the requisite data center space,"
+  },
+  {
+   "start": 1230.9,
+   "end": 1233.12,
+   "text": "like literally just the physical space in the building,"
+  },
+  {
+   "start": 1233.12,
+   "end": 1235.8,
+   "text": "the power supply to support the hardware"
+  },
+  {
+   "start": 1235.8,
+   "end": 1238.46,
+   "text": "that they have purchased?"
+  },
+  {
+   "start": 1238.46,
+   "end": 1243.46,
+   "text": "And we learned at a point in our investigation"
+  },
+  {
+   "start": 1243.46,
+   "end": 1247.14,
+   "text": "the number of GPUs that Nvidia found when"
+  },
+  {
+   "start": 1247.14,
+   "end": 1249.08,
+   "text": "asked by the US government to go and check"
+  },
+  {
+   "start": 1249.08,
+   "end": 1251.38,
+   "text": "Megaspeed facilities, which they did several times."
+  },
+  {
+   "start": 1251.38,
+   "end": 1255.34,
+   "text": "They tabulated all of the chips across over 12 data centers"
+  },
+  {
+   "start": 1255.34,
+   "end": 1258.18,
+   "text": "owned by eight companies in three countries."
+  },
+  {
+   "start": 1258.18,
+   "end": 1259.3,
+   "text": "They added up all the chips."
+  },
+  {
+   "start": 1259.3,
+   "end": 1260.66,
+   "text": "They reported to the US government."
+  },
+  {
+   "start": 1260.66,
+   "end": 1263.58,
+   "text": "And around this time, we got a statement"
+  },
+  {
+   "start": 1263.58,
+   "end": 1266.14,
+   "text": "from them in mid-November last year"
+  },
+  {
+   "start": 1266.14,
+   "end": 1268.48,
+   "text": "that said everything that was shipped to our partners"
+  },
+  {
+   "start": 1268.48,
+   "end": 1270.93,
+   "text": "is where it should be."
+  },
+  {
+   "start": 1270.93,
+   "end": 1276.57,
+   "text": "We compared that number to Malaysian and Indonesian trade"
+  },
+  {
+   "start": 1276.57,
+   "end": 1279.67,
+   "text": "records that we had gotten and found"
+  },
+  {
+   "start": 1279.67,
+   "end": 1282.89,
+   "text": "that there were about 50,000 ships unaccounted for,"
+  },
+  {
+   "start": 1282.89,
+   "end": 1285.69,
+   "text": "which is not a small amount of compute."
+  },
+  {
+   "start": 1285.69,
+   "end": 1288.77,
+   "text": "And most of them were Blackwell ships, which at the time"
+  },
+  {
+   "start": 1288.77,
+   "end": 1290.97,
+   "text": "were Nvidia's best hardware."
+  },
+  {
+   "start": 1290.97,
+   "end": 1293.69,
+   "text": "And so we went back to Nvidia and we said,"
+  },
+  {
+   "start": 1293.69,
+   "end": 1296.09,
+   "text": "we're not talking about one or two chips that are missing."
+  },
+  {
+   "start": 1296.09,
+   "end": 1298.89,
+   "text": "were talking about a significant proportion"
+  },
+  {
+   "start": 1298.89,
+   "end": 1301.29,
+   "text": "of the overall hardware that Megaspeed has purchased."
+  },
+  {
+   "start": 1301.29,
+   "end": 1305.09,
+   "text": "And after we asked about that, they went back to Malaysia"
+  },
+  {
+   "start": 1305.09,
+   "end": 1308.89,
+   "text": "and they said, oh, we found these warehouses that"
+  },
+  {
+   "start": 1308.89,
+   "end": 1310.97,
+   "text": "contain what's missing."
+  },
+  {
+   "start": 1310.97,
+   "end": 1312.13,
+   "text": "And I said, OK, great."
+  },
+  {
+   "start": 1312.13,
+   "end": 1316.61,
+   "text": "So we're going to subtract from the amount of hardware"
+  },
+  {
+   "start": 1316.61,
+   "end": 1320.21,
+   "text": "that we found in trade records the number of chips"
+  },
+  {
+   "start": 1320.21,
+   "end": 1322.97,
+   "text": "that we know you guys told the US government you found."
+  },
+  {
+   "start": 1322.97,
+   "end": 1324.61,
+   "text": "And that should be the amount of hardware"
+  },
+  {
+   "start": 1324.61,
+   "end": 1327.29,
+   "text": "that's in these warehouses that we didn't know"
+  },
+  {
+   "start": 1327.29,
+   "end": 1328.25,
+   "text": "existed until a week ago."
+  },
+  {
+   "start": 1328.25,
+   "end": 1330.61,
+   "text": "We have been talking to NVIDIA about this for a really long"
+  },
+  {
+   "start": 1330.61,
+   "end": 1332.05,
+   "text": "time by this point."
+  },
+  {
+   "start": 1332.05,
+   "end": 1333.29,
+   "text": "This is the number, right?"
+  },
+  {
+   "start": 1333.29,
+   "end": 1335.97,
+   "text": "And they declined to comment on whether that's the number."
+  },
+  {
+   "start": 1335.97,
+   "end": 1336.57,
+   "text": "I was like, OK."
+  },
+  {
+   "start": 1336.57,
+   "end": 1339.77,
+   "text": "And then they eventually submitted an updated statement"
+  },
+  {
+   "start": 1339.77,
+   "end": 1341.49,
+   "text": "that said we've identified, quote unquote,"
+  },
+  {
+   "start": 1341.49,
+   "end": 1345.05,
+   "text": "substantially all of the chips that MegaSpeed had purchased"
+  },
+  {
+   "start": 1345.05,
+   "end": 1346.61,
+   "text": "via its hardware partners."
+  },
+  {
+   "start": 1346.61,
+   "end": 1349.25,
+   "text": "And we'll do additional checks in the near future."
+  },
+  {
+   "start": 1349.25,
+   "end": 1351.01,
+   "text": "So that was December of last year."
+  },
+  {
+   "start": 1351.01,
+   "end": 1354.21,
+   "text": "I've probably asked NVIDIA 10 to 12 times"
+  },
+  {
+   "start": 1354.21,
+   "end": 1356.25,
+   "text": "over the past year, whether those additional checks have"
+  },
+  {
+   "start": 1356.25,
+   "end": 1357.17,
+   "text": "occurred."
+  },
+  {
+   "start": 1357.17,
+   "end": 1360.53,
+   "text": "I'm interested in particular in a handful of data centers."
+  },
+  {
+   "start": 1360.53,
+   "end": 1362.85,
+   "text": "One, which is Megaspeed's largest data center,"
+  },
+  {
+   "start": 1362.85,
+   "end": 1365.89,
+   "text": "dropped the company as a tenant a couple of months"
+  },
+  {
+   "start": 1365.89,
+   "end": 1369.77,
+   "text": "after our investigation and a story by the New York Times"
+  },
+  {
+   "start": 1369.77,
+   "end": 1372.05,
+   "text": "that first broke the news of the US investigation"
+  },
+  {
+   "start": 1372.05,
+   "end": 1372.97,
+   "text": "into Megaspeed."
+  },
+  {
+   "start": 1372.97,
+   "end": 1374.77,
+   "text": "I don't know the reason that they were dropped,"
+  },
+  {
+   "start": 1374.77,
+   "end": 1376.09,
+   "text": "but if they're no longer a tenant,"
+  },
+  {
+   "start": 1376.09,
+   "end": 1379.25,
+   "text": "and that's where a significant portion of the NVIDIA GPUs"
+  },
+  {
+   "start": 1379.25,
+   "end": 1382.37,
+   "text": "that NVIDIA told the US government it found were located,"
+  },
+  {
+   "start": 1382.37,
+   "end": 1385.21,
+   "text": "That raises some questions about where that hardware might be now."
+  },
+  {
+   "start": 1385.21,
+   "end": 1387.33,
+   "text": "We've not gotten answers to those questions."
+  },
+  {
+   "start": 1387.33,
+   "end": 1390.25,
+   "text": "And then, so that's one of the eight data center operators."
+  },
+  {
+   "start": 1390.25,
+   "end": 1394.01,
+   "text": "Two of the others directly contradicted to us on the record,"
+  },
+  {
+   "start": 1394.01,
+   "end": 1397.45,
+   "text": "NVIDIA's account of the hardware as described to the US government."
+  },
+  {
+   "start": 1397.45,
+   "end": 1400.97,
+   "text": "And so that's of the hardware that NVIDIA said it found in the data centers."
+  },
+  {
+   "start": 1400.97,
+   "end": 1403.93,
+   "text": "And then you have this stuff that's in these warehouses."
+  },
+  {
+   "start": 1403.93,
+   "end": 1409.73,
+   "text": "And we asked, OK, so NVIDIA's policy is we prioritize customers that are ready"
+  },
+  {
+   "start": 1409.73,
+   "end": 1411.77,
+   "text": "to put their products to use."
+  },
+  {
+   "start": 1411.77,
+   "end": 1414.81,
+   "text": "They don't want GPUs sitting in warehouses for months and months on end."
+  },
+  {
+   "start": 1414.81,
+   "end": 1418.09,
+   "text": "We asked, you know, what is Megaspeed's plan with this hardware?"
+  },
+  {
+   "start": 1418.09,
+   "end": 1419.99,
+   "text": "When are we going to see it installed in the data center?"
+  },
+  {
+   "start": 1419.99,
+   "end": 1421.77,
+   "text": "We didn't get answers to those questions."
+  },
+  {
+   "start": 1422.25,
+   "end": 1427.61,
+   "text": "Um, so that's just on the hardware, uh, allocation piece."
+  },
+  {
+   "start": 1428.43,
+   "end": 1435.31,
+   "text": "Then we look at what Megaspeed has represented to investors and its data center footprint"
+  },
+  {
+   "start": 1435.31,
+   "end": 1436.67,
+   "text": "as the company describes it."
+  },
+  {
+   "start": 1437.33,
+   "end": 1440.91,
+   "text": "And on its website, it had three data centers listed."
+  },
+  {
+   "start": 1440.91,
+   "end": 1445.55,
+   "text": "We know that's an undercount of their total number of data centers all in Southeast Asia."
+  },
+  {
+   "start": 1445.55,
+   "end": 1452.95,
+   "text": "But in a presentation to investors in 2024, Megaspeed described five data centers across"
+  },
+  {
+   "start": 1452.95,
+   "end": 1459.97,
+   "text": "three countries, two in Indonesia, two in Malaysia, and one in a specific area of an"
+  },
+  {
+   "start": 1459.97,
+   "end": 1465.31,
+   "text": "unnamed third country that on another side of that same investor deck was the only one"
+  },
+  {
+   "start": 1465.31,
+   "end": 1468.17,
+   "text": "described as not in Southeast Asia."
+  },
+  {
+   "start": 1468.17,
+   "end": 1474.77,
+   "text": "And the rendering that Megaspeed used to represent that data center is of a sprawling project"
+  },
+  {
+   "start": 1474.77,
+   "end": 1482.17,
+   "text": "in Shanghai, where Megaspeed's Chinese corporate twin has been hiring engineers to work on"
+  },
+  {
+   "start": 1482.17,
+   "end": 1484.89,
+   "text": "restricted Nvidia hardware."
+  },
+  {
+   "start": 1484.89,
+   "end": 1492.25,
+   "text": "Companies that Alice, who has become infamous in this scandal over the past couple of weeks,"
+  },
+  {
+   "start": 1492.25,
+   "end": 1499.29,
+   "text": "is that she has like long time business ties to have been investors in that data center."
+  },
+  {
+   "start": 1499.29,
+   "end": 1502.63,
+   "text": "And so we asked, you know, what's up with this product in Shanghai?"
+  },
+  {
+   "start": 1502.63,
+   "end": 1506.01,
+   "text": "Why is that the rendering that Megaspeed used to represent this facility on its investor"
+  },
+  {
+   "start": 1506.01,
+   "end": 1507.01,
+   "text": "deck?"
+  },
+  {
+   "start": 1507.01,
+   "end": 1508.69,
+   "text": "We never got answers to those questions either."
+  },
+  {
+   "start": 1508.69,
+   "end": 1513.25,
+   "text": "It's such a weird decision to talk about like, oh, and we also have this project in"
+  },
+  {
+   "start": 1513.25,
+   "end": 1515.69,
+   "text": "a country that we're not going to name."
+  },
+  {
+   "start": 1515.69,
+   "end": 1518.77,
+   "text": "But like, here's an illustration of Shanghai."
+  },
+  {
+   "start": 1518.77,
+   "end": 1519.77,
+   "text": "Okay."
+  },
+  {
+   "start": 1519.77,
+   "end": 1521.13,
+   "text": "And just so we're clear."
+  },
+  {
+   "start": 1521.13,
+   "end": 1522.13,
+   "text": "Can you outline?"
+  },
+  {
+   "start": 1522.13,
+   "end": 1525.09,
+   "text": "exactly are the responsibilities of NVIDIA here."
+  },
+  {
+   "start": 1525.09,
+   "end": 1528.61,
+   "text": "So if it sells chips to a server company"
+  },
+  {
+   "start": 1528.61,
+   "end": 1531.85,
+   "text": "and the server company declares that the end user"
+  },
+  {
+   "start": 1531.85,
+   "end": 1534.81,
+   "text": "is definitely not a Chinese firm,"
+  },
+  {
+   "start": 1534.81,
+   "end": 1539.01,
+   "text": "is it incumbent on NVIDIA to double check those claims"
+  },
+  {
+   "start": 1539.01,
+   "end": 1540.37,
+   "text": "or investigate?"
+  },
+  {
+   "start": 1540.37,
+   "end": 1543.6,
+   "text": "What do they actually, what are they expected to do?"
+  },
+  {
+   "start": 1543.6,
+   "end": 1547.08,
+   "text": "You know, this is sort of this central tension"
+  },
+  {
+   "start": 1547.08,
+   "end": 1549.4,
+   "text": "that has been playing out over the past year"
+  },
+  {
+   "start": 1549.4,
+   "end": 1551.88,
+   "text": "is whose job is it to know?"
+  },
+  {
+   "start": 1551.88,
+   "end": 1555.88,
+   "text": "So in the case of Megaspeed, Nvidia told us last year,"
+  },
+  {
+   "start": 1555.88,
+   "end": 1558.8,
+   "text": "we asked the US government if we need to cut off Megaspeed"
+  },
+  {
+   "start": 1558.8,
+   "end": 1560.68,
+   "text": "and we were told no."
+  },
+  {
+   "start": 1560.68,
+   "end": 1565.28,
+   "text": "In the case where Super Micro's co-founder is alleged"
+  },
+  {
+   "start": 1565.28,
+   "end": 1567.12,
+   "text": "to have smuggled two and a half billion,"
+  },
+  {
+   "start": 1567.12,
+   "end": 1569.72,
+   "text": "or sold two and a half billion dollars worth of hardware"
+  },
+  {
+   "start": 1569.72,
+   "end": 1571.76,
+   "text": "to an unnamed Southeast Asian intermediary"
+  },
+  {
+   "start": 1571.76,
+   "end": 1573.32,
+   "text": "that then smuggled the majority of it to China,"
+  },
+  {
+   "start": 1573.32,
+   "end": 1575.48,
+   "text": "we've reported that that Southeast Asian intermediary"
+  },
+  {
+   "start": 1575.48,
+   "end": 1579.36,
+   "text": "is one of the most important AI companies in Thailand."
+  },
+  {
+   "start": 1579.36,
+   "end": 1583.28,
+   "text": "That company is alleged to never have had the data centers"
+  },
+  {
+   "start": 1583.28,
+   "end": 1584.96,
+   "text": "to install that hardware."
+  },
+  {
+   "start": 1584.96,
+   "end": 1588.56,
+   "text": "So a lot of people have asked, did NVIDIA check?"
+  },
+  {
+   "start": 1588.56,
+   "end": 1589.64,
+   "text": "Did SuperMicro check?"
+  },
+  {
+   "start": 1589.64,
+   "end": 1591.48,
+   "text": "And actually, SuperMicro did check,"
+  },
+  {
+   "start": 1591.48,
+   "end": 1592.84,
+   "text": "according to the US indictment."
+  },
+  {
+   "start": 1592.84,
+   "end": 1596.04,
+   "text": "They visited, they audited because the volumes"
+  },
+  {
+   "start": 1596.04,
+   "end": 1599.36,
+   "text": "that this type company was purchasing were so significant."
+  },
+  {
+   "start": 1599.36,
+   "end": 1601.2,
+   "text": "They audited, but then they allowed the shipments"
+  },
+  {
+   "start": 1601.2,
+   "end": 1603.2,
+   "text": "to continue multiple times."
+  },
+  {
+   "start": 1603.2,
+   "end": 1607.8,
+   "text": "I think companies are always going to say,"
+  },
+  {
+   "start": 1607.8,
+   "end": 1609.96,
+   "text": "tell us what the law is and we will follow the law."
+  },
+  {
+   "start": 1609.96,
+   "end": 1612.16,
+   "text": "If you don't want us to sell to this particular company,"
+  },
+  {
+   "start": 1612.16,
+   "end": 1614.2,
+   "text": "then tell us we can't sell to that company."
+  },
+  {
+   "start": 1614.2,
+   "end": 1618.3,
+   "text": "But I think the question is, are there red flags"
+  },
+  {
+   "start": 1618.3,
+   "end": 1622.76,
+   "text": "that are so obvious that if you have any competent due"
+  },
+  {
+   "start": 1622.76,
+   "end": 1625.24,
+   "text": "diligence program, you should have seen that."
+  },
+  {
+   "start": 1625.24,
+   "end": 1628.92,
+   "text": "This is a conversation that's being actively litigated"
+  },
+  {
+   "start": 1628.92,
+   "end": 1630.28,
+   "text": "in Washington, shall we say."
+  },
+  {
+   "start": 1630.28,
+   "end": 1635.28,
+   "text": "And NVIDIA has started actually in some ways to self-regulate."
+  },
+  {
+   "start": 1635.28,
+   "end": 1644.54,
+   "text": "They have this top tier of Nvidia Cloud partners, these stamp of approval companies that you"
+  },
+  {
+   "start": 1644.54,
+   "end": 1649.5,
+   "text": "tell the industry, these are our top tier partners."
+  },
+  {
+   "start": 1649.5,
+   "end": 1651.88,
+   "text": "Megaspid is still one of them."
+  },
+  {
+   "start": 1651.88,
+   "end": 1656.78,
+   "text": "It became one of them four days after it was incorporated in Singapore."
+  },
+  {
+   "start": 1656.78,
+   "end": 1665.36,
+   "text": "Another NCP, its CEO is on trial in Singapore for defrauding server suppliers about the"
+  },
+  {
+   "start": 1665.36,
+   "end": 1666.94,
+   "text": "ultimate destination of hardware."
+  },
+  {
+   "start": 1666.94,
+   "end": 1670.98,
+   "text": "There was a mansion seize, that was the alleged proceeds of chip smuggling."
+  },
+  {
+   "start": 1670.98,
+   "end": 1679.92,
+   "text": "The Thai company was the initial hardware supplier for the national AI company, Sovereign"
+  },
+  {
+   "start": 1679.92,
+   "end": 1683.02,
+   "text": "Cloud of Thailand, which is the first NCP in Thailand."
+  },
+  {
+   "start": 1683.02,
+   "end": 1686.66,
+   "text": "So you have definitely this interesting set of connections happening at the NCP layer."
+  },
+  {
+   "start": 1686.66,
+   "end": 1689.2,
+   "text": "And then NCP stands for?"
+  },
+  {
+   "start": 1689.2,
+   "end": 1690.06,
+   "text": "NVIDIA Cloud Partner."
+  },
+  {
+   "start": 1690.06,
+   "end": 1691.42,
+   "text": "Oh, yeah, yeah, sorry, sorry."
+  },
+  {
+   "start": 1691.42,
+   "end": 1692.3,
+   "text": "Sorry."
+  },
+  {
+   "start": 1692.3,
+   "end": 1695.62,
+   "text": "So there's also like an internal whitelist of companies"
+  },
+  {
+   "start": 1695.62,
+   "end": 1698.82,
+   "text": "that NVIDIA has sort of pre-approved for purchase."
+  },
+  {
+   "start": 1698.82,
+   "end": 1701.78,
+   "text": "And after the Super Microco Founders"
+  },
+  {
+   "start": 1701.78,
+   "end": 1705.14,
+   "text": "indictment earlier this year, NVIDIA went and cleaved"
+  },
+  {
+   "start": 1705.14,
+   "end": 1707.3,
+   "text": "a lot of companies from that whitelist."
+  },
+  {
+   "start": 1707.3,
+   "end": 1710.58,
+   "text": "And it's this interesting thing because on the one hand,"
+  },
+  {
+   "start": 1710.58,
+   "end": 1713.02,
+   "text": "this is the type of due diligence,"
+  },
+  {
+   "start": 1713.02,
+   "end": 1714.74,
+   "text": "maybe, that some Washington regulators"
+  },
+  {
+   "start": 1714.74,
+   "end": 1716.5,
+   "text": "would like to see the chipmaker take"
+  },
+  {
+   "start": 1716.5,
+   "end": 1718.58,
+   "text": "On the other, it raises questions of, you know,"
+  },
+  {
+   "start": 1718.58,
+   "end": 1720.58,
+   "text": "on what basis did you remove those companies?"
+  },
+  {
+   "start": 1720.58,
+   "end": 1722.78,
+   "text": "Why were they on the white list in the first place?"
+  },
+  {
+   "start": 1722.78,
+   "end": 1725.14,
+   "text": "And so, you know, I think also for NVIDIA,"
+  },
+  {
+   "start": 1725.14,
+   "end": 1729.42,
+   "text": "which is trying, in some ways, to demonstrate to the US"
+  },
+  {
+   "start": 1729.42,
+   "end": 1732.06,
+   "text": "that it does take this seriously,"
+  },
+  {
+   "start": 1732.06,
+   "end": 1735.54,
+   "text": "but also has so deeply lost credibility on this issue"
+  },
+  {
+   "start": 1735.54,
+   "end": 1737.14,
+   "text": "that it's like a little bit of a cash-tornie too."
+  },
+  {
+   "start": 1737.14,
+   "end": 1739.06,
+   "text": "And that's not trying to absolve NVIDIA of responsibility,"
+  },
+  {
+   "start": 1739.06,
+   "end": 1741.18,
+   "text": "just sort of explaining a political reality"
+  },
+  {
+   "start": 1741.18,
+   "end": 1742.74,
+   "text": "that the company not find itself in."
+  },
+  {
+   "start": 1742.74,
+   "end": 1744.22,
+   "text": "This was gonna be my next question,"
+  },
+  {
+   "start": 1744.22,
+   "end": 1746.6,
+   "text": "Because Nvidia, I mean, the thing we hear constantly"
+  },
+  {
+   "start": 1746.6,
+   "end": 1748.52,
+   "text": "is chips are in short supply."
+  },
+  {
+   "start": 1748.52,
+   "end": 1750.28,
+   "text": "Everyone is scrambling to get chips."
+  },
+  {
+   "start": 1750.28,
+   "end": 1752.2,
+   "text": "There's so much demand out there."
+  },
+  {
+   "start": 1752.2,
+   "end": 1753.76,
+   "text": "It's hard to fill it all."
+  },
+  {
+   "start": 1753.76,
+   "end": 1758.72,
+   "text": "They can afford to be selective with their customers, right?"
+  },
+  {
+   "start": 1758.72,
+   "end": 1763.36,
+   "text": "Do you have a working theory for why would they even"
+  },
+  {
+   "start": 1763.36,
+   "end": 1766.68,
+   "text": "take the chance if demand is so strong that they could sell"
+  },
+  {
+   "start": 1766.68,
+   "end": 1768.08,
+   "text": "to pretty much anyone?"
+  },
+  {
+   "start": 1768.08,
+   "end": 1769.24,
+   "text": "That's a good question."
+  },
+  {
+   "start": 1769.24,
+   "end": 1777.4,
+   "text": "NVIDIA's primary arguments on export controls are about the market share, the global market"
+  },
+  {
+   "start": 1777.4,
+   "end": 1785.76,
+   "text": "share of AI infrastructure that is American. They sort of view Huawei, their primary competitor"
+  },
+  {
+   "start": 1785.76,
+   "end": 1790.8,
+   "text": "in China as this sort of existential threat to U.S. dominance. And their arguments are"
+  },
+  {
+   "start": 1790.8,
+   "end": 1795.52,
+   "text": "basically that NVIDIA's interests are U.S. interests. And so, you know, when you talk"
+  },
+  {
+   "start": 1795.52,
+   "end": 1800.9,
+   "text": "about the question of remote access, companies completely legally renting the use of Nvidia"
+  },
+  {
+   "start": 1800.9,
+   "end": 1805.44,
+   "text": "Harbor that Chinese companies can purchase themselves to those Chinese companies."
+  },
+  {
+   "start": 1805.44,
+   "end": 1807.36,
+   "text": "That's a policy choice by the US government."
+  },
+  {
+   "start": 1807.36,
+   "end": 1811.0,
+   "text": "A lot of people describe that as like, oh, it's a workaround of the expert controls,"
+  },
+  {
+   "start": 1811.0,
+   "end": 1813.12,
+   "text": "it's the loophole of the expert controls."
+  },
+  {
+   "start": 1813.12,
+   "end": 1814.12,
+   "text": "It's legal."
+  },
+  {
+   "start": 1814.12,
+   "end": 1819.48,
+   "text": "The US has the ability to make it illegal, and it's legal in the vast majority of cases."
+  },
+  {
+   "start": 1819.48,
+   "end": 1823.4,
+   "text": "For Nvidia, that's a good thing because Nvidia chips are filling all these data centers"
+  },
+  {
+   "start": 1823.4,
+   "end": 1828.36,
+   "text": "in Southeast Asia that in many cases wouldn't exist if not for the offtake demand from Chinese"
+  },
+  {
+   "start": 1828.36,
+   "end": 1832.92,
+   "text": "companies. It's the same reason that NVIDIA wants to be able to freely sell its chips in China,"
+  },
+  {
+   "start": 1832.92,
+   "end": 1839.24,
+   "text": "is that we need to be able to compete with Huawei on its own turf. A question that a lot of regulators"
+  },
+  {
+   "start": 1839.24,
+   "end": 1845.0,
+   "text": "have pushed back on NVIDIA on this topic is, why we can't supply the world's data centers? We're so"
+  },
+  {
+   "start": 1845.0,
+   "end": 1848.76,
+   "text": "far off from a world of Huawei being able to supply the world's data centers. And so how"
+  },
+  {
+   "start": 1848.76,
+   "end": 1853.52,
+   "text": "existential is the threat of Chinese compute on the global stage or even within China that"
+  },
+  {
+   "start": 1853.52,
+   "end": 1859.36,
+   "text": "the Nvidia sales are aiming to counteract. But I think Nvidia is very focused on these"
+  },
+  {
+   "start": 1859.36,
+   "end": 1864.28,
+   "text": "sort of battleground or what could become intense battleground regions if China builds"
+  },
+  {
+   "start": 1864.28,
+   "end": 1869.0,
+   "text": "its own AI chip production capacity that they want to make sure that they're selling in"
+  },
+  {
+   "start": 1869.0,
+   "end": 1870.0,
+   "text": "these regions."
+  },
+  {
+   "start": 1870.0,
+   "end": 1875.64,
+   "text": "I just want to point out one thing. We've talked to Ian Dunning twice from Hudson River Trading"
+  },
+  {
+   "start": 1875.64,
+   "end": 1879.92,
+   "text": "who has said he is not having a hard time getting GPUs."
+  },
+  {
+   "start": 1879.92,
+   "end": 1883.24,
+   "text": "He's having a hard time getting GPU places to plug in."
+  },
+  {
+   "start": 1883.24,
+   "end": 1883.84,
+   "text": "Yeah."
+  },
+  {
+   "start": 1883.84,
+   "end": 1888.24,
+   "text": "So one could, it's possible, at least it seems possible,"
+  },
+  {
+   "start": 1888.24,
+   "end": 1893.74,
+   "text": "that there is not as much unlimited demand for GPUs per se"
+  },
+  {
+   "start": 1893.74,
+   "end": 1897.56,
+   "text": "as maybe Nvidia would like to claim."
+  },
+  {
+   "start": 1897.56,
+   "end": 1901.4,
+   "text": "And that actually, let's say the bottleneck is in places"
+  },
+  {
+   "start": 1901.4,
+   "end": 1904.16,
+   "text": "to plug them in, that if you want to actually sell"
+  },
+  {
+   "start": 1904.16,
+   "end": 1907.04,
+   "text": "the most number of chips for the most number of dollars,"
+  },
+  {
+   "start": 1907.04,
+   "end": 1909.76,
+   "text": "setting aside these sort of broad market share questions"
+  },
+  {
+   "start": 1909.76,
+   "end": 1912.2,
+   "text": "that actually like the Southeast Asian customers"
+  },
+  {
+   "start": 1912.2,
+   "end": 1914.96,
+   "text": "are important if we believe what we've heard"
+  },
+  {
+   "start": 1914.96,
+   "end": 1918.4,
+   "text": "from other purchasers of NVIDIA GPUs"
+  },
+  {
+   "start": 1918.4,
+   "end": 1921.0,
+   "text": "that they're available if you can plug them in."
+  },
+  {
+   "start": 1921.0,
+   "end": 1924.92,
+   "text": "But before we get into like the sort of NVIDIA"
+  },
+  {
+   "start": 1924.92,
+   "end": 1927.6,
+   "text": "versus Huawei part, which I do want to talk about,"
+  },
+  {
+   "start": 1927.6,
+   "end": 1931.72,
+   "text": "I want to just like clarify this remote access question."
+  },
+  {
+   "start": 1931.72,
+   "end": 1951.2,
+   "text": "Are you saying like, let's say I started data center company, and I'm explicitly like, I'm going to build data centers in Malaysia, and I'm going to rent them out to deep seek and a bunch of other like Chinese frontier AI companies, technically, and I'm going to buy it."
+  },
+  {
+   "start": 1951.2,
+   "end": 1956.86,
+   "text": "Like technically there is nothing as far as we know like per se illegal about that arrangement and then beyond that"
+  },
+  {
+   "start": 1957.02,
+   "end": 1963.88,
+   "text": "How do the hawks or the people who argue in favor of export controls into mainland China?"
+  },
+  {
+   "start": 1964.92,
+   "end": 1967.36,
+   "text": "That seems really inconsistent like"
+  },
+  {
+   "start": 1968.26,
+   "end": 1974.68,
+   "text": "Can you look at walking through like is that actually legal and how is that you say it's not a loophole that it's the law"
+  },
+  {
+   "start": 1974.68,
+   "end": 1976.68,
+   "text": "But how is that law law?"
+  },
+  {
+   "start": 1977.16,
+   "end": 1979.83,
+   "text": "Justify"
+  },
+  {
+   "start": 1979.83,
+   "end": 1982.53,
+   "text": "Yeah, in the vast majority of cases, this is legal."
+  },
+  {
+   "start": 1982.53,
+   "end": 1985.17,
+   "text": "I mean, this is like literally what MegaSpeed's business is."
+  },
+  {
+   "start": 1985.17,
+   "end": 1987.71,
+   "text": "This is what a lot of Southeast Asian neoclouds do."
+  },
+  {
+   "start": 1987.71,
+   "end": 1990.07,
+   "text": "The exceptions to that would be if you know"
+  },
+  {
+   "start": 1990.07,
+   "end": 1993.17,
+   "text": "that the compute is gonna be used"
+  },
+  {
+   "start": 1993.17,
+   "end": 1995.59,
+   "text": "for intelligence activities by a foreign adversary military."
+  },
+  {
+   "start": 1995.59,
+   "end": 1998.13,
+   "text": "It's a very narrow band of restrictions."
+  },
+  {
+   "start": 1998.13,
+   "end": 2001.97,
+   "text": "But there's no restrictions on like selling chips"
+  },
+  {
+   "start": 2001.97,
+   "end": 2005.49,
+   "text": "into Southeast Asia to be used to train"
+  },
+  {
+   "start": 2005.49,
+   "end": 2008.33,
+   "text": "the most advanced open source models from China."
+  },
+  {
+   "start": 2008.33,
+   "end": 2010.97,
+   "text": "there's actually nothing illegal about it."
+  },
+  {
+   "start": 2010.97,
+   "end": 2012.21,
+   "text": "Does a deep seek-"
+  },
+  {
+   "start": 2012.21,
+   "end": 2016.98,
+   "text": "Well, rents from like a Southeast Asia data center, right?"
+  },
+  {
+   "start": 2016.98,
+   "end": 2020.3,
+   "text": "So the US government has said that Moonshot"
+  },
+  {
+   "start": 2020.3,
+   "end": 2023.1,
+   "text": "rents NVIDIA compute in Thailand."
+  },
+  {
+   "start": 2023.1,
+   "end": 2024.06,
+   "text": "Okay."
+  },
+  {
+   "start": 2024.06,
+   "end": 2026.74,
+   "text": "Deep seek by my understanding actually does more of it,"
+  },
+  {
+   "start": 2026.74,
+   "end": 2029.02,
+   "text": "has more of its compute onshore."
+  },
+  {
+   "start": 2029.02,
+   "end": 2033.82,
+   "text": "But, you know, generally speaking across Chinese companies,"
+  },
+  {
+   "start": 2033.82,
+   "end": 2036.54,
+   "text": "you know, this isn't existentially important resource"
+  },
+  {
+   "start": 2036.54,
+   "end": 2039.1,
+   "text": "is NVIDIA compute in Southeast Asia."
+  },
+  {
+   "start": 2039.1,
+   "end": 2041.14,
+   "text": "You ask, you know, how is it that the Hawks"
+  },
+  {
+   "start": 2041.14,
+   "end": 2042.26,
+   "text": "have not restricted this?"
+  },
+  {
+   "start": 2042.26,
+   "end": 2044.5,
+   "text": "They actually did."
+  },
+  {
+   "start": 2044.5,
+   "end": 2047.9,
+   "text": "They restricted it at the end of the Biden administration."
+  },
+  {
+   "start": 2047.9,
+   "end": 2052.64,
+   "text": "And it was part of this broad set of global restrictions"
+  },
+  {
+   "start": 2052.64,
+   "end": 2055.38,
+   "text": "on NVIDIA hardware called the AI diffusion rule"
+  },
+  {
+   "start": 2055.38,
+   "end": 2058.62,
+   "text": "that was set to take effect in May, 2025."
+  },
+  {
+   "start": 2058.62,
+   "end": 2062.1,
+   "text": "And the Trump administration is not enforcing that regulation."
+  },
+  {
+   "start": 2062.1,
+   "end": 2066.5,
+   "text": "Sorry, just to be clear, NVIDIA still can't sell"
+  },
+  {
+   "start": 2066.5,
+   "end": 2069.14,
+   "text": "their most advanced chips into mainland China."
+  },
+  {
+   "start": 2069.14,
+   "end": 2073.74,
+   "text": "But the Trump administration so far has been cool"
+  },
+  {
+   "start": 2073.74,
+   "end": 2078.26,
+   "text": "with sell them into Southeast Asia to then remote access."
+  },
+  {
+   "start": 2078.26,
+   "end": 2079.1,
+   "text": "I mean, it's the internet."
+  },
+  {
+   "start": 2079.1,
+   "end": 2080.38,
+   "text": "I don't even know what borders mean."
+  },
+  {
+   "start": 2080.38,
+   "end": 2082.92,
+   "text": "Why are it like, it's the internet."
+  },
+  {
+   "start": 2082.92,
+   "end": 2083.84,
+   "text": "What are we talking about?"
+  },
+  {
+   "start": 2083.84,
+   "end": 2084.68,
+   "text": "What does it matter?"
+  },
+  {
+   "start": 2084.68,
+   "end": 2088.04,
+   "text": "That's for controls on hardware, don't respect the cloud."
+  },
+  {
+   "start": 2088.04,
+   "end": 2089.32,
+   "text": "Yeah."
+  },
+  {
+   "start": 2089.32,
+   "end": 2093.82,
+   "text": "Yeah, yeah, no, it's sometimes a bit baffling."
+  },
+  {
+   "start": 2093.82,
+   "end": 2097.62,
+   "text": "So as long as I'm not the only one who's baffled."
+  },
+  {
+   "start": 2097.62,
+   "end": 2100.66,
+   "text": "This is like an active raging debate in Washington"
+  },
+  {
+   "start": 2100.66,
+   "end": 2101.5,
+   "text": "to be clear."
+  },
+  {
+   "start": 2101.5,
+   "end": 2103.6,
+   "text": "And you know, one interesting thing"
+  },
+  {
+   "start": 2103.6,
+   "end": 2104.78,
+   "text": "that happened this summer."
+  },
+  {
+   "start": 2104.78,
+   "end": 2108.9,
+   "text": "So, you know, after Kimmy comes out with K3,"
+  },
+  {
+   "start": 2108.9,
+   "end": 2110.78,
+   "text": "it's sort of, it's like seen as like a second"
+  },
+  {
+   "start": 2110.78,
+   "end": 2112.42,
+   "text": "deep-seek moment almost."
+  },
+  {
+   "start": 2113.73,
+   "end": 2116.33,
+   "text": "The science-detect advisor in the White House,"
+  },
+  {
+   "start": 2116.33,
+   "end": 2120.49,
+   "text": "Michael Kratzius, posts on X that"
+  },
+  {
+   "start": 2120.49,
+   "end": 2122.65,
+   "text": "the Moonshot team acquired Blackwell chips,"
+  },
+  {
+   "start": 2122.65,
+   "end": 2126.33,
+   "text": "which is illegal, raises questions of why has the US government not, you know, why has"
+  },
+  {
+   "start": 2126.33,
+   "end": 2130.33,
+   "text": "the Commerce Department not taken any action if that's the US government's determination?"
+  },
+  {
+   "start": 2130.33,
+   "end": 2132.53,
+   "text": "And also that they had remotely accessed these ships in Thailand."
+  },
+  {
+   "start": 2132.53,
+   "end": 2137.93,
+   "text": "And a couple of days after that, the enforcement unit of the part of the Commerce Department"
+  },
+  {
+   "start": 2137.93,
+   "end": 2142.93,
+   "text": "that handles chip export control, so the people who are like, oh, you violated, like you smuggled,"
+  },
+  {
+   "start": 2142.93,
+   "end": 2149.45,
+   "text": "we're going to go after you, that unit started mapping where in the world remote access happens,"
+  },
+  {
+   "start": 2149.45,
+   "end": 2152.33,
+   "text": "which is very interesting because remote access is not"
+  },
+  {
+   "start": 2152.33,
+   "end": 2152.83,
+   "text": "illegal."
+  },
+  {
+   "start": 2152.83,
+   "end": 2156.37,
+   "text": "And so if you're an enforcer of expert controls,"
+  },
+  {
+   "start": 2156.37,
+   "end": 2158.45,
+   "text": "why is that your purview?"
+  },
+  {
+   "start": 2158.45,
+   "end": 2160.41,
+   "text": "But they started sort of crafting"
+  },
+  {
+   "start": 2160.41,
+   "end": 2163.61,
+   "text": "this list of countries where that's known to happen."
+  },
+  {
+   "start": 2163.61,
+   "end": 2166.65,
+   "text": "And there have been, at a very senior level,"
+  },
+  {
+   "start": 2166.65,
+   "end": 2169.89,
+   "text": "of the Trump administration, pretty intense debate"
+  },
+  {
+   "start": 2169.89,
+   "end": 2173.37,
+   "text": "over whether to impose such restrictions."
+  },
+  {
+   "start": 2173.37,
+   "end": 2175.17,
+   "text": "There's also interest on Capitol Hill."
+  },
+  {
+   "start": 2175.17,
+   "end": 2177.37,
+   "text": "There's interest in Capitol Hill in being"
+  },
+  {
+   "start": 2177.37,
+   "end": 2182.73,
+   "text": "hawkish on a lot of these policies, but including remote access."
+  },
+  {
+   "start": 2182.73,
+   "end": 2185.33,
+   "text": "This is sort of nightmare scenario for Nvidia."
+  },
+  {
+   "start": 2185.33,
+   "end": 2190.05,
+   "text": "If remote access were to be restricted, it's also a nightmare scenario for some hyperscalers"
+  },
+  {
+   "start": 2190.05,
+   "end": 2196.53,
+   "text": "like Oracle that counts Chinese off-takers as a significant portion of its business."
+  },
+  {
+   "start": 2196.53,
+   "end": 2200.85,
+   "text": "There was great reporting in the Financial Times recently about Oracle having a cloud"
+  },
+  {
+   "start": 2200.85,
+   "end": 2205.45,
+   "text": "computing arrangement with Tencent that then the Trump administration stepped in to kill,"
+  },
+  {
+   "start": 2205.45,
+   "end": 2207.33,
+   "text": "even though it was legal."
+  },
+  {
+   "start": 2207.33,
+   "end": 2209.33,
+   "text": "And so it's like, okay, are we just gonna do this ad hoc?"
+  },
+  {
+   "start": 2209.33,
+   "end": 2211.53,
+   "text": "They do a lot of things ad hoc, but we'll see."
+  },
+  {
+   "start": 2211.53,
+   "end": 2213.57,
+   "text": "It's an active regulatory debate."
+  },
+  {
+   "start": 2213.57,
+   "end": 2215.91,
+   "text": "Like the answer to this question could change"
+  },
+  {
+   "start": 2215.91,
+   "end": 2218.01,
+   "text": "by the time this podcast airs, although I doubt it."
+  },
+  {
+   "start": 2218.01,
+   "end": 2219.87,
+   "text": "Well, okay, speaking of ad hoc,"
+  },
+  {
+   "start": 2219.87,
+   "end": 2221.37,
+   "text": "I mean, part of the scandal here"
+  },
+  {
+   "start": 2221.37,
+   "end": 2224.69,
+   "text": "is that NVIDIA reportedly intervened"
+  },
+  {
+   "start": 2224.69,
+   "end": 2229.13,
+   "text": "in the US government's mega speed investigation and said,"
+  },
+  {
+   "start": 2229.13,
+   "end": 2230.17,
+   "text": "yeah, it's all good."
+  },
+  {
+   "start": 2230.17,
+   "end": 2231.37,
+   "text": "Like, they're cool."
+  },
+  {
+   "start": 2231.37,
+   "end": 2232.85,
+   "text": "They're cool, trust us."
+  },
+  {
+   "start": 2232.85,
+   "end": 2234.17,
+   "text": "What do you expect to happen?"
+  },
+  {
+   "start": 2234.17,
+   "end": 2236.85,
+   "text": "I don't even know the status of that investigation now,"
+  },
+  {
+   "start": 2236.85,
+   "end": 2240.21,
+   "text": "but like is it picking up again or like what's going on there?"
+  },
+  {
+   "start": 2240.21,
+   "end": 2243.64,
+   "text": "Would you expect the DOJ to actually pursue those?"
+  },
+  {
+   "start": 2243.64,
+   "end": 2244.48,
+   "text": "Yeah, yeah."
+  },
+  {
+   "start": 2244.48,
+   "end": 2246.2,
+   "text": "So I just want to clarify quickly"
+  },
+  {
+   "start": 2246.2,
+   "end": 2249.92,
+   "text": "on the sort of scope of NVIDIA's intervention."
+  },
+  {
+   "start": 2249.92,
+   "end": 2252.4,
+   "text": "So this is reporting from like two days ago"
+  },
+  {
+   "start": 2252.4,
+   "end": 2255.04,
+   "text": "and this is such an active story that I'm saying"
+  },
+  {
+   "start": 2255.04,
+   "end": 2258.96,
+   "text": "what I know as of 1038 PM Hong Kong time on Wednesday."
+  },
+  {
+   "start": 2258.96,
+   "end": 2260.84,
+   "text": "So NVIDIA's general counsel,"
+  },
+  {
+   "start": 2260.84,
+   "end": 2265.68,
+   "text": "a guy called Tim Teeter called the head of the Bureau of Industry and Security, like"
+  },
+  {
+   "start": 2265.68,
+   "end": 2270.44,
+   "text": "the Export Controls Enforcement, and the agency that writes and enforces export controls at"
+  },
+  {
+   "start": 2270.44,
+   "end": 2277.44,
+   "text": "the Commerce Department. In late summer last year, to inquire about whether BIS was involved"
+  },
+  {
+   "start": 2277.44,
+   "end": 2283.2,
+   "text": "in the detention of Alice, who we now know was having an extramarital affair with Jensen,"
+  },
+  {
+   "start": 2283.2,
+   "end": 2287.08,
+   "text": "but Nvidia says that Tim Teeter didn't know that at the time of this call, called to ask"
+  },
+  {
+   "start": 2287.08,
+   "end": 2290.12,
+   "text": "if BIS was involved in her being detained in Singapore."
+  },
+  {
+   "start": 2290.12,
+   "end": 2291.88,
+   "text": "She had been brought in for questioning"
+  },
+  {
+   "start": 2291.88,
+   "end": 2293.72,
+   "text": "and restricted from leaving the country"
+  },
+  {
+   "start": 2293.72,
+   "end": 2297.0,
+   "text": "as part of Singapore's own investigation into Megaspeed,"
+  },
+  {
+   "start": 2297.0,
+   "end": 2300.72,
+   "text": "which Megaspeed said recently had concluded this year"
+  },
+  {
+   "start": 2300.72,
+   "end": 2302.56,
+   "text": "with no adverse findings."
+  },
+  {
+   "start": 2302.56,
+   "end": 2304.92,
+   "text": "So Tim Teeter called to ask about that."
+  },
+  {
+   "start": 2304.92,
+   "end": 2309.08,
+   "text": "He later emailed BIS staff who were working on the case"
+  },
+  {
+   "start": 2309.08,
+   "end": 2310.4,
+   "text": "and asked to meet with one of them."
+  },
+  {
+   "start": 2310.4,
+   "end": 2313.88,
+   "text": "And they forwarded those emails to Jeffrey Kessler"
+  },
+  {
+   "start": 2313.88,
+   "end": 2315.96,
+   "text": "because Tim Teeter invoked Kessler's name."
+  },
+  {
+   "start": 2315.96,
+   "end": 2319.08,
+   "text": "like, oh, like Kessler said it was okay to talk to you. And this was like, this is not"
+  },
+  {
+   "start": 2319.08,
+   "end": 2324.2,
+   "text": "normal practice for an export enforcement investigation. And, you know, Kessler said,"
+  },
+  {
+   "start": 2324.2,
+   "end": 2328.36,
+   "text": "continue doing things by the book. You know, the Commerce Department said, or I was still"
+  },
+  {
+   "start": 2328.36,
+   "end": 2331.0,
+   "text": "sourcing for this agency within the Commerce Department said, you know, everything has"
+  },
+  {
+   "start": 2331.0,
+   "end": 2336.6,
+   "text": "been above board. But the sort of nature of the investigation and the ability of export"
+  },
+  {
+   "start": 2336.6,
+   "end": 2343.64,
+   "text": "enforcement agents to act in the weeks and months after this sort of saga with Tim Teeter"
+  },
+  {
+   "start": 2343.64,
+   "end": 2348.84,
+   "text": "was diminished. You know, and agents or people working on export enforcement, you know, were"
+  },
+  {
+   "start": 2348.84,
+   "end": 2354.04,
+   "text": "restricted from like requesting information directly from NVIDIA without getting Kessler's"
+  },
+  {
+   "start": 2354.04,
+   "end": 2358.92,
+   "text": "approval beforehand or routing it through him. That's a policy that's unique to NVIDIA. It's not"
+  },
+  {
+   "start": 2358.92,
+   "end": 2363.48,
+   "text": "how things operate with any other major tech company. They were told not to mention Megaspeed or"
+  },
+  {
+   "start": 2363.48,
+   "end": 2367.96,
+   "text": "Speedmatrix, the name of Megaspeed's Malaysian subsidiary and external communications. And"
+  },
+  {
+   "start": 2367.96,
+   "end": 2373.0,
+   "text": "eventually the Department of Justice, which typically pursues these investigations alongside"
+  },
+  {
+   "start": 2373.0,
+   "end": 2377.48,
+   "text": "BIS. So if anything is going to turn into a criminal indictment, it's going to involve"
+  },
+  {
+   "start": 2377.48,
+   "end": 2384.12,
+   "text": "the DOJ. The department has been working alongside BIS for a bit on this case, ended up asking"
+  },
+  {
+   "start": 2384.12,
+   "end": 2391.12,
+   "text": "BIS to stop its efforts. So now that case is with DOJ. I think my understanding of the"
+  },
+  {
+   "start": 2391.12,
+   "end": 2394.92,
+   "text": "status of the case a few weeks ago would be probably very different from where things"
+  },
+  {
+   "start": 2394.92,
+   "end": 2399.24,
+   "text": "are right now. There's obviously intense interest in this within the Trump administration"
+  },
+  {
+   "start": 2399.24,
+   "end": 2404.04,
+   "text": "on Capitol Hill. So, you know, it's funny, like a lot of what we're talking about now"
+  },
+  {
+   "start": 2404.04,
+   "end": 2408.12,
+   "text": "was known such a long time ago. You know, New York Times reported on it, we reported on it,"
+  },
+  {
+   "start": 2408.12,
+   "end": 2411.8,
+   "text": "but it's got a new life, shall we say, in the past couple of weeks."
+  },
+  {
+   "start": 2411.8,
+   "end": 2416.36,
+   "text": "I feel like we should mention BIS is the Bureau of Industry and Security, because whenever I hear"
+  },
+  {
+   "start": 2416.36,
+   "end": 2420.12,
+   "text": "BIS, I always think bank for international settlements. But yes."
+  },
+  {
+   "start": 2420.12,
+   "end": 2425.08,
+   "text": "And a lot of different type of neurodукals. You can only have so many three letter"
+  },
+  {
+   "start": 2425.08,
+   "end": 2426.24,
+   "text": "your acronyms, right?"
+  },
+  {
+   "start": 2426.24,
+   "end": 2427.8,
+   "text": "And so you're bound to."
+  },
+  {
+   "start": 2427.8,
+   "end": 2430.56,
+   "text": "No, DC says every day we go and bet to new ones."
+  },
+  {
+   "start": 2430.56,
+   "end": 2431.4,
+   "text": "Oh yeah."
+  },
+  {
+   "start": 2431.4,
+   "end": 2432.24,
+   "text": "That's it."
+  },
+  {
+   "start": 2432.24,
+   "end": 2448.35,
+   "text": "Game's on a break."
+  },
+  {
+   "start": 2448.35,
+   "end": 2449.35,
+   "text": "Don't doom scroll."
+  },
+  {
+   "start": 2449.35,
+   "end": 2450.99,
+   "text": "Try Rips on Underdog."
+  },
+  {
+   "start": 2450.99,
+   "end": 2452.91,
+   "text": "Buy a digital pack, rip it open,"
+  },
+  {
+   "start": 2452.91,
+   "end": 2454.75,
+   "text": "and reveal a real physical card."
+  },
+  {
+   "start": 2454.75,
+   "end": 2456.79,
+   "text": "Football, basketball, even Pokemon."
+  },
+  {
+   "start": 2456.79,
+   "end": 2458.55,
+   "text": "Packs start at just $5."
+  },
+  {
+   "start": 2458.55,
+   "end": 2460.07,
+   "text": "Ship it straight to your door,"
+  },
+  {
+   "start": 2460.07,
+   "end": 2462.51,
+   "text": "or sell it back instantly at full market value."
+  },
+  {
+   "start": 2462.51,
+   "end": 2465.87,
+   "text": "Max value up to $125,000."
+  },
+  {
+   "start": 2465.87,
+   "end": 2468.15,
+   "text": "Download Underdog and get in on the chase."
+  },
+  {
+   "start": 2468.15,
+   "end": 2470.95,
+   "text": "Deposit $5, get 5 free packs."
+  },
+  {
+   "start": 2470.95,
+   "end": 2473.35,
+   "text": "Real rips, real cards, real cash."
+  },
+  {
+   "start": 2473.35,
+   "end": 2475.83,
+   "text": "Only on Underdog, unleash your dog."
+  },
+  {
+   "start": 2475.83,
+   "end": 2478.07,
+   "text": "18 plus terms apply, top grails are extremely rare."
+  },
+  {
+   "start": 2478.07,
+   "end": 2480.51,
+   "text": "Running a small business takes everything you've got."
+  },
+  {
+   "start": 2480.51,
+   "end": 2482.91,
+   "text": "But with Chase for Business, you're not alone."
+  },
+  {
+   "start": 2482.91,
+   "end": 2484.39,
+   "text": "They bring together local support"
+  },
+  {
+   "start": 2484.39,
+   "end": 2485.97,
+   "text": "and a broad range of resources"
+  },
+  {
+   "start": 2485.97,
+   "end": 2487.99,
+   "text": "to more than 7 million customers."
+  },
+  {
+   "start": 2487.99,
+   "end": 2490.39,
+   "text": "With a deep understanding of your day-to-day needs,"
+  },
+  {
+   "start": 2490.39,
+   "end": 2493.47,
+   "text": "they provide products and guidance built to help you thrive."
+  },
+  {
+   "start": 2493.47,
+   "end": 2496.11,
+   "text": "Right now, earn $500 when you open a new"
+  },
+  {
+   "start": 2496.11,
+   "end": 2500.51,
+   "text": "Chase Business Complete Checking Account for new business checking customers with qualifying"
+  },
+  {
+   "start": 2500.51,
+   "end": 2506.67,
+   "text": "activities. Offer expires January 21, 2027. Chase Business Complete Checking has the flexible"
+  },
+  {
+   "start": 2506.67,
+   "end": 2512.11,
+   "text": "tools you need to accept payments, make deposits, and manage your finances with confidence."
+  },
+  {
+   "start": 2512.11,
+   "end": 2517.79,
+   "text": "Learn more at chase.com slash podcast biz offer. Chase, make more of what's yours."
+  },
+  {
+   "start": 2517.79,
+   "end": 2522.99,
+   "text": "Fees may apply to Chase Business Complete Checking Accounts. The $500 offer is available for new"
+  },
+  {
+   "start": 2522.99,
+   "end": 2528.43,
+   "text": "business checking accounts with qualifying activities through 121-2027. Eligibility and"
+  },
+  {
+   "start": 2528.43,
+   "end": 2532.83,
+   "text": "qualification requirements must be met. Additional restrictions may apply. Please speak with a"
+  },
+  {
+   "start": 2532.83,
+   "end": 2537.79,
+   "text": "business banker for more information, JP Morgan Chase Bank NA, member FDIC."
+  },
+  {
+   "start": 2537.79,
+   "end": 2543.63,
+   "text": "For big business, AI opened up a world of promise, but that world of promise turned into a world of"
+  },
+  {
+   "start": 2543.63,
+   "end": 2549.15,
+   "text": "pain. Costs spiraling, data scattered across disconnected systems, security and governance"
+  },
+  {
+   "start": 2549.15,
+   "end": 2555.29,
+   "text": "increasingly complex. AI initiatives struggling to scale and ROI that remains frustratingly"
+  },
+  {
+   "start": 2555.29,
+   "end": 2560.51,
+   "text": "out of reach. The challenge is in AI itself, it's having the infrastructure AI needs to"
+  },
+  {
+   "start": 2560.51,
+   "end": 2565.95,
+   "text": "succeed, which is right where Bumi says we got you. Tens of thousands of enterprises"
+  },
+  {
+   "start": 2565.95,
+   "end": 2571.73,
+   "text": "trust Bumi to connect data, applications, processes and AI. With Bumi, businesses can"
+  },
+  {
+   "start": 2571.73,
+   "end": 2577.49,
+   "text": "eliminate silos, automate workflows, strengthen governance and create the foundation AI needs"
+  },
+  {
+   "start": 2577.49,
+   "end": 2579.25,
+   "text": "to perform at scale."
+  },
+  {
+   "start": 2579.25,
+   "end": 2580.25,
+   "text": "The result?"
+  },
+  {
+   "start": 2580.25,
+   "end": 2581.37,
+   "text": "Faster innovation."
+  },
+  {
+   "start": 2581.37,
+   "end": 2582.65,
+   "text": "More efficiency."
+  },
+  {
+   "start": 2582.65,
+   "end": 2584.45,
+   "text": "Better business outcomes."
+  },
+  {
+   "start": 2584.45,
+   "end": 2588.69,
+   "text": "BOOMY turns a world of AI pain into a world of AI gain."
+  },
+  {
+   "start": 2588.69,
+   "end": 2591.09,
+   "text": "As BOOMY says, we got you."
+  },
+  {
+   "start": 2591.09,
+   "end": 2593.37,
+   "text": "Head to BOOMY.com to learn more."
+  },
+  {
+   "start": 2593.37,
+   "end": 2597.37,
+   "text": "That's B-O-O-M-I dot com."
+  },
+  {
+   "start": 2597.37,
+   "end": 2601.15,
+   "text": "This is the Bloomberg Market Minute, brought to you by Comcast Business."
+  },
+  {
+   "start": 2601.15,
+   "end": 2603.63,
+   "text": "The markets faced plenty of challenges this year."
+  },
+  {
+   "start": 2603.63,
+   "end": 2607.99,
+   "text": "Rising energy costs, higher interest rates, pushback to massive artificial intelligence"
+  },
+  {
+   "start": 2607.99,
+   "end": 2611.07,
+   "text": "spending, but through it all stocks keep breaking records."
+  },
+  {
+   "start": 2611.27,
+   "end": 2614.83,
+   "text": "And some analysts think they still can with a focus on the fundamentals."
+  },
+  {
+   "start": 2615.01,
+   "end": 2618.31,
+   "text": "Nadia Lovell is head of global equity strategy at UBS."
+  },
+  {
+   "start": 2618.35,
+   "end": 2621.31,
+   "text": "Earnings has been good and continues to be good."
+  },
+  {
+   "start": 2621.31,
+   "end": 2625.19,
+   "text": "And while, you know, we might be past the peak in earnings growth, we're not"
+  },
+  {
+   "start": 2625.19,
+   "end": 2626.99,
+   "text": "past the peak in earnings level."
+  },
+  {
+   "start": 2627.07,
+   "end": 2630.59,
+   "text": "But others like Miller Tabak strategist Matt Maley say those challenges"
+  },
+  {
+   "start": 2630.59,
+   "end": 2632.47,
+   "text": "could eventually lead to a downturn."
+  },
+  {
+   "start": 2632.51,
+   "end": 2636.51,
+   "text": "Whenever we see a significant rise in bond yields like we have and a significant"
+  },
+  {
+   "start": 2636.51,
+   "end": 2641.67,
+   "text": "rise in oil prices likely have, the stock market always or pretty much always ignores"
+  },
+  {
+   "start": 2641.67,
+   "end": 2642.99,
+   "text": "it for a while."
+  },
+  {
+   "start": 2642.99,
+   "end": 2645.15,
+   "text": "And Wall Street may be starting to take notice."
+  },
+  {
+   "start": 2645.15,
+   "end": 2650.43,
+   "text": "A recent Citigroup index shows more analysts cut rather than raise their earnings forecasts"
+  },
+  {
+   "start": 2650.43,
+   "end": 2654.59,
+   "text": "for corporate America for the first time in more than five months."
+  },
+  {
+   "start": 2654.59,
+   "end": 2659.15,
+   "text": "That was the Bloomberg Market Minute, brought to you by Comcast Business, one partner powering"
+  },
+  {
+   "start": 2659.15,
+   "end": 2663.19,
+   "text": "90% of the Fortune 500 and millions of small businesses."
+  },
+  {
+   "start": 2663.19,
+   "end": 2670.5,
+   "text": "When you add it all up, no one does business like Comcast Business."
+  },
+  {
+   "start": 2670.5,
+   "end": 2672.02,
+   "text": "One more question on MegaSpeed."
+  },
+  {
+   "start": 2672.02,
+   "end": 2676.68,
+   "text": "Before I want to talk a little bit about Huawei, one more question on MegaSpeed."
+  },
+  {
+   "start": 2676.68,
+   "end": 2679.14,
+   "text": "What do we know right now?"
+  },
+  {
+   "start": 2679.14,
+   "end": 2685.34,
+   "text": "You described at the very beginning, spun off from this gaming company, BVI shell company,"
+  },
+  {
+   "start": 2685.34,
+   "end": 2686.34,
+   "text": "etc."
+  },
+  {
+   "start": 2686.34,
+   "end": 2693.1,
+   "text": "What do we know about its owners and its backers and how they have the money to buy a bunch"
+  },
+  {
+   "start": 2693.1,
+   "end": 2695.14,
+   "text": "of Nvidia chips and all that stuff?"
+  },
+  {
+   "start": 2695.14,
+   "end": 2699.4,
+   "text": "Yeah, so Mega Speed on paper is 100% owned"
+  },
+  {
+   "start": 2699.4,
+   "end": 2701.78,
+   "text": "by a Singapore Shell company that has been 100% owned"
+  },
+  {
+   "start": 2701.78,
+   "end": 2704.22,
+   "text": "by a CEO who is a Singapore national."
+  },
+  {
+   "start": 2704.22,
+   "end": 2706.46,
+   "text": "We tried many times to get in touch with him last year."
+  },
+  {
+   "start": 2706.46,
+   "end": 2708.02,
+   "text": "We were unsuccessful."
+  },
+  {
+   "start": 2708.02,
+   "end": 2711.9,
+   "text": "In terms of where it got the money,"
+  },
+  {
+   "start": 2711.9,
+   "end": 2713.86,
+   "text": "this is a big open question."
+  },
+  {
+   "start": 2713.86,
+   "end": 2715.66,
+   "text": "$4.6 billion worth of hardware"
+  },
+  {
+   "start": 2715.66,
+   "end": 2717.7,
+   "text": "is not a small amount of hardware."
+  },
+  {
+   "start": 2717.7,
+   "end": 2722.7,
+   "text": "It has a compute rental agreement with Alibaba."
+  },
+  {
+   "start": 2722.94,
+   "end": 2724.94,
+   "text": "Alibaba, the way that these agreements often work"
+  },
+  {
+   "start": 2724.94,
+   "end": 2731.74,
+   "text": "a company will put a pre-payment, a guarantee. You put a deposit down and make sense of purchase."
+  },
+  {
+   "start": 2731.74,
+   "end": 2737.58,
+   "text": "We are going to offtake this in the future. There are financial transactions between Alibaba"
+  },
+  {
+   "start": 2737.58,
+   "end": 2745.26,
+   "text": "via a Singaporean subsidiary of Alibaba's two mega speeds, where the entirety of its Malaysia"
+  },
+  {
+   "start": 2745.26,
+   "end": 2748.54,
+   "text": "business was offered as collateral, actually. These are transactions that happened a couple"
+  },
+  {
+   "start": 2748.54,
+   "end": 2753.5,
+   "text": "of years ago. Don't fully answer the question of where it got all of the money that it did to"
+  },
+  {
+   "start": 2753.5,
+   "end": 2754.98,
+   "text": "to purchase the hardware."
+  },
+  {
+   "start": 2754.98,
+   "end": 2757.26,
+   "text": "But on paper, it is a Singaporean company"
+  },
+  {
+   "start": 2757.26,
+   "end": 2759.02,
+   "text": "and I don't have evidence to the contrary."
+  },
+  {
+   "start": 2759.02,
+   "end": 2762.22,
+   "text": "Let's talk a little bit about Huawei"
+  },
+  {
+   "start": 2762.22,
+   "end": 2765.94,
+   "text": "and you mentioned that Huawei just doesn't have the capacity,"
+  },
+  {
+   "start": 2765.94,
+   "end": 2769.18,
+   "text": "the skill yet to replace Nvidia on a global level."
+  },
+  {
+   "start": 2769.18,
+   "end": 2771.34,
+   "text": "It's probably not even at a China level,"
+  },
+  {
+   "start": 2771.34,
+   "end": 2774.9,
+   "text": "given the demand among Chinese AI firms."
+  },
+  {
+   "start": 2774.9,
+   "end": 2777.58,
+   "text": "Yeah, you know, Huawei's senior executives themselves"
+  },
+  {
+   "start": 2777.58,
+   "end": 2781.18,
+   "text": "say it'll take until 2030 to see a domestic demand."
+  },
+  {
+   "start": 2781.18,
+   "end": 2785.74,
+   "text": "So talk a little bit about like where are they on this process and you know they"
+  },
+  {
+   "start": 2786.78,
+   "end": 2790.86,
+   "text": "in AI we're always talking about like I think six months behind two years behind whatever like"
+  },
+  {
+   "start": 2790.86,
+   "end": 2796.78,
+   "text": "tell us a little bit about like where Huawei is and it's funny I guess to be like a real competitor"
+  },
+  {
+   "start": 2796.78,
+   "end": 2805.34,
+   "text": "with Nvidia. Yeah so you know Huawei is is such a black box it's the sort of pre-eminent competitor"
+  },
+  {
+   "start": 2805.34,
+   "end": 2809.66,
+   "text": "to Nvidia in China they're a handful of other companies of course that are you know a lot of"
+  },
+  {
+   "start": 2809.66,
+   "end": 2813.02,
+   "text": "of in the same way that a lot of American companies are designing their own chips, you"
+  },
+  {
+   "start": 2813.02,
+   "end": 2816.34,
+   "text": "have that same pattern among a lot of the Chinese companies. It's just a matter of whether"
+  },
+  {
+   "start": 2816.34,
+   "end": 2820.94,
+   "text": "they can get the production capacity. That's the constraint. In large part because the"
+  },
+  {
+   "start": 2820.94,
+   "end": 2825.18,
+   "text": "US and Allied nations have restricted the flow of semiconductor manufacturing equipment"
+  },
+  {
+   "start": 2825.18,
+   "end": 2832.06,
+   "text": "to China. But Huawei has made material progress on its chips over the past couple of years."
+  },
+  {
+   "start": 2832.06,
+   "end": 2838.1,
+   "text": "And you're starting to see Chinese companies become more interested in adopting Huawei hardware."
+  },
+  {
+   "start": 2838.1,
+   "end": 2839.86,
+   "text": "I remember actually coming on a lot of years ago,"
+  },
+  {
+   "start": 2839.86,
+   "end": 2842.32,
+   "text": "and I was like, one of the things that I'm waiting for"
+  },
+  {
+   "start": 2842.32,
+   "end": 2844.94,
+   "text": "is, is Huawei ever gonna export Ascend chips,"
+  },
+  {
+   "start": 2844.94,
+   "end": 2846.82,
+   "text": "which are the name of its AI chips?"
+  },
+  {
+   "start": 2846.82,
+   "end": 2850.02,
+   "text": "And also, are we gonna see a frontier Chinese lab"
+  },
+  {
+   "start": 2850.02,
+   "end": 2853.18,
+   "text": "complete and successful training run on Huawei chips?"
+  },
+  {
+   "start": 2853.18,
+   "end": 2855.1,
+   "text": "Right now, you're starting to see model releases"
+  },
+  {
+   "start": 2855.1,
+   "end": 2856.62,
+   "text": "out of China that have what are called"
+  },
+  {
+   "start": 2856.62,
+   "end": 2858.5,
+   "text": "zero-day inferencing capabilities on Huawei,"
+  },
+  {
+   "start": 2858.5,
+   "end": 2860.54,
+   "text": "which is like, this is sort of optimized"
+  },
+  {
+   "start": 2860.54,
+   "end": 2862.06,
+   "text": "to run best on Huawei hardware"
+  },
+  {
+   "start": 2862.06,
+   "end": 2863.58,
+   "text": "from the moment that we released it."
+  },
+  {
+   "start": 2863.58,
+   "end": 2864.78,
+   "text": "But that's a very different thing"
+  },
+  {
+   "start": 2864.78,
+   "end": 2868.42,
+   "text": "from doing pre-training on Huawei."
+  },
+  {
+   "start": 2868.42,
+   "end": 2873.26,
+   "text": "And one data point for this is, gosh,"
+  },
+  {
+   "start": 2873.26,
+   "end": 2875.06,
+   "text": "then a busy new cycle, maybe like a month and a half ago,"
+  },
+  {
+   "start": 2875.06,
+   "end": 2877.7,
+   "text": "two months ago, we reported that Deepseek"
+  },
+  {
+   "start": 2877.7,
+   "end": 2881.38,
+   "text": "had placed a very substantial order for Huawei hardware."
+  },
+  {
+   "start": 2881.38,
+   "end": 2886.46,
+   "text": "160,000 of Huawei's best AI chips called 950 DT's"
+  },
+  {
+   "start": 2886.46,
+   "end": 2889.26,
+   "text": "for use at a data center in Inner Mongolia"
+  },
+  {
+   "start": 2889.26,
+   "end": 2892.02,
+   "text": "that Deepseek is building as it's sort of like next really,"
+  },
+  {
+   "start": 2892.02,
+   "end": 2894.46,
+   "text": "really large domestic computing cluster."
+  },
+  {
+   "start": 2894.46,
+   "end": 2897.58,
+   "text": "Instantly, this is the same location within China"
+  },
+  {
+   "start": 2897.58,
+   "end": 2900.46,
+   "text": "that the US government believes that Deep-Seek has installed"
+  },
+  {
+   "start": 2900.46,
+   "end": 2901.7,
+   "text": "in videos, Blackwell chips."
+  },
+  {
+   "start": 2901.7,
+   "end": 2903.86,
+   "text": "We don't know what the overall composition of compute"
+  },
+  {
+   "start": 2903.86,
+   "end": 2905.46,
+   "text": "in that data center will be."
+  },
+  {
+   "start": 2905.46,
+   "end": 2907.9,
+   "text": "Huawei's not going to be able to fulfill that order"
+  },
+  {
+   "start": 2907.9,
+   "end": 2909.42,
+   "text": "for more than a year."
+  },
+  {
+   "start": 2909.42,
+   "end": 2912.38,
+   "text": "Deep-Seek's actually lobbying the Chinese government"
+  },
+  {
+   "start": 2912.38,
+   "end": 2915.18,
+   "text": "to pressure Huawei to speed up its allocation."
+  },
+  {
+   "start": 2915.18,
+   "end": 2917.38,
+   "text": "It would be great for Chinese labs"
+  },
+  {
+   "start": 2917.38,
+   "end": 2920.5,
+   "text": "if they had this alternative source of supply, right?"
+  },
+  {
+   "start": 2920.5,
+   "end": 2922.9,
+   "text": "It's obviously the US government."
+  },
+  {
+   "start": 2922.9,
+   "end": 2924.42,
+   "text": "Obviously, we talked about the Runexus piece,"
+  },
+  {
+   "start": 2924.42,
+   "end": 2928.62,
+   "text": "you know, everybody would like to own their chips or at least have them in country."
+  },
+  {
+   "start": 2928.62,
+   "end": 2931.42,
+   "text": "The US government has made it very difficult to use NVIDIA."
+  },
+  {
+   "start": 2931.42,
+   "end": 2933.22,
+   "text": "They would love people to use Huawei."
+  },
+  {
+   "start": 2933.22,
+   "end": 2935.42,
+   "text": "It's a matter of whether they can do a training run."
+  },
+  {
+   "start": 2935.42,
+   "end": 2937.82,
+   "text": "And, you know, at the time of our reporting,"
+  },
+  {
+   "start": 2937.82,
+   "end": 2942.02,
+   "text": "Huawei was planning on using these 950 DTs for inference rather than training,"
+  },
+  {
+   "start": 2942.02,
+   "end": 2946.82,
+   "text": "even though, or sorry, Deep-Sea was planning on using Huawei 950 DTs for inference rather than training,"
+  },
+  {
+   "start": 2946.82,
+   "end": 2948.82,
+   "text": "even though they were designed as training chips."
+  },
+  {
+   "start": 2948.82,
+   "end": 2953.82,
+   "text": "And Huawei's overall production capacity of that hardware is in the low hundreds of thousands."
+  },
+  {
+   "start": 2953.82,
+   "end": 2959.1,
+   "text": "And it's just orders of magnitude less than what Nvidia is shipping globally."
+  },
+  {
+   "start": 2959.1,
+   "end": 2964.42,
+   "text": "But you still have started to see Huawei make some export attempts."
+  },
+  {
+   "start": 2964.42,
+   "end": 2971.66,
+   "text": "I wrote about a couple of months ago as well that they had submitted in response to a tender"
+  },
+  {
+   "start": 2971.66,
+   "end": 2977.94,
+   "text": "from the Egyptian government to build AI compute for use by Egyptian defense."
+  },
+  {
+   "start": 2977.94,
+   "end": 2979.5,
+   "text": "And it was a very small amount of compute."
+  },
+  {
+   "start": 2979.5,
+   "end": 2982.86,
+   "text": "It was like 2,000 ships, but they were prepared to offer their best ships."
+  },
+  {
+   "start": 2982.86,
+   "end": 2986.3,
+   "text": "It was like, when you're that supply constraint, it's like everything that you're offering"
+  },
+  {
+   "start": 2986.3,
+   "end": 2989.54,
+   "text": "overseas is something that you're not offering domestically."
+  },
+  {
+   "start": 2989.54,
+   "end": 2994.54,
+   "text": "And so as a company, Walleye has to decide, as important as it is to get more Chinese"
+  },
+  {
+   "start": 2994.54,
+   "end": 2999.78,
+   "text": "developers working on its ecosystem, because you also get the iterative feedback loop when"
+  },
+  {
+   "start": 2999.78,
+   "end": 3003.42,
+   "text": "you have AI companies training on your hardware that helps you make your hardware better."
+  },
+  {
+   "start": 3003.42,
+   "end": 3006.5,
+   "text": "They also want to make sure that they have these footholds in global markets."
+  },
+  {
+   "start": 3006.5,
+   "end": 3010.86,
+   "text": "It's the same strategy that made them the preeminent telecommunications provider."
+  },
+  {
+   "start": 3010.86,
+   "end": 3015.46,
+   "text": "And the US government watched that happen years ago, and Huawei became extremely successful"
+  },
+  {
+   "start": 3015.46,
+   "end": 3019.3,
+   "text": "in 3G, 4G, and they want to avoid that happening with AI infrastructure."
+  },
+  {
+   "start": 3019.3,
+   "end": 3024.3,
+   "text": "So actually when they learned of this bid that Huawei had made in Egypt, they gathered"
+  },
+  {
+   "start": 3024.3,
+   "end": 3027.56,
+   "text": "this consortium of American companies and they were like, counterbid."
+  },
+  {
+   "start": 3027.56,
+   "end": 3033.44,
+   "text": "And a lot of these companies had never really thought of Egypt as an important market, but"
+  },
+  {
+   "start": 3033.44,
+   "end": 3036.04,
+   "text": "they had these conversations with the Egyptian government."
+  },
+  {
+   "start": 3036.04,
+   "end": 3039.76,
+   "text": "We don't know the outcome of that tender process yet."
+  },
+  {
+   "start": 3039.76,
+   "end": 3043.24,
+   "text": "It's just sort of an interesting, you know, Egypt is an interesting battleground for Huawei"
+  },
+  {
+   "start": 3043.24,
+   "end": 3047.36,
+   "text": "because they feel a little bit blocked or boxed out of the Persian Gulf because there"
+  },
+  {
+   "start": 3047.36,
+   "end": 3052.0,
+   "text": "were these, you know, big American AI infrastructure deals last year, which I talked with you guys"
+  },
+  {
+   "start": 3052.0,
+   "end": 3054.68,
+   "text": "about about a year ago, how controversial those were."
+  },
+  {
+   "start": 3054.68,
+   "end": 3058.32,
+   "text": "And Egypt is sort of an anchor in the Middle East, also an anchor in Africa."
+  },
+  {
+   "start": 3058.32,
+   "end": 3060.12,
+   "text": "So you're starting to see these battles play out."
+  },
+  {
+   "start": 3060.12,
+   "end": 3065.24,
+   "text": "You know, the Malaysian government is seriously evaluating use of an earlier generation of"
+  },
+  {
+   "start": 3065.24,
+   "end": 3068.32,
+   "text": "Huawei Ascendships for its sovereign AI capabilities."
+  },
+  {
+   "start": 3068.32,
+   "end": 3072.16,
+   "text": "It's important to remember that the volumes that we're talking about here are just infinitesimally"
+  },
+  {
+   "start": 3072.16,
+   "end": 3074.2,
+   "text": "small at this time."
+  },
+  {
+   "start": 3074.2,
+   "end": 3079.28,
+   "text": "So this is very much a live story, as you've been emphasizing throughout this conversation,"
+  },
+  {
+   "start": 3079.28,
+   "end": 3082.08,
+   "text": "and one reason why you're very sleep deprived at the moment."
+  },
+  {
+   "start": 3082.08,
+   "end": 3084.48,
+   "text": "But what are you watching out for next?"
+  },
+  {
+   "start": 3084.48,
+   "end": 3090.24,
+   "text": "So we don't really know what the DOJ is going to do, and now we have this independent investigation"
+  },
+  {
+   "start": 3090.24,
+   "end": 3096.28,
+   "text": "going into Jensen and the spy affair at NVIDIA."
+  },
+  {
+   "start": 3096.28,
+   "end": 3098.74,
+   "text": "What do you think is going to be important?"
+  },
+  {
+   "start": 3098.74,
+   "end": 3104.3,
+   "text": "Yeah, I mean, look, obviously, Jensen's fate is sort of important for global markets, for"
+  },
+  {
+   "start": 3104.3,
+   "end": 3110.11,
+   "text": "the industry, you know, what the board ends up deciding to do."
+  },
+  {
+   "start": 3110.11,
+   "end": 3117.47,
+   "text": "I think from a policy and regulatory perspective, you know, this is a very unique moment in"
+  },
+  {
+   "start": 3117.47,
+   "end": 3123.83,
+   "text": "an administration that, generally speaking, has, you know, adopted a lot of the policies"
+  },
+  {
+   "start": 3123.83,
+   "end": 3126.07,
+   "text": "that NVIDIA would like it to."
+  },
+  {
+   "start": 3126.07,
+   "end": 3131.59,
+   "text": "There is rage, honestly, on Capitol Hill and in many parts of the Trump administration"
+  },
+  {
+   "start": 3131.59,
+   "end": 3134.19,
+   "text": "about the overall state of export controls."
+  },
+  {
+   "start": 3134.19,
+   "end": 3138.75,
+   "text": "Obviously, this scandal with NVIDIA gives people a lot of things to latch on to."
+  },
+  {
+   "start": 3138.75,
+   "end": 3143.79,
+   "text": "So you're starting to see these voices that have not historically been particularly active"
+  },
+  {
+   "start": 3143.79,
+   "end": 3146.43,
+   "text": "on this issue take great interest in it."
+  },
+  {
+   "start": 3146.43,
+   "end": 3151.95,
+   "text": "And then you have this sort of baseline contingent of China hawks who have been upset by what"
+  },
+  {
+   "start": 3151.95,
+   "end": 3153.63,
+   "text": "that they see as a lack of action"
+  },
+  {
+   "start": 3153.63,
+   "end": 3157.23,
+   "text": "by the Bureau of Industry and Security, that BIS,"
+  },
+  {
+   "start": 3157.23,
+   "end": 3159.47,
+   "text": "within the Trump administration on this topic,"
+  },
+  {
+   "start": 3159.47,
+   "end": 3161.39,
+   "text": "and they're trying to legislate some of the rules"
+  },
+  {
+   "start": 3161.39,
+   "end": 3163.07,
+   "text": "to at least like, okay, let's not roll back"
+  },
+  {
+   "start": 3163.07,
+   "end": 3165.21,
+   "text": "expert controls more than they already have been."
+  },
+  {
+   "start": 3165.21,
+   "end": 3166.87,
+   "text": "Let's put additional restrictions"
+  },
+  {
+   "start": 3166.87,
+   "end": 3170.03,
+   "text": "on semiconductor equipment shipments into China."
+  },
+  {
+   "start": 3170.03,
+   "end": 3171.79,
+   "text": "Let's make sure that it's unambiguous"
+  },
+  {
+   "start": 3171.79,
+   "end": 3173.83,
+   "text": "that the executive branch has the authority"
+  },
+  {
+   "start": 3173.83,
+   "end": 3177.59,
+   "text": "to restrict cloud compute access by Chinese companies."
+  },
+  {
+   "start": 3177.59,
+   "end": 3181.55,
+   "text": "And a lot of these measures are sort of gonna be litigated"
+  },
+  {
+   "start": 3181.55,
+   "end": 3183.65,
+   "text": "over the next couple of months as part of an annual"
+  },
+  {
+   "start": 3183.65,
+   "end": 3185.25,
+   "text": "must pass defense package."
+  },
+  {
+   "start": 3185.25,
+   "end": 3186.85,
+   "text": "So it'll be a really interesting couple of months"
+  },
+  {
+   "start": 3186.85,
+   "end": 3187.69,
+   "text": "on Capitol Hill."
+  },
+  {
+   "start": 3187.69,
+   "end": 3191.69,
+   "text": "Obviously, Democrats are taking Congress next year."
+  },
+  {
+   "start": 3191.69,
+   "end": 3194.85,
+   "text": "I would expect a significant amount of oversight"
+  },
+  {
+   "start": 3194.85,
+   "end": 3195.69,
+   "text": "into not just NVIDIA,"
+  },
+  {
+   "start": 3195.69,
+   "end": 3198.81,
+   "text": "but the major players in the ecosystem."
+  },
+  {
+   "start": 3198.81,
+   "end": 3202.09,
+   "text": "And then I think for Southeast Asia,"
+  },
+  {
+   "start": 3202.09,
+   "end": 3204.41,
+   "text": "which is a bit closer to where I sit,"
+  },
+  {
+   "start": 3204.41,
+   "end": 3206.41,
+   "text": "there's been this sort of whiplash"
+  },
+  {
+   "start": 3206.41,
+   "end": 3209.69,
+   "text": "over the past couple of years where,"
+  },
+  {
+   "start": 3209.69,
+   "end": 3211.25,
+   "text": "remember the AI diffusion rule I mentioned"
+  },
+  {
+   "start": 3211.25,
+   "end": 3213.21,
+   "text": "the Trump administration is not enforcing."
+  },
+  {
+   "start": 3213.21,
+   "end": 3216.81,
+   "text": "So this was gonna impose licensing requirements,"
+  },
+  {
+   "start": 3216.81,
+   "end": 3219.09,
+   "text": "meaning you need to get the US government's permission"
+  },
+  {
+   "start": 3219.09,
+   "end": 3222.11,
+   "text": "to ship NVIDIA ships to Singapore, Malaysia,"
+  },
+  {
+   "start": 3222.11,
+   "end": 3224.45,
+   "text": "Thailand, Indonesia, all these places where"
+  },
+  {
+   "start": 3224.45,
+   "end": 3226.25,
+   "text": "we have these smuggling cases happening."
+  },
+  {
+   "start": 3226.25,
+   "end": 3229.41,
+   "text": "And so actually some of the companies that are suspected"
+  },
+  {
+   "start": 3229.41,
+   "end": 3231.25,
+   "text": "of being involved in smuggling,"
+  },
+  {
+   "start": 3231.25,
+   "end": 3232.93,
+   "text": "like massively ramped up their shipments"
+  },
+  {
+   "start": 3232.93,
+   "end": 3235.01,
+   "text": "right before those restrictions were set to take effect,"
+  },
+  {
+   "start": 3235.01,
+   "end": 3236.21,
+   "text": "and then they didn't take effect."
+  },
+  {
+   "start": 3236.21,
+   "end": 3239.89,
+   "text": "And then the Trump administration worked on regulation."
+  },
+  {
+   "start": 3239.89,
+   "end": 3241.25,
+   "text": "They were like, hey, we're not doing that,"
+  },
+  {
+   "start": 3241.25,
+   "end": 3243.17,
+   "text": "but we are gonna restrict to Malaysia and Thailand"
+  },
+  {
+   "start": 3243.17,
+   "end": 3244.01,
+   "text": "specifically."
+  },
+  {
+   "start": 3244.01,
+   "end": 3246.61,
+   "text": "This was a draft rule that I read about in June"
+  },
+  {
+   "start": 3246.61,
+   "end": 3248.65,
+   "text": "or July of last year."
+  },
+  {
+   "start": 3248.65,
+   "end": 3249.61,
+   "text": "And then they scrapped that"
+  },
+  {
+   "start": 3249.61,
+   "end": 3252.69,
+   "text": "amid diplomatic pressure from the Malaysian government."
+  },
+  {
+   "start": 3252.69,
+   "end": 3254.65,
+   "text": "And then they worked on another replacement regulation"
+  },
+  {
+   "start": 3254.65,
+   "end": 3256.93,
+   "text": "that would have done global export controls."
+  },
+  {
+   "start": 3256.93,
+   "end": 3260.01,
+   "text": "We wrote about that in March, I would say."
+  },
+  {
+   "start": 3260.01,
+   "end": 3262.37,
+   "text": "And that was withdrawn shortly after it was sent"
+  },
+  {
+   "start": 3262.37,
+   "end": 3264.25,
+   "text": "to other US government agencies."
+  },
+  {
+   "start": 3264.25,
+   "end": 3267.81,
+   "text": "And so, for companies that are trying to build infrastructure"
+  },
+  {
+   "start": 3267.81,
+   "end": 3272.81,
+   "text": "this region, even the ones that are doing it completely legally, it's like, are we going"
+  },
+  {
+   "start": 3272.81,
+   "end": 3274.13,
+   "text": "to be able to get the chips?"
+  },
+  {
+   "start": 3274.13,
+   "end": 3277.57,
+   "text": "Like, it's this constant sort of, the US government's a little bit the boy who cried wolf on this"
+  },
+  {
+   "start": 3277.57,
+   "end": 3282.73,
+   "text": "issue, and then we have this intense scrutiny into mega speed."
+  },
+  {
+   "start": 3282.73,
+   "end": 3289.25,
+   "text": "Asian banks sort of go through ebbs and flows of how comfortable they are with financing"
+  },
+  {
+   "start": 3289.25,
+   "end": 3293.37,
+   "text": "deals that have a significant amount of Chinese offtakes, or like, what if the US government"
+  },
+  {
+   "start": 3293.37,
+   "end": 3296.65,
+   "text": "does restrict it and then are suddenly left holding the bag?"
+  },
+  {
+   "start": 3296.65,
+   "end": 3301.77,
+   "text": "And this is one of the fast growing AI infrastructure regions in the world."
+  },
+  {
+   "start": 3301.77,
+   "end": 3307.33,
+   "text": "The amount of compute online right now doesn't hold a candle to what exists in the US, but"
+  },
+  {
+   "start": 3307.33,
+   "end": 3308.33,
+   "text": "it is fast growing."
+  },
+  {
+   "start": 3308.33,
+   "end": 3312.93,
+   "text": "A lot of companies are investing here, and it's just under intense peer to scrutiny."
+  },
+  {
+   "start": 3312.93,
+   "end": 3315.61,
+   "text": "So that's the developments that I'll be watching."
+  },
+  {
+   "start": 3315.61,
+   "end": 3320.53,
+   "text": "And then on the Huawei front, Huawei is making export attempts."
+  },
+  {
+   "start": 3320.53,
+   "end": 3324.77,
+   "text": "And I think the US government, it's funny, over a year ago, there was an executive order"
+  },
+  {
+   "start": 3324.77,
+   "end": 3327.33,
+   "text": "to promote the export of the American AI stack."
+  },
+  {
+   "start": 3327.33,
+   "end": 3329.57,
+   "text": "To basically design these packages"
+  },
+  {
+   "start": 3329.57,
+   "end": 3333.45,
+   "text": "that you could offer to other countries"
+  },
+  {
+   "start": 3333.45,
+   "end": 3337.13,
+   "text": "of like, adopt up and down from applications to models"
+  },
+  {
+   "start": 3337.13,
+   "end": 3339.61,
+   "text": "to infrastructure, the American AI stack."
+  },
+  {
+   "start": 3339.61,
+   "end": 3343.25,
+   "text": "And we haven't seen anything come out of that program yet."
+  },
+  {
+   "start": 3343.25,
+   "end": 3345.09,
+   "text": "And now we actually do have Walli"
+  },
+  {
+   "start": 3345.09,
+   "end": 3346.85,
+   "text": "starting to make these attempts."
+  },
+  {
+   "start": 3346.85,
+   "end": 3350.49,
+   "text": "And the US is responding to them on an ad hoc basis."
+  },
+  {
+   "start": 3350.49,
+   "end": 3352.69,
+   "text": "And I'm sure that we'll see more of that over the next year."
+  },
+  {
+   "start": 3352.69,
+   "end": 3357.49,
+   "text": "you'll start to see these battlegrounds in the global south that will be really interesting to watch"
+  },
+  {
+   "start": 3357.49,
+   "end": 3362.37,
+   "text": "how foreign governments make decisions about their own sovereign capabilities and whether they think"
+  },
+  {
+   "start": 3362.37,
+   "end": 3367.89,
+   "text": "the US is a reliable partner or they're willing to take maybe worse chips from China that Huawei is"
+  },
+  {
+   "start": 3367.89,
+   "end": 3372.93,
+   "text": "happy to send their engineers there and do the whole data center for you. Yeah, I know it's exciting times."
+  },
+  {
+   "start": 3374.6,
+   "end": 3379.16,
+   "text": "McKenzie, that was fantastic. Get some sleep. Well deserved. You're going to need it. But no,"
+  },
+  {
+   "start": 3379.16,
+   "end": 3380.0,
+   "text": "No, that was great."
+  },
+  {
+   "start": 3380.0,
+   "end": 3381.38,
+   "text": "Thank you for staying up late,"
+  },
+  {
+   "start": 3381.38,
+   "end": 3383.88,
+   "text": "catching us up to speed on all this."
+  },
+  {
+   "start": 3383.88,
+   "end": 3386.52,
+   "text": "And I don't think this will be the last time we chat."
+  },
+  {
+   "start": 3386.52,
+   "end": 3388.44,
+   "text": "And I appreciate your coming on up."
+  },
+  {
+   "start": 3388.44,
+   "end": 3389.48,
+   "text": "Yeah, thanks so much for having me."
+  },
+  {
+   "start": 3389.48,
+   "end": 3403.11,
+   "text": "Always a pleasure, guys."
+  },
+  {
+   "start": 3403.11,
+   "end": 3404.15,
+   "text": "She's so great."
+  },
+  {
+   "start": 3404.15,
+   "end": 3406.31,
+   "text": "Yeah, you should like, man, what a comp,"
+  },
+  {
+   "start": 3406.31,
+   "end": 3408.99,
+   "text": "there's, these are such complicated stories."
+  },
+  {
+   "start": 3408.99,
+   "end": 3409.83,
+   "text": "They really are."
+  },
+  {
+   "start": 3409.83,
+   "end": 3411.11,
+   "text": "They're really complicated."
+  },
+  {
+   "start": 3411.11,
+   "end": 3414.15,
+   "text": "There's so many different dimensions to them."
+  },
+  {
+   "start": 3414.15,
+   "end": 3414.99,
+   "text": "But I thought-"
+  },
+  {
+   "start": 3414.99,
+   "end": 3416.11,
+   "text": "Also, there's a lot of legal technicality"
+  },
+  {
+   "start": 3416.11,
+   "end": 3417.95,
+   "text": "in what Ken and Ken said,"
+  },
+  {
+   "start": 3417.95,
+   "end": 3420.87,
+   "text": "which I think sometimes people don't necessarily appreciate."
+  },
+  {
+   "start": 3420.87,
+   "end": 3422.59,
+   "text": "from a journalistic perspective,"
+  },
+  {
+   "start": 3422.59,
+   "end": 3424.79,
+   "text": "and she's doing that all on like,"
+  },
+  {
+   "start": 3424.79,
+   "end": 3428.07,
+   "text": "I think she said she hadn't slept for 70 hours or something,"
+  },
+  {
+   "start": 3428.07,
+   "end": 3429.87,
+   "text": "so that's pretty intense."
+  },
+  {
+   "start": 3429.87,
+   "end": 3431.07,
+   "text": "No, it's a fascinating story."
+  },
+  {
+   "start": 3431.07,
+   "end": 3435.31,
+   "text": "I keep thinking, it feels like a big tail risk right now"
+  },
+  {
+   "start": 3435.31,
+   "end": 3436.83,
+   "text": "for the chip makers."
+  },
+  {
+   "start": 3436.83,
+   "end": 3439.55,
+   "text": "I mean, obviously what happens with Jensen"
+  },
+  {
+   "start": 3439.55,
+   "end": 3442.47,
+   "text": "and the investigation, but just the idea that"
+  },
+  {
+   "start": 3442.47,
+   "end": 3446.43,
+   "text": "as a lot of this becomes more public knowledge,"
+  },
+  {
+   "start": 3446.43,
+   "end": 3448.43,
+   "text": "as politicians become aware of it,"
+  },
+  {
+   "start": 3448.43,
+   "end": 3452.33,
+   "text": "that legal loophole of Chinese companies"
+  },
+  {
+   "start": 3452.33,
+   "end": 3457.33,
+   "text": "being able to rent GPUs via Southeast Asia,"
+  },
+  {
+   "start": 3457.39,
+   "end": 3460.83,
+   "text": "even if they can't actually buy certain chips."
+  },
+  {
+   "start": 3460.83,
+   "end": 3462.33,
+   "text": "Like that comes under scrutiny."
+  },
+  {
+   "start": 3462.33,
+   "end": 3465.89,
+   "text": "And you can imagine if that, like it's such a weird one."
+  },
+  {
+   "start": 3465.89,
+   "end": 3466.73,
+   "text": "Isn't it?"
+  },
+  {
+   "start": 3466.73,
+   "end": 3467.57,
+   "text": "It's so weird."
+  },
+  {
+   "start": 3467.57,
+   "end": 3470.55,
+   "text": "This term remote access, what does that even mean?"
+  },
+  {
+   "start": 3470.55,
+   "end": 3472.63,
+   "text": "It's a cloud, of course it's remote access."
+  },
+  {
+   "start": 3472.63,
+   "end": 3475.71,
+   "text": "It's like, oh, it's opposed to like the tenant"
+  },
+  {
+   "start": 3475.71,
+   "end": 3478.03,
+   "text": "of the user of the chips walking into the data."
+  },
+  {
+   "start": 3478.03,
+   "end": 3480.51,
+   "text": "of themselves are plugging in a laptop."
+  },
+  {
+   "start": 3480.51,
+   "end": 3482.11,
+   "text": "It's all remote access."
+  },
+  {
+   "start": 3482.11,
+   "end": 3486.03,
+   "text": "So it's always been very baffling to me"
+  },
+  {
+   "start": 3486.03,
+   "end": 3488.03,
+   "text": "that we have these intense conversations about,"
+  },
+  {
+   "start": 3488.03,
+   "end": 3489.71,
+   "text": "oh, you can't sell into China."
+  },
+  {
+   "start": 3489.71,
+   "end": 3492.95,
+   "text": "But actually it's really not that big of a deal"
+  },
+  {
+   "start": 3492.95,
+   "end": 3497.95,
+   "text": "to sell into, and it's not illegal currently,"
+  },
+  {
+   "start": 3498.07,
+   "end": 3502.31,
+   "text": "to sell into anywhere else who then rents that capacity"
+  },
+  {
+   "start": 3502.31,
+   "end": 3503.63,
+   "text": "to Chinese firms."
+  },
+  {
+   "start": 3503.63,
+   "end": 3504.71,
+   "text": "Like, what?"
+  },
+  {
+   "start": 3506.43,
+   "end": 3507.27,
+   "text": "I don't know."
+  },
+  {
+   "start": 3508.03,
+   "end": 3510.27,
+   "text": "Who couldn't explain this just a little bit?"
+  },
+  {
+   "start": 3510.27,
+   "end": 3513.55,
+   "text": "Yeah, the other thing that I thought was really interesting"
+  },
+  {
+   "start": 3513.55,
+   "end": 3515.51,
+   "text": "and I wasn't aware of was Mackenzie saying"
+  },
+  {
+   "start": 3515.51,
+   "end": 3517.37,
+   "text": "that there's basically like a handful"
+  },
+  {
+   "start": 3517.37,
+   "end": 3520.59,
+   "text": "of US customs officers in Southeast Asia."
+  },
+  {
+   "start": 3520.59,
+   "end": 3523.15,
+   "text": "And you can imagine like, if you're gonna ramp up"
+  },
+  {
+   "start": 3523.15,
+   "end": 3526.61,
+   "text": "export controls and expect them to be effective,"
+  },
+  {
+   "start": 3526.61,
+   "end": 3529.07,
+   "text": "you're gonna have to staff up, right?"
+  },
+  {
+   "start": 3529.07,
+   "end": 3533.61,
+   "text": "It reminds me, I did an article on the corporate bond market"
+  },
+  {
+   "start": 3533.61,
+   "end": 3534.99,
+   "text": "many, many years ago."
+  },
+  {
+   "start": 3534.99,
+   "end": 3536.83,
+   "text": "And at the time, I think this was like,"
+  },
+  {
+   "start": 3536.83,
+   "end": 3539.91,
+   "text": "and well, I can't remember, maybe an eight trillion market."
+  },
+  {
+   "start": 3539.91,
+   "end": 3542.95,
+   "text": "And there was one guy at the SEC"
+  },
+  {
+   "start": 3542.95,
+   "end": 3547.27,
+   "text": "who devoted half his time to actually"
+  },
+  {
+   "start": 3547.27,
+   "end": 3550.43,
+   "text": "monitoring the corporate bond market, which blew my mind."
+  },
+  {
+   "start": 3550.43,
+   "end": 3552.91,
+   "text": "You know, I really think actually,"
+  },
+  {
+   "start": 3552.91,
+   "end": 3554.67,
+   "text": "and I hadn't appreciated this"
+  },
+  {
+   "start": 3554.67,
+   "end": 3558.71,
+   "text": "until McKenzie brought up Huawei's sale to Egypt."
+  },
+  {
+   "start": 3558.71,
+   "end": 3560.51,
+   "text": "That is, I forget, you know,"
+  },
+  {
+   "start": 3560.51,
+   "end": 3563.07,
+   "text": "what is it, we did the story with Eva Doe"
+  },
+  {
+   "start": 3563.07,
+   "end": 3564.51,
+   "text": "who wrote the book House of Huawei"
+  },
+  {
+   "start": 3564.51,
+   "end": 3565.91,
+   "text": "and what was the story there?"
+  },
+  {
+   "start": 3565.91,
+   "end": 3570.91,
+   "text": "The story there was this is a company that is very aggressive"
+  },
+  {
+   "start": 3571.61,
+   "end": 3574.07,
+   "text": "about gaining footholds in parts of the world"
+  },
+  {
+   "start": 3574.07,
+   "end": 3577.17,
+   "text": "that like other companies aren't as aggressive about."
+  },
+  {
+   "start": 3577.17,
+   "end": 3579.39,
+   "text": "So Egypt is like, as you explained,"
+  },
+  {
+   "start": 3579.39,
+   "end": 3581.03,
+   "text": "a pretty good example of this."
+  },
+  {
+   "start": 3581.03,
+   "end": 3584.79,
+   "text": "Even with a scarce number of ascend chips"
+  },
+  {
+   "start": 3584.79,
+   "end": 3587.35,
+   "text": "that is sort of like in there, the corporate DNA"
+  },
+  {
+   "start": 3587.35,
+   "end": 3589.87,
+   "text": "would like go out and like win these global markets,"
+  },
+  {
+   "start": 3589.87,
+   "end": 3591.87,
+   "text": "which then of course, implicitly,"
+  },
+  {
+   "start": 3591.87,
+   "end": 3593.79,
+   "text": "as you gain this foothold,"
+  },
+  {
+   "start": 3593.79,
+   "end": 3597.67,
+   "text": "Then of course, implicitly help sort of like broader Chinese,"
+  },
+  {
+   "start": 3597.67,
+   "end": 3599.59,
+   "text": "like soft and hard power, et cetera."
+  },
+  {
+   "start": 3599.59,
+   "end": 3600.71,
+   "text": "But then I was thinking about, okay,"
+  },
+  {
+   "start": 3600.71,
+   "end": 3603.71,
+   "text": "let's say after this mega speed scandal,"
+  },
+  {
+   "start": 3603.71,
+   "end": 3605.39,
+   "text": "you're like, you know what, we really,"
+  },
+  {
+   "start": 3605.39,
+   "end": 3606.91,
+   "text": "no more of this remote stuff."
+  },
+  {
+   "start": 3606.91,
+   "end": 3609.51,
+   "text": "We really gotta like crack down on who we're selling to"
+  },
+  {
+   "start": 3609.51,
+   "end": 3611.69,
+   "text": "in Southeast Asia."
+  },
+  {
+   "start": 3611.69,
+   "end": 3614.87,
+   "text": "It's clear that today, you know,"
+  },
+  {
+   "start": 3614.87,
+   "end": 3618.67,
+   "text": "it doesn't sound like Huawei could replace Nvidia today."
+  },
+  {
+   "start": 3618.67,
+   "end": 3622.23,
+   "text": "But if, you know, maybe a few years from now,"
+  },
+  {
+   "start": 3622.23,
+   "end": 3624.93,
+   "text": "like a number of these countries do become like,"
+  },
+  {
+   "start": 3624.93,
+   "end": 3626.49,
+   "text": "Huawei countries."
+  },
+  {
+   "start": 3626.49,
+   "end": 3628.19,
+   "text": "It's gonna be very tricky."
+  },
+  {
+   "start": 3628.19,
+   "end": 3632.1,
+   "text": "Well, the other thing I just wanna reiterate is like,"
+  },
+  {
+   "start": 3632.1,
+   "end": 3635.11,
+   "text": "again, with Nvidia itself,"
+  },
+  {
+   "start": 3635.11,
+   "end": 3637.39,
+   "text": "there's a weird like contradiction here"
+  },
+  {
+   "start": 3637.39,
+   "end": 3642.17,
+   "text": "where if chip demand is as strong as they describe,"
+  },
+  {
+   "start": 3642.17,
+   "end": 3645.27,
+   "text": "they should be very selective with their customers, right?"
+  },
+  {
+   "start": 3645.27,
+   "end": 3647.85,
+   "text": "They just like, there shouldn't be any question marks"
+  },
+  {
+   "start": 3647.85,
+   "end": 3649.71,
+   "text": "over anyone basically."
+  },
+  {
+   "start": 3649.71,
+   "end": 3650.91,
+   "text": "Yeah, yeah."
+  },
+  {
+   "start": 3650.91,
+   "end": 3653.99,
+   "text": "And so I find that really interesting as well"
+  },
+  {
+   "start": 3653.99,
+   "end": 3657.25,
+   "text": "and probably like an under discussed angle in all of this."
+  },
+  {
+   "start": 3657.25,
+   "end": 3658.83,
+   "text": "Like you can afford to like-"
+  },
+  {
+   "start": 3658.83,
+   "end": 3659.67,
+   "text": "Be discriminating."
+  },
+  {
+   "start": 3659.67,
+   "end": 3662.09,
+   "text": "Be discriminating and have like the most intense"
+  },
+  {
+   "start": 3662.09,
+   "end": 3665.39,
+   "text": "compliance process in the world if you want."
+  },
+  {
+   "start": 3665.39,
+   "end": 3667.63,
+   "text": "Anyway, shall we leave it there?"
+  },
+  {
+   "start": 3667.63,
+   "end": 3668.47,
+   "text": "Let's leave it there."
+  },
+  {
+   "start": 3668.47,
+   "end": 3670.79,
+   "text": "This has been another episode of the All Thoughts podcast."
+  },
+  {
+   "start": 3670.79,
+   "end": 3671.75,
+   "text": "I'm Tracy Allaway."
+  },
+  {
+   "start": 3671.75,
+   "end": 3673.75,
+   "text": "You can follow me at Tracy Allaway."
+  },
+  {
+   "start": 3673.75,
+   "end": 3675.15,
+   "text": "And I'm Joe Wiesenthal."
+  },
+  {
+   "start": 3675.15,
+   "end": 3677.35,
+   "text": "You can follow me at the stalwart."
+  },
+  {
+   "start": 3677.35,
+   "end": 3679.15,
+   "text": "Follow our guest, Mackenzie Hawkins."
+  },
+  {
+   "start": 3679.15,
+   "end": 3684.27,
+   "text": "She's at Mac Hawk. Follow our producers, Carmen Rodriguez at Carmen Armin Dash,"
+  },
+  {
+   "start": 3684.27,
+   "end": 3689.63,
+   "text": "Obenet at Dashbot, Kale Brooks at Kale Brooks, and Kevin Lozano at Kevin Lloyd Lozano."
+  },
+  {
+   "start": 3689.63,
+   "end": 3695.63,
+   "text": "And you can check out all of these topics 24-7 in our Discord, discord.gg slash OddLods."
+  },
+  {
+   "start": 3695.63,
+   "end": 3700.27,
+   "text": "And for more OddLods content, check out our daily newsletter, which you can find at bloomberg.com"
+  },
+  {
+   "start": 3700.27,
+   "end": 3705.47,
+   "text": "slash oddLods. And if you enjoyed this conversation, if you like it, when we talk about chip smuggling,"
+  },
+  {
+   "start": 3705.47,
+   "end": 3709.15,
+   "text": "then please leave us a positive review on your favorite podcast platform."
+  },
+  {
+   "start": 3709.15,
+   "end": 3714.03,
+   "text": "And if you're watching on video, then please like or leave a comment or better yet, subscribe."
+  },
+  {
+   "start": 3714.03,
+   "end": 3718.43,
+   "text": "And remember, if you're a Bloomberg subscriber, you can listen to all of our episodes absolutely"
+  },
+  {
+   "start": 3718.43,
+   "end": 3724.75,
+   "text": "ad-free. All you need to do is find the Bloomberg channel on Apple Podcasts and follow the instructions there."
+  },
+  {
+   "start": 3724.75,
+   "end": 3725.55,
+   "text": "Thanks for joining."
+  },
+  {
+   "start": 3766.06,
+   "end": 3768.26,
+   "text": "maniac about a rookie card on your couch."
+  },
+  {
+   "start": 3768.26,
+   "end": 3769.66,
+   "text": "And we love them for that."
+  },
+  {
+   "start": 3769.66,
+   "end": 3771.82,
+   "text": "Because Underdog now has rips."
+  },
+  {
+   "start": 3771.82,
+   "end": 3774.34,
+   "text": "You get a digital pack starting at just five bucks."
+  },
+  {
+   "start": 3774.34,
+   "end": 3777.22,
+   "text": "You check the live odds, see which grails you could pull,"
+  },
+  {
+   "start": 3777.22,
+   "end": 3780.18,
+   "text": "then rip it open to reveal a real physical card."
+  },
+  {
+   "start": 3780.18,
+   "end": 3781.58,
+   "text": "And the grails are no joke."
+  },
+  {
+   "start": 3781.58,
+   "end": 3785.14,
+   "text": "They have cards up to $125,000 in value"
+  },
+  {
+   "start": 3785.14,
+   "end": 3789.18,
+   "text": "and plenty to pull, from football and basketball to Pokemon,"
+  },
+  {
+   "start": 3789.18,
+   "end": 3792.22,
+   "text": "with new limited edition packs dropping regularly."
+  },
+  {
+   "start": 3792.22,
+   "end": 3794.54,
+   "text": "Even cooler, you can decide to keep the card"
+  },
+  {
+   "start": 3794.54,
+   "end": 3796.82,
+   "text": "An underdog will ship it straight to your home,"
+  },
+  {
+   "start": 3796.82,
+   "end": 3798.42,
+   "text": "or sell it back instantly"
+  },
+  {
+   "start": 3798.42,
+   "end": 3800.76,
+   "text": "at 100% of its fair market value."
+  },
+  {
+   "start": 3800.76,
+   "end": 3802.66,
+   "text": "And the cash goes right in your account."
+  },
+  {
+   "start": 3802.66,
+   "end": 3803.98,
+   "text": "No listing it online,"
+  },
+  {
+   "start": 3803.98,
+   "end": 3806.38,
+   "text": "no stranger low-balling you in the messages,"
+  },
+  {
+   "start": 3806.38,
+   "end": 3809.46,
+   "text": "just rip, reveal, and cash out instantly."
+  },
+  {
+   "start": 3809.46,
+   "end": 3811.02,
+   "text": "Or make some room on your shelf."
+  },
+  {
+   "start": 3811.02,
+   "end": 3813.56,
+   "text": "Download Underdog and get in on the chase."
+  },
+  {
+   "start": 3813.56,
+   "end": 3816.94,
+   "text": "Get five free Rips Packs when you deposit $5."
+  },
+  {
+   "start": 3816.94,
+   "end": 3819.8,
+   "text": "Real Rips, real cards, real cash."
+  },
+  {
+   "start": 3819.8,
+   "end": 3821.3,
+   "text": "Only on Underdog."
+  },
+  {
+   "start": 3821.3,
+   "end": 3822.7,
+   "text": "Unleash your dog."
+  },
+  {
+   "start": 3822.7,
+   "end": 3823.86,
+   "text": "18 plus terms apply."
+  },
+  {
+   "start": 3823.86,
+   "end": 3825.52,
+   "text": "top grails are extremely rare."
+  },
+  {
+   "start": 3825.52,
+   "end": 3827.4,
+   "text": "If you listen to financial news,"
+  },
+  {
+   "start": 3827.4,
+   "end": 3830.6,
+   "text": "you know a lot of time to spend thinking about what's next."
+  },
+  {
+   "start": 3830.6,
+   "end": 3834.96,
+   "text": "The next opportunity, the next investment, the next move."
+  },
+  {
+   "start": 3834.96,
+   "end": 3837.52,
+   "text": "But sometimes what matters most is being ready"
+  },
+  {
+   "start": 3837.52,
+   "end": 3839.6,
+   "text": "for what you never saw coming."
+  },
+  {
+   "start": 3839.6,
+   "end": 3842.4,
+   "text": "For more than 75 years, Cincinnati Insurance"
+  },
+  {
+   "start": 3842.4,
+   "end": 3844.08,
+   "text": "has worked with independent agents"
+  },
+  {
+   "start": 3844.08,
+   "end": 3847.84,
+   "text": "to help protect businesses, homes, valuables, and more."
+  },
+  {
+   "start": 3847.84,
+   "end": 3849.32,
+   "text": "Because planning for the future"
+  },
+  {
+   "start": 3849.32,
+   "end": 3851.64,
+   "text": "isn't only about knowing what's next."
+  },
+  {
+   "start": 3851.64,
+   "end": 3853.4,
+   "text": "It's about making sure you're ready"
+  },
+  {
+   "start": 3853.4,
+   "end": 3855.12,
+   "text": "for what you can't predict."
+  },
+  {
+   "start": 3855.12,
+   "end": 3858.16,
+   "text": "Let Cincinnati Insurance make your bad day better."
+  },
+  {
+   "start": 3858.16,
+   "end": 3862.2,
+   "text": "Find an independent agent at cinefin.com."
+  },
+  {
+   "start": 3862.2,
+   "end": 3864.96,
+   "text": "Most meeting notetakers get the easy words right"
+  },
+  {
+   "start": 3864.96,
+   "end": 3867.1,
+   "text": "and the important ones wrong."
+  },
+  {
+   "start": 3867.1,
+   "end": 3869.28,
+   "text": "The client's name, the acronym,"
+  },
+  {
+   "start": 3869.28,
+   "end": 3872.72,
+   "text": "Whisper Flow Notetaker is built to get the hard words right."
+  },
+  {
+   "start": 3872.72,
+   "end": 3874.96,
+   "text": "It takes notes on any meeting platform."
+  },
+  {
+   "start": 3874.96,
+   "end": 3878.32,
+   "text": "Zoom, Google Meet, Teams, even WhatsApp calls"
+  },
+  {
+   "start": 3878.32,
+   "end": 3880.18,
+   "text": "keeps every meeting searchable"
+  },
+  {
+   "start": 3880.18,
+   "end": 3882.28,
+   "text": "and connects to Claude or chat GPTs"
+  },
+  {
+   "start": 3882.28,
+   "end": 3885.6,
+   "text": "So you can ask, what did we agree to last Tuesday?"
+  },
+  {
+   "start": 3885.6,
+   "end": 3889.04,
+   "text": "Free to try on Mac and Windows at whisperflow.ai."
+  },
+  {
+   "start": 3889.04,
+   "end": 3892.0,
+   "text": "That's W-I-S-P-R-Flow.ai."
+  },
+  {
+   "start": 3892.0,
+   "end": 3894.48,
+   "text": "The world of business is constantly evolving"
+  },
+  {
+   "start": 3894.48,
+   "end": 3897.52,
+   "text": "and Comcast business keeps you totally in step"
+  },
+  {
+   "start": 3897.52,
+   "end": 3901.32,
+   "text": "with secure AI backed networking in more than 100 countries."
+  },
+  {
+   "start": 3901.32,
+   "end": 3904.36,
+   "text": "They're powering over 90% of the Fortune 500"
+  },
+  {
+   "start": 3904.36,
+   "end": 3906.32,
+   "text": "and millions of small businesses."
+  },
+  {
+   "start": 3906.32,
+   "end": 3907.44,
+   "text": "That's a lot of muscle."
+  },
+  {
+   "start": 3907.44,
+   "end": 3910.12,
+   "text": "And behind it all, thousands of experts answering"
+  },
+  {
+   "start": 3910.12,
+   "end": 3916.68,
+   "text": "call it 2am like it's 2pm. One partner powering how business gets done for companies around"
+  },
+  {
+   "start": 3916.68,
+   "end": 3921.48,
+   "text": "the globe. When you add it all up, no one does business like Comcast Business."
+  }
+ ],
+ "seconds": 106.7,
+ "file": "odd-lots__what-nvidia-s-megaspeed-scandal-is-really/take0.mp3",
+ "model": "small"
+}

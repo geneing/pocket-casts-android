@@ -1,0 +1,4234 @@
+{
+ "duration": 2680.82,
+ "language": "en",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 2.88,
+   "text": "Verizon knows that holiday math can be complicated."
+  },
+  {
+   "start": 2.88,
+   "end": 4.72,
+   "text": "Okay, let's see, we got the four kids."
+  },
+  {
+   "start": 4.72,
+   "end": 8.08,
+   "text": "Four gifts each. Six teacher gifts."
+  },
+  {
+   "start": 9.04,
+   "end": 10.72,
+   "text": "Wait, oh, what do we get and Sandy?"
+  },
+  {
+   "start": 10.72,
+   "end": 12.96,
+   "text": "And the dogs. Oh, can't forget the dogs."
+  },
+  {
+   "start": 13.84,
+   "end": 15.04,
+   "text": "Know what doesn't need math?"
+  },
+  {
+   "start": 15.04,
+   "end": 16.8,
+   "text": "Simplicity plan from Verizon."
+  },
+  {
+   "start": 16.8,
+   "end": 18.24,
+   "text": "One plan, one price."
+  },
+  {
+   "start": 18.24,
+   "end": 21.04,
+   "text": "Just $30 a line per month for you or the whole family."
+  },
+  {
+   "start": 21.04,
+   "end": 22.56,
+   "text": "The holidays are complicated."
+  },
+  {
+   "start": 22.56,
+   "end": 25.68,
+   "text": "Shopping our best deals and switching to Verizon is simple."
+  },
+  {
+   "start": 25.68,
+   "end": 28.4,
+   "text": "For new customers, $30 per line includes auto pay and switch discount,"
+  },
+  {
+   "start": 28.4,
+   "end": 35.52,
+   "text": "additional taxes fees in terms of supply."
+  },
+  {
+   "start": 35.52,
+   "end": 39.58,
+   "text": "Today's episode is sponsored by NerdWallet Wealth Partners."
+  },
+  {
+   "start": 39.58,
+   "end": 42.58,
+   "text": "Are you on track for financial independence?"
+  },
+  {
+   "start": 42.58,
+   "end": 45.58,
+   "text": "And if you're on track the same way you're getting back to the gym,"
+  },
+  {
+   "start": 45.58,
+   "end": 49.62,
+   "text": "as in maybe next year, then this one's for you."
+  },
+  {
+   "start": 49.62,
+   "end": 52.62,
+   "text": "NerdWallet Wealth Partners offers free tools for high earners"
+  },
+  {
+   "start": 52.62,
+   "end": 55.62,
+   "text": "who'd like an actual answer instead of a vibe,"
+  },
+  {
+   "start": 55.62,
+   "end": 59.62,
+   "text": "like their calculator that estimates if you're on track for financial independence."
+  },
+  {
+   "start": 59.62,
+   "end": 64.14,
+   "text": "Plug in a few numbers to see how your savings path may support your goals."
+  },
+  {
+   "start": 64.14,
+   "end": 67.46,
+   "text": "Think of it as a fitness test you can take sitting down."
+  },
+  {
+   "start": 67.46,
+   "end": 69.74,
+   "text": "Or their wealth-building checklist for high earners."
+  },
+  {
+   "start": 69.74,
+   "end": 74.46,
+   "text": "It's a step-by-step guide for prioritizing your dollars once you're making six figures."
+  },
+  {
+   "start": 74.46,
+   "end": 79.18,
+   "text": "And if you still have questions, you can connect with one of their financial advisors, who"
+  },
+  {
+   "start": 79.18,
+   "end": 83.62,
+   "text": "specializes in working with high earners in their 30s and 40s."
+  },
+  {
+   "start": 83.62,
+   "end": 87.25,
+   "text": "Good news, this is one workout you can actually finish."
+  },
+  {
+   "start": 87.25,
+   "end": 92.67,
+   "text": "Find out more at nerdwalletwealthpartners.com slash decoder."
+  },
+  {
+   "start": 92.67,
+   "end": 95.99,
+   "text": "Nerdwallet Wealth Partners LLC is an SEC registered"
+  },
+  {
+   "start": 95.99,
+   "end": 97.55,
+   "text": "investment advisor."
+  },
+  {
+   "start": 97.55,
+   "end": 99.55,
+   "text": "Registration as an investment advisor"
+  },
+  {
+   "start": 99.55,
+   "end": 102.83,
+   "text": "does not imply a certain level of skill or training,"
+  },
+  {
+   "start": 102.83,
+   "end": 104.71,
+   "text": "nor does it constitute an endorsement"
+  },
+  {
+   "start": 104.71,
+   "end": 106.95,
+   "text": "by any securities regulator."
+  },
+  {
+   "start": 106.95,
+   "end": 110.01,
+   "text": "Please see nerdwalletwealthpartners.com for disclosures"
+  },
+  {
+   "start": 110.01,
+   "end": 118.64,
+   "text": "and important information."
+  },
+  {
+   "start": 118.64,
+   "end": 121.2,
+   "text": "We have somehow found ourselves recently drawn"
+  },
+  {
+   "start": 121.2,
+   "end": 124.08,
+   "text": "to stories about produce."
+  },
+  {
+   "start": 124.08,
+   "end": 125.24,
+   "text": "You might have noticed this."
+  },
+  {
+   "start": 125.24,
+   "end": 129.12,
+   "text": "We've talked about jalapenos, prunes, oranges."
+  },
+  {
+   "start": 129.12,
+   "end": 131.74,
+   "text": "And our friends at the Sporkful have made an episode"
+  },
+  {
+   "start": 131.74,
+   "end": 133.08,
+   "text": "that we wanna share with you today"
+  },
+  {
+   "start": 133.08,
+   "end": 136.28,
+   "text": "that investigates a mystery about another fruit,"
+  },
+  {
+   "start": 136.28,
+   "end": 140.28,
+   "text": "or maybe a vegetable, namely the tomato."
+  },
+  {
+   "start": 140.28,
+   "end": 143.68,
+   "text": "The Sporkful is a show about food hosted by Dan Pashman"
+  },
+  {
+   "start": 143.68,
+   "end": 146.2,
+   "text": "that I know decoder ring listeners will like."
+  },
+  {
+   "start": 146.2,
+   "end": 148.12,
+   "text": "Dan digs deep into culinary topics,"
+  },
+  {
+   "start": 148.12,
+   "end": 149.88,
+   "text": "some of them hiding in plain sight"
+  },
+  {
+   "start": 149.88,
+   "end": 152.72,
+   "text": "that can tell us more about people and the world we live in."
+  },
+  {
+   "start": 152.72,
+   "end": 156.24,
+   "text": "And recently, the Sporkville teamed up with Planet Money to look into a trend you may"
+  },
+  {
+   "start": 156.24,
+   "end": 162.24,
+   "text": "have noticed at the grocery store, the explosion in the varieties of fruits for sale."
+  },
+  {
+   "start": 162.24,
+   "end": 166.12,
+   "text": "It's never just your standard red delicious and granny smiths anymore, but apples with"
+  },
+  {
+   "start": 166.12,
+   "end": 171.76,
+   "text": "all sorts of fancy sounding brand names, often with fancy price tags to go with them."
+  },
+  {
+   "start": 171.76,
+   "end": 177.12,
+   "text": "And this trend has spread from apples to all sorts of fruits, including tomatoes."
+  },
+  {
+   "start": 177.12,
+   "end": 178.52,
+   "text": "So what's going on here?"
+  },
+  {
+   "start": 178.52,
+   "end": 181.68,
+   "text": "And how do you even go about inventing a new tomato?"
+  },
+  {
+   "start": 181.68,
+   "end": 182.68,
+   "text": "It's all in this episode."
+  },
+  {
+   "start": 182.68,
+   "end": 183.68,
+   "text": "I think you'll enjoy it."
+  },
+  {
+   "start": 183.68,
+   "end": 184.68,
+   "text": "Here's Dan Pashman."
+  },
+  {
+   "start": 184.68,
+   "end": 188.26,
+   "text": "See, Kenny, look at how beautiful New Jersey is."
+  },
+  {
+   "start": 188.26,
+   "end": 192.58,
+   "text": "Rolling hills, farms that we just passed, a whole bunch of cows huddled together under"
+  },
+  {
+   "start": 192.58,
+   "end": 195.5,
+   "text": "a tree to stay in the shade, wagging their tails."
+  },
+  {
+   "start": 195.5,
+   "end": 196.5,
+   "text": "Smart cows."
+  },
+  {
+   "start": 196.5,
+   "end": 197.5,
+   "text": "New Jersey cows are smart cows."
+  },
+  {
+   "start": 197.5,
+   "end": 198.5,
+   "text": "Let it be known."
+  },
+  {
+   "start": 198.5,
+   "end": 199.5,
+   "text": "That's right."
+  },
+  {
+   "start": 199.5,
+   "end": 201.74,
+   "text": "I'm driving through my home state of New Jersey, just 15 minutes from the Pennsylvania border"
+  },
+  {
+   "start": 201.74,
+   "end": 203.54,
+   "text": "with my friend Kenny Malone."
+  },
+  {
+   "start": 203.54,
+   "end": 206.06,
+   "text": "Kenny hosts one of my favorite podcasts, Planet Money."
+  },
+  {
+   "start": 206.06,
+   "end": 209.74,
+   "text": "And while the cows are very cute, that's not why we're here."
+  },
+  {
+   "start": 209.74,
+   "end": 213.7,
+   "text": "So we're here in the great state of New Jersey to explore tomatoes, which is something New"
+  },
+  {
+   "start": 213.7,
+   "end": 215.5,
+   "text": "Jersey is famous for."
+  },
+  {
+   "start": 215.5,
+   "end": 217.7,
+   "text": "Jersey fresh, New Jersey tomatoes."
+  },
+  {
+   "start": 217.7,
+   "end": 220.22,
+   "text": "It sounds like a joke when you say it every time."
+  },
+  {
+   "start": 220.22,
+   "end": 223.7,
+   "text": "Well, I'm here to tell you that it's not a joke."
+  },
+  {
+   "start": 223.7,
+   "end": 227.98,
+   "text": "In fact, almost a century ago, a scientist at Rutgers University developed a new New"
+  },
+  {
+   "start": 227.98,
+   "end": 231.14,
+   "text": "Jersey tomato that became the tomato."
+  },
+  {
+   "start": 231.14,
+   "end": 234.7,
+   "text": "For decades, if you were eating a tomato, you were most likely eating a descendant of"
+  },
+  {
+   "start": 234.7,
+   "end": 239.7,
+   "text": "the plump red platonic ideal of a tomato that the Rutgers scientists had helped to perfect."
+  },
+  {
+   "start": 239.7,
+   "end": 244.46,
+   "text": "And that was a slicer style tomato, you know, the big old kind that you slice."
+  },
+  {
+   "start": 244.46,
+   "end": 248.46,
+   "text": "A century later, Kenny and I are traveling to Rutgers Research Farm to see a new tomato"
+  },
+  {
+   "start": 248.46,
+   "end": 249.46,
+   "text": "they've created."
+  },
+  {
+   "start": 249.46,
+   "end": 253.82,
+   "text": "This time it's a smaller one, a grape tomato called Scarlet Sunrise."
+  },
+  {
+   "start": 253.82,
+   "end": 257.18,
+   "text": "And as I tell Kenny, I'm not quite sure how to feel about it."
+  },
+  {
+   "start": 257.18,
+   "end": 262.66,
+   "text": "I have to be honest, as excited as I am to learn more about this new tomato, I am skeptical"
+  },
+  {
+   "start": 262.66,
+   "end": 264.34,
+   "text": "of it being a grape tomato."
+  },
+  {
+   "start": 264.34,
+   "end": 266.83,
+   "text": "Yes, I'm concerned about that."
+  },
+  {
+   "start": 266.83,
+   "end": 269.43,
+   "text": "A grape tomato to me is always very hard."
+  },
+  {
+   "start": 269.43,
+   "end": 269.93,
+   "text": "Uh-huh."
+  },
+  {
+   "start": 269.93,
+   "end": 275.08,
+   "text": "Because it's like almost all firm, hard stuff, and very little pulp."
+  },
+  {
+   "start": 275.08,
+   "end": 275.58,
+   "text": "Okay."
+  },
+  {
+   "start": 275.58,
+   "end": 283.32,
+   "text": "To me, the cherry tomato, you bite into it, it pops, you get that rush of sweet tart juiciness in your mouth."
+  },
+  {
+   "start": 283.32,
+   "end": 285.32,
+   "text": "Ideally in your mouth and not on your clothes."
+  },
+  {
+   "start": 285.32,
+   "end": 289.72,
+   "text": "Right, well, I mean, if you're a professional, you put the whole thing in your mouth and close your mouth before you bite."
+  },
+  {
+   "start": 289.72,
+   "end": 291.72,
+   "text": "I would take a cherry tomato over a grape tomato."
+  },
+  {
+   "start": 291.72,
+   "end": 299.54,
+   "text": "So when we taste test this thing, are you just gonna, like, crap all over this tomato because you inherently don't like grape tomatoes?"
+  },
+  {
+   "start": 299.54,
+   "end": 303.14,
+   "text": "I'm open to my mind being changed. Maybe I just haven't had a good grape tomato."
+  },
+  {
+   "start": 303.5,
+   "end": 311.08,
+   "text": "This is the Sporkful. It's not for foodies. It's for eaters. I'm Dan Pashman. Each week on our show"
+  },
+  {
+   "start": 311.08,
+   "end": 314.92,
+   "text": "We obsess about food to learn more about people. Now quick heads up before we start"
+  },
+  {
+   "start": 314.92,
+   "end": 320.82,
+   "text": "We are looking for callers for an upcoming call-in show. Do you have a food-related disagreement with a friend or a loved one?"
+  },
+  {
+   "start": 320.82,
+   "end": 322.84,
+   "text": "You got a hot take you want to share with us?"
+  },
+  {
+   "start": 322.84,
+   "end": 329.0,
+   "text": "I want to hear from you. Send me an email or voice memo. Tell me your name, location, and what your issue is."
+  },
+  {
+   "start": 329.0,
+   "end": 332.36,
+   "text": "You can send that to me at hello at sporkful.com"
+  },
+  {
+   "start": 332.76,
+   "end": 338.36,
+   "text": "All right, let's get into it and for this episode I have a co-host Planet Monies Kenny Malone who's from Pennsylvania"
+  },
+  {
+   "start": 338.44,
+   "end": 341.48,
+   "text": "But we won't hold that against him. Hey Kenny. Hi Dan"
+  },
+  {
+   "start": 341.96,
+   "end": 347.48,
+   "text": "Yeah, I didn't know you had strong feelings about Pennsylvania like you do about grape tomatoes apparently I do I do it's true"
+  },
+  {
+   "start": 347.48,
+   "end": 351.96,
+   "text": "And one thing I want to clarify because we're gonna be talking a lot about grape tomatoes in this episode"
+  },
+  {
+   "start": 351.96,
+   "end": 357.6,
+   "text": "Mm-hmm grape tomatoes and cherry tomatoes are not the same thing grape tomatoes are shaped more like grapes"
+  },
+  {
+   "start": 357.6,
+   "end": 363.2,
+   "text": "They're like oblong. They have a thicker skin, a longer shelf life, and to me a blender taste."
+  },
+  {
+   "start": 363.76,
+   "end": 368.32,
+   "text": "Cherry tomatoes are more round like cherries. They're more delicate. They've been around for longer,"
+  },
+  {
+   "start": 368.32,
+   "end": 372.72,
+   "text": "and they've actually been bred for all kinds of characteristics. There's more variety and flavor"
+  },
+  {
+   "start": 372.72,
+   "end": 379.44,
+   "text": "in cherry tomatoes. But Kenny, you're here because this isn't just a story about how this new tomato"
+  },
+  {
+   "start": 379.44,
+   "end": 383.76,
+   "text": "we're going to talk about came to be, and it's not just about whether a grape tomato can be good."
+  },
+  {
+   "start": 383.76,
+   "end": 387.92,
+   "text": "No, no, there is a larger economic trend going on here that Dan,"
+  },
+  {
+   "start": 387.92,
+   "end": 393.04,
+   "text": "I think you and I have come to call like the honey crispification of basically the entire produce aisle."
+  },
+  {
+   "start": 393.6,
+   "end": 398.56,
+   "text": "Yeah, with apples, you've got honey crisp, as you said, there's cosmic crisp, pink lady, so many others."
+  },
+  {
+   "start": 399.12,
+   "end": 404.64,
+   "text": "And more and more, we're seeing all kinds of fancy versions of different fruits that are sold at higher price points."
+  },
+  {
+   "start": 404.8,
+   "end": 409.04,
+   "text": "And now it seems the old tomato bin is in the midst of a similar explosion."
+  },
+  {
+   "start": 409.04,
+   "end": 414.72,
+   "text": "Like maybe you, listener, you've noticed tomatoes with brand names like flavor bombs,"
+  },
+  {
+   "start": 414.72,
+   "end": 417.76,
+   "text": "sugar bombs, sprinkles. I saw sprinkles the other day."
+  },
+  {
+   "start": 417.76,
+   "end": 422.32,
+   "text": "Yeah, so why is this happening? Well, it's a story of changing laws."
+  },
+  {
+   "start": 422.32,
+   "end": 423.84,
+   "text": "Changing incentives."
+  },
+  {
+   "start": 423.84,
+   "end": 427.68,
+   "text": "And changes in all of us and what we want as food consumers."
+  },
+  {
+   "start": 428.24,
+   "end": 433.68,
+   "text": "And what you, Dan, want as a food consumer is not a grape tomato. Is that still correct?"
+  },
+  {
+   "start": 433.68,
+   "end": 438.4,
+   "text": "Yeah, they're very hard. And as you and I were driving to the Rutgers Research Farm,"
+  },
+  {
+   "start": 438.4,
+   "end": 442.76,
+   "text": "I realized I gotta know how to explain my concerns to the scientists we're gonna meet"
+  },
+  {
+   "start": 443.2,
+   "end": 446.98,
+   "text": "I'm pausing our conversation for a second because I meant to look up tomato anatomy"
+  },
+  {
+   "start": 447.18,
+   "end": 451.26,
+   "text": "Okay, so it's because like I want to know what's the correct name for like the there's like the skin"
+  },
+  {
+   "start": 451.26,
+   "end": 454.9,
+   "text": "Yeah, and then that's probably the right name and then there's the pulp"
+  },
+  {
+   "start": 454.9,
+   "end": 459.7,
+   "text": "Yeah, I think that's probably right, but then what's the like the firm sort of cartilage? Yes"
+  },
+  {
+   "start": 460.26,
+   "end": 462.26,
+   "text": "No, hopefully not cartilage"
+  },
+  {
+   "start": 462.66,
+   "end": 465.44,
+   "text": "We got a lot to learn. There's the funiculus"
+  },
+  {
+   "start": 465.44,
+   "end": 466.44,
+   "text": "Uh-huh."
+  },
+  {
+   "start": 466.44,
+   "end": 467.44,
+   "text": "Meso-c-there's..."
+  },
+  {
+   "start": 467.44,
+   "end": 471.69,
+   "text": "You're gonna casually try to drop these with the scientists?"
+  },
+  {
+   "start": 471.69,
+   "end": 476.57,
+   "text": "You'd be like, no, let me tell, let me ask you about the Scarlet Sunrise's finiculus"
+  },
+  {
+   "start": 476.57,
+   "end": 477.57,
+   "text": "professor."
+  },
+  {
+   "start": 477.57,
+   "end": 481.98,
+   "text": "I've noticed a firm finiculus, sir."
+  },
+  {
+   "start": 481.98,
+   "end": 482.98,
+   "text": "That's gonna be my goal."
+  },
+  {
+   "start": 482.98,
+   "end": 483.98,
+   "text": "You wash candy."
+  },
+  {
+   "start": 483.98,
+   "end": 485.98,
+   "text": "I'm gonna drop finiculus in somewhere here."
+  },
+  {
+   "start": 485.98,
+   "end": 488.59,
+   "text": "I'm gonna get it in."
+  },
+  {
+   "start": 488.59,
+   "end": 494.67,
+   "text": "As Dan and I study up on Tomato Anatomy, we arrive at the Rutgers Experimental Farm, where"
+  },
+  {
+   "start": 494.67,
+   "end": 497.55,
+   "text": "we meet Peter Nietzsche and Tom Orton."
+  },
+  {
+   "start": 497.55,
+   "end": 500.83,
+   "text": "Tom is a retired Rutgers agriculture professor and researcher."
+  },
+  {
+   "start": 500.83,
+   "end": 502.59,
+   "text": "Pete helps run this experimental farm."
+  },
+  {
+   "start": 503.23,
+   "end": 504.19,
+   "text": "How many acres is it?"
+  },
+  {
+   "start": 504.83,
+   "end": 507.63,
+   "text": "It's a total of 390 acres. We're not all cultivated."
+  },
+  {
+   "start": 507.63,
+   "end": 507.95,
+   "text": "There's some."
+  },
+  {
+   "start": 507.95,
+   "end": 510.83,
+   "text": "We can see a few barns here, a greenhouse over there,"
+  },
+  {
+   "start": 510.83,
+   "end": 513.63,
+   "text": "and in the distance, there it is, the star of the show,"
+  },
+  {
+   "start": 513.63,
+   "end": 516.27,
+   "text": "a small field of tomato plants."
+  },
+  {
+   "start": 516.27,
+   "end": 518.67,
+   "text": "This is exciting, Kenny. Can we just stop and..."
+  },
+  {
+   "start": 518.67,
+   "end": 519.79,
+   "text": "And let's behold."
+  },
+  {
+   "start": 519.79,
+   "end": 526.65,
+   "text": "reflect that we're looking at a bunch of rows of tomato plants. Are these"
+  },
+  {
+   "start": 528.01,
+   "end": 533.85,
+   "text": "scarlet sunrise plants zero? Like all other scarlet sunrise have been birthed from what we see before"
+  },
+  {
+   "start": 533.85,
+   "end": 539.21,
+   "text": "us? Well, they're derived all from the same source. Okay, but this is the birthplace. Yes."
+  },
+  {
+   "start": 539.21,
+   "end": 544.08,
+   "text": "You're the proud parents overlooking your little nursery. Oh, yeah, that's one way to put it."
+  },
+  {
+   "start": 544.08,
+   "end": 548.88,
+   "text": "Yeah, we don't usually look at it that way. Right. Okay. I mean, this is what we're here for."
+  },
+  {
+   "start": 548.88,
+   "end": 550.8,
+   "text": "We're going to go take a look at them now."
+  },
+  {
+   "start": 550.8,
+   "end": 554.08,
+   "text": "We begin a rather muddy trek over to the tomato fields."
+  },
+  {
+   "start": 554.08,
+   "end": 556.12,
+   "text": "And one thing I learned about Dan Pashman,"
+  },
+  {
+   "start": 556.12,
+   "end": 560.04,
+   "text": "you do not waste a second when you have time with two tomato experts."
+  },
+  {
+   "start": 560.04,
+   "end": 564.12,
+   "text": "Especially when there's a tomato related question that has been gnawing at me for years."
+  },
+  {
+   "start": 565.79,
+   "end": 567.47,
+   "text": "Random question while we walk."
+  },
+  {
+   "start": 567.47,
+   "end": 570.91,
+   "text": "Are the tomatoes that still have some green vine attached in the supermarket"
+  },
+  {
+   "start": 570.91,
+   "end": 573.31,
+   "text": "actually better or is it just great marketing?"
+  },
+  {
+   "start": 574.41,
+   "end": 575.65,
+   "text": "I don't know, why don't you cover that one?"
+  },
+  {
+   "start": 575.65,
+   "end": 578.89,
+   "text": "Well, I think it's more of a marketing thing."
+  },
+  {
+   "start": 578.89,
+   "end": 580.93,
+   "text": "Well, I guess I don't need to spend more for those anymore."
+  },
+  {
+   "start": 581.01,
+   "end": 581.93,
+   "text": "You're off the hook, Dan."
+  },
+  {
+   "start": 582.57,
+   "end": 589.33,
+   "text": "Tom and Pete, they are very much part of this centuries-long tradition at Rutgers of scientists"
+  },
+  {
+   "start": 589.45,
+   "end": 594.73,
+   "text": "who are really nerdy about fruits and veggies and really interested in trying to make better"
+  },
+  {
+   "start": 594.85,
+   "end": 596.49,
+   "text": "fruits and veggies for farmers."
+  },
+  {
+   "start": 596.57,
+   "end": 601.29,
+   "text": "Right. You know, like a huge part of what public research universities have always done is try to"
+  },
+  {
+   "start": 601.29,
+   "end": 604.41,
+   "text": "make things better for the agricultural industries in their states."
+  },
+  {
+   "start": 604.41,
+   "end": 608.31,
+   "text": "For Tom and Pete, that specifically means doing things to help farmers in the great"
+  },
+  {
+   "start": 608.31,
+   "end": 609.31,
+   "text": "state of New Jersey."
+  },
+  {
+   "start": 609.31,
+   "end": 614.19,
+   "text": "Yeah, we're trying to give farmers new tools for them to be more profitable."
+  },
+  {
+   "start": 614.19,
+   "end": 621.33,
+   "text": "Trying to make the farmers happy by giving them a plant that grows vigorously, has resistance"
+  },
+  {
+   "start": 621.33,
+   "end": 627.03,
+   "text": "to as many diseases and insects as possible, and is easy to manage."
+  },
+  {
+   "start": 627.03,
+   "end": 630.39,
+   "text": "Kenny and I start looking through the tomato plants, moving branches here and there to"
+  },
+  {
+   "start": 630.39,
+   "end": 633.25,
+   "text": "see if we can find some perfect scarlet sunrise."
+  },
+  {
+   "start": 633.25,
+   "end": 635.21,
+   "text": "We should look for some ripies, right?"
+  },
+  {
+   "start": 635.21,
+   "end": 636.41,
+   "text": "Is that the word you guys use?"
+  },
+  {
+   "start": 636.41,
+   "end": 637.97,
+   "text": "Ripies?"
+  },
+  {
+   "start": 637.97,
+   "end": 638.81,
+   "text": "Ripe fruit."
+  },
+  {
+   "start": 638.81,
+   "end": 639.65,
+   "text": "Ripe fruit."
+  },
+  {
+   "start": 639.65,
+   "end": 640.49,
+   "text": "That ripe fruit's good."
+  },
+  {
+   "start": 640.49,
+   "end": 642.69,
+   "text": "Slow down with all the technical mumbo jumbo, Kenny."
+  },
+  {
+   "start": 642.69,
+   "end": 644.41,
+   "text": "Unfortunately for us, Tom and Pete"
+  },
+  {
+   "start": 644.41,
+   "end": 647.85,
+   "text": "have timed this crop to be ripe at the end of August"
+  },
+  {
+   "start": 647.85,
+   "end": 651.01,
+   "text": "for a big public open house at the facility,"
+  },
+  {
+   "start": 651.01,
+   "end": 654.41,
+   "text": "clearly thinking about their New Jersey neighbors"
+  },
+  {
+   "start": 654.41,
+   "end": 656.97,
+   "text": "and not us taste making journalists, Dan."
+  },
+  {
+   "start": 656.97,
+   "end": 658.61,
+   "text": "Yeah, that hurt a little bit, Kenny,"
+  },
+  {
+   "start": 658.61,
+   "end": 660.69,
+   "text": "especially knowing my history with the state."
+  },
+  {
+   "start": 660.69,
+   "end": 664.93,
+   "text": "But anyway, we dig around hoping for a few early ripies."
+  },
+  {
+   "start": 664.93,
+   "end": 665.77,
+   "text": "Oh yeah."
+  },
+  {
+   "start": 665.77,
+   "end": 668.21,
+   "text": "Kenny, any luck finding a ripe tomato here?"
+  },
+  {
+   "start": 668.21,
+   "end": 670.22,
+   "text": "I should disclose."
+  },
+  {
+   "start": 670.22,
+   "end": 671.8,
+   "text": "I am red-green colorblind."
+  },
+  {
+   "start": 671.8,
+   "end": 674.76,
+   "text": "Why are you in charge of this then?"
+  },
+  {
+   "start": 674.76,
+   "end": 675.86,
+   "text": "Maybe you should do it."
+  },
+  {
+   "start": 679.88,
+   "end": 682.64,
+   "text": "All right, well, in the meantime, allow us to share"
+  },
+  {
+   "start": 682.64,
+   "end": 686.0,
+   "text": "some context for the tomato we are on our hands and knees"
+  },
+  {
+   "start": 686.0,
+   "end": 687.34,
+   "text": "trying to find and eat."
+  },
+  {
+   "start": 687.34,
+   "end": 690.96,
+   "text": "Because Tom and Pete, they are doing plant research"
+  },
+  {
+   "start": 690.96,
+   "end": 694.36,
+   "text": "in a very different world than the Rutgers scientists"
+  },
+  {
+   "start": 694.36,
+   "end": 695.72,
+   "text": "were a hundred years ago."
+  },
+  {
+   "start": 695.72,
+   "end": 697.8,
+   "text": "Yeah, some huge things have changed"
+  },
+  {
+   "start": 697.8,
+   "end": 700.04,
+   "text": "that are at least part of the explanation"
+  },
+  {
+   "start": 700.04,
+   "end": 702.32,
+   "text": "for why our produce aisle has exploded"
+  },
+  {
+   "start": 702.32,
+   "end": 704.08,
+   "text": "with more and more of these branded"
+  },
+  {
+   "start": 704.08,
+   "end": 705.84,
+   "text": "superstar fruits and veggies."
+  },
+  {
+   "start": 705.84,
+   "end": 709.44,
+   "text": "So, big change number one, Christmas Eve, 1970."
+  },
+  {
+   "start": 709.44,
+   "end": 712.44,
+   "text": "President Richard Nixon signs into law"
+  },
+  {
+   "start": 712.44,
+   "end": 715.76,
+   "text": "the Plant Variety Protection Act."
+  },
+  {
+   "start": 715.76,
+   "end": 718.16,
+   "text": "Yeah, and it didn't exactly make the front page,"
+  },
+  {
+   "start": 718.16,
+   "end": 720.16,
+   "text": "but it was actually a really big deal"
+  },
+  {
+   "start": 720.16,
+   "end": 722.94,
+   "text": "Because before this, it was a lot harder to monetize"
+  },
+  {
+   "start": 722.94,
+   "end": 724.8,
+   "text": "a newly developed plant."
+  },
+  {
+   "start": 724.8,
+   "end": 727.24,
+   "text": "But now breeders could basically own the rights"
+  },
+  {
+   "start": 727.24,
+   "end": 730.24,
+   "text": "to all kinds of fruits and veggies that they couldn't before."
+  },
+  {
+   "start": 730.24,
+   "end": 732.68,
+   "text": "Big change number two, 10 years later,"
+  },
+  {
+   "start": 732.68,
+   "end": 735.16,
+   "text": "another under-covered new law."
+  },
+  {
+   "start": 735.16,
+   "end": 736.72,
+   "text": "Yeah, the Buy Dole Act,"
+  },
+  {
+   "start": 736.72,
+   "end": 739.68,
+   "text": "named after Senators Birch Buy and Bob Dole."
+  },
+  {
+   "start": 739.68,
+   "end": 742.3,
+   "text": "It gave federally funded researchers the default right"
+  },
+  {
+   "start": 742.3,
+   "end": 745.16,
+   "text": "to own whatever they create with that federal funding."
+  },
+  {
+   "start": 745.16,
+   "end": 748.32,
+   "text": "And public universities, you know, lots of federal funding,"
+  },
+  {
+   "start": 748.32,
+   "end": 753.12,
+   "text": "Now they could control and monetize their medical breakthroughs,"
+  },
+  {
+   "start": 753.12,
+   "end": 754.48,
+   "text": "their developments in computers,"
+  },
+  {
+   "start": 754.48,
+   "end": 757.56,
+   "text": "and the new fruits and vegetables they created."
+  },
+  {
+   "start": 757.56,
+   "end": 760.64,
+   "text": "Which brings us to what I think is probably the most important moment"
+  },
+  {
+   "start": 760.64,
+   "end": 762.88,
+   "text": "in the produce aisle brand explosion."
+  },
+  {
+   "start": 762.88,
+   "end": 768.88,
+   "text": "Of course, that is the 1991 release of the Honeycrisp Apple."
+  },
+  {
+   "start": 768.88,
+   "end": 772.52,
+   "text": "Yeah, the Honeycrisp was kind of the first big breakout produce star"
+  },
+  {
+   "start": 772.52,
+   "end": 774.2,
+   "text": "that came out of all these changes."
+  },
+  {
+   "start": 774.2,
+   "end": 775.8,
+   "text": "It was developed at the University of Minnesota,"
+  },
+  {
+   "start": 775.8,
+   "end": 780.28,
+   "text": "And when it came out, they started licensing out honey crisp trees to growers for a one-time"
+  },
+  {
+   "start": 780.28,
+   "end": 782.28,
+   "text": "fee of around a dollar a tree."
+  },
+  {
+   "start": 782.28,
+   "end": 786.4,
+   "text": "The university made north of 20 million bucks from it, but they could have made much more."
+  },
+  {
+   "start": 786.4,
+   "end": 791.78,
+   "text": "Yeah, they got a plant patent, which lasts 20 years, but they were not able to trademark"
+  },
+  {
+   "start": 791.78,
+   "end": 795.66,
+   "text": "the name Honey Crisp, which would have lasted much longer."
+  },
+  {
+   "start": 795.66,
+   "end": 800.42,
+   "text": "That's because they made the mistake of naming the plant variety itself Honey Crisp."
+  },
+  {
+   "start": 800.42,
+   "end": 804.4,
+   "text": "So once that became the generic name for this type of apple, they couldn't trademark it"
+  },
+  {
+   "start": 804.4,
+   "end": 806.32,
+   "text": "because you can't trademark a generic term."
+  },
+  {
+   "start": 806.32,
+   "end": 808.8,
+   "text": "Like you can trademark the brand name Kleenex,"
+  },
+  {
+   "start": 808.8,
+   "end": 811.24,
+   "text": "but you cannot trademark the word tissue, you know?"
+  },
+  {
+   "start": 811.24,
+   "end": 814.92,
+   "text": "So if they had given the plant variety any old name,"
+  },
+  {
+   "start": 814.92,
+   "end": 817.68,
+   "text": "then used the brand name Honeycrisp,"
+  },
+  {
+   "start": 817.68,
+   "end": 819.08,
+   "text": "they could have trademarked that."
+  },
+  {
+   "start": 819.08,
+   "end": 820.2,
+   "text": "But they didn't."
+  },
+  {
+   "start": 820.2,
+   "end": 822.72,
+   "text": "So the University of Minnesota lost its protection"
+  },
+  {
+   "start": 822.72,
+   "end": 825.16,
+   "text": "for this IP, which means they lost the ability"
+  },
+  {
+   "start": 825.16,
+   "end": 828.34,
+   "text": "to charge royalties to growers sooner than they should have."
+  },
+  {
+   "start": 828.34,
+   "end": 829.84,
+   "text": "Now anyone can grow it."
+  },
+  {
+   "start": 829.84,
+   "end": 831.72,
+   "text": "Other schools have learned from that mistake."
+  },
+  {
+   "start": 831.72,
+   "end": 833.28,
+   "text": "Washington State University developed"
+  },
+  {
+   "start": 833.28,
+   "end": 834.56,
+   "text": "the Cosmic Crisp Apple."
+  },
+  {
+   "start": 834.56,
+   "end": 835.8,
+   "text": "We talked about that whole process"
+  },
+  {
+   "start": 835.8,
+   "end": 837.0,
+   "text": "on the show a few years back."
+  },
+  {
+   "start": 837.0,
+   "end": 840.04,
+   "text": "Yeah, and the plant variety name for Cosmic Crisp"
+  },
+  {
+   "start": 840.04,
+   "end": 843.54,
+   "text": "is WA-38."
+  },
+  {
+   "start": 843.54,
+   "end": 844.38,
+   "text": "Yeah, that's sexy."
+  },
+  {
+   "start": 844.38,
+   "end": 846.08,
+   "text": "That's the sexy name for an Apple Ken."
+  },
+  {
+   "start": 846.08,
+   "end": 849.76,
+   "text": "It allows the trademarked brand name to be Cosmic Crisp."
+  },
+  {
+   "start": 849.76,
+   "end": 853.44,
+   "text": "The school has made more than $30 million from this Apple"
+  },
+  {
+   "start": 853.44,
+   "end": 856.12,
+   "text": "in much less time than the Honey Crisp."
+  },
+  {
+   "start": 856.12,
+   "end": 857.68,
+   "text": "But as I said to Pete and Tom,"
+  },
+  {
+   "start": 857.68,
+   "end": 860.44,
+   "text": "the larger lesson here was if universities funded"
+  },
+  {
+   "start": 860.44,
+   "end": 862.62,
+   "text": "the right agricultural breakthrough,"
+  },
+  {
+   "start": 862.62,
+   "end": 865.32,
+   "text": "that could become a major profit center for the school."
+  },
+  {
+   "start": 865.32,
+   "end": 868.64,
+   "text": "Would you say that it's easier now to get support"
+  },
+  {
+   "start": 868.64,
+   "end": 870.88,
+   "text": "from the university for the kind of research you do"
+  },
+  {
+   "start": 870.88,
+   "end": 874.91,
+   "text": "because it has a potential to bring a returner for the school?"
+  },
+  {
+   "start": 874.91,
+   "end": 876.11,
+   "text": "Well, I'm retired, so."
+  },
+  {
+   "start": 876.11,
+   "end": 879.09,
+   "text": "People tell you the bad news."
+  },
+  {
+   "start": 879.09,
+   "end": 881.85,
+   "text": "It certainly helps."
+  },
+  {
+   "start": 881.85,
+   "end": 885.09,
+   "text": "You know, if it brings in money to support our work"
+  },
+  {
+   "start": 885.09,
+   "end": 889.09,
+   "text": "and our program, they're gonna, more likely to support it."
+  },
+  {
+   "start": 889.09,
+   "end": 891.13,
+   "text": "Yeah, you know, the agricultural research game"
+  },
+  {
+   "start": 891.13,
+   "end": 893.47,
+   "text": "has dramatically changed."
+  },
+  {
+   "start": 893.47,
+   "end": 896.65,
+   "text": "As a system, for researchers like Pete and Tom,"
+  },
+  {
+   "start": 896.65,
+   "end": 899.25,
+   "text": "their incentives have maybe changed a little."
+  },
+  {
+   "start": 899.25,
+   "end": 902.65,
+   "text": "They do get to share in the revenue from their invention,"
+  },
+  {
+   "start": 902.65,
+   "end": 904.05,
+   "text": "something like 35%."
+  },
+  {
+   "start": 904.05,
+   "end": 906.01,
+   "text": "But Pete told us they're not getting rich"
+  },
+  {
+   "start": 906.01,
+   "end": 908.81,
+   "text": "inventing the Scarlet Sunrise for Rutgers."
+  },
+  {
+   "start": 908.81,
+   "end": 912.65,
+   "text": "In a lot of ways, they are still just like those old Rutgers"
+  },
+  {
+   "start": 912.65,
+   "end": 916.05,
+   "text": "plant nerds from 100 years ago, geeking out, tinkering,"
+  },
+  {
+   "start": 916.05,
+   "end": 918.77,
+   "text": "and just trying to help New Jersey farmers."
+  },
+  {
+   "start": 918.77,
+   "end": 922.81,
+   "text": "That's right. So all that, that's the context for Pete and Tom."
+  },
+  {
+   "start": 922.81,
+   "end": 925.69,
+   "text": "And this fancy new tomato they decided to create at Rutgers."
+  },
+  {
+   "start": 927.49,
+   "end": 931.77,
+   "text": "And that story? Well, Pete says that starts about 14 years ago."
+  },
+  {
+   "start": 932.01,
+   "end": 936.17,
+   "text": "We grow tomatoes here for our open house. Um, and I noticed in the field,"
+  },
+  {
+   "start": 936.17,
+   "end": 939.65,
+   "text": "we, there was one cherry tomato called Isis candy,"
+  },
+  {
+   "start": 939.93,
+   "end": 942.13,
+   "text": "a cherry tomato called the Isis candy."
+  },
+  {
+   "start": 942.15,
+   "end": 944.33,
+   "text": "And it had some pretty good traits."
+  },
+  {
+   "start": 944.53,
+   "end": 946.21,
+   "text": "It was sweet, which we know people like."
+  },
+  {
+   "start": 946.21,
+   "end": 948.61,
+   "text": "And then it also had this cool color situation."
+  },
+  {
+   "start": 948.61,
+   "end": 951.37,
+   "text": "They have that, it's like a little red blush"
+  },
+  {
+   "start": 951.37,
+   "end": 953.01,
+   "text": "on a kind of yellow background."
+  },
+  {
+   "start": 953.01,
+   "end": 954.57,
+   "text": "That's why we call it a bicolor."
+  },
+  {
+   "start": 954.57,
+   "end": 957.05,
+   "text": "Bicolor, yeah, like mostly yellow,"
+  },
+  {
+   "start": 957.05,
+   "end": 961.73,
+   "text": "then with this elegant, like streaky gradient into red."
+  },
+  {
+   "start": 961.73,
+   "end": 963.85,
+   "text": "So it tasted great, it looked beautiful,"
+  },
+  {
+   "start": 963.85,
+   "end": 964.81,
+   "text": "but it had a problem."
+  },
+  {
+   "start": 964.81,
+   "end": 966.89,
+   "text": "The ISIS candy also cracks."
+  },
+  {
+   "start": 966.89,
+   "end": 969.89,
+   "text": "As a cherry, it was cracked a lot."
+  },
+  {
+   "start": 969.89,
+   "end": 971.85,
+   "text": "Yeah, Dan, your beloved cherry tomatoes,"
+  },
+  {
+   "start": 971.85,
+   "end": 973.41,
+   "text": "cracking up tomatoes."
+  },
+  {
+   "start": 973.41,
+   "end": 976.73,
+   "text": "Well, you know, that's why I never had an ISIS candy,"
+  },
+  {
+   "start": 976.73,
+   "end": 977.57,
+   "text": "I suppose."
+  },
+  {
+   "start": 977.57,
+   "end": 978.41,
+   "text": "Probably true."
+  },
+  {
+   "start": 978.41,
+   "end": 980.89,
+   "text": "That's a big problem for a tomato,"
+  },
+  {
+   "start": 980.89,
+   "end": 982.57,
+   "text": "no matter how good it tastes or looks,"
+  },
+  {
+   "start": 982.57,
+   "end": 984.57,
+   "text": "it's gotta be transported and it has to be able"
+  },
+  {
+   "start": 984.57,
+   "end": 985.53,
+   "text": "to stay fresh."
+  },
+  {
+   "start": 985.53,
+   "end": 989.57,
+   "text": "Yes, but for Pete and Tom, the light bulb moment was,"
+  },
+  {
+   "start": 989.57,
+   "end": 993.93,
+   "text": "what if they took that bi-color ISIS candy cherry"
+  },
+  {
+   "start": 993.93,
+   "end": 996.95,
+   "text": "and then crossed it, bred it with a hardier"
+  },
+  {
+   "start": 996.95,
+   "end": 998.69,
+   "text": "red grape tomato?"
+  },
+  {
+   "start": 998.69,
+   "end": 1002.41,
+   "text": "So in talking to Tom, we got together and we,"
+  },
+  {
+   "start": 1002.41,
+   "end": 1004.05,
+   "text": "wouldn't it be interesting if we could get some"
+  },
+  {
+   "start": 1004.05,
+   "end": 1006.61,
+   "text": "of the sweetness of ISIS candy in there?"
+  },
+  {
+   "start": 1006.61,
+   "end": 1011.01,
+   "text": "So can we get some of the firmness of the red and combine those traits together and get something"
+  },
+  {
+   "start": 1011.89,
+   "end": 1015.49,
+   "text": "worthwhile for the market? Tom says that red-yellow"
+  },
+  {
+   "start": 1015.49,
+   "end": 1021.09,
+   "text": "bi-color mix, like that could help their sweet grape tomatoes chance of success."
+  },
+  {
+   "start": 1021.09,
+   "end": 1026.45,
+   "text": "We figured people could identify it in the marketplace and therefore connect the flavor"
+  },
+  {
+   "start": 1026.45,
+   "end": 1033.01,
+   "text": "with the appearance and go and there'd be repeat purchases of specifically this product."
+  },
+  {
+   "start": 1033.01,
+   "end": 1036.21,
+   "text": "So in a sense you made a very early branding decision?"
+  },
+  {
+   "start": 1036.21,
+   "end": 1038.69,
+   "text": "More or less, yeah, because we wanted to be unique."
+  },
+  {
+   "start": 1038.69,
+   "end": 1039.53,
+   "text": "Right."
+  },
+  {
+   "start": 1039.53,
+   "end": 1042.45,
+   "text": "Pete explained to us that the market has become flooded"
+  },
+  {
+   "start": 1042.45,
+   "end": 1044.09,
+   "text": "with red grape tomatoes."
+  },
+  {
+   "start": 1044.09,
+   "end": 1045.93,
+   "text": "You know, some of those are good, some are not,"
+  },
+  {
+   "start": 1045.93,
+   "end": 1048.83,
+   "text": "some get packaged up and refrigerated for veggie trays"
+  },
+  {
+   "start": 1048.83,
+   "end": 1050.01,
+   "text": "and that makes them taste bad."
+  },
+  {
+   "start": 1050.01,
+   "end": 1051.57,
+   "text": "Don't refrigerate tomatoes, Kenny."
+  },
+  {
+   "start": 1051.57,
+   "end": 1054.41,
+   "text": "Yes, this is your public service, I'm asking from Dan."
+  },
+  {
+   "start": 1054.41,
+   "end": 1057.81,
+   "text": "You end up with a situation though, where a consumer, Dan,"
+  },
+  {
+   "start": 1057.81,
+   "end": 1060.17,
+   "text": "might taste bad red grape tomatoes"
+  },
+  {
+   "start": 1060.17,
+   "end": 1063.85,
+   "text": "and decide that they hate all red grape tomatoes."
+  },
+  {
+   "start": 1063.85,
+   "end": 1065.85,
+   "text": "Hate is a strong word, Kenny,"
+  },
+  {
+   "start": 1065.85,
+   "end": 1067.59,
+   "text": "But yeah, like maybe this is my issue."
+  },
+  {
+   "start": 1067.59,
+   "end": 1068.89,
+   "text": "Maybe I should never try to good one."
+  },
+  {
+   "start": 1068.89,
+   "end": 1072.89,
+   "text": "And it makes sense to me that if Tom and Pete are going to create a good grape"
+  },
+  {
+   "start": 1072.89,
+   "end": 1077.17,
+   "text": "tomato for New Jersey farmers to grow and sell, it would be helpful for it to"
+  },
+  {
+   "start": 1077.17,
+   "end": 1080.49,
+   "text": "look different from all those other ones to avoid confusion."
+  },
+  {
+   "start": 1080.77,
+   "end": 1082.81,
+   "text": "So Tom and Pete, they get to work."
+  },
+  {
+   "start": 1082.81,
+   "end": 1086.17,
+   "text": "Uh, step one, you might remember this from your old Punnett squares days in"
+  },
+  {
+   "start": 1086.17,
+   "end": 1086.77,
+   "text": "biology class."
+  },
+  {
+   "start": 1086.77,
+   "end": 1089.55,
+   "text": "You cross pollinate the two tomato plants."
+  },
+  {
+   "start": 1089.55,
+   "end": 1094.17,
+   "text": "Uh, and then you have to wait like six months and you see what kinds of tomatoes"
+  },
+  {
+   "start": 1094.17,
+   "end": 1094.49,
+   "text": "grow."
+  },
+  {
+   "start": 1094.49,
+   "end": 1100.09,
+   "text": "And they all kind of look the same because they're all half isoscandian, half semenus."
+  },
+  {
+   "start": 1100.09,
+   "end": 1104.17,
+   "text": "Seminus. He's talking about the specific red grape tomato they chose to use."
+  },
+  {
+   "start": 1104.17,
+   "end": 1108.17,
+   "text": "Yeah. And when you're going through a process like this, it takes a long time. You don't fix"
+  },
+  {
+   "start": 1108.17,
+   "end": 1110.89,
+   "text": "the problem on the first generation of hybrid plant."
+  },
+  {
+   "start": 1110.89,
+   "end": 1116.89,
+   "text": "It's the next generations after that. The traits start to sort out. So you have some that'll have"
+  },
+  {
+   "start": 1116.89,
+   "end": 1120.49,
+   "text": "like the red color and the good, and the good flavor."
+  },
+  {
+   "start": 1120.49,
+   "end": 1124.57,
+   "text": "So they select the plants that are closer to what they want. Breed again, repeat."
+  },
+  {
+   "start": 1124.57,
+   "end": 1129.61,
+   "text": "This is a slow process. To grow a new generation of plants, you need a whole growing season. Now,"
+  },
+  {
+   "start": 1129.61,
+   "end": 1135.13,
+   "text": "Tom and Pete had access to a greenhouse, so they could squeeze two growing seasons in per year,"
+  },
+  {
+   "start": 1135.13,
+   "end": 1140.25,
+   "text": "but still slow. So you get this big menagerie of different plants that you go through and"
+  },
+  {
+   "start": 1140.89,
+   "end": 1148.17,
+   "text": "look for what you want, which is this color with the flavor and plant architecture and"
+  },
+  {
+   "start": 1148.17,
+   "end": 1150.93,
+   "text": "and resistance to insects and diseases and things,"
+  },
+  {
+   "start": 1150.93,
+   "end": 1153.97,
+   "text": "that's also taking it into consideration as you're going."
+  },
+  {
+   "start": 1153.97,
+   "end": 1155.65,
+   "text": "Now, do you taste them also along the way?"
+  },
+  {
+   "start": 1155.65,
+   "end": 1156.49,
+   "text": "Oh, yeah."
+  },
+  {
+   "start": 1156.49,
+   "end": 1158.37,
+   "text": "And if you taste one that's like the greatest tomato"
+  },
+  {
+   "start": 1158.37,
+   "end": 1159.61,
+   "text": "you've ever eaten, are you like,"
+  },
+  {
+   "start": 1159.61,
+   "end": 1162.21,
+   "text": "oh, spit the seeds out, spit, we need to save these seeds."
+  },
+  {
+   "start": 1162.21,
+   "end": 1163.05,
+   "text": "Like, how do you..."
+  },
+  {
+   "start": 1163.05,
+   "end": 1166.21,
+   "text": "Well, you don't really take it that seriously"
+  },
+  {
+   "start": 1166.21,
+   "end": 1169.57,
+   "text": "because the chances that you picked one fruit that,"
+  },
+  {
+   "start": 1169.57,
+   "end": 1173.69,
+   "text": "oh, this is the one that's got all the crown jewels in it"
+  },
+  {
+   "start": 1173.69,
+   "end": 1174.93,
+   "text": "are pretty low."
+  },
+  {
+   "start": 1174.93,
+   "end": 1176.97,
+   "text": "After 12 generations of growing."
+  },
+  {
+   "start": 1176.97,
+   "end": 1180.75,
+   "text": "So six years of breeding and selecting, they felt like they had nailed it."
+  },
+  {
+   "start": 1180.75,
+   "end": 1187.03,
+   "text": "A tomato that was sweet and colorful, like the ISIS candy, but sized like the very popular"
+  },
+  {
+   "start": 1187.03,
+   "end": 1189.43,
+   "text": "and hardier grape tomato."
+  },
+  {
+   "start": 1189.43,
+   "end": 1194.27,
+   "text": "It was time for the agricultural industrial complex to step in."
+  },
+  {
+   "start": 1194.27,
+   "end": 1197.59,
+   "text": "Yet, universities have teams built to handle staff inventions."
+  },
+  {
+   "start": 1197.59,
+   "end": 1202.23,
+   "text": "New medicines, semiconductors, like those tomatoes need trademarking and other intellectual"
+  },
+  {
+   "start": 1202.23,
+   "end": 1203.51,
+   "text": "property protections."
+  },
+  {
+   "start": 1203.51,
+   "end": 1205.15,
+   "text": "They also need marketing plans."
+  },
+  {
+   "start": 1205.15,
+   "end": 1211.81,
+   "text": "In 2019, Tom and Pete reached out to Rutgers Office for Research to say they were ready"
+  },
+  {
+   "start": 1211.81,
+   "end": 1213.29,
+   "text": "to hand off their baby."
+  },
+  {
+   "start": 1213.29,
+   "end": 1215.77,
+   "text": "How did you feel making that call?"
+  },
+  {
+   "start": 1215.77,
+   "end": 1218.86,
+   "text": "Well, just thank God we got somewhere."
+  },
+  {
+   "start": 1218.86,
+   "end": 1226.29,
+   "text": "Well, I think that's really one of the most gratifying parts of being an inventor, including"
+  },
+  {
+   "start": 1226.29,
+   "end": 1231.89,
+   "text": "a plant breeder, is to have an idea that seems kind of harebrained because we're looking"
+  },
+  {
+   "start": 1231.89,
+   "end": 1236.93,
+   "text": "at this ISIS candy back in 2011 and thinking, well, that's unique, but boy, it has an awful"
+  },
+  {
+   "start": 1236.93,
+   "end": 1243.53,
+   "text": "lot of problems. So yeah, it's a great feeling to see that the principles that you learned"
+  },
+  {
+   "start": 1243.53,
+   "end": 1247.89,
+   "text": "in plant breeding and applied the skills that they actually do work."
+  },
+  {
+   "start": 1247.89,
+   "end": 1252.37,
+   "text": "Ultimately, with the Rutgers business folks who named Pete and Tom's tomato, the Scarlet"
+  },
+  {
+   "start": 1252.37,
+   "end": 1257.61,
+   "text": "Sunrise, color of sunrise and Scarlet like Rutgers, the Scarlet Knights."
+  },
+  {
+   "start": 1257.61,
+   "end": 1262.05,
+   "text": "So Pete and Tom, they have a new tomato that's ready for the world, complete with its own"
+  },
+  {
+   "start": 1262.05,
+   "end": 1263.29,
+   "text": "brand name."
+  },
+  {
+   "start": 1263.29,
+   "end": 1269.87,
+   "text": "But what I wanted to know was how big really is the opportunity for this type of tomato?"
+  },
+  {
+   "start": 1269.87,
+   "end": 1271.79,
+   "text": "Just in terms of the market."
+  },
+  {
+   "start": 1271.79,
+   "end": 1274.67,
+   "text": "So if I go into the, I'm trying to picture the tomato aisle."
+  },
+  {
+   "start": 1274.67,
+   "end": 1277.55,
+   "text": "So I see big old giant tomatoes."
+  },
+  {
+   "start": 1277.55,
+   "end": 1280.19,
+   "text": "Those are probably what we would call beef steaks."
+  },
+  {
+   "start": 1280.19,
+   "end": 1281.19,
+   "text": "Okay."
+  },
+  {
+   "start": 1281.19,
+   "end": 1282.19,
+   "text": "Yes."
+  },
+  {
+   "start": 1282.19,
+   "end": 1283.19,
+   "text": "And is that a huge part of the tomato market?"
+  },
+  {
+   "start": 1283.19,
+   "end": 1286.22,
+   "text": "50%, 60%, 20%?"
+  },
+  {
+   "start": 1286.22,
+   "end": 1289.38,
+   "text": "I would say the really large, multi-locular is..."
+  },
+  {
+   "start": 1289.38,
+   "end": 1290.68,
+   "text": "Sorry, multi-locular?"
+  },
+  {
+   "start": 1290.68,
+   "end": 1293.5,
+   "text": "Yeah, when tomatoes have little cells in them,"
+  },
+  {
+   "start": 1293.5,
+   "end": 1296.66,
+   "text": "if you open them up, you see that they have little areas"
+  },
+  {
+   "start": 1296.66,
+   "end": 1298.62,
+   "text": "where there's gel and then there's..."
+  },
+  {
+   "start": 1298.62,
+   "end": 1301.26,
+   "text": "Tomatoes get bigger by adding locules."
+  },
+  {
+   "start": 1301.26,
+   "end": 1303.26,
+   "text": "Is that like where the funicular is?"
+  },
+  {
+   "start": 1306.8,
+   "end": 1307.64,
+   "text": "Funicul..."
+  },
+  {
+   "start": 1308.64,
+   "end": 1309.96,
+   "text": "Follacule?"
+  },
+  {
+   "start": 1309.96,
+   "end": 1310.92,
+   "text": "The follacule."
+  },
+  {
+   "start": 1310.92,
+   "end": 1312.28,
+   "text": "What's the name of that part of the insides?"
+  },
+  {
+   "start": 1312.28,
+   "end": 1314.56,
+   "text": "I don't know, but a funicular is like..."
+  },
+  {
+   "start": 1314.56,
+   "end": 1315.4,
+   "text": "Is that a funicular?"
+  },
+  {
+   "start": 1315.4,
+   "end": 1316.6,
+   "text": "A funicular is like a gondolizing."
+  },
+  {
+   "start": 1316.6,
+   "end": 1319.12,
+   "text": "I don't know, I was, no."
+  },
+  {
+   "start": 1319.12,
+   "end": 1321.44,
+   "text": "Finicula's like a, like a,"
+  },
+  {
+   "start": 1321.44,
+   "end": 1323.0,
+   "text": "I don't recall finicular."
+  },
+  {
+   "start": 1323.0,
+   "end": 1324.96,
+   "text": "It's like an incline, finicula's like an incline."
+  },
+  {
+   "start": 1324.96,
+   "end": 1326.2,
+   "text": "No, it's like a."
+  },
+  {
+   "start": 1326.2,
+   "end": 1327.92,
+   "text": "No, isn't there a part of the inside of tomato"
+  },
+  {
+   "start": 1327.92,
+   "end": 1330.86,
+   "text": "with a word that sounds like that?"
+  },
+  {
+   "start": 1330.86,
+   "end": 1331.82,
+   "text": "Not that I can think of."
+  },
+  {
+   "start": 1331.82,
+   "end": 1332.66,
+   "text": "No man."
+  },
+  {
+   "start": 1332.66,
+   "end": 1334.02,
+   "text": "You might be right, but I."
+  },
+  {
+   "start": 1334.02,
+   "end": 1335.86,
+   "text": "Dan did some googling in the car on the way here."
+  },
+  {
+   "start": 1335.86,
+   "end": 1337.78,
+   "text": "I was googling tomato anatomy before he got here"
+  },
+  {
+   "start": 1337.78,
+   "end": 1339.94,
+   "text": "and I could swear there's something with it."
+  },
+  {
+   "start": 1339.94,
+   "end": 1340.78,
+   "text": "Anyway."
+  },
+  {
+   "start": 1340.78,
+   "end": 1341.62,
+   "text": "It could be, but we don't."
+  },
+  {
+   "start": 1341.62,
+   "end": 1342.46,
+   "text": "It was a good effort."
+  },
+  {
+   "start": 1342.46,
+   "end": 1343.74,
+   "text": "10 out of 10, Dan."
+  },
+  {
+   "start": 1343.74,
+   "end": 1345.22,
+   "text": "Let's put it this way, it's been a long time"
+  },
+  {
+   "start": 1345.22,
+   "end": 1346.74,
+   "text": "since either one of us went to school."
+  },
+  {
+   "start": 1346.74,
+   "end": 1347.74,
+   "text": "Okay."
+  },
+  {
+   "start": 1347.74,
+   "end": 1349.74,
+   "text": "Dan too, apparently."
+  },
+  {
+   "start": 1349.74,
+   "end": 1350.74,
+   "text": "Very quick possible."
+  },
+  {
+   "start": 1350.74,
+   "end": 1356.52,
+   "text": "All right, Candy, I think we can agree that I completely overwhelmed Pete and Tom with"
+  },
+  {
+   "start": 1356.52,
+   "end": 1358.88,
+   "text": "my depth of tomato anatomy knowledge."
+  },
+  {
+   "start": 1358.88,
+   "end": 1362.84,
+   "text": "Yes, and your knowledge of public transportation on hillside."
+  },
+  {
+   "start": 1362.84,
+   "end": 1367.36,
+   "text": "And I think you named follicles in there too, which is just a different kind of anatomy."
+  },
+  {
+   "start": 1367.36,
+   "end": 1368.36,
+   "text": "Well done."
+  },
+  {
+   "start": 1368.36,
+   "end": 1369.36,
+   "text": "Look, tomatoes have a lot of parts."
+  },
+  {
+   "start": 1369.36,
+   "end": 1370.86,
+   "text": "Even Pete and Tom don't know all of them."
+  },
+  {
+   "start": 1370.86,
+   "end": 1372.36,
+   "text": "Yeah, that's right."
+  },
+  {
+   "start": 1372.36,
+   "end": 1373.81,
+   "text": "Sure."
+  },
+  {
+   "start": 1373.81,
+   "end": 1376.57,
+   "text": "All right, so coming up after the break, we're going to look into the tomato market with"
+  },
+  {
+   "start": 1376.57,
+   "end": 1377.57,
+   "text": "an economist."
+  },
+  {
+   "start": 1377.57,
+   "end": 1380.45,
+   "text": "and new kinds of fancy tomatoes is too many."
+  },
+  {
+   "start": 1380.45,
+   "end": 1382.61,
+   "text": "Then later, I finally get my first taste"
+  },
+  {
+   "start": 1382.61,
+   "end": 1383.93,
+   "text": "of the Scarlet Sunrise."
+  },
+  {
+   "start": 1383.93,
+   "end": 1386.41,
+   "text": "Will it change how I think about grape tomatoes,"
+  },
+  {
+   "start": 1386.41,
+   "end": 1388.65,
+   "text": "or will it be the first thing in the history of New Jersey"
+  },
+  {
+   "start": 1388.65,
+   "end": 1390.05,
+   "text": "that isn't perfect?"
+  },
+  {
+   "start": 1390.05,
+   "end": 1397.55,
+   "text": "Stick around."
+  },
+  {
+   "start": 1397.55,
+   "end": 1400.05,
+   "text": "Have you taken a good hard look at your closet lately?"
+  },
+  {
+   "start": 1400.05,
+   "end": 1402.31,
+   "text": "Are the clothes in there you just never wear?"
+  },
+  {
+   "start": 1402.31,
+   "end": 1403.75,
+   "text": "Clothes you don't like anymore."
+  },
+  {
+   "start": 1403.75,
+   "end": 1405.63,
+   "text": "Clothes you think you're gonna wear one day,"
+  },
+  {
+   "start": 1405.63,
+   "end": 1408.19,
+   "text": "but it's just never, ever happened."
+  },
+  {
+   "start": 1408.19,
+   "end": 1410.19,
+   "text": "Are the things you'd like to get rid of,"
+  },
+  {
+   "start": 1410.19,
+   "end": 1412.15,
+   "text": "but you don't wanna just throw away?"
+  },
+  {
+   "start": 1412.15,
+   "end": 1413.83,
+   "text": "That's where Vinted comes in."
+  },
+  {
+   "start": 1413.83,
+   "end": 1417.99,
+   "text": "Whatever you're trying to do, make space, declutter, earn some money,"
+  },
+  {
+   "start": 1417.99,
+   "end": 1420.35,
+   "text": "find the clothes you don't want a good home."
+  },
+  {
+   "start": 1420.35,
+   "end": 1421.79,
+   "text": "It's the solution."
+  },
+  {
+   "start": 1421.79,
+   "end": 1424.19,
+   "text": "Vinted makes it really easy."
+  },
+  {
+   "start": 1424.19,
+   "end": 1426.31,
+   "text": "They make it simple to list your clothes,"
+  },
+  {
+   "start": 1426.31,
+   "end": 1430.87,
+   "text": "and once an item sells, Vinted creates the prepaid shipping label for you."
+  },
+  {
+   "start": 1430.87,
+   "end": 1435.43,
+   "text": "And there's no selling fees, so you keep everything that you earn."
+  },
+  {
+   "start": 1435.43,
+   "end": 1437.47,
+   "text": "The clothes you're done with will have a new life,"
+  },
+  {
+   "start": 1437.47,
+   "end": 1441.95,
+   "text": "and you'll have more space and more cash to spend on whatever you like."
+  },
+  {
+   "start": 1441.95,
+   "end": 1444.51,
+   "text": "including more clothes, if that's your style."
+  },
+  {
+   "start": 1444.51,
+   "end": 1446.67,
+   "text": "See what's hiding in your closet."
+  },
+  {
+   "start": 1446.67,
+   "end": 1449.95,
+   "text": "You might be surprised how much you can earn with Vintage."
+  },
+  {
+   "start": 1449.95,
+   "end": 1452.67,
+   "text": "Download the Vintage app for free to start listing"
+  },
+  {
+   "start": 1452.67,
+   "end": 1459.56,
+   "text": "with no seller fees."
+  },
+  {
+   "start": 1459.56,
+   "end": 1461.64,
+   "text": "There's nothing quite like having pieces in your closet"
+  },
+  {
+   "start": 1461.64,
+   "end": 1463.72,
+   "text": "that you love and that you know you can count on"
+  },
+  {
+   "start": 1463.72,
+   "end": 1467.16,
+   "text": "for any occasion, except maybe giving someone else"
+  },
+  {
+   "start": 1467.16,
+   "end": 1468.68,
+   "text": "that same feeling."
+  },
+  {
+   "start": 1468.68,
+   "end": 1470.92,
+   "text": "This holiday season, Quince is where you can find"
+  },
+  {
+   "start": 1470.92,
+   "end": 1472.2,
+   "text": "those pieces."
+  },
+  {
+   "start": 1472.2,
+   "end": 1474.28,
+   "text": "Quince makes elevated, everyday essentials"
+  },
+  {
+   "start": 1474.28,
+   "end": 1479.72,
+   "text": "using premium materials like Mongolian cashmere, organic cotton, and premium stretch denim."
+  },
+  {
+   "start": 1479.72,
+   "end": 1483.8,
+   "text": "They're all the kind of pieces you'd be just as happy to give as you would be to receive."
+  },
+  {
+   "start": 1484.36,
+   "end": 1488.92,
+   "text": "I know they make a lot of things that are great for layering. I have some. Cozy cashmere hats,"
+  },
+  {
+   "start": 1488.92,
+   "end": 1493.48,
+   "text": "chunky fisherman sweaters, patch pocket pants, and denim and other materials."
+  },
+  {
+   "start": 1493.48,
+   "end": 1497.64,
+   "text": "Underlayers, too. Ten-cell exercise clothes. Lots of good stuff."
+  },
+  {
+   "start": 1497.64,
+   "end": 1502.84,
+   "text": "Everything at Quince is priced 50-80% less than similar brands. They work directly with factories"
+  },
+  {
+   "start": 1502.84,
+   "end": 1507.28,
+   "text": "is to cut out the middlemen so you can give luxury quality pieces without the luxury price"
+  },
+  {
+   "start": 1507.28,
+   "end": 1508.28,
+   "text": "ad."
+  },
+  {
+   "start": 1508.28,
+   "end": 1509.72,
+   "text": "And they don't just have clothes."
+  },
+  {
+   "start": 1509.72,
+   "end": 1514.76,
+   "text": "When it comes to gifting, Quince has leather bags, hotel quality bedding, chef grade cookware,"
+  },
+  {
+   "start": 1514.76,
+   "end": 1517.0,
+   "text": "five star luggage, kids clothes."
+  },
+  {
+   "start": 1517.0,
+   "end": 1521.98,
+   "text": "Basically, there are plenty of ways to find something special for everyone on your list,"
+  },
+  {
+   "start": 1521.98,
+   "end": 1524.51,
+   "text": "and they'll be thrilled to receive it."
+  },
+  {
+   "start": 1524.51,
+   "end": 1527.19,
+   "text": "Give the gift of quality this holiday season."
+  },
+  {
+   "start": 1527.19,
+   "end": 1531.67,
+   "text": "Download the Quince app for app exclusive offers or go to quince.com."
+  },
+  {
+   "start": 1531.67,
+   "end": 1538.67,
+   "text": "free shipping on your order and 365 day returns. Now available in Canada and the UK too. And"
+  },
+  {
+   "start": 1538.67,
+   "end": 1543.11,
+   "text": "when Quince asks where you heard about them, let them know it was Decoder Ring. It's the"
+  },
+  {
+   "start": 1543.11,
+   "end": 1545.15,
+   "text": "best way to support the show."
+  },
+  {
+   "start": 1545.15,
+   "end": 1550.94,
+   "text": "All right, back to the show and I'm joined once again by Kenny Malone from Planet Money."
+  },
+  {
+   "start": 1550.94,
+   "end": 1551.94,
+   "text": "Hey Kenny."
+  },
+  {
+   "start": 1551.94,
+   "end": 1552.94,
+   "text": "Hi Dan."
+  },
+  {
+   "start": 1552.94,
+   "end": 1557.58,
+   "text": "So, since the success of Honeycrisp, we've seen this explosion of all different branded"
+  },
+  {
+   "start": 1557.58,
+   "end": 1561.5,
+   "text": "fruits and veggies. And we've talked about how the incentives that universities have"
+  },
+  {
+   "start": 1561.5,
+   "end": 1564.2,
+   "text": "to create new products have changed over the years."
+  },
+  {
+   "start": 1564.2,
+   "end": 1566.1,
+   "text": "But it is more than just that."
+  },
+  {
+   "start": 1566.1,
+   "end": 1568.3,
+   "text": "And to understand what else has changed,"
+  },
+  {
+   "start": 1568.3,
+   "end": 1571.02,
+   "text": "we call it Miguel Gomez of Cornell University."
+  },
+  {
+   "start": 1571.02,
+   "end": 1574.7,
+   "text": "I am an economist, especially I seen on specialty crops,"
+  },
+  {
+   "start": 1574.7,
+   "end": 1577.78,
+   "text": "supply chains from genetics to consumers"
+  },
+  {
+   "start": 1577.78,
+   "end": 1579.6,
+   "text": "in fresh produce in particular."
+  },
+  {
+   "start": 1579.6,
+   "end": 1581.46,
+   "text": "Do you have a favorite vegetable fruit?"
+  },
+  {
+   "start": 1581.46,
+   "end": 1582.5,
+   "text": "Artichokes."
+  },
+  {
+   "start": 1582.5,
+   "end": 1583.74,
+   "text": "Hey!"
+  },
+  {
+   "start": 1583.74,
+   "end": 1585.5,
+   "text": "Oh, that's a curveball."
+  },
+  {
+   "start": 1585.5,
+   "end": 1587.06,
+   "text": "Are you buying fresh artichokes"
+  },
+  {
+   "start": 1587.06,
+   "end": 1589.38,
+   "text": "and then like peeling them and taking them apart by hand?"
+  },
+  {
+   "start": 1589.38,
+   "end": 1596.02,
+   "text": "Absolutely, and putting them to steam and then doing them with butter and then eat them."
+  },
+  {
+   "start": 1596.02,
+   "end": 1601.06,
+   "text": "I don't know, Artichokes are an awful lot of work for me. But anyway, first order business,"
+  },
+  {
+   "start": 1601.06,
+   "end": 1605.7,
+   "text": "a gut check with the professor. We aren't imagining that our grocery store has exploded with all this"
+  },
+  {
+   "start": 1605.7,
+   "end": 1611.86,
+   "text": "superstar branded produce, right? You are absolutely right. If you look at any fresh"
+  },
+  {
+   "start": 1611.86,
+   "end": 1620.54,
+   "text": "fresh produce category, there is a raise for differentiation in the fresh product category."
+  },
+  {
+   "start": 1620.54,
+   "end": 1629.06,
+   "text": "The market is going toward this crazy amount of new options in each product category."
+  },
+  {
+   "start": 1629.06,
+   "end": 1630.78,
+   "text": "Yes, our instinct was right, Dan."
+  },
+  {
+   "start": 1630.78,
+   "end": 1631.78,
+   "text": "We were correct."
+  },
+  {
+   "start": 1631.78,
+   "end": 1633.38,
+   "text": "So, okay, great."
+  },
+  {
+   "start": 1633.38,
+   "end": 1634.58,
+   "text": "Why is this happening?"
+  },
+  {
+   "start": 1634.58,
+   "end": 1640.3,
+   "text": "Well, part of the story has to do with growers trying to escape this classic economic pitfall"
+  },
+  {
+   "start": 1640.3,
+   "end": 1645.18,
+   "text": "known as the commodity trap. Yeah, so if you grow soybeans, for example, you're"
+  },
+  {
+   "start": 1645.18,
+   "end": 1649.46,
+   "text": "growing a commodity crop. To an everyday consumer, a soybean is a soybean is a"
+  },
+  {
+   "start": 1649.46,
+   "end": 1653.54,
+   "text": "soybean. And so the only way for you to compete with the other soybean growers is"
+  },
+  {
+   "start": 1653.54,
+   "end": 1657.3,
+   "text": "by selling your soybeans at a lower price. That sets up this race to the"
+  },
+  {
+   "start": 1657.3,
+   "end": 1661.38,
+   "text": "bottom and it's a really tough way to make a living. But to escape that trap,"
+  },
+  {
+   "start": 1661.38,
+   "end": 1666.1,
+   "text": "you need to find a way to differentiate your product, make your thing"
+  },
+  {
+   "start": 1666.1,
+   "end": 1670.54,
+   "text": "special somehow. And then ideally you can charge more for it."
+  },
+  {
+   "start": 1670.54,
+   "end": 1674.9,
+   "text": "And Miguel told us there are a number of ways to differentiate. On one end of the spectrum,"
+  },
+  {
+   "start": 1674.9,
+   "end": 1679.02,
+   "text": "take a boring old commodity vegetable and be really clever about how you package it."
+  },
+  {
+   "start": 1679.02,
+   "end": 1687.54,
+   "text": "Here is my favorite one. Love Beats. Love Beats is like a brand of the vegetable Beats."
+  },
+  {
+   "start": 1687.54,
+   "end": 1692.9,
+   "text": "Something that is as accommodative as you can find that are Beats. Love Beats. Yeah,"
+  },
+  {
+   "start": 1692.9,
+   "end": 1695.86,
+   "text": "The Love Beats Company sells Beats."
+  },
+  {
+   "start": 1695.86,
+   "end": 1697.3,
+   "text": "They are packaged."
+  },
+  {
+   "start": 1697.3,
+   "end": 1698.74,
+   "text": "They're well branded."
+  },
+  {
+   "start": 1698.74,
+   "end": 1701.14,
+   "text": "They're often pickled or splashed with balsamic."
+  },
+  {
+   "start": 1701.14,
+   "end": 1706.94,
+   "text": "So slightly more than just raw commodity Beats, but also they are still just Beats, to be"
+  },
+  {
+   "start": 1706.94,
+   "end": 1707.94,
+   "text": "clear."
+  },
+  {
+   "start": 1707.94,
+   "end": 1709.22,
+   "text": "They are excellent quality."
+  },
+  {
+   "start": 1709.22,
+   "end": 1711.7,
+   "text": "They are nicely packaged."
+  },
+  {
+   "start": 1711.7,
+   "end": 1713.18,
+   "text": "The size is uniform."
+  },
+  {
+   "start": 1713.18,
+   "end": 1714.44,
+   "text": "They are not huge."
+  },
+  {
+   "start": 1714.44,
+   "end": 1716.14,
+   "text": "Are those Beats proprietary?"
+  },
+  {
+   "start": 1716.14,
+   "end": 1717.14,
+   "text": "No."
+  },
+  {
+   "start": 1717.14,
+   "end": 1718.82,
+   "text": "The genetics are not proprietary."
+  },
+  {
+   "start": 1718.82,
+   "end": 1719.82,
+   "text": "No, right."
+  },
+  {
+   "start": 1719.82,
+   "end": 1722.66,
+   "text": "Like Miguel says, there are no special patented genetics here."
+  },
+  {
+   "start": 1722.66,
+   "end": 1728.14,
+   "text": "beets is just carefully selecting beets, often dressing them up, branding them really"
+  },
+  {
+   "start": 1728.14,
+   "end": 1733.62,
+   "text": "well, and then as a result, they've taken a commodity vegetable and can charge more."
+  },
+  {
+   "start": 1733.62,
+   "end": 1736.3,
+   "text": "So that's one way you differentiate a commodity crop."
+  },
+  {
+   "start": 1736.3,
+   "end": 1738.98,
+   "text": "Miguel says the other way is intellectual property."
+  },
+  {
+   "start": 1738.98,
+   "end": 1742.9,
+   "text": "You create a vegetable or fruit that's actually genetically different and better, then get"
+  },
+  {
+   "start": 1742.9,
+   "end": 1744.54,
+   "text": "legal protection for that plant."
+  },
+  {
+   "start": 1744.54,
+   "end": 1746.94,
+   "text": "That's what Rutgers is doing with Scarlet Sunrise."
+  },
+  {
+   "start": 1746.94,
+   "end": 1749.94,
+   "text": "Another perfect example, the cotton candy grape."
+  },
+  {
+   "start": 1749.94,
+   "end": 1754.94,
+   "text": "It is a super sweet grape that tastes like cotton candy."
+  },
+  {
+   "start": 1755.74,
+   "end": 1758.1,
+   "text": "So they're not spraying it with cotton candy flavor,"
+  },
+  {
+   "start": 1758.1,
+   "end": 1759.54,
+   "text": "which was my assumption."
+  },
+  {
+   "start": 1759.54,
+   "end": 1760.38,
+   "text": "Not at all, not at all."
+  },
+  {
+   "start": 1760.38,
+   "end": 1764.82,
+   "text": "It's plum breeding and identifying the type of variety"
+  },
+  {
+   "start": 1764.82,
+   "end": 1769.42,
+   "text": "that produces that type of very profile of flavor."
+  },
+  {
+   "start": 1769.42,
+   "end": 1770.5,
+   "text": "Do you think someone was like,"
+  },
+  {
+   "start": 1770.5,
+   "end": 1772.42,
+   "text": "oh my God, we just made the worst grape."
+  },
+  {
+   "start": 1772.42,
+   "end": 1773.58,
+   "text": "It's cloying, it's terrible."
+  },
+  {
+   "start": 1773.58,
+   "end": 1775.78,
+   "text": "And someone in the back was like, I got it."
+  },
+  {
+   "start": 1775.78,
+   "end": 1777.1,
+   "text": "Let's sell it to kids."
+  },
+  {
+   "start": 1777.1,
+   "end": 1784.36,
+   "text": "I would like to see a double blind study professor because I yes the cotton candy grapes are very sweet"
+  },
+  {
+   "start": 1784.42,
+   "end": 1790.54,
+   "text": "Yes, do they truly taste like cotton candy or do is that a trick our brains play on us because they are called"
+  },
+  {
+   "start": 1790.54,
+   "end": 1793.98,
+   "text": "Right, and I think you're right. I think you're right"
+  },
+  {
+   "start": 1793.98,
+   "end": 1801.4,
+   "text": "And we you know we study that I call this the look Lecroy phenomenon you are gonna be a lot of ideas about research, you know"
+  },
+  {
+   "start": 1803.26,
+   "end": 1805.82,
+   "text": "I think we should launch cotton candy grapefruit"
+  },
+  {
+   "start": 1805.82,
+   "end": 1808.82,
+   "text": "I think so. Oh my God. I am."
+  },
+  {
+   "start": 1808.82,
+   "end": 1812.82,
+   "text": "Don't change anything. Just leave it regular ass grapefruit. See what happens."
+  },
+  {
+   "start": 1812.82,
+   "end": 1818.82,
+   "text": "So we talked about how influential the honey crisp was and there's so many kinds of apples now."
+  },
+  {
+   "start": 1818.82,
+   "end": 1823.82,
+   "text": "How close are we to market saturation with all these varieties of apples?"
+  },
+  {
+   "start": 1823.82,
+   "end": 1834.88,
+   "text": "That's difficult. We don't have hard data to show that, but in my humble opinion,"
+  },
+  {
+   "start": 1834.88,
+   "end": 1841.12,
+   "text": "opinion, I think we are past that threshold. Yeah, Miguel says people don't seem to be eating"
+  },
+  {
+   "start": 1841.12,
+   "end": 1847.44,
+   "text": "like more apples in total. So if you were to invent a new apple, you're just going to be jockeying"
+  },
+  {
+   "start": 1847.44,
+   "end": 1853.2,
+   "text": "for space in that already crowded apple display. And you know, if you are a new inventor, and you"
+  },
+  {
+   "start": 1853.2,
+   "end": 1858.32,
+   "text": "try to jump in there, it's just going to be harder to get a consumer to try your new fancy apple."
+  },
+  {
+   "start": 1858.32,
+   "end": 1863.68,
+   "text": "You know, there is what we call the cost of searching for consumers. You know, when you have"
+  },
+  {
+   "start": 1863.68,
+   "end": 1868.48,
+   "text": "Too many options. It becomes a burden to consumers to choose."
+  },
+  {
+   "start": 1868.48,
+   "end": 1872.48,
+   "text": "I tried to buy almond butter a few weeks ago and I almost had a panic attack in the aisle."
+  },
+  {
+   "start": 1872.48,
+   "end": 1873.28,
+   "text": "Exactly."
+  },
+  {
+   "start": 1875.48,
+   "end": 1882.48,
+   "text": "However, this is not the landscape for Scarlet Sunrise. Miguel thinks there's still plenty of room for new tomato varieties."
+  },
+  {
+   "start": 1882.48,
+   "end": 1887.68,
+   "text": "Definitely. We are not in the moment of saturation. There is a lot of appetite."
+  },
+  {
+   "start": 1887.68,
+   "end": 1891.28,
+   "text": "In fact, the category is increasing."
+  },
+  {
+   "start": 1891.28,
+   "end": 1896.56,
+   "text": "If you look at the shelf space of tomatoes in many supermarkets, it's increasing, not"
+  },
+  {
+   "start": 1896.56,
+   "end": 1900.24,
+   "text": "dramatically, but it's increasing maybe two, three years."
+  },
+  {
+   "start": 1900.24,
+   "end": 1908.08,
+   "text": "We may come to a more steady state in which say, hey, this is enough product variety and"
+  },
+  {
+   "start": 1908.08,
+   "end": 1914.04,
+   "text": "we have found all the uses for tomatoes, you know, as a snack or as a midnight snack,"
+  },
+  {
+   "start": 1914.04,
+   "end": 1915.04,
+   "text": "morning snack."
+  },
+  {
+   "start": 1915.04,
+   "end": 1921.2,
+   "text": "Throw it throwing at people on stages who are performing poorly. We're not doing that enough. I'd say"
+  },
+  {
+   "start": 1921.7,
+   "end": 1924.94,
+   "text": "Now I will say I bet I bet that goes down as"
+  },
+  {
+   "start": 1925.3,
+   "end": 1931.36,
+   "text": "As we get more of these specialized varieties. That's a commodity. That's a commodity. I can't even afford to throw tomatoes at bad"
+  },
+  {
+   "start": 1931.36,
+   "end": 1935.64,
+   "text": "convenience anymore. Fuzzy bear poor fuzzy bear. He's just clean up there now"
+  },
+  {
+   "start": 1938.08,
+   "end": 1944.1,
+   "text": "So yeah, good news for fuzzy bear actually I think but also let's say good news for the folks at Rutgers here"
+  },
+  {
+   "start": 1944.1,
+   "end": 1950.48,
+   "text": "And the reason why there's still room for growth for new tomatoes and other kinds of produce,"
+  },
+  {
+   "start": 1950.48,
+   "end": 1954.6,
+   "text": "it's in part, as we said, growers want to get out of that commodity trap."
+  },
+  {
+   "start": 1954.6,
+   "end": 1956.4,
+   "text": "But Miguel says there's more to it than that."
+  },
+  {
+   "start": 1956.4,
+   "end": 1959.4,
+   "text": "Yeah, producers can push their fancy things all they want."
+  },
+  {
+   "start": 1959.4,
+   "end": 1961.9,
+   "text": "He's more interested in the demand side of this."
+  },
+  {
+   "start": 1961.9,
+   "end": 1965.3,
+   "text": "I am convinced that at the end of the day,"
+  },
+  {
+   "start": 1965.3,
+   "end": 1971.6,
+   "text": "the foods that you see in restaurants in the store are in response to what consumers want."
+  },
+  {
+   "start": 1971.6,
+   "end": 1976.92,
+   "text": "And I think that the consumer is the bigger driver of this of this change at the end"
+  },
+  {
+   "start": 1976.92,
+   "end": 1980.96,
+   "text": "But the thing that showed everybody that big time was the honey crisp"
+  },
+  {
+   "start": 1981.8,
+   "end": 1988.52,
+   "text": "Because it was when it came on the scene. It was so much more expensive. Mm-hmm. Yes, and that was the lesson that people were like, oh"
+  },
+  {
+   "start": 1989.44,
+   "end": 1994.44,
+   "text": "People will pay more if they think it really think it's better and to this day"
+  },
+  {
+   "start": 1994.44,
+   "end": 2000.84,
+   "text": "I mean if I come home with honey crisp my wife is like, let me see that receipt, you know those better have been on sale"
+  },
+  {
+   "start": 2001.6,
+   "end": 2003.84,
+   "text": "We don't make Honeycris money in this house."
+  },
+  {
+   "start": 2003.84,
+   "end": 2008.24,
+   "text": "So I think when we think of the commodities trap,"
+  },
+  {
+   "start": 2008.24,
+   "end": 2010.72,
+   "text": "we think of this as a producer push."
+  },
+  {
+   "start": 2010.72,
+   "end": 2014.56,
+   "text": "But what you feel like with a lot of these pieces of produce,"
+  },
+  {
+   "start": 2014.56,
+   "end": 2017.84,
+   "text": "this is coming from some"
+  },
+  {
+   "start": 2017.84,
+   "end": 2020.72,
+   "text": "fancification of our palates, our demands,"
+  },
+  {
+   "start": 2020.72,
+   "end": 2022.24,
+   "text": "because we're all learning how to eat"
+  },
+  {
+   "start": 2022.24,
+   "end": 2023.84,
+   "text": "and we're learning how to differentiate."
+  },
+  {
+   "start": 2023.84,
+   "end": 2024.72,
+   "text": "Absolutely."
+  },
+  {
+   "start": 2024.72,
+   "end": 2025.28,
+   "text": "Yes."
+  },
+  {
+   "start": 2025.28,
+   "end": 2027.84,
+   "text": "Of course, there is also a feedback loop"
+  },
+  {
+   "start": 2027.84,
+   "end": 2029.84,
+   "text": "between supply and demand here."
+  },
+  {
+   "start": 2029.84,
+   "end": 2037.58,
+   "text": "Growers can only escape the commodity trap if we are willing to buy into whatever they're selling a fancier thing at a higher price"
+  },
+  {
+   "start": 2037.58,
+   "end": 2044.84,
+   "text": "And if we are willing to buy in then more growers can try and escape the commodity trap and on and on and on"
+  },
+  {
+   "start": 2045.18,
+   "end": 2048.42,
+   "text": "What's the produce category that you feel like is ripe?"
+  },
+  {
+   "start": 2048.42,
+   "end": 2054.06,
+   "text": "No pun intended for some new innovation and branding dance been sitting on that pun for three days by the way"
+  },
+  {
+   "start": 2056.04,
+   "end": 2060.0,
+   "text": "What's your pick? I would say I will cause oh"
+  },
+  {
+   "start": 2061.02,
+   "end": 2070.82,
+   "text": "If you look at the genetic richness of avocado, different sizes, different flavors, different"
+  },
+  {
+   "start": 2070.82,
+   "end": 2077.98,
+   "text": "textures, level of grease, and if you look at the per capita consumption of avocado,"
+  },
+  {
+   "start": 2077.98,
+   "end": 2078.98,
+   "text": "it's just increasing."
+  },
+  {
+   "start": 2078.98,
+   "end": 2084.18,
+   "text": "It's the most successful category in the past 15 years in fresh produce."
+  },
+  {
+   "start": 2084.18,
+   "end": 2086.54,
+   "text": "So your pick is avocado, professor."
+  },
+  {
+   "start": 2086.54,
+   "end": 2087.9,
+   "text": "Here's my pick."
+  },
+  {
+   "start": 2087.9,
+   "end": 2089.9,
+   "text": "I pick mangoes."
+  },
+  {
+   "start": 2089.9,
+   "end": 2093.58,
+   "text": "Wow, I got my money on mangoes. I'll tell you why first of all"
+  },
+  {
+   "start": 2093.58,
+   "end": 2096.22,
+   "text": "There's a lot of varieties of mangoes out there already"
+  },
+  {
+   "start": 2096.26,
+   "end": 2101.1,
+   "text": "Yep, but but only a tiny handful that are widely available in US stores"
+  },
+  {
+   "start": 2101.1,
+   "end": 2106.12,
+   "text": "I think that for people who didn't grow up in a mango-centric food culture"
+  },
+  {
+   "start": 2106.74,
+   "end": 2110.82,
+   "text": "Cutting up getting the the inside of a mango out is is annoying"
+  },
+  {
+   "start": 2111.42,
+   "end": 2116.58,
+   "text": "The pit is gigantic if you could breed it to have a smaller pit and be easier to navigate"
+  },
+  {
+   "start": 2116.58,
+   "end": 2121.88,
+   "text": "I think that that would make more people want to buy them and I think if you could solve that problem"
+  },
+  {
+   "start": 2122.22,
+   "end": 2127.52,
+   "text": "You would be well in your way to selling more mangoes. I think you convinced me. I think"
+  },
+  {
+   "start": 2128.58,
+   "end": 2134.66,
+   "text": "No, that is true. That is true. I remember I grew up in Colombia and in the fire in the farm"
+  },
+  {
+   "start": 2134.66,
+   "end": 2137.04,
+   "text": "We had like nine different types of mangoes"
+  },
+  {
+   "start": 2138.12,
+   "end": 2139.86,
+   "text": "delicious"
+  },
+  {
+   "start": 2139.86,
+   "end": 2144.16,
+   "text": "Problem do you know they are not easy to eat and they are not easy to transport"
+  },
+  {
+   "start": 2144.16,
+   "end": 2147.76,
+   "text": "they are not easy to you. We don't know how to preserve them better."
+  },
+  {
+   "start": 2147.76,
+   "end": 2152.56,
+   "text": "How to... But the mango man is so and they have fiber."
+  },
+  {
+   "start": 2152.56,
+   "end": 2155.12,
+   "text": "They have... Oh, they're delicious."
+  },
+  {
+   "start": 2156.99,
+   "end": 2161.47,
+   "text": "Coming up, we return to the Rutgers research farm and finally get to taste the Scarlet Sunrise."
+  },
+  {
+   "start": 2162.03,
+   "end": 2167.63,
+   "text": "Then a twist. We discover that it may only be the beginning of something much bigger for tomatoes."
+  },
+  {
+   "start": 2167.63,
+   "end": 2168.67,
+   "text": "Stick around."
+  },
+  {
+   "start": 2168.67,
+   "end": 2177.68,
+   "text": "Ryzen knows that holiday math can be complicated."
+  },
+  {
+   "start": 2177.68,
+   "end": 2179.48,
+   "text": "Okay, let's see, we got the four kids."
+  },
+  {
+   "start": 2179.48,
+   "end": 2181.32,
+   "text": "Four gifts each."
+  },
+  {
+   "start": 2181.32,
+   "end": 2183.0,
+   "text": "Six teacher gifts?"
+  },
+  {
+   "start": 2183.0,
+   "end": 2183.84,
+   "text": "Mm-hmm."
+  },
+  {
+   "start": 2183.84,
+   "end": 2185.64,
+   "text": "Wait, oh, what do we get and Sandy?"
+  },
+  {
+   "start": 2185.64,
+   "end": 2186.48,
+   "text": "And the dogs."
+  },
+  {
+   "start": 2186.48,
+   "end": 2188.6,
+   "text": "Oh, can't forget the dogs."
+  },
+  {
+   "start": 2188.6,
+   "end": 2189.84,
+   "text": "Know what doesn't need math?"
+  },
+  {
+   "start": 2189.84,
+   "end": 2191.56,
+   "text": "Simplicity plan from Verizon."
+  },
+  {
+   "start": 2191.56,
+   "end": 2193.0,
+   "text": "One plan, one price."
+  },
+  {
+   "start": 2193.0,
+   "end": 2195.88,
+   "text": "Just $30 a line per month for you or the whole family."
+  },
+  {
+   "start": 2195.88,
+   "end": 2197.32,
+   "text": "The holidays are complicated."
+  },
+  {
+   "start": 2197.32,
+   "end": 2200.52,
+   "text": "Shopping our best deals and switching to Verizon is simple."
+  },
+  {
+   "start": 2200.52,
+   "end": 2202.6,
+   "text": "For new customers, $30 per line includes auto pay"
+  },
+  {
+   "start": 2202.6,
+   "end": 2207.83,
+   "text": "and switch discount, additional taxes fees in terms apply."
+  },
+  {
+   "start": 2207.83,
+   "end": 2209.95,
+   "text": "The holidays are busy enough without worrying"
+  },
+  {
+   "start": 2209.95,
+   "end": 2211.71,
+   "text": "about missed calls or customers."
+  },
+  {
+   "start": 2211.71,
+   "end": 2217.0,
+   "text": "But just because you're swamped doesn't mean people stop calling."
+  },
+  {
+   "start": 2217.0,
+   "end": 2220.36,
+   "text": "And if nobody picks up, that call goes to your competitor."
+  },
+  {
+   "start": 2220.36,
+   "end": 2223.48,
+   "text": "That's why over 90,000 companies choose Quo."
+  },
+  {
+   "start": 2223.48,
+   "end": 2226.08,
+   "text": "The business phone built for busy teams."
+  },
+  {
+   "start": 2226.08,
+   "end": 2228.72,
+   "text": "Smart call routing sends calls to the right person."
+  },
+  {
+   "start": 2228.72,
+   "end": 2231.04,
+   "text": "Shared numbers let your team cover for each other."
+  },
+  {
+   "start": 2231.04,
+   "end": 2235.0,
+   "text": "And an AI agent picks up when nobody can, capturing every lead."
+  },
+  {
+   "start": 2235.0,
+   "end": 2238.65,
+   "text": "So nothing falls through the cracks."
+  },
+  {
+   "start": 2238.65,
+   "end": 2240.01,
+   "text": "Money is on the line."
+  },
+  {
+   "start": 2240.01,
+   "end": 2242.05,
+   "text": "Always say hello with Quo."
+  },
+  {
+   "start": 2242.05,
+   "end": 2245.35,
+   "text": "Try Quo for free, plus get 20% off your first six months"
+  },
+  {
+   "start": 2245.35,
+   "end": 2247.65,
+   "text": "when you go to quo.com slash tech."
+  },
+  {
+   "start": 2247.65,
+   "end": 2256.68,
+   "text": "That's quo.com slash tech."
+  },
+  {
+   "start": 2256.68,
+   "end": 2258.4,
+   "text": "Welcome back."
+  },
+  {
+   "start": 2258.4,
+   "end": 2260.1,
+   "text": "Are these guys, I really, it's true,"
+  },
+  {
+   "start": 2260.1,
+   "end": 2261.24,
+   "text": "I can't tell if they're green."
+  },
+  {
+   "start": 2261.24,
+   "end": 2262.6,
+   "text": "I'm not seeing much."
+  },
+  {
+   "start": 2262.6,
+   "end": 2264.56,
+   "text": "You know, again, we plant them late"
+  },
+  {
+   "start": 2264.56,
+   "end": 2265.88,
+   "text": "so that we ripen up."
+  },
+  {
+   "start": 2265.88,
+   "end": 2267.56,
+   "text": "Back at the Rutgers Experimental Farm,"
+  },
+  {
+   "start": 2267.56,
+   "end": 2269.76,
+   "text": "we've been searching for a solid 30 minutes"
+  },
+  {
+   "start": 2269.76,
+   "end": 2273.64,
+   "text": "and still haven't found an actual proper ripie in the field."
+  },
+  {
+   "start": 2273.64,
+   "end": 2275.92,
+   "text": "Luckily, Tom has a backup plan."
+  },
+  {
+   "start": 2275.92,
+   "end": 2277.2,
+   "text": "Yeah, so you guys can have these."
+  },
+  {
+   "start": 2277.2,
+   "end": 2279.24,
+   "text": "They came out of my home garden."
+  },
+  {
+   "start": 2279.24,
+   "end": 2280.08,
+   "text": "Oh, wow."
+  },
+  {
+   "start": 2280.08,
+   "end": 2280.96,
+   "text": "All right."
+  },
+  {
+   "start": 2280.96,
+   "end": 2283.08,
+   "text": "And I planted them a little bit earlier."
+  },
+  {
+   "start": 2283.08,
+   "end": 2285.84,
+   "text": "Tom is holding one of those little pint baskets"
+  },
+  {
+   "start": 2285.84,
+   "end": 2289.08,
+   "text": "full of these gorgeous little yellow tomatoes"
+  },
+  {
+   "start": 2289.08,
+   "end": 2292.05,
+   "text": "with that telltale blush of red."
+  },
+  {
+   "start": 2292.05,
+   "end": 2294.29,
+   "text": "Actually, these are the Scarlet Sunrise."
+  },
+  {
+   "start": 2294.29,
+   "end": 2296.77,
+   "text": "These are actually a breeding line."
+  },
+  {
+   "start": 2296.77,
+   "end": 2299.88,
+   "text": "They were from Scarlet Sunrise."
+  },
+  {
+   "start": 2299.88,
+   "end": 2301.96,
+   "text": "It's a derivative Scarlet Sunrise."
+  },
+  {
+   "start": 2301.96,
+   "end": 2303.44,
+   "text": "Like what we were tasting out there."
+  },
+  {
+   "start": 2303.44,
+   "end": 2305.32,
+   "text": "Yeah, so the flavor and the fruit type"
+  },
+  {
+   "start": 2305.32,
+   "end": 2306.96,
+   "text": "came from Scarlet Sunrise."
+  },
+  {
+   "start": 2308.12,
+   "end": 2309.36,
+   "text": "Yeah, all right, fine, fine."
+  },
+  {
+   "start": 2309.36,
+   "end": 2312.48,
+   "text": "Technically, these are descendants of the Scarlet Sunrise."
+  },
+  {
+   "start": 2312.48,
+   "end": 2313.76,
+   "text": "And I guess once there's a trademark"
+  },
+  {
+   "start": 2313.76,
+   "end": 2314.96,
+   "text": "in legal plant protection,"
+  },
+  {
+   "start": 2314.96,
+   "end": 2316.96,
+   "text": "distinctions like Cousin of Breeding Line"
+  },
+  {
+   "start": 2316.96,
+   "end": 2318.08,
+   "text": "may matter technically."
+  },
+  {
+   "start": 2318.08,
+   "end": 2319.72,
+   "text": "But for our purposes,"
+  },
+  {
+   "start": 2319.72,
+   "end": 2322.32,
+   "text": "Tom is presenting us with actually ripe"
+  },
+  {
+   "start": 2322.32,
+   "end": 2324.12,
+   "text": "Scarlet Sunrise tomatoes."
+  },
+  {
+   "start": 2324.12,
+   "end": 2326.0,
+   "text": "Now, before we try this tomato,"
+  },
+  {
+   "start": 2326.0,
+   "end": 2327.92,
+   "text": "we asked Tom and Pete to each pop one."
+  },
+  {
+   "start": 2327.92,
+   "end": 2330.2,
+   "text": "He goes, we wanted to see what people who taste"
+  },
+  {
+   "start": 2330.2,
+   "end": 2332.2,
+   "text": "and evaluate hundreds of tomatoes"
+  },
+  {
+   "start": 2332.2,
+   "end": 2334.08,
+   "text": "each year are looking for."
+  },
+  {
+   "start": 2334.08,
+   "end": 2338.12,
+   "text": "All right."
+  },
+  {
+   "start": 2338.12,
+   "end": 2342.18,
+   "text": "Well, that was a little bit low in acidity,"
+  },
+  {
+   "start": 2342.18,
+   "end": 2345.6,
+   "text": "but high in sugar, good texture."
+  },
+  {
+   "start": 2346.7,
+   "end": 2349.74,
+   "text": "You know, I would give that a favorable score,"
+  },
+  {
+   "start": 2349.74,
+   "end": 2351.62,
+   "text": "maybe four out of five, something like that."
+  },
+  {
+   "start": 2351.62,
+   "end": 2353.22,
+   "text": "Yeah, it's got a good pop in the mouth,"
+  },
+  {
+   "start": 2353.22,
+   "end": 2355.58,
+   "text": "and it's got a good combination of sugar and acid."
+  },
+  {
+   "start": 2355.58,
+   "end": 2360.22,
+   "text": "So, you know, if it doesn't have any acid, it's bland."
+  },
+  {
+   "start": 2360.22,
+   "end": 2361.46,
+   "text": "And, right."
+  },
+  {
+   "start": 2361.46,
+   "end": 2364.38,
+   "text": "It's just sickly sweet, as opposed to, you know."
+  },
+  {
+   "start": 2364.38,
+   "end": 2365.86,
+   "text": "I love them."
+  },
+  {
+   "start": 2365.86,
+   "end": 2369.18,
+   "text": "They are so scientific tasting tomatoes."
+  },
+  {
+   "start": 2369.18,
+   "end": 2371.82,
+   "text": "They are earning their designation as plant nerds."
+  },
+  {
+   "start": 2371.82,
+   "end": 2373.14,
+   "text": "Yes, yeah."
+  },
+  {
+   "start": 2373.14,
+   "end": 2374.54,
+   "text": "But it was so interesting to watch this"
+  },
+  {
+   "start": 2374.54,
+   "end": 2377.38,
+   "text": "because like this is the process of developing"
+  },
+  {
+   "start": 2377.38,
+   "end": 2379.74,
+   "text": "a new tomato, like in some ways it's super scientific."
+  },
+  {
+   "start": 2379.74,
+   "end": 2381.18,
+   "text": "In some ways it's just like two guys"
+  },
+  {
+   "start": 2381.18,
+   "end": 2382.5,
+   "text": "in a field eating tomatoes."
+  },
+  {
+   "start": 2382.5,
+   "end": 2383.62,
+   "text": "You like this bud?"
+  },
+  {
+   "start": 2383.62,
+   "end": 2384.46,
+   "text": "Yeah, I like this."
+  },
+  {
+   "start": 2384.46,
+   "end": 2385.3,
+   "text": "Right, right, right, right, this one's good."
+  },
+  {
+   "start": 2385.3,
+   "end": 2386.22,
+   "text": "Do it like this, you know."
+  },
+  {
+   "start": 2386.22,
+   "end": 2387.58,
+   "text": "And it's like that over and over."
+  },
+  {
+   "start": 2387.58,
+   "end": 2389.46,
+   "text": "A cross breed taste of results discussed."
+  },
+  {
+   "start": 2389.46,
+   "end": 2391.18,
+   "text": "Repeat, repeat, repeat."
+  },
+  {
+   "start": 2391.18,
+   "end": 2392.7,
+   "text": "But you know, okay, great."
+  },
+  {
+   "start": 2392.7,
+   "end": 2395.62,
+   "text": "They are tasting dispassionately, objectively."
+  },
+  {
+   "start": 2395.62,
+   "end": 2398.04,
+   "text": "By this point, the only taste test that matters to me"
+  },
+  {
+   "start": 2398.04,
+   "end": 2400.16,
+   "text": "is whether or not this Scarlet Sunrise Tomato"
+  },
+  {
+   "start": 2400.16,
+   "end": 2405.16,
+   "text": "could convert notorious Grape Tomato hater, Dan Pashman."
+  },
+  {
+   "start": 2405.76,
+   "end": 2407.42,
+   "text": "I prefer the term Grape Tomato skeptic,"
+  },
+  {
+   "start": 2407.42,
+   "end": 2409.84,
+   "text": "but anyway, there was only one way to find out."
+  },
+  {
+   "start": 2409.84,
+   "end": 2413.27,
+   "text": "We just grab a Scarlet Sunrise and pop them in."
+  },
+  {
+   "start": 2413.27,
+   "end": 2415.58,
+   "text": "All right, all right."
+  },
+  {
+   "start": 2415.58,
+   "end": 2416.94,
+   "text": "Oh my gosh."
+  },
+  {
+   "start": 2416.94,
+   "end": 2420.04,
+   "text": "That's really good."
+  },
+  {
+   "start": 2420.04,
+   "end": 2423.92,
+   "text": "That is a full course tomato meal right there."
+  },
+  {
+   "start": 2423.92,
+   "end": 2424.76,
+   "text": "The pop."
+  },
+  {
+   "start": 2424.76,
+   "end": 2426.6,
+   "text": "There's a lot in a little package."
+  },
+  {
+   "start": 2426.6,
+   "end": 2427.44,
+   "text": "Yeah."
+  },
+  {
+   "start": 2427.44,
+   "end": 2433.28,
+   "text": "I told you Kenny that I was skeptical of grape tomatoes and the reason why I have often not like grape tomatoes"
+  },
+  {
+   "start": 2433.28,
+   "end": 2439.08,
+   "text": "I feel like they're too hard. Mm-hmm. You want to balance between the sort of the firmness and the soft juiciness of the pulp"
+  },
+  {
+   "start": 2439.08,
+   "end": 2445.58,
+   "text": "You don't want it to be mushy, but you also don't want it to be hard as a rock this I think solves that this is not too hard"
+  },
+  {
+   "start": 2445.58,
+   "end": 2450.76,
+   "text": "It's it's got a bit of a meatiness. That's very pleasant, which a good tomato should have it's a little bit meaty"
+  },
+  {
+   "start": 2450.8,
+   "end": 2455.2,
+   "text": "But it's still sort of yields to the bite it's soft and tender and it's got that sweetness and acidity"
+  },
+  {
+   "start": 2455.2,
+   "end": 2460.47,
+   "text": "So where can you try Scarlet Sunrise?"
+  },
+  {
+   "start": 2460.47,
+   "end": 2463.83,
+   "text": "Currently it's more of a specialty tomato being sold by a small seed company."
+  },
+  {
+   "start": 2463.83,
+   "end": 2468.03,
+   "text": "As it exists now, it may never have big mass commercial distribution because the current"
+  },
+  {
+   "start": 2468.03,
+   "end": 2470.43,
+   "text": "iteration is pretty expensive to grow."
+  },
+  {
+   "start": 2470.43,
+   "end": 2475.31,
+   "text": "But honestly, Tom and Pete's goal of helping New Jersey farmers here, this ended up going"
+  },
+  {
+   "start": 2475.31,
+   "end": 2479.75,
+   "text": "well beyond just inventing another tasty tomato for them to sell."
+  },
+  {
+   "start": 2479.75,
+   "end": 2483.63,
+   "text": "Yeah, that's right Kenny, because during this whole development process, they made a different"
+  },
+  {
+   "start": 2483.63,
+   "end": 2488.35,
+   "text": "discovery that could really change things for tomato growers far beyond New Jersey."
+  },
+  {
+   "start": 2488.35,
+   "end": 2492.75,
+   "text": "Yeah, as they worked on the Scarlet Sunrise, they noticed that one of their experimental tomato"
+  },
+  {
+   "start": 2492.75,
+   "end": 2498.99,
+   "text": "plants was really small, like half the size of a normal tomato plant, but was still yielding"
+  },
+  {
+   "start": 2498.99,
+   "end": 2503.87,
+   "text": "a roughly similar quality and maybe quantity of tomato fruit."
+  },
+  {
+   "start": 2503.87,
+   "end": 2509.87,
+   "text": "Yeah, as soon as we saw that, saw the one that you see out in the field now,"
+  },
+  {
+   "start": 2509.87,
+   "end": 2515.47,
+   "text": "As soon as you see that, you get excited because you know that that plant is just going to"
+  },
+  {
+   "start": 2515.47,
+   "end": 2517.59,
+   "text": "be much cheaper to grow."
+  },
+  {
+   "start": 2517.59,
+   "end": 2522.15,
+   "text": "And what surprised us was that as excited as we were to find and eat and talk about the"
+  },
+  {
+   "start": 2522.15,
+   "end": 2527.19,
+   "text": "Scarlet Sunrise, Tom and Pete were clearly way more excited about this."
+  },
+  {
+   "start": 2527.19,
+   "end": 2531.15,
+   "text": "Yeah, because the cost of growing grape tomatoes is one of the biggest deterrents."
+  },
+  {
+   "start": 2531.15,
+   "end": 2533.75,
+   "text": "It requires a lot of picking by hand, a lot of labor."
+  },
+  {
+   "start": 2533.75,
+   "end": 2537.91,
+   "text": "The standard tall plants have tomatoes from top to bottom that ripen at different rates."
+  },
+  {
+   "start": 2537.91,
+   "end": 2541.33,
+   "text": "So you're going to send pickers through your field several times over weeks."
+  },
+  {
+   "start": 2541.33,
+   "end": 2546.01,
+   "text": "The more compact plants have a shorter ripening window, so fewer trips through the fields,"
+  },
+  {
+   "start": 2546.01,
+   "end": 2551.35,
+   "text": "plus more compact plants means like you just save money on ties and stakes and stuff."
+  },
+  {
+   "start": 2551.35,
+   "end": 2555.77,
+   "text": "Tom actually estimates this could save growers somewhere between 25 and 50%."
+  },
+  {
+   "start": 2555.77,
+   "end": 2560.01,
+   "text": "Yeah, they're excited because this is the kind of innovation that doesn't just help"
+  },
+  {
+   "start": 2560.01,
+   "end": 2561.01,
+   "text": "farmers a little."
+  },
+  {
+   "start": 2561.01,
+   "end": 2566.13,
+   "text": "Like it could completely change the economics of tomato growing for those farmers."
+  },
+  {
+   "start": 2566.13,
+   "end": 2571.89,
+   "text": "I think this is something that can have a much bigger impact worldwide."
+  },
+  {
+   "start": 2571.89,
+   "end": 2576.95,
+   "text": "It could, like I said, I want to overstate it right now, but we haven't seen anything"
+  },
+  {
+   "start": 2576.95,
+   "end": 2578.63,
+   "text": "like this on the market."
+  },
+  {
+   "start": 2578.63,
+   "end": 2581.89,
+   "text": "What I hear you saying is that this tomato could change the world."
+  },
+  {
+   "start": 2581.89,
+   "end": 2591.45,
+   "text": "Like I said, I don't want to overstate it."
+  },
+  {
+   "start": 2591.45,
+   "end": 2595.35,
+   "text": "That was Dan Pashman from the Sports Bowl and Kenny Malone from Planet Money."
+  },
+  {
+   "start": 2595.35,
+   "end": 2599.93,
+   "text": "The team that made this episode also includes James Snead, Keith Romer, Sierra Juarez,"
+  },
+  {
+   "start": 2599.93,
+   "end": 2605.93,
+   "text": "Nina Lofredo, Jimmy Keely, Emma Morgenstern, Andre Sohara, Camille Stanley, and Jared O'Connell."
+  },
+  {
+   "start": 2605.93,
+   "end": 2610.93,
+   "text": "Thanks for listening, we'll be back with a brand new episode of Decoder-ing in two weeks."
+  },
+  {
+   "start": 2610.93,
+   "end": 2619.98,
+   "text": "Verizon knows that holiday math can be complicated."
+  },
+  {
+   "start": 2619.98,
+   "end": 2624.98,
+   "text": "Okay, let's see, we got the four kids. Four gifts each. Six teacher gifts?"
+  },
+  {
+   "start": 2624.98,
+   "end": 2629.98,
+   "text": "Wait, oh, what do we get and Sandy? And the dogs. Oh, can't forget the dogs."
+  },
+  {
+   "start": 2629.98,
+   "end": 2634.98,
+   "text": "Know what doesn't need math? Simplicity Plan from Verizon. One plan, one price."
+  },
+  {
+   "start": 2634.98,
+   "end": 2638.22,
+   "text": "Just $30 a line per month for you or the whole family."
+  },
+  {
+   "start": 2638.22,
+   "end": 2639.66,
+   "text": "The holidays are complicated."
+  },
+  {
+   "start": 2639.66,
+   "end": 2642.86,
+   "text": "Shopping our best deals and switching to Verizon is simple."
+  },
+  {
+   "start": 2642.86,
+   "end": 2644.94,
+   "text": "For new customers, $30 per line includes auto-pay"
+  },
+  {
+   "start": 2644.94,
+   "end": 2647.3,
+   "text": "and switch discount additional taxes fees in terms of apply."
+  },
+  {
+   "start": 2647.3,
+   "end": 2649.42,
+   "text": "Hey, we're Nick and Jack hosts of The Best One Yet."
+  },
+  {
+   "start": 2649.42,
+   "end": 2651.66,
+   "text": "Behind every episode, there's research, email,"
+  },
+  {
+   "start": 2651.66,
+   "end": 2654.78,
+   "text": "spreadsheets, and our shared Google Doc, the headline hammer."
+  },
+  {
+   "start": 2654.78,
+   "end": 2656.58,
+   "text": "With Google Workspace with Gemini,"
+  },
+  {
+   "start": 2656.58,
+   "end": 2658.94,
+   "text": "Google's AI is built right into the premium versions"
+  },
+  {
+   "start": 2658.94,
+   "end": 2662.18,
+   "text": "of tools we already use, like Gmail, Docs, and Sheets."
+  },
+  {
+   "start": 2662.18,
+   "end": 2663.9,
+   "text": "No new tools or extra logins,"
+  },
+  {
+   "start": 2663.9,
+   "end": 2666.1,
+   "text": "just personalized AI for the way we work."
+  },
+  {
+   "start": 2666.1,
+   "end": 2668.22,
+   "text": "That means less time on the work around the work"
+  },
+  {
+   "start": 2668.22,
+   "end": 2670.42,
+   "text": "and more time finding the stories worth talking about."
+  },
+  {
+   "start": 2670.42,
+   "end": 2671.98,
+   "text": "Get AI tools for work."
+  },
+  {
+   "start": 2671.98,
+   "end": 2674.02,
+   "text": "Upgrade to Google Workspace with Gemini"
+  },
+  {
+   "start": 2674.02,
+   "end": 2677.22,
+   "text": "at goo.gle slash workspace with Gemini."
+  },
+  {
+   "start": 2677.22,
+   "end": 2680.14,
+   "text": "That's goo.gle slash workspace with Gemini."
+  }
+ ],
+ "seconds": 124.2,
+ "file": "decoder-ring__presenting-the-sporkful-does-the-world-nee/take1.mp3",
+ "model": "small"
+}

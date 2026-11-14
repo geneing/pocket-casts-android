@@ -32,6 +32,9 @@ class AppDatabaseTest {
         private const val MIGRATION_DB_137_138 = "migration-test-137-138"
         private const val MIGRATION_DB_138_139 = "migration-test-138-139"
         private const val MIGRATION_DB_139_140 = "migration-test-139-140"
+        private const val MIGRATION_DB_140_141 = "migration-test-140-141"
+        private const val MIGRATION_DB_141_142 = "migration-test-141-142"
+        private const val MIGRATION_DB_142_143 = "migration-test-142-143"
     }
 
     @Rule @JvmField
@@ -301,6 +304,67 @@ class AppDatabaseTest {
 
         assertEquals("Existing chat messages should be kept", 1, countRows(db, "episode_chat_messages"))
         assertEquals("Existing chat messages should have no rating", 1, countWhere(db, "episode_chat_messages", "rating IS NULL"))
+    }
+
+    @Test
+    fun migrate140To141CreatesAdSegmentTable() {
+        migrationTestHelper.createDatabase(MIGRATION_DB_140_141, 140).use {
+            it.execSQL(
+                "INSERT INTO podcast_episodes (uuid, episode_description, published_date, title, size_in_bytes, episode_status, " +
+                    "duration, played_up_to, playing_status, podcast_id, added_date, auto_download_status, starred, " +
+                    "thumbnail_status, archived, last_playback_interaction_sync_status, exclude_from_episode_limit, " +
+                    "deselected_chapters, slug, has_generated_transcript) " +
+                    "VALUES ('episode-uuid', '', 0, '', 0, 0, 0, 0, 0, 'podcast-uuid', 0, 0, 0, 0, 0, 0, 0, '', '', 0)",
+            )
+        }
+
+        val db = migrationTestHelper.runMigrationsAndValidate(MIGRATION_DB_140_141, 141, true, AppDatabase.MIGRATION_140_141)
+
+        assertEquals("Ad segment table is created", true, tableColumns(db, "episode_ad_segments").contains("start_time"))
+        assertEquals("Existing episodes are kept", 1, countRows(db, "podcast_episodes"))
+        assertEquals("Ad segments start empty", 0, countRows(db, "episode_ad_segments"))
+    }
+
+    @Test
+    fun migrate141To142CreatesAdAnalysisTables() {
+        migrationTestHelper.createDatabase(MIGRATION_DB_141_142, 141).use {
+            it.execSQL(
+                "INSERT INTO podcast_episodes (uuid, episode_description, published_date, title, size_in_bytes, episode_status, " +
+                    "duration, played_up_to, playing_status, podcast_id, added_date, auto_download_status, starred, " +
+                    "thumbnail_status, archived, last_playback_interaction_sync_status, exclude_from_episode_limit, " +
+                    "deselected_chapters, slug, has_generated_transcript) " +
+                    "VALUES ('episode-uuid', '', 0, '', 0, 0, 0, 0, 0, 'podcast-uuid', 0, 0, 0, 0, 0, 0, 0, '', '', 0)",
+            )
+        }
+
+        val db = migrationTestHelper.runMigrationsAndValidate(MIGRATION_DB_141_142, 142, true, AppDatabase.MIGRATION_141_142)
+
+        assertEquals("Analysis state table is created", true, tableColumns(db, "episode_ad_analysis").contains("analyzed_until_ms"))
+        assertEquals("Fingerprint table is created", true, tableColumns(db, "ad_fingerprints").contains("signature"))
+        assertEquals("Existing episodes are kept", 1, countRows(db, "podcast_episodes"))
+    }
+
+    @Test
+    fun migrate142To143AddsAnalysisIdentityColumns() {
+        migrationTestHelper.createDatabase(MIGRATION_DB_142_143, 142).use {
+            it.execSQL(
+                "INSERT INTO episode_ad_analysis (episode_uuid, analyzed_until_ms, is_complete, updated_at) " +
+                    "VALUES ('episode-uuid', 120000, 1, 1000)",
+            )
+        }
+
+        val db = migrationTestHelper.runMigrationsAndValidate(MIGRATION_DB_142_143, 143, true, AppDatabase.MIGRATION_142_143)
+
+        val columns = tableColumns(db, "episode_ad_analysis")
+        assertEquals("Audio identity column is added", true, columns.contains("audio_signature"))
+        assertEquals("Model identity column is added", true, columns.contains("model_version"))
+        assertEquals("STT identity column is added", true, columns.contains("stt_version"))
+        assertEquals("Existing analysis rows are kept", 1, countRows(db, "episode_ad_analysis"))
+        assertEquals(
+            "Legacy rows get empty identities so they are recomputed",
+            1,
+            countWhere(db, "episode_ad_analysis", "audio_signature = '' AND model_version = '' AND stt_version = ''"),
+        )
     }
 
     private fun tableColumns(db: SupportSQLiteDatabase?, tableName: String): List<String> {

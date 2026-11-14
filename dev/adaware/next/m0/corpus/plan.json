@@ -1,0 +1,2342 @@
+[
+ {
+  "show": "The Political Scene | The New Yorker",
+  "feed_url": "https://feeds.megaphone.fm/CNE3630198409",
+  "host": "megaphone",
+  "episode": "The Voters Have Spoken. What Comes Next?",
+  "audio": "https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/uJwtcKQUPuqBQPfusm59/traffic.megaphone.fm/CNE1100019183.mp3",
+  "published": "Sat, 07 Nov 2026 04:00:00 -0000",
+  "listed_duration": 2646.0,
+  "split": "test"
+ },
+ {
+  "show": "The Political Scene | The New Yorker",
+  "feed_url": "https://feeds.megaphone.fm/CNE3630198409",
+  "host": "megaphone",
+  "episode": "Democrats Might Take Back the House. Then What?",
+  "audio": "https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/uJwtcKQUPuqBQPfusm59/traffic.megaphone.fm/CNE1553606363.mp3",
+  "published": "Mon, 02 Nov 2026 11:00:00 -0000",
+  "listed_duration": 2087.0,
+  "split": "test"
+ },
+ {
+  "show": "Decoder Ring",
+  "feed_url": "https://feeds.acast.com/public/shows/696572d375c092ac4e159c27",
+  "host": "acast",
+  "episode": "The Spooky Saga of the Icelandic Dracula",
+  "audio": "https://sphinx.acast.com/p/open/s/696572d375c092ac4e159c27/e/6ae285865a3cc3c4c46cf4f2/media.mp3",
+  "published": "Thu, 29 Oct 2026 07:00:00 GMT",
+  "listed_duration": 3069.0,
+  "split": "test"
+ },
+ {
+  "show": "Decoder Ring",
+  "feed_url": "https://feeds.acast.com/public/shows/696572d375c092ac4e159c27",
+  "host": "acast",
+  "episode": "Gandhi Never Said “Be the Change”",
+  "audio": "https://sphinx.acast.com/p/open/s/696572d375c092ac4e159c27/e/6acea4af3dc1c1be4ac0b9e6/media.mp3",
+  "published": "Wed, 14 Oct 2026 07:00:00 GMT",
+  "listed_duration": 3642.0,
+  "split": "test"
+ },
+ {
+  "show": "The Rest Is History",
+  "feed_url": "https://feeds.megaphone.fm/GLT4787413333",
+  "host": "megaphone",
+  "episode": "718. The Suez Crisis: Britain's Shattered Empire (Part 2)",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT7704784668.mp3",
+  "published": "Thu, 29 Oct 2026 00:05:00 -0000",
+  "listed_duration": 4591.0,
+  "split": "test"
+ },
+ {
+  "show": "The Rest Is History",
+  "feed_url": "https://feeds.megaphone.fm/GLT4787413333",
+  "host": "megaphone",
+  "episode": "722. The Charge of the Light Brigade: The Tsar’s Terrible Siege (Part 2)",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT7837711407.mp3",
+  "published": "Thu, 12 Nov 2026 00:05:00 -0000",
+  "listed_duration": 3765.0,
+  "split": "test"
+ },
+ {
+  "show": "State of the World from NPR",
+  "feed_url": "https://feeds.npr.org/510366/podcast.xml",
+  "host": "npr",
+  "episode": "U.S. midterm results give Ukrainians glimmer of hope",
+  "audio": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510366/npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/c9a69c7c-2326-4ca4-b823-214671a6c5f9/audio/128/default.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=c9a69c7c-2326-4ca4-b823-214671a6c5f9&feed=eZ65RO4U&t=podcast&e=nx-s1-6036822&p=510366&d=542&size=8678548",
+  "published": "Tue, 10 Nov 2026 23:58:26 +0000",
+  "listed_duration": 542.0,
+  "split": "test"
+ },
+ {
+  "show": "State of the World from NPR",
+  "feed_url": "https://feeds.npr.org/510366/podcast.xml",
+  "host": "npr",
+  "episode": "Breeding beer hops for a hotter planet",
+  "audio": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510366/npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/a0807a52-fe1d-4f4d-be12-90c5c1f3f3c3/audio/128/default.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=a0807a52-fe1d-4f4d-be12-90c5c1f3f3c3&feed=eZ65RO4U&t=podcast&e=nx-s1-6035009&p=510366&d=335&size=5363297",
+  "published": "Mon, 09 Nov 2026 22:32:56 +0000",
+  "listed_duration": 335.0,
+  "split": "test"
+ },
+ {
+  "show": "Grammar Girl",
+  "feed_url": "https://feeds.acast.com/public/shows/69c1476c007cdcf83fc0964b",
+  "host": "acast",
+  "episode": "4 tiny writing errors that caused huge problems on the ballot. What does 'batten down the hatches' mean?",
+  "audio": "https://sphinx.acast.com/p/open/s/69c1476c007cdcf83fc0964b/e/6ada2db923f48c4f247841ba/media.mp3",
+  "published": "Tue, 03 Nov 2026 10:00:00 GMT",
+  "listed_duration": 713.0,
+  "split": "test"
+ },
+ {
+  "show": "Grammar Girl",
+  "feed_url": "https://feeds.acast.com/public/shows/69c1476c007cdcf83fc0964b",
+  "host": "acast",
+  "episode": "The language of superstition: jinxes, the Scottish Play, and the hospital Q-word",
+  "audio": "https://sphinx.acast.com/p/open/s/69c1476c007cdcf83fc0964b/e/6af1dc89625528ef28098c3c/media.mp3",
+  "published": "Tue, 10 Nov 2026 10:00:00 GMT",
+  "listed_duration": 672.0,
+  "split": "test"
+ },
+ {
+  "show": "How I Built This with Guy Raz",
+  "feed_url": "https://feeds.megaphone.fm/VMP2035168248",
+  "host": "megaphone",
+  "episode": "Dr. Squatch: Jack Haldrup. From a Closet Full of Soap to a $1.5 Billion Brand",
+  "audio": "https://traffic.megaphone.fm/VMP1750831437.mp3",
+  "published": "Mon, 09 Nov 2026 08:10:00 -0000",
+  "listed_duration": 4813.0,
+  "split": "train"
+ },
+ {
+  "show": "How I Built This with Guy Raz",
+  "feed_url": "https://feeds.megaphone.fm/VMP2035168248",
+  "host": "megaphone",
+  "episode": "Advice Line with Tope Awotona of Calendly",
+  "audio": "https://traffic.megaphone.fm/VMP4254648132.mp3",
+  "published": "Thu, 29 Oct 2026 07:10:00 -0000",
+  "listed_duration": 3648.0,
+  "split": "train"
+ },
+ {
+  "show": "The Weekly Show with Jon Stewart",
+  "feed_url": "https://feeds.megaphone.fm/BVLLC2163264914",
+  "host": "megaphone",
+  "episode": "A Progressive Policy Prescription with Abdul El-Sayed",
+  "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/DL4HT/traffic.megaphone.fm/QCD2142373924.mp3",
+  "published": "Wed, 21 Oct 2026 07:30:00 -0000",
+  "listed_duration": 5531.0,
+  "split": "train"
+ },
+ {
+  "show": "The Weekly Show with Jon Stewart",
+  "feed_url": "https://feeds.megaphone.fm/BVLLC2163264914",
+  "host": "megaphone",
+  "episode": "A Working (Class) Economy with Kathryn Anne Edwards",
+  "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/DL4HT/traffic.megaphone.fm/QCD7983792053.mp3",
+  "published": "Wed, 07 Oct 2026 07:30:00 -0000",
+  "listed_duration": 5346.0,
+  "split": "train"
+ },
+ {
+  "show": "Shell Game",
+  "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/d3d3abca-191a-4010-8160-b3530112d393/c639b22c-ee8c-43dd-86c1-b3530112d3a3/podcast.rss",
+  "host": "omnycontent",
+  "episode": "Bonus Episode: Shell Game x No Such Thing",
+  "audio": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/DfXIxNL4FlhsFXtrke08/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/d3d3abca-191a-4010-8160-b3530112d393/627bec9c-dfe2-40e5-be02-b3fc01026790/audio.mp3?utm_source=Podcast&in_playlist=c639b22c-ee8c-43dd-86c1-b3530112d3a3",
+  "published": "Wed, 25 Feb 2026 16:45:33 +0000",
+  "listed_duration": 2996.0,
+  "split": "train"
+ },
+ {
+  "show": "Shell Game",
+  "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/d3d3abca-191a-4010-8160-b3530112d393/c639b22c-ee8c-43dd-86c1-b3530112d3a3/podcast.rss",
+  "host": "omnycontent",
+  "episode": "Season 3 is Coming!",
+  "audio": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/DfXIxNL4FlhsFXtrke08/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/d3d3abca-191a-4010-8160-b3530112d393/d562b1c4-eed2-46a4-9ca9-b4e3001e8903/audio.mp3?utm_source=Podcast&in_playlist=c639b22c-ee8c-43dd-86c1-b3530112d3a3",
+  "published": "Wed, 14 Oct 2026 09:00:00 +0000",
+  "listed_duration": 87.0,
+  "split": "train"
+ },
+ {
+  "show": "The Daily",
+  "feed_url": "https://feeds.simplecast.com/Sl5CSM3S",
+  "host": "simplecast",
+  "episode": "Introducing ‘METRO’ From Serial Productions",
+  "audio": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/5a033179-92e3-43c1-bd01-45ea0c152d0f/audio/128/default.mp3?aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=5a033179-92e3-43c1-bd01-45ea0c152d0f&feed=Sl5CSM3S",
+  "published": "Sat, 7 Nov 2026 11:00:00 +0000",
+  "listed_duration": 2502.0,
+  "split": "train"
+ },
+ {
+  "show": "The Daily",
+  "feed_url": "https://feeds.simplecast.com/Sl5CSM3S",
+  "host": "simplecast",
+  "episode": "What Jensen Huang’s Resignation Will Mean for A.I.",
+  "audio": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/81baedea-f263-4b69-9789-fef913b31bee/audio/128/default.mp3?aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=81baedea-f263-4b69-9789-fef913b31bee&feed=Sl5CSM3S",
+  "published": "Thu, 12 Nov 2026 10:52:06 +0000",
+  "listed_duration": 1480.0,
+  "split": "train"
+ },
+ {
+  "show": "Odd Lots",
+  "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/982f5071-765c-403d-969d-ae27003a8d83/podcast.rss",
+  "host": "omnycontent",
+  "episode": "James Bosworth on What Comes After Lula's Stunning Win",
+  "audio": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/UVBrz8bN8aM2Xe47PEPu/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/468e99b6-7c28-4fc4-86d7-b4f8016f319d/audio.mp3?utm_source=Podcast&in_playlist=982f5071-765c-403d-969d-ae27003a8d83",
+  "published": "Thu, 05 Nov 2026 09:00:00 +0000",
+  "listed_duration": 1940.0,
+  "split": "train"
+ },
+ {
+  "show": "Odd Lots",
+  "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/982f5071-765c-403d-969d-ae27003a8d83/podcast.rss",
+  "host": "omnycontent",
+  "episode": "What Nvidia's Megaspeed Scandal Is Really All About",
+  "audio": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/UVBrz8bN8aM2Xe47PEPu/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/9390c1d9-8076-46f9-89ef-b500001b8ce0/audio.mp3?utm_source=Podcast&in_playlist=982f5071-765c-403d-969d-ae27003a8d83",
+  "published": "Thu, 12 Nov 2026 09:00:00 +0000",
+  "listed_duration": 3249.0,
+  "split": "train"
+ },
+ {
+  "show": "The Rest Is Classified",
+  "feed_url": "https://feeds.megaphone.fm/therestisclassified",
+  "host": "megaphone",
+  "episode": "202. Watergate: The CIA Conspiracy (Ep 1)",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT4734656231.mp3",
+  "published": "Mon, 02 Nov 2026 00:00:00 -0000",
+  "listed_duration": 3656.0,
+  "split": "train"
+ },
+ {
+  "show": "The Rest Is Classified",
+  "feed_url": "https://feeds.megaphone.fm/therestisclassified",
+  "host": "megaphone",
+  "episode": "Intelligence Scoop: How Nvidia’s CEO Fell for a Suspected Chinese Spy",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT4099515981.mp3",
+  "published": "Tue, 10 Nov 2026 00:00:00 -0000",
+  "listed_duration": 3153.0,
+  "split": "train"
+ },
+ {
+  "show": "The Rest Is Politics",
+  "feed_url": "https://feeds.megaphone.fm/GLT9190936013",
+  "host": "megaphone",
+  "episode": "586. Can the Democrats Capitalise on Trump's Midterm Disaster?",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT8924049806.mp3",
+  "published": "Wed, 04 Nov 2026 13:17:00 -0000",
+  "listed_duration": 4394.0,
+  "split": "train"
+ },
+ {
+  "show": "The Rest Is Politics",
+  "feed_url": "https://feeds.megaphone.fm/GLT9190936013",
+  "host": "megaphone",
+  "episode": "What Living Under ISIS Taught Me About Extremism",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT5580238684.mp3",
+  "published": "Fri, 13 Nov 2026 00:05:00 -0000",
+  "listed_duration": 902.0,
+  "split": "train"
+ },
+ {
+  "show": "Gone Medieval",
+  "feed_url": "https://access.acast.com/rss/11c1773b-6d50-4dbb-b543-483046bdc241",
+  "host": "acast",
+  "episode": "Robert the Bruce",
+  "audio": "https://sphinx.acast.com/p/acast/s/gone-medieval/e/6ae2256e305baddee15ac589/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=QJv0K7rZMcRLNa9lq6RYLKs4Jy9i_pMQW_oZwJ4Xnyo",
+  "published": "Fri, 06 Nov 2026 03:00:00 GMT",
+  "listed_duration": 4083.0,
+  "split": "train"
+ },
+ {
+  "show": "Gone Medieval",
+  "feed_url": "https://access.acast.com/rss/11c1773b-6d50-4dbb-b543-483046bdc241",
+  "host": "acast",
+  "episode": "Investigating Viking Burials",
+  "audio": "https://sphinx.acast.com/p/acast/s/gone-medieval/e/6ae8721f3dce902b6d9474ef/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=2Vn5RBNm5COiq6yuviK-NU_wGxTfQjFS9_--5uP2NSE",
+  "published": "Tue, 10 Nov 2026 03:00:00 GMT",
+  "listed_duration": 3618.0,
+  "split": "train"
+ },
+ {
+  "show": "Cautionary Tales with Tim Harford",
+  "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/c0ae8c6e-22f0-4e9b-ac1c-ae390037ac53/7f5a4714-6b10-4ccf-a424-ae390037ac70/podcast.rss",
+  "host": "omnycontent",
+  "episode": "Why Miners See Ghosts | Halloween Season",
+  "audio": "https://podtrac.com/pts/redirect.mp3/pdrl.fm/18db03/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c0ae8c6e-22f0-4e9b-ac1c-ae390037ac53/ebb3c9a0-1133-4bd1-9262-b4f10119a10b/audio.mp3?utm_source=Podcast&in_playlist=7f5a4714-6b10-4ccf-a424-ae390037ac70",
+  "published": "Fri, 30 Oct 2026 04:01:00 +0000",
+  "listed_duration": 2278.0,
+  "split": "train"
+ },
+ {
+  "show": "Cautionary Tales with Tim Harford",
+  "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/c0ae8c6e-22f0-4e9b-ac1c-ae390037ac53/7f5a4714-6b10-4ccf-a424-ae390037ac70/podcast.rss",
+  "host": "omnycontent",
+  "episode": "The Pedlar and the Witch | Halloween Season",
+  "audio": "https://podtrac.com/pts/redirect.mp3/pdrl.fm/18db03/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c0ae8c6e-22f0-4e9b-ac1c-ae390037ac53/6ad5895b-d8cf-4caf-a3f1-b4eb00e64f21/audio.mp3?utm_source=Podcast&in_playlist=7f5a4714-6b10-4ccf-a424-ae390037ac70",
+  "published": "Fri, 23 Oct 2026 04:01:00 +0000",
+  "listed_duration": 2355.0,
+  "split": "train"
+ },
+ {
+  "show": "Empire: World History",
+  "feed_url": "https://feeds.megaphone.fm/empirepodcast",
+  "host": "megaphone",
+  "episode": "409. JFK: The Cuban Missile Crisis (Part 3)",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT9549175050.mp3",
+  "published": "Mon, 02 Nov 2026 00:00:00 -0000",
+  "listed_duration": 3756.0,
+  "split": "train"
+ },
+ {
+  "show": "Empire: World History",
+  "feed_url": "https://feeds.megaphone.fm/empirepodcast",
+  "host": "megaphone",
+  "episode": "411. Lawrence of Arabia: The Truth Behind The Legend (Part 1)",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT1209577430.mp3",
+  "published": "Mon, 09 Nov 2026 00:00:00 -0000",
+  "listed_duration": 3280.0,
+  "split": "train"
+ },
+ {
+  "show": "Proof",
+  "feed_url": "https://feeds.megaphone.fm/ARML1836404539",
+  "host": "megaphone",
+  "episode": "Introducing: The Side Dish",
+  "audio": "https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/YfZO4tERxneauNcW9Fgn/mgln.ai/e/211/traffic.megaphone.fm/ARML7103923443.mp3",
+  "published": "Thu, 05 Feb 2026 05:00:00 -0000",
+  "listed_duration": 2268.0,
+  "split": "train"
+ },
+ {
+  "show": "Proof",
+  "feed_url": "https://feeds.megaphone.fm/ARML1836404539",
+  "host": "megaphone",
+  "episode": "The Hospital That Serves Wild Game",
+  "audio": "https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/YfZO4tERxneauNcW9Fgn/mgln.ai/e/211/traffic.megaphone.fm/ARML1270016408.mp3?updated=1769438534",
+  "published": "Wed, 24 Dec 2025 17:06:00 -0000",
+  "listed_duration": 2342.0,
+  "split": "train"
+ },
+ {
+  "show": "LeVar Burton Reads",
+  "feed_url": "https://feeds.simplecast.com/LDNgBXht",
+  "host": "simplecast",
+  "episode": "\"When the Apples are Ripe\" by Diane Oliver",
+  "audio": "https://dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/f8a65230-80c4-41ca-9222-88e0d11f5866/episodes/d5815630-f760-4450-8f26-ce6ce8add995/audio/128/default.mp3?aid=rss_feed&awCollectionId=f8a65230-80c4-41ca-9222-88e0d11f5866&awEpisodeId=d5815630-f760-4450-8f26-ce6ce8add995&feed=LDNgBXht",
+  "published": "Tue, 16 Apr 2024 04:05:00 +0000",
+  "listed_duration": 2699.0,
+  "split": "train"
+ },
+ {
+  "show": "LeVar Burton Reads",
+  "feed_url": "https://feeds.simplecast.com/LDNgBXht",
+  "host": "simplecast",
+  "episode": "\"The Toynbee Convector\" by Ray Bradbury",
+  "audio": "https://dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/f8a65230-80c4-41ca-9222-88e0d11f5866/episodes/b477b249-8a85-4d3f-aa0d-3ee203b658e5/audio/128/default.mp3?aid=rss_feed&awCollectionId=f8a65230-80c4-41ca-9222-88e0d11f5866&awEpisodeId=b477b249-8a85-4d3f-aa0d-3ee203b658e5&feed=LDNgBXht",
+  "published": "Tue, 7 May 2024 04:05:00 +0000",
+  "listed_duration": 2593.0,
+  "split": "train"
+ },
+ {
+  "show": "RISK!",
+  "feed_url": "https://feeds.megaphone.fm/risk",
+  "host": "megaphone",
+  "episode": "Live From Chicago 2!",
+  "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/swap.fm/track/6bpBPtHL977KJxLX2zPs/mgln.ai/e/485/traffic.megaphone.fm/GLSS4844656456.mp3",
+  "published": "Thu, 05 Nov 2026 14:00:00 -0000",
+  "listed_duration": 4236.0,
+  "split": "train"
+ },
+ {
+  "show": "RISK!",
+  "feed_url": "https://feeds.megaphone.fm/risk",
+  "host": "megaphone",
+  "episode": "Humiliating",
+  "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/swap.fm/track/6bpBPtHL977KJxLX2zPs/mgln.ai/e/485/traffic.megaphone.fm/GLSS9880007711.mp3",
+  "published": "Thu, 12 Nov 2026 14:00:00 -0000",
+  "listed_duration": 2622.0,
+  "split": "train"
+ },
+ {
+  "show": "Modern Love",
+  "feed_url": "https://feeds.simplecast.com/eHEJ08b1",
+  "host": "simplecast",
+  "episode": "Introducing 'Modern Love: The Podcast'",
+  "audio": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/db3c768b-254c-4291-946b-8216b0b2a2a1/episodes/5dda3d7e-90d7-4056-b3de-f408a0e9449a/audio/128/default.mp3?aid=rss_feed&awCollectionId=db3c768b-254c-4291-946b-8216b0b2a2a1&awEpisodeId=5dda3d7e-90d7-4056-b3de-f408a0e9449a&aw_0_1st.bc=1&feed=eHEJ08b1",
+  "published": "Mon, 7 Dec 2015 21:30:00 +0000",
+  "listed_duration": 100.0,
+  "split": "train"
+ },
+ {
+  "show": "Modern Love",
+  "feed_url": "https://feeds.simplecast.com/eHEJ08b1",
+  "host": "simplecast",
+  "episode": "Turns Out My Supermodel Boyfriend Was in a Cult",
+  "audio": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/db3c768b-254c-4291-946b-8216b0b2a2a1/episodes/4c0f4f0f-6b31-4e39-91d9-0e8ac68069b1/audio/128/default.mp3?aid=rss_feed&awCollectionId=db3c768b-254c-4291-946b-8216b0b2a2a1&awEpisodeId=4c0f4f0f-6b31-4e39-91d9-0e8ac68069b1&feed=eHEJ08b1",
+  "published": "Wed, 11 Nov 2026 10:00:00 +0000",
+  "listed_duration": 2903.0,
+  "split": "train"
+ },
+ {
+  "show": "Immersive Spanish",
+  "feed_url": "https://feeds.simplecast.com/ayz2pQMG",
+  "host": "simplecast",
+  "episode": "Immersive Spanish - Colombia Adventure - Episode 12 - Mexican Food in Minca",
+  "audio": "https://pscrb.fm/rss/p/mgln.ai/e/1385/injector.simplecastaudio.com/858e5c81-7a22-403d-aadb-f2858ba5519f/episodes/8cc9508d-ac4a-4eb5-99f1-d98a29f9a6ed/audio/128/default.mp3?aid=rss_feed&awCollectionId=858e5c81-7a22-403d-aadb-f2858ba5519f&awEpisodeId=8cc9508d-ac4a-4eb5-99f1-d98a29f9a6ed&feed=ayz2pQMG",
+  "published": "Fri, 9 Oct 2026 14:34:00 +0000",
+  "listed_duration": 779.0,
+  "split": "train"
+ },
+ {
+  "show": "Immersive Spanish",
+  "feed_url": "https://feeds.simplecast.com/ayz2pQMG",
+  "host": "simplecast",
+  "episode": "Immersive Spanish - Colombia Adventure - Episode 10 - Medellín Airport",
+  "audio": "https://pscrb.fm/rss/p/mgln.ai/e/1385/injector.simplecastaudio.com/858e5c81-7a22-403d-aadb-f2858ba5519f/episodes/4d0b64e6-4503-4350-a35d-343e669701d0/audio/128/default.mp3?aid=rss_feed&awCollectionId=858e5c81-7a22-403d-aadb-f2858ba5519f&awEpisodeId=4d0b64e6-4503-4350-a35d-343e669701d0&feed=ayz2pQMG",
+  "published": "Fri, 25 Sep 2026 10:25:00 +0000",
+  "listed_duration": 1223.0,
+  "split": "train"
+ },
+ {
+  "show": "Short Stories by Immersive Spanish",
+  "feed_url": "https://feeds.acast.com/public/shows/6710fd0d0e7be9d8052e295c",
+  "host": "acast",
+  "episode": "Short Stories by Immersive Spanish - El triunfo de Elena - (Elena's Triumph)",
+  "audio": "https://sphinx.acast.com/p/open/s/6710fd0d0e7be9d8052e295c/e/c566d3cc-f0f7-11ee-b8be-d7e0aea4911d/media.mp3",
+  "published": "Tue, 02 Apr 2024 13:48:00 GMT",
+  "listed_duration": 309.0,
+  "split": "train"
+ },
+ {
+  "show": "Short Stories by Immersive Spanish",
+  "feed_url": "https://feeds.acast.com/public/shows/6710fd0d0e7be9d8052e295c",
+  "host": "acast",
+  "episode": "Short Stories by Immersive Spanish - Un día en Londres - (A Day in London)",
+  "audio": "https://sphinx.acast.com/p/open/s/6710fd0d0e7be9d8052e295c/e/7da97aa0-e20e-11ee-929d-eb5e3168ed94/media.mp3",
+  "published": "Thu, 14 Mar 2024 14:15:00 GMT",
+  "listed_duration": 368.0,
+  "split": "train"
+ },
+ {
+  "show": "The Idiot",
+  "feed_url": "https://feeds.simplecast.com/KrIt3mGT",
+  "host": "simplecast",
+  "episode": "Chapter 2",
+  "audio": "https://nyt.simplecastaudio.com/00d13c45-3104-4910-96cb-b27cdeb32aae/episodes/20dbe283-bc45-4a09-98fc-06ef42b632e6/audio/128/default.mp3?aid=rss_feed&awCollectionId=00d13c45-3104-4910-96cb-b27cdeb32aae&awEpisodeId=20dbe283-bc45-4a09-98fc-06ef42b632e6&feed=KrIt3mGT",
+  "published": "Thu, 26 Mar 2026 01:50:00 +0000",
+  "listed_duration": 2993.0,
+  "split": "train"
+ },
+ {
+  "show": "The Idiot",
+  "feed_url": "https://feeds.simplecast.com/KrIt3mGT",
+  "host": "simplecast",
+  "episode": "Chapter 4",
+  "audio": "https://nyt.simplecastaudio.com/00d13c45-3104-4910-96cb-b27cdeb32aae/episodes/27ea3a81-7e13-4010-8c94-78c532ec390e/audio/128/default.mp3?aid=rss_feed&awCollectionId=00d13c45-3104-4910-96cb-b27cdeb32aae&awEpisodeId=27ea3a81-7e13-4010-8c94-78c532ec390e&feed=KrIt3mGT",
+  "published": "Thu, 26 Mar 2026 02:00:00 +0000",
+  "listed_duration": 3764.0,
+  "split": "train"
+ },
+ {
+  "show": "Nature Podcast",
+  "feed_url": "https://feeds.acast.com/public/shows/0185cea5-9e3b-4b82-a887-26f91f92765f",
+  "host": "acast",
+  "episode": "Ancient DNA charts spread of Celtic and Germanic languages",
+  "audio": "https://sphinx.acast.com/p/acast/s/nature/e/6aeb4b1f0dd2d65771fbcc70/media.mp3",
+  "published": "Wed, 04 Nov 2026 16:00:00 GMT",
+  "listed_duration": 1516.0,
+  "split": "train"
+ },
+ {
+  "show": "Nature Podcast",
+  "feed_url": "https://feeds.acast.com/public/shows/0185cea5-9e3b-4b82-a887-26f91f92765f",
+  "host": "acast",
+  "episode": "Briefing Chat: Dog years: could longevity science extend your pets' lives?",
+  "audio": "https://sphinx.acast.com/p/acast/s/nature/e/6ae4b2918475854f087bcaf5/media.mp3",
+  "published": "Fri, 30 Oct 2026 16:00:00 GMT",
+  "listed_duration": 599.0,
+  "split": "train"
+ },
+ {
+  "show": "The Ancients",
+  "feed_url": "https://access.acast.com/rss/f2925f7a-eb08-471a-9958-387cb5ee6353",
+  "host": "acast",
+  "episode": "Britain's First Homo Sapiens",
+  "audio": "https://sphinx.acast.com/p/acast/s/the-ancients/e/6ae9c950b1966848f383a9a5/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=IZo1MEiHK-5thqiRXMYvx_AuVBGknrI4YW0t259_Qu0",
+  "published": "Thu, 05 Nov 2026 03:00:00 GMT",
+  "listed_duration": 3209.0,
+  "split": "train"
+ },
+ {
+  "show": "The Ancients",
+  "feed_url": "https://access.acast.com/rss/f2925f7a-eb08-471a-9958-387cb5ee6353",
+  "host": "acast",
+  "episode": "The Plain of Jars: An Ancient Asian Mystery",
+  "audio": "https://sphinx.acast.com/p/acast/s/the-ancients/e/6af312af1f5126ac85acadcf/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=VyHEHCQ1hjqkgJSmHJXqESTGpVGjvXIV-6g7OevAuZs",
+  "published": "Thu, 12 Nov 2026 03:00:00 GMT",
+  "listed_duration": 3229.0,
+  "split": "train"
+ },
+ {
+  "show": "Not Just the Tudors",
+  "feed_url": "https://access.acast.com/rss/b0ed85cc-f4ed-49e9-b860-0ba48481ae25",
+  "host": "acast",
+  "episode": "The Gunpowder Plot",
+  "audio": "https://sphinx.acast.com/p/acast/s/not-just-the-tudors/e/6ae32edd82192fb628b9c139/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=iO2fSUpCUD8AH0E106VpDmeABB_P2pNHzQQG5hyiDSE",
+  "published": "Thu, 05 Nov 2026 03:00:00 GMT",
+  "listed_duration": 3418.0,
+  "split": "train"
+ },
+ {
+  "show": "Not Just the Tudors",
+  "feed_url": "https://access.acast.com/rss/b0ed85cc-f4ed-49e9-b860-0ba48481ae25",
+  "host": "acast",
+  "episode": "Rise & Fall of an Elizabethan Pirate",
+  "audio": "https://sphinx.acast.com/p/acast/s/not-just-the-tudors/e/6aeb58bb9ccd1653a79eb646/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=Dv6mfsYdXyRA83TzKblLA4SqoD4oYrzo0b6iTRg7jhg",
+  "published": "Mon, 09 Nov 2026 03:00:00 GMT",
+  "listed_duration": 2516.0,
+  "split": "train"
+ },
+ {
+  "show": "NPR's Book of the Day",
+  "feed_url": "https://feeds.npr.org/510364/podcast.xml",
+  "host": "npr",
+  "episode": "English actress Judi Dench pulls back the curtain about life on stage",
+  "audio": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510364/npr.simplecastaudio.com/c3f326c7-02ae-4df0-b95a-b35e58973e1a/episodes/64f3bfe2-f889-4f28-9d2e-fa93e8bc3673/audio/128/default.mp3?awCollectionId=c3f326c7-02ae-4df0-b95a-b35e58973e1a&awEpisodeId=64f3bfe2-f889-4f28-9d2e-fa93e8bc3673&feed=tZrJMl4P&t=podcast&e=nx-s1-6036853&p=510364&d=458&size=7329794",
+  "published": "Wed, 11 Nov 2026 08:00:00 +0000",
+  "listed_duration": 458.0,
+  "split": "train"
+ },
+ {
+  "show": "NPR's Book of the Day",
+  "feed_url": "https://feeds.npr.org/510364/podcast.xml",
+  "host": "npr",
+  "episode": "Author Deesha Philyaw says she's still 'obsessed' with the church in her fiction",
+  "audio": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510364/npr.simplecastaudio.com/c3f326c7-02ae-4df0-b95a-b35e58973e1a/episodes/44f7e4e9-76a9-4f38-9a69-7e194c1ac6e8/audio/128/default.mp3?awCollectionId=c3f326c7-02ae-4df0-b95a-b35e58973e1a&awEpisodeId=44f7e4e9-76a9-4f38-9a69-7e194c1ac6e8&feed=tZrJMl4P&t=podcast&e=nx-s1-6034106&p=510364&d=502&size=8042833",
+  "published": "Mon, 09 Nov 2026 08:00:00 +0000",
+  "listed_duration": 502.0,
+  "split": "train"
+ },
+ {
+  "show": "Battleground",
+  "feed_url": "https://feeds.acast.com/public/shows/6a22b52017f169d6433fb960",
+  "host": "acast",
+  "episode": "452. Operation Veles: Inside the Khartiia Corps' Subterranean Offensive",
+  "audio": "https://sphinx.acast.com/p/open/s/6a22b52017f169d6433fb960/e/6ae9f0896bf03d95801c17d5/media.mp3",
+  "published": "Wed, 04 Nov 2026 00:30:00 GMT",
+  "listed_duration": 1469.0,
+  "split": "train"
+ },
+ {
+  "show": "Battleground",
+  "feed_url": "https://feeds.acast.com/public/shows/6a22b52017f169d6433fb960",
+  "host": "acast",
+  "episode": "451. Putin's History Lesson and the Kupiansk Pipelines",
+  "audio": "https://sphinx.acast.com/p/open/s/6a22b52017f169d6433fb960/e/6ae34757d925811fc2c26a1e/media.mp3",
+  "published": "Fri, 30 Oct 2026 00:30:00 GMT",
+  "listed_duration": 2075.0,
+  "split": "train"
+ },
+ {
+  "show": "The Economics Show with Soumaya Keynes",
+  "feed_url": "https://feeds.acast.com/public/shows/664394a442f6710013618119",
+  "host": "acast",
+  "episode": "The right way to tax the rich. With Owen Zidar",
+  "audio": "https://sphinx.acast.com/p/open/s/664394a442f6710013618119/e/6ae25584660738d6f91f38d9/media.mp3",
+  "published": "Fri, 30 Oct 2026 05:00:00 GMT",
+  "listed_duration": 2007.0,
+  "split": "train"
+ },
+ {
+  "show": "The Economics Show with Soumaya Keynes",
+  "feed_url": "https://feeds.acast.com/public/shows/664394a442f6710013618119",
+  "host": "acast",
+  "episode": "Lessons in communication for Kevin Warsh. With Chris Giles",
+  "audio": "https://sphinx.acast.com/p/open/s/664394a442f6710013618119/e/6ad11fd5aa02353b8726cc3a/media.mp3",
+  "published": "Fri, 16 Oct 2026 04:00:00 GMT",
+  "listed_duration": 1625.0,
+  "split": "train"
+ },
+ {
+  "show": "The Rest Is Money",
+  "feed_url": "https://feeds.megaphone.fm/therestismoney",
+  "host": "megaphone",
+  "episode": "327. We got 98 measures but growth ain't one - Paul Johnson's Budget analysis",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT5974976645.mp3",
+  "published": "Mon, 02 Nov 2026 00:10:00 -0000",
+  "listed_duration": 2341.0,
+  "split": "train"
+ },
+ {
+  "show": "The Rest Is Money",
+  "feed_url": "https://feeds.megaphone.fm/therestismoney",
+  "host": "megaphone",
+  "episode": "330. The hidden pension crisis",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT7906390978.mp3",
+  "published": "Thu, 12 Nov 2026 00:06:00 -0000",
+  "listed_duration": 3282.0,
+  "split": "train"
+ },
+ {
+  "show": "How It Happened",
+  "feed_url": "https://feeds.megaphone.fm/axioshowithappened",
+  "host": "megaphone",
+  "episode": "Elon Musk vs. Twitter Part I: Not A Chill Normal Dude",
+  "audio": "https://chtbl.com/track/5429FA/traffic.megaphone.fm/AXIOS1319317303.mp3?updated=1664834042",
+  "published": "Fri, 16 Sep 2022 09:30:00 -0000",
+  "listed_duration": 2223.0,
+  "split": "train"
+ },
+ {
+  "show": "How It Happened",
+  "feed_url": "https://feeds.megaphone.fm/axioshowithappened",
+  "host": "megaphone",
+  "episode": "Elon Musk vs. Twitter Part III: Musk Offers To Buy Twitter (Again)",
+  "audio": "https://chtbl.com/track/5429FA/traffic.megaphone.fm/AXIOS8901286843.mp3?updated=1665090835",
+  "published": "Thu, 06 Oct 2022 21:08:00 -0000",
+  "listed_duration": 1032.0,
+  "split": "train"
+ },
+ {
+  "show": "Coffee Break Spanish",
+  "feed_url": "https://feeds.acast.com/public/shows/985e7c00-8945-4e0d-a4da-b93049180ce1",
+  "host": "acast",
+  "episode": "Coming soon: On Track - a Coffee Break Adventure",
+  "audio": "https://sphinx.acast.com/p/acast/s/coffeebreakspanish/e/6ae4ff2de8cdbf26ddf9bafb/media.mp3",
+  "published": "Fri, 30 Oct 2026 20:33:49 GMT",
+  "listed_duration": 135.0,
+  "split": "train"
+ },
+ {
+  "show": "Coffee Break Spanish",
+  "feed_url": "https://feeds.acast.com/public/shows/985e7c00-8945-4e0d-a4da-b93049180ce1",
+  "host": "acast",
+  "episode": "On Track Companion Podcast, Episode 1 (español) | Venecia",
+  "audio": "https://sphinx.acast.com/p/acast/s/coffeebreakspanish/e/6ae5d19af6b38070e2749c0d/media.mp3",
+  "published": "Mon, 02 Nov 2026 09:15:00 GMT",
+  "listed_duration": 1336.0,
+  "split": "train"
+ },
+ {
+  "show": "National Park After Dark",
+  "feed_url": "https://feeds.megaphone.fm/ADL5623813745",
+  "host": "megaphone",
+  "episode": "Trail Tales 105: Bear Makeouts, Grizzly Wisdom & Trail Angels",
+  "audio": "https://tracking.swap.fm/track/JhoQDAATtO1l0y8tdKNa/traffic.megaphone.fm/ADL9020084730.mp3",
+  "published": "Thu, 05 Nov 2026 05:00:00 -0000",
+  "listed_duration": 4203.0,
+  "split": "train"
+ },
+ {
+  "show": "National Park After Dark",
+  "feed_url": "https://feeds.megaphone.fm/ADL5623813745",
+  "host": "megaphone",
+  "episode": "Trail Tales 104: Illegal Collections, Haunted Dreams & Men in Windows",
+  "audio": "https://tracking.swap.fm/track/JhoQDAATtO1l0y8tdKNa/traffic.megaphone.fm/ADL8905683813.mp3",
+  "published": "Thu, 22 Oct 2026 04:00:00 -0000",
+  "listed_duration": 3034.0,
+  "split": "train"
+ },
+ {
+  "show": "The Curious History of Your Home",
+  "feed_url": "https://feeds.megaphone.fm/thecurioushistoryofyourhome",
+  "host": "megaphone",
+  "episode": "Laundry",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/NSR7113401178.mp3?updated=1728310127",
+  "published": "Mon, 14 Oct 2024 23:10:00 -0000",
+  "listed_duration": 1923.0,
+  "split": "train"
+ },
+ {
+  "show": "The Curious History of Your Home",
+  "feed_url": "https://feeds.megaphone.fm/thecurioushistoryofyourhome",
+  "host": "megaphone",
+  "episode": "Introducing Jane Austen Stories: Emma",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/NSR2317553482.mp3",
+  "published": "Mon, 31 Aug 2026 23:00:00 -0000",
+  "listed_duration": 2872.0,
+  "split": "train"
+ },
+ {
+  "show": "Dan Snow's History Hit",
+  "feed_url": "https://access.acast.com/rss/c939f8d1-c4bc-478e-8bb9-e5343f9a7ab5",
+  "host": "acast",
+  "episode": "A Deep Dive on Submarines",
+  "audio": "https://sphinx.acast.com/p/acast/s/dansnowshistoryhit/e/6aecbf9474a96cc5a4bfb119/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=FdsgrNoy1EJZ3Cz_0buYKKATw9LF-DL-6VsaeCmycDk",
+  "published": "Mon, 09 Nov 2026 03:00:00 GMT",
+  "listed_duration": 3060.0,
+  "split": "train"
+ },
+ {
+  "show": "Dan Snow's History Hit",
+  "feed_url": "https://access.acast.com/rss/c939f8d1-c4bc-478e-8bb9-e5343f9a7ab5",
+  "host": "acast",
+  "episode": "WWI's Stalingrad: The Siege of Przemyśl",
+  "audio": "https://sphinx.acast.com/p/acast/s/dansnowshistoryhit/e/6ae4afe986d4399f6fe0ded1/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=8vd5eeIGm1whfA0HTSXw_SDL0fT08HKhfxzWoXZ1m84",
+  "published": "Thu, 05 Nov 2026 00:00:00 GMT",
+  "listed_duration": 3503.0,
+  "split": "train"
+ },
+ {
+  "show": "The New Yorker Radio Hour",
+  "feed_url": "https://feeds.simplecast.com/TRuO_SRo",
+  "host": "simplecast",
+  "episode": "Despite Reports, Reading Is Alive and Well",
+  "audio": "https://pscrb.fm/rss/p/mgln.ai/e/14/tracking.swap.fm/track/uJwtcKQUPuqBQPfusm59/pdrl.fm/7a3b46/pdst.fm/e/dts.podtrac.com/pts/redirect.mp3/waaa.wnyc.org/82098f2c-a672-49b6-8a05-b8245aec3dbc/episodes/c3dcf8b0-4a8d-4b86-b8d9-af08732e235f/audio/128/default.mp3?aid=rss_feed&awCollectionId=82098f2c-a672-49b6-8a05-b8245aec3dbc&awEpisodeId=c3dcf8b0-4a8d-4b86-b8d9-af08732e235f&feed=TRuO_SRo",
+  "published": "Tue, 27 Oct 2026 10:00:00 +0000",
+  "listed_duration": 1248.0,
+  "split": "train"
+ },
+ {
+  "show": "The New Yorker Radio Hour",
+  "feed_url": "https://feeds.simplecast.com/TRuO_SRo",
+  "host": "simplecast",
+  "episode": "Democrats Might Take Back the House. Then What?",
+  "audio": "https://pscrb.fm/rss/p/mgln.ai/e/14/tracking.swap.fm/track/uJwtcKQUPuqBQPfusm59/pdrl.fm/7a3b46/pdst.fm/e/dts.podtrac.com/pts/redirect.mp3/waaa.wnyc.org/82098f2c-a672-49b6-8a05-b8245aec3dbc/episodes/73c4e7de-67df-429a-a3e2-1c0937da7d0c/audio/128/default.mp3?aid=rss_feed&awCollectionId=82098f2c-a672-49b6-8a05-b8245aec3dbc&awEpisodeId=73c4e7de-67df-429a-a3e2-1c0937da7d0c&feed=TRuO_SRo",
+  "published": "Fri, 30 Oct 2026 17:40:00 +0000",
+  "listed_duration": 1917.0,
+  "split": "train"
+ },
+ {
+  "show": "Stories Podcast: A Bedtime Show for Kids of All Ages",
+  "feed_url": "https://feeds.megaphone.fm/STM4306131571",
+  "host": "megaphone",
+  "episode": "Stories Podchats: Snack Bracket",
+  "audio": "https://pscrb.fm/rss/p/traffic.megaphone.fm/STM2253334057.mp3",
+  "published": "Fri, 06 Nov 2026 23:53:00 -0000",
+  "listed_duration": 1994.0,
+  "split": "train"
+ },
+ {
+  "show": "Stories Podcast: A Bedtime Show for Kids of All Ages",
+  "feed_url": "https://feeds.megaphone.fm/STM4306131571",
+  "host": "megaphone",
+  "episode": "The Last of the Dragons",
+  "audio": "https://pscrb.fm/rss/p/traffic.megaphone.fm/STM3344079379.mp3",
+  "published": "Sat, 24 Oct 2026 20:16:00 -0000",
+  "listed_duration": 1309.0,
+  "split": "train"
+ },
+ {
+  "show": "The New Yorker: Fiction",
+  "feed_url": "https://feeds.megaphone.fm/CNE2112124476",
+  "host": "megaphone",
+  "episode": "Colm Tóibín Reads Tobias Wolff",
+  "audio": "https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/uJwtcKQUPuqBQPfusm59/traffic.megaphone.fm/CNE7870943641.mp3",
+  "published": "Thu, 01 Oct 2026 10:00:00 -0000",
+  "listed_duration": 3814.0,
+  "split": "train"
+ },
+ {
+  "show": "The New Yorker: Fiction",
+  "feed_url": "https://feeds.megaphone.fm/CNE2112124476",
+  "host": "megaphone",
+  "episode": "Mohsin Hamid Reads Haruki Murakami",
+  "audio": "https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/uJwtcKQUPuqBQPfusm59/traffic.megaphone.fm/CNE2015559728.mp3",
+  "published": "Sat, 01 Aug 2026 10:00:00 -0000",
+  "listed_duration": 5590.0,
+  "split": "train"
+ },
+ {
+  "show": "Freakonomics Radio",
+  "feed_url": "https://feeds.simplecast.com/Y8lFbOT4",
+  "host": "simplecast",
+  "episode": "Are Private Equity Firms Plundering the U.S. Economy? (Update)",
+  "audio": "https://mgln.ai/e/2/pdst.fm/e/dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/2be48404-a43c-4fa8-a32c-760a3216272e/episodes/ba033623-4d2f-483b-8b11-2620ffa44371/audio/128/default.mp3?aid=rss_feed&awCollectionId=2be48404-a43c-4fa8-a32c-760a3216272e&awEpisodeId=ba033623-4d2f-483b-8b11-2620ffa44371&feed=Y8lFbOT4",
+  "published": "Wed, 21 Oct 2026 00:00:00 +0000",
+  "listed_duration": 2884.0,
+  "split": "train"
+ },
+ {
+  "show": "Freakonomics Radio",
+  "feed_url": "https://feeds.simplecast.com/Y8lFbOT4",
+  "host": "simplecast",
+  "episode": "692. What Will A.I. Do to (and for) Human Creativity?",
+  "audio": "https://mgln.ai/e/2/pdst.fm/e/dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/2be48404-a43c-4fa8-a32c-760a3216272e/episodes/c9962da9-3a9b-429b-aa66-6b99e9432b4f/audio/128/default.mp3?aid=rss_feed&awCollectionId=2be48404-a43c-4fa8-a32c-760a3216272e&awEpisodeId=c9962da9-3a9b-429b-aa66-6b99e9432b4f&feed=Y8lFbOT4",
+  "published": "Fri, 23 Oct 2026 10:00:00 +0000",
+  "listed_duration": 3549.0,
+  "split": "train"
+ },
+ {
+  "show": "99% Invisible",
+  "feed_url": "https://feeds.simplecast.com/BqbsxVfO",
+  "host": "simplecast",
+  "episode": "100 Objects #22: AOL Disc",
+  "audio": "https://mgln.ai/e/2/dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/3bb687b0-04af-4257-90f1-39eef4e631b6/episodes/2b20383f-2668-4c54-8804-15135b78d44c/audio/128/default.mp3?aid=rss_feed&awCollectionId=3bb687b0-04af-4257-90f1-39eef4e631b6&awEpisodeId=2b20383f-2668-4c54-8804-15135b78d44c&feed=BqbsxVfO",
+  "published": "Fri, 30 Oct 2026 07:00:00 +0000",
+  "listed_duration": 2053.0,
+  "split": "train"
+ },
+ {
+  "show": "99% Invisible",
+  "feed_url": "https://feeds.simplecast.com/BqbsxVfO",
+  "host": "simplecast",
+  "episode": "Zone Zero",
+  "audio": "https://mgln.ai/e/2/dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/3bb687b0-04af-4257-90f1-39eef4e631b6/episodes/ceee3eec-1f1d-4e08-bca5-9ed2d577b937/audio/128/default.mp3?aid=rss_feed&awCollectionId=3bb687b0-04af-4257-90f1-39eef4e631b6&awEpisodeId=ceee3eec-1f1d-4e08-bca5-9ed2d577b937&feed=BqbsxVfO",
+  "published": "Tue, 3 Nov 2026 09:00:00 +0000",
+  "listed_duration": 2247.0,
+  "split": "train"
+ },
+ {
+  "show": "Revisionist History",
+  "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/0e563f45-9d14-4ce8-8ef0-ae32006cd7e7/0d4cc74d-fff7-4b89-8818-ae32006cd7f0/podcast.rss",
+  "host": "omnycontent",
+  "episode": "Wolfgang's Law - Part Two",
+  "audio": "https://pdrl.fm/ebe9fc/podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/0e563f45-9d14-4ce8-8ef0-ae32006cd7e7/44558a08-7551-4948-841f-b4e3016a0653/audio.mp3?utm_source=Podcast&in_playlist=0d4cc74d-fff7-4b89-8818-ae32006cd7f0",
+  "published": "Thu, 15 Oct 2026 07:00:00 +0000",
+  "listed_duration": 2068.0,
+  "split": "train"
+ },
+ {
+  "show": "Revisionist History",
+  "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/0e563f45-9d14-4ce8-8ef0-ae32006cd7e7/0d4cc74d-fff7-4b89-8818-ae32006cd7f0/podcast.rss",
+  "host": "omnycontent",
+  "episode": "Wolfgang's Law - Part One",
+  "audio": "https://pdrl.fm/ebe9fc/podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/0e563f45-9d14-4ce8-8ef0-ae32006cd7e7/633a124e-d9c4-45d2-9d7f-b4dd00124388/audio.mp3?utm_source=Podcast&in_playlist=0d4cc74d-fff7-4b89-8818-ae32006cd7f0",
+  "published": "Thu, 08 Oct 2026 07:00:00 +0000",
+  "listed_duration": 1903.0,
+  "split": "train"
+ },
+ {
+  "show": "Human Circus: Journeys in the Medieval World",
+  "feed_url": "https://feeds.megaphone.fm/human-circus?format=rss",
+  "host": "megaphone",
+  "episode": "Medieval Lives 12: Two Saints and a Sinner",
+  "audio": "https://traffic.megaphone.fm/ADL2029077733.mp3?updated=1766432326",
+  "published": "Mon, 22 Dec 2025 19:17:00 -0000",
+  "listed_duration": 2602.0,
+  "split": "train"
+ },
+ {
+  "show": "Human Circus: Journeys in the Medieval World",
+  "feed_url": "https://feeds.megaphone.fm/human-circus?format=rss",
+  "host": "megaphone",
+  "episode": "A 12th-Century Pilgrim's Guide 2: The Camino de Santiago",
+  "audio": "https://traffic.megaphone.fm/ADL6791219504.mp3?updated=1772846637",
+  "published": "Sat, 07 Mar 2026 01:12:00 -0000",
+  "listed_duration": 2513.0,
+  "split": "train"
+ },
+ {
+  "show": "Hard Fork",
+  "feed_url": "https://feeds.simplecast.com/6HKOhNgS",
+  "host": "simplecast",
+  "episode": "What’s a Hard Fork?",
+  "audio": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/e8ace451-6d90-460a-acca-9e715422ea13/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=e8ace451-6d90-460a-acca-9e715422ea13&feed=6HKOhNgS",
+  "published": "Tue, 27 Sep 2022 14:00:00 +0000",
+  "listed_duration": 84.0,
+  "split": "train"
+ },
+ {
+  "show": "Hard Fork",
+  "feed_url": "https://feeds.simplecast.com/6HKOhNgS",
+  "host": "simplecast",
+  "episode": "Jensen Huang Is Out at Nvidia",
+  "audio": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/66354d0c-214e-4370-a0df-240d93e522f8/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=66354d0c-214e-4370-a0df-240d93e522f8&feed=6HKOhNgS",
+  "published": "Thu, 12 Nov 2026 23:55:00 +0000",
+  "listed_duration": 2362.0,
+  "split": "train"
+ },
+ {
+  "show": "Ukraine: The Latest",
+  "feed_url": "https://feeds.acast.com/public/shows/6583012e715d5300169dcdcb",
+  "host": "acast",
+  "episode": "Musk 'helping to kill Ukrainians' by throttling Starshield",
+  "audio": "https://sphinx.acast.com/p/open/s/6583012e715d5300169dcdcb/e/6af5eb9ce9c61f17de880d5f/media.mp3",
+  "published": "Thu, 12 Nov 2026 17:57:57 GMT",
+  "listed_duration": 1880.0,
+  "split": "train"
+ },
+ {
+  "show": "Ukraine: The Latest",
+  "feed_url": "https://feeds.acast.com/public/shows/6583012e715d5300169dcdcb",
+  "host": "acast",
+  "episode": "Peace talks in Abu Dhabi end without breakthrough",
+  "audio": "https://sphinx.acast.com/p/open/s/6583012e715d5300169dcdcb/e/6af4a86344800a557013516c/media.mp3",
+  "published": "Wed, 11 Nov 2026 18:13:11 GMT",
+  "listed_duration": 3697.0,
+  "split": "train"
+ },
+ {
+  "show": "Betwixt The Sheets: The History of Sex, Scandal & Society",
+  "feed_url": "https://access.acast.com/rss/6215faef4b795a5d1ffd3b62",
+  "host": "acast",
+  "episode": "Why Are Vampires Sexy?",
+  "audio": "https://sphinx.acast.com/p/acast/s/betwixt-the-sheets/e/6adb6ce328324fc86a5f6150/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=x2AKYDqNLNtWXXhRqrmnuxZnAvsMZBcbx3UtJAEPZ2I",
+  "published": "Tue, 27 Oct 2026 03:00:00 GMT",
+  "listed_duration": 3023.0,
+  "split": "train"
+ },
+ {
+  "show": "Betwixt The Sheets: The History of Sex, Scandal & Society",
+  "feed_url": "https://access.acast.com/rss/6215faef4b795a5d1ffd3b62",
+  "host": "acast",
+  "episode": "The Tudor Traitor Who Killed Anne Boleyn",
+  "audio": "https://sphinx.acast.com/p/acast/s/betwixt-the-sheets/e/6ae4963c8475854f08710f0c/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=bqk4C5qHD3jTf8WbcYBhT0VB8WCtNS1UhOuQxbwN8Ek",
+  "published": "Tue, 03 Nov 2026 03:00:00 GMT",
+  "listed_duration": 2512.0,
+  "split": "train"
+ },
+ {
+  "show": "Bloomberg Intelligence",
+  "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/7f534b8c-9e91-429a-b102-ae3c00090c6d/0ad812bf-fd15-4012-a18c-ae3c00090c76/podcast.rss",
+  "host": "omnycontent",
+  "episode": "Nvidia’s Huang Ousted by Board in Move That Roils AI Economy",
+  "audio": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/UVBrz8bN8aM2Xe47PEPu/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/7f534b8c-9e91-429a-b102-ae3c00090c6d/2a114564-f799-44d3-8e56-b500012986af/audio.mp3?utm_source=Podcast&in_playlist=0ad812bf-fd15-4012-a18c-ae3c00090c76",
+  "published": "Thu, 12 Nov 2026 18:11:10 +0000",
+  "listed_duration": 1883.0,
+  "split": "train"
+ },
+ {
+  "show": "Bloomberg Intelligence",
+  "feed_url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/7f534b8c-9e91-429a-b102-ae3c00090c6d/0ad812bf-fd15-4012-a18c-ae3c00090c76/podcast.rss",
+  "host": "omnycontent",
+  "episode": "Election 'Blue Wave' & Your Wallet; Navigating AI-Driven Market Volatility",
+  "audio": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/UVBrz8bN8aM2Xe47PEPu/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/1b0c2805-9805-43e6-9662-b4ab0110f413/4e1ddef0-0ffd-45f4-9980-b4fa016dfb77/audio.mp3?utm_source=Podcast&in_playlist=0ad812bf-fd15-4012-a18c-ae3c00090c76",
+  "published": "Sat, 07 Nov 2026 10:00:00 +0000",
+  "listed_duration": 2589.0,
+  "split": "train"
+ },
+ {
+  "show": "Science Magazine Podcast",
+  "feed_url": "https://feeds.megaphone.fm/AAAS8717073854",
+  "host": "megaphone",
+  "episode": "Destroying forever chemicals, hyperlocal pollution sensing, and an experiment in queer parenthood",
+  "audio": "https://traffic.megaphone.fm/AAAS3501047661.mp3",
+  "published": "Thu, 29 Oct 2026 18:00:00 -0000",
+  "listed_duration": 3000.0,
+  "split": "train"
+ },
+ {
+  "show": "Science Magazine Podcast",
+  "feed_url": "https://feeds.megaphone.fm/AAAS8717073854",
+  "host": "megaphone",
+  "episode": "Birds make decisions faster than we do, rewriting DNA’s history, and combining science and poetry",
+  "audio": "https://traffic.megaphone.fm/AAAS8895044169.mp3",
+  "published": "Thu, 22 Oct 2026 18:00:00 -0000",
+  "listed_duration": 2614.0,
+  "split": "train"
+ },
+ {
+  "show": "American History Hit",
+  "feed_url": "https://access.acast.com/rss/62c7fb2a7acf3900129dffa7",
+  "host": "acast",
+  "episode": "The Death Penalty in America",
+  "audio": "https://sphinx.acast.com/p/open/s/62c7fb2a7acf3900129dffa7/e/6aede250d7ee414f9743da97/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=4Ki_zr1JOzIcUGYArq2FDgCPzXBNiro54mvrhs0-tp4",
+  "published": "Mon, 09 Nov 2026 09:00:00 GMT",
+  "listed_duration": 2717.0,
+  "split": "train"
+ },
+ {
+  "show": "American History Hit",
+  "feed_url": "https://access.acast.com/rss/62c7fb2a7acf3900129dffa7",
+  "host": "acast",
+  "episode": "Rise & Fall of the Aztec Empire",
+  "audio": "https://sphinx.acast.com/p/open/s/62c7fb2a7acf3900129dffa7/e/6ae4b2ff86d4399f6fe21af0/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=E16PUkC_hU-HIonBBZcM6FwQ5BMbOwZIX_SjTj05rTg",
+  "published": "Mon, 02 Nov 2026 09:00:00 GMT",
+  "listed_duration": 3854.0,
+  "split": "train"
+ },
+ {
+  "show": "The Book Club",
+  "feed_url": "https://feeds.megaphone.fm/thebookclub",
+  "host": "megaphone",
+  "episode": "36. The Bell Jar: Sylvia Plath’s Tragedy",
+  "audio": "https://traffic.megaphone.fm/GLT5512313530.mp3",
+  "published": "Mon, 12 Oct 2026 23:05:00 -0000",
+  "listed_duration": 5642.0,
+  "split": "train"
+ },
+ {
+  "show": "The Book Club",
+  "feed_url": "https://feeds.megaphone.fm/thebookclub",
+  "host": "megaphone",
+  "episode": "37. Dostoevsky’s Russian Masterpiece: White Nights",
+  "audio": "https://traffic.megaphone.fm/GLT9941677039.mp3",
+  "published": "Mon, 19 Oct 2026 23:05:00 -0000",
+  "listed_duration": 4736.0,
+  "split": "train"
+ },
+ {
+  "show": "Economist Podcasts",
+  "feed_url": "https://feeds.acast.com/public/shows/ec380acc-fe13-46a0-991f-a1e508d126f8",
+  "host": "acast",
+  "episode": "“Britain is back”: an interview with Andy Burnham",
+  "audio": "https://sphinx.acast.com/p/open/s/d556eb54-6160-4c85-95f4-47d9f5216c49/a/theeconomistallaudio/e/6aedac35dabcb4d1f2d2092c/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=aTrr4TFzJTriNe54qgAf3CcTMb-_qhrKbYX2rwF8NOA",
+  "published": "Fri, 06 Nov 2026 10:30:13 GMT",
+  "listed_duration": 1572.0,
+  "split": "train"
+ },
+ {
+  "show": "Economist Podcasts",
+  "feed_url": "https://feeds.acast.com/public/shows/ec380acc-fe13-46a0-991f-a1e508d126f8",
+  "host": "acast",
+  "episode": "Let’s get this party restarted: Republicans reel from the midterms",
+  "audio": "https://sphinx.acast.com/p/open/s/d556eb54-6160-4c85-95f4-47d9f5216c49/a/theeconomistallaudio/e/6af4462e36d94b58ef827a8a/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=yMTo-DMwSRUVM7FAhiqPoWuRprkML-TaG0xN0vXPr74",
+  "published": "Wed, 11 Nov 2026 10:43:06 GMT",
+  "listed_duration": 1378.0,
+  "split": "train"
+ },
+ {
+  "show": "The World, the Universe and Us",
+  "feed_url": "https://feeds.megaphone.fm/ARML6831509338",
+  "host": "megaphone",
+  "episode": "COP31: Are the World's Climate Summits Actually Working Anymore?",
+  "audio": "https://tracking.swap.fm/track/YfZO4tERxneauNcW9Fgn/mgln.ai/e/211/traffic.megaphone.fm/ARML4483146776.mp3",
+  "published": "Thu, 05 Nov 2026 15:43:00 -0000",
+  "listed_duration": 1821.0,
+  "split": "train"
+ },
+ {
+  "show": "The World, the Universe and Us",
+  "feed_url": "https://feeds.megaphone.fm/ARML6831509338",
+  "host": "megaphone",
+  "episode": "Climate Overshoot Is Here - And Antarctica Is in Trouble",
+  "audio": "https://tracking.swap.fm/track/YfZO4tERxneauNcW9Fgn/mgln.ai/e/211/traffic.megaphone.fm/ARML4817831357.mp3",
+  "published": "Thu, 29 Oct 2026 01:00:00 -0000",
+  "listed_duration": 1336.0,
+  "split": "train"
+ },
+ {
+  "show": "The Rest Is Politics: Leading",
+  "feed_url": "https://feeds.megaphone.fm/GLT9029505120",
+  "host": "megaphone",
+  "episode": "212. What Happens When the World Stops Trusting America? (Michael Lewis)",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT4345180994.mp3",
+  "published": "Mon, 26 Oct 2026 00:00:00 -0000",
+  "listed_duration": 3513.0,
+  "split": "train"
+ },
+ {
+  "show": "The Rest Is Politics: Leading",
+  "feed_url": "https://feeds.megaphone.fm/GLT9029505120",
+  "host": "megaphone",
+  "episode": "214. What Elon Musk Gets Wrong About South Africa",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT8376196985.mp3",
+  "published": "Mon, 09 Nov 2026 00:00:00 -0000",
+  "listed_duration": 3502.0,
+  "split": "train"
+ },
+ {
+  "show": "No Hay Tos (Real Mexican Spanish)",
+  "feed_url": "https://feeds.simplecast.com/UrwSRKXH",
+  "host": "simplecast",
+  "episode": "FÍJATE: The Little Word Mexicans Use All the Time",
+  "audio": "https://dts.podtrac.com/redirect.mp3/pscrb.fm/rss/p/sonoro.simplecastaudio.com/ecd28284-5663-4ca4-af11-5df4f6ea1aa5/episodes/01f23c73-b9a5-4871-8edd-7bb64d04634c/audio/128/default.mp3?aid=rss_feed&awCollectionId=ecd28284-5663-4ca4-af11-5df4f6ea1aa5&awEpisodeId=01f23c73-b9a5-4871-8edd-7bb64d04634c&feed=UrwSRKXH",
+  "published": "Thu, 5 Nov 2026 14:00:00 +0000",
+  "listed_duration": 1829.0,
+  "split": "train"
+ },
+ {
+  "show": "No Hay Tos (Real Mexican Spanish)",
+  "feed_url": "https://feeds.simplecast.com/UrwSRKXH",
+  "host": "simplecast",
+  "episode": "Preterite vs. Imperfect: The Ultimate Blueprint to Unlock Your Spanish Potential",
+  "audio": "https://dts.podtrac.com/redirect.mp3/pscrb.fm/rss/p/sonoro.simplecastaudio.com/ecd28284-5663-4ca4-af11-5df4f6ea1aa5/episodes/27fcd0da-1010-4588-9d18-3845f5214e73/audio/128/default.mp3?aid=rss_feed&awCollectionId=ecd28284-5663-4ca4-af11-5df4f6ea1aa5&awEpisodeId=27fcd0da-1010-4588-9d18-3845f5214e73&feed=UrwSRKXH",
+  "published": "Thu, 15 Oct 2026 14:00:00 +0000",
+  "listed_duration": 1465.0,
+  "split": "train"
+ },
+ {
+  "show": "The History of Byzantium",
+  "feed_url": "https://feeds.acast.com/public/shows/b53d3462-8bc8-46b5-875c-99d8b173ed52",
+  "host": "acast",
+  "episode": "Episode 352 - Crusader Storm with Nicholas Morton",
+  "audio": "https://sphinx.acast.com/p/acast/s/thehistoryofbyzantium/e/6a16ecc08084eb4dba9fec02/media.mp3",
+  "published": "Wed, 03 Jun 2026 21:59:35 GMT",
+  "listed_duration": 3485.0,
+  "split": "train"
+ },
+ {
+  "show": "The History of Byzantium",
+  "feed_url": "https://feeds.acast.com/public/shows/b53d3462-8bc8-46b5-875c-99d8b173ed52",
+  "host": "acast",
+  "episode": "Episode 355 - You Can’t Understand the Modern World without Byzantium",
+  "audio": "https://sphinx.acast.com/p/acast/s/thehistoryofbyzantium/e/6a29699832e30dceaf00f06c/media.mp3",
+  "published": "Tue, 23 Jun 2026 16:18:46 GMT",
+  "listed_duration": 1454.0,
+  "split": "train"
+ },
+ {
+  "show": "Where Should We Begin? with Esther Perel",
+  "feed_url": "https://feeds.megaphone.fm/ep-wswb",
+  "host": "megaphone",
+  "episode": "Is My Fantasy Ruining My Love Life?",
+  "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP8945136607.mp3",
+  "published": "Mon, 26 Oct 2026 05:00:00 -0000",
+  "listed_duration": 3242.0,
+  "split": "train"
+ },
+ {
+  "show": "Where Should We Begin? with Esther Perel",
+  "feed_url": "https://feeds.megaphone.fm/ep-wswb",
+  "host": "megaphone",
+  "episode": "I'll Still Be Your Financial Partner, But I'm Done Being Your Wife",
+  "audio": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/257/traffic.megaphone.fm/VMP9684217204.mp3",
+  "published": "Mon, 09 Nov 2026 06:00:00 -0000",
+  "listed_duration": 3081.0,
+  "split": "train"
+ },
+ {
+  "show": "Christopher Kimball’s Milk Street Radio",
+  "feed_url": "https://publicfeeds.net/f/9135/feed-rss.xml",
+  "host": "publicfeeds",
+  "episode": "Jacques Pépin's Untold Stories: The Mob, The President, and Fast Food",
+  "audio": "https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/sblTq32fyWAjsHzze2LG/pscrb.fm/rss/p/dovetail.prxu.org/9135/9382980d-f7d6-4b56-982a-e08b6d63620c/MSR1025_Podcast.mp3",
+  "published": "Fri, 06 Nov 2026 08:30:00 -0000",
+  "listed_duration": 3060.0,
+  "split": "train"
+ },
+ {
+  "show": "Christopher Kimball’s Milk Street Radio",
+  "feed_url": "https://publicfeeds.net/f/9135/feed-rss.xml",
+  "host": "publicfeeds",
+  "episode": "Our Haunted Podcast! Witches' Brew, the Candy Store Ghost and the Secret History of Jack-o'-Lanterns",
+  "audio": "https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/sblTq32fyWAjsHzze2LG/pscrb.fm/rss/p/dovetail.prxu.org/9135/4317cf41-f36a-47e2-9e6e-438f01cce80a/MSR924RR_Podcast.mp3",
+  "published": "Fri, 30 Oct 2026 07:30:00 -0000",
+  "listed_duration": 3062.0,
+  "split": "train"
+ },
+ {
+  "show": "The Book Review",
+  "feed_url": "https://feeds.simplecast.com/zyaxg_KL",
+  "host": "simplecast",
+  "episode": "What to Read This Halloween, According to Two Best-Selling Writers",
+  "audio": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/621229bd-2556-4ce6-8ae0-9fa3046f9da9/episodes/8a71830c-d2c0-41c9-82df-eb816b1c1539/audio/128/default.mp3?aid=rss_feed&awCollectionId=621229bd-2556-4ce6-8ae0-9fa3046f9da9&awEpisodeId=8a71830c-d2c0-41c9-82df-eb816b1c1539&feed=zyaxg_KL",
+  "published": "Fri, 23 Oct 2026 09:00:00 +0000",
+  "listed_duration": 3092.0,
+  "split": "train"
+ },
+ {
+  "show": "The Book Review",
+  "feed_url": "https://feeds.simplecast.com/zyaxg_KL",
+  "host": "simplecast",
+  "episode": "A Book Review Critics’ Roundtable",
+  "audio": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/621229bd-2556-4ce6-8ae0-9fa3046f9da9/episodes/cd31ae54-deb3-4343-92b3-cb1e33d85ec7/audio/128/default.mp3?aid=rss_feed&awCollectionId=621229bd-2556-4ce6-8ae0-9fa3046f9da9&awEpisodeId=cd31ae54-deb3-4343-92b3-cb1e33d85ec7&feed=zyaxg_KL",
+  "published": "Fri, 16 Oct 2026 09:00:00 +0000",
+  "listed_duration": 2500.0,
+  "split": "train"
+ },
+ {
+  "show": "Wait Wait... Don't Tell Me!",
+  "feed_url": "https://feeds.npr.org/344098539/podcast.xml",
+  "host": "npr",
+  "episode": "We celebrate a bomb and dig deep with Margo Price",
+  "audio": "https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-344098539/npr.simplecastaudio.com/edc43359-7f76-46f6-9469-62d040c9eb26/episodes/60e44ffe-3469-4c27-9c28-bfe88c5688a7/audio/128/default.mp3?awCollectionId=edc43359-7f76-46f6-9469-62d040c9eb26&awEpisodeId=60e44ffe-3469-4c27-9c28-bfe88c5688a7&feed=KJIhThj8&t=podcast&e=nx-s1-5996874&p=344098539&d=2850&size=45615273",
+  "published": "Sat, 10 Oct 2026 07:00:02 +0000",
+  "listed_duration": 2850.0,
+  "split": "train"
+ },
+ {
+  "show": "Wait Wait... Don't Tell Me!",
+  "feed_url": "https://feeds.npr.org/344098539/podcast.xml",
+  "host": "npr",
+  "episode": "We take John Turturro to the Cheesecake Factory",
+  "audio": "https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-344098539/npr.simplecastaudio.com/edc43359-7f76-46f6-9469-62d040c9eb26/episodes/15174e96-2505-48f9-926d-1a2a72a9b79d/audio/128/default.mp3?awCollectionId=edc43359-7f76-46f6-9469-62d040c9eb26&awEpisodeId=15174e96-2505-48f9-926d-1a2a72a9b79d&feed=KJIhThj8&t=podcast&e=nx-s1-6023477&p=344098539&d=2842&size=45482780",
+  "published": "Sat, 31 Oct 2026 07:00:02 +0000",
+  "listed_duration": 2842.0,
+  "split": "train"
+ },
+ {
+  "show": "Exchanges",
+  "feed_url": "https://feeds.megaphone.fm/GLD9218176758",
+  "host": "megaphone",
+  "episode": "Brookfield’s Connor Teskey on the Real Bottleneck in the AI Buildout",
+  "audio": "https://mgln.ai/e/1720/traffic.megaphone.fm/GLD4354719969.mp3",
+  "published": "Fri, 30 Oct 2026 04:00:00 -0000",
+  "listed_duration": 2118.0,
+  "split": "train"
+ },
+ {
+  "show": "Exchanges",
+  "feed_url": "https://feeds.megaphone.fm/GLD9218176758",
+  "host": "megaphone",
+  "episode": "Goldman Sachs Chairman and CEO David Solomon on AI: Implementation, Accountability, and Jobs",
+  "audio": "https://mgln.ai/e/1720/traffic.megaphone.fm/GLD8901879985.mp3",
+  "published": "Tue, 27 Oct 2026 19:28:00 -0000",
+  "listed_duration": 1012.0,
+  "split": "train"
+ },
+ {
+  "show": "Super Great Kids' Stories",
+  "feed_url": "https://feeds.megaphone.fm/super-great-kids-stories",
+  "host": "megaphone",
+  "episode": "Baba Yaga and Ivan of the Oak",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/NSR3432292193.mp3",
+  "published": "Fri, 30 Oct 2026 14:00:00 -0000",
+  "listed_duration": 1993.0,
+  "split": "train"
+ },
+ {
+  "show": "Super Great Kids' Stories",
+  "feed_url": "https://feeds.megaphone.fm/super-great-kids-stories",
+  "host": "megaphone",
+  "episode": "Anansi and the Magic Pot",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/NSR6906963382.mp3",
+  "published": "Wed, 11 Nov 2026 14:00:00 -0000",
+  "listed_duration": 1257.0,
+  "split": "train"
+ },
+ {
+  "show": "The Rest Is Politics: US",
+  "feed_url": "https://feeds.megaphone.fm/GLT5336643697",
+  "host": "megaphone",
+  "episode": "241. Susie Wiles Out, Stephen Miller In: What is Trump Thinking?",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT9800651845.mp3",
+  "published": "Mon, 09 Nov 2026 20:30:00 -0000",
+  "listed_duration": 2184.0,
+  "split": "train"
+ },
+ {
+  "show": "The Rest Is Politics: US",
+  "feed_url": "https://feeds.megaphone.fm/GLT5336643697",
+  "host": "megaphone",
+  "episode": "240. Vance Has Broken With Trump - Will MAGA Follow?",
+  "audio": "https://pdst.fm/e/traffic.megaphone.fm/GLT2409234869.mp3",
+  "published": "Fri, 06 Nov 2026 18:40:00 -0000",
+  "listed_duration": 2276.0,
+  "split": "train"
+ },
+ {
+  "show": "Unraveled",
+  "feed_url": "https://feeds.acast.com/public/shows/5ea17537-f11f-4532-8202-294d976b9d5c",
+  "host": "acast",
+  "episode": "LISK Ep.38: A New Arrest Changes the Case of the Long Island Serial Killer",
+  "audio": "https://sphinx.acast.com/p/acast/s/unraveled/e/6941789380257c9e354c10da/media.mp3",
+  "published": "Wed, 17 Dec 2025 08:00:00 GMT",
+  "listed_duration": 2549.0,
+  "split": "train"
+ },
+ {
+  "show": "Unraveled",
+  "feed_url": "https://feeds.acast.com/public/shows/5ea17537-f11f-4532-8202-294d976b9d5c",
+  "host": "acast",
+  "episode": "LISK Ep.39: Guilty! Rex Heuermann is the Long Island Serial Killer",
+  "audio": "https://sphinx.acast.com/p/acast/s/unraveled/e/69e62d0f0b4baf3bf22b7321/media.mp3",
+  "published": "Mon, 20 Apr 2026 14:00:00 GMT",
+  "listed_duration": 3146.0,
+  "split": "train"
+ },
+ {
+  "show": "Up First from NPR",
+  "feed_url": "https://feeds.npr.org/510318/podcast.xml",
+  "host": "npr",
+  "episode": "Hegseth Impeachment Blocked, House Leadership Change, DOJ Charges Terror Suspects",
+  "audio": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/ec423d0c-d0f3-48f8-a3b6-e75836e53f57/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=ec423d0c-d0f3-48f8-a3b6-e75836e53f57&feed=HMwRVgVt&t=podcast&e=nx-s1-6037294&p=510318&d=810&size=12970153",
+  "published": "Wed, 11 Nov 2026 10:58:36 +0000",
+  "listed_duration": 810.0,
+  "split": "train"
+ },
+ {
+  "show": "Up First from NPR",
+  "feed_url": "https://feeds.npr.org/510318/podcast.xml",
+  "host": "npr",
+  "episode": "Trump's Post-Midterm Changes, Lame-Duck Congress, Nvidia Huang Investigation",
+  "audio": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/npr.simplecastaudio.com/d52bee4a-b10a-40f8-9417-45064e6b8632/episodes/ff267242-74c6-4d7d-8c1e-9a99ebf4c5c5/audio/128/default.mp3?awCollectionId=d52bee4a-b10a-40f8-9417-45064e6b8632&awEpisodeId=ff267242-74c6-4d7d-8c1e-9a99ebf4c5c5&feed=HMwRVgVt&t=podcast&e=nx-s1-6034314&p=510318&d=791&size=12662954",
+  "published": "Mon, 09 Nov 2026 10:42:37 +0000",
+  "listed_duration": 791.0,
+  "split": "train"
+ },
+ {
+  "show": "Planet Money",
+  "feed_url": "https://feeds.npr.org/510289/podcast.xml",
+  "host": "npr",
+  "episode": "How bodegas led to the Yemeni coffeehouse explosion",
+  "audio": "https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510289/npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7/audio/128/default.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7&feed=hvWWWzRv&t=podcast&e=nx-s1-6036839&p=510289&d=1441&size=23060985",
+  "published": "Wed, 11 Nov 2026 13:03:29 +0000",
+  "listed_duration": 1441.0,
+  "split": "train"
+ },
+ {
+  "show": "Planet Money",
+  "feed_url": "https://feeds.npr.org/510289/podcast.xml",
+  "host": "npr",
+  "episode": "The history of light (classic)",
+  "audio": "https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510289/npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/df5d68e4-3e3f-4c21-81f1-66dfd11e3193/audio/128/default.mp3?awCollectionId=43b5acee-463e-4612-95ad-d2596d9dd337&awEpisodeId=df5d68e4-3e3f-4c21-81f1-66dfd11e3193&feed=hvWWWzRv&t=podcast&e=nx-s1-6027986&p=510289&d=1266&size=20264002",
+  "published": "Wed, 04 Nov 2026 08:00:00 +0000",
+  "listed_duration": 1266.0,
+  "split": "train"
+ },
+ {
+  "show": "Complex Systems with Patrick McKenzie (patio11)",
+  "feed_url": "https://feeds.transistor.fm/complex-systems-with-patrick-mckenzie-patio11",
+  "host": "transistor",
+  "episode": "The charity that is also a time machine",
+  "audio": "https://pscrb.fm/rss/p/prfx.byspotify.com/e/media.transistor.fm/40e78066/045ae6af.mp3",
+  "published": "Thu, 22 Oct 2026 00:00:00 -0700",
+  "listed_duration": 1620.0,
+  "split": "test"
+ },
+ {
+  "show": "Complex Systems with Patrick McKenzie (patio11)",
+  "feed_url": "https://feeds.transistor.fm/complex-systems-with-patrick-mckenzie-patio11",
+  "host": "transistor",
+  "episode": "Why SoftBank paid me 17 yen to skip the air conditioning",
+  "audio": "https://pscrb.fm/rss/p/prfx.byspotify.com/e/media.transistor.fm/68bae943/8a4ccfeb.mp3",
+  "published": "Thu, 29 Oct 2026 00:00:00 -0700",
+  "listed_duration": 1604.0,
+  "split": "test"
+ },
+ {
+  "show": "Outside Lands San Francisco",
+  "feed_url": "https://www.outsidelands.org/rss/podcast.php",
+  "host": "outsidelands",
+  "episode": "514R: The Koshland House (Repodcast)",
+  "audio": "http://www.outsidelands.org/podcast/WNP514R_The_Koshland_House_Repodcast.mp3",
+  "published": "Sun, 01 Nov 2026 12:00:00 -0800",
+  "listed_duration": 1817.0,
+  "split": "test"
+ },
+ {
+  "show": "Outside Lands San Francisco",
+  "feed_url": "https://www.outsidelands.org/rss/podcast.php",
+  "host": "outsidelands",
+  "episode": "615: Short Stack No. 35",
+  "audio": "http://www.outsidelands.org/podcast/WNP615_Short_Stack_No_35.mp3",
+  "published": "Sun, 08 Nov 2026 12:00:00 -0800",
+  "listed_duration": 2414.0,
+  "split": "test"
+ },
+ {
+  "show": "Revolutions",
+  "feed_url": "https://rss.libsyn.com/shows/47475/destinations/159998.xml",
+  "host": "libsyn",
+  "episode": "Frauncis Tavern July 5, Patreon Q&A July 14",
+  "audio": "https://dts.podtrac.com/redirect.mp3/pscrb.fm/rss/p/prfx.byspotify.com/e/traffic.libsyn.com/secure/revolutionspodcast/FrauncisTavernQA.mp3?dest-id=159998",
+  "published": "Mon, 30 Jun 2025 01:34:00 +0000",
+  "listed_duration": 70.0,
+  "split": "test"
+ },
+ {
+  "show": "Revolutions",
+  "feed_url": "https://rss.libsyn.com/shows/47475/destinations/159998.xml",
+  "host": "libsyn",
+  "episode": "11.29-Liberty, Equality, Humanity",
+  "audio": "https://dts.podtrac.com/redirect.mp3/pscrb.fm/rss/p/prfx.byspotify.com/e/traffic.libsyn.com/secure/revolutionspodcast/11.28-Liberty_Equlity_Humanity.mp3?dest-id=159998",
+  "published": "Fri, 13 Jun 2025 02:58:00 +0000",
+  "listed_duration": 3568.0,
+  "split": "test"
+ },
+ {
+  "show": "How to Spanish Podcast",
+  "feed_url": "https://anchor.fm/s/10594f934/podcast/rss",
+  "host": "anchor",
+  "episode": "¡Estamos perdiendo 300 palabras cada día! - Ep 425",
+  "audio": "https://anchor.fm/s/10594f934/podcast/play/127317614/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-12%2F433957687-44100-2-177cb16a340c3.mp3",
+  "published": "Mon, 12 Oct 2026 11:14:00 GMT",
+  "listed_duration": 1377.0,
+  "split": "test"
+ },
+ {
+  "show": "How to Spanish Podcast",
+  "feed_url": "https://anchor.fm/s/10594f934/podcast/rss",
+  "host": "anchor",
+  "episode": "6 consejos para mejores conversaciones con nativos - EP 427",
+  "audio": "https://anchor.fm/s/10594f934/podcast/play/128077492/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-26%2F434980456-44100-2-8960543be85ed.mp3",
+  "published": "Mon, 26 Oct 2026 11:25:00 GMT",
+  "listed_duration": 1314.0,
+  "split": "test"
+ },
+ {
+  "show": "Español con Juan",
+  "feed_url": "https://espanolconjuan.blubrry.net/feed/podcast/",
+  "host": "blubrry",
+  "episode": "Habla español en el supermercado",
+  "audio": "https://media.blubrry.com/espanolconjuan/content.blubrry.com/espanolconjuan/su_per_audio.mp3",
+  "published": "Mon, 07 Sep 2026 14:36:19 +0000",
+  "listed_duration": 1089.0,
+  "split": "test"
+ },
+ {
+  "show": "Español con Juan",
+  "feed_url": "https://espanolconjuan.blubrry.net/feed/podcast/",
+  "host": "blubrry",
+  "episode": "Aprender español: de la ilusión a la frustración",
+  "audio": "https://media.blubrry.com/espanolconjuan/content.blubrry.com/espanolconjuan/ilusion_y_frustracion.mp3",
+  "published": "Thu, 24 Sep 2026 20:45:34 +0000",
+  "listed_duration": 1596.0,
+  "split": "test"
+ },
+ {
+  "show": "Learn Spanish: Fluency in Real Life with Handyspanish",
+  "feed_url": "https://anchor.fm/s/108b1c4e4/podcast/rss",
+  "host": "anchor",
+  "episode": "370. ¿Por qué es tan difícil entender a un grupo de españoles?",
+  "audio": "https://anchor.fm/s/108b1c4e4/podcast/play/127466279/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-14%2F434157651-44100-2-63f7cfad43ce4.m4a",
+  "published": "Thu, 15 Oct 2026 06:00:00 GMT",
+  "listed_duration": 890.0,
+  "split": "test"
+ },
+ {
+  "show": "Learn Spanish: Fluency in Real Life with Handyspanish",
+  "feed_url": "https://anchor.fm/s/108b1c4e4/podcast/rss",
+  "host": "anchor",
+  "episode": "372. Por qué los españoles dicen \"YA\" para todo",
+  "audio": "https://anchor.fm/s/108b1c4e4/podcast/play/128312401/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-6%2F436072730-44100-2-2b25b18fcd7d9.m4a",
+  "published": "Thu, 29 Oct 2026 07:00:00 GMT",
+  "listed_duration": 781.0,
+  "split": "test"
+ },
+ {
+  "show": "Our Prehistory",
+  "feed_url": "https://rss.buzzsprout.com/1883797.rss",
+  "host": "buzzsprout",
+  "episode": "50. Southwest Asia: Upper Paleolithic Hub [Preview]",
+  "audio": "https://www.buzzsprout.com/1883797/episodes/19373925-50-southwest-asia-upper-paleolithic-hub-preview.mp3",
+  "published": "Sun, 21 Jun 2026 05:00:00 -0500",
+  "listed_duration": 277.0,
+  "split": "test"
+ },
+ {
+  "show": "Our Prehistory",
+  "feed_url": "https://rss.buzzsprout.com/1883797.rss",
+  "host": "buzzsprout",
+  "episode": "47. Last Glacial Maximum of Africa [Preview]",
+  "audio": "https://www.buzzsprout.com/1883797/episodes/18805710-47-last-glacial-maximum-of-africa-preview.mp3",
+  "published": "Sun, 08 Mar 2026 06:00:00 -0500",
+  "listed_duration": 249.0,
+  "split": "test"
+ },
+ {
+  "show": "How We Got Here with NLW",
+  "feed_url": "https://anchor.fm/s/1187bb088/podcast/rss",
+  "host": "anchor",
+  "episode": "How Gambling on Everything From Our Phones Became Normal",
+  "audio": "https://anchor.fm/s/1187bb088/podcast/play/129068363/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-9%2F436253182-44100-2-5385f1f08ea798.mp3",
+  "published": "Mon, 09 Nov 2026 10:00:00 GMT",
+  "listed_duration": 3299.0,
+  "split": "test"
+ },
+ {
+  "show": "How We Got Here with NLW",
+  "feed_url": "https://anchor.fm/s/1187bb088/podcast/rss",
+  "host": "anchor",
+  "episode": "How We Made the Wrong Things Cheap",
+  "audio": "https://anchor.fm/s/1187bb088/podcast/play/128589576/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-2%2F435630332-44100-2-ed910c40003bf.mp3",
+  "published": "Mon, 02 Nov 2026 10:00:00 GMT",
+  "listed_duration": 3142.0,
+  "split": "test"
+ },
+ {
+  "show": "Easy Spanish: Learn Spanish with everyday conversations | Conversaciones del día a día para aprender español",
+  "feed_url": "https://feeds.fireside.fm/easyspanish/rss",
+  "host": "fireside",
+  "episode": "270: ¿Se traduce el humor?",
+  "audio": "https://aphid.fireside.fm/d/1437767933/40524848-bf9c-4d5e-b211-62c1a0a887c1/377f04fa-8c8c-4bad-b6cc-1febe3c1f197.mp3",
+  "published": "Wed, 04 Nov 2026 19:00:00 +0100",
+  "listed_duration": 1581.0,
+  "split": "test"
+ },
+ {
+  "show": "Easy Spanish: Learn Spanish with everyday conversations | Conversaciones del día a día para aprender español",
+  "feed_url": "https://feeds.fireside.fm/easyspanish/rss",
+  "host": "fireside",
+  "episode": "271: ¿Tu perfeccionismo te está frenando?",
+  "audio": "https://aphid.fireside.fm/d/1437767933/40524848-bf9c-4d5e-b211-62c1a0a887c1/3a607bc1-56b1-4c10-9206-f652bd52d4c3.mp3",
+  "published": "Wed, 11 Nov 2026 19:00:00 +0100",
+  "listed_duration": 1568.0,
+  "split": "test"
+ },
+ {
+  "show": "This Day in AI Podcast",
+  "feed_url": "https://feeds.transistor.fm/this-day-in-ai",
+  "host": "transistor",
+  "episode": "Is GPT-5.5 Better Than Opus Now? (ft. Our New AI Co-Host) - EP99.38",
+  "audio": "https://media.transistor.fm/120eef4f/791708c7.mp3",
+  "published": "Thu, 07 May 2026 23:49:23 -0700",
+  "listed_duration": 2817.0,
+  "split": "train"
+ },
+ {
+  "show": "This Day in AI Podcast",
+  "feed_url": "https://feeds.transistor.fm/this-day-in-ai",
+  "host": "transistor",
+  "episode": "Gemini 3.1 Pro, Claude Sonnet 4.6 & The OpenClaw Hire That Killed the Chatbot Era - EP99.35",
+  "audio": "https://media.transistor.fm/6ed59f14/57448361.mp3",
+  "published": "Thu, 19 Feb 2026 18:42:09 -0800",
+  "listed_duration": 3486.0,
+  "split": "train"
+ },
+ {
+  "show": "Sticky Notes: The Classical Music Podcast",
+  "feed_url": "https://rss.libsyn.com/shows/94145/destinations/477278.xml",
+  "host": "libsyn",
+  "episode": "Gerald Finzi: Dies Natalis",
+  "audio": "https://traffic.libsyn.com/secure/stickynotespodcast/SN.10_1_26.Finzi1_mix1.mp3?dest-id=477278",
+  "published": "Thu, 01 Oct 2026 06:00:00 +0000",
+  "listed_duration": 3095.0,
+  "split": "train"
+ },
+ {
+  "show": "Sticky Notes: The Classical Music Podcast",
+  "feed_url": "https://rss.libsyn.com/shows/94145/destinations/477278.xml",
+  "host": "libsyn",
+  "episode": "Chopin Piano Sonata No. 2 (The One With the Funeral March)",
+  "audio": "https://traffic.libsyn.com/secure/stickynotespodcast/SN.10_17_26.mix2.mp3?dest-id=477278",
+  "published": "Thu, 15 Oct 2026 05:33:00 +0000",
+  "listed_duration": 3184.0,
+  "split": "train"
+ },
+ {
+  "show": "In Our Time",
+  "feed_url": "https://podcasts.files.bbci.co.uk/b006qykl.rss",
+  "host": "co",
+  "episode": "Archive: Feathered Dinosaurs",
+  "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p0pfvb88.mp3",
+  "published": "Mon, 09 Nov 2026 09:45:00 +0000",
+  "listed_duration": 2954.0,
+  "split": "train"
+ },
+ {
+  "show": "In Our Time",
+  "feed_url": "https://podcasts.files.bbci.co.uk/b006qykl.rss",
+  "host": "co",
+  "episode": "The Battle of Antietam",
+  "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p0pgmdgv.mp3",
+  "published": "Thu, 12 Nov 2026 09:45:00 +0000",
+  "listed_duration": 3570.0,
+  "split": "train"
+ },
+ {
+  "show": "Andrea La Mexicana",
+  "feed_url": "https://anchor.fm/s/fc941b1c/podcast/rss",
+  "host": "anchor",
+  "episode": "Ep#108- My Worst Uber Eats Experience EVER! (Spanish Podcast)",
+  "audio": "https://traffic.megaphone.fm/APO2331398095.mp3",
+  "published": "Mon, 09 Nov 2026 12:45:00 GMT",
+  "listed_duration": 1372.0,
+  "split": "train"
+ },
+ {
+  "show": "Andrea La Mexicana",
+  "feed_url": "https://anchor.fm/s/fc941b1c/podcast/rss",
+  "host": "anchor",
+  "episode": "Ep#105- How to Make Someone Panic in Spanish (Spanish Podcast)",
+  "audio": "https://traffic.megaphone.fm/APO8421009050.mp3",
+  "published": "Mon, 19 Oct 2026 12:45:00 GMT",
+  "listed_duration": 1098.0,
+  "split": "train"
+ },
+ {
+  "show": "This Week in Virology",
+  "feed_url": "https://feeds.libsyn.com/21581/last100",
+  "host": "libsyn",
+  "episode": "TWiV 1372: Clinical Update with Dr. Daniel Griffin",
+  "audio": "https://traffic.libsyn.com/secure/twiv/TWiV1372.mp3?dest-id=25528",
+  "published": "Sat, 07 Nov 2026 05:00:00 +0000",
+  "listed_duration": 3167.0,
+  "split": "train"
+ },
+ {
+  "show": "This Week in Virology",
+  "feed_url": "https://feeds.libsyn.com/21581/last100",
+  "host": "libsyn",
+  "episode": "TWiV Special: Measles Mini Symposium",
+  "audio": "https://traffic.libsyn.com/secure/twiv/TWiVSpecialMeaslesMini.mp3?dest-id=25528",
+  "published": "Thu, 12 Nov 2026 05:00:00 +0000",
+  "listed_duration": 3210.0,
+  "split": "train"
+ },
+ {
+  "show": "Type Theory Forall",
+  "feed_url": "https://www.typetheoryforall.com/episodes.mp3.rss",
+  "host": "typetheoryforall",
+  "episode": "#65 TLA+, Quint and Formal Verification in the Age of AI - Gabriela Moreira",
+  "audio": "https://api.typetheoryforall.com/uploads/episode65_2cd7914236.mp3",
+  "published": "Mon, 19 Oct 2026 12:00:00 GMT",
+  "listed_duration": 7362.0,
+  "split": "train"
+ },
+ {
+  "show": "Type Theory Forall",
+  "feed_url": "https://www.typetheoryforall.com/episodes.mp3.rss",
+  "host": "typetheoryforall",
+  "episode": "#64 PL Education in the Age of AI - Shriram Krishnamurthi",
+  "audio": "https://api.typetheoryforall.com/uploads/episode64_57143b322f.mp3",
+  "published": "Sat, 05 Sep 2026 00:00:00 GMT",
+  "listed_duration": 9825.0,
+  "split": "train"
+ },
+ {
+  "show": "WSJ Your Money Briefing",
+  "feed_url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journals%20your%20money%20matters/feed",
+  "host": "dowjones",
+  "episode": "What’s News in Markets: Refiners Cash In, AI Stocks Wobble, Homebuilder Blues",
+  "audio": "https://dowjones.simplecastaudio.com/6549bd7e-b1b3-4333-8a34-08c1efc472c9/episodes/7f0f01a2-722c-4438-b6bb-66a86f24098b/audio/128/default.mp3?aid=rss_feed&awCollectionId=6549bd7e-b1b3-4333-8a34-08c1efc472c9&awEpisodeId=7f0f01a2-722c-4438-b6bb-66a86f24098b&feed=VYCXJ_UH",
+  "published": "Sat, 10 Oct 2026 10:05:00 +0000",
+  "listed_duration": 287.0,
+  "split": "train"
+ },
+ {
+  "show": "WSJ Your Money Briefing",
+  "feed_url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journals%20your%20money%20matters/feed",
+  "host": "dowjones",
+  "episode": "What’s News in Markets: AI Blues, Musk Under the Microscope, Housing Hope",
+  "audio": "https://dowjones.simplecastaudio.com/6549bd7e-b1b3-4333-8a34-08c1efc472c9/episodes/cba3567b-9602-43e7-ae45-3d6e9e5d62b1/audio/128/default.mp3?aid=rss_feed&awCollectionId=6549bd7e-b1b3-4333-8a34-08c1efc472c9&awEpisodeId=cba3567b-9602-43e7-ae45-3d6e9e5d62b1&feed=VYCXJ_UH",
+  "published": "Sat, 7 Nov 2026 11:00:00 +0000",
+  "listed_duration": 339.0,
+  "split": "train"
+ },
+ {
+  "show": "Learn Spanish and Go",
+  "feed_url": "https://rss.buzzsprout.com/1040905.rss",
+  "host": "buzzsprout",
+  "episode": "Una charla con mi barbero en México - A Chat With My Barber in Mexico",
+  "audio": "https://www.buzzsprout.com/1040905/episodes/19988774-una-charla-con-mi-barbero-en-mexico-a-chat-with-my-barber-in-mexico.mp3",
+  "published": "Tue, 20 Oct 2026 04:00:00 -0400",
+  "listed_duration": 1897.0,
+  "split": "train"
+ },
+ {
+  "show": "Learn Spanish and Go",
+  "feed_url": "https://rss.buzzsprout.com/1040905.rss",
+  "host": "buzzsprout",
+  "episode": "7 maneras de sonar grosero en México sin darte cuenta - 7 Ways to Sound Rude in Mexico Without Realizing It",
+  "audio": "https://www.buzzsprout.com/1040905/episodes/20064931-7-maneras-de-sonar-grosero-en-mexico-sin-darte-cuenta-7-ways-to-sound-rude-in-mexico-without-realizing-it.mp3",
+  "published": "Tue, 03 Nov 2026 03:00:00 -0600",
+  "listed_duration": 1672.0,
+  "split": "train"
+ },
+ {
+  "show": "The Infinite Monkey Cage",
+  "feed_url": "https://podcasts.files.bbci.co.uk/b00snr0w.rss",
+  "host": "co",
+  "episode": "Nothing Really Matters - Hugh Dennis, Ria Lina, Harry Cliff and Yvette Fuentes",
+  "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p0pht658.mp3",
+  "published": "Thu, 22 Oct 2026 06:00:00 +0000",
+  "listed_duration": 2534.0,
+  "split": "train"
+ },
+ {
+  "show": "The Infinite Monkey Cage",
+  "feed_url": "https://podcasts.files.bbci.co.uk/b00snr0w.rss",
+  "host": "co",
+  "episode": "Leaf it to Nature",
+  "audio": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss/proto/http/vpid/p0plc4xn.mp3",
+  "published": "Thu, 05 Nov 2026 07:00:00 +0000",
+  "listed_duration": 2535.0,
+  "split": "train"
+ },
+ {
+  "show": "Unlimited Spanish podcast with Oscar",
+  "feed_url": "https://rss.libsyn.com/shows/73741/destinations/320894.xml",
+  "host": "libsyn",
+  "episode": "458 ¿Por qué nos reímos? Tipos de risa",
+  "audio": "https://traffic.libsyn.com/secure/unlimitedspanish/458_Por_que_nos_reimos.mp3?dest-id=320894",
+  "published": "Thu, 15 Oct 2026 17:46:00 +0000",
+  "listed_duration": 939.0,
+  "split": "train"
+ },
+ {
+  "show": "Unlimited Spanish podcast with Oscar",
+  "feed_url": "https://rss.libsyn.com/shows/73741/destinations/320894.xml",
+  "host": "libsyn",
+  "episode": "457 — El SEAT 600: el coche que cambió la forma de viajar",
+  "audio": "https://traffic.libsyn.com/secure/unlimitedspanish/457_El_600_-_El_coche_que_cambio_la_forma_de_viajar.mp3?dest-id=320894",
+  "published": "Thu, 08 Oct 2026 08:02:00 +0000",
+  "listed_duration": 645.0,
+  "split": "train"
+ },
+ {
+  "show": "Clarkesworld Magazine",
+  "feed_url": "https://clarkesworldmagazine.com/?feed=podcast",
+  "host": "clarkesworldmagazine",
+  "episode": "Roams the Planet of Our Grief by Natalia Theodoridou (audio)",
+  "audio": "http://traffic.libsyn.com/clarkesworld/clarkesworld_10_26_theodoridou.mp3",
+  "published": "Thu, 29 Oct 2026 12:41:51 +0000",
+  "listed_duration": 1720.0,
+  "split": "train"
+ },
+ {
+  "show": "Clarkesworld Magazine",
+  "feed_url": "https://clarkesworldmagazine.com/?feed=podcast",
+  "host": "clarkesworldmagazine",
+  "episode": "Five Bottles in Memory of the Winemaker Petronius Finch by Louis Inglis Hall (audio)",
+  "audio": "http://traffic.libsyn.com/clarkesworld/clarkesworld_10_26_hall.mp3",
+  "published": "Wed, 28 Oct 2026 17:00:37 +0000",
+  "listed_duration": 2100.0,
+  "split": "train"
+ },
+ {
+  "show": "What Next | Daily News and Analysis",
+  "feed_url": "https://my.slate.com/podcasts/feeds/what-next/",
+  "host": "slate",
+  "episode": "Is The Blue Shift Permanent?",
+  "audio": "https://sphinx.acast.com/p/open/s/6961268923ce58f14615840d/a/whatnext-podcasts/e/6af23624876cc2ea404b53ed/media.mp3",
+  "published": "Tue, 10 Nov 2026 08:00:00 GMT",
+  "listed_duration": 2347.0,
+  "split": "train"
+ },
+ {
+  "show": "What Next | Daily News and Analysis",
+  "feed_url": "https://my.slate.com/podcasts/feeds/what-next/",
+  "host": "slate",
+  "episode": "You Call That Accountability?",
+  "audio": "https://sphinx.acast.com/p/open/s/6961268923ce58f14615840d/a/whatnext-podcasts/e/6af4cbb8973efbd7c1ca4722/media.mp3",
+  "published": "Thu, 12 Nov 2026 08:00:00 GMT",
+  "listed_duration": 2139.0,
+  "split": "train"
+ },
+ {
+  "show": "Hoy Hablamos: Podcast diario para aprender español - Learn Spanish Daily Podcast",
+  "feed_url": "https://www.hoyhablamos.com/category/podcast/feed/",
+  "host": "hoyhablamos",
+  "episode": "2398. El accidente de tren en Urda",
+  "audio": "https://media.blubrry.com/podcast_diario_de_espaol/content.blubrry.com/podcast_diario_de_espaol/Episodio_2398_El_accidente_de_tren_en_Urda_mezcla.mp3",
+  "published": "Tue, 10 Nov 2026 20:14:46 +0000",
+  "listed_duration": 1069.0,
+  "split": "train"
+ },
+ {
+  "show": "Hoy Hablamos: Podcast diario para aprender español - Learn Spanish Daily Podcast",
+  "feed_url": "https://www.hoyhablamos.com/category/podcast/feed/",
+  "host": "hoyhablamos",
+  "episode": "GRAM 292: Estructuras de énfasis",
+  "audio": "https://media.blubrry.com/podcast_diario_de_espaol/content.blubrry.com/podcast_diario_de_espaol/Episodio_GRAM_292_Estructuras_de_e_nfasis_mezcla.mp3",
+  "published": "Wed, 11 Nov 2026 15:50:07 +0000",
+  "listed_duration": 640.0,
+  "split": "train"
+ },
+ {
+  "show": "The Church of Logic",
+  "feed_url": "https://anchor.fm/s/db787130/podcast/rss",
+  "host": "anchor",
+  "episode": "An oracle for P vs NP",
+  "audio": "https://anchor.fm/s/db787130/podcast/play/125284792/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-8-6%2F431294143-44100-2-ef29850e53c7f.mp3",
+  "published": "Mon, 07 Sep 2026 02:59:00 GMT",
+  "listed_duration": 2051.0,
+  "split": "train"
+ },
+ {
+  "show": "The Church of Logic",
+  "feed_url": "https://anchor.fm/s/db787130/podcast/rss",
+  "host": "anchor",
+  "episode": "Loïc Pujet - Type theory and extensionality part II",
+  "audio": "https://anchor.fm/s/db787130/podcast/play/123982025/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-9%2F429511996-44100-2-1ac23e90ecd39.mp3",
+  "published": "Mon, 10 Aug 2026 03:18:00 GMT",
+  "listed_duration": 3733.0,
+  "split": "train"
+ },
+ {
+  "show": "Marketplace All-in-One",
+  "feed_url": "https://feeds.publicradio.org/public_feeds/marketplace-all-in-one",
+  "host": "publicradio",
+  "episode": "Another damaging revelation about Nvidia's CEO",
+  "audio": "https://pscrb.fm/rss/p/mgln.ai/e/5/dts.podtrac.com/redirect.mp3/tracking.swap.fm/track/VnCzW2iO9G8z4eDWfXCd/play.publicradio.org/podcast/o/marketplace/morning_report/2026/11/12/mmr_20261112_MMR_Podcast_1_64.mp3?awCollectionId=mkp-AllNOne&awEpisodeId=01M77WPE7T21ZP5CAZGZ8NR9YY",
+  "published": "Thu, 12 Nov 2026 12:45:00 +0000",
+  "listed_duration": 398.0,
+  "split": "train"
+ },
+ {
+  "show": "Marketplace All-in-One",
+  "feed_url": "https://feeds.publicradio.org/public_feeds/marketplace-all-in-one",
+  "host": "publicradio",
+  "episode": "I have enough money but I still don't feel \"safe\"",
+  "audio": "https://pscrb.fm/rss/p/mgln.ai/e/5/dts.podtrac.com/redirect.mp3/tracking.swap.fm/track/VnCzW2iO9G8z4eDWfXCd/play.publicradio.org/podcast/o/marketplace/this-is-uncomfortable/2026/11/12/tiu_20261112_TIU_Money_Dysmorphia_128.mp3?awCollectionId=mkp-AllNOne&awEpisodeId=01M6S43P4VFCHQ93GZP8YDMW83",
+  "published": "Thu, 12 Nov 2026 11:00:00 +0000",
+  "listed_duration": 2579.0,
+  "split": "train"
+ },
+ {
+  "show": "On Investing",
+  "feed_url": "https://feeds.schwab.com/oninvesting",
+  "host": "schwab",
+  "episode": "Who’s Financing the AI Boom? (With Bryan Whalen)",
+  "audio": "https://mgln.ai/e/1388/afp-928686-injected.calisto.simplecastaudio.com/5aedad34-c6b9-410b-b12b-fecc2dce4592/episodes/1e8f08de-75b6-4a66-bf93-b073b36296bd/audio/128/default.mp3?aid=rss_feed&awCollectionId=5aedad34-c6b9-410b-b12b-fecc2dce4592&awEpisodeId=1e8f08de-75b6-4a66-bf93-b073b36296bd&feed=vH95QlFh",
+  "published": "Fri, 16 Oct 2026 08:00:00 +0000",
+  "listed_duration": 2872.0,
+  "split": "train"
+ },
+ {
+  "show": "On Investing",
+  "feed_url": "https://feeds.schwab.com/oninvesting",
+  "host": "schwab",
+  "episode": "The Wisdom Behind Better Investing (With Jenny Harrington & Rebecca Patterson)",
+  "audio": "https://mgln.ai/e/1388/afp-928686-injected.calisto.simplecastaudio.com/5aedad34-c6b9-410b-b12b-fecc2dce4592/episodes/c654bc73-68f0-49de-a06e-da67e2ff068e/audio/128/default.mp3?aid=rss_feed&awCollectionId=5aedad34-c6b9-410b-b12b-fecc2dce4592&awEpisodeId=c654bc73-68f0-49de-a06e-da67e2ff068e&feed=vH95QlFh",
+  "published": "Fri, 6 Nov 2026 09:00:00 +0000",
+  "listed_duration": 2254.0,
+  "split": "train"
+ },
+ {
+  "show": "Hoy Hablamos Básico: Aprender español nivel básico-intermedio | Learn Spanish",
+  "feed_url": "https://www.hoyhablamos.com/feed/podcast-basico/",
+  "host": "hoyhablamos",
+  "episode": "142. Expresiones con la palabra rato",
+  "audio": "https://media.blubrry.com/podcast_diario_de_espaol/media.blubrry.com/3715649/content.blubrry.com/3715649/HHB_142_Expresiones_con_la_palabra_rato_mezcla.mp3",
+  "published": "Fri, 16 Oct 2026 16:41:46 +0000",
+  "listed_duration": 595.0,
+  "split": "train"
+ },
+ {
+  "show": "Hoy Hablamos Básico: Aprender español nivel básico-intermedio | Learn Spanish",
+  "feed_url": "https://www.hoyhablamos.com/feed/podcast-basico/",
+  "host": "hoyhablamos",
+  "episode": "143. El cambio de hora",
+  "audio": "https://media.blubrry.com/podcast_diario_de_espaol/media.blubrry.com/3715649/content.blubrry.com/3715649/HHB_143_El_cambio_de_hora_mezcla.mp3",
+  "published": "Fri, 23 Oct 2026 13:26:17 +0000",
+  "listed_duration": 666.0,
+  "split": "train"
+ },
+ {
+  "show": "PlayME",
+  "feed_url": "https://www.cbc.ca/podcasting/includes/playme.xml",
+  "host": "cbc",
+  "episode": "Special Episode: Interview with Artistic Director Brian Quirt",
+  "audio": "https://mgln.ai/e/12/cbc.mc.tritondigital.com/CBC_PLAYME_P/media/playme/playme-IB8Zwv4r-20260505.mp3",
+  "published": "Wed, 06 May 2026 03:11:00 EDT",
+  "listed_duration": 3916.0,
+  "split": "train"
+ },
+ {
+  "show": "PlayME",
+  "feed_url": "https://www.cbc.ca/podcasting/includes/playme.xml",
+  "host": "cbc",
+  "episode": "The Neighbours by Nicolas Billon (Part Two)",
+  "audio": "https://mgln.ai/e/12/cbc.mc.tritondigital.com/CBC_PLAYME_P/media/playme/playme-8BDniDCY-20260513.mp3",
+  "published": "Wed, 13 May 2026 00:10:00 EDT",
+  "listed_duration": 3068.0,
+  "split": "train"
+ },
+ {
+  "show": "Charlas Hispanas: Aprende Español | Learn Spanish",
+  "feed_url": "https://charlashispanas.com/feed/podcast/",
+  "host": "charlashispanas",
+  "episode": "1790. Personajes Mexicanos: Francisco I Madero",
+  "audio": "https://media.blubrry.com/charlashispanas/content.blubrry.com/charlashispanas/Episodio_1790-Francisco_I_Madero.mp3",
+  "published": "Tue, 10 Nov 2026 10:02:31 +0000",
+  "listed_duration": 715.0,
+  "split": "train"
+ },
+ {
+  "show": "Charlas Hispanas: Aprende Español | Learn Spanish",
+  "feed_url": "https://charlashispanas.com/feed/podcast/",
+  "host": "charlashispanas",
+  "episode": "1788. Mexicanadas comunes, con Sigrid",
+  "audio": "https://media.blubrry.com/charlashispanas/content.blubrry.com/charlashispanas/Episodio_1788-Mexicanadas_comunes_mezcla.mp3",
+  "published": "Fri, 06 Nov 2026 14:23:38 +0000",
+  "listed_duration": 1186.0,
+  "split": "train"
+ },
+ {
+  "show": "Ground Truths",
+  "feed_url": "https://api.substack.com/feed/podcast/587835/s/119690.rss",
+  "host": "substack",
+  "episode": "Marios Georgakis: Why Did Two Major Clinical Trials for Heart Disease Fail?",
+  "audio": "https://api.substack.com/feed/podcast/213058240/482064460b59f4174b050ce05f3dcf6c.mp3",
+  "published": "Mon, 14 Sep 2026 23:18:32 GMT",
+  "listed_duration": 4102.0,
+  "split": "train"
+ },
+ {
+  "show": "Ground Truths",
+  "feed_url": "https://api.substack.com/feed/podcast/587835/s/119690.rss",
+  "host": "substack",
+  "episode": "Vadim Gladyshev and the Science of Aging",
+  "audio": "https://api.substack.com/feed/podcast/222114108/a032e7130b46e2fdca9e41d9e6e0bc86.mp3",
+  "published": "Tue, 27 Oct 2026 00:00:39 GMT",
+  "listed_duration": 3022.0,
+  "split": "train"
+ },
+ {
+  "show": "Schwab Market Update Audio",
+  "feed_url": "https://feeds.schwab.com/schwabmarketupdate",
+  "host": "schwab",
+  "episode": "CPI Next, with Big Implications for Rates, Market",
+  "audio": "https://mgln.ai/e/1388/afp-928686-injected.calisto.simplecastaudio.com/000bbcee-f0f7-4fa4-be0e-4e92e601892a/episodes/4d9d9320-07da-4340-b96a-c4ba8a6fae5e/audio/128/default.mp3?aid=rss_feed&awCollectionId=000bbcee-f0f7-4fa4-be0e-4e92e601892a&awEpisodeId=4d9d9320-07da-4340-b96a-c4ba8a6fae5e&feed=ehQdhOq1",
+  "published": "Tue, 10 Nov 2026 08:00:00 +0000",
+  "listed_duration": 623.0,
+  "split": "train"
+ },
+ {
+  "show": "Schwab Market Update Audio",
+  "feed_url": "https://feeds.schwab.com/schwabmarketupdate",
+  "host": "schwab",
+  "episode": "Jobs Report On-Deck After Tech-led Market Carnage",
+  "audio": "https://mgln.ai/e/1388/afp-928686-injected.calisto.simplecastaudio.com/000bbcee-f0f7-4fa4-be0e-4e92e601892a/episodes/d7d4c26b-e632-43fb-8879-772da5f08dae/audio/128/default.mp3?aid=rss_feed&awCollectionId=000bbcee-f0f7-4fa4-be0e-4e92e601892a&awEpisodeId=d7d4c26b-e632-43fb-8879-772da5f08dae&feed=ehQdhOq1",
+  "published": "Fri, 6 Nov 2026 08:00:00 +0000",
+  "listed_duration": 681.0,
+  "split": "train"
+ },
+ {
+  "show": "Food Safety Talk",
+  "feed_url": "https://foodsafetytalk.squarespace.com/food-safety-talk?format=rss",
+  "host": "squarespace",
+  "episode": "Food Safety 329: Thing 1 And Thing 2",
+  "audio": "https://static1.squarespace.com/static/51323aa1e4b0b73e528cb71c/t/68f148c1ee0a991402b6d03e/1760643330866/FST329.mp3",
+  "published": "Thu, 16 Oct 2025 19:38:05 +0000",
+  "listed_duration": 5669.0,
+  "split": "train"
+ },
+ {
+  "show": "Food Safety Talk",
+  "feed_url": "https://foodsafetytalk.squarespace.com/food-safety-talk?format=rss",
+  "host": "squarespace",
+  "episode": "Food Safety Talk 333: Gas Station Glizzies",
+  "audio": "https://static1.squarespace.com/static/51323aa1e4b0b73e528cb71c/t/6a5250c556d94c18a59846e2/1783779810504/FST333-edit.mp3",
+  "published": "Sat, 11 Jul 2026 14:30:11 +0000",
+  "listed_duration": 6363.0,
+  "split": "train"
+ },
+ {
+  "show": "Outside/In",
+  "feed_url": "https://rss.introcast.io/1061222770/feeds.megaphone.fm/TPG9719828981",
+  "host": "introcast",
+  "episode": "Operation Night Cat Update: New Plea Deals and Charges",
+  "audio": "https://prefix.up.audio/s/www.podtrac.com/pts/redirect.mp3/pdst.fm/e/tracking.swap.fm/track/tcQd6Q6C0RUUlOHq1Ytj/mgln.ai/e/51/pscrb.fm/rss/p/traffic.megaphone.fm/TPG2438887424.mp3",
+  "published": "Thu, 29 Oct 2026 20:30:00 -0000",
+  "listed_duration": 915.0,
+  "split": "train"
+ },
+ {
+  "show": "Outside/In",
+  "feed_url": "https://rss.introcast.io/1061222770/feeds.megaphone.fm/TPG9719828981",
+  "host": "introcast",
+  "episode": "Living in a material world: the search for sustainable clothing",
+  "audio": "https://prefix.up.audio/s/www.podtrac.com/pts/redirect.mp3/pdst.fm/e/tracking.swap.fm/track/tcQd6Q6C0RUUlOHq1Ytj/mgln.ai/e/51/pscrb.fm/rss/p/traffic.megaphone.fm/TPG2145351006.mp3",
+  "published": "Wed, 11 Nov 2026 09:00:00 -0000",
+  "listed_duration": 2016.0,
+  "split": "train"
+ },
+ {
+  "show": "Inside Trader Joe's",
+  "feed_url": "https://rss.libsyn.com/shows/120710/destinations/704103.xml",
+  "host": "libsyn",
+  "episode": "Episode 113: Trader Joe's Goes Viral",
+  "audio": "https://traffic.libsyn.com/secure/insidetjs/Trader_Joes_Goes_Viral.mp3?dest-id=704103",
+  "published": "Mon, 12 Oct 2026 10:00:00 +0000",
+  "listed_duration": 1121.0,
+  "split": "train"
+ },
+ {
+  "show": "Inside Trader Joe's",
+  "feed_url": "https://rss.libsyn.com/shows/120710/destinations/704103.xml",
+  "host": "libsyn",
+  "episode": "Episode 112: Time for Tacos at Trader Joe's",
+  "audio": "https://traffic.libsyn.com/secure/insidetjs/Time_for_Tacos_at_Trader_Joes.mp3?dest-id=704103",
+  "published": "Mon, 21 Sep 2026 10:00:00 +0000",
+  "listed_duration": 1236.0,
+  "split": "train"
+ },
+ {
+  "show": "WSJ What’s News",
+  "feed_url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed",
+  "host": "dowjones",
+  "episode": "Jensen Huang, a Leader of the Global AI Boom, Is Out as Nvidia CEO",
+  "audio": "https://dowjones.simplecastaudio.com/3d1c8b0a-4b6d-4ea9-a455-ab1adaa7e74b/episodes/01c2d349-01a9-4329-930d-e967291c4335/audio/128/default.mp3?aid=rss_feed&awCollectionId=3d1c8b0a-4b6d-4ea9-a455-ab1adaa7e74b&awEpisodeId=01c2d349-01a9-4329-930d-e967291c4335&feed=BA5QWI2p",
+  "published": "Thu, 12 Nov 2026 22:03:00 +0000",
+  "listed_duration": 873.0,
+  "split": "train"
+ },
+ {
+  "show": "WSJ What’s News",
+  "feed_url": "https://video-api.shdsvc.dowjones.io/api/podcasts/the%20wall%20street%20journal%20whats%20news/feed",
+  "host": "dowjones",
+  "episode": "Hotter-Than-Expected Inflation Data Has Investors Betting on a Rate Hike",
+  "audio": "https://dowjones.simplecastaudio.com/3d1c8b0a-4b6d-4ea9-a455-ab1adaa7e74b/episodes/e21b159a-99af-4c54-af8f-6d356008e9b0/audio/128/default.mp3?aid=rss_feed&awCollectionId=3d1c8b0a-4b6d-4ea9-a455-ab1adaa7e74b&awEpisodeId=e21b159a-99af-4c54-af8f-6d356008e9b0&feed=BA5QWI2p",
+  "published": "Tue, 10 Nov 2026 22:14:00 +0000",
+  "listed_duration": 792.0,
+  "split": "train"
+ },
+ {
+  "show": "Android Developers Backstage",
+  "feed_url": "https://rss.libsyn.com/shows/332855/destinations/2710847.xml",
+  "host": "libsyn",
+  "episode": "What's so great about R8?",
+  "audio": "https://traffic.libsyn.com/secure/adbackstage/ADB223_v2.mp3?dest-id=2710847",
+  "published": "Wed, 18 Feb 2026 19:26:00 +0000",
+  "listed_duration": 3990.0,
+  "split": "train"
+ },
+ {
+  "show": "Android Developers Backstage",
+  "feed_url": "https://rss.libsyn.com/shows/332855/destinations/2710847.xml",
+  "host": "libsyn",
+  "episode": "The inside story of Jetpack Compose",
+  "audio": "https://traffic.libsyn.com/secure/adbackstage/ADB225_V3_Audio_Only_1.mp3?dest-id=2710847",
+  "published": "Wed, 29 Jul 2026 17:49:00 +0000",
+  "listed_duration": 4067.0,
+  "split": "train"
+ },
+ {
+  "show": "Armchair Explorer",
+  "feed_url": "https://feeds.captivate.fm/armchairexplorer/",
+  "host": "captivate",
+  "episode": "ADVENTURE: On Thin Ice - Hiking Siberia During the Invasion of Ukraine with Explorer Charlie Walker",
+  "audio": "https://episodes.captivate.fm/episode/fd6cce41-2940-4876-a57c-5d2a19b7120d.mp3",
+  "published": "Tue, 20 Oct 2026 13:15:00 -0400",
+  "listed_duration": 2574.0,
+  "split": "train"
+ },
+ {
+  "show": "Armchair Explorer",
+  "feed_url": "https://feeds.captivate.fm/armchairexplorer/",
+  "host": "captivate",
+  "episode": "IMMERSION: Wonders of Arizona Road Trip (Part 2) - Navajo Climbing, Sky Islands & the Most Biodiverse Place in America",
+  "audio": "https://episodes.captivate.fm/episode/e4af60e7-da00-458f-abef-6584da960e8e.mp3",
+  "published": "Mon, 26 Oct 2026 09:00:00 -0400",
+  "listed_duration": 1627.0,
+  "split": "train"
+ },
+ {
+  "show": "The Great Composers Podcast - a classical music podcast",
+  "feed_url": "https://rss.libsyn.com/shows/170747/destinations/1144268.xml",
+  "host": "libsyn",
+  "episode": "47 - Johannes Brahms pt. 12 \"Why the Light is Given\" a classical music podcast",
+  "audio": "https://traffic.libsyn.com/secure/thegcp/Ep._47_The_Life_of_Johannes_Brahms_pt._12_Why_the_Light_is_Given.mp3?dest-id=1144268",
+  "published": "Sun, 06 Feb 2022 00:00:33 +0000",
+  "listed_duration": 6633.0,
+  "split": "train"
+ },
+ {
+  "show": "The Great Composers Podcast - a classical music podcast",
+  "feed_url": "https://rss.libsyn.com/shows/170747/destinations/1144268.xml",
+  "host": "libsyn",
+  "episode": "50(a)- Johannes Brahms pt. 15a \"Tokens of Friendship\" a classical music podcast",
+  "audio": "https://traffic.libsyn.com/secure/thegcp/Life_of_Brahms_ep._50_.mp3?dest-id=1144268",
+  "published": "Sat, 12 Aug 2023 00:00:00 +0000",
+  "listed_duration": 9950.0,
+  "split": "train"
+ },
+ {
+  "show": "The Common Descent Podcast",
+  "feed_url": "https://feed.podbean.com/commondescentpodcast/feed.xml",
+  "host": "podbean",
+  "episode": "Episode 255 - Plant Origins",
+  "audio": "https://mcdn.podbean.com/mf/web/qbsapsif4zkaeqbn/Episode_255_Plant_Origins.mp3",
+  "published": "Sat, 24 Oct 2026 19:00:00 -0500",
+  "listed_duration": 8313.0,
+  "split": "train"
+ },
+ {
+  "show": "The Common Descent Podcast",
+  "feed_url": "https://feed.podbean.com/commondescentpodcast/feed.xml",
+  "host": "podbean",
+  "episode": "Spook-E - Headcrabs",
+  "audio": "https://mcdn.podbean.com/mf/web/7e5yf9brq5maxtmb/Spook_E_Headcrabs.mp3",
+  "published": "Sat, 17 Oct 2026 11:00:00 -0500",
+  "listed_duration": 4230.0,
+  "split": "train"
+ },
+ {
+  "show": "The AI Daily Brief: Artificial Intelligence News and Analysis",
+  "feed_url": "https://anchor.fm/s/f7cac464/podcast/rss",
+  "host": "anchor",
+  "episode": "Fable 5.2 Is the Best AI Ever. So Why Am I Not Switching Yet?",
+  "audio": "https://anchor.fm/s/f7cac464/podcast/play/129220537/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-10%2F436438429-44100-2-c6f55ce15027c.mp3",
+  "published": "Tue, 10 Nov 2026 21:38:24 GMT",
+  "listed_duration": 1808.0,
+  "split": "train"
+ },
+ {
+  "show": "The AI Daily Brief: Artificial Intelligence News and Analysis",
+  "feed_url": "https://anchor.fm/s/f7cac464/podcast/rss",
+  "host": "anchor",
+  "episode": "Wall Street Has No Idea What Anthropic Is Worth",
+  "audio": "https://anchor.fm/s/f7cac464/podcast/play/129282723/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-11%2F436521951-44100-2-914a4d06e596e.mp3",
+  "published": "Wed, 11 Nov 2026 21:16:03 GMT",
+  "listed_duration": 1485.0,
+  "split": "train"
+ },
+ {
+  "show": "BackStory",
+  "feed_url": "https://audioboom.com/channels/4987698.rss",
+  "host": "audioboom",
+  "episode": "Amazing video episode",
+  "audio": "https://dts.podtrac.com/redirect.mp3/audioboom.com/posts/8736858.mp3?modified=1756581368&sid=4987698&source=rss&rssua=PocketCasts",
+  "published": "Wed, 18 Jun 2025 04:00:00 +0000",
+  "listed_duration": 104.0,
+  "split": "train"
+ },
+ {
+  "show": "BackStory",
+  "feed_url": "https://audioboom.com/channels/4987698.rss",
+  "host": "audioboom",
+  "episode": "All About Geo-Fencing",
+  "audio": "https://dts.podtrac.com/redirect.mp3/audioboom.com/posts/8762785.mp3?modified=1756472073&sid=4987698&source=rss&rssua=PocketCasts",
+  "published": "Wed, 13 Aug 2025 15:45:00 +0000",
+  "listed_duration": 104.0,
+  "split": "train"
+ },
+ {
+  "show": "The Changelog: Software Development, Open Source",
+  "feed_url": "https://changelog.com/podcast/feed",
+  "host": "changelog",
+  "episode": "Building what's next (Interview)",
+  "audio": "https://op3.dev/e/https://pscrb.fm/rss/p/https://cdn.changelog.com/uploads/podcast/687/the-changelog-687.mp3",
+  "published": "Thu, 22 Oct 2026 16:00:00 +0000",
+  "listed_duration": 7221.0,
+  "split": "train"
+ },
+ {
+  "show": "The Changelog: Software Development, Open Source",
+  "feed_url": "https://changelog.com/podcast/feed",
+  "host": "changelog",
+  "episode": "From zero to NanoClaw (Interview)",
+  "audio": "https://op3.dev/e/https://pscrb.fm/rss/p/https://cdn.changelog.com/uploads/podcast/686/the-changelog-686.mp3",
+  "published": "Fri, 09 Oct 2026 19:00:00 +0000",
+  "listed_duration": 9771.0,
+  "split": "train"
+ },
+ {
+  "show": "Sexier Than A Squirrel: Dog Training That Gets Real Life Results",
+  "feed_url": "https://rss.buzzsprout.com/761645.rss",
+  "host": "buzzsprout",
+  "episode": "Feeding for Calmness: Supporting Your Dog Through Spooky Season",
+  "audio": "https://www.buzzsprout.com/761645/episodes/19966543-feeding-for-calmness-supporting-your-dog-through-spooky-season.mp3",
+  "published": "Tue, 27 Oct 2026 12:00:00 +0000",
+  "listed_duration": 888.0,
+  "split": "train"
+ },
+ {
+  "show": "Sexier Than A Squirrel: Dog Training That Gets Real Life Results",
+  "feed_url": "https://rss.buzzsprout.com/761645.rss",
+  "host": "buzzsprout",
+  "episode": "Hands Off! Living With a Resource Guarding Dog",
+  "audio": "https://www.buzzsprout.com/761645/episodes/19967010-hands-off-living-with-a-resource-guarding-dog.mp3",
+  "published": "Tue, 03 Nov 2026 12:00:00 +0000",
+  "listed_duration": 1255.0,
+  "split": "train"
+ },
+ {
+  "show": "Chill Spanish Listening Practice",
+  "feed_url": "https://anchor.fm/s/51d84fcc/podcast/rss",
+  "host": "anchor",
+  "episode": "#349 \"El aguinaldo\"",
+  "audio": "https://traffic.megaphone.fm/APO4098583037.mp3",
+  "published": "Sun, 11 Oct 2026 00:26:15 GMT",
+  "listed_duration": 304.0,
+  "split": "train"
+ },
+ {
+  "show": "Chill Spanish Listening Practice",
+  "feed_url": "https://anchor.fm/s/51d84fcc/podcast/rss",
+  "host": "anchor",
+  "episode": "#350 \"Los tramposos\"",
+  "audio": "https://traffic.megaphone.fm/APO9980289548.mp3",
+  "published": "Tue, 13 Oct 2026 19:06:07 GMT",
+  "listed_duration": 299.0,
+  "split": "train"
+ },
+ {
+  "show": "Dreaming Spanish Podcast – Chats in Beginner Spanish",
+  "feed_url": "https://rss.buzzsprout.com/2404122.rss",
+  "host": "buzzsprout",
+  "episode": "Why You Think Spaniards Are Lazy",
+  "audio": "https://www.buzzsprout.com/2404122/episodes/19900139-why-you-think-spaniards-are-lazy.mp3",
+  "published": "Tue, 27 Oct 2026 04:00:00 -0400",
+  "listed_duration": 2353.0,
+  "split": "train"
+ },
+ {
+  "show": "Dreaming Spanish Podcast – Chats in Beginner Spanish",
+  "feed_url": "https://rss.buzzsprout.com/2404122.rss",
+  "host": "buzzsprout",
+  "episode": "Things We Don’t Have Time For",
+  "audio": "https://www.buzzsprout.com/2404122/episodes/19897122-things-we-don-t-have-time-for.mp3",
+  "published": "Tue, 20 Oct 2026 04:00:00 -0400",
+  "listed_duration": 2005.0,
+  "split": "train"
+ },
+ {
+  "show": "If Books Could Kill",
+  "feed_url": "https://rss.buzzsprout.com/2040953.rss",
+  "host": "buzzsprout",
+  "episode": "Surrounded By Idiots",
+  "audio": "https://www.buzzsprout.com/2040953/episodes/19733766-surrounded-by-idiots.mp3",
+  "published": "Tue, 01 Sep 2026 05:00:00 -0400",
+  "listed_duration": 4145.0,
+  "split": "train"
+ },
+ {
+  "show": "If Books Could Kill",
+  "feed_url": "https://rss.buzzsprout.com/2040953.rss",
+  "host": "buzzsprout",
+  "episode": "A Review Of “Why Men Love Bitches”",
+  "audio": "https://www.buzzsprout.com/2040953/episodes/19906974-a-review-of-why-men-love-bitches.mp3",
+  "published": "Mon, 05 Oct 2026 05:00:00 -0400",
+  "listed_duration": 4315.0,
+  "split": "train"
+ },
+ {
+  "show": "Ukraine Without Hype",
+  "feed_url": "https://anchor.fm/s/3ca9dcec/podcast/rss",
+  "host": "anchor",
+  "episode": "133: Reflections on a Protest Movement",
+  "audio": "https://anchor.fm/s/3ca9dcec/podcast/play/124609909/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-7-23%2Fdf3df764-b5de-dd31-cac0-92a8792c7a62.mp3",
+  "published": "Sun, 23 Aug 2026 11:22:17 GMT",
+  "listed_duration": 4700.0,
+  "split": "train"
+ },
+ {
+  "show": "Ukraine Without Hype",
+  "feed_url": "https://anchor.fm/s/3ca9dcec/podcast/rss",
+  "host": "anchor",
+  "episode": "134: How Republicans Learned to Love Russia",
+  "audio": "https://anchor.fm/s/3ca9dcec/podcast/play/126373835/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-8-27%2F432776028-44100-2-0aa5a5e893079.mp3",
+  "published": "Mon, 28 Sep 2026 20:30:21 GMT",
+  "listed_duration": 8286.0,
+  "split": "train"
+ },
+ {
+  "show": "The Angle from T. Rowe Price",
+  "feed_url": "https://www.ebmcdn.net/trp-angle/podcastgen/feed.xml",
+  "host": "ebmcdn",
+  "episode": "The Courage to Be Wrong with Dan Gardner",
+  "audio": "http://www.ebmcdn.net/trp-angle/podcastgen/media/2026-10-14_the_courage_to_be_wrong_with_dan_gardner.mp3",
+  "published": "Wed, 14 Oct 2026 06:20:56 -0400",
+  "listed_duration": 2370.0,
+  "split": "train"
+ },
+ {
+  "show": "The Angle from T. Rowe Price",
+  "feed_url": "https://www.ebmcdn.net/trp-angle/podcastgen/feed.xml",
+  "host": "ebmcdn",
+  "episode": "The Long View: Wael Sawan, CEO of Shell",
+  "audio": "http://www.ebmcdn.net/trp-angle/podcastgen/media/2026-09-23_the_long_view_-_shell_-_wael_sawan.mp3",
+  "published": "Wed, 23 Sep 2026 05:16:57 -0400",
+  "listed_duration": 2440.0,
+  "split": "train"
+ },
+ {
+  "show": "Practical AI",
+  "feed_url": "https://feeds.transistor.fm/practical-ai-machine-learning-data-science-llm",
+  "host": "transistor",
+  "episode": "Abundant Intelligence at the Midwest AI Summit Part 2",
+  "audio": "https://pscrb.fm/rss/p/dts.podtrac.com/redirect.mp3/media.transistor.fm/1b301bdc/b7154aa0.mp3",
+  "published": "Thu, 05 Nov 2026 05:00:00 -0500",
+  "listed_duration": 2873.0,
+  "split": "train"
+ },
+ {
+  "show": "Practical AI",
+  "feed_url": "https://feeds.transistor.fm/practical-ai-machine-learning-data-science-llm",
+  "host": "transistor",
+  "episode": "Narrative intelligence and the human advantage",
+  "audio": "https://pscrb.fm/rss/p/dts.podtrac.com/redirect.mp3/media.transistor.fm/f2fcb677/ee0419b3.mp3",
+  "published": "Thu, 08 Oct 2026 05:00:00 -0400",
+  "listed_duration": 2664.0,
+  "split": "train"
+ },
+ {
+  "show": "This American Life",
+  "feed_url": "http://feed.thisamericanlife.org/talpodcast",
+  "host": "thisamericanlife",
+  "episode": "900: Talk Me Into It",
+  "audio": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/5a109dc6-3f88-4918-b8f5-4d181a8639fd/audio/128/default.mp3?awCollectionId=d3081dd9-fcaf-445a-977c-4f56c28f5a6e&awEpisodeId=5a109dc6-3f88-4918-b8f5-4d181a8639fd&nocache",
+  "published": "Sun, 01 Nov 2026 19:00:00 -0500",
+  "listed_duration": 3675.0,
+  "split": "train"
+ },
+ {
+  "show": "This American Life",
+  "feed_url": "http://feed.thisamericanlife.org/talpodcast",
+  "host": "thisamericanlife",
+  "episode": "506: Secret Identity",
+  "audio": "https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/npr.simplecastaudio.com/d3081dd9-fcaf-445a-977c-4f56c28f5a6e/episodes/ce020dd9-145e-43e5-af3c-f6224ae352cb/audio/128/default.mp3?awCollectionId=d3081dd9-fcaf-445a-977c-4f56c28f5a6e&awEpisodeId=ce020dd9-145e-43e5-af3c-f6224ae352cb&nocache",
+  "published": "Sun, 25 Oct 2026 20:00:00 -0400",
+  "listed_duration": 3727.0,
+  "split": "train"
+ },
+ {
+  "show": "Español desde el Sur",
+  "feed_url": "https://anchor.fm/s/ea1cd3e8/podcast/rss",
+  "host": "anchor",
+  "episode": "60. La meseta del nivel intermedio",
+  "audio": "https://anchor.fm/s/ea1cd3e8/podcast/play/129055319/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-10-8%2F436225146-44100-2-daaa4ee688fd5.mp3",
+  "published": "Sun, 08 Nov 2026 16:41:12 GMT",
+  "listed_duration": 2194.0,
+  "split": "train"
+ },
+ {
+  "show": "Español desde el Sur",
+  "feed_url": "https://anchor.fm/s/ea1cd3e8/podcast/rss",
+  "host": "anchor",
+  "episode": "58. ¿Cómo es tener un podcast?",
+  "audio": "https://anchor.fm/s/ea1cd3e8/podcast/play/127203977/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-9-9%2Fc8dabd1e-efd9-2ee0-7788-5deac4b9f4fd.mp3",
+  "published": "Fri, 09 Oct 2026 19:19:34 GMT",
+  "listed_duration": 2819.0,
+  "split": "train"
+ },
+ {
+  "show": "Risky or Not?",
+  "feed_url": "https://rss.libsyn.com/shows/233006/destinations/1723082.xml",
+  "host": "libsyn",
+  "episode": "998. Eating Off Dishes Washed by a Scrub Brush Previously Used to Wash Raw Chicken Dishes",
+  "audio": "https://traffic.libsyn.com/secure/riskyornot/RoN998.mp3?dest-id=1723082",
+  "published": "Mon, 26 Oct 2026 12:00:00 +0000",
+  "listed_duration": 990.0,
+  "split": "train"
+ },
+ {
+  "show": "Risky or Not?",
+  "feed_url": "https://rss.libsyn.com/shows/233006/destinations/1723082.xml",
+  "host": "libsyn",
+  "episode": "1002. Naked Twix From a Bag of Halloween Candy",
+  "audio": "https://traffic.libsyn.com/secure/riskyornot/RoN1002.mp3?dest-id=1723082",
+  "published": "Mon, 09 Nov 2026 12:00:00 +0000",
+  "listed_duration": 1366.0,
+  "split": "train"
+ },
+ {
+  "show": "¡Cuéntame! | Learn Spanish with Comprehensible Input",
+  "feed_url": "https://anchor.fm/s/4baec630/podcast/rss",
+  "host": "anchor",
+  "episode": "225. Aventuras en Europa",
+  "audio": "https://traffic.megaphone.fm/APO8747832814.mp3",
+  "published": "Thu, 15 Oct 2026 16:23:42 GMT",
+  "listed_duration": 940.0,
+  "split": "train"
+ },
+ {
+  "show": "¡Cuéntame! | Learn Spanish with Comprehensible Input",
+  "feed_url": "https://anchor.fm/s/4baec630/podcast/rss",
+  "host": "anchor",
+  "episode": "224. ¡De regreso!",
+  "audio": "https://traffic.megaphone.fm/APO4818501369.mp3",
+  "published": "Mon, 12 Oct 2026 21:46:56 GMT",
+  "listed_duration": 1054.0,
+  "split": "train"
+ },
+ {
+  "show": "Podcast para aprender español",
+  "feed_url": "https://www.ivoox.com/feed_fg_f1781469_filtro_1.xml",
+  "host": "ivoox",
+  "episode": "197 - ¿Por qué cada vez hablamos MENOS - La tecnología y nuestras relaciones Español B2–C1",
+  "audio": "https://www.ivoox.com/197-por-cada-vez-hablamos-menos_mf_183293975_feed_1.mp3",
+  "published": "Thu, 12 Nov 2026 10:00:00 +0200",
+  "listed_duration": 1272.0,
+  "split": "train"
+ },
+ {
+  "show": "Podcast para aprender español",
+  "feed_url": "https://www.ivoox.com/feed_fg_f1781469_filtro_1.xml",
+  "host": "ivoox",
+  "episode": "¿Cómo es vivir en la Patagonia? Entrevista con profesora argentina | Cultura y pueblo mapuche",
+  "audio": "https://www.ivoox.com/como-es-vivir-patagonia-entrevista-con_mf_177419760_feed_1.mp3",
+  "published": "Thu, 16 Jul 2026 12:27:29 +0200",
+  "listed_duration": 2602.0,
+  "split": "train"
+ },
+ {
+  "show": "Simple Stories in Spanish",
+  "feed_url": "https://rss.buzzsprout.com/849883.rss",
+  "host": "buzzsprout",
+  "episode": "¿Qué me asusta?",
+  "audio": "https://www.buzzsprout.com/849883/episodes/19945409-que-me-asusta.mp3",
+  "published": "Sun, 11 Oct 2026 20:00:00 -0600",
+  "listed_duration": 1151.0,
+  "split": "train"
+ },
+ {
+  "show": "Simple Stories in Spanish",
+  "feed_url": "https://rss.buzzsprout.com/849883.rss",
+  "host": "buzzsprout",
+  "episode": "Dentro de la cueva",
+  "audio": "https://www.buzzsprout.com/849883/episodes/19764098-dentro-de-la-cueva.mp3",
+  "published": "Sun, 06 Sep 2026 19:00:00 -0600",
+  "listed_duration": 1044.0,
+  "split": "train"
+ }
+]

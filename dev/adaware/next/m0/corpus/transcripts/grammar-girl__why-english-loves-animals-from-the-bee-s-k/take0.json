@@ -1,0 +1,2654 @@
+{
+ "duration": 2128.56,
+ "language": "en",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 2.2,
+   "text": "Hey, we're Nick and Jack hosts of The Best One Yet."
+  },
+  {
+   "start": 2.2,
+   "end": 4.44,
+   "text": "Behind every episode, there's research, email,"
+  },
+  {
+   "start": 4.44,
+   "end": 7.56,
+   "text": "spreadsheets, and our shared Google Doc, the headline hammer."
+  },
+  {
+   "start": 7.56,
+   "end": 9.32,
+   "text": "With Google Workspace with Gemini,"
+  },
+  {
+   "start": 9.32,
+   "end": 11.72,
+   "text": "Google's AI is built right into the premium versions"
+  },
+  {
+   "start": 11.72,
+   "end": 14.92,
+   "text": "of tools we already use, like Gmail, Docs, and Sheets."
+  },
+  {
+   "start": 14.92,
+   "end": 17.84,
+   "text": "No new tools or extra logins just personalized AI"
+  },
+  {
+   "start": 17.84,
+   "end": 18.84,
+   "text": "for the way we work."
+  },
+  {
+   "start": 18.84,
+   "end": 21.0,
+   "text": "That means less time on the work around the work"
+  },
+  {
+   "start": 21.0,
+   "end": 23.2,
+   "text": "and more time finding the stories worth talking about."
+  },
+  {
+   "start": 23.2,
+   "end": 24.72,
+   "text": "Get AI tools for work."
+  },
+  {
+   "start": 24.72,
+   "end": 26.76,
+   "text": "Upgrade to Google Workspace with Gemini"
+  },
+  {
+   "start": 26.76,
+   "end": 30.0,
+   "text": "at goo.gle-slash-workspace-with-gemini."
+  },
+  {
+   "start": 30.0,
+   "end": 33.2,
+   "text": "That's goo.gle-slash-workspace-with-gemini."
+  },
+  {
+   "start": 33.2,
+   "end": 35.44,
+   "text": "Cash Now More Later from Open Door"
+  },
+  {
+   "start": 35.44,
+   "end": 37.48,
+   "text": "gives you cash upfront for your home"
+  },
+  {
+   "start": 37.48,
+   "end": 39.28,
+   "text": "plus all the profit later."
+  },
+  {
+   "start": 39.28,
+   "end": 42.76,
+   "text": "That's no chaos now, no cash left behind later."
+  },
+  {
+   "start": 42.76,
+   "end": 46.08,
+   "text": "Skip the showings now, pocket extra profit later."
+  },
+  {
+   "start": 46.08,
+   "end": 49.84,
+   "text": "This is so simple now, this is so awesome later."
+  },
+  {
+   "start": 49.84,
+   "end": 52.96,
+   "text": "Or sell fast now and pop the champagne later."
+  },
+  {
+   "start": 52.96,
+   "end": 55.88,
+   "text": "Cash Now More Later, now available nationwide."
+  },
+  {
+   "start": 55.88,
+   "end": 59.08,
+   "text": "Start your offer at opendoor.com."
+  },
+  {
+   "start": 59.08,
+   "end": 62.92,
+   "text": "Profits calculated after fees and costs, eligibility and offer price may vary."
+  },
+  {
+   "start": 62.92,
+   "end": 75.56,
+   "text": "Grammar Girl here. I'm Mignon Vogherty and today I am here with Jeremy Butterfield,"
+  },
+  {
+   "start": 75.56,
+   "end": 81.0,
+   "text": "the former editor-in-chief at Collins Dictionary's, editor of the 2015 edition of Fowler's"
+  },
+  {
+   "start": 81.0,
+   "end": 87.32,
+   "text": "Dictionary of Modern English Usage and author of the new book, The Metaphor Zoo. Jeremy,"
+  },
+  {
+   "start": 87.32,
+   "end": 93.4,
+   "text": "welcome to the Grammar Girl podcast. I'm pleased to be here. I am so excited to have you here."
+  },
+  {
+   "start": 93.4,
+   "end": 100.68,
+   "text": "So this book is just wonderful and it's very specific. It is about metaphors that are about"
+  },
+  {
+   "start": 100.68,
+   "end": 105.08,
+   "text": "animals. So how did this book, how did you even get the idea to do this book?"
+  },
+  {
+   "start": 105.08,
+   "end": 112.76,
+   "text": "Well, during lockdown, you know, when we couldn't go out very much, I was rereading some books I had"
+  },
+  {
+   "start": 112.76,
+   "end": 119.0,
+   "text": "and I read a wonderful little book about metaphor and that so deceived because I thought"
+  },
+  {
+   "start": 119.0,
+   "end": 123.6,
+   "text": "there must be a lot of animal metaphors because one of the metaphors that was"
+  },
+  {
+   "start": 123.6,
+   "end": 130.88,
+   "text": "referred to was this man is a beast this man is an animal so we turn human"
+  },
+  {
+   "start": 130.88,
+   "end": 135.72,
+   "text": "beings into animals very often and so I thought hang on a moment how many of"
+  },
+  {
+   "start": 135.72,
+   "end": 140.8,
+   "text": "these are they going to be so I started trawling and the things snow-bold I"
+  },
+  {
+   "start": 140.8,
+   "end": 146.14,
+   "text": "started a chapter on birds and then it went on from there yeah I mean once you"
+  },
+  {
+   "start": 146.14,
+   "end": 151.26,
+   "text": "pointed it out. I'd never noticed it or thought about it before, but I was surprised just how"
+  },
+  {
+   "start": 151.26,
+   "end": 157.1,
+   "text": "many metaphors we have about animals. I mean, it's a pretty thick book, actually. And the subtitle"
+  },
+  {
+   "start": 157.1,
+   "end": 163.98,
+   "text": "is, Why the English Language Loves Animals. So, you know, why does it? Answer your own question."
+  },
+  {
+   "start": 163.98,
+   "end": 169.1,
+   "text": "Pete Slauson Why does the English language love animals? Because it enables us to express"
+  },
+  {
+   "start": 169.1,
+   "end": 176.86,
+   "text": "a whole range of human emotions using the group of beings that comes next in order of us."
+  },
+  {
+   "start": 176.86,
+   "end": 183.5,
+   "text": "According to the traditional view of the world there is a thing called the Great Chain of Being."
+  },
+  {
+   "start": 183.5,
+   "end": 190.3,
+   "text": "God sits at the top of this chain, inanimate things sit at the bottom, we sit at the top of the"
+  },
+  {
+   "start": 190.3,
+   "end": 197.74,
+   "text": "animal chain aspiring to God supposedly but the next group in this chain are animals so it's"
+  },
+  {
+   "start": 197.74,
+   "end": 203.18,
+   "text": "natural that we should look to them. But that apart also, they give us such a huge range"
+  },
+  {
+   "start": 203.18,
+   "end": 209.22,
+   "text": "of metaphors. If you think on the one hand, we can use the metaphor of sharks as unscrupulous"
+  },
+  {
+   "start": 209.22,
+   "end": 214.2,
+   "text": "business people. On the other hand, we can go down to something as soft as puppies when"
+  },
+  {
+   "start": 214.2,
+   "end": 219.46,
+   "text": "someone makes puppy eyes at you. So you know, animals give us this huge range of expression."
+  },
+  {
+   "start": 219.46,
+   "end": 223.18,
+   "text": "Yeah. I mean, we're actually pretty dependent on them when you think about it."
+  },
+  {
+   "start": 223.18,
+   "end": 226.5,
+   "text": "Yes, to express so many basic situations."
+  },
+  {
+   "start": 226.5,
+   "end": 230.3,
+   "text": "I mean, think for instance about how we express social relations."
+  },
+  {
+   "start": 230.3,
+   "end": 233.1,
+   "text": "We might say it's a dog eat dog world."
+  },
+  {
+   "start": 233.26,
+   "end": 236.66,
+   "text": "If we think it's a vicious cutthroat business kind of world."
+  },
+  {
+   "start": 236.94,
+   "end": 241.66,
+   "text": "Or we might say dog does not eat dog, which is a proverb that goes back"
+  },
+  {
+   "start": 241.66,
+   "end": 244.7,
+   "text": "all the way to Latin to the first century BC."
+  },
+  {
+   "start": 244.9,
+   "end": 246.54,
+   "text": "We talk about top dogs."
+  },
+  {
+   "start": 246.54,
+   "end": 248.02,
+   "text": "We talk about underdogs."
+  },
+  {
+   "start": 248.02,
+   "end": 249.82,
+   "text": "I mean, there's just such a huge range."
+  },
+  {
+   "start": 249.82,
+   "end": 252.14,
+   "text": "It's such a huge range, Minion."
+  },
+  {
+   "start": 252.14,
+   "end": 256.38,
+   "text": "for more or less any occasion you care to mention."
+  },
+  {
+   "start": 256.38,
+   "end": 258.86,
+   "text": "Do you think that people are,"
+  },
+  {
+   "start": 258.86,
+   "end": 261.66,
+   "text": "are there a lot of new metaphors about animals?"
+  },
+  {
+   "start": 261.66,
+   "end": 263.42,
+   "text": "I'm wondering if it's sort of an older thing"
+  },
+  {
+   "start": 263.42,
+   "end": 267.3,
+   "text": "that came about when people lived more closely"
+  },
+  {
+   "start": 267.3,
+   "end": 270.12,
+   "text": "with animals, you know, with livestock and on farms"
+  },
+  {
+   "start": 270.12,
+   "end": 270.96,
+   "text": "and things like that,"
+  },
+  {
+   "start": 270.96,
+   "end": 273.26,
+   "text": "if a lot of our animal metaphors are older"
+  },
+  {
+   "start": 273.26,
+   "end": 276.02,
+   "text": "or if we're making just as many new ones today?"
+  },
+  {
+   "start": 276.02,
+   "end": 277.86,
+   "text": "I suspect we're not making as many."
+  },
+  {
+   "start": 277.86,
+   "end": 281.66,
+   "text": "You've put your finger on a very important point."
+  },
+  {
+   "start": 281.66,
+   "end": 284.66,
+   "text": "Some of these are very old established, you know,"
+  },
+  {
+   "start": 284.66,
+   "end": 288.18,
+   "text": "going back to the 13th, 14th, 15th centuries"
+  },
+  {
+   "start": 288.18,
+   "end": 291.18,
+   "text": "to Chaucer, to Shakespeare and so forth."
+  },
+  {
+   "start": 291.18,
+   "end": 293.98,
+   "text": "But some are being created, I mean,"
+  },
+  {
+   "start": 293.98,
+   "end": 296.72,
+   "text": "we can talk about as mad as a box of frogs."
+  },
+  {
+   "start": 296.72,
+   "end": 298.94,
+   "text": "Okay, that's a simile, not a metaphor,"
+  },
+  {
+   "start": 298.94,
+   "end": 301.14,
+   "text": "but we are creating new ones."
+  },
+  {
+   "start": 301.14,
+   "end": 304.98,
+   "text": "And one I particularly like, which we owe to the US,"
+  },
+  {
+   "start": 304.98,
+   "end": 307.5,
+   "text": "is it's like herding cats."
+  },
+  {
+   "start": 307.5,
+   "end": 310.34,
+   "text": "You know, if you're trying to organize a group of people"
+  },
+  {
+   "start": 310.34,
+   "end": 313.56,
+   "text": "or an organization, it's like herding cats."
+  },
+  {
+   "start": 313.56,
+   "end": 318.48,
+   "text": "Well, that was, that is first recorded in the OED from 1986."
+  },
+  {
+   "start": 318.48,
+   "end": 321.0,
+   "text": "So, you know, it's relatively recent."
+  },
+  {
+   "start": 321.0,
+   "end": 323.52,
+   "text": "Oh, that is so much newer than I would have thought."
+  },
+  {
+   "start": 323.52,
+   "end": 326.4,
+   "text": "Right, yes, it doesn't go back that far at all."
+  },
+  {
+   "start": 326.4,
+   "end": 328.32,
+   "text": "Although, you know, the idea is a wonderful one."
+  },
+  {
+   "start": 328.32,
+   "end": 331.88,
+   "text": "How on earth are you going to get cats to, you know,"
+  },
+  {
+   "start": 331.88,
+   "end": 333.24,
+   "text": "to do things together?"
+  },
+  {
+   "start": 333.24,
+   "end": 335.44,
+   "text": "Yeah, I can imagine trying to explain that situation"
+  },
+  {
+   "start": 335.44,
+   "end": 338.4,
+   "text": "without that metaphor in some instances."
+  },
+  {
+   "start": 338.4,
+   "end": 340.0,
+   "text": "Well, true, yes, exactly."
+  },
+  {
+   "start": 340.0,
+   "end": 343.88,
+   "text": "So once they become established, they then become indispensable, don't they?"
+  },
+  {
+   "start": 344.96,
+   "end": 345.28,
+   "text": "Yeah."
+  },
+  {
+   "start": 345.28,
+   "end": 350.52,
+   "text": "And, you know, it's almost fair to say that at least half of everything we say is a metaphor."
+  },
+  {
+   "start": 350.68,
+   "end": 352.2,
+   "text": "It may be a dead metaphor."
+  },
+  {
+   "start": 352.2,
+   "end": 356.28,
+   "text": "It may be a dormant metaphor, but so much of what we say is metaphorical."
+  },
+  {
+   "start": 356.76,
+   "end": 360.32,
+   "text": "I mean, it's even been said that language is a reef of dead metaphors."
+  },
+  {
+   "start": 360.48,
+   "end": 362.6,
+   "text": "And that's just so true."
+  },
+  {
+   "start": 362.6,
+   "end": 363.24,
+   "text": "Wow."
+  },
+  {
+   "start": 363.24,
+   "end": 366.48,
+   "text": "That's one thing I was wondering is, you know, there are so many."
+  },
+  {
+   "start": 366.48,
+   "end": 368.68,
+   "text": "And as I said, I didn't really think about them."
+  },
+  {
+   "start": 368.68,
+   "end": 375.88,
+   "text": "Do you think that people, did we even imagine the animals or visualize the animals when"
+  },
+  {
+   "start": 375.88,
+   "end": 380.36,
+   "text": "we use some of these animal metaphors or are they so embedded in language that we aren't"
+  },
+  {
+   "start": 380.36,
+   "end": 383.24,
+   "text": "even thinking about the animals themselves anymore when we use them?"
+  },
+  {
+   "start": 383.24,
+   "end": 387.64,
+   "text": "I suspect that we're not thinking about them in the majority of cases."
+  },
+  {
+   "start": 387.64,
+   "end": 392.88,
+   "text": "I mean, there's some psycholinguistic evidence to do with a different kind of metaphor or"
+  },
+  {
+   "start": 392.88,
+   "end": 399.28,
+   "text": "idiom that people aren't processing the literal idea first and then going to the metaphorical."
+  },
+  {
+   "start": 399.28,
+   "end": 401.16,
+   "text": "They go straight to the metaphorical."
+  },
+  {
+   "start": 401.16,
+   "end": 404.68,
+   "text": "So I think they're not necessarily thinking about the animals at all."
+  },
+  {
+   "start": 404.68,
+   "end": 409.4,
+   "text": "I think if you ask them, where does this metaphor come from?"
+  },
+  {
+   "start": 409.4,
+   "end": 414.04,
+   "text": "With the seconds thought, most of them would be able to say where it comes from except"
+  },
+  {
+   "start": 414.04,
+   "end": 415.76,
+   "text": "for some of the very obscure ones."
+  },
+  {
+   "start": 415.76,
+   "end": 422.12,
+   "text": "You use the idea of conceptual metaphors throughout the book to sort of classify all the different"
+  },
+  {
+   "start": 422.12,
+   "end": 427.48,
+   "text": "animal metaphors. I'm a big fan of classification. I love thinking that way. But I had never"
+  },
+  {
+   "start": 427.48,
+   "end": 432.72,
+   "text": "heard of this way of classifying metaphors before. So can you explain for the listeners"
+  },
+  {
+   "start": 432.72,
+   "end": 437.44,
+   "text": "sort of what a conceptual metaphor is and then how you used it to tie together your"
+  },
+  {
+   "start": 437.44,
+   "end": 438.44,
+   "text": "book?"
+  },
+  {
+   "start": 438.44,
+   "end": 444.8,
+   "text": "Sure. Well, first of all, to explain conceptual metaphor theory, very simply, it suggests that"
+  },
+  {
+   "start": 444.8,
+   "end": 451.4,
+   "text": "we have mental schemes in our heads which enable us to talk about the world and our"
+  },
+  {
+   "start": 451.4,
+   "end": 457.66,
+   "text": "experiences. So on the one hand you have a conceptual metaphor which is mental or intellectual"
+  },
+  {
+   "start": 457.66,
+   "end": 463.4,
+   "text": "and on the other hand you have linguistic metaphors which express the underlying conceptual"
+  },
+  {
+   "start": 463.4,
+   "end": 470.68,
+   "text": "metaphor. So take a very obvious example and we also talk about domains. We have two domains"
+  },
+  {
+   "start": 470.68,
+   "end": 472.8,
+   "text": "and we relate one to the other."
+  },
+  {
+   "start": 472.8,
+   "end": 475.68,
+   "text": "So let's take a very specific example."
+  },
+  {
+   "start": 475.68,
+   "end": 479.22,
+   "text": "Life is a journey, is a conceptual metaphor,"
+  },
+  {
+   "start": 479.22,
+   "end": 481.28,
+   "text": "and through that we come up with all manner"
+  },
+  {
+   "start": 481.28,
+   "end": 485.72,
+   "text": "of linguistic expressions like the first step in his career,"
+  },
+  {
+   "start": 485.72,
+   "end": 487.84,
+   "text": "it's a difficult path to follow,"
+  },
+  {
+   "start": 487.84,
+   "end": 489.88,
+   "text": "let's not go down that road."
+  },
+  {
+   "start": 489.88,
+   "end": 494.06,
+   "text": "So all these linguistic metaphors are made possible"
+  },
+  {
+   "start": 494.06,
+   "end": 498.06,
+   "text": "by the underlying conceptual metaphor, life is a journey."
+  },
+  {
+   "start": 498.06,
+   "end": 500.4,
+   "text": "And that's one that I think we probably all use,"
+  },
+  {
+   "start": 500.4,
+   "end": 506.24,
+   "text": "know really without thinking about it all the time. So the underlying conceptual metaphor"
+  },
+  {
+   "start": 506.24,
+   "end": 514.0,
+   "text": "behind the whole book is human is animal. So we relate the domain of animals to the domain of"
+  },
+  {
+   "start": 514.0,
+   "end": 520.32,
+   "text": "our own experience to be able to talk about our experience in animal terms and so that breaks down"
+  },
+  {
+   "start": 520.32,
+   "end": 527.84,
+   "text": "into submetaphores like for instance human sound is animal sound. To give you an example I can bark"
+  },
+  {
+   "start": 527.84,
+   "end": 535.8,
+   "text": "an order or I compare with contentment or I can bleat if I'm complaining, you know,"
+  },
+  {
+   "start": 535.8,
+   "end": 543.4,
+   "text": "in a kind of feeble lamb-like voice. But these all exemplify human sound is animal sound."
+  },
+  {
+   "start": 543.4,
+   "end": 549.04,
+   "text": "And so it goes on. There's a whole range of, you know, human appearance is animal appearance,"
+  },
+  {
+   "start": 549.04,
+   "end": 553.56,
+   "text": "human intelligence is animal intelligence, human... I mean, here's one that probably"
+  },
+  {
+   "start": 553.56,
+   "end": 560.3,
+   "text": "sounds a bit wacky if I say human families are bird families but if you think about the"
+  },
+  {
+   "start": 560.3,
+   "end": 567.0,
+   "text": "language we use, an empty nest when the children have gone, a cuckoo in the nest if someone"
+  },
+  {
+   "start": 567.0,
+   "end": 572.56,
+   "text": "is where they shouldn't be, empty nest syndrome, I think I've said that, to rule the roost"
+  },
+  {
+   "start": 572.56,
+   "end": 573.72,
+   "text": "and so on and so forth."
+  },
+  {
+   "start": 573.72,
+   "end": 577.72,
+   "text": "So that is because we're thinking human families are bird families."
+  },
+  {
+   "start": 577.72,
+   "end": 578.72,
+   "text": "Amazing."
+  },
+  {
+   "start": 578.72,
+   "end": 582.28,
+   "text": "And you also talked about how metaphors are often embodied."
+  },
+  {
+   "start": 582.28,
+   "end": 583.28,
+   "text": "Yes."
+  },
+  {
+   "start": 583.28,
+   "end": 588.2,
+   "text": "Well, here's one I thought of as I was reading through your notes for this."
+  },
+  {
+   "start": 588.2,
+   "end": 591.92,
+   "text": "We now talk about reaching out to someone."
+  },
+  {
+   "start": 591.92,
+   "end": 593.64,
+   "text": "It couldn't be more embodied."
+  },
+  {
+   "start": 593.64,
+   "end": 597.52,
+   "text": "To reach out meaning to get in touch with someone, to contact someone."
+  },
+  {
+   "start": 597.52,
+   "end": 600.0,
+   "text": "This is a relatively new one."
+  },
+  {
+   "start": 600.0,
+   "end": 603.79,
+   "text": "But a lot of other metaphors are embodied."
+  },
+  {
+   "start": 603.79,
+   "end": 607.71,
+   "text": "They reflect how we move and behave in the world."
+  },
+  {
+   "start": 607.71,
+   "end": 613.19,
+   "text": "For example, the obvious one is happiness is up."
+  },
+  {
+   "start": 613.19,
+   "end": 615.19,
+   "text": "These are called orientational metaphors."
+  },
+  {
+   "start": 615.19,
+   "end": 621.07,
+   "text": "If you think about it, if you're feeling happy, your posture is likely to be higher, you're"
+  },
+  {
+   "start": 621.07,
+   "end": 625.79,
+   "text": "likely to be looking up, but if you're feeling down in the dumps and you're going to be looking"
+  },
+  {
+   "start": 625.79,
+   "end": 631.79,
+   "text": "down, and that's just one example of that particular kind of metaphor."
+  },
+  {
+   "start": 631.79,
+   "end": 636.03,
+   "text": "But the theory states that so many of our metaphors are in body."
+  },
+  {
+   "start": 636.03,
+   "end": 637.27,
+   "text": "Here's another one."
+  },
+  {
+   "start": 637.27,
+   "end": 639.63,
+   "text": "Anger is heat."
+  },
+  {
+   "start": 639.63,
+   "end": 644.91,
+   "text": "And that comes from your bodily experience of when you're angry, your temperature will"
+  },
+  {
+   "start": 644.91,
+   "end": 648.19,
+   "text": "rise, you will have a sensation of hotness."
+  },
+  {
+   "start": 648.19,
+   "end": 653.27,
+   "text": "And so being hot under the collar, there's an example, and that those are all based on"
+  },
+  {
+   "start": 653.27,
+   "end": 658.11,
+   "text": "anger is heat, which is based on the physical reactions of the body."
+  },
+  {
+   "start": 658.11,
+   "end": 659.11,
+   "text": "Nice."
+  },
+  {
+   "start": 659.11,
+   "end": 663.95,
+   "text": "Well, let's get into some of the specific metaphors because there are so many that are"
+  },
+  {
+   "start": 663.95,
+   "end": 666.91,
+   "text": "just so much fun in the book."
+  },
+  {
+   "start": 666.91,
+   "end": 673.43,
+   "text": "You have a relatively big section on metaphors like the bee's knees and its various friends."
+  },
+  {
+   "start": 673.43,
+   "end": 674.43,
+   "text": "Let's talk about those."
+  },
+  {
+   "start": 674.43,
+   "end": 675.43,
+   "text": "Where did they come from?"
+  },
+  {
+   "start": 675.43,
+   "end": 678.27,
+   "text": "Well, they're great fun, aren't they?"
+  },
+  {
+   "start": 678.27,
+   "end": 683.87,
+   "text": "And I love them because they're an example of everyone, you know, everyone playing with"
+  },
+  {
+   "start": 683.87,
+   "end": 684.87,
+   "text": "language."
+  },
+  {
+   "start": 684.87,
+   "end": 688.27,
+   "text": "You know, we all like word puzzles and crosswords and so forth."
+  },
+  {
+   "start": 688.27,
+   "end": 691.23,
+   "text": "But this is an example of creativity."
+  },
+  {
+   "start": 691.23,
+   "end": 696.19,
+   "text": "Most of them were coined in the 1920s and there was a whole set of them."
+  },
+  {
+   "start": 696.19,
+   "end": 702.07,
+   "text": "The only ones that are left are the bees' knees and the cat's whiskers."
+  },
+  {
+   "start": 702.07,
+   "end": 708.23,
+   "text": "But there was a whole group of them which took an animal and suggested it had a body"
+  },
+  {
+   "start": 708.23,
+   "end": 710.71,
+   "text": "part which it wouldn't have."
+  },
+  {
+   "start": 710.71,
+   "end": 720.27,
+   "text": "So for example you had the snake's toenails, the alligator's adenoids, the canary's tusks,"
+  },
+  {
+   "start": 720.27,
+   "end": 723.83,
+   "text": "and most ridiculously of all the sardine's whiskers."
+  },
+  {
+   "start": 723.83,
+   "end": 729.43,
+   "text": "So, you know, the template here was to take an animal and give it some ridiculous body"
+  },
+  {
+   "start": 729.43,
+   "end": 730.43,
+   "text": "part."
+  },
+  {
+   "start": 730.43,
+   "end": 732.63,
+   "text": "I mean, for instance, bees don't have knees anyway."
+  },
+  {
+   "start": 732.63,
+   "end": 736.95,
+   "text": "You know, the only one which is a real body part is the cat's whiskers."
+  },
+  {
+   "start": 736.95,
+   "end": 738.23,
+   "text": "So they're great fun."
+  },
+  {
+   "start": 738.23,
+   "end": 741.89,
+   "text": "I catalogued about between 60 and 70 of them."
+  },
+  {
+   "start": 741.89,
+   "end": 746.99,
+   "text": "They arose in the 1920s and 1930s, but of course, most of them have now dropped out"
+  },
+  {
+   "start": 746.99,
+   "end": 747.99,
+   "text": "of use."
+  },
+  {
+   "start": 747.99,
+   "end": 750.91,
+   "text": "So we just left with bees, knees and cat's whiskers."
+  },
+  {
+   "start": 750.91,
+   "end": 753.53,
+   "text": "Do they fulfill one of the conceptual metaphors?"
+  },
+  {
+   "start": 753.53,
+   "end": 755.19,
+   "text": "I'm not sure that they do."
+  },
+  {
+   "start": 755.19,
+   "end": 760.53,
+   "text": "I mean, I think it would be stretching it a bit to say we have this conceptual metaphor"
+  },
+  {
+   "start": 760.53,
+   "end": 763.73,
+   "text": "of an animal, you know, with a strange body part."
+  },
+  {
+   "start": 763.73,
+   "end": 764.89,
+   "text": "I suspect not."
+  },
+  {
+   "start": 764.89,
+   "end": 770.33,
+   "text": "I mean, I lightheartedly suggested one in the book, but I don't think they really do."
+  },
+  {
+   "start": 770.33,
+   "end": 775.73,
+   "text": "It was more just people playing with language and having fun, which we all enjoy too."
+  },
+  {
+   "start": 775.73,
+   "end": 776.73,
+   "text": "Yes, exactly."
+  },
+  {
+   "start": 776.73,
+   "end": 777.73,
+   "text": "Exactly."
+  },
+  {
+   "start": 777.73,
+   "end": 779.37,
+   "text": "Let's go on to dogs."
+  },
+  {
+   "start": 779.37,
+   "end": 784.97,
+   "text": "We talked a little bit about dogs already, but there are so many dog metaphors."
+  },
+  {
+   "start": 784.97,
+   "end": 789.19,
+   "text": "And first of all, it was very interesting that we don't know the origin of the word"
+  },
+  {
+   "start": 789.19,
+   "end": 793.21,
+   "text": "dog itself and also so many other short names for animals."
+  },
+  {
+   "start": 793.21,
+   "end": 796.81,
+   "text": "You pointed out like pig and hog and frog and stag."
+  },
+  {
+   "start": 796.81,
+   "end": 802.77,
+   "text": "Can you talk a little bit about maybe why we don't know those or how as a lexicographer"
+  },
+  {
+   "start": 802.77,
+   "end": 805.09,
+   "text": "you might go about trying to find that?"
+  },
+  {
+   "start": 805.09,
+   "end": 812.89,
+   "text": "Well, there are several competing theories, but no single one has been proved to be correct."
+  },
+  {
+   "start": 812.89,
+   "end": 819.01,
+   "text": "And in particular in the case of dog, there is only one example of it in Old English,"
+  },
+  {
+   "start": 819.01,
+   "end": 822.69,
+   "text": "in the genitive, in a translation from the Latin."
+  },
+  {
+   "start": 822.69,
+   "end": 828.89,
+   "text": "Then it just disappears until it comes into wider use, much, much later in the medieval"
+  },
+  {
+   "start": 828.89,
+   "end": 833.57,
+   "text": "period, that the word that would have been used in Old English is what we would call"
+  },
+  {
+   "start": 833.57,
+   "end": 842.05,
+   "text": "hound or Hund, which is clearly related to the Germanic languages, and it is the word"
+  },
+  {
+   "start": 842.05,
+   "end": 847.65,
+   "text": "that you'll find in German today, and in Danish and so on. So where dog comes from is just"
+  },
+  {
+   "start": 847.65,
+   "end": 853.21,
+   "text": "a mystery to lexicographers, to etymologists, I'm afraid, and the same applies to those"
+  },
+  {
+   "start": 853.21,
+   "end": 860.17,
+   "text": "other words that you mentioned like stag and so forth. So it's just one of those cases"
+  },
+  {
+   "start": 860.17,
+   "end": 863.69,
+   "text": "where people have to say of unknown origin."
+  },
+  {
+   "start": 863.69,
+   "end": 865.89,
+   "text": "You know, as you'll know in the OED,"
+  },
+  {
+   "start": 865.89,
+   "end": 867.13,
+   "text": "the Oxford English dictionary,"
+  },
+  {
+   "start": 867.13,
+   "end": 870.1,
+   "text": "you'll come across several words"
+  },
+  {
+   "start": 870.1,
+   "end": 872.18,
+   "text": "where it just says of unknown origin."
+  },
+  {
+   "start": 872.18,
+   "end": 878.45,
+   "text": "Yeah."
+  },
+  {
+   "start": 878.45,
+   "end": 880.81,
+   "text": "AI is transforming sales, support,"
+  },
+  {
+   "start": 880.81,
+   "end": 883.29,
+   "text": "and every customer interaction in between."
+  },
+  {
+   "start": 883.29,
+   "end": 885.65,
+   "text": "But too often, you're sold a different AI agent"
+  },
+  {
+   "start": 885.65,
+   "end": 887.13,
+   "text": "for every job."
+  },
+  {
+   "start": 887.13,
+   "end": 888.93,
+   "text": "That changes with FIN."
+  },
+  {
+   "start": 888.93,
+   "end": 890.57,
+   "text": "FIN is a single customer agent"
+  },
+  {
+   "start": 890.57,
+   "end": 893.38,
+   "text": "that works across the entire customer journey."
+  },
+  {
+   "start": 893.38,
+   "end": 894.86,
+   "text": "From qualifying sales leads"
+  },
+  {
+   "start": 894.86,
+   "end": 898.3,
+   "text": "to resolving support issues, Fin works across teams,"
+  },
+  {
+   "start": 898.3,
+   "end": 901.36,
+   "text": "carrying context from one conversation to the next,"
+  },
+  {
+   "start": 901.36,
+   "end": 903.74,
+   "text": "meet the agent making perfect customer experiences"
+  },
+  {
+   "start": 903.74,
+   "end": 907.86,
+   "text": "possible at fin.ai."
+  },
+  {
+   "start": 907.86,
+   "end": 909.98,
+   "text": "Hey, we're Nick and Jack hosts of The Best One Yet."
+  },
+  {
+   "start": 909.98,
+   "end": 912.22,
+   "text": "Behind every episode, there's research, email,"
+  },
+  {
+   "start": 912.22,
+   "end": 915.34,
+   "text": "spreadsheets, and our shared Google Doc, the headline hammer."
+  },
+  {
+   "start": 915.34,
+   "end": 917.14,
+   "text": "With Google Workspace with Gemini,"
+  },
+  {
+   "start": 917.14,
+   "end": 919.5,
+   "text": "Google's AI is built right into the premium versions"
+  },
+  {
+   "start": 919.5,
+   "end": 922.74,
+   "text": "of tools we already use, like Gmail, Docs, and Sheets."
+  },
+  {
+   "start": 922.74,
+   "end": 925.62,
+   "text": "No new tools or extra logins, just personalized AI"
+  },
+  {
+   "start": 925.62,
+   "end": 929.3,
+   "text": "for the way we work. That means less time on the work around the work and more time"
+  },
+  {
+   "start": 929.3,
+   "end": 933.78,
+   "text": "finding the stories worth talking about. Get AI tools for work. Upgrade to Google Workspace"
+  },
+  {
+   "start": 933.78,
+   "end": 940.1,
+   "text": "with Gemini at go.gle slash workspace with Gemini. That's go.gle slash workspace with"
+  },
+  {
+   "start": 940.1,
+   "end": 941.1,
+   "text": "Gemini."
+  },
+  {
+   "start": 941.1,
+   "end": 946.34,
+   "text": "Cash Now More Later from Open Door gives you cash up front for your home plus all the profit"
+  },
+  {
+   "start": 946.34,
+   "end": 952.5,
+   "text": "later. That's no chaos now, no cash left behind later. Skip the showings now. Pocket"
+  },
+  {
+   "start": 952.5,
+   "end": 959.06,
+   "text": "extra profit later. This is so simple now. This is so awesome later. Or self-ask now"
+  },
+  {
+   "start": 959.06,
+   "end": 964.02,
+   "text": "and pop the champagne later. Cash now more later. Now available nationwide."
+  },
+  {
+   "start": 964.02,
+   "end": 969.32,
+   "text": "Start your offer at opendoor.com.aycast. Profits calculated after fees and costs, eligibility"
+  },
+  {
+   "start": 969.32,
+   "end": 977.35,
+   "text": "and offer price may vary."
+  },
+  {
+   "start": 977.35,
+   "end": 982.67,
+   "text": "I think we have so many dog metaphors because dogs are so wonderful and we call them man's"
+  },
+  {
+   "start": 982.67,
+   "end": 987.59,
+   "text": "best friend. Do you know the origin of that label for the dog?"
+  },
+  {
+   "start": 987.59,
+   "end": 993.07,
+   "text": "Yes, interestingly, one would expect it to be very, very old, wouldn't you?"
+  },
+  {
+   "start": 993.07,
+   "end": 997.59,
+   "text": "But it's only as old as 1841."
+  },
+  {
+   "start": 997.59,
+   "end": 1003.23,
+   "text": "And interestingly, it was in a military magazine, a British military magazine."
+  },
+  {
+   "start": 1003.23,
+   "end": 1012.03,
+   "text": "And I wonder if that doesn't have something to do with the improved status of dogs in Victorian society."
+  },
+  {
+   "start": 1012.03,
+   "end": 1018.31,
+   "text": "I mean, during the Victorian period, there were moves to improve the lot of animals,"
+  },
+  {
+   "start": 1018.31,
+   "end": 1020.87,
+   "text": "and in particular, dogs."
+  },
+  {
+   "start": 1020.87,
+   "end": 1026.07,
+   "text": "There's a very famous painter called Lancia, who was a royal portraitist, painted pictures"
+  },
+  {
+   "start": 1026.07,
+   "end": 1028.31,
+   "text": "of Queen Victoria with her dogs."
+  },
+  {
+   "start": 1028.31,
+   "end": 1030.99,
+   "text": "So the whole dog thing in Victorian times."
+  },
+  {
+   "start": 1030.99,
+   "end": 1036.43,
+   "text": "And also maybe there's a little bit of Victorian sentimentality, or even Dickensian sentimentality"
+  },
+  {
+   "start": 1036.43,
+   "end": 1038.51,
+   "text": "in talking about man's best friends."
+  },
+  {
+   "start": 1038.51,
+   "end": 1041.55,
+   "text": "A little bit twee, isn't it, if you think about it?"
+  },
+  {
+   "start": 1041.55,
+   "end": 1043.79,
+   "text": "but also in a sense very true."
+  },
+  {
+   "start": 1043.79,
+   "end": 1048.43,
+   "text": "Yeah. When I've had a dog, I have felt like it was my best friend, or at least one of"
+  },
+  {
+   "start": 1048.43,
+   "end": 1055.19,
+   "text": "my best friends. They love so unconditionally. We have metaphors about dogs being both privileged"
+  },
+  {
+   "start": 1055.19,
+   "end": 1062.59,
+   "text": "and mistreated. I mean, we treat them in so many different ways. What are some examples?"
+  },
+  {
+   "start": 1062.59,
+   "end": 1065.23,
+   "text": "We've already talked about a few, but are there more?"
+  },
+  {
+   "start": 1065.23,
+   "end": 1070.71,
+   "text": "Well, to yank somebody's chain is one that you mentioned. I think to rattle somebody's"
+  },
+  {
+   "start": 1070.71,
+   "end": 1077.63,
+   "text": "cage, I suspect could refer to a dog, you know, imprisoned in a cage to let somebody"
+  },
+  {
+   "start": 1077.63,
+   "end": 1083.39,
+   "text": "off the leash when you give somebody the freedom to do something. Like you could talk about"
+  },
+  {
+   "start": 1083.39,
+   "end": 1089.27,
+   "text": "somebody behaving like a rabid dog. I mean, that there's just so many different ideas"
+  },
+  {
+   "start": 1089.27,
+   "end": 1095.35,
+   "text": "that you can express with dogs. And that's not surprising, as you say, partly because,"
+  },
+  {
+   "start": 1095.35,
+   "end": 1102.63,
+   "text": "know, we love dogs on the whole, but also because in the OED, the word dog itself has"
+  },
+  {
+   "start": 1102.63,
+   "end": 1105.35,
+   "text": "270 different meanings."
+  },
+  {
+   "start": 1105.35,
+   "end": 1106.35,
+   "text": "Wow."
+  },
+  {
+   "start": 1106.35,
+   "end": 1108.03,
+   "text": "Would you believe the OED?"
+  },
+  {
+   "start": 1108.03,
+   "end": 1112.87,
+   "text": "I mean, not all of them are related to how we use the word dog to apply to us, but it"
+  },
+  {
+   "start": 1112.87,
+   "end": 1116.59,
+   "text": "is an incredibly complex word in its own right."
+  },
+  {
+   "start": 1116.59,
+   "end": 1119.19,
+   "text": "Does that include a lot of metaphors or idioms?"
+  },
+  {
+   "start": 1119.19,
+   "end": 1123.03,
+   "text": "I would think about, off the top of my head, I would think about 20 of those are metaphors"
+  },
+  {
+   "start": 1123.03,
+   "end": 1124.31,
+   "text": "and idioms, yes."
+  },
+  {
+   "start": 1124.31,
+   "end": 1125.31,
+   "text": "Wow."
+  },
+  {
+   "start": 1125.31,
+   "end": 1127.03,
+   "text": "I'm surprised there are so many others."
+  },
+  {
+   "start": 1127.03,
+   "end": 1131.11,
+   "text": "I guess we do use it as a verb to dog someone."
+  },
+  {
+   "start": 1131.11,
+   "end": 1132.95,
+   "text": "And then there are fire dogs, for instance."
+  },
+  {
+   "start": 1132.95,
+   "end": 1137.87,
+   "text": "Yes, there's a whole range of rather technical meanings of dog, apart from the obvious ones."
+  },
+  {
+   "start": 1137.87,
+   "end": 1138.87,
+   "text": "Wow, that's surprising."
+  },
+  {
+   "start": 1138.87,
+   "end": 1144.07,
+   "text": "And so you had mentioned in your book that I think to yank someone's chain you said was"
+  },
+  {
+   "start": 1144.07,
+   "end": 1150.75,
+   "text": "from US origin and that you think United States metaphors tend to be especially vivid."
+  },
+  {
+   "start": 1150.75,
+   "end": 1153.47,
+   "text": "And I was wondering if you have a theory about why?"
+  },
+  {
+   "start": 1153.47,
+   "end": 1159.63,
+   "text": "At the top of my head I would say I think it's because perhaps Americans prefer the pictorial,"
+  },
+  {
+   "start": 1159.63,
+   "end": 1164.79,
+   "text": "the very vivid as you were saying, you know, I just quoted that example to reach out to"
+  },
+  {
+   "start": 1164.79,
+   "end": 1171.43,
+   "text": "someone and maybe also because you have a less restrained approach to language, you"
+  },
+  {
+   "start": 1171.43,
+   "end": 1175.83,
+   "text": "know, rather than thinking of language as some precious thing that you mustn't touch,"
+  },
+  {
+   "start": 1175.83,
+   "end": 1181.07,
+   "text": "perhaps you consider it more malleable and you know, that kind of frontier spirit almost"
+  },
+  {
+   "start": 1181.07,
+   "end": 1185.23,
+   "text": "applied to language. It's something you can play with. It's something you can develop. It's"
+  },
+  {
+   "start": 1185.23,
+   "end": 1190.91,
+   "text": "something you can make your own, perhaps in a way that we are less inclined to do. I mean,"
+  },
+  {
+   "start": 1190.91,
+   "end": 1193.15,
+   "text": "that's what I'd say off top of my head."
+  },
+  {
+   "start": 1193.15,
+   "end": 1195.63,
+   "text": "Yeah, and we're just younger as a country."
+  },
+  {
+   "start": 1195.63,
+   "end": 1202.67,
+   "text": "And you're younger, exactly, yes. Although, I mean, it's also interesting how some words which we"
+  },
+  {
+   "start": 1202.67,
+   "end": 1208.51,
+   "text": "think of as American, I mean, take for instance, calling someone honey, which we now do in this"
+  },
+  {
+   "start": 1208.51,
+   "end": 1214.27,
+   "text": "country as well to a certain extent goes all the way back to the Middle Ages. So several"
+  },
+  {
+   "start": 1214.27,
+   "end": 1221.31,
+   "text": "use, hundreds of uses and words have crossed the Atlantic, you know, 17th and 18th centuries"
+  },
+  {
+   "start": 1221.31,
+   "end": 1226.23,
+   "text": "and were originally British and are now marked as American and some of them are coming back."
+  },
+  {
+   "start": 1226.23,
+   "end": 1230.27,
+   "text": "Yeah, your stories about the pug were especially amusing."
+  },
+  {
+   "start": 1230.27,
+   "end": 1236.35,
+   "text": "Well, the pug is a very royal dog. It was brought over by the king and queen in the"
+  },
+  {
+   "start": 1236.35,
+   "end": 1241.63,
+   "text": "late 17th century, Marie Antoinette had one, had one, it's a very posh dog and isn't it"
+  },
+  {
+   "start": 1241.63,
+   "end": 1247.87,
+   "text": "interesting how history repeats itself because now pugs are hugely popular and they were in the"
+  },
+  {
+   "start": 1247.87,
+   "end": 1255.23,
+   "text": "18th century and there was a group of Germans, German Catholics who couldn't become Freemasons"
+  },
+  {
+   "start": 1255.23,
+   "end": 1260.11,
+   "text": "because they were Catholic so they set up their own society and what was this society called"
+  },
+  {
+   "start": 1260.11,
+   "end": 1268.83,
+   "text": "the order of the pug. And in order to become a member of the order, they had to stand outside"
+  },
+  {
+   "start": 1268.83,
+   "end": 1274.51,
+   "text": "the room or rather probably kneel outside the room and scratch at the door to be admitted."
+  },
+  {
+   "start": 1274.51,
+   "end": 1280.67,
+   "text": "And then the people inside would bark. I mean, it all sounds completely mad. People inside would"
+  },
+  {
+   "start": 1280.67,
+   "end": 1286.91,
+   "text": "bark to let them in. And then one of the things they had to do was to kiss the bottom of a porcelain"
+  },
+  {
+   "start": 1286.91,
+   "end": 1293.87,
+   "text": "part. The club only lasted for about 10 years. I mean, you know, and it's a wonder it lasted"
+  },
+  {
+   "start": 1293.87,
+   "end": 1300.19,
+   "text": "that long. That's amazing. And what about hush puppies? Well, there's a long story there."
+  },
+  {
+   "start": 1300.19,
+   "end": 1305.83,
+   "text": "There's wheels within wheels, right? The first part is you have to think that dogs can mean"
+  },
+  {
+   "start": 1305.83,
+   "end": 1312.39,
+   "text": "your feet. And so puppies can also mean your feet. So you can say, my dogs are barking in"
+  },
+  {
+   "start": 1312.39,
+   "end": 1318.63,
+   "text": "slang meaning my feet are hurting and there is an item of food called a hush puppy which"
+  },
+  {
+   "start": 1318.63,
+   "end": 1324.83,
+   "text": "is a fried corn fritter and apparently and the idea being that you know supposedly you're"
+  },
+  {
+   "start": 1324.83,
+   "end": 1329.51,
+   "text": "on a hunting trip and you're cooking up some food you're cooking these fritters you would"
+  },
+  {
+   "start": 1329.51,
+   "end": 1336.11,
+   "text": "throw them to the dogs to hush the puppies and so the story goes that a manager from"
+  },
+  {
+   "start": 1336.11,
+   "end": 1343.47,
+   "text": "the Hush Puppy's company heard this explanation of what the corn fritters were and thought,"
+  },
+  {
+   "start": 1343.47,
+   "end": 1350.75,
+   "text": "right, I can give that name to my product because it will hush the puppy's meaning feet."
+  },
+  {
+   "start": 1350.75,
+   "end": 1355.83,
+   "text": "It's kind of a long-winded explanation, but you have to understand that dogs and puppies"
+  },
+  {
+   "start": 1355.83,
+   "end": 1357.59,
+   "text": "can both refer to feet."
+  },
+  {
+   "start": 1357.59,
+   "end": 1362.13,
+   "text": "Now, I love those long, like A goes to B goes to C goes to D, and like suddenly it makes"
+  },
+  {
+   "start": 1362.13,
+   "end": 1364.59,
+   "text": "sense when you might not have seen it originally."
+  },
+  {
+   "start": 1364.59,
+   "end": 1367.75,
+   "text": "Yes, absolutely. Wheels within wheels, as I said."
+  },
+  {
+   "start": 1367.75,
+   "end": 1373.59,
+   "text": "Yeah. And so you also said that birds feature the most. We talked about birds as human families,"
+  },
+  {
+   "start": 1373.59,
+   "end": 1378.75,
+   "text": "bird families as human families. But you also said that birds feature the most body part"
+  },
+  {
+   "start": 1378.75,
+   "end": 1381.59,
+   "text": "metaphors. And that was surprising to me."
+  },
+  {
+   "start": 1381.59,
+   "end": 1387.59,
+   "text": "Well, I think that's possibly because if you're, what is the animal that we're going to see"
+  },
+  {
+   "start": 1387.59,
+   "end": 1392.91,
+   "text": "most of? If you don't have a pet, we most like to see a bird, aren't we? I mean, you"
+  },
+  {
+   "start": 1392.91,
+   "end": 1398.67,
+   "text": "even in the city, every day we're going to see a bird. So I think that's why they play a big part"
+  },
+  {
+   "start": 1398.67,
+   "end": 1406.27,
+   "text": "in our metaphorical life. And so I was thinking you could say hawk-nosed, eagle-eyed, raven-haired,"
+  },
+  {
+   "start": 1406.27,
+   "end": 1411.71,
+   "text": "swan-necked. There's a lot of appearance metaphors to do with birds, as you say."
+  },
+  {
+   "start": 1411.71,
+   "end": 1416.83,
+   "text": "Hmm. That is so interesting because, I mean, you're right. I understand why, because it does"
+  },
+  {
+   "start": 1416.83,
+   "end": 1421.71,
+   "text": "make sense that we see birds more than other animals, especially if we're not on a farm or"
+  },
+  {
+   "start": 1421.71,
+   "end": 1426.07,
+   "text": "don't have a pet, talking about embodied. To me, they're like more different from us"
+  },
+  {
+   "start": 1426.07,
+   "end": 1430.75,
+   "text": "than four-legged animals. You know, we don't have wings. That's just our beaks. I can"
+  },
+  {
+   "start": 1430.75,
+   "end": 1436.67,
+   "text": "mean we have noses, but no, it's just funny. To me, they're more foreign from us than dogs"
+  },
+  {
+   "start": 1436.67,
+   "end": 1437.67,
+   "text": "or cats."
+  },
+  {
+   "start": 1437.67,
+   "end": 1442.75,
+   "text": "You're then taking us right back to the great chain of being because within the hierarchy"
+  },
+  {
+   "start": 1442.75,
+   "end": 1447.75,
+   "text": "of the great chain of being, birds would obviously be in a lower position than dogs. You're"
+  },
+  {
+   "start": 1447.75,
+   "end": 1454.19,
+   "text": "absolutely right because in this great chain of being every single animal had its position"
+  },
+  {
+   "start": 1454.19,
+   "end": 1459.39,
+   "text": "in the hierarchy. So you've hit the nail on the head there, but on the other hand, as"
+  },
+  {
+   "start": 1459.39,
+   "end": 1464.43,
+   "text": "I say, I think it's because we see them a lot. In dialect, you can talk about your"
+  },
+  {
+   "start": 1464.43,
+   "end": 1470.87,
+   "text": "nose as your neb, but neb is also the word for a beak. So we can talk about poking your"
+  },
+  {
+   "start": 1470.87,
+   "end": 1477.51,
+   "text": "neb into something. There's another bird metaphor, you know, derived directly from a bird's body,"
+  },
+  {
+   "start": 1477.51,
+   "end": 1481.73,
+   "text": "But I agree, it might seem a bit strange, but here's another one, to take somebody under"
+  },
+  {
+   "start": 1481.73,
+   "end": 1487.43,
+   "text": "your wing, which we get from swans who take their signets under their wings."
+  },
+  {
+   "start": 1487.43,
+   "end": 1492.95,
+   "text": "So even though they're in a sense rather different from us, they're still a great source for"
+  },
+  {
+   "start": 1492.95,
+   "end": 1494.47,
+   "text": "these colorful metaphors."
+  },
+  {
+   "start": 1494.47,
+   "end": 1495.87,
+   "text": "Yeah, amazing."
+  },
+  {
+   "start": 1495.87,
+   "end": 1500.35,
+   "text": "And I feel like we haven't given the cat people enough time, so we don't want to anchor the"
+  },
+  {
+   "start": 1500.35,
+   "end": 1501.35,
+   "text": "cat people."
+  },
+  {
+   "start": 1501.35,
+   "end": 1505.71,
+   "text": "And I think that you are a cat person, so let's talk about cat metaphors a little bit."
+  },
+  {
+   "start": 1505.71,
+   "end": 1509.99,
+   "text": "of the two I'm more a cat person than a dog person, yes."
+  },
+  {
+   "start": 1509.99,
+   "end": 1514.39,
+   "text": "Well as I was saying, one that's recent is it's like herding cats"
+  },
+  {
+   "start": 1514.39,
+   "end": 1516.95,
+   "text": "and that's one I particularly like."
+  },
+  {
+   "start": 1516.95,
+   "end": 1520.67,
+   "text": "But there is a proverb which you probably won't have heard of"
+  },
+  {
+   "start": 1522.19,
+   "end": 1527.19,
+   "text": "which is a cat in mittens or a cat in gloves catches no mice."
+  },
+  {
+   "start": 1527.79,
+   "end": 1529.71,
+   "text": "Now what on earth does that mean?"
+  },
+  {
+   "start": 1529.71,
+   "end": 1533.15,
+   "text": "It means caution and trading carefully"
+  },
+  {
+   "start": 1533.15,
+   "end": 1534.83,
+   "text": "won't get you anywhere."
+  },
+  {
+   "start": 1534.83,
+   "end": 1536.93,
+   "text": "In other words, don't pussyfoot,"
+  },
+  {
+   "start": 1536.93,
+   "end": 1540.29,
+   "text": "and that's another metaphor, don't pussyfoot around."
+  },
+  {
+   "start": 1540.29,
+   "end": 1542.67,
+   "text": "A cat in gloves catches no mice."
+  },
+  {
+   "start": 1542.67,
+   "end": 1545.95,
+   "text": "It's a lovely one, and it goes back all the way to the,"
+  },
+  {
+   "start": 1545.95,
+   "end": 1549.13,
+   "text": "I think the 16th century, and it has parallels"
+  },
+  {
+   "start": 1549.13,
+   "end": 1552.47,
+   "text": "in French and Italian, and I'm not sure"
+  },
+  {
+   "start": 1552.47,
+   "end": 1554.33,
+   "text": "which other languages, but you know,"
+  },
+  {
+   "start": 1554.33,
+   "end": 1559.09,
+   "text": "it expresses a truth through a rather surreal image."
+  },
+  {
+   "start": 1559.09,
+   "end": 1561.81,
+   "text": "Does that happen a lot that these animal metaphors"
+  },
+  {
+   "start": 1561.81,
+   "end": 1564.17,
+   "text": "are in multiple languages, or do they tend to be"
+  },
+  {
+   "start": 1564.17,
+   "end": 1566.05,
+   "text": "specific to just one or the other?"
+  },
+  {
+   "start": 1566.05,
+   "end": 1568.57,
+   "text": "Well, that's a very hard one to quantify."
+  },
+  {
+   "start": 1568.57,
+   "end": 1571.93,
+   "text": "I mean, I've obviously only looked at metaphors in English."
+  },
+  {
+   "start": 1571.93,
+   "end": 1576.09,
+   "text": "There are some which have parallels in other languages,"
+  },
+  {
+   "start": 1576.09,
+   "end": 1578.81,
+   "text": "but I couldn't really tell you how many."
+  },
+  {
+   "start": 1578.81,
+   "end": 1580.53,
+   "text": "There's some well-known ones."
+  },
+  {
+   "start": 1580.53,
+   "end": 1585.25,
+   "text": "A barking dog never bites, has parallels in Spanish, German,"
+  },
+  {
+   "start": 1585.25,
+   "end": 1587.37,
+   "text": "Italian, French, and so forth."
+  },
+  {
+   "start": 1587.37,
+   "end": 1592.29,
+   "text": "So some of them do have parallels in several other European"
+  },
+  {
+   "start": 1592.29,
+   "end": 1593.13,
+   "text": "languages."
+  },
+  {
+   "start": 1593.13,
+   "end": 1593.85,
+   "text": "Yeah."
+  },
+  {
+   "start": 1593.85,
+   "end": 1599.05,
+   "text": "Well, Wildcat Strikes was a story I found particularly interesting in the book."
+  },
+  {
+   "start": 1599.05,
+   "end": 1607.61,
+   "text": "Yes, Wildcat started out with banks in the Midwest, or we talk about the at the Wild West."
+  },
+  {
+   "start": 1607.61,
+   "end": 1614.25,
+   "text": "And say in the early 19th century, when mining and exploiting was going on in the West, banks"
+  },
+  {
+   "start": 1614.25,
+   "end": 1621.21,
+   "text": "would spring up, which had no funds and very little credit. And they were called Wildcat Banks."
+  },
+  {
+   "start": 1621.21,
+   "end": 1628.49,
+   "text": "And so the idea of lack of reliability spread from banks to whiskey."
+  },
+  {
+   "start": 1629.37,
+   "end": 1634.45,
+   "text": "You could make Wildcat whiskey and then to prospecting for oil."
+  },
+  {
+   "start": 1634.65,
+   "end": 1637.85,
+   "text": "A Wildcat well was one that probably wouldn't, you know,"
+  },
+  {
+   "start": 1637.85,
+   "end": 1640.85,
+   "text": "was highly unlikely to be productive or successful."
+  },
+  {
+   "start": 1641.29,
+   "end": 1645.97,
+   "text": "And so nowadays we associate Wildcat mostly with strikes"
+  },
+  {
+   "start": 1646.61,
+   "end": 1650.49,
+   "text": "and industrial action, but that didn't happen until the 1930s."
+  },
+  {
+   "start": 1650.49,
+   "end": 1652.73,
+   "text": "So it goes all the way back to the Wild West."
+  },
+  {
+   "start": 1652.73,
+   "end": 1660.97,
+   "text": "Hmm. And you talk about egg corn. So people sort of changing metaphors to use different words"
+  },
+  {
+   "start": 1660.97,
+   "end": 1666.97,
+   "text": "than they should. And I was wondering if some of the examples of those are because we don't"
+  },
+  {
+   "start": 1666.97,
+   "end": 1669.85,
+   "text": "interact with animals as much as we used to."
+  },
+  {
+   "start": 1669.85,
+   "end": 1678.57,
+   "text": "It could be. I mean, let's think of some you mentioned to give up the goat instead of to give"
+  },
+  {
+   "start": 1678.57,
+   "end": 1686.69,
+   "text": "up the ghost. I thought of bear faced. We can talk about a bear faced liar. Well, the"
+  },
+  {
+   "start": 1686.69,
+   "end": 1694.68,
+   "text": "correct spelling of that is B-A-R-E, meaning shameless. But people very often spell it"
+  },
+  {
+   "start": 1694.68,
+   "end": 1699.76,
+   "text": "as B-E-A-R. So they've somehow associated it with the animal."
+  },
+  {
+   "start": 1699.76,
+   "end": 1704.8,
+   "text": "So it's sort of the opposite. I was thinking they're bringing animals into the metaphors."
+  },
+  {
+   "start": 1704.8,
+   "end": 1706.56,
+   "text": "True. True. Yes."
+  },
+  {
+   "start": 1706.56,
+   "end": 1712.04,
+   "text": "I was thinking of people will say coming home to roast instead of coming home to roost for"
+  },
+  {
+   "start": 1712.04,
+   "end": 1713.04,
+   "text": "chickens."
+  },
+  {
+   "start": 1713.04,
+   "end": 1717.68,
+   "text": "You know, I go to the store and I buy a roaster chicken and bring it home."
+  },
+  {
+   "start": 1717.68,
+   "end": 1724.04,
+   "text": "Well, you've got to point there, Minion, because perhaps people don't really...they don't use"
+  },
+  {
+   "start": 1724.04,
+   "end": 1730.2,
+   "text": "the verb to roost, do they, generally, unless they happen to keep chickens and hens or whatever."
+  },
+  {
+   "start": 1730.2,
+   "end": 1731.96,
+   "text": "So you're right."
+  },
+  {
+   "start": 1731.96,
+   "end": 1738.6,
+   "text": "becomes then an obscure word so people transform it into something that they know. And that's"
+  },
+  {
+   "start": 1738.6,
+   "end": 1744.68,
+   "text": "what happened with, dare I say it, the title of another book of mine, Damp Squid, which always"
+  },
+  {
+   "start": 1744.68,
+   "end": 1751.8,
+   "text": "makes me laugh because the original of course was Damp Squib. But you know, what on earth is a Squib?"
+  },
+  {
+   "start": 1751.8,
+   "end": 1757.8,
+   "text": "People don't know what a Squib is. It's just a name for a kind of firework. So they transform that"
+  },
+  {
+   "start": 1757.8,
+   "end": 1764.44,
+   "text": "to a word they know, squid. And so it's kind of the opposite of what you were saying. But"
+  },
+  {
+   "start": 1764.44,
+   "end": 1769.88,
+   "text": "these egg corns make sense in some way or another. They make semantic sense. They mean"
+  },
+  {
+   "start": 1769.88,
+   "end": 1770.88,
+   "text": "something."
+  },
+  {
+   "start": 1770.88,
+   "end": 1773.72,
+   "text": "Do you have other favorites besides a damp squid?"
+  },
+  {
+   "start": 1773.72,
+   "end": 1781.4,
+   "text": "Well, as I say, the bear face lies one. I think is rather good. And because it then feeds"
+  },
+  {
+   "start": 1781.4,
+   "end": 1788.22,
+   "text": "into a bare knuckle fight. Now, obviously, a bare knuckle fight means not wearing gloves,"
+  },
+  {
+   "start": 1788.22,
+   "end": 1793.98,
+   "text": "but people transform that into B E A R, which is ridiculous. Do bears have knuckles?"
+  },
+  {
+   "start": 1793.98,
+   "end": 1797.02,
+   "text": "As much as bees have knees."
+  },
+  {
+   "start": 1797.02,
+   "end": 1799.46,
+   "text": "As much as bees have knees. Yes, exactly."
+  },
+  {
+   "start": 1799.46,
+   "end": 1802.46,
+   "text": "Oh, it makes me want to draw cartoons."
+  },
+  {
+   "start": 1802.46,
+   "end": 1808.3,
+   "text": "Well, I, yeah, absolutely. I mean, with some of these metaphors, it's a very good idea"
+  },
+  {
+   "start": 1808.3,
+   "end": 1814.38,
+   "text": "to draw a cartoon in your head, yes, as with bees, knees and sardines, whiskers and so"
+  },
+  {
+   "start": 1814.38,
+   "end": 1815.38,
+   "text": "forth."
+  },
+  {
+   "start": 1815.38,
+   "end": 1820.54,
+   "text": "Well, since you've written this enormous, since you've written this substantial book"
+  },
+  {
+   "start": 1820.54,
+   "end": 1828.94,
+   "text": "on animal metaphors, do you find yourself using them more? Do you feel like your relationship"
+  },
+  {
+   "start": 1828.94,
+   "end": 1830.78,
+   "text": "to animal metaphors has changed?"
+  },
+  {
+   "start": 1830.78,
+   "end": 1836.7,
+   "text": "I think my relationship to metaphors in general has changed, Mignon. I see them everywhere"
+  },
+  {
+   "start": 1836.7,
+   "end": 1841.7,
+   "text": "And I'm afraid anything I read has various sections"
+  },
+  {
+   "start": 1841.7,
+   "end": 1844.94,
+   "text": "which are circled or highlighted because I think,"
+  },
+  {
+   "start": 1844.94,
+   "end": 1846.5,
+   "text": "oh, there's another metaphor."
+  },
+  {
+   "start": 1846.5,
+   "end": 1847.7,
+   "text": "Oh, there's another one."
+  },
+  {
+   "start": 1847.7,
+   "end": 1848.66,
+   "text": "There's another one."
+  },
+  {
+   "start": 1848.66,
+   "end": 1851.94,
+   "text": "As I was saying earlier, they're everywhere."
+  },
+  {
+   "start": 1851.94,
+   "end": 1856.38,
+   "text": "So I'm not sure that I use them more."
+  },
+  {
+   "start": 1856.38,
+   "end": 1859.42,
+   "text": "So I think actually, perhaps I do slightly,"
+  },
+  {
+   "start": 1859.42,
+   "end": 1862.38,
+   "text": "but it's more a question of seeing them everywhere."
+  },
+  {
+   "start": 1862.38,
+   "end": 1864.06,
+   "text": "We're surrounded by metaphors."
+  },
+  {
+   "start": 1864.06,
+   "end": 1871.9,
+   "text": "Yeah. Yeah. One thing I've noticed, and I think I've seen studies about it now, is in AI writing,"
+  },
+  {
+   "start": 1871.9,
+   "end": 1877.74,
+   "text": "the metaphors tend to be odd or off. Is that something that you have noticed, maybe?"
+  },
+  {
+   "start": 1878.38,
+   "end": 1884.78,
+   "text": "I haven't, but that wouldn't surprise me at all, because I think translation programs,"
+  },
+  {
+   "start": 1884.78,
+   "end": 1890.78,
+   "text": "which is kind of linked to this, which use large amounts of data, cannot cope with idioms,"
+  },
+  {
+   "start": 1890.78,
+   "end": 1897.1,
+   "text": "And metaphors are a kind of idiom, so it would make sense that AI, which is based on, you know,"
+  },
+  {
+   "start": 1897.1,
+   "end": 1903.98,
+   "text": "huge amounts of data, which it can't necessarily read in a human fashion, wouldn't be able to deal"
+  },
+  {
+   "start": 1903.98,
+   "end": 1908.86,
+   "text": "with metaphors. I shall look out for that. No, I would encourage you to, because I've been noticing"
+  },
+  {
+   "start": 1908.86,
+   "end": 1914.46,
+   "text": "them the one I noticed the other day. It's something like the skin around my temples tightened,"
+  },
+  {
+   "start": 1914.46,
+   "end": 1917.46,
+   "text": "And I'm like, my skin doesn't do that there."
+  },
+  {
+   "start": 1917.46,
+   "end": 1918.46,
+   "text": "True."
+  },
+  {
+   "start": 1918.46,
+   "end": 1919.46,
+   "text": "True."
+  },
+  {
+   "start": 1919.46,
+   "end": 1920.46,
+   "text": "Yes, absolutely."
+  },
+  {
+   "start": 1920.46,
+   "end": 1926.46,
+   "text": "I mean, that would be kind of miraculous, wouldn't it?"
+  },
+  {
+   "start": 1926.46,
+   "end": 1927.46,
+   "text": "Yeah."
+  },
+  {
+   "start": 1927.46,
+   "end": 1932.34,
+   "text": "I don't know if that's necessarily a metaphor, but it's an element where they're trying to"
+  },
+  {
+   "start": 1932.34,
+   "end": 1935.06,
+   "text": "be embodied, but it just doesn't quite work."
+  },
+  {
+   "start": 1935.06,
+   "end": 1936.86,
+   "text": "And I find it particularly fascinating."
+  },
+  {
+   "start": 1936.86,
+   "end": 1941.14,
+   "text": "And I feel like there's something to see there with metaphors that you might enjoy."
+  },
+  {
+   "start": 1941.14,
+   "end": 1942.7,
+   "text": "I shall look out for them."
+  },
+  {
+   "start": 1942.7,
+   "end": 1949.7,
+   "text": "I get a fair amount of AI slop, but I can't say I've noticed many metaphors in it so far."
+  },
+  {
+   "start": 1949.7,
+   "end": 1950.7,
+   "text": "Yeah, wonderful."
+  },
+  {
+   "start": 1950.7,
+   "end": 1955.38,
+   "text": "Well, the book again is The Metaphor Zoo by Jeremy Butterfield."
+  },
+  {
+   "start": 1955.38,
+   "end": 1956.54,
+   "text": "I think you're going to love it."
+  },
+  {
+   "start": 1956.54,
+   "end": 1958.26,
+   "text": "Thank you, Jeremy, so much for being here."
+  },
+  {
+   "start": 1958.26,
+   "end": 1961.66,
+   "text": "Is there somewhere that you like for people to find you online?"
+  },
+  {
+   "start": 1961.66,
+   "end": 1969.22,
+   "text": "I've got a website called JeremyButterfield.com, and I'm also on X, and I'm on Blue Sky under"
+  },
+  {
+   "start": 1969.22,
+   "end": 1970.22,
+   "text": "my name."
+  },
+  {
+   "start": 1970.22,
+   "end": 1975.22,
+   "text": "Jeremy Butterfield on Blue Sky and Joe M. Butterfield on X."
+  },
+  {
+   "start": 1975.42,
+   "end": 1978.52,
+   "text": "Wonderful, give him a follow and check out the book."
+  },
+  {
+   "start": 1978.52,
+   "end": 1979.9,
+   "text": "For our grammar Pellousians,"
+  },
+  {
+   "start": 1979.9,
+   "end": 1981.66,
+   "text": "you are gonna love our bonus section"
+  },
+  {
+   "start": 1981.66,
+   "end": 1985.22,
+   "text": "because we're talking about Fowler's Modern English Usage,"
+  },
+  {
+   "start": 1985.22,
+   "end": 1987.9,
+   "text": "which Jeremy edited the fourth edition."
+  },
+  {
+   "start": 1987.9,
+   "end": 1991.82,
+   "text": "And this was one of the first usage guides I bought."
+  },
+  {
+   "start": 1991.82,
+   "end": 1994.9,
+   "text": "So I'm really looking forward to talking with him about that."
+  },
+  {
+   "start": 1994.9,
+   "end": 1996.42,
+   "text": "So check for that in your feed."
+  },
+  {
+   "start": 1996.42,
+   "end": 1997.58,
+   "text": "If you're a grammar Pellousian,"
+  },
+  {
+   "start": 1997.58,
+   "end": 1999.54,
+   "text": "if you wanna become a grammar Pellousian,"
+  },
+  {
+   "start": 1999.54,
+   "end": 2002.98,
+   "text": "You can do so at patreon.com slash grammar girl."
+  },
+  {
+   "start": 2002.98,
+   "end": 2004.66,
+   "text": "That's all we have for this segment."
+  },
+  {
+   "start": 2004.66,
+   "end": 2007.1,
+   "text": "Jeremy, again, thank you so much for being here."
+  },
+  {
+   "start": 2007.1,
+   "end": 2008.02,
+   "text": "It's been a pleasure."
+  },
+  {
+   "start": 2008.02,
+   "end": 2008.78,
+   "text": "Thank you, Beanie."
+  },
+  {
+   "start": 2008.78,
+   "end": 2019.22,
+   "text": "Oh, and I loved it."
+  },
+  {
+   "start": 2019.22,
+   "end": 2022.54,
+   "text": "Guessing is for game shows, not your business."
+  },
+  {
+   "start": 2022.54,
+   "end": 2026.26,
+   "text": "Workday is the enterprise AI platform for HR, finance,"
+  },
+  {
+   "start": 2026.26,
+   "end": 2029.3,
+   "text": "and IT, with AI grounded in your context"
+  },
+  {
+   "start": 2029.3,
+   "end": 2032.02,
+   "text": "to get work done and done right."
+  },
+  {
+   "start": 2032.02,
+   "end": 2033.9,
+   "text": "It's a new workday."
+  },
+  {
+   "start": 2033.9,
+   "end": 2036.02,
+   "text": "Hey, we're Nick and Jack hosts of The Best One Yet."
+  },
+  {
+   "start": 2036.02,
+   "end": 2038.26,
+   "text": "Behind every episode, there's research, email,"
+  },
+  {
+   "start": 2038.26,
+   "end": 2041.38,
+   "text": "spreadsheets and our shared Google Doc, the headline hammer."
+  },
+  {
+   "start": 2041.38,
+   "end": 2045.5,
+   "text": "With Google Workspace with Gemini, Google's AI is built right into the premium versions"
+  },
+  {
+   "start": 2045.5,
+   "end": 2048.94,
+   "text": "of tools we already use, like Gmail, Docs, and Sheets."
+  },
+  {
+   "start": 2048.94,
+   "end": 2052.78,
+   "text": "No new tools or extra logins just personalized AI for the way we work."
+  },
+  {
+   "start": 2052.78,
+   "end": 2056.3,
+   "text": "That means less time on the work around the work and more time finding the stories worth"
+  },
+  {
+   "start": 2056.3,
+   "end": 2057.3,
+   "text": "talking about."
+  },
+  {
+   "start": 2057.3,
+   "end": 2058.94,
+   "text": "Get AI tools for work."
+  },
+  {
+   "start": 2058.94,
+   "end": 2063.98,
+   "text": "Upgrade to Google Workspace with Gemini at go.gle slash workspace with Gemini."
+  },
+  {
+   "start": 2063.98,
+   "end": 2067.02,
+   "text": "That's go.gle slash workspace with Gemini."
+  },
+  {
+   "start": 2067.02,
+   "end": 2069.02,
+   "text": "500 orders a month was manageable."
+  },
+  {
+   "start": 2069.02,
+   "end": 2071.62,
+   "text": "5,000 is madness."
+  },
+  {
+   "start": 2071.62,
+   "end": 2074.78,
+   "text": "Embrace intelligent order fulfillment with ShipStation."
+  },
+  {
+   "start": 2074.78,
+   "end": 2079.58,
+   "text": "The only platform combining order management, warehouse workflows, inventory, returns, and"
+  },
+  {
+   "start": 2079.58,
+   "end": 2081.38,
+   "text": "analytics in one place."
+  },
+  {
+   "start": 2081.38,
+   "end": 2085.34,
+   "text": "What used to take five separate tools, ShipStation does in one."
+  },
+  {
+   "start": 2085.34,
+   "end": 2090.94,
+   "text": "Automate fulfillment and rate shopping to ship up to 15 times more with up to 90% savings."
+  },
+  {
+   "start": 2090.94,
+   "end": 2097.18,
+   "text": "Go to ShipStation.com and use code audio to try ShipStation free for 60 days."
+  },
+  {
+   "start": 2097.18,
+   "end": 2099.42,
+   "text": "Cash Now More Later from Open Door"
+  },
+  {
+   "start": 2099.42,
+   "end": 2101.46,
+   "text": "gives you cash up front for your home"
+  },
+  {
+   "start": 2101.46,
+   "end": 2103.26,
+   "text": "plus all the profit later."
+  },
+  {
+   "start": 2103.26,
+   "end": 2106.74,
+   "text": "That's no chaos now, no cash left behind later."
+  },
+  {
+   "start": 2106.74,
+   "end": 2110.06,
+   "text": "Skip the showings now, pocket extra profit later."
+  },
+  {
+   "start": 2110.06,
+   "end": 2113.82,
+   "text": "This is so simple now, this is so awesome later."
+  },
+  {
+   "start": 2113.82,
+   "end": 2116.94,
+   "text": "Or sell fast now and pop the champagne later."
+  },
+  {
+   "start": 2116.94,
+   "end": 2119.9,
+   "text": "Cash Now More Later, now available nationwide."
+  },
+  {
+   "start": 2119.9,
+   "end": 2123.18,
+   "text": "Start your offer at opendoor.com slash aCast."
+  },
+  {
+   "start": 2123.18,
+   "end": 2124.94,
+   "text": "Profits calculated after fees and costs,"
+  },
+  {
+   "start": 2124.94,
+   "end": 2126.94,
+   "text": "eligibility and offer price may vary."
+  }
+ ],
+ "seconds": 57.4,
+ "file": "grammar-girl__why-english-loves-animals-from-the-bee-s-k/take0.mp3",
+ "model": "small"
+}

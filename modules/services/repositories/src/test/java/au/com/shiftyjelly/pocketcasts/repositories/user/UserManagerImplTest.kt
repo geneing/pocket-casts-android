@@ -1,6 +1,7 @@
 package au.com.shiftyjelly.pocketcasts.repositories.user
 
 import app.cash.turbine.test
+import au.com.shiftyjelly.pocketcasts.models.type.SignInState
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
 import au.com.shiftyjelly.pocketcasts.preferences.UserSetting
 import au.com.shiftyjelly.pocketcasts.repositories.chat.ChatManager
@@ -8,6 +9,7 @@ import au.com.shiftyjelly.pocketcasts.repositories.playback.PlaybackManager
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.UserEpisodeManager
 import au.com.shiftyjelly.pocketcasts.repositories.sync.SyncManager
 import au.com.shiftyjelly.pocketcasts.repositories.whatsnew.WhatsNewManager
+import com.jakewharton.rxrelay2.BehaviorRelay
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.StandardTestDispatcher
@@ -34,6 +36,14 @@ class UserManagerImplTest {
     private val whatsNewManager = mock<WhatsNewManager>()
     private val chatManager = mock<ChatManager>()
     private val userEpisodeManager = mock<UserEpisodeManager>()
+
+    @Test
+    fun `a signed-out app is reported as signed out`() = runTest {
+        whenever(syncManager.isLoggedInObservable).thenReturn(BehaviorRelay.createDefault(false))
+        val userManager = createUserManager()
+
+        assertEquals(SignInState.SignedOut, userManager.getSignInState().blockingFirst())
+    }
 
     @Test
     fun `server-forced sign out emits onServerSignOut`() = runTest {

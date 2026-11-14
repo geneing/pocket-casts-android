@@ -15,6 +15,8 @@ import androidx.room.TypeConverters
 import androidx.room.migration.AutoMigrationSpec
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
+import au.com.shiftyjelly.pocketcasts.models.converter.AdSegmentKindConverter
+import au.com.shiftyjelly.pocketcasts.models.converter.AdSegmentOriginConverter
 import au.com.shiftyjelly.pocketcasts.models.converter.AlternateEnclosureSourcesConverter
 import au.com.shiftyjelly.pocketcasts.models.converter.AutoArchiveAfterPlayingTypeConverter
 import au.com.shiftyjelly.pocketcasts.models.converter.AutoArchiveInactiveTypeConverter
@@ -38,6 +40,9 @@ import au.com.shiftyjelly.pocketcasts.models.converter.SafeDateTypeConverter
 import au.com.shiftyjelly.pocketcasts.models.converter.SyncStatusConverter
 import au.com.shiftyjelly.pocketcasts.models.converter.TrimModeTypeConverter
 import au.com.shiftyjelly.pocketcasts.models.converter.UserEpisodeServerStatusConverter
+import au.com.shiftyjelly.pocketcasts.models.db.dao.AdAnalysisDao
+import au.com.shiftyjelly.pocketcasts.models.db.dao.AdFingerprintDao
+import au.com.shiftyjelly.pocketcasts.models.db.dao.AdSegmentDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AlternateEnclosureDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.BlazeAdDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.BookmarkDao
@@ -86,6 +91,9 @@ import au.com.shiftyjelly.pocketcasts.models.entity.UserCategoryVisits
 import au.com.shiftyjelly.pocketcasts.models.entity.UserEpisode
 import au.com.shiftyjelly.pocketcasts.models.entity.UserNotifications
 import au.com.shiftyjelly.pocketcasts.models.entity.UserPodcastRating
+import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
+import au.com.shiftyjelly.pocketcasts.models.to.AdFingerprint
+import au.com.shiftyjelly.pocketcasts.models.to.DbAdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.DbChapter
 import au.com.shiftyjelly.pocketcasts.utils.extensions.unidecode
 import java.io.File
@@ -120,8 +128,11 @@ import au.com.shiftyjelly.pocketcasts.localization.R as LR
         EpisodeChat::class,
         EpisodeChatMessage::class,
         EpisodeAlternateEnclosure::class,
+        DbAdSegment::class,
+        AdAnalysisState::class,
+        AdFingerprint::class,
     ],
-    version = 140,
+    version = 143,
     exportSchema = true,
     autoMigrations = [
         AutoMigration(from = 81, to = 82, spec = AppDatabase.Companion.DeleteSilenceRemovedMigration::class),
@@ -155,6 +166,8 @@ import au.com.shiftyjelly.pocketcasts.localization.R as LR
     BlazeAdLocationConverter::class,
     AlternateEnclosureSourcesConverter::class,
     MediaKindConverter::class,
+    AdSegmentKindConverter::class,
+    AdSegmentOriginConverter::class,
 )
 abstract class AppDatabase : RoomDatabase() {
     abstract fun podcastDao(): PodcastDao
@@ -170,6 +183,9 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun podcastRatingsDao(): PodcastRatingsDao
     abstract fun bookmarkDao(): BookmarkDao
     abstract fun chapterDao(): ChapterDao
+    abstract fun adSegmentDao(): AdSegmentDao
+    abstract fun adAnalysisDao(): AdAnalysisDao
+    abstract fun adFingerprintDao(): AdFingerprintDao
     abstract fun transcriptDao(): TranscriptDao
     abstract fun externalDataDao(): ExternalDataDao
     abstract fun endOfYearDao(): EndOfYearDao
@@ -1542,6 +1558,47 @@ abstract class AppDatabase : RoomDatabase() {
             database.execSQL("ALTER TABLE `episode_chat_messages` ADD COLUMN `rating` TEXT")
         }
 
+        val MIGRATION_140_141 = addMigration(140, 141) { database ->
+            database.execSQL(
+                "CREATE TABLE IF NOT EXISTS `episode_ad_segments` (`episode_uuid` TEXT NOT NULL, " +
+                    "`segment_index` INTEGER NOT NULL, `start_time` INTEGER NOT NULL, `end_time` INTEGER NOT NULL, " +
+                    "`kind` INTEGER NOT NULL, `origin` INTEGER NOT NULL, `confidence` REAL NOT NULL, `title` TEXT, " +
+                    "`deselected` INTEGER NOT NULL DEFAULT 0, `created_at` INTEGER NOT NULL, " +
+                    "PRIMARY KEY(`episode_uuid`, `segment_index`))",
+            )
+            database.execSQL("CREATE INDEX IF NOT EXISTS `ad_segment_episode_uuid_index` ON `episode_ad_segments` (`episode_uuid`)")
+        }
+
+        val MIGRATION_141_142 = addMigration(141, 142) { database ->
+            database.execSQL(
+                "CREATE TABLE IF NOT EXISTS `episode_ad_analysis` (`episode_uuid` TEXT NOT NULL, " +
+                    "`analyzed_until_ms` INTEGER NOT NULL, `is_complete` INTEGER NOT NULL DEFAULT 0, " +
+                    "`updated_at` INTEGER NOT NULL, PRIMARY KEY(`episode_uuid`))",
+            )
+            database.execSQL(
+                "CREATE TABLE IF NOT EXISTS `ad_fingerprints` (`fingerprint` TEXT NOT NULL, " +
+                    "`podcast_uuid` TEXT NOT NULL, `duration_ms` INTEGER NOT NULL, `signature` BLOB NOT NULL, " +
+                    "`created_at` INTEGER NOT NULL, PRIMARY KEY(`fingerprint`))",
+            )
+            database.execSQL("CREATE INDEX IF NOT EXISTS `ad_fingerprint_podcast_uuid_index` ON `ad_fingerprints` (`podcast_uuid`)")
+        }
+
+        /**
+         * Pins an analysis to the audio file and inference stack that produced it. Existing rows
+         * get empty identities, which never match, so they are recomputed once.
+         */
+        val MIGRATION_142_143 = addMigration(142, 143) { database ->
+            database.execSQL(
+                "ALTER TABLE `episode_ad_analysis` ADD COLUMN `audio_signature` TEXT NOT NULL DEFAULT ''",
+            )
+            database.execSQL(
+                "ALTER TABLE `episode_ad_analysis` ADD COLUMN `model_version` TEXT NOT NULL DEFAULT ''",
+            )
+            database.execSQL(
+                "ALTER TABLE `episode_ad_analysis` ADD COLUMN `stt_version` TEXT NOT NULL DEFAULT ''",
+            )
+        }
+
         fun addMigrations(databaseBuilder: Builder<AppDatabase>, context: Context) {
             databaseBuilder.addMigrations(
                 addMigration(1, 2) { },
@@ -1971,6 +2028,9 @@ abstract class AppDatabase : RoomDatabase() {
                 MIGRATION_137_138,
                 MIGRATION_138_139,
                 MIGRATION_139_140,
+                MIGRATION_140_141,
+                MIGRATION_141_142,
+                MIGRATION_142_143,
             )
         }
 

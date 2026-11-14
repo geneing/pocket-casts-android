@@ -5,6 +5,9 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import au.com.shiftyjelly.pocketcasts.models.converter.AlternateEnclosureSourcesConverter
 import au.com.shiftyjelly.pocketcasts.models.db.AppDatabase
+import au.com.shiftyjelly.pocketcasts.models.db.dao.AdAnalysisDao
+import au.com.shiftyjelly.pocketcasts.models.db.dao.AdFingerprintDao
+import au.com.shiftyjelly.pocketcasts.models.db.dao.AdSegmentDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AlternateEnclosureDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.ChapterDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.EndOfYearDao
@@ -57,6 +60,15 @@ object ModelModule {
 
     @Provides
     fun provideChapterDao(database: AppDatabase): ChapterDao = database.chapterDao()
+
+    @Provides
+    fun provideAdSegmentDao(database: AppDatabase): AdSegmentDao = database.adSegmentDao()
+
+    @Provides
+    fun provideAdAnalysisDao(database: AppDatabase): AdAnalysisDao = database.adAnalysisDao()
+
+    @Provides
+    fun provideAdFingerprintDao(database: AppDatabase): AdFingerprintDao = database.adFingerprintDao()
 
     @Provides
     fun provideUpNextDao(database: AppDatabase): UpNextDao = database.upNextDao()

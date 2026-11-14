@@ -263,9 +263,12 @@ class UserManagerImpl @Inject constructor(
 }
 
 /**
- * Local development override: every sign-in state is reported as a Plus subscriber so paid
+ * Local development override: a signed-in account is reported as a Plus subscriber so paid
  * features can be exercised without a real subscription. Set [FORCE_PAID_SIGN_IN] to false to
  * restore the membership reported by the server.
+ *
+ * This never changes whether the user is signed in: a signed-out app stays signed out, so the
+ * sign-in screens still appear on a fresh install.
  *
  * Features that read [Settings.cachedSubscription] directly instead of the sign-in state are not
  * covered by this: the ads manager (`MembershipFeature.NoBannerAds`) and the player's Up Next
@@ -280,9 +283,10 @@ private val forcedPaidSubscription = Subscription.PlusPreview.copy(
 private fun SignInState.withForcedPaidSubscription(): SignInState {
     if (!FORCE_PAID_SIGN_IN) return this
     return when (this) {
-        // Keep a real Patron subscription as is, unlock everything else.
+        // Keep a real subscription as is, unlock everything else for a signed-in account.
         is SignInState.SignedIn -> copy(subscription = subscription ?: forcedPaidSubscription)
 
-        SignInState.SignedOut -> SignInState.SignedIn(email = "", subscription = forcedPaidSubscription)
+        // Subscription reporting only applies to a logged-in account.
+        SignInState.SignedOut -> this
     }
 }

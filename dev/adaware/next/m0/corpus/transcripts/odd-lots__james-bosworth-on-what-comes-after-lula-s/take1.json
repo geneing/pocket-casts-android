@@ -1,0 +1,3779 @@
+{
+ "duration": 2581.52,
+ "language": "en",
+ "segments": [
+  {
+   "start": 0.46,
+   "end": 5.74,
+   "text": "Finance is increasingly being built on digital rails, but as the adoption of virtual assets,"
+  },
+  {
+   "start": 5.74,
+   "end": 12.26,
+   "text": "tokenization and stablecoins grows, can regulation not only keep pace but help accelerate it?"
+  },
+  {
+   "start": 12.26,
+   "end": 15.29,
+   "text": "Find out more later in the podcast."
+  },
+  {
+   "start": 15.29,
+   "end": 19.17,
+   "text": "When you're a business owner interested in expanding to new markets, there's a lot"
+  },
+  {
+   "start": 19.17,
+   "end": 23.17,
+   "text": "to consider and countless questions to answer before making the call."
+  },
+  {
+   "start": 23.17,
+   "end": 25.61,
+   "text": "The most important one being, are you ready?"
+  },
+  {
+   "start": 25.61,
+   "end": 27.97,
+   "text": "That's where ChatGPT comes in."
+  },
+  {
+   "start": 27.97,
+   "end": 33.09,
+   "text": "a goal, add your files, and ask chat to help you map out different scenarios for the future of your"
+  },
+  {
+   "start": 33.09,
+   "end": 38.53,
+   "text": "business. So when growth is on the table, you've got an expansion plan ready to implement. Get"
+  },
+  {
+   "start": 38.53,
+   "end": 45.41,
+   "text": "started at chatypt.com. For big business, AI opened up a world of promise, but that world of promise"
+  },
+  {
+   "start": 45.41,
+   "end": 51.09,
+   "text": "turned into a world of pain, costs spiraling, data trapped, security and governance risks"
+  },
+  {
+   "start": 51.09,
+   "end": 57.17,
+   "text": "multiplying and ROI out of reach. That's why enterprises turned to Bumi to connect data,"
+  },
+  {
+   "start": 57.17,
+   "end": 62.05,
+   "text": "apps and AI, helping them operate securely, efficiently, and at scale."
+  },
+  {
+   "start": 62.05,
+   "end": 68.45,
+   "text": "BOOMY turns a world of AI pain into a world of AI gain. As BOOMY says, we got you."
+  },
+  {
+   "start": 68.45,
+   "end": 73.17,
+   "text": "Head to boomy.com. That's B-O-O-M-I dot com."
+  },
+  {
+   "start": 73.17,
+   "end": 75.89,
+   "text": "Hey, there are a lot of listeners. Tracy Allaway here."
+  },
+  {
+   "start": 75.89,
+   "end": 77.25,
+   "text": "And Joe Weisenthal."
+  },
+  {
+   "start": 77.25,
+   "end": 84.13,
+   "text": "We have had an absolutely amazing year and we've gotten to see some of our listeners meet some of"
+  },
+  {
+   "start": 84.13,
+   "end": 87.97,
+   "text": "of our listeners across the country at some of our live shows."
+  },
+  {
+   "start": 87.97,
+   "end": 93.13,
+   "text": "But we are very excited because we are coming back home to NYC"
+  },
+  {
+   "start": 93.13,
+   "end": 95.97,
+   "text": "for another live recording."
+  },
+  {
+   "start": 95.97,
+   "end": 98.09,
+   "text": "We have a really exciting lineup of perfect guests,"
+  },
+  {
+   "start": 98.09,
+   "end": 102.09,
+   "text": "including Lena Kahn, Pablo Torre, and Adam Tuze."
+  },
+  {
+   "start": 102.09,
+   "end": 103.69,
+   "text": "And we really hope to see you there."
+  },
+  {
+   "start": 103.69,
+   "end": 104.19,
+   "text": "Yep."
+  },
+  {
+   "start": 104.19,
+   "end": 107.45,
+   "text": "So join us on December 9th at City Winery"
+  },
+  {
+   "start": 107.45,
+   "end": 110.77,
+   "text": "for another live taping of the Othlots podcast."
+  },
+  {
+   "start": 110.77,
+   "end": 113.49,
+   "text": "Tickets are now on sale at bloomberg.com"
+  },
+  {
+   "start": 113.49,
+   "end": 115.05,
+   "text": "forward slash odd lots."
+  },
+  {
+   "start": 115.05,
+   "end": 117.57,
+   "text": "Or check the show notes here for a direct link."
+  },
+  {
+   "start": 117.57,
+   "end": 122.1,
+   "text": "And either way, hope to see you there."
+  },
+  {
+   "start": 122.1,
+   "end": 124.22,
+   "text": "Bloomberg Audio Studios."
+  },
+  {
+   "start": 124.22,
+   "end": 137.59,
+   "text": "Podcasts, radio, news."
+  },
+  {
+   "start": 137.59,
+   "end": 139.07,
+   "text": "Hello and welcome to another episode"
+  },
+  {
+   "start": 139.07,
+   "end": 140.49,
+   "text": "of the Odd Lots podcast."
+  },
+  {
+   "start": 140.49,
+   "end": 141.71,
+   "text": "I'm Joe Wessenthal."
+  },
+  {
+   "start": 141.71,
+   "end": 143.07,
+   "text": "And I'm Tracy Allaway."
+  },
+  {
+   "start": 143.07,
+   "end": 147.15,
+   "text": "So we're recording this on November 3rd, Election Day"
+  },
+  {
+   "start": 147.15,
+   "end": 148.15,
+   "text": "in the US."
+  },
+  {
+   "start": 148.15,
+   "end": 149.43,
+   "text": "But there's really much to talk about"
+  },
+  {
+   "start": 149.43,
+   "end": 152.19,
+   "text": "during the election day itself, everybody just waiting."
+  },
+  {
+   "start": 152.19,
+   "end": 154.39,
+   "text": "It's a bit of an anticlimax, isn't it?"
+  },
+  {
+   "start": 154.39,
+   "end": 157.47,
+   "text": "You wait for election day and then like nothing really happens."
+  },
+  {
+   "start": 157.47,
+   "end": 158.63,
+   "text": "But it might happen."
+  },
+  {
+   "start": 158.63,
+   "end": 160.31,
+   "text": "But yeah, nothing happens during the day."
+  },
+  {
+   "start": 160.47,
+   "end": 165.47,
+   "text": "So the day of election day is actually a really good time to talk about a bunch of other stuff."
+  },
+  {
+   "start": 165.79,
+   "end": 167.11,
+   "text": "Talk about other elections."
+  },
+  {
+   "start": 167.11,
+   "end": 170.67,
+   "text": "Yeah, to talk about other things that are going on because nothing really happens that day."
+  },
+  {
+   "start": 170.67,
+   "end": 173.95,
+   "text": "But we did recently have other elections as you hinted at in Brazil."
+  },
+  {
+   "start": 174.23,
+   "end": 174.83,
+   "text": "That's right."
+  },
+  {
+   "start": 174.83,
+   "end": 181.75,
+   "text": "So we had a very, very surprised victory by Lula over Flavio Bolsonaro."
+  },
+  {
+   "start": 181.75,
+   "end": 184.99,
+   "text": "And then Flavio Bolsonaro escaped."
+  },
+  {
+   "start": 184.99,
+   "end": 185.99,
+   "text": "He fled, yeah."
+  },
+  {
+   "start": 185.99,
+   "end": 188.03,
+   "text": "He fled and is now in the US."
+  },
+  {
+   "start": 188.03,
+   "end": 189.91,
+   "text": "So that's a really interesting question,"
+  },
+  {
+   "start": 189.91,
+   "end": 192.91,
+   "text": "like what that means for Brazil-US relations."
+  },
+  {
+   "start": 192.91,
+   "end": 196.15,
+   "text": "The other thing that's been happening is Venezuela, right?"
+  },
+  {
+   "start": 196.15,
+   "end": 196.99,
+   "text": "Yeah."
+  },
+  {
+   "start": 196.99,
+   "end": 200.07,
+   "text": "So right before we came on this podcast,"
+  },
+  {
+   "start": 200.07,
+   "end": 202.63,
+   "text": "there was a headline out of the New York Times saying"
+  },
+  {
+   "start": 202.63,
+   "end": 204.47,
+   "text": "that the US was in discussions"
+  },
+  {
+   "start": 204.47,
+   "end": 207.03,
+   "text": "to set up a military presence in Venezuela."
+  },
+  {
+   "start": 207.03,
+   "end": 208.19,
+   "text": "Oh, interesting."
+  },
+  {
+   "start": 208.19,
+   "end": 210.95,
+   "text": "So, you know, that raises questions as well"
+  },
+  {
+   "start": 210.95,
+   "end": 216.55,
+   "text": "over whether or not like Venezuela is basically becoming a protectorate of the US, I guess."
+  },
+  {
+   "start": 216.55,
+   "end": 222.15,
+   "text": "So, right. So, one of the things that we know is that the Trump administration, or at least"
+  },
+  {
+   "start": 222.15,
+   "end": 228.39,
+   "text": "the State Department, has this sort of weird, maybe surprisingly friendly relations with"
+  },
+  {
+   "start": 228.39,
+   "end": 238.25,
+   "text": "Delcey Rodriguez, the successor to Maduro, who we captured and now have in custody in New York"
+  },
+  {
+   "start": 238.25,
+   "end": 243.61,
+   "text": "earlier this year. And so, but like recently, like there's been the return of the Democratic"
+  },
+  {
+   "start": 243.61,
+   "end": 248.73,
+   "text": "challenger there. So opposition leader, opposition leader, etc. So it's sort of an interesting"
+  },
+  {
+   "start": 248.73,
+   "end": 254.97,
+   "text": "time to like catch up. Did we use this time? Let's talk about other American elections. Let's talk"
+  },
+  {
+   "start": 254.97,
+   "end": 260.89,
+   "text": "about South American politics elsewhere in the hemisphere. Anyway, very excited to have back"
+  },
+  {
+   "start": 260.89,
+   "end": 266.09,
+   "text": "on the podcast. We talked to him earlier this year. James Bosworth, he's non resident fellow at"
+  },
+  {
+   "start": 266.09,
+   "end": 268.25,
+   "text": "at the Stimson Center and is the author"
+  },
+  {
+   "start": 268.25,
+   "end": 269.77,
+   "text": "of the excellent newsletter,"
+  },
+  {
+   "start": 269.77,
+   "end": 271.47,
+   "text": "The Latin America Risk Report."
+  },
+  {
+   "start": 271.47,
+   "end": 273.73,
+   "text": "James, thanks so much for coming back on OddLots."
+  },
+  {
+   "start": 273.73,
+   "end": 274.77,
+   "text": "Thank you for having me."
+  },
+  {
+   "start": 274.77,
+   "end": 277.73,
+   "text": "Just tell us, like, how did Lula win"
+  },
+  {
+   "start": 277.73,
+   "end": 280.73,
+   "text": "after even going into that day,"
+  },
+  {
+   "start": 280.73,
+   "end": 282.65,
+   "text": "all the math and polls and everything"
+  },
+  {
+   "start": 282.65,
+   "end": 285.05,
+   "text": "thought it was pretty clearly gonna be Flavio Bolsonaro?"
+  },
+  {
+   "start": 285.05,
+   "end": 286.97,
+   "text": "So there are two answers to that."
+  },
+  {
+   "start": 286.97,
+   "end": 290.01,
+   "text": "One is that Flavio was a terrible candidate,"
+  },
+  {
+   "start": 290.01,
+   "end": 292.41,
+   "text": "and the other was that Lula was a great candidate."
+  },
+  {
+   "start": 292.41,
+   "end": 294.69,
+   "text": "So let me run through those both, right?"
+  },
+  {
+   "start": 294.69,
+   "end": 296.37,
+   "text": "Flavio was a terrible candidate."
+  },
+  {
+   "start": 296.37,
+   "end": 298.65,
+   "text": "In fact, when I was here in New York the last time,"
+  },
+  {
+   "start": 298.65,
+   "end": 300.45,
+   "text": "I gave a presentation elsewhere and someone asked,"
+  },
+  {
+   "start": 300.45,
+   "end": 302.21,
+   "text": "what could Flavio Bolsonaro do better?"
+  },
+  {
+   "start": 302.21,
+   "end": 304.09,
+   "text": "And I said, change his last name."
+  },
+  {
+   "start": 304.09,
+   "end": 306.45,
+   "text": "There's an element in which being a Bolsonaro"
+  },
+  {
+   "start": 306.45,
+   "end": 308.53,
+   "text": "was a weight on him."
+  },
+  {
+   "start": 308.53,
+   "end": 311.01,
+   "text": "And I mean, you go back and his father,"
+  },
+  {
+   "start": 311.01,
+   "end": 313.85,
+   "text": "Jair Bolsonaro, former president was accused of,"
+  },
+  {
+   "start": 313.85,
+   "end": 318.25,
+   "text": "convicted of being involved in a coup attempt in 2022, 2023."
+  },
+  {
+   "start": 318.25,
+   "end": 320.45,
+   "text": "And if you remember January 8th, 2023,"
+  },
+  {
+   "start": 320.45,
+   "end": 323.33,
+   "text": "very similar to January 6th, 2021,"
+  },
+  {
+   "start": 323.33,
+   "end": 329.31,
+   "text": "And there was a big event in Brasilia where a mob of protesters took over various buildings"
+  },
+  {
+   "start": 329.31,
+   "end": 330.31,
+   "text": "in the capital."
+  },
+  {
+   "start": 330.31,
+   "end": 332.51,
+   "text": "And so, Jerabel Snarr was convicted of that."
+  },
+  {
+   "start": 332.51,
+   "end": 334.19,
+   "text": "But Flavio has had issues."
+  },
+  {
+   "start": 334.19,
+   "end": 338.79,
+   "text": "Five years ago, he was accused of money laundering while he was a congressman."
+  },
+  {
+   "start": 338.79,
+   "end": 343.13,
+   "text": "Earlier this year, he was connected to Daniel Vocaro, who was the head of BancoMaster, which"
+  },
+  {
+   "start": 343.13,
+   "end": 347.15,
+   "text": "was a big financial scandal in Brazil, and was caught on WhatsApp asking for millions"
+  },
+  {
+   "start": 347.15,
+   "end": 348.83,
+   "text": "of dollars from this banker."
+  },
+  {
+   "start": 348.83,
+   "end": 350.33,
+   "text": "It seems bad."
+  },
+  {
+   "start": 350.33,
+   "end": 351.47,
+   "text": "It was bad."
+  },
+  {
+   "start": 351.47,
+   "end": 356.39,
+   "text": "before the election, there's a Brazilian magazine that tied him to pharmaceutical lobbyists"
+  },
+  {
+   "start": 356.39,
+   "end": 358.03,
+   "text": "and prostitutes on a boat."
+  },
+  {
+   "start": 358.03,
+   "end": 363.87,
+   "text": "And then even when he fled from Brazil, the plane he flew from Argentina to the US on"
+  },
+  {
+   "start": 363.87,
+   "end": 368.91,
+   "text": "was connected to a money laundering investigation inside of Argentina and a drug trafficking"
+  },
+  {
+   "start": 368.91,
+   "end": 369.91,
+   "text": "case in Texas."
+  },
+  {
+   "start": 369.91,
+   "end": 375.39,
+   "text": "I want to get into all these details, but just going to like all of this was true prior"
+  },
+  {
+   "start": 375.39,
+   "end": 377.23,
+   "text": "to the first round."
+  },
+  {
+   "start": 377.23,
+   "end": 378.23,
+   "text": "Most of it, yeah."
+  },
+  {
+   "start": 378.23,
+   "end": 379.23,
+   "text": "Right?"
+  },
+  {
+   "start": 379.23,
+   "end": 385.39,
+   "text": "All of these negatives on him were in the case when he came in first during the first round of voting"
+  },
+  {
+   "start": 385.39,
+   "end": 392.95,
+   "text": "So where did something go change or what was the mechanism via which that didn't translate to the final round?"
+  },
+  {
+   "start": 393.11,
+   "end": 398.23,
+   "text": "Across the last six years eight years in Latin America really across much of the world"
+  },
+  {
+   "start": 398.23,
+   "end": 399.43,
+   "text": "We've been an anti-encombing environment"
+  },
+  {
+   "start": 399.43,
+   "end": 404.55,
+   "text": "Everything is a referendum on the incumbent and Lula de Silva was sitting at 45% in the polls"
+  },
+  {
+   "start": 404.55,
+   "end": 409.07,
+   "text": "And and the first round was really a referendum on Lula. It wasn't about flaw viewable scenario"
+  },
+  {
+   "start": 409.07,
+   "end": 414.35,
+   "text": "In some ways coming in first place in the first round was the worst thing that could happen to Flavio Bolsonaro"
+  },
+  {
+   "start": 414.67,
+   "end": 421.07,
+   "text": "Because all of a sudden all of the attention got put on him and it let Lula catch up from behind it shook up his campaign"
+  },
+  {
+   "start": 421.07,
+   "end": 426.11,
+   "text": "And gave him the opportunity to win didn't he shake up his campaign strategy as well"
+  },
+  {
+   "start": 426.11,
+   "end": 431.63,
+   "text": "I heard he hired a social media manager put put younger people in charge of some of it"
+  },
+  {
+   "start": 431.63,
+   "end": 436.27,
+   "text": "He got his first cell phone Lula had never had a smartphone before yes"
+  },
+  {
+   "start": 436.27,
+   "end": 440.99,
+   "text": "They started Lula's army, a WhatsApp group that had, I think, over 10 million people"
+  },
+  {
+   "start": 440.99,
+   "end": 446.91,
+   "text": "on it. Over 5% of Brazilian voters were on this WhatsApp group. And the day of the election,"
+  },
+  {
+   "start": 446.91,
+   "end": 451.03,
+   "text": "when there were various shenanigans on both sides, everybody plays dirty tricks, but certain"
+  },
+  {
+   "start": 451.03,
+   "end": 456.35,
+   "text": "mayors blocked the bus service, the WhatsApp group got into mode and started driving voters"
+  },
+  {
+   "start": 456.35,
+   "end": 461.55,
+   "text": "to the polls. Things like that really mattered. And Lula, who had never really understood"
+  },
+  {
+   "start": 461.55,
+   "end": 466.51,
+   "text": "social media, even though Brazil is the most online country potentially in the entire world."
+  },
+  {
+   "start": 466.51,
+   "end": 470.99,
+   "text": "Lula had really, he nailed it during the debates. He hit these little 30-second clips that were"
+  },
+  {
+   "start": 470.99,
+   "end": 474.99,
+   "text": "perfect to share on social media. I don't know if he did it intentionally or not, but it was perfect."
+  },
+  {
+   "start": 474.99,
+   "end": 479.95,
+   "text": "Some people just have that. You know, it's interesting what you say about this sort of like"
+  },
+  {
+   "start": 479.95,
+   "end": 486.83,
+   "text": "anti-incumbent bias working against Bolsonaro due to him having won the first round. I saw some"
+  },
+  {
+   "start": 486.83,
+   "end": 493.35,
+   "text": "Some people speculate in Universe B where the US is a different electoral system, whether"
+  },
+  {
+   "start": 493.35,
+   "end": 499.23,
+   "text": "Trump would have won in 2016 had the first round been like, okay, let's narrow it down"
+  },
+  {
+   "start": 499.23,
+   "end": 504.13,
+   "text": "to the final two, kick off all the random third parties like, oh, it's going to be Trump."
+  },
+  {
+   "start": 504.13,
+   "end": 505.13,
+   "text": "Maybe not."
+  },
+  {
+   "start": 505.13,
+   "end": 506.77,
+   "text": "It's like, you never really know."
+  },
+  {
+   "start": 506.77,
+   "end": 509.03,
+   "text": "But I sort of get that what you're saying."
+  },
+  {
+   "start": 509.03,
+   "end": 512.27,
+   "text": "It's sort of like resetting the expectations of who the president is."
+  },
+  {
+   "start": 512.27,
+   "end": 513.27,
+   "text": "Right."
+  },
+  {
+   "start": 513.27,
+   "end": 516.43,
+   "text": "I mean, usually across two round elections, usually the first round winner wins."
+  },
+  {
+   "start": 516.43,
+   "end": 521.19,
+   "text": "I mean, the reason you have the second round is so these things can happen so voters can have that moment"
+  },
+  {
+   "start": 521.19,
+   "end": 524.59,
+   "text": "And so the the president can build a potential majority coalition for themselves"
+  },
+  {
+   "start": 525.47,
+   "end": 529.79,
+   "text": "Correct me if I'm wrong, but didn't you have a Bolsonaro win as your base case?"
+  },
+  {
+   "start": 529.79,
+   "end": 535.07,
+   "text": "So so I had Bolsonaro winning the night before the election. I had Bolsonaro winning at about 64 percent"
+  },
+  {
+   "start": 535.07,
+   "end": 537.35,
+   "text": "So prior to the first round, I was essentially coin flip"
+  },
+  {
+   "start": 537.35,
+   "end": 544.63,
+   "text": "I had 64 percent chance to win win. Yes. Yes exactly 64 percent chance to win and the prediction markets were at 80%"
+  },
+  {
+   "start": 544.63,
+   "end": 548.45,
+   "text": "Yeah, they were in fact there was a moment where the prediction markets at 87% for Bolsonaro"
+  },
+  {
+   "start": 548.45,
+   "end": 552.89,
+   "text": "And so there's always this element of you know who got it less wrong"
+  },
+  {
+   "start": 552.89,
+   "end": 556.15,
+   "text": "Yeah becomes it becomes a real question in some of these prediction market things"
+  },
+  {
+   "start": 556.15,
+   "end": 560.37,
+   "text": "And I know that this was a big miss for the prediction. Yeah, right. I mean I mean you always wonder"
+  },
+  {
+   "start": 560.37,
+   "end": 567.23,
+   "text": "Was this the 20% shot that happened or did they miss I will tell you they missed they were overconfident on this election"
+  },
+  {
+   "start": 567.23,
+   "end": 570.53,
+   "text": "I missed I wish I had been I wish I had been lower on the floppy"
+  },
+  {
+   "start": 570.53,
+   "end": 573.25,
+   "text": "You obviously thought that Lula had a real chance of winning."
+  },
+  {
+   "start": 573.25,
+   "end": 574.25,
+   "text": "Oh, absolutely."
+  },
+  {
+   "start": 574.25,
+   "end": 575.25,
+   "text": "You know, better than a third, right?"
+  },
+  {
+   "start": 575.25,
+   "end": 576.25,
+   "text": "Yeah."
+  },
+  {
+   "start": 576.25,
+   "end": 577.25,
+   "text": "That chance of winning."
+  },
+  {
+   "start": 577.25,
+   "end": 580.53,
+   "text": "And the reasons were, I mean, you could see him slowly catching up in the polls and you"
+  },
+  {
+   "start": 580.53,
+   "end": 584.13,
+   "text": "could see his campaign just doing well, generally."
+  },
+  {
+   "start": 584.13,
+   "end": 586.61,
+   "text": "Now, I can't base a prediction on vibes."
+  },
+  {
+   "start": 586.61,
+   "end": 590.41,
+   "text": "All of the data, all of the polls said Flavio Bolsonaro was going to win."
+  },
+  {
+   "start": 590.41,
+   "end": 594.25,
+   "text": "And so, I mean, based on the first, in the first round data, it looked like Flavio winning,"
+  },
+  {
+   "start": 594.25,
+   "end": 598.01,
+   "text": "but you know, you have to sort of factor in, okay, but he's catching up and the polls seem"
+  },
+  {
+   "start": 598.01,
+   "end": 600.05,
+   "text": "to be herding together and correlated."
+  },
+  {
+   "start": 600.05,
+   "end": 601.49,
+   "text": "And there were other issues as well."
+  },
+  {
+   "start": 601.49,
+   "end": 603.09,
+   "text": "So that all went to the model."
+  },
+  {
+   "start": 603.09,
+   "end": 606.49,
+   "text": "How much of the myths by prediction markets and pollsters"
+  },
+  {
+   "start": 606.49,
+   "end": 610.09,
+   "text": "I guess had to do with, I guess, surprise voters"
+  },
+  {
+   "start": 610.09,
+   "end": 612.05,
+   "text": "actually turning out in the election?"
+  },
+  {
+   "start": 612.05,
+   "end": 615.65,
+   "text": "Because it seems like maybe a lot of people who weren't polled"
+  },
+  {
+   "start": 615.65,
+   "end": 618.49,
+   "text": "actually turned up and voted for Lula."
+  },
+  {
+   "start": 618.49,
+   "end": 620.81,
+   "text": "So on one hand, it's really small numbers."
+  },
+  {
+   "start": 620.81,
+   "end": 622.85,
+   "text": "The change in turnout from the first round"
+  },
+  {
+   "start": 622.85,
+   "end": 625.05,
+   "text": "to the second round was less than 2%."
+  },
+  {
+   "start": 625.05,
+   "end": 627.29,
+   "text": "And you got a slight shift in terms of non-voters."
+  },
+  {
+   "start": 627.29,
+   "end": 629.65,
+   "text": "People who cast blank or invalidated ballots"
+  },
+  {
+   "start": 629.65,
+   "end": 633.13,
+   "text": "the first round. You had another one or two percent. But in Brazil, that's a couple of"
+  },
+  {
+   "start": 633.13,
+   "end": 637.37,
+   "text": "million votes. And in an election, one by four million votes, you know, a shift of one percent"
+  },
+  {
+   "start": 637.37,
+   "end": 640.09,
+   "text": "or two percent across those rounds really did make the difference."
+  },
+  {
+   "start": 640.09,
+   "end": 643.37,
+   "text": "Wait, what's the deal with Bolsonaro's stepmom?"
+  },
+  {
+   "start": 643.37,
+   "end": 644.5,
+   "text": "Michelle?"
+  },
+  {
+   "start": 644.5,
+   "end": 648.46,
+   "text": "Yeah, what was the deal? I saw in your newsletter you mentioned something she said or did. Didn't"
+  },
+  {
+   "start": 648.46,
+   "end": 649.74,
+   "text": "help the race. What was that all about?"
+  },
+  {
+   "start": 649.74,
+   "end": 654.66,
+   "text": "So early on, Michelle Bolsonaro, who's a stepmom, Michelle Bolsonaro had, and she won a Senate"
+  },
+  {
+   "start": 654.66,
+   "end": 656.18,
+   "text": "seat, by the way, during this past election."
+  },
+  {
+   "start": 656.18,
+   "end": 657.18,
+   "text": "Oh, good for her."
+  },
+  {
+   "start": 657.18,
+   "end": 661.3,
+   "text": "She and Flavio had a little fight and then they made up and now she's considering changing"
+  },
+  {
+   "start": 661.3,
+   "end": 665.26,
+   "text": "parties potentially, which is also odd to leave the Bolsonaro party when her last name"
+  },
+  {
+   "start": 665.26,
+   "end": 666.26,
+   "text": "is Bolsonaro."
+  },
+  {
+   "start": 666.26,
+   "end": 671.98,
+   "text": "But she and Flavio had this just spat in which it seemed like Flavio was not respecting her"
+  },
+  {
+   "start": 671.98,
+   "end": 677.74,
+   "text": "and because Flavio was already weak among women voters, this did not help the odds for his"
+  },
+  {
+   "start": 677.74,
+   "end": 678.74,
+   "text": "campaign."
+  },
+  {
+   "start": 678.74,
+   "end": 681.1,
+   "text": "He, across the whole campaign, he had setback after setback."
+  },
+  {
+   "start": 681.1,
+   "end": 684.3,
+   "text": "It's actually impressive he did as well as he did in the first round."
+  },
+  {
+   "start": 684.3,
+   "end": 686.46,
+   "text": "But his campaign, he was also very professional."
+  },
+  {
+   "start": 686.46,
+   "end": 688.9,
+   "text": "If you watched him in the debates, he was very well coached."
+  },
+  {
+   "start": 688.9,
+   "end": 693.18,
+   "text": "He didn't answer the questions, but that's typical in a lot of debates across democracies."
+  },
+  {
+   "start": 693.18,
+   "end": 694.34,
+   "text": "He was very well coached."
+  },
+  {
+   "start": 694.34,
+   "end": 696.42,
+   "text": "He did not do poorly in the debates."
+  },
+  {
+   "start": 696.42,
+   "end": 701.24,
+   "text": "Well, speaking of Bolsonaro's party, are you seeing like a fracturing there?"
+  },
+  {
+   "start": 701.24,
+   "end": 707.58,
+   "text": "Because I think he's rejecting the results of the election from the US where he now is."
+  },
+  {
+   "start": 707.58,
+   "end": 711.18,
+   "text": "But meanwhile, his party has accepted the result, right?"
+  },
+  {
+   "start": 711.18,
+   "end": 715.34,
+   "text": "So like his own party has accepted the result that he's rejecting."
+  },
+  {
+   "start": 715.34,
+   "end": 716.34,
+   "text": "What does that mean?"
+  },
+  {
+   "start": 716.34,
+   "end": 721.94,
+   "text": "Fracturing is not as bad as it was four years ago, which I mean four years ago after"
+  },
+  {
+   "start": 722.82,
+   "end": 728.34,
+   "text": "after Jair's attempted coup there was a real fracture and you saw a lot of centrist parties"
+  },
+  {
+   "start": 728.34,
+   "end": 733.46,
+   "text": "jump in and support Lula. It gave Lula big support for the first year of his presidency in this most"
+  },
+  {
+   "start": 733.46,
+   "end": 739.14,
+   "text": "recent term. This time you do see it's not a fracturing but it's a recognition I think"
+  },
+  {
+   "start": 739.14,
+   "end": 743.7,
+   "text": "that maybe the Bolsonaro's shouldn't be the candidates in 2030, right? They're already"
+  },
+  {
+   "start": 743.7,
+   "end": 748.02,
+   "text": "playing this out and saying we need to figure out a strategy because everybody knows that"
+  },
+  {
+   "start": 748.02,
+   "end": 752.18,
+   "text": "if the candidate had been Tarsus de Ferthas, who won the governor of Sao Paulo or any other"
+  },
+  {
+   "start": 752.18,
+   "end": 757.54,
+   "text": "right-wing candidate, they would have, that person would have defeated Lula. I feel convinced of it."
+  },
+  {
+   "start": 757.54,
+   "end": 762.1,
+   "text": "Every Brazilian analyst feels convinced of it. So the question is, how do we avoid running the"
+  },
+  {
+   "start": 762.1,
+   "end": 766.58,
+   "text": "Bolsonaro's in 2030 so that somebody else can run because that candidate will be a stronger"
+  },
+  {
+   "start": 766.58,
+   "end": 786.32,
+   "text": "candidate than anyone with the last name of Bolsonaro. What's next for virtual assets?"
+  },
+  {
+   "start": 786.32,
+   "end": 791.76,
+   "text": "I'm Jacob Greaves, host of EconomyScale, a series exploring growth in key global sectors."
+  },
+  {
+   "start": 791.76,
+   "end": 796.08,
+   "text": "And in this episode, we're diving into the digital forces shaping finance."
+  },
+  {
+   "start": 796.08,
+   "end": 800.36,
+   "text": "Sean McHugh from Dubai-based Virtual Assets Registry Authority has this to say."
+  },
+  {
+   "start": 800.36,
+   "end": 804.96,
+   "text": "We're seeing a lot of in-social players come in, digital asset dedicated hedge funds, high-frequency"
+  },
+  {
+   "start": 804.96,
+   "end": 809.0,
+   "text": "traders and that sort of thing, and folks who service in-social clients."
+  },
+  {
+   "start": 809.0,
+   "end": 813.92,
+   "text": "As more capital enters the market, adaptive regulation is likely to become increasingly"
+  },
+  {
+   "start": 813.92,
+   "end": 814.92,
+   "text": "key."
+  },
+  {
+   "start": 814.92,
+   "end": 836.12,
+   "text": "Rhys Merrick of Ripple says,"
+  },
+  {
+   "start": 836.12,
+   "end": 838.92,
+   "text": "Listen to the full episode wherever you get your podcasts."
+  },
+  {
+   "start": 838.92,
+   "end": 843.2,
+   "text": "This series is brought to you by Bloomberg Media Studios and the Dubai Department of Economy"
+  },
+  {
+   "start": 843.2,
+   "end": 844.8,
+   "text": "and Tourism."
+  },
+  {
+   "start": 844.8,
+   "end": 850.0,
+   "text": "on a break? Don't doom scroll, try Rips on Underdog. Buy a digital pack, rip it open,"
+  },
+  {
+   "start": 850.0,
+   "end": 855.68,
+   "text": "and reveal a real physical card, football, basketball, even Pokemon. Pack start at just $5,"
+  },
+  {
+   "start": 855.68,
+   "end": 860.72,
+   "text": "ship it straight to your door, or sell it back instantly at full market value. Max value up to"
+  },
+  {
+   "start": 860.72,
+   "end": 868.8,
+   "text": "$125,000. Download Underdog and get in on the chase. Deposit $5, get 5 free packs. Real Rips,"
+  },
+  {
+   "start": 868.8,
+   "end": 874.08,
+   "text": "real cards, real cash. Only on Underdog. Unleash your dog. 18 plus terms apply, top"
+  },
+  {
+   "start": 874.08,
+   "end": 875.08,
+   "text": "or extremely rare."
+  },
+  {
+   "start": 875.08,
+   "end": 878.08,
+   "text": "This is the Bloomberg Tech Minute brought to you by Chachi PT."
+  },
+  {
+   "start": 878.08,
+   "end": 879.08,
+   "text": "I'm Carol Masser."
+  },
+  {
+   "start": 879.08,
+   "end": 883.08,
+   "text": "Chinese automakers have become famous for turning cars into rolling smartphones"
+  },
+  {
+   "start": 883.08,
+   "end": 886.08,
+   "text": "decked out with large touch screens and flashy software."
+  },
+  {
+   "start": 886.08,
+   "end": 891.08,
+   "text": "Now they're going back to design basics, touting the return of buttons and knobs."
+  },
+  {
+   "start": 891.08,
+   "end": 896.08,
+   "text": "Three introduction of physical controls coincides with a broader push by Chinese regulators"
+  },
+  {
+   "start": 896.08,
+   "end": 900.08,
+   "text": "to overhaul the EV industry's potentially harmful design choices."
+  },
+  {
+   "start": 900.08,
+   "end": 903.08,
+   "text": "China's Ministry of Industry and Information Technology"
+  },
+  {
+   "start": 903.08,
+   "end": 907.08,
+   "text": "propose updated national vehicle standards that specify certain functions,"
+  },
+  {
+   "start": 907.08,
+   "end": 910.08,
+   "text": "like those that control headlights or change gears,"
+  },
+  {
+   "start": 910.08,
+   "end": 912.08,
+   "text": "should be physical rather than digital."
+  },
+  {
+   "start": 912.08,
+   "end": 915.08,
+   "text": "While door handles have been the most high-profile change"
+  },
+  {
+   "start": 915.08,
+   "end": 917.08,
+   "text": "resulting in millions of cars being recalled,"
+  },
+  {
+   "start": 917.08,
+   "end": 919.08,
+   "text": "screens have also drawn scrutiny"
+  },
+  {
+   "start": 919.08,
+   "end": 923.08,
+   "text": "because they can pose a safety risk should they lose power or break."
+  },
+  {
+   "start": 923.08,
+   "end": 926.08,
+   "text": "The trend of adding physical controls is not limited to China,"
+  },
+  {
+   "start": 926.08,
+   "end": 930.96,
+   "text": "China with Mercedes-Benz Group also introducing buttons in its new models."
+  },
+  {
+   "start": 930.96,
+   "end": 933.92,
+   "text": "That's the Bloomberg Tech Minute brought to you by ChachiPT."
+  },
+  {
+   "start": 933.92,
+   "end": 937.82,
+   "text": "Get started at chachipt.com."
+  },
+  {
+   "start": 937.82,
+   "end": 940.94,
+   "text": "The world of business is constantly evolving."
+  },
+  {
+   "start": 940.94,
+   "end": 945.66,
+   "text": "Every day new challenges, new opportunities, new ways of working."
+  },
+  {
+   "start": 945.66,
+   "end": 950.54,
+   "text": "Comcast business keeps you totally in step with secure AI-backed networking built to"
+  },
+  {
+   "start": 950.54,
+   "end": 955.78,
+   "text": "power the way modern business gets things done today in more than 100 countries around"
+  },
+  {
+   "start": 955.78,
+   "end": 956.78,
+   "text": "the world."
+  },
+  {
+   "start": 956.78,
+   "end": 964.22,
+   "text": "some serious muscle. And get this, Comcast Business powers over 90% of the Fortune 500 and millions"
+  },
+  {
+   "start": 964.22,
+   "end": 970.94,
+   "text": "of small businesses. Behind it all, Network Engineers, Cyber Security Specialists, Support Teams,"
+  },
+  {
+   "start": 970.94,
+   "end": 977.98,
+   "text": "thousands of experts answering your call at 2am, like it's 2pm. Always on, always ready."
+  },
+  {
+   "start": 977.98,
+   "end": 984.3,
+   "text": "That's a lot of coffee. One partner powering how business gets done for companies of every size,"
+  },
+  {
+   "start": 984.3,
+   "end": 990.06,
+   "text": "all around the globe. When you add it all up, no one does business like Comcast Business."
+  },
+  {
+   "start": 991.06,
+   "end": 995.94,
+   "text": "I have a question and this is something I know nothing about. It's not even really related to"
+  },
+  {
+   "start": 995.94,
+   "end": 1001.3,
+   "text": "the election specifically. In fact, it's one of those things you read an article about every"
+  },
+  {
+   "start": 1001.3,
+   "end": 1006.82,
+   "text": "once in a while and forget after Brazil, they did badly in the World Cup this year and I saw a"
+  },
+  {
+   "start": 1006.82,
+   "end": 1011.46,
+   "text": "bunch of people on social media complaining or tweeting like, oh, Brazil hasn't been good at"
+  },
+  {
+   "start": 1011.46,
+   "end": 1017.7,
+   "text": "soccer ever since the Catholic population of the country has declined. These evangelicals can't play"
+  },
+  {
+   "start": 1017.7,
+   "end": 1024.34,
+   "text": "soccer. This is just tweets that I saw. Can you talk a little bit about the sort of like politics"
+  },
+  {
+   "start": 1024.34,
+   "end": 1030.98,
+   "text": "and the rise, like the historical rise? I mostly associate Latin American countries with Catholicism,"
+  },
+  {
+   "start": 1030.98,
+   "end": 1035.46,
+   "text": "but I know these are like dated takes and that across Latin America there's been a pretty big"
+  },
+  {
+   "start": 1035.46,
+   "end": 1040.74,
+   "text": "rise in like American-style evangelical Christianity, etc. Can you talk a little bit about who that"
+  },
+  {
+   "start": 1040.74,
+   "end": 1044.66,
+   "text": "demographic is like that shift, that wave, etc."
+  },
+  {
+   "start": 1044.66,
+   "end": 1049.22,
+   "text": "And it's hard because the the evangelicals also correlate somewhat more with rural voters"
+  },
+  {
+   "start": 1049.22,
+   "end": 1053.62,
+   "text": "in certain areas. But the urban voters as occurs in the United States in some ways,"
+  },
+  {
+   "start": 1053.62,
+   "end": 1058.58,
+   "text": "right? But the evangelical rise in Brazil has definitely created a divide inside of the electorate"
+  },
+  {
+   "start": 1058.58,
+   "end": 1062.5,
+   "text": "and you saw it every poll. There's not really exit polls in the same way we have in the US,"
+  },
+  {
+   "start": 1062.5,
+   "end": 1067.54,
+   "text": "but every poll in Brazil showed that the evangelical community largely voted for Bolsonaro"
+  },
+  {
+   "start": 1067.54,
+   "end": 1070.18,
+   "text": "and the Catholic community largely voted for Lula."
+  },
+  {
+   "start": 1070.18,
+   "end": 1072.66,
+   "text": "And, but as evangelicals and Catholics"
+  },
+  {
+   "start": 1072.66,
+   "end": 1075.54,
+   "text": "are getting close to parody in Brazil."
+  },
+  {
+   "start": 1075.54,
+   "end": 1077.14,
+   "text": "So what has it driven that though?"
+  },
+  {
+   "start": 1077.14,
+   "end": 1080.02,
+   "text": "Like what is the long-term structural driver"
+  },
+  {
+   "start": 1080.02,
+   "end": 1083.7,
+   "text": "of the growth of evangelical Christianity across Latin America?"
+  },
+  {
+   "start": 1083.7,
+   "end": 1086.1,
+   "text": "To self-define their evangelical."
+  },
+  {
+   "start": 1086.1,
+   "end": 1087.3,
+   "text": "They are constantly recruiting."
+  },
+  {
+   "start": 1087.3,
+   "end": 1090.82,
+   "text": "And they're self-promoters Joe."
+  },
+  {
+   "start": 1090.82,
+   "end": 1093.06,
+   "text": "And the Catholic Church, I think,"
+  },
+  {
+   "start": 1093.06,
+   "end": 1095.86,
+   "text": "has fallen behind on certain aspects of that."
+  },
+  {
+   "start": 1095.86,
+   "end": 1100.18,
+   "text": "I think the other aspect of this is, and there's elements of the Catholic Church in the United"
+  },
+  {
+   "start": 1100.18,
+   "end": 1104.42,
+   "text": "States and in Latin America that are quite conservative, small C conservative in terms"
+  },
+  {
+   "start": 1104.42,
+   "end": 1109.54,
+   "text": "of how they view social policy. And Lula's coalition is much more small L liberal in the"
+  },
+  {
+   "start": 1109.54,
+   "end": 1117.22,
+   "text": "sense of they will support gay marriage. And I think that divide has caused the Catholic"
+  },
+  {
+   "start": 1117.22,
+   "end": 1122.34,
+   "text": "Church to have some drop in Latin America and in Brazil while the evangelical community"
+  },
+  {
+   "start": 1122.34,
+   "end": 1124.34,
+   "text": "just taking advantage of that."
+  },
+  {
+   "start": 1124.34,
+   "end": 1129.3,
+   "text": "The last time we had you on this podcast, you talked about an orange wave or the idea"
+  },
+  {
+   "start": 1129.3,
+   "end": 1133.7,
+   "text": "of a bunch of Latin American leaders sort of aligning themselves with Trump and striking"
+  },
+  {
+   "start": 1133.7,
+   "end": 1136.06,
+   "text": "deals and all of that."
+  },
+  {
+   "start": 1136.06,
+   "end": 1142.58,
+   "text": "With the surprise result in Brazil, does that mean that the orange wave has crested, I guess,"
+  },
+  {
+   "start": 1142.58,
+   "end": 1145.51,
+   "text": "or is Brazil an exception?"
+  },
+  {
+   "start": 1145.51,
+   "end": 1146.51,
+   "text": "It's a great question."
+  },
+  {
+   "start": 1146.51,
+   "end": 1150.07,
+   "text": "Everyone's watching Argentina next year to find out what the answer to that is."
+  },
+  {
+   "start": 1150.07,
+   "end": 1152.07,
+   "text": "So there's sort of two questions here, right?"
+  },
+  {
+   "start": 1152.07,
+   "end": 1156.11,
+   "text": "One is this idea that there are a bunch of pro-Trump leaders who have won."
+  },
+  {
+   "start": 1156.11,
+   "end": 1161.55,
+   "text": "Whether that was because there's been a shift to the right or just a pendulum in an anti-encomment"
+  },
+  {
+   "start": 1161.55,
+   "end": 1164.07,
+   "text": "environment, I tend to be the latter explanation."
+  },
+  {
+   "start": 1164.07,
+   "end": 1167.71,
+   "text": "Trump was going around saying he was nine for nine in elections recently."
+  },
+  {
+   "start": 1167.71,
+   "end": 1170.81,
+   "text": "He just pulled that number out of the air, but it's relatively close to how he had done"
+  },
+  {
+   "start": 1170.81,
+   "end": 1172.31,
+   "text": "prior to Brazil."
+  },
+  {
+   "start": 1172.31,
+   "end": 1176.39,
+   "text": "There's still going to be for the next two years an orange shift in the sense that you"
+  },
+  {
+   "start": 1176.39,
+   "end": 1181.85,
+   "text": "You have this element of every Latin American leader, right, left, center, must respond"
+  },
+  {
+   "start": 1181.85,
+   "end": 1182.85,
+   "text": "to Trump."
+  },
+  {
+   "start": 1182.85,
+   "end": 1184.95,
+   "text": "He forces them to respond, right?"
+  },
+  {
+   "start": 1184.95,
+   "end": 1189.09,
+   "text": "So even though Lula has won this election and the election did not go Trump's way and"
+  },
+  {
+   "start": 1189.09,
+   "end": 1196.37,
+   "text": "Trump is now trying to back away a bit from Bolsonaro, you have Lula to Silva having to"
+  },
+  {
+   "start": 1196.37,
+   "end": 1198.81,
+   "text": "work with Trump, having to respond to Trump, having to deal with tariffs."
+  },
+  {
+   "start": 1198.81,
+   "end": 1201.41,
+   "text": "You have Claudia Scheinbaum in Mexico having to do the same."
+  },
+  {
+   "start": 1201.41,
+   "end": 1204.29,
+   "text": "Everyone has to respond to Trump whether or not they agree with him, and that's still"
+  },
+  {
+   "start": 1204.29,
+   "end": 1209.13,
+   "text": "going to define the following two years until Trump leaves office in January, 2020."
+  },
+  {
+   "start": 1209.13,
+   "end": 1218.93,
+   "text": "How much has the Iran war specifically flipped the sign, so to speak, about the value of"
+  },
+  {
+   "start": 1218.93,
+   "end": 1221.85,
+   "text": "being good friends with Trump or in Latin America?"
+  },
+  {
+   "start": 1221.85,
+   "end": 1225.81,
+   "text": "So it really hasn't impacted."
+  },
+  {
+   "start": 1225.81,
+   "end": 1231.45,
+   "text": "Latin American leaders are not responding to Trump's Iran war directly."
+  },
+  {
+   "start": 1231.45,
+   "end": 1236.49,
+   "text": "At the same time, the Iran War has driven up oil prices and fuel costs around the region,"
+  },
+  {
+   "start": 1236.49,
+   "end": 1238.73,
+   "text": "which is just bad for incumbents generally."
+  },
+  {
+   "start": 1238.73,
+   "end": 1240.05,
+   "text": "Oh, I see."
+  },
+  {
+   "start": 1240.05,
+   "end": 1244.49,
+   "text": "When you have higher fuel costs or higher inflation in Latin America, every incumbent"
+  },
+  {
+   "start": 1244.49,
+   "end": 1245.49,
+   "text": "is going to suffer."
+  },
+  {
+   "start": 1245.49,
+   "end": 1247.21,
+   "text": "And that's what you've seen in Chile and Colombia Peru."
+  },
+  {
+   "start": 1247.21,
+   "end": 1249.05,
+   "text": "But it's just inflation."
+  },
+  {
+   "start": 1249.05,
+   "end": 1254.37,
+   "text": "There's not, because you don't think it goes a little bit further where it's like, yeah,"
+  },
+  {
+   "start": 1254.37,
+   "end": 1258.45,
+   "text": "here's this guy that you went to the White House and your buddy, buddy with him."
+  },
+  {
+   "start": 1258.45,
+   "end": 1263.21,
+   "text": "And this war that he started, which almost no one around the world except for the United"
+  },
+  {
+   "start": 1263.21,
+   "end": 1268.85,
+   "text": "States and Israel really care about, has caused inflation to get to rise."
+  },
+  {
+   "start": 1268.85,
+   "end": 1273.65,
+   "text": "That hasn't created a political penalty in your view for politicians who made the choice"
+  },
+  {
+   "start": 1273.65,
+   "end": 1275.65,
+   "text": "to be friends with Trump."
+  },
+  {
+   "start": 1275.65,
+   "end": 1278.85,
+   "text": "It doesn't seem to have mattered in any of the polls I've seen."
+  },
+  {
+   "start": 1278.85,
+   "end": 1283.41,
+   "text": "What you do see are people are angry at inflation, but people aren't making the big logical leap"
+  },
+  {
+   "start": 1283.41,
+   "end": 1284.53,
+   "text": "necessarily."
+  },
+  {
+   "start": 1284.53,
+   "end": 1289.67,
+   "text": "Local and all elections are local and local incumbents get blamed for inflation. Therefore higher gas prices"
+  },
+  {
+   "start": 1289.73,
+   "end": 1295.91,
+   "text": "Whether it's caused by the Iran war or something else get blamed on the incumbent now one interesting twist for Brazil"
+  },
+  {
+   "start": 1296.05,
+   "end": 1302.19,
+   "text": "Brazil is very much in commodity exporting economy if there have been higher commodity prices over the last six months"
+  },
+  {
+   "start": 1302.19,
+   "end": 1307.41,
+   "text": "They're exporting oil. They're exporting soy. They have benefited in some ways from the Iran war"
+  },
+  {
+   "start": 1307.41,
+   "end": 1311.53,
+   "text": "I mean certainly the Caribbean and Central America have been hit hard Brazil"
+  },
+  {
+   "start": 1311.53,
+   "end": 1316.6,
+   "text": "Well, it's sort of net effect is sort of a wash actually, and that may have helped Lula,"
+  },
+  {
+   "start": 1316.6,
+   "end": 1319.3,
+   "text": "though it's going to be a long time until we really are able to look at the data to"
+  },
+  {
+   "start": 1319.3,
+   "end": 1320.3,
+   "text": "understand that."
+  },
+  {
+   "start": 1320.3,
+   "end": 1321.8,
+   "text": "Should we talk Venezuela?"
+  },
+  {
+   "start": 1321.8,
+   "end": 1322.8,
+   "text": "Yeah, yeah."
+  },
+  {
+   "start": 1322.8,
+   "end": 1323.8,
+   "text": "All right."
+  },
+  {
+   "start": 1323.8,
+   "end": 1328.4,
+   "text": "So going over to Venezuela, we have Machado who's come back, and now people are talking"
+  },
+  {
+   "start": 1328.4,
+   "end": 1333.08,
+   "text": "a little bit, a tiny bit about the potential to have elections over there."
+  },
+  {
+   "start": 1333.08,
+   "end": 1337.0,
+   "text": "And I saw on Polymarket, there's like an 8% chance being priced."
+  },
+  {
+   "start": 1337.0,
+   "end": 1338.0,
+   "text": "Of an election."
+  },
+  {
+   "start": 1338.0,
+   "end": 1341.68,
+   "text": "Of an election by the end of the year, which is fairly soon now."
+  },
+  {
+   "start": 1341.68,
+   "end": 1342.68,
+   "text": "It's November."
+  },
+  {
+   "start": 1342.68,
+   "end": 1343.68,
+   "text": "That's true."
+  },
+  {
+   "start": 1343.68,
+   "end": 1345.64,
+   "text": "But you're a super forecaster."
+  },
+  {
+   "start": 1345.64,
+   "end": 1347.64,
+   "text": "What number would you put on it?"
+  },
+  {
+   "start": 1347.64,
+   "end": 1350.16,
+   "text": "This year, there's not going to be an election."
+  },
+  {
+   "start": 1350.16,
+   "end": 1354.76,
+   "text": "There's really going to be, there's about a six to nine month run up for any election"
+  },
+  {
+   "start": 1354.76,
+   "end": 1358.36,
+   "text": "that has to happen because there are steps that must occur."
+  },
+  {
+   "start": 1358.36,
+   "end": 1363.2,
+   "text": "And now I worry about those steps being drawn out over years and years and years where they"
+  },
+  {
+   "start": 1363.2,
+   "end": 1365.44,
+   "text": "just keep kicking the can down the road."
+  },
+  {
+   "start": 1365.44,
+   "end": 1368.08,
+   "text": "But it should be about a six month timeframe, right?"
+  },
+  {
+   "start": 1368.08,
+   "end": 1371.28,
+   "text": "So the current Rubio plan as it exists."
+  },
+  {
+   "start": 1371.28,
+   "end": 1373.3,
+   "text": "I say Rubio, not Trump, very specifically."
+  },
+  {
+   "start": 1373.3,
+   "end": 1380.02,
+   "text": "The current Rubio plan is that Delcey Rodriguez will declare vacancy in the presidency."
+  },
+  {
+   "start": 1380.02,
+   "end": 1383.5,
+   "text": "There will be a new electoral board and six months later there will be elections."
+  },
+  {
+   "start": 1383.5,
+   "end": 1387.84,
+   "text": "Elections would ideally happen in July of next year, but maybe they get pushed to September"
+  },
+  {
+   "start": 1387.84,
+   "end": 1389.04,
+   "text": "or November of next year."
+  },
+  {
+   "start": 1389.04,
+   "end": 1391.1,
+   "text": "I think that's the ideal."
+  },
+  {
+   "start": 1391.1,
+   "end": 1392.86,
+   "text": "What would Delcey Rodriguez like?"
+  },
+  {
+   "start": 1392.86,
+   "end": 1396.14,
+   "text": "Probably closer to 2028 or 2029."
+  },
+  {
+   "start": 1396.14,
+   "end": 1401.34,
+   "text": "And so this is the fight that's going on, I think, right now, between Rubio and the"
+  },
+  {
+   "start": 1401.34,
+   "end": 1405.5,
+   "text": "Venezuelan authorities and inside the US government between Rubio and other aspects of the Trump"
+  },
+  {
+   "start": 1405.5,
+   "end": 1409.9,
+   "text": "administration because I do think that there are people within the Trump administration"
+  },
+  {
+   "start": 1409.9,
+   "end": 1411.9,
+   "text": "who would like to see that election delayed."
+  },
+  {
+   "start": 1411.9,
+   "end": 1417.02,
+   "text": "But I know that Rubio wants it on his record, that Venezuelan democracy happened on his"
+  },
+  {
+   "start": 1417.02,
+   "end": 1418.02,
+   "text": "watch."
+  },
+  {
+   "start": 1418.02,
+   "end": 1420.98,
+   "text": "And so he will be pushing hard, I think, for elections in the coming year."
+  },
+  {
+   "start": 1420.98,
+   "end": 1428.98,
+   "text": "So one of the things that I read in your newsletter, which I hadn't clicked is that, or hadn't really thought of before,"
+  },
+  {
+   "start": 1428.98,
+   "end": 1437.98,
+   "text": "is that there had been a lot of criticism in Brazil and around the world towards Lula for having been too friendly with Maduro."
+  },
+  {
+   "start": 1437.98,
+   "end": 1445.98,
+   "text": "But you sort of flip the sides again, it's like, alright, Delcy part of Maduro's party, kind of chummy with Trump,"
+  },
+  {
+   "start": 1445.98,
+   "end": 1452.3,
+   "text": "Maybe that allows Lula to create some space, maybe becomes an advocate for some sort of version of"
+  },
+  {
+   "start": 1452.58,
+   "end": 1455.06,
+   "text": "Venezuelan democracy. Talk to us about that, Link."
+  },
+  {
+   "start": 1455.18,
+   "end": 1460.1,
+   "text": "So there's an element in which Lula has called for new elections in Venezuela and"
+  },
+  {
+   "start": 1460.86,
+   "end": 1465.18,
+   "text": "he was way too friendly with Hugo Chavez and Nicolas Maduro and various other"
+  },
+  {
+   "start": 1465.66,
+   "end": 1469.14,
+   "text": "left-wing dictators across the hemisphere. He has been for much of his career."
+  },
+  {
+   "start": 1469.62,
+   "end": 1472.7,
+   "text": "He can't be happy with how things are going in Venezuela, right?"
+  },
+  {
+   "start": 1472.7,
+   "end": 1475.86,
+   "text": "South America is Brazil's sphere of influence."
+  },
+  {
+   "start": 1475.86,
+   "end": 1478.42,
+   "text": "And right now, Trump is treating Venezuela"
+  },
+  {
+   "start": 1478.42,
+   "end": 1480.58,
+   "text": "like a proxy colony in some ways."
+  },
+  {
+   "start": 1480.58,
+   "end": 1484.18,
+   "text": "And so I think that Lula would like to see"
+  },
+  {
+   "start": 1484.18,
+   "end": 1486.66,
+   "text": "some sort of independence by Venezuela"
+  },
+  {
+   "start": 1486.66,
+   "end": 1487.98,
+   "text": "from the US authorities."
+  },
+  {
+   "start": 1487.98,
+   "end": 1489.66,
+   "text": "And he thinks that a new election"
+  },
+  {
+   "start": 1489.66,
+   "end": 1492.38,
+   "text": "would potentially benefit him in that way,"
+  },
+  {
+   "start": 1492.38,
+   "end": 1494.42,
+   "text": "whether or not that election goes left or right."
+  },
+  {
+   "start": 1494.42,
+   "end": 1495.58,
+   "text": "Oh, sure, yeah."
+  },
+  {
+   "start": 1495.58,
+   "end": 1498.46,
+   "text": "That said, the Venezuelan opposition hates Lula."
+  },
+  {
+   "start": 1498.46,
+   "end": 1501.06,
+   "text": "They blame Lula for a lot of what went wrong,"
+  },
+  {
+   "start": 1501.06,
+   "end": 1505.14,
+   "text": "the reason that they were not able to get a transition over the years. And so it's unlikely"
+  },
+  {
+   "start": 1505.14,
+   "end": 1510.26,
+   "text": "you'd see a Machado Lula hug fest and that they don't they get along, but they could become"
+  },
+  {
+   "start": 1510.26,
+   "end": 1514.9,
+   "text": "quiet allies of each other in this quest to push Venezuela towards elections."
+  },
+  {
+   "start": 1514.9,
+   "end": 1521.3,
+   "text": "Wait, can you just explain what influence exactly Brazil has over Venezuela or what leverage they"
+  },
+  {
+   "start": 1521.3,
+   "end": 1529.65,
+   "text": "actually like exert here? That's a great question. So Lula, Brazil is Latin America's largest economy."
+  },
+  {
+   "start": 1529.65,
+   "end": 1536.13,
+   "text": "It shares a border with Venezuela. Hypothetically, for years under Chavez and Maduro, there were"
+  },
+  {
+   "start": 1536.13,
+   "end": 1540.77,
+   "text": "tens of millions of development contracts that went from Brazil to Venezuela, and"
+  },
+  {
+   "start": 1540.77,
+   "end": 1544.13,
+   "text": "Brazil's construction companies constructed a bunch of Venezuelan infrastructure."
+  },
+  {
+   "start": 1545.79,
+   "end": 1551.55,
+   "text": "Brazil should be influential in Venezuela. The fact that they haven't been is the surprise. They are"
+  },
+  {
+   "start": 1551.55,
+   "end": 1555.79,
+   "text": "the biggest military in South America. They're the biggest neighbor for Venezuela. They're the"
+  },
+  {
+   "start": 1555.79,
+   "end": 1561.71,
+   "text": "largest economy, they should be the most influential player in South America in Venezuela. But"
+  },
+  {
+   "start": 1561.71,
+   "end": 1567.43,
+   "text": "under Jarrett Bolsonaro, Brazil stepped back from a lot of the diplomatic efforts to push"
+  },
+  {
+   "start": 1567.43,
+   "end": 1568.43,
+   "text": "transition."
+  },
+  {
+   "start": 1568.43,
+   "end": 1574.23,
+   "text": "And then under Lula, they did very little after Maduro stole the 2024 election. And so"
+  },
+  {
+   "start": 1574.23,
+   "end": 1578.95,
+   "text": "both the right and the left in Brazil have taken that step back from what should be influenced"
+  },
+  {
+   "start": 1578.95,
+   "end": 1584.83,
+   "text": "in South America. And I think Lula may want to reassert it because as presidents late"
+  },
+  {
+   "start": 1584.83,
+   "end": 1588.03,
+   "text": "in their second term often do when they become lame ducks,"
+  },
+  {
+   "start": 1588.03,
+   "end": 1589.23,
+   "text": "they turn towards foreign policy"
+  },
+  {
+   "start": 1589.23,
+   "end": 1591.31,
+   "text": "because it's where they have the influence."
+  },
+  {
+   "start": 1591.31,
+   "end": 1608.53,
+   "text": "Who doesn't love screaming like a maniac"
+  },
+  {
+   "start": 1608.53,
+   "end": 1610.49,
+   "text": "over a rookie card on their couch?"
+  },
+  {
+   "start": 1610.49,
+   "end": 1612.53,
+   "text": "Introducing Rips on Underdog,"
+  },
+  {
+   "start": 1612.53,
+   "end": 1614.93,
+   "text": "open digital packs starting at just five bucks"
+  },
+  {
+   "start": 1614.93,
+   "end": 1617.05,
+   "text": "and reveal real collectible cards,"
+  },
+  {
+   "start": 1617.05,
+   "end": 1619.57,
+   "text": "football, basketball, Pokemon and more."
+  },
+  {
+   "start": 1619.57,
+   "end": 1621.17,
+   "text": "Keep your card and have it shipped home"
+  },
+  {
+   "start": 1621.17,
+   "end": 1625.25,
+   "text": "or sell it back instantly at 100% of fair market value."
+  },
+  {
+   "start": 1625.25,
+   "end": 1627.89,
+   "text": "Download Underdog and get five free Rips packs"
+  },
+  {
+   "start": 1627.89,
+   "end": 1629.53,
+   "text": "when you deposit $5."
+  },
+  {
+   "start": 1629.53,
+   "end": 1632.29,
+   "text": "Real rips, real cards, real cash."
+  },
+  {
+   "start": 1632.29,
+   "end": 1633.73,
+   "text": "Only on Underdog."
+  },
+  {
+   "start": 1633.73,
+   "end": 1635.49,
+   "text": "Unleash your dog."
+  },
+  {
+   "start": 1635.49,
+   "end": 1637.25,
+   "text": "18 plus terms apply."
+  },
+  {
+   "start": 1637.25,
+   "end": 1638.69,
+   "text": "This is the Bloomberg Tech Minute"
+  },
+  {
+   "start": 1638.69,
+   "end": 1640.41,
+   "text": "brought to you by Chachi PT."
+  },
+  {
+   "start": 1640.41,
+   "end": 1641.49,
+   "text": "I'm Carol Masser."
+  },
+  {
+   "start": 1641.49,
+   "end": 1643.33,
+   "text": "Chinese automakers have become famous"
+  },
+  {
+   "start": 1643.33,
+   "end": 1645.45,
+   "text": "for turning cars into rolling smartphones"
+  },
+  {
+   "start": 1645.45,
+   "end": 1648.41,
+   "text": "decked out with large touch screens and flashy software."
+  },
+  {
+   "start": 1648.41,
+   "end": 1651.09,
+   "text": "Now they're going back to design basics,"
+  },
+  {
+   "start": 1651.09,
+   "end": 1653.17,
+   "text": "touting the return of buttons and knobs."
+  },
+  {
+   "start": 1653.17,
+   "end": 1655.13,
+   "text": "Three introduction of physical controls"
+  },
+  {
+   "start": 1655.13,
+   "end": 1657.97,
+   "text": "coincides with a broader push by Chinese regulators"
+  },
+  {
+   "start": 1657.97,
+   "end": 1662.17,
+   "text": "to overhaul the EV industry's potentially harmful design choices."
+  },
+  {
+   "start": 1662.17,
+   "end": 1665.13,
+   "text": "China's Ministry of Industry and Information Technology"
+  },
+  {
+   "start": 1665.13,
+   "end": 1669.49,
+   "text": "propose updated national vehicle standards that specify certain functions,"
+  },
+  {
+   "start": 1669.49,
+   "end": 1672.17,
+   "text": "like those that control headlights or change gears,"
+  },
+  {
+   "start": 1672.17,
+   "end": 1674.53,
+   "text": "should be physical rather than digital."
+  },
+  {
+   "start": 1674.53,
+   "end": 1676.97,
+   "text": "While door handles have been the most high-profile change"
+  },
+  {
+   "start": 1676.97,
+   "end": 1679.21,
+   "text": "resulting in millions of cars being recalled,"
+  },
+  {
+   "start": 1679.21,
+   "end": 1681.09,
+   "text": "screens have also drawn scrutiny"
+  },
+  {
+   "start": 1681.09,
+   "end": 1684.69,
+   "text": "because they can pose a safety risk should they lose power or break."
+  },
+  {
+   "start": 1684.69,
+   "end": 1686.69,
+   "text": "The trend of adding physical controls"
+  },
+  {
+   "start": 1686.69,
+   "end": 1692.05,
+   "text": "is not limited to China, with Mercedes-Benz Group also introducing buttons in its new"
+  },
+  {
+   "start": 1692.05,
+   "end": 1693.05,
+   "text": "models."
+  },
+  {
+   "start": 1693.05,
+   "end": 1695.57,
+   "text": "That's the Bloomberg Tech Minute brought to you by Chachi PT."
+  },
+  {
+   "start": 1695.57,
+   "end": 1699.47,
+   "text": "Get started at chachipt.com."
+  },
+  {
+   "start": 1699.47,
+   "end": 1702.59,
+   "text": "The world of business is constantly evolving."
+  },
+  {
+   "start": 1702.59,
+   "end": 1706.75,
+   "text": "Every day, new challenges, new opportunities, new ways of working."
+  },
+  {
+   "start": 1706.75,
+   "end": 1712.19,
+   "text": "Comcast business keeps you totally in step, with secure AI-backed networking built to"
+  },
+  {
+   "start": 1712.19,
+   "end": 1717.43,
+   "text": "power the way modern business gets things done today in more than 100 countries around"
+  },
+  {
+   "start": 1717.43,
+   "end": 1720.03,
+   "text": "the world, that's some serious muscle."
+  },
+  {
+   "start": 1720.03,
+   "end": 1726.39,
+   "text": "And get this, Comcast Business powers over 90% of the Fortune 500 and millions of small"
+  },
+  {
+   "start": 1726.39,
+   "end": 1727.79,
+   "text": "businesses."
+  },
+  {
+   "start": 1727.79,
+   "end": 1733.87,
+   "text": "Behind it all, Network Engineers, Cyber Security Specialists, Support Teams, thousands of experts"
+  },
+  {
+   "start": 1733.87,
+   "end": 1740.55,
+   "text": "answering your call at 2 AM like it's 2 PM, always on, always ready, that's a lot of"
+  },
+  {
+   "start": 1740.55,
+   "end": 1741.67,
+   "text": "coffee."
+  },
+  {
+   "start": 1741.67,
+   "end": 1746.75,
+   "text": "One partner powering how business gets done for companies of every size, all around the"
+  },
+  {
+   "start": 1746.75,
+   "end": 1752.47,
+   "text": "globe. When you add it all up, no one does business like Comcast Business."
+  },
+  {
+   "start": 1752.47,
+   "end": 1759.07,
+   "text": "A business gift is never just a gift. It's a thank you, a milestone, a moment of appreciation."
+  },
+  {
+   "start": 1759.07,
+   "end": 1763.67,
+   "text": "It's a message about how much someone matters and what your brand stands for. At 4imprint,"
+  },
+  {
+   "start": 1763.67,
+   "end": 1768.83,
+   "text": "you'll find thousands of customizable options. Like premium apparel, branded drinkware, tech,"
+  },
+  {
+   "start": 1768.83,
+   "end": 1773.11,
+   "text": "totes and more, each chosen not just for function, but for meaning."
+  },
+  {
+   "start": 1773.11,
+   "end": 1778.27,
+   "text": "You can tailor every detail, your logo, your message, your presentation, so your gift feels"
+  },
+  {
+   "start": 1778.27,
+   "end": 1780.43,
+   "text": "personal and on-brand."
+  },
+  {
+   "start": 1780.43,
+   "end": 1784.67,
+   "text": "And with expert support, dependable service, and thousands without a setup fee, creating"
+  },
+  {
+   "start": 1784.67,
+   "end": 1787.67,
+   "text": "something thoughtful doesn't mean making it complicated."
+  },
+  {
+   "start": 1787.67,
+   "end": 1792.71,
+   "text": "Every order is backed by 4imprint's 360-degree guarantee, so you can be 4imprint certain"
+  },
+  {
+   "start": 1792.71,
+   "end": 1797.47,
+   "text": "it'll arrive exactly as expected on time and with the care your brand deserves."
+  },
+  {
+   "start": 1797.47,
+   "end": 1801.63,
+   "text": "Because when the moment matters, the right gift speaks volumes, and the right partner"
+  },
+  {
+   "start": 1801.63,
+   "end": 1802.87,
+   "text": "makes it easy."
+  },
+  {
+   "start": 1802.87,
+   "end": 1807.07,
+   "text": "Explore gifting with purpose and certainty at 4imprint.com."
+  },
+  {
+   "start": 1807.07,
+   "end": 1808.07,
+   "text": "4imprint."
+  },
+  {
+   "start": 1808.07,
+   "end": 1809.07,
+   "text": "4Certain."
+  },
+  {
+   "start": 1809.07,
+   "end": 1814.67,
+   "text": "Setting aside democracy and all that, what's happening with oil and the corporate money"
+  },
+  {
+   "start": 1814.67,
+   "end": 1821.23,
+   "text": "and is there evidence of the oil majors, etc. actually looking at Venezuela as a real opportunity"
+  },
+  {
+   "start": 1821.23,
+   "end": 1826.47,
+   "text": "for growth or is the story still that all the talented petroleum engineers left a long"
+  },
+  {
+   "start": 1826.47,
+   "end": 1830.75,
+   "text": "time ago, the infrastructure isn't in place, it's still too uncertain, it's mostly noise."
+  },
+  {
+   "start": 1830.75,
+   "end": 1832.19,
+   "text": "Where do you stand on that?"
+  },
+  {
+   "start": 1832.19,
+   "end": 1836.15,
+   "text": "The oil majors are looking, but they're not jumping it."
+  },
+  {
+   "start": 1836.15,
+   "end": 1837.15,
+   "text": "Chevron is in."
+  },
+  {
+   "start": 1837.15,
+   "end": 1840.47,
+   "text": "Chevron was in before Chevron will be in for the next 50 years."
+  },
+  {
+   "start": 1840.47,
+   "end": 1844.45,
+   "text": "The rest of the oil majors, including Exxon and Conoco, who were kicked out under the"
+  },
+  {
+   "start": 1844.45,
+   "end": 1846.79,
+   "text": "Chavez era, they're interested."
+  },
+  {
+   "start": 1846.79,
+   "end": 1848.63,
+   "text": "Venezuela is a sea of oil."
+  },
+  {
+   "start": 1848.63,
+   "end": 1850.95,
+   "text": "It would be a great place to go."
+  },
+  {
+   "start": 1850.95,
+   "end": 1857.07,
+   "text": "Nobody wants, none of the larger firms want to go into Venezuela prior to some sort of"
+  },
+  {
+   "start": 1857.07,
+   "end": 1860.33,
+   "text": "certainty that their contracts will be respected."
+  },
+  {
+   "start": 1860.33,
+   "end": 1866.21,
+   "text": "And so what you see instead are the NABAP, which is the company that Alejandro Bettencourt"
+  },
+  {
+   "start": 1866.21,
+   "end": 1867.21,
+   "text": "currently runs."
+  },
+  {
+   "start": 1867.21,
+   "end": 1869.21,
+   "text": "The companies that are going in are small."
+  },
+  {
+   "start": 1869.21,
+   "end": 1873.65,
+   "text": "They're not quite wildcatters, but they are the sort of companies that aren't there for"
+  },
+  {
+   "start": 1873.65,
+   "end": 1874.65,
+   "text": "the long run."
+  },
+  {
+   "start": 1874.65,
+   "end": 1876.45,
+   "text": "They're there for the quick deals."
+  },
+  {
+   "start": 1876.45,
+   "end": 1879.61,
+   "text": "And I think that as we look for, how is Venezuela going to recover?"
+  },
+  {
+   "start": 1879.61,
+   "end": 1881.13,
+   "text": "How is Venezuela going to rebuild?"
+  },
+  {
+   "start": 1881.13,
+   "end": 1885.81,
+   "text": "You're not going to rebuild with a company that has never done serious oil drilling elsewhere"
+  },
+  {
+   "start": 1885.81,
+   "end": 1886.89,
+   "text": "in the world."
+  },
+  {
+   "start": 1886.89,
+   "end": 1891.45,
+   "text": "And so one of the reasons to push for democracy in Venezuela is the fact that you do not get"
+  },
+  {
+   "start": 1891.45,
+   "end": 1895.85,
+   "text": "the oil majors to come in until they have that rule of law certainty and they know that"
+  },
+  {
+   "start": 1895.85,
+   "end": 1899.13,
+   "text": "a 10-year investment or a 30-year investment is going to be able to stick and not just"
+  },
+  {
+   "start": 1899.13,
+   "end": 1901.21,
+   "text": "change two years from now when the government changes."
+  },
+  {
+   "start": 1901.21,
+   "end": 1906.65,
+   "text": "Speaking of rule of law, I mentioned that headline that came out just before we started"
+  },
+  {
+   "start": 1906.65,
+   "end": 1911.65,
+   "text": "recording this, but The New York Times reporting that the U.S. is in negotiations for a potential"
+  },
+  {
+   "start": 1911.65,
+   "end": 1914.41,
+   "text": "military presence in Venezuela."
+  },
+  {
+   "start": 1914.41,
+   "end": 1916.17,
+   "text": "What does that actually mean?"
+  },
+  {
+   "start": 1916.17,
+   "end": 1919.85,
+   "text": "So as I understand it's a Stasiforces Agreement, which doesn't necessarily mean a permanent"
+  },
+  {
+   "start": 1919.85,
+   "end": 1921.73,
+   "text": "military base or military presence."
+  },
+  {
+   "start": 1921.73,
+   "end": 1926.57,
+   "text": "Instead, it would be an agreement for the US military to be there to train, to operate,"
+  },
+  {
+   "start": 1926.57,
+   "end": 1930.09,
+   "text": "to provide support, and maybe to engage in certain operations."
+  },
+  {
+   "start": 1930.09,
+   "end": 1934.05,
+   "text": "There was just an operation a couple days ago against an ELN camp near the Columbia"
+  },
+  {
+   "start": 1934.05,
+   "end": 1935.05,
+   "text": "border."
+  },
+  {
+   "start": 1935.05,
+   "end": 1937.73,
+   "text": "It looks like the US assisted the Venezuelan military in that."
+  },
+  {
+   "start": 1937.73,
+   "end": 1943.41,
+   "text": "The US wants these agreements so that we have legal certainty for what happens to the US"
+  },
+  {
+   "start": 1943.41,
+   "end": 1948.99,
+   "text": "when they are in country and the Trump administration would like that deal signed so that we can"
+  },
+  {
+   "start": 1949.39,
+   "end": 1952.59,
+   "text": "Feel more comfortable having US military presence in the region"
+  },
+  {
+   "start": 1952.59,
+   "end": 1956.27,
+   "text": "But it doesn't mean like a permanent base by any means. That's not how I read it"
+  },
+  {
+   "start": 1956.37,
+   "end": 1959.97,
+   "text": "They could change that tomorrow, but how I read it today is just a basic agreement"
+  },
+  {
+   "start": 1960.29,
+   "end": 1963.97,
+   "text": "What would happen if there were a free election held tomorrow in Venezuela?"
+  },
+  {
+   "start": 1963.97,
+   "end": 1965.97,
+   "text": "Maria Karina Machado would win."
+  },
+  {
+   "start": 1966.21,
+   "end": 1972.61,
+   "text": "Unambiguously? Yes. There's essentially no doubt that if you were to put Maria Karina Machado versus Delcey Rodriguez tomorrow in an election"
+  },
+  {
+   "start": 1972.61,
+   "end": 1978.13,
+   "text": "And better than 90%, assuming everything was free and fair, Maria Krimmachau wins."
+  },
+  {
+   "start": 1978.13,
+   "end": 1982.57,
+   "text": "And the odds go up the more you allow for Venezuelan expats to vote."
+  },
+  {
+   "start": 1982.57,
+   "end": 1985.73,
+   "text": "That's just inside of Venezuela, which I think is important to note."
+  },
+  {
+   "start": 1985.73,
+   "end": 1987.63,
+   "text": "There are a lot of Venezuelans who have left the country."
+  },
+  {
+   "start": 1987.63,
+   "end": 1991.05,
+   "text": "About a quarter of the population has left the country over the last 10 years."
+  },
+  {
+   "start": 1991.05,
+   "end": 1995.17,
+   "text": "Were she to become president at some point in the next couple of years?"
+  },
+  {
+   "start": 1995.17,
+   "end": 1996.85,
+   "text": "What would she do?"
+  },
+  {
+   "start": 1996.85,
+   "end": 2000.25,
+   "text": "What would substantively would be the change, of course?"
+  },
+  {
+   "start": 2000.25,
+   "end": 2002.39,
+   "text": "There's a lot to be done in Venezuela."
+  },
+  {
+   "start": 2002.39,
+   "end": 2006.91,
+   "text": "And so first off, she needs to consolidate her control with the military and the police."
+  },
+  {
+   "start": 2006.91,
+   "end": 2011.15,
+   "text": "And this is, I think, a big reason why the Trump administration didn't go with her originally"
+  },
+  {
+   "start": 2011.15,
+   "end": 2015.19,
+   "text": "is they weren't sure that she would have the respect of the armed forces."
+  },
+  {
+   "start": 2015.19,
+   "end": 2019.97,
+   "text": "I'm not defending their policy, but that was the reason that they gave was that they knew"
+  },
+  {
+   "start": 2019.97,
+   "end": 2022.81,
+   "text": "that Delcey Rodriguez would have control of the military and they weren't sure Machado"
+  },
+  {
+   "start": 2022.81,
+   "end": 2023.81,
+   "text": "would."
+  },
+  {
+   "start": 2023.81,
+   "end": 2026.39,
+   "text": "And so Machado has to show that she can control the security forces."
+  },
+  {
+   "start": 2026.39,
+   "end": 2028.75,
+   "text": "Then she needs to fix the economy."
+  },
+  {
+   "start": 2028.75,
+   "end": 2029.75,
+   "text": "And the economy is a wreck."
+  },
+  {
+   "start": 2029.75,
+   "end": 2034.85,
+   "text": "It's one of the biggest economic collapses in world history that we've seen in Venezuela."
+  },
+  {
+   "start": 2034.85,
+   "end": 2036.35,
+   "text": "That includes fixing the currency."
+  },
+  {
+   "start": 2036.35,
+   "end": 2037.97,
+   "text": "That includes getting new oil investments."
+  },
+  {
+   "start": 2037.97,
+   "end": 2041.55,
+   "text": "That includes fixing the economy outside of the oil economy as well."
+  },
+  {
+   "start": 2041.55,
+   "end": 2043.91,
+   "text": "There are other sectors that need to be fixed."
+  },
+  {
+   "start": 2043.91,
+   "end": 2045.63,
+   "text": "And she needs to restore democracy."
+  },
+  {
+   "start": 2045.63,
+   "end": 2048.23,
+   "text": "And that includes having multiple parties."
+  },
+  {
+   "start": 2048.23,
+   "end": 2052.35,
+   "text": "It can't just be the Chavistas and the opposition forever."
+  },
+  {
+   "start": 2052.35,
+   "end": 2055.67,
+   "text": "There should be a wider range of democratic parties."
+  },
+  {
+   "start": 2055.67,
+   "end": 2059.71,
+   "text": "And she needs to somehow restore the checks and balances, which means she probably will"
+  },
+  {
+   "start": 2059.71,
+   "end": 2062.27,
+   "text": "loses the next election or her party does."
+  },
+  {
+   "start": 2062.27,
+   "end": 2065.31,
+   "text": "And that's a really hard thing to ask any politician to do"
+  },
+  {
+   "start": 2065.31,
+   "end": 2069.91,
+   "text": "is to set up a system knowing that you may be creating"
+  },
+  {
+   "start": 2069.91,
+   "end": 2073.07,
+   "text": "the environment where your party loses"
+  },
+  {
+   "start": 2073.07,
+   "end": 2076.39,
+   "text": "because of how the political pendulum will work."
+  },
+  {
+   "start": 2076.39,
+   "end": 2079.67,
+   "text": "I know we implied in our intro that we weren't gonna talk"
+  },
+  {
+   "start": 2079.67,
+   "end": 2082.83,
+   "text": "about the US elections, North American elections,"
+  },
+  {
+   "start": 2082.83,
+   "end": 2085.31,
+   "text": "but you're a super forecaster."
+  },
+  {
+   "start": 2085.31,
+   "end": 2087.07,
+   "text": "We're recording this on November 3rd."
+  },
+  {
+   "start": 2087.07,
+   "end": 2090.55,
+   "text": "I kind of feel like we have to ask for an actual number."
+  },
+  {
+   "start": 2090.55,
+   "end": 2092.27,
+   "text": "So the Democrats are going to take the House."
+  },
+  {
+   "start": 2092.27,
+   "end": 2095.19,
+   "text": "We're recording this at 2.59 PM, November 3rd."
+  },
+  {
+   "start": 2095.19,
+   "end": 2097.51,
+   "text": "I am 96% certain the Democrats are going"
+  },
+  {
+   "start": 2097.51,
+   "end": 2098.79,
+   "text": "to take the House of Representatives."
+  },
+  {
+   "start": 2098.79,
+   "end": 2101.07,
+   "text": "I feel very confident in talking about what"
+  },
+  {
+   "start": 2101.07,
+   "end": 2103.75,
+   "text": "it means for the Democrats to take the House of Representatives."
+  },
+  {
+   "start": 2103.75,
+   "end": 2107.15,
+   "text": "The Senate is closer to a coin flip than Nate Silver, who"
+  },
+  {
+   "start": 2107.15,
+   "end": 2108.71,
+   "text": "you had on last week."
+  },
+  {
+   "start": 2108.71,
+   "end": 2111.51,
+   "text": "That said, the possibility for a blue wave is definitely there,"
+  },
+  {
+   "start": 2111.51,
+   "end": 2112.75,
+   "text": "but it's not certain yet."
+  },
+  {
+   "start": 2112.75,
+   "end": 2113.79,
+   "text": "So I can't make a call in the Senate,"
+  },
+  {
+   "start": 2113.79,
+   "end": 2115.47,
+   "text": "but I can definitely make a call in the House."
+  },
+  {
+   "start": 2115.47,
+   "end": 2116.95,
+   "text": "It's going Democratic."
+  },
+  {
+   "start": 2116.95,
+   "end": 2119.59,
+   "text": "Last question, what else should we be looking for,"
+  },
+  {
+   "start": 2119.59,
+   "end": 2121.75,
+   "text": "Latin America for the coming months?"
+  },
+  {
+   "start": 2121.75,
+   "end": 2123.63,
+   "text": "Any other elections coming up or anything?"
+  },
+  {
+   "start": 2123.63,
+   "end": 2125.15,
+   "text": "There are local elections in Ecuador."
+  },
+  {
+   "start": 2125.15,
+   "end": 2126.03,
+   "text": "That sounds really boring."
+  },
+  {
+   "start": 2126.03,
+   "end": 2128.07,
+   "text": "Like Mayor of Quito."
+  },
+  {
+   "start": 2128.07,
+   "end": 2131.59,
+   "text": "We'll do an episode on the run up or preview episode"
+  },
+  {
+   "start": 2131.59,
+   "end": 2132.87,
+   "text": "for the Mayor of Quito episode."
+  },
+  {
+   "start": 2132.87,
+   "end": 2133.99,
+   "text": "That sounds fun."
+  },
+  {
+   "start": 2133.99,
+   "end": 2136.71,
+   "text": "El Nino is hitting Ecuador right now"
+  },
+  {
+   "start": 2136.71,
+   "end": 2139.47,
+   "text": "and Ecuador two years ago had a series of blackouts"
+  },
+  {
+   "start": 2139.47,
+   "end": 2141.87,
+   "text": "and they just started having power outages right now,"
+  },
+  {
+   "start": 2141.87,
+   "end": 2143.75,
+   "text": "which is not good for local elections"
+  },
+  {
+   "start": 2143.75,
+   "end": 2145.15,
+   "text": "and how they're gonna function in Ecuador."
+  },
+  {
+   "start": 2145.15,
+   "end": 2146.87,
+   "text": "So we have local elections in Ecuador"
+  },
+  {
+   "start": 2146.87,
+   "end": 2149.09,
+   "text": "And then next year we get elections in Guatemala"
+  },
+  {
+   "start": 2149.09,
+   "end": 2151.03,
+   "text": "and elections in Argentina."
+  },
+  {
+   "start": 2151.03,
+   "end": 2152.71,
+   "text": "And everybody's gonna be watching the run up"
+  },
+  {
+   "start": 2152.71,
+   "end": 2155.03,
+   "text": "to the elections in Argentina because the start"
+  },
+  {
+   "start": 2155.03,
+   "end": 2158.51,
+   "text": "of this most recent right wing wave, if you wanna call it,"
+  },
+  {
+   "start": 2158.51,
+   "end": 2160.23,
+   "text": "that was Javier Malay."
+  },
+  {
+   "start": 2160.23,
+   "end": 2162.55,
+   "text": "And so whether Javier Malay can win re-election"
+  },
+  {
+   "start": 2162.55,
+   "end": 2164.87,
+   "text": "or Argentina goes towards a different path"
+  },
+  {
+   "start": 2164.87,
+   "end": 2167.75,
+   "text": "is going to start defining the next pendulum swing"
+  },
+  {
+   "start": 2167.75,
+   "end": 2169.59,
+   "text": "in Latin America."
+  },
+  {
+   "start": 2169.59,
+   "end": 2171.43,
+   "text": "All right, James Bosworth, thank you so much"
+  },
+  {
+   "start": 2171.43,
+   "end": 2173.07,
+   "text": "for coming back on the podcast."
+  },
+  {
+   "start": 2173.07,
+   "end": 2175.01,
+   "text": "Thanks for coming in studio."
+  },
+  {
+   "start": 2175.01,
+   "end": 2176.31,
+   "text": "Really appreciate you taking your time."
+  },
+  {
+   "start": 2176.31,
+   "end": 2189.83,
+   "text": "Thank you, I prefer."
+  },
+  {
+   "start": 2189.83,
+   "end": 2190.67,
+   "text": "That was fun."
+  },
+  {
+   "start": 2190.67,
+   "end": 2192.79,
+   "text": "I really like talking to James."
+  },
+  {
+   "start": 2192.79,
+   "end": 2194.41,
+   "text": "It actually makes a lot of sense."
+  },
+  {
+   "start": 2194.41,
+   "end": 2197.15,
+   "text": "The first round was an election about Lula,"
+  },
+  {
+   "start": 2197.15,
+   "end": 2199.31,
+   "text": "and then the second round was an election,"
+  },
+  {
+   "start": 2199.31,
+   "end": 2201.63,
+   "text": "a referendum on Bolsonaro."
+  },
+  {
+   "start": 2201.63,
+   "end": 2203.23,
+   "text": "Everything makes sense in hindsight."
+  },
+  {
+   "start": 2203.23,
+   "end": 2204.07,
+   "text": "No, no, I agree."
+  },
+  {
+   "start": 2204.07,
+   "end": 2204.91,
+   "text": "It's still really surprising"
+  },
+  {
+   "start": 2204.91,
+   "end": 2207.83,
+   "text": "like the prediction markets got it so, so wrong."
+  },
+  {
+   "start": 2207.83,
+   "end": 2209.71,
+   "text": "No, and of course we can all,"
+  },
+  {
+   "start": 2209.71,
+   "end": 2212.35,
+   "text": "that's James's story of how he got it wrong,"
+  },
+  {
+   "start": 2212.35,
+   "end": 2214.83,
+   "text": "but I kind of buy it as a,"
+  },
+  {
+   "start": 2214.83,
+   "end": 2217.71,
+   "text": "like sort of what would explain the electorate"
+  },
+  {
+   "start": 2217.71,
+   "end": 2219.55,
+   "text": "to shift in the short period of time."
+  },
+  {
+   "start": 2219.55,
+   "end": 2221.55,
+   "text": "It's like, oh, we don't like this little guy."
+  },
+  {
+   "start": 2221.55,
+   "end": 2223.19,
+   "text": "It's time for someone new."
+  },
+  {
+   "start": 2223.19,
+   "end": 2225.11,
+   "text": "And then it's like, oh, okay, a new guy wins."
+  },
+  {
+   "start": 2225.11,
+   "end": 2226.59,
+   "text": "Oh, yeah, but it's Bolsonaro."
+  },
+  {
+   "start": 2226.59,
+   "end": 2229.55,
+   "text": "And then the vote to turn it, it kind of makes sense to me."
+  },
+  {
+   "start": 2229.55,
+   "end": 2232.34,
+   "text": "Yeah, to me, the big question is like,"
+  },
+  {
+   "start": 2232.34,
+   "end": 2234.22,
+   "text": "what does this mean for the orange wave?"
+  },
+  {
+   "start": 2234.22,
+   "end": 2235.06,
+   "text": "Yeah, yeah."
+  },
+  {
+   "start": 2235.06,
+   "end": 2238.54,
+   "text": "And I take James's point that you have to deal with Trump"
+  },
+  {
+   "start": 2238.54,
+   "end": 2240.9,
+   "text": "in one way or another if you're South America,"
+  },
+  {
+   "start": 2240.9,
+   "end": 2243.82,
+   "text": "because he finds a way to sort of insert himself"
+  },
+  {
+   "start": 2243.82,
+   "end": 2244.98,
+   "text": "into everything."
+  },
+  {
+   "start": 2244.98,
+   "end": 2247.82,
+   "text": "But is that gonna be political?"
+  },
+  {
+   "start": 2247.82,
+   "end": 2252.22,
+   "text": "Like would aligning with him be as politically popular now"
+  },
+  {
+   "start": 2252.22,
+   "end": 2253.58,
+   "text": "as it used to be?"
+  },
+  {
+   "start": 2253.58,
+   "end": 2255.22,
+   "text": "Yeah, I know. That's the question."
+  },
+  {
+   "start": 2255.22,
+   "end": 2257.94,
+   "text": "Look, you know, at some point actually,"
+  },
+  {
+   "start": 2257.94,
+   "end": 2260.14,
+   "text": "we should do an episode on super forecasting,"
+  },
+  {
+   "start": 2260.14,
+   "end": 2261.46,
+   "text": "which I don't know anything about."
+  },
+  {
+   "start": 2261.46,
+   "end": 2263.54,
+   "text": "So it sounds like you're a super forecaster,"
+  },
+  {
+   "start": 2263.54,
+   "end": 2264.38,
+   "text": "what's your thing?"
+  },
+  {
+   "start": 2264.38,
+   "end": 2267.1,
+   "text": "Actually don't even, that's a whole subculture"
+  },
+  {
+   "start": 2267.1,
+   "end": 2268.74,
+   "text": "of people are really good at forecasting."
+  },
+  {
+   "start": 2268.74,
+   "end": 2272.9,
+   "text": "So I'm never going to doubt a super forecaster, you know?"
+  },
+  {
+   "start": 2272.9,
+   "end": 2274.78,
+   "text": "It's like, hey, I'm not one."
+  },
+  {
+   "start": 2274.78,
+   "end": 2277.02,
+   "text": "But I still find it hard to believe"
+  },
+  {
+   "start": 2277.02,
+   "end": 2280.74,
+   "text": "that there isn't a penalty in much of the world"
+  },
+  {
+   "start": 2280.74,
+   "end": 2283.82,
+   "text": "for being seen as too chummy with Trump at a time"
+  },
+  {
+   "start": 2283.82,
+   "end": 2287.58,
+   "text": "when Trump's war with Iran has driven up costs"
+  },
+  {
+   "start": 2287.58,
+   "end": 2289.34,
+   "text": "for everyone around the world."
+  },
+  {
+   "start": 2289.34,
+   "end": 2293.94,
+   "text": "I think like the polling for Nigel Frage, for example,"
+  },
+  {
+   "start": 2293.94,
+   "end": 2295.5,
+   "text": "in the UK has been sliding"
+  },
+  {
+   "start": 2295.5,
+   "end": 2299.3,
+   "text": "because he's seen has been too Trump friendly, et cetera."
+  },
+  {
+   "start": 2299.3,
+   "end": 2301.26,
+   "text": "So who knows what's gonna happen there."
+  },
+  {
+   "start": 2301.26,
+   "end": 2303.62,
+   "text": "It still makes you want, yeah, like, yes,"
+  },
+  {
+   "start": 2303.62,
+   "end": 2307.46,
+   "text": "In the meantime, you got to work with them, of course, and you have to take them seriously,"
+  },
+  {
+   "start": 2307.46,
+   "end": 2308.46,
+   "text": "et cetera."
+  },
+  {
+   "start": 2308.46,
+   "end": 2312.54,
+   "text": "But from a electoral standpoint, I don't know."
+  },
+  {
+   "start": 2312.54,
+   "end": 2319.98,
+   "text": "I find it implausible that anyone really wants to be too friendly with him going into"
+  },
+  {
+   "start": 2319.98,
+   "end": 2320.98,
+   "text": "an election."
+  },
+  {
+   "start": 2320.98,
+   "end": 2322.98,
+   "text": "Except maybe for Rodriguez."
+  },
+  {
+   "start": 2322.98,
+   "end": 2325.02,
+   "text": "Except maybe for Rodriguez."
+  },
+  {
+   "start": 2325.02,
+   "end": 2326.02,
+   "text": "Right."
+  },
+  {
+   "start": 2326.02,
+   "end": 2327.02,
+   "text": "It's all very strange."
+  },
+  {
+   "start": 2327.02,
+   "end": 2328.02,
+   "text": "All right."
+  },
+  {
+   "start": 2328.02,
+   "end": 2329.02,
+   "text": "Shall we leave it there?"
+  },
+  {
+   "start": 2329.02,
+   "end": 2330.02,
+   "text": "Let's leave it there."
+  },
+  {
+   "start": 2330.02,
+   "end": 2331.3,
+   "text": "This has been another episode of the OddLots podcast."
+  },
+  {
+   "start": 2331.3,
+   "end": 2332.46,
+   "text": "I'm Tracy Allaway."
+  },
+  {
+   "start": 2332.46,
+   "end": 2334.42,
+   "text": "You can follow me at Tracy Allaway."
+  },
+  {
+   "start": 2334.42,
+   "end": 2335.66,
+   "text": "And I'm Joe Weisenthal."
+  },
+  {
+   "start": 2335.66,
+   "end": 2337.3,
+   "text": "You can follow me at the Stallworth."
+  },
+  {
+   "start": 2337.3,
+   "end": 2340.86,
+   "text": "Follow our guest, James Bosworth, at Blogging by Bos."
+  },
+  {
+   "start": 2340.86,
+   "end": 2342.7,
+   "text": "Follow our producers, Carmen Rodriguez,"
+  },
+  {
+   "start": 2342.7,
+   "end": 2345.14,
+   "text": "at Carmen Armit-Dash-Obenet at DashBot."
+  },
+  {
+   "start": 2345.14,
+   "end": 2346.78,
+   "text": "Kale Brooks at Kale Brooks,"
+  },
+  {
+   "start": 2346.78,
+   "end": 2349.26,
+   "text": "and Kevin Lozano at Kevin Lloyd Lozano."
+  },
+  {
+   "start": 2349.26,
+   "end": 2352.02,
+   "text": "And of course you can chat about all of these topics 24-7"
+  },
+  {
+   "start": 2352.02,
+   "end": 2355.62,
+   "text": "in our Discord, discord.gg slash odd logs."
+  },
+  {
+   "start": 2355.62,
+   "end": 2357.22,
+   "text": "And for more odd logs content,"
+  },
+  {
+   "start": 2357.22,
+   "end": 2358.38,
+   "text": "check out our daily newsletter,"
+  },
+  {
+   "start": 2358.38,
+   "end": 2361.66,
+   "text": "which you can find at bloomberg.com slash odd logs."
+  },
+  {
+   "start": 2361.66,
+   "end": 2366.26,
+   "text": "And if you enjoyed this conversation, if you like it when we talk Latin American politics,"
+  },
+  {
+   "start": 2366.26,
+   "end": 2372.02,
+   "text": "if you want us to do a regional Ecuador election episode, then please leave us a positive review"
+  },
+  {
+   "start": 2372.02,
+   "end": 2374.58,
+   "text": "on your favorite podcast platform."
+  },
+  {
+   "start": 2374.58,
+   "end": 2379.86,
+   "text": "And if you're watching on video, then please leave a comment or like or better yet, subscribe."
+  },
+  {
+   "start": 2379.86,
+   "end": 2384.1,
+   "text": "And remember, if you're a Bloomberg subscriber, you can listen to all of our episodes absolutely"
+  },
+  {
+   "start": 2384.1,
+   "end": 2385.1,
+   "text": "ad-free."
+  },
+  {
+   "start": 2385.1,
+   "end": 2389.46,
+   "text": "All you need to do is find the Bloomberg channel on Apple Podcasts and follow the instructions"
+  },
+  {
+   "start": 2389.46,
+   "end": 2390.46,
+   "text": "there."
+  },
+  {
+   "start": 2390.46,
+   "end": 2390.96,
+   "text": "Thanks for joining."
+  },
+  {
+   "start": 2422.28,
+   "end": 2423.28,
+   "text": "Games on a break?"
+  },
+  {
+   "start": 2423.28,
+   "end": 2426.28,
+   "text": "Instead of doom-scrolling, try Rips on Underdog."
+  },
+  {
+   "start": 2426.28,
+   "end": 2429.78,
+   "text": "Rip real player cards worth real money right there in the app."
+  },
+  {
+   "start": 2429.78,
+   "end": 2431.78,
+   "text": "It's instant cash in the palm of your hand."
+  },
+  {
+   "start": 2431.78,
+   "end": 2436.28,
+   "text": "Buy a digital pack, rip it open on your phone, and reveal a real physical card."
+  },
+  {
+   "start": 2436.28,
+   "end": 2440.28,
+   "text": "Football, basketball, Pokemon, yes, Pokemon, and more."
+  },
+  {
+   "start": 2440.28,
+   "end": 2443.28,
+   "text": "The best part? Pack start at just $5."
+  },
+  {
+   "start": 2443.28,
+   "end": 2447.78,
+   "text": "And if you pull something you don't want to let go of just yet, have it shipped straight to your door."
+  },
+  {
+   "start": 2447.78,
+   "end": 2448.78,
+   "text": "Want the cash?"
+  },
+  {
+   "start": 2448.78,
+   "end": 2452.66,
+   "text": "Sell it back instantly at 100% of its fair market value."
+  },
+  {
+   "start": 2452.66,
+   "end": 2457.92,
+   "text": "No listing, no negotiating, no stranger asking if you'll trade it for a used jet ski."
+  },
+  {
+   "start": 2457.92,
+   "end": 2459.78,
+   "text": "Even though jet skis are super sick."
+  },
+  {
+   "start": 2459.78,
+   "end": 2460.78,
+   "text": "Best part?"
+  },
+  {
+   "start": 2460.78,
+   "end": 2467.38,
+   "text": "There are some serious grails in the mix, with maximum card values reaching up to $125,000"
+  },
+  {
+   "start": 2467.38,
+   "end": 2468.54,
+   "text": "depending on your pack tier."
+  },
+  {
+   "start": 2468.54,
+   "end": 2472.44,
+   "text": "You can also check the live odds and see what you could pull before your rip, and what other"
+  },
+  {
+   "start": 2472.44,
+   "end": 2474.64,
+   "text": "cards are being pulled by fans."
+  },
+  {
+   "start": 2474.64,
+   "end": 2476.82,
+   "text": "Download Underdog and get in on the chase."
+  },
+  {
+   "start": 2476.82,
+   "end": 2484.58,
+   "text": "five free rips packs when you deposit $5. Real rips, real cards, real cash. Only on Underdog."
+  },
+  {
+   "start": 2484.58,
+   "end": 2488.58,
+   "text": "Unleash your dog. 18 plus terms apply. Top Grails are extremely rare."
+  },
+  {
+   "start": 2488.58,
+   "end": 2494.42,
+   "text": "This message comes from Edward Jones, where they believe Rich is about more than saving and investing."
+  },
+  {
+   "start": 2494.42,
+   "end": 2499.06,
+   "text": "It's also taking care of what gives your life meaning. That's why your dedicated financial"
+  },
+  {
+   "start": 2499.06,
+   "end": 2504.58,
+   "text": "advisor meets you where you are with personalized financial strategies that help protect what matters"
+  },
+  {
+   "start": 2504.58,
+   "end": 2508.18,
+   "text": "so you can preserve your progress while creating a path forward."
+  },
+  {
+   "start": 2508.18,
+   "end": 2510.82,
+   "text": "The key to being rich is knowing what counts."
+  },
+  {
+   "start": 2510.82,
+   "end": 2513.46,
+   "text": "Edward Jones, member SIPC."
+  },
+  {
+   "start": 2513.46,
+   "end": 2515.3,
+   "text": "If you listen to financial news,"
+  },
+  {
+   "start": 2515.3,
+   "end": 2518.5,
+   "text": "you know a lot of time to spend thinking about what's next."
+  },
+  {
+   "start": 2518.5,
+   "end": 2520.02,
+   "text": "The next opportunity."
+  },
+  {
+   "start": 2520.02,
+   "end": 2521.54,
+   "text": "The next investment."
+  },
+  {
+   "start": 2521.54,
+   "end": 2522.82,
+   "text": "The next move."
+  },
+  {
+   "start": 2522.82,
+   "end": 2527.46,
+   "text": "But sometimes what matters most is being ready for what you never saw coming."
+  },
+  {
+   "start": 2527.46,
+   "end": 2529.14,
+   "text": "For more than 75 years,"
+  },
+  {
+   "start": 2529.14,
+   "end": 2531.94,
+   "text": "Cincinnati Insurance has worked with independent agents"
+  },
+  {
+   "start": 2531.94,
+   "end": 2533.54,
+   "text": "to help protect businesses,"
+  },
+  {
+   "start": 2533.54,
+   "end": 2535.78,
+   "text": "homes, valuables, and more."
+  },
+  {
+   "start": 2535.78,
+   "end": 2539.62,
+   "text": "Because planning for the future isn't only about knowing what's next."
+  },
+  {
+   "start": 2539.62,
+   "end": 2543.14,
+   "text": "It's about making sure you're ready for what you can't predict."
+  },
+  {
+   "start": 2543.14,
+   "end": 2546.18,
+   "text": "Let Cincinnati Insurance make your bad day better."
+  },
+  {
+   "start": 2546.18,
+   "end": 2550.26,
+   "text": "Find an independent agent at CINFIN.com."
+  },
+  {
+   "start": 2550.26,
+   "end": 2552.82,
+   "text": "Fall in love with Fiji. Paradise is calling."
+  },
+  {
+   "start": 2552.82,
+   "end": 2556.98,
+   "text": "Fly direct with Fiji Airways, your gateway to the heart of the South Pacific."
+  },
+  {
+   "start": 2556.98,
+   "end": 2559.7,
+   "text": "With the Apex World Class award-winning airline"
+  },
+  {
+   "start": 2559.7,
+   "end": 2563.54,
+   "text": "and offering exceptional service and comfort from the moment you step on board."
+  },
+  {
+   "start": 2563.54,
+   "end": 2568.46,
+   "text": "Whether you're traveling for adventure or relaxation, your journey is part of the experience."
+  },
+  {
+   "start": 2568.46,
+   "end": 2572.5,
+   "text": "As a One World Alliance member and American Airlines Advantage Program partner, your"
+  },
+  {
+   "start": 2572.5,
+   "end": 2575.02,
+   "text": "miles go further across the South Pacific."
+  },
+  {
+   "start": 2575.02,
+   "end": 2577.46,
+   "text": "Visit FijiAirways.com today."
+  },
+  {
+   "start": 2577.46,
+   "end": 2578.58,
+   "text": "Conditions apply!"
+  }
+ ],
+ "seconds": 114.1,
+ "file": "odd-lots__james-bosworth-on-what-comes-after-lula-s/take1.mp3",
+ "model": "small"
+}

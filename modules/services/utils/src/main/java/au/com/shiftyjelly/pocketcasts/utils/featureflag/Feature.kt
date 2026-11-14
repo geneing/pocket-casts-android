@@ -297,6 +297,15 @@ enum class Feature(
         hasDevToggle = true,
         addedOn = LocalDate.parse("2026-05-12"),
     ),
+    AD_SKIPPING(
+        key = "ad_skipping",
+        title = "Skip ads and promotions",
+        defaultValue = isDebugOrPrototypeBuild,
+        tier = FeatureTier.Free,
+        hasFirebaseRemoteFlag = true,
+        hasDevToggle = true,
+        addedOn = LocalDate.parse("2026-11-10"),
+    ),
     SYNCED_TRANSCRIPTS(
         key = "synced_transcripts",
         title = "Synced transcripts with playback timing",

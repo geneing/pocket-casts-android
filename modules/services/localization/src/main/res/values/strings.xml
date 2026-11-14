@@ -519,6 +519,11 @@
     <string name="player_effects_trim_silence">Trim Silence</string>
     <string name="player_effects_voices_sound_louder">Voices sound louder</string>
     <string name="player_effects_volume_boost">Volume Boost</string>
+    <string name="player_effects_skip_ads">Skip Ads</string>
+    <string name="player_effects_skip_ads_detail_off">Automatically skip ads and sponsor reads in episodes</string>
+    <string name="player_effects_skip_ads_detail_on">Ads and sponsor reads are skipped automatically. Turn off to hear them.</string>
+    <string name="player_skip_ad">Skip ad</string>
+    <string name="player_ad_skipped">Skipped %1$s of ads</string>
     <string name="player_end_playback_clear_up_next">Close and clear Up Next</string>
     <string name="player_more_actions">More actions</string>
     <string name="player_notification_skip_back">Back %d secs</string>
@@ -2568,6 +2573,7 @@
     <string name="error_transcript_format_not_supported">Sorry, but this transcript format is not supported: %s</string>
     <string name="error_transcript_failed_to_parse">Sorry, but something went wrong while parsing this transcript.</string>
     <string name="transcript_empty">Transcript is empty.</string>
+    <string name="transcript_not_available">No transcript for this episode yet</string>
     <string name="transcript_open">Open transcript</string>
     <string name="transcript_close">Close transcript</string>
     <string name="transcript_search">Search transcript</string>

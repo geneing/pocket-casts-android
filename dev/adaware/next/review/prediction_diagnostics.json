@@ -1,0 +1,5433 @@
+{
+  "semantic": {
+    "strict": {
+      "tp": 17,
+      "fp": 112,
+      "fn": 75,
+      "precision": 0.13178294573643412,
+      "recall": 0.18478260869565216
+    },
+    "gold_count": 92,
+    "predicted_count": 129,
+    "gold_zero_overlap": 12,
+    "gold_below_20pct_coverage": 15,
+    "gold_at_least_80pct_coverage": 36,
+    "gold_multiple_overlapping_predictions": 8,
+    "predictions_zero_ad_overlap": 41,
+    "predictions_below_20pct_ad": 48,
+    "median_worst_edge_error_for_overlapping_gold": 33.9,
+    "per_gold": [
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "gold": [
+          1594.0,
+          1628.5
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.2406,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1496.54,
+          1639.96
+        ],
+        "start_error": -97.46,
+        "end_error": 11.46
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "gold": [
+          2327.75,
+          2441.5
+        ],
+        "coverage": 0.8935,
+        "best_iou": 0.767,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2309.0,
+          2429.38
+        ],
+        "start_error": -18.75,
+        "end_error": -12.12
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "gold": [
+          1497.24,
+          1534.19
+        ],
+        "coverage": 0.2227,
+        "best_iou": 0.0581,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1525.96,
+          1638.82
+        ],
+        "start_error": 28.72,
+        "end_error": 104.63
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "gold": [
+          2328.0,
+          2403.0
+        ],
+        "coverage": 0.8507,
+        "best_iou": 0.8482,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2339.2,
+          2403.22
+        ],
+        "start_error": 11.2,
+        "end_error": 0.22
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "gold": [
+          1497.24,
+          1534.19
+        ],
+        "coverage": 0.2227,
+        "best_iou": 0.0581,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1525.96,
+          1638.82
+        ],
+        "start_error": 28.72,
+        "end_error": 104.63
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "gold": [
+          2328.25,
+          2423.5
+        ],
+        "coverage": 0.7203,
+        "best_iou": 0.7203,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2353.29,
+          2421.9
+        ],
+        "start_error": 25.04,
+        "end_error": -1.6
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "gold": [
+          29.01,
+          178.54
+        ],
+        "coverage": 0.6506,
+        "best_iou": 0.6506,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          46.18,
+          143.47
+        ],
+        "start_error": 17.17,
+        "end_error": -35.07
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "gold": [
+          1527.16,
+          1654.73
+        ],
+        "coverage": 0.4755,
+        "best_iou": 0.4755,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1589.85,
+          1650.51
+        ],
+        "start_error": 62.69,
+        "end_error": -4.22
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "gold": [
+          2277.08,
+          2338.96
+        ],
+        "coverage": 0.5688,
+        "best_iou": 0.5688,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2298.7,
+          2333.9
+        ],
+        "start_error": 21.62,
+        "end_error": -5.06
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "gold": [
+          3056.13,
+          3165.41
+        ],
+        "coverage": 0.2754,
+        "best_iou": 0.2754,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          3088.05,
+          3118.15
+        ],
+        "start_error": 31.92,
+        "end_error": -47.26
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "gold": [
+          29.01,
+          190.71
+        ],
+        "coverage": 0.1771,
+        "best_iou": 0.1771,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          129.69,
+          158.33
+        ],
+        "start_error": 100.68,
+        "end_error": -32.38
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "gold": [
+          1577.09,
+          1718.56
+        ],
+        "coverage": 0.7928,
+        "best_iou": 0.7928,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1595.48,
+          1707.64
+        ],
+        "start_error": 18.39,
+        "end_error": -10.92
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "gold": [
+          2340.59,
+          2439.31
+        ],
+        "coverage": 0.8302,
+        "best_iou": 0.8302,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2354.25,
+          2436.21
+        ],
+        "start_error": 13.66,
+        "end_error": -3.1
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "gold": [
+          3156.68,
+          3265.91
+        ],
+        "coverage": 0.0,
+        "best_iou": 0.0,
+        "overlapping_predictions": 0,
+        "best_prediction": [
+          129.69,
+          158.33
+        ],
+        "start_error": null,
+        "end_error": null
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "gold": [
+          29.03,
+          208.92
+        ],
+        "coverage": 0.6195,
+        "best_iou": 0.612,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          26.81,
+          140.48
+        ],
+        "start_error": -2.22,
+        "end_error": -68.44
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "gold": [
+          1556.56,
+          1725.04
+        ],
+        "coverage": 0.7986,
+        "best_iou": 0.7986,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1587.02,
+          1721.56
+        ],
+        "start_error": 30.46,
+        "end_error": -3.48
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "gold": [
+          2354.25,
+          2406.5
+        ],
+        "coverage": 0.0,
+        "best_iou": 0.0,
+        "overlapping_predictions": 0,
+        "best_prediction": [
+          26.81,
+          140.48
+        ],
+        "start_error": null,
+        "end_error": null
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "gold": [
+          3176.21,
+          3256.39
+        ],
+        "coverage": 0.0,
+        "best_iou": 0.0,
+        "overlapping_predictions": 0,
+        "best_prediction": [
+          26.81,
+          140.48
+        ],
+        "start_error": null,
+        "end_error": null
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "gold": [
+          1451.13,
+          1500.82
+        ],
+        "coverage": 0.1183,
+        "best_iou": 0.0577,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1494.94,
+          1553.06
+        ],
+        "start_error": 43.81,
+        "end_error": 52.24
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "gold": [
+          3017.7,
+          3120.0
+        ],
+        "coverage": 0.7646,
+        "best_iou": 0.4163,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          3017.7,
+          3060.29
+        ],
+        "start_error": 0.0,
+        "end_error": -59.71
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "gold": [
+          4224.5,
+          4353.84
+        ],
+        "coverage": 0.4013,
+        "best_iou": 0.4013,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          4301.94,
+          4353.84
+        ],
+        "start_error": 77.44,
+        "end_error": 0.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "gold": [
+          1454.0,
+          1485.5
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.2742,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1402.51,
+          1517.41
+        ],
+        "start_error": -51.49,
+        "end_error": 31.91
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "gold": [
+          3000.6,
+          3119.7
+        ],
+        "coverage": 0.2944,
+        "best_iou": 0.2944,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          3082.2,
+          3117.26
+        ],
+        "start_error": 81.6,
+        "end_error": -2.44
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "gold": [
+          4224.5,
+          4354.9
+        ],
+        "coverage": 0.9643,
+        "best_iou": 0.9643,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          4229.12,
+          4354.86
+        ],
+        "start_error": 4.62,
+        "end_error": -0.04
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "gold": [
+          1451.13,
+          1500.82
+        ],
+        "coverage": 0.1183,
+        "best_iou": 0.0577,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1494.94,
+          1553.06
+        ],
+        "start_error": 43.81,
+        "end_error": 52.24
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "gold": [
+          3017.7,
+          3120.0
+        ],
+        "coverage": 0.7646,
+        "best_iou": 0.4163,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          3017.7,
+          3060.29
+        ],
+        "start_error": 0.0,
+        "end_error": -59.71
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "gold": [
+          4224.5,
+          4353.84
+        ],
+        "coverage": 0.4013,
+        "best_iou": 0.3982,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          4301.94,
+          4354.84
+        ],
+        "start_error": 77.44,
+        "end_error": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "gold": [
+          0.0,
+          31.34
+        ],
+        "coverage": 0.9202,
+        "best_iou": 0.9202,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          28.84
+        ],
+        "start_error": 0.0,
+        "end_error": -2.5
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "gold": [
+          153.32,
+          247.55
+        ],
+        "coverage": 0.4119,
+        "best_iou": 0.3859,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          146.99,
+          192.13
+        ],
+        "start_error": -6.33,
+        "end_error": -55.42
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "gold": [
+          1236.95,
+          1331.47
+        ],
+        "coverage": 0.4655,
+        "best_iou": 0.4169,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1225.94,
+          1280.95
+        ],
+        "start_error": -11.01,
+        "end_error": -50.52
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "gold": [
+          2502.88,
+          2595.09
+        ],
+        "coverage": 0.3188,
+        "best_iou": 0.2807,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2490.37,
+          2532.28
+        ],
+        "start_error": -12.51,
+        "end_error": -62.81
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "gold": [
+          2677.34,
+          2708.64
+        ],
+        "coverage": 1.0,
+        "best_iou": 1.0,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2677.34,
+          2708.64
+        ],
+        "start_error": 0.0,
+        "end_error": 0.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "gold": [
+          0.0,
+          36.68
+        ],
+        "coverage": 0.7863,
+        "best_iou": 0.7863,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          28.84
+        ],
+        "start_error": 0.0,
+        "end_error": -7.84
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "gold": [
+          152.0,
+          250.31
+        ],
+        "coverage": 0.2925,
+        "best_iou": 0.2784,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          146.99,
+          180.76
+        ],
+        "start_error": -5.01,
+        "end_error": -69.55
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "gold": [
+          1225.9,
+          1331.51
+        ],
+        "coverage": 0.3779,
+        "best_iou": 0.3779,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1253.34,
+          1293.25
+        ],
+        "start_error": 27.44,
+        "end_error": -38.26
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "gold": [
+          2490.5,
+          2597.3
+        ],
+        "coverage": 0.3766,
+        "best_iou": 0.3766,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2526.92,
+          2567.14
+        ],
+        "start_error": 36.42,
+        "end_error": -30.16
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "gold": [
+          2677.4,
+          2708.64
+        ],
+        "coverage": 0.8572,
+        "best_iou": 0.5198,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2657.12,
+          2704.18
+        ],
+        "start_error": -20.28,
+        "end_error": -4.46
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "gold": [
+          0.0,
+          28.5
+        ],
+        "coverage": 0.0,
+        "best_iou": 0.0,
+        "overlapping_predictions": 0,
+        "best_prediction": [
+          144.16,
+          178.85
+        ],
+        "start_error": null,
+        "end_error": null
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "gold": [
+          151.49,
+          248.8
+        ],
+        "coverage": 0.2812,
+        "best_iou": 0.2615,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          144.16,
+          178.85
+        ],
+        "start_error": -7.33,
+        "end_error": -69.95
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "gold": [
+          1225.9,
+          1332.0
+        ],
+        "coverage": 0.2647,
+        "best_iou": 0.2629,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1303.92,
+          1332.7
+        ],
+        "start_error": 78.02,
+        "end_error": 0.7
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "gold": [
+          2501.6,
+          2598.1
+        ],
+        "coverage": 0.286,
+        "best_iou": 0.2513,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2488.28,
+          2529.2
+        ],
+        "start_error": -13.32,
+        "end_error": -68.9
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "gold": [
+          2675.97,
+          2707.35
+        ],
+        "coverage": 0.87,
+        "best_iou": 0.5341,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2656.24,
+          2703.27
+        ],
+        "start_error": -19.73,
+        "end_error": -4.08
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "gold": [
+          13.75,
+          81.75
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.6671,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.46,
+          102.4
+        ],
+        "start_error": -13.29,
+        "end_error": 20.65
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "gold": [
+          1019.26,
+          1117.0
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.679,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1010.3,
+          1154.25
+        ],
+        "start_error": -8.96,
+        "end_error": 37.25
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "gold": [
+          2422.0,
+          2603.25
+        ],
+        "coverage": 0.8991,
+        "best_iou": 0.8991,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2440.17,
+          2603.14
+        ],
+        "start_error": 18.17,
+        "end_error": -0.11
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "gold": [
+          3690.25,
+          3835.5
+        ],
+        "coverage": 0.9136,
+        "best_iou": 0.9136,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          3690.61,
+          3823.31
+        ],
+        "start_error": 0.36,
+        "end_error": -12.19
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "gold": [
+          14.5,
+          80.0
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.8235,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.46,
+          80.0
+        ],
+        "start_error": -14.04,
+        "end_error": 0.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "gold": [
+          956.78,
+          1145.32
+        ],
+        "coverage": 0.4526,
+        "best_iou": 0.3437,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          1008.34,
+          1073.14
+        ],
+        "start_error": 51.56,
+        "end_error": -72.18
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "gold": [
+          2415.18,
+          2611.55
+        ],
+        "coverage": 0.688,
+        "best_iou": 0.6497,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2403.62,
+          2550.28
+        ],
+        "start_error": -11.56,
+        "end_error": -61.27
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "gold": [
+          11.75,
+          70.0
+        ],
+        "coverage": 0.4726,
+        "best_iou": 0.3207,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          44.48,
+          91.32
+        ],
+        "start_error": 32.73,
+        "end_error": 21.32
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "gold": [
+          1006.97,
+          1143.0
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.9445,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          999.25,
+          1143.27
+        ],
+        "start_error": -7.72,
+        "end_error": 0.27
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "gold": [
+          2410.95,
+          2648.6
+        ],
+        "coverage": 0.7917,
+        "best_iou": 0.6627,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          2429.5,
+          2587.0
+        ],
+        "start_error": 18.55,
+        "end_error": -61.6
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "gold": [
+          3703.46,
+          3850.0
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.8999,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          3687.18,
+          3850.02
+        ],
+        "start_error": -16.28,
+        "end_error": 0.02
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "gold": [
+          0.11,
+          15.81
+        ],
+        "coverage": 0.0,
+        "best_iou": 0.0,
+        "overlapping_predictions": 0,
+        "best_prediction": [
+          38.98,
+          83.22
+        ],
+        "start_error": null,
+        "end_error": null
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "gold": [
+          273.13,
+          338.17
+        ],
+        "coverage": 0.8032,
+        "best_iou": 0.7611,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          285.93,
+          341.77
+        ],
+        "start_error": 12.8,
+        "end_error": 3.6
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "gold": [
+          1099.66,
+          1188.87
+        ],
+        "coverage": 0.5112,
+        "best_iou": 0.5112,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1140.71,
+          1186.31
+        ],
+        "start_error": 41.05,
+        "end_error": -2.56
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "gold": [
+          1620.6,
+          1656.36
+        ],
+        "coverage": 0.7855,
+        "best_iou": 0.7855,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1628.27,
+          1656.36
+        ],
+        "start_error": 7.67,
+        "end_error": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "gold": [
+          0.0,
+          19.72
+        ],
+        "coverage": 0.7525,
+        "best_iou": 0.1846,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          4.88,
+          80.4
+        ],
+        "start_error": 4.88,
+        "end_error": 60.68
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "gold": [
+          274.67,
+          337.0
+        ],
+        "coverage": 0.8678,
+        "best_iou": 0.7841,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          282.91,
+          343.65
+        ],
+        "start_error": 8.24,
+        "end_error": 6.65
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "gold": [
+          1099.13,
+          1161.99
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.3969,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1003.6,
+          1161.99
+        ],
+        "start_error": -95.53,
+        "end_error": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "gold": [
+          1598.78,
+          1649.49
+        ],
+        "coverage": 0.0,
+        "best_iou": 0.0,
+        "overlapping_predictions": 0,
+        "best_prediction": [
+          4.88,
+          80.4
+        ],
+        "start_error": null,
+        "end_error": null
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "gold": [
+          0.0,
+          14.84
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.6326,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          23.46
+        ],
+        "start_error": 0.0,
+        "end_error": 8.62
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "gold": [
+          272.08,
+          338.23
+        ],
+        "coverage": 0.8827,
+        "best_iou": 0.7974,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          279.84,
+          345.31
+        ],
+        "start_error": 7.76,
+        "end_error": 7.08
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "gold": [
+          1099.85,
+          1167.49
+        ],
+        "coverage": 0.924,
+        "best_iou": 0.5767,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1059.12,
+          1162.35
+        ],
+        "start_error": -40.73,
+        "end_error": -5.14
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "gold": [
+          1598.54,
+          1644.94
+        ],
+        "coverage": 0.9526,
+        "best_iou": 0.9526,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1598.54,
+          1642.74
+        ],
+        "start_error": 0.0,
+        "end_error": -2.2
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "0",
+        "gold": [
+          0.0,
+          91.8
+        ],
+        "coverage": 0.5795,
+        "best_iou": 0.5795,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          9.2,
+          62.4
+        ],
+        "start_error": 9.2,
+        "end_error": -29.4
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "0",
+        "gold": [
+          946.25,
+          963.5
+        ],
+        "coverage": 0.0,
+        "best_iou": 0.0,
+        "overlapping_predictions": 0,
+        "best_prediction": [
+          9.2,
+          62.4
+        ],
+        "start_error": null,
+        "end_error": null
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "0",
+        "gold": [
+          1801.62,
+          1971.92
+        ],
+        "coverage": 0.6539,
+        "best_iou": 0.6539,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1860.56,
+          1971.92
+        ],
+        "start_error": 58.94,
+        "end_error": 0.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "gold": [
+          0.0,
+          91.8
+        ],
+        "coverage": 0.5795,
+        "best_iou": 0.5795,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          9.2,
+          62.4
+        ],
+        "start_error": 9.2,
+        "end_error": -29.4
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "gold": [
+          943.87,
+          985.76
+        ],
+        "coverage": 0.0,
+        "best_iou": 0.0,
+        "overlapping_predictions": 0,
+        "best_prediction": [
+          9.2,
+          62.4
+        ],
+        "start_error": null,
+        "end_error": null
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "gold": [
+          1816.64,
+          1986.77
+        ],
+        "coverage": 0.5913,
+        "best_iou": 0.4637,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          1849.87,
+          1928.76
+        ],
+        "start_error": 33.23,
+        "end_error": -58.01
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "2",
+        "gold": [
+          0.0,
+          140.66
+        ],
+        "coverage": 0.9346,
+        "best_iou": 0.9346,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          9.2,
+          140.66
+        ],
+        "start_error": 9.2,
+        "end_error": 0.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "2",
+        "gold": [
+          993.48,
+          1035.35
+        ],
+        "coverage": 0.0,
+        "best_iou": 0.0,
+        "overlapping_predictions": 0,
+        "best_prediction": [
+          9.2,
+          140.66
+        ],
+        "start_error": null,
+        "end_error": null
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "2",
+        "gold": [
+          1933.75,
+          2009.5
+        ],
+        "coverage": 0.7175,
+        "best_iou": 0.711,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1954.98,
+          2008.84
+        ],
+        "start_error": 21.23,
+        "end_error": -0.66
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "gold": [
+          0.0,
+          29.56
+        ],
+        "coverage": 1.0,
+        "best_iou": 1.0,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          29.56
+        ],
+        "start_error": 0.0,
+        "end_error": 0.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "gold": [
+          714.91,
+          812.01
+        ],
+        "coverage": 0.7751,
+        "best_iou": 0.4309,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          770.17,
+          812.01
+        ],
+        "start_error": 55.26,
+        "end_error": 0.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "gold": [
+          1474.82,
+          1539.86
+        ],
+        "coverage": 0.9041,
+        "best_iou": 0.535,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1481.06,
+          1584.73
+        ],
+        "start_error": 6.24,
+        "end_error": 44.87
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "gold": [
+          1561.74,
+          1582.39
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.1992,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1481.06,
+          1584.73
+        ],
+        "start_error": -80.68,
+        "end_error": 2.34
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "gold": [
+          1710.02,
+          1732.88
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.6147,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1700.27,
+          1737.46
+        ],
+        "start_error": -9.75,
+        "end_error": 4.58
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "gold": [
+          0.0,
+          24.5
+        ],
+        "coverage": 0.9176,
+        "best_iou": 0.9176,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          22.48
+        ],
+        "start_error": 0.0,
+        "end_error": -2.02
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "gold": [
+          712.04,
+          793.51
+        ],
+        "coverage": 0.8855,
+        "best_iou": 0.7934,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          702.58,
+          784.18
+        ],
+        "start_error": -9.46,
+        "end_error": -9.33
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "gold": [
+          1456.84,
+          1556.99
+        ],
+        "coverage": 0.6792,
+        "best_iou": 0.3776,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          1515.5,
+          1553.32
+        ],
+        "start_error": 58.66,
+        "end_error": -3.67
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "gold": [
+          0.0,
+          24.5
+        ],
+        "coverage": 0.9176,
+        "best_iou": 0.9176,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          22.48
+        ],
+        "start_error": 0.0,
+        "end_error": -2.02
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "gold": [
+          710.0,
+          820.97
+        ],
+        "coverage": 0.9184,
+        "best_iou": 0.9184,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          711.68,
+          813.6
+        ],
+        "start_error": 1.68,
+        "end_error": -7.37
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "gold": [
+          1507.12,
+          1577.18
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.7093,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1480.74,
+          1579.52
+        ],
+        "start_error": -26.38,
+        "end_error": 2.34
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "gold": [
+          1702.75,
+          1728.91
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.4804,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1677.79,
+          1732.25
+        ],
+        "start_error": -24.96,
+        "end_error": 3.34
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "0",
+        "gold": [
+          1168.5,
+          1199.25
+        ],
+        "coverage": 0.0,
+        "best_iou": 0.0,
+        "overlapping_predictions": 0,
+        "best_prediction": [
+          1596.75,
+          1640.41
+        ],
+        "start_error": null,
+        "end_error": null
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "0",
+        "gold": [
+          2146.04,
+          2245.53
+        ],
+        "coverage": 0.4298,
+        "best_iou": 0.4298,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2178.2,
+          2220.96
+        ],
+        "start_error": 32.16,
+        "end_error": -24.57
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "1",
+        "gold": [
+          1166.75,
+          1194.0
+        ],
+        "coverage": 0.0,
+        "best_iou": 0.0,
+        "overlapping_predictions": 0,
+        "best_prediction": [
+          1233.94,
+          1264.6
+        ],
+        "start_error": null,
+        "end_error": null
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "1",
+        "gold": [
+          2141.7,
+          2238.47
+        ],
+        "coverage": 0.0,
+        "best_iou": 0.0,
+        "overlapping_predictions": 0,
+        "best_prediction": [
+          1233.94,
+          1264.6
+        ],
+        "start_error": null,
+        "end_error": null
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "2",
+        "gold": [
+          1168.0,
+          1202.0
+        ],
+        "coverage": 0.9935,
+        "best_iou": 0.6806,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1152.37,
+          1201.78
+        ],
+        "start_error": -15.63,
+        "end_error": -0.22
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "2",
+        "gold": [
+          2148.81,
+          2253.82
+        ],
+        "coverage": 0.3112,
+        "best_iou": 0.3112,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2221.14,
+          2253.82
+        ],
+        "start_error": 72.33,
+        "end_error": 0.0
+      }
+    ],
+    "per_prediction": [
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "pred": [
+          21.96,
+          59.18
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "pred": [
+          88.99,
+          166.06
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "pred": [
+          873.68,
+          914.88
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "pred": [
+          1292.07,
+          1326.78
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "pred": [
+          1496.54,
+          1639.96
+        ],
+        "ad_fraction": 0.2406
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "pred": [
+          1987.38,
+          2040.32
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "pred": [
+          2093.12,
+          2214.26
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "pred": [
+          2309.0,
+          2429.38
+        ],
+        "ad_fraction": 0.8442
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "pred": [
+          21.96,
+          59.18
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "pred": [
+          88.99,
+          166.06
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "pred": [
+          873.68,
+          914.88
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "pred": [
+          1292.07,
+          1326.78
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "pred": [
+          1525.96,
+          1638.82
+        ],
+        "ad_fraction": 0.0729
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "pred": [
+          1987.76,
+          2040.68
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "pred": [
+          2095.42,
+          2208.8
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "pred": [
+          2339.2,
+          2403.22
+        ],
+        "ad_fraction": 0.9966
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "pred": [
+          21.96,
+          59.18
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "pred": [
+          88.99,
+          166.06
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "pred": [
+          873.68,
+          914.88
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "pred": [
+          1292.07,
+          1326.78
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "pred": [
+          1525.96,
+          1638.82
+        ],
+        "ad_fraction": 0.0729
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "pred": [
+          1987.76,
+          2040.68
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "pred": [
+          2095.42,
+          2208.8
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "pred": [
+          2353.29,
+          2421.9
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "pred": [
+          46.18,
+          143.47
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "pred": [
+          1589.85,
+          1650.51
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "pred": [
+          2298.7,
+          2333.9
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "pred": [
+          3088.05,
+          3118.15
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "pred": [
+          129.69,
+          158.33
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "pred": [
+          1595.48,
+          1707.64
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "pred": [
+          2354.25,
+          2436.21
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "pred": [
+          26.81,
+          140.48
+        ],
+        "ad_fraction": 0.9805
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "pred": [
+          1587.02,
+          1721.56
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "pred": [
+          0.78,
+          83.36
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "pred": [
+          1395.85,
+          1441.97
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "pred": [
+          1494.94,
+          1553.06
+        ],
+        "ad_fraction": 0.1012
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "pred": [
+          3017.7,
+          3060.29
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "pred": [
+          3083.77,
+          3119.4
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "pred": [
+          4301.94,
+          4353.84
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "pred": [
+          0.78,
+          83.36
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "pred": [
+          1402.51,
+          1517.41
+        ],
+        "ad_fraction": 0.2742
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "pred": [
+          3082.2,
+          3117.26
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "pred": [
+          4229.12,
+          4354.86
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "pred": [
+          0.78,
+          83.36
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "pred": [
+          1395.85,
+          1441.97
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "pred": [
+          1494.94,
+          1553.06
+        ],
+        "ad_fraction": 0.1012
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "pred": [
+          3017.7,
+          3060.29
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "pred": [
+          3083.77,
+          3119.4
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "pred": [
+          4301.94,
+          4354.84
+        ],
+        "ad_fraction": 0.9811
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "pred": [
+          0.0,
+          28.84
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "pred": [
+          146.99,
+          192.13
+        ],
+        "ad_fraction": 0.8598
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "pred": [
+          1225.94,
+          1280.95
+        ],
+        "ad_fraction": 0.7999
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "pred": [
+          2490.37,
+          2532.28
+        ],
+        "ad_fraction": 0.7015
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "pred": [
+          2677.34,
+          2708.64
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "pred": [
+          0.0,
+          28.84
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "pred": [
+          146.99,
+          180.76
+        ],
+        "ad_fraction": 0.8516
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "pred": [
+          1253.34,
+          1293.25
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "pred": [
+          2526.92,
+          2567.14
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "pred": [
+          2657.12,
+          2704.18
+        ],
+        "ad_fraction": 0.5691
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "pred": [
+          144.16,
+          178.85
+        ],
+        "ad_fraction": 0.7887
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "pred": [
+          1303.92,
+          1332.7
+        ],
+        "ad_fraction": 0.9757
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "pred": [
+          2488.28,
+          2529.2
+        ],
+        "ad_fraction": 0.6745
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "pred": [
+          2656.24,
+          2703.27
+        ],
+        "ad_fraction": 0.5805
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "pred": [
+          0.46,
+          102.4
+        ],
+        "ad_fraction": 0.6671
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "pred": [
+          958.7,
+          979.24
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "pred": [
+          1010.3,
+          1154.25
+        ],
+        "ad_fraction": 0.679
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "pred": [
+          2440.17,
+          2603.14
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "pred": [
+          2647.7,
+          2684.4
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "pred": [
+          3642.86,
+          3659.16
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "pred": [
+          3690.61,
+          3823.31
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "pred": [
+          0.46,
+          80.0
+        ],
+        "ad_fraction": 0.8235
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "pred": [
+          956.78,
+          977.32
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "pred": [
+          1008.34,
+          1073.14
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "pred": [
+          2403.62,
+          2550.28
+        ],
+        "ad_fraction": 0.9212
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "pred": [
+          2656.82,
+          2684.78
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "pred": [
+          3650.52,
+          3666.76
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "pred": [
+          0.46,
+          13.76
+        ],
+        "ad_fraction": 0.1511
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "pred": [
+          44.48,
+          91.32
+        ],
+        "ad_fraction": 0.5448
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "pred": [
+          947.67,
+          968.19
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "pred": [
+          999.25,
+          1143.27
+        ],
+        "ad_fraction": 0.9445
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "pred": [
+          2429.5,
+          2587.0
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "pred": [
+          2616.3,
+          2646.94
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "pred": [
+          2692.01,
+          2729.13
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "pred": [
+          3687.18,
+          3850.02
+        ],
+        "ad_fraction": 0.8999
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "pred": [
+          38.98,
+          83.22
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "pred": [
+          285.93,
+          341.77
+        ],
+        "ad_fraction": 0.9355
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "pred": [
+          1140.71,
+          1186.31
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "pred": [
+          1628.27,
+          1656.36
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "pred": [
+          4.88,
+          80.4
+        ],
+        "ad_fraction": 0.1965
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "pred": [
+          282.91,
+          343.65
+        ],
+        "ad_fraction": 0.8905
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "pred": [
+          1003.6,
+          1161.99
+        ],
+        "ad_fraction": 0.3969
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "pred": [
+          0.0,
+          23.46
+        ],
+        "ad_fraction": 0.6326
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "pred": [
+          52.94,
+          76.62
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "pred": [
+          279.84,
+          345.31
+        ],
+        "ad_fraction": 0.8919
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "pred": [
+          1059.12,
+          1162.35
+        ],
+        "ad_fraction": 0.6054
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "pred": [
+          1598.54,
+          1642.74
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "0",
+        "pred": [
+          9.2,
+          62.4
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "0",
+        "pred": [
+          882.3,
+          919.58
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "0",
+        "pred": [
+          1860.56,
+          1971.92
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "pred": [
+          9.2,
+          62.4
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "pred": [
+          882.3,
+          919.58
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "pred": [
+          1849.87,
+          1928.76
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "pred": [
+          1964.8,
+          1986.51
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "2",
+        "pred": [
+          9.2,
+          140.66
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "2",
+        "pred": [
+          933.85,
+          969.19
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "2",
+        "pred": [
+          1890.23,
+          1934.24
+        ],
+        "ad_fraction": 0.0111
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "2",
+        "pred": [
+          1954.98,
+          2008.84
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "pred": [
+          0.0,
+          29.56
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "pred": [
+          707.58,
+          748.33
+        ],
+        "ad_fraction": 0.8201
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "pred": [
+          770.17,
+          812.01
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "pred": [
+          1481.06,
+          1584.73
+        ],
+        "ad_fraction": 0.7664
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "pred": [
+          1700.27,
+          1737.46
+        ],
+        "ad_fraction": 0.6147
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "pred": [
+          0.0,
+          22.48
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "pred": [
+          702.58,
+          784.18
+        ],
+        "ad_fraction": 0.8841
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "pred": [
+          1456.84,
+          1487.04
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "pred": [
+          1515.5,
+          1553.32
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "pred": [
+          1674.8,
+          1706.91
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "pred": [
+          0.0,
+          22.48
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "pred": [
+          711.68,
+          813.6
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "pred": [
+          1480.74,
+          1579.52
+        ],
+        "ad_fraction": 0.7093
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "pred": [
+          1677.79,
+          1732.25
+        ],
+        "ad_fraction": 0.4804
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "0",
+        "pred": [
+          1596.75,
+          1640.41
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "0",
+        "pred": [
+          2178.2,
+          2220.96
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "1",
+        "pred": [
+          1233.94,
+          1264.6
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "1",
+        "pred": [
+          1592.42,
+          1636.06
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "2",
+        "pred": [
+          1152.37,
+          1201.78
+        ],
+        "ad_fraction": 0.6837
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "2",
+        "pred": [
+          1240.18,
+          1268.6
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "2",
+        "pred": [
+          1598.82,
+          1733.54
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "2",
+        "pred": [
+          2221.14,
+          2253.82
+        ],
+        "ad_fraction": 1.0
+      }
+    ]
+  },
+  "tfidf": {
+    "strict": {
+      "tp": 34,
+      "fp": 88,
+      "fn": 58,
+      "precision": 0.2786885245901639,
+      "recall": 0.3695652173913043
+    },
+    "gold_count": 92,
+    "predicted_count": 122,
+    "gold_zero_overlap": 2,
+    "gold_below_20pct_coverage": 3,
+    "gold_at_least_80pct_coverage": 64,
+    "gold_multiple_overlapping_predictions": 8,
+    "predictions_zero_ad_overlap": 25,
+    "predictions_below_20pct_ad": 28,
+    "median_worst_edge_error_for_overlapping_gold": 21.375,
+    "per_gold": [
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "gold": [
+          1594.0,
+          1628.5
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.3078,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1525.41,
+          1637.48
+        ],
+        "start_error": -68.59,
+        "end_error": 8.98
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "gold": [
+          2327.75,
+          2441.5
+        ],
+        "coverage": 0.9953,
+        "best_iou": 0.8962,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2315.18,
+          2440.96
+        ],
+        "start_error": -12.57,
+        "end_error": -0.54
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "gold": [
+          1497.24,
+          1534.19
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.2597,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1496.56,
+          1638.82
+        ],
+        "start_error": -0.68,
+        "end_error": 104.63
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "gold": [
+          2328.0,
+          2403.0
+        ],
+        "coverage": 0.9283,
+        "best_iou": 0.9256,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2333.38,
+          2403.22
+        ],
+        "start_error": 5.38,
+        "end_error": 0.22
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "gold": [
+          1497.24,
+          1534.19
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.2597,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1496.56,
+          1638.82
+        ],
+        "start_error": -0.68,
+        "end_error": 104.63
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "gold": [
+          2328.25,
+          2423.5
+        ],
+        "coverage": 0.5148,
+        "best_iou": 0.5148,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2346.77,
+          2395.8
+        ],
+        "start_error": 18.52,
+        "end_error": -27.7
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "gold": [
+          29.01,
+          178.54
+        ],
+        "coverage": 0.6224,
+        "best_iou": 0.4251,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          22.29,
+          95.43
+        ],
+        "start_error": -6.72,
+        "end_error": -83.11
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "gold": [
+          1527.16,
+          1654.73
+        ],
+        "coverage": 0.7708,
+        "best_iou": 0.717,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1556.4,
+          1664.3
+        ],
+        "start_error": 29.24,
+        "end_error": 9.57
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "gold": [
+          2277.08,
+          2338.96
+        ],
+        "coverage": 0.7909,
+        "best_iou": 0.7909,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2289.72,
+          2338.66
+        ],
+        "start_error": 12.64,
+        "end_error": -0.3
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "gold": [
+          3056.13,
+          3165.41
+        ],
+        "coverage": 0.5031,
+        "best_iou": 0.5031,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          3083.49,
+          3138.47
+        ],
+        "start_error": 27.36,
+        "end_error": -26.94
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "gold": [
+          29.01,
+          190.71
+        ],
+        "coverage": 0.5237,
+        "best_iou": 0.3177,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          110.05,
+          161.43
+        ],
+        "start_error": 81.04,
+        "end_error": -29.28
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "gold": [
+          1577.09,
+          1718.56
+        ],
+        "coverage": 0.8045,
+        "best_iou": 0.4256,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          1567.13,
+          1641.54
+        ],
+        "start_error": -9.96,
+        "end_error": -77.02
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "gold": [
+          2340.59,
+          2439.31
+        ],
+        "coverage": 0.481,
+        "best_iou": 0.481,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2391.83,
+          2439.31
+        ],
+        "start_error": 51.24,
+        "end_error": 0.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "gold": [
+          3156.68,
+          3265.91
+        ],
+        "coverage": 0.4994,
+        "best_iou": 0.4994,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          3185.94,
+          3240.49
+        ],
+        "start_error": 29.26,
+        "end_error": -25.42
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "gold": [
+          29.03,
+          208.92
+        ],
+        "coverage": 0.7031,
+        "best_iou": 0.7031,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          53.68,
+          180.16
+        ],
+        "start_error": 24.65,
+        "end_error": -28.76
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "gold": [
+          1556.56,
+          1725.04
+        ],
+        "coverage": 0.6755,
+        "best_iou": 0.4433,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          1650.35,
+          1725.04
+        ],
+        "start_error": 93.79,
+        "end_error": 0.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "gold": [
+          2354.25,
+          2406.5
+        ],
+        "coverage": 0.7895,
+        "best_iou": 0.7278,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2365.25,
+          2410.93
+        ],
+        "start_error": 11.0,
+        "end_error": 4.43
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "gold": [
+          3176.21,
+          3256.39
+        ],
+        "coverage": 0.683,
+        "best_iou": 0.4167,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          3124.98,
+          3230.97
+        ],
+        "start_error": -51.23,
+        "end_error": -25.42
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "gold": [
+          1451.13,
+          1500.82
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.3161,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1395.85,
+          1553.06
+        ],
+        "start_error": -55.28,
+        "end_error": 52.24
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "gold": [
+          3017.7,
+          3120.0
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.8784,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          3017.7,
+          3134.16
+        ],
+        "start_error": 0.0,
+        "end_error": 14.16
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "gold": [
+          4224.5,
+          4353.84
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.9439,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          4216.82,
+          4353.84
+        ],
+        "start_error": -7.68,
+        "end_error": 0.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "gold": [
+          1454.0,
+          1485.5
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.2591,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1395.85,
+          1517.41
+        ],
+        "start_error": -58.15,
+        "end_error": 31.91
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "gold": [
+          3000.6,
+          3119.7
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.8919,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          3000.6,
+          3134.14
+        ],
+        "start_error": 0.0,
+        "end_error": 14.44
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "gold": [
+          4224.5,
+          4354.9
+        ],
+        "coverage": 0.9997,
+        "best_iou": 0.945,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          4216.96,
+          4354.86
+        ],
+        "start_error": -7.54,
+        "end_error": -0.04
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "gold": [
+          1451.13,
+          1500.82
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.3161,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1395.85,
+          1553.06
+        ],
+        "start_error": -55.28,
+        "end_error": 52.24
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "gold": [
+          3017.7,
+          3120.0
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.8784,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          3017.7,
+          3134.16
+        ],
+        "start_error": 0.0,
+        "end_error": 14.16
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "gold": [
+          4224.5,
+          4353.84
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.9371,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          4216.82,
+          4354.84
+        ],
+        "start_error": -7.68,
+        "end_error": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "gold": [
+          0.0,
+          31.34
+        ],
+        "coverage": 1.0,
+        "best_iou": 1.0,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          31.34
+        ],
+        "start_error": 0.0,
+        "end_error": 0.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "gold": [
+          153.32,
+          247.55
+        ],
+        "coverage": 0.6801,
+        "best_iou": 0.6801,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          153.32,
+          217.41
+        ],
+        "start_error": 0.0,
+        "end_error": -30.14
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "gold": [
+          1236.95,
+          1331.47
+        ],
+        "coverage": 0.6807,
+        "best_iou": 0.6807,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1236.95,
+          1301.29
+        ],
+        "start_error": 0.0,
+        "end_error": -30.18
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "gold": [
+          2502.88,
+          2595.09
+        ],
+        "coverage": 0.9551,
+        "best_iou": 0.8778,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2507.02,
+          2603.21
+        ],
+        "start_error": 4.14,
+        "end_error": 8.12
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "gold": [
+          2677.34,
+          2708.64
+        ],
+        "coverage": 1.0,
+        "best_iou": 1.0,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2677.34,
+          2708.64
+        ],
+        "start_error": 0.0,
+        "end_error": 0.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "gold": [
+          0.0,
+          36.68
+        ],
+        "coverage": 0.8544,
+        "best_iou": 0.8544,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          31.34
+        ],
+        "start_error": 0.0,
+        "end_error": -5.34
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "gold": [
+          152.0,
+          250.31
+        ],
+        "coverage": 0.9326,
+        "best_iou": 0.9326,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          153.32,
+          245.0
+        ],
+        "start_error": 1.32,
+        "end_error": -5.31
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "gold": [
+          1225.9,
+          1331.51
+        ],
+        "coverage": 0.5918,
+        "best_iou": 0.5918,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1238.81,
+          1301.31
+        ],
+        "start_error": 12.91,
+        "end_error": -30.2
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "gold": [
+          2490.5,
+          2597.3
+        ],
+        "coverage": 0.5876,
+        "best_iou": 0.5876,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2504.38,
+          2567.14
+        ],
+        "start_error": 13.88,
+        "end_error": -30.16
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "gold": [
+          2677.4,
+          2708.64
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.5597,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2652.82,
+          2708.64
+        ],
+        "start_error": -24.58,
+        "end_error": 0.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "gold": [
+          0.0,
+          28.5
+        ],
+        "coverage": 0.9077,
+        "best_iou": 0.9077,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1.26,
+          27.13
+        ],
+        "start_error": 1.26,
+        "end_error": -1.37
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "gold": [
+          151.49,
+          248.8
+        ],
+        "coverage": 0.9511,
+        "best_iou": 0.9511,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          151.49,
+          244.04
+        ],
+        "start_error": 0.0,
+        "end_error": -4.76
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "gold": [
+          1225.9,
+          1332.0
+        ],
+        "coverage": 0.8238,
+        "best_iou": 0.8238,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1237.57,
+          1324.98
+        ],
+        "start_error": 11.67,
+        "end_error": -7.02
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "gold": [
+          2501.6,
+          2598.1
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.9621,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2501.6,
+          2601.9
+        ],
+        "start_error": 0.0,
+        "end_error": 3.8
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "gold": [
+          2675.97,
+          2707.35
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.4287,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2634.16,
+          2707.35
+        ],
+        "start_error": -41.81,
+        "end_error": 0.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "gold": [
+          13.75,
+          81.75
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.7648,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.46,
+          89.37
+        ],
+        "start_error": -13.29,
+        "end_error": 7.62
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "gold": [
+          1019.26,
+          1117.0
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.8498,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1010.3,
+          1125.31
+        ],
+        "start_error": -8.96,
+        "end_error": 8.31
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "gold": [
+          2422.0,
+          2603.25
+        ],
+        "coverage": 0.8998,
+        "best_iou": 0.8798,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2440.17,
+          2607.36
+        ],
+        "start_error": 18.17,
+        "end_error": 4.11
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "gold": [
+          3690.25,
+          3835.5
+        ],
+        "coverage": 0.9958,
+        "best_iou": 0.9958,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          3690.61,
+          3835.25
+        ],
+        "start_error": 0.36,
+        "end_error": -0.25
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "gold": [
+          14.5,
+          80.0
+        ],
+        "coverage": 0.5084,
+        "best_iou": 0.4187,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.46,
+          47.8
+        ],
+        "start_error": -14.04,
+        "end_error": -32.2
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "gold": [
+          956.78,
+          1145.32
+        ],
+        "coverage": 0.3983,
+        "best_iou": 0.2569,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          1008.34,
+          1056.78
+        ],
+        "start_error": 51.56,
+        "end_error": -88.54
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "gold": [
+          2415.18,
+          2611.55
+        ],
+        "coverage": 0.8404,
+        "best_iou": 0.7046,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          2415.18,
+          2553.54
+        ],
+        "start_error": 0.0,
+        "end_error": -58.01
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "gold": [
+          11.75,
+          70.0
+        ],
+        "coverage": 0.4726,
+        "best_iou": 0.3832,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          44.48,
+          78.34
+        ],
+        "start_error": 32.73,
+        "end_error": 8.34
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "gold": [
+          1006.97,
+          1143.0
+        ],
+        "coverage": 0.6759,
+        "best_iou": 0.6759,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1019.17,
+          1111.11
+        ],
+        "start_error": 12.2,
+        "end_error": -31.89
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "gold": [
+          2410.95,
+          2648.6
+        ],
+        "coverage": 0.8843,
+        "best_iou": 0.8843,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2436.78,
+          2646.94
+        ],
+        "start_error": 25.83,
+        "end_error": -1.66
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "gold": [
+          3703.46,
+          3850.0
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.7831,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          3662.88,
+          3850.02
+        ],
+        "start_error": -40.58,
+        "end_error": 0.02
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "gold": [
+          0.11,
+          15.81
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.8147,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.11,
+          19.38
+        ],
+        "start_error": 0.0,
+        "end_error": 3.57
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "gold": [
+          273.13,
+          338.17
+        ],
+        "coverage": 0.8918,
+        "best_iou": 0.845,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          280.17,
+          341.77
+        ],
+        "start_error": 7.04,
+        "end_error": 3.6
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "gold": [
+          1099.66,
+          1188.87
+        ],
+        "coverage": 0.9146,
+        "best_iou": 0.8557,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1107.28,
+          1195.01
+        ],
+        "start_error": 7.62,
+        "end_error": 6.14
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "gold": [
+          1620.6,
+          1656.36
+        ],
+        "coverage": 1.0,
+        "best_iou": 1.0,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1620.6,
+          1656.36
+        ],
+        "start_error": 0.0,
+        "end_error": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "gold": [
+          0.0,
+          19.72
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.7602,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          25.94
+        ],
+        "start_error": 0.0,
+        "end_error": 6.22
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "gold": [
+          274.67,
+          337.0
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.6984,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          260.7,
+          349.95
+        ],
+        "start_error": -13.97,
+        "end_error": 12.95
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "gold": [
+          1099.13,
+          1161.99
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.848,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1094.67,
+          1168.8
+        ],
+        "start_error": -4.46,
+        "end_error": 6.81
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "gold": [
+          1598.78,
+          1649.49
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.9004,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1593.17,
+          1649.49
+        ],
+        "start_error": -5.61,
+        "end_error": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "gold": [
+          0.0,
+          14.84
+        ],
+        "coverage": 1.0,
+        "best_iou": 1.0,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          14.84
+        ],
+        "start_error": 0.0,
+        "end_error": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "gold": [
+          272.08,
+          338.23
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.7275,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          256.92,
+          347.85
+        ],
+        "start_error": -15.16,
+        "end_error": 9.62
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "gold": [
+          1099.85,
+          1167.49
+        ],
+        "coverage": 0.9592,
+        "best_iou": 0.6575,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1068.82,
+          1164.73
+        ],
+        "start_error": -31.03,
+        "end_error": -2.76
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "gold": [
+          1598.54,
+          1644.94
+        ],
+        "coverage": 1.0,
+        "best_iou": 1.0,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1598.54,
+          1644.94
+        ],
+        "start_error": 0.0,
+        "end_error": 0.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "0",
+        "gold": [
+          0.0,
+          91.8
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.9762,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          94.04
+        ],
+        "start_error": 0.0,
+        "end_error": 2.24
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "0",
+        "gold": [
+          946.25,
+          963.5
+        ],
+        "coverage": 0.0,
+        "best_iou": 0.0,
+        "overlapping_predictions": 0,
+        "best_prediction": [
+          0.0,
+          94.04
+        ],
+        "start_error": null,
+        "end_error": null
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "0",
+        "gold": [
+          1801.62,
+          1971.92
+        ],
+        "coverage": 0.8262,
+        "best_iou": 0.8262,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1831.22,
+          1971.92
+        ],
+        "start_error": 29.6,
+        "end_error": 0.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "gold": [
+          0.0,
+          91.8
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.9762,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          94.04
+        ],
+        "start_error": 0.0,
+        "end_error": 2.24
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "gold": [
+          943.87,
+          985.76
+        ],
+        "coverage": 0.8317,
+        "best_iou": 0.3367,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          882.3,
+          978.71
+        ],
+        "start_error": -61.57,
+        "end_error": -7.05
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "gold": [
+          1816.64,
+          1986.77
+        ],
+        "coverage": 0.8047,
+        "best_iou": 0.8047,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1849.87,
+          1986.77
+        ],
+        "start_error": 33.23,
+        "end_error": 0.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "2",
+        "gold": [
+          0.0,
+          140.66
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.9793,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          143.64
+        ],
+        "start_error": 0.0,
+        "end_error": 2.98
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "2",
+        "gold": [
+          993.48,
+          1035.35
+        ],
+        "coverage": 0.3205,
+        "best_iou": 0.1297,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          931.91,
+          1006.9
+        ],
+        "start_error": -61.57,
+        "end_error": -28.45
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "2",
+        "gold": [
+          1933.75,
+          2009.5
+        ],
+        "coverage": 0.9913,
+        "best_iou": 0.6296,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1890.23,
+          2008.84
+        ],
+        "start_error": -43.52,
+        "end_error": -0.66
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "gold": [
+          0.0,
+          29.56
+        ],
+        "coverage": 1.0,
+        "best_iou": 1.0,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          29.56
+        ],
+        "start_error": 0.0,
+        "end_error": 0.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "gold": [
+          714.91,
+          812.01
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.9498,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          714.91,
+          817.14
+        ],
+        "start_error": 0.0,
+        "end_error": 5.13
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "gold": [
+          1474.82,
+          1539.86
+        ],
+        "coverage": 0.8044,
+        "best_iou": 0.476,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1487.54,
+          1584.73
+        ],
+        "start_error": 12.72,
+        "end_error": 44.87
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "gold": [
+          1561.74,
+          1582.39
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.2125,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1487.54,
+          1584.73
+        ],
+        "start_error": -74.2,
+        "end_error": 2.34
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "gold": [
+          1710.02,
+          1732.88
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.7739,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1707.92,
+          1737.46
+        ],
+        "start_error": -2.1,
+        "end_error": 4.58
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "gold": [
+          0.0,
+          24.5
+        ],
+        "coverage": 1.0,
+        "best_iou": 1.0,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          24.5
+        ],
+        "start_error": 0.0,
+        "end_error": 0.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "gold": [
+          712.04,
+          793.51
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.8913,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          709.74,
+          801.15
+        ],
+        "start_error": -2.3,
+        "end_error": 7.64
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "gold": [
+          1456.84,
+          1556.99
+        ],
+        "coverage": 0.7158,
+        "best_iou": 0.405,
+        "overlapping_predictions": 2,
+        "best_prediction": [
+          1515.5,
+          1559.29
+        ],
+        "start_error": 58.66,
+        "end_error": 2.3
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "gold": [
+          0.0,
+          24.5
+        ],
+        "coverage": 1.0,
+        "best_iou": 1.0,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          0.0,
+          24.5
+        ],
+        "start_error": 0.0,
+        "end_error": 0.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "gold": [
+          710.0,
+          820.97
+        ],
+        "coverage": 0.8601,
+        "best_iou": 0.8601,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          718.16,
+          813.6
+        ],
+        "start_error": 8.16,
+        "end_error": -7.37
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "gold": [
+          1507.12,
+          1577.18
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.7093,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1480.74,
+          1579.52
+        ],
+        "start_error": -26.38,
+        "end_error": 2.34
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "gold": [
+          1702.75,
+          1728.91
+        ],
+        "coverage": 1.0,
+        "best_iou": 0.8868,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1702.75,
+          1732.25
+        ],
+        "start_error": 0.0,
+        "end_error": 3.34
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "0",
+        "gold": [
+          1168.5,
+          1199.25
+        ],
+        "coverage": 0.0904,
+        "best_iou": 0.0458,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1138.51,
+          1171.28
+        ],
+        "start_error": -29.99,
+        "end_error": -27.97
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "0",
+        "gold": [
+          2146.04,
+          2245.53
+        ],
+        "coverage": 0.7041,
+        "best_iou": 0.7041,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2175.48,
+          2245.53
+        ],
+        "start_error": 29.44,
+        "end_error": 0.0
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "1",
+        "gold": [
+          1166.75,
+          1194.0
+        ],
+        "coverage": 0.4503,
+        "best_iou": 0.2211,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1138.51,
+          1179.02
+        ],
+        "start_error": -28.24,
+        "end_error": -14.98
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "1",
+        "gold": [
+          2141.7,
+          2238.47
+        ],
+        "coverage": 0.0,
+        "best_iou": 0.0,
+        "overlapping_predictions": 0,
+        "best_prediction": [
+          1138.51,
+          1179.02
+        ],
+        "start_error": null,
+        "end_error": null
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "2",
+        "gold": [
+          1168.0,
+          1202.0
+        ],
+        "coverage": 0.9935,
+        "best_iou": 0.5321,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          1138.51,
+          1201.78
+        ],
+        "start_error": -29.49,
+        "end_error": -0.22
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "2",
+        "gold": [
+          2148.81,
+          2253.82
+        ],
+        "coverage": 0.3965,
+        "best_iou": 0.3965,
+        "overlapping_predictions": 1,
+        "best_prediction": [
+          2212.18,
+          2253.82
+        ],
+        "start_error": 63.37,
+        "end_error": 0.0
+      }
+    ],
+    "per_prediction": [
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "pred": [
+          0.24,
+          67.87
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "pred": [
+          1525.41,
+          1637.48
+        ],
+        "ad_fraction": 0.3078
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "pred": [
+          2315.18,
+          2440.96
+        ],
+        "ad_fraction": 0.9001
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "pred": [
+          0.24,
+          67.87
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "pred": [
+          1496.56,
+          1638.82
+        ],
+        "ad_fraction": 0.2597
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "pred": [
+          2183.52,
+          2206.86
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "pred": [
+          2333.38,
+          2403.22
+        ],
+        "ad_fraction": 0.9968
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "pred": [
+          0.24,
+          67.87
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "pred": [
+          1496.56,
+          1638.82
+        ],
+        "ad_fraction": 0.2597
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "pred": [
+          2183.52,
+          2206.86
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "pred": [
+          2346.77,
+          2395.8
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "pred": [
+          22.29,
+          95.43
+        ],
+        "ad_fraction": 0.9081
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "pred": [
+          123.95,
+          150.59
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "pred": [
+          1556.4,
+          1664.3
+        ],
+        "ad_fraction": 0.9113
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "pred": [
+          2289.72,
+          2338.66
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "pred": [
+          3083.49,
+          3138.47
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "pred": [
+          22.29,
+          62.32
+        ],
+        "ad_fraction": 0.8321
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "pred": [
+          110.05,
+          161.43
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "pred": [
+          1567.13,
+          1641.54
+        ],
+        "ad_fraction": 0.8661
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "pred": [
+          1661.34,
+          1710.7
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "pred": [
+          2391.83,
+          2439.31
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "pred": [
+          3185.94,
+          3240.49
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "pred": [
+          53.68,
+          180.16
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "pred": [
+          1587.02,
+          1626.13
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "pred": [
+          1650.35,
+          1725.04
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "pred": [
+          2365.25,
+          2410.93
+        ],
+        "ad_fraction": 0.903
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "pred": [
+          3124.98,
+          3230.97
+        ],
+        "ad_fraction": 0.5167
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "pred": [
+          0.78,
+          90.74
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "pred": [
+          1395.85,
+          1553.06
+        ],
+        "ad_fraction": 0.3161
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "pred": [
+          2098.79,
+          2108.93
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "pred": [
+          3017.7,
+          3134.16
+        ],
+        "ad_fraction": 0.8784
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "pred": [
+          4216.82,
+          4353.84
+        ],
+        "ad_fraction": 0.9439
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "pred": [
+          0.78,
+          90.74
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "pred": [
+          1395.85,
+          1517.41
+        ],
+        "ad_fraction": 0.2591
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "pred": [
+          3000.6,
+          3134.14
+        ],
+        "ad_fraction": 0.8919
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "pred": [
+          4216.96,
+          4354.86
+        ],
+        "ad_fraction": 0.9453
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "pred": [
+          0.78,
+          90.74
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "pred": [
+          1395.85,
+          1553.06
+        ],
+        "ad_fraction": 0.3161
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "pred": [
+          2098.79,
+          2108.93
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "pred": [
+          3017.7,
+          3134.16
+        ],
+        "ad_fraction": 0.8784
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "pred": [
+          4216.82,
+          4354.84
+        ],
+        "ad_fraction": 0.9371
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "pred": [
+          0.0,
+          31.34
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "pred": [
+          153.32,
+          217.41
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "pred": [
+          1236.95,
+          1301.29
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "pred": [
+          2507.02,
+          2603.21
+        ],
+        "ad_fraction": 0.9156
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "pred": [
+          2677.34,
+          2708.64
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "pred": [
+          0.0,
+          31.34
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "pred": [
+          153.32,
+          245.0
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "pred": [
+          1238.81,
+          1301.31
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "pred": [
+          2504.38,
+          2567.14
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "pred": [
+          2652.82,
+          2708.64
+        ],
+        "ad_fraction": 0.5597
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "pred": [
+          1.26,
+          27.13
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "pred": [
+          151.49,
+          244.04
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "pred": [
+          1237.57,
+          1324.98
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "pred": [
+          2501.6,
+          2601.9
+        ],
+        "ad_fraction": 0.9621
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "pred": [
+          2634.16,
+          2707.35
+        ],
+        "ad_fraction": 0.4287
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "pred": [
+          0.46,
+          89.37
+        ],
+        "ad_fraction": 0.7648
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "pred": [
+          1010.3,
+          1125.31
+        ],
+        "ad_fraction": 0.8498
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "pred": [
+          2440.17,
+          2607.36
+        ],
+        "ad_fraction": 0.9754
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "pred": [
+          3623.4,
+          3659.16
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "pred": [
+          3690.61,
+          3835.25
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "pred": [
+          0.46,
+          47.8
+        ],
+        "ad_fraction": 0.7034
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "pred": [
+          1008.34,
+          1056.78
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "pred": [
+          1113.8,
+          1140.46
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "pred": [
+          2415.18,
+          2553.54
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "pred": [
+          2580.08,
+          2606.74
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "pred": [
+          3613.04,
+          3666.76
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "pred": [
+          0.46,
+          13.76
+        ],
+        "ad_fraction": 0.1511
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "pred": [
+          44.48,
+          78.34
+        ],
+        "ad_fraction": 0.7537
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "pred": [
+          1019.17,
+          1111.11
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "pred": [
+          2436.78,
+          2646.94
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "pred": [
+          3662.88,
+          3850.02
+        ],
+        "ad_fraction": 0.7831
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "pred": [
+          0.11,
+          19.38
+        ],
+        "ad_fraction": 0.8147
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "pred": [
+          47.94,
+          72.54
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "pred": [
+          280.17,
+          341.77
+        ],
+        "ad_fraction": 0.9416
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "pred": [
+          975.97,
+          1022.25
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "pred": [
+          1107.28,
+          1195.01
+        ],
+        "ad_fraction": 0.93
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "pred": [
+          1510.31,
+          1591.35
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "pred": [
+          1620.6,
+          1656.36
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "pred": [
+          0.0,
+          25.94
+        ],
+        "ad_fraction": 0.7602
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "pred": [
+          50.64,
+          70.44
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "pred": [
+          260.7,
+          349.95
+        ],
+        "ad_fraction": 0.6984
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "pred": [
+          976.64,
+          1009.0
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "pred": [
+          1094.67,
+          1168.8
+        ],
+        "ad_fraction": 0.848
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "pred": [
+          1484.12,
+          1559.94
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "pred": [
+          1593.17,
+          1649.49
+        ],
+        "ad_fraction": 0.9004
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "pred": [
+          0.0,
+          14.84
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "pred": [
+          43.26,
+          73.46
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "pred": [
+          256.92,
+          347.85
+        ],
+        "ad_fraction": 0.7275
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "pred": [
+          981.15,
+          1023.55
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "pred": [
+          1068.82,
+          1164.73
+        ],
+        "ad_fraction": 0.6765
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "pred": [
+          1512.47,
+          1567.89
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "pred": [
+          1598.54,
+          1644.94
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "0",
+        "pred": [
+          0.0,
+          94.04
+        ],
+        "ad_fraction": 0.9762
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "0",
+        "pred": [
+          695.92,
+          717.42
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "0",
+        "pred": [
+          882.3,
+          922.32
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "0",
+        "pred": [
+          1831.22,
+          1971.92
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "pred": [
+          0.0,
+          94.04
+        ],
+        "ad_fraction": 0.9762
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "pred": [
+          695.92,
+          717.42
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "pred": [
+          882.3,
+          978.71
+        ],
+        "ad_fraction": 0.3614
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "pred": [
+          1849.87,
+          1986.77
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "2",
+        "pred": [
+          0.0,
+          143.64
+        ],
+        "ad_fraction": 0.9793
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "2",
+        "pred": [
+          931.91,
+          1006.9
+        ],
+        "ad_fraction": 0.179
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "2",
+        "pred": [
+          1890.23,
+          2008.84
+        ],
+        "ad_fraction": 0.6331
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "pred": [
+          0.0,
+          29.56
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "pred": [
+          714.91,
+          817.14
+        ],
+        "ad_fraction": 0.9498
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "pred": [
+          1487.54,
+          1584.73
+        ],
+        "ad_fraction": 0.7508
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "pred": [
+          1707.92,
+          1737.46
+        ],
+        "ad_fraction": 0.7739
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "pred": [
+          0.0,
+          24.5
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "pred": [
+          709.74,
+          801.15
+        ],
+        "ad_fraction": 0.8913
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "pred": [
+          1456.84,
+          1487.04
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "pred": [
+          1515.5,
+          1559.29
+        ],
+        "ad_fraction": 0.9475
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "pred": [
+          1674.8,
+          1706.91
+        ],
+        "ad_fraction": 0.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "pred": [
+          0.0,
+          24.5
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "pred": [
+          718.16,
+          813.6
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "pred": [
+          1480.74,
+          1579.52
+        ],
+        "ad_fraction": 0.7093
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "pred": [
+          1702.75,
+          1732.25
+        ],
+        "ad_fraction": 0.8868
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "0",
+        "pred": [
+          1138.51,
+          1171.28
+        ],
+        "ad_fraction": 0.0848
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "0",
+        "pred": [
+          2175.48,
+          2245.53
+        ],
+        "ad_fraction": 1.0
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "1",
+        "pred": [
+          1138.51,
+          1179.02
+        ],
+        "ad_fraction": 0.3029
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "2",
+        "pred": [
+          1138.51,
+          1201.78
+        ],
+        "ad_fraction": 0.5339
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "2",
+        "pred": [
+          2212.18,
+          2253.82
+        ],
+        "ad_fraction": 1.0
+      }
+    ]
+  }
+}

@@ -10,6 +10,7 @@ import au.com.shiftyjelly.pocketcasts.models.to.DbChapter
 import au.com.shiftyjelly.pocketcasts.models.to.Transcript
 import au.com.shiftyjelly.pocketcasts.models.to.TranscriptType
 import au.com.shiftyjelly.pocketcasts.repositories.BuildConfig
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.LocalTranscriptStore
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.ChapterManager
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.GeneratedChaptersAvailability
@@ -23,6 +24,7 @@ import com.automattic.eventhorizon.GeneratedChaptersFileDownloadedEvent
 import com.automattic.eventhorizon.GeneratedChaptersFileType
 import com.squareup.moshi.Moshi
 import dagger.hilt.android.qualifiers.ApplicationContext
+import java.io.File
 import java.net.HttpURLConnection.HTTP_NOT_FOUND
 import java.net.HttpURLConnection.HTTP_NOT_MODIFIED
 import java.util.concurrent.ConcurrentHashMap
@@ -48,6 +50,8 @@ import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
 import okhttp3.CacheControl
 import okhttp3.HttpUrl.Companion.toHttpUrl
+import okio.buffer
+import okio.source
 import retrofit2.HttpException
 import timber.log.Timber
 import au.com.shiftyjelly.pocketcasts.models.entity.Transcript as DbTranscript
@@ -142,6 +146,9 @@ class TranscriptManagerImpl @Inject constructor(
     private suspend fun readTranscript(parserWithTranscript: Pair<TranscriptParser, DbTranscript>): Transcript? {
         val (parser, transcript) = parserWithTranscript
         val podcastUuid = episodeManager.findByUuid(transcript.episodeUuid)?.podcastUuid
+        if (transcript.url.startsWith(LocalTranscriptStore.SCHEME)) {
+            return readLocalTranscript(parser, transcript, podcastUuid)
+        }
 
         return runCatching { transcriptService.getTranscriptOrThrow(transcript.url) }
             .recoverCatching { transcriptService.getTranscriptOrThrow(transcript.url, CacheControl.FORCE_CACHE) }
@@ -180,6 +187,31 @@ class TranscriptManagerImpl @Inject constructor(
                 }
             }
             .getOrNull()
+    }
+
+    private suspend fun readLocalTranscript(
+        parser: TranscriptParser,
+        transcript: DbTranscript,
+        podcastUuid: String?,
+    ): Transcript.Text? {
+        val file = File(context.filesDir, "on-device-transcripts/${transcript.episodeUuid}.vtt")
+        if (!file.exists()) return null
+        return runCatching {
+            val entries = withContext(Dispatchers.Default) {
+                parser.parse(file.source().buffer()).getOrThrow().sanitize()
+            }
+            Transcript.Text(
+                entries = entries,
+                type = parser.type,
+                url = transcript.url,
+                isGenerated = true,
+                episodeUuid = transcript.episodeUuid,
+                podcastUuid = podcastUuid,
+            )
+        }.onFailure { error ->
+            if (error is CancellationException) throw error
+            LogBuffer.e("Transcripts", error, "Failed to read on-device transcript for ${transcript.episodeUuid}")
+        }.getOrNull()
     }
 
     override suspend fun loadGeneratedChapters(episodeUuid: String): GeneratedChaptersResult {

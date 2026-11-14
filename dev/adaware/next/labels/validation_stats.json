@@ -1,0 +1,411 @@
+{
+  "episodes": 10,
+  "takes": 30,
+  "v2_pods": 92,
+  "excluded_v1_records": 7,
+  "confidence_counts": {
+    "high": 12,
+    "medium": 61,
+    "low": 19
+  },
+  "boundary_basis_counts": {
+    "localized_audio_match_consensus": 17,
+    "transcript_word_times": 24,
+    "audited_transcript_extent": 32,
+    "sibling_transcript_inference": 16,
+    "matched_word_timestamps": 3
+  },
+  "uncertainty_counts": {
+    "up_to_5s": 31,
+    "5_to_10s": 12,
+    "over_10s": 49
+  },
+  "byte_alignment_status_counts": {
+    "full_pod_corroborated": 32,
+    "partial_or_discordant": 52,
+    "no_byte_support": 8
+  },
+  "episodes_detail": {
+    "99-invisible__perfectly-leveraged-for-the-squat": {
+      "takes": 3,
+      "pods": 6,
+      "baked_candidate_groups": 0,
+      "per_take_pods": {
+        "0": 2,
+        "1": 2,
+        "2": 2
+      }
+    },
+    "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with": {
+      "takes": 3,
+      "pods": 12,
+      "baked_candidate_groups": 0,
+      "per_take_pods": {
+        "0": 4,
+        "1": 4,
+        "2": 4
+      }
+    },
+    "freakonomics-radio__694-does-democracy-really-need-elections": {
+      "takes": 3,
+      "pods": 9,
+      "baked_candidate_groups": 1,
+      "per_take_pods": {
+        "0": 3,
+        "1": 3,
+        "2": 3
+      }
+    },
+    "hard-fork__jensen-huang-is-out-at-nvidia": {
+      "takes": 3,
+      "pods": 15,
+      "baked_candidate_groups": 5,
+      "per_take_pods": {
+        "0": 5,
+        "1": 5,
+        "2": 5
+      }
+    },
+    "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall": {
+      "takes": 3,
+      "pods": 11,
+      "baked_candidate_groups": 0,
+      "per_take_pods": {
+        "0": 4,
+        "1": 3,
+        "2": 4
+      }
+    },
+    "planet-money__how-bodegas-led-to-the-yemeni-coffeehous": {
+      "takes": 3,
+      "pods": 12,
+      "baked_candidate_groups": 0,
+      "per_take_pods": {
+        "0": 4,
+        "1": 4,
+        "2": 4
+      }
+    },
+    "revisionist-history__from-the-big-dig-mitt-ted": {
+      "takes": 3,
+      "pods": 9,
+      "baked_candidate_groups": 0,
+      "per_take_pods": {
+        "0": 3,
+        "1": 3,
+        "2": 3
+      }
+    },
+    "the-daily__what-jensen-huang-s-resignation-will-mea": {
+      "takes": 3,
+      "pods": 12,
+      "baked_candidate_groups": 2,
+      "per_take_pods": {
+        "0": 5,
+        "1": 3,
+        "2": 4
+      }
+    },
+    "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell": {
+      "takes": 3,
+      "pods": 6,
+      "baked_candidate_groups": 0,
+      "per_take_pods": {
+        "0": 2,
+        "1": 2,
+        "2": 2
+      }
+    },
+    "the-rest-is-politics__what-living-under-isis-taught-me-about-e": {
+      "takes": 3,
+      "pods": 0,
+      "baked_candidate_groups": 0,
+      "per_take_pods": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    }
+  },
+  "v1_reference_overlap": {
+    "tolerance_seconds": 10,
+    "tp": 42,
+    "fp": 50,
+    "fn": 61,
+    "precision": 0.45652173913043476,
+    "recall": 0.4077669902912621,
+    "takes": [
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "0",
+        "v2_pods": 2,
+        "v1_intervals": 2,
+        "tp": 1,
+        "fp": 1,
+        "fn": 1
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "1",
+        "v2_pods": 2,
+        "v1_intervals": 2,
+        "tp": 1,
+        "fp": 1,
+        "fn": 1
+      },
+      {
+        "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+        "take": "2",
+        "v2_pods": 2,
+        "v1_intervals": 2,
+        "tp": 1,
+        "fp": 1,
+        "fn": 1
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "0",
+        "v2_pods": 4,
+        "v1_intervals": 4,
+        "tp": 2,
+        "fp": 2,
+        "fn": 2
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "1",
+        "v2_pods": 4,
+        "v1_intervals": 4,
+        "tp": 3,
+        "fp": 1,
+        "fn": 1
+      },
+      {
+        "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+        "take": "2",
+        "v2_pods": 4,
+        "v1_intervals": 5,
+        "tp": 1,
+        "fp": 3,
+        "fn": 4
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "0",
+        "v2_pods": 3,
+        "v1_intervals": 4,
+        "tp": 1,
+        "fp": 2,
+        "fn": 3
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "1",
+        "v2_pods": 3,
+        "v1_intervals": 4,
+        "tp": 1,
+        "fp": 2,
+        "fn": 3
+      },
+      {
+        "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+        "take": "2",
+        "v2_pods": 3,
+        "v1_intervals": 4,
+        "tp": 1,
+        "fp": 2,
+        "fn": 3
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "0",
+        "v2_pods": 5,
+        "v1_intervals": 4,
+        "tp": 1,
+        "fp": 4,
+        "fn": 3
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "1",
+        "v2_pods": 5,
+        "v1_intervals": 4,
+        "tp": 1,
+        "fp": 4,
+        "fn": 3
+      },
+      {
+        "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+        "take": "2",
+        "v2_pods": 5,
+        "v1_intervals": 4,
+        "tp": 2,
+        "fp": 3,
+        "fn": 2
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "0",
+        "v2_pods": 4,
+        "v1_intervals": 8,
+        "tp": 0,
+        "fp": 4,
+        "fn": 8
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "1",
+        "v2_pods": 3,
+        "v1_intervals": 4,
+        "tp": 0,
+        "fp": 3,
+        "fn": 4
+      },
+      {
+        "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+        "take": "2",
+        "v2_pods": 4,
+        "v1_intervals": 7,
+        "tp": 1,
+        "fp": 3,
+        "fn": 6
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "0",
+        "v2_pods": 4,
+        "v1_intervals": 3,
+        "tp": 2,
+        "fp": 2,
+        "fn": 1
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "1",
+        "v2_pods": 4,
+        "v1_intervals": 5,
+        "tp": 1,
+        "fp": 3,
+        "fn": 4
+      },
+      {
+        "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+        "take": "2",
+        "v2_pods": 4,
+        "v1_intervals": 4,
+        "tp": 3,
+        "fp": 1,
+        "fn": 1
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "0",
+        "v2_pods": 3,
+        "v1_intervals": 3,
+        "tp": 2,
+        "fp": 1,
+        "fn": 1
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "1",
+        "v2_pods": 3,
+        "v1_intervals": 3,
+        "tp": 2,
+        "fp": 1,
+        "fn": 1
+      },
+      {
+        "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+        "take": "2",
+        "v2_pods": 3,
+        "v1_intervals": 4,
+        "tp": 2,
+        "fp": 1,
+        "fn": 2
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "0",
+        "v2_pods": 5,
+        "v1_intervals": 6,
+        "tp": 4,
+        "fp": 1,
+        "fn": 2
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "1",
+        "v2_pods": 3,
+        "v1_intervals": 3,
+        "tp": 1,
+        "fp": 2,
+        "fn": 2
+      },
+      {
+        "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+        "take": "2",
+        "v2_pods": 4,
+        "v1_intervals": 4,
+        "tp": 2,
+        "fp": 2,
+        "fn": 2
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "0",
+        "v2_pods": 2,
+        "v1_intervals": 2,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "1",
+        "v2_pods": 2,
+        "v1_intervals": 2,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+        "take": "2",
+        "v2_pods": 2,
+        "v1_intervals": 2,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "episode": "the-rest-is-politics__what-living-under-isis-taught-me-about-e",
+        "take": "0",
+        "v2_pods": 0,
+        "v1_intervals": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "episode": "the-rest-is-politics__what-living-under-isis-taught-me-about-e",
+        "take": "1",
+        "v2_pods": 0,
+        "v1_intervals": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "episode": "the-rest-is-politics__what-living-under-isis-taught-me-about-e",
+        "take": "2",
+        "v2_pods": 0,
+        "v1_intervals": 0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      }
+    ],
+    "caveat": "Descriptive overlap with transcript-difference labels, not independent accuracy."
+  }
+}

@@ -1,0 +1,7939 @@
+{
+ "duration": 5466.57,
+ "language": "en",
+ "segments": [
+  {
+   "start": 1.81,
+   "end": 7.33,
+   "text": "Whoever said good things come to those who wait, never shopped Black Friday early at Lowes."
+  },
+  {
+   "start": 7.33,
+   "end": 12.69,
+   "text": "Right now, get up to 50% off select major appliances. Plus, get free delivery, free"
+  },
+  {
+   "start": 12.69,
+   "end": 18.45,
+   "text": "hallway, and free basic installation and parts. When you spend $896 or more on select major"
+  },
+  {
+   "start": 18.45,
+   "end": 23.97,
+   "text": "appliances, shop Black Friday early, in-store, and online now at Lowes."
+  },
+  {
+   "start": 23.97,
+   "end": 26.93,
+   "text": "Valor through 12-2 while supplies last. Selection various by locations."
+  },
+  {
+   "start": 26.93,
+   "end": 28.85,
+   "text": "See associate at Lowes.com for details."
+  },
+  {
+   "start": 28.85,
+   "end": 35.16,
+   "text": "Tomorrow morning, Maria will walk to the starting line of her first marathon."
+  },
+  {
+   "start": 35.16,
+   "end": 39.4,
+   "text": "She's been training for months, in hopes to finish in under four hours."
+  },
+  {
+   "start": 39.4,
+   "end": 40.96,
+   "text": "Maria is prepared."
+  },
+  {
+   "start": 40.96,
+   "end": 43.24,
+   "text": "Her shoes have been placed by the front door."
+  },
+  {
+   "start": 43.24,
+   "end": 45.24,
+   "text": "Her number is pinned to her shirt."
+  },
+  {
+   "start": 45.24,
+   "end": 47.48,
+   "text": "Her alarm is set for five."
+  },
+  {
+   "start": 47.48,
+   "end": 52.2,
+   "text": "But there's still one crucial part of her preparation left to do, and so she goes to"
+  },
+  {
+   "start": 52.2,
+   "end": 53.2,
+   "text": "bed."
+  },
+  {
+   "start": 53.2,
+   "end": 56.36,
+   "text": "While she sleeps, her heart rate slows and her legs rest."
+  },
+  {
+   "start": 56.36,
+   "end": 59.48,
+   "text": "Her body repairs with the training is worn down."
+  },
+  {
+   "start": 59.48,
+   "end": 64.12,
+   "text": "shows that runners who are short on sleep cover less ground than rested ones, so it matters"
+  },
+  {
+   "start": 64.12,
+   "end": 69.88,
+   "text": "what she sleeps on. Maria sleeps on a satva. She wakes up before the alarm and her legs"
+  },
+  {
+   "start": 69.88,
+   "end": 76.04,
+   "text": "feel fresh. At mile 20, she'll want to quit. She won't. At 3 hours 58 minutes, she'll"
+  },
+  {
+   "start": 76.04,
+   "end": 81.56,
+   "text": "cross the finish line and completely break down. Not from exhaustion, but from sheer"
+  },
+  {
+   "start": 81.56,
+   "end": 89.0,
+   "text": "happiness. Remember, tomorrow starts tonight. Visit satva.com. That's S-W-A-T-V-A dot com."
+  },
+  {
+   "start": 98.02,
+   "end": 101.3,
+   "text": "Hey everybody, welcome to the weekly show podcast."
+  },
+  {
+   "start": 101.3,
+   "end": 102.14,
+   "text": "My name is John Stewart."
+  },
+  {
+   "start": 102.14,
+   "end": 103.62,
+   "text": "I will be the host of your podcast."
+  },
+  {
+   "start": 103.62,
+   "end": 105.42,
+   "text": "It is Tuesday, October 6th."
+  },
+  {
+   "start": 105.42,
+   "end": 108.46,
+   "text": "If I seem a little bit rattled today,"
+  },
+  {
+   "start": 108.46,
+   "end": 111.3,
+   "text": "it is I'm still coming down from a conversation"
+  },
+  {
+   "start": 111.3,
+   "end": 112.74,
+   "text": "I had on the Daily Show last night"
+  },
+  {
+   "start": 112.74,
+   "end": 114.66,
+   "text": "with a gentleman by the name of Jacob Coxson"
+  },
+  {
+   "start": 114.66,
+   "end": 117.66,
+   "text": "who was a researcher at Anthropic and OpenAI"
+  },
+  {
+   "start": 117.66,
+   "end": 121.86,
+   "text": "and who left me with a very unsettled feeling"
+  },
+  {
+   "start": 121.86,
+   "end": 124.58,
+   "text": "about what the future might look like"
+  },
+  {
+   "start": 124.58,
+   "end": 127.38,
+   "text": "if AI doesn't work out well."
+  },
+  {
+   "start": 127.38,
+   "end": 133.62,
+   "text": "But I think even more unsettling was the way he was describing the future if AI did work out,"
+  },
+  {
+   "start": 134.18,
+   "end": 141.37,
+   "text": "which is sort of this weird system, this feudal system where our tech overlords"
+  },
+  {
+   "start": 142.17,
+   "end": 147.85,
+   "text": "suddenly, even though our experience with them has been, they are hoarding wealth and power."
+  },
+  {
+   "start": 147.85,
+   "end": 153.85,
+   "text": "They will suddenly get to a point where their companies are so valuable and have created such"
+  },
+  {
+   "start": 153.85,
+   "end": 160.73,
+   "text": "productivity that they just decide to then share that largesse with everybody as to quell them"
+  },
+  {
+   "start": 161.45,
+   "end": 170.73,
+   "text": "from the disruption of none of us having jobs anymore. Go check it out, because I was a little..."
+  },
+  {
+   "start": 172.41,
+   "end": 182.95,
+   "text": "I'm going to go with rattled. But today's episode is the unrattling. It is the unrattling of all"
+  },
+  {
+   "start": 182.95,
+   "end": 189.39,
+   "text": "All those things is about our economy, how to rebalance it, how to regain the upper"
+  },
+  {
+   "start": 189.39,
+   "end": 194.43,
+   "text": "hand on our overlords, tech and otherwise."
+  },
+  {
+   "start": 194.43,
+   "end": 196.83,
+   "text": "So let's just get into it."
+  },
+  {
+   "start": 196.83,
+   "end": 204.4,
+   "text": "Ladies and gentlemen, I am delighted, delighted."
+  },
+  {
+   "start": 204.4,
+   "end": 205.4,
+   "text": "You'll hear it in my voice."
+  },
+  {
+   "start": 205.4,
+   "end": 207.36,
+   "text": "You'll see it in my facial expressions."
+  },
+  {
+   "start": 207.36,
+   "end": 208.36,
+   "text": "Delighted."
+  },
+  {
+   "start": 208.36,
+   "end": 210.96,
+   "text": "To welcome our guest today, Katherine Ann Edwards."
+  },
+  {
+   "start": 210.96,
+   "end": 216.4,
+   "text": "Economist, not just an economist, PhD labor economist, public policy consultant, writer,"
+  },
+  {
+   "start": 216.4,
+   "end": 219.52,
+   "text": "and the host of Optimist Economy."
+  },
+  {
+   "start": 220.54,
+   "end": 223.18,
+   "text": "Please welcome Catherine Ann Edwards."
+  },
+  {
+   "start": 223.18,
+   "end": 225.3,
+   "text": "Catherine, how are you?"
+  },
+  {
+   "start": 225.3,
+   "end": 227.5,
+   "text": "I'm very well, thank you for having me."
+  },
+  {
+   "start": 227.5,
+   "end": 231.74,
+   "text": "I'm delighted, forget about thank you, I'm delighted"
+  },
+  {
+   "start": 231.74,
+   "end": 236.74,
+   "text": "because I'm a big fan of the way that you explain"
+  },
+  {
+   "start": 237.7,
+   "end": 242.7,
+   "text": "our economy in an evidence-based, very clear cut."
+  },
+  {
+   "start": 242.7,
+   "end": 248.62,
+   "text": "very clear cut. There's no nonsense and I so appreciate what you do."
+  },
+  {
+   "start": 248.62,
+   "end": 250.86,
+   "text": "Oh my God, John. I'm so touched."
+  },
+  {
+   "start": 250.86,
+   "end": 252.22,
+   "text": "This is Catherine Ann Edwards, right?"
+  },
+  {
+   "start": 252.22,
+   "end": 254.7,
+   "text": "It is. It is. I'm just really touched."
+  },
+  {
+   "start": 255.26,
+   "end": 260.94,
+   "text": "You know, I got a real economist thing going. Catherine, I want to talk to you today. The"
+  },
+  {
+   "start": 260.94,
+   "end": 269.86,
+   "text": "reason why I was very much interested in talking to you is, you know, we see all these, the economy"
+  },
+  {
+   "start": 269.86,
+   "end": 275.22,
+   "text": "is moving towards increased productivity. That's the whole, the buzzword is all about"
+  },
+  {
+   "start": 275.22,
+   "end": 283.52,
+   "text": "AI and increased productivity. And I am of the mindset that our economy has been out"
+  },
+  {
+   "start": 283.52,
+   "end": 292.16,
+   "text": "of balance more so over the last 50 years and moving increasingly. And your work seems"
+  },
+  {
+   "start": 292.16,
+   "end": 299.26,
+   "text": "to be bearing out that hypothesis. Would you mind just discussing a little bit just to"
+  },
+  {
+   "start": 299.26,
+   "end": 306.38,
+   "text": "set the stage at first. What are the ways in which the American economy has become out"
+  },
+  {
+   "start": 306.38,
+   "end": 312.06,
+   "text": "of balance? I view it sort of through the lens of between labor and capital."
+  },
+  {
+   "start": 312.06,
+   "end": 317.06,
+   "text": "The simplest way to understand it is that workers have less power than they used to."
+  },
+  {
+   "start": 317.06,
+   "end": 322.9,
+   "text": "And worker power comes from a lot of places. For an individual, it's education and experience"
+  },
+  {
+   "start": 322.9,
+   "end": 327.7,
+   "text": "and skills that you have, your people skills, your work ethic. But it also comes from how"
+  },
+  {
+   "start": 327.7,
+   "end": 332.04,
+   "text": "strong the economy is at any time, the unemployment rate is lower high if there's lots of jobs"
+  },
+  {
+   "start": 332.04,
+   "end": 338.58,
+   "text": "to get. And then it comes through structural organization of how we privilege one set of"
+  },
+  {
+   "start": 338.58,
+   "end": 340.48,
+   "text": "people in the economy over another."
+  },
+  {
+   "start": 340.48,
+   "end": 342.48,
+   "text": "This, this, this, this, yes."
+  },
+  {
+   "start": 342.48,
+   "end": 349.96,
+   "text": "So, the past really 50 years have seen just a de-emphasizing of the importance of the"
+  },
+  {
+   "start": 349.96,
+   "end": 358.24,
+   "text": "worker and the lack of protection, lack of power, lack of mobility in favor of capital"
+  },
+  {
+   "start": 358.24,
+   "end": 359.72,
+   "text": "and business."
+  },
+  {
+   "start": 359.72,
+   "end": 365.72,
+   "text": "And even as early as 45 years ago, we had evidence that this was going to hurt workers."
+  },
+  {
+   "start": 365.72,
+   "end": 370.28,
+   "text": "And it just, I think over time, it's hurt more in terms of the number of people that"
+  },
+  {
+   "start": 370.28,
+   "end": 372.84,
+   "text": "are hurt by it and the way that they're hurt."
+  },
+  {
+   "start": 372.84,
+   "end": 376.32,
+   "text": "You know, if it's just the very bottom of the labor market that's not doing well, it's"
+  },
+  {
+   "start": 376.32,
+   "end": 378.3,
+   "text": "really easy to write them off."
+  },
+  {
+   "start": 378.3,
+   "end": 383.76,
+   "text": "But as we continue down this path of business over workers, workers having less power, eventually"
+  },
+  {
+   "start": 383.76,
+   "end": 387.96,
+   "text": "that's going to kind of subsume more and more workers who are feeling that."
+  },
+  {
+   "start": 387.96,
+   "end": 392.32,
+   "text": "And we're at a point now where the majority of Americans feel like they don't have enough"
+  },
+  {
+   "start": 392.32,
+   "end": 394.0,
+   "text": "power, they don't have enough money."
+  },
+  {
+   "start": 394.0,
+   "end": 398.52,
+   "text": "And that is not a, oh, but there's nothing we can do, our hands are tied, our hands are"
+  },
+  {
+   "start": 398.52,
+   "end": 399.52,
+   "text": "not tied at all."
+  },
+  {
+   "start": 399.52,
+   "end": 401.32,
+   "text": "We made a lot of choices to get here."
+  },
+  {
+   "start": 401.32,
+   "end": 403.8,
+   "text": "We make a lot of choices and we get right back out."
+  },
+  {
+   "start": 403.8,
+   "end": 409.07,
+   "text": "This is the importance of this conversation."
+  },
+  {
+   "start": 409.07,
+   "end": 414.31,
+   "text": "One of the things that the Democrats are talking about a lot is affordability crisis."
+  },
+  {
+   "start": 414.31,
+   "end": 416.51,
+   "text": "We have an affordability crisis."
+  },
+  {
+   "start": 416.51,
+   "end": 422.26,
+   "text": "I take issue with that phrasing because I don't view it as a crisis."
+  },
+  {
+   "start": 422.26,
+   "end": 429.78,
+   "text": "I view it as the inevitable result of intentional policy choices as you are describing that"
+  },
+  {
+   "start": 429.78,
+   "end": 435.89,
+   "text": "favor capital over labor, and it is a bipartisan project."
+  },
+  {
+   "start": 435.89,
+   "end": 440.05,
+   "text": "But this is not a crisis that arose out of nowhere."
+  },
+  {
+   "start": 440.05,
+   "end": 441.05,
+   "text": "This is an inevitability."
+  },
+  {
+   "start": 441.05,
+   "end": 447.81,
+   "text": "I mean, I stress with the kind of affordability crisis that there is no life in America that"
+  },
+  {
+   "start": 447.81,
+   "end": 452.01,
+   "text": "is affordable at $7.25 an hour, and that is the minimum wage."
+  },
+  {
+   "start": 452.01,
+   "end": 457.41,
+   "text": "And people put a ton of emphasis on the price side, which is important, but they're de-emphasizing"
+  },
+  {
+   "start": 457.41,
+   "end": 461.97,
+   "text": "the wage and income side, and that is the problem because you make half a million dollars"
+  },
+  {
+   "start": 461.97,
+   "end": 466.09,
+   "text": "a year, you don't have an affordability crisis, you're fine."
+  },
+  {
+   "start": 466.09,
+   "end": 472.09,
+   "text": "You can out earn a market failure, but that doesn't fix the market failure."
+  },
+  {
+   "start": 472.09,
+   "end": 477.25,
+   "text": "And so, focusing now on these goods and services that are so important to people's lives, things"
+  },
+  {
+   "start": 477.25,
+   "end": 483.73,
+   "text": "like health, things like shelter, we can do better on that, but we can never have affordable"
+  },
+  {
+   "start": 483.73,
+   "end": 488.69,
+   "text": "housing in the US that you could have no more than 30% of your income go to rents when you"
+  },
+  {
+   "start": 488.69,
+   "end": 491.09,
+   "text": "make less than $10 an hour."
+  },
+  {
+   "start": 491.09,
+   "end": 492.09,
+   "text": "Right."
+  },
+  {
+   "start": 492.09,
+   "end": 497.17,
+   "text": "And that salaries are for suckers, that capital has a lot more advantage."
+  },
+  {
+   "start": 497.17,
+   "end": 501.93,
+   "text": "You talked about the idea that we've privileged capital over labor."
+  },
+  {
+   "start": 501.93,
+   "end": 505.09,
+   "text": "What are the ways that we have done that?"
+  },
+  {
+   "start": 505.09,
+   "end": 513.03,
+   "text": "What are the ways that policymakers have made favorites of capital and made labor less"
+  },
+  {
+   "start": 513.03,
+   "end": 517.59,
+   "text": "You know, mostly it was a lack of leadership in movement as opposed to like, you know,"
+  },
+  {
+   "start": 517.59,
+   "end": 521.75,
+   "text": "a bunch of like Mr. Monopoly looking guys in a room in Capitol Hill being like,"
+  },
+  {
+   "start": 521.75,
+   "end": 528.63,
+   "text": "here's what we'll do. It's really just letting the protections we have slide and not keeping up"
+  },
+  {
+   "start": 528.63,
+   "end": 532.95,
+   "text": "our standards. So, you know, the minimum wage is probably the obvious and easiest one to understand"
+  },
+  {
+   "start": 532.95,
+   "end": 539.59,
+   "text": "because it's a dollar amount, you get it. It's gone up roughly $4.50 years. So, it's a pretty easy"
+  },
+  {
+   "start": 539.59,
+   "end": 543.83,
+   "text": "way to say if we cared about people who made money and who were workers, we would have a higher"
+  },
+  {
+   "start": 543.83,
+   "end": 549.27,
+   "text": "minimum wage and we don't. It used to be around 15% of the economy made the minimum wage and now"
+  },
+  {
+   "start": 549.27,
+   "end": 557.27,
+   "text": "it's less than 1%. And so the conclusion is that it doesn't matter as opposed to what you're actually"
+  },
+  {
+   "start": 557.27,
+   "end": 561.51,
+   "text": "saying which is those people don't matter. And the fact that we have people that make that little"
+  },
+  {
+   "start": 561.51,
+   "end": 566.07,
+   "text": "money in our economy, that doesn't matter to you. It matters to me and I think it matters to the"
+  },
+  {
+   "start": 566.07,
+   "end": 571.11,
+   "text": "labor market in a way that maybe you can't understand, which is that you are competing"
+  },
+  {
+   "start": 571.11,
+   "end": 575.91,
+   "text": "in a market with someone who is not only making $7.25 on paper, but whose employer isn't paying"
+  },
+  {
+   "start": 575.91,
+   "end": 580.31,
+   "text": "them the full amount. They'll do things like, you need to clock out and finish sweeping."
+  },
+  {
+   "start": 580.95,
+   "end": 584.63,
+   "text": "Or like, you quit, so I'm not going to send you your last paycheck. It's a very,"
+  },
+  {
+   "start": 584.63,
+   "end": 590.55,
+   "text": "like, become super commonplace. And I, you know, nowhere in the United States does the federal"
+  },
+  {
+   "start": 590.55,
+   "end": 595.91,
+   "text": "government say you have to provide a pay stub. Try to let that sit in your mind as we've passed"
+  },
+  {
+   "start": 595.91,
+   "end": 599.51,
+   "text": "work requirements on things like Medicaid that you were required to prove that you worked,"
+  },
+  {
+   "start": 599.51,
+   "end": 602.23,
+   "text": "but your employer is not required to prove that they paid you."
+  },
+  {
+   "start": 602.23,
+   "end": 606.95,
+   "text": "And so these are the types of like, they're very small things, but they add up to a loss"
+  },
+  {
+   "start": 606.95,
+   "end": 612.95,
+   "text": "of worker power. One of the central struggles of this is to get people to understand that"
+  },
+  {
+   "start": 612.95,
+   "end": 619.91,
+   "text": "other workers being disempowered, that does affect you. And not all policy that will fix"
+  },
+  {
+   "start": 619.91,
+   "end": 624.55,
+   "text": "what's going on in the economy will flow through you. I raised the minimum wage."
+  },
+  {
+   "start": 624.55,
+   "end": 629.15,
+   "text": "I have a pretty good sense that maybe like 98% of you won't be that affected by it."
+  },
+  {
+   "start": 629.15,
+   "end": 633.47,
+   "text": "But that doesn't mean that your lot isn't improved just because your wage wasn't legally"
+  },
+  {
+   "start": 633.47,
+   "end": 634.47,
+   "text": "raised."
+  },
+  {
+   "start": 634.47,
+   "end": 639.87,
+   "text": "I think the erosion of labor standards is using the minimum wage as a post-retail."
+  },
+  {
+   "start": 639.87,
+   "end": 641.55,
+   "text": "It's a pretty easy story to understand."
+  },
+  {
+   "start": 641.55,
+   "end": 647.59,
+   "text": "And then tell that story three times or four times rather with union practices."
+  },
+  {
+   "start": 647.59,
+   "end": 648.87,
+   "text": "Same thing, let it slide."
+  },
+  {
+   "start": 648.87,
+   "end": 649.87,
+   "text": "Don't protect workers."
+  },
+  {
+   "start": 649.87,
+   "end": 651.99,
+   "text": "We don't have unionization really anymore."
+  },
+  {
+   "start": 651.99,
+   "end": 656.23,
+   "text": "private sector workers organized now than before the National Labor Relations Act was passed,"
+  },
+  {
+   "start": 656.23,
+   "end": 661.27,
+   "text": "so it's as if the law doesn't exist. Same thing with unemployment benefits. You lose your job"
+  },
+  {
+   "start": 661.27,
+   "end": 665.43,
+   "text": "and you need help. Can you get it? Not the way you used to. And then there's kind of a whole"
+  },
+  {
+   "start": 665.43,
+   "end": 672.31,
+   "text": "separate set of policies related to the tax code. So let's tease that out. Well, man,"
+  },
+  {
+   "start": 672.31,
+   "end": 676.55,
+   "text": "there's so much here. There's so much here. I'm going to roll back for just a second. So I'm just"
+  },
+  {
+   "start": 676.55,
+   "end": 680.39,
+   "text": "going to start with the minimum wage and then we'll walk through a little bit of the various ways"
+  },
+  {
+   "start": 680.39,
+   "end": 684.95,
+   "text": "that labor has been disincentivized and that capital has been incentivized."
+  },
+  {
+   "start": 684.95,
+   "end": 690.17,
+   "text": "So you say minimum wage, there's only like 1% of doing that."
+  },
+  {
+   "start": 690.17,
+   "end": 694.65,
+   "text": "But the truth also is in this country, if you make $10 an hour, that's not enough to"
+  },
+  {
+   "start": 694.65,
+   "end": 695.65,
+   "text": "live comfortably."
+  },
+  {
+   "start": 695.65,
+   "end": 699.17,
+   "text": "If you make $12 an hour, that's not enough to live comfortably."
+  },
+  {
+   "start": 699.17,
+   "end": 705.39,
+   "text": "And we subsidize these companies that pay these lower wages."
+  },
+  {
+   "start": 705.39,
+   "end": 713.23,
+   "text": "So we create more value for them and then have to subsidize with food benefits or health"
+  },
+  {
+   "start": 713.23,
+   "end": 715.67,
+   "text": "benefits for people that are making that."
+  },
+  {
+   "start": 715.67,
+   "end": 721.24,
+   "text": "So these companies are not just held to that standard."
+  },
+  {
+   "start": 721.24,
+   "end": 726.56,
+   "text": "We actually subsidize them for not reaching that standard for workers."
+  },
+  {
+   "start": 726.56,
+   "end": 731.32,
+   "text": "There's about nine million full-time workers who are on Medicaid or food stamps."
+  },
+  {
+   "start": 731.32,
+   "end": 732.32,
+   "text": "Nine million."
+  },
+  {
+   "start": 732.32,
+   "end": 733.36,
+   "text": "Full time."
+  },
+  {
+   "start": 733.36,
+   "end": 735.48,
+   "text": "Part time, there'd be more."
+  },
+  {
+   "start": 735.48,
+   "end": 741.62,
+   "text": "I mean, and that's still just one part of it because you are working at such a low wage"
+  },
+  {
+   "start": 741.62,
+   "end": 746.0,
+   "text": "that you are eligible for food stamps and Medicaid, you are probably getting something"
+  },
+  {
+   "start": 746.0,
+   "end": 748.08,
+   "text": "like the Earned Income Tax Credit."
+  },
+  {
+   "start": 748.08,
+   "end": 753.52,
+   "text": "So it's the positionality of the government to say that you are going to be in a very"
+  },
+  {
+   "start": 753.52,
+   "end": 760.12,
+   "text": "low wage job and we will use the benefit system and the tax system to basically keep you happy"
+  },
+  {
+   "start": 760.12,
+   "end": 762.64,
+   "text": "and not put any of that burden on the employer."
+  },
+  {
+   "start": 762.64,
+   "end": 767.6,
+   "text": "I mean, another example of this, one that just makes me set my hair on fire if I think"
+  },
+  {
+   "start": 767.6,
+   "end": 768.6,
+   "text": "about it."
+  },
+  {
+   "start": 768.6,
+   "end": 769.6,
+   "text": "Don't, don't set it."
+  },
+  {
+   "start": 769.6,
+   "end": 771.2,
+   "text": "Catherine, we talked about this earlier."
+  },
+  {
+   "start": 771.2,
+   "end": 773.16,
+   "text": "There'll be no fire on this program."
+  },
+  {
+   "start": 773.16,
+   "end": 779.36,
+   "text": "I mean, something like the overtime credit or the tips, the tip credit, where, you know,"
+  },
+  {
+   "start": 779.36,
+   "end": 782.76,
+   "text": "he makes this campaign promise we're not going to have taxes on tips."
+  },
+  {
+   "start": 782.76,
+   "end": 787.6,
+   "text": "And so then some workers in some household situations in which they are eligible can"
+  },
+  {
+   "start": 787.6,
+   "end": 793.42,
+   "text": "get a credit for part of their tips, meaning that you taxpayer are helping subsidize the"
+  },
+  {
+   "start": 793.42,
+   "end": 795.26,
+   "text": "labor of somebody else."
+  },
+  {
+   "start": 795.26,
+   "end": 798.46,
+   "text": "They could have amended the Fair Labor Standards Act to raise overtime."
+  },
+  {
+   "start": 798.46,
+   "end": 799.9,
+   "text": "Well, don't make it time and a half."
+  },
+  {
+   "start": 799.9,
+   "end": 801.02,
+   "text": "Make it time and three quarters."
+  },
+  {
+   "start": 801.02,
+   "end": 802.46,
+   "text": "Make it twice."
+  },
+  {
+   "start": 802.46,
+   "end": 806.78,
+   "text": "They could have said the tipped minimum wage is no longer $2 an hour."
+  },
+  {
+   "start": 806.78,
+   "end": 807.94,
+   "text": "Let's get rid of the tipped minimum wage."
+  },
+  {
+   "start": 807.94,
+   "end": 813.98,
+   "text": "They could have given every single worker a raise and made the employer whose labor profit,"
+  },
+  {
+   "start": 813.98,
+   "end": 815.86,
+   "text": "who profits from their labor, pay for it."
+  },
+  {
+   "start": 815.86,
+   "end": 818.82,
+   "text": "Instead, you taxpayer are subsidizing it."
+  },
+  {
+   "start": 818.82,
+   "end": 820.3,
+   "text": "Explain the subsidy part."
+  },
+  {
+   "start": 820.3,
+   "end": 822.06,
+   "text": "Explain how we're subsidizing that."
+  },
+  {
+   "start": 822.06,
+   "end": 827.07,
+   "text": "So if you say to somebody, we're not going to tax your tips anymore."
+  },
+  {
+   "start": 827.07,
+   "end": 828.83,
+   "text": "How are we subsidizing that?"
+  },
+  {
+   "start": 828.83,
+   "end": 833.99,
+   "text": "Are we, is our money going to the employer now because they get a tax credit?"
+  },
+  {
+   "start": 833.99,
+   "end": 834.99,
+   "text": "How does that work?"
+  },
+  {
+   "start": 834.99,
+   "end": 837.47,
+   "text": "So it reduces the tax bill of people who qualify."
+  },
+  {
+   "start": 837.47,
+   "end": 838.47,
+   "text": "Okay."
+  },
+  {
+   "start": 838.47,
+   "end": 839.75,
+   "text": "So it's basically a coupon."
+  },
+  {
+   "start": 839.75,
+   "end": 843.51,
+   "text": "So you're a tipped worker and you file your taxes, you get a little coupon for your tips"
+  },
+  {
+   "start": 843.51,
+   "end": 845.83,
+   "text": "and you don't owe as much in taxes."
+  },
+  {
+   "start": 845.83,
+   "end": 847.71,
+   "text": "It's called tax expenditure."
+  },
+  {
+   "start": 847.71,
+   "end": 851.43,
+   "text": "It's spending that goes out through the tax code, where I'm going to lower your tax bill"
+  },
+  {
+   "start": 851.43,
+   "end": 853.27,
+   "text": "through these coupons."
+  },
+  {
+   "start": 853.27,
+   "end": 856.95,
+   "text": "And it's a way, it's like a complex bonus system that our tax system is turned into."
+  },
+  {
+   "start": 856.95,
+   "end": 861.47,
+   "text": "That means that people who don't get the coupon, they have to, they're the ones paying taxes."
+  },
+  {
+   "start": 861.47,
+   "end": 866.51,
+   "text": "But like you and I make the exact same amount of money, but you got a little bit more in"
+  },
+  {
+   "start": 866.51,
+   "end": 870.33,
+   "text": "tips and I don't have tips, I pay more in taxes than you."
+  },
+  {
+   "start": 870.33,
+   "end": 874.91,
+   "text": "So I'm now subsidizing you and your employer because you're better off via the fact that"
+  },
+  {
+   "start": 874.91,
+   "end": 884.84,
+   "text": "I pay the full tax load and your employer doesn't pay you as much."
+  },
+  {
+   "start": 884.84,
+   "end": 895.68,
+   "text": "Yo, ground a motherfucking news, ground news."
+  },
+  {
+   "start": 895.68,
+   "end": 905.57,
+   "text": "It's a website and it's an app that helps you make sense of the just sewage flow into"
+  },
+  {
+   "start": 905.57,
+   "end": 909.21,
+   "text": "the river that is our media ecosystem."
+  },
+  {
+   "start": 909.21,
+   "end": 916.41,
+   "text": "news, it helps you make sense of what your algorithm is flooding towards you. It compares"
+  },
+  {
+   "start": 916.41,
+   "end": 923.29,
+   "text": "coverage on stories across news outlets, compares them across international coverage. You may not"
+  },
+  {
+   "start": 923.29,
+   "end": 930.73,
+   "text": "realize this. America, we're not getting the information that the world is necessarily getting."
+  },
+  {
+   "start": 930.73,
+   "end": 935.77,
+   "text": "So it helps you differentiate how the world is seeing the events in this country, how we are"
+  },
+  {
+   "start": 935.77,
+   "end": 940.55,
+   "text": "seeing it, how we're seeing the events in the world, it's remarkable."
+  },
+  {
+   "start": 940.55,
+   "end": 943.77,
+   "text": "It compares how each outlet frames the same story."
+  },
+  {
+   "start": 943.77,
+   "end": 946.59,
+   "text": "You can even see news sources factuality rating."
+  },
+  {
+   "start": 946.59,
+   "end": 950.33,
+   "text": "You can see who's funding them."
+  },
+  {
+   "start": 950.33,
+   "end": 952.02,
+   "text": "What?"
+  },
+  {
+   "start": 952.02,
+   "end": 953.02,
+   "text": "What?"
+  },
+  {
+   "start": 953.02,
+   "end": 954.34,
+   "text": "Transparency?"
+  },
+  {
+   "start": 954.34,
+   "end": 958.64,
+   "text": "Oh, the crown prince of who?"
+  },
+  {
+   "start": 958.64,
+   "end": 960.14,
+   "text": "That's who paid for..."
+  },
+  {
+   "start": 960.14,
+   "end": 961.14,
+   "text": "Hmm."
+  },
+  {
+   "start": 961.14,
+   "end": 962.14,
+   "text": "Hmm."
+  },
+  {
+   "start": 962.14,
+   "end": 972.94,
+   "text": "Subscribe for 40% off unlimited access by scanning the QR code on screen or go to ground.news.js."
+  },
+  {
+   "start": 972.94,
+   "end": 975.66,
+   "text": "Make sure you use our link so they know we sent you."
+  },
+  {
+   "start": 975.66,
+   "end": 985.52,
+   "text": "Again, that's ground.news.js."
+  },
+  {
+   "start": 985.52,
+   "end": 991.84,
+   "text": "Why is it that capital and corporations are given all these subsidies and all these benefits"
+  },
+  {
+   "start": 991.84,
+   "end": 995.92,
+   "text": "because that does shift the burden, doesn't it, to the rest of us?"
+  },
+  {
+   "start": 995.92,
+   "end": 999.36,
+   "text": "Yeah, it absolutely does."
+  },
+  {
+   "start": 999.36,
+   "end": 1001.56,
+   "text": "What is so successful about this narrative?"
+  },
+  {
+   "start": 1001.56,
+   "end": 1007.76,
+   "text": "I mean, I think they hold a lot of power and they say, if you make us do anything, you'll"
+  },
+  {
+   "start": 1007.76,
+   "end": 1009.32,
+   "text": "lose jobs."
+  },
+  {
+   "start": 1009.32,
+   "end": 1013.52,
+   "text": "And I think most members of Congress are relatively terrified of the prospect of losing jobs"
+  },
+  {
+   "start": 1013.52,
+   "end": 1014.52,
+   "text": "or employers."
+  },
+  {
+   "start": 1014.52,
+   "end": 1018.64,
+   "text": "So it's kind of a hostage negotiation."
+  },
+  {
+   "start": 1018.64,
+   "end": 1019.64,
+   "text": "You'll lose jobs."
+  },
+  {
+   "start": 1019.64,
+   "end": 1020.64,
+   "text": "I'll have to cut jobs."
+  },
+  {
+   "start": 1020.64,
+   "end": 1023.96,
+   "text": "If you make me pay this, if you make me do this, I won't employ as many people and so"
+  },
+  {
+   "start": 1023.96,
+   "end": 1025.8,
+   "text": "you'll lose jobs."
+  },
+  {
+   "start": 1025.8,
+   "end": 1031.96,
+   "text": "That is the most common argument you hear, that it's the livelihood of workers, that"
+  },
+  {
+   "start": 1031.96,
+   "end": 1036.52,
+   "text": "we're better off subsidizing them than losing them all together because we're putting too much"
+  },
+  {
+   "start": 1036.52,
+   "end": 1040.52,
+   "text": "of a burden on companies, which this would be a great time for me to say, have had the"
+  },
+  {
+   "start": 1040.52,
+   "end": 1044.52,
+   "text": "five highest year of corporate profit in US history, the most previous five."
+  },
+  {
+   "start": 1044.52,
+   "end": 1053.56,
+   "text": "Let's stop for a second. Let me hit the Rewind button. So, these have been the most profitable"
+  },
+  {
+   "start": 1053.56,
+   "end": 1059.0,
+   "text": "years for corporate earnings in history, these last five."
+  },
+  {
+   "start": 1059.0,
+   "end": 1063.48,
+   "text": "And yet there is very clearly a crisis among the people who work."
+  },
+  {
+   "start": 1063.48,
+   "end": 1071.14,
+   "text": "Now again, that has got to be based on intentional policies that have been created."
+  },
+  {
+   "start": 1071.14,
+   "end": 1075.32,
+   "text": "So is it based on the fact that this is a hostage negotiation?"
+  },
+  {
+   "start": 1075.32,
+   "end": 1083.0,
+   "text": "So the policies have to be always tilted in the favor of corporate profit and corporate"
+  },
+  {
+   "start": 1083.0,
+   "end": 1088.28,
+   "text": "earnings. Yeah. I mean, there's a kind version of this story, like a gracious version where"
+  },
+  {
+   "start": 1088.28,
+   "end": 1095.88,
+   "text": "you say, okay, tax policy is very complicated. It's very hard to get right. And Congress"
+  },
+  {
+   "start": 1095.88,
+   "end": 1104.28,
+   "text": "is just, they're trying to use tax policy to create good economic policy and they're"
+  },
+  {
+   "start": 1104.28,
+   "end": 1109.08,
+   "text": "just missing. And it's not like a nefarious, it's not that they got together and like,"
+  },
+  {
+   "start": 1109.08,
+   "end": 1112.72,
+   "text": "let's figure out how to make workers and all of our voters worse off and companies better."
+  },
+  {
+   "start": 1112.72,
+   "end": 1115.06,
+   "text": "like they are just truly bad at their job."
+  },
+  {
+   "start": 1115.06,
+   "end": 1117.06,
+   "text": "I think there's room for that."
+  },
+  {
+   "start": 1117.06,
+   "end": 1120.16,
+   "text": "That's the gracious, that's the gracious version of this."
+  },
+  {
+   "start": 1120.16,
+   "end": 1122.12,
+   "text": "They suck at what they do."
+  },
+  {
+   "start": 1122.12,
+   "end": 1125.7,
+   "text": "Well, so I, I mean, there's so much policy"
+  },
+  {
+   "start": 1125.7,
+   "end": 1129.0,
+   "text": "we are missing in the US that has shown up in the tax code."
+  },
+  {
+   "start": 1129.0,
+   "end": 1131.0,
+   "text": "I mean, we don't have paid family leave."
+  },
+  {
+   "start": 1131.0,
+   "end": 1132.88,
+   "text": "We don't have universal childcare."
+  },
+  {
+   "start": 1132.88,
+   "end": 1135.2,
+   "text": "We don't have paid sick days for workers,"
+  },
+  {
+   "start": 1135.2,
+   "end": 1137.88,
+   "text": "but then we'll, or we don't have a raised minimum wage,"
+  },
+  {
+   "start": 1137.88,
+   "end": 1140.0,
+   "text": "but then we'll have things like a tipped credit."
+  },
+  {
+   "start": 1140.0,
+   "end": 1142.52,
+   "text": "We'll have, you know, a childcare and dependent care,"
+  },
+  {
+   "start": 1142.52,
+   "end": 1148.52,
+   "text": "tax credit, a flexible savings account, where like tax policy has been the most active policy"
+  },
+  {
+   "start": 1148.52,
+   "end": 1152.92,
+   "text": "in Congress over the past 25 years. I mean, they are constantly messing with the tax code."
+  },
+  {
+   "start": 1152.92,
+   "end": 1155.76,
+   "text": "So if you want something done and you want to help people, you just shove it in the tax"
+  },
+  {
+   "start": 1155.76,
+   "end": 1160.32,
+   "text": "code. That's actually pretty hard to do well. And you end up with a lot of loopholes. So"
+  },
+  {
+   "start": 1160.32,
+   "end": 1163.76,
+   "text": "I think the same thing with the corporate income tax. I mean, they wanted to cut the"
+  },
+  {
+   "start": 1163.76,
+   "end": 1169.32,
+   "text": "corporate income tax rates. They just did a very bad job at it. I mean, the US corporate"
+  },
+  {
+   "start": 1169.32,
+   "end": 1173.04,
+   "text": "Your tax rate has always been statutory one level and then effective much lower because"
+  },
+  {
+   "start": 1173.04,
+   "end": 1175.4,
+   "text": "of all of the tax coupons the corporations get."
+  },
+  {
+   "start": 1175.4,
+   "end": 1176.4,
+   "text": "Roll back."
+  },
+  {
+   "start": 1176.4,
+   "end": 1177.4,
+   "text": "Roll back."
+  },
+  {
+   "start": 1177.4,
+   "end": 1179.92,
+   "text": "I don't, statutory one."
+  },
+  {
+   "start": 1179.92,
+   "end": 1180.92,
+   "text": "What?"
+  },
+  {
+   "start": 1180.92,
+   "end": 1181.92,
+   "text": "Hold on."
+  },
+  {
+   "start": 1181.92,
+   "end": 1184.92,
+   "text": "So I would say the corporate income tax rate is 35%."
+  },
+  {
+   "start": 1184.92,
+   "end": 1189.4,
+   "text": "And then by the way, corporations here are all the coupons you can claim for bonuses,"
+  },
+  {
+   "start": 1189.4,
+   "end": 1191.24,
+   "text": "for research and development."
+  },
+  {
+   "start": 1191.24,
+   "end": 1198.5,
+   "text": "You can, I think you can claim corporate jet as a write-off if it's used for corporate"
+  },
+  {
+   "start": 1198.5,
+   "end": 1201.94,
+   "text": "travel 50% of the time or more."
+  },
+  {
+   "start": 1201.94,
+   "end": 1202.94,
+   "text": "That's all you got to hit?"
+  },
+  {
+   "start": 1202.94,
+   "end": 1203.94,
+   "text": "That's all you got to hit."
+  },
+  {
+   "start": 1203.94,
+   "end": 1204.94,
+   "text": "Easy, Mark."
+  },
+  {
+   "start": 1204.94,
+   "end": 1209.06,
+   "text": "You can do 50% travel there and then 50% like, hey, let's go to Bermuda."
+  },
+  {
+   "start": 1209.06,
+   "end": 1211.62,
+   "text": "Let's just go do whatever we want."
+  },
+  {
+   "start": 1211.62,
+   "end": 1212.62,
+   "text": "All right."
+  },
+  {
+   "start": 1212.62,
+   "end": 1213.62,
+   "text": "Yep."
+  },
+  {
+   "start": 1213.62,
+   "end": 1214.62,
+   "text": "Those are the coupons you can get."
+  },
+  {
+   "start": 1214.62,
+   "end": 1221.62,
+   "text": "If Congress says the tax rate is 35%, in actuality, they'll pay closer to 20 on average."
+  },
+  {
+   "start": 1221.62,
+   "end": 1225.58,
+   "text": "When they lowered the corporate tax rate, I thought they lowered it to 20."
+  },
+  {
+   "start": 1225.58,
+   "end": 1226.58,
+   "text": "They did."
+  },
+  {
+   "start": 1226.58,
+   "end": 1229.22,
+   "text": "and then the actual rate paid fell closer to 10."
+  },
+  {
+   "start": 1229.22,
+   "end": 1237.14,
+   "text": "So they even lowered it further. So when we talk about the using the tax code as,"
+  },
+  {
+   "start": 1237.14,
+   "end": 1244.85,
+   "text": "I guess, a surrogate for policy courage or legislative function, which I guess we don't"
+  },
+  {
+   "start": 1244.85,
+   "end": 1249.39,
+   "text": "really have. The one thing maybe that we also have to remember in this equation is"
+  },
+  {
+   "start": 1249.39,
+   "end": 1257.72,
+   "text": "one side of that equation has access to our lawmakers and one side of the equation doesn't."
+  },
+  {
+   "start": 1257.72,
+   "end": 1263.48,
+   "text": "Yeah, I think you can argue that. I mean, you can zoom out and go back to what we've been"
+  },
+  {
+   "start": 1263.48,
+   "end": 1268.72,
+   "text": "talking about this 50-year time period. So, you know, zoom out. Zoom out. Starting in the 80s,"
+  },
+  {
+   "start": 1268.72,
+   "end": 1275.38,
+   "text": "the Reagan era, you're starting to see real problems with wages where people are,"
+  },
+  {
+   "start": 1275.38,
+   "end": 1281.22,
+   "text": "you've got a terrible recession, it takes a long time for people to recover, you see"
+  },
+  {
+   "start": 1281.22,
+   "end": 1287.82,
+   "text": "real wage declines for huge parts of the wage distribution and people are really hurting."
+  },
+  {
+   "start": 1287.82,
+   "end": 1293.5,
+   "text": "And the first kind of narrative that comes up is, well, the economy is evolving, people,"
+  },
+  {
+   "start": 1293.5,
+   "end": 1299.26,
+   "text": "they just need to go to college, they don't have the right skills. And this narrative"
+  },
+  {
+   "start": 1299.26,
+   "end": 1304.34,
+   "text": "takes over that it's almost like workers fault for not having the right training. And so"
+  },
+  {
+   "start": 1304.34,
+   "end": 1308.18,
+   "text": "So there's no compelling evidence to be like, well, we don't need to raise the minimum wage."
+  },
+  {
+   "start": 1308.18,
+   "end": 1309.18,
+   "text": "That would hurt jobs."
+  },
+  {
+   "start": 1309.18,
+   "end": 1311.38,
+   "text": "We don't need to make everyone have a sick day."
+  },
+  {
+   "start": 1311.38,
+   "end": 1312.9,
+   "text": "That would hurt jobs."
+  },
+  {
+   "start": 1312.9,
+   "end": 1319.66,
+   "text": "And this kind of crashes into the 21st century where we start to pile things into the tax"
+  },
+  {
+   "start": 1319.66,
+   "end": 1325.1,
+   "text": "code and it becomes more and more evident that people are hurting."
+  },
+  {
+   "start": 1325.1,
+   "end": 1326.86,
+   "text": "We have persistent levels of poverty."
+  },
+  {
+   "start": 1326.86,
+   "end": 1330.66,
+   "text": "We've got housing costs are taking off and we have a foreclosure crisis."
+  },
+  {
+   "start": 1330.66,
+   "end": 1335.1,
+   "text": "And there's this just, you know, put a tax credit on it, kind of becomes the de facto"
+  },
+  {
+   "start": 1335.1,
+   "end": 1339.86,
+   "text": "policy that it's almost as like the problem is the same problem."
+  },
+  {
+   "start": 1339.86,
+   "end": 1342.26,
+   "text": "Workers don't have enough power and they're not earning it much."
+  },
+  {
+   "start": 1342.26,
+   "end": 1344.38,
+   "text": "They need more help from their government."
+  },
+  {
+   "start": 1344.38,
+   "end": 1348.9,
+   "text": "And the government is basically like, well, hear me out."
+  },
+  {
+   "start": 1348.9,
+   "end": 1351.78,
+   "text": "Maybe instead of this, we're just going to have a tax credit for your corporation for"
+  },
+  {
+   "start": 1351.78,
+   "end": 1352.78,
+   "text": "that."
+  },
+  {
+   "start": 1352.78,
+   "end": 1353.78,
+   "text": "So we're going to do this."
+  },
+  {
+   "start": 1353.78,
+   "end": 1357.9,
+   "text": "And so there's almost like a recognition of the problem without saying out loud the cause"
+  },
+  {
+   "start": 1357.9,
+   "end": 1358.9,
+   "text": "of it."
+  },
+  {
+   "start": 1358.9,
+   "end": 1361.66,
+   "text": "Like I think Congress's actions would show"
+  },
+  {
+   "start": 1361.66,
+   "end": 1363.26,
+   "text": "trying to help the middle class,"
+  },
+  {
+   "start": 1363.26,
+   "end": 1364.66,
+   "text": "trying to help the working class,"
+  },
+  {
+   "start": 1364.66,
+   "end": 1365.9,
+   "text": "trying to put things out there."
+  },
+  {
+   "start": 1365.9,
+   "end": 1368.34,
+   "text": "They are just extremely bad at it because they,"
+  },
+  {
+   "start": 1368.34,
+   "end": 1371.22,
+   "text": "you know, the problem is workers don't have enough power."
+  },
+  {
+   "start": 1371.22,
+   "end": 1373.7,
+   "text": "And being able to say that out loud"
+  },
+  {
+   "start": 1373.7,
+   "end": 1375.14,
+   "text": "changes how you respond to it."
+  },
+  {
+   "start": 1375.14,
+   "end": 1376.66,
+   "text": "If the problem is like, well,"
+  },
+  {
+   "start": 1376.66,
+   "end": 1378.54,
+   "text": "they need some credits to get a new job or like,"
+  },
+  {
+   "start": 1378.54,
+   "end": 1380.5,
+   "text": "well, like housing got expensive"
+  },
+  {
+   "start": 1380.5,
+   "end": 1381.34,
+   "text": "after the financial crisis."
+  },
+  {
+   "start": 1381.34,
+   "end": 1382.18,
+   "text": "We'll retrain them."
+  },
+  {
+   "start": 1382.18,
+   "end": 1383.98,
+   "text": "We'll retrain, we'll do, like we'll do this."
+  },
+  {
+   "start": 1383.98,
+   "end": 1386.34,
+   "text": "Like there's a real, you know,"
+  },
+  {
+   "start": 1386.34,
+   "end": 1391.62,
+   "text": "There's some value to saying this is the problem because the solutions we've had for 50 years,"
+  },
+  {
+   "start": 1391.62,
+   "end": 1397.9,
+   "text": "I wouldn't say are some really, sure there's bad people in Congress, but I think a lot"
+  },
+  {
+   "start": 1397.9,
+   "end": 1401.9,
+   "text": "of them are trying hard, but they're just not succeeding."
+  },
+  {
+   "start": 1401.9,
+   "end": 1405.14,
+   "text": "The policies that they've pursued are not succeeding."
+  },
+  {
+   "start": 1405.14,
+   "end": 1408.98,
+   "text": "Something that I try to always emphasize is we're not out of options."
+  },
+  {
+   "start": 1408.98,
+   "end": 1411.58,
+   "text": "We have a lot we can do."
+  },
+  {
+   "start": 1411.58,
+   "end": 1416.46,
+   "text": "To move forward, we have to actually name the problem and attack it head-on."
+  },
+  {
+   "start": 1416.46,
+   "end": 1419.62,
+   "text": "Catherine, that's where we get to."
+  },
+  {
+   "start": 1419.62,
+   "end": 1424.94,
+   "text": "My thought is, why can't we effectively rebalance?"
+  },
+  {
+   "start": 1424.94,
+   "end": 1431.98,
+   "text": "This isn't one of those, it's the way we practice capitalism versus we must get rid"
+  },
+  {
+   "start": 1431.98,
+   "end": 1433.74,
+   "text": "of this entire system."
+  },
+  {
+   "start": 1433.74,
+   "end": 1438.38,
+   "text": "We've allowed, so that time from Reagan is also in the time when globalization took"
+  },
+  {
+   "start": 1438.38,
+   "end": 1441.34,
+   "text": "shape and offshoring took shape."
+  },
+  {
+   "start": 1441.34,
+   "end": 1448.5,
+   "text": "And we allowed all these corporate entities to find the low watermark as far as what they"
+  },
+  {
+   "start": 1448.5,
+   "end": 1452.82,
+   "text": "could pay workers, what worker protections would be laid out there."
+  },
+  {
+   "start": 1452.82,
+   "end": 1460.05,
+   "text": "And you could send those jobs overseas because capital can travel, but labor can't."
+  },
+  {
+   "start": 1460.05,
+   "end": 1468.07,
+   "text": "And so we've allowed these corporate entities in search of growth to find all these low"
+  },
+  {
+   "start": 1468.07,
+   "end": 1473.99,
+   "text": "watermarks to pop up their earnings and so that all that matters is stock price and equities"
+  },
+  {
+   "start": 1473.99,
+   "end": 1483.46,
+   "text": "and growth. Why can't we rebalance that equation? Why can't we ask anything of these entities?"
+  },
+  {
+   "start": 1484.82,
+   "end": 1489.46,
+   "text": "By the way, let's say this, and it's not even about finding the low watermark in other countries"
+  },
+  {
+   "start": 1489.46,
+   "end": 1496.57,
+   "text": "like workers in Vietnam. Texas will do that to New York. We'll find the low watermark in this"
+  },
+  {
+   "start": 1496.57,
+   "end": 1497.57,
+   "text": "country."
+  },
+  {
+   "start": 1497.57,
+   "end": 1499.73,
+   "text": "Okay, so you do know I'm in Houston right now, right?"
+  },
+  {
+   "start": 1499.73,
+   "end": 1501.09,
+   "text": "Is that why you said Texas in New York?"
+  },
+  {
+   "start": 1501.09,
+   "end": 1502.09,
+   "text": "Did I say Houston?"
+  },
+  {
+   "start": 1502.09,
+   "end": 1503.37,
+   "text": "I didn't mean Texas."
+  },
+  {
+   "start": 1503.37,
+   "end": 1507.41,
+   "text": "What I meant was South Carolina, son of a bitch."
+  },
+  {
+   "start": 1507.41,
+   "end": 1508.41,
+   "text": "Thank you."
+  },
+  {
+   "start": 1508.41,
+   "end": 1509.89,
+   "text": "But is that right?"
+  },
+  {
+   "start": 1509.89,
+   "end": 1510.89,
+   "text": "100%."
+  },
+  {
+   "start": 1510.89,
+   "end": 1511.89,
+   "text": "Yes."
+  },
+  {
+   "start": 1511.89,
+   "end": 1517.85,
+   "text": "No, it's, I mean, even conservative think tanks like the Mercatus Center will tell localities,"
+  },
+  {
+   "start": 1517.85,
+   "end": 1522.33,
+   "text": "do not try to lure companies here because it's a race to the bottom and you give them"
+  },
+  {
+   "start": 1522.33,
+   "end": 1525.73,
+   "text": "a corporate tax break, you give them a property tax break, you give them an unemployment insurance"
+  },
+  {
+   "start": 1525.73,
+   "end": 1528.69,
+   "text": "tax break and they're there for a year, they take it all and they leave."
+  },
+  {
+   "start": 1528.69,
+   "end": 1531.14,
+   "text": "So I think there's two things."
+  },
+  {
+   "start": 1531.14,
+   "end": 1534.26,
+   "text": "One, I mean, you've been in media a long time."
+  },
+  {
+   "start": 1534.26,
+   "end": 1536.02,
+   "text": "I'm kind of new to this space."
+  },
+  {
+   "start": 1536.02,
+   "end": 1541.86,
+   "text": "I'm coming from the economics world, but I get the distinct impression that economics"
+  },
+  {
+   "start": 1541.86,
+   "end": 1546.97,
+   "text": "is a very effective straw man, that you want to talk about workers."
+  },
+  {
+   "start": 1546.97,
+   "end": 1551.25,
+   "text": "Workers don't make enough money and someone will throw back at you, you'll cause inflation."
+  },
+  {
+   "start": 1551.25,
+   "end": 1556.81,
+   "text": "And they don't say the problem that you are naming is not happening."
+  },
+  {
+   "start": 1556.81,
+   "end": 1561.87,
+   "text": "They don't say that the problem that you are trying to solve can be solved another way."
+  },
+  {
+   "start": 1561.87,
+   "end": 1567.57,
+   "text": "They just look at your solution and say, well, that makes economy bad, so we can't do it."
+  },
+  {
+   "start": 1567.57,
+   "end": 1572.09,
+   "text": "Well, we see that thread even now when they say, okay, we're going to try and do a pietta"
+  },
+  {
+   "start": 1572.09,
+   "end": 1577.05,
+   "text": "tear tax in New York City on second homes that are above a certain value."
+  },
+  {
+   "start": 1577.05,
+   "end": 1580.57,
+   "text": "And they're all like, great, everybody who's rich is going to leave your city and you're"
+  },
+  {
+   "start": 1580.57,
+   "end": 1582.61,
+   "text": "going to end up with a shithole."
+  },
+  {
+   "start": 1582.61,
+   "end": 1587.17,
+   "text": "Like it is an explicit threat that is laid out."
+  },
+  {
+   "start": 1587.17,
+   "end": 1588.17,
+   "text": "Yeah."
+  },
+  {
+   "start": 1588.17,
+   "end": 1589.17,
+   "text": "Yeah, yeah."
+  },
+  {
+   "start": 1589.17,
+   "end": 1590.77,
+   "text": "Like every reaction is the nuclear option."
+  },
+  {
+   "start": 1590.77,
+   "end": 1599.2,
+   "text": "I, yes, I think that that's one part of what has been so difficult is getting past the"
+  },
+  {
+   "start": 1599.2,
+   "end": 1603.4,
+   "text": "just boogeyman of economy bad that is held up for any progressive policy."
+  },
+  {
+   "start": 1603.4,
+   "end": 1608.04,
+   "text": "You know, I worked of my first job out of college was at the Economic Policy Institute,"
+  },
+  {
+   "start": 1608.04,
+   "end": 1609.04,
+   "text": "super lefty."
+  },
+  {
+   "start": 1609.04,
+   "end": 1611.04,
+   "text": "Wait, that was your first job out of college?"
+  },
+  {
+   "start": 1611.04,
+   "end": 1612.04,
+   "text": "Mm-hmm."
+  },
+  {
+   "start": 1612.04,
+   "end": 1615.84,
+   "text": "Whatever happened to like, bar in bad part of town?"
+  },
+  {
+   "start": 1615.84,
+   "end": 1619.04,
+   "text": "How did you, you must have been, that's a pretty good job."
+  },
+  {
+   "start": 1619.04,
+   "end": 1621.04,
+   "text": "Yeah, I don't know how I got it."
+  },
+  {
+   "start": 1621.04,
+   "end": 1622.04,
+   "text": "I, I..."
+  },
+  {
+   "start": 1622.04,
+   "end": 1623.04,
+   "text": "I do your smartest shit."
+  },
+  {
+   "start": 1623.04,
+   "end": 1625.74,
+   "text": "They hired me over the phone."
+  },
+  {
+   "start": 1625.74,
+   "end": 1632.74,
+   "text": "I was on the, I was in a, like a closet in the office I had on campus at UT Austin where I worked as a clerk."
+  },
+  {
+   "start": 1632.74,
+   "end": 1637.74,
+   "text": "And I was in the closet on the phone and I had like a four hour phone interview with them and they offered me the job side unseen."
+  },
+  {
+   "start": 1637.74,
+   "end": 1640.34,
+   "text": "the first time I met them was when I showed up on my first day of work."
+  },
+  {
+   "start": 1640.5,
+   "end": 1641.06,
+   "text": "Oh, wow."
+  },
+  {
+   "start": 1641.06,
+   "end": 1644.43,
+   "text": "Which was in September of 2008, right?"
+  },
+  {
+   "start": 1644.43,
+   "end": 1646.39,
+   "text": "So it was Labor Day to September 2008."
+  },
+  {
+   "start": 1646.39,
+   "end": 1647.43,
+   "text": "I started the next day."
+  },
+  {
+   "start": 1647.47,
+   "end": 1648.91,
+   "text": "Oh my God."
+  },
+  {
+   "start": 1648.91,
+   "end": 1651.59,
+   "text": "That was my first month on the job."
+  },
+  {
+   "start": 1651.63,
+   "end": 1653.99,
+   "text": "I didn't know anything about the economy."
+  },
+  {
+   "start": 1654.23,
+   "end": 1655.47,
+   "text": "And like the."
+  },
+  {
+   "start": 1655.47,
+   "end": 1656.91,
+   "text": "And that was when the crash."
+  },
+  {
+   "start": 1656.99,
+   "end": 1658.23,
+   "text": "It's AIG."
+  },
+  {
+   "start": 1658.23,
+   "end": 1659.23,
+   "text": "It's Lehman Brothers."
+  },
+  {
+   "start": 1659.23,
+   "end": 1660.75,
+   "text": "Oh my God."
+  },
+  {
+   "start": 1660.75,
+   "end": 1665.91,
+   "text": "John McCain and Barack Obama suspend their campaign, like Bush makes a national address."
+  },
+  {
+   "start": 1665.91,
+   "end": 1668.47,
+   "text": "And like everybody around me knows what's going on."
+  },
+  {
+   "start": 1668.47,
+   "end": 1670.23,
+   "text": "And I'm just like very like,"
+  },
+  {
+   "start": 1670.71,
+   "end": 1673.19,
+   "text": "surreptitiously googling like, do banks fail?"
+  },
+  {
+   "start": 1673.19,
+   "end": 1673.99,
+   "text": "Question mark."
+  },
+  {
+   "start": 1675.8,
+   "end": 1681.0,
+   "text": "Was there ever any instinct for you to just crawl back into the closet at that point"
+  },
+  {
+   "start": 1682.06,
+   "end": 1683.5,
+   "text": "and not deal with it?"
+  },
+  {
+   "start": 1683.5,
+   "end": 1687.82,
+   "text": "I saw, I had no idea what was happening and I didn't understand what was going on."
+  },
+  {
+   "start": 1687.82,
+   "end": 1693.66,
+   "text": "But I was surrounded by people who were with every breath they had fighting for workers."
+  },
+  {
+   "start": 1693.66,
+   "end": 1697.66,
+   "text": "And I didn't know if I was ever going to figure out what was going on in the economy, but"
+  },
+  {
+   "start": 1697.66,
+   "end": 1701.66,
+   "text": "I knew that I was near the right people because they were saying that this..."
+  },
+  {
+   "start": 1701.66,
+   "end": 1708.3,
+   "text": "I remember a specific quote was in my first days of work that the crisis is happening"
+  },
+  {
+   "start": 1708.3,
+   "end": 1713.1,
+   "text": "in the stock market, but the fallout will be in the labor market."
+  },
+  {
+   "start": 1713.1,
+   "end": 1715.26,
+   "text": "And I wanted to be there."
+  },
+  {
+   "start": 1715.26,
+   "end": 1718.58,
+   "text": "I wanted to be in that chair watching all of..."
+  },
+  {
+   "start": 1718.58,
+   "end": 1722.42,
+   "text": "Trying to understand from their perspective, from the worker's perspective of what policies"
+  },
+  {
+   "start": 1722.42,
+   "end": 1723.42,
+   "text": "are chosen."
+  },
+  {
+   "start": 1723.42,
+   "end": 1731.34,
+   "text": "perfect example of that recession was so mishandled. And we gave workers the rawest deal possible."
+  },
+  {
+   "start": 1731.34,
+   "end": 1737.26,
+   "text": "We bailed them out. We bailed out all these toxic assets and we made them whole"
+  },
+  {
+   "start": 1737.98,
+   "end": 1741.58,
+   "text": "and people lost their houses and nobody helped them."
+  },
+  {
+   "start": 1741.58,
+   "end": 1746.78,
+   "text": "Nobody helped them. I mean, it was... And really, workers and unemployment, they were used as"
+  },
+  {
+   "start": 1746.78,
+   "end": 1752.62,
+   "text": "leverage to get tax policy out because the Bush tax cuts were going to expire in the middle of all"
+  },
+  {
+   "start": 1752.62,
+   "end": 1756.14,
+   "text": "all of this and all these unemployed workers became leverage in tax debates."
+  },
+  {
+   "start": 1756.14,
+   "end": 1759.98,
+   "text": "I mean, it was a really ugly time."
+  },
+  {
+   "start": 1759.98,
+   "end": 1764.78,
+   "text": "So it was a very formative experience and it absolutely affects how I see the world."
+  },
+  {
+   "start": 1764.78,
+   "end": 1768.46,
+   "text": "Like I went and got a PhD, I did everything you were supposed to do, I learned everything"
+  },
+  {
+   "start": 1768.46,
+   "end": 1771.74,
+   "text": "neoliberal and theoretical and pure markets and all of that."
+  },
+  {
+   "start": 1771.74,
+   "end": 1775.58,
+   "text": "But in the back of my mind, I was like, but if shit hits the fan, I'm fighting for workers,"
+  },
+  {
+   "start": 1775.58,
+   "end": 1778.34,
+   "text": "I don't care what you're saying."
+  },
+  {
+   "start": 1778.34,
+   "end": 1780.78,
+   "text": "And by the way, and they need people like you doing that."
+  },
+  {
+   "start": 1780.78,
+   "end": 1783.74,
+   "text": "And so, you talk about you learned neoliberal."
+  },
+  {
+   "start": 1783.74,
+   "end": 1788.54,
+   "text": "So on the democratic side, there's sort of this idea of the neoliberal policies, which"
+  },
+  {
+   "start": 1788.54,
+   "end": 1793.34,
+   "text": "is capital travels and you have to let it travel and we have to open up the whole world"
+  },
+  {
+   "start": 1793.34,
+   "end": 1799.02,
+   "text": "and we can't put protections on anything because that will slow growth to the point."
+  },
+  {
+   "start": 1799.02,
+   "end": 1801.78,
+   "text": "I don't really know what their theory was."
+  },
+  {
+   "start": 1801.78,
+   "end": 1806.58,
+   "text": "And on the right, those policies took the form of that sort of trickle down theory,"
+  },
+  {
+   "start": 1806.58,
+   "end": 1811.14,
+   "text": "which is I'm telling you, if you just let rich people rich,"
+  },
+  {
+   "start": 1811.14,
+   "end": 1814.2,
+   "text": "at some point, they're gonna have to come to you"
+  },
+  {
+   "start": 1814.2,
+   "end": 1816.1,
+   "text": "and get their boat repainted."
+  },
+  {
+   "start": 1816.1,
+   "end": 1819.22,
+   "text": "So you have those two competing things,"
+  },
+  {
+   "start": 1819.22,
+   "end": 1822.85,
+   "text": "but you don't have anybody trying to say,"
+  },
+  {
+   "start": 1822.85,
+   "end": 1825.81,
+   "text": "why can't we demand something?"
+  },
+  {
+   "start": 1825.81,
+   "end": 1828.25,
+   "text": "It was like when they bailed out those companies,"
+  },
+  {
+   "start": 1828.25,
+   "end": 1832.01,
+   "text": "there were no caveats within those bailouts that said,"
+  },
+  {
+   "start": 1832.01,
+   "end": 1833.17,
+   "text": "well, give you this money,"
+  },
+  {
+   "start": 1833.17,
+   "end": 1836.37,
+   "text": "but you have to make these adjustments"
+  },
+  {
+   "start": 1836.37,
+   "end": 1841.66,
+   "text": "or you have to give small businesses 25% of that money"
+  },
+  {
+   "start": 1841.7,
+   "end": 1842.88,
+   "text": "that's coming through."
+  },
+  {
+   "start": 1842.88,
+   "end": 1845.12,
+   "text": "We'll set up 0% interest,"
+  },
+  {
+   "start": 1845.12,
+   "end": 1847.24,
+   "text": "but you don't have any responsibility."
+  },
+  {
+   "start": 1847.24,
+   "end": 1850.06,
+   "text": "Their financial regulation was passed"
+  },
+  {
+   "start": 1850.06,
+   "end": 1852.88,
+   "text": "in separate legislation, Dodd-Frank,"
+  },
+  {
+   "start": 1852.88,
+   "end": 1856.84,
+   "text": "but the bailout money was that was paid back,"
+  },
+  {
+   "start": 1856.84,
+   "end": 1858.36,
+   "text": "but they didn't put any strings on it"
+  },
+  {
+   "start": 1858.36,
+   "end": 1859.94,
+   "text": "really when it went out the door."
+  },
+  {
+   "start": 1859.94,
+   "end": 1861.72,
+   "text": "You know, I bring all this up in this time period"
+  },
+  {
+   "start": 1861.72,
+   "end": 1866.48,
+   "text": "in my first job because even at 21 or 22,"
+  },
+  {
+   "start": 1866.48,
+   "end": 1871.54,
+   "text": "at the Economic Policy Institute, you learn pretty quickly that if you're for progressive"
+  },
+  {
+   "start": 1871.54,
+   "end": 1874.74,
+   "text": "economics, you don't know what you're talking about."
+  },
+  {
+   "start": 1874.74,
+   "end": 1877.98,
+   "text": "You're stupid and you don't know what you're talking about."
+  },
+  {
+   "start": 1877.98,
+   "end": 1882.34,
+   "text": "That is the de facto response of like, well, if you want to do things like protect workers,"
+  },
+  {
+   "start": 1882.34,
+   "end": 1884.46,
+   "text": "you don't really understand the economy."
+  },
+  {
+   "start": 1884.46,
+   "end": 1892.62,
+   "text": "And even the PhDs I worked next to, it was very dismissive of there is this almost myth"
+  },
+  {
+   "start": 1892.62,
+   "end": 1898.54,
+   "text": "that to understand the economy is to not care about workers or to not want active labor market"
+  },
+  {
+   "start": 1898.54,
+   "end": 1903.82,
+   "text": "policy. And I remember my old boss telling me, like, well, we're probably just 20 years ahead of them,"
+  },
+  {
+   "start": 1904.55,
+   "end": 1908.95,
+   "text": "you know, that the things that we want when we say it's bad, but someone else will adopt it,"
+  },
+  {
+   "start": 1908.95,
+   "end": 1915.51,
+   "text": "and then it'll become normal. Like productivity, the way that productivity separated from wages."
+  },
+  {
+   "start": 1915.51,
+   "end": 1921.91,
+   "text": "I mean, EPI published that in 1994. And here we are 32 years later, and it's now become a"
+  },
+  {
+   "start": 1921.91,
+   "end": 1926.55,
+   "text": "mainstream chart. I mean, Larry told me the guy, the economist who made it, he's said,"
+  },
+  {
+   "start": 1926.55,
+   "end": 1931.75,
+   "text": "like, that will be on my tombstone, that chart of productivity going up and wages staying"
+  },
+  {
+   "start": 1931.75,
+   "end": 1932.75,
+   "text": "flat."
+  },
+  {
+   "start": 1932.75,
+   "end": 1936.79,
+   "text": "But that chart is everything. I mean, if you look at what she's describing, and I hate"
+  },
+  {
+   "start": 1936.79,
+   "end": 1941.87,
+   "text": "that this is not a visual medium so that we can't really show it, but what it shows is"
+  },
+  {
+   "start": 1941.87,
+   "end": 1949.59,
+   "text": "the percentage of the economy that goes to labor was at like 52% in the 1970s. And then"
+  },
+  {
+   "start": 1949.59,
+   "end": 1956.67,
+   "text": "we instituted all these neoliberal or trickle down policies. And you watch, it's like this"
+  },
+  {
+   "start": 1956.67,
+   "end": 1962.37,
+   "text": "crazy slide that you almost imagine all work. It's like all workers having to get kicked"
+  },
+  {
+   "start": 1962.37,
+   "end": 1968.71,
+   "text": "out of the plane and get on that slide. And it just, you watch their share of the economy"
+  },
+  {
+   "start": 1968.71,
+   "end": 1972.25,
+   "text": "plummet in real time through today."
+  },
+  {
+   "start": 1972.25,
+   "end": 1979.17,
+   "text": "Yep. And if you were to look at the productivity, which productivity is take the US economy,"
+  },
+  {
+   "start": 1979.17,
+   "end": 1984.91,
+   "text": "gold pie and divide it up by every hour of work from all workers. That's productivity"
+  },
+  {
+   "start": 1984.91,
+   "end": 1985.91,
+   "text": "per hour."
+  },
+  {
+   "start": 1985.91,
+   "end": 1986.91,
+   "text": "Okay."
+  },
+  {
+   "start": 1986.91,
+   "end": 1990.91,
+   "text": "And if you look at productivity per hour and wages per hour, they split up. It's like"
+  },
+  {
+   "start": 1990.91,
+   "end": 1995.07,
+   "text": "two lines diverge in a Reagan would and productivity keeps going up."
+  },
+  {
+   "start": 1995.07,
+   "end": 1996.07,
+   "text": "It's like 3x, right?"
+  },
+  {
+   "start": 1996.07,
+   "end": 1997.07,
+   "text": "Yeah."
+  },
+  {
+   "start": 1997.07,
+   "end": 1998.07,
+   "text": "Like it's like 90."
+  },
+  {
+   "start": 1998.07,
+   "end": 2003.11,
+   "text": "Oh yeah. It's really just that there's so much evidence around the idea that workers"
+  },
+  {
+   "start": 2003.11,
+   "end": 2007.99,
+   "text": "have lost power. This has resulted in lower wages that corporations have gained power."
+  },
+  {
+   "start": 2007.99,
+   "end": 2013.29,
+   "text": "They've used this to concentrate amongst each other, to have fewer and fewer employers"
+  },
+  {
+   "start": 2013.29,
+   "end": 2018.97,
+   "text": "as they become massive merged companies, and that this results in lower pay for workers."
+  },
+  {
+   "start": 2018.97,
+   "end": 2021.13,
+   "text": "The data is all there."
+  },
+  {
+   "start": 2021.13,
+   "end": 2025.29,
+   "text": "But even if you point that out, there's always this condescension of like, but we can't do"
+  },
+  {
+   "start": 2025.29,
+   "end": 2027.89,
+   "text": "progressive policies because you don't understand the economy."
+  },
+  {
+   "start": 2027.89,
+   "end": 2029.89,
+   "text": "And I'm like, I mean, I get it."
+  },
+  {
+   "start": 2029.89,
+   "end": 2038.45,
+   "text": "What is the idea that the economy has to be all-sealing, no floor?"
+  },
+  {
+   "start": 2039.57,
+   "end": 2047.97,
+   "text": "Is that that the rebalancing is somehow anathema to supply and demand? Because it's all made up"
+  },
+  {
+   "start": 2047.97,
+   "end": 2054.46,
+   "text": "to some extent. I think that the... Okay. Okay. I think that the..."
+  },
+  {
+   "start": 2054.46,
+   "end": 2057.34,
+   "text": "All right. I'm in trouble. Am I about to get kicked out of class?"
+  },
+  {
+   "start": 2057.34,
+   "end": 2069.09,
+   "text": "I think that the intellectual push around deregulation, around lower taxation, around"
+  },
+  {
+   "start": 2069.09,
+   "end": 2074.75,
+   "text": "fewer regulations in the labor markets, fewer rules for companies was really built on this"
+  },
+  {
+   "start": 2074.75,
+   "end": 2078.54,
+   "text": "idea that government gets in the way of growth."
+  },
+  {
+   "start": 2078.54,
+   "end": 2080.34,
+   "text": "And that government policy gets in the way of growth."
+  },
+  {
+   "start": 2080.34,
+   "end": 2085.66,
+   "text": "And we need to untether businesses and have people move more and work..."
+  },
+  {
+   "start": 2085.66,
+   "end": 2087.04,
+   "text": "This was all about growth."
+  },
+  {
+   "start": 2087.04,
+   "end": 2091.8,
+   "text": "going to have growth and government gets in the way of that. We put that on a timer for"
+  },
+  {
+   "start": 2091.8,
+   "end": 2095.32,
+   "text": "50 years and what we have learned is that government didn't really get in the way of"
+  },
+  {
+   "start": 2095.32,
+   "end": 2099.72,
+   "text": "growth. It got in the way of greed. And it was pretty effective at gaining-"
+  },
+  {
+   "start": 2099.72,
+   "end": 2106.83,
+   "text": "Bars, Catherine. Wait, did you write that down? I'm writing that down."
+  },
+  {
+   "start": 2106.83,
+   "end": 2107.83,
+   "text": "No."
+  },
+  {
+   "start": 2107.83,
+   "end": 2111.87,
+   "text": "Didn't get in the way of growth? It got in the way of greed. Bars."
+  },
+  {
+   "start": 2111.87,
+   "end": 2120.39,
+   "text": "But this is why, I mean, you can't say the neoliberal kind of talking point from that"
+  },
+  {
+   "start": 2120.39,
+   "end": 2124.87,
+   "text": "would say, well, listen, you deregulated, you had fewer rules, and workers just didn't"
+  },
+  {
+   "start": 2124.87,
+   "end": 2127.63,
+   "text": "have the right skills, and they needed to go to college."
+  },
+  {
+   "start": 2127.63,
+   "end": 2132.67,
+   "text": "But people, like the economy shifting to a service economy as opposed to a production"
+  },
+  {
+   "start": 2132.67,
+   "end": 2137.91,
+   "text": "economy where we don't make stuff, we sell stuff, that won't explain the wealth accumulation"
+  },
+  {
+   "start": 2137.91,
+   "end": 2140.52,
+   "text": "of the top 0.1%."
+  },
+  {
+   "start": 2140.52,
+   "end": 2146.16,
+   "text": "You can't say it's because there are people in Ohio, like 5% more people in Ohio need"
+  },
+  {
+   "start": 2146.16,
+   "end": 2150.48,
+   "text": "to go to college than used to, and that's why we have trillionaires."
+  },
+  {
+   "start": 2150.48,
+   "end": 2158.23,
+   "text": "That doesn't follow."
+  },
+  {
+   "start": 2158.23,
+   "end": 2160.55,
+   "text": "Oh, today's ad."
+  },
+  {
+   "start": 2160.55,
+   "end": 2164.35,
+   "text": "Today's ad is Bowl and Branch."
+  },
+  {
+   "start": 2164.35,
+   "end": 2170.71,
+   "text": "I remember when they first got together, like Dow and Jones, when Bowl was doing fine and"
+  },
+  {
+   "start": 2170.71,
+   "end": 2175.56,
+   "text": "Branch, you know, both, listen, they both were doing the best they could."
+  },
+  {
+   "start": 2175.56,
+   "end": 2178.93,
+   "text": "when they got together and formed Bowland Branch."
+  },
+  {
+   "start": 2179.05,
+   "end": 2184.57,
+   "text": "And thank God that a company that sounds so pleasant makes good stuff."
+  },
+  {
+   "start": 2185.09,
+   "end": 2191.29,
+   "text": "They got, they got great sheets, 100% organic cotton, good airflow."
+  },
+  {
+   "start": 2191.81,
+   "end": 2192.69,
+   "text": "Competting, man."
+  },
+  {
+   "start": 2192.81,
+   "end": 2194.13,
+   "text": "It's all about the airflow."
+  },
+  {
+   "start": 2194.13,
+   "end": 2197.01,
+   "text": "You're always thinking you're too hot, too cold and the thing."
+  },
+  {
+   "start": 2197.17,
+   "end": 2201.12,
+   "text": "You get airflow, give you a little softness without that chap heat."
+  },
+  {
+   "start": 2201.12,
+   "end": 2207.47,
+   "text": "But Bush, I say, make pillows, waffle blankets,"
+  },
+  {
+   "start": 2207.47,
+   "end": 2209.39,
+   "text": "the comforters, temperature regulating,"
+  },
+  {
+   "start": 2209.39,
+   "end": 2212.99,
+   "text": "comforters, 94% by the way, of the bowl and branch customers,"
+  },
+  {
+   "start": 2212.99,
+   "end": 2217.31,
+   "text": "say their sheets actually get softer with every single wash,"
+  },
+  {
+   "start": 2217.31,
+   "end": 2220.0,
+   "text": "which I'm going to tell my son who was in college,"
+  },
+  {
+   "start": 2220.0,
+   "end": 2223.02,
+   "text": "to encourage him to wash his sheets."
+  },
+  {
+   "start": 2223.02,
+   "end": 2227.02,
+   "text": "Tell him, they're bowl of branch, dude, just wash them."
+  },
+  {
+   "start": 2227.02,
+   "end": 2228.6,
+   "text": "They'll get softer."
+  },
+  {
+   "start": 2228.6,
+   "end": 2232.0,
+   "text": "Ah, shouldn't have outered him like that."
+  },
+  {
+   "start": 2232.0,
+   "end": 2234.86,
+   "text": "Point is this, upgrade your sleep with Bolden Branch."
+  },
+  {
+   "start": 2234.86,
+   "end": 2241.82,
+   "text": "Get 20% off your first order plus free shipping at boldenbranch.com slash TWS with code TWS."
+  },
+  {
+   "start": 2241.82,
+   "end": 2252.98,
+   "text": "That's BOL and branch, B-O-L-L and branch.com slash TWS, code TWS to unlock 20% off exclusion"
+  },
+  {
+   "start": 2252.98,
+   "end": 2258.24,
+   "text": "supply."
+  },
+  {
+   "start": 2258.24,
+   "end": 2264.09,
+   "text": "So we've always gone by the paradigm that it's growth is exponential for these companies."
+  },
+  {
+   "start": 2264.09,
+   "end": 2271.29,
+   "text": "They get to do it and they have a variety of ways in which they cut up that growth pie,"
+  },
+  {
+   "start": 2271.29,
+   "end": 2275.77,
+   "text": "whether it's stock buybacks or whether it's vested interests and all that."
+  },
+  {
+   "start": 2275.77,
+   "end": 2285.16,
+   "text": "But workers, their ability to tap into that stream is always wages and wages are for suckers"
+  },
+  {
+   "start": 2285.16,
+   "end": 2290.04,
+   "text": "because wages, you don't have that flexibility of carried interest or any of those things like"
+  },
+  {
+   "start": 2290.04,
+   "end": 2294.92,
+   "text": "your tax at a certain level and that level and you don't, there's not a lot of flexibility"
+  },
+  {
+   "start": 2294.92,
+   "end": 2298.28,
+   "text": "within that. And like you say, they try and correct it a little bit with tax code,"
+  },
+  {
+   "start": 2298.28,
+   "end": 2305.77,
+   "text": "but that's not sufficient. So is there a possibility that, so if you don't want to"
+  },
+  {
+   "start": 2307.02,
+   "end": 2313.1,
+   "text": "untether growth and regulation, if you want to let them, is there a way then to rebalance this"
+  },
+  {
+   "start": 2313.1,
+   "end": 2323.5,
+   "text": "by getting workers whose productivity is leading to these exponential gains to tap into that"
+  },
+  {
+   "start": 2323.5,
+   "end": 2332.3,
+   "text": "stream of income and revenue beyond wages. Why can't workers tap? Why is it that companies are"
+  },
+  {
+   "start": 2332.3,
+   "end": 2339.42,
+   "text": "allowed to post these incredible earnings, but the people who provide the labor that creates"
+  },
+  {
+   "start": 2339.42,
+   "end": 2343.9,
+   "text": "those earnings, don't tap into that large S."
+  },
+  {
+   "start": 2343.9,
+   "end": 2348.94,
+   "text": "So do you mean do you want workers to get like stock options? Like is it you want them or do you?"
+  },
+  {
+   "start": 2348.94,
+   "end": 2352.3,
+   "text": "I want them to get paid the way that executives get paid."
+  },
+  {
+   "start": 2352.3,
+   "end": 2358.7,
+   "text": "Why aren't they considered shareholders? If everything is about we have to grow exponentially"
+  },
+  {
+   "start": 2358.7,
+   "end": 2365.34,
+   "text": "and we have to merge because we have to service our shareholders, why is labor left out of that"
+  },
+  {
+   "start": 2365.34,
+   "end": 2370.64,
+   "text": "that equation. That was a heavy sigh, Catherine."
+  },
+  {
+   "start": 2370.64,
+   "end": 2375.48,
+   "text": "I think so. I mean, there's some like, there's some conservative answers I could give you"
+  },
+  {
+   "start": 2375.48,
+   "end": 2380.24,
+   "text": "on in terms of like, what is the proper savings rate for people of certain incomes? No, there's"
+  },
+  {
+   "start": 2380.24,
+   "end": 2383.76,
+   "text": "no good reason. You can pay workers a lot. You could give them good retirement accounts."
+  },
+  {
+   "start": 2383.76,
+   "end": 2389.21,
+   "text": "I mean, the way that people normally, you know, add, you know, that type of compensation"
+  },
+  {
+   "start": 2389.21,
+   "end": 2394.93,
+   "text": "is that you set up a retirement account for them and you contribute to it. And you use,"
+  },
+  {
+   "start": 2394.93,
+   "end": 2399.73,
+   "text": "short of profit sharing, you make active investments in your workers' retirement and you don't necessarily"
+  },
+  {
+   "start": 2399.73,
+   "end": 2401.73,
+   "text": "have it be so..."
+  },
+  {
+   "start": 2401.73,
+   "end": 2403.73,
+   "text": "But they get bonus wildly."
+  },
+  {
+   "start": 2403.73,
+   "end": 2408.17,
+   "text": "At the end of the year, they go through and a share of those profits are given or they..."
+  },
+  {
+   "start": 2408.17,
+   "end": 2414.45,
+   "text": "There's all kinds of ways that they suckle from the teat of their earnings profits, but"
+  },
+  {
+   "start": 2414.45,
+   "end": 2416.25,
+   "text": "they don't let that..."
+  },
+  {
+   "start": 2416.25,
+   "end": 2419.81,
+   "text": "They don't let workers into that room."
+  },
+  {
+   "start": 2419.81,
+   "end": 2424.89,
+   "text": "And by the way, if the company fails, we all bail them out through tax money."
+  },
+  {
+   "start": 2424.89,
+   "end": 2431.01,
+   "text": "Both and profits are always privatized, but losses and other shit is always socialized."
+  },
+  {
+   "start": 2431.01,
+   "end": 2432.01,
+   "text": "Yes."
+  },
+  {
+   "start": 2432.01,
+   "end": 2441.47,
+   "text": "I would say the short of rearranging compensation within a company, I think just tax them more."
+  },
+  {
+   "start": 2441.47,
+   "end": 2445.59,
+   "text": "I'm of the mind that it's like a whack-a-mole."
+  },
+  {
+   "start": 2445.59,
+   "end": 2447.63,
+   "text": "Is that the game I'm thinking of?"
+  },
+  {
+   "start": 2447.63,
+   "end": 2451.07,
+   "text": "I don't know which game you're thinking of, Catherine."
+  },
+  {
+   "start": 2451.07,
+   "end": 2456.13,
+   "text": "If you told companies, hey, when you make a profit and you make above this, you need"
+  },
+  {
+   "start": 2456.13,
+   "end": 2461.57,
+   "text": "to pay a certain percent to your workers, they will figure out a way to not pay it."
+  },
+  {
+   "start": 2461.57,
+   "end": 2465.65,
+   "text": "Like, avoiding paying workers is an art form."
+  },
+  {
+   "start": 2465.65,
+   "end": 2470.21,
+   "text": "Kind of like how wealthy people are incredibly good at not paying taxes and they will hire..."
+  },
+  {
+   "start": 2470.21,
+   "end": 2472.41,
+   "text": "I mean, there are firms out there, family firms."
+  },
+  {
+   "start": 2472.41,
+   "end": 2474.73,
+   "text": "Well, they're already good at not paying taxes."
+  },
+  {
+   "start": 2474.73,
+   "end": 2475.73,
+   "text": "Yes."
+  },
+  {
+   "start": 2475.73,
+   "end": 2482.73,
+   "text": "So, I think it's easier to tax them than it is to kind of like get under the hood and"
+  },
+  {
+   "start": 2482.73,
+   "end": 2487.45,
+   "text": "how they do business and tell them how to pay people."
+  },
+  {
+   "start": 2487.45,
+   "end": 2490.41,
+   "text": "The simplest rules are the easiest ones to follow."
+  },
+  {
+   "start": 2490.41,
+   "end": 2495.45,
+   "text": "You put into law that we have minimum standards like every worker in the US gets paid sick"
+  },
+  {
+   "start": 2495.45,
+   "end": 2502.29,
+   "text": "days, every worker in the US gets paid vacation, we have retirement accounts, we can do all"
+  },
+  {
+   "start": 2502.29,
+   "end": 2509.01,
+   "text": "of this and then just take more profit on the back end. That is simpler than trying to rearrange"
+  },
+  {
+   "start": 2509.01,
+   "end": 2513.81,
+   "text": "their compensation structure because the rearranging the compensation structure would probably be"
+  },
+  {
+   "start": 2513.81,
+   "end": 2518.77,
+   "text": "easier for them to game. Well, let me ask you, okay, this is a great, so let's game out this"
+  },
+  {
+   "start": 2518.77,
+   "end": 2525.01,
+   "text": "problem. Okay. So let's say they do, I don't know, bonuses at the end of the year. And you say,"
+  },
+  {
+   "start": 2525.01,
+   "end": 2531.97,
+   "text": "all right, if you're going to bonus your guys in that bonus pool, 25% of it has to be distributed"
+  },
+  {
+   "start": 2531.97,
+   "end": 2539.33,
+   "text": "to labor, not just to the boardroom. They could maybe gain that. Or what I'm saying is every way"
+  },
+  {
+   "start": 2539.33,
+   "end": 2548.26,
+   "text": "that you see that they use to pay themselves, they have to use a percentage of that to also"
+  },
+  {
+   "start": 2548.26,
+   "end": 2552.34,
+   "text": "go to the workers. Here's why I worry about just taxing them. A, they've already figured out how"
+  },
+  {
+   "start": 2552.34,
+   "end": 2558.42,
+   "text": "to gain that system. And B, you're introducing the government as a middleman. You're saying,"
+  },
+  {
+   "start": 2558.42,
+   "end": 2562.1,
+   "text": "All right, well, we'll tax you and then the government, and there's no guarantee that the"
+  },
+  {
+   "start": 2562.1,
+   "end": 2566.58,
+   "text": "government will use that money to improve their lives in the first place. I feel like"
+  },
+  {
+   "start": 2567.68,
+   "end": 2577.28,
+   "text": "if we can get workers in on that gravy train, if we can figure that out, we create new streams"
+  },
+  {
+   "start": 2577.28,
+   "end": 2584.67,
+   "text": "that raise the floors. Come on, Catherine, come with me. Come with me on this journey."
+  },
+  {
+   "start": 2584.67,
+   "end": 2591.33,
+   "text": "I'd have to know more about corporate pay structures than I do to feel confident that"
+  },
+  {
+   "start": 2591.33,
+   "end": 2592.49,
+   "text": "they wouldn't get around it."
+  },
+  {
+   "start": 2592.49,
+   "end": 2593.49,
+   "text": "I think that's it."
+  },
+  {
+   "start": 2593.49,
+   "end": 2598.17,
+   "text": "I mean, they get, like, pay someone a wage that's $7.25."
+  },
+  {
+   "start": 2598.17,
+   "end": 2599.73,
+   "text": "They will figure out a way around it."
+  },
+  {
+   "start": 2599.73,
+   "end": 2604.13,
+   "text": "And so I'm trying to like, I'm just trying to, I don't know enough about corporate pay"
+  },
+  {
+   "start": 2604.13,
+   "end": 2606.21,
+   "text": "structures like where the money really comes in."
+  },
+  {
+   "start": 2606.21,
+   "end": 2610.49,
+   "text": "Like if you give someone a stock, an unrealized stock option, you know, how do you, do they"
+  },
+  {
+   "start": 2610.49,
+   "end": 2612.61,
+   "text": "give the unrealized stock option to their workers?"
+  },
+  {
+   "start": 2612.61,
+   "end": 2618.45,
+   "text": "And there are rules here left over from Enron about pain."
+  },
+  {
+   "start": 2618.45,
+   "end": 2619.97,
+   "text": "That's never a good sentence, by the way."
+  },
+  {
+   "start": 2619.97,
+   "end": 2622.45,
+   "text": "We've got a rule left over from Enron."
+  },
+  {
+   "start": 2622.45,
+   "end": 2627.05,
+   "text": "But Enron, when it collapsed, all of their retirement accounts were invested in Enron"
+  },
+  {
+   "start": 2627.05,
+   "end": 2628.29,
+   "text": "stock."
+  },
+  {
+   "start": 2628.29,
+   "end": 2633.73,
+   "text": "And so we had to, there were some rule changes related to how you compensate via retirement"
+  },
+  {
+   "start": 2633.73,
+   "end": 2639.41,
+   "text": "accounts in company stock because when Enron, there's a Houston thing, I mean, when Enron"
+  },
+  {
+   "start": 2639.41,
+   "end": 2642.77,
+   "text": "with Bust, it took down all those people's retirement. They didn't just lose their job,"
+  },
+  {
+   "start": 2642.77,
+   "end": 2647.81,
+   "text": "they lost a lot of their savings. But I would say we could bet, like, if there were ever bailouts"
+  },
+  {
+   "start": 2647.81,
+   "end": 2654.45,
+   "text": "that were worthwhile, it would be for workers' pension plans, not for the people that created"
+  },
+  {
+   "start": 2656.45,
+   "end": 2662.61,
+   "text": "the problem. I feel like government can provide backstops and solutions, because let's go the"
+  },
+  {
+   "start": 2662.61,
+   "end": 2667.57,
+   "text": "other way. Okay. We're talking about why don't they pay them more? So why don't they pay them more?"
+  },
+  {
+   "start": 2667.57,
+   "end": 2674.75,
+   "text": "They don't have enough competition amongst workers going to other jobs and they have"
+  },
+  {
+   "start": 2674.75,
+   "end": 2681.71,
+   "text": "market power to pay less than what people deserve. It all comes down to a worker's ability to say,"
+  },
+  {
+   "start": 2681.71,
+   "end": 2686.67,
+   "text": "either ask for more, to bargain, or to leave and go somewhere else. I mean, a worker's power really"
+  },
+  {
+   "start": 2686.67,
+   "end": 2691.15,
+   "text": "comes from their mobility. That I can get another job if I want one, that I can demand more, that"
+  },
+  {
+   "start": 2691.15,
+   "end": 2692.95,
+   "text": "that I could get an outside offer."
+  },
+  {
+   "start": 2692.95,
+   "end": 2697.95,
+   "text": "And that, in a bad economy, that tends to turn down."
+  },
+  {
+   "start": 2698.11,
+   "end": 2699.91,
+   "text": "But with concentration amongst employers"
+  },
+  {
+   "start": 2699.91,
+   "end": 2700.75,
+   "text": "that turns down too."
+  },
+  {
+   "start": 2700.75,
+   "end": 2702.95,
+   "text": "So I was looking this up just before we started."
+  },
+  {
+   "start": 2702.95,
+   "end": 2706.71,
+   "text": "There used to be the big eight accounting firms."
+  },
+  {
+   "start": 2706.71,
+   "end": 2708.43,
+   "text": "Right now there's the big four."
+  },
+  {
+   "start": 2708.43,
+   "end": 2711.39,
+   "text": "So that's four fewer employers that you can go to."
+  },
+  {
+   "start": 2711.39,
+   "end": 2713.31,
+   "text": "Well, that'll never happen in entertainment."
+  },
+  {
+   "start": 2713.31,
+   "end": 2715.07,
+   "text": "I'll tell you that, Catherine."
+  },
+  {
+   "start": 2715.07,
+   "end": 2718.07,
+   "text": "We will remain a competitive business"
+  },
+  {
+   "start": 2718.07,
+   "end": 2720.35,
+   "text": "with no mergers and acquisitions."
+  },
+  {
+   "start": 2720.35,
+   "end": 2722.95,
+   "text": "I was going to ask you how many studios were around when you started?"
+  },
+  {
+   "start": 2722.99,
+   "end": 2723.83,
+   "text": "Oh my God."
+  },
+  {
+   "start": 2724.63,
+   "end": 2725.47,
+   "text": "A million."
+  },
+  {
+   "start": 2725.79,
+   "end": 2728.47,
+   "text": "And now I think it's like you say it's four."
+  },
+  {
+   "start": 2728.67,
+   "end": 2731.11,
+   "text": "Well, it used to be even, you know, there was all these cable stations,"
+  },
+  {
+   "start": 2731.11,
+   "end": 2734.95,
+   "text": "but now they've, they've bundled and, you know, the mergers and acquisitions."
+  },
+  {
+   "start": 2734.95,
+   "end": 2738.23,
+   "text": "And ultimately, I think, and it's maybe a few months off,"
+  },
+  {
+   "start": 2738.43,
+   "end": 2740.11,
+   "text": "we'll just all work for the same guy."
+  },
+  {
+   "start": 2740.31,
+   "end": 2740.55,
+   "text": "Yeah."
+  },
+  {
+   "start": 2740.55,
+   "end": 2741.99,
+   "text": "Just the, it's like these two guys."
+  },
+  {
+   "start": 2742.23,
+   "end": 2742.67,
+   "text": "That's right."
+  },
+  {
+   "start": 2742.95,
+   "end": 2743.83,
+   "text": "Just these two guys."
+  },
+  {
+   "start": 2743.91,
+   "end": 2746.11,
+   "text": "But Catherine, let's, what we're trying to."
+  },
+  {
+   "start": 2746.35,
+   "end": 2746.99,
+   "text": "Okay, but hold on."
+  },
+  {
+   "start": 2746.99,
+   "end": 2747.63,
+   "text": "To work on here."
+  },
+  {
+   "start": 2747.67,
+   "end": 2748.19,
+   "text": "Yeah, go ahead."
+  },
+  {
+   "start": 2748.19,
+   "end": 2753.19,
+   "text": "Okay, so in one's plight is one's opportunity."
+  },
+  {
+   "start": 2753.19,
+   "end": 2757.75,
+   "text": "Yes, we are at a moment of intense employer concentration."
+  },
+  {
+   "start": 2757.75,
+   "end": 2760.23,
+   "text": "Most people are in some kind of industry"
+  },
+  {
+   "start": 2760.23,
+   "end": 2763.39,
+   "text": "that has gone through a crazy round of mergers"
+  },
+  {
+   "start": 2763.39,
+   "end": 2765.33,
+   "text": "and acquisitions, there are many fewer companies,"
+  },
+  {
+   "start": 2765.33,
+   "end": 2768.27,
+   "text": "there are now large employers that are concentrated."
+  },
+  {
+   "start": 2768.27,
+   "end": 2770.27,
+   "text": "The less competitive the labor market,"
+  },
+  {
+   "start": 2770.27,
+   "end": 2775.23,
+   "text": "the easier it is for employers to absorb labor law"
+  },
+  {
+   "start": 2775.23,
+   "end": 2776.07,
+   "text": "and regulation."
+  },
+  {
+   "start": 2776.07,
+   "end": 2780.14,
+   "text": "So the classic example is, does the minimum wage cause job loss?"
+  },
+  {
+   "start": 2780.14,
+   "end": 2781.14,
+   "text": "It should."
+  },
+  {
+   "start": 2781.14,
+   "end": 2782.38,
+   "text": "I could put it on the graph for you right now."
+  },
+  {
+   "start": 2782.38,
+   "end": 2783.64,
+   "text": "It 100% should."
+  },
+  {
+   "start": 2783.64,
+   "end": 2789.14,
+   "text": "If you raise a floor above a worker's contribution, you'll have fewer workers."
+  },
+  {
+   "start": 2789.14,
+   "end": 2791.74,
+   "text": "It is very little evidence that that happens."
+  },
+  {
+   "start": 2791.74,
+   "end": 2796.14,
+   "text": "I mean, even on the margin, it's not clear that the minimum wage would cause any significant"
+  },
+  {
+   "start": 2796.14,
+   "end": 2799.18,
+   "text": "type of job loss or even a change to labor demand."
+  },
+  {
+   "start": 2799.18,
+   "end": 2804.44,
+   "text": "So how is it that the econ rules say the minimum wage should lead to job loss, but in real"
+  },
+  {
+   "start": 2804.44,
+   "end": 2806.04,
+   "text": "life, we just don't see it."
+  },
+  {
+   "start": 2806.04,
+   "end": 2812.88,
+   "text": "Katherine, are you suggesting here on this program that some of the theories that work"
+  },
+  {
+   "start": 2812.88,
+   "end": 2820.16,
+   "text": "out in the Economist classroom and in their think tanks in the real world fail to materialize"
+  },
+  {
+   "start": 2820.16,
+   "end": 2821.92,
+   "text": "exactly as they are proposed?"
+  },
+  {
+   "start": 2821.92,
+   "end": 2824.4,
+   "text": "Is that what you are suggesting here, young lady?"
+  },
+  {
+   "start": 2824.4,
+   "end": 2825.4,
+   "text": "Yes."
+  },
+  {
+   "start": 2825.4,
+   "end": 2827.56,
+   "text": "My name is Katherine Nannon, and I approve this message."
+  },
+  {
+   "start": 2827.56,
+   "end": 2834.8,
+   "text": "Well, technically, I'm in my studio, so I get back to it."
+  },
+  {
+   "start": 2834.8,
+   "end": 2835.8,
+   "text": "I keep forgetting."
+  },
+  {
+   "start": 2835.8,
+   "end": 2838.2,
+   "text": "I'm just in my house here."
+  },
+  {
+   "start": 2838.2,
+   "end": 2843.3,
+   "text": "With that, so then how do we begin the process, right?"
+  },
+  {
+   "start": 2843.3,
+   "end": 2844.3,
+   "text": "Call their bluff."
+  },
+  {
+   "start": 2844.3,
+   "end": 2845.3,
+   "text": "Yes, call their bluff."
+  },
+  {
+   "start": 2845.3,
+   "end": 2846.48,
+   "text": "All right, talk to me."
+  },
+  {
+   "start": 2846.48,
+   "end": 2850.12,
+   "text": "So they were saying, if you raise the minimum wage, it's going to cause job loss."
+  },
+  {
+   "start": 2850.12,
+   "end": 2854.18,
+   "text": "And we're going to have job loss if we pay workers more than $7 an hour."
+  },
+  {
+   "start": 2854.18,
+   "end": 2861.02,
+   "text": "And yet, for the blossoming of states and local minimum wage laws over the past 20 years,"
+  },
+  {
+   "start": 2861.02,
+   "end": 2865.1,
+   "text": "as the federal government has gone dormant in labor law, every time they raise the minimum"
+  },
+  {
+   "start": 2865.1,
+   "end": 2867.22,
+   "text": "wage, someone looks to see if there was job loss."
+  },
+  {
+   "start": 2867.22,
+   "end": 2874.02,
+   "text": "it's not significant. The reason why there's not is because of employer power and concentration."
+  },
+  {
+   "start": 2874.02,
+   "end": 2879.06,
+   "text": "That the starting point, in order for the minimum wage to cause job loss, you have to be in"
+  },
+  {
+   "start": 2879.06,
+   "end": 2883.58,
+   "text": "a competitive labor market because the assumption is that people are being paid what they're"
+  },
+  {
+   "start": 2883.58,
+   "end": 2887.21,
+   "text": "due. But if you're not in a competitive labor market and you're being paid less than what"
+  },
+  {
+   "start": 2887.21,
+   "end": 2890.73,
+   "text": "you are due, when you raise the minimum wage, they can absorb it because it just comes out"
+  },
+  {
+   "start": 2890.73,
+   "end": 2894.77,
+   "text": "of the profit that they were able to gain from not paying you what you were due in the"
+  },
+  {
+   "start": 2894.77,
+   "end": 2900.53,
+   "text": "first place. So I look at five years of record corporate profits and I look at almost every"
+  },
+  {
+   "start": 2900.53,
+   "end": 2905.65,
+   "text": "industry becoming more and more concentrated in the hands of a few employers. And I see,"
+  },
+  {
+   "start": 2905.65,
+   "end": 2910.29,
+   "text": "this is the best time to pass labor regulations because this is when they will cause the least"
+  },
+  {
+   "start": 2910.29,
+   "end": 2914.37,
+   "text": "amount of harm to business because they have the most power. I mean, if we were in a perfectly"
+  },
+  {
+   "start": 2914.37,
+   "end": 2918.37,
+   "text": "competitive labor market, a labor law could actually upset the apple card a little bit,"
+  },
+  {
+   "start": 2918.37,
+   "end": 2923.09,
+   "text": "but we're not in that market. We're in a very worker, depowered, corporate-powered market."
+  },
+  {
+   "start": 2923.09,
+   "end": 2925.17,
+   "text": "This is when we should be passing these laws."
+  },
+  {
+   "start": 2925.17,
+   "end": 2930.29,
+   "text": "So what are some of the labor laws that we could pass that would help rebalance this?"
+  },
+  {
+   "start": 2930.29,
+   "end": 2933.49,
+   "text": "Okay, hold on. Let me just warm up because I've got a lot. I got a lot. Okay. So the"
+  },
+  {
+   "start": 2933.49,
+   "end": 2938.21,
+   "text": "ladies and gentlemen, for those of you who can't see, she's literally cracking her shoulders."
+  },
+  {
+   "start": 2938.21,
+   "end": 2942.85,
+   "text": "And I think around, I think C4, C5, C6, they all popped."
+  },
+  {
+   "start": 2943.65,
+   "end": 2947.97,
+   "text": "She's getting ready to lay down some motherfucking labor laws that are going to help"
+  },
+  {
+   "start": 2947.97,
+   "end": 2951.17,
+   "text": "rebalance this economy. Catherine and Edwards, the floor is yours."
+  },
+  {
+   "start": 2951.17,
+   "end": 2956.41,
+   "text": "Okay, so what we're going to do is eradicate the low wage labor market."
+  },
+  {
+   "start": 2956.41,
+   "end": 2961.17,
+   "text": "These jobs that pay nothing with awful schedules, with no power, where you call in sick, you"
+  },
+  {
+   "start": 2961.17,
+   "end": 2964.67,
+   "text": "lose your job, you have to find another one, or you get demoted in the shift rota, we're"
+  },
+  {
+   "start": 2964.67,
+   "end": 2966.57,
+   "text": "just, that's going away."
+  },
+  {
+   "start": 2966.57,
+   "end": 2969.09,
+   "text": "Everybody has a decent job, it's not that hard."
+  },
+  {
+   "start": 2969.09,
+   "end": 2975.09,
+   "text": "So you pass a new Fair Labor Standards Act to require sick days and vacation days for"
+  },
+  {
+   "start": 2975.09,
+   "end": 2978.89,
+   "text": "every worker to say you can't fire someone for calling in sick."
+  },
+  {
+   "start": 2978.89,
+   "end": 2982.73,
+   "text": "You raise the minimum wage and you pass two types of scheduling laws."
+  },
+  {
+   "start": 2982.73,
+   "end": 2987.23,
+   "text": "The first type of scheduling law says that schedules have to be predictable, that you"
+  },
+  {
+   "start": 2987.23,
+   "end": 2990.59,
+   "text": "need to know when you will work at least two weeks in advance."
+  },
+  {
+   "start": 2990.59,
+   "end": 2992.03,
+   "text": "You have to know your shift."
+  },
+  {
+   "start": 2992.03,
+   "end": 2996.71,
+   "text": "Because people have lives and they have children and they have things that they have to coordinate"
+  },
+  {
+   "start": 2996.71,
+   "end": 2997.71,
+   "text": "around that."
+  },
+  {
+   "start": 2997.71,
+   "end": 3000.39,
+   "text": "And if you cancel a shift, you have to get paid for it."
+  },
+  {
+   "start": 3000.39,
+   "end": 3003.95,
+   "text": "And if you don't have a minimum amount of time between a shift, you have to get overtime"
+  },
+  {
+   "start": 3003.95,
+   "end": 3004.95,
+   "text": "for the second one."
+  },
+  {
+   "start": 3004.95,
+   "end": 3007.15,
+   "text": "This is called cloapening, where you close and then open."
+  },
+  {
+   "start": 3007.15,
+   "end": 3010.87,
+   "text": "and you don't actually have eight hours room to sleep in between."
+  },
+  {
+   "start": 3010.87,
+   "end": 3014.11,
+   "text": "But by the way, you get that if you're literally on a film."
+  },
+  {
+   "start": 3014.11,
+   "end": 3015.51,
+   "text": "Like, did you get shit?"
+  },
+  {
+   "start": 3015.51,
+   "end": 3018.11,
+   "text": "Like, if you work until 10 p.m., they're like,"
+  },
+  {
+   "start": 3018.11,
+   "end": 3020.41,
+   "text": "can't have them come back until 10 a.m. the next,"
+  },
+  {
+   "start": 3020.41,
+   "end": 3022.95,
+   "text": "like that happens in our industry because you're-"
+  },
+  {
+   "start": 3022.95,
+   "end": 3023.79,
+   "text": "Because you're unionized."
+  },
+  {
+   "start": 3023.79,
+   "end": 3025.63,
+   "text": "Yeah, because you're unionized."
+  },
+  {
+   "start": 3025.63,
+   "end": 3026.47,
+   "text": "So that's-"
+  },
+  {
+   "start": 3026.47,
+   "end": 3028.71,
+   "text": "So the second one, I think most Americans,"
+  },
+  {
+   "start": 3028.71,
+   "end": 3031.01,
+   "text": "I feel like there's a kind of, all that's gravy."
+  },
+  {
+   "start": 3031.01,
+   "end": 3034.91,
+   "text": "The second one is that we need to allow workers"
+  },
+  {
+   "start": 3034.91,
+   "end": 3040.11,
+   "text": "in salary positions to request the right to go part-time and work from home."
+  },
+  {
+   "start": 3040.11,
+   "end": 3043.05,
+   "text": "So you work in an office, you work five days a week, you need to be able to request to"
+  },
+  {
+   "start": 3043.05,
+   "end": 3046.76,
+   "text": "work part-time or from home for a period of time."
+  },
+  {
+   "start": 3046.76,
+   "end": 3050.48,
+   "text": "The U.S. does not have a high-quality part-time labor market."
+  },
+  {
+   "start": 3050.48,
+   "end": 3051.48,
+   "text": "Why is that?"
+  },
+  {
+   "start": 3051.48,
+   "end": 3052.88,
+   "text": "What is the theory behind that?"
+  },
+  {
+   "start": 3052.88,
+   "end": 3057.4,
+   "text": "Is that in terms of like childcare or elder care?"
+  },
+  {
+   "start": 3057.4,
+   "end": 3059.04,
+   "text": "Is it addressing those issues?"
+  },
+  {
+   "start": 3059.04,
+   "end": 3060.04,
+   "text": "Yeah."
+  },
+  {
+   "start": 3060.04,
+   "end": 3063.68,
+   "text": "And also, I mean, basically life happens to people and they can't show up to work five"
+  },
+  {
+   "start": 3063.68,
+   "end": 3068.6,
+   "text": "days a week for 45 hours and they lose their job and it's harder for them to get back into"
+  },
+  {
+   "start": 3068.6,
+   "end": 3069.6,
+   "text": "the labor market."
+  },
+  {
+   "start": 3069.6,
+   "end": 3073.44,
+   "text": "It's really predictable things like they have a kid, their parent gets sick, their partner"
+  },
+  {
+   "start": 3073.44,
+   "end": 3079.24,
+   "text": "gets sick, they move, they get divorced and they can do their job a little bit but their"
+  },
+  {
+   "start": 3079.24,
+   "end": 3083.8,
+   "text": "life gets in the way and they need a period of time to go part time and then come back."
+  },
+  {
+   "start": 3083.8,
+   "end": 3088.5,
+   "text": "This would retain people in the labor market and keep them earning money as opposed to"
+  },
+  {
+   "start": 3088.5,
+   "end": 3091.72,
+   "text": "shoving people out when they have anything like a part of their life happen."
+  },
+  {
+   "start": 3091.72,
+   "end": 3096.36,
+   "text": "Like if your kid gets sick and they've got to have lots of doctors appointments and surgeries,"
+  },
+  {
+   "start": 3096.36,
+   "end": 3097.96,
+   "text": "do you need to lose your job?"
+  },
+  {
+   "start": 3097.96,
+   "end": 3098.96,
+   "text": "Right."
+  },
+  {
+   "start": 3098.96,
+   "end": 3099.96,
+   "text": "No."
+  },
+  {
+   "start": 3099.96,
+   "end": 3100.96,
+   "text": "But they're not going to give it to you."
+  },
+  {
+   "start": 3100.96,
+   "end": 3101.96,
+   "text": "Let me ask you something."
+  },
+  {
+   "start": 3101.96,
+   "end": 3102.96,
+   "text": "That's, okay, go ahead."
+  },
+  {
+   "start": 3102.96,
+   "end": 3103.96,
+   "text": "Oh, no."
+  },
+  {
+   "start": 3103.96,
+   "end": 3108.12,
+   "text": "What I'm saying, what it sounds like we're saying is we're having the federal government"
+  },
+  {
+   "start": 3108.12,
+   "end": 3114.28,
+   "text": "as a stand-in for unions because the onus is always on workers to organize themselves"
+  },
+  {
+   "start": 3114.28,
+   "end": 3116.08,
+   "text": "and then drive through in this one."
+  },
+  {
+   "start": 3116.08,
+   "end": 3120.08,
+   "text": "And what we're saying is that puts too much of an onus on workers."
+  },
+  {
+   "start": 3120.08,
+   "end": 3126.32,
+   "text": "The government has to step in and have workers' best interests in a way that they don't have"
+  },
+  {
+   "start": 3126.32,
+   "end": 3127.32,
+   "text": "it right now."
+  },
+  {
+   "start": 3127.32,
+   "end": 3131.88,
+   "text": "They have to have their backs in a way that they don't have it right now, that they have"
+  },
+  {
+   "start": 3131.88,
+   "end": 3140.28,
+   "text": "been overly solicitous to corporate interest and they have been underprotective of workers"
+  },
+  {
+   "start": 3140.28,
+   "end": 3141.68,
+   "text": "and relying on workers."
+  },
+  {
+   "start": 3141.68,
+   "end": 3144.52,
+   "text": "And then they've made it much harder for workers to organize."
+  },
+  {
+   "start": 3144.52,
+   "end": 3148.0,
+   "text": "So government has to step in and represent those interests."
+  },
+  {
+   "start": 3148.0,
+   "end": 3149.48,
+   "text": "Is that the theory of this?"
+  },
+  {
+   "start": 3149.48,
+   "end": 3156.08,
+   "text": "It's a floor. It's a floor of this. It's saying that like if this is like this is like pay to play you want to run a business in the United States in"
+  },
+  {
+   "start": 3156.32,
+   "end": 3160.9,
+   "text": "2026, but you can only pay five dollars an hour to children. Sorry you lose you don't get to play"
+  },
+  {
+   "start": 3160.98,
+   "end": 3165.2,
+   "text": "We're better than that. This is this is saying this is the minimum to play here"
+  },
+  {
+   "start": 3165.2,
+   "end": 3171.06,
+   "text": "You have to meet these standards for workers because we're not you know, we're not a developing economy in 1950"
+  },
+  {
+   "start": 3171.06,
+   "end": 3172.44,
+   "text": "Right modern economy"
+  },
+  {
+   "start": 3172.44,
+   "end": 3178.46,
+   "text": "We've got modern expenses like you need to do better and you need to lift up the floor and you're and you're gaining the benefits of our"
+  },
+  {
+   "start": 3178.46,
+   "end": 3184.3,
+   "text": "productivity. Yes. Yep. So new floor. Now, all right. So what else? How about this one?"
+  },
+  {
+   "start": 3184.3,
+   "end": 3190.22,
+   "text": "What about you should never lose your medical insurance if you change a job? Give workers"
+  },
+  {
+   "start": 3190.22,
+   "end": 3197.42,
+   "text": "more mobility by not having them tied into jobs that are shitty for them just because they know"
+  },
+  {
+   "start": 3197.42,
+   "end": 3201.58,
+   "text": "they'll lose their insurance if they leave. It's called job lock. About one in four Americans"
+  },
+  {
+   "start": 3201.58,
+   "end": 3204.94,
+   "text": "suffers from it. I don't think health insurance should come from your employer at all. We got"
+  },
+  {
+   "start": 3204.94,
+   "end": 3206.06,
+   "text": "You gotta just cut that cord."
+  },
+  {
+   "start": 3206.06,
+   "end": 3208.26,
+   "text": "It shouldn't come from employers at all."
+  },
+  {
+   "start": 3208.26,
+   "end": 3211.98,
+   "text": "You know, it's horrible for the labor market."
+  },
+  {
+   "start": 3211.98,
+   "end": 3213.9,
+   "text": "It suppresses wage growth."
+  },
+  {
+   "start": 3213.9,
+   "end": 3215.34,
+   "text": "It keeps people locked in their jobs."
+  },
+  {
+   "start": 3215.34,
+   "end": 3218.18,
+   "text": "It gives employers an incredible amount of bargaining power."
+  },
+  {
+   "start": 3218.18,
+   "end": 3220.2,
+   "text": "And not just your employer,"
+  },
+  {
+   "start": 3220.2,
+   "end": 3222.82,
+   "text": "but your ability to move to a smaller employer"
+  },
+  {
+   "start": 3222.82,
+   "end": 3224.46,
+   "text": "where insurance is more expensive"
+  },
+  {
+   "start": 3224.46,
+   "end": 3226.66,
+   "text": "and then you have to pay more for health insurance"
+  },
+  {
+   "start": 3226.66,
+   "end": 3227.58,
+   "text": "that's probably worse."
+  },
+  {
+   "start": 3227.58,
+   "end": 3229.82,
+   "text": "Yes, it's bad for small employers"
+  },
+  {
+   "start": 3229.82,
+   "end": 3231.18,
+   "text": "to have to pay for health insurance"
+  },
+  {
+   "start": 3231.18,
+   "end": 3232.94,
+   "text": "and compete with large employers"
+  },
+  {
+   "start": 3232.94,
+   "end": 3234.46,
+   "text": "who can offer better benefits."
+  },
+  {
+   "start": 3234.46,
+   "end": 3237.54,
+   "text": "Employment and health needs to be just completely divorced."
+  },
+  {
+   "start": 3237.54,
+   "end": 3241.06,
+   "text": "We spend, I would say like two thirds of federal spending"
+  },
+  {
+   "start": 3241.06,
+   "end": 3243.86,
+   "text": "on Medicaid goes into the tax preference"
+  },
+  {
+   "start": 3243.86,
+   "end": 3244.74,
+   "text": "for health insurance."
+  },
+  {
+   "start": 3244.74,
+   "end": 3246.82,
+   "text": "So we like to think in the US"
+  },
+  {
+   "start": 3246.82,
+   "end": 3248.22,
+   "text": "that we have private health insurance,"
+  },
+  {
+   "start": 3248.22,
+   "end": 3251.34,
+   "text": "but if the tax bonus turned off,"
+  },
+  {
+   "start": 3251.34,
+   "end": 3252.74,
+   "text": "those companies would collapse."
+  },
+  {
+   "start": 3252.74,
+   "end": 3254.9,
+   "text": "There's no private market for health insurance."
+  },
+  {
+   "start": 3254.9,
+   "end": 3256.7,
+   "text": "There is private delivery of health insurance"
+  },
+  {
+   "start": 3256.7,
+   "end": 3259.66,
+   "text": "via your employer heavily subsidized by the tax system."
+  },
+  {
+   "start": 3259.66,
+   "end": 3260.5,
+   "text": "Get rid of it."
+  },
+  {
+   "start": 3260.5,
+   "end": 3262.5,
+   "text": "So that's, yeah, I'm with you on that one."
+  },
+  {
+   "start": 3262.5,
+   "end": 3264.44,
+   "text": "You know, the second kind of big policy for me"
+  },
+  {
+   "start": 3264.44,
+   "end": 3268.6,
+   "text": "adding family benefits, just making it easier to be a parent and a worker at the same time."
+  },
+  {
+   "start": 3268.6,
+   "end": 3274.12,
+   "text": "So this would be paid family leave, universal childcare, universal after school, universal"
+  },
+  {
+   "start": 3274.12,
+   "end": 3277.96,
+   "text": "summer programming. Let's make a big investment in communities and teen mental health. Let's"
+  },
+  {
+   "start": 3277.96,
+   "end": 3282.6,
+   "text": "give kids a safe place to go. And then in the meantime, we get to recoup immediate benefits"
+  },
+  {
+   "start": 3282.6,
+   "end": 3287.08,
+   "text": "by parents working longer and parents working more during the day, during the summer. I mean,"
+  },
+  {
+   "start": 3287.08,
+   "end": 3293.32,
+   "text": "we have such predictable and costly drops in labor force participation when you have a young kid"
+  },
+  {
+   "start": 3293.32,
+   "end": 3297.08,
+   "text": "And when you hit summertime, we'll lose female workers."
+  },
+  {
+   "start": 3297.08,
+   "end": 3299.48,
+   "text": "Not because they don't want to work, but because they don't have a safe place to put their"
+  },
+  {
+   "start": 3299.48,
+   "end": 3301.04,
+   "text": "kid."
+  },
+  {
+   "start": 3301.04,
+   "end": 3304.8,
+   "text": "And if women didn't want to work, that would be one thing, and they should do what they"
+  },
+  {
+   "start": 3304.8,
+   "end": 3305.8,
+   "text": "want to do."
+  },
+  {
+   "start": 3305.8,
+   "end": 3309.08,
+   "text": "But if you want to work but you can't, you're making the economy smaller by shoving them"
+  },
+  {
+   "start": 3309.08,
+   "end": 3310.08,
+   "text": "out of the labor market."
+  },
+  {
+   "start": 3310.08,
+   "end": 3311.08,
+   "text": "That's an own goal."
+  },
+  {
+   "start": 3311.08,
+   "end": 3312.56,
+   "text": "Like, we can do better than that."
+  },
+  {
+   "start": 3312.56,
+   "end": 3316.36,
+   "text": "So invest in the floor of the labor market."
+  },
+  {
+   "start": 3316.36,
+   "end": 3321.72,
+   "text": "Invest in basic family policies to help to know that people are people when they work."
+  },
+  {
+   "start": 3321.72,
+   "end": 3326.48,
+   "text": "And then I think, yeah, we just need to delink benefits from your employer, health insurance,"
+  },
+  {
+   "start": 3326.48,
+   "end": 3328.66,
+   "text": "but everybody needs to have a retirement account."
+  },
+  {
+   "start": 3328.66,
+   "end": 3334.62,
+   "text": "And I would think employers would welcome at least that part of it that they would, you"
+  },
+  {
+   "start": 3334.62,
+   "end": 3336.64,
+   "text": "know, you would be able to remove that."
+  },
+  {
+   "start": 3336.64,
+   "end": 3343.7,
+   "text": "But why is it, as an economist, when you suggest these types of progressive fixes, why do they"
+  },
+  {
+   "start": 3343.7,
+   "end": 3346.72,
+   "text": "tell you that those are untenable?"
+  },
+  {
+   "start": 3346.72,
+   "end": 3350.84,
+   "text": "Well, you know, the reason has changed over time."
+  },
+  {
+   "start": 3350.84,
+   "end": 3358.81,
+   "text": "It's funny, I think 10 years ago I would have heard back, that'll hurt jobs."
+  },
+  {
+   "start": 3358.81,
+   "end": 3360.77,
+   "text": "That'll cause job loss."
+  },
+  {
+   "start": 3360.77,
+   "end": 3364.52,
+   "text": "And I think now all I hear back is, well, that would be expensive."
+  },
+  {
+   "start": 3364.52,
+   "end": 3366.8,
+   "text": "The federal government doesn't have the money."
+  },
+  {
+   "start": 3366.8,
+   "end": 3367.8,
+   "text": "Right."
+  },
+  {
+   "start": 3367.8,
+   "end": 3370.6,
+   "text": "Because right now the Republicans, it used to be, remember when they used to say to the"
+  },
+  {
+   "start": 3370.6,
+   "end": 3372.44,
+   "text": "Democrats, you're tax and spend."
+  },
+  {
+   "start": 3372.44,
+   "end": 3376.32,
+   "text": "Well, the Republicans have a new theory, tax cut and spend."
+  },
+  {
+   "start": 3376.32,
+   "end": 3381.64,
+   "text": "So it's, I mean, they're functioning at deficits unseen in the world."
+  },
+  {
+   "start": 3381.64,
+   "end": 3389.49,
+   "text": "Because they do these giant tax cuts, but they still spend on all, there's no change."
+  },
+  {
+   "start": 3389.49,
+   "end": 3395.13,
+   "text": "It's a very effective policy for killing social policy is to bankrupt our government to the"
+  },
+  {
+   "start": 3395.13,
+   "end": 3398.29,
+   "text": "degree that people will think like, well, we really want childcare, but we can't."
+  },
+  {
+   "start": 3398.29,
+   "end": 3399.29,
+   "text": "I see it again."
+  },
+  {
+   "start": 3399.29,
+   "end": 3400.29,
+   "text": "I'm an optimistic person."
+  },
+  {
+   "start": 3400.29,
+   "end": 3402.33,
+   "text": "I was like, oh, you think we can't afford it?"
+  },
+  {
+   "start": 3402.33,
+   "end": 3403.33,
+   "text": "And that's why you don't want it?"
+  },
+  {
+   "start": 3403.33,
+   "end": 3409.57,
+   "text": "That's so easy because the way that we have organized so much of our economy is indefensible."
+  },
+  {
+   "start": 3410.21,
+   "end": 3413.17,
+   "text": "You call every member of Congress right now and tell them,"
+  },
+  {
+   "start": 3413.17,
+   "end": 3417.65,
+   "text": "is the child care system working for your constituents? They will not pick up the phone."
+  },
+  {
+   "start": 3417.65,
+   "end": 3421.25,
+   "text": "No one will go on record and say, child care is really easy to get."
+  },
+  {
+   "start": 3421.25,
+   "end": 3427.09,
+   "text": "Talk about that though. The way that we organize our system is indefensible."
+  },
+  {
+   "start": 3427.09,
+   "end": 3429.09,
+   "text": "Tell me what you mean by that."
+  },
+  {
+   "start": 3429.09,
+   "end": 3434.45,
+   "text": "You couldn't... Okay, yes, child care is one of them. You're not going to find an elected official in"
+  },
+  {
+   "start": 3434.45,
+   "end": 3439.33,
+   "text": "this country who will go on record and say, child care is affordable for my constituents. They'll say"
+  },
+  {
+   "start": 3439.33,
+   "end": 3443.73,
+   "text": "women ought to be at home. How do we not have a better system? That's okay. Yeah, yeah. That's,"
+  },
+  {
+   "start": 3443.73,
+   "end": 3448.53,
+   "text": "it's not like the fact that we don't have child care. It's, why don't we have paid family leave?"
+  },
+  {
+   "start": 3448.53,
+   "end": 3454.05,
+   "text": "Totally indefensible. The idea that there are people dying, people sick, that there are newborns,"
+  },
+  {
+   "start": 3454.05,
+   "end": 3458.69,
+   "text": "and we don't think that a family member should be next to them is completely indefensible."
+  },
+  {
+   "start": 3458.69,
+   "end": 3460.81,
+   "text": "And it's indefensible on a human level."
+  },
+  {
+   "start": 3460.81,
+   "end": 3463.25,
+   "text": "And it's also indefensible on an economic level."
+  },
+  {
+   "start": 3463.25,
+   "end": 3465.21,
+   "text": "When you don't have something like paid family leave,"
+  },
+  {
+   "start": 3465.21,
+   "end": 3467.61,
+   "text": "every time there's a major illness in someone's family,"
+  },
+  {
+   "start": 3467.61,
+   "end": 3469.49,
+   "text": "you're forcing someone out of the labor market."
+  },
+  {
+   "start": 3469.49,
+   "end": 3471.69,
+   "text": "That's a horrible policy."
+  },
+  {
+   "start": 3471.69,
+   "end": 3476.13,
+   "text": "The kind of like, oh, but it's expensive for me is,"
+  },
+  {
+   "start": 3476.13,
+   "end": 3479.05,
+   "text": "I'm like, oh yeah, your money concerns speak volumes"
+  },
+  {
+   "start": 3479.05,
+   "end": 3481.37,
+   "text": "because you know you can't be against paid family leave."
+  },
+  {
+   "start": 3481.37,
+   "end": 3483.41,
+   "text": "Like you know you can't be against childcare."
+  },
+  {
+   "start": 3483.41,
+   "end": 3484.69,
+   "text": "You just don't want it."
+  },
+  {
+   "start": 3484.69,
+   "end": 3486.57,
+   "text": "Or elder care or any of those."
+  },
+  {
+   "start": 3486.57,
+   "end": 3487.89,
+   "text": "Or elder, yeah."
+  },
+  {
+   "start": 3487.89,
+   "end": 3491.01,
+   "text": "So the, no, I mean, it's, how about the way we treat"
+  },
+  {
+   "start": 3491.01,
+   "end": 3492.41,
+   "text": "unemployed people?"
+  },
+  {
+   "start": 3492.41,
+   "end": 3494.59,
+   "text": "I mean, this would be for me, like the system"
+  },
+  {
+   "start": 3494.59,
+   "end": 3498.57,
+   "text": "that is probably the, so at the heart of what people"
+  },
+  {
+   "start": 3498.57,
+   "end": 3501.29,
+   "text": "are afraid of with artificial intelligence,"
+  },
+  {
+   "start": 3501.29,
+   "end": 3503.01,
+   "text": "that they will lose their job."
+  },
+  {
+   "start": 3503.01,
+   "end": 3505.29,
+   "text": "But of course that fear is compounded"
+  },
+  {
+   "start": 3505.29,
+   "end": 3507.85,
+   "text": "if you don't have a decent system for helping people."
+  },
+  {
+   "start": 3507.85,
+   "end": 3509.85,
+   "text": "I mean, once you lose your job in the US,"
+  },
+  {
+   "start": 3509.85,
+   "end": 3512.13,
+   "text": "you are lazy and don't wanna work."
+  },
+  {
+   "start": 3512.13,
+   "end": 3512.97,
+   "text": "That's it."
+  },
+  {
+   "start": 3512.97,
+   "end": 3515.13,
+   "text": "It is just unemployed people are not like us."
+  },
+  {
+   "start": 3515.13,
+   "end": 3516.41,
+   "text": "They don't work as hard."
+  },
+  {
+   "start": 3516.41,
+   "end": 3517.81,
+   "text": "They, you know, I kept my job."
+  },
+  {
+   "start": 3517.81,
+   "end": 3518.81,
+   "text": "They didn't keep theirs."
+  },
+  {
+   "start": 3518.81,
+   "end": 3525.07,
+   "text": "There's a judgment that comes down to unemployed people that has resulted in almost no support"
+  },
+  {
+   "start": 3525.07,
+   "end": 3527.51,
+   "text": "for unemployed people in the United States."
+  },
+  {
+   "start": 3527.51,
+   "end": 3531.21,
+   "text": "That is indefensible from an economic perspective."
+  },
+  {
+   "start": 3531.21,
+   "end": 3534.57,
+   "text": "You think of some business in your neighborhood that is closed."
+  },
+  {
+   "start": 3534.57,
+   "end": 3535.85,
+   "text": "Keep it in your mind's eye."
+  },
+  {
+   "start": 3535.85,
+   "end": 3536.85,
+   "text": "There was a building."
+  },
+  {
+   "start": 3536.85,
+   "end": 3538.13,
+   "text": "There used to be a shop."
+  },
+  {
+   "start": 3538.13,
+   "end": 3543.37,
+   "text": "There used to be a restaurant, and it closed."
+  },
+  {
+   "start": 3543.37,
+   "end": 3547.05,
+   "text": "When that shop closes, a four-least sign goes up, and they look for another tenant."
+  },
+  {
+   "start": 3547.05,
+   "end": 3549.65,
+   "text": "It's not as if they burned the building to the ground."
+  },
+  {
+   "start": 3549.65,
+   "end": 3554.11,
+   "text": "But when you talk about workers losing their job and you say something really snide that"
+  },
+  {
+   "start": 3554.11,
+   "end": 3558.53,
+   "text": "politicians do, like, you should just take the first job you can find, you're basically"
+  },
+  {
+   "start": 3558.53,
+   "end": 3560.33,
+   "text": "burning down that human capital."
+  },
+  {
+   "start": 3560.33,
+   "end": 3562.09,
+   "text": "I've managed 30 people."
+  },
+  {
+   "start": 3562.09,
+   "end": 3564.25,
+   "text": "I've worked at this place for 15 years."
+  },
+  {
+   "start": 3564.25,
+   "end": 3565.93,
+   "text": "I've got these skills."
+  },
+  {
+   "start": 3565.93,
+   "end": 3569.41,
+   "text": "But apparently as soon as I lose my job, I need to go sweep the floor at McDonald's."
+  },
+  {
+   "start": 3569.41,
+   "end": 3573.25,
+   "text": "And all that skill and all that experience, we burned it to the ground."
+  },
+  {
+   "start": 3573.25,
+   "end": 3576.73,
+   "text": "And all that investment that we've made in those workers through their education and"
+  },
+  {
+   "start": 3576.73,
+   "end": 3581.21,
+   "text": "training and skills and time on the job, it's all gone because they lost their job and now"
+  },
+  {
+   "start": 3581.21,
+   "end": 3582.37,
+   "text": "they need to be punished for it."
+  },
+  {
+   "start": 3582.37,
+   "end": 3584.25,
+   "text": "That is terrible economic policy."
+  },
+  {
+   "start": 3584.25,
+   "end": 3585.81,
+   "text": "It results in a smaller economy."
+  },
+  {
+   "start": 3585.81,
+   "end": 3587.15,
+   "text": "It's indefensible."
+  },
+  {
+   "start": 3587.15,
+   "end": 3591.13,
+   "text": "So now when we bring these investments up, all you hear is it's the price tag that's"
+  },
+  {
+   "start": 3591.13,
+   "end": 3592.13,
+   "text": "the problem."
+  },
+  {
+   "start": 3592.13,
+   "end": 3595.97,
+   "text": "And I kind of have to chuckle to myself because I'm like, oh, your girl can raise taxes."
+  },
+  {
+   "start": 3595.97,
+   "end": 3596.97,
+   "text": "Right."
+  },
+  {
+   "start": 3596.97,
+   "end": 3597.97,
+   "text": "Yeah."
+  },
+  {
+   "start": 3597.97,
+   "end": 3605.79,
+   "text": "I got no problem raising taxes."
+  },
+  {
+   "start": 3605.79,
+   "end": 3609.15,
+   "text": "know, when you're a comic work in the road, cats were the perfect, you know,"
+  },
+  {
+   "start": 3609.15,
+   "end": 3611.73,
+   "text": "cause cats, man, you leave for like a week."
+  },
+  {
+   "start": 3612.43,
+   "end": 3613.67,
+   "text": "They don't even, they don't even miss you."
+  },
+  {
+   "start": 3613.83,
+   "end": 3616.83,
+   "text": "You leave them a little something in the bowl, but we know better now."
+  },
+  {
+   "start": 3617.23,
+   "end": 3619.63,
+   "text": "And no one knows better than Smalls."
+  },
+  {
+   "start": 3620.27,
+   "end": 3621.23,
+   "text": "Smalls cat food."
+  },
+  {
+   "start": 3621.43,
+   "end": 3626.23,
+   "text": "I'm telling you, man, if my cats had ever gotten a hold of Smalls, or if they"
+  },
+  {
+   "start": 3626.23,
+   "end": 3630.31,
+   "text": "had known there was another cat, like across the hall getting Smalls, they'd"
+  },
+  {
+   "start": 3630.31,
+   "end": 3632.15,
+   "text": "have left me too sweet."
+  },
+  {
+   "start": 3632.23,
+   "end": 3633.95,
+   "text": "They would have, they would have been out of there."
+  },
+  {
+   "start": 3633.95,
+   "end": 3638.45,
+   "text": "I was, you know, fading them like fast food,"
+  },
+  {
+   "start": 3638.45,
+   "end": 3642.68,
+   "text": "but small as man, fresh cat food, preservative free,"
+  },
+  {
+   "start": 3642.68,
+   "end": 3647.68,
+   "text": "100% human grade ingredients you find in your fridge."
+  },
+  {
+   "start": 3648.54,
+   "end": 3652.84,
+   "text": "Back then I wasn't eating human grade ingredients,"
+  },
+  {
+   "start": 3652.84,
+   "end": 3655.07,
+   "text": "let alone my cats."
+  },
+  {
+   "start": 3655.07,
+   "end": 3657.87,
+   "text": "And by the way, like not hard to get the delivery"
+  },
+  {
+   "start": 3657.87,
+   "end": 3661.27,
+   "text": "right to your door, 88% of cat parents."
+  },
+  {
+   "start": 3661.27,
+   "end": 3663.51,
+   "text": "And you know, if you know people that have cats,"
+  },
+  {
+   "start": 3663.51,
+   "end": 3665.79,
+   "text": "can't get 88% of them to grant anything."
+  },
+  {
+   "start": 3665.79,
+   "end": 3668.11,
+   "text": "88% of them say, after feeding smalls,"
+  },
+  {
+   "start": 3668.11,
+   "end": 3671.27,
+   "text": "notice the cat has better digestion,"
+  },
+  {
+   "start": 3671.27,
+   "end": 3675.2,
+   "text": "softer and shinier and has more energy to play."
+  },
+  {
+   "start": 3675.2,
+   "end": 3677.22,
+   "text": "Spooked by commitment, try smalls risk-free,"
+  },
+  {
+   "start": 3677.22,
+   "end": 3679.69,
+   "text": "they'll refund it if your cat won't eat their food."
+  },
+  {
+   "start": 3679.69,
+   "end": 3681.49,
+   "text": "Stop serving your little carnivore bowl"
+  },
+  {
+   "start": 3681.49,
+   "end": 3684.13,
+   "text": "of processed shortcuts for a limited time"
+  },
+  {
+   "start": 3684.13,
+   "end": 3686.43,
+   "text": "because you are a weekly show listener."
+  },
+  {
+   "start": 3686.43,
+   "end": 3691.08,
+   "text": "Get 60% of your first order plus free shipping"
+  },
+  {
+   "start": 3691.08,
+   "end": 3696.08,
+   "text": "And free treats for life when you head to Smalls.com"
+  },
+  {
+   "start": 3697.24,
+   "end": 3698.32,
+   "text": "slash TWS."
+  },
+  {
+   "start": 3698.32,
+   "end": 3700.72,
+   "text": "One last time that's 60% off your first order,"
+  },
+  {
+   "start": 3700.72,
+   "end": 3705.12,
+   "text": "plus free shipping and free treats for life"
+  },
+  {
+   "start": 3705.12,
+   "end": 3715.1,
+   "text": "when you head to Smalls.com slash TWS."
+  },
+  {
+   "start": 3715.1,
+   "end": 3720.32,
+   "text": "Are you concerned that AI supercharges"
+  },
+  {
+   "start": 3720.82,
+   "end": 3724.92,
+   "text": "these inequities that exist between labor and capital?"
+  },
+  {
+   "start": 3724.92,
+   "end": 3728.45,
+   "text": "because we're already seeing what is the government"
+  },
+  {
+   "start": 3728.45,
+   "end": 3730.69,
+   "text": "bending over backwards to do."
+  },
+  {
+   "start": 3730.69,
+   "end": 3735.37,
+   "text": "Capitalize these data center, 50 trillion industry,"
+  },
+  {
+   "start": 3735.37,
+   "end": 3738.97,
+   "text": "so much of our economy right now in terms of GDP growth"
+  },
+  {
+   "start": 3738.97,
+   "end": 3743.49,
+   "text": "and any of those things relies on the bet that we're making"
+  },
+  {
+   "start": 3743.49,
+   "end": 3746.49,
+   "text": "that AI is the future."
+  },
+  {
+   "start": 3746.49,
+   "end": 3748.13,
+   "text": "It's talk about consolidation."
+  },
+  {
+   "start": 3748.13,
+   "end": 3751.49,
+   "text": "It's these seven companies are going to decide"
+  },
+  {
+   "start": 3751.49,
+   "end": 3756.25,
+   "text": "everybody's future and all the little issues that are"
+  },
+  {
+   "start": 3757.13,
+   "end": 3763.55,
+   "text": "bubbling up for workers, will they not be exacerbated by the rush to AI?"
+  },
+  {
+   "start": 3763.55,
+   "end": 3766.25,
+   "text": "If we make the same mistake we made in the 80s."
+  },
+  {
+   "start": 3766.25,
+   "end": 3767.25,
+   "text": "Which we will."
+  },
+  {
+   "start": 3767.25,
+   "end": 3768.82,
+   "text": "I don't know."
+  },
+  {
+   "start": 3768.82,
+   "end": 3769.82,
+   "text": "I don't know."
+  },
+  {
+   "start": 3769.82,
+   "end": 3770.82,
+   "text": "I mean, it's a different world."
+  },
+  {
+   "start": 3770.82,
+   "end": 3773.82,
+   "text": "I mean, the position matters."
+  },
+  {
+   "start": 3773.82,
+   "end": 3780.42,
+   "text": "In the early 1980s, we had been through a four decade expansion of the federal government"
+  },
+  {
+   "start": 3780.42,
+   "end": 3786.42,
+   "text": "through the New Deal, through the Great Society. You had heavy regulation of every industry with"
+  },
+  {
+   "start": 3786.42,
+   "end": 3790.34,
+   "text": "the government's hands all over everything. And then you had a series of deeply, deeply"
+  },
+  {
+   "start": 3790.34,
+   "end": 3792.18,
+   "text": "unpopular presidents."
+  },
+  {
+   "start": 3792.18,
+   "end": 3797.46,
+   "text": "And then some real economic shocks like the oil shock. And there was a lot that also went into"
+  },
+  {
+   "start": 3797.46,
+   "end": 3797.94,
+   "text": "that."
+  },
+  {
+   "start": 3797.94,
+   "end": 3804.98,
+   "text": "Yes. And so having like people don't just react in a bubble, they react in the context that they're"
+  },
+  {
+   "start": 3804.98,
+   "end": 3809.38,
+   "text": "in. I think the reaction was against what had come before. You always are some ways rebelling"
+  },
+  {
+   "start": 3809.38,
+   "end": 3813.7,
+   "text": "against the past. And their recent past was government they didn't like and too much of"
+  },
+  {
+   "start": 3813.7,
+   "end": 3817.94,
+   "text": "it, always expanding and they were tired of it. And so this, you know, someone says like,"
+  },
+  {
+   "start": 3817.94,
+   "end": 3822.9,
+   "text": "actually, less government will be awesome. They're like, oh yeah, I'll take that. But I think now"
+  },
+  {
+   "start": 3822.9,
+   "end": 3829.3,
+   "text": "that that's exposed as that's not going to work. You know, you go out and say, don't worry, these"
+  },
+  {
+   "start": 3829.3,
+   "end": 3832.74,
+   "text": "corporations will take care of you as long as they're growing. And then people are going to be"
+  },
+  {
+   "start": 3832.74,
+   "end": 3838.02,
+   "text": "like, no, they won't. No, they won't. Right. You know what? I posted a video about"
+  },
+  {
+   "start": 3839.38,
+   "end": 3845.62,
+   "text": "I posted a video about tax policy and someone said on the comments, oh yeah, trickle down,"
+  },
+  {
+   "start": 3845.62,
+   "end": 3846.62,
+   "text": "right?"
+  },
+  {
+   "start": 3846.62,
+   "end": 3850.3,
+   "text": "And someone posted underneath, it only works if you squeeze real hard."
+  },
+  {
+   "start": 3850.3,
+   "end": 3854.34,
+   "text": "And it had like a thousand likes."
+  },
+  {
+   "start": 3854.34,
+   "end": 3856.1,
+   "text": "We forgot to squeeze."
+  },
+  {
+   "start": 3856.1,
+   "end": 3858.34,
+   "text": "We just got to keep squeezing."
+  },
+  {
+   "start": 3858.34,
+   "end": 3863.66,
+   "text": "But I took that as like, this is incredible because now I post some random video and the"
+  },
+  {
+   "start": 3863.66,
+   "end": 3866.9,
+   "text": "comments, I mean, okay, yeah, there's bias of like the people who follow me agree with"
+  },
+  {
+   "start": 3866.9,
+   "end": 3872.74,
+   "text": "what I'm saying. But I don't think that in 1980, you had people say trickle down as a"
+  },
+  {
+   "start": 3872.74,
+   "end": 3876.82,
+   "text": "lie to a large degree. You didn't have people who had been at companies that had worse health"
+  },
+  {
+   "start": 3876.82,
+   "end": 3881.78,
+   "text": "benefits every year. You didn't have people who couldn't afford housing because of the way the"
+  },
+  {
+   "start": 3881.78,
+   "end": 3886.18,
+   "text": "market structure, who had maybe been foreclosed on it. I mean, we've had so much experience that"
+  },
+  {
+   "start": 3886.18,
+   "end": 3891.94,
+   "text": "we carry through each neoliberal conservative crisis to the next that at some point, we want to"
+  },
+  {
+   "start": 3891.94,
+   "end": 3896.98,
+   "text": "change direction. We didn't have that in 1980. I think we have that on our side now,"
+  },
+  {
+   "start": 3896.98,
+   "end": 3900.82,
+   "text": "and we just have to capitalize on this moment to be like, all right, we're big, we're government,"
+  },
+  {
+   "start": 3900.82,
+   "end": 3908.19,
+   "text": "we're here, let's do it. Well, I think in many ways people see that corporate power is kind of"
+  },
+  {
+   "start": 3908.75,
+   "end": 3915.79,
+   "text": "a fourth branch of government, and only government has the power to be an effective counterweight"
+  },
+  {
+   "start": 3915.79,
+   "end": 3921.63,
+   "text": "to whatever that exploitation may be. And I find it so interesting now with AI, and we had a guy"
+  },
+  {
+   "start": 3921.63,
+   "end": 3926.11,
+   "text": "on the Daily Show last night, this guy Jacob Coxon who sort of worked at Anthropoc and Open AI"
+  },
+  {
+   "start": 3926.11,
+   "end": 3931.07,
+   "text": "and has been blowing the whistle on kind of how dangerous he thinks it might be. But even he"
+  },
+  {
+   "start": 3931.79,
+   "end": 3936.75,
+   "text": "buys into this idea that, oh, well, AI is dangerous and you can have these things. But if we put"
+  },
+  {
+   "start": 3936.75,
+   "end": 3944.67,
+   "text": "enough guardrails on it, we'll get to an age of abundance where there won't be jobs, productivity"
+  },
+  {
+   "start": 3944.67,
+   "end": 3950.83,
+   "text": "will go through the roof and the robots in the AI will make all these industries so and"
+  },
+  {
+   "start": 3951.63,
+   "end": 3957.63,
+   "text": "jobs will obviously be diminished, but will have universal high income and you won't have"
+  },
+  {
+   "start": 3957.63,
+   "end": 3962.99,
+   "text": "to. And I just keep thinking to myself, like, who the fuck do they think they're kidding?"
+  },
+  {
+   "start": 3962.99,
+   "end": 3970.35,
+   "text": "That this industry of people who are hoarding wealth at a level we have never seen it before,"
+  },
+  {
+   "start": 3970.35,
+   "end": 3977.46,
+   "text": "if we just let them cook, they'll get to a point where they control everything and then"
+  },
+  {
+   "start": 3977.46,
+   "end": 3979.98,
+   "text": "they'll start handing it all off to people."
+  },
+  {
+   "start": 3979.98,
+   "end": 3983.26,
+   "text": "Oh, we have 50 years of experience of corporate largesse."
+  },
+  {
+   "start": 3983.26,
+   "end": 3983.76,
+   "text": "Right."
+  },
+  {
+   "start": 3983.76,
+   "end": 3985.08,
+   "text": "Does not come down to us."
+  },
+  {
+   "start": 3985.08,
+   "end": 3985.96,
+   "text": "Yeah."
+  },
+  {
+   "start": 3985.96,
+   "end": 3986.56,
+   "text": "At all."
+  },
+  {
+   "start": 3986.56,
+   "end": 3987.56,
+   "text": "Yeah."
+  },
+  {
+   "start": 3987.56,
+   "end": 3991.92,
+   "text": "I should say there is a very reasonable UBI camp,"
+  },
+  {
+   "start": 3991.92,
+   "end": 3993.08,
+   "text": "Universal Basic Income."
+  },
+  {
+   "start": 3993.08,
+   "end": 3994.12,
+   "text": "That's different."
+  },
+  {
+   "start": 3994.12,
+   "end": 3995.32,
+   "text": "They come from the left."
+  },
+  {
+   "start": 3995.32,
+   "end": 3996.68,
+   "text": "They want to disrupt power."
+  },
+  {
+   "start": 3996.68,
+   "end": 3997.18,
+   "text": "Yes."
+  },
+  {
+   "start": 3997.18,
+   "end": 3999.2,
+   "text": "They like, there's a very, there's a very like,"
+  },
+  {
+   "start": 3999.2,
+   "end": 4003.44,
+   "text": "and it's descended from MLK and the freedom budget of like,"
+  },
+  {
+   "start": 4003.44,
+   "end": 4006.64,
+   "text": "this is a liberal policy because it disrupts the power"
+  },
+  {
+   "start": 4006.64,
+   "end": 4008.72,
+   "text": "in the labor market to give people a base level of income"
+  },
+  {
+   "start": 4008.72,
+   "end": 4009.28,
+   "text": "for bargaining."
+  },
+  {
+   "start": 4009.28,
+   "end": 4012.04,
+   "text": "there's those people and they are very different from."
+  },
+  {
+   "start": 4012.04,
+   "end": 4012.88,
+   "text": "Yes."
+  },
+  {
+   "start": 4012.88,
+   "end": 4015.04,
+   "text": "Don't worry, your corporate overlords will give you"
+  },
+  {
+   "start": 4015.04,
+   "end": 4017.8,
+   "text": "all the enough money that everybody will be fine."
+  },
+  {
+   "start": 4017.8,
+   "end": 4021.2,
+   "text": "I think there's legitimate power questions we should get at."
+  },
+  {
+   "start": 4021.2,
+   "end": 4022.04,
+   "text": "And there are other things,"
+  },
+  {
+   "start": 4022.04,
+   "end": 4024.12,
+   "text": "and I think there are policies that can help with that,"
+  },
+  {
+   "start": 4024.12,
+   "end": 4027.08,
+   "text": "like wage insurance, I think, as you talked earlier"
+  },
+  {
+   "start": 4027.08,
+   "end": 4028.92,
+   "text": "about you lose your job and then you have to go"
+  },
+  {
+   "start": 4028.92,
+   "end": 4031.08,
+   "text": "to a lower wage job and all that."
+  },
+  {
+   "start": 4031.08,
+   "end": 4035.28,
+   "text": "That to me is a good use of wage insurance"
+  },
+  {
+   "start": 4035.28,
+   "end": 4038.56,
+   "text": "where you don't make people make a step down."
+  },
+  {
+   "start": 4038.56,
+   "end": 4041.96,
+   "text": "if their industry gets disrupted by globalization"
+  },
+  {
+   "start": 4041.96,
+   "end": 4044.52,
+   "text": "or by people chasing the lowest,"
+  },
+  {
+   "start": 4044.52,
+   "end": 4047.31,
+   "text": "corporations chasing the lowest water,"
+  },
+  {
+   "start": 4047.31,
+   "end": 4049.11,
+   "text": "we learned that in the pandemic,"
+  },
+  {
+   "start": 4049.11,
+   "end": 4051.71,
+   "text": "the difference between the government response"
+  },
+  {
+   "start": 4051.71,
+   "end": 4055.35,
+   "text": "to the 2008 financial crisis and the pandemic was stark."
+  },
+  {
+   "start": 4055.35,
+   "end": 4057.57,
+   "text": "In the pandemic, rather than bailing out"
+  },
+  {
+   "start": 4057.57,
+   "end": 4059.11,
+   "text": "at the corporate level, they just said,"
+  },
+  {
+   "start": 4059.11,
+   "end": 4061.83,
+   "text": "oh, what if we just made it so that people"
+  },
+  {
+   "start": 4061.83,
+   "end": 4064.79,
+   "text": "could still eat and live in their houses?"
+  },
+  {
+   "start": 4064.79,
+   "end": 4067.97,
+   "text": "And you saw the bounce back in the economy"
+  },
+  {
+   "start": 4067.97,
+   "end": 4073.16,
+   "text": "was so much quicker and people didn't lose their houses."
+  },
+  {
+   "start": 4074.36,
+   "end": 4076.3,
+   "text": "Do you wanna know a devastating fact about that?"
+  },
+  {
+   "start": 4076.3,
+   "end": 4077.3,
+   "text": "Please."
+  },
+  {
+   "start": 4077.3,
+   "end": 4079.98,
+   "text": "The Great Recession took eight years off the life"
+  },
+  {
+   "start": 4079.98,
+   "end": 4081.5,
+   "text": "of the Social Security Trust Fund"
+  },
+  {
+   "start": 4081.5,
+   "end": 4084.26,
+   "text": "and the COVID pandemic didn't take one."
+  },
+  {
+   "start": 4084.26,
+   "end": 4086.06,
+   "text": "That's fucking crazy."
+  },
+  {
+   "start": 4086.06,
+   "end": 4086.9,
+   "text": "Isn't it?"
+  },
+  {
+   "start": 4086.9,
+   "end": 4089.94,
+   "text": "The 2008, where they bailed it out at the corporate level,"
+  },
+  {
+   "start": 4089.94,
+   "end": 4091.74,
+   "text": "even though they got that paid back in the government,"
+  },
+  {
+   "start": 4091.74,
+   "end": 4093.42,
+   "text": "took eight years out of it."
+  },
+  {
+   "start": 4093.42,
+   "end": 4095.86,
+   "text": "But see, doesn't that just prove"
+  },
+  {
+   "start": 4095.86,
+   "end": 4098.72,
+   "text": "that to stimulate the economy at that Keynesian level"
+  },
+  {
+   "start": 4098.72,
+   "end": 4101.66,
+   "text": "is like such a more effective policy."
+  },
+  {
+   "start": 4101.66,
+   "end": 4106.66,
+   "text": "So I mean, social security is my Roman empire."
+  },
+  {
+   "start": 4109.22,
+   "end": 4113.26,
+   "text": "And I think one of the reasons why I'm so just fascinated"
+  },
+  {
+   "start": 4113.26,
+   "end": 4116.5,
+   "text": "by it is that it is a mirror back at our labor market"
+  },
+  {
+   "start": 4116.5,
+   "end": 4118.12,
+   "text": "of how we are performing."
+  },
+  {
+   "start": 4118.12,
+   "end": 4120.14,
+   "text": "And you know, you hear this narrative of like,"
+  },
+  {
+   "start": 4120.14,
+   "end": 4122.86,
+   "text": "oh, there's too many old people, they live too long,"
+  },
+  {
+   "start": 4122.86,
+   "end": 4124.42,
+   "text": "we can't have social security."
+  },
+  {
+   "start": 4124.42,
+   "end": 4127.12,
+   "text": "when in fact, like social security is reflecting"
+  },
+  {
+   "start": 4127.12,
+   "end": 4129.56,
+   "text": "that workers have had a raw deal for 50 years."
+  },
+  {
+   "start": 4129.56,
+   "end": 4131.92,
+   "text": "And it can get through small problems,"
+  },
+  {
+   "start": 4131.92,
+   "end": 4134.04,
+   "text": "but something like how big of a hit"
+  },
+  {
+   "start": 4134.04,
+   "end": 4138.0,
+   "text": "the Great Recession gave to social security's bottom line"
+  },
+  {
+   "start": 4138.0,
+   "end": 4140.04,
+   "text": "is really like, this is the story."
+  },
+  {
+   "start": 4140.04,
+   "end": 4142.32,
+   "text": "It needs workers and it needs those workers"
+  },
+  {
+   "start": 4142.32,
+   "end": 4143.76,
+   "text": "to be making good money."
+  },
+  {
+   "start": 4143.76,
+   "end": 4146.68,
+   "text": "And if you hurt workers, it hurts social security."
+  },
+  {
+   "start": 4146.68,
+   "end": 4149.76,
+   "text": "And this like longevity people live longer"
+  },
+  {
+   "start": 4149.76,
+   "end": 4152.12,
+   "text": "and there's old people now, like that to me"
+  },
+  {
+   "start": 4152.12,
+   "end": 4153.4,
+   "text": "is like a very convenient,"
+  },
+  {
+   "start": 4153.4,
+   "end": 4155.36,
+   "text": "Like you are missing the broader picture,"
+  },
+  {
+   "start": 4155.36,
+   "end": 4158.36,
+   "text": "which is that Social Security is a labor market program."
+  },
+  {
+   "start": 4158.36,
+   "end": 4160.42,
+   "text": "And the Great Recession was devastating"
+  },
+  {
+   "start": 4160.42,
+   "end": 4161.68,
+   "text": "to Social Security's bottom line"
+  },
+  {
+   "start": 4161.68,
+   "end": 4163.48,
+   "text": "because of how long job loss went on,"
+  },
+  {
+   "start": 4163.48,
+   "end": 4166.12,
+   "text": "how many people left the labor market for good"
+  },
+  {
+   "start": 4166.12,
+   "end": 4168.0,
+   "text": "because they never found a job."
+  },
+  {
+   "start": 4168.0,
+   "end": 4170.82,
+   "text": "We can do better than that."
+  },
+  {
+   "start": 4170.82,
+   "end": 4173.96,
+   "text": "I've advocated for a long-term unemployment program"
+  },
+  {
+   "start": 4173.96,
+   "end": 4177.2,
+   "text": "that basically like when you lose your job,"
+  },
+  {
+   "start": 4177.2,
+   "end": 4178.98,
+   "text": "you just give people a little bit of money"
+  },
+  {
+   "start": 4178.98,
+   "end": 4179.92,
+   "text": "for a little bit of time"
+  },
+  {
+   "start": 4179.92,
+   "end": 4181.2,
+   "text": "because once people lose their job,"
+  },
+  {
+   "start": 4181.2,
+   "end": 4183.52,
+   "text": "I say this with love, horrible choices."
+  },
+  {
+   "start": 4183.52,
+   "end": 4185.12,
+   "text": "They're so stressed, they're so scared."
+  },
+  {
+   "start": 4185.12,
+   "end": 4186.12,
+   "text": "Yeah, man."
+  },
+  {
+   "start": 4186.12,
+   "end": 4187.12,
+   "text": "They've got bills that are coming in right away."
+  },
+  {
+   "start": 4187.12,
+   "end": 4188.12,
+   "text": "It's terrifying."
+  },
+  {
+   "start": 4188.12,
+   "end": 4189.12,
+   "text": "It's terrifying."
+  },
+  {
+   "start": 4189.12,
+   "end": 4191.2,
+   "text": "So you need to just give them a check."
+  },
+  {
+   "start": 4191.2,
+   "end": 4193.76,
+   "text": "Here's four weeks, we'll float you, figure it out."
+  },
+  {
+   "start": 4193.76,
+   "end": 4195.24,
+   "text": "And don't make it adversarial."
+  },
+  {
+   "start": 4195.24,
+   "end": 4196.24,
+   "text": "No."
+  },
+  {
+   "start": 4196.24,
+   "end": 4199.64,
+   "text": "Just make it, just literally walk off the street, go get an unemployment benefit."
+  },
+  {
+   "start": 4199.64,
+   "end": 4203.0,
+   "text": "Don't lose your life over how scary this is."
+  },
+  {
+   "start": 4203.0,
+   "end": 4205.36,
+   "text": "There's basically three types of unemployment."
+  },
+  {
+   "start": 4205.36,
+   "end": 4207.24,
+   "text": "The vast majority is really short."
+  },
+  {
+   "start": 4207.24,
+   "end": 4209.56,
+   "text": "You lose your job, you find another one really quickly."
+  },
+  {
+   "start": 4209.56,
+   "end": 4214.4,
+   "text": "The middle kind, it's a smaller share, but it's people who like, they'll get a job with"
+  },
+  {
+   "start": 4214.4,
+   "end": 4217.19,
+   "text": "their resume, it just takes them a while."
+  },
+  {
+   "start": 4217.19,
+   "end": 4222.35,
+   "text": "And then the third kind is very long, and it's a small, small share of people, but their"
+  },
+  {
+   "start": 4222.35,
+   "end": 4224.79,
+   "text": "resume will never get them a job again."
+  },
+  {
+   "start": 4224.79,
+   "end": 4226.15,
+   "text": "And they have to do something different."
+  },
+  {
+   "start": 4226.15,
+   "end": 4230.77,
+   "text": "So they get a job quick, they get a job on their resume, or something has to change."
+  },
+  {
+   "start": 4230.77,
+   "end": 4234.07,
+   "text": "So I think we should have an unemployment system that looks exactly like that."
+  },
+  {
+   "start": 4234.07,
+   "end": 4239.19,
+   "text": "Catherine, is some of this based on the idea of what we believe are the markers for our"
+  },
+  {
+   "start": 4239.19,
+   "end": 4244.39,
+   "text": "healthy economy? Because if you tune into, you know, any news program, there's always"
+  },
+  {
+   "start": 4244.39,
+   "end": 4247.15,
+   "text": "a little ticker at the bottom, or there's always a little thing in the back, and it's"
+  },
+  {
+   "start": 4247.15,
+   "end": 4253.19,
+   "text": "always about the Dow or the NASDAQ or the S&P 500, as though that is somehow those are"
+  },
+  {
+   "start": 4253.19,
+   "end": 4258.15,
+   "text": "the markers for a healthy economy. And you could be forgiven for assuming, just like"
+  },
+  {
+   "start": 4258.15,
+   "end": 4261.87,
+   "text": "if you went to the hospital and they checked your blood pressure and your pulse, that that"
+  },
+  {
+   "start": 4261.87,
+   "end": 4267.95,
+   "text": "is, oh, those are the two things that symbolize health. But shouldn't we have in that corner"
+  },
+  {
+   "start": 4269.66,
+   "end": 4277.98,
+   "text": "workers share of productivity? Shouldn't we have other markers that are much truer indicators"
+  },
+  {
+   "start": 4277.98,
+   "end": 4284.62,
+   "text": "of what a real healthy economy would look like so that people become educated to look for those"
+  },
+  {
+   "start": 4284.62,
+   "end": 4291.09,
+   "text": "changes? I don't know. I don't know. I mean, for one thing, the reason why those markers are up is"
+  },
+  {
+   "start": 4291.09,
+   "end": 4292.77,
+   "text": "is also there's a frequency bias."
+  },
+  {
+   "start": 4292.77,
+   "end": 4294.01,
+   "text": "I mean, they change all the time."
+  },
+  {
+   "start": 4294.01,
+   "end": 4296.93,
+   "text": "Unemployment rate, we get an update once a month."
+  },
+  {
+   "start": 4296.93,
+   "end": 4299.21,
+   "text": "Poverty will get an update maybe once a quarter,"
+  },
+  {
+   "start": 4299.21,
+   "end": 4300.37,
+   "text": "but really just once a year."
+  },
+  {
+   "start": 4300.37,
+   "end": 4301.83,
+   "text": "And so it's like this permanent fixture"
+  },
+  {
+   "start": 4301.83,
+   "end": 4302.81,
+   "text": "to have them up there."
+  },
+  {
+   "start": 4302.81,
+   "end": 4305.05,
+   "text": "I think that they just, it's news, right?"
+  },
+  {
+   "start": 4305.05,
+   "end": 4307.33,
+   "text": "And the stock market prices are always new"
+  },
+  {
+   "start": 4307.33,
+   "end": 4310.01,
+   "text": "because they change in every moment."
+  },
+  {
+   "start": 4310.97,
+   "end": 4315.5,
+   "text": "But I think, I think people see it."
+  },
+  {
+   "start": 4315.5,
+   "end": 4318.9,
+   "text": "I don't know, maybe I'm too optimistic."
+  },
+  {
+   "start": 4318.9,
+   "end": 4320.86,
+   "text": "I would say that I'm a very cynical optimist"
+  },
+  {
+   "start": 4320.86,
+   "end": 4323.1,
+   "text": "In some ways, I'm optimistic."
+  },
+  {
+   "start": 4323.1,
+   "end": 4326.58,
+   "text": "I mean, I'm almost optimistic out of spite at some point."
+  },
+  {
+   "start": 4327.58,
+   "end": 4329.78,
+   "text": "Like my podcast is called Optimist Economy"
+  },
+  {
+   "start": 4329.78,
+   "end": 4331.7,
+   "text": "and we say all the time, like, we're not nice."
+  },
+  {
+   "start": 4331.7,
+   "end": 4336.73,
+   "text": "But I mean, to me, optimism is not giving a free pass"
+  },
+  {
+   "start": 4337.37,
+   "end": 4340.81,
+   "text": "to our awful members of Congress that they can stop trying."
+  },
+  {
+   "start": 4340.81,
+   "end": 4343.25,
+   "text": "Because when I stop believing change can happen,"
+  },
+  {
+   "start": 4343.25,
+   "end": 4344.77,
+   "text": "they are no longer held accountable"
+  },
+  {
+   "start": 4344.77,
+   "end": 4345.73,
+   "text": "for what I'd like to see"
+  },
+  {
+   "start": 4345.73,
+   "end": 4347.85,
+   "text": "because I've made peace with how awful the world is."
+  },
+  {
+   "start": 4347.85,
+   "end": 4350.73,
+   "text": "And so I'm like, oh, I can be optimistic out of spite"
+  },
+  {
+   "start": 4350.73,
+   "end": 4351.73,
+   "text": "for so long."
+  },
+  {
+   "start": 4351.73,
+   "end": 4352.73,
+   "text": "I am a Texan."
+  },
+  {
+   "start": 4352.73,
+   "end": 4353.93,
+   "text": "Do you know how stubborn I can be?"
+  },
+  {
+   "start": 4353.93,
+   "end": 4355.25,
+   "text": "You should watch me play putt-putt."
+  },
+  {
+   "start": 4355.25,
+   "end": 4356.25,
+   "text": "It's ridiculous."
+  },
+  {
+   "start": 4356.25,
+   "end": 4357.25,
+   "text": "Like, I'm so competitive."
+  },
+  {
+   "start": 4357.25,
+   "end": 4358.25,
+   "text": "I am so spiteful."
+  },
+  {
+   "start": 4358.25,
+   "end": 4362.57,
+   "text": "And so I will believe in a better country just to damn you."
+  },
+  {
+   "start": 4362.57,
+   "end": 4364.41,
+   "text": "Like, 100% do that."
+  },
+  {
+   "start": 4364.41,
+   "end": 4369.21,
+   "text": "You know, I think about this with how people are reacting."
+  },
+  {
+   "start": 4369.21,
+   "end": 4373.01,
+   "text": "So I'm sure you've heard that there's this big like vibe session of like the new, the"
+  },
+  {
+   "start": 4373.01,
+   "end": 4376.53,
+   "text": "economic news is good, but people feel bad about the economy."
+  },
+  {
+   "start": 4376.53,
+   "end": 4378.45,
+   "text": "And there's this struggle to explain it."
+  },
+  {
+   "start": 4378.45,
+   "end": 4381.77,
+   "text": "I don't really think there's a struggle to explain anything."
+  },
+  {
+   "start": 4381.77,
+   "end": 4387.09,
+   "text": "It's that even if you were to put the unemployment rate up on a ticker or you were to put GDP"
+  },
+  {
+   "start": 4387.09,
+   "end": 4392.65,
+   "text": "up on a ticker, people's lives have not improved and they can gauge their own lives better"
+  },
+  {
+   "start": 4392.65,
+   "end": 4395.89,
+   "text": "than any national economic indicator can."
+  },
+  {
+   "start": 4395.89,
+   "end": 4400.89,
+   "text": "And so, bringing more attention to indicators outside of the stock market is one thing."
+  },
+  {
+   "start": 4400.89,
+   "end": 4404.45,
+   "text": "But what we really need to do is pay attention to people when they say, I am hurting and"
+  },
+  {
+   "start": 4404.45,
+   "end": 4405.93,
+   "text": "you are not helping."
+  },
+  {
+   "start": 4405.93,
+   "end": 4410.41,
+   "text": "And that comes down to better leadership and that comes down to different priorities."
+  },
+  {
+   "start": 4410.41,
+   "end": 4414.93,
+   "text": "And it comes down to no longer holding the economy up as a boogeyman to say, well, if"
+  },
+  {
+   "start": 4414.93,
+   "end": 4417.09,
+   "text": "I help you, we might have a worse economy."
+  },
+  {
+   "start": 4417.09,
+   "end": 4421.09,
+   "text": "No, we have a better economy when people are helped."
+  },
+  {
+   "start": 4421.09,
+   "end": 4422.53,
+   "text": "That is everything."
+  },
+  {
+   "start": 4422.53,
+   "end": 4423.97,
+   "text": "We have a better economy."
+  },
+  {
+   "start": 4423.97,
+   "end": 4427.69,
+   "text": "These are not entitlements, they are investments."
+  },
+  {
+   "start": 4427.69,
+   "end": 4428.93,
+   "text": "This is not charity."
+  },
+  {
+   "start": 4428.93,
+   "end": 4429.93,
+   "text": "That's right."
+  },
+  {
+   "start": 4429.93,
+   "end": 4434.45,
+   "text": "They are, when you do that, you are investing in the best thing we have in this country,"
+  },
+  {
+   "start": 4434.45,
+   "end": 4436.05,
+   "text": "which is human capital."
+  },
+  {
+   "start": 4436.05,
+   "end": 4437.05,
+   "text": "Yes, and workers."
+  },
+  {
+   "start": 4437.05,
+   "end": 4439.05,
+   "text": "And these are not entitlements by poor people."
+  },
+  {
+   "start": 4439.05,
+   "end": 4440.05,
+   "text": "Right, exactly."
+  },
+  {
+   "start": 4440.05,
+   "end": 4441.05,
+   "text": "No, so you talk about childcare."
+  },
+  {
+   "start": 4441.05,
+   "end": 4442.05,
+   "text": "Child..."
+  },
+  {
+   "start": 4442.05,
+   "end": 4443.05,
+   "text": "It's a price tag."
+  },
+  {
+   "start": 4443.05,
+   "end": 4444.05,
+   "text": "It can be expensive."
+  },
+  {
+   "start": 4444.05,
+   "end": 4447.13,
+   "text": "It's probably still, I don't know, a fifth of the cost of the One Big Beautiful Bill"
+  },
+  {
+   "start": 4447.13,
+   "end": 4448.13,
+   "text": "Act."
+  },
+  {
+   "start": 4448.13,
+   "end": 4451.01,
+   "text": "But I mean, it's not cheap to pay for childcare for every American."
+  },
+  {
+   "start": 4451.01,
+   "end": 4457.41,
+   "text": "But if you had childcare, you could expect anywhere between, you know, one to four million"
+  },
+  {
+   "start": 4457.41,
+   "end": 4460.73,
+   "text": "more people working every year."
+  },
+  {
+   "start": 4460.73,
+   "end": 4463.85,
+   "text": "The size of our economy is predicted by the number of people working in it."
+  },
+  {
+   "start": 4463.85,
+   "end": 4465.57,
+   "text": "So same thing with paid family leave."
+  },
+  {
+   "start": 4465.57,
+   "end": 4467.61,
+   "text": "Same thing with the right to work part time"
+  },
+  {
+   "start": 4467.61,
+   "end": 4470.05,
+   "text": "or schedules that are predictable."
+  },
+  {
+   "start": 4470.05,
+   "end": 4471.45,
+   "text": "This isn't charity."
+  },
+  {
+   "start": 4471.45,
+   "end": 4473.49,
+   "text": "When you make the labor market more fair"
+  },
+  {
+   "start": 4473.49,
+   "end": 4475.81,
+   "text": "and when you make the labor market work for workers,"
+  },
+  {
+   "start": 4475.81,
+   "end": 4477.69,
+   "text": "they can work more and they can earn more"
+  },
+  {
+   "start": 4477.69,
+   "end": 4479.61,
+   "text": "and that makes the economy bigger."
+  },
+  {
+   "start": 4479.61,
+   "end": 4482.93,
+   "text": "I like to turn on my heartless,"
+  },
+  {
+   "start": 4482.93,
+   "end": 4484.69,
+   "text": "economist, sarcastic voice and be like,"
+  },
+  {
+   "start": 4484.69,
+   "end": 4487.73,
+   "text": "listen, I also hate children."
+  },
+  {
+   "start": 4487.73,
+   "end": 4490.37,
+   "text": "I hate their mothers, but I hate kids"
+  },
+  {
+   "start": 4490.37,
+   "end": 4492.49,
+   "text": "and I don't wanna invest in them any more"
+  },
+  {
+   "start": 4492.49,
+   "end": 4493.85,
+   "text": "than you want to invest in them."
+  },
+  {
+   "start": 4493.85,
+   "end": 4495.61,
+   "text": "Those snot-nosed little devils, they're-"
+  },
+  {
+   "start": 4495.61,
+   "end": 4496.93,
+   "text": "But we need to."
+  },
+  {
+   "start": 4496.93,
+   "end": 4498.45,
+   "text": "They're vectors of disease."
+  },
+  {
+   "start": 4498.45,
+   "end": 4500.57,
+   "text": "But I've got to give them daycare"
+  },
+  {
+   "start": 4500.57,
+   "end": 4504.13,
+   "text": "if I'm gonna get more hours of work out of their mom,"
+  },
+  {
+   "start": 4504.13,
+   "end": 4505.45,
+   "text": "which is good for the economy."
+  },
+  {
+   "start": 4505.45,
+   "end": 4508.85,
+   "text": "And so I can code switch and turn on this-"
+  },
+  {
+   "start": 4508.85,
+   "end": 4510.01,
+   "text": "This is beautiful."
+  },
+  {
+   "start": 4510.01,
+   "end": 4512.33,
+   "text": "Evil economist of like, well, I also hate children."
+  },
+  {
+   "start": 4512.33,
+   "end": 4513.41,
+   "text": "I'm not gonna lie."
+  },
+  {
+   "start": 4513.41,
+   "end": 4514.25,
+   "text": "Right."
+  },
+  {
+   "start": 4514.25,
+   "end": 4516.09,
+   "text": "I don't want to make people's lives easier,"
+  },
+  {
+   "start": 4516.09,
+   "end": 4518.81,
+   "text": "but I do need them to stay at the factory till seven."
+  },
+  {
+   "start": 4518.81,
+   "end": 4520.57,
+   "text": "So we're gonna have to do that."
+  },
+  {
+   "start": 4520.57,
+   "end": 4522.25,
+   "text": "I need some more worker bots."
+  },
+  {
+   "start": 4522.25,
+   "end": 4526.17,
+   "text": "Yeah, so I frame things like my economic arguments."
+  },
+  {
+   "start": 4526.17,
+   "end": 4527.19,
+   "text": "I mean, I'm also a human."
+  },
+  {
+   "start": 4527.19,
+   "end": 4528.93,
+   "text": "I mean, I don't tell anybody, but in addition to being-"
+  },
+  {
+   "start": 4528.93,
+   "end": 4529.77,
+   "text": "Don't do that."
+  },
+  {
+   "start": 4529.77,
+   "end": 4530.61,
+   "text": "Yeah."
+  },
+  {
+   "start": 4530.61,
+   "end": 4533.25,
+   "text": "But I frame the economic arguments as, you know,"
+  },
+  {
+   "start": 4533.25,
+   "end": 4536.77,
+   "text": "they've, the conservative neoliberal agenda"
+  },
+  {
+   "start": 4536.77,
+   "end": 4539.61,
+   "text": "for so long has been we own growth."
+  },
+  {
+   "start": 4539.61,
+   "end": 4540.81,
+   "text": "They don't own growth."
+  },
+  {
+   "start": 4540.81,
+   "end": 4541.75,
+   "text": "They don't own growth."
+  },
+  {
+   "start": 4541.75,
+   "end": 4544.17,
+   "text": "They don't grow the economy faster"
+  },
+  {
+   "start": 4544.17,
+   "end": 4546.17,
+   "text": "because they treat people like shit."
+  },
+  {
+   "start": 4546.17,
+   "end": 4548.01,
+   "text": "That's not a better way to grow."
+  },
+  {
+   "start": 4548.01,
+   "end": 4548.85,
+   "text": "Yes."
+  },
+  {
+   "start": 4548.85,
+   "end": 4549.99,
+   "text": "That's one way to grow that hurts."
+  },
+  {
+   "start": 4549.99,
+   "end": 4551.17,
+   "text": "We own growth."
+  },
+  {
+   "start": 4551.17,
+   "end": 4552.63,
+   "text": "Growth is on us."
+  },
+  {
+   "start": 4552.63,
+   "end": 4555.43,
+   "text": "When you have labor force participation, that is growth."
+  },
+  {
+   "start": 4555.43,
+   "end": 4558.15,
+   "text": "And that growth can come from treating people"
+  },
+  {
+   "start": 4558.15,
+   "end": 4561.39,
+   "text": "like human beings and treating the economy works for us"
+  },
+  {
+   "start": 4561.39,
+   "end": 4562.95,
+   "text": "and not the other way around."
+  },
+  {
+   "start": 4562.95,
+   "end": 4565.55,
+   "text": "Clip it, clip it right now and send it out"
+  },
+  {
+   "start": 4565.55,
+   "end": 4566.73,
+   "text": "over the airwaves."
+  },
+  {
+   "start": 4566.73,
+   "end": 4569.31,
+   "text": "Catherine Ann Edwards, economist, writer,"
+  },
+  {
+   "start": 4569.31,
+   "end": 4571.47,
+   "text": "and host of Optimist Economy."
+  },
+  {
+   "start": 4571.47,
+   "end": 4575.47,
+   "text": "I so appreciate your thoughts on this,"
+  },
+  {
+   "start": 4575.47,
+   "end": 4578.15,
+   "text": "your spirit, your content, all those different things."
+  },
+  {
+   "start": 4578.15,
+   "end": 4578.99,
+   "text": "I'm so happy."
+  },
+  {
+   "start": 4578.99,
+   "end": 4586.63,
+   "text": "And if there's anything that I take away from this is remain optimistic purely out of spite."
+  },
+  {
+   "start": 4586.63,
+   "end": 4587.63,
+   "text": "100%."
+  },
+  {
+   "start": 4587.63,
+   "end": 4596.27,
+   "text": "They have continued to treat humans like shit and you think you can break us, motherfucker?"
+  },
+  {
+   "start": 4596.27,
+   "end": 4597.27,
+   "text": "You cannot."
+  },
+  {
+   "start": 4597.27,
+   "end": 4600.91,
+   "text": "John, hold in your mind your least favorite Republican in Congress."
+  },
+  {
+   "start": 4600.91,
+   "end": 4602.11,
+   "text": "I'm doing it right now."
+  },
+  {
+   "start": 4602.11,
+   "end": 4603.11,
+   "text": "Yeah."
+  },
+  {
+   "start": 4603.11,
+   "end": 4604.11,
+   "text": "Imagine..."
+  },
+  {
+   "start": 4604.11,
+   "end": 4605.11,
+   "text": "I'm gonna wait."
+  },
+  {
+   "start": 4605.11,
+   "end": 4606.11,
+   "text": "He's in a wheelchair giving me a peace sign."
+  },
+  {
+   "start": 4606.11,
+   "end": 4607.11,
+   "text": "All right."
+  },
+  {
+   "start": 4607.11,
+   "end": 4609.99,
+   "text": "happier he would look if he was like, hey, good news, everyone."
+  },
+  {
+   "start": 4610.27,
+   "end": 4613.63,
+   "text": "John Stewart doesn't think the balance of power will ever change in the US"
+  },
+  {
+   "start": 4613.63,
+   "end": 4614.43,
+   "text": "and workers favor."
+  },
+  {
+   "start": 4614.43,
+   "end": 4616.07,
+   "text": "And so he's going to give up on caring."
+  },
+  {
+   "start": 4616.11,
+   "end": 4617.39,
+   "text": "He'd be even happier."
+  },
+  {
+   "start": 4617.87,
+   "end": 4618.99,
+   "text": "He'd be even happier."
+  },
+  {
+   "start": 4618.99,
+   "end": 4622.59,
+   "text": "So everybody listening, holding your mind's eye, someone that you don't want"
+  },
+  {
+   "start": 4622.59,
+   "end": 4626.15,
+   "text": "to make happy with your defeat and tell them you will never give up."
+  },
+  {
+   "start": 4626.19,
+   "end": 4626.99,
+   "text": "We'll never give up."
+  },
+  {
+   "start": 4627.15,
+   "end": 4628.07,
+   "text": "Thank you, Churchill."
+  },
+  {
+   "start": 4628.11,
+   "end": 4629.15,
+   "text": "Hold on a white knuckled."
+  },
+  {
+   "start": 4630.23,
+   "end": 4632.11,
+   "text": "Catherine, really appreciate it."
+  },
+  {
+   "start": 4632.11,
+   "end": 4634.67,
+   "text": "Thank you so much for your time and hope to talk to you again soon."
+  },
+  {
+   "start": 4635.03,
+   "end": 4635.31,
+   "text": "Yeah."
+  },
+  {
+   "start": 4635.35,
+   "end": 4636.19,
+   "text": "Thanks for having me."
+  },
+  {
+   "start": 4636.19,
+   "end": 4643.43,
+   "text": "Hello."
+  },
+  {
+   "start": 4643.43,
+   "end": 4652.97,
+   "text": "That's the time for your favorite thing, which is advertisements."
+  },
+  {
+   "start": 4652.97,
+   "end": 4656.39,
+   "text": "That's a new jingle that I'm working on."
+  },
+  {
+   "start": 4656.39,
+   "end": 4658.23,
+   "text": "Find your next fall favorite to Quince."
+  },
+  {
+   "start": 4658.23,
+   "end": 4663.92,
+   "text": "Quince has cashmere sweaters, fall wardrobe, pants, tees, active wear, high quality stuff."
+  },
+  {
+   "start": 4663.92,
+   "end": 4669.67,
+   "text": "They've got home bedding, kitchen essentials, furniture."
+  },
+  {
+   "start": 4669.67,
+   "end": 4671.07,
+   "text": "Why are you shopping anywhere?"
+  },
+  {
+   "start": 4671.07,
+   "end": 4673.54,
+   "text": "And by the way, for those of you, you know me."
+  },
+  {
+   "start": 4673.54,
+   "end": 4678.54,
+   "text": "I like the stuff that I get to be the product of labor that has been exploited."
+  },
+  {
+   "start": 4679.26,
+   "end": 4683.38,
+   "text": "But Quince doesn't roll that way. They're all into ethical factories."
+  },
+  {
+   "start": 4683.74,
+   "end": 4686.49,
+   "text": "I'm doing the quotes there. They cut out the middleman."
+  },
+  {
+   "start": 4686.49,
+   "end": 4689.13,
+   "text": "You're paying for high quality, not brand markup."
+  },
+  {
+   "start": 4689.37,
+   "end": 4692.45,
+   "text": "These guys are the good guys. You should buy from them."
+  },
+  {
+   "start": 4693.2,
+   "end": 4697.64,
+   "text": "Download the quince app for app exclusive offers or go to quince.com slash"
+  },
+  {
+   "start": 4697.64,
+   "end": 4703.44,
+   "text": "TWS get free shipping on your order and 365 day returns."
+  },
+  {
+   "start": 4703.64,
+   "end": 4706.64,
+   "text": "Now available in Canada and the UK too."
+  },
+  {
+   "start": 4706.64,
+   "end": 4711.64,
+   "text": "That's Q-U-I-N-C-E dot com slash T-W-S."
+  },
+  {
+   "start": 4713.14,
+   "end": 4718.6,
+   "text": "Fire!"
+  },
+  {
+   "start": 4718.6,
+   "end": 4720.6,
+   "text": "You like that one."
+  },
+  {
+   "start": 4720.6,
+   "end": 4722.76,
+   "text": "That young lady, when she started cooking?"
+  },
+  {
+   "start": 4722.76,
+   "end": 4723.76,
+   "text": "Yeah."
+  },
+  {
+   "start": 4723.76,
+   "end": 4725.76,
+   "text": "Because you could tell, like, she wasn't quite sure"
+  },
+  {
+   "start": 4725.76,
+   "end": 4727.76,
+   "text": "when we first started, like, who is this guy?"
+  },
+  {
+   "start": 4727.76,
+   "end": 4728.76,
+   "text": "What are we talking about?"
+  },
+  {
+   "start": 4728.76,
+   "end": 4729.76,
+   "text": "What does he know?"
+  },
+  {
+   "start": 4729.76,
+   "end": 4730.76,
+   "text": "And the thing."
+  },
+  {
+   "start": 4730.76,
+   "end": 4731.76,
+   "text": "And then finally, she was just like,"
+  },
+  {
+   "start": 4731.76,
+   "end": 4734.76,
+   "text": "let me tell these motherfuckers what's what."
+  },
+  {
+   "start": 4734.76,
+   "end": 4736.76,
+   "text": "Remaining optimistic out of his fight."
+  },
+  {
+   "start": 4736.76,
+   "end": 4737.8,
+   "text": "It's so good."
+  },
+  {
+   "start": 4737.8,
+   "end": 4739.28,
+   "text": "How beautiful is that?"
+  },
+  {
+   "start": 4739.28,
+   "end": 4740.68,
+   "text": "I am putting it on a poster."
+  },
+  {
+   "start": 4740.68,
+   "end": 4742.2,
+   "text": "Yeah, sue it for the haters."
+  },
+  {
+   "start": 4742.2,
+   "end": 4745.4,
+   "text": "I love the idea that she is just like, let me tell you something."
+  },
+  {
+   "start": 4745.56,
+   "end": 4748.16,
+   "text": "They think they can keep us down."
+  },
+  {
+   "start": 4748.24,
+   "end": 4751.16,
+   "text": "No, I'm going to, I'm going to keep my head above water"
+  },
+  {
+   "start": 4751.28,
+   "end": 4756.32,
+   "text": "and keep hoping for a better future, just because I know how much it fucking annoys them."
+  },
+  {
+   "start": 4756.44,
+   "end": 4758.2,
+   "text": "Just to damn you."
+  },
+  {
+   "start": 4758.8,
+   "end": 4759.84,
+   "text": "Spectacular."
+  },
+  {
+   "start": 4759.96,
+   "end": 4761.6,
+   "text": "Smart, hopeful."
+  },
+  {
+   "start": 4761.64,
+   "end": 4762.24,
+   "text": "Yeah, yeah."
+  },
+  {
+   "start": 4762.24,
+   "end": 4764.84,
+   "text": "Every time she was talking, I was like, yes, yes."
+  },
+  {
+   "start": 4764.84,
+   "end": 4769.32,
+   "text": "Well, that when she said that, and I wrote it down about growth and greed."
+  },
+  {
+   "start": 4769.32,
+   "end": 4769.82,
+   "text": "Yeah."
+  },
+  {
+   "start": 4769.82,
+   "end": 4773.88,
+   "text": "And I'm looking forward to all the economists who listen to that and go,"
+  },
+  {
+   "start": 4774.52,
+   "end": 4777.4,
+   "text": "fuck her, she doesn't know what she's talking about. And he doesn't know what he's talking about."
+  },
+  {
+   "start": 4777.4,
+   "end": 4780.12,
+   "text": "And we're the only economists that matter."
+  },
+  {
+   "start": 4780.12,
+   "end": 4780.6,
+   "text": "Like,"
+  },
+  {
+   "start": 4780.6,
+   "end": 4785.08,
+   "text": "It's just so crazy too, because the greatest period of American prosperity is when worker"
+  },
+  {
+   "start": 4785.08,
+   "end": 4789.08,
+   "text": "protections were the greatest and when workers had the largest share of that pie."
+  },
+  {
+   "start": 4789.08,
+   "end": 4790.52,
+   "text": "And yet they'll tell you that."
+  },
+  {
+   "start": 4790.52,
+   "end": 4793.64,
+   "text": "And when growth and productivity are more coupled,"
+  },
+  {
+   "start": 4793.64,
+   "end": 4801.8,
+   "text": "And when wages and productivity are more coupled and they decoupled it and acted like this rush"
+  },
+  {
+   "start": 4801.8,
+   "end": 4805.72,
+   "text": "to inequality is how it's all actually supposed to work."
+  },
+  {
+   "start": 4805.72,
+   "end": 4809.4,
+   "text": "Yeah. And they'll say, you know, we can't afford it and it's going to cause inflation."
+  },
+  {
+   "start": 4809.4,
+   "end": 4815.64,
+   "text": "Meanwhile, their pay goes up 400% and worker pay can't go up a nickel. But yes, we're poor."
+  },
+  {
+   "start": 4815.64,
+   "end": 4821.96,
+   "text": "And it is. And it is so much about like the places where economy has withered, where it's"
+  },
+  {
+   "start": 4821.96,
+   "end": 4828.58,
+   "text": "whether it's Rust Belt or certain where poverty is intractable, bringing prosperity to them"
+  },
+  {
+   "start": 4828.58,
+   "end": 4833.0,
+   "text": "would be the greatest thing that could ever happen to the economy."
+  },
+  {
+   "start": 4833.0,
+   "end": 4839.04,
+   "text": "Raising the ceiling for tech titans is not what makes the economy better."
+  },
+  {
+   "start": 4839.04,
+   "end": 4844.72,
+   "text": "It's helping the areas that have withered and withered because of intentional policy."
+  },
+  {
+   "start": 4844.72,
+   "end": 4850.48,
+   "text": "Yeah, because people spend money when they make it and the tech CEOs hoard their wealth."
+  },
+  {
+   "start": 4850.48,
+   "end": 4852.38,
+   "text": "But no, no, no, they'll tell you they're gonna go,"
+  },
+  {
+   "start": 4852.38,
+   "end": 4854.58,
+   "text": "your $5,000 check is in the mail."
+  },
+  {
+   "start": 4854.58,
+   "end": 4856.72,
+   "text": "But meanwhile, we're just gonna keep hoarding"
+  },
+  {
+   "start": 4856.72,
+   "end": 4858.16,
+   "text": "all of your resources as well."
+  },
+  {
+   "start": 4858.16,
+   "end": 4861.54,
+   "text": "By the way, and only if you give us control of everything."
+  },
+  {
+   "start": 4861.54,
+   "end": 4863.92,
+   "text": "It's actually, it's a bribe, it's not."
+  },
+  {
+   "start": 4863.92,
+   "end": 4866.32,
+   "text": "Yeah, well, I thought she was fantastic."
+  },
+  {
+   "start": 4866.32,
+   "end": 4871.12,
+   "text": "I really, I hope to get a chance to have her and talk again."
+  },
+  {
+   "start": 4871.12,
+   "end": 4874.0,
+   "text": "That was, I'm fired up now."
+  },
+  {
+   "start": 4874.0,
+   "end": 4875.36,
+   "text": "Yeah, I know, my blood is boiling."
+  },
+  {
+   "start": 4875.36,
+   "end": 4877.0,
+   "text": "You kept getting closer to the camera."
+  },
+  {
+   "start": 4877.0,
+   "end": 4879.36,
+   "text": "I know you like it when you're like, yes."
+  },
+  {
+   "start": 4879.36,
+   "end": 4880.6,
+   "text": "I start leaning in."
+  },
+  {
+   "start": 4880.6,
+   "end": 4881.6,
+   "text": "Yeah, it is."
+  },
+  {
+   "start": 4881.6,
+   "end": 4884.36,
+   "text": "It's so funny because it's not obviously a visual medium."
+  },
+  {
+   "start": 4884.36,
+   "end": 4885.36,
+   "text": "Sometimes it is."
+  },
+  {
+   "start": 4885.36,
+   "end": 4886.86,
+   "text": "But there are certain things that you would say"
+  },
+  {
+   "start": 4886.86,
+   "end": 4888.36,
+   "text": "that I would just like, what?"
+  },
+  {
+   "start": 4888.36,
+   "end": 4889.68,
+   "text": "Like, touchdown."
+  },
+  {
+   "start": 4889.68,
+   "end": 4891.24,
+   "text": "But I really sometimes,"
+  },
+  {
+   "start": 4891.24,
+   "end": 4893.08,
+   "text": "and I get in these conversations with the economists,"
+  },
+  {
+   "start": 4893.08,
+   "end": 4894.6,
+   "text": "and it is like a football game where I'm like,"
+  },
+  {
+   "start": 4894.6,
+   "end": 4897.88,
+   "text": "oh, shit, that's all great pass."
+  },
+  {
+   "start": 4897.88,
+   "end": 4899.56,
+   "text": "Interception."
+  },
+  {
+   "start": 4899.56,
+   "end": 4902.44,
+   "text": "Brittany, what do the people want to,"
+  },
+  {
+   "start": 4902.44,
+   "end": 4904.12,
+   "text": "what do they want?"
+  },
+  {
+   "start": 4904.12,
+   "end": 4905.04,
+   "text": "What do they want?"
+  },
+  {
+   "start": 4905.04,
+   "end": 4905.88,
+   "text": "What do you want?"
+  },
+  {
+   "start": 4905.88,
+   "end": 4907.56,
+   "text": "This fall morning."
+  },
+  {
+   "start": 4907.56,
+   "end": 4910.52,
+   "text": "John, if the Democrats win the House and the Senate."
+  },
+  {
+   "start": 4910.52,
+   "end": 4911.6,
+   "text": "What?"
+  },
+  {
+   "start": 4911.6,
+   "end": 4914.88,
+   "text": "Fingers crossed, should they try to impeach Trump"
+  },
+  {
+   "start": 4914.88,
+   "end": 4916.68,
+   "text": "or would that be a strategic mistake"
+  },
+  {
+   "start": 4916.68,
+   "end": 4918.48,
+   "text": "since he won't be convicted?"
+  },
+  {
+   "start": 4918.48,
+   "end": 4919.92,
+   "text": "What is any of that even?"
+  },
+  {
+   "start": 4919.92,
+   "end": 4922.32,
+   "text": "We've already shown there's no accountability when that."
+  },
+  {
+   "start": 4922.32,
+   "end": 4926.4,
+   "text": "What I want to see is a full government effort"
+  },
+  {
+   "start": 4926.4,
+   "end": 4928.64,
+   "text": "on rebalancing this economy."
+  },
+  {
+   "start": 4928.64,
+   "end": 4933.12,
+   "text": "And this is about triage and the corruption of that family."
+  },
+  {
+   "start": 4933.12,
+   "end": 4935.44,
+   "text": "Fucking let them drain us"
+  },
+  {
+   "start": 4935.44,
+   "end": 4937.36,
+   "text": "like they think they're going to drain us."
+  },
+  {
+   "start": 4937.36,
+   "end": 4943.66,
+   "text": "wall it off so it doesn't infect the rest of the economy and spend a total government"
+  },
+  {
+   "start": 4943.66,
+   "end": 4952.96,
+   "text": "effort at rebalancing labor versus capital with real ideas about like the ones that"
+  },
+  {
+   "start": 4952.96,
+   "end": 4955.9,
+   "text": "Catherine was saying, that's where all their efforts should be."
+  },
+  {
+   "start": 4955.9,
+   "end": 4963.04,
+   "text": "I don't want to see a fucking five act performative play of house hearings."
+  },
+  {
+   "start": 4963.04,
+   "end": 4964.48,
+   "text": "I just don't want to see it."
+  },
+  {
+   "start": 4964.48,
+   "end": 4969.88,
+   "text": "I don't want to see everybody having the opportunity to pantomime accountability"
+  },
+  {
+   "start": 4970.16,
+   "end": 4973.24,
+   "text": "because you know, they're actually not going to bring it."
+  },
+  {
+   "start": 4973.64,
+   "end": 4975.88,
+   "text": "You want to do some investigations of some shit."
+  },
+  {
+   "start": 4976.04,
+   "end": 4976.88,
+   "text": "That's great."
+  },
+  {
+   "start": 4976.88,
+   "end": 4981.92,
+   "text": "But on the triage list of what's wrong in this country, it is, I'm sorry, sir,"
+  },
+  {
+   "start": 4981.92,
+   "end": 4985.16,
+   "text": "you're going to have to stay in the waiting room because this guy just got shot."
+  },
+  {
+   "start": 4985.6,
+   "end": 4987.8,
+   "text": "And it sounds to me like you just have a sore throat."
+  },
+  {
+   "start": 4988.28,
+   "end": 4992.68,
+   "text": "Like do the shit that actually is killing people right now."
+  },
+  {
+   "start": 4993.69,
+   "end": 4994.69,
+   "text": "That's all."
+  },
+  {
+   "start": 4994.77,
+   "end": 4996.72,
+   "text": "Too much? Was that too?"
+  },
+  {
+   "start": 4996.72,
+   "end": 4999.44,
+   "text": "No, no. I think just the right level."
+  },
+  {
+   "start": 4999.44,
+   "end": 5001.6,
+   "text": "Like we've been in those hearings."
+  },
+  {
+   "start": 5001.6,
+   "end": 5007.08,
+   "text": "If you couldn't bring accountability to January 6th in two years,"
+  },
+  {
+   "start": 5007.08,
+   "end": 5011.49,
+   "text": "what confidence do any of us have that you're going to be able to"
+  },
+  {
+   "start": 5011.49,
+   "end": 5015.05,
+   "text": "untangle Eric and Don's drone company?"
+  },
+  {
+   "start": 5015.05,
+   "end": 5018.35,
+   "text": "Truly. Yes. I do want them to be a little scared though."
+  },
+  {
+   "start": 5018.35,
+   "end": 5019.57,
+   "text": "That's it. It's like, I feel like-"
+  },
+  {
+   "start": 5019.57,
+   "end": 5021.67,
+   "text": "Scared of what? What are they scared of?"
+  },
+  {
+   "start": 5021.67,
+   "end": 5028.23,
+   "text": "There is not a person of that power and privilege that can't figure out how to run out the clock"
+  },
+  {
+   "start": 5028.87,
+   "end": 5036.44,
+   "text": "on a two-year investigation. So accomplish, momdani it. Which pothole you need filled?"
+  },
+  {
+   "start": 5036.44,
+   "end": 5042.92,
+   "text": "Fucking fill it. Govern. You want to do some things that are ancillary, a little side project?"
+  },
+  {
+   "start": 5042.92,
+   "end": 5048.18,
+   "text": "You want to do the investigations as a hobby? Knock yourself out. Fix shit."
+  },
+  {
+   "start": 5048.18,
+   "end": 5053.7,
+   "text": "Perhaps we also finally release the upstain vials. Release the vials!"
+  },
+  {
+   "start": 5053.7,
+   "end": 5057.76,
+   "text": "Side-Hobby? What else they want to know?"
+  },
+  {
+   "start": 5057.76,
+   "end": 5063.9,
+   "text": "John, can you name the current White House press secretary? Is it Fox News?"
+  },
+  {
+   "start": 5063.9,
+   "end": 5068.88,
+   "text": "Did they? I don't know. I actually don't think they've replaced Caroline."
+  },
+  {
+   "start": 5068.88,
+   "end": 5073.8,
+   "text": "They haven't. Right. Which is a shame. I mean, since she's begun,"
+  },
+  {
+   "start": 5073.8,
+   "end": 5079.24,
+   "text": "there's been a real dearth of information. And you know, the transparency that she provided,"
+  },
+  {
+   "start": 5080.77,
+   "end": 5087.81,
+   "text": "I thought, and it's, it's, you feel it. It's a loss for the American, for the American people."
+  },
+  {
+   "start": 5087.81,
+   "end": 5089.89,
+   "text": "I think she just joined Fox News. Did she not?"
+  },
+  {
+   "start": 5089.89,
+   "end": 5092.69,
+   "text": "She sure did. I was just about to say that. Yeah."
+  },
+  {
+   "start": 5092.69,
+   "end": 5099.17,
+   "text": "She had enough time with her family and it was like a cool month."
+  },
+  {
+   "start": 5099.17,
+   "end": 5101.97,
+   "text": "Yeah. No, listen, I've been there. That month is..."
+  },
+  {
+   "start": 5101.97,
+   "end": 5105.93,
+   "text": "You might be the only person that left to spend time with your family."
+  },
+  {
+   "start": 5105.93,
+   "end": 5108.53,
+   "text": "And I actually did it for like eight years."
+  },
+  {
+   "start": 5108.53,
+   "end": 5110.29,
+   "text": "I think you're the only one."
+  },
+  {
+   "start": 5110.29,
+   "end": 5113.89,
+   "text": "They left the house and then my wife was looking at me like, what are you going to do now?"
+  },
+  {
+   "start": 5113.89,
+   "end": 5116.09,
+   "text": "Yeah, that's a good question."
+  },
+  {
+   "start": 5116.09,
+   "end": 5118.73,
+   "text": "American, maybe I should go back once a week."
+  },
+  {
+   "start": 5118.73,
+   "end": 5119.73,
+   "text": "Yeah."
+  },
+  {
+   "start": 5119.73,
+   "end": 5120.73,
+   "text": "All right."
+  },
+  {
+   "start": 5120.73,
+   "end": 5121.73,
+   "text": "Fair enough."
+  },
+  {
+   "start": 5121.73,
+   "end": 5122.73,
+   "text": "What else?"
+  },
+  {
+   "start": 5122.73,
+   "end": 5123.73,
+   "text": "What else?"
+  },
+  {
+   "start": 5123.73,
+   "end": 5124.73,
+   "text": "What else?"
+  },
+  {
+   "start": 5124.73,
+   "end": 5126.69,
+   "text": "John, what are your thoughts on making daylight savings time permanent?"
+  },
+  {
+   "start": 5126.69,
+   "end": 5128.69,
+   "text": "Trump said that it would make golfers happy."
+  },
+  {
+   "start": 5128.69,
+   "end": 5129.69,
+   "text": "Let me tell you something."
+  },
+  {
+   "start": 5129.69,
+   "end": 5131.28,
+   "text": "This is going to be controversial."
+  },
+  {
+   "start": 5131.28,
+   "end": 5134.8,
+   "text": "I don't think we should have nighttime at all."
+  },
+  {
+   "start": 5134.8,
+   "end": 5137.6,
+   "text": "I am not down with it's scarier."
+  },
+  {
+   "start": 5137.6,
+   "end": 5139.64,
+   "text": "There's all kinds of shadows."
+  },
+  {
+   "start": 5139.64,
+   "end": 5142.04,
+   "text": "It's when you never know when you're going to come across"
+  },
+  {
+   "start": 5142.04,
+   "end": 5143.36,
+   "text": "a raccoon."
+  },
+  {
+   "start": 5143.36,
+   "end": 5144.96,
+   "text": "That doesn't happen during the day."
+  },
+  {
+   "start": 5144.96,
+   "end": 5148.96,
+   "text": "I don't come home from work with a pizza box"
+  },
+  {
+   "start": 5148.96,
+   "end": 5152.72,
+   "text": "and a vitamin water worried that I'm going to get pounced"
+  },
+  {
+   "start": 5152.72,
+   "end": 5156.68,
+   "text": "by four little chubby trash bandits."
+  },
+  {
+   "start": 5158.74,
+   "end": 5159.58,
+   "text": "But that happens."
+  },
+  {
+   "start": 5159.58,
+   "end": 5164.67,
+   "text": "No, I think if Donald Trump was a real man, he would outlaw night."
+  },
+  {
+   "start": 5165.36,
+   "end": 5168.56,
+   "text": "He would, he wouldn't be piddling around the edges of this shit."
+  },
+  {
+   "start": 5168.56,
+   "end": 5170.16,
+   "text": "That would be masculine of him."
+  },
+  {
+   "start": 5170.16,
+   "end": 5171.12,
+   "text": "Twice the golf."
+  },
+  {
+   "start": 5172.24,
+   "end": 5174.32,
+   "text": "Just rip off the band aid."
+  },
+  {
+   "start": 5175.36,
+   "end": 5181.39,
+   "text": "I want to golf at three in the morning and not have to worry about not being able to find my"
+  },
+  {
+   "start": 5181.39,
+   "end": 5182.99,
+   "text": "ball. By the way, I've never golfed."
+  },
+  {
+   "start": 5183.55,
+   "end": 5184.11,
+   "text": "In your life."
+  },
+  {
+   "start": 5185.63,
+   "end": 5188.91,
+   "text": "When I was, I went once with a friend and I did like a hole."
+  },
+  {
+   "start": 5188.91,
+   "end": 5189.23,
+   "text": "Yeah."
+  },
+  {
+   "start": 5189.23,
+   "end": 5192.03,
+   "text": "And then I was like, okay, I think I can go now."
+  },
+  {
+   "start": 5192.03,
+   "end": 5193.03,
+   "text": "No, never me."
+  },
+  {
+   "start": 5193.03,
+   "end": 5194.53,
+   "text": "And you were right."
+  },
+  {
+   "start": 5194.53,
+   "end": 5195.53,
+   "text": "Yeah."
+  },
+  {
+   "start": 5195.53,
+   "end": 5196.53,
+   "text": "Have you done it?"
+  },
+  {
+   "start": 5196.53,
+   "end": 5197.53,
+   "text": "Yes."
+  },
+  {
+   "start": 5197.53,
+   "end": 5198.53,
+   "text": "And it's so boring."
+  },
+  {
+   "start": 5198.53,
+   "end": 5201.67,
+   "text": "I can't stress enough how boring golfing is."
+  },
+  {
+   "start": 5201.67,
+   "end": 5203.39,
+   "text": "It's kind of the same shit over and over again."
+  },
+  {
+   "start": 5203.39,
+   "end": 5209.11,
+   "text": "And what they tell me is what gets you about it is like you can never be good at it consistently."
+  },
+  {
+   "start": 5209.11,
+   "end": 5213.81,
+   "text": "And I'm like, it's like saying like, have you ever been frustrated?"
+  },
+  {
+   "start": 5213.81,
+   "end": 5216.25,
+   "text": "Well, what's the quote?"
+  },
+  {
+   "start": 5216.25,
+   "end": 5219.85,
+   "text": "It's like golfing is a good way to ruin a lovely walk or something."
+  },
+  {
+   "start": 5219.85,
+   "end": 5220.85,
+   "text": "Yeah."
+  },
+  {
+   "start": 5220.85,
+   "end": 5221.85,
+   "text": "Yeah."
+  },
+  {
+   "start": 5221.85,
+   "end": 5222.85,
+   "text": "That's cute."
+  },
+  {
+   "start": 5222.85,
+   "end": 5223.85,
+   "text": "A good walk, ruin."
+  },
+  {
+   "start": 5223.85,
+   "end": 5226.17,
+   "text": "But I have friends who swear, love it."
+  },
+  {
+   "start": 5226.17,
+   "end": 5230.65,
+   "text": "I mean, the drinking and the golf carts are fun, especially when put together."
+  },
+  {
+   "start": 5230.65,
+   "end": 5233.97,
+   "text": "I think that, I think they have actually, it's funny you bring it up."
+  },
+  {
+   "start": 5233.97,
+   "end": 5236.09,
+   "text": "I think you get a lot of golf courses."
+  },
+  {
+   "start": 5236.09,
+   "end": 5239.49,
+   "text": "There are like people in carts who drive up."
+  },
+  {
+   "start": 5239.49,
+   "end": 5240.49,
+   "text": "Yeah, they do."
+  },
+  {
+   "start": 5240.49,
+   "end": 5241.49,
+   "text": "Yeah, the bar cart."
+  },
+  {
+   "start": 5241.49,
+   "end": 5242.49,
+   "text": "The bar cart."
+  },
+  {
+   "start": 5242.49,
+   "end": 5243.49,
+   "text": "Yeah."
+  },
+  {
+   "start": 5243.49,
+   "end": 5246.21,
+   "text": "They just, they just, just imagine like you're playing golf."
+  },
+  {
+   "start": 5246.21,
+   "end": 5250.97,
+   "text": "It's so little of a sport that somebody could just drive up and be like, hey man, hey man,"
+  },
+  {
+   "start": 5250.97,
+   "end": 5251.97,
+   "text": "want to get high?"
+  },
+  {
+   "start": 5251.97,
+   "end": 5254.85,
+   "text": "Also, the only place that you can drink and drive."
+  },
+  {
+   "start": 5254.85,
+   "end": 5256.49,
+   "text": "Oh, the carts."
+  },
+  {
+   "start": 5256.49,
+   "end": 5258.65,
+   "text": "Now, are there designated cart drivers?"
+  },
+  {
+   "start": 5258.65,
+   "end": 5259.65,
+   "text": "Like maybe if you're golfing?"
+  },
+  {
+   "start": 5259.65,
+   "end": 5260.65,
+   "text": "No."
+  },
+  {
+   "start": 5260.65,
+   "end": 5261.65,
+   "text": "Everybody's just fucked up."
+  },
+  {
+   "start": 5261.65,
+   "end": 5262.65,
+   "text": "It's like boats."
+  },
+  {
+   "start": 5262.65,
+   "end": 5266.49,
+   "text": "Apparently the rules of alcohol do not apply on the seas."
+  },
+  {
+   "start": 5266.49,
+   "end": 5267.49,
+   "text": "Lawless."
+  },
+  {
+   "start": 5267.49,
+   "end": 5269.93,
+   "text": "Like nobody gives a shit and just drive around."
+  },
+  {
+   "start": 5269.93,
+   "end": 5270.93,
+   "text": "Fantastic."
+  },
+  {
+   "start": 5270.93,
+   "end": 5275.25,
+   "text": "Now, no, we're off next week and then we're back on the 21st."
+  },
+  {
+   "start": 5275.25,
+   "end": 5278.93,
+   "text": "But Brittany, how do they keep in touch with us with their golf questions?"
+  },
+  {
+   "start": 5278.93,
+   "end": 5283.01,
+   "text": "Twitter, we are weekly show pod, Instagram, Threads, TikTok, Blue Sky."
+  },
+  {
+   "start": 5283.01,
+   "end": 5284.01,
+   "text": "We are weekly show podcast."
+  },
+  {
+   "start": 5284.01,
+   "end": 5285.01,
+   "text": "Nice."
+  },
+  {
+   "start": 5285.01,
+   "end": 5287.49,
+   "text": "And you can like, subscribe, and comment on our YouTube channel, The Weekly Show with"
+  },
+  {
+   "start": 5287.49,
+   "end": 5288.49,
+   "text": "Jon Stewart."
+  },
+  {
+   "start": 5288.49,
+   "end": 5289.49,
+   "text": "Which I do."
+  },
+  {
+   "start": 5289.49,
+   "end": 5291.45,
+   "text": "I'm a gold star commenter on those."
+  },
+  {
+   "start": 5291.45,
+   "end": 5296.21,
+   "text": "I always write in, I go like, what a great conversation."
+  },
+  {
+   "start": 5296.21,
+   "end": 5297.73,
+   "text": "That Jon Stewart is so handsome."
+  },
+  {
+   "start": 5297.73,
+   "end": 5299.33,
+   "text": "That Jon, well, no."
+  },
+  {
+   "start": 5299.33,
+   "end": 5302.45,
+   "text": "Even I can't pull that off, unfortunately."
+  },
+  {
+   "start": 5302.45,
+   "end": 5305.73,
+   "text": "Thank you guys very much as always producer Brittany Mimetic, producer Jillian Spear,"
+  },
+  {
+   "start": 5305.73,
+   "end": 5309.81,
+   "text": "video editor and engineer Rob Vittolo, audio editor and engineer Nicole Boyce, associate"
+  },
+  {
+   "start": 5309.81,
+   "end": 5314.97,
+   "text": "producer Rebecca Rotenberg and our executive producers Chris McShane, Katie Gray."
+  },
+  {
+   "start": 5314.97,
+   "end": 5318.05,
+   "text": "Have a great couple of weeks and we will see you back on October 21st."
+  },
+  {
+   "start": 5318.05,
+   "end": 5319.05,
+   "text": "We'll bye."
+  },
+  {
+   "start": 5319.05,
+   "end": 5328.62,
+   "text": "The weekly show with John Stewart is a comedy central podcast."
+  },
+  {
+   "start": 5328.62,
+   "end": 5342.04,
+   "text": "It's produced by Paramount Audio and Bustboy Productions."
+  },
+  {
+   "start": 5342.04,
+   "end": 5343.48,
+   "text": "The alarm goes off."
+  },
+  {
+   "start": 5343.48,
+   "end": 5344.48,
+   "text": "This is it."
+  },
+  {
+   "start": 5344.48,
+   "end": 5345.64,
+   "text": "The big presentation."
+  },
+  {
+   "start": 5345.64,
+   "end": 5346.96,
+   "text": "The final exam."
+  },
+  {
+   "start": 5346.96,
+   "end": 5353.2,
+   "text": "interview the moment you've been preparing for. Because tomorrow's success begins tonight."
+  },
+  {
+   "start": 5353.2,
+   "end": 5358.44,
+   "text": "How you show up will depend on how you sleep. Sopha hand-crafted mattresses are built for"
+  },
+  {
+   "start": 5358.44,
+   "end": 5363.44,
+   "text": "deep restorative sleep that sharpens your focus, clears your head for better decision-making,"
+  },
+  {
+   "start": 5363.44,
+   "end": 5368.88,
+   "text": "and gives your muscles time to recover. That's the kind of sleep every Sopha luxury mattress"
+  },
+  {
+   "start": 5368.88,
+   "end": 5375.16,
+   "text": "is designed to deliver. Whether an inner spring, nebri foam, latex, or hybrid mattress, Sopha"
+  },
+  {
+   "start": 5375.16,
+   "end": 5379.72,
+   "text": "can help bring out the best version of yourself so you're ready when it counts."
+  },
+  {
+   "start": 5379.72,
+   "end": 5384.12,
+   "text": "No wonder sleepfoundation.org names Sopha the best luxury mattress."
+  },
+  {
+   "start": 5384.12,
+   "end": 5388.96,
+   "text": "So whatever tomorrow brings, restorative sleep on a Sopha will get you prepared."
+  },
+  {
+   "start": 5388.96,
+   "end": 5391.96,
+   "text": "Your successful tomorrow begins tonight."
+  },
+  {
+   "start": 5391.96,
+   "end": 5397.52,
+   "text": "Find the Sopha that's right for you at Sopha.com and experience the luxury of restorative sleep."
+  },
+  {
+   "start": 5397.52,
+   "end": 5401.28,
+   "text": "That's S-W-A-T-V-A.com."
+  },
+  {
+   "start": 5401.28,
+   "end": 5405.8,
+   "text": "Tomorrow morning, Maria will walk to the starting line of her first marathon."
+  },
+  {
+   "start": 5405.8,
+   "end": 5410.08,
+   "text": "She's been training for months, in hopes to finish in under four hours."
+  },
+  {
+   "start": 5410.08,
+   "end": 5411.6,
+   "text": "Maria is prepared."
+  },
+  {
+   "start": 5411.6,
+   "end": 5413.92,
+   "text": "Her shoes have been placed by the front door."
+  },
+  {
+   "start": 5413.92,
+   "end": 5415.88,
+   "text": "Her number is pinned to her shirt."
+  },
+  {
+   "start": 5415.88,
+   "end": 5418.12,
+   "text": "Her alarm is set for five."
+  },
+  {
+   "start": 5418.12,
+   "end": 5422.76,
+   "text": "But there's still one crucial part of her preparation left to do, and so she goes to"
+  },
+  {
+   "start": 5422.76,
+   "end": 5423.76,
+   "text": "bed."
+  },
+  {
+   "start": 5423.76,
+   "end": 5427.0,
+   "text": "While she sleeps, her heart rate slows and her legs rest."
+  },
+  {
+   "start": 5427.0,
+   "end": 5430.12,
+   "text": "Her body repairs with the training as worn down."
+  },
+  {
+   "start": 5430.12,
+   "end": 5434.44,
+   "text": "shows that runners who are short on sleep cover less ground than rested ones, so it"
+  },
+  {
+   "start": 5434.44,
+   "end": 5440.0,
+   "text": "matters what she sleeps on. Maria sleeps on a satva. She wakes up before the alarm and"
+  },
+  {
+   "start": 5440.0,
+   "end": 5446.52,
+   "text": "her legs feel fresh. At mile 20, she'll want to quit. She won't. In three hours, 58 minutes,"
+  },
+  {
+   "start": 5446.52,
+   "end": 5451.64,
+   "text": "she'll cross the finish line and completely break down. Not from exhaustion, but from"
+  },
+  {
+   "start": 5451.64,
+   "end": 5459.0,
+   "text": "sheer happiness. Remember, tomorrow starts tonight. Visit satva.com. That's S-W-A-T-V-A"
+  },
+  {
+   "start": 5459.0,
+   "end": 5465.41,
+   "text": "Podcasts"
+  }
+ ],
+ "seconds": 154.9,
+ "file": "the-weekly-show-with-jon-stewart__a-working-class-economy-with-kathryn-anne/take0.mp3",
+ "model": "small"
+}

@@ -30,6 +30,7 @@ import au.com.shiftyjelly.pocketcasts.models.entity.Podcast.AutoAddUpNext
 import au.com.shiftyjelly.pocketcasts.models.entity.PodcastEpisode
 import au.com.shiftyjelly.pocketcasts.models.entity.UserEpisode
 import au.com.shiftyjelly.pocketcasts.models.entity.firstHlsStreamUrl
+import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.Chapter
 import au.com.shiftyjelly.pocketcasts.models.to.ChapterOrigin
 import au.com.shiftyjelly.pocketcasts.models.to.Chapters
@@ -43,6 +44,8 @@ import au.com.shiftyjelly.pocketcasts.preferences.model.AutoAddUpNextLimitBehavi
 import au.com.shiftyjelly.pocketcasts.preferences.model.AutoPlaySource
 import au.com.shiftyjelly.pocketcasts.preferences.model.PlayOverNotificationSetting
 import au.com.shiftyjelly.pocketcasts.repositories.R
+import au.com.shiftyjelly.pocketcasts.repositories.ads.AdSegmentManager
+import au.com.shiftyjelly.pocketcasts.repositories.ads.AdSkipper
 import au.com.shiftyjelly.pocketcasts.repositories.bookmark.BookmarkManager
 import au.com.shiftyjelly.pocketcasts.repositories.chromecast.CastManager
 import au.com.shiftyjelly.pocketcasts.repositories.di.NotificationPermissionChecker
@@ -76,6 +79,7 @@ import au.com.shiftyjelly.pocketcasts.utils.extensions.isPositive
 import au.com.shiftyjelly.pocketcasts.utils.featureflag.Feature
 import au.com.shiftyjelly.pocketcasts.utils.featureflag.FeatureFlag
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
+import au.com.shiftyjelly.pocketcasts.utils.toHhMmSs
 import com.automattic.android.tracks.crashlogging.CrashLogging
 import com.automattic.eventhorizon.AutoplayFinishedLastEpisodeEvent
 import com.automattic.eventhorizon.EpisodeAddedToUpNextEvent
@@ -169,6 +173,7 @@ open class PlaybackManager @Inject constructor(
     private val bookmarkManager: BookmarkManager,
     private val showNotesManager: ShowNotesManager,
     private val chapterManager: ChapterManager,
+    private val adSegmentManager: AdSegmentManager,
     private val sleepTimer: SleepTimer,
     private val playbackManagerNetworkWatcherFactory: PlaybackManagerNetworkWatcher.Factory,
     @ApplicationScope private val applicationScope: CoroutineScope,
@@ -191,6 +196,7 @@ open class PlaybackManager @Inject constructor(
         private const val MAX_TIME_WITHOUT_FOCUS_FOR_RESUME = (MAX_TIME_WITHOUT_FOCUS_FOR_RESUME_MINUTES * 60 * 1000).toLong()
         private const val PAUSE_TIMER_DELAY = ((MAX_TIME_WITHOUT_FOCUS_FOR_RESUME_MINUTES + 1) * 60 * 1000).toLong()
         private const val HLS_ENGINE_EXOPLAYER = "exoplayer"
+        private const val AD_ANALYSIS_TICK_INTERVAL = 90
     }
 
     private var notificationPermissionChecker: NotificationPermissionChecker? = null
@@ -2029,6 +2035,7 @@ open class PlaybackManager @Inject constructor(
         observeChaptersJob = chapterManager.observerChaptersForEpisode(episodeUuid)
             .onEach { onChaptersAvailable(it) }
             .launchIn(this)
+        observeAdSegments(episodeUuid)
     }
 
     @Volatile
@@ -2049,6 +2056,209 @@ open class PlaybackManager @Inject constructor(
             }
             .launchIn(this)
     }
+
+    @Volatile
+    private var observeAdSegmentsJob: Job? = null
+
+    @Volatile
+    private var observeAdSkippingJob: Job? = null
+
+    @Volatile
+    private var lastAdSkipCheckPositionMs: Int? = null
+
+    @Volatile
+    private var adSkipInFlight = false
+
+    @Volatile
+    private var lastSkippedAd: AdSkipRecord? = null
+
+    private val sessionSkippedAdSegments = mutableSetOf<String>()
+    private val loggedNonSkippableSegments = mutableSetOf<String>()
+    private var adAnalysisTickCounter = 0
+
+    private data class AdSkipRecord(
+        val episodeUuid: String,
+        val positionBeforeMs: Int,
+        val segmentIndex: Int,
+    )
+
+    private fun observeAdSegments(episodeUuid: String) {
+        observeAdSegmentsJob?.cancel()
+        lastAdSkipCheckPositionMs = null
+        lastSkippedAd = null
+        synchronized(sessionSkippedAdSegments) { sessionSkippedAdSegments.clear() }
+        synchronized(loggedNonSkippableSegments) { loggedNonSkippableSegments.clear() }
+        adAnalysisTickCounter = 0
+        Timber.d("Observing ad segments for $episodeUuid (available=${isAdSkippingAvailable()}, enabled=${isAdSkippingEnabled()})")
+
+        observeAdSegmentsJob = adSegmentManager.observeSegments(episodeUuid)
+            .onEach { onAdSegmentsAvailable(it) }
+            .launchIn(this)
+
+        if (isAdSkippingAvailable()) {
+            adSegmentManager.analyze(episodeUuid)
+        }
+    }
+
+    private fun onAdSegmentsAvailable(segments: List<AdSegment>) {
+        val visibleSegments = if (isAdSkippingAvailable()) segments else emptyList()
+        Timber.d(
+            "Ad segments available: %d stored, %d aligned, enabled=%s",
+            segments.size,
+            segments.count { it.isAligned },
+            isAdSkippingEnabled(),
+        )
+        playbackStateRelay.blockingFirst().let { playbackState ->
+            if (playbackState.adSegments != visibleSegments) {
+                playbackStateRelay.accept(playbackState.copy(adSegments = visibleSegments))
+            }
+        }
+        observeAdSkippingJob?.cancel()
+        if (visibleSegments.isEmpty()) {
+            return
+        }
+        observeAdSkippingJob = playbackStateRelay.asFlow()
+            .map { it.positionMs }
+            .distinctUntilChanged()
+            .onEach { positionMs -> maybeSkipAd(positionMs, visibleSegments) }
+            .launchIn(this)
+    }
+
+    private fun maybeSkipAd(positionMs: Int, segments: List<AdSegment>) {
+        val previousPositionMs = lastAdSkipCheckPositionMs
+        lastAdSkipCheckPositionMs = positionMs
+        if (!isAdSkippingEnabled()) {
+            return
+        }
+        if (player?.isRemote == true) {
+            logNonSkippableSegment(positionMs, segments, reason = "playback is remote")
+            return
+        }
+        if (adSkipInFlight) {
+            return
+        }
+        val playbackState = playbackStateRelay.blockingFirst()
+        val candidates = segments.filterNot { segment -> segment.isSkippedThisSession(playbackState.episodeUuid) }
+        val segment = AdSkipper.nextSegmentToSkip(
+            positionMs = positionMs,
+            previousPositionMs = previousPositionMs,
+            durationMs = playbackState.durationMs,
+            segments = candidates,
+        )
+        if (segment == null) {
+            logNonSkippableSegment(positionMs, segments)
+            return
+        }
+        Timber.d(
+            "Ad skip candidate at %dms: %s %.1f-%.1fs conf=%.2f",
+            positionMs,
+            segment.kind,
+            segment.startTime.inWholeMilliseconds / 1000.0,
+            segment.endTime.inWholeMilliseconds / 1000.0,
+            segment.confidence,
+        )
+        skipAdSegment(segment, automatic = true)
+    }
+
+    /** Skips the advertising segment the listener is currently in, used by the player's skip button. */
+    fun skipCurrentAd() {
+        val playbackState = playbackStateRelay.blockingFirst()
+        val segment = AdSkipper.activeSegment(playbackState.positionMs, playbackState.adSegments) ?: run {
+            Timber.d("Skip ad tapped but there is no ad at %dms", playbackState.positionMs)
+            return
+        }
+        Timber.i("Skipping ad manually at %dms", playbackState.positionMs)
+        skipAdSegment(segment, automatic = false)
+    }
+
+    /** Returns to where playback was before the last automatic skip and stops skipping that segment. */
+    fun undoLastAdSkip() {
+        val record = lastSkippedAd ?: return
+        lastSkippedAd = null
+        LogBuffer.i(
+            LogBuffer.TAG_PLAYBACK,
+            "Undo ad skip in ${record.episodeUuid}, returning to ${record.positionBeforeMs}ms",
+        )
+        val key = adSegmentKey(record.episodeUuid, record.segmentIndex)
+        synchronized(sessionSkippedAdSegments) { sessionSkippedAdSegments.remove(key) }
+        launch {
+            adSegmentManager.setDeselected(record.episodeUuid, record.segmentIndex, true)
+            if (getCurrentEpisode()?.uuid == record.episodeUuid) {
+                seekToTimeMsInternal(record.positionBeforeMs)
+            }
+        }
+    }
+
+    private fun skipAdSegment(segment: AdSegment, automatic: Boolean) {
+        val episode = getCurrentEpisode() ?: return
+        if (adSkipInFlight) {
+            Timber.d("Skipping ad for ${episode.uuid} is already in flight")
+            return
+        }
+        val currentPositionMs = playbackStateRelay.blockingFirst().positionMs
+        val targetMs = AdSkipper.skipTargetMs(segment)
+        if (targetMs <= currentPositionMs) {
+            Timber.d("Ad ${segment.index} of ${episode.uuid} ends before the current position, not skipping")
+            return
+        }
+        adSkipInFlight = true
+        lastSkippedAd = AdSkipRecord(episode.uuid, currentPositionMs, segment.index)
+        val key = adSegmentKey(episode.uuid, segment.index)
+        synchronized(sessionSkippedAdSegments) { sessionSkippedAdSegments.add(key) }
+
+        val skippedMs = (targetMs - currentPositionMs).toLong()
+        statsManager.addTimeSavedAutoSkipping(skippedMs)
+        LogBuffer.i(
+            LogBuffer.TAG_PLAYBACK,
+            "Skipping ad ${segment.index} (${segment.kind}, confident=${segment.isConfident}, " +
+                "aligned=${segment.isAligned}) in ${episode.uuid} from ${currentPositionMs}ms to ${targetMs}ms, " +
+                "${skippedMs}ms skipped, automatic=$automatic",
+        )
+        launch {
+            try {
+                seekToTimeMsInternal(targetMs)
+                showToast(application.getString(LR.string.player_ad_skipped, skippedMs.milliseconds.toHhMmSs()))
+            } finally {
+                adSkipInFlight = false
+            }
+        }
+    }
+
+    /**
+     * Explains, once per segment, why a segment the listener is inside was not skipped. Silence from
+     * the skip logic is otherwise indistinguishable from the feature being off.
+     */
+    private fun logNonSkippableSegment(positionMs: Int, segments: List<AdSegment>, reason: String? = null) {
+        val segment = segments.firstOrNull { segment ->
+            positionMs >= segment.startTime.inWholeMilliseconds && positionMs < segment.endTime.inWholeMilliseconds
+        } ?: return
+        val skipReason = reason ?: when {
+            !segment.selected -> "turned off"
+            !segment.isConfident -> "low confidence ${segment.confidence}"
+            !segment.isAligned -> "not aligned to the audio"
+            segment.endTime.inWholeMilliseconds - positionMs < AdSkipper.MIN_REMAINING_MS -> "too little left"
+            else -> "waiting for the next tick"
+        }
+        val key = "${segment.index}/$skipReason"
+        if (synchronized(loggedNonSkippableSegments) { loggedNonSkippableSegments.add(key) }) {
+            Timber.d("Not skipping ad ${segment.index} at ${positionMs}ms: $skipReason")
+        }
+    }
+
+    private fun isAdSkippingEnabled(): Boolean {
+        return isAdSkippingAvailable() && settings.skipAds.value
+    }
+
+    private fun isAdSkippingAvailable(): Boolean {
+        return FeatureFlag.isEnabled(Feature.AD_SKIPPING)
+    }
+
+    private fun AdSegment.isSkippedThisSession(episodeUuid: String): Boolean {
+        val key = adSegmentKey(episodeUuid, index)
+        return synchronized(sessionSkippedAdSegments) { key in sessionSkippedAdSegments }
+    }
+
+    private fun adSegmentKey(episodeUuid: String, segmentIndex: Int) = "$episodeUuid:$segmentIndex"
 
     override fun onFocusGain(shouldResume: Boolean) {
         val lastPlayingTime = focusWasPlaying
@@ -2847,9 +3057,25 @@ open class PlaybackManager @Inject constructor(
                     statsManager.addTotalListeningTime(UPDATE_TIMER_POLL_TIME)
                 }
                 verifySleepTimeForEndOfChapter()
+                maybeContinueStreamAdAnalysis()
             }
             .switchMapCompletable { updateCurrentPositionRx() }
             .subscribeBy(onError = { Timber.e(it) })
+    }
+
+    private fun maybeContinueStreamAdAnalysis() {
+        if (!isAdSkippingAvailable() || player?.isStreaming != true) {
+            return
+        }
+        val episodeUuid = playbackStateRelay.blockingFirst().episodeUuid
+        if (episodeUuid.isEmpty()) {
+            return
+        }
+        if (++adAnalysisTickCounter % AD_ANALYSIS_TICK_INTERVAL != 0) {
+            return
+        }
+        Timber.d("Continuing ad analysis for streamed episode $episodeUuid")
+        adSegmentManager.analyze(episodeUuid)
     }
 
     private fun verifySleepTimeForEndOfChapter() {

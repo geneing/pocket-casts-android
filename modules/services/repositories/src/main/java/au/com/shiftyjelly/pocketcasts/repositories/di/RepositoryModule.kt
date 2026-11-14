@@ -10,8 +10,12 @@ import au.com.shiftyjelly.pocketcasts.models.to.TranscriptType
 import au.com.shiftyjelly.pocketcasts.payment.PurchaseApprover
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
 import au.com.shiftyjelly.pocketcasts.preferences.SettingsImpl
+import au.com.shiftyjelly.pocketcasts.repositories.ads.AdSegmentManager
+import au.com.shiftyjelly.pocketcasts.repositories.ads.AdSegmentManagerImpl
 import au.com.shiftyjelly.pocketcasts.repositories.ads.BlazeAdsManager
 import au.com.shiftyjelly.pocketcasts.repositories.ads.BlazeAdsManagerImpl
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.EpisodeTranscriber
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.SpeechRecognizerEpisodeTranscriber
 import au.com.shiftyjelly.pocketcasts.repositories.analytics.AnalyticsLiveDebugListener
 import au.com.shiftyjelly.pocketcasts.repositories.appreview.AppReviewAnalyticsListener
 import au.com.shiftyjelly.pocketcasts.repositories.appreview.AppReviewManager
@@ -211,6 +215,13 @@ abstract class RepositoryModule {
 
     @Binds
     abstract fun provideChapterManager(chapterManagerImpl: ChapterManagerImpl): ChapterManager
+
+    @Binds
+    abstract fun provideAdSegmentManager(adSegmentManagerImpl: AdSegmentManagerImpl): AdSegmentManager
+
+    @Binds
+    @Singleton
+    abstract fun provideEpisodeTranscriber(impl: SpeechRecognizerEpisodeTranscriber): EpisodeTranscriber
 
     @Binds
     abstract fun provideAlternateEnclosureManager(impl: AlternateEnclosureManagerImpl): AlternateEnclosureManager

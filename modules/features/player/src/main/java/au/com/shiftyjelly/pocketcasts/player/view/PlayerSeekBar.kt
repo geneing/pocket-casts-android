@@ -2,7 +2,9 @@ package au.com.shiftyjelly.pocketcasts.player.view
 
 import android.content.Context
 import android.content.res.ColorStateList
+import android.graphics.Canvas
 import android.graphics.Color
+import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.FrameLayout
@@ -11,6 +13,7 @@ import android.widget.TextView
 import androidx.appcompat.widget.AppCompatSeekBar
 import androidx.core.graphics.ColorUtils
 import androidx.core.view.isVisible
+import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.Chapters
 import au.com.shiftyjelly.pocketcasts.player.R
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
@@ -28,8 +31,10 @@ class PlayerSeekBar @JvmOverloads constructor(context: Context, attrs: Attribute
     private var currentTime = Duration.ZERO
     private var duration = Duration.ZERO
     private var chapters = Chapters()
+    private var adSegments: List<AdSegment> = emptyList()
     private var playbackSpeed = 1.0
     private var adjustDuration = false
+    private val adMarkerPaint = Paint(Paint.ANTI_ALIAS_FLAG)
     private val seekBar = view.findViewById(R.id.seekBarInternal) as AppCompatSeekBar
     private val elapsedTimeText = view.findViewById(R.id.elapsedTime) as TextView
     private val remainingTimeText = view.findViewById(R.id.remainingTime) as TextView
@@ -75,6 +80,11 @@ class PlayerSeekBar @JvmOverloads constructor(context: Context, attrs: Attribute
         updateTextViews()
     }
 
+    fun setAdSegments(segments: List<AdSegment>) {
+        this.adSegments = segments
+        invalidate()
+    }
+
     fun setDuration(duration: Duration) {
         this.duration = duration
         seekBar.max = duration.inWholeSeconds.toInt()
@@ -93,6 +103,9 @@ class PlayerSeekBar @JvmOverloads constructor(context: Context, attrs: Attribute
         seekBar.secondaryProgressTintList = ColorStateList.valueOf(ThemeColor.playerContrast05(theme))
         seekBar.backgroundTintList = ColorStateList.valueOf(ThemeColor.playerContrast05(theme))
 
+        adMarkerPaint.color = ColorUtils.setAlphaComponent(ThemeColor.playerContrast01(theme), 0x99)
+        invalidate()
+
         with(bufferingSeekbar) {
             supportIndeterminateTintList = ColorStateList.valueOf(ColorUtils.setAlphaComponent(themeColor, 0x1A))
         }
@@ -100,6 +113,49 @@ class PlayerSeekBar @JvmOverloads constructor(context: Context, attrs: Attribute
         elapsedTimeText.setTextColor(ThemeColor.playerContrast02(theme))
         remainingTimeText.setTextColor(ThemeColor.playerContrast02(theme))
     }
+
+    override fun dispatchDraw(canvas: Canvas) {
+        super.dispatchDraw(canvas)
+        drawAdMarkers(canvas)
+    }
+
+    /**
+     * Draws a small bar over the seek bar for every advertising segment so listeners can see where the
+     * ad breaks are, whether or not skipping is enabled.
+     */
+    private fun drawAdMarkers(canvas: Canvas) {
+        if (adSegments.isEmpty() || duration <= Duration.ZERO) {
+            return
+        }
+        val totalMs = duration.inWholeMilliseconds.toFloat()
+        if (totalMs <= 0f) return
+
+        val left = (seekBar.left + seekBar.paddingLeft).toFloat()
+        val right = (seekBar.right - seekBar.paddingRight).toFloat()
+        val trackWidth = right - left
+        if (trackWidth <= 0f) return
+
+        val trackCenterY = seekBar.top + seekBar.height / 2f - seekBar.paddingBottom / 2f
+        val halfHeight = 2.dpToPx()
+        for (segment in adSegments) {
+            val startFraction = segment.startTime.inWholeMilliseconds.toFloat() / totalMs
+            val endFraction = segment.endTime.inWholeMilliseconds.toFloat() / totalMs
+            if (endFraction <= 0f || startFraction >= 1f) continue
+            val startX = left + trackWidth * startFraction.coerceIn(0f, 1f)
+            val endX = left + trackWidth * endFraction.coerceIn(0f, 1f)
+            canvas.drawRoundRect(
+                startX,
+                trackCenterY - halfHeight,
+                maxOf(endX, startX + 2f),
+                trackCenterY + halfHeight,
+                halfHeight,
+                halfHeight,
+                adMarkerPaint,
+            )
+        }
+    }
+
+    private fun Int.dpToPx(): Float = this * resources.displayMetrics.density
 
     private fun setupSeekBar() {
         bufferingSeekbar.isVisible = false

@@ -1,0 +1,1362 @@
+{
+ "episodes": {
+  "complex-systems-with-patrick-mckenzie-pati__why-softbank-paid-me-17-yen-to-skip-the-ai": {
+   "status": "no-labels",
+   "show": "Complex Systems with Patrick McKenzie (patio11)",
+   "split": "test"
+  },
+  "complex-systems-with-patrick-mckenzie-pati__the-900-million-wire-that-wasn-t-final": {
+   "status": "no-labels",
+   "show": "Complex Systems with Patrick McKenzie (patio11)",
+   "split": "test"
+  },
+  "the-political-scene-the-new-yorker__pete-buttigieg-on-the-democrats-sweep-of-c": {
+   "status": "ok",
+   "key": "the-political-scene-the-new-yorker__pete-buttigieg-on-the-democrats-sweep-of-c",
+   "show": "The Political Scene | The New Yorker",
+   "episode": "Pete Buttigieg on the Democrats’ Sweep of Congress, and Where They Go from Here",
+   "split": "test",
+   "language": "en",
+   "duration": 2161.66,
+   "slots": 6,
+   "ad_minutes": 5.75,
+   "takes": [
+    {
+     "request_url": "https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/uJwtcKQUPuqBQPfusm59/traffic.megaphone.fm/CNE5446106678.mp3?_take=0",
+     "final_url": "https://dcs-cached.megaphone.fm/CNE5446106678.mp3?key=27b2ebd914c45aa3fc54395bb1a75223&request_event_id=0f4a377c-1ba5-4027-b976-94f20df5d629&session_id=0f4a377c-1ba5-4027-b976-94f20df5d629&timetoken=1794593625_75C8AC0766796C61CA3C34FF7D0AB5E9",
+     "bytes": 50919701,
+     "seconds": 61.6,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "511596b85b229abe73d5683aec396389",
+     "duration": 2119.8
+    },
+    {
+     "request_url": "https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/uJwtcKQUPuqBQPfusm59/traffic.megaphone.fm/CNE5446106678.mp3?_take=1",
+     "final_url": "https://dcs-cached.megaphone.fm/CNE5446106678.mp3?key=57d8e095111c3c0b9f3518258a621a4c&request_event_id=b1815e61-ad49-4a32-8194-31f015392fa8&session_id=b1815e61-ad49-4a32-8194-31f015392fa8&timetoken=1794593687_5DEADA4ED664338CAD1EB9AA1ED250FF",
+     "bytes": 51924686,
+     "seconds": 32.1,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "26bd0511c8bc71151d8f59e0879974c8",
+     "duration": 2161.7
+    }
+   ]
+  },
+  "decoder-ring__preview-decoder-rings-back-the-second-spic": {
+   "status": "no-labels",
+   "show": "Decoder Ring",
+   "split": "test"
+  },
+  "outside-lands-san-francisco__508r-beeps-burgers-1051-ocean-avenue-repod": {
+   "status": "no-labels",
+   "show": "Outside Lands San Francisco",
+   "split": "test"
+  },
+  "the-rest-is-history__719-revolution-in-the-soviet-empire-the-hu": {
+   "status": "ok",
+   "key": "the-rest-is-history__719-revolution-in-the-soviet-empire-the-hu",
+   "show": "The Rest Is History",
+   "episode": "719. Revolution in the Soviet Empire: The Hungarian Uprising (Part 1)",
+   "split": "test",
+   "language": "en",
+   "duration": 5291.73,
+   "slots": 2,
+   "ad_minutes": 2.72,
+   "takes": [
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT4398850202.mp3?_take=0",
+     "final_url": "https://dcs-cached.megaphone.fm/GLT4398850202.mp3?key=406314b05345d07bf67bc5a319bb344b&request_event_id=eb917714-8a76-44f9-ba7d-e7cc1c25de30&session_id=eb917714-8a76-44f9-ba7d-e7cc1c25de30&timetoken=1794594047_AE655B2A8BDAC7148691FA5139B2F8E2",
+     "bytes": 211742499,
+     "seconds": 103.7,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "1e296d0bf4509e9f27bfba160eae642f",
+     "duration": 5291.7
+    },
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT4398850202.mp3?_take=1",
+     "final_url": "https://dcs-cached.megaphone.fm/GLT4398850202.mp3?key=99520e4f85ae372bcea8f49d876e8a40&request_event_id=03cfd74c-392e-48b8-9601-a6e37fc429eb&session_id=03cfd74c-392e-48b8-9601-a6e37fc429eb&timetoken=1794594153_4D8E14A169E059A84C5D3313BE3FA662",
+     "bytes": 211734140,
+     "seconds": 133.2,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "78bd4910eae93ade3197645724b36d34",
+     "duration": 5291.5
+    }
+   ]
+  },
+  "state-of-the-world-from-npr__gaza-struck-by-deadly-storm-israel-debates": {
+   "status": "ok",
+   "key": "state-of-the-world-from-npr__gaza-struck-by-deadly-storm-israel-debates",
+   "show": "State of the World from NPR",
+   "episode": "Gaza struck by deadly storm; Israel debates rare coalition with Palestinian citizens",
+   "split": "test",
+   "language": "en",
+   "duration": 589.77,
+   "slots": 2,
+   "ad_minutes": 1.39,
+   "takes": [
+    {
+     "request_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510366/npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/e8ab5745-2e5a-48a7-bdf0-08f72c60a805/audio/128/default.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=e8ab5745-2e5a-48a7-bdf0-08f72c60a805&feed=eZ65RO4U&t=podcast&e=nx-s1-6037848&p=510366&d=521&size=8351287&_take=0",
+     "final_url": "https://npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/e8ab5745-2e5a-48a7-bdf0-08f72c60a805/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_8262615df3a0a36f6c8c9bdb6ba399f7_9436296.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=e8ab5745-2e5a-48a7-bdf0-08f72c60a805&feed=eZ65RO4U&t=podcast&e=nx-s1-6037848&p=510366&d=521&size=8351287&_take=0&hash_redirect=1&x-total-bytes=9436296&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__2651664735be88029f9bcc1b1d9f23d8ca567f99",
+     "bytes": 9436296,
+     "seconds": 11.1,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "746fde26a2c6e600365300b44835de3a",
+     "duration": 589.8
+    },
+    {
+     "request_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510366/npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/e8ab5745-2e5a-48a7-bdf0-08f72c60a805/audio/128/default.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=e8ab5745-2e5a-48a7-bdf0-08f72c60a805&feed=eZ65RO4U&t=podcast&e=nx-s1-6037848&p=510366&d=521&size=8351287&_take=1",
+     "final_url": "https://npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/e8ab5745-2e5a-48a7-bdf0-08f72c60a805/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_52b7060707e7c5f20b4c1c5b07f59726_9311326.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=e8ab5745-2e5a-48a7-bdf0-08f72c60a805&feed=eZ65RO4U&t=podcast&e=nx-s1-6037848&p=510366&d=521&size=8351287&_take=1&hash_redirect=1&x-total-bytes=9311326&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__b350a37c9fd3b16c22a1c555e2647427c27c04b6",
+     "bytes": 9311326,
+     "seconds": 4.1,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "4412fab0e1064a28af505664d9b82f0e",
+     "duration": 582.0
+    }
+   ]
+  },
+  "revolutions__11-28-bloody-sunset": {
+   "status": "no-labels",
+   "show": "Revolutions",
+   "split": "test"
+  },
+  "how-to-spanish-podcast__estamos-perdiendo-300-palabras-cada-d-a-ep": {
+   "status": "no-labels",
+   "show": "How to Spanish Podcast",
+   "split": "test"
+  },
+  "espa-ol-con-juan__habla-espa-ol-en-el-supermercado": {
+   "status": "no-labels",
+   "show": "Español con Juan",
+   "split": "test"
+  },
+  "learn-spanish-fluency-in-real-life-with-ha__370-por-qu-es-tan-dif-cil-entender-a-un-gr": {
+   "status": "no-labels",
+   "show": "Learn Spanish: Fluency in Real Life with Handyspanish",
+   "split": "test"
+  },
+  "grammar-girl__4-tiny-writing-errors-that-caused-huge-pro": {
+   "status": "ok",
+   "key": "grammar-girl__4-tiny-writing-errors-that-caused-huge-pro",
+   "show": "Grammar Girl",
+   "episode": "4 tiny writing errors that caused huge problems on the ballot. What does 'batten down the hatches' mean?",
+   "split": "test",
+   "language": "en",
+   "duration": 1009.76,
+   "slots": 5,
+   "ad_minutes": 4.46,
+   "takes": [
+    {
+     "request_url": "https://sphinx.acast.com/p/open/s/69c1476c007cdcf83fc0964b/e/6ada2db923f48c4f247841ba/media.mp3?_take=0",
+     "final_url": "https://stitcher2.acast.com/livestitches/0a3f333b6363b1303583d025348d2a83.mp3?aid=6ada2db923f48c4f247841ba&chid=69c1476c007cdcf83fc0964b&ci=aT27EtuKOX62K7j-OWSCmXdB-BDgL7c4VE2UOv7wc9AdctHp2bOC9g%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=6a265ec0d282a57e530786d4739b81a6&Expires=1794600011&Key-Pair-Id=K38CTQXUSD0VVB&Signature=VoTpOD-EFdpjFPUGFNl2Zg~LnTgvUAMQ0Vkp6MV~YSNqWnho8PFbp3GgUWqtHD556SoIn2dnvlOXsZzKpt4o1yRbB7IBVFqcGrX3anXsRLHF8Ab4l4NUAXrL34W0CjMpkgU40v2lVTukQneTTKgETg2mE56ZJVZ4PSduP4m~JNlz2QftUiJna4HrUdUQZu~zILXQ-98RcUggJpHqvSxJM0tlhB098bQnUK2PbG~K5OGyV0Xy9y8H61JW-mDR1MEKrws0lYWvKNTYTZQbO1wOpAb4fMKUWOu1h1dQPEzqaWeIM-MCyDppH~xk7pbSp64XUyx6fwqVGhh5LxdKMdKwig__",
+     "bytes": 15433085,
+     "seconds": 9.9,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "53443ada47aae21c2326502ec9b3286e",
+     "duration": 964.5
+    },
+    {
+     "request_url": "https://sphinx.acast.com/p/open/s/69c1476c007cdcf83fc0964b/e/6ada2db923f48c4f247841ba/media.mp3?_take=1",
+     "final_url": "https://stitcher2.acast.com/livestitches/7428ed62feb6392388a93763236b747c.mp3?aid=6ada2db923f48c4f247841ba&chid=69c1476c007cdcf83fc0964b&ci=2ViNXV0JPU4M5Si1fo_GYPPq6yoyKEp-HIejPZFhCFdrUjg68IDMxg%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=6c93665789429254034cbf2d17ca8a4c&Expires=1794600022&Key-Pair-Id=K38CTQXUSD0VVB&Signature=A8ato2NEkYWm~WS~j8i8~zcpaikJlxQPFrGDzDMRzxpj2VxZOQ8IJT2r6Tfu-EpWcKAs7Pw1xo8~QmJ~uWjz4Vi3D7RREU8IAW~dJR~rOWHEavm3vJONRk3fHYHqg~zzFIKl2yzJLdKS0d34MJbOCus12~senKp458gxdkkhlFu1eacwqWIgC37cQc60HRudI0RSYamQqtC0iidaAv50ejIyPkM8jbbbWzCKOvwt-ssFVgdrdl-KpT6cgYel12lDWoxf3pI8hdivulKJ2-rPKHaw4yh8-MQX5OC~C2mHMMtf9iwl56WATxhH-iwhpHxdiY7igEIE0nYfkYMjD~d8nA__",
+     "bytes": 16156304,
+     "seconds": 9.1,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "27c2ca5158d6cd2ef2d173d32b5d7ad3",
+     "duration": 1009.7
+    }
+   ]
+  },
+  "our-prehistory__48-broad-spectrum-origins-in-africa": {
+   "status": "no-labels",
+   "show": "Our Prehistory",
+   "split": "test"
+  },
+  "how-we-got-here-with-nlw__how-gambling-on-everything-from-our-phones": {
+   "status": "no-labels",
+   "show": "How We Got Here with NLW",
+   "split": "test"
+  },
+  "easy-spanish-learn-spanish-with-everyday-c__270-se-traduce-el-humor": {
+   "status": "no-labels",
+   "show": "Easy Spanish: Learn Spanish with everyday conversations | Conversaciones del día a día para aprender español",
+   "split": "test"
+  },
+  "how-i-built-this-with-guy-raz__airbnb-ceo-brian-chesky-i-was-a-great-foun": {
+   "status": "ok",
+   "key": "how-i-built-this-with-guy-raz__airbnb-ceo-brian-chesky-i-was-a-great-foun",
+   "show": "How I Built This with Guy Raz",
+   "episode": "Airbnb CEO Brian Chesky: “I Was a Great Founder and a Terrible CEO”",
+   "split": "train",
+   "language": "en",
+   "duration": 4648.86,
+   "slots": 6,
+   "ad_minutes": 2.86,
+   "takes": [
+    {
+     "request_url": "https://traffic.megaphone.fm/VMP9745758647.mp3?_take=0",
+     "final_url": "https://dcs-spotify.megaphone.fm/VMP9745758647.mp3?key=87a10126d1401fbe3061a04889a3ae8d&request_event_id=34127494-0eb8-4782-b445-1dde6565b89e&session_id=34127494-0eb8-4782-b445-1dde6565b89e&timetoken=1794595689_070099620FDCF451D3DB592384B54723",
+     "bytes": 185996859,
+     "seconds": 75.9,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "aca82c7e046ed29918de0587c2aefee2",
+     "duration": 4648.9
+    },
+    {
+     "request_url": "https://traffic.megaphone.fm/VMP9745758647.mp3?_take=1",
+     "final_url": "https://dcs-spotify.megaphone.fm/VMP9745758647.mp3?key=14da8adc424bd6622d3f812ea399ed43&request_event_id=6dfa1437-3ac5-4d7a-9f1d-b2d3e97368f7&session_id=6dfa1437-3ac5-4d7a-9f1d-b2d3e97368f7&timetoken=1794595767_81BB43C1260C3D449337A068B8A1A246",
+     "bytes": 184794182,
+     "seconds": 86.4,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "7c8bfe374a45acef94df7d98742c6523",
+     "duration": 4618.8
+    }
+   ]
+  },
+  "this-day-in-ai-podcast__is-gpt-5-5-better-than-opus-now-ft-our-new": {
+   "status": "no-labels",
+   "show": "This Day in AI Podcast",
+   "split": "train"
+  },
+  "sticky-notes-the-classical-music-podcast__shostakovich-symphony-no-6": {
+   "status": "no-labels",
+   "show": "Sticky Notes: The Classical Music Podcast",
+   "split": "train"
+  },
+  "the-weekly-show-with-jon-stewart__bursting-the-ai-bubble-with-ed-zitron": {
+   "status": "ok",
+   "key": "the-weekly-show-with-jon-stewart__bursting-the-ai-bubble-with-ed-zitron",
+   "show": "The Weekly Show with Jon Stewart",
+   "episode": "Bursting the AI Bubble with Ed Zitron",
+   "split": "train",
+   "language": "en",
+   "duration": 5925.25,
+   "slots": 4,
+   "ad_minutes": 2.19,
+   "takes": [
+    {
+     "request_url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/DL4HT/traffic.megaphone.fm/QCD5020103769.mp3?_take=0",
+     "final_url": "https://dcs-spotify.megaphone.fm/QCD5020103769.mp3?key=9beaef791b6cdc56ca6689e5bc5f85e4&request_event_id=dbbf67f4-b35f-43f7-b2ba-8a45c07d0af4&session_id=dbbf67f4-b35f-43f7-b2ba-8a45c07d0af4&timetoken=1794596452_BAB33996240CB2AE938E6B826DE2F312",
+     "bytes": 94858926,
+     "seconds": 55.7,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "45621a450cd32747726c66653027682b",
+     "duration": 5925.3
+    },
+    {
+     "request_url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/DL4HT/traffic.megaphone.fm/QCD5020103769.mp3?_take=1",
+     "final_url": "https://dcs-spotify.megaphone.fm/QCD5020103769.mp3?key=6c983a8f50aebf6fc6c31eb4327007ca&request_event_id=ade458e2-623d-43ee-8fc7-c7c933bf54d5&session_id=ade458e2-623d-43ee-8fc7-c7c933bf54d5&timetoken=1794596506_D4122C24B33D3AAA48BF04C624AB3DB0",
+     "bytes": 94780767,
+     "seconds": 62.0,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "010162ad0090a068b6b1918cb6775762",
+     "duration": 5920.4
+    }
+   ]
+  },
+  "shell-game__season-3-is-coming": {
+   "status": "no-labels",
+   "show": "Shell Game",
+   "split": "train"
+  },
+  "the-daily__introducing-metro-from-serial-productions": {
+   "status": "ok",
+   "key": "the-daily__introducing-metro-from-serial-productions",
+   "show": "The Daily",
+   "episode": "Introducing ‘METRO’ From Serial Productions",
+   "split": "train",
+   "language": "en",
+   "duration": 2768.43,
+   "slots": 8,
+   "ad_minutes": 9.12,
+   "takes": [
+    {
+     "request_url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/5a033179-92e3-43c1-bd01-45ea0c152d0f/audio/128/default.mp3?aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=5a033179-92e3-43c1-bd01-45ea0c152d0f&feed=Sl5CSM3S&_take=0",
+     "final_url": "https://nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/5a033179-92e3-43c1-bd01-45ea0c152d0f/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_c81d32a7dfa25bd53d90ada3a83c486a_43964392.mp3?_take=0&aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=5a033179-92e3-43c1-bd01-45ea0c152d0f&feed=Sl5CSM3S&hash_redirect=1&x-total-bytes=43964392&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__4f227ad699f107b9aafae828c02648548dcd1321",
+     "bytes": 43964392,
+     "seconds": 35.4,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "d4de7014be4b558cb371bc0a63a26a04",
+     "duration": 2747.8
+    },
+    {
+     "request_url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/5a033179-92e3-43c1-bd01-45ea0c152d0f/audio/128/default.mp3?aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=5a033179-92e3-43c1-bd01-45ea0c152d0f&feed=Sl5CSM3S&_take=1",
+     "final_url": "https://nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/5a033179-92e3-43c1-bd01-45ea0c152d0f/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_faed116f21f0a1aaf91f3c0c6bfb16b8_44294996.mp3?_take=1&aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=5a033179-92e3-43c1-bd01-45ea0c152d0f&feed=Sl5CSM3S&hash_redirect=1&x-total-bytes=44294996&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__a5b187cf9b0a411713b6dc7b2f22050e615da444",
+     "bytes": 44294996,
+     "seconds": 21.9,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "87c8f853982294bb50e6391c03e7331b",
+     "duration": 2768.4
+    }
+   ]
+  },
+  "odd-lots__james-bosworth-on-what-comes-after-lula-s": {
+   "status": "ok",
+   "key": "odd-lots__james-bosworth-on-what-comes-after-lula-s",
+   "show": "Odd Lots",
+   "episode": "James Bosworth on What Comes After Lula's Stunning Win",
+   "split": "train",
+   "language": "en",
+   "duration": 2588.37,
+   "slots": 7,
+   "ad_minutes": 2.91,
+   "takes": [
+    {
+     "request_url": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/UVBrz8bN8aM2Xe47PEPu/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/468e99b6-7c28-4fc4-86d7-b4f8016f319d/audio.mp3?utm_source=Podcast&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&_take=0",
+     "final_url": "https://28243.mc.tritondigital.com/OMNY_ODDLOTS_PODCAST_P/media-session/c24db689-50e2-4a3a-a524-1ee3d11120d2/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/468e99b6-7c28-4fc4-86d7-b4f8016f319d/audio/direct/t1793869275/James_Bosworth_on_What_Comes_After_Lula's_Stunning_Win.mp3?t=1793869275&starship-episode-id=4bc2e4a6-a22f-4663-b457-adb362de8630&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&utm_source=Podcast&_take=0",
+     "bytes": 41469604,
+     "seconds": 24.0,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "919cef96193b2b12eb8a5f3537cfb538",
+     "duration": 2588.4
+    },
+    {
+     "request_url": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/UVBrz8bN8aM2Xe47PEPu/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/468e99b6-7c28-4fc4-86d7-b4f8016f319d/audio.mp3?utm_source=Podcast&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&_take=1",
+     "final_url": "https://28243.mc.tritondigital.com/OMNY_ODDLOTS_PODCAST_P/media-session/d4467b84-38c6-4fed-9535-2a10b810ba73/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/468e99b6-7c28-4fc4-86d7-b4f8016f319d/audio/direct/t1793869275/James_Bosworth_on_What_Comes_After_Lula's_Stunning_Win.mp3?t=1793869275&starship-episode-id=4bc2e4a6-a22f-4663-b457-adb362de8630&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&utm_source=Podcast&_take=1",
+     "bytes": 41360098,
+     "seconds": 24.2,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "2cfbe9551929cae7858ae0e1db93761c",
+     "duration": 2581.5
+    }
+   ]
+  },
+  "the-rest-is-classified__203-watergate-the-spies-who-went-rogue-ep": {
+   "status": "ok",
+   "key": "the-rest-is-classified__203-watergate-the-spies-who-went-rogue-ep",
+   "show": "The Rest Is Classified",
+   "episode": "203. Watergate: The Spies Who Went Rogue (Ep 2)",
+   "split": "train",
+   "language": "en",
+   "duration": 3503.83,
+   "slots": 3,
+   "ad_minutes": 3.27,
+   "takes": [
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT6141523794.mp3?_take=0",
+     "final_url": "https://dcs-spotify.megaphone.fm/GLT6141523794.mp3?key=73b25ea1aad8a4fcf299cdda3c9f418e&request_event_id=105b1195-939e-4876-80d0-44b6078d46d4&session_id=105b1195-939e-4876-80d0-44b6078d46d4&timetoken=1794597461_D9191EA92E777617C3B6B31BCCD61AD5",
+     "bytes": 83891246,
+     "seconds": 29.5,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "682bd58ed33c0742ace2c96d9395f340",
+     "duration": 3492.7
+    },
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT6141523794.mp3?_take=1",
+     "final_url": "https://dcs-spotify.megaphone.fm/GLT6141523794.mp3?key=9300a31b25c77c622df4ce2c021ef432&request_event_id=0fbd02d0-a3a0-46d2-a200-7b9e89cf4861&session_id=0fbd02d0-a3a0-46d2-a200-7b9e89cf4861&timetoken=1794597493_376D48783223B8CF1B9793245F1E90FF",
+     "bytes": 84158953,
+     "seconds": 42.3,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "6ff38749f61f91a427698cedc707f6ae",
+     "duration": 3503.8
+    }
+   ]
+  },
+  "the-political-scene-the-new-yorker__the-democrats-big-night-and-the-repudiatio": {
+   "status": "ok",
+   "key": "the-political-scene-the-new-yorker__the-democrats-big-night-and-the-repudiatio",
+   "show": "The Political Scene | The New Yorker",
+   "episode": "The Democrats’ Big Night and the Repudiation of Donald Trump",
+   "split": "test",
+   "language": "en",
+   "duration": 2392.74,
+   "slots": 11,
+   "ad_minutes": 9.21,
+   "takes": [
+    {
+     "request_url": "https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/uJwtcKQUPuqBQPfusm59/traffic.megaphone.fm/CNE9772603737.mp3?_take=0",
+     "final_url": "https://dcs-cached.megaphone.fm/CNE9772603737.mp3?key=65696fbabb4cc4408e1919f8c2bf7885&request_event_id=67ef1dc0-9a45-4d3d-abea-d02ed07e8600&session_id=67ef1dc0-9a45-4d3d-abea-d02ed07e8600&timetoken=1794598422_AA54155C908579D197E3A93F1EAA1CDB",
+     "bytes": 56719056,
+     "seconds": 41.7,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "a48e8ee89a1f0768721360fa37643aa3",
+     "duration": 2361.4
+    },
+    {
+     "request_url": "https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/uJwtcKQUPuqBQPfusm59/traffic.megaphone.fm/CNE9772603737.mp3?_take=1",
+     "final_url": "https://dcs-cached.megaphone.fm/CNE9772603737.mp3?key=5a29ae8352643a1e269f12940d0924c1&request_event_id=8af4744b-19a9-4365-bb3a-55ec7194927c&session_id=8af4744b-19a9-4365-bb3a-55ec7194927c&timetoken=1794598462_C218032FDCA35891DF6EC8042AE72392",
+     "bytes": 57472632,
+     "seconds": 47.2,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "6d40b70a10ff5e750ec83aaefae3fa15",
+     "duration": 2392.7
+    }
+   ]
+  },
+  "decoder-ring__presenting-the-sporkful-does-the-world-nee": {
+   "status": "ok",
+   "key": "decoder-ring__presenting-the-sporkful-does-the-world-nee",
+   "show": "Decoder Ring",
+   "episode": "Presenting: The Sporkful | Does The World Need A Better Tomato?",
+   "split": "test",
+   "language": "en",
+   "duration": 2680.82,
+   "slots": 5,
+   "ad_minutes": 2.82,
+   "takes": [
+    {
+     "request_url": "https://sphinx.acast.com/p/open/s/696572d375c092ac4e159c27/e/6ae8ea959cb48f65eaa554a8/media.mp3?_take=0",
+     "final_url": "https://stitcher2.acast.com/livestitches/4584feb63ee9984e439a562f395b91d2.mp3?aid=6ae8ea959cb48f65eaa554a8&chid=696572d375c092ac4e159c27&ci=p-cniYbOKDNfXjd7sLzgpb5raD0VVR67bz5ihVbfjI60Bwpoizbvsg%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=874c941e17cb779daaa0782a26380b34&Expires=1794603158&Key-Pair-Id=K38CTQXUSD0VVB&Signature=D79XUawOHzQiUa7~1qgSwBj1H~8scOUKuFDJ6kMHpHTbx1MOqykZWXdnqhH-4-mNKGD~W8Slx5BwtBH0cwLkp5OikY68G-n4vr~uOiw34U6VrHiyWhnaGp50h8cVmDr9YxG~FZ6a71hWwHMLCIltN3vcIveK5hWGHMD-NGKeeaFuj6YkJJSFj~NB~mGodbfUp~UXB9VVP9E1ZZx8bGpWjZoDN1TZRc~jzi-Rm6M~cHz7Un9WeitwSiwOVqx1m-xrhc3XIHswH86UP6s3KIpIQGyAOoJrFAze61h6QyVtyI5zBbLR58vwYCI~6ojQ3mZJ8Ca0Ygj4zo0rDMhnoXs87w__",
+     "bytes": 42596758,
+     "seconds": 47.1,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "ee1fac29bf88cb3f60cc6198ebcf5cc2",
+     "duration": 2662.3
+    },
+    {
+     "request_url": "https://sphinx.acast.com/p/open/s/696572d375c092ac4e159c27/e/6ae8ea959cb48f65eaa554a8/media.mp3?_take=1",
+     "final_url": "https://stitcher2.acast.com/livestitches/392ce61b7e468580961bb8b937a967ac.mp3?aid=6ae8ea959cb48f65eaa554a8&chid=696572d375c092ac4e159c27&ci=xkVBkkoITEkADsq3tLoRC52tEzQ8lKdpDaheuBKhjz9uDrma-0A32w%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=cdc19897b293ba6b94a9a10f364b197a&Expires=1794603207&Key-Pair-Id=K38CTQXUSD0VVB&Signature=Jf1~618xUI4dbUrVk~iJlBtrA8oqEfeFUnl8KIxhYlsZiX50NE0MLuO0Aiw0TDz8Ey~5Wt-a2r3VD1lHGWCPta~JzyMYAJc82pl4Bf9AEORNWdCq~1~05ZDBJJYdB~JTeCXOo9Yi9ahUH5LdW~kR9nQp0J9NP~Kt~Pa5mcF3AFkkcVl6oVB9sGICCx~rWKJBeBIpENk2KPE9BFpa~5gmoT7k7Qs9C8TLCc894EVdbgmao7ZWwnM07WwAZlJ74xeo2eHop-JedvXacBQYymA6wbIHeYyTMpPmmjdJVYQxX9uNu3TT4onX1pHHmvbzwqcZTnVceSh2C0XAqcNukkFBZg__",
+     "bytes": 42893041,
+     "seconds": 20.9,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "abe9cb31e48c24c9f9ccd866092990b8",
+     "duration": 2680.8
+    }
+   ]
+  },
+  "outside-lands-san-francisco__614-baron-and-baroness-von-ridelstein": {
+   "status": "no-labels",
+   "show": "Outside Lands San Francisco",
+   "split": "test"
+  },
+  "the-rest-is-history__721-the-charge-of-the-light-brigade-outbre": {
+   "status": "ok",
+   "key": "the-rest-is-history__721-the-charge-of-the-light-brigade-outbre",
+   "show": "The Rest Is History",
+   "episode": "721. The Charge of the Light Brigade: Outbreak of The Crimean War (Part 1)",
+   "split": "test",
+   "language": "en",
+   "duration": 4291.89,
+   "slots": 5,
+   "ad_minutes": 4.31,
+   "takes": [
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT2909363211.mp3?_take=0",
+     "final_url": "https://dcs-cached.megaphone.fm/GLT2909363211.mp3?key=8e02214ce9fafc023de50e8c5c2974ee&request_event_id=21c286ed-b402-40cd-abb1-75bb54b89521&session_id=96d19713-ed19-4c65-866f-d2628b9053e0&timetoken=1794599388_C0883EC65F30B1AD76782D63FF7182D2",
+     "bytes": 171749212,
+     "seconds": 221.5,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "f382e9f2dc7c1ebc1447486a3c3ad0b4",
+     "duration": 4291.9
+    },
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT2909363211.mp3?_take=1",
+     "final_url": "https://dcs-cached.megaphone.fm/GLT2909363211.mp3?key=411b41246534a6e40a1eac738513331f&request_event_id=387a8f82-da8c-4f19-b48e-06a55d8f91a3&session_id=09cb1c5c-cac9-4e0b-bda3-c11720d17a19&timetoken=1794599612_C89B9CCCB08CE00BCB17BB6E60FAC1D8",
+     "bytes": 171592477,
+     "seconds": 112.1,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "ae4b92c90b60fb01703131b263e03e77",
+     "duration": 4288.0
+    }
+   ]
+  },
+  "state-of-the-world-from-npr__anthony-bourdain-s-legacy-in-russia": {
+   "status": "ok",
+   "key": "state-of-the-world-from-npr__anthony-bourdain-s-legacy-in-russia",
+   "show": "State of the World from NPR",
+   "episode": "Anthony Bourdain’s legacy in Russia",
+   "split": "test",
+   "language": "en",
+   "duration": 549.09,
+   "slots": 4,
+   "ad_minutes": 2.53,
+   "takes": [
+    {
+     "request_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510366/npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/7edc5e7a-f222-4390-bc94-84805db5b5ff/audio/128/default.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=7edc5e7a-f222-4390-bc94-84805db5b5ff&feed=eZ65RO4U&t=podcast&e=nx-s1-6032770&p=510366&d=464&size=7430104&_take=0",
+     "final_url": "https://npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/7edc5e7a-f222-4390-bc94-84805db5b5ff/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_dc638cf6a3b40aaafa35fd831dcee63e_8382621.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=7edc5e7a-f222-4390-bc94-84805db5b5ff&feed=eZ65RO4U&t=podcast&e=nx-s1-6032770&p=510366&d=464&size=7430104&_take=0&hash_redirect=1&x-total-bytes=8382621&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__0b1c2641e37c79ac099b556a676e38725ec448e1",
+     "bytes": 8382621,
+     "seconds": 6.0,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "c74e06175f3c5020515669ec90301cd3",
+     "duration": 523.9
+    },
+    {
+     "request_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510366/npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/7edc5e7a-f222-4390-bc94-84805db5b5ff/audio/128/default.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=7edc5e7a-f222-4390-bc94-84805db5b5ff&feed=eZ65RO4U&t=podcast&e=nx-s1-6032770&p=510366&d=464&size=7430104&_take=1",
+     "final_url": "https://npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/7edc5e7a-f222-4390-bc94-84805db5b5ff/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_c3dc0a2c06977a8367b8a46619de8f57_8785534.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=7edc5e7a-f222-4390-bc94-84805db5b5ff&feed=eZ65RO4U&t=podcast&e=nx-s1-6032770&p=510366&d=464&size=7430104&_take=1&hash_redirect=1&x-total-bytes=8785534&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__2f1eef7bc4bec40969781caacf86690e0cc32c3f",
+     "bytes": 8785534,
+     "seconds": 6.9,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "d13aef6d119accbf3aca48dcdadf6752",
+     "duration": 549.1
+    }
+   ]
+  },
+  "revolutions__11-27-the-revolutionary-underground": {
+   "status": "no-labels",
+   "show": "Revolutions",
+   "split": "test"
+  },
+  "how-to-spanish-podcast__cosas-raras-que-pasan-en-m-xico-y-que-nadi": {
+   "status": "no-labels",
+   "show": "How to Spanish Podcast",
+   "split": "test"
+  },
+  "espa-ol-con-juan__todos-me-critican": {
+   "status": "no-labels",
+   "show": "Español con Juan",
+   "split": "test"
+  },
+  "learn-spanish-fluency-in-real-life-with-ha__374-escucha-c-mo-habla-espa-ol-analiza-est": {
+   "status": "no-labels",
+   "show": "Learn Spanish: Fluency in Real Life with Handyspanish",
+   "split": "test"
+  },
+  "grammar-girl__why-english-loves-animals-from-the-bee-s-k": {
+   "status": "ok",
+   "key": "grammar-girl__why-english-loves-animals-from-the-bee-s-k",
+   "show": "Grammar Girl",
+   "episode": "Why English loves animals, from the bee’s knees to herding cats, with Jeremy Butterfield",
+   "split": "test",
+   "language": "en",
+   "duration": 2129.58,
+   "slots": 5,
+   "ad_minutes": 2.45,
+   "takes": [
+    {
+     "request_url": "https://sphinx.acast.com/p/open/s/69c1476c007cdcf83fc0964b/e/6aece46b5e56bd617c82b779/media.mp3?_take=0",
+     "final_url": "https://stitcher2.acast.com/livestitches/ff6eab01de247b53d776ddc7564e0f6e.mp3?aid=6aece46b5e56bd617c82b779&chid=69c1476c007cdcf83fc0964b&ci=GnAFwVDaP959WldOdn2FbGxphU4PdA5D-323UkLDok9Q8qBRtSZ9qA%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=fb3074325d46da8e2b2431bd934b72be&Expires=1794604769&Key-Pair-Id=K38CTQXUSD0VVB&Signature=faL11GQQBwiOAIJXmGPTThVEN7B3EwNB6iCB5aLV2idqmFIPJmIZBFsgdAszdubL-A7zoCzwEKaKUIUYXZ5QwboJ4SMbEHbfe22vUcR452PK1lvN9NN8yyBd~61lMgQ-2VcwGpx2kBSOjXyky~2ZRhIMaGz1FH2DrBlOxvPzG3sEpLs7EuRu6Rf-ppbObfzp3wXFf3upgskPtWsY6~eCiNPaPsYm6i8NWXnIBcSCgarQxgw0527Dh-x9rfSCwgMNrYRsuie3MUJVxMzfRQvvAVc1fkWsnQ2zfIsWKLtvUqusuzK55hpJpNM5hK2g2p2NGZQqyb4SasUKnKPycdot6A__",
+     "bytes": 17028550,
+     "seconds": 10.8,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "f8c303e78230b51810ba866d845330a9",
+     "duration": 2128.5
+    },
+    {
+     "request_url": "https://sphinx.acast.com/p/open/s/69c1476c007cdcf83fc0964b/e/6aece46b5e56bd617c82b779/media.mp3?_take=1",
+     "final_url": "https://stitcher2.acast.com/livestitches/f300187bd288faa227df00e5ea4f42dd.mp3?aid=6aece46b5e56bd617c82b779&chid=69c1476c007cdcf83fc0964b&ci=CgCK9-H35s8SEFABmT_N3H2RJWDUaXPoOLj9Km1Sc9uEwIe9cz9TBg%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=b699ad84a27e639c4321751fc00d4794&Expires=1794604781&Key-Pair-Id=K38CTQXUSD0VVB&Signature=ReuEv01VN9TSoNXzvTibGS5p1R2uCA1Nz9pm~ER2LjtdwpBblVPyTr-Y0lyReUVd~AL3d4amyQKJa7LQL6vOoVf3bvvtxsFR3oECbd5hJ1LmGgrL9ERwovliC1mdTNDpBSPS9SThW29jCtr3SRNLDEqYSbrW6Hyd9gKgFdVqklFjZh-3QHa~5X4Y94krC9QU2u3FvqBrj9Aqmho69cJmXuYUMb8o~g5x30AhTNZE44JcL0HE2kf72HKdAbeXhRVLktPgr1AwytGuBwo8a3XpPS6iRwj49gFHwOjpC1NFMg52JnmN98icmrKz5Bs1Z1iQEAq3S6Vekq~noYHNIEJZ6A__",
+     "bytes": 17036875,
+     "seconds": 10.5,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "7eee848fbe72e71b5eaeafa1a43b20d1",
+     "duration": 2129.6
+    }
+   ]
+  },
+  "our-prehistory__51-epipaleolithic": {
+   "status": "no-labels",
+   "show": "Our Prehistory",
+   "split": "test"
+  },
+  "how-we-got-here-with-nlw__counterpoint-how-tech-lost-america": {
+   "status": "no-labels",
+   "show": "How We Got Here with NLW",
+   "split": "test"
+  },
+  "easy-spanish-learn-spanish-with-everyday-c__269-cuenta-la-leyenda": {
+   "status": "no-labels",
+   "show": "Easy Spanish: Learn Spanish with everyday conversations | Conversaciones del día a día para aprender español",
+   "split": "test"
+  },
+  "how-i-built-this-with-guy-raz__dr-squatch-jack-haldrup-from-a-closet-full": {
+   "status": "ok",
+   "key": "how-i-built-this-with-guy-raz__dr-squatch-jack-haldrup-from-a-closet-full",
+   "show": "How I Built This with Guy Raz",
+   "episode": "Dr. Squatch: Jack Haldrup. From a Closet Full of Soap to a $1.5 Billion Brand",
+   "split": "train",
+   "language": "en",
+   "duration": 4950.73,
+   "slots": 9,
+   "ad_minutes": 7.04,
+   "takes": [
+    {
+     "request_url": "https://traffic.megaphone.fm/VMP1750831437.mp3?_take=0",
+     "final_url": "https://dcs-spotify.megaphone.fm/VMP1750831437.mp3?key=4ff91f559ebcd4c9d21ea639ad00032f&request_event_id=c57ae181-ca5d-429a-99bd-acd8273df672&session_id=c57ae181-ca5d-429a-99bd-acd8273df672&timetoken=1794611646_2A479DC987C2D83F4CD4A7D64EADEABB",
+     "bytes": 58019142,
+     "seconds": 50.7,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "2cf15561b0cc3a93e28f4542404a44e0",
+     "duration": 4831.7
+    },
+    {
+     "request_url": "https://traffic.megaphone.fm/VMP1750831437.mp3?_take=1",
+     "final_url": "https://dcs-spotify.megaphone.fm/VMP1750831437.mp3?key=6984b37746340120c4c6e898d5d5bcfd&request_event_id=75d47909-ae32-4cbb-8e0e-f5f0d10a345e&session_id=75d47909-ae32-4cbb-8e0e-f5f0d10a345e&timetoken=1794611643_F11A8E607D45598B584D1F954A1714B0",
+     "bytes": 59447622,
+     "seconds": 48.1,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "1e0405b91465057dcb1b3010f02cbd7a",
+     "duration": 4950.7
+    }
+   ]
+  },
+  "this-day-in-ai-podcast__we-committed-fraud-with-openai-s-new-image": {
+   "status": "no-labels",
+   "show": "This Day in AI Podcast",
+   "split": "train"
+  },
+  "sticky-notes-the-classical-music-podcast__rachmaninoff-symphony-no-2-live-with-the-a": {
+   "status": "no-labels",
+   "show": "Sticky Notes: The Classical Music Podcast",
+   "split": "train"
+  },
+  "the-weekly-show-with-jon-stewart__feeling-the-win-with-sen-bernie-sanders": {
+   "status": "ok",
+   "key": "the-weekly-show-with-jon-stewart__feeling-the-win-with-sen-bernie-sanders",
+   "show": "The Weekly Show with Jon Stewart",
+   "episode": "Feeling the Win with Sen. Bernie Sanders",
+   "split": "train",
+   "language": "en",
+   "duration": 4862.28,
+   "slots": 4,
+   "ad_minutes": 2.73,
+   "takes": [
+    {
+     "request_url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/DL4HT/traffic.megaphone.fm/QCD6835715323.mp3?_take=0",
+     "final_url": "https://dcs-cached.megaphone.fm/QCD6835715323.mp3?key=bdb5545c77e921d48a997a312947a3c9&request_event_id=1fa7a8c3-8360-4578-aeac-11ba9f4ea972&session_id=1fa7a8c3-8360-4578-aeac-11ba9f4ea972&timetoken=1794607393_89B7BA934163F92F4CA581E35F45D681",
+     "bytes": 77850671,
+     "seconds": 180.9,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "82a8fb54b0559eeac8015725750e058a",
+     "duration": 4862.3
+    },
+    {
+     "request_url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/DL4HT/traffic.megaphone.fm/QCD6835715323.mp3?_take=1",
+     "final_url": "https://dcs-cached.megaphone.fm/QCD6835715323.mp3?key=a3ee0c258f486faedadd246e8eded7e8&request_event_id=ebc2d389-d3d4-47b2-9230-e500037a1e42&session_id=ebc2d389-d3d4-47b2-9230-e500037a1e42&timetoken=1794607574_305EF6F5A3BF4BB44D9E16456FCFDB4F",
+     "bytes": 77796754,
+     "seconds": 80.8,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "04281dccc0af73a0c3c8e5e67ab8bf44",
+     "duration": 4858.9
+    }
+   ]
+  },
+  "shell-game__bonus-episode-shell-game-x-no-such-thing": {
+   "status": "ok",
+   "key": "shell-game__bonus-episode-shell-game-x-no-such-thing",
+   "show": "Shell Game",
+   "episode": "Bonus Episode: Shell Game x No Such Thing",
+   "split": "train",
+   "language": "en",
+   "duration": 3548.47,
+   "slots": 11,
+   "ad_minutes": 9.52,
+   "takes": [
+    {
+     "request_url": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/DfXIxNL4FlhsFXtrke08/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/d3d3abca-191a-4010-8160-b3530112d393/627bec9c-dfe2-40e5-be02-b3fc01026790/audio.mp3?utm_source=Podcast&in_playlist=c639b22c-ee8c-43dd-86c1-b3530112d3a3&_take=0",
+     "final_url": "https://27123.mc.tritondigital.com/OMNY_SHELLGAME_PODCAST_P/media-session/038f0805-3676-4a52-a34f-d21d4ac09998/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/d3d3abca-191a-4010-8160-b3530112d393/627bec9c-dfe2-40e5-be02-b3fc01026790/audio/direct/t1792592906/Bonus_Episode_Shell_Game_x_No_Such_Thing.mp3?t=1792592906&starship-rollup=v0_444444444444&starship-episode-id=1949009d-27a3-42b3-a1a9-a527eb313a5c&in_playlist=c639b22c-ee8c-43dd-86c1-b3530112d3a3&utm_source=Podcast&_take=0",
+     "bytes": 56814215,
+     "seconds": 25.2,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "d8e8de97306c3d55028b363b8b8d72c0",
+     "duration": 3548.5
+    },
+    {
+     "request_url": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/DfXIxNL4FlhsFXtrke08/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/d3d3abca-191a-4010-8160-b3530112d393/627bec9c-dfe2-40e5-be02-b3fc01026790/audio.mp3?utm_source=Podcast&in_playlist=c639b22c-ee8c-43dd-86c1-b3530112d3a3&_take=1",
+     "final_url": "https://27123.mc.tritondigital.com/OMNY_SHELLGAME_PODCAST_P/media-session/f1edcd81-f255-4e14-89e0-3d8c6481d724/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/d3d3abca-191a-4010-8160-b3530112d393/627bec9c-dfe2-40e5-be02-b3fc01026790/audio/direct/t1792592906/Bonus_Episode_Shell_Game_x_No_Such_Thing.mp3?t=1792592906&starship-rollup=v0_444444444444&starship-episode-id=1949009d-27a3-42b3-a1a9-a527eb313a5c&in_playlist=c639b22c-ee8c-43dd-86c1-b3530112d3a3&utm_source=Podcast&_take=1",
+     "bytes": 54774576,
+     "seconds": 25.1,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "3358d8ab8912e8565c5203d8076795ef",
+     "duration": 3421.0
+    }
+   ]
+  },
+  "the-daily__keisha-lance-bottoms-on-what-democrats-hav": {
+   "status": "ok",
+   "key": "the-daily__keisha-lance-bottoms-on-what-democrats-hav",
+   "show": "The Daily",
+   "episode": "Keisha Lance Bottoms on What Democrats Have to Do to Not Squander the Win",
+   "split": "train",
+   "language": "en",
+   "duration": 1977.13,
+   "slots": 6,
+   "ad_minutes": 4.05,
+   "takes": [
+    {
+     "request_url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/958e1ec4-6157-45a5-882d-490801f9b4e7/audio/128/default.mp3?aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=958e1ec4-6157-45a5-882d-490801f9b4e7&feed=Sl5CSM3S&_take=0",
+     "final_url": "https://nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/958e1ec4-6157-45a5-882d-490801f9b4e7/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_24933f287ee301f1a0a36d7f2b9ca7e4_35594734.mp3?_take=0&aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=958e1ec4-6157-45a5-882d-490801f9b4e7&feed=Sl5CSM3S&hash_redirect=1&x-total-bytes=35594734&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__2fde1d2295a9dc3d73a7bfc69a3369b9b4ed892d",
+     "bytes": 35594734,
+     "seconds": 18.3,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "fd4f682916248b2028a7636b324509f4",
+     "duration": 1977.1
+    },
+    {
+     "request_url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/958e1ec4-6157-45a5-882d-490801f9b4e7/audio/128/default.mp3?aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=958e1ec4-6157-45a5-882d-490801f9b4e7&feed=Sl5CSM3S&_take=1",
+     "final_url": "https://nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/958e1ec4-6157-45a5-882d-490801f9b4e7/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_edbc68409cd23f1e9660d121ba071088_35234453.mp3?_take=1&aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=958e1ec4-6157-45a5-882d-490801f9b4e7&feed=Sl5CSM3S&hash_redirect=1&x-total-bytes=35234453&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__2f08a9ee669d1c0779d0af91df1ec1c54277a58b",
+     "bytes": 35234453,
+     "seconds": 18.1,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "240532b555371e6557df68a76e94d599",
+     "duration": 1954.6
+    }
+   ]
+  },
+  "odd-lots__this-is-how-new-york-city-takes-out-its-tr": {
+   "status": "ok",
+   "key": "odd-lots__this-is-how-new-york-city-takes-out-its-tr",
+   "show": "Odd Lots",
+   "episode": "This Is How New York City Takes Out Its Trash",
+   "split": "train",
+   "language": "en",
+   "duration": 3790.97,
+   "slots": 9,
+   "ad_minutes": 5.96,
+   "takes": [
+    {
+     "request_url": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/UVBrz8bN8aM2Xe47PEPu/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/15e58d4b-0964-4cc7-a53b-b4fa01669ff2/audio.mp3?utm_source=Podcast&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&_take=0",
+     "final_url": "https://28243.mc.tritondigital.com/OMNY_ODDLOTS_PODCAST_P/media-session/68fab266-2c83-4ee9-b774-7c332719ddc4/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/15e58d4b-0964-4cc7-a53b-b4fa01669ff2/audio/direct/t1794214890/This_Is_How_New_York_City_Takes_Out_Its_Trash.mp3?t=1794214890&starship-episode-id=d37b9676-8534-44b5-96e7-fdaa208699e8&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&utm_source=Podcast&_take=0",
+     "bytes": 60382665,
+     "seconds": 29.3,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "b3e089f0ac98471fe59b9d0cfb8e68c4",
+     "duration": 3770.4
+    },
+    {
+     "request_url": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/UVBrz8bN8aM2Xe47PEPu/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/15e58d4b-0964-4cc7-a53b-b4fa01669ff2/audio.mp3?utm_source=Podcast&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&_take=1",
+     "final_url": "https://28243.mc.tritondigital.com/OMNY_ODDLOTS_PODCAST_P/media-session/f457fb20-9652-4b82-868b-db0a92a44eca/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/15e58d4b-0964-4cc7-a53b-b4fa01669ff2/audio/direct/t1794214890/This_Is_How_New_York_City_Takes_Out_Its_Trash.mp3?t=1794214890&starship-episode-id=d37b9676-8534-44b5-96e7-fdaa208699e8&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&utm_source=Podcast&_take=1",
+     "bytes": 60711182,
+     "seconds": 36.0,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "b74006c8fbdee64cd43b343571dfbe5c",
+     "duration": 3791.0
+    }
+   ]
+  },
+  "the-rest-is-classified__intelligence-scoop-how-nvidia-s-ceo-fell-f": {
+   "status": "ok",
+   "key": "the-rest-is-classified__intelligence-scoop-how-nvidia-s-ceo-fell-f",
+   "show": "The Rest Is Classified",
+   "episode": "Intelligence Scoop: How Nvidia’s CEO Fell for a Suspected Chinese Spy",
+   "split": "train",
+   "language": "en",
+   "duration": 3249.53,
+   "slots": 2,
+   "ad_minutes": 2.03,
+   "takes": [
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT4099515981.mp3?_take=0",
+     "final_url": "https://dcs-spotify.megaphone.fm/GLT4099515981.mp3?key=ffaacd6ee0cf665641d616c21411764b&request_event_id=edf22923-d820-4ae3-a724-54da075b394a&session_id=edf22923-d820-4ae3-a724-54da075b394a&timetoken=1794608690_63419A3E1909C394480C9A9EE7F0F688",
+     "bytes": 78055699,
+     "seconds": 97.4,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "f50cab7dcc50bc542718920acca2ae6e",
+     "duration": 3249.5
+    },
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT4099515981.mp3?_take=1",
+     "final_url": "https://dcs-spotify.megaphone.fm/GLT4099515981.mp3?key=13469005e58d0d080722f1fbeb6d965f&request_event_id=0f0db9b7-6f3a-448b-a14a-d035aeedb5e2&session_id=0f0db9b7-6f3a-448b-a14a-d035aeedb5e2&timetoken=1794608788_301EE72A61D7321ABAD26E4572580333",
+     "bytes": 77696463,
+     "seconds": 50.9,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "9506f23c1b613fe1a808d572f421e748",
+     "duration": 3234.6
+    }
+   ]
+  },
+  "the-political-scene-the-new-yorker__the-voters-have-spoken-what-comes-next": {
+   "status": "no-labels",
+   "show": "The Political Scene | The New Yorker",
+   "split": "test"
+  },
+  "the-political-scene-the-new-yorker__democrats-might-take-back-the-house-then-w": {
+   "status": "ok",
+   "key": "the-political-scene-the-new-yorker__democrats-might-take-back-the-house-then-w",
+   "show": "The Political Scene | The New Yorker",
+   "episode": "Democrats Might Take Back the House. Then What?",
+   "split": "test",
+   "language": "en",
+   "duration": 2252.67,
+   "slots": 5,
+   "ad_minutes": 3.37,
+   "takes": [
+    {
+     "request_url": "https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/uJwtcKQUPuqBQPfusm59/traffic.megaphone.fm/CNE1553606363.mp3?_take=0",
+     "final_url": "https://dcs-cached.megaphone.fm/CNE1553606363.mp3?key=4d5884f6b738ec98b05f99bc789b47bd&request_event_id=00a911b3-22ab-4d1e-b927-aebc9bd46bcc&session_id=00a911b3-22ab-4d1e-b927-aebc9bd46bcc&timetoken=1794609888_7BDA29961B1EE4615386B38C8C58677C",
+     "bytes": 54081039,
+     "seconds": 53.3,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "5d896d58e4cd7d14f0954a4fd407b481",
+     "duration": 2251.4
+    },
+    {
+     "request_url": "https://www.podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/uJwtcKQUPuqBQPfusm59/traffic.megaphone.fm/CNE1553606363.mp3?_take=1",
+     "final_url": "https://dcs-cached.megaphone.fm/CNE1553606363.mp3?key=ef80a6ff0972a847ef0901a727292c20&request_event_id=ecace46a-2fad-47ec-845c-4b6db0d6b1bf&session_id=ecace46a-2fad-47ec-845c-4b6db0d6b1bf&timetoken=1794609888_7BDA29961B1EE4615386B38C8C58677C",
+     "bytes": 54110505,
+     "seconds": 51.1,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "22d620b4d5680748d4c50eaaa8c6ac6c",
+     "duration": 2252.7
+    }
+   ]
+  },
+  "decoder-ring__the-spooky-saga-of-the-icelandic-dracula": {
+   "status": "ok",
+   "key": "decoder-ring__the-spooky-saga-of-the-icelandic-dracula",
+   "show": "Decoder Ring",
+   "episode": "The Spooky Saga of the Icelandic Dracula",
+   "split": "test",
+   "language": "en",
+   "duration": 3528.25,
+   "slots": 6,
+   "ad_minutes": 6.03,
+   "takes": [
+    {
+     "request_url": "https://sphinx.acast.com/p/open/s/696572d375c092ac4e159c27/e/6ae285865a3cc3c4c46cf4f2/media.mp3?_take=0",
+     "final_url": "https://stitcher2.acast.com/livestitches/ab8d8a9fa153081e0246dc40ec203c95.mp3?aid=6ae285865a3cc3c4c46cf4f2&chid=696572d375c092ac4e159c27&ci=gm1x2qpVDZe60_ei3988r4dZaH7N2VO5QB8QkKYBiwA-vSbCX3wvkg%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=a7cce34a0c3e8fa1a8b986edc4012b45&Expires=1794614623&Key-Pair-Id=K38CTQXUSD0VVB&Signature=UmiaVw4SXrJRl0~9PLWbcvo0zNzu-YMCO-uqKi3zJfUAnahFr~gserXh~~ybnLLwMgw5nxFCuQDF5emkpo9VjTNu1PPlw36l1N6pbc0XnJrOnMI4dya-0DWfs0YAQ9HQd833JMNYwd5P7DfVfeE4hYnKpPdVwhITuVKs2dPeebwpKvu5aHWhSPte8OAcjroVRJnZ1El7BTLBVvxXWzmY~GA3vr6Me2ow4WbrkVpLUtbgP6l49UeDp8lUiPkX9JKTzrzqs2B3jby0QqCC~uJgNAErXEQr7gnsbXW-d1f3pzjOfUvtCpUS9pTZTSIpMTIueP4Ywpf~9MeKeYdzDHuQ0g__",
+     "bytes": 55866820,
+     "seconds": 62.0,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "a0a53e1b1ae9c4267ce64901ea6cfe48",
+     "duration": 3491.7
+    },
+    {
+     "request_url": "https://sphinx.acast.com/p/open/s/696572d375c092ac4e159c27/e/6ae285865a3cc3c4c46cf4f2/media.mp3?_take=1",
+     "final_url": "https://stitcher2.acast.com/livestitches/afdad1cab12d4fe6d83f455f7ffc4ecd.mp3?aid=6ae285865a3cc3c4c46cf4f2&chid=696572d375c092ac4e159c27&ci=d4cuwULbWM5Ae3CMoYk_itEMEprT1nhoTauSmyv3JGb6ZqQ7hc35gQ%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=c48143d106d27b418472625ea485b657&Expires=1794614623&Key-Pair-Id=K38CTQXUSD0VVB&Signature=N0yLigXFoU1cBLdsMz6EJn8CsIe4FFg5ElvvJ0Q0hKZDVi-wZ-16wP9jHtUDvessD996SIIyNShhxseclFnEJ08s6yIP3dWVLpa3Wvg88El8P3gOMtHqOPQQYGbNK7G0e5JtMGfbi-zC9UvnkPEQ-9NjEfDFaPDV4p37DNNZGpwWmaoyn5lwsEpF~qPooNHh1Fyul0SIUcngVtD4QYTe9ItP31nlz6ZTqVklRnlrL2wp2XTGb70ELGyD3CnKSeMuYpMm8SbFOJLDNd-CdHq6wNdVsDRVJu-5EzgzdViMemfBvM-OX9U4ZHlsLdm~n-rpFcXo~VRD4ynflMIHvBrGJQ__",
+     "bytes": 56452097,
+     "seconds": 59.2,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "df9441f0ad57276a495a59a036c8c4cd",
+     "duration": 3528.2
+    }
+   ]
+  },
+  "decoder-ring__gandhi-never-said-be-the-change": {
+   "status": "ok",
+   "key": "decoder-ring__gandhi-never-said-be-the-change",
+   "show": "Decoder Ring",
+   "episode": "Gandhi Never Said “Be the Change”",
+   "split": "test",
+   "language": "en",
+   "duration": 4147.64,
+   "slots": 9,
+   "ad_minutes": 10.16,
+   "takes": [
+    {
+     "request_url": "https://sphinx.acast.com/p/open/s/696572d375c092ac4e159c27/e/6acea4af3dc1c1be4ac0b9e6/media.mp3?_take=0",
+     "final_url": "https://stitcher2.acast.com/livestitches/547f6bb436746f874d9f7b1b7fdce872.mp3?aid=6acea4af3dc1c1be4ac0b9e6&chid=696572d375c092ac4e159c27&ci=rrJ1n1iQxY9UdEuZYhkhyhvepPYAQHZl6icYM7SIoZwMbkVeLFsx9Q%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=d542e914b37673f2fed98f92ee35918c&Expires=1794614876&Key-Pair-Id=K38CTQXUSD0VVB&Signature=HnkXexbHtC1PdRCVsfe6ZSa1wkOlUEsD~FbxXoxSj5IwMzEiftFXAyue2Twfb8d4ndzj4~1rdz3Pjnf0laEUENHbrimEMGyV030EJgdVxGySQKBHVgNdhIbwa7zdFa4KAsWDeCkgCt2Imx7SfncRjHyGmMsKULdL-Z4NqKzwcGonc~g-jTFxQwNGuUL5bqRSC0CA3-N2~cVXm3u-~us62gtzTZxv5RUVbi-dwfXE80y6-oUZuLxCQEZ90hzpTBBEypsI-1mdMxw45HuAKXlcOrxBLsJrpgOGEtni3NAevHAGx5HO3zuy5ixgHRlW-fFeVuXki2mp1qxxExYQJB2Fkg__",
+     "bytes": 66362456,
+     "seconds": 71.3,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "fcb9687055c9896ffdda3176f0d9aa47",
+     "duration": 4147.6
+    },
+    {
+     "request_url": "https://sphinx.acast.com/p/open/s/696572d375c092ac4e159c27/e/6acea4af3dc1c1be4ac0b9e6/media.mp3?_take=1",
+     "final_url": "https://stitcher2.acast.com/livestitches/a3f05625c40bcb9e3a408f599be856bc.mp3?aid=6acea4af3dc1c1be4ac0b9e6&chid=696572d375c092ac4e159c27&ci=poWffgZg_JSSUgK0obqElINvJH9moaIuW3UWFR9nKSYTjLjV3dve_w%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=9f3e5c8b0f762a55e0b3632d649d5a89&Expires=1794614876&Key-Pair-Id=K38CTQXUSD0VVB&Signature=SfXekiDIvR7~pB~cAaa~GGO0CsXyeQGXwdDLg96uc1mhOqQBCwpl1tc3lej1nb2IN5btKOYb6UnxppUjlT8dr5kI1uSokyo3Stw~qpJKaDg99YHkUuBIjeG89GmocfINDtMCMLhekZqA3R8ISbXjbMGqEUf4PTcllrU8fjn4DohQpWyMF8DSn0uUQYAM~c1E1yxQeHVC8Uhvtnxpr2uolu23EmrViSy2lcP~sxmIg~MbNLt5GD7RplZ6JLTfKWmczy-PZQIDfznKNWTMvVHPH9e1jrn93axyxVWOag3aND2JbAAnd~6lxpgwNicUkG0cCgrvzXCSojLdBy65Gt8lcg__",
+     "bytes": 65005077,
+     "seconds": 67.2,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "b8427c407d2fdd56486413b4fa2e1095",
+     "duration": 4062.8
+    }
+   ]
+  },
+  "the-rest-is-history__718-the-suez-crisis-britain-s-shattered-em": {
+   "status": "ok",
+   "key": "the-rest-is-history__718-the-suez-crisis-britain-s-shattered-em",
+   "show": "The Rest Is History",
+   "episode": "718. The Suez Crisis: Britain's Shattered Empire (Part 2)",
+   "split": "test",
+   "language": "en",
+   "duration": 4659.15,
+   "slots": 5,
+   "ad_minutes": 3.94,
+   "takes": [
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT7704784668.mp3?_take=0",
+     "final_url": "https://dcs-cached.megaphone.fm/GLT7704784668.mp3?key=8a496b2c68566b24b1896054ee8a528a&request_event_id=40d02f67-6f40-45f0-8635-5856ff188a83&session_id=40d02f67-6f40-45f0-8635-5856ff188a83&timetoken=1794610688_8E487AE83E20B9E0BA76DA38EDB2C308",
+     "bytes": 186438830,
+     "seconds": 151.1,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "f21aa761c0fdbd343b3ac23a1fe95371",
+     "duration": 4659.1
+    },
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT7704784668.mp3?_take=1",
+     "final_url": "https://dcs-cached.megaphone.fm/GLT7704784668.mp3?key=2b149c70d6cd9c5a696243bc7c133ff7&request_event_id=3295b812-5ee5-4963-a9f2-db719736de52&session_id=3295b812-5ee5-4963-a9f2-db719736de52&timetoken=1794610688_8E487AE83E20B9E0BA76DA38EDB2C308",
+     "bytes": 182777507,
+     "seconds": 148.9,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "d61f2ecd4259d7d3e4c879c875da05b6",
+     "duration": 4567.6
+    }
+   ]
+  },
+  "the-rest-is-history__722-the-charge-of-the-light-brigade-the-ts": {
+   "status": "ok",
+   "key": "the-rest-is-history__722-the-charge-of-the-light-brigade-the-ts",
+   "show": "The Rest Is History",
+   "episode": "722. The Charge of the Light Brigade: The Tsar’s Terrible Siege (Part 2)",
+   "split": "test",
+   "language": "en",
+   "duration": 3854.03,
+   "slots": 5,
+   "ad_minutes": 5.1,
+   "takes": [
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT7837711407.mp3?_take=0",
+     "final_url": "https://dcs-spotify.megaphone.fm/GLT7837711407.mp3?key=5bffacd68be8282a19191c28c6e1c299&request_event_id=d982361d-1a4f-46a4-8236-a5d365d586b2&session_id=d982361d-1a4f-46a4-8236-a5d365d586b2&timetoken=1794611127_F9AF2EEA18864F3C4E756968396EB590",
+     "bytes": 154234356,
+     "seconds": 155.3,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "e29b9f02ed71557d6e6d22a406003716",
+     "duration": 3854.0
+    },
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT7837711407.mp3?_take=1",
+     "final_url": "https://dcs-spotify.megaphone.fm/GLT7837711407.mp3?key=d8b4e9b88e570c96856afba0b698e714&request_event_id=a763cf13-ca48-4072-bff4-33bb4c86843a&session_id=a763cf13-ca48-4072-bff4-33bb4c86843a&timetoken=1794611126_E941EDC84112C1595B5143052DC56741",
+     "bytes": 154140315,
+     "seconds": 150.8,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "b4decc365e65e787b38c3db34f8b37eb",
+     "duration": 3851.7
+    }
+   ]
+  },
+  "state-of-the-world-from-npr__u-s-midterm-results-give-ukrainians-glimme": {
+   "status": "ok",
+   "key": "state-of-the-world-from-npr__u-s-midterm-results-give-ukrainians-glimme",
+   "show": "State of the World from NPR",
+   "episode": "U.S. midterm results give Ukrainians glimmer of hope",
+   "split": "test",
+   "language": "en",
+   "duration": 625.14,
+   "slots": 2,
+   "ad_minutes": 1.05,
+   "takes": [
+    {
+     "request_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510366/npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/c9a69c7c-2326-4ca4-b823-214671a6c5f9/audio/128/default.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=c9a69c7c-2326-4ca4-b823-214671a6c5f9&feed=eZ65RO4U&t=podcast&e=nx-s1-6036822&p=510366&d=542&size=8678548&_take=0",
+     "final_url": "https://npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/c9a69c7c-2326-4ca4-b823-214671a6c5f9/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_deca6b9737783d3dd41d3b47d8b5680e_10002213.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=c9a69c7c-2326-4ca4-b823-214671a6c5f9&feed=eZ65RO4U&t=podcast&e=nx-s1-6036822&p=510366&d=542&size=8678548&_take=0&hash_redirect=1&x-total-bytes=10002213&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__141f0a631b08f871026af2d10813cfdd31500c2b",
+     "bytes": 10002213,
+     "seconds": 9.3,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "a064e785504ab9ff50a36a7c97d6401f",
+     "duration": 625.1
+    },
+    {
+     "request_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510366/npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/c9a69c7c-2326-4ca4-b823-214671a6c5f9/audio/128/default.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=c9a69c7c-2326-4ca4-b823-214671a6c5f9&feed=eZ65RO4U&t=podcast&e=nx-s1-6036822&p=510366&d=542&size=8678548&_take=1",
+     "final_url": "https://npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/c9a69c7c-2326-4ca4-b823-214671a6c5f9/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_6273d020f5439a4e9cebdfcf7570391c_9956656.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=c9a69c7c-2326-4ca4-b823-214671a6c5f9&feed=eZ65RO4U&t=podcast&e=nx-s1-6036822&p=510366&d=542&size=8678548&_take=1&hash_redirect=1&x-total-bytes=9956656&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__d738cc643aa4da36f3653b723903a72dae9e8fb6",
+     "bytes": 9956656,
+     "seconds": 9.3,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "763ce545d3d27d92ba9cad103d13a90d",
+     "duration": 622.3
+    }
+   ]
+  },
+  "state-of-the-world-from-npr__breeding-beer-hops-for-a-hotter-planet": {
+   "status": "ok",
+   "key": "state-of-the-world-from-npr__breeding-beer-hops-for-a-hotter-planet",
+   "show": "State of the World from NPR",
+   "episode": "Breeding beer hops for a hotter planet",
+   "split": "test",
+   "language": "en",
+   "duration": 405.24,
+   "slots": 3,
+   "ad_minutes": 0.99,
+   "takes": [
+    {
+     "request_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510366/npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/a0807a52-fe1d-4f4d-be12-90c5c1f3f3c3/audio/128/default.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=a0807a52-fe1d-4f4d-be12-90c5c1f3f3c3&feed=eZ65RO4U&t=podcast&e=nx-s1-6035009&p=510366&d=335&size=5363297&_take=0",
+     "final_url": "https://npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/a0807a52-fe1d-4f4d-be12-90c5c1f3f3c3/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_8a310599c66e334f172d0a0fc62bd698_6457083.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=a0807a52-fe1d-4f4d-be12-90c5c1f3f3c3&feed=eZ65RO4U&t=podcast&e=nx-s1-6035009&p=510366&d=335&size=5363297&_take=0&hash_redirect=1&x-total-bytes=6457083&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__b8249966df01e22bcc33bbbb6418da1d099f23b2",
+     "bytes": 6457083,
+     "seconds": 6.9,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "843d024da877b2031d6c3b6f70e870e2",
+     "duration": 403.6
+    },
+    {
+     "request_url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510366/npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/a0807a52-fe1d-4f4d-be12-90c5c1f3f3c3/audio/128/default.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=a0807a52-fe1d-4f4d-be12-90c5c1f3f3c3&feed=eZ65RO4U&t=podcast&e=nx-s1-6035009&p=510366&d=335&size=5363297&_take=1",
+     "final_url": "https://npr.simplecastaudio.com/0c99070d-d4e9-4006-ac06-39c904ab327e/episodes/a0807a52-fe1d-4f4d-be12-90c5c1f3f3c3/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_a6674446488bf81ce7af9fcc0252a501_6483833.mp3?awCollectionId=0c99070d-d4e9-4006-ac06-39c904ab327e&awEpisodeId=a0807a52-fe1d-4f4d-be12-90c5c1f3f3c3&feed=eZ65RO4U&t=podcast&e=nx-s1-6035009&p=510366&d=335&size=5363297&_take=1&hash_redirect=1&x-total-bytes=6483833&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__ed7b41409cbcefa141538e103f21f969607f21cc",
+     "bytes": 6483833,
+     "seconds": 6.8,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "fa86293a2399d3bc8c30337421cc9e45",
+     "duration": 405.2
+    }
+   ]
+  },
+  "grammar-girl__the-language-of-superstition-jinxes-the-sc": {
+   "status": "ok",
+   "key": "grammar-girl__the-language-of-superstition-jinxes-the-sc",
+   "show": "Grammar Girl",
+   "episode": "The language of superstition: jinxes, the Scottish Play, and the hospital Q-word",
+   "split": "test",
+   "language": "en",
+   "duration": 967.18,
+   "slots": 6,
+   "ad_minutes": 3.49,
+   "takes": [
+    {
+     "request_url": "https://sphinx.acast.com/p/open/s/69c1476c007cdcf83fc0964b/e/6af1dc89625528ef28098c3c/media.mp3?_take=0",
+     "final_url": "https://stitcher2.acast.com/livestitches/fd8e49a6b318a93eb76f622d182e50bf.mp3?aid=6af1dc89625528ef28098c3c&chid=69c1476c007cdcf83fc0964b&ci=LS9I69qkQ0gBeFE066bk8MYdbYrd3VdlWbOKm2rTv0lcNJM_-r1B1A%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=b102ba9ce9abeb6c0b7d69dfc8e7d9d1&Expires=1794616074&Key-Pair-Id=K38CTQXUSD0VVB&Signature=JFvXq7qkYEiIoKRbq9YKlxkxEYgie2SU0N3SZVCLYLX~3Hw9krHVgcOTTPr34-Ta87~Bp5a9cW8r1rXRabnnZ5paXNIK1bS6HiZYNLrhLRzIhRVGHp-DopjPeB6gpP0M9DQ~RrQ8t48ney~qK8Uka0OmUxMEUb-MAnqINmrIcBtjFpB8HuBVMf7Z5M9Q2QwO7DowhloVviDR6a230KRS5AtaCYNvMzu72jyQgn56hC2Q0L1VPujOIB8UxntIBQeybp5J3z9DkT0PrWQe8jhvVd-O4Denj4EjpeK7W3m2-bgJwfxJ70XkxwKdYEh8QuWVO~4ijJiGI8bh4gkQGDZmpw__",
+     "bytes": 15473737,
+     "seconds": 14.3,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "01b1315d167ced82f575cfb545338667",
+     "duration": 967.1
+    },
+    {
+     "request_url": "https://sphinx.acast.com/p/open/s/69c1476c007cdcf83fc0964b/e/6af1dc89625528ef28098c3c/media.mp3?_take=1",
+     "final_url": "https://stitcher2.acast.com/livestitches/ae339747a63ca30ecd4966c6bbb87ad1.mp3?aid=6af1dc89625528ef28098c3c&chid=69c1476c007cdcf83fc0964b&ci=8awbSp9eQADLmo1FVF1AiSgdOIQXuJJWMN6AAbHT2V9QkpSSlK926Q%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=9741e8b74bda5d6499fce0860a72c67e&Expires=1794616074&Key-Pair-Id=K38CTQXUSD0VVB&Signature=Kot8~QN6vbG1cl2l3qcvphF38mCx8~T9aFxg5qwf3lWLrTa7WAXuUqXQdJ4yyCNWGKQSjwoCUG0QHbiCMzUabUFD0S9zL-zSb1KdNYlo6nkiQKSw2wji7g9lldVE8U1tE0Phjm1ayKYNL6ZsU87WlDsWqYrXSUCCyGN2JdPBE2Xd5vS1p9jb9mbyMz6fvRu8RAaD6WFqUop512b3a1k1F2aMvTyPof5w102hdycrBMSQxPSoZXMFkQpPI1j~zfthrQLlpHNburTvAFEHPoShR78uwzg0wjPLHFyBgWEvYZX4VeR-nG60EsZckDAa3eUlvhycpaLaqpiOPJeP1UstAQ__",
+     "bytes": 15474889,
+     "seconds": 14.1,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "ac6a30bf630a4ca4c317562de47cc994",
+     "duration": 967.2
+    }
+   ]
+  },
+  "how-i-built-this-with-guy-raz__advice-line-with-tope-awotona-of-calendly": {
+   "status": "ok",
+   "key": "how-i-built-this-with-guy-raz__advice-line-with-tope-awotona-of-calendly",
+   "show": "How I Built This with Guy Raz",
+   "episode": "Advice Line with Tope Awotona of Calendly",
+   "split": "train",
+   "language": "en",
+   "duration": 3610.49,
+   "slots": 7,
+   "ad_minutes": 4.74,
+   "takes": [
+    {
+     "request_url": "https://traffic.megaphone.fm/VMP4254648132.mp3?_take=0",
+     "final_url": "https://dcs-cached.megaphone.fm/VMP4254648132.mp3?key=0426b98e624642ea3b1eeb908101907d&request_event_id=1ac171c8-5b5f-410f-824f-6e99dc77739a&session_id=1ac171c8-5b5f-410f-824f-6e99dc77739a&timetoken=1794611973_81AEBBBFC576795326B4E1872692F87F",
+     "bytes": 57600188,
+     "seconds": 78.1,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "60caaf5620766265a9051cb794047a17",
+     "duration": 3597.7
+    },
+    {
+     "request_url": "https://traffic.megaphone.fm/VMP4254648132.mp3?_take=1",
+     "final_url": "https://dcs-cached.megaphone.fm/VMP4254648132.mp3?key=5fc58014399f7ce1f1cea07e839d916b&request_event_id=6159c6b4-9225-4c48-90ee-f1128061d14a&session_id=6159c6b4-9225-4c48-90ee-f1128061d14a&timetoken=1794611973_81AEBBBFC576795326B4E1872692F87F",
+     "bytes": 57804569,
+     "seconds": 76.8,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "131a1545ef81643f9ae73e6954bc992d",
+     "duration": 3610.5
+    }
+   ]
+  },
+  "the-weekly-show-with-jon-stewart__a-progressive-policy-prescription-with-abd": {
+   "status": "ok",
+   "key": "the-weekly-show-with-jon-stewart__a-progressive-policy-prescription-with-abd",
+   "show": "The Weekly Show with Jon Stewart",
+   "episode": "A Progressive Policy Prescription with Abdul El-Sayed",
+   "split": "train",
+   "language": "en",
+   "duration": 5550.47,
+   "slots": 5,
+   "ad_minutes": 2.5,
+   "takes": [
+    {
+     "request_url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/DL4HT/traffic.megaphone.fm/QCD2142373924.mp3?_take=0",
+     "final_url": "https://dcs-spotify.megaphone.fm/QCD2142373924.mp3?key=3a935b1cbc2c44f548319475ea6bb535&request_event_id=68dd3849-132d-47d0-a85f-c0c43f532455&session_id=68dd3849-132d-47d0-a85f-c0c43f532455&timetoken=1794612264_BCBD8BF0EBB4A22C1F907393A49AE23B",
+     "bytes": 88861556,
+     "seconds": 72.6,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "776a7c1f041334257928bbe96d037905",
+     "duration": 5550.4
+    },
+    {
+     "request_url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/DL4HT/traffic.megaphone.fm/QCD2142373924.mp3?_take=1",
+     "final_url": "https://dcs-spotify.megaphone.fm/QCD2142373924.mp3?key=c31ddf5aefe34e81a055926cdbf93f44&request_event_id=db639145-180e-463a-919b-2ef158867ce1&session_id=db639145-180e-463a-919b-2ef158867ce1&timetoken=1794612265_63138C5888A830AD8E17D1E99E305BBC",
+     "bytes": 88861973,
+     "seconds": 72.8,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "76f0aafc44ed5f47decb0503f24661bc",
+     "duration": 5550.5
+    }
+   ]
+  },
+  "the-weekly-show-with-jon-stewart__a-working-class-economy-with-kathryn-anne": {
+   "status": "ok",
+   "key": "the-weekly-show-with-jon-stewart__a-working-class-economy-with-kathryn-anne",
+   "show": "The Weekly Show with Jon Stewart",
+   "episode": "A Working (Class) Economy with Kathryn Anne Edwards",
+   "split": "train",
+   "language": "en",
+   "duration": 5466.57,
+   "slots": 4,
+   "ad_minutes": 5.19,
+   "takes": [
+    {
+     "request_url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/DL4HT/traffic.megaphone.fm/QCD7983792053.mp3?_take=0",
+     "final_url": "https://dcs.megaphone.fm/QCD7983792053.mp3?key=1aa40392a4d1f575a3bc55797fa0d3b4&request_event_id=a9cf107e-0937-4366-8525-be0d220542d4&session_id=a9cf107e-0937-4366-8525-be0d220542d4&timetoken=1794612677_10A31A8982E5C3113EBF1C6D84F313EE",
+     "bytes": 87520312,
+     "seconds": 71.6,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "ffe2082a5b106a95f9e0de5a27aaf9a5",
+     "duration": 5466.6
+    },
+    {
+     "request_url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/DL4HT/traffic.megaphone.fm/QCD7983792053.mp3?_take=1",
+     "final_url": "https://dcs-cached.megaphone.fm/QCD7983792053.mp3?key=f7394af4c8bc92516a9edd483cc45c9c&request_event_id=8ba5570a-94a4-406e-b8e0-dbeae2744144&session_id=8ba5570a-94a4-406e-b8e0-dbeae2744144&timetoken=1794612674_CA676B9238C574924F56D0EBF99DA510",
+     "bytes": 85866438,
+     "seconds": 67.6,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "09b9b904107b431424b33835cf222ea8",
+     "duration": 5363.2
+    }
+   ]
+  },
+  "the-daily__what-jensen-huang-s-resignation-will-mean": {
+   "status": "ok",
+   "key": "the-daily__what-jensen-huang-s-resignation-will-mean",
+   "show": "The Daily",
+   "episode": "What Jensen Huang’s Resignation Will Mean for A.I.",
+   "split": "train",
+   "language": "en",
+   "duration": 1737.82,
+   "slots": 5,
+   "ad_minutes": 5.5,
+   "takes": [
+    {
+     "request_url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/81baedea-f263-4b69-9789-fef913b31bee/audio/128/default.mp3?aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=81baedea-f263-4b69-9789-fef913b31bee&feed=Sl5CSM3S&_take=0",
+     "final_url": "https://nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/81baedea-f263-4b69-9789-fef913b31bee/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_79a802f5b5e80042d36ca8ec6403cd7e_27805306.mp3?_take=0&aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=81baedea-f263-4b69-9789-fef913b31bee&feed=Sl5CSM3S&hash_redirect=1&x-total-bytes=27805306&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__56f9a4776b32deaa97158299b604cad314ca1c17",
+     "bytes": 27805306,
+     "seconds": 23.8,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "ff0fba591cf3adea1efa19187e32f03c",
+     "duration": 1737.8
+    },
+    {
+     "request_url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/tracking.swap.fm/track/4jdbJYYRKqK96EGqOzQb/nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/81baedea-f263-4b69-9789-fef913b31bee/audio/128/default.mp3?aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=81baedea-f263-4b69-9789-fef913b31bee&feed=Sl5CSM3S&_take=1",
+     "final_url": "https://nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/81baedea-f263-4b69-9789-fef913b31bee/audio/128/default.mp3/default.mp3_ywr3ahjkcgo_347061f82c29bbede09aa01401c02e30_27318802.mp3?_take=1&aid=rss_feed&awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&awEpisodeId=81baedea-f263-4b69-9789-fef913b31bee&feed=Sl5CSM3S&hash_redirect=1&x-total-bytes=27318802&x-ais-classified=unclassified&listeningSessionID=0CD_382_316__c1f8651e505e88d1ed55499eef7ced6c5b20a16f",
+     "bytes": 27318802,
+     "seconds": 23.9,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "7f909609ab061cd78af330a243c06560",
+     "duration": 1707.4
+    }
+   ]
+  },
+  "odd-lots__what-nvidia-s-megaspeed-scandal-is-really": {
+   "status": "ok",
+   "key": "odd-lots__what-nvidia-s-megaspeed-scandal-is-really",
+   "show": "Odd Lots",
+   "episode": "What Nvidia's Megaspeed Scandal Is Really All About",
+   "split": "train",
+   "language": "en",
+   "duration": 3921.55,
+   "slots": 6,
+   "ad_minutes": 50.41,
+   "takes": [
+    {
+     "request_url": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/UVBrz8bN8aM2Xe47PEPu/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/9390c1d9-8076-46f9-89ef-b500001b8ce0/audio.mp3?utm_source=Podcast&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&_take=0",
+     "final_url": "https://27073.mc.tritondigital.com/OMNY_ODDLOTS_PODCAST_P/media-session/23ef01c2-3d5a-4bb1-a16b-6014a24d645d/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/9390c1d9-8076-46f9-89ef-b500001b8ce0/audio/direct/t1794474097/What_Nvidia's_Megaspeed_Scandal_Is_Really_All_About.mp3?t=1794474097&starship-episode-id=e6f6db3b-1435-42a5-b9e8-64e15809ad15&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&utm_source=Podcast&_take=0",
+     "bytes": 62800566,
+     "seconds": 76.4,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "795f24e211c80f42924a35a9e20aa930",
+     "duration": 3921.6
+    },
+    {
+     "request_url": "https://podtrac.com/pts/redirect.mp3/tracking.swap.fm/track/UVBrz8bN8aM2Xe47PEPu/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/9390c1d9-8076-46f9-89ef-b500001b8ce0/audio.mp3?utm_source=Podcast&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&_take=1",
+     "final_url": "https://27083.mc.tritondigital.com/OMNY_ODDLOTS_PODCAST_P/media-session/2b76844d-66ee-490a-8638-e7446dfbfd2a/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/9390c1d9-8076-46f9-89ef-b500001b8ce0/audio/direct/t1794474097/What_Nvidia's_Megaspeed_Scandal_Is_Really_All_About.mp3?t=1794474097&starship-episode-id=e6f6db3b-1435-42a5-b9e8-64e15809ad15&in_playlist=982f5071-765c-403d-969d-ae27003a8d83&utm_source=Podcast&_take=1",
+     "bytes": 62783429,
+     "seconds": 77.3,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "27b48f3bc36dc977a4a789a26924f1fc",
+     "duration": 3920.5
+    }
+   ]
+  },
+  "the-rest-is-classified__202-watergate-the-cia-conspiracy-ep-1": {
+   "status": "ok",
+   "key": "the-rest-is-classified__202-watergate-the-cia-conspiracy-ep-1",
+   "show": "The Rest Is Classified",
+   "episode": "202. Watergate: The CIA Conspiracy (Ep 1)",
+   "split": "train",
+   "language": "en",
+   "duration": 3801.08,
+   "slots": 4,
+   "ad_minutes": 3.14,
+   "takes": [
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT4734656231.mp3?_take=0",
+     "final_url": "https://dcs-spotify.megaphone.fm/GLT4734656231.mp3?key=06801ceb51d9979fe4b9eee2a8f88a3a&request_event_id=13ad8b7c-6136-4faa-ba8f-b0eca2484963&session_id=13ad8b7c-6136-4faa-ba8f-b0eca2484963&timetoken=1794613444_6A2B1743ABCA20CA6A297BD65B0F72D1",
+     "bytes": 91293622,
+     "seconds": 70.1,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "e86d9a437029d7a64527f1ce1e23cab9",
+     "duration": 3801.1
+    },
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT4734656231.mp3?_take=1",
+     "final_url": "https://dcs-spotify.megaphone.fm/GLT4734656231.mp3?key=012ca971d9bece5b0858b7447efd548c&request_event_id=07eec733-3b82-431a-ae02-e9f958d76102&session_id=07eec733-3b82-431a-ae02-e9f958d76102&timetoken=1794613444_6A2B1743ABCA20CA6A297BD65B0F72D1",
+     "bytes": 91292368,
+     "seconds": 71.7,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "38835abb89e04ef7fc0100e934f1a811",
+     "duration": 3801.0
+    }
+   ]
+  },
+  "the-rest-is-politics__586-can-the-democrats-capitalise-on-trump": {
+   "status": "ok",
+   "key": "the-rest-is-politics__586-can-the-democrats-capitalise-on-trump",
+   "show": "The Rest Is Politics",
+   "episode": "586. Can the Democrats Capitalise on Trump's Midterm Disaster?",
+   "split": "train",
+   "language": "en",
+   "duration": 4498.99,
+   "slots": 7,
+   "ad_minutes": 7.06,
+   "takes": [
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT8924049806.mp3?_take=0",
+     "final_url": "https://dcs-spotify.megaphone.fm/GLT8924049806.mp3?key=725fdbd8bbb9462f953d420981953408&request_event_id=adbf9877-5dfd-4dfb-98dc-8c00a4a98c02&session_id=adbf9877-5dfd-4dfb-98dc-8c00a4a98c02&timetoken=1794613722_0986ECF744109B03330CFBB3342EDEDE",
+     "bytes": 178184416,
+     "seconds": 192.6,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "59a832c8d6143107944815cf50d7e368",
+     "duration": 4453.0
+    },
+    {
+     "request_url": "https://pdst.fm/e/traffic.megaphone.fm/GLT8924049806.mp3?_take=1",
+     "final_url": "https://dcs-spotify.megaphone.fm/GLT8924049806.mp3?key=f81dfa12e3e413b4de0138488d73fff8&request_event_id=868a759c-627a-4850-a07e-bf3d3bf138af&session_id=868a759c-627a-4850-a07e-bf3d3bf138af&timetoken=1794613722_0986ECF744109B03330CFBB3342EDEDE",
+     "bytes": 178785232,
+     "seconds": 170.5,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "857b2c9e5fa2e9b99a1613ee28821bee",
+     "duration": 4468.1
+    }
+   ]
+  },
+  "the-rest-is-politics__what-living-under-isis-taught-me-about-ext": {
+   "status": "no-labels",
+   "show": "The Rest Is Politics",
+   "split": "train"
+  },
+  "gone-medieval__robert-the-bruce": {
+   "status": "error",
+   "attempts": 1,
+   "error": "ReadTimeout('The read operation timed out')",
+   "show": "Gone Medieval",
+   "split": "train"
+  },
+  "gone-medieval__investigating-viking-burials": {
+   "status": "ok",
+   "key": "gone-medieval__investigating-viking-burials",
+   "show": "Gone Medieval",
+   "episode": "Investigating Viking Burials",
+   "split": "train",
+   "language": "en",
+   "duration": 3990.13,
+   "slots": 9,
+   "ad_minutes": 5.37,
+   "takes": [
+    {
+     "request_url": "https://sphinx.acast.com/p/acast/s/gone-medieval/e/6ae8721f3dce902b6d9474ef/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=2Vn5RBNm5COiq6yuviK-NU_wGxTfQjFS9_--5uP2NSE&_take=0",
+     "final_url": "https://stitcher2.acast.com/livestitches/048143168c0d2990c3134a1da0839202.mp3?aid=6ae8721f3dce902b6d9474ef&chid=11c1773b-6d50-4dbb-b543-483046bdc241&ci=pNTEE9Jj_MxE9hIPRhgXE4qAIvErgj3anzfWIeEMrKlfeAuyc1l0tA%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=f1e07f687ed04d300813aee57044f201&Expires=1794618921&Key-Pair-Id=K38CTQXUSD0VVB&Signature=gfzKDkJJOo~SBqJ6daIHd-PBpTxq9NSyRa1rG7phC~WjKwPFllp3rpE7iouZhXO5vfi7UnEzGMO1zZyrYq3XYw5gEKiIt5ltt5K8pgiiVz4V17SUE~el4DRK~QPtPbjOEbf~sAE4xMgdfxRkWqJbQLJVYFDAKFgLnhaOGG4~TfcMr0DO6LxiZ3t2CSdsYIuKbp7EOuNC~4O5m01kF3hBuljUmh8lJmsJeTUf9jbmn6VjZq-Zzn1KlDPVT0hFz8ACkPUQbpzGWhQ1LsXhovTBuhMEn5ybxf5RTz2mGI8R1cBZo98258a8ImVAr2fwSANakhrJlCPxC~LveAClhBp2ew__",
+     "bytes": 63661556,
+     "seconds": 53.9,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "640e81e7a32c465ed6cb180df1e5c57a",
+     "duration": 3978.8
+    },
+    {
+     "request_url": "https://sphinx.acast.com/p/acast/s/gone-medieval/e/6ae8721f3dce902b6d9474ef/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=2Vn5RBNm5COiq6yuviK-NU_wGxTfQjFS9_--5uP2NSE&_take=1",
+     "final_url": "https://stitcher2.acast.com/livestitches/a08e249f23fe04edfb8f3728f37eae1d.mp3?aid=6ae8721f3dce902b6d9474ef&chid=11c1773b-6d50-4dbb-b543-483046bdc241&ci=q7wqxnNtx4Zo8Q6ebckLjwDxa7fD-OISVgH-dPyA9efkNBgXtfAiAg%3D%3D&pf=rss&sv=sphinx%401.281.0&uid=77b0f1e1fe4f3c8b3759a5276ccc014e&Expires=1794618921&Key-Pair-Id=K38CTQXUSD0VVB&Signature=lz-Pw78tz-2T9hU1Tp98izM~bxDikog0GjgAfizlGBAy8qVkDmOHSLC2noSyDTQGBLL1uUu-kjE2ccw1VN1BruLKi6RnAqT-aVReP-10DPtKcHmFVsEgyY4t~KCat9VYyRIhF0dH1p3U1gLEC6IYu6PGsmL5EwgQZPAAv2wOrW8i7SUssLX1DHBIh2CEIYPR57pcrdtzIuD~T5SunWudqNvBMlZsXP65z-NsJWlP9qvTJTIX9zrpYP3uVqGWJsF-dTJdddy-f6orWzVqa3Bb-zbDskSxWIbj35rIfRDTTJKux6Ev299rkGwUkUZPMA3eQcsT9NlbKfueCWqhNzuMBg__",
+     "bytes": 63842201,
+     "seconds": 52.3,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "8af92c0d9e0d00dbc5e43a288a928a12",
+     "duration": 3990.1
+    }
+   ]
+  },
+  "cautionary-tales-with-tim-harford__why-miners-see-ghosts-halloween-season": {
+   "status": "ok",
+   "key": "cautionary-tales-with-tim-harford__why-miners-see-ghosts-halloween-season",
+   "show": "Cautionary Tales with Tim Harford",
+   "episode": "Why Miners See Ghosts | Halloween Season",
+   "split": "train",
+   "language": "en",
+   "duration": 2749.49,
+   "slots": 7,
+   "ad_minutes": 4.27,
+   "takes": [
+    {
+     "request_url": "https://podtrac.com/pts/redirect.mp3/pdrl.fm/18db03/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c0ae8c6e-22f0-4e9b-ac1c-ae390037ac53/ebb3c9a0-1133-4bd1-9262-b4f10119a10b/audio.mp3?utm_source=Podcast&in_playlist=7f5a4714-6b10-4ccf-a424-ae390037ac70&_take=0",
+     "final_url": "https://26823.mc.tritondigital.com/OMNY_CAUTIONARYTALESWITHTIMHARFORD_PODCAST_P/media-session/83915aa5-1639-4803-a64c-2eb4e0381915/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c0ae8c6e-22f0-4e9b-ac1c-ae390037ac53/ebb3c9a0-1133-4bd1-9262-b4f10119a10b/audio/direct/t1793333001/Why_Miners_See_Ghosts_Halloween_Season.mp3?t=1793333001&starship-episode-id=85c366ab-6f62-420e-90d8-5dc722512705&in_playlist=7f5a4714-6b10-4ccf-a424-ae390037ac70&utm_source=Podcast&_take=0",
+     "bytes": 44076935,
+     "seconds": 44.2,
+     "ua": "PocketCasts/8.0 (Android 14; Pixel 8)",
+     "take": 0,
+     "md5": "4ee38950356a617505c099774d195b8a",
+     "duration": 2749.5
+    },
+    {
+     "request_url": "https://podtrac.com/pts/redirect.mp3/pdrl.fm/18db03/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c0ae8c6e-22f0-4e9b-ac1c-ae390037ac53/ebb3c9a0-1133-4bd1-9262-b4f10119a10b/audio.mp3?utm_source=Podcast&in_playlist=7f5a4714-6b10-4ccf-a424-ae390037ac70&_take=1",
+     "final_url": "https://26823.mc.tritondigital.com/OMNY_CAUTIONARYTALESWITHTIMHARFORD_PODCAST_P/media-session/30830ae3-a412-4a5c-a728-066bc83c7d1c/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c0ae8c6e-22f0-4e9b-ac1c-ae390037ac53/ebb3c9a0-1133-4bd1-9262-b4f10119a10b/audio/direct/t1793333001/Why_Miners_See_Ghosts_Halloween_Season.mp3?t=1793333001&starship-episode-id=85c366ab-6f62-420e-90d8-5dc722512705&in_playlist=7f5a4714-6b10-4ccf-a424-ae390037ac70&utm_source=Podcast&_take=1",
+     "bytes": 43308726,
+     "seconds": 46.1,
+     "ua": "PocketCasts/7.60 (iPhone15,2; iOS 17.4)",
+     "take": 1,
+     "md5": "92905c57588e99a8b16383921094a4ce",
+     "duration": 2701.5
+    }
+   ]
+  }
+ }
+}

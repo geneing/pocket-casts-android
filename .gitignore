@@ -80,3 +80,7 @@ scratch/
 
 # Local secrets for device testing
 .env
+
+# Local tooling / secrets
+secrets/
+.codegraph/

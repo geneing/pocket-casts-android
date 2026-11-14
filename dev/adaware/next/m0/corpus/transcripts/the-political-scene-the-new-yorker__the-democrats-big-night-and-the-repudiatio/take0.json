@@ -1,0 +1,2854 @@
+{
+ "duration": 2361.36,
+ "language": "en",
+ "segments": [
+  {
+   "start": 2.58,
+   "end": 11.11,
+   "text": "Last night, the Democrats made gains in both the House and the Senate beyond anyone's wildest imagination."
+  },
+  {
+   "start": 11.11,
+   "end": 16.11,
+   "text": "As we record this podcast on Wednesday, November 4th, the day after the midterm elections,"
+  },
+  {
+   "start": 16.11,
+   "end": 25.11,
+   "text": "Mississippi, a deep red state that no one thought was in play, is nearly tied with the decent likelihood that the Democratic Senate candidate may win."
+  },
+  {
+   "start": 25.11,
+   "end": 32.18,
+   "text": "We're still waiting for some races to be called, but the Democrats are projected to win more than 250 seats in the House,"
+  },
+  {
+   "start": 32.18,
+   "end": 34.42,
+   "text": "and at least 54 seats in the Senate,"
+  },
+  {
+   "start": 34.42,
+   "end": 37.34,
+   "text": "completely reshaping the balance of power in Washington,"
+  },
+  {
+   "start": 37.34,
+   "end": 39.46,
+   "text": "potentially for years to come."
+  },
+  {
+   "start": 39.46,
+   "end": 41.1,
+   "text": "In the lead-up to the midterms,"
+  },
+  {
+   "start": 41.1,
+   "end": 44.02,
+   "text": "we spoke a lot about how these elections were largely symbolic,"
+  },
+  {
+   "start": 44.02,
+   "end": 46.46,
+   "text": "a referendum on President Donald Trump."
+  },
+  {
+   "start": 46.46,
+   "end": 49.06,
+   "text": "But given the sheer scale of the Democratic victories,"
+  },
+  {
+   "start": 49.06,
+   "end": 50.78,
+   "text": "it's worth talking about the tangible things"
+  },
+  {
+   "start": 50.78,
+   "end": 52.46,
+   "text": "that are actually possible now."
+  },
+  {
+   "start": 52.46,
+   "end": 54.74,
+   "text": "In the likelihood, the Democrats will continue"
+  },
+  {
+   "start": 54.74,
+   "end": 57.05,
+   "text": "to build on last night's momentum."
+  },
+  {
+   "start": 57.05,
+   "end": 59.49,
+   "text": "Earlier today, I sat down with David Remnick,"
+  },
+  {
+   "start": 59.49,
+   "end": 60.81,
+   "text": "the editor of The New Yorker,"
+  },
+  {
+   "start": 60.81,
+   "end": 62.49,
+   "text": "and the staff writers Vincent Cunningham"
+  },
+  {
+   "start": 62.49,
+   "end": 67.05,
+   "text": "and Benjamin Wallace-Wells for a live-streamed conversation on Substack Live for the New"
+  },
+  {
+   "start": 67.05,
+   "end": 71.37,
+   "text": "Yorker. We talked about the biggest takeaways from last night, what the results might mean"
+  },
+  {
+   "start": 71.37,
+   "end": 75.53,
+   "text": "for both parties, and what they could tell us about the future of American politics."
+  },
+  {
+   "start": 75.53,
+   "end": 79.45,
+   "text": "This is the political scene. I'm Taylor Foggett and I'm a senior editor at The New Yorker."
+  },
+  {
+   "start": 79.45,
+   "end": 89.18,
+   "text": "Well, thanks for being here, guys. First, I thought that we could start by talking about"
+  },
+  {
+   "start": 89.18,
+   "end": 92.78,
+   "text": "the biggest takeaways from last night that go beyond the repudiation of Trump."
+  },
+  {
+   "start": 93.34,
+   "end": 97.58,
+   "text": "What did last night tell you about the country or about how to win in certain places"
+  },
+  {
+   "start": 97.58,
+   "end": 101.26,
+   "text": "that might hold true even after Trump is gone."
+  },
+  {
+   "start": 101.26,
+   "end": 104.22,
+   "text": "David, would you like to start since you're our boss?"
+  },
+  {
+   "start": 104.22,
+   "end": 108.14,
+   "text": "Or would you like to go last since you're our boss?"
+  },
+  {
+   "start": 108.14,
+   "end": 108.7,
+   "text": "Sure."
+  },
+  {
+   "start": 108.7,
+   "end": 114.06,
+   "text": "I think there's what's obviously true and maybe what we hope is true in our heart."
+  },
+  {
+   "start": 114.06,
+   "end": 118.3,
+   "text": "What's obviously true is people were fed up with high prices"
+  },
+  {
+   "start": 118.3,
+   "end": 122.3,
+   "text": "with the Iran War and a number of very concrete"
+  },
+  {
+   "start": 122.3,
+   "end": 126.06,
+   "text": "policy issues because after all it's only two years since Trump"
+  },
+  {
+   "start": 126.06,
+   "end": 129.9,
+   "text": "beat the hell out of his opponent in the presidential race."
+  },
+  {
+   "start": 129.9,
+   "end": 135.5,
+   "text": "What we hope is true, too, is that there was a repudiation of some of the overall qualities"
+  },
+  {
+   "start": 135.5,
+   "end": 142.38,
+   "text": "of the Trump administration and MAGA, the cruelty, the corruption, and things like that."
+  },
+  {
+   "start": 142.38,
+   "end": 148.46,
+   "text": "It's hard to read it because when you listen to pollsters, they tend to focus on what's"
+  },
+  {
+   "start": 148.46,
+   "end": 152.14,
+   "text": "always called kitchen table issues and things like that."
+  },
+  {
+   "start": 152.14,
+   "end": 157.86,
+   "text": "I have a hard time believing that it was only the price of groceries, only the price of"
+  },
+  {
+   "start": 157.86,
+   "end": 162.3,
+   "text": "gas, not to diminish by one iota the importance of those things."
+  },
+  {
+   "start": 162.3,
+   "end": 164.3,
+   "text": "So I think they fall into two camps for me."
+  },
+  {
+   "start": 164.3,
+   "end": 165.94,
+   "text": "Ben, what do you think?"
+  },
+  {
+   "start": 165.94,
+   "end": 170.98,
+   "text": "I think that this scale here is really striking and what it implies."
+  },
+  {
+   "start": 170.98,
+   "end": 178.14,
+   "text": "We're looking at a map in which Texas was won by the Democrats by 13 percentage points,"
+  },
+  {
+   "start": 178.14,
+   "end": 182.98,
+   "text": "Georgia was won by 18 points, that North Carolina was won by almost 20."
+  },
+  {
+   "start": 182.98,
+   "end": 188.42,
+   "text": "And what that means is that a huge number of people out there who voted for Trump in"
+  },
+  {
+   "start": 188.42,
+   "end": 191.5,
+   "text": "2024 changed their minds."
+  },
+  {
+   "start": 191.5,
+   "end": 197.34,
+   "text": "And for the whole Trump era, I and many other political journalists have been writing about"
+  },
+  {
+   "start": 197.34,
+   "end": 200.22,
+   "text": "the country as if it's just demographically fixed."
+  },
+  {
+   "start": 200.22,
+   "end": 201.94,
+   "text": "You are who you are."
+  },
+  {
+   "start": 201.94,
+   "end": 204.86,
+   "text": "somewhere in this kind of red versus blue, you know,"
+  },
+  {
+   "start": 204.86,
+   "end": 209.06,
+   "text": "squintage situation where maybe things move a little bit one way,"
+  },
+  {
+   "start": 209.06,
+   "end": 211.9,
+   "text": "one year and a little bit the other way the other year."
+  },
+  {
+   "start": 211.9,
+   "end": 215.82,
+   "text": "But what we're talking about is actual human agents here, you know,"
+  },
+  {
+   "start": 215.82,
+   "end": 218.34,
+   "text": "that people said for a variety of reasons,"
+  },
+  {
+   "start": 218.34,
+   "end": 223.14,
+   "text": "some of them self-interested, some of them noble, you know, whatever."
+  },
+  {
+   "start": 223.14,
+   "end": 225.78,
+   "text": "I see things differently than I saw them two years ago,"
+  },
+  {
+   "start": 225.78,
+   "end": 226.98,
+   "text": "and I'm going to vote differently."
+  },
+  {
+   "start": 226.98,
+   "end": 232.14,
+   "text": "had a huge number of people in a wide variety of places saw that."
+  },
+  {
+   "start": 232.14,
+   "end": 238.78,
+   "text": "So to me, there's something pretty pro-democratic and moving about all of that."
+  },
+  {
+   "start": 238.78,
+   "end": 243.78,
+   "text": "And I think that is to me the sort of shape that carries through a lot of these particular"
+  },
+  {
+   "start": 243.78,
+   "end": 245.18,
+   "text": "results and issues."
+  },
+  {
+   "start": 245.18,
+   "end": 247.1,
+   "text": "Yeah, I totally agree with that."
+  },
+  {
+   "start": 247.1,
+   "end": 252.46,
+   "text": "I feel like all of the conversations about redistricting that we saw before this election"
+  },
+  {
+   "start": 252.46,
+   "end": 258.18,
+   "text": "kind of pointed to that idea that we just thought that people were rigid and that someone"
+  },
+  {
+   "start": 258.18,
+   "end": 262.1,
+   "text": "who voted one way in a previous election was just going to keep doing that forever."
+  },
+  {
+   "start": 262.1,
+   "end": 267.06,
+   "text": "And so it does feel like a testament to just the ability to actually change people's minds"
+  },
+  {
+   "start": 267.06,
+   "end": 268.06,
+   "text": "at this point."
+  },
+  {
+   "start": 268.06,
+   "end": 269.78,
+   "text": "Vincent, what about you?"
+  },
+  {
+   "start": 269.78,
+   "end": 273.98,
+   "text": "Other big takeaways that don't necessarily have to do with just Trump himself?"
+  },
+  {
+   "start": 273.98,
+   "end": 274.98,
+   "text": "Yeah."
+  },
+  {
+   "start": 274.98,
+   "end": 282.14,
+   "text": "I mean, it's the scale of the Trump calamity seems to have made the possible repudiation"
+  },
+  {
+   "start": 282.14,
+   "end": 285.34,
+   "text": "of him kind of prismatic in a certain way, right?"
+  },
+  {
+   "start": 285.34,
+   "end": 292.66,
+   "text": "Like you could look at the sort of choir boy spiritual appeal of Talarico, for example,"
+  },
+  {
+   "start": 292.66,
+   "end": 296.02,
+   "text": "my main man James Talarico."
+  },
+  {
+   "start": 296.02,
+   "end": 298.54,
+   "text": "You could look at him and see something totally different."
+  },
+  {
+   "start": 298.54,
+   "end": 299.66,
+   "text": "He's talking about corruption."
+  },
+  {
+   "start": 299.66,
+   "end": 304.14,
+   "text": "He's talking about a kind of spiritual sickness that I think David's talking about."
+  },
+  {
+   "start": 304.14,
+   "end": 308.98,
+   "text": "And on the other hand, you have Abdul, I'll say Ed, who in addition to his focus on money"
+  },
+  {
+   "start": 308.98,
+   "end": 315.66,
+   "text": "in politics, foreign policy, also was really strictly talking about health care and other"
+  },
+  {
+   "start": 315.66,
+   "end": 320.44,
+   "text": "of these kitchen sink, you know, kitchen table that is, issue."
+  },
+  {
+   "start": 320.44,
+   "end": 324.92,
+   "text": "But it does seem to me though that one pattern I saw, one thing that actually made a lot"
+  },
+  {
+   "start": 324.92,
+   "end": 332.58,
+   "text": "of the winning candidates kind of stay on one side for me, was a kind of dissolving of"
+  },
+  {
+   "start": 332.58,
+   "end": 339.58,
+   "text": "the classic left and right culture issues, and instead a focus on a kind of, you know,"
+  },
+  {
+   "start": 339.58,
+   "end": 343.48,
+   "text": "hosts that talked about this a lot, the now governor of Texas."
+  },
+  {
+   "start": 343.48,
+   "end": 347.26,
+   "text": "It's not about left and right, it's about a sort of up and down populism."
+  },
+  {
+   "start": 347.26,
+   "end": 348.98,
+   "text": "You saw Taleread talking that way."
+  },
+  {
+   "start": 348.98,
+   "end": 351.06,
+   "text": "You saw, I'll say I talked in that way."
+  },
+  {
+   "start": 351.06,
+   "end": 360.1,
+   "text": "You saw many of the winning candidates sort of try to change the kind of valence of partisanship"
+  },
+  {
+   "start": 360.1,
+   "end": 365.5,
+   "text": "and talk about those above us, whether it's AI, data centers, etc."
+  },
+  {
+   "start": 365.5,
+   "end": 370.66,
+   "text": "and how their decisions are wreaking havoc in the lives of everyday people."
+  },
+  {
+   "start": 370.66,
+   "end": 372.74,
+   "text": "That seemed to me to be a theme."
+  },
+  {
+   "start": 372.74,
+   "end": 378.9,
+   "text": "Absolutely. Which specific outcomes or swings last night were you guys most surprised by?"
+  },
+  {
+   "start": 378.9,
+   "end": 383.54,
+   "text": "When you woke up this morning, which race or stat did you find yourself returning to?"
+  },
+  {
+   "start": 383.54,
+   "end": 385.06,
+   "text": "Ben, do you want to go first?"
+  },
+  {
+   "start": 385.06,
+   "end": 386.94,
+   "text": "For me, it was a rural vote."
+  },
+  {
+   "start": 386.94,
+   "end": 392.06,
+   "text": "You could, on The Times, this website was just like a marvelous thing at this point."
+  },
+  {
+   "start": 392.06,
+   "end": 399.42,
+   "text": "You could kind of mouse over these counties in southwestern Kansas or the Texas Panhandle."
+  },
+  {
+   "start": 399.42,
+   "end": 405.82,
+   "text": "And a lot of those, there's an overlap between rural and heavily Hispanic counties, but that's"
+  },
+  {
+   "start": 405.82,
+   "end": 409.02,
+   "text": "what this country is in many places."
+  },
+  {
+   "start": 409.02,
+   "end": 414.46,
+   "text": "And I don't know, it's exactly one race and it's not mediated."
+  },
+  {
+   "start": 414.46,
+   "end": 420.46,
+   "text": "mediated by the war and diesel and fertilizer prices and everything like that. But to me,"
+  },
+  {
+   "start": 420.46,
+   "end": 427.74,
+   "text": "it's pretty breathtaking to see beyond the switch of Mississippi and South Carolina and the kind"
+  },
+  {
+   "start": 427.74,
+   "end": 437.02,
+   "text": "of historic South, the seat of American conservatism for its whole history, beyond even that,"
+  },
+  {
+   "start": 437.02,
+   "end": 443.5,
+   "text": "just to see out of the way places also taking on the news of the last two years and also changing"
+  },
+  {
+   "start": 443.5,
+   "end": 448.5,
+   "text": "changing their minds was something that I did not expect, even if I might have said"
+  },
+  {
+   "start": 448.5,
+   "end": 453.46,
+   "text": "going in, as David said at the outset, Democrats might edge over the line in the Senate, and"
+  },
+  {
+   "start": 453.46,
+   "end": 455.62,
+   "text": "this is probably going to be a repugiation of Trump."
+  },
+  {
+   "start": 455.62,
+   "end": 459.66,
+   "text": "I just did not see this kind of rural turn happening."
+  },
+  {
+   "start": 459.66,
+   "end": 468.07,
+   "text": "I think it's characterized by Trump, by the failure of Trump, by the final after a decade."
+  },
+  {
+   "start": 468.07,
+   "end": 474.11,
+   "text": "It's been a decade of Trump dominating our politics, dominating our psychology, dominating"
+  },
+  {
+   "start": 474.11,
+   "end": 476.11,
+   "text": "our conversation."
+  },
+  {
+   "start": 476.11,
+   "end": 482.95,
+   "text": "And not since 1974 when the country saw Richard Nixon degrade himself and Watergate and be"
+  },
+  {
+   "start": 482.95,
+   "end": 488.75,
+   "text": "forced to resign, have we seen a wave like this, certainly not on the Democratic side."
+  },
+  {
+   "start": 488.75,
+   "end": 493.59,
+   "text": "Since 1974, I think I'm the only one in the crowd here that's old enough to remember it,"
+  },
+  {
+   "start": 493.59,
+   "end": 495.35,
+   "text": "and I remember it acutely."
+  },
+  {
+   "start": 495.35,
+   "end": 499.75,
+   "text": "It was a gigantic thing, but it was built around Watergate."
+  },
+  {
+   "start": 499.75,
+   "end": 504.35,
+   "text": "This has multi, it has many sides to it."
+  },
+  {
+   "start": 504.35,
+   "end": 509.91,
+   "text": "We see a president who's degrading himself daily, who lies in the most bold-faced way"
+  },
+  {
+   "start": 509.91,
+   "end": 514.69,
+   "text": "that even his deepest supporters know at some level what's going on."
+  },
+  {
+   "start": 514.69,
+   "end": 522.27,
+   "text": "He gets involved in just the kind of war that he ran against to his credit, I must say,"
+  },
+  {
+   "start": 522.27,
+   "end": 524.63,
+   "text": "in a certain way."
+  },
+  {
+   "start": 524.63,
+   "end": 530.15,
+   "text": "His family has been enriching itself in the most lurid and obvious way to the tune of"
+  },
+  {
+   "start": 530.15,
+   "end": 532.15,
+   "text": "billions of dollars."
+  },
+  {
+   "start": 532.15,
+   "end": 539.47,
+   "text": "Finally people just were fed up and they said to coin a literary phrase, fuck this, we will"
+  },
+  {
+   "start": 539.47,
+   "end": 541.63,
+   "text": "not take it."
+  },
+  {
+   "start": 541.63,
+   "end": 542.76,
+   "text": "That's it."
+  },
+  {
+   "start": 542.76,
+   "end": 546.36,
+   "text": "He didn't have to resign, although he's been impeached twice."
+  },
+  {
+   "start": 546.36,
+   "end": 552.2,
+   "text": "But I think the next set of questions that we have to ask ourselves, Tyler, is, okay,"
+  },
+  {
+   "start": 552.2,
+   "end": 554.64,
+   "text": "what next?"
+  },
+  {
+   "start": 554.64,
+   "end": 560.16,
+   "text": "Are we going to get immersed in impeachment hearings or are we going to now play the"
+  },
+  {
+   "start": 560.16,
+   "end": 565.92,
+   "text": "repudiation and revenge game to the degree that Trump did for the last two years?"
+  },
+  {
+   "start": 565.92,
+   "end": 573.56,
+   "text": "Or are we going to try to bulletproof ourselves against the repeat of this morally, but without"
+  },
+  {
+   "start": 573.56,
+   "end": 577.32,
+   "text": "getting caught up in it so that there's no constructive engagement with the issues that"
+  },
+  {
+   "start": 577.32,
+   "end": 583.16,
+   "text": "people are so angry about and obsessed with rightfully in their own lives?"
+  },
+  {
+   "start": 583.16,
+   "end": 588.14,
+   "text": "That's going to be the United States Congress is going to have to come to grips with their"
+  },
+  {
+   "start": 588.14,
+   "end": 592.44,
+   "text": "constituents and derive a proper sense of meaning from this event."
+  },
+  {
+   "start": 592.44,
+   "end": 594.44,
+   "text": "It just can't be an event."
+  },
+  {
+   "start": 594.44,
+   "end": 603.22,
+   "text": "It has to be elaborated upon in some constructive way to make people's lives better and to restore"
+  },
+  {
+   "start": 603.22,
+   "end": 604.88,
+   "text": "the moral health of the country."
+  },
+  {
+   "start": 604.88,
+   "end": 609.88,
+   "text": "Yeah, that's a great segue into an audience question we got, which is just what kinds"
+  },
+  {
+   "start": 609.88,
+   "end": 616.5,
+   "text": "of scenarios are possible now in terms of regulatory agenda, enterprises, Democrats"
+  },
+  {
+   "start": 616.5,
+   "end": 621.58,
+   "text": "are projected to win roughly 258 House seats and at least 54 in the Senate with a possible"
+  },
+  {
+   "start": 621.58,
+   "end": 624.04,
+   "text": "max of 56."
+  },
+  {
+   "start": 624.04,
+   "end": 627.6,
+   "text": "What is possible now that might not have been possible before in terms of actually pushing"
+  },
+  {
+   "start": 627.6,
+   "end": 630.24,
+   "text": "forward an agenda or stopping Trump's agenda?"
+  },
+  {
+   "start": 630.24,
+   "end": 633.48,
+   "text": "And what would you guys like to see or anticipate seeing?"
+  },
+  {
+   "start": 633.48,
+   "end": 640.02,
+   "text": "Part of this is going to be a reintroduction for the American public in exactly how hard"
+  },
+  {
+   "start": 640.02,
+   "end": 643.66,
+   "text": "it is to do things even with pretty serious majorities."
+  },
+  {
+   "start": 643.66,
+   "end": 648.74,
+   "text": "I mean, since the middle of the Obama administration, we've all come to accept that you actually"
+  },
+  {
+   "start": 648.74,
+   "end": 651.54,
+   "text": "can't do anything unless you have 60 senators or whatever."
+  },
+  {
+   "start": 651.54,
+   "end": 657.38,
+   "text": "So there is going to be, I think, a moment of sobering kind of reintegration of what"
+  },
+  {
+   "start": 657.38,
+   "end": 658.38,
+   "text": "is possible."
+  },
+  {
+   "start": 658.38,
+   "end": 662.34,
+   "text": "But I do think that much of the possibilities are, of course, defensive."
+  },
+  {
+   "start": 662.34,
+   "end": 666.58,
+   "text": "There are certain things, there are certain forms of vandalism, both to institutions,"
+  },
+  {
+   "start": 666.58,
+   "end": 672.58,
+   "text": "but also to the sort of body politic I'm thinking about, other things, that this incredibly"
+  },
+  {
+   "start": 672.58,
+   "end": 677.66,
+   "text": "lawless president will have a bit of a shorter leash."
+  },
+  {
+   "start": 677.66,
+   "end": 682.34,
+   "text": "And I think the Democrats will want to be seen doing some restorative work to things,"
+  },
+  {
+   "start": 682.34,
+   "end": 685.54,
+   "text": "places, institutions that Trump has sort of trashed."
+  },
+  {
+   "start": 685.54,
+   "end": 688.7,
+   "text": "I do think that there also is a possibility."
+  },
+  {
+   "start": 688.7,
+   "end": 693.82,
+   "text": "And this is maybe just me still kind of trying to figure out the tweet sent earlier today"
+  },
+  {
+   "start": 693.82,
+   "end": 698.22,
+   "text": "by JD Vance where he's like, everybody knows that the problem is the Iran war."
+  },
+  {
+   "start": 698.22,
+   "end": 705.72,
+   "text": "I do think there will be some points of possible, just because of Trump's sense of drama, possible"
+  },
+  {
+   "start": 705.72,
+   "end": 709.3,
+   "text": "working together to actually draw down that conflict."
+  },
+  {
+   "start": 709.3,
+   "end": 712.02,
+   "text": "Trump hates losers and he hates losing situations."
+  },
+  {
+   "start": 712.02,
+   "end": 719.02,
+   "text": "And I don't know if he fully accepts J.D. Vance's diagnosis, and I'm not sure he appreciates"
+  },
+  {
+   "start": 719.02,
+   "end": 722.14,
+   "text": "that diagnosis being shared on X.com."
+  },
+  {
+   "start": 722.14,
+   "end": 729.7,
+   "text": "But I do think that he will quickly tire of at least that part of his problem."
+  },
+  {
+   "start": 729.7,
+   "end": 734.78,
+   "text": "And perhaps there is a way for these newly constituted chambers of Congress to kind of"
+  },
+  {
+   "start": 734.78,
+   "end": 735.78,
+   "text": "end that together."
+  },
+  {
+   "start": 735.78,
+   "end": 740.79,
+   "text": "More on the results of the midterms in just a moment."
+  },
+  {
+   "start": 740.79,
+   "end": 752.26,
+   "text": "This is the political scene from The New Yorker."
+  },
+  {
+   "start": 752.26,
+   "end": 757.46,
+   "text": "Wired has always put a microscope on the people, power, and forces shaping our world."
+  },
+  {
+   "start": 757.46,
+   "end": 761.94,
+   "text": "Uncanny Valley brings that same fearless reporting straight to your feed."
+  },
+  {
+   "start": 761.94,
+   "end": 763.86,
+   "text": "Is Doge finally over?"
+  },
+  {
+   "start": 763.86,
+   "end": 767.44,
+   "text": "Will AI actually democratize American healthcare?"
+  },
+  {
+   "start": 767.44,
+   "end": 771.34,
+   "text": "Each week, Wired journalists from across the newsroom are going to unpack where politics,"
+  },
+  {
+   "start": 771.34,
+   "end": 773.86,
+   "text": "technology, and Silicon Valley collide."
+  },
+  {
+   "start": 773.86,
+   "end": 779.46,
+   "text": "From conversations with tech leaders across Silicon Valley, internet fandom investigations,"
+  },
+  {
+   "start": 779.46,
+   "end": 781.74,
+   "text": "and government crackdowns on rigged gambling,"
+  },
+  {
+   "start": 781.74,
+   "end": 783.98,
+   "text": "we're taking you all over the news cycle,"
+  },
+  {
+   "start": 783.98,
+   "end": 786.34,
+   "text": "going straight inside the priorities, pressures,"
+  },
+  {
+   "start": 786.34,
+   "end": 789.5,
+   "text": "and power plays, driving today's biggest decisions."
+  },
+  {
+   "start": 789.5,
+   "end": 791.26,
+   "text": "Uncanny Valley tackles the questions"
+  },
+  {
+   "start": 791.26,
+   "end": 792.38,
+   "text": "keeping you up at night,"
+  },
+  {
+   "start": 792.38,
+   "end": 793.78,
+   "text": "and helps make sense of the future"
+  },
+  {
+   "start": 793.78,
+   "end": 795.58,
+   "text": "taking shape right now."
+  },
+  {
+   "start": 795.58,
+   "end": 797.62,
+   "text": "Listen to new episodes every Thursday,"
+  },
+  {
+   "start": 797.62,
+   "end": 806.47,
+   "text": "wherever you get your podcasts."
+  },
+  {
+   "start": 806.47,
+   "end": 807.51,
+   "text": "I'm Vincent Cunningham."
+  },
+  {
+   "start": 807.51,
+   "end": 808.47,
+   "text": "I'm Nomi Frye."
+  },
+  {
+   "start": 808.47,
+   "end": 809.51,
+   "text": "I'm Alex Schwartz,"
+  },
+  {
+   "start": 809.51,
+   "end": 812.23,
+   "text": "and we host Critics at Large from The New Yorker."
+  },
+  {
+   "start": 812.23,
+   "end": 814.15,
+   "text": "Each week we pick a starting point,"
+  },
+  {
+   "start": 814.15,
+   "end": 816.67,
+   "text": "The new novel you can't stop thinking about,"
+  },
+  {
+   "start": 816.67,
+   "end": 818.79,
+   "text": "the movie everybody's seeing this weekend,"
+  },
+  {
+   "start": 818.79,
+   "end": 821.39,
+   "text": "and we kind of go galaxy brand with it."
+  },
+  {
+   "start": 821.39,
+   "end": 823.79,
+   "text": "Right, we take the ideas at the center of these things"
+  },
+  {
+   "start": 823.79,
+   "end": 826.65,
+   "text": "and trace them across history, across mediums,"
+  },
+  {
+   "start": 826.65,
+   "end": 830.05,
+   "text": "all to get to the bottom of why this particular text"
+  },
+  {
+   "start": 830.05,
+   "end": 832.71,
+   "text": "is important right now in politics and culture"
+  },
+  {
+   "start": 832.71,
+   "end": 834.41,
+   "text": "and also in your everyday life."
+  },
+  {
+   "start": 834.41,
+   "end": 836.19,
+   "text": "We go highbrow, we go lowbrow,"
+  },
+  {
+   "start": 836.19,
+   "end": 837.99,
+   "text": "we go everything in between."
+  },
+  {
+   "start": 837.99,
+   "end": 840.07,
+   "text": "Food culture, the meme culture,"
+  },
+  {
+   "start": 840.07,
+   "end": 842.59,
+   "text": "Charlie XCX to Tony Morrison."
+  },
+  {
+   "start": 842.59,
+   "end": 844.35,
+   "text": "K-pop to the Kennedys."
+  },
+  {
+   "start": 844.35,
+   "end": 846.43,
+   "text": "From horror movies to heated rivalry."
+  },
+  {
+   "start": 846.43,
+   "end": 848.11,
+   "text": "From the Oscars to the Met Gala."
+  },
+  {
+   "start": 848.11,
+   "end": 849.63,
+   "text": "The Golden Bachelor of Wuthering Heights."
+  },
+  {
+   "start": 849.63,
+   "end": 851.87,
+   "text": "Great expectations to desperate housewives."
+  },
+  {
+   "start": 851.87,
+   "end": 854.23,
+   "text": "That's what we're talking about over here."
+  },
+  {
+   "start": 854.23,
+   "end": 855.39,
+   "text": "We're having fun."
+  },
+  {
+   "start": 855.39,
+   "end": 857.39,
+   "text": "It's Critics Alarch from The New Yorker."
+  },
+  {
+   "start": 857.39,
+   "end": 862.82,
+   "text": "Every Thursday, wherever you get your podcasts."
+  },
+  {
+   "start": 862.82,
+   "end": 864.34,
+   "text": "Hi, my name is Zach Barron."
+  },
+  {
+   "start": 864.34,
+   "end": 867.02,
+   "text": "I'm the Senior Special Projects Editor at GQ."
+  },
+  {
+   "start": 867.02,
+   "end": 869.34,
+   "text": "And I am pleased to introduce one more question,"
+  },
+  {
+   "start": 869.34,
+   "end": 871.66,
+   "text": "GQ's new weekly interview show."
+  },
+  {
+   "start": 871.66,
+   "end": 872.9,
+   "text": "Over the years in the magazine,"
+  },
+  {
+   "start": 872.9,
+   "end": 877.18,
+   "text": "I've written dozens of cover stories and traveled the world to talk to and write about some"
+  },
+  {
+   "start": 877.18,
+   "end": 880.26,
+   "text": "of the most interesting people in the GQ universe."
+  },
+  {
+   "start": 880.26,
+   "end": 885.42,
+   "text": "From Martin Scorsese, to George Clooney and Brad Pitt, to Outcast Andre 3000."
+  },
+  {
+   "start": 885.42,
+   "end": 886.66,
+   "text": "And now I'll be doing it weekly."
+  },
+  {
+   "start": 886.66,
+   "end": 890.3,
+   "text": "I'm going to sit down with some of the most interesting people in the world and figure"
+  },
+  {
+   "start": 890.3,
+   "end": 893.3,
+   "text": "out what makes them, well, them."
+  },
+  {
+   "start": 893.3,
+   "end": 896.64,
+   "text": "New episodes of One More Question will be available each week, wherever you get your"
+  },
+  {
+   "start": 896.64,
+   "end": 911.94,
+   "text": "podcasts or on YouTube if seeing people in chairs is more your thing."
+  },
+  {
+   "start": 911.94,
+   "end": 915.38,
+   "text": "And lead up to the midterms, Trump kept saying that he was going to be Mr. Vito for the rest"
+  },
+  {
+   "start": 915.38,
+   "end": 919.92,
+   "text": "of his term, but then he told Politico last night, we're going to work with the Democrats"
+  },
+  {
+   "start": 919.92,
+   "end": 921.78,
+   "text": "to make sure that things go well for our country."
+  },
+  {
+   "start": 921.78,
+   "end": 926.62,
+   "text": "And this was also the same night that he pretty quickly accepted the election results, which"
+  },
+  {
+   "start": 926.62,
+   "end": 932.26,
+   "text": "I think a lot of people were probably surprised by given his history there."
+  },
+  {
+   "start": 932.26,
+   "end": 936.22,
+   "text": "What are the chances of Trump actually working with the Democrats or vice versa?"
+  },
+  {
+   "start": 936.22,
+   "end": 940.3,
+   "text": "And I mean, do you think that there's genuine appetite on either side of the aisle for that"
+  },
+  {
+   "start": 940.3,
+   "end": 945.74,
+   "text": "kind of collaboration. Maybe I'm just too cynical at this point, but David, what do you think?"
+  },
+  {
+   "start": 945.74,
+   "end": 952.18,
+   "text": "Hope was the thing with feathers, whatever that meant. So, you know, maybe, maybe, and"
+  },
+  {
+   "start": 952.18,
+   "end": 959.02,
+   "text": "maybe we'll see a new unbelievably gracious, generous, public-spirited Donald Trump. But"
+  },
+  {
+   "start": 959.02,
+   "end": 962.9,
+   "text": "I really wouldn't count on it, Tyler. I think if we learn anything over 10 years, he is"
+  },
+  {
+   "start": 962.9,
+   "end": 967.5,
+   "text": "who he is. And you know the old saying, as you get older, you are yourself only more"
+  },
+  {
+   "start": 967.5,
+   "end": 971.86,
+   "text": "So, and he, God knows he's more so."
+  },
+  {
+   "start": 971.86,
+   "end": 980.04,
+   "text": "So I, you know, last night, maybe he, he, you know, consulted his better angels somewhere,"
+  },
+  {
+   "start": 980.04,
+   "end": 982.24,
+   "text": "wherever they reside."
+  },
+  {
+   "start": 982.24,
+   "end": 984.96,
+   "text": "But I wouldn't count on that going on for too long."
+  },
+  {
+   "start": 984.96,
+   "end": 992.28,
+   "text": "What it can do, this tsunami, one of the obvious things is it can prevent horrendous Supreme"
+  },
+  {
+   "start": 992.28,
+   "end": 997.44,
+   "text": "Court appointments or it might block them entirely in the tradition of Mitch McConnell."
+  },
+  {
+   "start": 997.44,
+   "end": 998.82,
+   "text": "It's important."
+  },
+  {
+   "start": 998.82,
+   "end": 1005.12,
+   "text": "It can investigate really the most lurid and most outlandish instances of corruption"
+  },
+  {
+   "start": 1005.12,
+   "end": 1009.0,
+   "text": "among the Trump family, the White Coss and Kushners and all the rest."
+  },
+  {
+   "start": 1009.0,
+   "end": 1010.52,
+   "text": "It can do that."
+  },
+  {
+   "start": 1010.52,
+   "end": 1015.24,
+   "text": "It can set down markers in terms of legislation so that when and if a Democratic president"
+  },
+  {
+   "start": 1015.24,
+   "end": 1021.44,
+   "text": "is elected, you might see a greater improvement in, say, medical care."
+  },
+  {
+   "start": 1021.44,
+   "end": 1024.04,
+   "text": "I mean, we still have a broken system."
+  },
+  {
+   "start": 1024.04,
+   "end": 1027.48,
+   "text": "It got largely improved under Obama, but it's far, far from perfect."
+  },
+  {
+   "start": 1027.48,
+   "end": 1034.44,
+   "text": "And Medicare for all, I think of all the progressive issues is the one that has the greatest chance"
+  },
+  {
+   "start": 1034.44,
+   "end": 1040.08,
+   "text": "of getting a fuller sense of support because it's still so broken and so expensive."
+  },
+  {
+   "start": 1040.08,
+   "end": 1041.24,
+   "text": "I think that's just a start."
+  },
+  {
+   "start": 1041.24,
+   "end": 1044.6,
+   "text": "I'm sure Ben and Vincent and you, Tyler, have much more to say on it."
+  },
+  {
+   "start": 1044.6,
+   "end": 1047.52,
+   "text": "Well, actually, I want to go back to what you were saying about the Supreme Court, just"
+  },
+  {
+   "start": 1047.52,
+   "end": 1052.68,
+   "text": "because we got an audience question exactly about that, which is, do we expect just as"
+  },
+  {
+   "start": 1052.68,
+   "end": 1057.64,
+   "text": "Thomas and Alito to retire before Republicans hand over control of the houses?"
+  },
+  {
+   "start": 1057.64,
+   "end": 1064.12,
+   "text": "Well, Alito leaked, very deliberately leaked the idea that he'd like to exit as quickly as possible,"
+  },
+  {
+   "start": 1064.76,
+   "end": 1069.0,
+   "text": "but that's going to be much more complicated for him."
+  },
+  {
+   "start": 1069.0,
+   "end": 1075.0,
+   "text": "It's really complicated. The Republicans are looking at a medium-term landscape where they're"
+  },
+  {
+   "start": 1075.72,
+   "end": 1081.48,
+   "text": "really unlikely to regain control of the Senate in 2028, whatever happens. They had such an"
+  },
+  {
+   "start": 1081.48,
+   "end": 1087.56,
+   "text": "advantageous year in 2024 that they're pretty unlikely to regain control of the Senate in"
+  },
+  {
+   "start": 1087.56,
+   "end": 1093.32,
+   "text": "2030. Democrats just won senators from South Carolina, from North Carolina, from Georgia,"
+  },
+  {
+   "start": 1093.32,
+   "end": 1099.32,
+   "text": "from Texas, from Iowa, from Kansas, from Ohio, all red states, six-year terms, possibly even"
+  },
+  {
+   "start": 1099.32,
+   "end": 1105.8,
+   "text": "Mississippi. And so we are in a completely different world for all of these calculations"
+  },
+  {
+   "start": 1105.8,
+   "end": 1111.4,
+   "text": "than we were a short time ago. Ron DeSantis was last night sort of pushing the idea that"
+  },
+  {
+   "start": 1111.4,
+   "end": 1114.96,
+   "text": "that maybe this was the moment to do something quick."
+  },
+  {
+   "start": 1114.96,
+   "end": 1118.96,
+   "text": "But given the scale of what happened,"
+  },
+  {
+   "start": 1118.96,
+   "end": 1120.88,
+   "text": "I think that's gonna be hard."
+  },
+  {
+   "start": 1120.88,
+   "end": 1125.44,
+   "text": "I would say as a sort of bar to cling onto that,"
+  },
+  {
+   "start": 1125.44,
+   "end": 1127.64,
+   "text": "there's a cultural significance to this"
+  },
+  {
+   "start": 1127.64,
+   "end": 1131.36,
+   "text": "that I think is hard to overstate."
+  },
+  {
+   "start": 1131.36,
+   "end": 1134.16,
+   "text": "For the last two years especially,"
+  },
+  {
+   "start": 1134.16,
+   "end": 1135.96,
+   "text": "we've been living under the assumption"
+  },
+  {
+   "start": 1135.96,
+   "end": 1138.16,
+   "text": "that what the American people want"
+  },
+  {
+   "start": 1138.16,
+   "end": 1140.68,
+   "text": "is a turn away from what was called wokeness,"
+  },
+  {
+   "start": 1140.68,
+   "end": 1148.6,
+   "text": "turn away from internationalism, a turn away from the kind of 20th century form of meritocracy,"
+  },
+  {
+   "start": 1149.64,
+   "end": 1155.16,
+   "text": "a turn towards billionaires and kind of a deference to right-wing authoritarianism and"
+  },
+  {
+   "start": 1155.16,
+   "end": 1160.12,
+   "text": "all its forms. And that has had something to do with politics, but it's also played out in"
+  },
+  {
+   "start": 1161.48,
+   "end": 1168.04,
+   "text": "what researchers say on grants that they submit to the NIH, on how law firms behave on what kinds"
+  },
+  {
+   "start": 1168.04,
+   "end": 1174.52,
+   "text": "of comedians I get served. It's been all Tony Hinchcliffe and Shane Gillis for years"
+  },
+  {
+   "start": 1174.52,
+   "end": 1181.32,
+   "text": "and years at this point. And I don't know that we're going back to what Alexandria Ocasio-Cortez"
+  },
+  {
+   "start": 1181.32,
+   "end": 1188.28,
+   "text": "called Peak Woke or Woke One recently, but it's going to be different. And all of those"
+  },
+  {
+   "start": 1188.28,
+   "end": 1194.32,
+   "text": "calculations that people made under the assumption that the basic signal that the public was"
+  },
+  {
+   "start": 1194.32,
+   "end": 1199.3,
+   "text": "ascending was that it wanted a kind of retrenchment culturally."
+  },
+  {
+   "start": 1199.3,
+   "end": 1201.18,
+   "text": "All those signals are going to be different."
+  },
+  {
+   "start": 1201.18,
+   "end": 1207.3,
+   "text": "And I think that in addition to the kind of tangible questions of what are Democrats going"
+  },
+  {
+   "start": 1207.3,
+   "end": 1212.38,
+   "text": "to try to do, what will they be able to do with Trump as president, there's just a kind"
+  },
+  {
+   "start": 1212.38,
+   "end": 1216.58,
+   "text": "of more basic uncertainty that I have about like, what is this country and where is it"
+  },
+  {
+   "start": 1216.58,
+   "end": 1217.58,
+   "text": "headed?"
+  },
+  {
+   "start": 1217.58,
+   "end": 1223.34,
+   "text": "And I think that's suddenly a far more interesting question or set of questions than it was very"
+  },
+  {
+   "start": 1223.34,
+   "end": 1228.34,
+   "text": "recently and so you know all of that is sort of open suddenly too."
+  },
+  {
+   "start": 1228.34,
+   "end": 1235.41,
+   "text": "We'll have more of the political scene from The New Yorker in just a moment."
+  },
+  {
+   "start": 1235.41,
+   "end": 1250.48,
+   "text": "From Vanity Fair, I'm Mark Aducci and I want to tell you about our new show Fair Game."
+  },
+  {
+   "start": 1250.48,
+   "end": 1254.48,
+   "text": "On every episode of Fair Game, I'll sit down with a leading character in our culture,"
+  },
+  {
+   "start": 1254.48,
+   "end": 1258.48,
+   "text": "from the worlds of Hollywood, politics, style, Silicon Valley and beyond."
+  },
+  {
+   "start": 1258.48,
+   "end": 1262.55,
+   "text": "Fair Game is a deep dive into some of the personalities that shape our world"
+  },
+  {
+   "start": 1262.55,
+   "end": 1264.55,
+   "text": "and the stories that you need to hear."
+  },
+  {
+   "start": 1264.55,
+   "end": 1268.55,
+   "text": "think everyone and everything that you'd read about in the pages of Vanity Fair."
+  },
+  {
+   "start": 1268.55,
+   "end": 1274.55,
+   "text": "So join me, Mark Aducci, on YouTube, VanityFair.com, and wherever you listen to podcasts."
+  },
+  {
+   "start": 1274.55,
+   "end": 1276.55,
+   "text": "It's all fair game."
+  },
+  {
+   "start": 1276.55,
+   "end": 1286.21,
+   "text": "Hi, I'm Nicole Phelps, Global Fashion News and Futures Director at Vogue,"
+  },
+  {
+   "start": 1286.21,
+   "end": 1288.21,
+   "text": "and co-host of the Run Through Podcast."
+  },
+  {
+   "start": 1288.21,
+   "end": 1293.21,
+   "text": "Each week on the show, our listeners get an all-access pass into the world of Vogue."
+  },
+  {
+   "start": 1293.21,
+   "end": 1299.21,
+   "text": "On Tuesdays, join me as I interview influential designers like Calvin Klein, Rachel Scott,"
+  },
+  {
+   "start": 1299.21,
+   "end": 1300.77,
+   "text": "and Simone Bellotti."
+  },
+  {
+   "start": 1300.77,
+   "end": 1302.53,
+   "text": "On Thursdays, joined Chloe Mao,"
+  },
+  {
+   "start": 1302.53,
+   "end": 1304.69,
+   "text": "head of editorial content at Vogue US,"
+  },
+  {
+   "start": 1304.69,
+   "end": 1307.93,
+   "text": "and Chou Manati, British Vogue's head of editorial content,"
+  },
+  {
+   "start": 1307.93,
+   "end": 1310.21,
+   "text": "as they explore fashion through the lens of culture"
+  },
+  {
+   "start": 1310.21,
+   "end": 1313.41,
+   "text": "with guests like Doja Cat and Margot Robbie."
+  },
+  {
+   "start": 1313.41,
+   "end": 1315.61,
+   "text": "Listen and watch the run through with Vogue"
+  },
+  {
+   "start": 1315.61,
+   "end": 1321.55,
+   "text": "wherever you get your podcasts and Vogue's YouTube channel."
+  },
+  {
+   "start": 1321.55,
+   "end": 1323.03,
+   "text": "Hi, my name is Zach Barron,"
+  },
+  {
+   "start": 1323.03,
+   "end": 1325.75,
+   "text": "I'm the senior special project editor at GQ,"
+  },
+  {
+   "start": 1325.75,
+   "end": 1328.07,
+   "text": "and I am pleased to introduce one more question,"
+  },
+  {
+   "start": 1328.07,
+   "end": 1330.35,
+   "text": "GQ's new weekly interview show."
+  },
+  {
+   "start": 1330.35,
+   "end": 1334.31,
+   "text": "Over the years in the magazine, I've written dozens of cover stories and traveled the world"
+  },
+  {
+   "start": 1334.31,
+   "end": 1339.03,
+   "text": "to talk to and write about some of the most interesting people in the GQ universe."
+  },
+  {
+   "start": 1339.03,
+   "end": 1344.15,
+   "text": "From Martin Scorsese, to George Clooney and Brad Pitt, to Outcast Andre 3000."
+  },
+  {
+   "start": 1344.15,
+   "end": 1345.39,
+   "text": "And now I'll be doing it weekly."
+  },
+  {
+   "start": 1345.39,
+   "end": 1349.03,
+   "text": "I'm going to sit down with some of the most interesting people in the world and figure"
+  },
+  {
+   "start": 1349.03,
+   "end": 1351.19,
+   "text": "out what makes them, well, them."
+  },
+  {
+   "start": 1351.19,
+   "end": 1355.37,
+   "text": "New episodes of One More Question will be available each week, wherever you get your"
+  },
+  {
+   "start": 1355.37,
+   "end": 1371.96,
+   "text": "podcasts or on YouTube, if seeing people in chairs is more your thing."
+  },
+  {
+   "start": 1371.96,
+   "end": 1375.84,
+   "text": "I want to talk a little bit more about Texas just because I feel like that was one of the"
+  },
+  {
+   "start": 1375.84,
+   "end": 1377.44,
+   "text": "biggest stories of last night."
+  },
+  {
+   "start": 1377.44,
+   "end": 1381.88,
+   "text": "And I know I might be getting ahead of myself here, but it seems that if Texas continues"
+  },
+  {
+   "start": 1381.88,
+   "end": 1387.8,
+   "text": "to be blue, then any future Republican presidential candidate is in a terrible spot because it's"
+  },
+  {
+   "start": 1387.8,
+   "end": 1393.67,
+   "text": "just really hard to see their path to 270 without those 40 electoral college votes."
+  },
+  {
+   "start": 1393.67,
+   "end": 1398.95,
+   "text": "You've all watched more election cycles than I have because I'm so youthful."
+  },
+  {
+   "start": 1398.95,
+   "end": 1402.89,
+   "text": "And so I'm curious, I guess I'm wondering what your instincts say."
+  },
+  {
+   "start": 1402.89,
+   "end": 1407.45,
+   "text": "Is this the beginning of something real and possibly permanent or is this something that"
+  },
+  {
+   "start": 1407.45,
+   "end": 1409.75,
+   "text": "could easily reverse itself in two years?"
+  },
+  {
+   "start": 1409.75,
+   "end": 1411.53,
+   "text": "We were just talking earlier about how-"
+  },
+  {
+   "start": 1411.53,
+   "end": 1417.05,
+   "text": "One piece of advice to youthful, never stay permanent."
+  },
+  {
+   "start": 1417.05,
+   "end": 1418.05,
+   "text": "Never stay permanent."
+  },
+  {
+   "start": 1418.05,
+   "end": 1422.85,
+   "text": "But Blue Texas, is it a real thing or is this miraculous ability for humans to change their"
+  },
+  {
+   "start": 1422.85,
+   "end": 1427.17,
+   "text": "minds that we were, you know, lauding earlier in this conversation just to sign that, like,"
+  },
+  {
+   "start": 1427.17,
+   "end": 1432.69,
+   "text": "these shifts happen pretty aggressively and violently, and it's really hard to know."
+  },
+  {
+   "start": 1434.61,
+   "end": 1438.69,
+   "text": "I mean, there are a couple of ways to think about it. One is to look back to the election of"
+  },
+  {
+   "start": 1438.69,
+   "end": 1443.81,
+   "text": "John Assoff and how, I mean, I admit that I kind of thought that that was a fluke, and then we"
+  },
+  {
+   "start": 1443.81,
+   "end": 1451.25,
+   "text": "got another happy fluke with the, to my mind, very talented Senator Reverend Warnock. But now it"
+  },
+  {
+   "start": 1451.25,
+   "end": 1458.13,
+   "text": "it doesn't seem so clunky. People continue to move within the country. You sort of migratory"
+  },
+  {
+   "start": 1458.13,
+   "end": 1467.73,
+   "text": "north-south, migratory patterns seem to continue to be pertaining. And to Ben's point, there"
+  },
+  {
+   "start": 1467.73,
+   "end": 1473.65,
+   "text": "is a cultural dimension. I mean, when people aren't so scared about abortion rights, for example,"
+  },
+  {
+   "start": 1473.65,
+   "end": 1479.09,
+   "text": "within that jurisdiction, it might change who wants to be there. I think it's a possibility"
+  },
+  {
+   "start": 1479.09,
+   "end": 1483.73,
+   "text": "that there's a big change of foot, and I would get ready for Republicans to suddenly discover"
+  },
+  {
+   "start": 1483.73,
+   "end": 1485.73,
+   "text": "their aversion to the electoral college."
+  },
+  {
+   "start": 1485.73,
+   "end": 1492.69,
+   "text": "You know, Vincent worked for Obama and led me when he was a younger man, and I wrote"
+  },
+  {
+   "start": 1492.69,
+   "end": 1493.69,
+   "text": "a book about Obama."
+  },
+  {
+   "start": 1493.69,
+   "end": 1498.45,
+   "text": "So let me inject a little, and he's gone out of fashion in some people's minds, and I understand"
+  },
+  {
+   "start": 1498.45,
+   "end": 1499.45,
+   "text": "that."
+  },
+  {
+   "start": 1499.45,
+   "end": 1505.81,
+   "text": "But let me inject a little obami and rhetoric here, because we, you know, it was very hard"
+  },
+  {
+   "start": 1505.81,
+   "end": 1507.33,
+   "text": "to see for 10 years."
+  },
+  {
+   "start": 1507.33,
+   "end": 1511.73,
+   "text": "Obama, not long after Trump won and Obama was still in the White House, I was lucky enough"
+  },
+  {
+   "start": 1511.73,
+   "end": 1516.05,
+   "text": "to get a long interview with him in a White House that looked like a funeral."
+  },
+  {
+   "start": 1516.05,
+   "end": 1519.37,
+   "text": "Everybody was so upset and distraught."
+  },
+  {
+   "start": 1519.37,
+   "end": 1523.81,
+   "text": "And Obama stuck with this whole, that whole rhetoric of, you know, history moves forward,"
+  },
+  {
+   "start": 1523.81,
+   "end": 1525.29,
+   "text": "but it doesn't go straight forward."
+  },
+  {
+   "start": 1525.29,
+   "end": 1527.93,
+   "text": "It moves to the, da, da, da, da, da, da."
+  },
+  {
+   "start": 1527.93,
+   "end": 1531.73,
+   "text": "What we're seeing now today, we shouldn't overlook."
+  },
+  {
+   "start": 1531.73,
+   "end": 1535.37,
+   "text": "When you have a fever, you don't count on it lasting for 10 years."
+  },
+  {
+   "start": 1535.37,
+   "end": 1539.53,
+   "text": "But eventually, if you don't die of it, it breaks."
+  },
+  {
+   "start": 1539.53,
+   "end": 1544.33,
+   "text": "And I think that's what we've experienced, that we've been living through a historical"
+  },
+  {
+   "start": 1544.33,
+   "end": 1551.85,
+   "text": "period of right-wing populism, of a cult of personality, of a guy who was a performance"
+  },
+  {
+   "start": 1551.85,
+   "end": 1560.89,
+   "text": "artist political freak in our history, and his hold finally loosened through his own"
+  },
+  {
+   "start": 1560.89,
+   "end": 1568.22,
+   "text": "mistakes through his own craziness, through a lot of people waking up, not everybody,"
+  },
+  {
+   "start": 1568.22,
+   "end": 1570.66,
+   "text": "and we should appreciate the moment we're in."
+  },
+  {
+   "start": 1570.66,
+   "end": 1574.94,
+   "text": "I think as journalists and probably as we're joined in this sensibility, it's very hard"
+  },
+  {
+   "start": 1574.94,
+   "end": 1577.26,
+   "text": "for us to take on good news."
+  },
+  {
+   "start": 1577.26,
+   "end": 1578.54,
+   "text": "It's very hard for us to take on good news."
+  },
+  {
+   "start": 1578.54,
+   "end": 1585.1,
+   "text": "The last time we did, Vincent and I were on another sub-stack live, howling and weeping"
+  },
+  {
+   "start": 1585.1,
+   "end": 1590.46,
+   "text": "with happiness at the victory of the Knicks, which I've waited for since I'm 12 years old"
+  },
+  {
+   "start": 1590.46,
+   "end": 1597.82,
+   "text": "and I'm no longer 12. We should appreciate this moment for what it is. A fever, political"
+  },
+  {
+   "start": 1597.82,
+   "end": 1606.11,
+   "text": "moral and otherwise has broken. Now, where we'll go next is depends on, to be corny about"
+  },
+  {
+   "start": 1606.11,
+   "end": 1608.62,
+   "text": "it, depends on us, all of us."
+  },
+  {
+   "start": 1608.62,
+   "end": 1615.02,
+   "text": "I'd say one small thing that I've been thinking about a bit over the last couple of weeks"
+  },
+  {
+   "start": 1615.02,
+   "end": 1621.21,
+   "text": "also is, I'm a native New Yorker and the first time I really went around to red states was"
+  },
+  {
+   "start": 1621.21,
+   "end": 1626.41,
+   "text": "in the 2008 campaign and often you would go to South Carolina or Iowa and you'd think,"
+  },
+  {
+   "start": 1626.41,
+   "end": 1633.45,
+   "text": "oh, there's no parks here. There's no place to eat. It just seems different."
+  },
+  {
+   "start": 1633.45,
+   "end": 1639.41,
+   "text": "And over the course of that time period, in the kind of what we may now look back on is"
+  },
+  {
+   "start": 1639.41,
+   "end": 1644.57,
+   "text": "not the Trump era, but the long Obama era. Over the course of that time period now, I"
+  },
+  {
+   "start": 1644.57,
+   "end": 1650.97,
+   "text": "I go to suburban Atlanta, I go to Dallas, I go to Columbia, South Carolina."
+  },
+  {
+   "start": 1650.97,
+   "end": 1656.33,
+   "text": "I've had nice times in, these places are more cosmopolitan."
+  },
+  {
+   "start": 1656.33,
+   "end": 1658.05,
+   "text": "They are cities."
+  },
+  {
+   "start": 1658.05,
+   "end": 1663.27,
+   "text": "They are more open to outsiders."
+  },
+  {
+   "start": 1663.27,
+   "end": 1669.27,
+   "text": "And they are more progressive in a traditional sense in terms of dynamic and growing."
+  },
+  {
+   "start": 1669.27,
+   "end": 1677.35,
+   "text": "I could have imagined in 2008. And so the dream of the blue Texas, though again, who knows what's"
+  },
+  {
+   "start": 1677.35,
+   "end": 1682.79,
+   "text": "going to happen next. The dream of the blue Texas, like rest at some fundamental level on the idea of"
+  },
+  {
+   "start": 1684.63,
+   "end": 1690.55,
+   "text": "more forward-looking Dallas and Houston and Austin and so on. And those elements are in place."
+  },
+  {
+   "start": 1690.55,
+   "end": 1697.35,
+   "text": "Like those cities have changed just in the course of my adult lifetime. And so that is one reason"
+  },
+  {
+   "start": 1697.35,
+   "end": 1703.51,
+   "text": "to think that even if, I don't know if Gina Hinojosa is going to be governor for two terms"
+  },
+  {
+   "start": 1703.51,
+   "end": 1707.35,
+   "text": "or what, but I also don't think we're going to go back to Greg Abbott."
+  },
+  {
+   "start": 1707.35,
+   "end": 1709.59,
+   "text": "I don't think it's going to be exactly as it was before."
+  },
+  {
+   "start": 1712.79,
+   "end": 1717.99,
+   "text": "There's underlying reasons to think that some element of change might continue."
+  },
+  {
+   "start": 1718.71,
+   "end": 1723.83,
+   "text": "We should probably, just for the sake of fairness, look at the conservative side of things for a"
+  },
+  {
+   "start": 1723.83,
+   "end": 1731.51,
+   "text": "second. I'm wondering if you guys saw any silver linings last night for them, like Florida?"
+  },
+  {
+   "start": 1732.23,
+   "end": 1739.27,
+   "text": "I mean, Vincent, you were watching Fox News. You were on Fox News duty. What was the spin"
+  },
+  {
+   "start": 1739.27,
+   "end": 1743.03,
+   "text": "or what was the narrative that you saw emerging over the course of the night?"
+  },
+  {
+   "start": 1745.32,
+   "end": 1750.28,
+   "text": "Well, there were so many good ones. One of my favorites was, well, you know,"
+  },
+  {
+   "start": 1750.28,
+   "end": 1754.13,
+   "text": "Trump, he made the economy too good."
+  },
+  {
+   "start": 1754.13,
+   "end": 1758.89,
+   "text": "And what happens when you have a lot of money left to spend, you spend it, you know?"
+  },
+  {
+   "start": 1758.89,
+   "end": 1762.17,
+   "text": "And that's why people think they don't have enough money because they're actually, you"
+  },
+  {
+   "start": 1762.17,
+   "end": 1764.37,
+   "text": "know, okay."
+  },
+  {
+   "start": 1764.37,
+   "end": 1770.61,
+   "text": "Sean Hannity, who was made up like the Corpse at a funeral, and he was in a certain way"
+  },
+  {
+   "start": 1770.61,
+   "end": 1776.13,
+   "text": "that, he was saying, oh, you know, it just happens."
+  },
+  {
+   "start": 1776.13,
+   "end": 1782.55,
+   "text": "The more strong you are as a personality of the president, the more you get an obverse"
+  },
+  {
+   "start": 1782.55,
+   "end": 1788.47,
+   "text": "pushback in the midterms, and he decided Reagan, he decided 2010 with the Tea Party"
+  },
+  {
+   "start": 1788.47,
+   "end": 1789.47,
+   "text": "and Obama."
+  },
+  {
+   "start": 1789.47,
+   "end": 1793.03,
+   "text": "But of course, we're talking about something of a totally different magnitude than those"
+  },
+  {
+   "start": 1793.03,
+   "end": 1797.73,
+   "text": "sort of routine swings of governance."
+  },
+  {
+   "start": 1797.73,
+   "end": 1798.73,
+   "text": "What are the good ones?"
+  },
+  {
+   "start": 1798.73,
+   "end": 1803.43,
+   "text": "For them, it's that Mike Johnson is no longer the Republican leader in the House."
+  },
+  {
+   "start": 1803.43,
+   "end": 1807.59,
+   "text": "I think they can, I think they can perhaps do a little bit better than him."
+  },
+  {
+   "start": 1807.59,
+   "end": 1811.89,
+   "text": "Maybe it's good that Florida didn't go the other way, but of course they never expected"
+  },
+  {
+   "start": 1811.89,
+   "end": 1813.45,
+   "text": "it to be so close."
+  },
+  {
+   "start": 1813.45,
+   "end": 1817.81,
+   "text": "And in fact, a lot of the recriminations I thought on Fox News began when they saw the"
+  },
+  {
+   "start": 1817.81,
+   "end": 1819.81,
+   "text": "margins in Florida."
+  },
+  {
+   "start": 1819.81,
+   "end": 1823.37,
+   "text": "This was a harbinger of devastation to come, and they were right about that."
+  },
+  {
+   "start": 1823.37,
+   "end": 1827.21,
+   "text": "My honest, non-joking answer is that I don't think there's a single good thing for them."
+  },
+  {
+   "start": 1827.21,
+   "end": 1831.21,
+   "text": "I would agree with this and not a single good thing in the electoral sense."
+  },
+  {
+   "start": 1831.21,
+   "end": 1839.5,
+   "text": "But I think the conservatives made inroads on the cultural argument in a certain regard."
+  },
+  {
+   "start": 1839.5,
+   "end": 1844.18,
+   "text": "Immigration, for example, was something that the political system as a whole could not"
+  },
+  {
+   "start": 1844.18,
+   "end": 1846.18,
+   "text": "get its hands around."
+  },
+  {
+   "start": 1846.18,
+   "end": 1850.46,
+   "text": "The Biden administration made a big mistake by taking its eye off the ball for four years"
+  },
+  {
+   "start": 1850.46,
+   "end": 1852.89,
+   "text": "and chaos ensued."
+  },
+  {
+   "start": 1852.89,
+   "end": 1861.21,
+   "text": "Obviously, in the hands of Trump, it was draconian and violent and disgusting in its way of enforcement."
+  },
+  {
+   "start": 1861.21,
+   "end": 1869.69,
+   "text": "and the abuses of ICE I will bow to no one, and my criticism and worse of that."
+  },
+  {
+   "start": 1869.69,
+   "end": 1877.17,
+   "text": "But it is imperative on us to have at long last a sane approach that's both compassionate"
+  },
+  {
+   "start": 1877.17,
+   "end": 1881.53,
+   "text": "and sane approach to immigration."
+  },
+  {
+   "start": 1881.53,
+   "end": 1888.85,
+   "text": "AOC of all people is the person that opened the door on a sane discussion of wokeness,"
+  },
+  {
+   "start": 1888.85,
+   "end": 1889.85,
+   "text": "too."
+  },
+  {
+   "start": 1889.85,
+   "end": 1891.13,
+   "text": "Very interesting what she did."
+  },
+  {
+   "start": 1891.13,
+   "end": 1894.97,
+   "text": "She seemed to do it casually, but she doesn't do anything casually."
+  },
+  {
+   "start": 1894.97,
+   "end": 1898.01,
+   "text": "She went on Sunday show and said, oh, kind of laughing."
+  },
+  {
+   "start": 1898.01,
+   "end": 1899.01,
+   "text": "Oh, woke 1.0."
+  },
+  {
+   "start": 1899.01,
+   "end": 1900.51,
+   "text": "What was it, crazy?"
+  },
+  {
+   "start": 1900.51,
+   "end": 1903.51,
+   "text": "And she put it on somebody else's quotation."
+  },
+  {
+   "start": 1903.51,
+   "end": 1909.81,
+   "text": "But that opened the door to allow people in the center and center left and even the left"
+  },
+  {
+   "start": 1909.81,
+   "end": 1916.93,
+   "text": "to say, okay, let's describe what we were talking about in saner ways without being cruel"
+  },
+  {
+   "start": 1916.93,
+   "end": 1919.35,
+   "text": "and awful to trans people."
+  },
+  {
+   "start": 1919.35,
+   "end": 1925.21,
+   "text": "Without being racist, in other words, to have a rounded discussion about cultural issues"
+  },
+  {
+   "start": 1925.21,
+   "end": 1934.61,
+   "text": "that's not abusive or cruel, but also allows real discussion without automatic denunciation."
+  },
+  {
+   "start": 1934.61,
+   "end": 1937.45,
+   "text": "There are other issues too that you could argue about."
+  },
+  {
+   "start": 1937.45,
+   "end": 1943.57,
+   "text": "To ask about the election and what comfort the – certainly MAGA can take no comfort."
+  },
+  {
+   "start": 1943.57,
+   "end": 1946.77,
+   "text": "I think that fever really broke."
+  },
+  {
+   "start": 1946.77,
+   "end": 1948.45,
+   "text": "There's another matter."
+  },
+  {
+   "start": 1948.45,
+   "end": 1955.8,
+   "text": "And the Republican Party now has to rebuild itself because it was a cult to Trump."
+  },
+  {
+   "start": 1955.8,
+   "end": 1958.12,
+   "text": "How do you go back?"
+  },
+  {
+   "start": 1958.12,
+   "end": 1961.96,
+   "text": "How do you restore yourself morally and in terms of your self-respect?"
+  },
+  {
+   "start": 1961.96,
+   "end": 1966.6,
+   "text": "How do you restore yourself as a political organization after being completely and utterly"
+  },
+  {
+   "start": 1966.6,
+   "end": 1971.36,
+   "text": "beholden to this figure who is so odious in so many ways?"
+  },
+  {
+   "start": 1971.36,
+   "end": 1977.36,
+   "text": "I think that's a terrible dilemma for them and it will not heal itself and it won't"
+  },
+  {
+   "start": 1977.36,
+   "end": 1979.4,
+   "text": "be healed overnight?"
+  },
+  {
+   "start": 1979.4,
+   "end": 1985.2,
+   "text": "I think the only real silver lining I see is that for the Republicans is that their"
+  },
+  {
+   "start": 1985.2,
+   "end": 1991.04,
+   "text": "repudiation was so vast that they do have more latitude, I think, to reinvent themselves."
+  },
+  {
+   "start": 1991.04,
+   "end": 1999.96,
+   "text": "And if we think back to 2024, you know, aftermath of that election, liberals were devastated."
+  },
+  {
+   "start": 1999.96,
+   "end": 2004.04,
+   "text": "You know, who knew if there would be another election was something you heard a lot."
+  },
+  {
+   "start": 2004.04,
+   "end": 2009.28,
+   "text": "This would might be a really profound pivot point in American history."
+  },
+  {
+   "start": 2009.28,
+   "end": 2011.46,
+   "text": "And we're 24 months later."
+  },
+  {
+   "start": 2011.46,
+   "end": 2014.72,
+   "text": "My son moved from fourth grade to sixth grade."
+  },
+  {
+   "start": 2014.72,
+   "end": 2019.1,
+   "text": "And in that amount of time, we're looking at a totally different country."
+  },
+  {
+   "start": 2019.1,
+   "end": 2024.1,
+   "text": "One reason that we were able to have that change, the Democratic Party was able to have"
+  },
+  {
+   "start": 2024.1,
+   "end": 2030.88,
+   "text": "that change as David was talking about some of the repudiation of some of the stances"
+  },
+  {
+   "start": 2030.88,
+   "end": 2033.08,
+   "text": "that Democrats took under Joe Biden."
+  },
+  {
+   "start": 2033.08,
+   "end": 2036.68,
+   "text": "It was because everybody wanted to throw Joe Biden in the waste basket."
+  },
+  {
+   "start": 2036.68,
+   "end": 2038.0,
+   "text": "Everybody wanted to be done with that."
+  },
+  {
+   "start": 2038.0,
+   "end": 2039.96,
+   "text": "Everybody wanted to move on."
+  },
+  {
+   "start": 2039.96,
+   "end": 2045.16,
+   "text": "And quite quickly, that came to seem like a opportunity."
+  },
+  {
+   "start": 2045.16,
+   "end": 2048.52,
+   "text": "And I don't know what use the Republicans will make of this, and I don't know if they"
+  },
+  {
+   "start": 2048.52,
+   "end": 2050.32,
+   "text": "will use it well."
+  },
+  {
+   "start": 2050.32,
+   "end": 2054.28,
+   "text": "I don't know if Janie Vance is the right person to lead them out of it."
+  },
+  {
+   "start": 2054.28,
+   "end": 2058.28,
+   "text": "I don't know if he'll have the internal backing to do so."
+  },
+  {
+   "start": 2058.28,
+   "end": 2062.72,
+   "text": "But I do think that Trumpism was going badly for the Republicans."
+  },
+  {
+   "start": 2062.72,
+   "end": 2066.48,
+   "text": "And we could kind of all see that leading up to this election."
+  },
+  {
+   "start": 2066.48,
+   "end": 2072.76,
+   "text": "And the fact that it's, you know, the verdict is so decisive, there is a world in which"
+  },
+  {
+   "start": 2072.76,
+   "end": 2076.16,
+   "text": "they can take this as an opportunity to somewhat change who they are."
+  },
+  {
+   "start": 2076.16,
+   "end": 2081.8,
+   "text": "And, you know, to me, that's the opportunity in this for Republicans is the possibility"
+  },
+  {
+   "start": 2081.8,
+   "end": 2084.2,
+   "text": "of some element of reinvention."
+  },
+  {
+   "start": 2084.2,
+   "end": 2087.2,
+   "text": "So, if I could make one really quick point."
+  },
+  {
+   "start": 2087.2,
+   "end": 2092.92,
+   "text": "I think my friend Jacob Weisberg wrote a book called Profiles and Cowardice about people"
+  },
+  {
+   "start": 2092.92,
+   "end": 2098.26,
+   "text": "who lead institutions who, in the phrase of the year of Bentony, whether they're college"
+  },
+  {
+   "start": 2098.26,
+   "end": 2103.26,
+   "text": "presidents or heads of law firms, but there were a lot of people and a lot of institutions"
+  },
+  {
+   "start": 2103.26,
+   "end": 2109.17,
+   "text": "that did just the opposite, who stood up and did their work and did their job, whether"
+  },
+  {
+   "start": 2109.17,
+   "end": 2117.57,
+   "text": "they were judges, whatever they were in civil society, that was important to this effort."
+  },
+  {
+   "start": 2117.57,
+   "end": 2122.73,
+   "text": "And to see politicians who were told that they couldn't possibly win in the state of"
+  },
+  {
+   "start": 2122.73,
+   "end": 2130.22,
+   "text": "Mississippi or in Texas or people who ran for judgeships or city council, judges who"
+  },
+  {
+   "start": 2130.22,
+   "end": 2136.3,
+   "text": "were harassed at home and got death threats, but they issued their edicts fairly otherwise,"
+  },
+  {
+   "start": 2136.3,
+   "end": 2142.7,
+   "text": "I think that should tell us a lot about ourselves too, that all is not lost even when it's dark."
+  },
+  {
+   "start": 2142.7,
+   "end": 2149.3,
+   "text": "man in the last 10 years, it was really, really dark. And it will be dark again sometime in"
+  },
+  {
+   "start": 2149.3,
+   "end": 2154.71,
+   "text": "our history. And we should remember this moment for that reason."
+  },
+  {
+   "start": 2154.71,
+   "end": 2158.87,
+   "text": "It's funny. I've been doing this podcast for years now, and I feel like there's this running"
+  },
+  {
+   "start": 2158.87,
+   "end": 2165.43,
+   "text": "joke we have where every episode just ends on the most pessimistic, upsetting note ever,"
+  },
+  {
+   "start": 2165.43,
+   "end": 2169.31,
+   "text": "just because it's like, you know, John Blitzer talking about ice or, and for the first time"
+  },
+  {
+   "start": 2169.31,
+   "end": 2173.15,
+   "text": "ever, I think we might be able to end on something hopeful. So I'm going to take that opportunity"
+  },
+  {
+   "start": 2173.15,
+   "end": 2175.67,
+   "text": "And thank you guys so much for being here."
+  },
+  {
+   "start": 2175.67,
+   "end": 2177.23,
+   "text": "This was a great conversation."
+  },
+  {
+   "start": 2177.23,
+   "end": 2183.74,
+   "text": "And thank you to everyone who tuned in and asked great questions."
+  },
+  {
+   "start": 2183.74,
+   "end": 2186.14,
+   "text": "David Remnick is the editor of The New Yorker."
+  },
+  {
+   "start": 2186.14,
+   "end": 2187.98,
+   "text": "Vincent Cunningham and Benjamin Wallace Wells"
+  },
+  {
+   "start": 2187.98,
+   "end": 2189.78,
+   "text": "are staff writers at The New Yorker."
+  },
+  {
+   "start": 2189.78,
+   "end": 2192.58,
+   "text": "You can find more of their work at NewYorker.com."
+  },
+  {
+   "start": 2192.58,
+   "end": 2195.18,
+   "text": "This has been the political scene from The New Yorker."
+  },
+  {
+   "start": 2195.18,
+   "end": 2196.46,
+   "text": "I'm Tyler Foggan."
+  },
+  {
+   "start": 2196.46,
+   "end": 2198.46,
+   "text": "This episode was produced by John LeMay,"
+  },
+  {
+   "start": 2198.46,
+   "end": 2201.54,
+   "text": "with mixing by Mike Cutchman and editing by Michelle O'Brien,"
+  },
+  {
+   "start": 2201.54,
+   "end": 2204.1,
+   "text": "as well as engineering by Pran Bandy."
+  },
+  {
+   "start": 2204.1,
+   "end": 2205.86,
+   "text": "Special thanks to Michael Torriello,"
+  },
+  {
+   "start": 2205.86,
+   "end": 2207.54,
+   "text": "Luc La Prairie, and Maggie Sheldon"
+  },
+  {
+   "start": 2207.54,
+   "end": 2209.22,
+   "text": "for their help on this episode."
+  },
+  {
+   "start": 2209.22,
+   "end": 2211.46,
+   "text": "Our executive producer is Stephen Valentino."
+  },
+  {
+   "start": 2211.46,
+   "end": 2213.86,
+   "text": "Our theme music is by Alison Layton-Brown."
+  },
+  {
+   "start": 2213.86,
+   "end": 2215.06,
+   "text": "Thanks so much for listening."
+  },
+  {
+   "start": 2215.06,
+   "end": 2226.46,
+   "text": "We'll be back next Wednesday."
+  },
+  {
+   "start": 2226.46,
+   "end": 2228.34,
+   "text": "Wired has always put a microscope"
+  },
+  {
+   "start": 2228.34,
+   "end": 2231.66,
+   "text": "on the people, power, and forces shaping our world."
+  },
+  {
+   "start": 2231.66,
+   "end": 2234.22,
+   "text": "Uncanny Valley brings that same fearless reporting"
+  },
+  {
+   "start": 2234.22,
+   "end": 2236.1,
+   "text": "straight to your feed."
+  },
+  {
+   "start": 2236.1,
+   "end": 2238.02,
+   "text": "Is Doge finally over?"
+  },
+  {
+   "start": 2238.02,
+   "end": 2241.62,
+   "text": "Will AI actually democratize American healthcare?"
+  },
+  {
+   "start": 2241.62,
+   "end": 2244.02,
+   "text": "Each week, wired journalists from across the newsroom"
+  },
+  {
+   "start": 2244.02,
+   "end": 2246.26,
+   "text": "are going to unpack where politics, technology,"
+  },
+  {
+   "start": 2246.26,
+   "end": 2248.02,
+   "text": "and Silicon Valley collide."
+  },
+  {
+   "start": 2248.02,
+   "end": 2249.94,
+   "text": "From conversations with tech leaders"
+  },
+  {
+   "start": 2249.94,
+   "end": 2253.68,
+   "text": "across Silicon Valley, internet fandom investigations,"
+  },
+  {
+   "start": 2253.68,
+   "end": 2256.02,
+   "text": "and government crackdowns on rigged gambling,"
+  },
+  {
+   "start": 2256.02,
+   "end": 2258.26,
+   "text": "we're taking you all over the news cycle,"
+  },
+  {
+   "start": 2258.26,
+   "end": 2260.62,
+   "text": "going straight inside the priorities, pressures,"
+  },
+  {
+   "start": 2260.62,
+   "end": 2263.78,
+   "text": "and power plays, driving today's biggest decisions."
+  },
+  {
+   "start": 2263.78,
+   "end": 2266.66,
+   "text": "Uncanny Valley tackles the questions keeping you up at night"
+  },
+  {
+   "start": 2266.66,
+   "end": 2269.9,
+   "text": "and helps make sense of the future taking shape right now."
+  },
+  {
+   "start": 2269.9,
+   "end": 2271.94,
+   "text": "Listen to new episodes every Thursday,"
+  },
+  {
+   "start": 2271.94,
+   "end": 2279.0,
+   "text": "wherever you get your podcasts."
+  },
+  {
+   "start": 2279.0,
+   "end": 2281.44,
+   "text": "Hi, I'm Nicole Phelps, Global Fashion News"
+  },
+  {
+   "start": 2281.44,
+   "end": 2282.96,
+   "text": "and Futures Director at Vogue"
+  },
+  {
+   "start": 2282.96,
+   "end": 2285.4,
+   "text": "and co-host of the Run Through podcast."
+  },
+  {
+   "start": 2285.4,
+   "end": 2288.76,
+   "text": "Each week on the show, our listeners get an all-access pass"
+  },
+  {
+   "start": 2288.76,
+   "end": 2290.2,
+   "text": "into the world of Vogue."
+  },
+  {
+   "start": 2290.2,
+   "end": 2293.8,
+   "text": "On Tuesdays, join me as I interview influential designers"
+  },
+  {
+   "start": 2293.8,
+   "end": 2297.36,
+   "text": "like Calvin Klein, Rachel Scott, and Simone Bellotti."
+  },
+  {
+   "start": 2297.36,
+   "end": 2299.16,
+   "text": "On Thursdays, join Chloe Mao,"
+  },
+  {
+   "start": 2299.16,
+   "end": 2301.28,
+   "text": "head of editorial content at Vogue US,"
+  },
+  {
+   "start": 2301.28,
+   "end": 2304.52,
+   "text": "and Choma Naughty, British Vogue's head of editorial content,"
+  },
+  {
+   "start": 2304.52,
+   "end": 2306.8,
+   "text": "as they explore fashion through the lens of culture"
+  },
+  {
+   "start": 2306.8,
+   "end": 2310.0,
+   "text": "with guests like Doja Cat and Margot Robbie."
+  },
+  {
+   "start": 2310.0,
+   "end": 2312.24,
+   "text": "Listen and watch the run through with Vogue"
+  },
+  {
+   "start": 2312.24,
+   "end": 2318.14,
+   "text": "wherever you get your podcasts and Vogue's YouTube channel."
+  },
+  {
+   "start": 2318.14,
+   "end": 2319.62,
+   "text": "Hi, my name is Zach Barron."
+  },
+  {
+   "start": 2319.62,
+   "end": 2322.34,
+   "text": "I'm the senior special project editor at GQ"
+  },
+  {
+   "start": 2322.34,
+   "end": 2324.62,
+   "text": "and I am pleased to introduce one more question,"
+  },
+  {
+   "start": 2324.62,
+   "end": 2326.94,
+   "text": "GQ's new weekly interview show."
+  },
+  {
+   "start": 2326.94,
+   "end": 2328.22,
+   "text": "Over the years in the magazine,"
+  },
+  {
+   "start": 2328.22,
+   "end": 2329.94,
+   "text": "I've written dozens of cover stories"
+  },
+  {
+   "start": 2329.94,
+   "end": 2332.34,
+   "text": "and traveled the world to talk to and write about"
+  },
+  {
+   "start": 2332.34,
+   "end": 2335.46,
+   "text": "some of the most interesting people in the GQ universe."
+  },
+  {
+   "start": 2335.46,
+   "end": 2338.74,
+   "text": "from Martin Scorsese to George Clooney and Brad Pitt"
+  },
+  {
+   "start": 2338.74,
+   "end": 2340.66,
+   "text": "to Al Cast and Andre 3000."
+  },
+  {
+   "start": 2340.66,
+   "end": 2341.98,
+   "text": "And now I'll be doing it weekly."
+  },
+  {
+   "start": 2341.98,
+   "end": 2344.14,
+   "text": "I'm going to sit down with some of the most interesting"
+  },
+  {
+   "start": 2344.14,
+   "end": 2348.54,
+   "text": "people in the world and figure out what makes them, well, them."
+  },
+  {
+   "start": 2348.54,
+   "end": 2350.58,
+   "text": "New episodes of One More Question will be available"
+  },
+  {
+   "start": 2350.58,
+   "end": 2353.18,
+   "text": "each week wherever you get your podcasts"
+  },
+  {
+   "start": 2353.18,
+   "end": 2355.82,
+   "text": "or on YouTube if seeing people in chairs"
+  },
+  {
+   "start": 2355.82,
+   "end": 2356.82,
+   "text": "is more your thing."
+  }
+ ],
+ "seconds": 69.5,
+ "file": "the-political-scene-the-new-yorker__the-democrats-big-night-and-the-repudiatio/take0.mp3",
+ "model": "small"
+}

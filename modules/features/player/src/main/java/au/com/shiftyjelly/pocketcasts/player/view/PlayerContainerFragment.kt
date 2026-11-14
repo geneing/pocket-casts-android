@@ -31,6 +31,7 @@ import au.com.shiftyjelly.pocketcasts.player.view.bookmark.BookmarksFragment
 import au.com.shiftyjelly.pocketcasts.player.view.chapters.ChaptersFragment
 import au.com.shiftyjelly.pocketcasts.player.view.chapters.ChaptersViewModel
 import au.com.shiftyjelly.pocketcasts.player.view.chapters.ChaptersViewModel.Mode.Player
+import au.com.shiftyjelly.pocketcasts.player.view.transcript.TranscriptTabFragment
 import au.com.shiftyjelly.pocketcasts.player.viewmodel.BookmarksViewModel
 import au.com.shiftyjelly.pocketcasts.player.viewmodel.PlayerViewModel
 import au.com.shiftyjelly.pocketcasts.player.viewmodel.ShelfSharedViewModel
@@ -55,6 +56,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.lifecycle.withCreationCallback
 import javax.inject.Inject
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -268,6 +270,17 @@ class PlayerContainerFragment :
             }
         }
 
+        viewLifecycleOwner.lifecycleScope.launch {
+            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                shelfSharedViewModel.uiState
+                    .map { state -> state.isTranscriptAvailable }
+                    .distinctUntilChanged()
+                    .collect { available ->
+                        adapter.updateTranscript(addTranscript = available)
+                    }
+            }
+        }
+
         binding.btnClosePlayer.setOnClickListener { (activity as? FragmentHostListener)?.closePlayer() }
 
         bookmarksViewModel.multiSelectHelper.isMultiSelectingLive.observe(viewLifecycleOwner) { isMultiSelecting ->
@@ -408,6 +421,7 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
         data object Notes : Section(LR.string.player_tab_notes)
         data object Bookmarks : Section(LR.string.player_tab_bookmarks)
         data object Chapters : Section(LR.string.player_tab_chapters)
+        data object Transcript : Section(LR.string.transcript)
     }
 
     private var sections = listOf(Section.Player, Section.Bookmarks)
@@ -417,6 +431,9 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
 
     val indexOfChapters: Int
         get() = sections.indexOf(Section.Chapters)
+
+    val indexOfTranscript: Int
+        get() = sections.indexOf(Section.Transcript)
 
     val indexOfBookmarks: Int
         get() = sections.indexOf(Section.Bookmarks)
@@ -429,17 +446,23 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
         updateSections(hasChapters = addChapters)
     }
 
+    fun updateTranscript(addTranscript: Boolean) {
+        updateSections(hasTranscript = addTranscript)
+    }
+
     // Stable IDs via getItemId/containsItem allow FragmentStateAdapter to efficiently diff fragments
     @SuppressLint("NotifyDataSetChanged")
     private fun updateSections(
         hasNotes: Boolean = sections.contains(Section.Notes),
         hasChapters: Boolean = sections.contains(Section.Chapters),
+        hasTranscript: Boolean = sections.contains(Section.Transcript),
     ) {
         val currentSections = sections
         val newSections = buildList {
             add(Section.Player)
             if (hasNotes) add(Section.Notes)
             if (hasChapters) add(Section.Chapters)
+            if (hasTranscript) add(Section.Transcript)
             add(Section.Bookmarks)
         }
         if (currentSections != newSections) {
@@ -466,6 +489,7 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
             is Section.Notes -> NotesFragment()
             is Section.Bookmarks -> BookmarksFragment.newInstance(SourceView.PLAYER)
             is Section.Chapters -> ChaptersFragment.forPlayer()
+            is Section.Transcript -> TranscriptTabFragment()
         }
     }
 

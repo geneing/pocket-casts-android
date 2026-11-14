@@ -1,0 +1,258 @@
+{
+  "old_intervals": 103,
+  "new_intervals": 101,
+  "old_minutes": 102.8,
+  "new_minutes": 150.69,
+  "episodes": 10,
+  "takes": 30,
+  "provenance": {
+    "transcript_audit": 50,
+    "transcript_semantics": 32,
+    "cross_take_inference": 16,
+    "cross_take_transcript_match": 3
+  },
+  "errors": [],
+  "warnings": [],
+  "per_take": [
+    {
+      "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+      "take": "0",
+      "old": 2,
+      "new": 3,
+      "old_seconds": 165.85,
+      "new_seconds": 307.86
+    },
+    {
+      "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+      "take": "1",
+      "old": 2,
+      "new": 3,
+      "old_seconds": 124.9,
+      "new_seconds": 268.27
+    },
+    {
+      "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+      "take": "2",
+      "old": 2,
+      "new": 3,
+      "old_seconds": 143.58,
+      "new_seconds": 288.52
+    },
+    {
+      "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+      "take": "0",
+      "old": 4,
+      "new": 4,
+      "old_seconds": 353.98,
+      "new_seconds": 448.26
+    },
+    {
+      "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+      "take": "1",
+      "old": 4,
+      "new": 4,
+      "old_seconds": 498.54,
+      "new_seconds": 511.12
+    },
+    {
+      "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+      "take": "2",
+      "old": 5,
+      "new": 4,
+      "old_seconds": 429.21,
+      "new_seconds": 480.8
+    },
+    {
+      "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+      "take": "0",
+      "old": 4,
+      "new": 4,
+      "old_seconds": 147.96,
+      "new_seconds": 460.04
+    },
+    {
+      "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+      "take": "1",
+      "old": 4,
+      "new": 4,
+      "old_seconds": 146.34,
+      "new_seconds": 461.66
+    },
+    {
+      "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+      "take": "2",
+      "old": 4,
+      "new": 4,
+      "old_seconds": 147.96,
+      "new_seconds": 460.68
+    },
+    {
+      "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+      "take": "0",
+      "old": 4,
+      "new": 5,
+      "old_seconds": 169.98,
+      "new_seconds": 343.6
+    },
+    {
+      "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+      "take": "1",
+      "old": 4,
+      "new": 5,
+      "old_seconds": 185.06,
+      "new_seconds": 378.64
+    },
+    {
+      "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+      "take": "2",
+      "old": 4,
+      "new": 5,
+      "old_seconds": 208.35,
+      "new_seconds": 359.79
+    },
+    {
+      "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+      "take": "0",
+      "old": 8,
+      "new": 4,
+      "old_seconds": 453.86,
+      "new_seconds": 492.24
+    },
+    {
+      "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+      "take": "1",
+      "old": 4,
+      "new": 3,
+      "old_seconds": 297.89,
+      "new_seconds": 450.41
+    },
+    {
+      "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+      "take": "2",
+      "old": 7,
+      "new": 4,
+      "old_seconds": 453.23,
+      "new_seconds": 578.47
+    },
+    {
+      "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+      "take": "0",
+      "old": 3,
+      "new": 5,
+      "old_seconds": 174.89,
+      "new_seconds": 228.03
+    },
+    {
+      "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+      "take": "1",
+      "old": 5,
+      "new": 5,
+      "old_seconds": 166.86,
+      "new_seconds": 217.94
+    },
+    {
+      "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+      "take": "2",
+      "old": 4,
+      "new": 5,
+      "old_seconds": 195.1,
+      "new_seconds": 217.35
+    },
+    {
+      "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+      "take": "0",
+      "old": 3,
+      "new": 3,
+      "old_seconds": 237.41,
+      "new_seconds": 343.3
+    },
+    {
+      "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+      "take": "1",
+      "old": 3,
+      "new": 3,
+      "old_seconds": 252.46,
+      "new_seconds": 358.34
+    },
+    {
+      "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+      "take": "2",
+      "old": 4,
+      "new": 3,
+      "old_seconds": 231.11,
+      "new_seconds": 319.85
+    },
+    {
+      "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+      "take": "0",
+      "old": 6,
+      "new": 5,
+      "old_seconds": 223.3,
+      "new_seconds": 235.21
+    },
+    {
+      "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+      "take": "1",
+      "old": 3,
+      "new": 3,
+      "old_seconds": 172.6,
+      "new_seconds": 206.12
+    },
+    {
+      "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+      "take": "2",
+      "old": 4,
+      "new": 4,
+      "old_seconds": 175.35,
+      "new_seconds": 231.69
+    },
+    {
+      "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+      "take": "0",
+      "old": 2,
+      "new": 2,
+      "old_seconds": 136.93,
+      "new_seconds": 130.24
+    },
+    {
+      "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+      "take": "1",
+      "old": 2,
+      "new": 2,
+      "old_seconds": 129.82,
+      "new_seconds": 124.02
+    },
+    {
+      "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+      "take": "2",
+      "old": 2,
+      "new": 2,
+      "old_seconds": 145.2,
+      "new_seconds": 139.01
+    },
+    {
+      "episode": "the-rest-is-politics__what-living-under-isis-taught-me-about-e",
+      "take": "0",
+      "old": 0,
+      "new": 0,
+      "old_seconds": 0,
+      "new_seconds": 0
+    },
+    {
+      "episode": "the-rest-is-politics__what-living-under-isis-taught-me-about-e",
+      "take": "1",
+      "old": 0,
+      "new": 0,
+      "old_seconds": 0,
+      "new_seconds": 0
+    },
+    {
+      "episode": "the-rest-is-politics__what-living-under-isis-taught-me-about-e",
+      "take": "2",
+      "old": 0,
+      "new": 0,
+      "old_seconds": 0,
+      "new_seconds": 0
+    }
+  ]
+}

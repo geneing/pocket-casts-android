@@ -32,4 +32,12 @@ abstract class TranscriptDao {
 
     @Query("SELECT * FROM episode_transcript WHERE episode_uuid IS :episodeUuid")
     abstract fun observeTranscripts(episodeUuid: String): Flow<List<Transcript>>
+
+    /** Insert or replace a single transcript without touching the episode's other transcripts. */
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    abstract suspend fun upsert(transcript: Transcript)
+
+    /** Remove only an on-device transcript, leaving server-provided ones intact. */
+    @Query("DELETE FROM episode_transcript WHERE episode_uuid IS :episodeUuid AND url IS :url AND is_generated IS 1")
+    abstract suspend fun deleteGenerated(episodeUuid: String, url: String)
 }

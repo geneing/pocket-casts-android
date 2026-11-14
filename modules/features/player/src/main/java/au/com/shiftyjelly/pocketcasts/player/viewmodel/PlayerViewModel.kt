@@ -15,6 +15,7 @@ import au.com.shiftyjelly.pocketcasts.models.entity.BlazeAd
 import au.com.shiftyjelly.pocketcasts.models.entity.Podcast
 import au.com.shiftyjelly.pocketcasts.models.entity.PodcastEpisode
 import au.com.shiftyjelly.pocketcasts.models.entity.UserEpisode
+import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.Chapter
 import au.com.shiftyjelly.pocketcasts.models.to.ChapterSummaryData
 import au.com.shiftyjelly.pocketcasts.models.to.Chapters
@@ -125,6 +126,7 @@ class PlayerViewModel @Inject constructor(
         val podcastTitle: String? = null,
         val isPlaybackRemote: Boolean = false,
         val chapters: Chapters = Chapters(),
+        val adSegments: List<AdSegment> = emptyList(),
         val backgroundColor: Int = 0xFF000000.toInt(),
         val iconTintColor: Int = 0xFFFFFFFF.toInt(),
         val skipForwardInSecs: Int = 15,
@@ -435,6 +437,7 @@ class PlayerViewModel @Inject constructor(
                 videoRenderingEnabled = videoRenderingEnabled,
                 isPlaybackRemote = playbackManager.isPlaybackRemote(),
                 chapters = playbackState.chapters,
+                adSegments = playbackState.adSegments,
                 backgroundColor = playerBackground,
                 iconTintColor = iconTintColor,
                 podcastTitle = if (playbackState.chapters.isEmpty()) podcast?.title else null,

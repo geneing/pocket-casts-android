@@ -8,6 +8,7 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.viewinterop.AndroidView
 import au.com.shiftyjelly.pocketcasts.compose.PlayerColors
 import au.com.shiftyjelly.pocketcasts.compose.theme
+import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.Chapters
 import au.com.shiftyjelly.pocketcasts.player.view.PlayerSeekBar
 import kotlin.time.Duration
@@ -19,6 +20,7 @@ internal fun PlayerSeekBar(
     adjustPlaybackDuration: Boolean,
     playbackSpeed: Double,
     chapters: Chapters,
+    adSegments: List<AdSegment>,
     isBuffering: Boolean,
     bufferedUpTo: Duration,
     playerColors: PlayerColors,
@@ -48,6 +50,7 @@ internal fun PlayerSeekBar(
                 setAdjustDuration(adjustPlaybackDuration)
                 setPlaybackSpeed(playbackSpeed)
                 setChapters(chapters)
+                setAdSegments(adSegments)
                 this.isBuffering = isBuffering
                 bufferedUpToInSecs = bufferedUpTo.inWholeSeconds.toInt()
                 setCurrentTime(playbackPosition)

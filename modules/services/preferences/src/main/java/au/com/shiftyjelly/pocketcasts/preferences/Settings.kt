@@ -394,6 +394,7 @@ interface Settings {
     val keepScreenAwake: UserSetting<Boolean>
     val openPlayerAutomatically: UserSetting<Boolean>
     val showGeneratedChapters: UserSetting<Boolean>
+    val skipAds: UserSetting<Boolean>
     val showWhatsNewDot: UserSetting<Boolean>
 
     val autoDownloadUnmeteredOnly: UserSetting<Boolean>
