@@ -1,7 +1,5 @@
 package au.com.shiftyjelly.pocketcasts.repositories.ads.jev
 
-import au.com.shiftyjelly.pocketcasts.preferences.Settings
-
 /**
  * The jev choice-classifier models served by OpenRouter's System One endpoint.
  *
@@ -25,9 +23,3 @@ enum class JevAdModel(val slug: String, val displayName: String) {
         fun fromSlug(slug: String?): JevAdModel = entries.firstOrNull { it.slug == slug?.trim() } ?: default
     }
 }
-
-/**
- * The model chosen in the developer page. The slug is stored as a plain string because
- * [Settings] lives below this module and cannot reference [JevAdModel].
- */
-fun Settings.selectedJevAdModel(): JevAdModel = JevAdModel.fromSlug(jevAdModel.value)

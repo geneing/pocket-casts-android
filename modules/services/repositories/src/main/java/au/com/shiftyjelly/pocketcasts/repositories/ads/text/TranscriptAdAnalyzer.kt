@@ -8,12 +8,11 @@ import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegmentKind
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegmentOrigin
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdSegment
-import au.com.shiftyjelly.pocketcasts.preferences.Settings
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevAdClassifier
+import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevAdModelStore
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevClassification
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevPrompt
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.buildPods
-import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.selectedJevAdModel
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.PodcastManager
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
@@ -54,7 +53,7 @@ class TranscriptAdAnalyzer @Inject constructor(
     private val classifier: JevAdClassifier,
     private val transcriber: EpisodeTranscriber,
     private val transcriptStore: LocalTranscriptStore,
-    private val settings: Settings,
+    private val jevAdModelStore: JevAdModelStore,
     @ApplicationScope private val scope: CoroutineScope,
 ) {
     private val mutex = Mutex()
@@ -87,7 +86,7 @@ class TranscriptAdAnalyzer @Inject constructor(
         }
         if (!transcriber.isAvailable()) return false
 
-        val model = settings.selectedJevAdModel()
+        val model = jevAdModelStore.selectedJevAdModel()
         val signature = AnalysisIdentity.audioSignature(localFile)
         val sttVersion = transcriber.version
         val state = adAnalysisDao.findState(episodeUuid)

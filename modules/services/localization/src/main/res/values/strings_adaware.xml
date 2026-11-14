@@ -1,0 +1,18 @@
+<resources>
+    <!-- Ad detection and the local AI tab. Kept out of strings.xml so upstream merges do not conflict. -->
+    <string name="player_ai_default_question">Summarize the podcast</string>
+    <string name="player_ai_empty_hint">Ask anything about this episode\'s transcript.</string>
+    <string name="player_ai_error">Couldn\'t get an answer. Try again.</string>
+    <string name="player_ai_input_hint">Ask about this episode</string>
+    <string name="player_ai_send">Send</string>
+    <string name="player_ai_thinking">Thinking…</string>
+    <string name="player_ai_transcript_missing">An AI chat needs a transcript, and this episode doesn\'t have one yet.</string>
+    <string name="player_ai_unavailable">AI chat isn\'t available in this build.</string>
+    <string name="player_effects_skip_ads">Skip Ads</string>
+    <string name="player_effects_skip_ads_detail_off">Automatically skip ads and sponsor reads in episodes</string>
+    <string name="player_effects_skip_ads_detail_on">Ads and sponsor reads are skipped automatically. Turn off to hear them.</string>
+    <string name="player_skip_ad">Skip ad</string>
+    <string name="player_ad_skipped">Skipped %1$s of ads</string>
+    <string name="player_tab_ai" translatable="false">AI</string>
+    <string name="transcript_not_available">No transcript for this episode yet</string>
+</resources>

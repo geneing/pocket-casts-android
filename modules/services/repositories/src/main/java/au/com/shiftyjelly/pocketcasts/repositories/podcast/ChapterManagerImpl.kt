@@ -127,10 +127,7 @@ class ChapterManagerImpl @Inject constructor(
         if (!hasMapping) {
             if (chapters.hasGeneratedChapters && unalignedLogEpisodeUuid != episodeUuid) {
                 unalignedLogEpisodeUuid = episodeUuid
-                LogBuffer.i(
-                    LogBuffer.TAG_PLAYBACK,
-                    "Generated chapters for $episodeUuid are unaligned: no fingerprint mapping available",
-                )
+                LogBuffer.i(LogBuffer.TAG_PLAYBACK, "Generated chapters for $episodeUuid are unaligned: no fingerprint mapping available")
             }
             return chapters
         }

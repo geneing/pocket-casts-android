@@ -8,7 +8,7 @@ import au.com.shiftyjelly.pocketcasts.analytics.SourceView
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
 import au.com.shiftyjelly.pocketcasts.preferences.model.AppReviewReason
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevAdModel
-import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.selectedJevAdModel
+import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevAdModelStore
 import au.com.shiftyjelly.pocketcasts.repositories.appreview.AppReviewManagerImpl
 import au.com.shiftyjelly.pocketcasts.repositories.download.UpdateEpisodeDetailsTask
 import au.com.shiftyjelly.pocketcasts.repositories.playback.PlaybackIssue
@@ -42,6 +42,7 @@ class DeveloperViewModel
     private val playbackManager: PlaybackManager,
     private val suggestedFoldersManager: SuggestedFoldersManager,
     private val settings: Settings,
+    private val jevAdModelStore: JevAdModelStore,
     @ApplicationContext private val context: Context,
     private val crashLogging: CrashLogging,
     private val appReviewManagerImpl: AppReviewManagerImpl,
@@ -50,12 +51,12 @@ class DeveloperViewModel
     private val reviewManager = FakeReviewManager(context)
 
     /** The jev ad classifier model the transcript analyzer will use for the next episode. */
-    val jevAdModel: JevAdModel get() = settings.selectedJevAdModel()
+    val jevAdModel: JevAdModel get() = jevAdModelStore.selectedJevAdModel()
 
     /** Switches to the other jev model; stored segments are re-classified on the next analysis. */
     fun cycleJevAdModel() {
         val next = JevAdModel.entries[(jevAdModel.ordinal + 1) % JevAdModel.entries.size]
-        settings.jevAdModel.set(next.slug, updateModifiedAt = false)
+        jevAdModelStore.select(next)
     }
 
     fun forceRefresh() {

@@ -1,5 +1,3 @@
-import java.util.Properties
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.parcelize)
@@ -8,24 +6,6 @@ plugins {
     alias(libs.plugins.sentry)
     alias(libs.plugins.google.services)
     alias(libs.plugins.compose.compiler)
-}
-
-// The jev ad classifier's OpenRouter key. Never commit it: put `openrouter.api.key=<key>` in
-// local.properties (gitignored), export OPENROUTER_API_KEY, or leave it in secrets/openrouter.key
-// (gitignored). Only the debug build types embed it, so a release build never ships a key.
-val openRouterApiKey: String = run {
-    val localProperties = Properties()
-    val localPropertiesFile = rootProject.file("local.properties")
-    if (localPropertiesFile.isFile) {
-        localPropertiesFile.inputStream().use { localProperties.load(it) }
-    }
-    val secretFile = rootProject.file("secrets/openrouter.key").takeIf { it.isFile }
-    localProperties.getProperty("openrouter.api.key").orEmpty()
-        .ifBlank { System.getenv("OPENROUTER_API_KEY").orEmpty() }
-        .ifBlank { secretFile?.readText().orEmpty() }
-        .trim()
-        .replace("\\", "\\\\")
-        .replace("\"", "\\\"")
 }
 
 sentry {
@@ -38,11 +18,7 @@ android {
     defaultConfig {
         applicationId = project.property("applicationId").toString()
         targetSdk = project.property("targetSdkVersion") as Int
-        // The phone app targets API 33+; shared library modules stay lower for wear/tv/automotive.
-        minSdk = project.property("minSdkVersionApp") as Int
         multiDexEnabled = true
-
-        buildConfigField("String", "OPENROUTER_API_KEY", "\"\"")
     }
 
     sourceSets {
@@ -60,12 +36,10 @@ android {
     buildTypes {
         named("debug") {
             manifestPlaceholders["appIcon"] = "@mipmap/ic_launcher_radioactive"
-            buildConfigField("String", "OPENROUTER_API_KEY", "\"$openRouterApiKey\"")
         }
 
         named("debugProd") {
             manifestPlaceholders["appIcon"] = "@mipmap/ic_launcher_3"
-            buildConfigField("String", "OPENROUTER_API_KEY", "\"$openRouterApiKey\"")
         }
 
         maybeCreate("prototype").apply {
@@ -201,3 +175,5 @@ dependencies {
     androidTestImplementation(projects.modules.services.sharedtest)
     androidTestImplementation(projects.modules.services.analytics.testing)
 }
+
+apply(from = "../gradle/adaware.gradle")

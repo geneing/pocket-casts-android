@@ -10,12 +10,8 @@ import au.com.shiftyjelly.pocketcasts.models.to.TranscriptType
 import au.com.shiftyjelly.pocketcasts.payment.PurchaseApprover
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
 import au.com.shiftyjelly.pocketcasts.preferences.SettingsImpl
-import au.com.shiftyjelly.pocketcasts.repositories.ads.AdSegmentManager
-import au.com.shiftyjelly.pocketcasts.repositories.ads.AdSegmentManagerImpl
 import au.com.shiftyjelly.pocketcasts.repositories.ads.BlazeAdsManager
 import au.com.shiftyjelly.pocketcasts.repositories.ads.BlazeAdsManagerImpl
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.EpisodeTranscriber
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.MlKitEpisodeTranscriber
 import au.com.shiftyjelly.pocketcasts.repositories.analytics.AnalyticsLiveDebugListener
 import au.com.shiftyjelly.pocketcasts.repositories.appreview.AppReviewAnalyticsListener
 import au.com.shiftyjelly.pocketcasts.repositories.appreview.AppReviewManager
@@ -104,7 +100,6 @@ import com.google.android.play.core.review.ReviewManager
 import com.google.android.play.core.review.ReviewManagerFactory
 import com.squareup.moshi.Moshi
 import dagger.Binds
-import dagger.BindsOptionalOf
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -121,14 +116,6 @@ abstract class RepositoryModule {
     @Binds
     @Singleton
     abstract fun provideWorkerFactory(castsWorkerFactory: CastsWorkerFactory): WorkerFactory
-
-    /**
-     * The OpenRouter key is optional so every app variant's graph stays valid: the app binds it
-     * from `BuildConfig`, and a variant without one simply has no remote ad classifier.
-     */
-    @BindsOptionalOf
-    @OpenRouterApiKey
-    abstract fun optionalOpenRouterApiKey(): String
 
     @Binds
     @Singleton
@@ -224,13 +211,6 @@ abstract class RepositoryModule {
 
     @Binds
     abstract fun provideChapterManager(chapterManagerImpl: ChapterManagerImpl): ChapterManager
-
-    @Binds
-    abstract fun provideAdSegmentManager(adSegmentManagerImpl: AdSegmentManagerImpl): AdSegmentManager
-
-    @Binds
-    @Singleton
-    abstract fun provideEpisodeTranscriber(impl: MlKitEpisodeTranscriber): EpisodeTranscriber
 
     @Binds
     abstract fun provideAlternateEnclosureManager(impl: AlternateEnclosureManagerImpl): AlternateEnclosureManager

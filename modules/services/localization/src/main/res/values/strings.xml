@@ -501,14 +501,6 @@
     <string name="player_action_next_chapter">Next chapter</string>
     <string name="player_action_previous_chapter">Previous chapter</string>
     <string name="player_action_show_video">Show video</string>
-    <string name="player_ai_default_question">Summarize the podcast</string>
-    <string name="player_ai_empty_hint">Ask anything about this episode\'s transcript.</string>
-    <string name="player_ai_error">Couldn\'t get an answer. Try again.</string>
-    <string name="player_ai_input_hint">Ask about this episode</string>
-    <string name="player_ai_send">Send</string>
-    <string name="player_ai_thinking">Thinking…</string>
-    <string name="player_ai_transcript_missing">An AI chat needs a transcript, and this episode doesn\'t have one yet.</string>
-    <string name="player_ai_unavailable">AI chat isn\'t available in this build.</string>
     <string name="player_battery_warning_snackbar">Your battery restrictions may cause playback interruptions.</string>
     <string name="player_battery_warning_snackbar_action">update</string>
     <string name="player_chapter_url">Chapter URL</string>
@@ -527,11 +519,6 @@
     <string name="player_effects_trim_silence">Trim Silence</string>
     <string name="player_effects_voices_sound_louder">Voices sound louder</string>
     <string name="player_effects_volume_boost">Volume Boost</string>
-    <string name="player_effects_skip_ads">Skip Ads</string>
-    <string name="player_effects_skip_ads_detail_off">Automatically skip ads and sponsor reads in episodes</string>
-    <string name="player_effects_skip_ads_detail_on">Ads and sponsor reads are skipped automatically. Turn off to hear them.</string>
-    <string name="player_skip_ad">Skip ad</string>
-    <string name="player_ad_skipped">Skipped %1$s of ads</string>
     <string name="player_end_playback_clear_up_next">Close and clear Up Next</string>
     <string name="player_more_actions">More actions</string>
     <string name="player_notification_skip_back">Back %d secs</string>
@@ -568,7 +555,6 @@
     <string name="player_sleep_timer_restarted_after_device_shake">Sleep timer restarted after device shake</string>
     <string name="player_sleep_timer_stopped_your_podcast">Sleep timer stopped your podcast.</string>
     <string name="player_star" translatable="false">@string/star</string>
-    <string name="player_tab_ai" translatable="false">AI</string>
     <string name="player_tab_bookmarks" translatable="false">@string/bookmarks</string>
     <string name="player_tab_chapters" translatable="false">@string/chapters</string>
     <string name="player_tab_notes">Details</string>
@@ -2582,7 +2568,6 @@
     <string name="error_transcript_format_not_supported">Sorry, but this transcript format is not supported: %s</string>
     <string name="error_transcript_failed_to_parse">Sorry, but something went wrong while parsing this transcript.</string>
     <string name="transcript_empty">Transcript is empty.</string>
-    <string name="transcript_not_available">No transcript for this episode yet</string>
     <string name="transcript_open">Open transcript</string>
     <string name="transcript_close">Close transcript</string>
     <string name="transcript_search">Search transcript</string>

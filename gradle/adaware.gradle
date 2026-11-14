@@ -1,0 +1,55 @@
+// Ad-aware additions for the phone app, applied from app/build.gradle.kts with one line so the
+// upstream build file stays untouched:
+//
+//     apply(from = "../gradle/adaware.gradle")
+//
+// It embeds the jev ad classifier's OpenRouter key in the debug build types and raises the phone
+// app's minSdk above the shared libraries' floor.
+//
+// This is Groovy rather than Kotlin on purpose: a Kotlin script applied with `apply(from = ...)`
+// is compiled without the Android Gradle plugin's classes on its compile classpath, so it cannot
+// reach the typed `android { }` DSL. A Groovy project script resolves the extension dynamically.
+
+import java.util.Properties
+
+// The jev ad classifier's OpenRouter key. Never commit it: put `openrouter.api.key=<key>` in
+// local.properties (gitignored), export OPENROUTER_API_KEY, or leave it in secrets/openrouter.key
+// (gitignored). Only the debug build types embed it, so a release build never ships a key.
+def openRouterApiKey = {
+    def localProperties = new Properties()
+    def localPropertiesFile = rootProject.file('local.properties')
+    if (localPropertiesFile.isFile()) {
+        localPropertiesFile.withInputStream { localProperties.load(it) }
+    }
+    def secretFile = rootProject.file('secrets/openrouter.key').isFile() ? rootProject.file('secrets/openrouter.key') : null
+    def key = localProperties.getProperty('openrouter.api.key', '') ?: ''
+    if (!key.trim()) {
+        key = System.getenv('OPENROUTER_API_KEY') ?: ''
+    }
+    if (!key.trim() && secretFile != null) {
+        key = secretFile.text
+    }
+    return key
+}().trim().replace('\\', '\\\\').replace('"', '\\"')
+
+// A Java string literal for BuildConfig, e.g. "\"abc\"".
+def openRouterApiKeyLiteral = '"' + openRouterApiKey + '"'
+
+android {
+    defaultConfig {
+        // The phone app targets API 33+; the shared library modules stay at the lower floor that
+        // wear, automotive and tv still support.
+        minSdk = 33
+        buildConfigField('String', 'OPENROUTER_API_KEY', '""')
+    }
+
+    buildTypes {
+        getByName('debug') {
+            buildConfigField('String', 'OPENROUTER_API_KEY', openRouterApiKeyLiteral)
+        }
+
+        getByName('debugProd') {
+            buildConfigField('String', 'OPENROUTER_API_KEY', openRouterApiKeyLiteral)
+        }
+    }
+}

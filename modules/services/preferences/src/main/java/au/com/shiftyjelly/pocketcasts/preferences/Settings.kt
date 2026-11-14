@@ -397,12 +397,6 @@ interface Settings {
     val skipAds: UserSetting<Boolean>
     val showWhatsNewDot: UserSetting<Boolean>
 
-    /**
-     * The jev ad classifier model, stored as its request slug (`respan/span-02`). The enum lives
-     * in the repositories module, which depends on this one, so the preference is a string.
-     */
-    val jevAdModel: UserSetting<String>
-
     val autoDownloadUnmeteredOnly: UserSetting<Boolean>
     val autoDownloadOnlyWhenCharging: UserSetting<Boolean>
     val autoDownloadOnlyWhenEnoughStorage: UserSetting<Boolean>

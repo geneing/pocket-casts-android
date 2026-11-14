@@ -10,6 +10,11 @@ android {
     buildFeatures {
         buildConfig = true
     }
+    defaultConfig {
+        // ML Kit's GenAI speech recognition ships minSdkVersion 26, so this module needs that floor.
+        // The floor is set here rather than raised globally so the other modules keep upstream's.
+        minSdk = 26
+    }
 }
 
 dependencies {
