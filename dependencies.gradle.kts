@@ -66,7 +66,7 @@ project.apply {
         set("buildPlatform", getBuildPlatform())
 
         // Android
-        set("minSdkVersion", 26)
+        set("minSdkVersion", 33)
         set("minSdkVersionWear", 26)
         set("minSdkVersionAutomotive", 28)
         set("minSdkVersionTv", 28)
