@@ -501,6 +501,14 @@
     <string name="player_action_next_chapter">Next chapter</string>
     <string name="player_action_previous_chapter">Previous chapter</string>
     <string name="player_action_show_video">Show video</string>
+    <string name="player_ai_default_question">Summarize the podcast</string>
+    <string name="player_ai_empty_hint">Ask anything about this episode\'s transcript.</string>
+    <string name="player_ai_error">Couldn\'t get an answer. Try again.</string>
+    <string name="player_ai_input_hint">Ask about this episode</string>
+    <string name="player_ai_send">Send</string>
+    <string name="player_ai_thinking">Thinking…</string>
+    <string name="player_ai_transcript_missing">An AI chat needs a transcript, and this episode doesn\'t have one yet.</string>
+    <string name="player_ai_unavailable">AI chat isn\'t available in this build.</string>
     <string name="player_battery_warning_snackbar">Your battery restrictions may cause playback interruptions.</string>
     <string name="player_battery_warning_snackbar_action">update</string>
     <string name="player_chapter_url">Chapter URL</string>
@@ -560,6 +568,7 @@
     <string name="player_sleep_timer_restarted_after_device_shake">Sleep timer restarted after device shake</string>
     <string name="player_sleep_timer_stopped_your_podcast">Sleep timer stopped your podcast.</string>
     <string name="player_star" translatable="false">@string/star</string>
+    <string name="player_tab_ai" translatable="false">AI</string>
     <string name="player_tab_bookmarks" translatable="false">@string/bookmarks</string>
     <string name="player_tab_chapters" translatable="false">@string/chapters</string>
     <string name="player_tab_notes">Details</string>

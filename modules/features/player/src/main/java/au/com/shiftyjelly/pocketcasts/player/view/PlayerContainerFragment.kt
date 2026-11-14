@@ -27,6 +27,7 @@ import au.com.shiftyjelly.pocketcasts.compose.PodcastColors
 import au.com.shiftyjelly.pocketcasts.models.to.Chapter
 import au.com.shiftyjelly.pocketcasts.player.R
 import au.com.shiftyjelly.pocketcasts.player.databinding.FragmentPlayerContainerBinding
+import au.com.shiftyjelly.pocketcasts.player.view.ai.AiTabFragment
 import au.com.shiftyjelly.pocketcasts.player.view.bookmark.BookmarksFragment
 import au.com.shiftyjelly.pocketcasts.player.view.chapters.ChaptersFragment
 import au.com.shiftyjelly.pocketcasts.player.view.chapters.ChaptersViewModel
@@ -212,6 +213,9 @@ class PlayerContainerFragment :
                         }
                         PlayerTabType.Chapters
                     }
+
+                    // The AI tab is local to this build and has no analytics event yet.
+                    adapter.isAiTab(position) -> null
 
                     else -> {
                         Timber.e("Invalid tab selected")
@@ -422,6 +426,7 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
         data object Bookmarks : Section(LR.string.player_tab_bookmarks)
         data object Chapters : Section(LR.string.player_tab_chapters)
         data object Transcript : Section(LR.string.transcript)
+        data object Ai : Section(LR.string.player_tab_ai)
     }
 
     private var sections = listOf(Section.Player, Section.Bookmarks)
@@ -435,6 +440,9 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
     val indexOfTranscript: Int
         get() = sections.indexOf(Section.Transcript)
 
+    val indexOfAi: Int
+        get() = sections.indexOf(Section.Ai)
+
     val indexOfBookmarks: Int
         get() = sections.indexOf(Section.Bookmarks)
 
@@ -447,7 +455,8 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
     }
 
     fun updateTranscript(addTranscript: Boolean) {
-        updateSections(hasTranscript = addTranscript)
+        // The AI tab is a chat over the transcript, so it lives and dies with it.
+        updateSections(hasTranscript = addTranscript, hasAi = addTranscript)
     }
 
     // Stable IDs via getItemId/containsItem allow FragmentStateAdapter to efficiently diff fragments
@@ -456,6 +465,7 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
         hasNotes: Boolean = sections.contains(Section.Notes),
         hasChapters: Boolean = sections.contains(Section.Chapters),
         hasTranscript: Boolean = sections.contains(Section.Transcript),
+        hasAi: Boolean = sections.contains(Section.Ai),
     ) {
         val currentSections = sections
         val newSections = buildList {
@@ -463,6 +473,7 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
             if (hasNotes) add(Section.Notes)
             if (hasChapters) add(Section.Chapters)
             if (hasTranscript) add(Section.Transcript)
+            if (hasAi) add(Section.Ai)
             add(Section.Bookmarks)
         }
         if (currentSections != newSections) {
@@ -490,6 +501,7 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
             is Section.Bookmarks -> BookmarksFragment.newInstance(SourceView.PLAYER)
             is Section.Chapters -> ChaptersFragment.forPlayer()
             is Section.Transcript -> TranscriptTabFragment()
+            is Section.Ai -> AiTabFragment()
         }
     }
 
@@ -502,4 +514,5 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
     fun isNotesTab(position: Int) = sections[position] is Section.Notes
     fun isBookmarksTab(position: Int) = sections[position] is Section.Bookmarks
     fun isChaptersTab(position: Int) = sections[position] is Section.Chapters
+    fun isAiTab(position: Int) = sections[position] is Section.Ai
 }
