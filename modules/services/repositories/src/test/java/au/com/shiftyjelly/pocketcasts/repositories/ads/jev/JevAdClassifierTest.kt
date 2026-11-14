@@ -1,6 +1,12 @@
 package au.com.shiftyjelly.pocketcasts.repositories.ads.jev
 
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptCue
+import com.squareup.moshi.Moshi
+import java.util.Optional
+import kotlinx.coroutines.test.runTest
+import okhttp3.OkHttpClient
+import okhttp3.mockwebserver.MockResponse
+import okhttp3.mockwebserver.MockWebServer
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test
@@ -87,5 +93,58 @@ class JevAdClassifierTest {
         assertEquals(1, MAX_GAP_CUES)
         assertEquals(8_000L, MIN_POD_MS)
         assertEquals(20, JevAdClassifier.WINDOW_CUES)
+    }
+
+    @Test
+    fun `a complete answer is scored`() = runTest {
+        withClassifier(ANSWER_BOTH) { classifier ->
+            val result = classifier.classify(listOf(cue(0, 10), cue(10, 20)), SHOW, JevAdModel.SPAN_02)
+
+            val scored = result as JevClassification.Scored
+            assertEquals(listOf(0.9, 0.2), scored.pAd)
+            assertEquals("respan/span-02-20261015", scored.responseModel)
+        }
+    }
+
+    @Test
+    fun `an unanswered cue fails instead of producing a partial analysis`() = runTest {
+        withClassifier(ANSWER_FIRST_ONLY) { classifier ->
+            val result = classifier.classify(listOf(cue(0, 10), cue(10, 20)), SHOW, JevAdModel.SPAN_02)
+
+            // Partial scoring would be persisted as complete and never retried, so it must fail
+            // and let the audio analyser cover the episode.
+            val failed = result as JevClassification.Failed
+            assertTrue(failed.reason, failed.reason.contains("1 of 2 cues"))
+        }
+    }
+
+    private suspend fun withClassifier(
+        responseBody: String,
+        block: suspend (JevAdClassifier) -> Unit,
+    ) {
+        MockWebServer().use { server ->
+            server.enqueue(MockResponse().setBody(responseBody))
+            server.start()
+            val client = JevClient(
+                okHttpClient = OkHttpClient(),
+                apiKey = Optional.of(KEY),
+                moshi = Moshi.Builder().build(),
+            ).apply { endpoint = server.url("/api/v1/systemone").toString() }
+            block(JevAdClassifier(client))
+        }
+    }
+
+    private companion object {
+        const val SHOW = "Technology Today"
+        const val KEY = "test-key"
+        const val ANSWER_FIRST_ONLY =
+            """{"model":"respan/span-02-20261015","answers":{"sentence_1":{"type":"choice",""" +
+                """"choice":"advertisement","probabilities":{"advertisement":0.9,"content":0.1}}}}"""
+        const val ANSWER_BOTH =
+            """{"model":"respan/span-02-20261015","answers":{""" +
+                """"sentence_1":{"type":"choice","choice":"advertisement",""" +
+                """"probabilities":{"advertisement":0.9,"content":0.1}},""" +
+                """"sentence_2":{"type":"choice","choice":"content",""" +
+                """"probabilities":{"advertisement":0.2,"content":0.8}}}}"""
     }
 }

@@ -268,6 +268,10 @@ class MlKitEpisodeTranscriber @Inject constructor() : EpisodeTranscriber {
                 result.decodedMs,
                 result.stopReason,
             )
+            // A decode that stopped before the end covers only a prefix of the episode, so its
+            // regions would pull the whole transcript into that prefix. No profile is better: the
+            // alignment then falls back to spreading the text across the full duration.
+            if (!result.completed) return null
             return SpeechProfile(levels.toFloatArray(), frameDurationMs, result.decodedMs)
         } finally {
             runCatching { extractor.release() }

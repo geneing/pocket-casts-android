@@ -191,8 +191,7 @@ class TranscriptAdAnalyzer @Inject constructor(
             )
             LogBuffer.i(
                 TAG,
-                "Transcript ad analysis for $episodeUuid: ${cues.size} cues, " +
-                    "${scored.unclassifiedCues} unclassified, ${merged.size} pods, " +
+                "Transcript ad analysis for $episodeUuid: ${cues.size} cues, ${merged.size} pods, " +
                     "costUsd=$costUsd, ${System.currentTimeMillis() - startedAt}ms",
             )
         }

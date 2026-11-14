@@ -9,21 +9,17 @@ import kotlinx.coroutines.ensureActive
 
 /** Outcome of scoring one episode's transcript with jev. */
 sealed interface JevClassification {
-    /**
-     * Per-cue advertisement probability, in cue order. A cue is `null` when no answer came back,
-     * which [buildPods] treats as not an ad.
-     */
+    /** Per-cue advertisement probability, in cue order; complete, so no cue is `null`. */
     data class Scored(
         val pAd: List<Double?>,
         val responseModel: String?,
         val usageCostUsd: Double?,
-        val unclassifiedCues: Int,
     ) : JevClassification
 
     /** No API key is configured, so the remote classifier cannot run at all. */
     data class Unavailable(val reason: String) : JevClassification
 
-    /** Every window failed; nothing was scored. */
+    /** No window was scored, or some cues came back unanswered; nothing is written. */
     data class Failed(val reason: String) : JevClassification
 }
 
@@ -90,18 +86,18 @@ class JevAdClassifier @Inject constructor(
         }
 
         val unclassified = pAd.count { it == null }
-        if (unclassified == pAd.size) {
-            return JevClassification.Failed("all $windowCount classification windows failed")
-        }
-        if (failedWindows > 0) {
-            val scored = pAd.size - unclassified
-            LogBuffer.i(TAG, "jev classified $scored of ${pAd.size} cues ($failedWindows windows failed)")
+        if (unclassified > 0) {
+            // A partial result would be written as a complete analysis and then reused, so the
+            // unclassified cues would never be retried. Fail instead and let the caller fall back
+            // to the audio analyser, which still produces segments for this episode.
+            return JevClassification.Failed(
+                "$unclassified of ${pAd.size} cues were not classified ($failedWindows of $windowCount windows failed)",
+            )
         }
         return JevClassification.Scored(
             pAd = pAd,
             responseModel = responseModel,
             usageCostUsd = cost.takeIf { it > 0.0 },
-            unclassifiedCues = unclassified,
         )
     }
 
