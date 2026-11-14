@@ -19,7 +19,10 @@ labels into segments, or evaluate the model.
 | `jev_client.py` | `build_request()`, `classify_batch()`, `BatchResult`, errors. |
 | `smoke.py` | Five-sentence CLI sample; exit codes below. |
 | `bench.py` | Two timed batches (K=10, K=40) with accuracy against known labels. |
+| `eval_corpus.py` | Scores the classifier against the M0 labelled corpus (cue and interval metrics). |
 | `test_jev_client.py` | Offline pytest suite (patches `urllib.request.urlopen`). |
+| `test_eval_corpus.py` | Offline tests for the scorer's pure parts (gold, pods, matcher, cache, quotas). |
+| `results/` | Per-cue prediction cache (`<episode>__take<N>.jsonl`) and `REPORT_take<N>.md`. |
 
 ## Set the key
 
@@ -54,10 +57,49 @@ uv run python -m pytest next/jev -q
 
 # timing and accuracy on synthetic batches (two requests)
 uv run python next/jev/bench.py
+
+# dry run: how many window requests a corpus pass needs, no API call
+OPENCODE_API_KEY=$(tr -d '\r\n' < ../../secrets/opencode.key) \
+    uv run python next/jev/eval_corpus.py --limit 1 --dry-run
+
+# score take 0 of the labelled corpus (resumes from next/jev/results/)
+OPENCODE_API_KEY=$(tr -d '\r\n' < ../../secrets/opencode.key) \
+    uv run python next/jev/eval_corpus.py --take 0
+
+# rescore the cache after changing thresholds or metrics; never calls the API
+uv run python next/jev/eval_corpus.py --take 0 --report-only
 ```
 
 Smoke exit codes: `0` ok, `1` request failed, `2` key missing or rejected (401/403),
 `4` at least one sentence got no answer.
+
+## Corpus scoring (M2)
+
+`eval_corpus.py` answers "how well does this find ads" against
+`next/m0/corpus/labels/ads.json`. Gold is the take's `dynamic_slots`; a cue is an ad when
+its midpoint is inside a slot (the overlap-fraction rule is checked in the report and,
+measured on the 3602 scored cues, changes no cue). Cues go out in windows of K=20 cues,
+one request each, on 4 threads; predictions are cached per cue as JSONL and every
+threshold is applied at report time.
+
+Two levels are reported:
+
+* **Cue level** — precision/recall/F1 for `p_ad >= t`, plus the variant where
+  `transition` also counts as ad.
+* **Interval level** — consecutive ad cues merge into pods (one non-ad cue may be
+  bridged, pods under 8 s are dropped) and a pod is a hit only when **both** boundaries
+  are within 5 s of a gold slot. That is the acceptance criterion, and it is much harsher
+  than the cue numbers; a coverage diagnostic sits next to it to separate "not found"
+  from "found with loose edges".
+
+`--report-only` scores the cache without a call, `--no-resume` ignores it, and a window
+is cached only when every cue is present, non-missing and its text still matches the
+transcript. A hard quota error (`429 FreeUsageLimitError`) stops the run instead of
+retrying; episodes that are not fully cached are excluded from the score and listed in
+the report.
+
+**Measured:** the free model's daily allowance ran out after ~200 requests (five
+episodes), so only a partial corpus pass exists today. The report says so at the top.
 
 ## Request contract
 
