@@ -244,3 +244,26 @@ The Room database has 122 migration versions. When modifying entities:
 ### Analytics
 
 Use `AnalyticsTracker` service for event tracking. Analytics are integrated with Automattic Tracks.
+
+### On-device speech to text (ad skipping)
+
+Ad detection reads an episode's transcript, and a transcript the app does not already have is
+produced on device by Moonshine (`ai.moonshine:moonshine-voice`, ONNX Runtime, CPU only). Code and
+models are MIT.
+
+- Models: **tiny streaming** for English and Spanish, requested with the architecture passed
+  explicitly (`MOONSHINE_MODEL_ARCH_TINY_STREAMING`); the catalog's default for `en` is *medium* and
+  for `es` is *small*, so relying on the default silently downloads hundreds of megabytes.
+  Downloaded on demand (unmetered only) into `noBackupFilesDir/moonshine-models`, never bundled.
+- Language: chosen from `Podcast.podcastLanguage` by primary subtag (`es-us` -> `es`). Any other
+  language makes the engine unavailable for that episode and the audio analyzer covers it.
+- Timestamps: word-level times come from the model's cross-attention DTW. They are **English only**
+  (the Spanish bundle ships no attention decoder), so cue building must also work from line-level
+  `startTime`/`duration`. Cues are stored as WebVTT through `LocalTranscriptStore`, one cue per
+  complete streaming line, and the old ML Kit energy-region reconstruction is gone for good.
+- Where: `modules/services/repositories/.../repositories/ads/text/moonshine/`. The decisions, the
+  laptop comparison against the Whisper corpus and the integration notes live in
+  `dev/adaware/next/moonshine/`; read `RESEARCH.md` before changing the engine, the model choice or
+  the cue rules, and `REPORT.md` before trusting a timestamp change.
+- The library merges `RECORD_AUDIO` and a microphone activity into the manifest; both are stripped
+  in `app/src/main/AndroidManifest.xml` because the app never records audio.
