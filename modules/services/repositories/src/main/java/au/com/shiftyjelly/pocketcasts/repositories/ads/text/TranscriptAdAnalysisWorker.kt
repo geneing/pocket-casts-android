@@ -20,10 +20,6 @@ class TranscriptAdAnalysisWorker @AssistedInject constructor(
 ) : CoroutineWorker(context, params) {
     override suspend fun doWork(): Result {
         val episodeUuid = inputData.getString(ARG_EPISODE_UUID) ?: return Result.failure()
-        if (!analyzer.isSupported()) {
-            LogBuffer.i(TAG, "Skipping transcript analysis for $episodeUuid: recognizer unavailable")
-            return Result.success()
-        }
         val handled = runCatching { analyzer.run(episodeUuid) }
             .onFailure { LogBuffer.e(TAG, it, "Transcript analysis crashed for $episodeUuid") }
             .getOrDefault(false)

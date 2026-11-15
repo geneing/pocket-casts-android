@@ -5,6 +5,12 @@ import java.io.File
 /** A transcript cue produced on device, in the media timeline. */
 data class TranscriptCue(val startMs: Long, val endMs: Long, val text: String)
 
+/**
+ * The engine version stamped on a transcript made on device. An analysis is reused only while the
+ * engine that produced its cues is unchanged, so a new recognizer invalidates the old analysis.
+ */
+internal const val ON_DEVICE_TRANSCRIPT_VERSION = "on-device-transcript/0"
+
 sealed interface TranscriptResult {
     data class Success(val cues: List<TranscriptCue>, val engine: String) : TranscriptResult
     data class Unavailable(val reason: String) : TranscriptResult

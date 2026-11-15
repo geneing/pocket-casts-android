@@ -35,7 +35,6 @@ import kotlinx.coroutines.launch
 @Singleton
 class AdAnalysisScheduler @Inject constructor(
     @ApplicationContext private val context: Context,
-    private val transcriber: EpisodeTranscriber,
     private val episodeManager: EpisodeManager,
     private val transcriptStore: LocalTranscriptStore,
     @ApplicationScope private val scope: CoroutineScope,
@@ -90,7 +89,7 @@ class AdAnalysisScheduler @Inject constructor(
         WorkManager.getInstance(context).cancelUniqueWork(TranscriptAdAnalysisWorker.uniqueName(episodeUuid))
     }
 
-    private fun isEnabled() = FeatureFlag.isEnabled(Feature.AD_SKIPPING) && transcriber.isAvailable()
+    private fun isEnabled() = FeatureFlag.isEnabled(Feature.AD_SKIPPING)
 
     private fun constraints() = Constraints.Builder()
         .setRequiresBatteryNotLow(true)

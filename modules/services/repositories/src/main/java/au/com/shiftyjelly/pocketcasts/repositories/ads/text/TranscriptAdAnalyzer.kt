@@ -44,14 +44,12 @@ import timber.log.Timber
 /**
  * Ad analysis from a transcript, scored by the remote jev choice classifier.
  *
- * The episode's existing transcript is used when the app has one, whether it is the show's own
- * transcript or the generated VTT the transcript tab shows. Those cues already carry word-level
- * timings, so this is both cheaper and more accurate than recognising the audio locally. Only an
- * episode without any transcript is transcribed on device, and that transcript is then cached by
- * [LocalTranscriptStore] and registered with the transcript stack.
+ * The episode's existing transcript is used, whether it is the show's own transcript or a
+ * generated VTT the transcript tab shows. Those cues already carry word-level timings, so this is
+ * both cheaper and more accurate than recognising the audio locally.
  *
  * The analysis is reused while the audio file (or stream URL), the transcript identity, the
- * recognizer version and the jev model (including its prompt revision) are unchanged. Pods are
+ * transcript engine and the jev model (including its prompt revision) are unchanged. Pods are
  * written as [DbAdSegment]s with [AdSegmentOrigin.Transcript], and every cue's p(advertisement) is
  * stored as a [DbAdCueScore] so the transcript can show the score for each sentence.
  *
@@ -70,7 +68,6 @@ class TranscriptAdAnalyzer @Inject constructor(
     private val adAnalysisDao: AdAnalysisDao,
     private val adCueScoreDao: AdCueScoreDao,
     private val classifier: JevAdClassifier,
-    private val transcriber: EpisodeTranscriber,
     private val transcriptStore: LocalTranscriptStore,
     private val transcriptManager: TranscriptManager,
     private val generatedTranscriptLoader: GeneratedTranscriptLoader,
@@ -87,8 +84,6 @@ class TranscriptAdAnalyzer @Inject constructor(
      * keeps a failure from turning into a download loop while still allowing a later attempt.
      */
     private val failedAttempts = ConcurrentHashMap<String, Long>()
-
-    fun isSupported(): Boolean = transcriber.isAvailable()
 
     fun analyze(episodeUuid: String) {
         val previous = analysisJob
@@ -125,27 +120,30 @@ class TranscriptAdAnalyzer @Inject constructor(
         // the transcript URL and the audio are both known before anything is loaded.
         val generatedUrl = generatedTranscriptLoader.urlFor(episode)
         if (sourceSignature != null && hasCueScores) {
-            val analysed = listOfNotNull(generatedUrl?.let(::transcriptAnalysisVersion), transcriber.version)
-                .any { version ->
-                    AnalysisIdentity.isReusableTranscript(state, sourceSignature, version, model, JevPrompt.VERSION)
-                }
+            val analysed = listOfNotNull(
+                generatedUrl?.let(::transcriptAnalysisVersion),
+                ON_DEVICE_TRANSCRIPT_VERSION,
+            ).any { version ->
+                AnalysisIdentity.isReusableTranscript(state, sourceSignature, version, model, JevPrompt.VERSION)
+            }
             if (analysed) {
                 Timber.tag(TAG).d("Episode %s is already analysed with its transcript, model and prompt", episodeUuid)
                 return true
             }
         }
 
+        // The transcript the app already has is the only analysis input: an episode without one is
+        // not analysed while on-device speech-to-text is being replaced (dev/adaware/next/moonshine).
         val existing = loadExistingTranscript(episodeUuid)
-        if (source == null && existing == null) {
-            Timber.tag(TAG).d("Episode %s has neither audio nor a transcript", episodeUuid)
+        if (existing == null) {
+            Timber.tag(TAG).d("Episode %s has no transcript to analyse", episodeUuid)
             return false
         }
 
-        // A transcript the app already has is the analysis input; otherwise the recognizer is.
-        // Keeping the version here makes a newly available transcript invalidate an older,
-        // speech-recognised analysis of the same episode.
-        val signature = sourceSignature ?: existing!!.url
-        val sttVersion = existing?.analysisVersion(transcriber.version) ?: transcriber.version
+        // Keeping the transcript's identity here makes a newly available transcript invalidate an
+        // older analysis of the same episode.
+        val signature = sourceSignature ?: existing.url
+        val sttVersion = existing.analysisVersion(ON_DEVICE_TRANSCRIPT_VERSION)
         if (hasCueScores && AnalysisIdentity.isReusableTranscript(state, signature, sttVersion, model, JevPrompt.VERSION)) {
             Timber.tag(TAG).d("Episode %s is already analysed with this transcript, model and prompt", episodeUuid)
             return true
@@ -160,42 +158,14 @@ class TranscriptAdAnalyzer @Inject constructor(
             }
         }
 
-        val cues = if (existing != null) {
-            existing.toAnalysisCues()
-        } else {
-            if (source == null || !transcriber.isAvailable()) return false
-            val result = transcriber.transcribe(episodeUuid, source, episode.durationMs.toLong())
-            when (result) {
-                is TranscriptResult.Success -> result.cues
-
-                is TranscriptResult.Unavailable -> {
-                    LogBuffer.i(TAG, "On-device transcription unavailable: ${result.reason}")
-                    return false
-                }
-
-                is TranscriptResult.Failed -> {
-                    LogBuffer.e(TAG, "Transcription failed for $episodeUuid: ${result.message}")
-                    noteFailure(episodeUuid)
-                    return false
-                }
-            }
-        }
+        val cues = existing.toAnalysisCues()
         if (cues.isEmpty()) {
             LogBuffer.i(TAG, "No transcript cues to score for $episodeUuid")
             noteFailure(episodeUuid)
             return false
         }
 
-        if (existing == null) {
-            transcriptStore.save(episodeUuid, cues)
-            LogBuffer.i(
-                TAG,
-                "Cached transcript for $episodeUuid: ${cues.size} cues, " +
-                    "${System.currentTimeMillis() - startedAt}ms",
-            )
-        } else {
-            LogBuffer.i(TAG, "Using the existing transcript for $episodeUuid: ${cues.size} cues from ${existing.url}")
-        }
+        LogBuffer.i(TAG, "Using the existing transcript for $episodeUuid: ${cues.size} cues from ${existing.url}")
 
         val podcastTitle = podcastManager.findPodcastByUuid(episode.podcastUuid)?.title.orEmpty()
         val classification = classifier.classify(cues, podcastTitle.ifBlank { UNKNOWN_SHOW }, model)

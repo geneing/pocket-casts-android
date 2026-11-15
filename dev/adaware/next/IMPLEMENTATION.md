@@ -66,35 +66,25 @@ The model asset is 2.5 MB of JSON (~1 MB gzipped in the APK). Parity is enforced
 
 ### Speech to text
 
-`MlKitEpisodeTranscriber` hands the downloaded file to ML Kit GenAI **Advanced** speech
-recognition (`com.google.mlkit:genai-speech-recognition`) as a one-shot audio source
-(`AudioSource.fromFile`): the SDK decodes mp3/m4a/ogg itself and transcribes faster than
-real time. One-shot sources cannot report word timings, so the recognizer returns only
-ordered final segments, with no clock of their own.
+ML Kit's GenAI **Advanced** speech recognizer (`com.google.mlkit:genai-speech-recognition`)
+was removed on `feature/adaware_jev_moonshine`. It handed the downloaded file over as a
+one-shot `AudioSource.fromFile`, and one-shot sources cannot report word timings: the
+recognizer returned ordered segments with no clock, and cue times had to be reconstructed
+from 20 ms audio-energy frames (`AudioAdDecoder` → `detectSpeechRegions` →
+`alignSegmentsToRegions`). Those cues were **speech-region accurate, not word accurate**:
+a segment started where speech resumed around it, a pause inside a long segment pulled its
+edges towards its neighbours, and flat audio collapsed into one region covering the whole
+clip. That is what made ad boundaries land in the wrong place.
 
-Cue times are reconstructed from the audio. The file is decoded once with the existing
-`AudioAdDecoder` (MediaExtractor/MediaCodec, no second decoder) into 20 ms energy frames;
-the speech threshold comes from the clip's own level distribution (15th to 90th
-percentile), above-threshold runs closer than 400 ms are merged, and runs shorter than
-200 ms are dropped. `alignSegmentsToRegions` maps the ordered segments onto the ordered
-regions: one region per segment when the counts match, otherwise the segments are spread
-over the concatenated speech time in proportion to their text length, contiguously and
-clamped to the episode duration. When no audio track can be decoded, the cues are spread
-across the episode duration by text length instead. Each pass logs segment and region
-counts, speech coverage and the median region length so a device run can be judged.
+It is replaced by Moonshine (`ai.moonshine:moonshine-voice`), whose streaming models carry
+real word-level times from cross-attention DTW. See `dev/adaware/next/moonshine/` for the
+research, the laptop comparison against the Whisper transcripts and the integration notes.
+Until that lands, `TranscriptAdAnalyzer` only scores transcripts the app already has; an
+episode without one is left to `AudioAdAnalyzer`.
 
-Accuracy: cues are **speech-region accurate, not word accurate**. A segment starts where
-speech resumed around it, a pause inside a long segment pulls its edges towards its
-neighbours, and audio with no usable dynamic range collapses into one region covering the
-whole clip.
-
-`ErrorResponse` fails the pass, `CompletedResponse` completes it, and partial text and
-audio levels are ignored. `AudioSource` and the recognizer are released in `finally`,
-including on cancellation. The model downloads on first use when `checkStatus()` reports
-`DOWNLOADABLE`; a failed download reports `Failed` with a reason. Advanced mode needs a
-Pixel 10/11-class device, and the phone app's minSdk is 26 (raised from 24 for this SDK),
-so the transcriber is compiled into every build and simply reports `Unavailable` where
-the model cannot run.
+The phone app's `repositories` module keeps minSdk 26 (Moonshine's AAR declares 26, as the
+ML Kit speech SDK did), and the app no longer declares `RECORD_AUDIO`: nothing records
+audio any more.
 
 
 ### Pipeline and storage

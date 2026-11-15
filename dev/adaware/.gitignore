@@ -8,6 +8,7 @@ __pycache__/
 # Downloaded / generated media and model weights
 data/models/
 data/model/
+next/moonshine/models/
 *.mp3
 *.m4a
 *.wav
@@ -16,6 +17,7 @@ data/model/
 *.npz
 *.npy
 *.onnx
+*.ort
 *.bin
 *.safetensors
 *.exe

@@ -1,7 +1,5 @@
 package au.com.shiftyjelly.pocketcasts.repositories.ads
 
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.EpisodeTranscriber
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.MlKitEpisodeTranscriber
 import au.com.shiftyjelly.pocketcasts.repositories.di.OpenRouterApiKey
 import dagger.Binds
 import dagger.BindsOptionalOf
@@ -17,10 +15,6 @@ abstract class AdAwareModule {
 
     @Binds
     abstract fun provideAdSegmentManager(adSegmentManagerImpl: AdSegmentManagerImpl): AdSegmentManager
-
-    @Binds
-    @Singleton
-    abstract fun provideEpisodeTranscriber(impl: MlKitEpisodeTranscriber): EpisodeTranscriber
 
     /**
      * The OpenRouter key is optional so every app variant's graph stays valid: the app binds it

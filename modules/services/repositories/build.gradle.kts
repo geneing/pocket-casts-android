@@ -11,8 +11,9 @@ android {
         buildConfig = true
     }
     defaultConfig {
-        // ML Kit's GenAI speech recognition ships minSdkVersion 26, so this module needs that floor.
-        // The floor is set here rather than raised globally so the other modules keep upstream's.
+        // The on-device speech stack needs an API 26 floor (Moonshine's AAR declares minSdkVersion
+        // 26, as ML Kit's speech recognition did before it). The floor is set here rather than
+        // raised globally so the other modules keep upstream's.
         minSdk = 26
     }
 }
@@ -65,7 +66,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.media3.datasource.okhttp)
     implementation(libs.media3.exoplayer.hls)
-    implementation(libs.mlkit.genai.speech.recognition)
     api(libs.media3.session)
     implementation(libs.media3.ui)
     implementation(libs.play.auth)
