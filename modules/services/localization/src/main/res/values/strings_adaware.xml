@@ -13,7 +13,7 @@
     <string name="player_effects_skip_ads_detail_on">Ads and sponsor reads are skipped automatically. Turn off to hear them.</string>
     <string name="player_skip_ad">Skip ad</string>
     <string name="player_ad_skipped">Skipped %1$s of ads</string>
-    <string name="player_tab_ai" translatable="false">AI</string>
+    <string name="player_tab_ai" translatable="false">Ask AI</string>
     <string name="transcript_generating">Generating transcript…</string>
     <string name="transcript_not_available">No transcript for this episode yet</string>
 </resources>

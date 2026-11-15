@@ -35,6 +35,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
@@ -53,13 +54,18 @@ import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.mapNotNull
 import kotlinx.coroutines.launch
 import au.com.shiftyjelly.pocketcasts.localization.R as LR
 
 /**
- * Episode AI tab: a chat over the current episode's transcript, shown next to the transcript tab
- * and only when there is a transcript to chat over.
+ * Episode AI tab: a chat over an episode's transcript, shown next to the transcript tab and only
+ * when there is a transcript to chat over.
+ *
+ * With [forEpisode] the tab chats about a fixed episode and uses the app colors, so it also works
+ * on an episode details screen where nothing is playing. Without it the tab follows the player's
+ * episode and uses the player's dark-background colors.
  */
 @AndroidEntryPoint
 class AiTabFragment : Fragment() {
@@ -70,6 +76,7 @@ class AiTabFragment : Fragment() {
     private val viewModel: AiTabViewModel by viewModels()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        val isPlayerTab = fixedEpisodeUuid == null
         return contentWithoutConsumedInsets {
             AppTheme(theme.activeTheme) {
                 val state by viewModel.state.collectAsStateWithLifecycle()
@@ -77,6 +84,7 @@ class AiTabFragment : Fragment() {
                     state = state,
                     onInputChange = viewModel::onInputChange,
                     onSend = viewModel::send,
+                    usePlayerColors = isPlayerTab,
                 )
             }
         }
@@ -84,11 +92,25 @@ class AiTabFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewLifecycleOwner.lifecycleScope.launch {
-            shelfSharedViewModel.uiState
+        val episodeFlow = fixedEpisodeUuid?.let(::flowOf)
+            ?: shelfSharedViewModel.uiState
                 .mapNotNull { it.episode?.uuid }
                 .distinctUntilChanged()
-                .collect { episodeUuid -> viewModel.onEpisodeChanged(episodeUuid) }
+        viewLifecycleOwner.lifecycleScope.launch {
+            episodeFlow.collect { episodeUuid -> viewModel.onEpisodeChanged(episodeUuid) }
+        }
+    }
+
+    private val fixedEpisodeUuid: String?
+        get() = arguments?.getString(ARG_EPISODE_UUID)
+
+    companion object {
+        private const val ARG_EPISODE_UUID = "episode_uuid"
+
+        fun forEpisode(episodeUuid: String) = AiTabFragment().apply {
+            arguments = Bundle().apply {
+                putString(ARG_EPISODE_UUID, episodeUuid)
+            }
         }
     }
 }
@@ -98,10 +120,9 @@ private fun AiTabPage(
     state: AiTabState,
     onInputChange: (String) -> Unit,
     onSend: (String) -> Unit,
+    usePlayerColors: Boolean,
 ) {
-    // The tab sits on the player background, which is dark in every theme, so it uses the player
-    // contrast colors rather than the app theme's text color which would be unreadable here.
-    val colors = MaterialTheme.theme.colors
+    val colors = aiTabColors(usePlayerColors)
     Column(modifier = Modifier.fillMaxSize()) {
         when (state.transcript) {
             TranscriptAvailability.Loading -> {
@@ -110,7 +131,7 @@ private fun AiTabPage(
                     modifier = Modifier.fillMaxSize(),
                 ) {
                     CircularProgressIndicator(
-                        color = colors.playerContrast02,
+                        color = colors.muted,
                         strokeWidth = 2.dp,
                         modifier = Modifier.size(24.dp),
                     )
@@ -121,7 +142,7 @@ private fun AiTabPage(
                 Text(
                     text = stringResource(LR.string.player_ai_transcript_missing),
                     style = MaterialTheme.typography.body2,
-                    color = colors.playerContrast02,
+                    color = colors.muted,
                     modifier = Modifier.padding(24.dp),
                 )
             }
@@ -130,11 +151,13 @@ private fun AiTabPage(
                 if (state.isConversationEmpty) {
                     EmptyConversation(
                         onSend = onSend,
+                        colors = colors,
                         modifier = Modifier.weight(1f),
                     )
                 } else {
                     MessageList(
                         state = state,
+                        colors = colors,
                         modifier = Modifier.weight(1f),
                     )
                 }
@@ -147,6 +170,7 @@ private fun AiTabPage(
                     canSend = state.canSend && input.isNotBlank(),
                     onInputChange = onInputChange,
                     onSend = onSend,
+                    colors = colors,
                 )
             }
         }
@@ -156,9 +180,9 @@ private fun AiTabPage(
 @Composable
 private fun EmptyConversation(
     onSend: (String) -> Unit,
+    colors: AiTabColors,
     modifier: Modifier = Modifier,
 ) {
-    val colors = MaterialTheme.theme.colors
     val suggestion = stringResource(LR.string.player_ai_default_question)
     Column(
         verticalArrangement = Arrangement.spacedBy(16.dp, Alignment.CenterVertically),
@@ -170,17 +194,17 @@ private fun EmptyConversation(
         Text(
             text = stringResource(LR.string.player_ai_empty_hint),
             style = MaterialTheme.typography.body2,
-            color = colors.playerContrast02,
+            color = colors.muted,
         )
         Surface(
             shape = RoundedCornerShape(16.dp),
-            color = colors.playerContrast06,
+            color = colors.assistantBubble,
             modifier = Modifier.clickable { onSend(suggestion) },
         ) {
             Text(
                 text = suggestion,
                 style = MaterialTheme.typography.body2,
-                color = colors.playerContrast01,
+                color = colors.text,
                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
             )
         }
@@ -190,6 +214,7 @@ private fun EmptyConversation(
 @Composable
 private fun MessageList(
     state: AiTabState,
+    colors: AiTabColors,
     modifier: Modifier = Modifier,
 ) {
     val listState = rememberLazyListState()
@@ -207,17 +232,19 @@ private fun MessageList(
         modifier = modifier.fillMaxWidth(),
     ) {
         items(state.messages) { message ->
-            MessageBubble(message = message)
+            MessageBubble(message = message, colors = colors)
         }
         if (state.isLoading) {
-            item { ThinkingRow() }
+            item { ThinkingRow(colors = colors) }
         }
     }
 }
 
 @Composable
-private fun MessageBubble(message: AiChatMessage) {
-    val colors = MaterialTheme.theme.colors
+private fun MessageBubble(
+    message: AiChatMessage,
+    colors: AiTabColors,
+) {
     val isUser = message.role == AiChatMessage.Role.User
     Row(
         horizontalArrangement = if (isUser) Arrangement.End else Arrangement.Start,
@@ -225,13 +252,13 @@ private fun MessageBubble(message: AiChatMessage) {
     ) {
         Surface(
             shape = RoundedCornerShape(12.dp),
-            color = if (isUser) colors.playerContrast05 else colors.playerContrast06,
+            color = if (isUser) colors.userBubble else colors.assistantBubble,
             modifier = Modifier.fillMaxWidth(BUBBLE_WIDTH_FRACTION),
         ) {
             Text(
                 text = message.content,
                 style = MaterialTheme.typography.body2,
-                color = colors.playerContrast01,
+                color = colors.text,
                 modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp),
             )
         }
@@ -239,22 +266,21 @@ private fun MessageBubble(message: AiChatMessage) {
 }
 
 @Composable
-private fun ThinkingRow() {
-    val colors = MaterialTheme.theme.colors
+private fun ThinkingRow(colors: AiTabColors) {
     Row(
         horizontalArrangement = Arrangement.spacedBy(8.dp),
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier.padding(vertical = 4.dp),
     ) {
         CircularProgressIndicator(
-            color = colors.playerContrast02,
+            color = colors.muted,
             strokeWidth = 2.dp,
             modifier = Modifier.size(14.dp),
         )
         Text(
             text = stringResource(LR.string.player_ai_thinking),
             style = MaterialTheme.typography.caption,
-            color = colors.playerContrast02,
+            color = colors.muted,
         )
     }
 }
@@ -279,8 +305,8 @@ private fun InputBar(
     canSend: Boolean,
     onInputChange: (String) -> Unit,
     onSend: (String) -> Unit,
+    colors: AiTabColors,
 ) {
-    val colors = MaterialTheme.theme.colors
     val keyboardController = LocalSoftwareKeyboardController.current
     val send: () -> Unit = {
         onSend(input)
@@ -299,7 +325,7 @@ private fun InputBar(
                 Text(
                     text = stringResource(LR.string.player_ai_input_hint),
                     style = MaterialTheme.typography.body2,
-                    color = colors.playerContrast03,
+                    color = colors.hint,
                 )
             },
             textStyle = MaterialTheme.typography.body2,
@@ -307,10 +333,10 @@ private fun InputBar(
             keyboardOptions = KeyboardOptions(imeAction = ImeAction.Send),
             keyboardActions = KeyboardActions(onSend = { if (canSend) send() }),
             colors = TextFieldDefaults.outlinedTextFieldColors(
-                textColor = colors.playerContrast01,
-                cursorColor = colors.playerContrast01,
-                focusedBorderColor = colors.playerContrast02,
-                unfocusedBorderColor = colors.playerContrast04,
+                textColor = colors.text,
+                cursorColor = colors.text,
+                focusedBorderColor = colors.muted,
+                unfocusedBorderColor = colors.border,
             ),
             modifier = Modifier.weight(1f),
         )
@@ -324,9 +350,46 @@ private fun InputBar(
             Icon(
                 imageVector = Icons.AutoMirrored.Filled.ArrowForward,
                 contentDescription = stringResource(LR.string.player_ai_send),
-                tint = if (canSend) colors.playerContrast01 else colors.playerContrast03,
+                tint = if (canSend) colors.text else colors.hint,
             )
         }
+    }
+}
+
+private data class AiTabColors(
+    val text: Color,
+    val muted: Color,
+    val hint: Color,
+    val border: Color,
+    val userBubble: Color,
+    val assistantBubble: Color,
+)
+
+/**
+ * The player tab sits on a background that is dark in every theme, so it uses the player contrast
+ * colors. An episode details tab follows the app theme instead.
+ */
+@Composable
+private fun aiTabColors(usePlayerColors: Boolean): AiTabColors {
+    val colors = MaterialTheme.theme.colors
+    return if (usePlayerColors) {
+        AiTabColors(
+            text = colors.playerContrast01,
+            muted = colors.playerContrast02,
+            hint = colors.playerContrast03,
+            border = colors.playerContrast04,
+            userBubble = colors.playerContrast05,
+            assistantBubble = colors.playerContrast06,
+        )
+    } else {
+        AiTabColors(
+            text = colors.primaryText01,
+            muted = colors.primaryText02,
+            hint = colors.primaryIcon03,
+            border = colors.primaryUi05,
+            userBubble = colors.primaryUi05,
+            assistantBubble = colors.primaryUi04,
+        )
     }
 }
 

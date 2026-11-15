@@ -141,6 +141,11 @@ without playback and in the app colors. The details tab appears as soon as
 analysis does not need the player to be open. The Details tab's transcript card follows the
 same availability flow, so it appears live when the analysis completes.
 
+The **Ask AI** tab (formerly "AI") follows the same rule in both places: it is a chat over
+the transcript, so it appears next to the Transcript tab whenever one exists.
+`AiTabFragment.forEpisode(uuid)` gives it the same fixed-episode, app-color mode as the
+transcript tab for the details sheet.
+
 Two places used to take the on-device transcript away after it was produced:
 `TranscriptDao.replaceAll` (a show notes refresh) and `DownloadManager.cleanUpDownloads`
 (deleting a download) both deleted every transcript row of the episode. Both now keep

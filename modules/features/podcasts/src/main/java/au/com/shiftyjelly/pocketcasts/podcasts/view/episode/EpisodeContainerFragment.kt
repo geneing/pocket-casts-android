@@ -23,6 +23,7 @@ import au.com.shiftyjelly.pocketcasts.analytics.SourceView
 import au.com.shiftyjelly.pocketcasts.images.R
 import au.com.shiftyjelly.pocketcasts.models.entity.PodcastEpisode
 import au.com.shiftyjelly.pocketcasts.models.type.EpisodeViewSource
+import au.com.shiftyjelly.pocketcasts.player.view.ai.AiTabFragment
 import au.com.shiftyjelly.pocketcasts.player.view.bookmark.BookmarksFragment
 import au.com.shiftyjelly.pocketcasts.player.view.chapters.ChaptersFragment
 import au.com.shiftyjelly.pocketcasts.player.view.chapters.ChaptersViewModel
@@ -329,6 +330,10 @@ class EpisodeContainerFragment :
                 titleRes = LR.string.transcript,
                 analyticsValue = null,
             )
+            data object Ai : Section(
+                titleRes = LR.string.player_tab_ai,
+                analyticsValue = null,
+            )
             data object Chapters : Section(
                 titleRes = LR.string.chapters,
                 analyticsValue = EpisodeTabType.Chapters,
@@ -347,6 +352,7 @@ class EpisodeContainerFragment :
                 add(Section.Details)
                 if (addTranscript) {
                     add(Section.Transcript)
+                    add(Section.Ai)
                 }
                 if (addChapters) {
                     add(Section.Chapters)
@@ -394,6 +400,10 @@ class EpisodeContainerFragment :
                 )
 
                 Section.Transcript -> TranscriptTabFragment.forEpisode(
+                    episodeUuid = requireNotNull(episodeUUID),
+                )
+
+                Section.Ai -> AiTabFragment.forEpisode(
                     episodeUuid = requireNotNull(episodeUUID),
                 )
 
