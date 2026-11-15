@@ -42,9 +42,10 @@ import timber.log.Timber
  * transcript identity, the recognizer version and the jev model (including its prompt revision)
  * are unchanged. Pods are written as [DbAdSegment]s with [AdSegmentOrigin.Transcript].
  *
- * Confidence is deliberately capped below [AdSegment.MIN_AUTO_SKIP_CONFIDENCE]: the model is not
- * calibrated and the on-device cue timings are only speech-region accurate, so every transcript
- * pod stays a suggestion until an independently labelled evaluation clears the product bar.
+ * Confidence is the pod's mean p(advertisement), so a pod the classifier is sure about clears
+ * [AdSegment.MIN_AUTO_SKIP_CONFIDENCE] and is skipped automatically, while a weak one stays a
+ * suggestion. The cue timings are only speech-region accurate, so a confident pod can start a few
+ * seconds off the real read.
  *
  * When the classifier is unavailable or fails, [run] reports `false` without writing state, so
  * [au.com.shiftyjelly.pocketcasts.repositories.ads.AudioAdAnalyzer] still produces segments.
@@ -166,8 +167,7 @@ class TranscriptAdAnalyzer @Inject constructor(
                     endTimeMs = end,
                     kind = AdSegmentKind.Ad,
                     origin = AdSegmentOrigin.Transcript,
-                    confidence = pod.meanAdvertisementProbability
-                        .coerceAtMost(AdSegment.MIN_AUTO_SKIP_CONFIDENCE - CONFIDENCE_MARGIN),
+                    confidence = pod.meanAdvertisementProbability.coerceIn(0f, 1f),
                     createdAt = now,
                 )
             }
@@ -246,8 +246,5 @@ class TranscriptAdAnalyzer @Inject constructor(
 
         /** How long the analysis waits for a download to be recorded before giving up. */
         private const val WAIT_FOR_DOWNLOAD_MS = 30_000L
-
-        // Keeps every pod strictly below AdSegment.MIN_AUTO_SKIP_CONFIDENCE; the model is not calibrated.
-        private const val CONFIDENCE_MARGIN = 0.01f
     }
 }
