@@ -1,5 +1,6 @@
 package au.com.shiftyjelly.pocketcasts.player.view.transcript
 
+import au.com.shiftyjelly.pocketcasts.models.to.AdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.TranscriptEntry
 import kotlin.time.Duration.Companion.seconds
@@ -94,7 +95,30 @@ class TranscriptAdSentencesTest {
         assertNull(adSegmentFor(sentence(10, 12), emptyList()))
         assertNull(adSegmentFor(sentence(10, 12), listOf(segment(14, 16))))
     }
+
+    @Test
+    fun `a cue score is matched by the sentence start`() {
+        val scores = listOf(score(9, 4, 0.04f), score(10, 2, 0.79f))
+
+        assertEquals(0.79f, cueProbabilityFor(sentence(10, 12), scores))
+        assertEquals(0.04f, cueProbabilityFor(sentence(9, 10), scores))
+        assertNull(cueProbabilityFor(sentence(30, 35), scores))
+    }
+
+    @Test
+    fun `a cue score covers a sentence whose start shifted`() {
+        val scores = listOf(AdCueScore(cueIndex = 0, startTimeMs = 10_000, endTimeMs = 13_000, probability = 0.2f))
+
+        assertEquals(0.2f, cueProbabilityFor(sentence(11, 12), scores))
+    }
 }
+
+private fun score(startSeconds: Int, endSeconds: Int, probability: Float) = AdCueScore(
+    cueIndex = 0,
+    startTimeMs = startSeconds * 1000L,
+    endTimeMs = endSeconds * 1000L,
+    probability = probability,
+)
 
 private fun sentence(startSeconds: Int, endSeconds: Int) = TranscriptEntry.Text(
     value = "Sentence",

@@ -34,6 +34,7 @@ import androidx.lifecycle.lifecycleScope
 import au.com.shiftyjelly.pocketcasts.compose.AppTheme
 import au.com.shiftyjelly.pocketcasts.compose.extensions.contentWithoutConsumedInsets
 import au.com.shiftyjelly.pocketcasts.compose.theme
+import au.com.shiftyjelly.pocketcasts.models.to.AdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.Transcript
 import au.com.shiftyjelly.pocketcasts.models.to.TranscriptEntry
@@ -42,6 +43,8 @@ import au.com.shiftyjelly.pocketcasts.repositories.ads.AdSegmentManager
 import au.com.shiftyjelly.pocketcasts.repositories.playback.PlaybackManager
 import au.com.shiftyjelly.pocketcasts.repositories.transcript.TranscriptManager
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
+import au.com.shiftyjelly.pocketcasts.utils.featureflag.Feature
+import au.com.shiftyjelly.pocketcasts.utils.featureflag.FeatureFlag
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 import kotlin.math.roundToInt
@@ -97,6 +100,7 @@ class TranscriptTabFragment : Fragment() {
                 TranscriptTabPage(
                     entries = state.entries,
                     adSegments = state.adSegments,
+                    cueScores = state.cueScores,
                     onSeek = onSeek,
                     usePlayerColors = isPlayerTab,
                 )
@@ -131,11 +135,20 @@ class TranscriptTabFragment : Fragment() {
                     // Clearing first keeps the previous episode's transcript from showing meanwhile.
                     emit(emptyList())
                     if (isAvailable) {
+                        // The tab is often the first place an episode is read, before it is played.
+                        // Starting the analysis here fills in the probabilities without waiting.
+                        if (FeatureFlag.isEnabled(Feature.AD_SKIPPING)) {
+                            adSegmentManager.analyze(episodeUuid)
+                        }
                         emit(loadEntries(episodeUuid))
                     }
                 }
-                combine(entries, adSegmentManager.observeSegments(episodeUuid)) { transcriptEntries, adSegments ->
-                    TranscriptTabState(entries = transcriptEntries, adSegments = adSegments)
+                combine(
+                    entries,
+                    adSegmentManager.observeSegments(episodeUuid),
+                    adSegmentManager.observeCueScores(episodeUuid),
+                ) { transcriptEntries, adSegments, cueScores ->
+                    TranscriptTabState(entries = transcriptEntries, adSegments = adSegments, cueScores = cueScores)
                 }
             }
     }
@@ -162,12 +175,14 @@ class TranscriptTabFragment : Fragment() {
 private data class TranscriptTabState(
     val entries: List<TranscriptEntry.Text> = emptyList(),
     val adSegments: List<AdSegment> = emptyList(),
+    val cueScores: List<AdCueScore> = emptyList(),
 )
 
 @Composable
 private fun TranscriptTabPage(
     entries: List<TranscriptEntry.Text>,
     adSegments: List<AdSegment>,
+    cueScores: List<AdCueScore>,
     onSeek: ((Int) -> Unit)?,
     usePlayerColors: Boolean,
 ) {
@@ -186,10 +201,14 @@ private fun TranscriptTabPage(
         return
     }
     // Ad segment times are in the timeline of the played audio, the same timeline as the entries,
-    // so they are compared as they are. Italics mark an ad sentence, and the segment's probability
-    // is shown beside its timestamp so the detection can be followed without opening anything else.
+    // so they are compared as they are. Italics mark an ad sentence, and every scored sentence
+    // shows the classifier's probability beside its timestamp so the read of the whole transcript
+    // can be followed, not just the pods it decided were ads.
     val adSegmentBySentence = remember(entries, adSegments) {
         entries.indices.associateWith { index -> adSegmentFor(entries[index], adSegments) }
+    }
+    val probabilityBySentence = remember(entries, cueScores) {
+        entries.indices.associateWith { index -> cueProbabilityFor(entries[index], cueScores) }
     }
     LazyColumn(
         modifier = Modifier.fillMaxSize(),
@@ -198,6 +217,7 @@ private fun TranscriptTabPage(
     ) {
         itemsIndexed(entries) { index, entry ->
             val adSegment = adSegmentBySentence[index]
+            val probability = probabilityBySentence[index]
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -222,8 +242,12 @@ private fun TranscriptTabPage(
                         style = MaterialTheme.typography.caption,
                         color = timestampColor,
                     )
-                    if (adSegment != null) {
-                        AdProbabilityLabel(confidence = adSegment.confidence)
+                    if (probability != null) {
+                        AdProbabilityLabel(
+                            probability = probability,
+                            isAd = adSegment != null,
+                            usePlayerColors = usePlayerColors,
+                        )
                     }
                 }
             }
@@ -231,18 +255,35 @@ private fun TranscriptTabPage(
     }
 }
 
-/** The model's advertisement probability for a sentence's segment, as a compact percentage pill. */
+/** A sentence's advertisement probability as a compact percentage pill. */
 @Composable
-private fun AdProbabilityLabel(confidence: Float) {
+private fun AdProbabilityLabel(
+    probability: Float,
+    isAd: Boolean,
+    usePlayerColors: Boolean,
+) {
     val colors = MaterialTheme.theme.colors
-    val percent = (confidence * 100).roundToInt().coerceIn(0, 100)
+    val percent = (probability * 100).roundToInt().coerceIn(0, 100)
+    val contentColor = when {
+        isAd -> colors.primaryInteractive01
+        usePlayerColors -> colors.playerContrast02
+        else -> colors.primaryText02
+    }
+    val backgroundColor = when {
+        isAd -> colors.primaryInteractive01.copy(alpha = 0.12f)
+        usePlayerColors -> colors.playerContrast06
+        else -> colors.primaryUi05
+    }
     Text(
-        text = stringResource(LR.string.player_ad_probability, percent),
+        text = stringResource(
+            if (isAd) LR.string.player_ad_probability else LR.string.transcript_ad_score,
+            percent,
+        ),
         style = MaterialTheme.typography.caption,
-        color = colors.primaryInteractive01,
+        color = contentColor,
         modifier = Modifier
             .padding(start = 8.dp)
-            .background(colors.primaryInteractive01.copy(alpha = 0.12f), RoundedCornerShape(4.dp))
+            .background(backgroundColor, RoundedCornerShape(4.dp))
             .padding(horizontal = 6.dp, vertical = 2.dp),
     )
 }

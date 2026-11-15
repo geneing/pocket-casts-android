@@ -1,5 +1,6 @@
 package au.com.shiftyjelly.pocketcasts.player.view.transcript
 
+import au.com.shiftyjelly.pocketcasts.models.to.AdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.TranscriptEntry
 import kotlin.time.Duration
@@ -46,4 +47,17 @@ internal fun adSegmentFor(sentence: TranscriptEntry.Text, segments: List<AdSegme
 /** Whether [sentence] is ad copy, using the same coverage rule as [adSegmentFor]. */
 internal fun isAdSentence(sentence: TranscriptEntry.Text, segments: List<AdSegment>): Boolean {
     return adSegmentFor(sentence, segments) != null
+}
+
+/**
+ * The classifier's probability for [sentence], matched to the cue that was scored.
+ *
+ * Cues and transcript entries are read from the same transcript, so their start times are equal
+ * and an exact match is tried first. A later revision that shifted a cue slightly still matches
+ * when the score's span contains the sentence's start.
+ */
+internal fun cueProbabilityFor(sentence: TranscriptEntry.Text, scores: List<AdCueScore>): Float? {
+    scores.firstOrNull { it.startTimeMs == sentence.startTimeMs }?.let { return it.probability }
+    val start = sentence.startTimeMs.milliseconds
+    return scores.firstOrNull { start >= it.startTimeMs.milliseconds && start < it.endTimeMs.milliseconds }?.probability
 }

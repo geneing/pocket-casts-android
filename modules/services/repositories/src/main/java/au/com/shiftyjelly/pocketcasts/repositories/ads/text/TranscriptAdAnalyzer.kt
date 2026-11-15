@@ -2,12 +2,14 @@ package au.com.shiftyjelly.pocketcasts.repositories.ads.text
 
 import au.com.shiftyjelly.pocketcasts.coroutines.di.ApplicationScope
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdAnalysisDao
+import au.com.shiftyjelly.pocketcasts.models.db.dao.AdCueScoreDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdSegmentDao
 import au.com.shiftyjelly.pocketcasts.models.entity.BaseEpisode
 import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegmentKind
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegmentOrigin
+import au.com.shiftyjelly.pocketcasts.models.to.DbAdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.Transcript
 import au.com.shiftyjelly.pocketcasts.models.to.TranscriptEntry
@@ -50,7 +52,8 @@ import timber.log.Timber
  *
  * The analysis is reused while the audio file (or stream URL), the transcript identity, the
  * recognizer version and the jev model (including its prompt revision) are unchanged. Pods are
- * written as [DbAdSegment]s with [AdSegmentOrigin.Transcript].
+ * written as [DbAdSegment]s with [AdSegmentOrigin.Transcript], and every cue's p(advertisement) is
+ * stored as a [DbAdCueScore] so the transcript can show the score for each sentence.
  *
  * Confidence is the pod's mean p(advertisement), so a pod the classifier is sure about clears
  * [AdSegment.MIN_AUTO_SKIP_CONFIDENCE] and is skipped automatically, while a weak one stays a
@@ -65,6 +68,7 @@ class TranscriptAdAnalyzer @Inject constructor(
     private val podcastManager: PodcastManager,
     private val adSegmentDao: AdSegmentDao,
     private val adAnalysisDao: AdAnalysisDao,
+    private val adCueScoreDao: AdCueScoreDao,
     private val classifier: JevAdClassifier,
     private val transcriber: EpisodeTranscriber,
     private val transcriptStore: LocalTranscriptStore,
@@ -113,11 +117,14 @@ class TranscriptAdAnalyzer @Inject constructor(
         val model = jevAdModelStore.selectedJevAdModel()
         val state = adAnalysisDao.findState(episodeUuid)
         val sourceSignature = source?.let(AnalysisIdentity::audioSignature)
+        // Analyses made before per-cue scores existed have no scores to show, so they are rerun
+        // once to fill the transcript.
+        val hasCueScores = adCueScoreDao.countForEpisode(episodeUuid) > 0
 
         // A repeat play of an episode already scored from its generated transcript needs no fetch:
         // the transcript URL and the audio are both known before anything is loaded.
         val generatedUrl = generatedTranscriptLoader.urlFor(episode)
-        if (sourceSignature != null) {
+        if (sourceSignature != null && hasCueScores) {
             val analysed = listOfNotNull(generatedUrl?.let(::transcriptAnalysisVersion), transcriber.version)
                 .any { version ->
                     AnalysisIdentity.isReusableTranscript(state, sourceSignature, version, model, JevPrompt.VERSION)
@@ -139,7 +146,7 @@ class TranscriptAdAnalyzer @Inject constructor(
         // speech-recognised analysis of the same episode.
         val signature = sourceSignature ?: existing!!.url
         val sttVersion = existing?.analysisVersion(transcriber.version) ?: transcriber.version
-        if (AnalysisIdentity.isReusableTranscript(state, signature, sttVersion, model, JevPrompt.VERSION)) {
+        if (hasCueScores && AnalysisIdentity.isReusableTranscript(state, signature, sttVersion, model, JevPrompt.VERSION)) {
             Timber.tag(TAG).d("Episode %s is already analysed with this transcript, model and prompt", episodeUuid)
             return true
         }
@@ -147,6 +154,7 @@ class TranscriptAdAnalyzer @Inject constructor(
             Timber.tag(TAG).d("Invalidating stale transcript analysis for %s", episodeUuid)
             withContext(NonCancellable) {
                 adSegmentDao.replaceAll(episodeUuid, emptyList())
+                adCueScoreDao.replaceAll(episodeUuid, emptyList())
                 transcriptStore.delete(episodeUuid)
                 adAnalysisDao.delete(episodeUuid)
             }
@@ -230,6 +238,16 @@ class TranscriptAdAnalyzer @Inject constructor(
         val modelVersion = AnalysisIdentity.transcriptModelVersion(scored.responseModel, model, JevPrompt.VERSION)
         val costUsd = scored.usageCostUsd
 
+        val cueScores = cues.mapIndexed { index, cue ->
+            DbAdCueScore(
+                episodeUuid = episodeUuid,
+                cueIndex = index,
+                startTimeMs = cue.startMs,
+                endTimeMs = cue.endMs,
+                probability = (scored.pAd.getOrNull(index) ?: 0.0).toFloat().coerceIn(0f, 1f),
+            )
+        }
+
         withContext(NonCancellable) {
             val existing = adSegmentDao.findSegmentsForEpisode(episodeUuid)
             val deselected = existing.filter { it.deselected }.associateBy { it.startTimeMs / 1000 }
@@ -238,6 +256,7 @@ class TranscriptAdAnalyzer @Inject constructor(
                 if (previousChoice != null) segment.copy(deselected = true) else segment
             }
             adSegmentDao.replaceAll(episodeUuid, merged)
+            adCueScoreDao.replaceAll(episodeUuid, cueScores)
             adAnalysisDao.upsert(
                 AdAnalysisState(
                     episodeUuid = episodeUuid,

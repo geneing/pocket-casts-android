@@ -2,8 +2,11 @@ package au.com.shiftyjelly.pocketcasts.repositories.ads
 
 import au.com.shiftyjelly.pocketcasts.coroutines.di.ApplicationScope
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdAnalysisDao
+import au.com.shiftyjelly.pocketcasts.models.db.dao.AdCueScoreDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdSegmentDao
+import au.com.shiftyjelly.pocketcasts.models.to.AdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
+import au.com.shiftyjelly.pocketcasts.models.to.DbAdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdSegment
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptAdAnalyzer
 import dagger.Lazy
@@ -21,6 +24,7 @@ import kotlinx.coroutines.launch
 class AdSegmentManagerImpl @Inject constructor(
     private val adSegmentDao: AdSegmentDao,
     private val adAnalysisDao: AdAnalysisDao,
+    private val adCueScoreDao: AdCueScoreDao,
     private val audioAdAnalyzer: Lazy<AudioAdAnalyzer>,
     private val transcriptAdAnalyzer: Lazy<TranscriptAdAnalyzer>,
     @ApplicationScope private val scope: CoroutineScope,
@@ -28,6 +32,12 @@ class AdSegmentManagerImpl @Inject constructor(
     override fun observeSegments(episodeUuid: String): Flow<List<AdSegment>> {
         return adSegmentDao.observeSegmentsForEpisode(episodeUuid)
             .map { segments -> segments.map(DbAdSegment::toAdSegment) }
+            .distinctUntilChanged()
+    }
+
+    override fun observeCueScores(episodeUuid: String): Flow<List<AdCueScore>> {
+        return adCueScoreDao.observeScoresForEpisode(episodeUuid)
+            .map { scores -> scores.map(DbAdCueScore::toAdCueScore) }
             .distinctUntilChanged()
     }
 
@@ -54,9 +64,17 @@ class AdSegmentManagerImpl @Inject constructor(
 
     override suspend fun clear(episodeUuid: String) {
         adSegmentDao.replaceAll(episodeUuid, emptyList())
+        adCueScoreDao.replaceAll(episodeUuid, emptyList())
         adAnalysisDao.delete(episodeUuid)
     }
 }
+
+private fun DbAdCueScore.toAdCueScore() = AdCueScore(
+    cueIndex = cueIndex,
+    startTimeMs = startTimeMs,
+    endTimeMs = endTimeMs,
+    probability = probability,
+)
 
 private fun DbAdSegment.toAdSegment() = AdSegment(
     index = index,

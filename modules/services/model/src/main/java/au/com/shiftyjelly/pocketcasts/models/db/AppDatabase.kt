@@ -41,6 +41,7 @@ import au.com.shiftyjelly.pocketcasts.models.converter.SyncStatusConverter
 import au.com.shiftyjelly.pocketcasts.models.converter.TrimModeTypeConverter
 import au.com.shiftyjelly.pocketcasts.models.converter.UserEpisodeServerStatusConverter
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdAnalysisDao
+import au.com.shiftyjelly.pocketcasts.models.db.dao.AdCueScoreDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdFingerprintDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdSegmentDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AlternateEnclosureDao
@@ -93,6 +94,7 @@ import au.com.shiftyjelly.pocketcasts.models.entity.UserNotifications
 import au.com.shiftyjelly.pocketcasts.models.entity.UserPodcastRating
 import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
 import au.com.shiftyjelly.pocketcasts.models.to.AdFingerprint
+import au.com.shiftyjelly.pocketcasts.models.to.DbAdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.DbChapter
 import au.com.shiftyjelly.pocketcasts.utils.extensions.unidecode
@@ -131,8 +133,9 @@ import au.com.shiftyjelly.pocketcasts.localization.R as LR
         DbAdSegment::class,
         AdAnalysisState::class,
         AdFingerprint::class,
+        DbAdCueScore::class,
     ],
-    version = 143,
+    version = 144,
     exportSchema = true,
     autoMigrations = [
         AutoMigration(from = 81, to = 82, spec = AppDatabase.Companion.DeleteSilenceRemovedMigration::class),
@@ -185,6 +188,7 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun chapterDao(): ChapterDao
     abstract fun adSegmentDao(): AdSegmentDao
     abstract fun adAnalysisDao(): AdAnalysisDao
+    abstract fun adCueScoreDao(): AdCueScoreDao
     abstract fun adFingerprintDao(): AdFingerprintDao
     abstract fun transcriptDao(): TranscriptDao
     abstract fun externalDataDao(): ExternalDataDao
@@ -1599,6 +1603,21 @@ abstract class AppDatabase : RoomDatabase() {
             )
         }
 
+        /**
+         * Per-cue ad probabilities, so the transcript can show the model's score for every
+         * sentence instead of only the segments it decided were ads.
+         */
+        val MIGRATION_143_144 = addMigration(143, 144) { database ->
+            database.execSQL(
+                "CREATE TABLE IF NOT EXISTS `episode_ad_cue_scores` (`episode_uuid` TEXT NOT NULL, " +
+                    "`cue_index` INTEGER NOT NULL, `start_time` INTEGER NOT NULL, `end_time` INTEGER NOT NULL, " +
+                    "`probability` REAL NOT NULL, PRIMARY KEY(`episode_uuid`, `cue_index`))",
+            )
+            database.execSQL(
+                "CREATE INDEX IF NOT EXISTS `ad_cue_score_episode_uuid_index` ON `episode_ad_cue_scores` (`episode_uuid`)",
+            )
+        }
+
         fun addMigrations(databaseBuilder: Builder<AppDatabase>, context: Context) {
             databaseBuilder.addMigrations(
                 addMigration(1, 2) { },
@@ -2031,6 +2050,7 @@ abstract class AppDatabase : RoomDatabase() {
                 MIGRATION_140_141,
                 MIGRATION_141_142,
                 MIGRATION_142_143,
+                MIGRATION_143_144,
             )
         }
 

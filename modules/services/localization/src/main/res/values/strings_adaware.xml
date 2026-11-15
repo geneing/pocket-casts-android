@@ -14,6 +14,7 @@
     <string name="player_skip_ad">Skip ad</string>
     <string name="player_ad_skipped">Skipped %1$s of ads</string>
     <string name="player_ad_probability">Ad %1$d%%</string>
+    <string name="transcript_ad_score">%1$d%%</string>
     <string name="player_tab_ai" translatable="false">Ask AI</string>
     <string name="transcript_generating">Generating transcript…</string>
     <string name="transcript_not_available">No transcript for this episode yet</string>
