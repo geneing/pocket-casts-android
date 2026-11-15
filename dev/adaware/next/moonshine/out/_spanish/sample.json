@@ -1,0 +1,714 @@
+{
+ "file": ".audio/_spanish/sample.mp3",
+ "duration": 497.08,
+ "model": "tiny-streaming",
+ "model_dir": "/mnt/i/Android_Projects/Pocket_Casts/dev/adaware/next/moonshine/models/es/quantized_26_08_24",
+ "arch": "tiny-streaming",
+ "mode": "batch",
+ "word_timestamps_requested": true,
+ "attention_decoder_present": false,
+ "load_seconds": 1.08,
+ "seconds": 48.15,
+ "audio_seconds": 497.08,
+ "rtf": 10.324,
+ "n_words": 0,
+ "words": [],
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 1.86,
+   "text": "The sesen and heart pack.",
+   "words": []
+  },
+  {
+   "start": 2.46,
+   "end": 3.94,
+   "text": "quieren seguirme",
+   "words": []
+  },
+  {
+   "start": 4.19,
+   "end": 11.46,
+   "text": "de praxisquadap es brazi ba aksa sokhou lise your bil sokhee game de amor joroflim yugar kid garede",
+   "words": []
+  },
+  {
+   "start": 11.23,
+   "end": 13.57,
+   "text": "uni rolita worksfest",
+   "words": []
+  },
+  {
+   "start": 13.28,
+   "end": 15.42,
+   "text": "en vez de aunque sea un ser court",
+   "words": []
+  },
+  {
+   "start": 15.49,
+   "end": 22.43,
+   "text": "yo soy su faz do to apple two water en giros babuz bursing entre action writy world faz eventfield",
+   "words": []
+  },
+  {
+   "start": 22.18,
+   "end": 23.97,
+   "text": "",
+   "words": []
+  },
+  {
+   "start": 23.9,
+   "end": 27.58,
+   "text": "bueno course of full strikes jueg august of the course",
+   "words": []
+  },
+  {
+   "start": 27.39,
+   "end": 37.44,
+   "text": "no tengo disfraz de frocour en funci\u00f3n de mi a mano oro odd y si parezco un es de recta deses aires para me alcanza o va a",
+   "words": []
+  },
+  {
+   "start": 36.96,
+   "end": 47.01,
+   "text": "y no da feeling where skin in the tall toingle botter dato an irich perkanic moisher search a hanger awar moistreider and layres ken sauquerad",
+   "words": []
+  },
+  {
+   "start": 46.53,
+   "end": 56.58,
+   "text": "por eso es que la palabra es la primera vez que la palabra se hace en la vida de la vida de la vida de la vida de la vida de la vida de la vida de la vida de la vida de la vida de la vida de la vida de la vida de la vida de la vida de la vida de la vida",
+   "words": []
+  },
+  {
+   "start": 56.1,
+   "end": 66.14,
+   "text": "la fioz souker going on, naver havy or waded own, phoas et alergy dazer, freigremsfreige and safe resant settsken, chat chat",
+   "words": []
+  },
+  {
+   "start": 65.66,
+   "end": 75.71,
+   "text": "se\u00f1or\u00edas es la comunidad",
+   "words": []
+  },
+  {
+   "start": 75.23,
+   "end": 85.28,
+   "text": "mujeres whigendo everything. y venus frontis, mira un poquito de ayuda. da su a i by boy stay poam. dir de canajen, did a shows up listens.",
+   "words": []
+  },
+  {
+   "start": 84.8,
+   "end": 93.95,
+   "text": "Y te ayuda a escoger la cobertura que t\u00fa necesitas. Gracias, Tafan. Porque tener a alguien en tu esquina, eso vale un mundo. Como un buen vecino, \u00bfno?",
+   "words": []
+  },
+  {
+   "start": 93.7,
+   "end": 95.68,
+   "text": "stay parm est\u00e1 ah\u00ed",
+   "words": []
+  },
+  {
+   "start": 95.58,
+   "end": 96.96,
+   "text": "coco-colola",
+   "words": []
+  },
+  {
+   "start": 97.06,
+   "end": 98.27,
+   "text": "fed beg.",
+   "words": []
+  },
+  {
+   "start": 98.21,
+   "end": 99.52,
+   "text": "fede smouth",
+   "words": []
+  },
+  {
+   "start": 99.62,
+   "end": 100.7,
+   "text": "the short",
+   "words": []
+  },
+  {
+   "start": 100.61,
+   "end": 101.86,
+   "text": "end the told",
+   "words": []
+  },
+  {
+   "start": 102.08,
+   "end": 103.62,
+   "text": "hissney cars",
+   "words": []
+  },
+  {
+   "start": 103.42,
+   "end": 104.99,
+   "text": "miss tekers",
+   "words": []
+  },
+  {
+   "start": 105.06,
+   "end": 106.69,
+   "text": "for the aftness",
+   "words": []
+  },
+  {
+   "start": 106.62,
+   "end": 108.16,
+   "text": "passemest",
+   "words": []
+  },
+  {
+   "start": 107.94,
+   "end": 110.14,
+   "text": "felon destemplad",
+   "words": []
+  },
+  {
+   "start": 110.3,
+   "end": 111.74,
+   "text": "fenchwartz",
+   "words": []
+  },
+  {
+   "start": 111.58,
+   "end": 113.22,
+   "text": "end extromets",
+   "words": []
+  },
+  {
+   "start": 113.34,
+   "end": 115.97,
+   "text": "the thinker's end the duars.",
+   "words": []
+  },
+  {
+   "start": 116.16,
+   "end": 118.69,
+   "text": "from friends endlew",
+   "words": []
+  },
+  {
+   "start": 118.94,
+   "end": 120.32,
+   "text": "coco coloa",
+   "words": []
+  },
+  {
+   "start": 120.38,
+   "end": 121.92,
+   "text": "for an rewand",
+   "words": []
+  },
+  {
+   "start": 122.08,
+   "end": 124.93,
+   "text": "tekason cococale areastory near yeah",
+   "words": []
+  },
+  {
+   "start": 125.25,
+   "end": 135.14,
+   "text": "gays i be unawme genou there soway sanfing owen an the game streaming traveling making plants de crew om oways and down loof",
+   "words": []
+  },
+  {
+   "start": 134.91,
+   "end": 138.53,
+   "text": "tatswa ala grimor ardesenzamori yuin",
+   "words": []
+  },
+  {
+   "start": 138.4,
+   "end": 148.45,
+   "text": "with see movo haygremerques btasinaur plas wicry parks witzimovo two sdace likes sayvins an nudi tshekits strimin berefets en axas to unf",
+   "words": []
+  },
+  {
+   "start": 147.97,
+   "end": 158.02,
+   "text": "expireenses taches money the risens swist de chimovo fa\u00f1ers desde chimovo dakans la swish qual offined piane require",
+   "words": []
+  },
+  {
+   "start": 157.54,
+   "end": 164.45,
+   "text": "es movo newwork en the yuga space tambien el spa euclo all speets and tallod in steira one age money ponis",
+   "words": []
+  },
+  {
+   "start": 164.48,
+   "end": 165.02,
+   "text": "",
+   "words": []
+  },
+  {
+   "start": 166.37,
+   "end": 169.09,
+   "text": "estos radiongulantes soy daniel alarc\u00f3n",
+   "words": []
+  },
+  {
+   "start": 169.41,
+   "end": 171.52,
+   "text": "Hoy empezamos en una piscina.",
+   "words": []
+  },
+  {
+   "start": 171.3,
+   "end": 174.72,
+   "text": "Estamos en Santiago de Chile a comienzos de los noventa.",
+   "words": []
+  },
+  {
+   "start": 174.62,
+   "end": 178.14,
+   "text": "Barbara Hern\u00e1ndez tiene seis a\u00f1os y toma clases de nataci\u00f3n.",
+   "words": []
+  },
+  {
+   "start": 178.27,
+   "end": 180.83,
+   "text": "pero cada vez que se sumerge en el agua",
+   "words": []
+  },
+  {
+   "start": 180.64,
+   "end": 182.43,
+   "text": "se imagina en el mar",
+   "words": []
+  },
+  {
+   "start": 183.78,
+   "end": 189.76,
+   "text": "entonces me imaginaba, me fui a todo eldela ni\u00f1a y era una piscina muy profunda, como que hab\u00eda antiburones, hab\u00eda medusa.",
+   "words": []
+  },
+  {
+   "start": 189.89,
+   "end": 192.42,
+   "text": "y era una piscina s\u00faper oscura",
+   "words": []
+  },
+  {
+   "start": 193.06,
+   "end": 203.1,
+   "text": "Es que aunque B\u00e1rbara naci\u00f3 y creci\u00f3 en una ciudad enmarcada por la cordillera, el primer recuerdo de su infancia no tiene nada que ver con las monta\u00f1as. Me acuerdo haber tenido como cinco a\u00f1os de edad,",
+   "words": []
+  },
+  {
+   "start": 202.62,
+   "end": 211.71,
+   "text": "Son cinco a\u00f1os tal vez, o era m\u00e1s chica. Pero me acuerdo haber estado siempre con mi pap\u00e1 jugando como en la cola y mi mam\u00e1 esper\u00e1ndonos afuera en la playa.  No.",
+   "words": []
+  },
+  {
+   "start": 212.9,
+   "end": 219.42,
+   "text": "a veces durante el verano se iban a pasar el d\u00eda alguna playa cercana con suerte se quedaban una o dos noches",
+   "words": []
+  },
+  {
+   "start": 219.2,
+   "end": 222.72,
+   "text": "pero no ten\u00edan dinero como para tomarse mucho tiempo de vacaciones",
+   "words": []
+  },
+  {
+   "start": 222.66,
+   "end": 232.7,
+   "text": "Y fue s\u00faper como bonito el empezar desde ah\u00ed a conectar con la naturaleza para m\u00ed. Creo que es siempre as\u00ed un privilegio como ir al mar. Entonces desde ah\u00ed yo creo que siempre",
+   "words": []
+  },
+  {
+   "start": 232.22,
+   "end": 236.0,
+   "text": "siempre he tenido como ese cari\u00f1o al nuestro mar.",
+   "words": []
+  },
+  {
+   "start": 236.64,
+   "end": 244.16,
+   "text": "por eso aquella piscina profunda y oscura de santiago se convert\u00eda por un instante en su peque\u00f1o y propio mar",
+   "words": []
+  },
+  {
+   "start": 246.66,
+   "end": 252.48,
+   "text": "tomaba clases tres veces por semana y esperaba esos d\u00edas con ansias le encantaba estar ah\u00ed",
+   "words": []
+  },
+  {
+   "start": 252.32,
+   "end": 261.98,
+   "text": "Entonces, si te gusta mucho entrenar, como que el paso siguiente era poder probar en las carreras. Como que en verdad no te preguntaban si te gustaba o no, es como lo que hab\u00eda que hacer, \u00bfno? S\u00ed, s\u00ed, s\u00ed.",
+   "words": []
+  },
+  {
+   "start": 261.79,
+   "end": 265.86,
+   "text": "As\u00ed que sin pensarlo demasiado, a los nueve a\u00f1os empez\u00f3 a competir.",
+   "words": []
+  },
+  {
+   "start": 265.7,
+   "end": 275.74,
+   "text": "Y como no era yo la m\u00e1s r\u00e1pida, entonces era s\u00faper frustrante como no ganar podio y aprender a nadar. Luego de eso, como",
+   "words": []
+  },
+  {
+   "start": 275.26,
+   "end": 279.39,
+   "text": "Son como en verdad porque me gusta el agua. Como no porque me gane las medallas.",
+   "words": []
+  },
+  {
+   "start": 279.71,
+   "end": 281.89,
+   "text": "Igual sigui\u00f3 intentando ganar.",
+   "words": []
+  },
+  {
+   "start": 281.7,
+   "end": 287.2,
+   "text": "Durante toda la escuela primaria y tambi\u00e9n en la secundaria, entrenando horas y horas en la piscina.",
+   "words": []
+  },
+  {
+   "start": 287.04,
+   "end": 289.15,
+   "text": "compitiendo a\u00f1o tras a\u00f1o",
+   "words": []
+  },
+  {
+   "start": 289.02,
+   "end": 292.96,
+   "text": "confirmando una y otra vez que no no era la m\u00e1s r\u00e1pida",
+   "words": []
+  },
+  {
+   "start": 292.77,
+   "end": 296.13,
+   "text": "o tal vez simplemente estaban nadando en el lugar equivocado",
+   "words": []
+  },
+  {
+   "start": 296.42,
+   "end": 306.46,
+   "text": "a los diecisiete a\u00f1os valdr\u00e1 de escurrir ya que hab\u00eda muchos lugares donde nadar m\u00e1s all\u00e1 de la piscina y en ese camino empezar\u00eda a llevar a su cuerpo a los l\u00edmites menos",
+   "words": []
+  },
+  {
+   "start": 305.98,
+   "end": 307.17,
+   "text": "menos pensados",
+   "words": []
+  },
+  {
+   "start": 308.06,
+   "end": 311.14,
+   "text": "nuestra productora neris kazazu no sigue contando",
+   "words": []
+  },
+  {
+   "start": 312.22,
+   "end": 313.76,
+   "text": "era dos mil tres",
+   "words": []
+  },
+  {
+   "start": 313.89,
+   "end": 318.91,
+   "text": "b\u00e1rbara acababa de empezar a estudiar psicolog\u00eda y se hab\u00eda unido al equipo de nataci\u00f3n de la universidad",
+   "words": []
+  },
+  {
+   "start": 319.26,
+   "end": 322.46,
+   "text": "Fue y cuando un amigo le invit\u00f3 a una competencia en Valdivia.",
+   "words": []
+  },
+  {
+   "start": 322.37,
+   "end": 325.18,
+   "text": "ochocientos kil\u00f3metros al sur de santiago",
+   "words": []
+  },
+  {
+   "start": 325.25,
+   "end": 327.49,
+   "text": "pero esta vez no ser\u00eda en una piscina",
+   "words": []
+  },
+  {
+   "start": 327.33,
+   "end": 329.6,
+   "text": "sino en los r\u00edos y lagos de la zona",
+   "words": []
+  },
+  {
+   "start": 329.41,
+   "end": 330.88,
+   "text": "Incluso en el mar.",
+   "words": []
+  },
+  {
+   "start": 331.07,
+   "end": 333.66,
+   "text": "es que en valdivia el agua es el centro de todo",
+   "words": []
+  },
+  {
+   "start": 333.86,
+   "end": 339.84,
+   "text": "la nieve de los volcanes andinos se derrite baja por los lagos se convierte en r\u00edo atraviesa la ciudad",
+   "words": []
+  },
+  {
+   "start": 339.71,
+   "end": 342.53,
+   "text": "y termina en una bah\u00eda que da paso al pac\u00edfico",
+   "words": []
+  },
+  {
+   "start": 342.53,
+   "end": 344.06,
+   "text": "cuando me invitaron",
+   "words": []
+  },
+  {
+   "start": 343.81,
+   "end": 353.02,
+   "text": "sin siquiera saber si va a terminar la distancia era poder llegar a nadar en esas condiciones o sea simplemente tirarme a la buena un lugar as\u00ed que parec\u00eda como de pel\u00edcula",
+   "words": []
+  },
+  {
+   "start": 353.02,
+   "end": 355.14,
+   "text": "Acept\u00f3 la invitaci\u00f3n enseguida.",
+   "words": []
+  },
+  {
+   "start": 355.14,
+   "end": 358.21,
+   "text": "Hasta ese momento solo hab\u00eda competido en piscinas.",
+   "words": []
+  },
+  {
+   "start": 358.02,
+   "end": 364.19,
+   "text": "y el \u00fanico r\u00edo que conociera al mapucho un r\u00edo contaminado y color caf\u00e9 que cruza santiago de chile",
+   "words": []
+  },
+  {
+   "start": 364.48,
+   "end": 371.42,
+   "text": "por eso las soleidades sumergirse en un agua limpia y cristalina rodeada de cisnes y lobos de mar le parec\u00eda un sue\u00f1o",
+   "words": []
+  },
+  {
+   "start": 371.81,
+   "end": 375.52,
+   "text": "viaj\u00f3 estaba el dvy se lanz\u00f3 a competir cinco kil\u00f3metros en el mar",
+   "words": []
+  },
+  {
+   "start": 375.42,
+   "end": 378.27,
+   "text": "en el cruce entre las ciudades de niebla y corral",
+   "words": []
+  },
+  {
+   "start": 378.24,
+   "end": 380.54,
+   "text": "y sin siquiera haberlo imaginado.",
+   "words": []
+  },
+  {
+   "start": 380.35,
+   "end": 382.85,
+   "text": "fue la primera de la competencia general.",
+   "words": []
+  },
+  {
+   "start": 382.66,
+   "end": 385.28,
+   "text": "ganandole incluso a todos los hombres",
+   "words": []
+  },
+  {
+   "start": 385.47,
+   "end": 386.62,
+   "text": "al fin.",
+   "words": []
+  },
+  {
+   "start": 386.37,
+   "end": 388.29,
+   "text": "despu\u00e9s de tantos a\u00f1os",
+   "words": []
+  },
+  {
+   "start": 388.03,
+   "end": 390.14,
+   "text": "hab\u00eda conseguido su medalla",
+   "words": []
+  },
+  {
+   "start": 390.14,
+   "end": 391.97,
+   "text": "me di cuenta que",
+   "words": []
+  },
+  {
+   "start": 391.84,
+   "end": 401.89,
+   "text": "Para nada de Aragua Javierta no basta solo con ser un r\u00e1pido, un nadador fuerte, sino que tiene que ver con poder adaptarte al clima, las condiciones. Anadar con fr\u00edo, con agua.",
+   "words": []
+  },
+  {
+   "start": 401.41,
+   "end": 408.51,
+   "text": "Yo con concorrientes, con animales. Y creo que eso es lo que a m\u00ed como m\u00e1s me encant\u00f3 de la nataci\u00f3n de aguas abiertas. S\u00ed.",
+   "words": []
+  },
+  {
+   "start": 408.42,
+   "end": 411.94,
+   "text": "desde ese momento ya no volv\u00eda a la piscina o m\u00e1s bien",
+   "words": []
+  },
+  {
+   "start": 411.78,
+   "end": 414.59,
+   "text": "volvi\u00f3 a la piscina para poder volver al mar.",
+   "words": []
+  },
+  {
+   "start": 414.53,
+   "end": 421.6,
+   "text": "y aprend\u00ed que si quer\u00eda hacer una muy buena nadadora de aguas abiertas ten\u00eda que entrenar muchas horas en piscina",
+   "words": []
+  },
+  {
+   "start": 421.5,
+   "end": 428.64,
+   "text": "lo riguroso y lo repetitivo del entrenamiento es lo que despu\u00e9s te da la seguridad para entrar al mar",
+   "words": []
+  },
+  {
+   "start": 430.27,
+   "end": 433.41,
+   "text": "As\u00ed que B\u00e1rbara sigui\u00f3 entrenando en la piscina en Santiago.",
+   "words": []
+  },
+  {
+   "start": 433.22,
+   "end": 437.89,
+   "text": "Y durante los siguientes a\u00f1os, volvi\u00f3 varias veces m\u00e1s a las competencias en Valdivia.",
+   "words": []
+  },
+  {
+   "start": 437.95,
+   "end": 440.61,
+   "text": "Y en uno de esos viajes lo conoci\u00f3 a \u00e9l.",
+   "words": []
+  },
+  {
+   "start": 440.54,
+   "end": 444.7,
+   "text": "bueno mi nombre es jorge dorb\u00f3n dress y oro rosas",
+   "words": []
+  },
+  {
+   "start": 444.64,
+   "end": 449.02,
+   "text": "Jorge creci\u00f3 en Valdivia y hac\u00eda varios a\u00f1os que estaba ligado al mundo de la nataci\u00f3n.",
+   "words": []
+  },
+  {
+   "start": 449.02,
+   "end": 454.02,
+   "text": "su hermana compet\u00eda en los torneos locales y en muchas ocasiones \u00e9l la hac\u00eda de juez",
+   "words": []
+  },
+  {
+   "start": 453.89,
+   "end": 459.17,
+   "text": "Lo va a llamar Dio lo m\u00e1s chistoso, que yo era juez de narraci\u00f3n y no sab\u00eda nada.",
+   "words": []
+  },
+  {
+   "start": 459.07,
+   "end": 462.02,
+   "text": "Me sab\u00eda todo el reglamento, todo lo de estilo.",
+   "words": []
+  },
+  {
+   "start": 462.11,
+   "end": 466.69,
+   "text": "pero yo ahora la verdad yo era la persona que esperaba a la gente ah\u00ed en la en la meta",
+   "words": []
+  },
+  {
+   "start": 467.07,
+   "end": 471.01,
+   "text": "a los tantos los tiempos y el ogro con la ag\u00fcita hasta la angrod\u00eda",
+   "words": []
+  },
+  {
+   "start": 471.36,
+   "end": 475.62,
+   "text": "cuando vio a b\u00e1rbara en una de esas competencias enseguida le llam\u00f3 la atenci\u00f3n",
+   "words": []
+  },
+  {
+   "start": 475.68,
+   "end": 478.14,
+   "text": "Ten\u00eda una personalidad arrolladora.",
+   "words": []
+  },
+  {
+   "start": 478.43,
+   "end": 481.92,
+   "text": "No pas\u00f3 mucho tiempo hasta que Jorge se atrevi\u00f3 a invitarla a salir.",
+   "words": []
+  },
+  {
+   "start": 482.08,
+   "end": 486.37,
+   "text": "Ambos estaban en sus veintipico y empezaron una relaci\u00f3n a distancia.",
+   "words": []
+  },
+  {
+   "start": 486.27,
+   "end": 490.75,
+   "text": "Jorge en Valdivia, mientras terminaba de estudiar ingenier\u00eda naval en la universidad.",
+   "words": []
+  },
+  {
+   "start": 490.69,
+   "end": 492.29,
+   "text": "Barbar en Santiago.",
+   "words": []
+  },
+  {
+   "start": 491.97,
+   "end": 495.3,
+   "text": "siguiendo con su carrera de psicolog\u00eda y de nadadora",
+   "words": []
+  },
+  {
+   "start": 495.62,
+   "end": 497.06,
+   "text": "pero muchas veces",
+   "words": []
+  }
+ ]
+}

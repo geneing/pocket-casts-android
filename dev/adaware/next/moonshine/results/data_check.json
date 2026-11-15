@@ -1,0 +1,32 @@
+[
+ {
+  "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+  "manifest_bytes": 43369630,
+  "downloaded_bytes": 43465763,
+  "manifest_seconds": 2710.6,
+  "downloaded_seconds": 2716.6,
+  "delta_seconds": 6.0,
+  "committed_spans_take0": 4,
+  "rederived_spans": 3
+ },
+ {
+  "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+  "manifest_bytes": 26518328,
+  "downloaded_bytes": 26267971,
+  "manifest_seconds": 1657.39,
+  "downloaded_seconds": 1641.74,
+  "delta_seconds": -15.65,
+  "committed_spans_take0": 3,
+  "rederived_spans": 4
+ },
+ {
+  "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+  "manifest_bytes": 27805306,
+  "downloaded_bytes": 27106476,
+  "manifest_seconds": 1737.82,
+  "downloaded_seconds": 1694.14,
+  "delta_seconds": -43.67,
+  "committed_spans_take0": 6,
+  "rederived_spans": 4
+ }
+]
