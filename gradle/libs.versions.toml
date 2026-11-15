@@ -43,6 +43,7 @@ measure-builds = "3.2.2"
 media3 = "1.11.1"
 mockito = "5.24.0"
 mockito-kotlin = "6.4.0"
+moonshine = "0.1.6"
 moshi = "1.15.2"
 navigation = "2.10.2"
 okhttp = "5.5.1"
@@ -181,6 +182,9 @@ media3-extractor = { module = "androidx.media3:media3-extractor", version.ref = 
 media3-session = { module = "androidx.media3:media3-session", version.ref = "media3" }
 media3-ui = { module = "androidx.media3:media3-ui", version.ref = "media3" }
 media3-ui-compose = { module = "androidx.media3:media3-ui-compose", version.ref = "media3" }
+
+# Moonshine
+moonshine-voice = { module = "ai.moonshine:moonshine-voice", version.ref = "moonshine" }
 
 # Mockito
 mockito-android = { module = "org.mockito:mockito-android", version.ref = "mockito" }

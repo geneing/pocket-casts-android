@@ -44,12 +44,14 @@ import timber.log.Timber
 /**
  * Ad analysis from a transcript, scored by the remote jev choice classifier.
  *
- * The episode's existing transcript is used, whether it is the show's own transcript or a
- * generated VTT the transcript tab shows. Those cues already carry word-level timings, so this is
- * both cheaper and more accurate than recognising the audio locally.
+ * The episode's existing transcript is used when the app has one, whether it is the show's own
+ * transcript or the generated VTT the transcript tab shows. Those cues already carry word-level
+ * timings, so this is both cheaper and more accurate than recognising the audio locally. Only an
+ * episode without any transcript is transcribed on device, and that transcript is then cached by
+ * [LocalTranscriptStore] and registered with the transcript stack.
  *
  * The analysis is reused while the audio file (or stream URL), the transcript identity, the
- * transcript engine and the jev model (including its prompt revision) are unchanged. Pods are
+ * recognizer version and the jev model (including its prompt revision) are unchanged. Pods are
  * written as [DbAdSegment]s with [AdSegmentOrigin.Transcript], and every cue's p(advertisement) is
  * stored as a [DbAdCueScore] so the transcript can show the score for each sentence.
  *
@@ -57,8 +59,9 @@ import timber.log.Timber
  * [AdSegment.MIN_AUTO_SKIP_CONFIDENCE] and is skipped automatically, while a weak one stays a
  * suggestion.
  *
- * When the classifier is unavailable or fails, [run] reports `false` without writing state, so
- * [au.com.shiftyjelly.pocketcasts.repositories.ads.AudioAdAnalyzer] still produces segments.
+ * When the classifier or the recognizer is unavailable, [run] reports itself as not having handled
+ * the episode, so [au.com.shiftyjelly.pocketcasts.repositories.ads.AudioAdAnalyzer] still produces
+ * segments.
  */
 @Singleton
 class TranscriptAdAnalyzer @Inject constructor(
@@ -68,6 +71,7 @@ class TranscriptAdAnalyzer @Inject constructor(
     private val adAnalysisDao: AdAnalysisDao,
     private val adCueScoreDao: AdCueScoreDao,
     private val classifier: JevAdClassifier,
+    private val transcriber: EpisodeTranscriber,
     private val transcriptStore: LocalTranscriptStore,
     private val transcriptManager: TranscriptManager,
     private val generatedTranscriptLoader: GeneratedTranscriptLoader,
@@ -85,6 +89,9 @@ class TranscriptAdAnalyzer @Inject constructor(
      */
     private val failedAttempts = ConcurrentHashMap<String, Long>()
 
+    /** True when this device can recognise speech at all, which the worker checks before queueing work. */
+    fun isSupported(): Boolean = transcriber.isAvailable()
+
     fun analyze(episodeUuid: String) {
         val previous = analysisJob
         previous?.cancel()
@@ -95,19 +102,27 @@ class TranscriptAdAnalyzer @Inject constructor(
     }
 
     /**
-     * Runs inside the caller's coroutine and reports whether this analyzer owned the episode, so
-     * the audio analyzer can take over when transcription or classification is unavailable.
+     * Runs inside the caller's coroutine and reports what this analyzer did, so the audio analyzer
+     * can take over when transcription or classification is unavailable, and a worker knows to ask
+     * again later when the speech model could not be fetched on the current network.
      */
-    suspend fun run(episodeUuid: String): Boolean = mutex.withLock { runAnalysis(episodeUuid) }
+    suspend fun run(
+        episodeUuid: String,
+        onModelProgress: (ModelDownloadProgress) -> Unit = {},
+    ): TranscriptAnalysis = mutex.withLock { runAnalysis(episodeUuid, onModelProgress) }
 
-    private suspend fun runAnalysis(episodeUuid: String): Boolean {
+    private suspend fun runAnalysis(
+        episodeUuid: String,
+        onModelProgress: (ModelDownloadProgress) -> Unit = {},
+    ): TranscriptAnalysis {
         val failedAt = failedAttempts[episodeUuid]
         if (failedAt != null && System.currentTimeMillis() - failedAt < RETRY_AFTER_FAILURE_MS) {
             Timber.tag(TAG).d("Episode %s failed to analyse recently, not retrying yet", episodeUuid)
-            return false
+            return TranscriptAnalysis.NotAnalysed
         }
         val startedAt = System.currentTimeMillis()
-        val episode = episodeManager.findByUuid(episodeUuid) ?: return false
+        val episode = episodeManager.findByUuid(episodeUuid) ?: return TranscriptAnalysis.NotAnalysed
+        val podcast = podcastManager.findPodcastByUuid(episode.podcastUuid)
         val source = resolveSource(episode)
         val model = jevAdModelStore.selectedJevAdModel()
         val state = adAnalysisDao.findState(episodeUuid)
@@ -120,36 +135,62 @@ class TranscriptAdAnalyzer @Inject constructor(
         // the transcript URL and the audio are both known before anything is loaded.
         val generatedUrl = generatedTranscriptLoader.urlFor(episode)
         if (sourceSignature != null && hasCueScores) {
-            val analysed = listOfNotNull(
-                generatedUrl?.let(::transcriptAnalysisVersion),
-                ON_DEVICE_TRANSCRIPT_VERSION,
-            ).any { version ->
-                AnalysisIdentity.isReusableTranscript(state, sourceSignature, version, model, JevPrompt.VERSION)
-            }
+            val analysed = listOfNotNull(generatedUrl?.let(::transcriptAnalysisVersion), transcriber.version)
+                .any { version ->
+                    AnalysisIdentity.isReusableTranscript(state, sourceSignature, version, model, JevPrompt.VERSION)
+                }
             if (analysed) {
                 Timber.tag(TAG).d("Episode %s is already analysed with its transcript, model and prompt", episodeUuid)
-                return true
+                return TranscriptAnalysis.Analysed
             }
         }
 
-        // The transcript the app already has is the only analysis input: an episode without one is
-        // not analysed while on-device speech-to-text is being replaced (dev/adaware/next/moonshine).
+        // The transcript the app already has is the analysis input; only an episode without one is
+        // transcribed on device.
         val existing = loadExistingTranscript(episodeUuid)
+        if (source == null && existing == null) {
+            Timber.tag(TAG).d("Episode %s has neither audio nor a transcript", episodeUuid)
+            return TranscriptAnalysis.NotAnalysed
+        }
+
+        // Only an episode that needs recognition needs its speech model, so this gate stays inside
+        // the branch that would download one: a transcript the app already has never waits for it.
         if (existing == null) {
-            Timber.tag(TAG).d("Episode %s has no transcript to analyse", episodeUuid)
-            return false
+            when (transcriber.availability(podcast?.podcastLanguage)) {
+                TranscriptAvailability.Ready -> Unit
+
+                TranscriptAvailability.ModelNeedsUnmeteredNetwork -> {
+                    LogBuffer.i(TAG, "Speech model download for $episodeUuid is waiting for an unmetered network")
+                    return TranscriptAnalysis.NeedsUnmeteredNetwork
+                }
+
+                TranscriptAvailability.UnsupportedLanguage -> {
+                    LogBuffer.i(TAG, "No speech model for the language of $episodeUuid, leaving it to the audio analyzer")
+                    return TranscriptAnalysis.NotAnalysed
+                }
+
+                TranscriptAvailability.EngineUnavailable -> {
+                    LogBuffer.i(TAG, "On-device speech recognition is unavailable, leaving $episodeUuid to the audio analyzer")
+                    return TranscriptAnalysis.NotAnalysed
+                }
+            }
         }
 
         // Keeping the transcript's identity here makes a newly available transcript invalidate an
         // older analysis of the same episode.
-        val signature = sourceSignature ?: existing.url
-        val sttVersion = existing.analysisVersion(ON_DEVICE_TRANSCRIPT_VERSION)
+        val signature = sourceSignature ?: existing?.url ?: return TranscriptAnalysis.NotAnalysed
+        val sttVersion = existing?.analysisVersion(transcriber.version) ?: transcriber.version
         if (hasCueScores && AnalysisIdentity.isReusableTranscript(state, signature, sttVersion, model, JevPrompt.VERSION)) {
             Timber.tag(TAG).d("Episode %s is already analysed with this transcript, model and prompt", episodeUuid)
-            return true
+            return TranscriptAnalysis.Analysed
         }
         if (AnalysisIdentity.isTranscriptAnalysis(state)) {
-            Timber.tag(TAG).d("Invalidating stale transcript analysis for %s", episodeUuid)
+            Timber.tag(TAG).d(
+                "Invalidating stale transcript analysis for %s (stt=%s, legacy=%s)",
+                episodeUuid,
+                state?.sttVersion,
+                state?.sttVersion == ON_DEVICE_TRANSCRIPT_VERSION,
+            )
             withContext(NonCancellable) {
                 adSegmentDao.replaceAll(episodeUuid, emptyList())
                 adCueScoreDao.replaceAll(episodeUuid, emptyList())
@@ -158,28 +199,63 @@ class TranscriptAdAnalyzer @Inject constructor(
             }
         }
 
-        val cues = existing.toAnalysisCues()
+        val cues = if (existing != null) {
+            existing.toAnalysisCues()
+        } else {
+            if (source == null || !transcriber.isAvailable()) return TranscriptAnalysis.NotAnalysed
+            val result = transcriber.transcribe(
+                TranscriptRequest(
+                    episodeUuid = episodeUuid,
+                    source = source,
+                    durationMs = episode.durationMs.toLong(),
+                    podcastLanguage = podcast?.podcastLanguage,
+                ),
+                onModelProgress,
+            )
+            when (result) {
+                is TranscriptResult.Success -> result.cues
+
+                is TranscriptResult.Unavailable -> {
+                    LogBuffer.i(TAG, "On-device transcription unavailable for $episodeUuid: ${result.reason}")
+                    return TranscriptAnalysis.NotAnalysed
+                }
+
+                is TranscriptResult.Failed -> {
+                    LogBuffer.e(TAG, "Transcription failed for $episodeUuid: ${result.message}")
+                    noteFailure(episodeUuid)
+                    return TranscriptAnalysis.NotAnalysed
+                }
+            }
+        }
         if (cues.isEmpty()) {
             LogBuffer.i(TAG, "No transcript cues to score for $episodeUuid")
             noteFailure(episodeUuid)
-            return false
+            return TranscriptAnalysis.NotAnalysed
         }
 
-        LogBuffer.i(TAG, "Using the existing transcript for $episodeUuid: ${cues.size} cues from ${existing.url}")
+        if (existing == null) {
+            transcriptStore.save(episodeUuid, cues)
+            LogBuffer.i(
+                TAG,
+                "Cached transcript for $episodeUuid: ${cues.size} cues, ${System.currentTimeMillis() - startedAt}ms",
+            )
+        } else {
+            LogBuffer.i(TAG, "Using the existing transcript for $episodeUuid: ${cues.size} cues from ${existing.url}")
+        }
 
-        val podcastTitle = podcastManager.findPodcastByUuid(episode.podcastUuid)?.title.orEmpty()
+        val podcastTitle = podcast?.title.orEmpty()
         val classification = classifier.classify(cues, podcastTitle.ifBlank { UNKNOWN_SHOW }, model)
         val scored = when (classification) {
             is JevClassification.Unavailable -> {
                 LogBuffer.i(TAG, "jev classification unavailable for $episodeUuid: ${classification.reason}")
                 noteFailure(episodeUuid)
-                return false
+                return TranscriptAnalysis.NotAnalysed
             }
 
             is JevClassification.Failed -> {
                 LogBuffer.e(TAG, "jev classification failed for $episodeUuid: ${classification.reason}")
                 noteFailure(episodeUuid)
-                return false
+                return TranscriptAnalysis.NotAnalysed
             }
 
             is JevClassification.Scored -> classification
@@ -245,7 +321,7 @@ class TranscriptAdAnalyzer @Inject constructor(
             )
         }
         failedAttempts.remove(episodeUuid)
-        return true
+        return TranscriptAnalysis.Analysed
     }
 
     private fun noteFailure(episodeUuid: String) {
@@ -273,7 +349,8 @@ class TranscriptAdAnalyzer @Inject constructor(
      * row records its path, so the recorded path is often still empty at this point. The download
      * location is deterministic from the episode uuid, and a downloaded episode whose file is not
      * resolvable yet is given a bounded wait for the row to catch up. An episode that is not
-     * downloaded at all is transcribed straight from its stream.
+     * downloaded at all is transcribed straight from its stream; an HLS stream travels with its
+     * flag so the recognizer can refuse it instead of decoding a playlist.
      */
     private suspend fun resolveSource(episode: BaseEpisode): TranscriptSource? {
         resolveAudioFile(episode)?.let { return TranscriptSource.Downloaded(it) }
@@ -281,8 +358,8 @@ class TranscriptAdAnalyzer @Inject constructor(
             awaitAudioFile(episode.uuid)?.let { return TranscriptSource.Downloaded(it) }
         }
         return episode.streamUrl
-            ?.takeIf { it.isNotBlank() && !episode.isStreamUrlHls }
-            ?.let(TranscriptSource::Stream)
+            ?.takeIf { it.isNotBlank() }
+            ?.let { TranscriptSource.Stream(it, isHls = episode.isStreamUrlHls) }
     }
 
     private fun resolveAudioFile(episode: BaseEpisode): File? {
@@ -335,3 +412,30 @@ internal fun Transcript.Text.analysisVersion(recognizerVersion: String): String 
 
 /** The analysis identity of a transcript the app fetched by URL. */
 internal fun transcriptAnalysisVersion(url: String): String = "transcript:$url"
+
+/**
+ * What one [TranscriptAdAnalyzer.run] did.
+ *
+ * A boolean was enough while the analyzer either claimed an episode or did not. It is not enough
+ * now that a run can stop because the speech model needs an unmetered network: a worker has to
+ * retry that case, while a plain "did not claim it" must not be retried at all.
+ */
+sealed interface TranscriptAnalysis {
+    /** Whether the transcript analyzer owns the episode, so the audio analyzer must not run. */
+    val handled: Boolean
+
+    /** Either a fresh analysis or a reusable one; the audio analyzer stays out of the way. */
+    data object Analysed : TranscriptAnalysis {
+        override val handled = true
+    }
+
+    /** Not claimed: no audio, no transcript, an unsupported language, or a failure already noted. */
+    data object NotAnalysed : TranscriptAnalysis {
+        override val handled = false
+    }
+
+    /** The model must be fetched and the network is metered; ask again on Wi-Fi. */
+    data object NeedsUnmeteredNetwork : TranscriptAnalysis {
+        override val handled = false
+    }
+}

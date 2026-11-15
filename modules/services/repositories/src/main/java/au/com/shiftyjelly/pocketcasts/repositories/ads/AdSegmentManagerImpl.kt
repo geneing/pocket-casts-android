@@ -9,6 +9,7 @@ import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdSegment
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptAdAnalyzer
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptAnalysis
 import dagger.Lazy
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -49,7 +50,9 @@ class AdSegmentManagerImpl @Inject constructor(
      */
     override fun analyze(episodeUuid: String) {
         scope.launch(Dispatchers.IO) {
-            val handled = runCatching { transcriptAdAnalyzer.get().run(episodeUuid) }.getOrDefault(false)
+            val handled = runCatching { transcriptAdAnalyzer.get().run(episodeUuid) }
+                .getOrDefault(TranscriptAnalysis.NotAnalysed)
+                .handled
             if (!handled) {
                 audioAdAnalyzer.get().analyze(episodeUuid)
             }

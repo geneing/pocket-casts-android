@@ -35,6 +35,7 @@ import kotlinx.coroutines.launch
 @Singleton
 class AdAnalysisScheduler @Inject constructor(
     @ApplicationContext private val context: Context,
+    private val transcriber: EpisodeTranscriber,
     private val episodeManager: EpisodeManager,
     private val transcriptStore: LocalTranscriptStore,
     @ApplicationScope private val scope: CoroutineScope,
@@ -89,11 +90,17 @@ class AdAnalysisScheduler @Inject constructor(
         WorkManager.getInstance(context).cancelUniqueWork(TranscriptAdAnalysisWorker.uniqueName(episodeUuid))
     }
 
-    private fun isEnabled() = FeatureFlag.isEnabled(Feature.AD_SKIPPING)
+    /**
+     * Analysis needs the flag and an engine that can run here. The per-episode language is checked
+     * later, by the analyzer, because that is the only place that knows the podcast and whether the
+     * episode even needs a transcript.
+     */
+    private fun isEnabled() = FeatureFlag.isEnabled(Feature.AD_SKIPPING) && transcriber.isAvailable()
 
     private fun constraints() = Constraints.Builder()
         .setRequiresBatteryNotLow(true)
-        // A stream has to be fetched, and the jev classification always needs the network.
+        // A stream has to be fetched, and the jev classification always needs the network. A model
+        // download is gated separately, so a metered network defers that pass instead of fetching.
         .setRequiredNetworkType(NetworkType.CONNECTED)
         .build()
 

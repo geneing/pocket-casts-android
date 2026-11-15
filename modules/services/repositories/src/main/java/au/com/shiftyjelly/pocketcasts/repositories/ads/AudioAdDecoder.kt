@@ -8,9 +8,9 @@ import java.nio.ByteOrder
 import timber.log.Timber
 
 /**
- * Decodes an audio track to PCM16 and hands sequential buffers to [onPcm]. Used for the offline
- * analysis pass; the callback receives the decoder timestamp of the first buffer so features can be
- * stamped with media-time positions.
+ * Decodes an audio track to PCM and hands sequential buffers to a sink. Used by the offline
+ * analysis passes: the energy profiler wants PCM16, the speech recognizer wants floats, and both
+ * need the same extractor/codec loop so the two never disagree about the audio.
  */
 internal object AudioAdDecoder {
     private const val TAG = "AdAnalysis"
@@ -27,11 +27,42 @@ internal object AudioAdDecoder {
         val stopReason: String = "not_started",
     )
 
+    /**
+     * One decoded buffer in the format the codec produced: either interleaved PCM16 or interleaved
+     * floats, never both. [positionMs] comes from the decoded sample count (what the listener
+     * actually heard), while [presentationTimeUs] is the container timestamp of the same buffer and
+     * is the only way to notice that a buffer went missing.
+     */
+    class PcmBuffer internal constructor(
+        val pcm16: ShortArray?,
+        val floats: FloatArray?,
+        val sampleCount: Int,
+        val channelCount: Int,
+        val sampleRate: Int,
+        val positionMs: Long,
+        val presentationTimeUs: Long,
+    )
+
+    /**
+     * Decodes from [startPositionMs] and calls [onPcm] with interleaved PCM16 and the decoder
+     * timestamp of the first buffer, so features can be stamped with media-time positions.
+     */
     fun decode(
         extractor: MediaExtractor,
         startPositionMs: Long,
         isActive: () -> Boolean,
         onPcm: (samples: ShortArray, sampleCount: Int, channelCount: Int, sampleRate: Int, positionMs: Long) -> Unit,
+    ): Result = decodeBuffers(extractor, startPositionMs, isActive) { buffer ->
+        val samples = buffer.pcm16 ?: buffer.floats?.let(::floatsToPcm16) ?: return@decodeBuffers
+        onPcm(samples, buffer.sampleCount, buffer.channelCount, buffer.sampleRate, buffer.positionMs)
+    }
+
+    /** Decodes from [startPositionMs] and calls [onBuffer] with every buffer the codec produced. */
+    fun decodeBuffers(
+        extractor: MediaExtractor,
+        startPositionMs: Long,
+        isActive: () -> Boolean,
+        onBuffer: (PcmBuffer) -> Unit,
     ): Result {
         val startedAt = System.currentTimeMillis()
         val trackIndex = (0 until extractor.trackCount).firstOrNull { index ->
@@ -115,34 +146,36 @@ internal object AudioAdDecoder {
 
                     else -> {
                         if (outputIndex >= 0) {
-                            if (bufferInfo.size > 0 && channelCount > 0 && sampleRate > 0) {
-                                val samples = readSamples(codec, outputIndex, bufferInfo, isFloatOutput)
-                                if (samples.isNotEmpty()) {
-                                    if (anchorUs < 0 && bufferInfo.presentationTimeUs >= 0) {
-                                        anchorUs = bufferInfo.presentationTimeUs
-                                        Timber.tag(TAG).d("Decoder anchor at %dms", anchorUs / 1000L)
-                                    }
-                                    val positionMs = if (anchorUs >= 0) {
-                                        anchorUs / 1000L + samplesSinceAnchor * 1000L / sampleRate
-                                    } else {
-                                        lastPositionMs
-                                    }
-                                    onPcm(samples, samples.size, channelCount, sampleRate, positionMs)
-                                    samplesSinceAnchor += samples.size / channelCount
-                                    lastPositionMs = positionMs + samples.size / channelCount * 1000L / sampleRate
-                                    buffers++
-                                    if (positionMs >= nextProgressMs) {
-                                        nextProgressMs = positionMs + PROGRESS_STEP_MS
-                                        val audioMs = samplesSinceAnchor * 1000L / sampleRate
-                                        val elapsedMs = (System.currentTimeMillis() - startedAt).coerceAtLeast(1L)
-                                        Timber.tag(TAG).d(
-                                            "Decoded %dms (%d buffers) in %dms, %.1fx realtime",
-                                            positionMs,
-                                            buffers,
-                                            elapsedMs,
-                                            audioMs.toFloat() / elapsedMs,
-                                        )
-                                    }
+                            val buffer = if (bufferInfo.size > 0 && channelCount > 0 && sampleRate > 0) {
+                                readBuffer(codec, outputIndex, bufferInfo, isFloatOutput, channelCount, sampleRate)
+                            } else {
+                                null
+                            }
+                            if (buffer != null) {
+                                if (anchorUs < 0 && bufferInfo.presentationTimeUs >= 0) {
+                                    anchorUs = bufferInfo.presentationTimeUs
+                                    Timber.tag(TAG).d("Decoder anchor at %dms", anchorUs / 1000L)
+                                }
+                                val positionMs = if (anchorUs >= 0) {
+                                    anchorUs / 1000L + samplesSinceAnchor * 1000L / sampleRate
+                                } else {
+                                    lastPositionMs
+                                }
+                                onBuffer(buffer.withPosition(positionMs))
+                                samplesSinceAnchor += buffer.sampleCount / channelCount
+                                lastPositionMs = positionMs + buffer.sampleCount / channelCount * 1000L / sampleRate
+                                buffers++
+                                if (positionMs >= nextProgressMs) {
+                                    nextProgressMs = positionMs + PROGRESS_STEP_MS
+                                    val audioMs = samplesSinceAnchor * 1000L / sampleRate
+                                    val elapsedMs = (System.currentTimeMillis() - startedAt).coerceAtLeast(1L)
+                                    Timber.tag(TAG).d(
+                                        "Decoded %dms (%d buffers) in %dms, %.1fx realtime",
+                                        positionMs,
+                                        buffers,
+                                        elapsedMs,
+                                        audioMs.toFloat() / elapsedMs,
+                                    )
                                 }
                             }
                             codec.releaseOutputBuffer(outputIndex, false)
@@ -193,25 +226,57 @@ internal object AudioAdDecoder {
         }
     }
 
-    private fun readSamples(
+    private fun readBuffer(
         codec: MediaCodec,
         outputIndex: Int,
         bufferInfo: MediaCodec.BufferInfo,
         isFloatOutput: Boolean,
-    ): ShortArray {
-        val buffer = codec.getOutputBuffer(outputIndex) ?: return ShortArray(0)
+        channelCount: Int,
+        sampleRate: Int,
+    ): PcmBuffer? {
+        val buffer = codec.getOutputBuffer(outputIndex) ?: return null
         buffer.position(bufferInfo.offset)
         buffer.limit(bufferInfo.offset + bufferInfo.size)
         return if (isFloatOutput) {
             val floats = buffer.order(ByteOrder.LITTLE_ENDIAN).asFloatBuffer()
-            ShortArray(floats.remaining()) { index ->
-                (floats.get(index) * 32767f).coerceIn(-32768f, 32767f).toInt().toShort()
-            }
+            val samples = FloatArray(floats.remaining()).also { floats.get(it) }
+            PcmBuffer(
+                pcm16 = null,
+                floats = samples,
+                sampleCount = samples.size,
+                channelCount = channelCount,
+                sampleRate = sampleRate,
+                positionMs = 0L,
+                presentationTimeUs = bufferInfo.presentationTimeUs,
+            )
         } else {
             val shorts = buffer.order(ByteOrder.LITTLE_ENDIAN).asShortBuffer()
-            ShortArray(shorts.remaining()).also { shorts.get(it) }
+            val samples = ShortArray(shorts.remaining()).also { shorts.get(it) }
+            PcmBuffer(
+                pcm16 = samples,
+                floats = null,
+                sampleCount = samples.size,
+                channelCount = channelCount,
+                sampleRate = sampleRate,
+                positionMs = 0L,
+                presentationTimeUs = bufferInfo.presentationTimeUs,
+            )
         }
     }
+
+    private fun floatsToPcm16(floats: FloatArray): ShortArray = ShortArray(floats.size) { index ->
+        (floats[index] * 32767f).coerceIn(-32768f, 32767f).toInt().toShort()
+    }
+
+    private fun PcmBuffer.withPosition(positionMs: Long) = PcmBuffer(
+        pcm16 = pcm16,
+        floats = floats,
+        sampleCount = sampleCount,
+        channelCount = channelCount,
+        sampleRate = sampleRate,
+        positionMs = positionMs,
+        presentationTimeUs = presentationTimeUs,
+    )
 
     private const val TIMEOUT_US = 10_000L
 }
