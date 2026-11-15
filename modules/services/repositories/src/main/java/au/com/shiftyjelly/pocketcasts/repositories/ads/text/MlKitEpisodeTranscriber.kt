@@ -5,8 +5,8 @@ import android.content.Context
 import android.content.pm.PackageManager
 import android.media.MediaExtractor
 import androidx.core.content.ContextCompat
-import androidx.core.net.toUri
 import au.com.shiftyjelly.pocketcasts.repositories.ads.AudioAdDecoder
+import au.com.shiftyjelly.pocketcasts.servers.di.Downloads
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
 import com.google.mlkit.genai.common.DownloadStatus
 import com.google.mlkit.genai.common.FeatureStatus
@@ -17,6 +17,7 @@ import com.google.mlkit.genai.speechrecognition.SpeechRecognizerOptions
 import com.google.mlkit.genai.speechrecognition.SpeechRecognizerResponse
 import com.google.mlkit.genai.speechrecognition.speechRecognizerOptions
 import com.google.mlkit.genai.speechrecognition.speechRecognizerRequest
+import dagger.Lazy
 import dagger.hilt.android.qualifiers.ApplicationContext
 import java.io.File
 import java.util.Locale
@@ -32,15 +33,17 @@ import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.withContext
+import okhttp3.OkHttpClient
 import timber.log.Timber
 
 /**
  * On-device transcription through ML Kit's GenAI **Advanced** speech recognizer (Gemini Nano).
  *
- * The episode file is handed over whole with [AudioSource.fromFile], which is a ONE_SHOT source:
- * the SDK decodes the container itself and transcribes faster than real time. One-shot sources
- * cannot report word timings, so the recognizer returns its segments as ordered text with no
- * clock.
+ * The episode audio is handed over whole with [AudioSource.fromFile], which is a ONE_SHOT source:
+ * the SDK decodes the container itself and transcribes faster than real time. A streamed episode is
+ * fetched to a cache file first, because the recognizer resolves an `AudioSource.fromUri` through a
+ * ContentResolver and cannot open an `https` URL. One-shot sources cannot report word timings, so
+ * the recognizer returns its segments as ordered text with no clock.
  *
  * Timings are therefore reconstructed from the audio: the file is decoded once with
  * [AudioAdDecoder] into 20 ms energy frames, a speech threshold is taken from the clip's own level
@@ -54,6 +57,7 @@ import timber.log.Timber
  */
 class MlKitEpisodeTranscriber @Inject constructor(
     @ApplicationContext private val context: Context,
+    @Downloads private val httpClient: Lazy<OkHttpClient>,
 ) : EpisodeTranscriber {
     override val version: String = ENGINE
 
@@ -120,37 +124,67 @@ class MlKitEpisodeTranscriber @Inject constructor(
         recognizer: SpeechRecognizer,
     ): TranscriptResult {
         val startedAt = System.currentTimeMillis()
-        val segments = recognize(source, recognizer)
-        val recognizeMs = System.currentTimeMillis() - startedAt
-        if (segments.isEmpty()) return TranscriptResult.Failed("recognizer returned no speech")
+        val local = when (source) {
+            is TranscriptSource.Downloaded -> source.file
 
-        val context = currentCoroutineContext()
-        // Only a local file can be profiled; a stream has no audio here to measure, so its cues
-        // fall back to being spread over the episode duration.
-        val profile = (source as? TranscriptSource.Downloaded)
-            ?.let { downloaded -> runCatching { profileSpeech(downloaded.file) { context.isActive } }.getOrNull() }
-        context.ensureActive()
-        if (profile == null) {
-            LogBuffer.w(TAG, "No audio profile for $episodeUuid; falling back to proportional cue times")
+            is TranscriptSource.Stream -> fetchStream(episodeUuid, source.url)
+                ?: return TranscriptResult.Failed("could not download the episode audio")
         }
-        val regions = profile?.let { detectSpeechRegions(it.levelsDb, it.frameDurationMs) }.orEmpty()
-        val timelineMs = when {
-            durationMs > 0L -> durationMs
-            profile != null && profile.audioMs > 0L -> profile.audioMs
-            else -> regions.lastOrNull()?.endMs ?: 0L
+        val temporary = source is TranscriptSource.Stream
+        try {
+            val segments = recognize(local, recognizer)
+            val recognizeMs = System.currentTimeMillis() - startedAt
+            if (segments.isEmpty()) return TranscriptResult.Failed("recognizer returned no speech")
+
+            val context = currentCoroutineContext()
+            val profile = runCatching { profileSpeech(local) { context.isActive } }.getOrNull()
+            context.ensureActive()
+            if (profile == null) {
+                LogBuffer.w(TAG, "No audio profile for $episodeUuid; falling back to proportional cue times")
+            }
+            val regions = profile?.let { detectSpeechRegions(it.levelsDb, it.frameDurationMs) }.orEmpty()
+            val timelineMs = when {
+                durationMs > 0L -> durationMs
+                profile != null && profile.audioMs > 0L -> profile.audioMs
+                else -> regions.lastOrNull()?.endMs ?: 0L
+            }
+            val cues = alignSegmentsToRegions(segments, regions, timelineMs)
+            logAlignment(episodeUuid, segments, regions, cues, profile, timelineMs, recognizeMs)
+            if (cues.isEmpty()) return TranscriptResult.Failed("could not place the transcript on the timeline")
+            return TranscriptResult.Success(cues, version)
+        } finally {
+            if (temporary) runCatching { local.delete() }
         }
-        val cues = alignSegmentsToRegions(segments, regions, timelineMs)
-        logAlignment(episodeUuid, segments, regions, cues, profile, timelineMs, recognizeMs)
-        if (cues.isEmpty()) return TranscriptResult.Failed("could not place the transcript on the timeline")
-        return TranscriptResult.Success(cues, version)
     }
 
-    /** Runs one one-shot recognition over the source and returns its segments in speaking order. */
-    private suspend fun recognize(source: TranscriptSource, recognizer: SpeechRecognizer): List<RecognizedSegment> {
-        val input = when (source) {
-            is TranscriptSource.Downloaded -> AudioSource.fromFile(source.file)
-            is TranscriptSource.Stream -> AudioSource.fromUri(context, source.url.toUri())
+    /**
+     * Fetches a streamed episode into the cache so it can be transcribed and profiled like a
+     * download. The file is deleted after the pass; [STALE_STREAM_MS] clears anything a killed
+     * process left behind.
+     */
+    private fun fetchStream(episodeUuid: String, url: String): File? {
+        val directory = File(context.cacheDir, STREAM_DIRECTORY)
+        if (!directory.isDirectory && !directory.mkdirs()) {
+            LogBuffer.e(TAG, "Could not create the stream audio cache directory")
+            return null
         }
+        val cutoff = System.currentTimeMillis() - STALE_STREAM_MS
+        directory.listFiles()?.forEach { file ->
+            if (file.lastModified() < cutoff) runCatching { file.delete() }
+        }
+        val target = File(directory, "$episodeUuid.audio")
+        val startedAt = System.currentTimeMillis()
+        val file = downloadAudioStream(httpClient.get(), url, target) ?: return null
+        LogBuffer.i(
+            TAG,
+            "Fetched ${file.length() / MEGABYTE} MB of stream audio for $episodeUuid in ${System.currentTimeMillis() - startedAt}ms",
+        )
+        return file
+    }
+
+    /** Runs one one-shot recognition over the local audio file and returns its segments in speaking order. */
+    private suspend fun recognize(file: File, recognizer: SpeechRecognizer): List<RecognizedSegment> {
+        val input = AudioSource.fromFile(file)
         val segments = ArrayList<RecognizedSegment>()
         try {
             // Word timing is not supported for one-shot sources, so recognitionOptions stay default.
@@ -348,6 +382,12 @@ class MlKitEpisodeTranscriber @Inject constructor(
         private const val DOWNLOAD_WAIT_MS = 5 * 60_000L
         private const val MEGABYTE = 1024L * 1024L
         private const val PCM_FULL_SCALE = 32768.0
+
+        /** Cache subdirectory of fetched stream audio; deleted after each transcription pass. */
+        private const val STREAM_DIRECTORY = "ad-transcript-audio"
+
+        /** A fetched stream older than this is left over from a killed process and can go. */
+        private const val STALE_STREAM_MS = 24 * 60 * 60 * 1000L
     }
 }
 

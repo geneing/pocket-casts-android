@@ -3,7 +3,9 @@ package au.com.shiftyjelly.pocketcasts.player.view.transcript
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.TranscriptEntry
 import kotlin.time.Duration.Companion.seconds
+import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -68,6 +70,29 @@ class TranscriptAdSentencesTest {
 
         assertTrue(isAdSentence(inside, listOf(segment(8, 14))))
         assertFalse(isAdSentence(outside, listOf(segment(8, 14))))
+    }
+
+    @Test
+    fun `the ad segment supplies its probability for the sentence`() {
+        val ad = segment(8, 14).copy(confidence = 0.75f)
+
+        assertEquals(0.75f, adSegmentFor(sentence(10, 12), listOf(ad))?.confidence)
+    }
+
+    @Test
+    fun `the segment covering the most of the sentence supplies the probability`() {
+        val covering = segment(8, 14).copy(confidence = 0.9f)
+        val brushing = segment(10, 10).copy(confidence = 0.2f)
+
+        assertEquals(0.9f, adSegmentFor(sentence(10, 12), listOf(brushing, covering))?.confidence)
+        assertEquals(0.9f, adSegmentFor(sentence(10, 12), listOf(covering, brushing))?.confidence)
+    }
+
+    @Test
+    fun `a deselected or uncovered sentence has no probability`() {
+        assertNull(adSegmentFor(sentence(10, 12), listOf(segment(8, 14, selected = false))))
+        assertNull(adSegmentFor(sentence(10, 12), emptyList()))
+        assertNull(adSegmentFor(sentence(10, 12), listOf(segment(14, 16))))
     }
 }
 

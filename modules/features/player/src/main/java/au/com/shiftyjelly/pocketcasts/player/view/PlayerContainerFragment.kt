@@ -471,9 +471,9 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
         val newSections = buildList {
             add(Section.Player)
             if (hasNotes) add(Section.Notes)
-            if (hasChapters) add(Section.Chapters)
             if (hasTranscript) add(Section.Transcript)
             if (hasAi) add(Section.Ai)
+            if (hasChapters) add(Section.Chapters)
             add(Section.Bookmarks)
         }
         if (currentSections != newSections) {

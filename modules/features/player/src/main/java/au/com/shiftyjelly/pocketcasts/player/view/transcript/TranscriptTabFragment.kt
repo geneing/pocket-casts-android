@@ -4,15 +4,18 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -20,6 +23,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
@@ -40,6 +44,7 @@ import au.com.shiftyjelly.pocketcasts.repositories.transcript.TranscriptManager
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
+import kotlin.math.roundToInt
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
@@ -59,7 +64,8 @@ import au.com.shiftyjelly.pocketcasts.localization.R as LR
  * With [forEpisode] the tab shows a fixed episode and reads like any other tab of an episode's
  * details screen: no playback is running yet, so a cue does not seek and the page uses the app
  * colors instead of the player's dark background. Without it the tab follows the player's episode.
- * Sentences inside a detected ad segment are shown in italics.
+ * Sentences inside a detected ad segment are shown in italics, with the segment's advertisement
+ * probability next to their timestamp.
  */
 @OptIn(ExperimentalCoroutinesApi::class)
 @AndroidEntryPoint
@@ -180,9 +186,10 @@ private fun TranscriptTabPage(
         return
     }
     // Ad segment times are in the timeline of the played audio, the same timeline as the entries,
-    // so they are compared as they are. Only italics mark an ad sentence, nothing else changes.
-    val adSentenceIndexes = remember(entries, adSegments) {
-        entries.indices.filter { isAdSentence(entries[it], adSegments) }.toSet()
+    // so they are compared as they are. Italics mark an ad sentence, and the segment's probability
+    // is shown beside its timestamp so the detection can be followed without opening anything else.
+    val adSegmentBySentence = remember(entries, adSegments) {
+        entries.indices.associateWith { index -> adSegmentFor(entries[index], adSegments) }
     }
     LazyColumn(
         modifier = Modifier.fillMaxSize(),
@@ -190,6 +197,7 @@ private fun TranscriptTabPage(
         verticalArrangement = Arrangement.spacedBy(8.dp),
     ) {
         itemsIndexed(entries) { index, entry ->
+            val adSegment = adSegmentBySentence[index]
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -206,16 +214,37 @@ private fun TranscriptTabPage(
                     text = entry.value,
                     style = MaterialTheme.typography.body2,
                     color = textColor,
-                    fontStyle = if (index in adSentenceIndexes) FontStyle.Italic else null,
+                    fontStyle = if (adSegment != null) FontStyle.Italic else null,
                 )
-                Text(
-                    text = formatTimestamp(entry.startTimeMs),
-                    style = MaterialTheme.typography.caption,
-                    color = timestampColor,
-                )
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(
+                        text = formatTimestamp(entry.startTimeMs),
+                        style = MaterialTheme.typography.caption,
+                        color = timestampColor,
+                    )
+                    if (adSegment != null) {
+                        AdProbabilityLabel(confidence = adSegment.confidence)
+                    }
+                }
             }
         }
     }
+}
+
+/** The model's advertisement probability for a sentence's segment, as a compact percentage pill. */
+@Composable
+private fun AdProbabilityLabel(confidence: Float) {
+    val colors = MaterialTheme.theme.colors
+    val percent = (confidence * 100).roundToInt().coerceIn(0, 100)
+    Text(
+        text = stringResource(LR.string.player_ad_probability, percent),
+        style = MaterialTheme.typography.caption,
+        color = colors.primaryInteractive01,
+        modifier = Modifier
+            .padding(start = 8.dp)
+            .background(colors.primaryInteractive01.copy(alpha = 0.12f), RoundedCornerShape(4.dp))
+            .padding(horizontal = 6.dp, vertical = 2.dp),
+    )
 }
 
 private fun formatTimestamp(ms: Long): String {

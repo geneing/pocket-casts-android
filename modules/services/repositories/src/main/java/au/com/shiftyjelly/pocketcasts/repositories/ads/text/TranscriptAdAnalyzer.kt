@@ -9,6 +9,8 @@ import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegmentKind
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegmentOrigin
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdSegment
+import au.com.shiftyjelly.pocketcasts.models.to.Transcript
+import au.com.shiftyjelly.pocketcasts.models.to.TranscriptEntry
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevAdClassifier
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevAdModelStore
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevClassification
@@ -17,14 +19,17 @@ import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.buildPods
 import au.com.shiftyjelly.pocketcasts.repositories.file.FileStorage
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.PodcastManager
+import au.com.shiftyjelly.pocketcasts.repositories.transcript.TranscriptManager
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
 import java.io.File
+import java.util.concurrent.ConcurrentHashMap
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.NonCancellable
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.mapNotNull
 import kotlinx.coroutines.launch
@@ -35,17 +40,21 @@ import kotlinx.coroutines.withTimeoutOrNull
 import timber.log.Timber
 
 /**
- * Ad analysis for downloaded episodes: on-device speech recognition, then the remote jev
- * choice classifier over the transcript.
+ * Ad analysis from a transcript, scored by the remote jev choice classifier.
  *
- * The transcript is cached by [LocalTranscriptStore] and reused while the audio file, the local
- * transcript identity, the recognizer version and the jev model (including its prompt revision)
- * are unchanged. Pods are written as [DbAdSegment]s with [AdSegmentOrigin.Transcript].
+ * The episode's existing transcript is used when the app has one, whether it is the show's own
+ * transcript or the generated VTT the transcript tab shows. Those cues already carry word-level
+ * timings, so this is both cheaper and more accurate than recognising the audio locally. Only an
+ * episode without any transcript is transcribed on device, and that transcript is then cached by
+ * [LocalTranscriptStore] and registered with the transcript stack.
+ *
+ * The analysis is reused while the audio file (or stream URL), the transcript identity, the
+ * recognizer version and the jev model (including its prompt revision) are unchanged. Pods are
+ * written as [DbAdSegment]s with [AdSegmentOrigin.Transcript].
  *
  * Confidence is the pod's mean p(advertisement), so a pod the classifier is sure about clears
  * [AdSegment.MIN_AUTO_SKIP_CONFIDENCE] and is skipped automatically, while a weak one stays a
- * suggestion. The cue timings are only speech-region accurate, so a confident pod can start a few
- * seconds off the real read.
+ * suggestion.
  *
  * When the classifier is unavailable or fails, [run] reports `false` without writing state, so
  * [au.com.shiftyjelly.pocketcasts.repositories.ads.AudioAdAnalyzer] still produces segments.
@@ -59,12 +68,21 @@ class TranscriptAdAnalyzer @Inject constructor(
     private val classifier: JevAdClassifier,
     private val transcriber: EpisodeTranscriber,
     private val transcriptStore: LocalTranscriptStore,
+    private val transcriptManager: TranscriptManager,
+    private val generatedTranscriptLoader: GeneratedTranscriptLoader,
     private val jevAdModelStore: JevAdModelStore,
     private val fileStorage: FileStorage,
     @ApplicationScope private val scope: CoroutineScope,
 ) {
     private val mutex = Mutex()
     private var analysisJob: Job? = null
+
+    /**
+     * When an episode's last analysis attempt failed. Streams are fetched whole before they can be
+     * transcribed, so retrying on every playback tick would download the episode again; the window
+     * keeps a failure from turning into a download loop while still allowing a later attempt.
+     */
+    private val failedAttempts = ConcurrentHashMap<String, Long>()
 
     fun isSupported(): Boolean = transcriber.isAvailable()
 
@@ -84,24 +102,45 @@ class TranscriptAdAnalyzer @Inject constructor(
     suspend fun run(episodeUuid: String): Boolean = mutex.withLock { runAnalysis(episodeUuid) }
 
     private suspend fun runAnalysis(episodeUuid: String): Boolean {
+        val failedAt = failedAttempts[episodeUuid]
+        if (failedAt != null && System.currentTimeMillis() - failedAt < RETRY_AFTER_FAILURE_MS) {
+            Timber.tag(TAG).d("Episode %s failed to analyse recently, not retrying yet", episodeUuid)
+            return false
+        }
         val startedAt = System.currentTimeMillis()
         val episode = episodeManager.findByUuid(episodeUuid) ?: return false
         val source = resolveSource(episode)
-        if (source == null) {
-            Timber.tag(TAG).d("Episode %s has no audio to transcribe", episodeUuid)
+        val model = jevAdModelStore.selectedJevAdModel()
+        val state = adAnalysisDao.findState(episodeUuid)
+        val sourceSignature = source?.let(AnalysisIdentity::audioSignature)
+
+        // A repeat play of an episode already scored from its generated transcript needs no fetch:
+        // the transcript URL and the audio are both known before anything is loaded.
+        val generatedUrl = generatedTranscriptLoader.urlFor(episode)
+        if (sourceSignature != null) {
+            val analysed = listOfNotNull(generatedUrl?.let(::transcriptAnalysisVersion), transcriber.version)
+                .any { version ->
+                    AnalysisIdentity.isReusableTranscript(state, sourceSignature, version, model, JevPrompt.VERSION)
+                }
+            if (analysed) {
+                Timber.tag(TAG).d("Episode %s is already analysed with its transcript, model and prompt", episodeUuid)
+                return true
+            }
+        }
+
+        val existing = loadExistingTranscript(episodeUuid)
+        if (source == null && existing == null) {
+            Timber.tag(TAG).d("Episode %s has neither audio nor a transcript", episodeUuid)
             return false
         }
-        if (!transcriber.isAvailable()) return false
 
-        val model = jevAdModelStore.selectedJevAdModel()
-        val signature = AnalysisIdentity.audioSignature(source)
-        val sttVersion = transcriber.version
-        val state = adAnalysisDao.findState(episodeUuid)
-        val hasTranscript = transcriptStore.hasTranscript(episodeUuid)
-        if (hasTranscript &&
-            AnalysisIdentity.isReusableTranscript(state, signature, sttVersion, model, JevPrompt.VERSION)
-        ) {
-            Timber.tag(TAG).d("Episode %s is already analysed with this audio, model and recognizer", episodeUuid)
+        // A transcript the app already has is the analysis input; otherwise the recognizer is.
+        // Keeping the version here makes a newly available transcript invalidate an older,
+        // speech-recognised analysis of the same episode.
+        val signature = sourceSignature ?: existing!!.url
+        val sttVersion = existing?.analysisVersion(transcriber.version) ?: transcriber.version
+        if (AnalysisIdentity.isReusableTranscript(state, signature, sttVersion, model, JevPrompt.VERSION)) {
+            Timber.tag(TAG).d("Episode %s is already analysed with this transcript, model and prompt", episodeUuid)
             return true
         }
         if (AnalysisIdentity.isTranscriptAnalysis(state)) {
@@ -113,39 +152,55 @@ class TranscriptAdAnalyzer @Inject constructor(
             }
         }
 
-        val result = transcriber.transcribe(episodeUuid, source, episode.durationMs.toLong())
-        val cues = when (result) {
-            is TranscriptResult.Success -> result.cues
+        val cues = if (existing != null) {
+            existing.toAnalysisCues()
+        } else {
+            if (source == null || !transcriber.isAvailable()) return false
+            val result = transcriber.transcribe(episodeUuid, source, episode.durationMs.toLong())
+            when (result) {
+                is TranscriptResult.Success -> result.cues
 
-            is TranscriptResult.Unavailable -> {
-                LogBuffer.i(TAG, "On-device transcription unavailable: ${result.reason}")
-                return false
-            }
+                is TranscriptResult.Unavailable -> {
+                    LogBuffer.i(TAG, "On-device transcription unavailable: ${result.reason}")
+                    return false
+                }
 
-            is TranscriptResult.Failed -> {
-                LogBuffer.e(TAG, "Transcription failed for $episodeUuid: ${result.message}")
-                return false
+                is TranscriptResult.Failed -> {
+                    LogBuffer.e(TAG, "Transcription failed for $episodeUuid: ${result.message}")
+                    noteFailure(episodeUuid)
+                    return false
+                }
             }
         }
-        if (cues.isEmpty()) return false
+        if (cues.isEmpty()) {
+            LogBuffer.i(TAG, "No transcript cues to score for $episodeUuid")
+            noteFailure(episodeUuid)
+            return false
+        }
 
-        transcriptStore.save(episodeUuid, cues)
-        LogBuffer.i(
-            TAG,
-            "Cached transcript for $episodeUuid: ${cues.size} cues, " +
-                "${System.currentTimeMillis() - startedAt}ms",
-        )
+        if (existing == null) {
+            transcriptStore.save(episodeUuid, cues)
+            LogBuffer.i(
+                TAG,
+                "Cached transcript for $episodeUuid: ${cues.size} cues, " +
+                    "${System.currentTimeMillis() - startedAt}ms",
+            )
+        } else {
+            LogBuffer.i(TAG, "Using the existing transcript for $episodeUuid: ${cues.size} cues from ${existing.url}")
+        }
 
         val podcastTitle = podcastManager.findPodcastByUuid(episode.podcastUuid)?.title.orEmpty()
         val classification = classifier.classify(cues, podcastTitle.ifBlank { UNKNOWN_SHOW }, model)
         val scored = when (classification) {
             is JevClassification.Unavailable -> {
                 LogBuffer.i(TAG, "jev classification unavailable for $episodeUuid: ${classification.reason}")
+                noteFailure(episodeUuid)
                 return false
             }
 
             is JevClassification.Failed -> {
                 LogBuffer.e(TAG, "jev classification failed for $episodeUuid: ${classification.reason}")
+                noteFailure(episodeUuid)
                 return false
             }
 
@@ -200,7 +255,26 @@ class TranscriptAdAnalyzer @Inject constructor(
                     "costUsd=$costUsd, ${System.currentTimeMillis() - startedAt}ms",
             )
         }
+        failedAttempts.remove(episodeUuid)
         return true
+    }
+
+    private fun noteFailure(episodeUuid: String) {
+        failedAttempts[episodeUuid] = System.currentTimeMillis()
+    }
+
+    /**
+     * The transcript the app can already show, if there is one. Availability is checked first
+     * because loading an episode that has no transcript waits for show notes to be processed.
+     * When the transcript stack has not recorded the generated transcript yet, it is fetched from
+     * the URL the show notes advertise so analysis does not wait for a transcript screen.
+     */
+    private suspend fun loadExistingTranscript(episodeUuid: String): Transcript.Text? {
+        if (transcriptManager.observeIsTranscriptAvailable(episodeUuid).first()) {
+            val loaded = transcriptManager.loadTranscript(episodeUuid) as? Transcript.Text
+            if (!loaded?.entries.isNullOrEmpty()) return loaded
+        }
+        return generatedTranscriptLoader.load(episodeUuid)?.takeIf { it.entries.isNotEmpty() }
     }
 
     /**
@@ -246,5 +320,29 @@ class TranscriptAdAnalyzer @Inject constructor(
 
         /** How long the analysis waits for a download to be recorded before giving up. */
         private const val WAIT_FOR_DOWNLOAD_MS = 30_000L
+
+        /** How long a failed attempt blocks a retry, so a stream is not fetched again immediately. */
+        private const val RETRY_AFTER_FAILURE_MS = 10 * 60_000L
     }
 }
+
+/** The transcript's timed text entries as classifier cues, in transcript order. */
+internal fun Transcript.Text.toAnalysisCues(): List<TranscriptCue> = entries.mapNotNull { entry ->
+    val text = entry as? TranscriptEntry.Text ?: return@mapNotNull null
+    val value = text.value.trim()
+    if (value.isEmpty() || text.startTimeMs < 0) return@mapNotNull null
+    TranscriptCue(
+        startMs = text.startTimeMs,
+        endMs = text.endTimeMs.coerceAtLeast(text.startTimeMs),
+        text = value,
+    )
+}
+
+/**
+ * Identifies what produced the cues. A transcript generated on device is tied to the recognizer,
+ * a transcript the app fetched is tied to its URL, so either changing starts a fresh analysis.
+ */
+internal fun Transcript.Text.analysisVersion(recognizerVersion: String): String = if (url.startsWith(LocalTranscriptStore.SCHEME)) recognizerVersion else transcriptAnalysisVersion(url)
+
+/** The analysis identity of a transcript the app fetched by URL. */
+internal fun transcriptAnalysisVersion(url: String): String = "transcript:$url"
