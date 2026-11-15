@@ -262,6 +262,8 @@ models are MIT.
   (the Spanish bundle ships no attention decoder), so cue building must also work from line-level
   `startTime`/`duration`. Cues are stored as WebVTT through `LocalTranscriptStore`, one cue per
   complete streaming line, and the old ML Kit energy-region reconstruction is gone for good.
+  Measured against Whisper, Moonshine's word times sit a constant ~0.25 s late; at hand-labelled ad
+  boundaries that still lands within 0.3 s at p90, so do not "fix" the offset without new evidence.
 - Where: `modules/services/repositories/.../repositories/ads/text/moonshine/`. The decisions, the
   laptop comparison against the Whisper corpus and the integration notes live in
   `dev/adaware/next/moonshine/`; read `RESEARCH.md` before changing the engine, the model choice or

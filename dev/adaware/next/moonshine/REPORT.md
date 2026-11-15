@@ -94,7 +94,8 @@ Spanish, `models/es/quantized_26_08_24/`:
 | **total** | **32,316,573 B = 30.8 MiB** |
 
 **No `decoder_kv_with_attention.ort` for Spanish, even with `include_word_timestamps=True`**
-— the catalog simply has no such entry for `es`, and the CDN has no such object. What
+— the catalog simply has no such entry for `es`, and the CDN returns **404** for it while the
+English file returns 200 (`check_cdn.sh`). What
 happens at runtime is a silent degradation, not an error: the model loads, transcription
 is correct Spanish, and `words` is `[]` on every line (verified in both batch and streaming
 modes: 0 words, 70 lines). A "Failed to load decoder_kv_with_attention" warning string
@@ -158,17 +159,18 @@ label time to the nearest word boundary (start *or* end) in each transcript.
 
 Reading it honestly:
 
+* Insertions dominate the error (1,519 of 2,636), and a sample of 20 error blocks shows
+  they are mostly **disfluencies** — `uh`, `um`, `you know`, duplicated words — that
+  Whisper's decoder drops and Moonshine keeps. Substitutions are ordinary word errors
+  (`chest` → `chess`, `without jordan` → `re joining`).
 * Part of the WER is **tokenisation/formatting**, not wrong words: the no-space CER is
   ~0.10 against a word WER of ~0.15. `25` vs `twenty five`, `ChatGBT` vs `Chat Gbt`,
   hyphenation and fillers each cost a word slot while barely changing the characters.
-* Insertions dominate the error (1,519 of 2,636). The English model does not drop audio; it
-  emits more tokens than Whisper small, including fillers.
 * A VAD sensitivity check on `the-daily` (Whisper re-run with `vad_filter=False`) moved WER
-  only 0.167 → 0.159, so the insertion excess is not an artifact of Whisper's VAD; it is
-  real tokenisation/lexical difference.
+  only 0.167 → 0.159, so the insertion excess is not an artifact of Whisper's VAD.
 
-This is a *tiny* model against a *small* one: usable for classification, but the recurring
-failure modes are names, spelled-out numbers and split identifiers.
+This is a *tiny* model against a *small* one: usable for classification, but it keeps
+disfluencies and makes ordinary word errors at names and similar-sounding words.
 
 ## 5. Word timestamps
 
@@ -236,8 +238,9 @@ edge; (b) the nearest-of-start-or-end rule gets two candidates. Ad *starts* are 
 Why the boundary error (0.07 s median) is *smaller* than the word error (0.24 s median): the
 labels are padded ±0.3 s outside the pod, so the nearest word boundary is the pod's outer
 edge, and Moonshine's constant +0.24 s lateness pushes that edge toward the pad rather than
-away from it. The two effects partly cancel. This is worth knowing: the boundary metric is
-lenient in a way the word metric is not.
+away from it. The two effects partly cancel. With a zero bias the nearest boundary would sit
+at the pad and the median would be ~0.3 s — still comfortably inside 1 s, so the conclusion
+does not depend on the cancellation, but the 0.07 s figure is flattered by it.
 
 **Caveats that limit what this proves**
 
@@ -296,14 +299,13 @@ is no language detection, so the app must gate on `Podcast.podcastLanguage`).
 |---|---|
 | `word_timestamps: true`, batch | **0 words**, 70 lines, text correct Spanish |
 | `word_timestamps: true`, streaming 1 s | **0 words**, 70 lines, 2.98 min wall (RTF 1.68) |
-| attention decoder in bundle | absent (32.3 MB bundle, 8 files) |
+| attention decoder in bundle | absent (30.8 MiB / 32.3 MB bundle, 8 files) |
 | text vs Whisper small (`es`) | WER 0.579, CER 0.395, 286/7/123 on 719 ref tokens |
 
-The Spanish text is noticeably weaker than English (CER 0.40 vs 0.10) — a 5 min window of
-music-bedded, multi-speaker conversational audio, a tiny model, and no way to re-check on
-more data without a Spanish corpus. Treat the Spanish text number as one sample, not a
-distribution. The important, robust part is the first three rows: **no words, ever, for
-Spanish**, in both API modes.
+The Spanish text is noticeably weaker than English (CER 0.40 vs 0.10), on one 5 min window
+of a narrative Spanish podcast; there is no Spanish corpus in `dev/adaware`, so this is one
+sample, not a distribution. The important, robust part is the first three rows: **no words,
+ever, for Spanish**, in both API modes.
 
 Line-level fallback, measured (Moonshine line start vs the first Whisper word inside that
 line, 65 of 70 lines matched):
@@ -333,14 +335,15 @@ music/noise.
   boundary displacement means a cue-snapped cut is within a third of a second of where
   Whisper would put it, against 1-2 s tolerance. Do not spend M3 effort here.
 * **Speed is the open risk.** 2.3x realtime for streaming at 0.5 s chunks on a 22-thread
-  laptop; a phone with 4-8 cores will be several times slower, and this is the number that
-  decides whether a 45 min episode is analysed in 20 min or 90 min. Measure `rtf` on a real
-  device before tuning anything else (the plan already logs it); if it comes out below ~1x,
-  the options are chunking, a shorter analysis window, or accepting background time.
+  laptop; a phone with 4-8 cores will probably be several times slower (untested), and this
+  is the number that decides whether a 45 min episode is analysed in 20 min or 90 min.
+  Measure `rtf` on a real device before tuning anything else (the plan already logs it); if
+  it comes out below ~1x, the options are chunking, a shorter analysis window, or accepting
+  background time.
 * **Do not batch the whole episode.** Batch mode is a laptop convenience: it needs the whole
-  PCM buffer in memory (~230 MB of floats for 45 min, plus the library's copy) and gets
-  *slower* per second of audio the longer the file. The streaming API is the right device
-  path — which is what the plan already says.
+  PCM buffer in memory (173 MB of float32 for 45 min, 230 MB for an hour, plus the library's
+  copy) and gets *slower* per second of audio the longer the file. The streaming API is the
+  right device path — which is what the plan already says.
 * **No language detection.** A Spanish-configured engine fed English audio produces
   gibberish rather than an error; gating on the podcast language is mandatory, not just a
   nicety.
@@ -349,8 +352,8 @@ music/noise.
     `include_word_timestamps` silently produces a bundle that cannot do word times;
   * the Spanish bundle's tokenizer logs `No byte fallback block in this vocabulary ... longest-match`
     on load — text is still correct, but it is a warning to expect in logs;
-  * Moonshine emits ~9 % more tokens than Whisper small (numbers spelled out, identifiers
-    split) — harmless for classification, relevant if anyone diffs transcripts;
+  * Moonshine emits ~9 % more tokens than Whisper small (fillers, spelled-out numbers,
+    identifiers split) — harmless for classification, relevant if anyone diffs transcripts;
   * on WSL's `/mnt/i` the downloader's atomic `rename` of the 31 MB decoder intermittently
     fails with `EACCES` (Windows still holds the fresh file); `download_models.py` works
     around it by downloading to a native Linux cache and copying. Not an Android issue, but
@@ -390,6 +393,9 @@ bash run_score.sh
 # 8. speed (idle machine: batch vs streaming chunk sizes)
 .venv/bin/python timing.py --out out/_timing2min.json
 .venv/bin/python timing.py --clip .audio/_test/slice600.mp3 --modes batch --out out/_timing10min.json
+#    the 28 min "idle" row in §7 is a repeat of the-daily with nothing else running:
+.venv/bin/python transcribe.py --audio .audio/the-daily__what-jensen-huang-s-resignation-will-mea/take0.mp3 \
+    --model-dir models/en/quantized_26_11_02 --mode batch --out out/_timing/full_the_daily.json
 
 # 9. Spanish smoke test (searches the iTunes directory for a Spanish podcast)
 .venv/bin/python spanish_audio.py --start 900 --seconds 300
@@ -410,7 +416,7 @@ through the same API a phone would use (`add_audio` + `stop`).
 
 | path | what |
 |---|---|
-| `download_models.py` | model fetch + the evidence for §2; `models/bundles.json` records the file list and sizes (`models/` is gitignored) |
+| `download_models.py`, `check_cdn.sh` | model fetch + the evidence for §2; `models/bundles.json` records the file list and sizes (`models/` is gitignored) |
 | `download_audio.py`, `data_check.py`, `spanish_audio.py` | audio fetch, DAI-vs-corpus check, Spanish source |
 | `transcribe.py`, `timing.py`, `run_moonshine.sh` | Moonshine runs (batch/streaming, word timestamps) |
 | `whisper_reference.py`, `run_whisper.sh` | Whisper reference on the same audio |
@@ -423,8 +429,8 @@ through the same API a phone would use (`add_audio` + `stop`).
 | `results/*.json`, `results/summary.json` | scores, including every raw per-word delta and boundary row |
 | `RESEARCH.md`, `INSTALL.md` | sibling work: integration decisions and device install steps |
 
-Audio and model weights are gitignored (`.audio/`, `models/`, plus the existing `*.mp3` /
-`*.ort` patterns). The `ref/`, `out/`, `labels/` and `results/` JSON are small and committed.
+Audio and model weights are gitignored (`.audio/` and `models/`, which also covers the
+`.ort` weights). The `ref/`, `out/`, `labels/` and `results/` JSON are small and committed.
 
 ## 12. Open questions M1 did not answer
 
@@ -436,7 +442,9 @@ Audio and model weights are gitignored (`.audio/`, `models/`, plus the existing 
 3. **Pods that open on music.** No word boundary exists at the true edge; how often that
    happens in production podcasts, and whether the app should search backwards for a
    silence/music onset, is unmeasured.
-4. **Non-English apart from Spanish.** Only `en` and `es` ships in the catalog.
+4. **Other languages.** The library's catalog also lists `ar`, `de`, `ja`, `ko`, `tl`, `uk`,
+   `vi`, `zh` (tiny/base streaming), but M1 only tested `en` and `es`; whether any of the
+   others ship an attention decoder is unmeasured.
 5. **Long-run drift.** The offset is stable at half-episode granularity — median of matched
    words in the first vs second half: hard-fork +0.235 / +0.240 s, planet-money +0.240 /
    +0.240 s, the-daily +0.250 / +0.250 s — but that is a coarse two-bin check from

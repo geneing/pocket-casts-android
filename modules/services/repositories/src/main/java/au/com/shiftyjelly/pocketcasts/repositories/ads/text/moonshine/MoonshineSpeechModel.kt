@@ -22,8 +22,9 @@ import timber.log.Timber
  * Only English and Spanish are offered. Every language is requested as **tiny streaming** with the
  * architecture passed explicitly: the catalog's default for English is *medium* and for Spanish
  * *small*, so letting the default decide would silently fetch hundreds of megabytes instead of the
- * 43 MiB (en) / 31 MiB (es) these two need. Word timestamps are English only, because the Spanish
- * bundle ships no attention decoder; Spanish cues come from line times instead.
+ * 74.5 MiB (en, with the attention decoder that produces word timestamps) / 30.8 MiB (es) these
+ * two need. Word timestamps are English only, because the Spanish bundle ships no attention
+ * decoder; Spanish cues come from line times instead.
  *
  * Models are never bundled in the APK. A private build copies them onto the device
  * (`dev/adaware/next/moonshine/install-models.ps1`), and a download is the fallback for when they
@@ -95,7 +96,7 @@ class MoonshineModels @Inject constructor(
 
     /**
      * The directory [ai.moonshine.voice.Transcriber.loadFromFiles] is pointed at. Created on
-     * demand, under `noBackupFilesDir` so 43 MiB of re-downloadable weights are never backed up.
+     * demand, under `noBackupFilesDir` so 74.5 MiB of re-downloadable weights are never backed up.
      */
     fun directory(language: MoonshineLanguage): File = ModelCache.directoryFor(context, language.spec(), null)
 

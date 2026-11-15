@@ -2,7 +2,7 @@
 
 The app is private-use for now: it is built and installed from this laptop, and the Moonshine
 models are copied onto the phone as part of the install. Bundling them in the APK was rejected
-(43 MiB / 31 MiB in the base APK for a gated feature, and Spanish would still need the download
+(74.5 MiB / 30.8 MiB in the base APK for a gated feature, and Spanish would still need the download
 path), so the two paths — install push and download fallback — write to the same directory.
 
 ## One command
@@ -51,7 +51,7 @@ script is cheap.
   progress through WorkManager (`model_bytes_done` / `model_bytes_total` / `model_percent`), and
   transcribes.
 - Missing and on a metered network: the pass returns `Unavailable` and the worker returns
-  `Result.retry()`, so the 43 MiB download waits for Wi-Fi instead of using the data allowance.
+  `Result.retry()`, so the 74.5 MiB download waits for Wi-Fi instead of using the data allowance.
   The log names the directory the files belong in.
 
 ## Re-pushing after a model change
