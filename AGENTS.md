@@ -255,6 +255,7 @@ models are MIT.
   explicitly (`MOONSHINE_MODEL_ARCH_TINY_STREAMING`); the catalog's default for `en` is *medium* and
   for `es` is *small*, so relying on the default silently downloads hundreds of megabytes.
   Downloaded on demand (unmetered only) into `noBackupFilesDir/moonshine-models`, never bundled.
+- On a device, a private build gets them with `dev/adaware/next/moonshine/install-app.ps1` (builds `:app:assembleDebugProd`, `adb install -r`, then pushes the models with `install-models.ps1`; `-SkipBuild`/`-SkipModels` skip either half).
 - Language: chosen from `Podcast.podcastLanguage` by primary subtag (`es-us` -> `es`). Any other
   language makes the engine unavailable for that episode and the audio analyzer covers it.
 - Timestamps: word-level times come from the model's cross-attention DTW. They are **English only**
