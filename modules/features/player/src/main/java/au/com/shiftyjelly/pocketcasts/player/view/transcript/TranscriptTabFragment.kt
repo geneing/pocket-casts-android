@@ -46,14 +46,20 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.mapNotNull
 import kotlinx.coroutines.launch
 import au.com.shiftyjelly.pocketcasts.localization.R as LR
 
 /**
  * Episode transcript tab: timestamped cues that seek playback when tapped. Reads whatever the
- * transcript stack has for the current episode, including an on-device transcript produced by
- * the ad analysis pass. Sentences inside a detected ad segment are shown in italics.
+ * transcript stack has for the episode, including an on-device transcript produced by the ad
+ * analysis pass.
+ *
+ * With [forEpisode] the tab shows a fixed episode and reads like any other tab of an episode's
+ * details screen: no playback is running yet, so a cue does not seek and the page uses the app
+ * colors instead of the player's dark background. Without it the tab follows the player's episode.
+ * Sentences inside a detected ad segment are shown in italics.
  */
 @OptIn(ExperimentalCoroutinesApi::class)
 @AndroidEntryPoint
@@ -74,12 +80,19 @@ class TranscriptTabFragment : Fragment() {
     private var state by mutableStateOf(TranscriptTabState())
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        val isPlayerTab = fixedEpisodeUuid == null
+        val onSeek: ((Int) -> Unit)? = if (isPlayerTab) {
+            { positionMs -> playbackManager.seekToTimeMs(positionMs) }
+        } else {
+            null
+        }
         return contentWithoutConsumedInsets {
             AppTheme(theme.activeTheme) {
                 TranscriptTabPage(
                     entries = state.entries,
                     adSegments = state.adSegments,
-                    onSeek = { positionMs -> playbackManager.seekToTimeMs(positionMs) },
+                    onSeek = onSeek,
+                    usePlayerColors = isPlayerTab,
                 )
             }
         }
@@ -87,14 +100,19 @@ class TranscriptTabFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewLifecycleOwner.lifecycleScope.launch {
-            shelfSharedViewModel.uiState
+        val episodeFlow = fixedEpisodeUuid?.let(::flowOf)
+            ?: shelfSharedViewModel.uiState
                 .mapNotNull { it.episode?.uuid }
                 .distinctUntilChanged()
+        viewLifecycleOwner.lifecycleScope.launch {
+            episodeFlow
                 .flatMapLatest { episodeUuid -> observeTranscript(episodeUuid) }
                 .collect { state = it }
         }
     }
+
+    private val fixedEpisodeUuid: String?
+        get() = arguments?.getString(ARG_EPISODE_UUID)
 
     /**
      * Combines the transcript with the ad segments of the same episode, so a sentence restyles when
@@ -123,6 +141,16 @@ class TranscriptTabFragment : Fragment() {
             ?.filter { it.startTimeMs >= 0 }
             .orEmpty()
     }
+
+    companion object {
+        private const val ARG_EPISODE_UUID = "episode_uuid"
+
+        fun forEpisode(episodeUuid: String) = TranscriptTabFragment().apply {
+            arguments = Bundle().apply {
+                putString(ARG_EPISODE_UUID, episodeUuid)
+            }
+        }
+    }
 }
 
 private data class TranscriptTabState(
@@ -134,16 +162,19 @@ private data class TranscriptTabState(
 private fun TranscriptTabPage(
     entries: List<TranscriptEntry.Text>,
     adSegments: List<AdSegment>,
-    onSeek: (Int) -> Unit,
+    onSeek: ((Int) -> Unit)?,
+    usePlayerColors: Boolean,
 ) {
-    // The tab sits on the player background, which is dark in every theme, so it uses the player
-    // contrast colors rather than the app theme's text color which would be unreadable here.
+    // The player tab sits on a background that is dark in every theme, so it uses the player
+    // contrast colors rather than the app theme's text color which would be unreadable there.
     val colors = MaterialTheme.theme.colors
+    val textColor = if (usePlayerColors) colors.playerContrast01 else colors.primaryText01
+    val timestampColor = if (usePlayerColors) colors.playerContrast02 else colors.primaryText02
     if (entries.isEmpty()) {
         Text(
             text = stringResource(LR.string.transcript_not_available),
             style = MaterialTheme.typography.body2,
-            color = colors.playerContrast02,
+            color = timestampColor,
             modifier = Modifier.padding(24.dp),
         )
         return
@@ -162,19 +193,25 @@ private fun TranscriptTabPage(
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .clickable { onSeek(entry.startTimeMs.toInt()) }
+                    .then(
+                        if (onSeek != null) {
+                            Modifier.clickable { onSeek(entry.startTimeMs.toInt()) }
+                        } else {
+                            Modifier
+                        },
+                    )
                     .padding(vertical = 4.dp),
             ) {
                 Text(
                     text = entry.value,
                     style = MaterialTheme.typography.body2,
-                    color = colors.playerContrast01,
+                    color = textColor,
                     fontStyle = if (index in adSentenceIndexes) FontStyle.Italic else null,
                 )
                 Text(
                     text = formatTimestamp(entry.startTimeMs),
                     style = MaterialTheme.typography.caption,
-                    color = colors.playerContrast02,
+                    color = timestampColor,
                 )
             }
         }

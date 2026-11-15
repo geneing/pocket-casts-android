@@ -112,7 +112,9 @@ the model cannot run.
   upserts only the on-device row, so a server transcript for the same episode survives.
 - `AdAnalysisScheduler` enqueues unique `TranscriptAdAnalysisWorker` work after a
   successful `DownloadEpisodeWorker` (battery-not-low constraint), gated by
-  `Feature.AD_SKIPPING`.
+  `Feature.AD_SKIPPING`. Opening a downloaded episode's details also calls `schedule`, so
+  a missed or interrupted pass is retried without playback, and the details screen shows a
+  "Generating transcript…" banner while the work is queued or running.
 - **Analysis identity.** `episode_ad_analysis` stores an audio signature (size +
   last-modified), the model identity (bundle version + vocabulary hash) and the STT
   version (migration 142→143). A completed analysis is reused only when all three match;
@@ -131,6 +133,19 @@ the model cannot run.
 episode (`ShelfSharedViewModel.uiState.isTranscriptAvailable`). Each cue shows its text and
 `m:ss` timestamp; tapping seeks playback to the cue start. It reads the same transcript
 stack, so an on-device transcript appears as soon as analysis finishes.
+
+The same fragment also serves a **Transcript** tab on the episode details sheet
+(`EpisodeContainerFragment`), created with `forEpisode(uuid)` so it shows that episode
+without playback and in the app colors. The details tab appears as soon as
+`transcriptDao.observeTranscripts` reports a transcript, which means the background
+analysis does not need the player to be open. The Details tab's transcript card follows the
+same availability flow, so it appears live when the analysis completes.
+
+Two places used to take the on-device transcript away after it was produced:
+`TranscriptDao.replaceAll` (a show notes refresh) and `DownloadManager.cleanUpDownloads`
+(deleting a download) both deleted every transcript row of the episode. Both now keep
+`local-generated://` rows, and the download cleanup clears only the ad segments and the
+analysis state, so the transcript stays readable after the download is gone.
 
 ## Verification
 

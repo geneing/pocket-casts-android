@@ -17,7 +17,10 @@ import javax.inject.Inject
 import javax.inject.Singleton
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 
 /**
@@ -26,7 +29,8 @@ import kotlinx.coroutines.launch
  * [schedule] is called when an episode finishes downloading, which is the moment its file is
  * complete. [scheduleDownloadedWithoutTranscript] catches the episodes that never go through that
  * callback: files restored after a reinstall, episodes that arrived while the analysis was off, and
- * the first launch after an upgrade.
+ * the first launch after an upgrade. The episode details screen also calls [schedule], so opening a
+ * downloaded episode is enough to get its transcript even if every earlier pass was missed.
  */
 @Singleton
 class AdAnalysisScheduler @Inject constructor(
@@ -37,17 +41,27 @@ class AdAnalysisScheduler @Inject constructor(
     @ApplicationScope private val scope: CoroutineScope,
 ) {
     fun schedule(episodeUuid: String) {
-        if (!FeatureFlag.isEnabled(Feature.AD_SKIPPING)) return
-        if (!transcriber.isAvailable()) return
+        if (!isEnabled()) return
         val request = OneTimeWorkRequestBuilder<TranscriptAdAnalysisWorker>()
             .setConstraints(constraints())
             .setInputData(workDataOf(TranscriptAdAnalysisWorker.ARG_EPISODE_UUID to episodeUuid))
             .build()
         WorkManager.getInstance(context).enqueueUniqueWork(
-            TranscriptAdAnalysisWorker.UNIQUE_PREFIX + episodeUuid,
+            TranscriptAdAnalysisWorker.uniqueName(episodeUuid),
             ExistingWorkPolicy.KEEP,
             request,
         )
+    }
+
+    /**
+     * Reports whether analysis is queued or running for the episode, so a screen can show that a
+     * transcript is being generated instead of looking like there is none.
+     */
+    fun observeIsAnalysisPending(episodeUuid: String): Flow<Boolean> {
+        if (!isEnabled()) return flowOf(false)
+        return WorkManager.getInstance(context)
+            .getWorkInfosForUniqueWorkFlow(TranscriptAdAnalysisWorker.uniqueName(episodeUuid))
+            .map { infos -> infos.any { info -> !info.state.isFinished } }
     }
 
     /**
@@ -56,8 +70,7 @@ class AdAnalysisScheduler @Inject constructor(
      * storm of work; the work itself is unique per episode, so repeat calls are no-ops.
      */
     fun scheduleDownloadedWithoutTranscript() {
-        if (!FeatureFlag.isEnabled(Feature.AD_SKIPPING)) return
-        if (!transcriber.isAvailable()) return
+        if (!isEnabled()) return
         scope.launch(Dispatchers.IO) {
             val downloaded = runCatching { episodeManager.findDownloadedEpisodesFlow().first() }
                 .onFailure { LogBuffer.e(TAG, it, "Could not list downloaded episodes for transcript analysis") }
@@ -74,8 +87,10 @@ class AdAnalysisScheduler @Inject constructor(
     }
 
     fun cancel(episodeUuid: String) {
-        WorkManager.getInstance(context).cancelUniqueWork(TranscriptAdAnalysisWorker.UNIQUE_PREFIX + episodeUuid)
+        WorkManager.getInstance(context).cancelUniqueWork(TranscriptAdAnalysisWorker.uniqueName(episodeUuid))
     }
+
+    private fun isEnabled() = FeatureFlag.isEnabled(Feature.AD_SKIPPING) && transcriber.isAvailable()
 
     private fun constraints() = Constraints.Builder()
         .setRequiresBatteryNotLow(true)

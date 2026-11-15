@@ -35,5 +35,7 @@ class TranscriptAdAnalysisWorker @AssistedInject constructor(
         private const val TAG = "AdAnalysisWorker"
         const val ARG_EPISODE_UUID = "episode_uuid"
         const val UNIQUE_PREFIX = "ad-transcript-analysis-"
+
+        fun uniqueName(episodeUuid: String) = UNIQUE_PREFIX + episodeUuid
     }
 }

@@ -11,22 +11,34 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 abstract class TranscriptDao {
-    @Query("DELETE FROM episode_transcript WHERE episode_uuid IN (:episodeUuids)")
-    protected abstract suspend fun deleteForEpisodesUnsafe(episodeUuids: List<String>)
+    @Query(
+        "DELETE FROM episode_transcript WHERE episode_uuid IN (:episodeUuids) AND " +
+            "url NOT LIKE 'local-generated://%'",
+    )
+    protected abstract suspend fun deleteRemoteForEpisodesUnsafe(episodeUuids: List<String>)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     protected abstract suspend fun insertAll(transcripts: List<Transcript>)
 
+    /**
+     * Replaces the transcripts that come from the server, keeping the ones produced on the device.
+     * A show notes refresh only knows about server transcripts, and it must not take away a
+     * transcript that was already generated and cached on the device.
+     */
     @Transaction
     open suspend fun replaceAll(transcripts: List<Transcript>) {
-        deleteForEpisodes(transcripts.map { it.episodeUuid })
+        deleteRemoteForEpisodes(transcripts.map { it.episodeUuid })
         insertAll(transcripts)
     }
 
+    /**
+     * Deletes the server transcripts of [episodeUuids], keeping the on-device ones. An episode's
+     * download can go away while its transcript is still useful to read.
+     */
     @Transaction
-    open suspend fun deleteForEpisodes(episodeUuids: Collection<String>) {
+    open suspend fun deleteRemoteForEpisodes(episodeUuids: Collection<String>) {
         episodeUuids.chunked(AppDatabase.SQLITE_BIND_ARG_LIMIT).forEach { chunk ->
-            deleteForEpisodesUnsafe(chunk)
+            deleteRemoteForEpisodesUnsafe(chunk)
         }
     }
 

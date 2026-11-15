@@ -262,8 +262,8 @@ private class DownloadQueueController(
     private fun cleanUpDownloads(episodes: Map<String, BaseEpisode>, sourceView: SourceView) {
         coroutineScope.launch {
             progressCache.clearProgress(episodes.keys)
-            transcriptDao.deleteForEpisodes(episodes.keys)
-            adAnalysisCleanup.deleteForEpisodes(episodes.keys)
+            transcriptDao.deleteRemoteForEpisodes(episodes.keys)
+            adAnalysisCleanup.clearAnalysisForEpisodes(episodes.keys)
             val deletedEpisodes = episodes.mapNotNull { (_, episode) ->
                 val deletedEpisode = runCatching {
                     val isFileDeleted = episode.downloadedFilePath?.let { filePath ->

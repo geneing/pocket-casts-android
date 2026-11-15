@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -69,6 +70,48 @@ fun TranscriptExcerptBanner(
             painter = painterResource(IR.drawable.ic_chevron_right),
             colorFilter = ColorFilter.tint(colors.trailingIcon),
             contentDescription = null,
+            modifier = Modifier.size(dimensions.iconSize),
+        )
+    }
+}
+
+/**
+ * The same banner while a transcript is being produced, so an episode that has no transcript yet
+ * does not look like it never will. There is nowhere to go, so it carries no chevron.
+ */
+@Composable
+fun TranscriptGeneratingBanner(
+    modifier: Modifier = Modifier,
+    colors: TranscriptExcerptBannerColors = TranscriptExcerptBannerColors.default(),
+    dimensions: TranscriptExcerptBannerDimensions = TranscriptExcerptBannerDimensions.default(),
+) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(dimensions.itemSpacing),
+        modifier = Modifier
+            .shadow(elevation = dimensions.elevation, shape = BackgroundShape)
+            .background(colors.background, BackgroundShape)
+            .then(modifier)
+            .padding(vertical = dimensions.verticalPadding, horizontal = dimensions.horizontalPadding),
+    ) {
+        Image(
+            painter = painterResource(IR.drawable.ic_ai),
+            colorFilter = ColorFilter.tint(colors.leadingIcon),
+            contentDescription = null,
+            modifier = Modifier.size(dimensions.iconSize),
+        )
+        Text(
+            text = stringResource(LR.string.transcript_generating),
+            color = MaterialTheme.theme.colors.primaryText01,
+            fontSize = dimensions.textSize,
+            lineHeight = dimensions.textLineHeight,
+        )
+        Spacer(
+            modifier = Modifier.weight(1f),
+        )
+        CircularProgressIndicator(
+            color = colors.trailingIcon,
+            strokeWidth = 2.dp,
             modifier = Modifier.size(dimensions.iconSize),
         )
     }
