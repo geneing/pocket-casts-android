@@ -28,9 +28,10 @@ class MoonshineSpeechModelTest {
     fun `a language with no model maps to nothing`() {
         assertNull(speechLanguage("pt-BR"))
         assertNull(speechLanguage("de"))
-        assertNull(speechLanguage(null))
-        assertNull(speechLanguage(""))
-        assertNull(speechLanguage("   "))
+        // Plenty of feeds declare no language at all; those are read as English rather than skipped.
+        assertEquals(MoonshineLanguage.EN, speechLanguage(null))
+        assertEquals(MoonshineLanguage.EN, speechLanguage(""))
+        assertEquals(MoonshineLanguage.EN, speechLanguage("   "))
     }
 
     @Test

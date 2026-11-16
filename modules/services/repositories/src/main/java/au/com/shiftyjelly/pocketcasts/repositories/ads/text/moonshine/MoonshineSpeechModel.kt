@@ -62,11 +62,15 @@ enum class MoonshineLanguage(val code: String, val wordTimestamps: Boolean) {
  *
  * `Podcast.podcastLanguage` is free-form server data (`"en"`, `"es-us"`, `"pt-BR"`, `""`), while
  * the catalog matches only exact language codes or English names. Reducing to the primary subtag is
- * what makes `"es-us"` work; anything outside the allowlist returns null and the episode is left to
- * the audio analyzer exactly as an unsupported language is today.
+ * what makes `"es-us"` work.
+ *
+ * A show that declares nothing gets English: plenty of feeds omit `<language>` entirely (Proof, for
+ * one), and skipping those would leave the episodes without a transcript for no reason. A show that
+ * does declare a language we have no model for (German, Portuguese, ...) is skipped instead — running
+ * English over German audio would produce confident nonsense, which is worse than nothing.
  */
 internal fun speechLanguage(podcastLanguage: String?): MoonshineLanguage? {
-    val normalised = podcastLanguage?.trim()?.lowercase()?.takeIf { it.isNotEmpty() } ?: return null
+    val normalised = podcastLanguage?.trim()?.lowercase()?.takeIf { it.isNotEmpty() } ?: return MoonshineLanguage.EN
     val primary = normalised.substringBefore('-').substringBefore('_')
     return MoonshineLanguage.entries.firstOrNull { it.code == primary }
 }
