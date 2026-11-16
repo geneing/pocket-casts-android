@@ -264,6 +264,9 @@ models are MIT.
   complete streaming line, and the old ML Kit energy-region reconstruction is gone for good.
   Measured against Whisper, Moonshine's word times sit a constant ~0.25 s late; at hand-labelled ad
   boundaries that still lands within 0.3 s at p90, so do not "fix" the offset without new evidence.
+- Recognition only fills a gap: an episode whose show or our servers publish a transcript is analysed
+  from that transcript and never starts a pass. `FORCE_ON_DEVICE_TRANSCRIPT` (developer settings, off
+  by default) ignores published transcripts so the engine can be exercised on real episodes.
 - Recognition is minutes of CPU (about 3x realtime here), so `TranscriptAdAnalysisWorker` promotes
   itself to a `dataSync` foreground service with a quiet notification. An ordinary WorkManager job
   is stopped by the system after a few minutes and loses the whole pass — a `JobCancellationException`
