@@ -10,9 +10,9 @@ import javax.inject.Singleton
  * recognise every episode on the device.
  *
  * Reading a published transcript is both cheaper and better, so it is the default. Recognising
- * everything exists only to exercise the on-device engine end to end while it is being brought up
- * ([Feature.FORCE_ON_DEVICE_TRANSCRIPT], on in debug builds), and it is behind this interface so a
- * test can choose either side without touching global state.
+ * everything exists only to exercise the on-device engine with real episodes
+ * ([Feature.FORCE_ON_DEVICE_TRANSCRIPT], off unless the developer settings turn it on), and it is
+ * behind this interface so a test can choose either side without touching global state.
  */
 fun interface TranscriptSourcePolicy {
     /** True when published transcripts are to be ignored and the audio recognised instead. */

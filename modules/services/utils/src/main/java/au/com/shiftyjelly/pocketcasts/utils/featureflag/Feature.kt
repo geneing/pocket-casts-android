@@ -310,13 +310,13 @@ enum class Feature(
     /**
      * Debug switch for the ad-skipping work: ignore the transcript the show or our servers publish
      * and recognise the episode on the device with Moonshine instead. The remote transcript is
-     * usually the better input, so this exists only to exercise the recogniser end to end; it is on
-     * in debug builds and off everywhere else.
+     * usually the better input, so this is off everywhere and exists only to exercise the recogniser
+     * end to end; turn it on from the developer settings to check a pass on real episodes.
      */
     FORCE_ON_DEVICE_TRANSCRIPT(
         key = "force_on_device_transcript",
         title = "Always transcribe on device (debug)",
-        defaultValue = isDebugOrPrototypeBuild,
+        defaultValue = false,
         tier = FeatureTier.Free,
         hasFirebaseRemoteFlag = false,
         hasDevToggle = true,

@@ -217,6 +217,44 @@ class TranscriptAdAnalyzerTest {
         verify(transcriptStore, never()).save(any(), any())
     }
 
+    @Test
+    fun `a published transcript is scored instead of recognising the audio`() = runTest {
+        ignoresPublished = false
+        givenEpisode(audioFile())
+        whenever(transcriber.version).thenReturn(ENGINE)
+        whenever(transcriber.isAvailable()).thenReturn(true)
+        val published = transcript(
+            "https://example.com/shownotes.vtt",
+            TranscriptEntry.Text("this episode is brought to you by acme", startTimeMs = 0, endTimeMs = 30_000),
+            TranscriptEntry.Text("and now back to the show", startTimeMs = 30_000, endTimeMs = 60_000),
+        )
+        whenever(transcriptManager.observeIsTranscriptAvailable(EPISODE)).thenReturn(flowOf(true))
+        whenever(transcriptManager.loadTranscript(EPISODE)).thenReturn(published)
+        whenever(classifier.classify(any(), any(), any())).thenReturn(
+            JevClassification.Scored(pAd = listOf(0.95, 0.05), responseModel = null, usageCostUsd = 0.01),
+        )
+
+        assertEquals(TranscriptAnalysis.Analysed, analyzer().run(EPISODE))
+
+        // The published transcript is the analysis input: no pass, and no transcript replaced on disk.
+        verify(transcriber, never()).transcribe(any(), any())
+        verify(transcriptStore, never()).save(any(), any())
+        verify(transcriptStore, never()).replaceRemoteAndSave(any(), any())
+        val cues = argumentCaptor<List<TranscriptCue>>()
+        verify(classifier).classify(cues.capture(), any(), any())
+        assertEquals(
+            listOf(
+                TranscriptCue(0, 30_000, "this episode is brought to you by acme"),
+                TranscriptCue(30_000, 60_000, "and now back to the show"),
+            ),
+            cues.firstValue,
+        )
+        // The analysis stays tied to the published URL, so a different one is a different analysis.
+        val state = argumentCaptor<AdAnalysisState>()
+        verify(adAnalysisDao).upsert(state.capture())
+        assertEquals(transcriptAnalysisVersion(published.url), state.firstValue.sttVersion)
+    }
+
     private fun audioFile(): File = folder.newFile("episode.mp3").apply { writeBytes(ByteArray(1_024)) }
 
     private suspend fun givenEpisode(audio: File) {
