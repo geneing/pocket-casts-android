@@ -53,10 +53,13 @@ class OpenRouterChatClientTest {
             val raw = recorded.body.readUtf8()
             assertTrue(raw, raw.contains("\"model\":\"${AiChatPrompt.MODEL}\""))
             assertTrue(raw, raw.contains("\"max_tokens\":${AiChatPrompt.MAX_TOKENS}"))
+            // Web search is OpenRouter's job; the request only has to ask for it.
+            assertTrue(raw, raw.contains("\"plugins\":[{\"id\":\"web\",\"max_results\":3}]"))
 
             val request = moshi.adapter(AiChatRequest::class.java).fromJson(raw)!!
             assertEquals(AiChatPrompt.MODEL, request.model)
             assertEquals(AiChatPrompt.MAX_TOKENS, request.maxTokens)
+            assertEquals(listOf("web"), request.plugins?.map { it.id })
             assertEquals(listOf("system", "user", "assistant", "user"), request.messages.map { it.role })
 
             val system = request.messages[0].content
@@ -81,6 +84,34 @@ class OpenRouterChatClientTest {
             val request = moshi.adapter(AiChatRequest::class.java).fromJson(raw)!!
             assertEquals(listOf("system", "user"), request.messages.map { it.role })
             assertEquals("Summarize the podcast", request.messages[1].content)
+        }
+    }
+
+    @Test
+    fun `web sources from the search plugin are appended to the answer`() = runTest {
+        MockWebServer().use { server ->
+            server.enqueue(
+                MockResponse().setBody(
+                    """
+                    {"choices":[{"message":{"role":"assistant","content":"The guest hosts Proof.",
+                    "annotations":[
+                      {"type":"url_citation","url_citation":{"url":"https://example.com/proof","title":"Proof podcast"}},
+                      {"type":"url_citation","url_citation":{"url":"https://example.com/proof","title":"Proof podcast"}},
+                      {"type":"url_citation","url_citation":{"url":"https://example.com/atk","title":"America's Test Kitchen"}}
+                    ]}}]}
+                    """.trimIndent().replace("\n", ""),
+                ),
+            )
+            server.start()
+
+            val result = client(KEY).pointingAt(server).ask("Who hosts this?", "Proof is a show.")
+
+            val answer = result as AiChatResult.Answer
+            assertEquals(
+                "The guest hosts Proof.\n\nSources:\n- Proof podcast: https://example.com/proof\n" +
+                    "- America's Test Kitchen: https://example.com/atk",
+                answer.text,
+            )
         }
     }
 

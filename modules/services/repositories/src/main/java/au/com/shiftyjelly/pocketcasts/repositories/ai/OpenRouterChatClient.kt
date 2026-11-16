@@ -115,6 +115,7 @@ class OpenRouterChatClient @Inject constructor(
             add(AiChatRequestMessage(role = AiChatMessage.Role.User.wireValue, content = question))
         },
         maxTokens = AiChatPrompt.MAX_TOKENS,
+        plugins = listOf(AiChatPlugin(id = WEB_PLUGIN_ID, maxResults = WEB_SEARCH_RESULTS)),
     )
 
     /**
@@ -157,7 +158,32 @@ class OpenRouterChatClient @Inject constructor(
             LogBuffer.e(TAG, "OpenRouter chat response has no message content")
             return AiChatResult.Failed("response has no message content")
         }
-        return AiChatResult.Answer(text = content, costUsd = parsed.usage?.cost)
+        val answer = content.withSources(parsed.choices.firstOrNull()?.message?.annotations)
+        return AiChatResult.Answer(text = answer, costUsd = parsed.usage?.cost)
+    }
+
+    /**
+     * Appends the pages the web search plugin grounded the answer in, when the model cited any.
+     *
+     * The citations arrive as `url_citation` annotations rather than as text, so without this the
+     * answer would read as if it had been pulled out of thin air.
+     */
+    private fun String.withSources(annotations: List<AiChatAnnotation>?): String {
+        val sources = annotations.orEmpty()
+            .mapNotNull { it.urlCitation }
+            .mapNotNull { citation -> citation.url?.takeIf { it.isNotBlank() }?.let { url -> citation.title?.takeIf(String::isNotBlank) to url } }
+            .distinctBy { it.second }
+            .take(MAX_SOURCES)
+        if (sources.isEmpty()) return this
+        return buildString {
+            append(this@withSources)
+            append("\n\nSources:")
+            sources.forEach { (title, url) ->
+                append("\n- ")
+                if (title != null) append(title).append(": ")
+                append(url)
+            }
+        }
     }
 
     /** Nothing here should ever carry the key, but a failure reason must not either. */
@@ -170,6 +196,19 @@ class OpenRouterChatClient @Inject constructor(
     companion object {
         private const val TAG = "OpenRouterChatClient"
         const val CHAT_COMPLETIONS_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
+
+        /**
+         * OpenRouter's web search plugin. It runs server-side, so the app needs no search API, no
+         * tool-calling loop and no scraping: the results arrive attached to the prompt, and the
+         * citations come back as `url_citation` annotations on the answer.
+         */
+        private const val WEB_PLUGIN_ID = "web"
+
+        /** Enough to look a name or an event up, without turning every question into a research bill. */
+        private const val WEB_SEARCH_RESULTS = 3
+
+        /** Citations are a reading aid, not the answer; a handful is all a bubble can show. */
+        private const val MAX_SOURCES = 5
         private const val SYSTEM_ROLE = "system"
         private const val REDACTED = "[redacted]"
         private const val LOG_BODY_CHARS = 300
@@ -182,6 +221,18 @@ internal data class AiChatRequest(
     val model: String,
     val messages: List<AiChatRequestMessage>,
     @Json(name = "max_tokens") val maxTokens: Int,
+    /**
+     * Server-side plugins OpenRouter runs before the model sees the request. The `web` plugin
+     * searches the web and attaches the results (with citations) to the prompt, which is what lets
+     * the answer reach outside the episode without this app downloading or scraping anything.
+     */
+    val plugins: List<AiChatPlugin>? = null,
+)
+
+@JsonClass(generateAdapter = true)
+internal data class AiChatPlugin(
+    val id: String,
+    @Json(name = "max_results") val maxResults: Int? = null,
 )
 
 @JsonClass(generateAdapter = true)
@@ -197,7 +248,7 @@ internal data class AiChatResponseBody(
     val usage: AiChatUsage? = null,
 )
 
-/** Only `message.content` is used; `reasoning` is ignored by Moshi. */
+/** Only `message.content` and its citations are used; `reasoning` is ignored by Moshi. */
 @JsonClass(generateAdapter = true)
 internal data class AiChatChoice(val message: AiChatResponseMessage? = null)
 
@@ -205,6 +256,20 @@ internal data class AiChatChoice(val message: AiChatResponseMessage? = null)
 internal data class AiChatResponseMessage(
     val role: String? = null,
     val content: String? = null,
+    /** `url_citation` entries the web search plugin attached to the answer, if it ran. */
+    val annotations: List<AiChatAnnotation>? = null,
+)
+
+@JsonClass(generateAdapter = true)
+internal data class AiChatAnnotation(
+    val type: String? = null,
+    @Json(name = "url_citation") val urlCitation: AiChatUrlCitation? = null,
+)
+
+@JsonClass(generateAdapter = true)
+internal data class AiChatUrlCitation(
+    val url: String? = null,
+    val title: String? = null,
 )
 
 /** Only `cost` is used; token counts are ignored by Moshi. */
