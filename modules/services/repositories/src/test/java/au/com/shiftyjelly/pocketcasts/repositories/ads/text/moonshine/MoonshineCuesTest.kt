@@ -127,6 +127,54 @@ class MoonshineCuesTest {
         assertTrue(cues(emptyList(), 60_000).isEmpty())
     }
 
+    /**
+     * What Moonshine 0.1.6's streaming path actually returns today: every word collapsed onto the
+     * line start. Trusting it produced zero-length cues, which the cue list then dropped, so a
+     * 27-line clip came out as 2 cues on the device.
+     */
+    @Test
+    fun `degenerate word times fall back to the line span`() {
+        val words = Array(17) { index -> word("w$index", 20.5f, 20.5f) }
+        val lines = listOf(line(text = "seventeen words with no clock", startTime = 20.5f, duration = 8f, words = words))
+
+        assertEquals(listOf(TranscriptCue(20_500, 28_500, "seventeen words with no clock")), cues(lines, 0))
+    }
+
+    @Test
+    fun `word times that run backwards fall back to the line span`() {
+        val words = arrayOf(
+            word("a", 5.95f, 7.02f),
+            word("b", 7.02f, 13.75f),
+            word("c", 13.75f, 10.98f),
+            word("d", 10.98f, 5.95f),
+        )
+        val lines = listOf(line(text = "words that go backwards", startTime = 5.95f, duration = 10.05f, words = words))
+
+        assertEquals(listOf(TranscriptCue(5_950, 16_000, "words that go backwards")), cues(lines, 0))
+    }
+
+    @Test
+    fun `word times outside their own line fall back to the line span`() {
+        val words = arrayOf(
+            word("early", 1.0f, 1.4f),
+            word("late", 30.0f, 30.4f),
+        )
+        val lines = listOf(line(text = "words from another line", startTime = 10f, duration = 5f, words = words))
+
+        assertEquals(listOf(TranscriptCue(10_000, 15_000, "words from another line")), cues(lines, 0))
+    }
+
+    @Test
+    fun `a word span that covers a sliver of the line is not believable`() {
+        val words = arrayOf(
+            word("hm", 10.1f, 10.2f),
+            word("hm", 10.2f, 10.3f),
+        )
+        val lines = listOf(line(text = "a line with almost no aligned words", startTime = 10f, duration = 8f, words = words))
+
+        assertEquals(listOf(TranscriptCue(10_000, 18_000, "a line with almost no aligned words")), cues(lines, 0))
+    }
+
     private fun line(
         text: String,
         startTime: Float,

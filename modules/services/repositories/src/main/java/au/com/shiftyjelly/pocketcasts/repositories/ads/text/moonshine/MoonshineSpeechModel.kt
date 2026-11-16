@@ -45,11 +45,13 @@ enum class MoonshineLanguage(val code: String, val wordTimestamps: Boolean) {
     val cacheKey: String get() = ModelCache.key(spec())
 
     /**
-     * The identity of the model behind a transcript, including the timestamp policy. Per language
-     * because the two bundles are different files; [MoonshineModels.engineVersion] is the single
-     * string an analysis is pinned to.
+     * The identity of the model behind a transcript, including the timestamp policy and the cue
+     * rules. Per language because the two bundles are different files; [MoonshineModels.engineVersion]
+     * is the single string an analysis is pinned to.
      */
-    val versionTag: String get() = "moonshine-${MoonshineModels.VERSION}/tiny-streaming-$code" + if (wordTimestamps) "/wt" else ""
+    val versionTag: String
+        get() = "moonshine-${MoonshineModels.VERSION}/tiny-streaming-$code" +
+            (if (wordTimestamps) "/wt" else "") + "/${MoonshineModels.CUES_REVISION}"
 
     /** How this language appears in the engine-wide identity: `en-wt`, `es`. */
     internal val policyTag: String get() = code + if (wordTimestamps) "-wt" else ""
@@ -162,12 +164,22 @@ class MoonshineModels @Inject constructor(
         const val VERSION = "0.1.6"
 
         /**
-         * The single identity stamped on an analysis: engine, model architecture and the
-         * word-timestamp policy of every allowed language, so adding a language or flipping a
-         * policy changes it without anyone remembering to edit a string by hand.
+         * Revision of the cue rules. Bump it whenever the same audio would be turned into different
+         * cues, so stored transcripts are rebuilt instead of being reused:
+         *
+         * - `cues1` trusted the library's word times.
+         * - `cues2` checks them first. In 0.1.6 the streaming path returns every word on the line
+         *   start, so `cues1` transcripts are missing most of their cues.
+         */
+        const val CUES_REVISION = "cues2"
+
+        /**
+         * The single identity stamped on an analysis: engine, model architecture, the word-timestamp
+         * policy of every allowed language and the cue rules, so any of those changing invalidates
+         * the analysis without anyone remembering to edit a string by hand.
          */
         val engineVersion: String = "moonshine-$VERSION/tiny-streaming-" +
-            MoonshineLanguage.entries.joinToString(",") { it.policyTag }
+            MoonshineLanguage.entries.joinToString(",") { it.policyTag } + "/$CUES_REVISION"
     }
 }
 

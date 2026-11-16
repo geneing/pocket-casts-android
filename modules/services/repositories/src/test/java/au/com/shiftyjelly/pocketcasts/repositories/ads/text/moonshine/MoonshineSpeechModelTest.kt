@@ -55,12 +55,12 @@ class MoonshineSpeechModelTest {
     @Test
     fun `each language's version tag is distinct and records the word-timestamp policy`() {
         assertNotEquals(MoonshineLanguage.EN.versionTag, MoonshineLanguage.ES.versionTag)
-        assertEquals("moonshine-0.1.6/tiny-streaming-en/wt", MoonshineLanguage.EN.versionTag)
-        assertEquals("moonshine-0.1.6/tiny-streaming-es", MoonshineLanguage.ES.versionTag)
+        assertEquals("moonshine-0.1.6/tiny-streaming-en/wt/cues2", MoonshineLanguage.EN.versionTag)
+        assertEquals("moonshine-0.1.6/tiny-streaming-es/cues2", MoonshineLanguage.ES.versionTag)
     }
 
     @Test
     fun `the engine version covers engine, architecture and every language policy`() {
-        assertEquals("moonshine-0.1.6/tiny-streaming-en-wt,es", MoonshineModels.engineVersion)
+        assertEquals("moonshine-0.1.6/tiny-streaming-en-wt,es/cues2", MoonshineModels.engineVersion)
     }
 }
