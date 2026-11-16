@@ -103,6 +103,27 @@ class MoonshineStatsTest {
         assertEquals(100, MoonshineStats.percent(100, 100))
     }
 
+    @Test
+    fun `progress shows text, position, both clocks and the ratio so far`() {
+        val line = MoonshineStats.progress(
+            chars = 1530,
+            lineStartMs = 3 * 60_000L + 5_000L,
+            elapsedMs = 42_000L,
+            fedAudioMs = 100_000L,
+        )
+
+        assertEquals("progress: chars=1530 at=3:05 elapsed=0:42 audio=1:40 rtf=2.38", line)
+    }
+
+    @Test
+    fun `durations grow to hours and never go negative`() {
+        assertEquals("0:00", MoonshineStats.duration(0))
+        assertEquals("0:59", MoonshineStats.duration(59_999))
+        assertEquals("12:34", MoonshineStats.duration(12 * 60_000L + 34_000L))
+        assertEquals("1:02:03", MoonshineStats.duration(3_723_000L))
+        assertEquals("0:00", MoonshineStats.duration(-5_000L))
+    }
+
     private fun line(startTime: Float, duration: Float, wordStart: Float, words: Int): TranscriptLine = TranscriptLine().apply {
         this.text = "line"
         this.startTime = startTime

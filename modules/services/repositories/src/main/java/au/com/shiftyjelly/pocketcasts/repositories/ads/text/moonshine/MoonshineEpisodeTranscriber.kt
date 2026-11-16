@@ -21,9 +21,11 @@ import dagger.Lazy
 import dagger.hilt.android.qualifiers.ApplicationContext
 import java.io.File
 import java.util.Collections
+import java.util.concurrent.atomic.AtomicLong
 import java.util.concurrent.atomic.AtomicReference
 import javax.inject.Inject
 import javax.inject.Singleton
+import kotlin.math.roundToLong
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -168,9 +170,49 @@ class MoonshineEpisodeTranscriber @Inject constructor(
 
         val completedLines = Collections.synchronizedList(ArrayList<TranscriptLine>())
         val failure = AtomicReference<Throwable?>(null)
+        val passStartedAt = SystemClock.elapsedRealtime()
+        val fedAudioMs = AtomicLong(0L)
+        var lastProgressAt = 0L
+        var completedChars = 0
+
+        /**
+         * One line per completed cue, and at most one per [PROGRESS_LOG_INTERVAL_MS] while a cue is
+         * still being written. The recogniser is called every half second, so without the throttle
+         * this would bury every other log line; with it, a stall shows up as a gap between two
+         * progress lines with the audio clock still moving.
+         */
+        fun logProgress(line: TranscriptLine?, force: Boolean) {
+            val now = SystemClock.elapsedRealtime()
+            if (!force && now - lastProgressAt < PROGRESS_LOG_INTERVAL_MS) return
+            lastProgressAt = now
+            val partialChars = line?.text?.length ?: 0
+            val lineStartMs = ((line?.startTime ?: 0f).toDouble() * 1000.0).roundToLong()
+            LogBuffer.i(
+                MoonshineStats.TAG,
+                "${language.code} " + MoonshineStats.progress(
+                    chars = completedChars + partialChars,
+                    lineStartMs = lineStartMs,
+                    elapsedMs = now - passStartedAt,
+                    fedAudioMs = fedAudioMs.get(),
+                ),
+            )
+        }
+
         val listener = object : TranscriptEventListener() {
             override fun onLineCompleted(event: TranscriptEvent.LineCompleted) {
-                event.line?.let(completedLines::add)
+                event.line?.let { line ->
+                    completedLines.add(line)
+                    completedChars += line.text?.length ?: 0
+                }
+                logProgress(event.line, force = true)
+            }
+
+            override fun onLineTextChanged(event: TranscriptEvent.LineTextChanged) {
+                logProgress(event.line, force = false)
+            }
+
+            override fun onLineStarted(event: TranscriptEvent.LineStarted) {
+                logProgress(event.line, force = false)
             }
 
             override fun onError(event: TranscriptEvent.Error) {
@@ -187,7 +229,6 @@ class MoonshineEpisodeTranscriber @Inject constructor(
         val transcriber = Transcriber(options)
         var streamHandle = -1
         var loadMs = 0L
-        val passStartedAt = SystemClock.elapsedRealtime()
         val feed: MoonshineAudioFeed.Result
         try {
             val loadStartedAt = SystemClock.elapsedRealtime()
@@ -198,7 +239,13 @@ class MoonshineEpisodeTranscriber @Inject constructor(
             transcriber.addListener { event -> event.accept(listener) }
             streamHandle = transcriber.createStream()
             transcriber.startStream(streamHandle)
-            feed = MoonshineAudioFeed.decode(file, isActive) { samples, sampleRate, _ ->
+            LogBuffer.i(
+                MoonshineStats.TAG,
+                "${language.code} start: ${file.name} ${MoonshineStats.duration(request.durationMs)}, " +
+                    "model ${MoonshineStats.duration(loadMs)} to load",
+            )
+            feed = MoonshineAudioFeed.decode(file, isActive) { samples, sampleRate, positionMs ->
+                fedAudioMs.set(maxOf(positionMs, fedAudioMs.get()))
                 transcriber.addAudioToStream(streamHandle, samples, sampleRate)
             }
         } finally {
@@ -282,6 +329,9 @@ class MoonshineEpisodeTranscriber @Inject constructor(
 
         /** Half a second, the library's default, made explicit so a change is a decision. */
         const val UPDATE_INTERVAL_SECONDS = 0.5
+
+        /** How often a progress line is written while one cue is still being recognised. */
+        const val PROGRESS_LOG_INTERVAL_MS = 5_000L
 
         /**
          * How long one pass may take, whatever the source. A pass runs at roughly 2.4x realtime on a

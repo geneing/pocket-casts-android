@@ -98,4 +98,42 @@ object MoonshineStats {
 
     /** Truncates rather than rounds, which is enough for a log percentage. */
     fun percent(done: Long, total: Long): Int = if (total <= 0L) 0 else ((done.toDouble() / total) * 100.0).roundToInt()
+
+    /**
+     * One progress line while a pass runs.
+     *
+     * A streaming pass calls into the recogniser every half second and there is no other way to see
+     * that it is moving: the native side only reports a return code. [chars] is how much text has
+     * been produced so far, [lineStartMs] where the newest line begins in the episode, [elapsedMs]
+     * how long the pass has been running, and [fedAudioMs] how much audio has been handed over, so
+     * the two clocks can be compared at a glance.
+     */
+    fun progress(
+        chars: Int,
+        lineStartMs: Long,
+        elapsedMs: Long,
+        fedAudioMs: Long,
+    ): String = buildString {
+        append("progress: ")
+        append("chars=").append(chars)
+        append(" at=").append(timestamp(lineStartMs))
+        append(" elapsed=").append(duration(elapsedMs))
+        append(" audio=").append(duration(fedAudioMs))
+        append(" rtf=").append(formatRtf(rtf(fedAudioMs, elapsedMs)))
+    }
+
+    /** `mm:ss`, or `h:mm:ss` past an hour, for the two clocks a progress line shows. */
+    fun duration(ms: Long): String {
+        val totalSeconds = (ms / 1000).coerceAtLeast(0)
+        val hours = totalSeconds / 3600
+        val minutes = (totalSeconds % 3600) / 60
+        val seconds = totalSeconds % 60
+        return if (hours > 0) {
+            String.format(Locale.US, "%d:%02d:%02d", hours, minutes, seconds)
+        } else {
+            String.format(Locale.US, "%d:%02d", minutes, seconds)
+        }
+    }
+
+    private fun timestamp(ms: Long): String = duration(ms)
 }
