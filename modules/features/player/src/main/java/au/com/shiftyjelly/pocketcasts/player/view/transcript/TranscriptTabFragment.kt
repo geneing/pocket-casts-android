@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.DragInteraction
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -14,25 +16,38 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.Button
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.nestedscroll.NestedScrollConnection
+import androidx.compose.ui.input.nestedscroll.NestedScrollSource
+import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import au.com.shiftyjelly.pocketcasts.compose.AppTheme
 import au.com.shiftyjelly.pocketcasts.compose.extensions.contentWithoutConsumedInsets
+import au.com.shiftyjelly.pocketcasts.compose.extensions.verticalScrollBar
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.models.to.AdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
@@ -55,6 +70,7 @@ import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.mapNotNull
 import kotlinx.coroutines.launch
 import au.com.shiftyjelly.pocketcasts.localization.R as LR
@@ -88,6 +104,9 @@ class TranscriptTabFragment : Fragment() {
     private val shelfSharedViewModel: ShelfSharedViewModel by activityViewModels()
     private var state by mutableStateOf(TranscriptTabState())
 
+    /** Where playback is, so the page can keep the spoken sentence in view. */
+    private var playbackPositionMs by mutableIntStateOf(0)
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val isPlayerTab = fixedEpisodeUuid == null
         val onSeek: ((Int) -> Unit)? = if (isPlayerTab) {
@@ -103,6 +122,7 @@ class TranscriptTabFragment : Fragment() {
                     cueScores = state.cueScores,
                     onSeek = onSeek,
                     usePlayerColors = isPlayerTab,
+                    playbackPositionMs = if (isPlayerTab) playbackPositionMs else null,
                 )
             }
         }
@@ -118,6 +138,18 @@ class TranscriptTabFragment : Fragment() {
             episodeFlow
                 .flatMapLatest { episodeUuid -> observeTranscript(episodeUuid) }
                 .collect { state = it }
+        }
+        if (fixedEpisodeUuid == null) {
+            // The player tab follows playback, so it needs the position even while the user is
+            // reading further down; see the page for how that is allowed to pause.
+            viewLifecycleOwner.lifecycleScope.launch {
+                viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                    playbackManager.playbackStateFlow
+                        .map { it.positionMs }
+                        .distinctUntilChanged()
+                        .collect { playbackPositionMs = it }
+                }
+            }
         }
     }
 
@@ -185,12 +217,14 @@ private fun TranscriptTabPage(
     cueScores: List<AdCueScore>,
     onSeek: ((Int) -> Unit)?,
     usePlayerColors: Boolean,
+    playbackPositionMs: Int?,
 ) {
     // The player tab sits on a background that is dark in every theme, so it uses the player
     // contrast colors rather than the app theme's text color which would be unreadable there.
     val colors = MaterialTheme.theme.colors
     val textColor = if (usePlayerColors) colors.playerContrast01 else colors.primaryText01
     val timestampColor = if (usePlayerColors) colors.playerContrast02 else colors.primaryText02
+    val highlightColor = if (usePlayerColors) colors.playerContrast06 else colors.primaryUi05
     if (entries.isEmpty()) {
         Text(
             text = stringResource(LR.string.transcript_not_available),
@@ -210,46 +244,91 @@ private fun TranscriptTabPage(
     val probabilityBySentence = remember(entries, cueScores) {
         entries.indices.associateWith { index -> cueProbabilityFor(entries[index], cueScores) }
     }
-    LazyColumn(
-        modifier = Modifier.fillMaxSize(),
-        contentPadding = PaddingValues(16.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp),
-    ) {
-        itemsIndexed(entries) { index, entry ->
-            val adSegment = adSegmentBySentence[index]
-            val probability = probabilityBySentence[index]
-            Column(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .then(
-                        if (onSeek != null) {
-                            Modifier.clickable { onSeek(entry.startTimeMs.toInt()) }
-                        } else {
-                            Modifier
-                        },
-                    )
-                    .padding(vertical = 4.dp),
-            ) {
-                Text(
-                    text = entry.value,
-                    style = MaterialTheme.typography.body2,
-                    color = textColor,
-                    fontStyle = if (adSegment != null) FontStyle.Italic else null,
-                )
-                Row(verticalAlignment = Alignment.CenterVertically) {
-                    Text(
-                        text = formatTimestamp(entry.startTimeMs),
-                        style = MaterialTheme.typography.caption,
-                        color = timestampColor,
-                    )
-                    if (probability != null) {
-                        AdProbabilityLabel(
-                            probability = probability,
-                            isAd = adSegment != null,
-                            usePlayerColors = usePlayerColors,
+    val listState = rememberLazyListState()
+    val contentPadding = PaddingValues(16.dp)
+    // The sentence being spoken right now: the last one that has started. Reading follows it until
+    // the reader scrolls away, which is what the button below the list is for.
+    val activeIndex = remember(entries, playbackPositionMs) {
+        playbackPositionMs?.let { positionMs -> entries.indexOfLast { it.startTimeMs <= positionMs } } ?: -1
+    }
+    var followPlayback by remember(entries) { mutableStateOf(true) }
+    LaunchedEffect(followPlayback, activeIndex) {
+        if (followPlayback && activeIndex >= 0) {
+            listState.animateScrollToItem(activeIndex)
+        }
+    }
+    LaunchedEffect(listState) {
+        listState.interactionSource.interactions.collect { interaction ->
+            // Only a finger pulling the list counts; the scroll this page does itself also reports
+            // progress, and treating that as the reader leaving would stop the follow immediately.
+            if (interaction is DragInteraction.Start) followPlayback = false
+        }
+    }
+    Box(Modifier.fillMaxSize()) {
+        LazyColumn(
+            state = listState,
+            modifier = Modifier
+                .fillMaxSize()
+                .consumeUpwardDrags()
+                .verticalScrollBar(
+                    scrollState = listState,
+                    thumbColor = timestampColor,
+                    contentPadding = contentPadding,
+                ),
+            contentPadding = contentPadding,
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            itemsIndexed(entries) { index, entry ->
+                val adSegment = adSegmentBySentence[index]
+                val probability = probabilityBySentence[index]
+                val isPlaying = index == activeIndex
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(
+                            color = if (isPlaying) highlightColor else Color.Transparent,
+                            shape = RoundedCornerShape(6.dp),
                         )
+                        .then(
+                            if (onSeek != null) {
+                                Modifier.clickable { onSeek(entry.startTimeMs.toInt()) }
+                            } else {
+                                Modifier
+                            },
+                        )
+                        .padding(horizontal = 8.dp, vertical = 4.dp),
+                ) {
+                    Text(
+                        text = entry.value,
+                        style = MaterialTheme.typography.body2,
+                        color = textColor,
+                        fontStyle = if (adSegment != null) FontStyle.Italic else null,
+                    )
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Text(
+                            text = formatTimestamp(entry.startTimeMs),
+                            style = MaterialTheme.typography.caption,
+                            color = timestampColor,
+                        )
+                        if (probability != null) {
+                            AdProbabilityLabel(
+                                probability = probability,
+                                isAd = adSegment != null,
+                                usePlayerColors = usePlayerColors,
+                            )
+                        }
                     }
                 }
+            }
+        }
+        if (followPlayback.not() && activeIndex >= 0) {
+            Button(
+                onClick = { followPlayback = true },
+                modifier = Modifier
+                    .align(Alignment.BottomEnd)
+                    .padding(16.dp),
+            ) {
+                Text(stringResource(LR.string.transcript_jump_to_current))
             }
         }
     }
@@ -294,3 +373,21 @@ private fun formatTimestamp(ms: Long): String {
     val seconds = totalSeconds % 60
     return "%d:%02d".format(minutes, seconds)
 }
+
+/**
+ * Keeps an upward drag inside this list instead of letting it drag the sheet behind it.
+ *
+ * The transcript tab is a page of a bottom sheet, and the sheet treats a drag the list did not use
+ * as its own gesture: reading further down the text also pulls the screen up under the finger, which
+ * feels like the transcript is changing screens instead of scrolling. Everything the list could not
+ * use arrives at this connection before the sheet sees it, so consuming it there ends the gesture at
+ * the text. Downward drags are left alone: the sheet still closes the way it always did.
+ */
+private fun Modifier.consumeUpwardDrags(): Modifier = nestedScroll(
+    object : NestedScrollConnection {
+        override fun onPostScroll(consumed: Offset, available: Offset, source: NestedScrollSource): Offset {
+            // Negative y is the finger moving up, which is the direction that pulls a sheet open.
+            return if (available.y < 0f) Offset(0f, available.y) else Offset.Zero
+        }
+    },
+)

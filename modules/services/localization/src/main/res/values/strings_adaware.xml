@@ -18,4 +18,5 @@
     <string name="player_tab_ai" translatable="false">Ask AI</string>
     <string name="transcript_generating">Generating transcript…</string>
     <string name="transcript_not_available">No transcript for this episode yet</string>
+    <string name="transcript_jump_to_current">Jump to current</string>
 </resources>
