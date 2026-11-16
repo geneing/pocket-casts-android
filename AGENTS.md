@@ -264,6 +264,11 @@ models are MIT.
   complete streaming line, and the old ML Kit energy-region reconstruction is gone for good.
   Measured against Whisper, Moonshine's word times sit a constant ~0.25 s late; at hand-labelled ad
   boundaries that still lands within 0.3 s at p90, so do not "fix" the offset without new evidence.
+- Recognition is minutes of CPU (about 3x realtime here), so `TranscriptAdAnalysisWorker` promotes
+  itself to a `dataSync` foreground service with a quiet notification. An ordinary WorkManager job
+  is stopped by the system after a few minutes and loses the whole pass — a `JobCancellationException`
+  in `AdAnalysisWorker` means exactly that, not a recognition error. `moonshineTranscribeStream:
+  transcription error: 0` in logcat is the JNI logging its success code.
 - Where: `modules/services/repositories/.../repositories/ads/text/moonshine/`. The decisions, the
   laptop comparison against the Whisper corpus and the integration notes live in
   `dev/adaware/next/moonshine/`; read `RESEARCH.md` before changing the engine, the model choice or
