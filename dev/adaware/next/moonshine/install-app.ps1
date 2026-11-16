@@ -5,7 +5,7 @@
 #   2. adb install -r
 #   3. push the Moonshine models into the app's private model cache (install-models.ps1)
 #
-# Step 3 is what keeps the app from downloading 43 MiB / 31 MiB of weights on first use; the
+# Step 3 is what keeps the app from downloading 74.5 MiB / 30.8 MiB of weights on first use; the
 # download stays as a fallback for a device that has no models.
 #
 # Example:
@@ -23,10 +23,15 @@ param(
     [string]$Adb = (Join-Path $env:LOCALAPPDATA "Android\Sdk\platform-tools\adb.exe")
 )
 
-$ErrorActionPreference = "Stop"
+# adb writes install progress to stderr, which PowerShell 5.1 turns into an error record; with
+# "Stop" a successful install would abort the script. Every adb call is checked with $LASTEXITCODE.
+$ErrorActionPreference = "Continue"
 
-# dev/adaware/next/moonshine -> repository root.
-$repoRoot = Split-Path -Parent (Split-Path -Parent (Split-Path -Parent $PSScriptRoot))
+# dev/adaware/next/moonshine -> repository root (four levels up: moonshine, next, adaware, dev).
+$repoRoot = (& git -C $PSScriptRoot rev-parse --show-toplevel)
+if ($LASTEXITCODE -ne 0 -or -not $repoRoot) {
+    $repoRoot = Split-Path -Parent (Split-Path -Parent (Split-Path -Parent (Split-Path -Parent $PSScriptRoot)))
+}
 $apk = Join-Path $repoRoot "app/build/outputs/apk/debugProd/app-debugProd.apk"
 
 # Gradle always runs on Windows here, and the project has no local.properties.
@@ -72,9 +77,10 @@ if ($LASTEXITCODE -ne 0) {
 
 if (-not $SkipModels) {
     $installModels = Join-Path $PSScriptRoot "install-models.ps1"
-    $arguments = @("-Package", $Package, "-Adb", $Adb)
-    if ($Serial) { $arguments += @("-Serial", $Serial) }
-    & $installModels @arguments
+    # Named splatting: array splatting binds positionally, which would pass "-Adb" as the serial.
+    $modelArgs = @{ Package = $Package; Adb = $Adb }
+    if ($Serial) { $modelArgs["Serial"] = $Serial }
+    & $installModels @modelArgs
     if ($LASTEXITCODE -ne 0) {
         throw "Pushing the speech models failed with exit code $LASTEXITCODE"
     }

@@ -28,7 +28,10 @@ param(
     [string]$Adb = (Join-Path $env:LOCALAPPDATA "Android\Sdk\platform-tools\adb.exe")
 )
 
-$ErrorActionPreference = "Stop"
+# adb writes its progress (and some of its errors) to stderr, which PowerShell 5.1 turns into an
+# error record; with "Stop" that would abort a perfectly good push. Every adb call below is checked
+# through $LASTEXITCODE instead, so failures still stop the script.
+$ErrorActionPreference = "Continue"
 
 # Mirrors MoonshineLanguage in the app: tiny-streaming (arch 2), word timestamps for English only,
 # which is what ModelCache.key(spec) turns into these two directory names. Keep in step with
@@ -65,11 +68,19 @@ function Invoke-RunAs {
 
 function Get-DeviceSize {
     param([string]$RelativePath)
-    $output = & $script:Adb @script:AdbTarget shell "run-as $Package stat -c %s $RelativePath" 2>&1
-    if ($LASTEXITCODE -ne 0) { return -1 }
-    $text = ($output -join "").Trim()
-    if ($text -match '^\d+$') { return [long]$text }
-    return -1
+    # A file that is not there yet makes adb exit non-zero with a message on stderr, which the
+    # global Stop preference would turn into a terminating error. That is an expected answer here.
+    $previous = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        $output = & $script:Adb @script:AdbTarget shell "run-as $Package stat -c %s $RelativePath" 2>$null
+        if ($LASTEXITCODE -ne 0) { return -1 }
+        $text = ($output -join "").Trim()
+        if ($text -match '^\d+$') { return [long]$text }
+        return -1
+    } finally {
+        $ErrorActionPreference = $previous
+    }
 }
 
 if (-not (Test-Path $script:Adb)) {
@@ -130,8 +141,8 @@ foreach ($language in $Languages.Keys) {
     $relativeTarget = "$deviceModelsRoot/$cacheKey"
     Invoke-RunAs "mkdir -p $relativeTarget" | Out-Null
     $stagingDir = "$stagingRoot/$cacheKey"
-    & $Adb @script:AdbTarget shell "rm -rf $stagingDir" | Out-Null
-    & $Adb @script:AdbTarget shell "mkdir -p $stagingDir" | Out-Null
+    Invoke-Adb shell "rm -rf $stagingDir" | Out-Null
+    Invoke-Adb shell "mkdir -p $stagingDir" | Out-Null
 
     Write-Host ""
     Write-Host "$language -> $relativeTarget  ($($bundle.Name))"
@@ -147,7 +158,7 @@ foreach ($language in $Languages.Keys) {
 
         # adb push cannot write into app-private storage, so stage under /data/local/tmp and copy
         # across with run-as, which runs as the app's own uid.
-        & $Adb @script:AdbTarget push $file.FullName "$stagingDir/$($file.Name)" | Out-Null
+        Invoke-Adb push $file.FullName "$stagingDir/$($file.Name)" | Out-Null
         Invoke-RunAs "cp $stagingDir/$($file.Name) $devicePath" | Out-Null
 
         $copiedSize = Get-DeviceSize $devicePath
@@ -158,7 +169,7 @@ foreach ($language in $Languages.Keys) {
         $pushed++
     }
 
-    & $Adb @script:AdbTarget shell "rm -rf $stagingDir" | Out-Null
+    Invoke-Adb shell "rm -rf $stagingDir" | Out-Null
 
     $usedKb = (Invoke-RunAs "du -sk $relativeTarget") -split "\s+" | Select-Object -First 1
     Write-Host ("  on device: {0:N1} MB in {1}" -f ([double]$usedKb / 1024), $relativeTarget)

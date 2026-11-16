@@ -24,3 +24,4 @@ next/moonshine/models/
 *.rkyv
 next/audio_review/
 next/semantic/*.npz
+next/moonshine/*.log
