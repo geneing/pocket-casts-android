@@ -163,11 +163,7 @@ class MoonshineEpisodeTranscriber @Inject constructor(
         download: ModelDownload,
     ): TranscriptResult {
         val job = currentCoroutineContext()[Job]
-        val budgetMs = when (request.source) {
-            is TranscriptSource.Downloaded -> FILE_BUDGET_MS
-            is TranscriptSource.Stream -> STREAM_BUDGET_MS
-        }
-        val deadlineAt = SystemClock.elapsedRealtime() + budgetMs
+        val deadlineAt = SystemClock.elapsedRealtime() + TRANSCRIBE_BUDGET_MS
         val isActive = { job?.isActive == true && SystemClock.elapsedRealtime() < deadlineAt }
 
         val completedLines = Collections.synchronizedList(ArrayList<TranscriptLine>())
@@ -228,8 +224,12 @@ class MoonshineEpisodeTranscriber @Inject constructor(
 
         val lines = synchronized(completedLines) { completedLines.toList() }
         if (!feed.completed) {
+            // "stopped_by_caller" covers both a cancelled job and an expired budget, and the two mean
+            // different things: one is us giving up, the other is the pass not fitting its limit.
+            val budgetExpired = SystemClock.elapsedRealtime() >= deadlineAt
             return TranscriptResult.Failed(
-                "speech recognition stopped after ${feed.audioMs}ms (${feed.stopReason})",
+                "speech recognition stopped after ${feed.audioMs}ms (${feed.stopReason})" +
+                    if (budgetExpired) ", budget of ${TRANSCRIBE_BUDGET_MS / 60_000} minutes expired" else "",
             )
         }
         val cues = cues(lines, request.durationMs)
@@ -284,12 +284,15 @@ class MoonshineEpisodeTranscriber @Inject constructor(
         const val UPDATE_INTERVAL_SECONDS = 0.5
 
         /**
-         * Recognition budgets, per source. These are the recognizer's own limits, not the audio
-         * analyzer's: an hour of podcast takes minutes on a phone, so the analyzer's 240 s budget
-         * would abort every long episode.
+         * How long one pass may take, whatever the source. A pass runs at roughly 2.4x realtime on a
+         * Pixel 11, so a 40-minute episode needs about 17 minutes and a slower phone needs more; the
+         * budget is only there to keep a wedged pass from holding the worker forever.
+         *
+         * There used to be a two-minute budget for streamed episodes, which no real episode could
+         * ever fit: the pass gave up a tenth of the way in and the episode was left without a
+         * transcript.
          */
-        const val FILE_BUDGET_MS = 20 * 60_000L
-        const val STREAM_BUDGET_MS = 2 * 60_000L
+        const val TRANSCRIBE_BUDGET_MS = 45 * 60_000L
 
         const val MEGABYTE = 1024L * 1024L
 
