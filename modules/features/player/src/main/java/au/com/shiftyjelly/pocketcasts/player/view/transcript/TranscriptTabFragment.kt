@@ -39,6 +39,7 @@ import androidx.compose.ui.input.nestedscroll.NestedScrollSource
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.unit.Velocity
 import androidx.compose.ui.unit.dp
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -269,7 +270,7 @@ private fun TranscriptTabPage(
             state = listState,
             modifier = Modifier
                 .fillMaxSize()
-                .consumeUpwardDrags()
+                .consumeVerticalDrags()
                 .verticalScrollBar(
                     scrollState = listState,
                     thumbColor = timestampColor,
@@ -375,19 +376,24 @@ private fun formatTimestamp(ms: Long): String {
 }
 
 /**
- * Keeps an upward drag inside this list instead of letting it drag the sheet behind it.
+ * Keeps a vertical drag inside this list instead of letting it drag the sheet behind it.
  *
  * The transcript tab is a page of a bottom sheet, and the sheet treats a drag the list did not use
- * as its own gesture: reading further down the text also pulls the screen up under the finger, which
- * feels like the transcript is changing screens instead of scrolling. Everything the list could not
- * use arrives at this connection before the sheet sees it, so consuming it there ends the gesture at
- * the text. Downward drags are left alone: the sheet still closes the way it always did.
+ * as its own gesture: scrolling past the end of the text pulled the screen up or down under the
+ * finger, which feels like the transcript is changing screens instead of scrolling. Everything the
+ * list could not use arrives at this connection before the sheet sees it, so consuming it there
+ * ends the drag at the text in both directions. The sheet is still dismissed by its handle and by
+ * the system back gesture.
  */
-private fun Modifier.consumeUpwardDrags(): Modifier = nestedScroll(
+private fun Modifier.consumeVerticalDrags(): Modifier = nestedScroll(
     object : NestedScrollConnection {
         override fun onPostScroll(consumed: Offset, available: Offset, source: NestedScrollSource): Offset {
-            // Negative y is the finger moving up, which is the direction that pulls a sheet open.
-            return if (available.y < 0f) Offset(0f, available.y) else Offset.Zero
+            return if (available.y != 0f) Offset(0f, available.y) else Offset.Zero
+        }
+
+        override suspend fun onPostFling(consumed: Velocity, available: Velocity): Velocity {
+            // A flick that outruns the list must not turn into a flick of the sheet either.
+            return if (available.y != 0f) Velocity(0f, available.y) else Velocity.Zero
         }
     },
 )
