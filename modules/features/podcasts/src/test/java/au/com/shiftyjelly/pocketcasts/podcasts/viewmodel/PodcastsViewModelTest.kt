@@ -176,7 +176,6 @@ class PodcastsViewModelTest {
             suggestedFoldersManager = suggestedFoldersManager,
             suggestedFoldersPopupPolicy = mock(),
             userManager = userManager,
-            notificationHelper = mock(),
             blazeAdsManager = mock { on { findPodcastListAd() } doReturn flowOf(null) },
             folderUuid = folderUuid,
         )

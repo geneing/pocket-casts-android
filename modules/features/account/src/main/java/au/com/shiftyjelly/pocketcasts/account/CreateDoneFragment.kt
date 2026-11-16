@@ -33,17 +33,16 @@ class CreateDoneFragment : BaseFragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) = contentWithoutConsumedInsets {
         AppTheme(theme.activeTheme) {
             val form = form
-            val newsletter by viewModel.newsletter.observeAsState(false)
+            // The newsletter opt-in is gone from this fork: an account is created without a
+            // marketing subscription and nothing on this screen can add one.
             CreateDonePage(
                 state = CreateDonePageState(
                     isCar = Util.isCarUiMode(requireContext()),
                     imageRes = form.imageRes,
                     title = form.title,
                     detail = form.detail,
-                    isNewsletterChecked = newsletter,
                     isProgressVisible = form.isProgressVisible,
                 ),
-                onNewsletterChange = { isChecked -> if (isChecked != viewModel.newsletter.value) viewModel.updateNewsletter(isChecked) },
                 onCloseClick = ::closeForm,
                 onDoneClick = ::closeForm,
             )

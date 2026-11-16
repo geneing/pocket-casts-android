@@ -20,16 +20,16 @@ class CreateDonePageTest {
     private val events = mutableListOf<String>()
 
     @Test
-    fun `phone shows the account and handles newsletter, close and done`() {
+    fun `phone shows the account and handles close and done`() {
         setContent(isCar = false)
 
         composeTestRule.onNodeWithText("Account Created").assertExists()
         composeTestRule.onNodeWithText("Welcome to Pocket Casts!").assertExists()
-        composeTestRule.onNodeWithText("Pocket Casts newsletter").performClick()
+        composeTestRule.onNodeWithText("Pocket Casts newsletter").assertDoesNotExist()
         composeTestRule.onNodeWithContentDescription("Close").performClick()
         composeTestRule.onNodeWithText("Done").performClick()
 
-        assertEquals(listOf("newsletter true", "close", "done"), events)
+        assertEquals(listOf("close", "done"), events)
     }
 
     @Test
@@ -51,10 +51,8 @@ class CreateDonePageTest {
                         imageRes = R.drawable.ic_created_free_account,
                         title = "Account Created",
                         detail = "Welcome to Pocket Casts!",
-                        isNewsletterChecked = false,
                         isProgressVisible = false,
                     ),
-                    onNewsletterChange = { events += "newsletter $it" },
                     onCloseClick = { events += "close" },
                     onDoneClick = { events += "done" },
                 )
