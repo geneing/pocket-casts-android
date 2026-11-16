@@ -246,6 +246,10 @@ class TranscriptAdAnalyzer @Inject constructor(
             } else {
                 transcriptStore.save(episodeUuid, cues)
             }
+            // The transcript stack keeps the text it last read for the episode, so without this the
+            // tab would show the published transcript this analysis just replaced, along with no
+            // per-sentence scores because its lines do not match the ones stored here.
+            transcriptManager.invalidateTranscript(episodeUuid)
             LogBuffer.i(
                 TAG,
                 "Cached transcript for $episodeUuid: ${cues.size} cues, ${System.currentTimeMillis() - startedAt}ms",
