@@ -37,6 +37,9 @@ import org.mockito.kotlin.verifyNoInteractions
 import org.mockito.kotlin.whenever
 
 class TranscriptAdAnalyzerTest {
+    /** What [FeatureFlagTranscriptPolicy] would answer; set per test. */
+    private var ignoresPublished = false
+
     @get:Rule
     val folder = TemporaryFolder()
 
@@ -188,6 +191,32 @@ class TranscriptAdAnalyzerTest {
         verify(transcriber, never()).transcribe(any(), any())
     }
 
+    @Test
+    fun `the debug switch ignores the published transcript and replaces it`() = runTest {
+        ignoresPublished = true
+        val audio = audioFile()
+        givenEpisode(audio)
+        whenever(transcriber.version).thenReturn(ENGINE)
+        whenever(transcriber.isAvailable()).thenReturn(true)
+        whenever(transcriber.availability("en")).thenReturn(TranscriptAvailability.Ready)
+        whenever(transcriber.transcribe(any(), any()))
+            .thenReturn(TranscriptResult.Success(listOf(TranscriptCue(0, 30_000, "on device text.")), "tag"))
+        whenever(classifier.classify(any(), any(), any())).thenReturn(
+            JevClassification.Scored(pAd = listOf(0.9), responseModel = null, usageCostUsd = 0.01),
+        )
+        // A show transcript the episode does have: the switch must not read it.
+        whenever(transcriptManager.observeIsTranscriptAvailable(EPISODE)).thenReturn(flowOf(true))
+        whenever(transcriptManager.loadTranscript(EPISODE)).thenReturn(transcript("https://example.com/t.vtt"))
+        whenever(generatedTranscriptLoader.urlFor(any())).thenReturn("https://example.com/generated.vtt")
+        whenever(generatedTranscriptLoader.load(EPISODE)).thenReturn(transcript("https://example.com/generated.vtt"))
+
+        assertEquals(TranscriptAnalysis.Analysed, analyzer().run(EPISODE))
+
+        verify(transcriber).transcribe(any(), any())
+        verify(transcriptStore).replaceRemoteAndSave(EPISODE, listOf(TranscriptCue(0, 30_000, "on device text.")))
+        verify(transcriptStore, never()).save(any(), any())
+    }
+
     private fun audioFile(): File = folder.newFile("episode.mp3").apply { writeBytes(ByteArray(1_024)) }
 
     private suspend fun givenEpisode(audio: File) {
@@ -223,6 +252,7 @@ class TranscriptAdAnalyzerTest {
         adCueScoreDao = adCueScoreDao,
         classifier = classifier,
         transcriber = transcriber,
+        sourcePolicy = { ignoresPublished },
         transcriptStore = transcriptStore,
         transcriptManager = transcriptManager,
         generatedTranscriptLoader = generatedTranscriptLoader,

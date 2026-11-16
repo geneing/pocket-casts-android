@@ -43,6 +43,19 @@ class LocalTranscriptStore @Inject constructor(
         }
     }
 
+    /**
+     * Stores the on-device transcript as the episode's only one, dropping any transcript the show or
+     * our servers published. Only the debug switch that forces on-device recognition uses this: the
+     * published transcript is re-downloadable, and leaving it behind would keep the transcript tab on
+     * the text the analysis was told to ignore.
+     */
+    suspend fun replaceRemoteAndSave(episodeUuid: String, cues: List<TranscriptCue>) {
+        withContext(Dispatchers.IO) {
+            transcriptDao.deleteRemoteForEpisodes(listOf(episodeUuid))
+        }
+        save(episodeUuid, cues)
+    }
+
     suspend fun delete(episodeUuid: String) {
         withContext(Dispatchers.IO) {
             file(episodeUuid).delete()

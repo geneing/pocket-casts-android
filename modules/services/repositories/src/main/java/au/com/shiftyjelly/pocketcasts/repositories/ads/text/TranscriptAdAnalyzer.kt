@@ -72,6 +72,7 @@ class TranscriptAdAnalyzer @Inject constructor(
     private val adCueScoreDao: AdCueScoreDao,
     private val classifier: JevAdClassifier,
     private val transcriber: EpisodeTranscriber,
+    private val sourcePolicy: TranscriptSourcePolicy,
     private val transcriptStore: LocalTranscriptStore,
     private val transcriptManager: TranscriptManager,
     private val generatedTranscriptLoader: GeneratedTranscriptLoader,
@@ -132,9 +133,12 @@ class TranscriptAdAnalyzer @Inject constructor(
         val hasCueScores = adCueScoreDao.countForEpisode(episodeUuid) > 0
 
         // A repeat play of an episode already scored from its generated transcript needs no fetch:
-        // the transcript URL and the audio are both known before anything is loaded.
+        // the transcript URL and the audio are both known before anything is loaded. The debug
+        // switch that ignores published transcripts removes this shortcut too, or the previous
+        // analysis would be reused and the recogniser never run.
+        val forceOnDevice = sourcePolicy.ignoresPublishedTranscript()
         val generatedUrl = generatedTranscriptLoader.urlFor(episode)
-        if (sourceSignature != null && hasCueScores) {
+        if (!forceOnDevice && sourceSignature != null && hasCueScores) {
             val analysed = listOfNotNull(generatedUrl?.let(::transcriptAnalysisVersion), transcriber.version)
                 .any { version ->
                     AnalysisIdentity.isReusableTranscript(state, sourceSignature, version, model, JevPrompt.VERSION)
@@ -146,8 +150,9 @@ class TranscriptAdAnalyzer @Inject constructor(
         }
 
         // The transcript the app already has is the analysis input; only an episode without one is
-        // transcribed on device.
-        val existing = loadExistingTranscript(episodeUuid)
+        // transcribed on device. With FORCE_ON_DEVICE_TRANSCRIPT the published transcript is ignored
+        // and every episode goes through the recogniser.
+        val existing = loadExistingTranscript(episodeUuid, ignorePublished = forceOnDevice)
         if (source == null && existing == null) {
             Timber.tag(TAG).d("Episode %s has neither audio nor a transcript", episodeUuid)
             return TranscriptAnalysis.NotAnalysed
@@ -234,7 +239,13 @@ class TranscriptAdAnalyzer @Inject constructor(
         }
 
         if (existing == null) {
-            transcriptStore.save(episodeUuid, cues)
+            if (forceOnDevice) {
+                // Only our own transcript may remain, otherwise the tab would keep showing the
+                // published one the analysis was told to ignore.
+                transcriptStore.replaceRemoteAndSave(episodeUuid, cues)
+            } else {
+                transcriptStore.save(episodeUuid, cues)
+            }
             LogBuffer.i(
                 TAG,
                 "Cached transcript for $episodeUuid: ${cues.size} cues, ${System.currentTimeMillis() - startedAt}ms",
@@ -334,7 +345,14 @@ class TranscriptAdAnalyzer @Inject constructor(
      * When the transcript stack has not recorded the generated transcript yet, it is fetched from
      * the URL the show notes advertise so analysis does not wait for a transcript screen.
      */
-    private suspend fun loadExistingTranscript(episodeUuid: String): Transcript.Text? {
+    private suspend fun loadExistingTranscript(
+        episodeUuid: String,
+        ignorePublished: Boolean = false,
+    ): Transcript.Text? {
+        if (ignorePublished) {
+            LogBuffer.i(TAG, "Ignoring published transcripts for $episodeUuid: on-device transcription is forced")
+            return null
+        }
         if (transcriptManager.observeIsTranscriptAvailable(episodeUuid).first()) {
             val loaded = transcriptManager.loadTranscript(episodeUuid) as? Transcript.Text
             if (!loaded?.entries.isNullOrEmpty()) return loaded
