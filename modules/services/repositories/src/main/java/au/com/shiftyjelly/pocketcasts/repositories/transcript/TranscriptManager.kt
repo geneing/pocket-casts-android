@@ -23,4 +23,13 @@ interface TranscriptManager {
     fun resetInvalidTranscripts(
         episodeUuid: String,
     )
+
+    /**
+     * Forgets the transcript cached for an episode, so the next [loadTranscript] reads what is on
+     * the device now. The ad analysis uses it after it replaces a published transcript with the one
+     * it recognised, because the tab would otherwise keep showing the text it was opened with.
+     */
+    fun invalidateTranscript(
+        episodeUuid: String,
+    )
 }

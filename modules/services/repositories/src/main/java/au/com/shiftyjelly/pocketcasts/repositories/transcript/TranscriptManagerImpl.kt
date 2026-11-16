@@ -325,6 +325,12 @@ class TranscriptManagerImpl @Inject constructor(
     ) {
         transcriptUrlBlacklist.remove(episodeUuid)
     }
+
+    override fun invalidateTranscript(
+        episodeUuid: String,
+    ) {
+        lruCache.remove(episodeUuid)
+    }
 }
 
 private val FAILED_GENERATED_CHAPTERS_REUSE = 3.seconds

@@ -164,17 +164,26 @@ class TranscriptTabFragment : Fragment() {
     private fun observeTranscript(episodeUuid: String): Flow<TranscriptTabState> {
         return transcriptManager.observeIsTranscriptAvailable(episodeUuid)
             .flatMapLatest { isAvailable ->
-                val entries = flow<List<TranscriptEntry.Text>> {
-                    // Clearing first keeps the previous episode's transcript from showing meanwhile.
-                    emit(emptyList())
-                    if (isAvailable) {
-                        // The tab is often the first place an episode is read, before it is played.
-                        // Starting the analysis here fills in the probabilities without waiting.
-                        if (FeatureFlag.isEnabled(Feature.AD_SKIPPING)) {
-                            adSegmentManager.analyze(episodeUuid)
-                        }
-                        emit(loadEntries(episodeUuid))
+                // Clearing first keeps the previous episode's transcript from showing meanwhile.
+                val entries = if (isAvailable) {
+                    // The tab is often the first place an episode is read, before it is played.
+                    // Starting the analysis here fills in the probabilities without waiting.
+                    if (FeatureFlag.isEnabled(Feature.AD_SKIPPING)) {
+                        adSegmentManager.analyze(episodeUuid)
                     }
+                    // The analysis may replace a published transcript with one recognised on the
+                    // device, so the entries are re-read whenever its cue scores change: that is the
+                    // moment the new transcript and its per-sentence probabilities land together.
+                    // The cached transcript is dropped first, or the old one would be read again.
+                    adSegmentManager.observeCueScores(episodeUuid)
+                        .map { scores -> scores.isNotEmpty() }
+                        .distinctUntilChanged()
+                        .map {
+                            transcriptManager.invalidateTranscript(episodeUuid)
+                            loadEntries(episodeUuid)
+                        }
+                } else {
+                    flowOf(emptyList())
                 }
                 combine(
                     entries,
