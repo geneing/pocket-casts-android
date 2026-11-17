@@ -327,6 +327,16 @@ the audio and it is missing ad reads.
   resumes from the last stored cue: cues are written after every completed line, and the detection
   queue records the end of the last scored cue. Failures and metered-network deferrals stay in the
   row with a retry time, so a process death or a dropped connection does not restart the episode.
+- The queue is durable and serialised, but the work that drains it is one unique chain, so a
+  *retrying* head blocks whatever is appended behind it. Work-level backoff is LINEAR at 1 minute and
+  the real retry schedule is the row's `next_attempt_at`: never put exponential backoff on
+  `TranscriptAsrWorker`. At 15 minutes it parked four ready episodes behind one deferral for two
+  hours, which is why an episode added to Up Next looked like it was never queued at all. A pass that
+  throws before it can record its own failure marks the row failed (`crashed: ...`) so one bad
+  episode cannot starve the ones behind it, and `resumeInterruptedWork` re-enqueues both workers at
+  launch because a force-stop cancels WorkManager's requests while the rows stay. The worker logs
+  `Recognition queue: pending=N due=M`; `due=0` means the retry is the row's own retry time, not a
+  stuck worker.
 - Recognition is minutes of CPU (about 3x realtime here), so `TranscriptAsrWorker` promotes itself
   to a `dataSync` foreground service with a quiet notification. An ordinary WorkManager job is
   stopped by the system after a few minutes and loses the pass in flight — a
