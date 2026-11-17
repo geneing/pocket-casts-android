@@ -3,8 +3,10 @@ package au.com.shiftyjelly.pocketcasts.models.di
 import au.com.shiftyjelly.pocketcasts.models.db.AppDatabase
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdAnalysisDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdCueScoreDao
+import au.com.shiftyjelly.pocketcasts.models.db.dao.AdDetectionQueueDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdFingerprintDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdSegmentDao
+import au.com.shiftyjelly.pocketcasts.models.db.dao.AsrQueueDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -26,4 +28,10 @@ object AdAwareModule {
 
     @Provides
     fun provideAdFingerprintDao(database: AppDatabase): AdFingerprintDao = database.adFingerprintDao()
+
+    @Provides
+    fun provideAsrQueueDao(database: AppDatabase): AsrQueueDao = database.asrQueueDao()
+
+    @Provides
+    fun provideAdDetectionQueueDao(database: AppDatabase): AdDetectionQueueDao = database.adDetectionQueueDao()
 }

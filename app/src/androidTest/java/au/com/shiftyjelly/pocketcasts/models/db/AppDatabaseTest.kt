@@ -35,6 +35,7 @@ class AppDatabaseTest {
         private const val MIGRATION_DB_140_141 = "migration-test-140-141"
         private const val MIGRATION_DB_141_142 = "migration-test-141-142"
         private const val MIGRATION_DB_142_143 = "migration-test-142-143"
+        private const val MIGRATION_DB_144_145 = "migration-test-144-145"
     }
 
     @Rule @JvmField
@@ -365,6 +366,26 @@ class AppDatabaseTest {
             1,
             countWhere(db, "episode_ad_analysis", "audio_signature = '' AND model_version = '' AND stt_version = ''"),
         )
+    }
+
+    @Test
+    fun migrate144To145CreatesAnalysisQueues() {
+        migrationTestHelper.createDatabase(MIGRATION_DB_144_145, 144).close()
+
+        val db = migrationTestHelper.runMigrationsAndValidate(MIGRATION_DB_144_145, 145, true, AppDatabase.MIGRATION_144_145)
+
+        assertEquals(
+            "Recognition queue stores its resume point",
+            true,
+            tableColumns(db, "episode_asr_queue").contains("processed_until_ms"),
+        )
+        assertEquals(
+            "Detection queue stores the last scored cue",
+            true,
+            tableColumns(db, "ad_detection_queue").contains("analyzed_until_ms"),
+        )
+        assertEquals("Both queues start empty", 0, countRows(db, "episode_asr_queue"))
+        assertEquals("Both queues start empty", 0, countRows(db, "ad_detection_queue"))
     }
 
     private fun tableColumns(db: SupportSQLiteDatabase?, tableName: String): List<String> {

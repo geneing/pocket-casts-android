@@ -14,7 +14,7 @@ import au.com.shiftyjelly.pocketcasts.models.entity.Podcast
 import au.com.shiftyjelly.pocketcasts.models.entity.PodcastEpisode
 import au.com.shiftyjelly.pocketcasts.models.to.Transcript
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.AdAnalysisScheduler
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.AdAnalysisQueue
 import au.com.shiftyjelly.pocketcasts.repositories.download.DownloadProgressCache
 import au.com.shiftyjelly.pocketcasts.repositories.download.DownloadQueue
 import au.com.shiftyjelly.pocketcasts.repositories.download.DownloadType
@@ -70,7 +70,7 @@ class EpisodeFragmentViewModel @Inject constructor(
     private val showNotesManager: ShowNotesManager,
     private val eventHorizon: EventHorizon,
     private val transcriptManager: TranscriptManager,
-    private val adAnalysisScheduler: AdAnalysisScheduler,
+    private val adAnalysisQueue: AdAnalysisQueue,
 ) : ViewModel(),
     CoroutineScope {
     override val coroutineContext: CoroutineContext
@@ -175,7 +175,7 @@ class EpisodeFragmentViewModel @Inject constructor(
             oldJob?.cancelAndJoin()
             combine(
                 transcriptManager.observeIsTranscriptAvailable(episodeUuid),
-                adAnalysisScheduler.observeIsAnalysisPending(episodeUuid),
+                adAnalysisQueue.observeIsAnalysisPending(episodeUuid),
             ) { isAvailable, isPending -> isAvailable to isPending }
                 .distinctUntilChanged()
                 .collect { (isAvailable, isPending) ->
@@ -229,7 +229,7 @@ class EpisodeFragmentViewModel @Inject constructor(
     private fun scheduleTranscriptAnalysis(episode: BaseEpisode) {
         if (!episode.isDownloaded || scheduledAnalysisEpisodeUuid == episode.uuid) return
         scheduledAnalysisEpisodeUuid = episode.uuid
-        adAnalysisScheduler.schedule(episode.uuid)
+        adAnalysisQueue.schedule(episode.uuid)
     }
 
     fun deleteDownloadedEpisode() {

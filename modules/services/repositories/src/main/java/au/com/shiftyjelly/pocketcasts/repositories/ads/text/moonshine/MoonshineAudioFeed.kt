@@ -32,14 +32,25 @@ internal object MoonshineAudioFeed {
         val buffers: Int,
         val paddedMs: Long,
         val stopReason: String,
+        /** Container time of the first buffer, the point the recognizer's own clock starts at. */
+        val originMs: Long = 0L,
     )
 
     /** Decodes [file] from its start. The caller owns cancellation through [isActive]. */
-    fun decode(file: File, isActive: () -> Boolean, sink: Sink): Result {
+    fun decode(file: File, isActive: () -> Boolean, sink: Sink): Result = decode(file, startPositionMs = 0L, isActive = isActive, sink = sink)
+
+    /** Decodes [file] from [startPositionMs]; the keyframe may start earlier, see [Result.originMs]. */
+    fun decode(
+        file: File,
+        startPositionMs: Long,
+        isActive: () -> Boolean,
+        onOrigin: (Long) -> Unit,
+        sink: Sink,
+    ): Result {
         val extractor = MediaExtractor()
         return try {
             extractor.setDataSource(file.absolutePath)
-            decode(extractor, isActive, sink)
+            decode(extractor, startPositionMs, isActive, onOrigin, sink)
         } catch (e: Exception) {
             Timber.tag(TAG).w(e, "Could not open %s for speech recognition", file.name)
             Result(completed = false, audioMs = 0L, sampleRate = 0, buffers = 0, paddedMs = 0L, stopReason = "open_failed")
@@ -48,19 +59,32 @@ internal object MoonshineAudioFeed {
         }
     }
 
-    fun decode(extractor: MediaExtractor, isActive: () -> Boolean, sink: Sink): Result {
-        val pacer = FeedPacer(sink)
-        val decoded = AudioAdDecoder.decodeBuffers(extractor, startPositionMs = 0L, isActive = isActive) { buffer ->
+    fun decode(file: File, startPositionMs: Long, isActive: () -> Boolean, sink: Sink): Result = decode(file, startPositionMs = startPositionMs, isActive = isActive, onOrigin = {}, sink = sink)
+
+    fun decode(extractor: MediaExtractor, isActive: () -> Boolean, sink: Sink): Result = decode(extractor, startPositionMs = 0L, isActive = isActive, sink = sink)
+
+    fun decode(extractor: MediaExtractor, startPositionMs: Long, isActive: () -> Boolean, sink: Sink): Result = decode(extractor, startPositionMs = startPositionMs, isActive = isActive, onOrigin = {}, sink = sink)
+
+    fun decode(
+        extractor: MediaExtractor,
+        startPositionMs: Long,
+        isActive: () -> Boolean,
+        onOrigin: (Long) -> Unit,
+        sink: Sink,
+    ): Result {
+        val pacer = FeedPacer(sink, onOrigin)
+        val decoded = AudioAdDecoder.decodeBuffers(extractor, startPositionMs = startPositionMs, isActive = isActive) { buffer ->
             pacer.accept(buffer)
         }
         val audioMs = pacer.fedMs
         val paddedMs = pacer.paddedMs
         Timber.tag(TAG).d(
-            "Fed %dms of %dHz audio in %d buffers (%dms padded): %s",
+            "Fed %dms of %dHz audio in %d buffers (%dms padded) from %dms: %s",
             audioMs,
             pacer.sampleRate,
             decoded.buffers,
             paddedMs,
+            pacer.originMs,
             decoded.stopReason,
         )
         return Result(
@@ -70,6 +94,7 @@ internal object MoonshineAudioFeed {
             buffers = decoded.buffers,
             paddedMs = paddedMs,
             stopReason = decoded.stopReason,
+            originMs = pacer.originMs,
         )
     }
 
@@ -80,7 +105,10 @@ internal object MoonshineAudioFeed {
  * Turns decoded buffers into mono chunks whose position never drifts from the audio the recognizer
  * heard. Pure apart from its sink, so the padding rule is testable without a codec.
  */
-internal class FeedPacer(private val sink: MoonshineAudioFeed.Sink) {
+internal class FeedPacer(
+    private val sink: MoonshineAudioFeed.Sink,
+    private val onOrigin: (Long) -> Unit = {},
+) {
     var sampleRate: Int = 0
         private set
 
@@ -90,6 +118,10 @@ internal class FeedPacer(private val sink: MoonshineAudioFeed.Sink) {
 
     /** Total silence inserted so far, in milliseconds. */
     var paddedMs: Long = 0L
+        private set
+
+    /** Container time of the first buffer; the recognizer's clock starts here. */
+    var originMs: Long = 0L
         private set
 
     private var fedFrames = 0L
@@ -117,7 +149,11 @@ internal class FeedPacer(private val sink: MoonshineAudioFeed.Sink) {
             this.sampleRate = sampleRate
             fedFrames = elapsedMs * sampleRate / 1000L
         }
-        if (originUs < 0) originUs = presentationTimeUs.coerceAtLeast(0L)
+        if (originUs < 0) {
+            originUs = presentationTimeUs.coerceAtLeast(0L)
+            originMs = originUs / 1000L
+            onOrigin(originMs)
+        }
 
         val expectedFrames = if (presentationTimeUs >= 0) {
             (presentationTimeUs - originUs) * sampleRate / MICROS_PER_SECOND

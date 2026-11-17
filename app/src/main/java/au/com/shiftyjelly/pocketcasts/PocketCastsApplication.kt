@@ -17,7 +17,7 @@ import au.com.shiftyjelly.pocketcasts.engage.EngageSdkBridge
 import au.com.shiftyjelly.pocketcasts.models.db.dao.UpNextDao
 import au.com.shiftyjelly.pocketcasts.models.type.EpisodeDownloadStatus
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.AdAnalysisScheduler
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.AdAnalysisQueue
 import au.com.shiftyjelly.pocketcasts.repositories.appreview.AppReviewExceptionHandler
 import au.com.shiftyjelly.pocketcasts.repositories.appreview.AppReviewManager
 import au.com.shiftyjelly.pocketcasts.repositories.di.ProcessLifecycle
@@ -88,7 +88,7 @@ class PocketCastsApplication :
 
     @Inject lateinit var appLifecycleObserver: AppLifecycleObserver
 
-    @Inject lateinit var adAnalysisScheduler: AdAnalysisScheduler
+    @Inject lateinit var adAnalysisQueue: AdAnalysisQueue
 
     @Inject lateinit var moshi: Moshi
 
@@ -188,7 +188,7 @@ class PocketCastsApplication :
         setupApp()
         // Files restored with the app, or episodes that arrived while the analysis was off, never
         // go through the download callback, so they are picked up here.
-        adAnalysisScheduler.scheduleDownloadedWithoutTranscript()
+        adAnalysisQueue.scheduleDownloadedWithoutTranscript()
         cleanupDatabaseExportFileIfExists()
     }
 

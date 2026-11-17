@@ -1,8 +1,6 @@
 package au.com.shiftyjelly.pocketcasts.repositories.ads
 
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.EpisodeTranscriber
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.FeatureFlagTranscriptPolicy
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptSourcePolicy
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.moonshine.MoonshineEpisodeTranscriber
 import au.com.shiftyjelly.pocketcasts.repositories.di.OpenRouterApiKey
 import dagger.Binds
@@ -19,11 +17,6 @@ abstract class AdAwareModule {
 
     @Binds
     abstract fun provideAdSegmentManager(adSegmentManagerImpl: AdSegmentManagerImpl): AdSegmentManager
-
-    /** Published transcripts are used unless the debug switch says to recognise everything. */
-    @Binds
-    @Singleton
-    abstract fun provideTranscriptSourcePolicy(impl: FeatureFlagTranscriptPolicy): TranscriptSourcePolicy
 
     /** The only speech recognizer: Moonshine streaming, models installed on device. */
     @Binds

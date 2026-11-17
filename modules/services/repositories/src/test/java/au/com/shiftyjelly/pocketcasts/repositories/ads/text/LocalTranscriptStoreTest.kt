@@ -32,6 +32,7 @@ class LocalTranscriptStoreTest {
     @After
     fun tearDown() {
         store.file(EPISODE).delete()
+        store.file(EPISODE).parentFile?.resolve("$EPISODE.complete")?.delete()
     }
 
     @Test
@@ -79,6 +80,38 @@ class LocalTranscriptStoreTest {
 
         assertFalse(store.hasTranscript(EPISODE))
         verify(transcriptDao).deleteGenerated(EPISODE, "${LocalTranscriptStore.SCHEME}$EPISODE")
+    }
+
+    @Test
+    fun `progress rewritten during recognition reads back the latest cues`() = runTest {
+        store.saveProgress(EPISODE, listOf(TranscriptCue(0, 2_000, "first line")))
+        assertEquals(listOf(TranscriptCue(0, 2_000, "first line")), store.readCues(EPISODE))
+
+        store.saveProgress(
+            EPISODE,
+            listOf(
+                TranscriptCue(0, 2_000, "first line"),
+                TranscriptCue(2_000, 5_500, "second line"),
+            ),
+        )
+
+        assertEquals(
+            listOf(
+                TranscriptCue(0, 2_000, "first line"),
+                TranscriptCue(2_000, 5_500, "second line"),
+            ),
+            store.readCues(EPISODE),
+        )
+    }
+
+    @Test
+    fun `a completion marker pins the transcript to the engine that finished it`() = runTest {
+        store.markComplete(EPISODE, "moonshine-v1")
+        assertTrue(store.isComplete(EPISODE, "moonshine-v1"))
+        assertFalse(store.isComplete(EPISODE, "moonshine-v2"))
+
+        store.delete(EPISODE)
+        assertFalse(store.isComplete(EPISODE, "moonshine-v1"))
     }
 
     private companion object {

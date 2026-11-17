@@ -105,7 +105,7 @@ class AutoArchiveTest {
         }
         val context = mock<Context>()
         val syncManager = mock<SyncManager>()
-        return UpNextQueueImpl(db, settings, episodeManager, syncManager, mock(), context)
+        return UpNextQueueImpl(db, settings, episodeManager, syncManager, mock(), mock(), context)
     }
 
     @Test

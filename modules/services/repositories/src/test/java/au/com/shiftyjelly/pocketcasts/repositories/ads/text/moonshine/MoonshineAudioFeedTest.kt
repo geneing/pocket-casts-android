@@ -92,7 +92,7 @@ class MoonshineAudioFeedTest {
 
     private fun record(block: (FeedPacer) -> Unit): List<Chunk> {
         val chunks = ArrayList<Chunk>()
-        val pacer = FeedPacer { samples, _, positionMs -> chunks.add(Chunk(samples, positionMs)) }
+        val pacer = FeedPacer(MoonshineAudioFeed.Sink { samples, _, positionMs -> chunks.add(Chunk(samples, positionMs)) })
         block(pacer)
         return chunks
     }

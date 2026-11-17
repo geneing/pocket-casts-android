@@ -22,7 +22,7 @@ import au.com.shiftyjelly.pocketcasts.analytics.SourceView
 import au.com.shiftyjelly.pocketcasts.models.entity.BaseEpisode
 import au.com.shiftyjelly.pocketcasts.models.entity.PodcastEpisode
 import au.com.shiftyjelly.pocketcasts.models.entity.UserEpisode
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.AdAnalysisScheduler
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.AdAnalysisQueue
 import au.com.shiftyjelly.pocketcasts.repositories.download.DownloadEpisodeWorker.Companion.WORKER_TAG
 import au.com.shiftyjelly.pocketcasts.repositories.download.DownloadNotificationObserver.NotificationJob
 import au.com.shiftyjelly.pocketcasts.repositories.file.FileStorage
@@ -92,7 +92,7 @@ class DownloadEpisodeWorker @AssistedInject constructor(
     private val progressCache: DownloadProgressCache,
     private val notificationObserver: DownloadNotificationObserver,
     private val episodeDurationFixer: EpisodeDurationFixer,
-    private val adAnalysisScheduler: AdAnalysisScheduler,
+    private val adAnalysisQueue: AdAnalysisQueue,
 ) : Worker(context, params) {
     private val args = inputData.toArgs()
 
@@ -161,7 +161,7 @@ class DownloadEpisodeWorker @AssistedInject constructor(
         return when (val result = timedValue.value) {
             is DownloadResult.Success -> {
                 resolvedEpisode?.let { episodeDurationFixer.fixMissingDuration(it, result.file) }
-                args.episodeUuid.takeIf { it.isNotEmpty() }?.let(adAnalysisScheduler::schedule)
+                args.episodeUuid.takeIf { it.isNotEmpty() }?.let(adAnalysisQueue::schedule)
                 val data = Data.Builder()
                     .putString(DOWNLOAD_FILE_PATH_KEY, result.file.path)
                     .build()

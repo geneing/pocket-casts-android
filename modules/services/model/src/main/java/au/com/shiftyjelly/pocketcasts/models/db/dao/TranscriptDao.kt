@@ -45,6 +45,9 @@ abstract class TranscriptDao {
     @Query("SELECT * FROM episode_transcript WHERE episode_uuid IS :episodeUuid")
     abstract fun observeTranscripts(episodeUuid: String): Flow<List<Transcript>>
 
+    @Query("SELECT * FROM episode_transcript WHERE episode_uuid IS :episodeUuid AND url LIKE 'local-generated://%' LIMIT 1")
+    abstract suspend fun findLocalTranscript(episodeUuid: String): Transcript?
+
     /** Insert or replace a single transcript without touching the episode's other transcripts. */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     abstract suspend fun upsert(transcript: Transcript)

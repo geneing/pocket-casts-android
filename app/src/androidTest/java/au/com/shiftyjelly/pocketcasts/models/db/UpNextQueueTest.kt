@@ -44,7 +44,7 @@ class UpNextQueueTest {
         }
         val syncManager = mock<SyncManager> {}
 
-        upNextQueue = UpNextQueueImpl(appDatabase, settings, episodeManager, syncManager, mock(), context)
+        upNextQueue = UpNextQueueImpl(appDatabase, settings, episodeManager, syncManager, mock(), mock(), context)
         upNextQueue.setupBlocking()
     }
 

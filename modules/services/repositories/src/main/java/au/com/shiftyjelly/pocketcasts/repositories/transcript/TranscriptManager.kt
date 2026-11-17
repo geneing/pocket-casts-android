@@ -16,6 +16,12 @@ interface TranscriptManager {
         episodeUuid: String,
     ): Transcript.Text?
 
+    /**
+     * Emits whenever the on-device transcript of the episode is rewritten, so a visible transcript
+     * tab can grow while recognition is still running. A cached implementation is fine for tests.
+     */
+    fun observeTranscriptUpdated(episodeUuid: String): Flow<Unit> = kotlinx.coroutines.flow.emptyFlow()
+
     suspend fun loadGeneratedChapters(
         episodeUuid: String,
     ): GeneratedChaptersResult

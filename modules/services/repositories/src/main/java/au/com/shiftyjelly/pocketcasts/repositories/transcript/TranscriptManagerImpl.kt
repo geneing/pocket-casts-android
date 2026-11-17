@@ -24,7 +24,6 @@ import com.automattic.eventhorizon.GeneratedChaptersFileDownloadedEvent
 import com.automattic.eventhorizon.GeneratedChaptersFileType
 import com.squareup.moshi.Moshi
 import dagger.hilt.android.qualifiers.ApplicationContext
-import java.io.File
 import java.net.HttpURLConnection.HTTP_NOT_FOUND
 import java.net.HttpURLConnection.HTTP_NOT_MODIFIED
 import java.util.concurrent.ConcurrentHashMap
@@ -68,6 +67,7 @@ class TranscriptManagerImpl @Inject constructor(
     private val parsers: Map<TranscriptType, @JvmSuppressWildcards TranscriptParser>,
     private val eventHorizon: EventHorizon,
     @ApplicationContext private val context: Context,
+    private val localTranscriptStore: LocalTranscriptStore,
 ) : TranscriptManager {
     private val transcriptUrlBlacklist = ConcurrentHashMap<String, String>()
     private val lruCache = LruCache<String, Transcript>(maxSize = 20)
@@ -83,10 +83,16 @@ class TranscriptManagerImpl @Inject constructor(
         return transcriptDao.observeTranscripts(episodeUuid).map { transcripts -> transcripts.any { it.isGenerated } }
     }
 
+    override fun observeTranscriptUpdated(episodeUuid: String): Flow<Unit> = localTranscriptStore.updates.filter { it == episodeUuid }.map { }
+
     override suspend fun loadTranscript(
         episodeUuid: String,
     ): Transcript? {
-        val transcript = lruCache[episodeUuid] ?: findAndCacheTranscript(episodeUuid)
+        // The on-device transcript is authoritative whenever it exists: a published one has the
+        // timings and the missing ad reads that made tap-to-seek and skipping wrong. Reading it
+        // fresh (rather than from the cache) is what lets an in-progress transcript grow.
+        val local = readStoredLocalTranscript(episodeUuid)
+        val transcript = local ?: lruCache[episodeUuid] ?: findAndCacheTranscript(episodeUuid)
 
         val message = if (transcript != null) {
             "Transcript loaded for episode $episodeUuid: ${transcript.type} ${transcript.url}"
@@ -99,12 +105,20 @@ class TranscriptManagerImpl @Inject constructor(
     }
 
     override suspend fun loadGeneratedTranscript(episodeUuid: String): Transcript.Text? {
-        val generated = loadLocalTranscripts(episodeUuid).firstOrNull { it.isGenerated } ?: return null
-        generatedLruCache[generated.url]?.let { return it }
-        val parserWithTranscript = associateWithParser(generated) ?: return null
-        val transcript = readTranscript(parserWithTranscript) as? Transcript.Text ?: return null
-        generatedLruCache.put(generated.url, transcript)
-        return transcript
+        return readStoredLocalTranscript(episodeUuid) ?: run {
+            val generated = loadLocalTranscripts(episodeUuid).firstOrNull { it.isGenerated } ?: return null
+            generatedLruCache[generated.url]?.let { return it }
+            val parserWithTranscript = associateWithParser(generated) ?: return null
+            val transcript = readTranscript(parserWithTranscript) as? Transcript.Text ?: return null
+            generatedLruCache.put(generated.url, transcript)
+            return transcript
+        }
+    }
+
+    private suspend fun readStoredLocalTranscript(episodeUuid: String): Transcript.Text? {
+        val stored = transcriptDao.findLocalTranscript(episodeUuid) ?: return null
+        val parser = TranscriptType.fromMimeType(stored.type)?.let(parsers::get) ?: return null
+        return readLocalTranscript(parser, stored, episodeManager.findByUuid(episodeUuid)?.podcastUuid)
     }
 
     private suspend fun findAndCacheTranscript(episodeUuid: String): Transcript? {
@@ -194,7 +208,7 @@ class TranscriptManagerImpl @Inject constructor(
         transcript: DbTranscript,
         podcastUuid: String?,
     ): Transcript.Text? {
-        val file = File(context.filesDir, "on-device-transcripts/${transcript.episodeUuid}.vtt")
+        val file = localTranscriptStore.file(transcript.episodeUuid)
         if (!file.exists()) return null
         return runCatching {
             val entries = withContext(Dispatchers.Default) {
@@ -335,10 +349,10 @@ class TranscriptManagerImpl @Inject constructor(
 
 private val FAILED_GENERATED_CHAPTERS_REUSE = 3.seconds
 
-internal val TranscriptsComparator = compareBy<DbTranscript>(
-    { it.isGenerated },
-    { TranscriptType.fromMimeType(it.type).priority },
-)
+internal val TranscriptsComparator = compareByDescending<DbTranscript> {
+    it.url.startsWith(LocalTranscriptStore.SCHEME)
+}.thenBy { it.isGenerated }
+    .thenBy { TranscriptType.fromMimeType(it.type).priority }
 
 private val TranscriptType?.priority
     get() = when (this) {

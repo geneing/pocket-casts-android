@@ -8,27 +8,20 @@ import au.com.shiftyjelly.pocketcasts.models.to.AdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdSegment
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptAdAnalyzer
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptAnalysis
-import dagger.Lazy
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.AdAnalysisQueue
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.time.Duration.Companion.milliseconds
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
-import kotlinx.coroutines.launch
 
 @Singleton
 class AdSegmentManagerImpl @Inject constructor(
     private val adSegmentDao: AdSegmentDao,
     private val adAnalysisDao: AdAnalysisDao,
     private val adCueScoreDao: AdCueScoreDao,
-    private val audioAdAnalyzer: Lazy<AudioAdAnalyzer>,
-    private val transcriptAdAnalyzer: Lazy<TranscriptAdAnalyzer>,
-    @ApplicationScope private val scope: CoroutineScope,
+    private val queue: AdAnalysisQueue,
 ) : AdSegmentManager {
     override fun observeSegments(episodeUuid: String): Flow<List<AdSegment>> {
         return adSegmentDao.observeSegmentsForEpisode(episodeUuid)
@@ -43,20 +36,12 @@ class AdSegmentManagerImpl @Inject constructor(
     }
 
     /**
-     * Downloaded episodes first get an on-device transcript, which the remote classifier will score
-     * later; until then the transcript analyser never claims the episode, so the audio analyser
-     * produces the segments. Streams skip transcription and use the audio path, which follows the
-     * player cache.
+     * Queues the episode for recognition and detection. The queues are global and durable, so a
+     * playlist of several episodes never starts several passes, and a screen asking for the analysis
+     * only adds a row instead of running minutes of CPU in the caller's coroutine.
      */
     override fun analyze(episodeUuid: String) {
-        scope.launch(Dispatchers.IO) {
-            val handled = runCatching { transcriptAdAnalyzer.get().run(episodeUuid) }
-                .getOrDefault(TranscriptAnalysis.NotAnalysed)
-                .handled
-            if (!handled) {
-                audioAdAnalyzer.get().analyze(episodeUuid)
-            }
-        }
+        queue.schedule(episodeUuid)
     }
 
     override suspend fun hasSegments(episodeUuid: String) = adSegmentDao.countForEpisode(episodeUuid) > 0

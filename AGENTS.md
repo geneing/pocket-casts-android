@@ -2,73 +2,126 @@
 
 This file provides guidance to AI coding assistants (Claude Code, Cursor, Windsurf, etc.) when working with code in this repository.
 
-## Common Commands
+## Building and running on this machine
 
-### Building
-```bash
-# Build debug APK (uses staging servers with .debug suffix)
-./gradlew :app:assembleDebug
+This checkout is developed on a **Windows** host, building against a phone over USB. Gradle runs on
+Windows — `.\gradlew.bat` from PowerShell, never a system `gradle` and never inside WSL; WSL is only
+for the POSIX scripts under `dev/`.
 
-# Build debugProd APK (development build pointing to production servers)
-./gradlew :app:assembleDebugProd
+```powershell
+# Gradle needs the Windows SDK path before it configures anything: the project has no
+# local.properties, so an unset ANDROID_HOME fails configuration.
+$env:ANDROID_HOME = "$env:LOCALAPPDATA\Android\Sdk"
 
-# Build prototype (minified pre-release build)
-./gradlew :app:assemblePrototype
+# Build :app:assembleDebugProd, install it with `adb install -r`, then push the speech models.
+.\dev\adaware\next\moonshine\install-app.ps1
 
-# Build release APK
-./gradlew :app:assembleRelease
+# Code changed, models already on the phone.
+.\dev\adaware\next\moonshine\install-app.ps1 -SkipModels
 
-# Install debug build on connected device
-./gradlew :app:installDebugProd
+# Models changed, APK already installed.
+.\dev\adaware\next\moonshine\install-models.ps1
+
+# Several phones attached: name the target.
+.\dev\adaware\next\moonshine\install-app.ps1 -Serial <serial>
 ```
 
-**Device builds on this machine use `debugProd`, always.** It points at the
-production servers, so the installed app sees the real library and account; the
-staging `debug` build does not. Both carry the `.debug` application id, so
-installing one replaces the other:
+`JAVA_HOME` is Android Studio's bundled JDK; the `java = "17"` toolchain is provisioned by Gradle, so
+no JDK needs installing by hand. Add `--console=plain` when the output is read by a script (or by an
+agent), and `-q` when only failures matter.
 
-```bash
-./gradlew :app:assembleDebugProd && adb install -r app/build/outputs/apk/debugProd/app-debugProd.apk
+### Device builds are always `debugProd`
+
+It points at the production servers, so the installed app sees the real library and account; the
+staging `debug` build does not. Both carry the `.debug` application id, so they replace each other —
+and because the data belongs to that id, **switching between `debug` and `debugProd` wipes the app**
+(sign-in, library, and the pushed speech models). Stay on `debugProd` unless a staging server is the
+thing being tested.
+
+Never uninstall to get a clean state: `adb install -r` keeps the data, models and account, and a
+reinstall of the same variant is what the install script does.
+
+### Building without installing
+
+```powershell
+.\gradlew.bat :app:assembleDebugProd   # app\build\outputs\apk\debugProd\app-debugProd.apk
+.\gradlew.bat :app:assembleDebug       # staging servers, same .debug application id
+.\gradlew.bat :app:assemblePrototype   # minified pre-release
+.\gradlew.bat :app:assembleRelease
+.\gradlew.bat :app:installDebugProd    # install what was just built
+```
+
+Installing by hand is the same half of the install script:
+
+```powershell
+$adb = "$env:LOCALAPPDATA\Android\Sdk\platform-tools\adb.exe"
+& $adb install -r app\build\outputs\apk\debugProd\app-debugProd.apk
 ```
 
 ### Testing
-```bash
-# Run unit tests for the app module
-./gradlew :app:testDebugUnitTest
 
-# Run unit tests for a specific feature module
-./gradlew :modules:features:search:testDebugUnitTest
-
-# Run instrumentation tests on connected device
-./gradlew :app:connectedDebugAndroidTest
-
-# Run instrumentation tests for a specific module
-./gradlew :modules:features:search:connectedDebugAndroidTest
+```powershell
+# Unit tests: a whole module, or one package/class with --tests
+.\gradlew.bat :app:testDebugUnitTest
+.\gradlew.bat :modules:features:search:testDebugUnitTest
+.\gradlew.bat :modules:services:repositories:testDebugUnitTest `
+  --tests "au.com.shiftyjelly.pocketcasts.repositories.ads.*"
 ```
+
+Instrumentation tests run on the attached phone. The Gradle tasks work
+(`:app:connectedDebugProdAndroidTest`, or `:modules:features:search:connectedDebugAndroidTest`), but
+running them by hand installs the test APK with `-r` and leaves the app's data — account, library,
+pushed models — alone:
+
+```powershell
+.\gradlew.bat :app:assembleDebugProdAndroidTest
+$adb = "$env:LOCALAPPDATA\Android\Sdk\platform-tools\adb.exe"
+& $adb install -r app\build\outputs\apk\androidTest\debugProd\app-debugProd-androidTest.apk
+& $adb shell am instrument -w `
+  -e class au.com.shiftyjelly.pocketcasts.models.db.AppDatabaseMigrationTest `
+  au.com.shiftyjelly.pocketcasts.testapp/androidx.test.runner.AndroidJUnitRunner
+```
+
+Drop `-e class` to run every test in the APK. The test application id is
+`au.com.shiftyjelly.pocketcasts.test<module>` (`…testapp` for `:app`), and the runner is
+`androidx.test.runner.AndroidJUnitRunner`.
 
 ### Code Quality
-```bash
+
+```powershell
 # Check code formatting (must pass before merge)
-./gradlew spotlessCheck
+.\gradlew.bat spotlessCheck
 
 # Auto-format code
-./gradlew spotlessApply
+.\gradlew.bat spotlessApply
 
 # Install git hooks to run spotless on pre-commit
-./gradlew installGitHooks
+.\gradlew.bat installGitHooks
 
 # Run lint on all application modules
-./gradlew aggregatedLintRelease
+.\gradlew.bat aggregatedLintRelease
 
 # Run dependency analysis
-./gradlew buildHealth
+.\gradlew.bat buildHealth
 ```
+
+Kotlin warnings are errors, so a build that "just warns" is a failing build.
 
 ### Build Variants
 - **debug**: Development with `.debug` suffix, uses staging servers (*.pocketcasts.net)
 - **debugProd**: Development build pointing to production servers (*.pocketcasts.com)
 - **prototype**: Minified pre-release build with ProGuard/R8
 - **release**: Production release build with minification and shrinking
+
+### When the build lies
+
+- **`[Dagger/MissingBinding]` for a DAO that obviously exists** — the Hilt aggregate task is stale.
+  `.\gradlew.bat :app:hiltAggregateDepsDebugProd --rerun-tasks` fixes it; it is not a DI bug.
+- **`:app:tasks` fails on Compose Preview** ("Android resources are excluded from unit tests") —
+  that is the task listing, not the build. Use `:app:assembleDebugProd` to check the build itself.
+- **A code change has no effect on the device** — check the APK timestamp
+  (`app\build\outputs\apk\debugProd\app-debugProd.apk`) and reinstall with `-r`; Gradle's
+  configuration cache and up-to-date checks are quick to blame and rarely wrong.
 
 ## Architecture Overview
 
@@ -247,9 +300,10 @@ Use `AnalyticsTracker` service for event tracking. Analytics are integrated with
 
 ### On-device speech to text (ad skipping)
 
-Ad detection reads an episode's transcript, and a transcript the app does not already have is
-produced on device by Moonshine (`ai.moonshine:moonshine-voice`, ONNX Runtime, CPU only). Code and
-models are MIT.
+Ad detection reads only a transcript the app produced on the device with Moonshine
+(`ai.moonshine:moonshine-voice`, ONNX Runtime, CPU only). Code and models are MIT. A transcript the
+show or our servers publish is never used for detection or navigation: its cue times do not match
+the audio and it is missing ad reads.
 
 - Models: **tiny streaming** for English and Spanish, requested with the architecture passed
   explicitly (`MOONSHINE_MODEL_ARCH_TINY_STREAMING`); the catalog's default for `en` is *medium* and
@@ -257,21 +311,27 @@ models are MIT.
   Downloaded on demand (unmetered only) into `noBackupFilesDir/moonshine-models`, never bundled.
 - On a device, a private build gets them with `dev/adaware/next/moonshine/install-app.ps1` (builds `:app:assembleDebugProd`, `adb install -r`, then pushes the models with `install-models.ps1`; `-SkipBuild`/`-SkipModels` skip either half).
 - Language: chosen from `Podcast.podcastLanguage` by primary subtag (`es-us` -> `es`). Any other
-  language makes the engine unavailable for that episode and the audio analyzer covers it.
+  language makes the engine unavailable for that episode, which leaves it without on-device
+  detection instead of falling back to a published transcript.
 - Timestamps: word-level times come from the model's cross-attention DTW. They are **English only**
   (the Spanish bundle ships no attention decoder), so cue building must also work from line-level
   `startTime`/`duration`. Cues are stored as WebVTT through `LocalTranscriptStore`, one cue per
   complete streaming line, and the old ML Kit energy-region reconstruction is gone for good.
   Measured against Whisper, Moonshine's word times sit a constant ~0.25 s late; at hand-labelled ad
   boundaries that still lands within 0.3 s at p90, so do not "fix" the offset without new evidence.
-- Recognition only fills a gap: an episode whose show or our servers publish a transcript is analysed
-  from that transcript and never starts a pass. `FORCE_ON_DEVICE_TRANSCRIPT` (developer settings, off
-  by default) ignores published transcripts so the engine can be exercised on real episodes.
-- Recognition is minutes of CPU (about 3x realtime here), so `TranscriptAdAnalysisWorker` promotes
-  itself to a `dataSync` foreground service with a quiet notification. An ordinary WorkManager job
-  is stopped by the system after a few minutes and loses the whole pass — a `JobCancellationException`
-  in `AdAnalysisWorker` means exactly that, not a recognition error. `moonshineTranscribeStream:
-  transcription error: 0` in logcat is the JNI logging its success code.
+- Recognition always runs for a queued episode. Scheduling drops the published transcript rows so
+  the transcript tab and tap-to-seek can only read the recognized text; `AdAnalysisQueue.schedule`
+  is called from the download, playback, episode-details and Up Next paths.
+- The pipeline is two durable queues (`episode_asr_queue`, `ad_detection_queue`) drained by one
+  worker each, so several playlist episodes add rows instead of starting several passes. Each pass
+  resumes from the last stored cue: cues are written after every completed line, and the detection
+  queue records the end of the last scored cue. Failures and metered-network deferrals stay in the
+  row with a retry time, so a process death or a dropped connection does not restart the episode.
+- Recognition is minutes of CPU (about 3x realtime here), so `TranscriptAsrWorker` promotes itself
+  to a `dataSync` foreground service with a quiet notification. An ordinary WorkManager job is
+  stopped by the system after a few minutes and loses the pass in flight — a
+  `JobCancellationException` in `AdAnalysisWorker` means exactly that, not a recognition error.
+  `moonshineTranscribeStream: transcription error: 0` in logcat is the JNI logging its success code.
 - Where: `modules/services/repositories/.../repositories/ads/text/moonshine/`. The decisions, the
   laptop comparison against the Whisper corpus and the integration notes live in
   `dev/adaware/next/moonshine/`; read `RESEARCH.md` before changing the engine, the model choice or

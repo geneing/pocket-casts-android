@@ -65,14 +65,16 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 import kotlin.math.roundToInt
 import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.debounce
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.flatMapLatest
-import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.mapNotNull
+import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.launch
 import au.com.shiftyjelly.pocketcasts.localization.R as LR
 
@@ -87,7 +89,7 @@ import au.com.shiftyjelly.pocketcasts.localization.R as LR
  * Sentences inside a detected ad segment are shown in italics, with the segment's advertisement
  * probability next to their timestamp.
  */
-@OptIn(ExperimentalCoroutinesApi::class)
+@OptIn(ExperimentalCoroutinesApi::class, FlowPreview::class)
 @AndroidEntryPoint
 class TranscriptTabFragment : Fragment() {
     @Inject
@@ -163,6 +165,7 @@ class TranscriptTabFragment : Fragment() {
      */
     private fun observeTranscript(episodeUuid: String): Flow<TranscriptTabState> {
         return transcriptManager.observeIsTranscriptAvailable(episodeUuid)
+            .distinctUntilChanged()
             .flatMapLatest { isAvailable ->
                 // Clearing first keeps the previous episode's transcript from showing meanwhile.
                 val entries = if (isAvailable) {
@@ -171,13 +174,12 @@ class TranscriptTabFragment : Fragment() {
                     if (FeatureFlag.isEnabled(Feature.AD_SKIPPING)) {
                         adSegmentManager.analyze(episodeUuid)
                     }
-                    // The analysis may replace a published transcript with one recognised on the
-                    // device, so the entries are re-read whenever its cue scores change: that is the
-                    // moment the new transcript and its per-sentence probabilities land together.
-                    // The cached transcript is dropped first, or the old one would be read again.
-                    adSegmentManager.observeCueScores(episodeUuid)
-                        .map { scores -> scores.isNotEmpty() }
-                        .distinctUntilChanged()
+                    // Recognition rewrites the on-device transcript after every completed line, so
+                    // a tab that is already open grows with it. The analysis also replaces a
+                    // published transcript, which is why the entries are re-read on every update.
+                    transcriptManager.observeTranscriptUpdated(episodeUuid)
+                        .debounce(TRANSCRIPT_REFRESH_MS)
+                        .onStart { emit(Unit) }
                         .map {
                             transcriptManager.invalidateTranscript(episodeUuid)
                             loadEntries(episodeUuid)
@@ -205,6 +207,9 @@ class TranscriptTabFragment : Fragment() {
 
     companion object {
         private const val ARG_EPISODE_UUID = "episode_uuid"
+
+        /** Recognition writes a line every few seconds; debounce keeps this from re-reading per word. */
+        private const val TRANSCRIPT_REFRESH_MS = 500L
 
         fun forEpisode(episodeUuid: String) = TranscriptTabFragment().apply {
             arguments = Bundle().apply {

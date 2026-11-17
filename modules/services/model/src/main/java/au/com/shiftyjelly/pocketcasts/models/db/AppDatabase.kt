@@ -42,9 +42,11 @@ import au.com.shiftyjelly.pocketcasts.models.converter.TrimModeTypeConverter
 import au.com.shiftyjelly.pocketcasts.models.converter.UserEpisodeServerStatusConverter
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdAnalysisDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdCueScoreDao
+import au.com.shiftyjelly.pocketcasts.models.db.dao.AdDetectionQueueDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdFingerprintDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdSegmentDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AlternateEnclosureDao
+import au.com.shiftyjelly.pocketcasts.models.db.dao.AsrQueueDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.BlazeAdDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.BookmarkDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.BumpStatsDao
@@ -93,7 +95,9 @@ import au.com.shiftyjelly.pocketcasts.models.entity.UserEpisode
 import au.com.shiftyjelly.pocketcasts.models.entity.UserNotifications
 import au.com.shiftyjelly.pocketcasts.models.entity.UserPodcastRating
 import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
+import au.com.shiftyjelly.pocketcasts.models.to.AdDetectionQueueItem
 import au.com.shiftyjelly.pocketcasts.models.to.AdFingerprint
+import au.com.shiftyjelly.pocketcasts.models.to.AsrQueueItem
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.DbChapter
@@ -134,8 +138,10 @@ import au.com.shiftyjelly.pocketcasts.localization.R as LR
         AdAnalysisState::class,
         AdFingerprint::class,
         DbAdCueScore::class,
+        AsrQueueItem::class,
+        AdDetectionQueueItem::class,
     ],
-    version = 144,
+    version = 145,
     exportSchema = true,
     autoMigrations = [
         AutoMigration(from = 81, to = 82, spec = AppDatabase.Companion.DeleteSilenceRemovedMigration::class),
@@ -190,6 +196,8 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun adAnalysisDao(): AdAnalysisDao
     abstract fun adCueScoreDao(): AdCueScoreDao
     abstract fun adFingerprintDao(): AdFingerprintDao
+    abstract fun asrQueueDao(): AsrQueueDao
+    abstract fun adDetectionQueueDao(): AdDetectionQueueDao
     abstract fun transcriptDao(): TranscriptDao
     abstract fun externalDataDao(): ExternalDataDao
     abstract fun endOfYearDao(): EndOfYearDao
@@ -1618,6 +1626,27 @@ abstract class AppDatabase : RoomDatabase() {
             )
         }
 
+        /**
+         * The two persistent work queues: on-device recognition and ad detection. Both are drained
+         * one item at a time, so several episodes in the playlist cannot start several passes.
+         */
+        val MIGRATION_144_145 = addMigration(144, 145) { database ->
+            database.execSQL(
+                "CREATE TABLE IF NOT EXISTS `episode_asr_queue` (`episode_uuid` TEXT NOT NULL, " +
+                    "`enqueued_at` INTEGER NOT NULL, `processed_until_ms` INTEGER NOT NULL DEFAULT 0, " +
+                    "`is_complete` INTEGER NOT NULL DEFAULT 0, `attempts` INTEGER NOT NULL DEFAULT 0, " +
+                    "`next_attempt_at` INTEGER NOT NULL DEFAULT 0, `last_error` TEXT, " +
+                    "PRIMARY KEY(`episode_uuid`))",
+            )
+            database.execSQL(
+                "CREATE TABLE IF NOT EXISTS `ad_detection_queue` (`episode_uuid` TEXT NOT NULL, " +
+                    "`enqueued_at` INTEGER NOT NULL, `analyzed_until_ms` INTEGER NOT NULL DEFAULT 0, " +
+                    "`is_complete` INTEGER NOT NULL DEFAULT 0, `attempts` INTEGER NOT NULL DEFAULT 0, " +
+                    "`next_attempt_at` INTEGER NOT NULL DEFAULT 0, `last_error` TEXT, " +
+                    "PRIMARY KEY(`episode_uuid`))",
+            )
+        }
+
         fun addMigrations(databaseBuilder: Builder<AppDatabase>, context: Context) {
             databaseBuilder.addMigrations(
                 addMigration(1, 2) { },
@@ -2051,6 +2080,7 @@ abstract class AppDatabase : RoomDatabase() {
                 MIGRATION_141_142,
                 MIGRATION_142_143,
                 MIGRATION_143_144,
+                MIGRATION_144_145,
             )
         }
 

@@ -11,6 +11,7 @@ import android.os.SystemClock
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.EpisodeTranscriber
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.ModelDownloadProgress
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptAvailability
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptCue
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptRequest
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptResult
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptSource
@@ -29,9 +30,12 @@ import kotlin.math.roundToLong
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.isActive
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
 import timber.log.Timber
@@ -90,6 +94,7 @@ class MoonshineEpisodeTranscriber @Inject constructor(
     override suspend fun transcribe(
         request: TranscriptRequest,
         onModelProgress: (ModelDownloadProgress) -> Unit,
+        onPartialCues: suspend (List<TranscriptCue>) -> Unit,
     ): TranscriptResult {
         val source = request.source
         if (source is TranscriptSource.Downloaded && !source.file.isFile) {
@@ -138,7 +143,7 @@ class MoonshineEpisodeTranscriber @Inject constructor(
                 }
                 val temporary = source is TranscriptSource.Stream
                 try {
-                    transcribeAudio(request, language, local, download)
+                    transcribeAudio(request, language, local, download, onPartialCues)
                 } finally {
                     if (temporary) runCatching { local.delete() }
                 }
@@ -163,6 +168,7 @@ class MoonshineEpisodeTranscriber @Inject constructor(
         language: MoonshineLanguage,
         file: File,
         download: ModelDownload,
+        onPartialCues: suspend (List<TranscriptCue>) -> Unit,
     ): TranscriptResult {
         val job = currentCoroutineContext()[Job]
         val deadlineAt = SystemClock.elapsedRealtime() + TRANSCRIBE_BUDGET_MS
@@ -172,6 +178,7 @@ class MoonshineEpisodeTranscriber @Inject constructor(
         val failure = AtomicReference<Throwable?>(null)
         val passStartedAt = SystemClock.elapsedRealtime()
         val fedAudioMs = AtomicLong(0L)
+        val originMs = AtomicLong(0L)
         var lastProgressAt = 0L
         var completedChars = 0
 
@@ -198,12 +205,29 @@ class MoonshineEpisodeTranscriber @Inject constructor(
             )
         }
 
+        /**
+         * The completed lines as cues in the episode timeline. A resumed pass starts at a keyframe
+         * before [TranscriptRequest.startMs], so the recognizer's own clock starts at [originMs]
+         * rather than at zero and every cue has to be moved by it.
+         */
+        fun snapshotCues(): List<TranscriptCue> {
+            val lines = synchronized(completedLines) { completedLines.toList() }
+            val origin = originMs.get()
+            val relativeDuration = if (request.durationMs > 0) (request.durationMs - origin).coerceAtLeast(0L) else 0L
+            return cues(lines, relativeDuration).map { cue ->
+                cue.copy(startMs = cue.startMs + origin, endMs = cue.endMs + origin)
+            }
+        }
+
+        val progress = Channel<List<TranscriptCue>>(Channel.CONFLATED)
+
         val listener = object : TranscriptEventListener() {
             override fun onLineCompleted(event: TranscriptEvent.LineCompleted) {
                 event.line?.let { line ->
                     completedLines.add(line)
                     completedChars += line.text?.length ?: 0
                 }
+                progress.trySend(snapshotCues())
                 logProgress(event.line, force = true)
             }
 
@@ -231,38 +255,57 @@ class MoonshineEpisodeTranscriber @Inject constructor(
         var loadMs = 0L
         val feed: MoonshineAudioFeed.Result
         try {
-            val loadStartedAt = SystemClock.elapsedRealtime()
-            transcriber.loadFromFiles(directory.absolutePath, language.arch)
-            loadMs = SystemClock.elapsedRealtime() - loadStartedAt
-            Timber.tag(TAG).d("Loaded %s model from %s in %dms", language.code, directory, loadMs)
-            transcriber.setUpdateInterval(UPDATE_INTERVAL_SECONDS)
-            transcriber.addListener { event -> event.accept(listener) }
-            streamHandle = transcriber.createStream()
-            transcriber.startStream(streamHandle)
-            LogBuffer.i(
-                MoonshineStats.TAG,
-                "${language.code} start: ${file.name} ${MoonshineStats.duration(request.durationMs)}, " +
-                    "model ${MoonshineStats.duration(loadMs)} to load",
-            )
-            feed = MoonshineAudioFeed.decode(file, isActive) { samples, sampleRate, positionMs ->
-                fedAudioMs.set(maxOf(positionMs, fedAudioMs.get()))
-                transcriber.addAudioToStream(streamHandle, samples, sampleRate)
+            coroutineScope {
+                // Persisting a cue is milliseconds of file IO; handing it to its own coroutine keeps
+                // the decoder feeding audio while the transcript and its queue rows are written.
+                val writer = launch(Dispatchers.IO) {
+                    for (partial in progress) onPartialCues(partial)
+                }
+                try {
+                    val loadStartedAt = SystemClock.elapsedRealtime()
+                    transcriber.loadFromFiles(directory.absolutePath, language.arch)
+                    loadMs = SystemClock.elapsedRealtime() - loadStartedAt
+                    Timber.tag(TAG).d("Loaded %s model from %s in %dms", language.code, directory, loadMs)
+                    transcriber.setUpdateInterval(UPDATE_INTERVAL_SECONDS)
+                    transcriber.addListener { event -> event.accept(listener) }
+                    streamHandle = transcriber.createStream()
+                    transcriber.startStream(streamHandle)
+                    LogBuffer.i(
+                        MoonshineStats.TAG,
+                        "${language.code} start: ${file.name} ${MoonshineStats.duration(request.durationMs)} " +
+                            "from ${request.startMs}ms, model ${MoonshineStats.duration(loadMs)} to load",
+                    )
+                    feed = MoonshineAudioFeed.decode(
+                        file,
+                        startPositionMs = request.startMs,
+                        isActive = isActive,
+                        onOrigin = { origin -> originMs.set(origin) },
+                    ) { samples, sampleRate, positionMs ->
+                        fedAudioMs.set(maxOf(positionMs, fedAudioMs.get()))
+                        transcriber.addAudioToStream(streamHandle, samples, sampleRate)
+                    }
+                } finally {
+                    // Order matters: stopping flushes the last partial line into a completed one,
+                    // freeing releases the stream, and closing releases the model sessions.
+                    if (streamHandle >= 0) {
+                        runCatching { transcriber.stopStream(streamHandle) }
+                        runCatching { transcriber.freeStream(streamHandle) }
+                    }
+                    runCatching { transcriber.close() }
+                    // The flush above can complete one last line, so the snapshot is taken after it.
+                    progress.trySend(snapshotCues())
+                    progress.close()
+                    writer.join()
+                }
             }
         } finally {
-            // Order matters: stopping flushes the last partial line into a completed one, freeing
-            // releases the stream, and closing releases the model sessions. Skipping stopStream
-            // loses the final line of every episode.
-            if (streamHandle >= 0) {
-                runCatching { transcriber.stopStream(streamHandle) }
-                runCatching { transcriber.freeStream(streamHandle) }
-            }
-            runCatching { transcriber.close() }
+            progress.close()
         }
 
         val error = failure.get()
         if (error != null) {
-            // Partial cues are not returned: a transcript cut short by a decoder error would be
-            // stored as the whole episode's and every ad after the cut would silently be missed.
+            // Cues already written stay: the queue resumes after the last one, and the transcript
+            // tab can show what was recognised instead of nothing.
             return TranscriptResult.Failed("recognizer error: ${error.message ?: error.javaClass.simpleName}")
         }
         // The job being cancelled is not a failure, it is the caller giving up; the finally above
@@ -279,7 +322,7 @@ class MoonshineEpisodeTranscriber @Inject constructor(
                     if (budgetExpired) ", budget of ${TRANSCRIBE_BUDGET_MS / 60_000} minutes expired" else "",
             )
         }
-        val cues = cues(lines, request.durationMs)
+        val cues = snapshotCues()
         val lineStats = MoonshineStats.lineStats(lines)
         val pass = MoonshinePass(
             modelLoadMs = loadMs,

@@ -36,16 +36,18 @@ sealed interface TranscriptSource {
 /**
  * Everything a single transcription pass needs, resolved by the caller.
  *
- * The language travels with the request rather than being looked up here: the engine must stay
- * free of database access so a pass can be run from a worker, a test or a benchmark with nothing
- * but a file. [podcastLanguage] is the podcast's declared language, free-form server data such as
- * `"en"`, `"es-us"` or `"pt-BR"`.
+ * [startMs] is where the pass resumes: cues before it are already stored, so a killed worker
+ * re-runs only the audio that is still missing. The language travels with the request rather than
+ * being looked up here: the engine must stay free of database access so a pass can be run from a
+ * worker, a test or a benchmark with nothing but a file. [podcastLanguage] is the podcast's declared
+ * language, free-form server data such as `"en"`, `"es-us"` or `"pt-BR"`.
  */
 data class TranscriptRequest(
     val episodeUuid: String,
     val source: TranscriptSource,
     val durationMs: Long,
     val podcastLanguage: String?,
+    val startMs: Long = 0L,
 )
 
 /**
@@ -100,12 +102,15 @@ interface EpisodeTranscriber {
     fun availability(podcastLanguage: String?): TranscriptAvailability
 
     /**
-     * Transcribes [TranscriptRequest.source]. Reports model download progress through
-     * [onModelProgress] so a screen or a worker can show that the first pass is fetching weights
-     * rather than stuck.
+     * Transcribes [TranscriptRequest.source] from [TranscriptRequest.startMs]. Reports model
+     * download progress through [onModelProgress] so a screen or a worker can show that the first
+     * pass is fetching weights rather than stuck. [onPartialCues] receives every cue that became
+     * final so far, in episode time, so the transcript and its ad detection can advance while the
+     * pass is still running; it is never called with a shrinking list.
      */
     suspend fun transcribe(
         request: TranscriptRequest,
         onModelProgress: (ModelDownloadProgress) -> Unit = {},
+        onPartialCues: suspend (List<TranscriptCue>) -> Unit = {},
     ): TranscriptResult
 }

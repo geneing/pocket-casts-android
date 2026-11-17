@@ -29,6 +29,9 @@ abstract class AdCueScoreDao {
     @Query("SELECT * FROM episode_ad_cue_scores WHERE episode_uuid IS :episodeUuid ORDER BY cue_index ASC")
     protected abstract fun observeRawScoresForEpisode(episodeUuid: String): Flow<List<DbAdCueScore>>
 
+    @Query("SELECT * FROM episode_ad_cue_scores WHERE episode_uuid IS :episodeUuid ORDER BY cue_index ASC")
+    abstract suspend fun findScoresForEpisode(episodeUuid: String): List<DbAdCueScore>
+
     fun observeScoresForEpisode(episodeUuid: String) = observeRawScoresForEpisode(episodeUuid).distinctUntilChanged()
 
     @Query("SELECT COUNT(*) FROM episode_ad_cue_scores WHERE episode_uuid IS :episodeUuid")

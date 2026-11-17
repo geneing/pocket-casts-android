@@ -2853,7 +2853,6 @@ open class PlaybackManager @Inject constructor(
                     statsManager.addTotalListeningTime(UPDATE_TIMER_POLL_TIME)
                 }
                 verifySleepTimeForEndOfChapter()
-                maybeContinueStreamAdAnalysis()
             }
             .switchMapCompletable { updateCurrentPositionRx() }
             .subscribeBy(onError = { Timber.e(it) })
@@ -3192,7 +3191,6 @@ open class PlaybackManager @Inject constructor(
 
     private val sessionSkippedAdSegments = mutableSetOf<String>()
     private val loggedNonSkippableSegments = mutableSetOf<String>()
-    private var adAnalysisTickCounter = 0
 
     private data class AdSkipRecord(
         val episodeUuid: String,
@@ -3206,7 +3204,6 @@ open class PlaybackManager @Inject constructor(
         lastSkippedAd = null
         synchronized(sessionSkippedAdSegments) { sessionSkippedAdSegments.clear() }
         synchronized(loggedNonSkippableSegments) { loggedNonSkippableSegments.clear() }
-        adAnalysisTickCounter = 0
         Timber.d("Observing ad segments for $episodeUuid (available=${isAdSkippingAvailable()}, enabled=${isAdSkippingEnabled()})")
 
         observeAdSegmentsJob = adSegmentManager.observeSegments(episodeUuid)
@@ -3377,25 +3374,7 @@ open class PlaybackManager @Inject constructor(
     }
 
     private fun adSegmentKey(episodeUuid: String, segmentIndex: Int) = "$episodeUuid:$segmentIndex"
-
-    private fun maybeContinueStreamAdAnalysis() {
-        if (!isAdSkippingAvailable() || player?.isStreaming != true) {
-            return
-        }
-        val episodeUuid = playbackStateRelay.blockingFirst().episodeUuid
-        if (episodeUuid.isEmpty()) {
-            return
-        }
-        if (++adAnalysisTickCounter % AD_ANALYSIS_TICK_INTERVAL != 0) {
-            return
-        }
-        Timber.d("Continuing ad analysis for streamed episode $episodeUuid")
-        adSegmentManager.analyze(episodeUuid)
-    }
 }
-
-/** How many position ticks of streamed playback between two ad analysis passes. */
-private const val AD_ANALYSIS_TICK_INTERVAL = 90
 
 internal enum class CastSessionFailureAction {
     Ignore,

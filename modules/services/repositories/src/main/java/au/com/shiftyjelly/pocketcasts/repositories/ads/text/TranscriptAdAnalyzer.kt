@@ -1,67 +1,61 @@
 package au.com.shiftyjelly.pocketcasts.repositories.ads.text
 
-import au.com.shiftyjelly.pocketcasts.coroutines.di.ApplicationScope
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdAnalysisDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdCueScoreDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdSegmentDao
 import au.com.shiftyjelly.pocketcasts.models.entity.BaseEpisode
 import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
-import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegmentKind
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegmentOrigin
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdSegment
-import au.com.shiftyjelly.pocketcasts.models.to.Transcript
-import au.com.shiftyjelly.pocketcasts.models.to.TranscriptEntry
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevAdClassifier
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevAdModelStore
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevClassification
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevPrompt
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.buildPods
-import au.com.shiftyjelly.pocketcasts.repositories.file.FileStorage
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.PodcastManager
-import au.com.shiftyjelly.pocketcasts.repositories.transcript.TranscriptManager
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
 import java.io.File
-import java.util.concurrent.ConcurrentHashMap
 import javax.inject.Inject
 import javax.inject.Singleton
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
 import kotlinx.coroutines.NonCancellable
-import kotlinx.coroutines.flow.first
-import kotlinx.coroutines.flow.firstOrNull
-import kotlinx.coroutines.flow.mapNotNull
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
-import kotlinx.coroutines.withTimeoutOrNull
-import timber.log.Timber
+
+/** What one detection pass did for an episode. */
+sealed interface DetectionOutcome {
+    /** The whole transcript is scored and the ASR pass is finished. */
+    data object Completed : DetectionOutcome
+
+    /** A new window was scored; the rest waits for the recognizer or the next pass. */
+    data object Progressed : DetectionOutcome
+
+    /** Not enough stable cues yet; the recognizer will wake detection when it writes more. */
+    data object Waiting : DetectionOutcome
+
+    /** Transient failure (network, service); the queue row holds the retry time. */
+    data object Retry : DetectionOutcome
+
+    /** Nothing to do for this episode. */
+    data object NotQueued : DetectionOutcome
+}
 
 /**
- * Ad analysis from a transcript, scored by the remote jev choice classifier.
+ * Scores the on-device transcript in windows as it arrives, and rebuilds the ad pods from every cue
+ * scored so far.
  *
- * The episode's existing transcript is used when the app has one, whether it is the show's own
- * transcript or the generated VTT the transcript tab shows. Those cues already carry word-level
- * timings, so this is both cheaper and more accurate than recognising the audio locally. Only an
- * episode without any transcript is transcribed on device, and that transcript is then cached by
- * [LocalTranscriptStore] and registered with the transcript stack.
+ * Only the transcript written by [LocalTranscriptStore] is read: a published transcript has wrong
+ * timings and misses ad reads, which is exactly what made the old path skip the wrong audio. The
+ * newest cues are held back by [STABILITY_MARGIN_CUES] until the recognizer finishes, because a
+ * mid-sentence VAD split can still merge the last line into its predecessor; a cue that is scored
+ * before that merge would leave a stale score behind.
  *
- * The analysis is reused while the audio file (or stream URL), the transcript identity, the
- * recognizer version and the jev model (including its prompt revision) are unchanged. Pods are
- * written as [DbAdSegment]s with [AdSegmentOrigin.Transcript], and every cue's p(advertisement) is
- * stored as a [DbAdCueScore] so the transcript can show the score for each sentence.
- *
- * Confidence is the pod's mean p(advertisement), so a pod the classifier is sure about clears
- * [AdSegment.MIN_AUTO_SKIP_CONFIDENCE] and is skipped automatically, while a weak one stays a
- * suggestion.
- *
- * When the classifier or the recognizer is unavailable, [run] reports itself as not having handled
- * the episode, so [au.com.shiftyjelly.pocketcasts.repositories.ads.AudioAdAnalyzer] still produces
- * segments.
+ * Every request is resumable: the queue row stores the end of the last scored cue, and a window
+ * older than [CONTEXT_CUES] is only re-read for context, not re-sent. A failed window leaves the
+ * stored scores untouched, so the next attempt starts at the same cue.
  */
 @Singleton
 class TranscriptAdAnalyzer @Inject constructor(
@@ -72,215 +66,86 @@ class TranscriptAdAnalyzer @Inject constructor(
     private val adCueScoreDao: AdCueScoreDao,
     private val classifier: JevAdClassifier,
     private val transcriber: EpisodeTranscriber,
-    private val sourcePolicy: TranscriptSourcePolicy,
     private val transcriptStore: LocalTranscriptStore,
-    private val transcriptManager: TranscriptManager,
-    private val generatedTranscriptLoader: GeneratedTranscriptLoader,
     private val jevAdModelStore: JevAdModelStore,
-    private val fileStorage: FileStorage,
-    @ApplicationScope private val scope: CoroutineScope,
+    private val queue: AdAnalysisQueue,
 ) {
     private val mutex = Mutex()
-    private var analysisJob: Job? = null
 
-    /**
-     * When an episode's last analysis attempt failed. Streams are fetched whole before they can be
-     * transcribed, so retrying on every playback tick would download the episode again; the window
-     * keeps a failure from turning into a download loop while still allowing a later attempt.
-     */
-    private val failedAttempts = ConcurrentHashMap<String, Long>()
+    suspend fun run(episodeUuid: String): DetectionOutcome = mutex.withLock { runAnalysis(episodeUuid) }
 
-    /** True when this device can recognise speech at all, which the worker checks before queueing work. */
-    fun isSupported(): Boolean = transcriber.isAvailable()
-
-    fun analyze(episodeUuid: String) {
-        val previous = analysisJob
-        previous?.cancel()
-        analysisJob = scope.launch(Dispatchers.IO.limitedParallelism(1)) {
-            runCatching { previous?.join() }
-            mutex.withLock { runAnalysis(episodeUuid) }
-        }
-    }
-
-    /**
-     * Runs inside the caller's coroutine and reports what this analyzer did, so the audio analyzer
-     * can take over when transcription or classification is unavailable, and a worker knows to ask
-     * again later when the speech model could not be fetched on the current network.
-     */
-    suspend fun run(
-        episodeUuid: String,
-        onModelProgress: (ModelDownloadProgress) -> Unit = {},
-    ): TranscriptAnalysis = mutex.withLock { runAnalysis(episodeUuid, onModelProgress) }
-
-    private suspend fun runAnalysis(
-        episodeUuid: String,
-        onModelProgress: (ModelDownloadProgress) -> Unit = {},
-    ): TranscriptAnalysis {
-        val failedAt = failedAttempts[episodeUuid]
-        if (failedAt != null && System.currentTimeMillis() - failedAt < RETRY_AFTER_FAILURE_MS) {
-            Timber.tag(TAG).d("Episode %s failed to analyse recently, not retrying yet", episodeUuid)
-            return TranscriptAnalysis.NotAnalysed
-        }
-        val startedAt = System.currentTimeMillis()
-        val episode = episodeManager.findByUuid(episodeUuid) ?: return TranscriptAnalysis.NotAnalysed
-        val podcast = podcastManager.findPodcastByUuid(episode.podcastUuid)
-        val source = resolveSource(episode)
-        val model = jevAdModelStore.selectedJevAdModel()
-        val state = adAnalysisDao.findState(episodeUuid)
-        val sourceSignature = source?.let(AnalysisIdentity::audioSignature)
-        // Analyses made before per-cue scores existed have no scores to show, so they are rerun
-        // once to fill the transcript.
-        val hasCueScores = adCueScoreDao.countForEpisode(episodeUuid) > 0
-
-        // A repeat play of an episode already scored from its generated transcript needs no fetch:
-        // the transcript URL and the audio are both known before anything is loaded. The debug
-        // switch that ignores published transcripts removes this shortcut too, or the previous
-        // analysis would be reused and the recogniser never run.
-        val forceOnDevice = sourcePolicy.ignoresPublishedTranscript()
-        val generatedUrl = generatedTranscriptLoader.urlFor(episode)
-        if (!forceOnDevice && sourceSignature != null && hasCueScores) {
-            val analysed = listOfNotNull(generatedUrl?.let(::transcriptAnalysisVersion), transcriber.version)
-                .any { version ->
-                    AnalysisIdentity.isReusableTranscript(state, sourceSignature, version, model, JevPrompt.VERSION)
-                }
-            if (analysed) {
-                Timber.tag(TAG).d("Episode %s is already analysed with its transcript, model and prompt", episodeUuid)
-                return TranscriptAnalysis.Analysed
-            }
-        }
-
-        // The transcript the app already has is the analysis input; only an episode without one is
-        // transcribed on device. With FORCE_ON_DEVICE_TRANSCRIPT the published transcript is ignored
-        // and every episode goes through the recogniser.
-        val existing = loadExistingTranscript(episodeUuid, ignorePublished = forceOnDevice)
-        if (source == null && existing == null) {
-            Timber.tag(TAG).d("Episode %s has neither audio nor a transcript", episodeUuid)
-            return TranscriptAnalysis.NotAnalysed
-        }
-
-        // Only an episode that needs recognition needs its speech model, so this gate stays inside
-        // the branch that would download one: a transcript the app already has never waits for it.
-        if (existing == null) {
-            when (transcriber.availability(podcast?.podcastLanguage)) {
-                TranscriptAvailability.Ready -> Unit
-
-                TranscriptAvailability.ModelNeedsUnmeteredNetwork -> {
-                    LogBuffer.i(TAG, "Speech model download for $episodeUuid is waiting for an unmetered network")
-                    return TranscriptAnalysis.NeedsUnmeteredNetwork
-                }
-
-                TranscriptAvailability.UnsupportedLanguage -> {
-                    LogBuffer.i(TAG, "No speech model for the language of $episodeUuid, leaving it to the audio analyzer")
-                    return TranscriptAnalysis.NotAnalysed
-                }
-
-                TranscriptAvailability.EngineUnavailable -> {
-                    LogBuffer.i(TAG, "On-device speech recognition is unavailable, leaving $episodeUuid to the audio analyzer")
-                    return TranscriptAnalysis.NotAnalysed
-                }
-            }
-        }
-
-        // Keeping the transcript's identity here makes a newly available transcript invalidate an
-        // older analysis of the same episode.
-        val signature = sourceSignature ?: existing?.url ?: return TranscriptAnalysis.NotAnalysed
-        val sttVersion = existing?.analysisVersion(transcriber.version) ?: transcriber.version
-        if (hasCueScores && AnalysisIdentity.isReusableTranscript(state, signature, sttVersion, model, JevPrompt.VERSION)) {
-            Timber.tag(TAG).d("Episode %s is already analysed with this transcript, model and prompt", episodeUuid)
-            return TranscriptAnalysis.Analysed
-        }
-        if (AnalysisIdentity.isTranscriptAnalysis(state)) {
-            Timber.tag(TAG).d(
-                "Invalidating stale transcript analysis for %s (stt=%s, legacy=%s)",
-                episodeUuid,
-                state?.sttVersion,
-                state?.sttVersion == ON_DEVICE_TRANSCRIPT_VERSION,
-            )
-            withContext(NonCancellable) {
-                adSegmentDao.replaceAll(episodeUuid, emptyList())
-                adCueScoreDao.replaceAll(episodeUuid, emptyList())
-                transcriptStore.delete(episodeUuid)
-                adAnalysisDao.delete(episodeUuid)
-            }
-        }
-
-        val cues = if (existing != null) {
-            existing.toAnalysisCues()
-        } else {
-            if (source == null || !transcriber.isAvailable()) return TranscriptAnalysis.NotAnalysed
-            val result = transcriber.transcribe(
-                TranscriptRequest(
-                    episodeUuid = episodeUuid,
-                    source = source,
-                    durationMs = episode.durationMs.toLong(),
-                    podcastLanguage = podcast?.podcastLanguage,
-                ),
-                onModelProgress,
-            )
-            when (result) {
-                is TranscriptResult.Success -> result.cues
-
-                is TranscriptResult.Unavailable -> {
-                    LogBuffer.i(TAG, "On-device transcription unavailable for $episodeUuid: ${result.reason}")
-                    return TranscriptAnalysis.NotAnalysed
-                }
-
-                is TranscriptResult.Failed -> {
-                    LogBuffer.e(TAG, "Transcription failed for $episodeUuid: ${result.message}")
-                    noteFailure(episodeUuid)
-                    return TranscriptAnalysis.NotAnalysed
-                }
-            }
-        }
+    private suspend fun runAnalysis(episodeUuid: String): DetectionOutcome {
+        if (queue.detectionItem(episodeUuid) == null) return DetectionOutcome.NotQueued
+        val asr = queue.asrItem(episodeUuid)
+        val cues = transcriptStore.readCues(episodeUuid)
+        val asrComplete = asr?.isComplete != false
         if (cues.isEmpty()) {
-            LogBuffer.i(TAG, "No transcript cues to score for $episodeUuid")
-            noteFailure(episodeUuid)
-            return TranscriptAnalysis.NotAnalysed
-        }
-
-        if (existing == null) {
-            if (forceOnDevice) {
-                // Only our own transcript may remain, otherwise the tab would keep showing the
-                // published one the analysis was told to ignore.
-                transcriptStore.replaceRemoteAndSave(episodeUuid, cues)
-            } else {
-                transcriptStore.save(episodeUuid, cues)
+            if (asrComplete) {
+                queue.recordDetectionProgress(episodeUuid, 0L, isComplete = true)
+                return DetectionOutcome.Completed
             }
-            // The transcript stack keeps the text it last read for the episode, so without this the
-            // tab would show the published transcript this analysis just replaced, along with no
-            // per-sentence scores because its lines do not match the ones stored here.
-            transcriptManager.invalidateTranscript(episodeUuid)
-            LogBuffer.i(
-                TAG,
-                "Cached transcript for $episodeUuid: ${cues.size} cues, ${System.currentTimeMillis() - startedAt}ms",
-            )
-        } else {
-            LogBuffer.i(TAG, "Using the existing transcript for $episodeUuid: ${cues.size} cues from ${existing.url}")
+            return waiting(episodeUuid)
         }
 
-        val podcastTitle = podcast?.title.orEmpty()
-        val classification = classifier.classify(cues, podcastTitle.ifBlank { UNKNOWN_SHOW }, model)
-        val scored = when (classification) {
+        val episode = episodeManager.findByUuid(episodeUuid) ?: run {
+            queue.forget(episodeUuid)
+            return DetectionOutcome.NotQueued
+        }
+        val podcast = podcastManager.findPodcastByUuid(episode.podcastUuid)
+        resetIfStale(episodeUuid, episode)
+
+        val stableSize = if (asrComplete) cues.size else (cues.size - STABILITY_MARGIN_CUES).coerceAtLeast(0)
+        if (stableSize == 0) return waiting(episodeUuid)
+        val stable = cues.subList(0, stableSize)
+        val existingScores = adCueScoreDao.findScoresForEpisode(episodeUuid)
+            .filter { it.cueIndex in stable.indices }
+            .associate { it.cueIndex to it.probability.toDouble() }
+
+        // A hole can appear when an earlier pass stored a score but the window request failed
+        // later; resuming at the first hole heals it instead of leaving one cue unscored forever.
+        val startIndex = stable.indices.firstOrNull { index -> existingScores[index] == null } ?: stableSize
+        if (startIndex >= stableSize) {
+            if (asrComplete) {
+                markComplete(episodeUuid, stable)
+                return DetectionOutcome.Completed
+            }
+            return waiting(episodeUuid)
+        }
+        val newCues = stableSize - startIndex
+        if (!asrComplete && newCues < MIN_BATCH_CUES) return waiting(episodeUuid)
+
+        val windowStart = (startIndex - CONTEXT_CUES).coerceAtLeast(0)
+        val window = stable.subList(windowStart, stableSize)
+        val model = jevAdModelStore.selectedJevAdModel()
+        val podcastTitle = podcast?.title.orEmpty().ifBlank { UNKNOWN_SHOW }
+
+        val scored = when (val classification = classifier.classify(window, podcastTitle, model)) {
             is JevClassification.Unavailable -> {
                 LogBuffer.i(TAG, "jev classification unavailable for $episodeUuid: ${classification.reason}")
-                noteFailure(episodeUuid)
-                return TranscriptAnalysis.NotAnalysed
+                queue.failDetection(episodeUuid, classification.reason, UNAVAILABLE_RETRY_MS)
+                return DetectionOutcome.Retry
             }
 
             is JevClassification.Failed -> {
                 LogBuffer.e(TAG, "jev classification failed for $episodeUuid: ${classification.reason}")
-                noteFailure(episodeUuid)
-                return TranscriptAnalysis.NotAnalysed
+                queue.failDetection(episodeUuid, classification.reason, NETWORK_RETRY_MS)
+                return DetectionOutcome.Retry
             }
 
             is JevClassification.Scored -> classification
         }
 
-        val totalMs = cues.maxOf { it.endMs }
+        val pAd = MutableList<Double?>(stableSize) { index -> existingScores[index] }
+        scored.pAd.forEachIndexed { index, probability ->
+            val cueIndex = windowStart + index
+            if (cueIndex in pAd.indices) pAd[cueIndex] = probability
+        }
+
         val now = System.currentTimeMillis()
-        val stored = buildPods(cues, scored.pAd).mapIndexedNotNull { index, pod ->
-            val start = pod.startMs.coerceIn(0, totalMs)
-            val end = pod.endMs.coerceIn(0, totalMs)
+        val totalMs = stable.last().endMs
+        val stored = buildPods(stable, pAd).mapIndexedNotNull { index, pod ->
+            val start = pod.startMs.coerceIn(0L, totalMs)
+            val end = pod.endMs.coerceIn(0L, totalMs)
             if (end - start < MIN_POD_MS) {
                 null
             } else {
@@ -296,168 +161,114 @@ class TranscriptAdAnalyzer @Inject constructor(
                 )
             }
         }
-        val modelVersion = AnalysisIdentity.transcriptModelVersion(scored.responseModel, model, JevPrompt.VERSION)
-        val costUsd = scored.usageCostUsd
-
-        val cueScores = cues.mapIndexed { index, cue ->
+        val cueScores = stable.mapIndexedNotNull { index, cue ->
+            val probability = pAd[index] ?: return@mapIndexedNotNull null
             DbAdCueScore(
                 episodeUuid = episodeUuid,
                 cueIndex = index,
                 startTimeMs = cue.startMs,
                 endTimeMs = cue.endMs,
-                probability = (scored.pAd.getOrNull(index) ?: 0.0).toFloat().coerceIn(0f, 1f),
+                probability = probability.toFloat().coerceIn(0f, 1f),
             )
         }
+        val complete = asrComplete && pAd.all { it != null }
+        val signature = episode.audioSignature()
+        val modelVersion = AnalysisIdentity.transcriptModelVersion(scored.responseModel, model, JevPrompt.VERSION)
 
+        var podCount = 0
         withContext(NonCancellable) {
-            val existing = adSegmentDao.findSegmentsForEpisode(episodeUuid)
-            val deselected = existing.filter { it.deselected }.associateBy { it.startTimeMs / 1000 }
+            val previous = adSegmentDao.findSegmentsForEpisode(episodeUuid)
+            val deselected = previous.filter { it.deselected }.associateBy { it.startTimeMs / 1000 }
             val merged = stored.map { segment ->
                 val previousChoice = deselected[segment.startTimeMs / 1000]
                 if (previousChoice != null) segment.copy(deselected = true) else segment
             }
+            podCount = merged.size
             adSegmentDao.replaceAll(episodeUuid, merged)
             adCueScoreDao.replaceAll(episodeUuid, cueScores)
             adAnalysisDao.upsert(
                 AdAnalysisState(
                     episodeUuid = episodeUuid,
                     analyzedUntilMs = totalMs,
-                    isComplete = true,
+                    isComplete = complete,
                     updatedAt = System.currentTimeMillis(),
-                    audioSignature = signature,
+                    audioSignature = signature.orEmpty(),
                     modelVersion = modelVersion,
-                    sttVersion = sttVersion,
+                    sttVersion = transcriber.version,
                 ),
             )
-            LogBuffer.i(
-                TAG,
-                "Transcript ad analysis for $episodeUuid: ${cues.size} cues, ${merged.size} pods, " +
-                    "costUsd=$costUsd, ${System.currentTimeMillis() - startedAt}ms",
-            )
+            queue.recordDetectionProgress(episodeUuid, totalMs, isComplete = complete)
         }
-        failedAttempts.remove(episodeUuid)
-        return TranscriptAnalysis.Analysed
+        LogBuffer.i(
+            TAG,
+            "Transcript ad detection for $episodeUuid: cues $windowStart..$stableSize scored, " +
+                "$podCount pods, complete=$complete, costUsd=${scored.usageCostUsd}",
+        )
+        return if (complete) DetectionOutcome.Completed else DetectionOutcome.Progressed
     }
 
-    private fun noteFailure(episodeUuid: String) {
-        failedAttempts[episodeUuid] = System.currentTimeMillis()
+    private suspend fun markComplete(episodeUuid: String, cues: List<TranscriptCue>) {
+        val state = adAnalysisDao.findState(episodeUuid)
+        val episodes = episodeManager.findByUuid(episodeUuid)
+        adAnalysisDao.upsert(
+            AdAnalysisState(
+                episodeUuid = episodeUuid,
+                analyzedUntilMs = cues.lastOrNull()?.endMs ?: 0L,
+                isComplete = true,
+                updatedAt = System.currentTimeMillis(),
+                audioSignature = episodes?.audioSignature().orEmpty(),
+                modelVersion = state?.modelVersion.orEmpty(),
+                sttVersion = transcriber.version,
+            ),
+        )
+        queue.recordDetectionProgress(episodeUuid, cues.lastOrNull()?.endMs ?: 0L, isComplete = true)
+    }
+
+    /** Parks the episode until the recognizer writes more cues; not a failure, so attempts stay. */
+    private suspend fun waiting(episodeUuid: String): DetectionOutcome {
+        queue.deferDetection(episodeUuid, WAITING_RETRY_MS)
+        return DetectionOutcome.Waiting
     }
 
     /**
-     * The transcript the app can already show, if there is one. Availability is checked first
-     * because loading an episode that has no transcript waits for show notes to be processed.
-     * When the transcript stack has not recorded the generated transcript yet, it is fetched from
-     * the URL the show notes advertise so analysis does not wait for a transcript screen.
+     * A transcript made from a published VTT or by another recognizer is not this analysis: its
+     * cues may have different timing and its scores may point at the wrong sentences. Clearing the
+     * derived rows restarts detection over the recognized transcript.
      */
-    private suspend fun loadExistingTranscript(
-        episodeUuid: String,
-        ignorePublished: Boolean = false,
-    ): Transcript.Text? {
-        if (ignorePublished) {
-            LogBuffer.i(TAG, "Ignoring published transcripts for $episodeUuid: on-device transcription is forced")
-            return null
-        }
-        if (transcriptManager.observeIsTranscriptAvailable(episodeUuid).first()) {
-            val loaded = transcriptManager.loadTranscript(episodeUuid) as? Transcript.Text
-            if (!loaded?.entries.isNullOrEmpty()) return loaded
-        }
-        return generatedTranscriptLoader.load(episodeUuid)?.takeIf { it.entries.isNotEmpty() }
+    private suspend fun resetIfStale(episodeUuid: String, episode: BaseEpisode) {
+        val state = queue.analysisState(episodeUuid) ?: return
+        if (state.sttVersion == transcriber.version) return
+        val signature = episode.audioSignature()
+        val audioChanged = signature != null && state.audioSignature.isNotBlank() && state.audioSignature != signature
+        LogBuffer.i(
+            TAG,
+            "Discarding ad analysis for $episodeUuid (stt=${state.sttVersion.ifBlank { "audio" }}, audioChanged=$audioChanged)",
+        )
+        queue.resetDetection(episodeUuid)
     }
 
-    /**
-     * Where to transcribe from, preferring the downloaded file.
-     *
-     * The download worker asks for the analysis as soon as the file is written, before the episode
-     * row records its path, so the recorded path is often still empty at this point. The download
-     * location is deterministic from the episode uuid, and a downloaded episode whose file is not
-     * resolvable yet is given a bounded wait for the row to catch up. An episode that is not
-     * downloaded at all is transcribed straight from its stream; an HLS stream travels with its
-     * flag so the recognizer can refuse it instead of decoding a playlist.
-     */
-    private suspend fun resolveSource(episode: BaseEpisode): TranscriptSource? {
-        resolveAudioFile(episode)?.let { return TranscriptSource.Downloaded(it) }
-        if (episode.isDownloaded) {
-            awaitAudioFile(episode.uuid)?.let { return TranscriptSource.Downloaded(it) }
-        }
-        return episode.streamUrl
-            ?.takeIf { it.isNotBlank() }
-            ?.let { TranscriptSource.Stream(it, isHls = episode.isStreamUrlHls) }
+    private fun BaseEpisode.audioSignature(): String? {
+        val file = downloadedFilePath?.let(::File)?.takeIf { it.isFile }
+        if (file != null) return AnalysisIdentity.audioSignature(file)
+        return streamUrl?.takeIf { it.isNotBlank() }?.let { "stream:${it.hashCode()}" }
     }
 
-    private fun resolveAudioFile(episode: BaseEpisode): File? {
-        val recorded = episode.downloadedFilePath?.let(::File)?.takeIf { it.isFile }
-        if (recorded != null) return recorded
-        return fileStorage.getOrCreatePodcastEpisodeFile(episode)?.takeIf { it.isFile && it.length() > 0L }
-    }
+    private companion object {
+        const val TAG = "TranscriptAdAnalyzer"
+        const val MIN_POD_MS = 8_000L
+        const val UNKNOWN_SHOW = "Unknown podcast"
 
-    /**
-     * Waits for the download row to point at the file before giving up, so a download that has just
-     * finished is never skipped. The wait is bounded so a cancelled or failed download does not
-     * hold the analysis.
-     */
-    private suspend fun awaitAudioFile(episodeUuid: String): File? = withTimeoutOrNull(WAIT_FOR_DOWNLOAD_MS) {
-        episodeManager.findEpisodeByUuidFlow(episodeUuid)
-            .mapNotNull { resolveAudioFile(it) }
-            .firstOrNull()
-    }
+        /** New lines the recognizer may merge into the previous cue before they are scored. */
+        const val STABILITY_MARGIN_CUES = 2
 
-    companion object {
-        private const val TAG = "TranscriptAdAnalyzer"
-        private const val MIN_POD_MS = 8_000L
-        private const val UNKNOWN_SHOW = "Unknown podcast"
+        /** Cues re-read before the first unscored one so a pod edge is not judged out of context. */
+        const val CONTEXT_CUES = 4
 
-        /** How long the analysis waits for a download to be recorded before giving up. */
-        private const val WAIT_FOR_DOWNLOAD_MS = 30_000L
+        /** Smallest useful batch while recognition is still running; a request per line costs more. */
+        const val MIN_BATCH_CUES = 10
 
-        /** How long a failed attempt blocks a retry, so a stream is not fetched again immediately. */
-        private const val RETRY_AFTER_FAILURE_MS = 10 * 60_000L
-    }
-}
-
-/** The transcript's timed text entries as classifier cues, in transcript order. */
-internal fun Transcript.Text.toAnalysisCues(): List<TranscriptCue> = entries.mapNotNull { entry ->
-    val text = entry as? TranscriptEntry.Text ?: return@mapNotNull null
-    val value = text.value.trim()
-    if (value.isEmpty() || text.startTimeMs < 0) return@mapNotNull null
-    TranscriptCue(
-        startMs = text.startTimeMs,
-        endMs = text.endTimeMs.coerceAtLeast(text.startTimeMs),
-        text = value,
-    )
-}
-
-/**
- * Identifies what produced the cues. A transcript generated on device is tied to the recognizer,
- * a transcript the app fetched is tied to its URL, so either changing starts a fresh analysis.
- */
-internal fun Transcript.Text.analysisVersion(recognizerVersion: String): String = if (url.startsWith(LocalTranscriptStore.SCHEME)) recognizerVersion else transcriptAnalysisVersion(url)
-
-/** The analysis identity of a transcript the app fetched by URL. */
-internal fun transcriptAnalysisVersion(url: String): String = "transcript:$url"
-
-/**
- * What one [TranscriptAdAnalyzer.run] did.
- *
- * A boolean was enough while the analyzer either claimed an episode or did not. It is not enough
- * now that a run can stop because the speech model needs an unmetered network: a worker has to
- * retry that case, while a plain "did not claim it" must not be retried at all.
- */
-sealed interface TranscriptAnalysis {
-    /** Whether the transcript analyzer owns the episode, so the audio analyzer must not run. */
-    val handled: Boolean
-
-    /** Either a fresh analysis or a reusable one; the audio analyzer stays out of the way. */
-    data object Analysed : TranscriptAnalysis {
-        override val handled = true
-    }
-
-    /** Not claimed: no audio, no transcript, an unsupported language, or a failure already noted. */
-    data object NotAnalysed : TranscriptAnalysis {
-        override val handled = false
-    }
-
-    /** The model must be fetched and the network is metered; ask again on Wi-Fi. */
-    data object NeedsUnmeteredNetwork : TranscriptAnalysis {
-        override val handled = false
+        const val NETWORK_RETRY_MS = 10 * 60_000L
+        const val UNAVAILABLE_RETRY_MS = 60 * 60_000L
+        const val WAITING_RETRY_MS = 5 * 60_000L
     }
 }
