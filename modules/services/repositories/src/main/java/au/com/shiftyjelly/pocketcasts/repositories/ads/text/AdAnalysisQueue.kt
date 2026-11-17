@@ -315,7 +315,10 @@ class AdAnalysisQueue @Inject constructor(
                     .setRequiredNetworkType(NetworkType.CONNECTED)
                     .build(),
             )
-            .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, DETECTION_BACKOFF_MINUTES, TimeUnit.MINUTES)
+            // Linear, so a failing detection cannot grow its own retry gap without bound: the row's
+            // `next_attempt_at` is the real schedule, and this is only when the worker is allowed to
+            // look again. It still waits for the network constraint, which is what gates a paid call.
+            .setBackoffCriteria(BackoffPolicy.LINEAR, DETECTION_BACKOFF_MINUTES, TimeUnit.MINUTES)
             .build()
         WorkManager.getInstance(context).enqueueUniqueWork(
             AdDetectionWorker.UNIQUE_NAME,
@@ -379,7 +382,14 @@ class AdAnalysisQueue @Inject constructor(
         const val MAX_QUEUED_PER_LAUNCH = 3
         const val DETECTION_WAKE_DELAY_MS = 60_000L
         const val DEFERRED_RETRY_MS = 30 * 60_000L
-        const val ASR_BACKOFF_MINUTES = 15L
+
+        /**
+         * How long the worker chain waits after a retry. Not the retry schedule for an episode: that
+         * is `episode_asr_queue.next_attempt_at`, which the worker loops over. This only bounds how
+         * long an episode appended behind a retrying head has to wait, so it is minutes, not tens of
+         * minutes.
+         */
+        const val ASR_BACKOFF_MINUTES = 1L
         const val DETECTION_BACKOFF_MINUTES = 10L
 
         /** Up Next sweep cadence; long, because every other trigger already covers a played episode. */
