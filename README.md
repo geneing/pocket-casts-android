@@ -27,12 +27,26 @@ If you're just looking to install Pocket Casts Android, you can find it on [Goog
 
 ## Build and Test
 
-To build, install, and test the project from the command line:
+This fork is built from a **Windows** host against a phone over USB, and the phone build is always
+`debugProd` (production servers, `.debug` application id). From PowerShell in the repository root:
 
-    $ ./gradlew :app:assembleDebugProd          # assemble the debug .apk
-    $ ./gradlew :app:installDebugProd           # install the debug .apk to a connected device
-    $ ./gradlew :app:testDebugUnitTest          # assemble, install and run unit tests
-    $ ./gradlew :app:connectedDebugAndroidTest  # assemble, install and run Android tests
+```powershell
+# The project has no local.properties, so Gradle needs the Windows SDK path.
+$env:ANDROID_HOME = "$env:LOCALAPPDATA\Android\Sdk"
+
+# Build, install with adb install -r, and push the on-device speech models.
+.\dev\adaware\next\moonshine\install-app.ps1
+
+.\gradlew.bat :app:assembleDebugProd          # assemble the debug .apk
+.\gradlew.bat :app:installDebugProd           # install it on a connected device
+.\gradlew.bat :app:testDebugUnitTest          # run unit tests
+.\gradlew.bat :app:connectedDebugProdAndroidTest   # assemble, install and run Android tests
+.\gradlew.bat spotlessApply                   # format before committing
+```
+
+Gradle never runs inside WSL; WSL is only for the POSIX scripts under `dev/`. The full set of
+commands, the instrumentation-test route that keeps app data, and the known build traps are in
+[AGENTS.md](AGENTS.md#building-and-running-on-this-machine).
 
 ## Directory structure
     .

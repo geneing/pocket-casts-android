@@ -1,5 +1,9 @@
 # Installing the speech models on a private build
 
+The full build, test and install commands for this checkout are in
+[AGENTS.md](../../../../AGENTS.md#building-and-running-on-this-machine); this page is about the models
+the installer pushes.
+
 The app is private-use for now: it is built and installed from this laptop, and the Moonshine
 models are copied onto the phone as part of the install. Bundling them in the APK was rejected
 (74.5 MiB / 30.8 MiB in the base APK for a gated feature, and Spanish would still need the download
