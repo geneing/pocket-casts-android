@@ -1,0 +1,3624 @@
+{
+ "duration": 3249.53,
+ "language": "en",
+ "segments": [
+  {
+   "start": 3.41,
+   "end": 8.85,
+   "text": "For exclusive interviews, bonus episodes, ad-free listening, early access to series,"
+  },
+  {
+   "start": 8.85,
+   "end": 13.01,
+   "text": "first look at live show tickets, a weekly newsletter and discounted books."
+  },
+  {
+   "start": 13.01,
+   "end": 17.17,
+   "text": "Join the Declassified Club at therestisclassified.com."
+  },
+  {
+   "start": 17.17,
+   "end": 31.78,
+   "text": "Did the CEO of one of the world's most valuable companies just get honey-trapped by a Chinese spy?"
+  },
+  {
+   "start": 31.78,
+   "end": 35.54,
+   "text": "And why did the White House know for a year and do nothing?"
+  },
+  {
+   "start": 35.54,
+   "end": 38.34,
+   "text": "Well, welcome to the Rest is Classified. I'm Gordon Carara."
+  },
+  {
+   "start": 38.34,
+   "end": 39.62,
+   "text": "And I'm David McCloskey."
+  },
+  {
+   "start": 39.62,
+   "end": 44.26,
+   "text": "And David, this time we're looking at what happens when the world's biggest spy agency"
+  },
+  {
+   "start": 44.26,
+   "end": 50.26,
+   "text": "targets the world's biggest tech CEO. In this case, Jensen Wong, head of Nvidia. Now, it's a"
+  },
+  {
+   "start": 50.26,
+   "end": 56.58,
+   "text": "story about an apparent honey trap and influence operation caught by US intelligence, a secret"
+  },
+  {
+   "start": 56.58,
+   "end": 63.54,
+   "text": "memo drafted under the Secretary of State and a president who was warned and chose to look the other way."
+  },
+  {
+   "start": 63.54,
+   "end": 68.26,
+   "text": "Although, as we'll get to later, I think whether or not this was a honey trap is a very"
+  },
+  {
+   "start": 68.26,
+   "end": 73.62,
+   "text": "interesting question, it's one we'll be looking into. We'll also be explaining why Nvidia's chips"
+  },
+  {
+   "start": 73.62,
+   "end": 78.98,
+   "text": "are one of the most important intelligence targets on the planet and why this one operation"
+  },
+  {
+   "start": 78.98,
+   "end": 84.98,
+   "text": "is really just the tip of a much bigger iceberg, a sprawling Chinese effort to get hold of American"
+  },
+  {
+   "start": 84.98,
+   "end": 91.14,
+   "text": "AI chips and influence policy through shell companies, empty offices, and data centers"
+  },
+  {
+   "start": 91.14,
+   "end": 96.34,
+   "text": "on Malaysian palm oil plantations. But first, a word from our sponsor, HP."
+  },
+  {
+   "start": 122.9,
+   "end": 124.62,
+   "text": "as tight as they think it is."
+  },
+  {
+   "start": 124.62,
+   "end": 128.94,
+   "text": "Which is why HP approaches technology not as a collection of gadgets but as an integrated"
+  },
+  {
+   "start": 128.94,
+   "end": 129.94,
+   "text": "system."
+  },
+  {
+   "start": 129.94,
+   "end": 133.88,
+   "text": "And crucially, that protection is built in that hardware level."
+  },
+  {
+   "start": 133.88,
+   "end": 139.52,
+   "text": "It runs quietly in the background, blocking threats without requiring constant specialist"
+  },
+  {
+   "start": 139.52,
+   "end": 140.52,
+   "text": "oversight."
+  },
+  {
+   "start": 140.52,
+   "end": 145.42,
+   "text": "With a team of business advisors, HP helps businesses of all sizes find technology that"
+  },
+  {
+   "start": 145.42,
+   "end": 147.74,
+   "text": "fits their needs and budget."
+  },
+  {
+   "start": 147.74,
+   "end": 154.86,
+   "text": "To see how HP helps businesses work securely and productively, visit hp.com forward slash"
+  },
+  {
+   "start": 154.86,
+   "end": 156.38,
+   "text": "classified."
+  },
+  {
+   "start": 156.38,
+   "end": 170.9,
+   "text": "Trick listeners also benefit from 10% off HP business technology with the code TRICK10."
+  },
+  {
+   "start": 170.9,
+   "end": 175.7,
+   "text": "In intelligence work, your most valuable asset is timing, knowing what's coming before anyone"
+  },
+  {
+   "start": 175.7,
+   "end": 176.7,
+   "text": "else does."
+  },
+  {
+   "start": 176.7,
+   "end": 182.42,
+   "text": "The biggest mistake isn't taking a calculated risk, it's operating on outdated information."
+  },
+  {
+   "start": 182.42,
+   "end": 187.78,
+   "text": "AI and capital markets are dominating our headlines and rewriting the rules of business"
+  },
+  {
+   "start": 187.78,
+   "end": 188.78,
+   "text": "as we speak."
+  },
+  {
+   "start": 188.78,
+   "end": 193.82,
+   "text": "That's why Solana Breakpoint is bringing together investors, builders and policymakers"
+  },
+  {
+   "start": 193.82,
+   "end": 194.82,
+   "text": "in one room."
+  },
+  {
+   "start": 194.82,
+   "end": 200.26,
+   "text": "Think of it like an unfiltered briefing, mapping out the exciting opportunities as well as"
+  },
+  {
+   "start": 200.26,
+   "end": 201.78,
+   "text": "the potential risks."
+  },
+  {
+   "start": 201.78,
+   "end": 207.38,
+   "text": "From November 15th to 17th in Olympia London, you have the chance to hear from global experts"
+  },
+  {
+   "start": 207.38,
+   "end": 209.94,
+   "text": "at the Centre of Finance, Tech and AI."
+  },
+  {
+   "start": 209.94,
+   "end": 215.22,
+   "text": "That includes key speakers from the London Stock Exchange, Revolute, JP Morgan and X,"
+  },
+  {
+   "start": 215.22,
+   "end": 219.54,
+   "text": "plus I'll be there asking the hard questions and moderating the sessions."
+  },
+  {
+   "start": 219.54,
+   "end": 222.18,
+   "text": "To sign up, go to salana.com."
+  },
+  {
+   "start": 222.18,
+   "end": 228.78,
+   "text": "Use code BP26-goalhanger for 25% off."
+  },
+  {
+   "start": 228.78,
+   "end": 231.46,
+   "text": "Hi, this is Gary Linneke from Goalhangers."
+  },
+  {
+   "start": 231.46,
+   "end": 235.94,
+   "text": "The Rest is Football. This episode is brought to you by WISE. It's only when you start"
+  },
+  {
+   "start": 235.94,
+   "end": 240.94,
+   "text": "moving money between currencies that you really think about the exchange rate, the fee, and"
+  },
+  {
+   "start": 240.94,
+   "end": 245.5,
+   "text": "what might be hidden away in the small print. Whether you're living abroad, paying someone"
+  },
+  {
+   "start": 245.5,
+   "end": 250.78,
+   "text": "overseas, or just trying to manage your money across borders, you want a fair exchange rate"
+  },
+  {
+   "start": 250.78,
+   "end": 256.1,
+   "text": "and easy transfer and no surprises along the way. WISE keeps things simple."
+  },
+  {
+   "start": 256.1,
+   "end": 260.78,
+   "text": "WISE is a smart way to move the currencies you need around the globe. It works in more"
+  },
+  {
+   "start": 260.78,
+   "end": 267.26,
+   "text": "than 160 countries and with over 40 currencies, most transfers arrive instantly."
+  },
+  {
+   "start": 267.26,
+   "end": 272.54,
+   "text": "WISE uses the mid-market exchange rate, like the one you see on Google, with no markups"
+  },
+  {
+   "start": 272.54,
+   "end": 277.82,
+   "text": "or hidden fees. So when money needs to move, you can see the rate, know the fee and get"
+  },
+  {
+   "start": 277.82,
+   "end": 278.82,
+   "text": "on with it."
+  },
+  {
+   "start": 278.82,
+   "end": 284.74,
+   "text": "Join millions saving billions on hidden fees by downloading the WISE app today. Be smart,"
+  },
+  {
+   "start": 284.74,
+   "end": 288.84,
+   "text": "get wise, teas and teas apply."
+  },
+  {
+   "start": 288.84,
+   "end": 294.28,
+   "text": "So David, let's set the scene and maybe begin our story a few years back in the capital"
+  },
+  {
+   "start": 294.28,
+   "end": 295.28,
+   "text": "of Taiwan."
+  },
+  {
+   "start": 295.28,
+   "end": 297.72,
+   "text": "Well, it's June 2024, Gordon."
+  },
+  {
+   "start": 297.72,
+   "end": 300.68,
+   "text": "It's a hot night in Taipei."
+  },
+  {
+   "start": 300.68,
+   "end": 302.12,
+   "text": "It is the night of Computex."
+  },
+  {
+   "start": 302.12,
+   "end": 305.04,
+   "text": "It's a big technology trade show I have never been."
+  },
+  {
+   "start": 305.04,
+   "end": 306.36,
+   "text": "It is just wrapped."
+  },
+  {
+   "start": 306.36,
+   "end": 312.92,
+   "text": "Jensen Wong, who's the CEO of NVIDIA, is there in his trademark black leather jacket."
+  },
+  {
+   "start": 312.92,
+   "end": 316.64,
+   "text": "He comes into a bar that's got views over the city."
+  },
+  {
+   "start": 316.64,
+   "end": 319.68,
+   "text": "He's with a few other NVIDIA executives."
+  },
+  {
+   "start": 319.68,
+   "end": 324.8,
+   "text": "There's a group of kind of AI company bosses and executives there."
+  },
+  {
+   "start": 324.8,
+   "end": 331.88,
+   "text": "He drinks a whiskey, so shot, toast the AI boom, and sitting next to him is a woman"
+  },
+  {
+   "start": 331.88,
+   "end": 333.6,
+   "text": "named Alice Wong."
+  },
+  {
+   "start": 333.6,
+   "end": 334.9,
+   "text": "No relation."
+  },
+  {
+   "start": 334.9,
+   "end": 340.9,
+   "text": "She is an executive at a Singapore-based data center company called Megaspeed, which"
+  },
+  {
+   "start": 340.9,
+   "end": 344.34,
+   "text": "almost nobody in the industry has heard of at this point."
+  },
+  {
+   "start": 344.34,
+   "end": 352.06,
+   "text": "But Megaspeed is about to buy roughly $2 billion of Nvidia's most advanced AI technology at"
+  },
+  {
+   "start": 352.06,
+   "end": 353.06,
+   "text": "that point."
+  },
+  {
+   "start": 353.06,
+   "end": 356.98,
+   "text": "One of the executives who was at the bar that night will later tell The New York Times"
+  },
+  {
+   "start": 356.98,
+   "end": 363.39,
+   "text": "that just after midnight, Alice Wong had said to the group, I bet you guys that I can get"
+  },
+  {
+   "start": 363.39,
+   "end": 364.87,
+   "text": "Jensen here."
+  },
+  {
+   "start": 364.87,
+   "end": 369.07,
+   "text": "And then she messages Jensen, and then Jensen immediately shows up."
+  },
+  {
+   "start": 369.07,
+   "end": 376.51,
+   "text": "And this seemingly innocuous scene in a Taipei bar is actually a really important set piece"
+  },
+  {
+   "start": 376.51,
+   "end": 377.91,
+   "text": "for the story to come."
+  },
+  {
+   "start": 377.91,
+   "end": 381.95,
+   "text": "That's right, because according particularly to the New York Times reporting, which has"
+  },
+  {
+   "start": 381.95,
+   "end": 388.75,
+   "text": "come out in the last week or so, US intelligence agencies have concluded that Alice Wang was"
+  },
+  {
+   "start": 388.75,
+   "end": 395.31,
+   "text": "a Chinese intelligence asset working for the Ministry of State Security, the MSS, and she"
+  },
+  {
+   "start": 395.31,
+   "end": 402.75,
+   "text": "was funneling information to Beijing and had developed this relationship, which it appears"
+  },
+  {
+   "start": 402.75,
+   "end": 409.71,
+   "text": "was a romantic relationship with Jensen Wang. I think this is why it's such a fascinating"
+  },
+  {
+   "start": 409.71,
+   "end": 415.27,
+   "text": "moment because it gets to the heart of what modern espionage looks like and the extent"
+  },
+  {
+   "start": 415.27,
+   "end": 419.35,
+   "text": "to which tech companies are right at the heart of it."
+  },
+  {
+   "start": 419.35,
+   "end": 423.79,
+   "text": "On the front line, we did that story about open AI being splied on by the Saudis a few"
+  },
+  {
+   "start": 423.79,
+   "end": 428.75,
+   "text": "weeks ago, but this in many ways is even more significant because it gets to the heart of"
+  },
+  {
+   "start": 428.75,
+   "end": 431.07,
+   "text": "national security and government policy."
+  },
+  {
+   "start": 431.07,
+   "end": 436.35,
+   "text": "So David, let's set up Jensen Wang and why Chinese intelligence would be so interested"
+  },
+  {
+   "start": 436.35,
+   "end": 437.35,
+   "text": "in him."
+  },
+  {
+   "start": 437.35,
+   "end": 442.75,
+   "text": "Yeah, so Jensen born in Taipei in 1963, he's sent to the US as a nine-year-old, ends up"
+  },
+  {
+   "start": 442.75,
+   "end": 448.15,
+   "text": "at a boarding school in Kentucky, then goes to Oregon State, where I believe he meets"
+  },
+  {
+   "start": 448.15,
+   "end": 450.31,
+   "text": "his future wife, Laurie."
+  },
+  {
+   "start": 450.31,
+   "end": 452.55,
+   "text": "Then he goes on to Stanford."
+  },
+  {
+   "start": 452.55,
+   "end": 459.75,
+   "text": "He co-found Nvidia in 1993 to make graphics chips for video games."
+  },
+  {
+   "start": 459.75,
+   "end": 467.46,
+   "text": "So for most of its existence, Nvidia is a kind of, you know, somewhat obscure supplier"
+  },
+  {
+   "start": 467.46,
+   "end": 471.5,
+   "text": "of processors and chips into the video gaming industry."
+  },
+  {
+   "start": 471.5,
+   "end": 476.42,
+   "text": "If that was all that they were useful for, then perhaps this wouldn't be such a big spy"
+  },
+  {
+   "start": 476.42,
+   "end": 477.42,
+   "text": "story."
+  },
+  {
+   "start": 477.42,
+   "end": 482.62,
+   "text": "the fact that it's discovered they're crucial and valuable and vital to AI, aren't they?"
+  },
+  {
+   "start": 482.62,
+   "end": 486.5,
+   "text": "I mean, Gordon, you're the resident science explainer, but we're going to give you the"
+  },
+  {
+   "start": 486.5,
+   "end": 490.78,
+   "text": "day off here. Essentially, NVIDIA's chips are designed to handle massive amounts of"
+  },
+  {
+   "start": 490.78,
+   "end": 498.78,
+   "text": "data all at once, and they become foundational to the AI boom. So, chat GPT launches in November"
+  },
+  {
+   "start": 498.78,
+   "end": 505.74,
+   "text": "of 2022. Suddenly, every company on Earth who's involved in AI is scrambling to buy NVIDIA"
+  },
+  {
+   "start": 505.74,
+   "end": 510.78,
+   "text": "chips. And the numbers are really crazy. I mean, the New York Times estimates that Nvidia's revenue"
+  },
+  {
+   "start": 510.78,
+   "end": 517.1,
+   "text": "growth basically had grown sevenfold over the past four years. It does roughly $115 billion in"
+  },
+  {
+   "start": 517.1,
+   "end": 523.5,
+   "text": "data center sales in 2024 alone. A year ago, it becomes the first company in history valued"
+  },
+  {
+   "start": 523.5,
+   "end": 530.94,
+   "text": "above $5 trillion. So this is kind of essentially why the MSS or frankly, probably any other foreign"
+  },
+  {
+   "start": 530.94,
+   "end": 536.22,
+   "text": "intelligence agency would be very interested in Jensen Wong is that he personally has become a"
+  },
+  {
+   "start": 536.22,
+   "end": 541.58,
+   "text": "kind of choke point in the AI race. And this is crucial because there's a technological kind of"
+  },
+  {
+   "start": 541.58,
+   "end": 546.54,
+   "text": "commercial piece to this through Nvidia. And then there's also, and we'll come to this,"
+  },
+  {
+   "start": 546.54,
+   "end": 550.62,
+   "text": "his political connections and influence over AI policymaking in Washington."
+  },
+  {
+   "start": 550.62,
+   "end": 556.94,
+   "text": "I mean, the US and China are in a race over AI. I mean, the US Treasury Secretary said a couple"
+  },
+  {
+   "start": 556.94,
+   "end": 559.58,
+   "text": "a couple of months ago, if China wins, there'll be no tomorrow."
+  },
+  {
+   "start": 559.78,
+   "end": 563.38,
+   "text": "You know, you hear this dramatic language slightly over the top,"
+  },
+  {
+   "start": 563.58,
+   "end": 568.14,
+   "text": "which suggests whoever wins this AI race will have such economic power,"
+  },
+  {
+   "start": 568.14,
+   "end": 571.38,
+   "text": "such influence over national security, such influence over the world,"
+  },
+  {
+   "start": 571.58,
+   "end": 573.46,
+   "text": "that it will be transformational."
+  },
+  {
+   "start": 573.66,
+   "end": 580.26,
+   "text": "And one of the crucial determining factors of who gets there first is who has the best"
+  },
+  {
+   "start": 580.46,
+   "end": 586.06,
+   "text": "chips and the US does have a major advantage in that its companies and the"
+  },
+  {
+   "start": 586.06,
+   "end": 591.5,
+   "text": "ones of its allies are better at designing and building advanced chips than the Chinese."
+  },
+  {
+   "start": 591.5,
+   "end": 598.66,
+   "text": "So NVIDIA becomes a major part of the US edge over China in this AI race. And NVIDIA has"
+  },
+  {
+   "start": 598.66,
+   "end": 602.98,
+   "text": "a kind of lock on it to some extent because it makes themselves four out of every five"
+  },
+  {
+   "start": 602.98,
+   "end": 607.34,
+   "text": "chips that go into the global data centers. And China, of course, is trying to catch up."
+  },
+  {
+   "start": 607.34,
+   "end": 610.62,
+   "text": "It's trying to build its own chips like it's through its company Huawei and others, but"
+  },
+  {
+   "start": 610.62,
+   "end": 615.9,
+   "text": "it's not easy, takes a lot of investment. And so in the meantime, one of the crucial"
+  },
+  {
+   "start": 615.9,
+   "end": 622.9,
+   "text": "ways of stopping China catching up for the US is to deny China access to the most advanced"
+  },
+  {
+   "start": 622.9,
+   "end": 624.98,
+   "text": "chips, including the Nvidia chip."
+  },
+  {
+   "start": 624.98,
+   "end": 631.3,
+   "text": "So this has become a huge battle and a huge question, which is how much do you restrict"
+  },
+  {
+   "start": 631.3,
+   "end": 636.58,
+   "text": "American companies from selling advanced chips to China?"
+  },
+  {
+   "start": 636.58,
+   "end": 638.02,
+   "text": "What do you let them get hold of?"
+  },
+  {
+   "start": 638.02,
+   "end": 642.54,
+   "text": "Because obviously the companies like Nvidia want to sell, they want to make money, but"
+  },
+  {
+   "start": 642.54,
+   "end": 649.02,
+   "text": "There's been kind of back and forth and lobbying over the extent of chip restrictions with"
+  },
+  {
+   "start": 649.02,
+   "end": 650.76,
+   "text": "Nvidia at the heart of it."
+  },
+  {
+   "start": 650.76,
+   "end": 656.02,
+   "text": "And of course, Jensen Huang has been at the heart of this, and it's drawn him very much,"
+  },
+  {
+   "start": 656.02,
+   "end": 659.7,
+   "text": "hasn't it, into politics and into being a political player."
+  },
+  {
+   "start": 659.7,
+   "end": 668.24,
+   "text": "I found it fascinating to find that, I mean, really prior to 2025, Jensen Huang very rarely"
+  },
+  {
+   "start": 668.24,
+   "end": 673.84,
+   "text": "visited Washington and Vidya spent very little money on lobbying kind of it stayed out of politics."
+  },
+  {
+   "start": 674.4,
+   "end": 680.56,
+   "text": "But that really shifts over the course of 2025 and 2026 and Jensen Wang as we'll discuss. I mean,"
+  },
+  {
+   "start": 680.56,
+   "end": 685.44,
+   "text": "he very much gets himself into Trump world, doesn't he? Which is a little bit, when you think about"
+  },
+  {
+   "start": 685.44,
+   "end": 692.0,
+   "text": "his background, it's a bit odd. He's kind of a, it doesn't seem like a natural fit inside, you know,"
+  },
+  {
+   "start": 692.0,
+   "end": 696.72,
+   "text": "the world of Donald J. Trump, but he's, he really has ingratiated himself with the president."
+  },
+  {
+   "start": 696.72,
+   "end": 704.8,
+   "text": "Yeah, it is interesting because he doesn't necessarily feel like an obvious fit, but I think he works out how to sell himself and his story, doesn't he?"
+  },
+  {
+   "start": 705.0,
+   "end": 714.64,
+   "text": "As an immigrant success story, as someone living the American dream, as someone delivering wealth and wealth creation, which kind of works with Trump."
+  },
+  {
+   "start": 714.64,
+   "end": 724.2,
+   "text": "And he seems to cultivate, you know, Donald Trump very effectively and goes to Mar-a-Lago, gets him with the White House and they build a close relationship, don't they?"
+  },
+  {
+   "start": 724.2,
+   "end": 733.0,
+   "text": "Absolutely right. I mean, Nvidia has pledged $500 billion in USAI infrastructure as part"
+  },
+  {
+   "start": 733.0,
+   "end": 738.6,
+   "text": "of Trump's domestic manufacturing drive. As you mentioned, Jensen Huang and his wife,"
+  },
+  {
+   "start": 738.6,
+   "end": 744.96,
+   "text": "Laurie have been guests at big donors dinners at Mar-a-Lago, kind of try to sell Trump personally"
+  },
+  {
+   "start": 744.96,
+   "end": 751.56,
+   "text": "on letting chip companies do business with Beijing. He seems to have really wowed the"
+  },
+  {
+   "start": 751.56,
+   "end": 757.72,
+   "text": "president. Trump seems personally kind of interested in Huang's kind of charisma. I think"
+  },
+  {
+   "start": 758.28,
+   "end": 763.32,
+   "text": "Steve Bannon at some point said Trump loves killers and Jensen Huang is a killer, right? So"
+  },
+  {
+   "start": 763.32,
+   "end": 769.64,
+   "text": "he's kind of this commercial animal that Trump really, really respects. I mean, Trump winds up"
+  },
+  {
+   "start": 769.64,
+   "end": 777.16,
+   "text": "inviting Jensen Huang on a state visit to the UK. October of last year, Trump publicly cites a phone"
+  },
+  {
+   "start": 777.16,
+   "end": 782.68,
+   "text": "call from Jensen Huang as a reason he stood down from sending ICE agents into San Francisco."
+  },
+  {
+   "start": 782.68,
+   "end": 788.36,
+   "text": "It gives you a sense of the personal influence that Jensen Huang has with the president."
+  },
+  {
+   "start": 788.36,
+   "end": 792.12,
+   "text": "Yeah, and he's clearly very good at building his brand. I mean, he's got his brand about"
+  },
+  {
+   "start": 792.12,
+   "end": 796.36,
+   "text": "his own leather jackets he'd seen everywhere. And he's also clearly very good at building"
+  },
+  {
+   "start": 796.36,
+   "end": 800.52,
+   "text": "personal relationships. I mean, he's been here to the UK a number of times. I mean,"
+  },
+  {
+   "start": 800.52,
+   "end": 805.8,
+   "text": "I was looking and he's met the king twice in the last year or so, including at Dumfries House for a"
+  },
+  {
+   "start": 805.8,
+   "end": 811.0,
+   "text": "kind of AI meeting back in September of this year. And there are moments at kind of conferences"
+  },
+  {
+   "start": 811.0,
+   "end": 815.56,
+   "text": "where Jensen is getting phone calls from Donald Trump while he's on stage at a conference. And"
+  },
+  {
+   "start": 815.56,
+   "end": 820.2,
+   "text": "he puts Donald Trump on speakerphone so everyone can hear Trump talking about him. And it's"
+  },
+  {
+   "start": 820.2,
+   "end": 824.76,
+   "text": "obviously a kind of performative bit of theatrics they probably planned. But it emphasizes the"
+  },
+  {
+   "start": 824.76,
+   "end": 829.56,
+   "text": "extent to which he's built relationships. And also, as you said, built relationships with money,"
+  },
+  {
+   "start": 829.56,
+   "end": 832.68,
+   "text": "as well as with his kind of personal brand and influence."
+  },
+  {
+   "start": 832.68,
+   "end": 838.68,
+   "text": "Yeah, I mean, because so Trump is an Nvidia investor, we should say he's invested in. And I think"
+  },
+  {
+   "start": 838.68,
+   "end": 843.24,
+   "text": "Jensen Huang has become a kind of investor in Trump world. I mean, Huang has donated"
+  },
+  {
+   "start": 843.96,
+   "end": 850.2,
+   "text": "20 million dollars to the White House ballroom renovation. Nvidia has spent 20 billion dollars"
+  },
+  {
+   "start": 850.2,
+   "end": 856.04,
+   "text": "investing in a startup that lives under the portfolio of 1789 capital, which is Donald"
+  },
+  {
+   "start": 856.04,
+   "end": 861.88,
+   "text": "Trump Jr.'s investment firm. So there's not only the sort of personal chemistry between the two guys,"
+  },
+  {
+   "start": 862.68,
+   "end": 866.8,
+   "text": "and respect, but there are financial connections"
+  },
+  {
+   "start": 866.8,
+   "end": 868.24,
+   "text": "that are below the surface"
+  },
+  {
+   "start": 868.24,
+   "end": 869.98,
+   "text": "or really not so far below the surface."
+  },
+  {
+   "start": 869.98,
+   "end": 872.88,
+   "text": "The size of NVIDIA means it matters for the US economy,"
+  },
+  {
+   "start": 872.88,
+   "end": 874.72,
+   "text": "which also matters to Donald Trump,"
+  },
+  {
+   "start": 874.72,
+   "end": 878.52,
+   "text": "because it's driving that growth in the US stock market"
+  },
+  {
+   "start": 878.52,
+   "end": 880.04,
+   "text": "along with other AI companies,"
+  },
+  {
+   "start": 880.04,
+   "end": 882.0,
+   "text": "which of course, we might come back to this,"
+  },
+  {
+   "start": 882.0,
+   "end": 886.72,
+   "text": "also is another reason why how the White House treats Jensen"
+  },
+  {
+   "start": 886.72,
+   "end": 888.24,
+   "text": "and NVIDIA is pretty important,"
+  },
+  {
+   "start": 888.24,
+   "end": 889.88,
+   "text": "because I think if you're the White House,"
+  },
+  {
+   "start": 889.88,
+   "end": 891.08,
+   "text": "you don't wanna crash,"
+  },
+  {
+   "start": 891.08,
+   "end": 893.16,
+   "text": "You don't want to do anything to undermine that growth."
+  },
+  {
+   "start": 893.16,
+   "end": 897.28,
+   "text": "So it's all part of that kind of Trump world policy."
+  },
+  {
+   "start": 897.28,
+   "end": 901.36,
+   "text": "And it does look like Jensen convinces Donald Trump"
+  },
+  {
+   "start": 901.36,
+   "end": 905.84,
+   "text": "that America should allow him to sell some of his chips"
+  },
+  {
+   "start": 905.84,
+   "end": 907.6,
+   "text": "to China, for instance, at one point."
+  },
+  {
+   "start": 907.6,
+   "end": 909.48,
+   "text": "There's a debate about which chips."
+  },
+  {
+   "start": 909.48,
+   "end": 912.6,
+   "text": "And eventually it looks like there are some curbs,"
+  },
+  {
+   "start": 912.6,
+   "end": 914.12,
+   "text": "but then the curbs are relaxed."
+  },
+  {
+   "start": 914.12,
+   "end": 916.8,
+   "text": "The most advanced chips are not being sold to China,"
+  },
+  {
+   "start": 916.8,
+   "end": 918.44,
+   "text": "but some others are."
+  },
+  {
+   "start": 918.44,
+   "end": 921.96,
+   "text": "And it does seem like what has happened here is that"
+  },
+  {
+   "start": 922.6,
+   "end": 928.2,
+   "text": "Jensen Huang and there are others in kind of the you know, sort of the AI business who have made"
+  },
+  {
+   "start": 928.84,
+   "end": 937.0,
+   "text": "similar arguments, but essentially what what it seems that he's done is he's convinced Trump and others around him that America should sell its chips"
+  },
+  {
+   "start": 937.0,
+   "end": 939.72,
+   "text": "some of its chips, maybe not the most advanced ones"
+  },
+  {
+   "start": 940.36,
+   "end": 942.36,
+   "text": "to kind of compete globally"
+  },
+  {
+   "start": 942.36,
+   "end": 945.2,
+   "text": "with Chinese players like Huawei, right?"
+  },
+  {
+   "start": 945.2,
+   "end": 947.68,
+   "text": "Rather than strictly curb exports"
+  },
+  {
+   "start": 947.68,
+   "end": 950.04,
+   "text": "to keep all of these chips out of, you know,"
+  },
+  {
+   "start": 950.04,
+   "end": 952.0,
+   "text": "China's military industrial complex."
+  },
+  {
+   "start": 952.0,
+   "end": 953.92,
+   "text": "It's this argument over,"
+  },
+  {
+   "start": 953.92,
+   "end": 956.96,
+   "text": "do you have really restrictive export controls"
+  },
+  {
+   "start": 956.96,
+   "end": 960.46,
+   "text": "or do you export most of this technology"
+  },
+  {
+   "start": 960.46,
+   "end": 963.56,
+   "text": "in the hopes of out-competing the Chinese?"
+  },
+  {
+   "start": 963.56,
+   "end": 966.0,
+   "text": "And there's kind of a, there's kind of a factionalization"
+  },
+  {
+   "start": 966.0,
+   "end": 967.48,
+   "text": "or the had-benefactionalization"
+  },
+  {
+   "start": 967.48,
+   "end": 969.7,
+   "text": "inside the Trump administration around that policy."
+  },
+  {
+   "start": 969.7,
+   "end": 975.54,
+   "text": "and Jensen Huang obviously weighed in very heavily in favor of loosening some of those"
+  },
+  {
+   "start": 975.54,
+   "end": 976.54,
+   "text": "export controls."
+  },
+  {
+   "start": 976.54,
+   "end": 980.7,
+   "text": "Yeah, because there is a question, which is if you deny China access to the chips, does"
+  },
+  {
+   "start": 980.7,
+   "end": 985.46,
+   "text": "it just incentivize them to build their own faster or is it better to sell them American"
+  },
+  {
+   "start": 985.46,
+   "end": 986.46,
+   "text": "chips and keep them dependent?"
+  },
+  {
+   "start": 986.46,
+   "end": 989.02,
+   "text": "So it's a really interesting policy debate."
+  },
+  {
+   "start": 989.02,
+   "end": 990.7,
+   "text": "But this goes to the key point."
+  },
+  {
+   "start": 990.7,
+   "end": 996.02,
+   "text": "NVIDIA is an important company, but Jensen Huang is at the center of one of the big policy"
+  },
+  {
+   "start": 996.02,
+   "end": 1003.7,
+   "text": "debates between the US and China. And at a crucial moment, it appears the Chinese look"
+  },
+  {
+   "start": 1003.7,
+   "end": 1008.42,
+   "text": "like they're getting very interested in him for reasons you can absolutely understand,"
+  },
+  {
+   "start": 1008.42,
+   "end": 1009.42,
+   "text": "can't you?"
+  },
+  {
+   "start": 1009.42,
+   "end": 1013.0,
+   "text": "That's exactly right. I think maybe there, let's take a break. We've set up the Target"
+  },
+  {
+   "start": 1013.0,
+   "end": 1019.94,
+   "text": "and St. Huang and Nvidia and after the break, we'll go deep into the MSS operation that"
+  },
+  {
+   "start": 1019.94,
+   "end": 1025.7,
+   "text": "ensnared him."
+  },
+  {
+   "start": 1025.7,
+   "end": 1029.26,
+   "text": "If you want to get ahead with your Christmas shopping, don't forget that a subscription"
+  },
+  {
+   "start": 1029.26,
+   "end": 1034.22,
+   "text": "to the declassified club makes the perfect gift. Gordon, I know we mentioned the club"
+  },
+  {
+   "start": 1034.22,
+   "end": 1039.02,
+   "text": "in every episode, but could you give everyone a flavour of what club membership actually"
+  },
+  {
+   "start": 1039.02,
+   "end": 1040.02,
+   "text": "looks like?"
+  },
+  {
+   "start": 1040.02,
+   "end": 1043.88,
+   "text": "The lucky recipient of this gift will get to catch up on all the brilliant bonus content"
+  },
+  {
+   "start": 1043.88,
+   "end": 1048.5,
+   "text": "from this year, things like our series on Kim Philby 9-11, our interview with the former"
+  },
+  {
+   "start": 1048.5,
+   "end": 1054.7,
+   "text": "head of MI5, all of that ad-free, and of course, declassified club members get exclusive early"
+  },
+  {
+   "start": 1054.7,
+   "end": 1057.76,
+   "text": "access to all future releases as well."
+  },
+  {
+   "start": 1057.76,
+   "end": 1060.7,
+   "text": "But being a member isn't just about our exclusive content."
+  },
+  {
+   "start": 1060.7,
+   "end": 1062.86,
+   "text": "It also means being part of our community."
+  },
+  {
+   "start": 1062.86,
+   "end": 1068.38,
+   "text": "We hosted our first ever members event at Bletchley Park this summer, a fantastic chance"
+  },
+  {
+   "start": 1068.38,
+   "end": 1072.86,
+   "text": "for members to meet each other and to contribute to live episode recordings."
+  },
+  {
+   "start": 1072.86,
+   "end": 1077.3,
+   "text": "And don't forget our weekly newsletter written by producer Becky Plus."
+  },
+  {
+   "start": 1077.3,
+   "end": 1081.62,
+   "text": "Every annual gift comes with a special edition t-shirt, merch!"
+  },
+  {
+   "start": 1081.62,
+   "end": 1085.58,
+   "text": "We hope this has made you even more excited about the club, whether you're treating yourself"
+  },
+  {
+   "start": 1085.58,
+   "end": 1088.78,
+   "text": "Christmas or you know someone who would love to join."
+  },
+  {
+   "start": 1088.78,
+   "end": 1093.74,
+   "text": "And it is the easiest gift to give. You just head to therestisclassified.com forward slash"
+  },
+  {
+   "start": 1093.74,
+   "end": 1098.54,
+   "text": "gifts and you can schedule a gift to land in someone's inbox on Christmas Day."
+  },
+  {
+   "start": 1100.73,
+   "end": 1104.81,
+   "text": "This episode is brought to you by Indeed. You're ready to level up your business,"
+  },
+  {
+   "start": 1104.81,
+   "end": 1109.45,
+   "text": "but the pressure to find the right person to make that happen is intense. Indeed,"
+  },
+  {
+   "start": 1109.45,
+   "end": 1115.37,
+   "text": "sponsored jobs can help carry the load. It boosts your job post to help it reach quality talent fast."
+  },
+  {
+   "start": 1115.37,
+   "end": 1117.93,
+   "text": "Cut through the chaos with Indeed Sponsored Jobs."
+  },
+  {
+   "start": 1117.93,
+   "end": 1122.41,
+   "text": "Get a $75 Sponsored Job Credit at indeed.com slash podcast."
+  },
+  {
+   "start": 1122.41,
+   "end": 1124.17,
+   "text": "Terms and conditions apply."
+  },
+  {
+   "start": 1124.17,
+   "end": 1125.13,
+   "text": "Hiring now?"
+  },
+  {
+   "start": 1125.13,
+   "end": 1127.53,
+   "text": "Then this is a job for Indeed Sponsored Jobs."
+  },
+  {
+   "start": 1130.15,
+   "end": 1132.47,
+   "text": "Your Sausage Mumbuffin with Egg didn't change."
+  },
+  {
+   "start": 1132.47,
+   "end": 1133.51,
+   "text": "You're receipt it."
+  },
+  {
+   "start": 1133.51,
+   "end": 1135.91,
+   "text": "The Sausage Mumbuffin with Egg Extra Value Meal"
+  },
+  {
+   "start": 1135.91,
+   "end": 1139.99,
+   "text": "includes a hash brown and a small coffee for just $5."
+  },
+  {
+   "start": 1139.99,
+   "end": 1142.23,
+   "text": "Only at McDonald's for a limited time."
+  },
+  {
+   "start": 1142.23,
+   "end": 1143.27,
+   "text": "Pricing participation may vary."
+  },
+  {
+   "start": 1143.27,
+   "end": 1144.87,
+   "text": "Promotion pricing may be lower than meal pricing."
+  },
+  {
+   "start": 1146.14,
+   "end": 1147.5,
+   "text": "Well, welcome back."
+  },
+  {
+   "start": 1147.5,
+   "end": 1152.86,
+   "text": "So David, we've talked about Jensen Wang and who he was and why Nvidia is so important,"
+  },
+  {
+   "start": 1152.86,
+   "end": 1159.18,
+   "text": "but let's get a little bit into the operation itself and what we know about it and his targeting,"
+  },
+  {
+   "start": 1159.18,
+   "end": 1164.22,
+   "text": "which apparently was by China and specifically the Ministry of State Security."
+  },
+  {
+   "start": 1164.22,
+   "end": 1170.14,
+   "text": "Well, the New York Times reported last weekend that a memo, a very secretive,"
+  },
+  {
+   "start": 1170.14,
+   "end": 1176.3,
+   "text": "highly classified memo, had circulated among top Trump administration policymakers last spring,"
+  },
+  {
+   "start": 1176.3,
+   "end": 1183.2,
+   "text": "I think in advance of Trump's visit to Beijing in May, that cited intelligence that a woman"
+  },
+  {
+   "start": 1183.2,
+   "end": 1188.82,
+   "text": "named Alice Huang had been recruited by China's Ministry of State Security."
+  },
+  {
+   "start": 1188.82,
+   "end": 1191.54,
+   "text": "Now we're going to go a bit deeper into Alice Huang in a moment."
+  },
+  {
+   "start": 1191.54,
+   "end": 1197.7,
+   "text": "I mean, she is a kind of executive and a top customer of NVIDIAs."
+  },
+  {
+   "start": 1197.7,
+   "end": 1202.84,
+   "text": "It's worth, I think, setting up the MSS just a little bit because this is the spy agency"
+  },
+  {
+   "start": 1202.84,
+   "end": 1203.84,
+   "text": "behind the operation."
+  },
+  {
+   "start": 1203.84,
+   "end": 1206.52,
+   "text": "Now, the MSS has had something of a renaissance"
+  },
+  {
+   "start": 1206.52,
+   "end": 1209.16,
+   "text": "over the past decade under Xi Jinping."
+  },
+  {
+   "start": 1209.16,
+   "end": 1212.36,
+   "text": "It is, we've talked about this in some of our past episodes,"
+  },
+  {
+   "start": 1212.36,
+   "end": 1215.44,
+   "text": "an absolutely massive organization,"
+  },
+  {
+   "start": 1215.44,
+   "end": 1217.8,
+   "text": "probably hundreds of thousands of people."
+  },
+  {
+   "start": 1217.8,
+   "end": 1221.74,
+   "text": "It absolutely dwarfs in terms of personnel and budget."
+  },
+  {
+   "start": 1221.74,
+   "end": 1226.28,
+   "text": "The CIA, MI6, probably any Western intelligence agency."
+  },
+  {
+   "start": 1226.28,
+   "end": 1228.4,
+   "text": "The MSS is the largest intelligence,"
+  },
+  {
+   "start": 1228.4,
+   "end": 1231.76,
+   "text": "like formal intelligence agency on the planet."
+  },
+  {
+   "start": 1231.76,
+   "end": 1234.82,
+   "text": "And it collects all manner of intelligence, human intelligence,"
+  },
+  {
+   "start": 1234.82,
+   "end": 1238.54,
+   "text": "it intercepts communications, it obviously runs counterintelligence program."
+  },
+  {
+   "start": 1238.54,
+   "end": 1245.3,
+   "text": "And really importantly, it uses its connection to Chinese companies to"
+  },
+  {
+   "start": 1245.3,
+   "end": 1250.16,
+   "text": "extend its reach abroad and frankly to Chinese citizens working anywhere in the world."
+  },
+  {
+   "start": 1250.16,
+   "end": 1255.18,
+   "text": "So the MSS is, it's not, you think about the CIA and"
+  },
+  {
+   "start": 1255.18,
+   "end": 1260.66,
+   "text": "kind of how abroad the CIA might work with an American company on kind of an ad"
+  },
+  {
+   "start": 1260.66,
+   "end": 1267.24,
+   "text": "hawk basis, if that American company agrees, I think in the case of the MSS, it is much"
+  },
+  {
+   "start": 1267.24,
+   "end": 1274.28,
+   "text": "more tightly integrated into Chinese companies abroad and frankly inside China than any of"
+  },
+  {
+   "start": 1274.28,
+   "end": 1275.28,
+   "text": "its Western counterparts."
+  },
+  {
+   "start": 1275.28,
+   "end": 1276.28,
+   "text": "Yeah."
+  },
+  {
+   "start": 1276.28,
+   "end": 1280.04,
+   "text": "So it's kind of working at home and abroad and across the private sector."
+  },
+  {
+   "start": 1280.04,
+   "end": 1286.52,
+   "text": "So the claim is that the MSS was running Alice Wong against Jensen."
+  },
+  {
+   "start": 1286.52,
+   "end": 1293.0,
+   "text": "Now, I guess one of the questions which we might get to is, is when and how the relationship"
+  },
+  {
+   "start": 1293.0,
+   "end": 1297.24,
+   "text": "between these two people, which they've now, you know, Jensen has admitted was a romantic"
+  },
+  {
+   "start": 1297.24,
+   "end": 1301.12,
+   "text": "relationship who's having an affair, when it started and how it started."
+  },
+  {
+   "start": 1301.12,
+   "end": 1305.64,
+   "text": "I mean, she is a slightly mysterious figure, isn't she?"
+  },
+  {
+   "start": 1305.64,
+   "end": 1308.6,
+   "text": "I mean, there's a bit of detail around her."
+  },
+  {
+   "start": 1308.6,
+   "end": 1315.4,
+   "text": "I did note with great interest that one reference has her having been a former TV reporter,"
+  },
+  {
+   "start": 1315.4,
+   "end": 1321.16,
+   "text": "Allegedly. So it's nice to know that that skill set has taken a well into the world of espionage."
+  },
+  {
+   "start": 1321.16,
+   "end": 1324.2,
+   "text": "But rather than staying in the media world."
+  },
+  {
+   "start": 1324.2,
+   "end": 1329.24,
+   "text": "I like that that's the lens you took. You're like, ah, this is a reporter that moved on to bigger and better things."
+  },
+  {
+   "start": 1329.24,
+   "end": 1333.88,
+   "text": "She supposedly went into banking and kind of other commercial entities and kind of companies."
+  },
+  {
+   "start": 1333.88,
+   "end": 1337.8,
+   "text": "So she obviously realized that TV reporting doesn't make that much money."
+  },
+  {
+   "start": 1337.8,
+   "end": 1342.6,
+   "text": "So she moved around this kind of world and then becomes connected, doesn't she,"
+  },
+  {
+   "start": 1342.6,
+   "end": 1347.16,
+   "text": "to a network of companies and investors with links to the technology world."
+  },
+  {
+   "start": 1347.16,
+   "end": 1353.56,
+   "text": "Initially, I think it's these kind of local officials and investors who were involved in the"
+  },
+  {
+   "start": 1353.56,
+   "end": 1361.16,
+   "text": "mobile video gaming industry and the data centers around that. And this network has a kind of set"
+  },
+  {
+   "start": 1361.16,
+   "end": 1366.84,
+   "text": "of financial links to the Chinese military establishment. Again, all this kind of very"
+  },
+  {
+   "start": 1366.84,
+   "end": 1373.88,
+   "text": "murky ties and links social and political networks, right? That that are so, I think, opaque to us"
+  },
+  {
+   "start": 1373.88,
+   "end": 1380.92,
+   "text": "outside, but dictate how things actually happen inside China. Since 2023, she had worked for a"
+  },
+  {
+   "start": 1380.92,
+   "end": 1386.92,
+   "text": "Singapore based operation named mega speed. That is that Nvidia customer that we had talked about"
+  },
+  {
+   "start": 1386.92,
+   "end": 1394.71,
+   "text": "will come back to mega speed in just a moment. So what was the operation for people briefed on"
+  },
+  {
+   "start": 1394.71,
+   "end": 1401.03,
+   "text": "the intelligence told the New York Times that Alice Huang had been recruited essentially to do two"
+  },
+  {
+   "start": 1401.03,
+   "end": 1409.11,
+   "text": "things. One, to collect intelligence on Jensen as part of a drive by the MSS to learn more about"
+  },
+  {
+   "start": 1409.11,
+   "end": 1416.97,
+   "text": "American AI chips. And then this is the second part, to potentially influence Jensen and the"
+  },
+  {
+   "start": 1416.97,
+   "end": 1422.25,
+   "text": "company to push for its most advanced chips to be made available to China."
+  },
+  {
+   "start": 1422.25,
+   "end": 1428.49,
+   "text": "This is not espionage in the sense of going after deep intellectual property of a company,"
+  },
+  {
+   "start": 1428.49,
+   "end": 1434.81,
+   "text": "for instance, or classic national security secrets. It's about understanding the commercial"
+  },
+  {
+   "start": 1434.81,
+   "end": 1441.37,
+   "text": "direction relationships of Nvidia, who's it selling chips to, who might it be selling chips to,"
+  },
+  {
+   "start": 1441.37,
+   "end": 1448.25,
+   "text": "but also understanding Jensen himself and what his relationship with Donald Trump is,"
+  },
+  {
+   "start": 1448.25,
+   "end": 1454.41,
+   "text": "what he's lobbying for, understanding it, but then also potentially having an agent of influence"
+  },
+  {
+   "start": 1454.41,
+   "end": 1459.37,
+   "text": "who can affect what that policy is because you've got such an important individual."
+  },
+  {
+   "start": 1459.37,
+   "end": 1465.69,
+   "text": "So you can see why this is potentially a very valuable place to have an agent, isn't it?"
+  },
+  {
+   "start": 1465.69,
+   "end": 1473.7,
+   "text": "Yes. And it is also a very fascinating case study in what is the definition of a secret"
+  },
+  {
+   "start": 1473.7,
+   "end": 1481.53,
+   "text": "secret these days. Because the Nvidia board has released a statement, which I find to be"
+  },
+  {
+   "start": 1481.53,
+   "end": 1485.65,
+   "text": "somewhat preposterous. We can come back to this saying that it has no reason to believe"
+  },
+  {
+   "start": 1485.65,
+   "end": 1490.85,
+   "text": "either the company's secrets or national security were compromised. I don't think that's true,"
+  },
+  {
+   "start": 1490.85,
+   "end": 1495.23,
+   "text": "by the way, we can talk about that. But I think in any case, it requires a very specific"
+  },
+  {
+   "start": 1495.23,
+   "end": 1501.93,
+   "text": "definition of what a secret is. Because we don't have any evidence yet that, for example,"
+  },
+  {
+   "start": 1501.93,
+   "end": 1508.77,
+   "text": "You know, Alice Huang got access to the underlying designs and IP for the most advanced chips"
+  },
+  {
+   "start": 1508.77,
+   "end": 1510.17,
+   "text": "that Nvidia produces."
+  },
+  {
+   "start": 1510.17,
+   "end": 1513.09,
+   "text": "It's possible, but that has not been reported."
+  },
+  {
+   "start": 1513.09,
+   "end": 1514.21,
+   "text": "That's not what they're after, though, is it?"
+  },
+  {
+   "start": 1514.21,
+   "end": 1517.89,
+   "text": "I think it's very interesting when you let's break it down into the kind of the collection"
+  },
+  {
+   "start": 1517.89,
+   "end": 1519.37,
+   "text": "and the influence piece."
+  },
+  {
+   "start": 1519.37,
+   "end": 1523.31,
+   "text": "And I'll label this as pure speculation for right now, but I'm just thinking about this"
+  },
+  {
+   "start": 1523.31,
+   "end": 1527.13,
+   "text": "from the standpoint of what would the MSS be interested in?"
+  },
+  {
+   "start": 1527.13,
+   "end": 1532.79,
+   "text": "If you have an asset like Alice Wong, who has a business relationship with Jensen, who"
+  },
+  {
+   "start": 1532.79,
+   "end": 1536.85,
+   "text": "has a romantic personal relationship with Jensen, who can obviously spend time with"
+  },
+  {
+   "start": 1536.85,
+   "end": 1540.05,
+   "text": "him, talk to him, influence him potentially."
+  },
+  {
+   "start": 1540.05,
+   "end": 1546.05,
+   "text": "So collection, I mean, the Chinese would be very interested in NVIDIA strategic plans,"
+  },
+  {
+   "start": 1546.05,
+   "end": 1552.09,
+   "text": "the details of its customer relationships, how NVIDIA conducts due diligence on its"
+  },
+  {
+   "start": 1552.09,
+   "end": 1557.05,
+   "text": "partners, a massive issue around these export controls, pricing data."
+  },
+  {
+   "start": 1557.05,
+   "end": 1560.73,
+   "text": "the technical specs would be of interest, but maybe harder to get."
+  },
+  {
+   "start": 1561.45,
+   "end": 1567.55,
+   "text": "And I mean, keep in mind that the commercial angle here is very useful to the MSS"
+  },
+  {
+   "start": 1567.55,
+   "end": 1572.21,
+   "text": "because it's collecting information not only in the hopes of being able to use"
+  },
+  {
+   "start": 1572.21,
+   "end": 1580.45,
+   "text": "that for consumers in China, but also to help Chinese companies develop potentially"
+  },
+  {
+   "start": 1580.45,
+   "end": 1582.97,
+   "text": "down the line a competitive advantage against Nvidia."
+  },
+  {
+   "start": 1583.01,
+   "end": 1586.33,
+   "text": "So any information that's non-public."
+  },
+  {
+   "start": 1586.33,
+   "end": 1598.33,
+   "text": "This is the key thing, I think, is that the NVIDIA board has tried to define the sort of the red line as national security secrets, the kind of typical things that you might consider, you know, an intelligence collection."
+  },
+  {
+   "start": 1598.33,
+   "end": 1611.33,
+   "text": "But the reality is, is that the Alice Huang operation will be very useful in just eliciting any non-public information that is inside Jensen Huang's head or inside NVIDIA that's not out there."
+  },
+  {
+   "start": 1611.33,
+   "end": 1613.33,
+   "text": "That would be very valuable to the MSS."
+  },
+  {
+   "start": 1613.33,
+   "end": 1617.25,
+   "text": "So the collection angle here is really important, I think, even before we get to the influence."
+  },
+  {
+   "start": 1617.25,
+   "end": 1621.33,
+   "text": "Yeah, that's right. And the collection angle includes what's going on in those conversations"
+  },
+  {
+   "start": 1621.33,
+   "end": 1626.61,
+   "text": "between Donald Trump and Jensen. That's high grade intelligence value. And then, as you said,"
+  },
+  {
+   "start": 1626.61,
+   "end": 1633.81,
+   "text": "there's the influence question, which is, can you then use your asset, your agent, to influence"
+  },
+  {
+   "start": 1633.81,
+   "end": 1639.09,
+   "text": "Jensen to take a particular position to try and loosen chip supplies to China? If that's what"
+  },
+  {
+   "start": 1639.09,
+   "end": 1643.09,
+   "text": "you want, or to sell them to particular subsidiaries, we might get to that. So there's all kinds of"
+  },
+  {
+   "start": 1643.09,
+   "end": 1647.49,
+   "text": "of ways in which you can have a real effect through having someone there. But there is"
+  },
+  {
+   "start": 1647.49,
+   "end": 1653.09,
+   "text": "one question here, which is about the operation, which is this question about, to some extent,"
+  },
+  {
+   "start": 1653.09,
+   "end": 1660.53,
+   "text": "was it a honey trap? I mean, a lot of this comes down to when the relationship began"
+  },
+  {
+   "start": 1660.53,
+   "end": 1667.33,
+   "text": "and whether Alice Wang was recruited as a spy before or after that, doesn't it? And we don't"
+  },
+  {
+   "start": 1667.33,
+   "end": 1670.29,
+   "text": "necessarily know the answer to that. And that's pretty important, isn't it?"
+  },
+  {
+   "start": 1670.29,
+   "end": 1674.05,
+   "text": "We know very little about how the operation was actually run."
+  },
+  {
+   "start": 1674.05,
+   "end": 1678.63,
+   "text": "And I actually over the weekend, I was messaging with a number of my"
+  },
+  {
+   "start": 1678.63,
+   "end": 1681.69,
+   "text": "forbear agency colleagues and asking them about this."
+  },
+  {
+   "start": 1681.69,
+   "end": 1685.49,
+   "text": "And what seemed clear, including some people who know China quite well,"
+  },
+  {
+   "start": 1685.49,
+   "end": 1691.09,
+   "text": "what seems clear is that at minimum there would have been an MSS handler."
+  },
+  {
+   "start": 1691.09,
+   "end": 1697.75,
+   "text": "Now, what is not obvious is whether there was a cutout between that handler and Alice Wong."
+  },
+  {
+   "start": 1697.75,
+   "end": 1704.07,
+   "text": "So the way the MSS operates is it's not always that there's going to be a staff officer of the MSS"
+  },
+  {
+   "start": 1704.07,
+   "end": 1708.79,
+   "text": "sitting in front of that person. It could have been that there is some kind of cut out that's used"
+  },
+  {
+   "start": 1708.79,
+   "end": 1713.83,
+   "text": "to run Alice Wong to recruit her. They probably didn't have to do that much development, to be"
+  },
+  {
+   "start": 1713.83,
+   "end": 1718.71,
+   "text": "quite honest, but to recruit her and kind of run her. So that part, the chain is unclear. But it is"
+  },
+  {
+   "start": 1718.71,
+   "end": 1724.79,
+   "text": "very clear the way that the MSS operates that at the end of this chain, there's an MSS staff officer"
+  },
+  {
+   "start": 1724.79,
+   "end": 1730.07,
+   "text": "who is collecting this intelligence. That would mean that she was tasked presumably like given"
+  },
+  {
+   "start": 1730.07,
+   "end": 1735.35,
+   "text": "questions, intelligence questions that the Chinese wanted answered. But it is true that we don't"
+  },
+  {
+   "start": 1736.07,
+   "end": 1742.79,
+   "text": "we don't yet know and may never know the circumstances around when she was actually"
+  },
+  {
+   "start": 1742.79,
+   "end": 1747.11,
+   "text": "recruited by the MSS and whether that crucially I think this is the crucial part for the honey"
+  },
+  {
+   "start": 1747.11,
+   "end": 1753.35,
+   "text": "trap piece for this to be a honey trap in the kind of traditional sense. What would have to be true"
+  },
+  {
+   "start": 1753.35,
+   "end": 1758.35,
+   "text": "is that the MSS saw that she was connected to Jensen Huang"
+  },
+  {
+   "start": 1759.27,
+   "end": 1762.69,
+   "text": "because maybe Megaspeed's a big customer."
+  },
+  {
+   "start": 1762.69,
+   "end": 1765.81,
+   "text": "But the MSS says, look, we want you to get close to Jensen"
+  },
+  {
+   "start": 1765.81,
+   "end": 1768.95,
+   "text": "and we want you to establish a romantic relationship."
+  },
+  {
+   "start": 1768.95,
+   "end": 1771.69,
+   "text": "I actually think that's probably not how it happened."
+  },
+  {
+   "start": 1771.69,
+   "end": 1775.13,
+   "text": "I think what's much more likely is that she was already"
+  },
+  {
+   "start": 1775.13,
+   "end": 1778.33,
+   "text": "close to him, potentially already engaged"
+  },
+  {
+   "start": 1778.33,
+   "end": 1779.97,
+   "text": "in a romantic relationship with him."
+  },
+  {
+   "start": 1779.97,
+   "end": 1781.21,
+   "text": "And then they approach him."
+  },
+  {
+   "start": 1781.21,
+   "end": 1784.25,
+   "text": "And then the MSS approaches and says,"
+  },
+  {
+   "start": 1784.25,
+   "end": 1787.29,
+   "text": "you could be helpful to us, that you're off to the races."
+  },
+  {
+   "start": 1787.29,
+   "end": 1789.21,
+   "text": "It's different from your classic idea of a honey trap,"
+  },
+  {
+   "start": 1789.21,
+   "end": 1791.09,
+   "text": "someone put in someone's path,"
+  },
+  {
+   "start": 1791.09,
+   "end": 1793.93,
+   "text": "who is already an agent to kind of seduce them"
+  },
+  {
+   "start": 1793.93,
+   "end": 1795.25,
+   "text": "and build a relationship,"
+  },
+  {
+   "start": 1795.25,
+   "end": 1797.13,
+   "text": "which we've seen with the Russians, the East Germans,"
+  },
+  {
+   "start": 1797.13,
+   "end": 1798.21,
+   "text": "lots of other cases."
+  },
+  {
+   "start": 1798.21,
+   "end": 1800.53,
+   "text": "And with the Chinese, I think, at points."
+  },
+  {
+   "start": 1800.53,
+   "end": 1803.37,
+   "text": "Regardless of whether it was a honey trap,"
+  },
+  {
+   "start": 1803.37,
+   "end": 1808.37,
+   "text": "at some point, the MSS has a massive amount of leverage"
+  },
+  {
+   "start": 1808.37,
+   "end": 1811.49,
+   "text": "of leverage over Jensen Huang indirectly"
+  },
+  {
+   "start": 1811.49,
+   "end": 1816.7,
+   "text": "because he's having an affair with Alice."
+  },
+  {
+   "start": 1816.7,
+   "end": 1821.3,
+   "text": "So whether the MSS sort of orchestrates this"
+  },
+  {
+   "start": 1821.3,
+   "end": 1823.22,
+   "text": "as a honey trap operation"
+  },
+  {
+   "start": 1823.22,
+   "end": 1825.62,
+   "text": "or whether they just stumble upon it"
+  },
+  {
+   "start": 1825.62,
+   "end": 1827.34,
+   "text": "and decide to take advantage of it,"
+  },
+  {
+   "start": 1827.34,
+   "end": 1829.62,
+   "text": "the end result is the same, which is that,"
+  },
+  {
+   "start": 1829.62,
+   "end": 1831.26,
+   "text": "and this is why I think the board,"
+  },
+  {
+   "start": 1831.26,
+   "end": 1833.02,
+   "text": "the Nvidia boards are downplaying"
+  },
+  {
+   "start": 1833.02,
+   "end": 1834.94,
+   "text": "the national security importance of this,"
+  },
+  {
+   "start": 1834.94,
+   "end": 1837.34,
+   "text": "is a bit ludicrous"
+  },
+  {
+   "start": 1837.34,
+   "end": 1846.26,
+   "text": "because at the end of the day, the Chinese MSS has a very, very valuable secret that it has collected on Jensen Huang,"
+  },
+  {
+   "start": 1846.26,
+   "end": 1847.74,
+   "text": "and that is that he is having an affair."
+  },
+  {
+   "start": 1847.82,
+   "end": 1849.66,
+   "text": "Compromat in the Russian terms."
+  },
+  {
+   "start": 1849.7,
+   "end": 1858.38,
+   "text": "They do, effectively. Now, how they used it, if they used it, still unclear. But the point is, is that Chinese intelligence had this guy over a barrel."
+  },
+  {
+   "start": 1858.9,
+   "end": 1867.18,
+   "text": "Yeah. And it is worth touching on Megaspeed, the company that she's working for, because there's a kind of murky element to that, as to the extent to which"
+  },
+  {
+   "start": 1867.18,
+   "end": 1870.66,
+   "text": "that is acting on behalf of the Chinese state or it's a normal company."
+  },
+  {
+   "start": 1870.66,
+   "end": 1872.78,
+   "text": "And I think that is interesting as well, isn't it?"
+  },
+  {
+   "start": 1873.02,
+   "end": 1874.58,
+   "text": "I mean, I do like the name Megaspeed."
+  },
+  {
+   "start": 1874.58,
+   "end": 1880.94,
+   "text": "It sounds like a kind of 80s heavy metal band, but it's a company which is set up."
+  },
+  {
+   "start": 1880.94,
+   "end": 1886.06,
+   "text": "And I think like lots of other companies around Southeast Asia to take advantage"
+  },
+  {
+   "start": 1886.06,
+   "end": 1890.82,
+   "text": "of this fact that there's a limit on chips going into China."
+  },
+  {
+   "start": 1891.26,
+   "end": 1894.66,
+   "text": "So because of these export restrictions we talked about earlier,"
+  },
+  {
+   "start": 1894.66,
+   "end": 1899.22,
+   "text": "some of the more advanced chips can't be sold into China, but you can sell them into, you know,"
+  },
+  {
+   "start": 1899.22,
+   "end": 1904.58,
+   "text": "Singapore, Malaysia and other countries around China, build data centers there,"
+  },
+  {
+   "start": 1904.58,
+   "end": 1911.22,
+   "text": "and then rent the computing power to Chinese companies to use. And that looks like what"
+  },
+  {
+   "start": 1911.22,
+   "end": 1917.7,
+   "text": "Megaspeed was effectively doing, which gave it this close relationship with Jensen."
+  },
+  {
+   "start": 1917.7,
+   "end": 1924.34,
+   "text": "This is a very important point because the chips never have to cross the border into China"
+  },
+  {
+   "start": 1924.34,
+   "end": 1931.94,
+   "text": "in this scenario. You can just use the data centers in Malaysia or in Singapore or Indonesia,"
+  },
+  {
+   "start": 1931.94,
+   "end": 1936.9,
+   "text": "and Chinese companies can take advantage of the computing power that Nvidia's chips give them."
+  },
+  {
+   "start": 1936.9,
+   "end": 1944.58,
+   "text": "So it's effectively a workaround. And we have a company, a buyer of Nvidia chips that has an MSS"
+  },
+  {
+   "start": 1945.14,
+   "end": 1950.66,
+   "text": "asset working deep inside it. So the tech has also made its way over, but probably just not at"
+  },
+  {
+   "start": 1950.66,
+   "end": 1956.18,
+   "text": "scale. And I mean, this is this is the fascinating bit about this operation is because the the"
+  },
+  {
+   "start": 1956.18,
+   "end": 1964.19,
+   "text": "headlines over the last week have very much focused on the kind of the romantic relationship,"
+  },
+  {
+   "start": 1964.19,
+   "end": 1970.35,
+   "text": "the fact that Alice Wong is an MSS asset, and she is in this, you know, in this relationship"
+  },
+  {
+   "start": 1970.35,
+   "end": 1979.08,
+   "text": "with Jensen. But under the surface is potentially even the the bigger story, which is that or"
+  },
+  {
+   "start": 1979.08,
+   "end": 1986.52,
+   "text": "it's a different layer to the story because mega speed is essentially an intermediary in this chain"
+  },
+  {
+   "start": 1986.52,
+   "end": 1993.96,
+   "text": "that allows China to get access to the computing power of NVIDIA's chips. And it does so through"
+  },
+  {
+   "start": 1993.96,
+   "end": 2002.12,
+   "text": "all this kind of shadowy chain of, in some cases, very clearly kind of cut out front companies that"
+  },
+  {
+   "start": 2002.12,
+   "end": 2007.72,
+   "text": "may not have any actual physical presence and that they're using as a way to import these kind of"
+  },
+  {
+   "start": 2007.72,
+   "end": 2014.28,
+   "text": "chips into East Asia and eventually to let the Chinese use the compute."
+  },
+  {
+   "start": 2014.28,
+   "end": 2020.08,
+   "text": "But what I find to be really kind of fascinating about this is that the Alice Huang thing is"
+  },
+  {
+   "start": 2020.08,
+   "end": 2027.9,
+   "text": "like a human layer on top of a bigger kind of commercial and industrial effort to get"
+  },
+  {
+   "start": 2027.9,
+   "end": 2031.04,
+   "text": "access to this technology."
+  },
+  {
+   "start": 2031.04,
+   "end": 2036.6,
+   "text": "So it's a very multi-layered effort on the part of Chinese intelligence in the Chinese"
+  },
+  {
+   "start": 2036.6,
+   "end": 2043.28,
+   "text": "state. I know we clear whether that shadowy network, the supply network, the front companies,"
+  },
+  {
+   "start": 2043.28,
+   "end": 2049.22,
+   "text": "how closely allied they are to the MSS. We don't really know whether they're real companies"
+  },
+  {
+   "start": 2049.22,
+   "end": 2054.6,
+   "text": "which then get leveraged by the MSS or if they're front companies. It's not entirely"
+  },
+  {
+   "start": 2054.6,
+   "end": 2060.36,
+   "text": "clear, but they've created this network of companies. Then you could imagine Alice is"
+  },
+  {
+   "start": 2060.36,
+   "end": 2065.88,
+   "text": "part of that. Then she meets Jensen and a romantic relationship develops. Then the MSS"
+  },
+  {
+   "start": 2065.88,
+   "end": 2070.76,
+   "text": "realize we've got something even more valuable to use here, we can build a very direct relationship."
+  },
+  {
+   "start": 2070.76,
+   "end": 2075.64,
+   "text": "So, you know, we're not quite inside what exactly happened, but it's interesting, isn't"
+  },
+  {
+   "start": 2075.64,
+   "end": 2076.64,
+   "text": "it?"
+  },
+  {
+   "start": 2076.64,
+   "end": 2081.32,
+   "text": "And if we step back for a moment, it does look like that it's the investigation into"
+  },
+  {
+   "start": 2081.32,
+   "end": 2090.28,
+   "text": "mega speed that actually gets US intelligence onto Alice Wang and the relationship with"
+  },
+  {
+   "start": 2090.28,
+   "end": 2091.28,
+   "text": "Jensen, isn't it?"
+  },
+  {
+   "start": 2091.28,
+   "end": 2097.6,
+   "text": "I mean, that is the kind of entry point and the investigation which starts all of this unraveling."
+  },
+  {
+   "start": 2097.6,
+   "end": 2103.28,
+   "text": "Yeah. That is another important point is that the fact that we're having this conversation"
+  },
+  {
+   "start": 2103.28,
+   "end": 2110.32,
+   "text": "is not because US intelligence was looking at Jensen Huang or NVIDIA. What seems to be the case"
+  },
+  {
+   "start": 2110.32,
+   "end": 2116.56,
+   "text": "from the New York Times and the FT reporting is that the starting point for the surveillance"
+  },
+  {
+   "start": 2116.56,
+   "end": 2124.24,
+   "text": "on Alice Wong was because of those export controls. And the fact that the Commerce Department and I"
+  },
+  {
+   "start": 2124.24,
+   "end": 2129.92,
+   "text": "think more broadly the US intelligence community is looking at these Chinese networks, these kind"
+  },
+  {
+   "start": 2129.92,
+   "end": 2136.4,
+   "text": "of front companies and these chains, in some cases, are very sort of dodgy cutouts that are used to"
+  },
+  {
+   "start": 2136.4,
+   "end": 2141.44,
+   "text": "bring these chips and the computing power to China. The US intelligence community is looking at this."
+  },
+  {
+   "start": 2141.44,
+   "end": 2149.12,
+   "text": "And so they're looking at mega speed. Mega speed bought billions of dollars of Nvidia chips and then"
+  },
+  {
+   "start": 2149.92,
+   "end": 2156.64,
+   "text": "seems to have brought it into the country through this Malaysian cut out that probably doesn't"
+  },
+  {
+   "start": 2156.64,
+   "end": 2164.0,
+   "text": "actually exist. Right. Its address is a dilapidated storefront in Kuala Lumpur. So you have this kind"
+  },
+  {
+   "start": 2164.0,
+   "end": 2170.64,
+   "text": "of shadowy network. US intelligence is looking at it. Right. And in that context, I think is how"
+  },
+  {
+   "start": 2171.44,
+   "end": 2177.36,
+   "text": "They come upon Alice Huang, who's an executive at Megaspeed, and that leads, I think, to electronic"
+  },
+  {
+   "start": 2177.36,
+   "end": 2180.32,
+   "text": "surveillance of Alice Huang."
+  },
+  {
+   "start": 2180.32,
+   "end": 2184.0,
+   "text": "And that surveillance turns up at least three things."
+  },
+  {
+   "start": 2184.0,
+   "end": 2188.44,
+   "text": "One is that it seems to be that officials have concluded that she's a Chinese intelligence"
+  },
+  {
+   "start": 2188.44,
+   "end": 2193.76,
+   "text": "asset through that surveillance, and that she's funneling information back to the MSS."
+  },
+  {
+   "start": 2193.76,
+   "end": 2198.15,
+   "text": "Two, she's in close contact with an American citizen."
+  },
+  {
+   "start": 2198.15,
+   "end": 2203.23,
+   "text": "And three, she's having a romantic relationship with that US person."
+  },
+  {
+   "start": 2203.23,
+   "end": 2204.71,
+   "text": "Now it's interesting, isn't it?"
+  },
+  {
+   "start": 2204.71,
+   "end": 2209.07,
+   "text": "Because let's say this is the NSA national security agency, which is doing signal-"
+  },
+  {
+   "start": 2209.07,
+   "end": 2210.71,
+   "text": "Which it almost certainly is."
+  },
+  {
+   "start": 2210.71,
+   "end": 2212.11,
+   "text": "Almost certainly is."
+  },
+  {
+   "start": 2212.11,
+   "end": 2216.43,
+   "text": "On it's looking at Alice Wang and looking at Megaspeed."
+  },
+  {
+   "start": 2216.43,
+   "end": 2222.43,
+   "text": "And then they see that there's an American citizen in the mix because there's information"
+  },
+  {
+   "start": 2222.43,
+   "end": 2225.63,
+   "text": "going back and forth between them and this romantic relationship."
+  },
+  {
+   "start": 2225.63,
+   "end": 2230.03,
+   "text": "Now, what's so interesting is, of course, American spy agencies generally aren't supposed"
+  },
+  {
+   "start": 2230.03,
+   "end": 2233.35,
+   "text": "to spy on Americans, are they, David?"
+  },
+  {
+   "start": 2233.35,
+   "end": 2236.15,
+   "text": "But what kind of tone was that?"
+  },
+  {
+   "start": 2236.15,
+   "end": 2240.39,
+   "text": "That was my Snowden tone."
+  },
+  {
+   "start": 2240.39,
+   "end": 2242.39,
+   "text": "Channeling a bit of Eddie Snowden."
+  },
+  {
+   "start": 2242.39,
+   "end": 2247.75,
+   "text": "But when they're watching, say, a foreign spy and an American citizen turns up in the"
+  },
+  {
+   "start": 2247.75,
+   "end": 2253.23,
+   "text": "intercept, you know, that American's identity is normally masked, isn't it?"
+  },
+  {
+   "start": 2253.23,
+   "end": 2259.87,
+   "text": "they're called US Citizen One or US Resident One. And it requires a kind of level of escalation up"
+  },
+  {
+   "start": 2259.87,
+   "end": 2266.59,
+   "text": "the chain to get them unmasked in the terminology and to identify who they are. So in this case,"
+  },
+  {
+   "start": 2266.59,
+   "end": 2271.47,
+   "text": "you can imagine, they go, well, let's find out who Alice Wong is, is having a relationship with"
+  },
+  {
+   "start": 2271.47,
+   "end": 2275.71,
+   "text": "and where this information is coming from. They, you know, they go through the unmasking process"
+  },
+  {
+   "start": 2275.71,
+   "end": 2284.75,
+   "text": "and they go, oh, it's Jensen. The CEO of NVIDIA. Uh-oh. Yes. And this is, so I dealt with this"
+  },
+  {
+   "start": 2284.75,
+   "end": 2290.83,
+   "text": "as an as an analyst in the NSA reporting that I would consume as I'm, you know, writing"
+  },
+  {
+   "start": 2291.55,
+   "end": 2296.11,
+   "text": "presidential daily briefs or any other form of analysis is the way that the NSA"
+  },
+  {
+   "start": 2297.15,
+   "end": 2302.99,
+   "text": "distributes those reports is they're not sending you the raw transcript of the conversation. Right."
+  },
+  {
+   "start": 2302.99,
+   "end": 2309.71,
+   "text": "There is an analyst and a linguist whole teams of these people in stations abroad and also at"
+  },
+  {
+   "start": 2309.71,
+   "end": 2314.83,
+   "text": "NSA headquarters at Fort Meade in Maryland, who for example would have, they're looking at the"
+  },
+  {
+   "start": 2314.83,
+   "end": 2321.15,
+   "text": "Alice Wong, they've tasked her phone, they've somehow, this is the thing Siggenters never"
+  },
+  {
+   "start": 2321.15,
+   "end": 2326.11,
+   "text": "want to describe, is it's pretty easy to get her phone number. How are they actually getting the"
+  },
+  {
+   "start": 2326.11,
+   "end": 2329.27,
+   "text": "content of the communications, right?"
+  },
+  {
+   "start": 2329.27,
+   "end": 2333.11,
+   "text": "There's some NSA, Siggunter, Pixie Dust that they sprinkle."
+  },
+  {
+   "start": 2333.11,
+   "end": 2335.07,
+   "text": "They are inside her comms."
+  },
+  {
+   "start": 2335.07,
+   "end": 2339.19,
+   "text": "Someone is looking at those calls, messages, emails,"
+  },
+  {
+   "start": 2339.19,
+   "end": 2342.15,
+   "text": "transcribing them, trying to bring out the bits"
+  },
+  {
+   "start": 2342.15,
+   "end": 2345.59,
+   "text": "that are actually useful to analysts and to policymakers."
+  },
+  {
+   "start": 2345.59,
+   "end": 2350.59,
+   "text": "Now, the actual analysts and linguists"
+  },
+  {
+   "start": 2350.71,
+   "end": 2353.95,
+   "text": "who are these kind of secretive hidden people"
+  },
+  {
+   "start": 2353.95,
+   "end": 2359.07,
+   "text": "out at Fort Meade, would absolutely know, just from listening to the conversations or being"
+  },
+  {
+   "start": 2359.07,
+   "end": 2364.51,
+   "text": "in the phone or the computer, that it's Jensen on the other side. But to your point exactly,"
+  },
+  {
+   "start": 2365.07,
+   "end": 2370.19,
+   "text": "you don't want to be distributing, those intercepts are probably going to thousands of people"
+  },
+  {
+   "start": 2370.75,
+   "end": 2373.55,
+   "text": "in the US intelligence community. So you don't want his name on it, do you?"
+  },
+  {
+   "start": 2373.55,
+   "end": 2377.71,
+   "text": "So you don't want his name on it. We had this issue with various Middle Eastern countries where you'd"
+  },
+  {
+   "start": 2377.71,
+   "end": 2383.79,
+   "text": "have targets of our collection who were talking about their conversations with US officials."
+  },
+  {
+   "start": 2383.95,
+   "end": 2391.95,
+   "text": "Right? And even as they're talking about U.S. officials, the NSA would mask the identity of those officials."
+  },
+  {
+   "start": 2391.95,
+   "end": 2396.95,
+   "text": "And then what would happen is those intercepts would get distributed, sent down to the NSC,"
+  },
+  {
+   "start": 2396.95,
+   "end": 2401.95,
+   "text": "and all of these people at the NSC, because they're kind of narcissists, would want to know who is..."
+  },
+  {
+   "start": 2401.95,
+   "end": 2405.95,
+   "text": "Well, who's he talking about? Is he talking about me? Is he talking about me?"
+  },
+  {
+   "start": 2405.95,
+   "end": 2412.95,
+   "text": "Right? And then they would ask for it to be unmasked so that they could understand who this or that foreign leader was talking about."
+  },
+  {
+   "start": 2412.95,
+   "end": 2416.55,
+   "text": "about. And so in this case, they're looking at this and"
+  },
+  {
+   "start": 2416.55,
+   "end": 2420.03,
+   "text": "they're like, well, who is US person number one? Right. And"
+  },
+  {
+   "start": 2420.11,
+   "end": 2423.95,
+   "text": "Jensen's name comes up. It's like, it's Jensen Wong. This is"
+  },
+  {
+   "start": 2423.95,
+   "end": 2427.35,
+   "text": "late 2025. We should now that's the year ago. This is that's"
+  },
+  {
+   "start": 2427.35,
+   "end": 2431.11,
+   "text": "the year that I find astonishing is that this happens a year ago"
+  },
+  {
+   "start": 2431.25,
+   "end": 2434.63,
+   "text": "that they discover that he is the one having a relationship"
+  },
+  {
+   "start": 2434.67,
+   "end": 2438.51,
+   "text": "with a suspected Chinese MSS agent. We should have course said"
+  },
+  {
+   "start": 2438.51,
+   "end": 2441.83,
+   "text": "the Chinese denying any allegations of spying. We always"
+  },
+  {
+   "start": 2441.83,
+   "end": 2446.23,
+   "text": "You know, Gordon, we should put that, that is Gordon's line in every episode."
+  },
+  {
+   "start": 2446.23,
+   "end": 2447.27,
+   "text": "I just make sure that."
+  },
+  {
+   "start": 2447.27,
+   "end": 2449.35,
+   "text": "It's just like to be fair to the MSF."
+  },
+  {
+   "start": 2449.99,
+   "end": 2453.99,
+   "text": "Whatever baddie is out there, that they have their denial."
+  },
+  {
+   "start": 2453.99,
+   "end": 2455.03,
+   "text": "It's my old BBC training."
+  },
+  {
+   "start": 2455.03,
+   "end": 2458.63,
+   "text": "Their vociferous denial is communicated to our listeners."
+  },
+  {
+   "start": 2459.51,
+   "end": 2461.03,
+   "text": "But, you know, so here we go."
+  },
+  {
+   "start": 2461.03,
+   "end": 2467.27,
+   "text": "So we've got this detail and it gets briefed up to the president, to Donald J. Trump."
+  },
+  {
+   "start": 2468.28,
+   "end": 2470.2,
+   "text": "And he seems to do nothing with it."
+  },
+  {
+   "start": 2470.2,
+   "end": 2472.12,
+   "text": "I mean, this is what's so interesting."
+  },
+  {
+   "start": 2472.44,
+   "end": 2474.32,
+   "text": "Here's this guy who's cultivated him."
+  },
+  {
+   "start": 2474.32,
+   "end": 2475.6,
+   "text": "They've cultivated each other."
+  },
+  {
+   "start": 2475.8,
+   "end": 2477.32,
+   "text": "They've got a close relationship."
+  },
+  {
+   "start": 2477.84,
+   "end": 2481.16,
+   "text": "Doesn't seem to change the relationship as far as we can see from the surface."
+  },
+  {
+   "start": 2481.28,
+   "end": 2484.12,
+   "text": "I mean, there was this interesting thing where, you know, I think it was early in"
+  },
+  {
+   "start": 2484.12,
+   "end": 2489.48,
+   "text": "the year where Jensen wasn't originally on the Air Force One flight to China."
+  },
+  {
+   "start": 2490.04,
+   "end": 2493.64,
+   "text": "And then he kind of at the last minute, Trump kind of gets him on."
+  },
+  {
+   "start": 2494.08,
+   "end": 2498.76,
+   "text": "But again, I mean, fundamentally, the relationship is still there, which is"
+  },
+  {
+   "start": 2498.76,
+   "end": 2511.76,
+   "text": "frankly, quite hard to explain, isn't it? Other than perhaps the value of Nvidia as a company to the US stock market and the close relationship between its CEO and the president."
+  },
+  {
+   "start": 2511.76,
+   "end": 2514.76,
+   "text": "I mean, I'm not quite sure how else to understand it."
+  },
+  {
+   "start": 2514.76,
+   "end": 2521.76,
+   "text": "I don't think there is another way to understand it. I think that's exactly right. I mean, well, I think it's actually important to think about this through two lenses."
+  },
+  {
+   "start": 2521.76,
+   "end": 2525.84,
+   "text": "One is why wouldn't you make it public?"
+  },
+  {
+   "start": 2525.84,
+   "end": 2527.56,
+   "text": "Which I think does make sense, right?"
+  },
+  {
+   "start": 2527.56,
+   "end": 2530.56,
+   "text": "And it makes sense to potentially not publicize that."
+  },
+  {
+   "start": 2530.56,
+   "end": 2531.92,
+   "text": "To watch, understand."
+  },
+  {
+   "start": 2531.92,
+   "end": 2532.76,
+   "text": "To watch, understand."
+  },
+  {
+   "start": 2532.76,
+   "end": 2534.8,
+   "text": "I mean, obviously if you publicize it,"
+  },
+  {
+   "start": 2534.8,
+   "end": 2537.08,
+   "text": "there are some sources and methods"
+  },
+  {
+   "start": 2537.08,
+   "end": 2540.28,
+   "text": "that you're going to blow, right, by doing so."
+  },
+  {
+   "start": 2540.28,
+   "end": 2544.88,
+   "text": "And so there's a whole, I mean, this is again speculation,"
+  },
+  {
+   "start": 2544.88,
+   "end": 2547.36,
+   "text": "but below the water line here,"
+  },
+  {
+   "start": 2547.36,
+   "end": 2550.12,
+   "text": "there is obviously a massive effort"
+  },
+  {
+   "start": 2550.12,
+   "end": 2555.72,
+   "text": "by the US intelligence community to map these Chinese companies and the individuals involved"
+  },
+  {
+   "start": 2555.72,
+   "end": 2561.56,
+   "text": "in them that are trying to circumvent our export controls. So you'd probably be concerned that"
+  },
+  {
+   "start": 2561.56,
+   "end": 2566.28,
+   "text": "if you bring this kind of thing to light, that some of that collection then goes away and you"
+  },
+  {
+   "start": 2566.28,
+   "end": 2571.4,
+   "text": "lose your insight. Yeah, it's also worth saying, isn't it, that, you know, particularly a year ago,"
+  },
+  {
+   "start": 2572.04,
+   "end": 2577.16,
+   "text": "the US officials don't believe that Jensen himself knew that she was a Chinese agent."
+  },
+  {
+   "start": 2577.16,
+   "end": 2583.16,
+   "text": "So, you know, it's not the claim that he was kind of knowingly involved in this."
+  },
+  {
+   "start": 2583.16,
+   "end": 2587.36,
+   "text": "And you do get an interesting question there, which is why then wasn't he defensively briefed"
+  },
+  {
+   "start": 2587.36,
+   "end": 2590.6,
+   "text": "and told that person that you're dealing with?"
+  },
+  {
+   "start": 2590.6,
+   "end": 2595.26,
+   "text": "Because that's happened in the UK Parliament, frankly, where people have been defensively"
+  },
+  {
+   "start": 2595.26,
+   "end": 2600.24,
+   "text": "briefed because they've been told the person working for you, for instance, is suspected"
+  },
+  {
+   "start": 2600.24,
+   "end": 2603.0,
+   "text": "to be linked to Chinese intelligence and you should keep your distance."
+  },
+  {
+   "start": 2603.0,
+   "end": 2605.88,
+   "text": "Now, sometimes people to keep the distance, sometimes they don't."
+  },
+  {
+   "start": 2605.88,
+   "end": 2611.08,
+   "text": "doesn't appear to have been a defensive briefing and instead you get this kind of highly classified"
+  },
+  {
+   "start": 2611.08,
+   "end": 2616.92,
+   "text": "memo drafted. It looks like linked to the Secretary of State Marco Rubio, according to the New York"
+  },
+  {
+   "start": 2616.92,
+   "end": 2626.04,
+   "text": "Times, warning officials about this relationship, which is circulated around. But it is odd, isn't"
+  },
+  {
+   "start": 2626.04,
+   "end": 2631.4,
+   "text": "it? You can understand why they want to watch it and understand it. But not to say to Jensen,"
+  },
+  {
+   "start": 2631.4,
+   "end": 2637.08,
+   "text": "Be careful about this because you may be spilling secrets. That feels surprising to me."
+  },
+  {
+   "start": 2637.64,
+   "end": 2646.12,
+   "text": "I wonder if the intelligence community suggested a defensive briefing and potentially was overruled"
+  },
+  {
+   "start": 2646.12,
+   "end": 2651.08,
+   "text": "by the president or the White House. It would certainly be responsible to have given one."
+  },
+  {
+   "start": 2651.64,
+   "end": 2658.04,
+   "text": "It's such a mess in subways because at the top of it, you have Trump who is personally invested"
+  },
+  {
+   "start": 2658.04,
+   "end": 2665.08,
+   "text": "in this guy, likes this guy, is financially connected to Jensen, has, I mean, a massive"
+  },
+  {
+   "start": 2665.08,
+   "end": 2671.0,
+   "text": "amount of the gains in the US stock market in Trump's second term have been because of NVIDIA,"
+  },
+  {
+   "start": 2671.0,
+   "end": 2675.56,
+   "text": "Trump's making money himself off of it. And frankly, I mean, you think back to"
+  },
+  {
+   "start": 2676.92,
+   "end": 2682.36,
+   "text": "the 2016 election and some of the kind of issues around Russian interference and US"
+  },
+  {
+   "start": 2682.36,
+   "end": 2687.72,
+   "text": "collection on the Russians that bled over into collecting information incidentally on"
+  },
+  {
+   "start": 2687.72,
+   "end": 2692.28,
+   "text": "U.S. persons in the Trump campaign. Trump's really sensitive to this kind of thing too."
+  },
+  {
+   "start": 2692.28,
+   "end": 2692.78,
+   "text": "Yeah."
+  },
+  {
+   "start": 2692.78,
+   "end": 2695.88,
+   "text": "And I wonder if there's also a part of this that's like, you know what,"
+  },
+  {
+   "start": 2695.88,
+   "end": 2700.6,
+   "text": "Jensen's not given this woman anything that, you know, the Chinese don't already have."
+  },
+  {
+   "start": 2700.6,
+   "end": 2705.24,
+   "text": "And he's obviously it's clear from the surveillance that they're sleeping together."
+  },
+  {
+   "start": 2705.24,
+   "end": 2709.32,
+   "text": "So this is an embarrassing, like this is an embarrassing thing I think for Trump to bring"
+  },
+  {
+   "start": 2709.32,
+   "end": 2713.56,
+   "text": "to Jensen. And so they just, it seems like it was just like, let's just bury this thing."
+  },
+  {
+   "start": 2714.28,
+   "end": 2716.52,
+   "text": "And, and he'll be careful, you know, I'm sure."
+  },
+  {
+   "start": 2716.52,
+   "end": 2719.64,
+   "text": "Which then gets the question about why does this emerge now,"
+  },
+  {
+   "start": 2720.36,
+   "end": 2724.44,
+   "text": "which I think is an interesting question as we get to the end. And I think, in my mind,"
+  },
+  {
+   "start": 2725.0,
+   "end": 2729.72,
+   "text": "understanding how journalism works, and how government works, you can imagine there might"
+  },
+  {
+   "start": 2729.72,
+   "end": 2735.4,
+   "text": "be people within government who are like, for a year, we've known about this, and there hasn't"
+  },
+  {
+   "start": 2735.4,
+   "end": 2740.36,
+   "text": "been a defensive briefing, nothing's been stopped, people haven't been warned about it."
+  },
+  {
+   "start": 2740.36,
+   "end": 2744.52,
+   "text": "There is a kind of roadblock somewhere within the administration maybe to doing that."
+  },
+  {
+   "start": 2744.52,
+   "end": 2749.48,
+   "text": "So frankly, we're going to talk to the New York Times or somewhere else and get this story out"
+  },
+  {
+   "start": 2749.48,
+   "end": 2755.08,
+   "text": "so that it's dealt with, unfortunately, through the public domain from Jensen Wang's perspective,"
+  },
+  {
+   "start": 2755.08,
+   "end": 2760.52,
+   "text": "rather than through a quiet way, but quite possibly because of that frustration that"
+  },
+  {
+   "start": 2760.52,
+   "end": 2765.0,
+   "text": "nothing had been done and nothing had moved. That would be my guess and that is speculation."
+  },
+  {
+   "start": 2765.4,
+   "end": 2767.08,
+   "text": "But I guess they were, where does this all leave us?"
+  },
+  {
+   "start": 2767.08,
+   "end": 2770.44,
+   "text": "I mean, Jensen is still there in post, we should say, you know, he's apologized."
+  },
+  {
+   "start": 2770.56,
+   "end": 2771.84,
+   "text": "He's admitted to the affair."
+  },
+  {
+   "start": 2771.96,
+   "end": 2774.56,
+   "text": "He's admitted to the affair and he's apologized."
+  },
+  {
+   "start": 2774.56,
+   "end": 2778.08,
+   "text": "He said he'll cooperate with an investigation by the board."
+  },
+  {
+   "start": 2778.84,
+   "end": 2780.92,
+   "text": "We should say, though, that it's a very unusual company."
+  },
+  {
+   "start": 2780.92,
+   "end": 2784.04,
+   "text": "It's very personalized around him and, you know,"
+  },
+  {
+   "start": 2784.04,
+   "end": 2786.08,
+   "text": "increasingly members of his family."
+  },
+  {
+   "start": 2786.08,
+   "end": 2791.08,
+   "text": "And so he's still there and it's hard to see him leaving very easily."
+  },
+  {
+   "start": 2791.12,
+   "end": 2795.2,
+   "text": "He's so associated with the company, but it's going to be rocky"
+  },
+  {
+   "start": 2795.2,
+   "end": 2798.68,
+   "text": "And there'll be congressional hearings, I'm sure, and things like that, where there's"
+  },
+  {
+   "start": 2798.68,
+   "end": 2804.24,
+   "text": "questions asked about what he knew, whether he suspected it, and what the administration"
+  },
+  {
+   "start": 2804.24,
+   "end": 2805.24,
+   "text": "knew about it."
+  },
+  {
+   "start": 2805.24,
+   "end": 2809.12,
+   "text": "Just to go back very briefly to the point on why now."
+  },
+  {
+   "start": 2809.12,
+   "end": 2814.2,
+   "text": "I mean, I should say all of the sources for the times piece of the FT are anonymous."
+  },
+  {
+   "start": 2814.2,
+   "end": 2820.87,
+   "text": "And so you kind of have to read between the lines on what sort of sources they are."
+  },
+  {
+   "start": 2820.87,
+   "end": 2828.35,
+   "text": "It seems obvious that at least some of them had either access to the surveillance intel"
+  },
+  {
+   "start": 2828.35,
+   "end": 2835.87,
+   "text": "itself on Juan or knowledge of it or had access to some of them definitely have read the memo"
+  },
+  {
+   "start": 2835.87,
+   "end": 2840.95,
+   "text": "that Marco Rubio put together, essentially warning Trump that maybe this is a bad idea"
+  },
+  {
+   "start": 2840.95,
+   "end": 2846.3,
+   "text": "to let this guy participate in the summit with she."
+  },
+  {
+   "start": 2846.3,
+   "end": 2849.1,
+   "text": "It seems likely from an Intel security angle."
+  },
+  {
+   "start": 2849.1,
+   "end": 2855.22,
+   "text": "I mean, the CIA and I say like, most of the people there would view the Chinese as an"
+  },
+  {
+   "start": 2855.22,
+   "end": 2862.12,
+   "text": "enemy and would not share Jensen's kind of view that there's a commercial opportunity"
+  },
+  {
+   "start": 2862.12,
+   "end": 2865.56,
+   "text": "here that's not going to affect national security, I think."
+  },
+  {
+   "start": 2865.56,
+   "end": 2872.74,
+   "text": "And so there'd be a lot of people in the intelligence community who would say, this is absolutely,"
+  },
+  {
+   "start": 2872.74,
+   "end": 2879.5,
+   "text": "It's almost criminal to allow the Chinese to continue to have access to this guy, not"
+  },
+  {
+   "start": 2879.5,
+   "end": 2883.06,
+   "text": "bring it to his attention, not bring it to the public's attention, whatever it might"
+  },
+  {
+   "start": 2883.06,
+   "end": 2884.06,
+   "text": "be."
+  },
+  {
+   "start": 2884.06,
+   "end": 2887.18,
+   "text": "And then also, but there's also the other piece of this is that, and this is just kind"
+  },
+  {
+   "start": 2887.18,
+   "end": 2892.96,
+   "text": "of looking forward, even if Jensen survives it in video, which I agree with you seems"
+  },
+  {
+   "start": 2892.96,
+   "end": 2896.94,
+   "text": "likely even though I think the stock's down like 5% today as a recording this, pretty"
+  },
+  {
+   "start": 2896.94,
+   "end": 2898.68,
+   "text": "significant chunk."
+  },
+  {
+   "start": 2898.68,
+   "end": 2905.46,
+   "text": "Is he ever going to have credibility again as he lobbies to loosen, to sell more chips"
+  },
+  {
+   "start": 2905.46,
+   "end": 2906.46,
+   "text": "to China?"
+  },
+  {
+   "start": 2906.46,
+   "end": 2910.68,
+   "text": "Like he's completely had his legs kicked out from underneath him by these leaks and the"
+  },
+  {
+   "start": 2910.68,
+   "end": 2917.24,
+   "text": "idea that even if he didn't give up much of consequence, even if they were just sort"
+  },
+  {
+   "start": 2917.24,
+   "end": 2921.44,
+   "text": "of, you know, the Chinese are just kind of getting atmospherics and a sense of what Trump's"
+  },
+  {
+   "start": 2921.44,
+   "end": 2924.32,
+   "text": "that, you know, maybe the Chinese are just getting a lot of things they already know."
+  },
+  {
+   "start": 2924.32,
+   "end": 2925.84,
+   "text": "I'm not sure that that's true."
+  },
+  {
+   "start": 2925.84,
+   "end": 2933.12,
+   "text": "even if it is, there's no way that this guy is going to be able to kind of stand up a year from now"
+  },
+  {
+   "start": 2933.68,
+   "end": 2939.76,
+   "text": "and make authoritative arguments about kind of China AI policy anymore. Right? I mean,"
+  },
+  {
+   "start": 2939.76,
+   "end": 2944.56,
+   "text": "he's going to be, his credibility is really weakened. So that's, that's another angle to this,"
+  },
+  {
+   "start": 2944.56,
+   "end": 2950.0,
+   "text": "is there a political faction inside the, the White House or inside the government that is kind of"
+  },
+  {
+   "start": 2950.0,
+   "end": 2953.28,
+   "text": "like they're China hawks. They don't want the Chinese to have access to the stuff and they"
+  },
+  {
+   "start": 2953.28,
+   "end": 2956.6,
+   "text": "when they want to take Jensen down and leaking mess is a great way to do that."
+  },
+  {
+   "start": 2956.8,
+   "end": 2958.12,
+   "text": "I think that's entirely possible."
+  },
+  {
+   "start": 2958.32,
+   "end": 2963.84,
+   "text": "And I think it's a way of undermining him, challenging the policy."
+  },
+  {
+   "start": 2964.04,
+   "end": 2968.56,
+   "text": "But also, I think alerting people that this is something that goes on because"
+  },
+  {
+   "start": 2968.76,
+   "end": 2972.44,
+   "text": "I think it's quite possible, in fact, quite likely,"
+  },
+  {
+   "start": 2972.64,
+   "end": 2976.36,
+   "text": "given what we were saying about the scale of Chinese intelligence and the MSS,"
+  },
+  {
+   "start": 2976.56,
+   "end": 2978.12,
+   "text": "that there's lots more of this happening."
+  },
+  {
+   "start": 2978.32,
+   "end": 2982.32,
+   "text": "Nvidia is perhaps the biggest and most important company in this field."
+  },
+  {
+   "start": 2982.32,
+   "end": 2986.16,
+   "text": "But it's not going to be the only one that's getting targeted by China in this way."
+  },
+  {
+   "start": 2986.16,
+   "end": 2994.4,
+   "text": "Gordon, do you think that Shenzhen's lobbying of Trump is being driven by the Chinese?"
+  },
+  {
+   "start": 2994.4,
+   "end": 2995.36,
+   "text": "The influence point."
+  },
+  {
+   "start": 2995.36,
+   "end": 3000.24,
+   "text": "The influence point. I mean, that's the biggest, I think question is, would you look at the timeline"
+  },
+  {
+   "start": 3000.24,
+   "end": 3006.08,
+   "text": "of Alice Huang's relationship with Shenzhen seems to start in the summer of 2024? And actually,"
+  },
+  {
+   "start": 3006.08,
+   "end": 3010.88,
+   "text": "there have been WeChat photos of the two of them that have been made public today, kind of"
+  },
+  {
+   "start": 3010.88,
+   "end": 3018.8,
+   "text": "anchors then, that is before Jensen begins his kind of massive, you know, lobbying push into"
+  },
+  {
+   "start": 3018.8,
+   "end": 3024.96,
+   "text": "Trump world. Now, you could make the case that, well, he has a commercial incentive to do this"
+  },
+  {
+   "start": 3024.96,
+   "end": 3031.04,
+   "text": "anyway, but it is that the overlap is very interesting. And I think it raises all kinds of"
+  },
+  {
+   "start": 3031.04,
+   "end": 3039.08,
+   "text": "questions about how much of that was in some way, was any of it, or was some of it, all of it,"
+  },
+  {
+   "start": 3039.08,
+   "end": 3042.76,
+   "text": "driven in part by Beijing and the MSS?"
+  },
+  {
+   "start": 3042.76,
+   "end": 3045.16,
+   "text": "Of course. And the answer is we don't know."
+  },
+  {
+   "start": 3045.16,
+   "end": 3046.16,
+   "text": "It would be interesting to know."
+  },
+  {
+   "start": 3046.16,
+   "end": 3047.0,
+   "text": "I do think that."
+  },
+  {
+   "start": 3047.0,
+   "end": 3051.28,
+   "text": "But I'm gonna say that I think,"
+  },
+  {
+   "start": 3051.28,
+   "end": 3053.4,
+   "text": "because you raised this point with the question,"
+  },
+  {
+   "start": 3053.4,
+   "end": 3056.92,
+   "text": "which is the commercial instinct to sell chips to China"
+  },
+  {
+   "start": 3056.92,
+   "end": 3061.2,
+   "text": "was aligned anyway with Nvidia and the commercial drive."
+  },
+  {
+   "start": 3061.2,
+   "end": 3066.2,
+   "text": "And I just think he had a reason to take that policy anyway."
+  },
+  {
+   "start": 3066.2,
+   "end": 3071.0,
+   "text": "So I don't think you need to explain it through any kind of Chinese influence"
+  },
+  {
+   "start": 3071.0,
+   "end": 3076.58,
+   "text": "It kind of made sense and I think often when you look particularly at the US and Washington and"
+  },
+  {
+   "start": 3076.96,
+   "end": 3082.48,
+   "text": "Business and lobbying and the positions companies are taking at the moment on all kinds of issues, but especially AI"
+  },
+  {
+   "start": 3082.48,
+   "end": 3087.16,
+   "text": "I think you can just follow the money. You don't always have to kind of take a spy link to it"
+  },
+  {
+   "start": 3087.68,
+   "end": 3089.68,
+   "text": "But you're right. It's a good question"
+  },
+  {
+   "start": 3089.8,
+   "end": 3092.64,
+   "text": "And you know whether we get more clarity on that"
+  },
+  {
+   "start": 3092.64,
+   "end": 3098.7,
+   "text": "Well, let's see, you know, in the coming days and weeks as more of this comes out because I'm sure David as we finish"
+  },
+  {
+   "start": 3099.28,
+   "end": 3105.42,
+   "text": "More will be coming out. There's no doubt. Is it I mean, it's such a kind of wild interesting story that there's bound to be more"
+  },
+  {
+   "start": 3105.72,
+   "end": 3113.24,
+   "text": "Yeah, and Trump and she are meeting in China next week. So yeah, maybe I actually I actually don't think this is going to come up"
+  },
+  {
+   "start": 3113.24,
+   "end": 3115.96,
+   "text": "Would be my my hot take bit to embarrassing"
+  },
+  {
+   "start": 3116.32,
+   "end": 3118.32,
+   "text": "But it will certainly be"
+  },
+  {
+   "start": 3118.32,
+   "end": 3120.92,
+   "text": "just under the radar."
+  },
+  {
+   "start": 3120.92,
+   "end": 3123.36,
+   "text": "Well, I think that's a great spot to end"
+  },
+  {
+   "start": 3123.36,
+   "end": 3125.88,
+   "text": "this week's Intelligent Scoop on"
+  },
+  {
+   "start": 3125.88,
+   "end": 3128.24,
+   "text": "whether Jensen Huang was the victim"
+  },
+  {
+   "start": 3128.24,
+   "end": 3130.02,
+   "text": "of a Chinese honey trap."
+  },
+  {
+   "start": 3130.02,
+   "end": 3132.92,
+   "text": "As a reminder, you have thoughts on this."
+  },
+  {
+   "start": 3132.92,
+   "end": 3133.92,
+   "text": "Please reach out to us."
+  },
+  {
+   "start": 3133.92,
+   "end": 3136.96,
+   "text": "The rest is classified at goalhanger.com."
+  },
+  {
+   "start": 3136.96,
+   "end": 3140.88,
+   "text": "Send us your take on this question."
+  },
+  {
+   "start": 3140.88,
+   "end": 3144.38,
+   "text": "And as a reminder, go and join our Declassified Club."
+  },
+  {
+   "start": 3144.38,
+   "end": 3145.72,
+   "text": "If you want more of this,"
+  },
+  {
+   "start": 3145.72,
+   "end": 3149.68,
+   "text": "You can do that at therestisclassified.com"
+  },
+  {
+   "start": 3149.68,
+   "end": 3151.84,
+   "text": "where you'll get access to all kinds"
+  },
+  {
+   "start": 3151.84,
+   "end": 3153.98,
+   "text": "of wonderful bonus content."
+  },
+  {
+   "start": 3153.98,
+   "end": 3155.98,
+   "text": "And if you join right now,"
+  },
+  {
+   "start": 3155.98,
+   "end": 3158.4,
+   "text": "you can tune into our Watergate series"
+  },
+  {
+   "start": 3158.4,
+   "end": 3161.0,
+   "text": "and get a wonderful bonus mini series"
+  },
+  {
+   "start": 3161.0,
+   "end": 3165.8,
+   "text": "on a wild CIA officer named E. Howard Hunt."
+  },
+  {
+   "start": 3165.8,
+   "end": 3168.2,
+   "text": "Hope you enjoyed and we'll see you next time."
+  },
+  {
+   "start": 3168.2,
+   "end": 3174.56,
+   "text": "See you next time."
+  },
+  {
+   "start": 3174.56,
+   "end": 3177.6,
+   "text": "All new holiday drinks are now at McDonald's,"
+  },
+  {
+   "start": 3177.6,
+   "end": 3180.64,
+   "text": "like the Frosted Cranberry Splash with Sprite."
+  },
+  {
+   "start": 3180.64,
+   "end": 3182.92,
+   "text": "The Red Bull Frosted Granberry Energizer"
+  },
+  {
+   "start": 3182.92,
+   "end": 3185.02,
+   "text": "and Cookie Butter Coffees."
+  },
+  {
+   "start": 3185.02,
+   "end": 3190.56,
+   "text": "It is the season for seasonal drinks at McDonald's."
+  },
+  {
+   "start": 3190.56,
+   "end": 3193.04,
+   "text": "There's the economy you read about in the headlines."
+  },
+  {
+   "start": 3193.04,
+   "end": 3195.1,
+   "text": "And then there's the one taking shape"
+  },
+  {
+   "start": 3195.1,
+   "end": 3197.48,
+   "text": "inside companies every day."
+  },
+  {
+   "start": 3197.48,
+   "end": 3201.48,
+   "text": "I'm Christine Anderson, and this is Inside Blackstone."
+  },
+  {
+   "start": 3201.48,
+   "end": 3204.04,
+   "text": "From the technologies transforming industries"
+  },
+  {
+   "start": 3204.04,
+   "end": 3206.24,
+   "text": "to big trends shaping the economy,"
+  },
+  {
+   "start": 3206.24,
+   "end": 3207.88,
+   "text": "our goal is pretty simple."
+  },
+  {
+   "start": 3207.88,
+   "end": 3210.88,
+   "text": "Fun, engaging conversations that make complex topics"
+  },
+  {
+   "start": 3210.88,
+   "end": 3211.88,
+   "text": "more accessible."
+  },
+  {
+   "start": 3212.4,
+   "end": 3215.32,
+   "text": "Tune in every Tuesday and subscribe to Inside Blackstone"
+  },
+  {
+   "start": 3215.4,
+   "end": 3216.8,
+   "text": "wherever you get your podcasts."
+  },
+  {
+   "start": 3242.6,
+   "end": 3243.84,
+   "text": "to combine Walmart Plus and Sam's Club Plus,"
+  },
+  {
+   "start": 3243.84,
+   "end": 3245.36,
+   "text": "saving some of members of both for one-plus-year versus"
+  },
+  {
+   "start": 3245.36,
+   "end": 3246.76,
+   "text": "non-member or club member pricing slash fees."
+  },
+  {
+   "start": 3246.76,
+   "end": 3247.6,
+   "text": "Excludes membership fees."
+  },
+  {
+   "start": 3247.6,
+   "end": 3250.0,
+   "text": "See Walmart Plus terms and Sam's Club terms for more info."
+  }
+ ],
+ "seconds": 84.9,
+ "file": "the-rest-is-classified__intelligence-scoop-how-nvidia-s-ceo-fell-f/take0.mp3",
+ "model": "small"
+}

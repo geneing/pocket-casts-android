@@ -1,0 +1,27 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.lock
+
+# Downloaded / generated media and model weights
+data/models/
+data/model/
+next/moonshine/models/
+*.mp3
+*.m4a
+*.wav
+*.opus
+*.flac
+*.npz
+*.npy
+*.onnx
+*.ort
+*.bin
+*.safetensors
+*.exe
+*.rkyv
+next/audio_review/
+next/semantic/*.npz
+next/moonshine/*.log

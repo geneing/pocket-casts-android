@@ -297,6 +297,31 @@ enum class Feature(
         hasDevToggle = true,
         addedOn = LocalDate.parse("2026-05-12"),
     ),
+    AD_SKIPPING(
+        key = "ad_skipping",
+        title = "Skip ads and promotions",
+        defaultValue = isDebugOrPrototypeBuild,
+        tier = FeatureTier.Free,
+        hasFirebaseRemoteFlag = true,
+        hasDevToggle = true,
+        addedOn = LocalDate.parse("2026-11-10"),
+    ),
+
+    /**
+     * Debug switch for the ad-skipping work: ignore the transcript the show or our servers publish
+     * and recognise the episode on the device with Moonshine instead. The remote transcript is
+     * usually the better input, so this is off everywhere and exists only to exercise the recogniser
+     * end to end; turn it on from the developer settings to check a pass on real episodes.
+     */
+    FORCE_ON_DEVICE_TRANSCRIPT(
+        key = "force_on_device_transcript",
+        title = "Always transcribe on device (debug)",
+        defaultValue = false,
+        tier = FeatureTier.Free,
+        hasFirebaseRemoteFlag = false,
+        hasDevToggle = true,
+        addedOn = LocalDate.parse("2026-11-15"),
+    ),
     SYNCED_TRANSCRIPTS(
         key = "synced_transcripts",
         title = "Synced transcripts with playback timing",

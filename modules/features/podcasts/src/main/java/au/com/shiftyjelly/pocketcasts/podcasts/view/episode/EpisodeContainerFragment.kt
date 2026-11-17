@@ -23,13 +23,16 @@ import au.com.shiftyjelly.pocketcasts.analytics.SourceView
 import au.com.shiftyjelly.pocketcasts.images.R
 import au.com.shiftyjelly.pocketcasts.models.entity.PodcastEpisode
 import au.com.shiftyjelly.pocketcasts.models.type.EpisodeViewSource
+import au.com.shiftyjelly.pocketcasts.player.view.ai.AiTabFragment
 import au.com.shiftyjelly.pocketcasts.player.view.bookmark.BookmarksFragment
 import au.com.shiftyjelly.pocketcasts.player.view.chapters.ChaptersFragment
 import au.com.shiftyjelly.pocketcasts.player.view.chapters.ChaptersViewModel
 import au.com.shiftyjelly.pocketcasts.player.view.chapters.ChaptersViewModel.Mode.Episode
+import au.com.shiftyjelly.pocketcasts.player.view.transcript.TranscriptTabFragment
 import au.com.shiftyjelly.pocketcasts.player.viewmodel.BookmarksViewModel
 import au.com.shiftyjelly.pocketcasts.podcasts.databinding.FragmentEpisodeContainerBinding
 import au.com.shiftyjelly.pocketcasts.podcasts.view.episode.EpisodeFragment.EpisodeFragmentArgs
+import au.com.shiftyjelly.pocketcasts.repositories.transcript.TranscriptManager
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
 import au.com.shiftyjelly.pocketcasts.ui.theme.ThemeColor
 import au.com.shiftyjelly.pocketcasts.utils.extensions.requireParcelable
@@ -41,7 +44,11 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.lifecycle.withCreationCallback
+import javax.inject.Inject
 import kotlin.time.Duration
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import timber.log.Timber
 import au.com.shiftyjelly.pocketcasts.localization.R as LR
@@ -135,6 +142,9 @@ class EpisodeContainerFragment :
         get() = if (forceDarkTheme && theme.isLightTheme) Theme.ThemeType.DARK else theme.activeTheme
 
     private lateinit var adapter: ViewPagerAdapter
+
+    @Inject
+    lateinit var transcriptManager: TranscriptManager
 
     private val viewModel: EpisodeContainerFragmentViewModel by viewModels()
     private val bookmarksViewModel: BookmarksViewModel by viewModels()
@@ -237,7 +247,7 @@ class EpisodeContainerFragment :
                 if (adapter.isChaptersTab(position) && previousPosition != INVALID_TAB_POSITION) {
                     chaptersViewModel.trackChaptersShown(ChaptersShownSource.EpisodeDetails)
                 }
-                viewModel.onPageSelected(adapter.tabType(position))
+                adapter.tabType(position)?.let(viewModel::onPageSelected)
                 previousPosition = position
             }
         })
@@ -248,9 +258,14 @@ class EpisodeContainerFragment :
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                chaptersViewModel.uiState.collect {
-                    adapter.update(addChapters = it.showChaptersTab)
-                }
+                combine(
+                    chaptersViewModel.uiState.map { it.showChaptersTab },
+                    transcriptManager.observeIsTranscriptAvailable(episodeUUID),
+                ) { showChapters, hasTranscript -> showChapters to hasTranscript }
+                    .distinctUntilChanged()
+                    .collect { (showChapters, hasTranscript) ->
+                        adapter.update(addChapters = showChapters, addTranscript = hasTranscript)
+                    }
             }
         }
     }
@@ -304,11 +319,20 @@ class EpisodeContainerFragment :
 
         private sealed class Section(
             @StringRes val titleRes: Int,
-            val analyticsValue: EpisodeTabType,
+            /** The analytics tab value, or null for the tabs that are local to this build. */
+            val analyticsValue: EpisodeTabType?,
         ) {
             data object Details : Section(
                 titleRes = LR.string.details,
                 analyticsValue = EpisodeTabType.Details,
+            )
+            data object Transcript : Section(
+                titleRes = LR.string.transcript,
+                analyticsValue = null,
+            )
+            data object Ai : Section(
+                titleRes = LR.string.player_tab_ai,
+                analyticsValue = null,
             )
             data object Chapters : Section(
                 titleRes = LR.string.chapters,
@@ -322,10 +346,14 @@ class EpisodeContainerFragment :
 
         private var sections = listOf(Section.Details, Section.Bookmarks)
 
-        fun update(addChapters: Boolean) {
+        fun update(addTranscript: Boolean, addChapters: Boolean) {
             val currentSections = sections
             val newSections = buildList {
                 add(Section.Details)
+                if (addTranscript) {
+                    add(Section.Transcript)
+                    add(Section.Ai)
+                }
                 if (addChapters) {
                     add(Section.Chapters)
                 }
@@ -333,11 +361,7 @@ class EpisodeContainerFragment :
             }
             if (currentSections != newSections) {
                 sections = newSections
-                if (addChapters) {
-                    notifyItemInserted(1)
-                } else {
-                    notifyItemRemoved(1)
-                }
+                notifyDataSetChanged()
             }
         }
 
@@ -373,6 +397,14 @@ class EpisodeContainerFragment :
                     sourceView = SourceView.EPISODE_DETAILS,
                     episodeUuid = requireNotNull(episodeUUID),
                     forceDarkTheme = forceDarkTheme,
+                )
+
+                Section.Transcript -> TranscriptTabFragment.forEpisode(
+                    episodeUuid = requireNotNull(episodeUUID),
+                )
+
+                Section.Ai -> AiTabFragment.forEpisode(
+                    episodeUuid = requireNotNull(episodeUUID),
                 )
 
                 Section.Chapters -> ChaptersFragment.forEpisode(

@@ -16,11 +16,26 @@ interface TranscriptManager {
         episodeUuid: String,
     ): Transcript.Text?
 
+    /**
+     * Emits whenever the on-device transcript of the episode is rewritten, so a visible transcript
+     * tab can grow while recognition is still running. A cached implementation is fine for tests.
+     */
+    fun observeTranscriptUpdated(episodeUuid: String): Flow<Unit> = kotlinx.coroutines.flow.emptyFlow()
+
     suspend fun loadGeneratedChapters(
         episodeUuid: String,
     ): GeneratedChaptersResult
 
     fun resetInvalidTranscripts(
+        episodeUuid: String,
+    )
+
+    /**
+     * Forgets the transcript cached for an episode, so the next [loadTranscript] reads what is on
+     * the device now. The ad analysis uses it after it replaces a published transcript with the one
+     * it recognised, because the tab would otherwise keep showing the text it was opened with.
+     */
+    fun invalidateTranscript(
         episodeUuid: String,
     )
 }

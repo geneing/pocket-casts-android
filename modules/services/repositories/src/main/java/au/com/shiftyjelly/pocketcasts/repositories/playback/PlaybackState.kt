@@ -3,6 +3,7 @@ package au.com.shiftyjelly.pocketcasts.repositories.playback
 import androidx.annotation.StringRes
 import au.com.shiftyjelly.pocketcasts.models.entity.BaseEpisode
 import au.com.shiftyjelly.pocketcasts.models.entity.Podcast
+import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.Chapters
 import au.com.shiftyjelly.pocketcasts.models.type.TrimMode
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
@@ -20,6 +21,7 @@ data class PlaybackState(
     val fileMetadata: EpisodeFileMetadata? = null,
     val showNotesImageUrl: String? = null,
     val chapters: Chapters = Chapters(),
+    val adSegments: List<AdSegment> = emptyList(),
     val lastChangeFrom: String? = null,
     val playbackIssue: PlaybackIssue? = null,
     val lastErrorMessage: String? = null,
@@ -79,6 +81,7 @@ data class PlaybackState(
                 episodeUuid = episode.uuid,
                 podcast = podcast,
                 chapters = if (sameEpisode) previousPlaybackState.chapters else Chapters(),
+                adSegments = if (sameEpisode) previousPlaybackState.adSegments else emptyList(),
                 playbackSpeed = playbackEffects.playbackSpeed,
                 trimMode = playbackEffects.trimMode,
                 isVolumeBoosted = playbackEffects.isVolumeBoosted,

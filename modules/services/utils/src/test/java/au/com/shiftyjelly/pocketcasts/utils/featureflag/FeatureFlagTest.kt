@@ -31,6 +31,13 @@ class FeatureFlagTest {
     }
 
     @Test
+    fun `an episode with a published transcript is not recognised on the device`() {
+        // The published transcript is the better input, so forcing recognition is off unless someone
+        // turns it on to exercise the recogniser; this asserts the shipped default, not a toggle.
+        assertFalse(Feature.FORCE_ON_DEVICE_TRANSCRIPT.defaultValue)
+    }
+
+    @Test
     fun `use default feature flag value when there are no providers installed`() {
         FeatureFlag.clearProviders()
         FeatureFlag.setEnabled(Feature.TEST_FREE_FEATURE, false)

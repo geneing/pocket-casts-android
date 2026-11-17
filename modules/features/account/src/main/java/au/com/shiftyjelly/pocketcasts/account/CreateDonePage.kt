@@ -40,14 +40,12 @@ internal data class CreateDonePageState(
     @DrawableRes val imageRes: Int?,
     val title: String,
     val detail: String,
-    val isNewsletterChecked: Boolean,
     val isProgressVisible: Boolean,
 )
 
 @Composable
 internal fun CreateDonePage(
     state: CreateDonePageState,
-    onNewsletterChange: (Boolean) -> Unit,
     onCloseClick: () -> Unit,
     onDoneClick: () -> Unit,
     modifier: Modifier = Modifier,
@@ -61,7 +59,6 @@ internal fun CreateDonePage(
             modifier = background.verticalScroll(rememberScrollState()),
         ) {
             DoneHeader(state)
-            NewsletterRow(state, onNewsletterChange, Modifier.padding(top = 32.dp).width(560.dp))
             RowButton(
                 text = stringResource(LR.string.done),
                 onClick = onDoneClick,
@@ -82,7 +79,6 @@ internal fun CreateDonePage(
                 ) {
                     DoneHeader(state)
                 }
-                NewsletterRow(state, onNewsletterChange, Modifier.fillMaxWidth())
                 RowButton(
                     text = stringResource(LR.string.done),
                     onClick = onDoneClick,
@@ -121,20 +117,5 @@ private fun ColumnScope.DoneHeader(state: CreateDonePageState) {
         color = MaterialTheme.theme.colors.primaryText02,
         textAlign = TextAlign.Center,
         modifier = Modifier.padding(start = 8.dp, top = 8.dp, end = 8.dp),
-    )
-}
-
-@Composable
-private fun NewsletterRow(state: CreateDonePageState, onNewsletterChange: (Boolean) -> Unit, modifier: Modifier = Modifier) {
-    SettingRow(
-        primaryText = stringResource(LR.string.profile_pocket_casts_newsletter),
-        secondaryText = stringResource(LR.string.profile_create_newsletter_summary),
-        icon = painterResource(R.drawable.ic_newsletter),
-        toggle = SettingRowToggle.Switch(checked = state.isNewsletterChecked),
-        modifier = modifier.toggleable(
-            value = state.isNewsletterChecked,
-            role = Role.Switch,
-            onValueChange = onNewsletterChange,
-        ),
     )
 }

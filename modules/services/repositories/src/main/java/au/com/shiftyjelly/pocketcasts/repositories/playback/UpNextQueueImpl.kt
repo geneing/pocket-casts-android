@@ -10,6 +10,7 @@ import au.com.shiftyjelly.pocketcasts.models.entity.toUpNextEpisode
 import au.com.shiftyjelly.pocketcasts.models.type.UpNextSortType
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
 import au.com.shiftyjelly.pocketcasts.preferences.model.AutoPlaySource
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.AdAnalysisQueue
 import au.com.shiftyjelly.pocketcasts.repositories.download.DownloadQueue
 import au.com.shiftyjelly.pocketcasts.repositories.download.DownloadType
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
@@ -45,6 +46,7 @@ class UpNextQueueImpl @Inject constructor(
     private val episodeManager: EpisodeManager,
     private val syncManager: SyncManager,
     private val downloadQueue: DownloadQueue,
+    private val adAnalysisQueue: AdAnalysisQueue,
     @ApplicationContext private val application: Context,
 ) : UpNextQueue,
     CoroutineScope {
@@ -94,6 +96,7 @@ class UpNextQueueImpl @Inject constructor(
     override fun setupBlocking() {
         val initState = updateStateBlocking()
         updateCurrentEpisodeState(initState)
+        scheduleRecognitionForQueue()
 
         // listen for user changes and send them to the server in bulk
         changesFlow
@@ -183,8 +186,20 @@ class UpNextQueueImpl @Inject constructor(
         val shouldShuffleUpNext = action is UpNextAction.RemoveAndShuffle
         val state = updateStateBlocking(shouldShuffleUpNext = shouldShuffleUpNext)
         updateCurrentEpisodeState(state)
+        scheduleRecognitionForQueue()
 
         action._onAdd?.invoke()
+    }
+
+    /**
+     * Queues every podcast episode in Up Next for on-device recognition. The scheduler only appends
+     * rows to one durable queue, so a multi-podcast playlist fills one worker's work list rather
+     * than starting a recognition pass per episode.
+     */
+    private fun scheduleRecognitionForQueue() {
+        allEpisodes.forEach { episode ->
+            if (episode is PodcastEpisode) adAnalysisQueue.schedule(episode.uuid)
+        }
     }
 
     override fun isCurrentEpisode(episode: BaseEpisode): Boolean {

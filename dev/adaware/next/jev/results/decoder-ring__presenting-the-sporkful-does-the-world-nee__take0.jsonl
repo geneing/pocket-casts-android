@@ -1,0 +1,883 @@
+{"idx": 0, "start": 0.0, "end": 2.88, "text": "Verizon knows that holiday math can be complicated.", "label": "advertisement", "p_ad": 0.61, "p_content": 0.16, "p_transition": 0.23, "missing": false}
+{"idx": 1, "start": 2.88, "end": 4.72, "text": "Okay, let's see, we got the four kids.", "label": "content", "p_ad": 0.08, "p_content": 0.81, "p_transition": 0.11, "missing": false}
+{"idx": 2, "start": 4.72, "end": 6.48, "text": "Four gifts each.", "label": "content", "p_ad": 0.03, "p_content": 0.96, "p_transition": 0.01, "missing": false}
+{"idx": 3, "start": 6.48, "end": 8.96, "text": "Six teacher gifts?", "label": "content", "p_ad": 0.02, "p_content": 0.97, "p_transition": 0.01, "missing": false}
+{"idx": 4, "start": 8.96, "end": 10.76, "text": "Wait, oh, what do we get and Sandy?", "label": "content", "p_ad": 0.02, "p_content": 0.95, "p_transition": 0.03, "missing": false}
+{"idx": 5, "start": 10.76, "end": 13.72, "text": "And the dogs. Oh, can't forget the dogs.", "label": "content", "p_ad": 0.03, "p_content": 0.94, "p_transition": 0.03, "missing": false}
+{"idx": 6, "start": 13.72, "end": 15.04, "text": "Know what doesn't need math?", "label": "transition", "p_ad": 0.04, "p_content": 0.13, "p_transition": 0.83, "missing": false}
+{"idx": 7, "start": 15.04, "end": 16.72, "text": "Simplicity plan from Verizon.", "label": "advertisement", "p_ad": 0.77, "p_content": 0.02, "p_transition": 0.21, "missing": false}
+{"idx": 8, "start": 16.72, "end": 18.2, "text": "One plan, one price.", "label": "advertisement", "p_ad": 0.94, "p_content": 0.03, "p_transition": 0.03, "missing": false}
+{"idx": 9, "start": 18.2, "end": 21.04, "text": "Just $30 a line per month for you or the whole family.", "label": "advertisement", "p_ad": 1.0, "p_content": 0.0, "p_transition": 0.0, "missing": false}
+{"idx": 10, "start": 21.04, "end": 22.48, "text": "The holidays are complicated.", "label": "transition", "p_ad": 0.14, "p_content": 0.35, "p_transition": 0.51, "missing": false}
+{"idx": 11, "start": 22.48, "end": 25.68, "text": "Shopping our best deals and switching to Verizon is simple.", "label": "advertisement", "p_ad": 0.89, "p_content": 0.03, "p_transition": 0.08, "missing": false}
+{"idx": 12, "start": 25.68, "end": 27.48, "text": "For new customers, $30 per line includes", "label": "advertisement", "p_ad": 0.95, "p_content": 0.01, "p_transition": 0.04, "missing": false}
+{"idx": 13, "start": 27.48, "end": 29.6, "text": "auto pay and switch discount additional taxes fees in terms of", "label": "advertisement", "p_ad": 0.97, "p_content": 0.02, "p_transition": 0.01, "missing": false}
+{"idx": 14, "start": 29.6, "end": 38.16, "text": "supply. Today's episode is sponsored by Nerd Wallet wealth", "label": "advertisement", "p_ad": 0.53, "p_content": 0.01, "p_transition": 0.46, "missing": false}
+{"idx": 15, "start": 38.16, "end": 41.82, "text": "partners. Making more money doesn't come with instructions.", "label": "content", "p_ad": 0.37, "p_content": 0.47, "p_transition": 0.16, "missing": false}
+{"idx": 16, "start": 41.94, "end": 45.62, "text": "Nobody hands you a manual that says congrats on the raise.", "label": "content", "p_ad": 0.09, "p_content": 0.87, "p_transition": 0.04, "missing": false}
+{"idx": 17, "start": 45.7, "end": 49.54, "text": "Here's what that does to your taxes. That's where Nerd Wallet", "label": "transition", "p_ad": 0.36, "p_content": 0.24, "p_transition": 0.4, "missing": false}
+{"idx": 18, "start": 49.56, "end": 52.58, "text": "wealth partners comes in. They're a financial advisory firm", "label": "advertisement", "p_ad": 0.88, "p_content": 0.05, "p_transition": 0.07, "missing": false}
+{"idx": 19, "start": 52.58, "end": 56.18, "text": "built for high earners in their 30s and 40s. The first thing", "label": "advertisement", "p_ad": 0.68, "p_content": 0.19, "p_transition": 0.13, "missing": false}
+{"idx": 20, "start": 56.18, "end": 58.82, "text": "they do with every client is create a financial plan. It's", "label": "advertisement", "p_ad": 0.8, "p_content": 0.16, "p_transition": 0.04, "missing": false}
+{"idx": 21, "start": 58.82, "end": 61.5, "text": "basically a roadmap from where you are today to where you want", "label": "advertisement", "p_ad": 0.52, "p_content": 0.44, "p_transition": 0.04, "missing": false}
+{"idx": 22, "start": 61.5, "end": 65.68, "text": "to be. When you decide you want to retire five years earlier or spring for the bigger", "label": "advertisement", "p_ad": 0.68, "p_content": 0.3, "p_transition": 0.02, "missing": false}
+{"idx": 23, "start": 65.68, "end": 69.68, "text": "house, they'll run the numbers on what's possible. And they meet with their clients", "label": "advertisement", "p_ad": 0.75, "p_content": 0.24, "p_transition": 0.01, "missing": false}
+{"idx": 24, "start": 69.68, "end": 74.81, "text": "regularly because they know that at this phase of life, things change quickly.", "label": "advertisement", "p_ad": 0.63, "p_content": 0.35, "p_transition": 0.02, "missing": false}
+{"idx": 25, "start": 74.81, "end": 79.69, "text": "Think of NerdWallet Wealth Partners as the manual for high earners that you never got,", "label": "advertisement", "p_ad": 0.94, "p_content": 0.04, "p_transition": 0.02, "missing": false}
+{"idx": 26, "start": 79.69, "end": 84.81, "text": "plus someone who's actually read it. Find out more at nerdwalletwealthpartners.com", "label": "advertisement", "p_ad": 1.0, "p_content": 0.0, "p_transition": 0.0, "missing": false}
+{"idx": 27, "start": 84.81, "end": 119.59, "text": "We have somehow found ourselves recently drawn to stories about produce.", "label": "content", "p_ad": 0.0, "p_content": 0.91, "p_transition": 0.09, "missing": false}
+{"idx": 28, "start": 119.59, "end": 120.87, "text": "You might have noticed this.", "label": "content", "p_ad": 0.0, "p_content": 0.96, "p_transition": 0.04, "missing": false}
+{"idx": 29, "start": 120.87, "end": 125.19, "text": "We've talked about jalapenos, prunes, oranges.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 30, "start": 125.19, "end": 128.15, "text": "And our friends at the Sporkful have made an episode that we want to share with you", "label": "content", "p_ad": 0.07, "p_content": 0.86, "p_transition": 0.07, "missing": false}
+{"idx": 31, "start": 128.15, "end": 135.79, "text": "today that investigates a mystery about another fruit, or maybe a vegetable, namely the tomato.", "label": "content", "p_ad": 0.01, "p_content": 0.96, "p_transition": 0.03, "missing": false}
+{"idx": 32, "start": 135.79, "end": 140.67, "text": "The Sporkful is a show about food hosted by Dan Pashman that I know decoder-ring listeners", "label": "content", "p_ad": 0.06, "p_content": 0.9, "p_transition": 0.04, "missing": false}
+{"idx": 33, "start": 140.67, "end": 141.87, "text": "will like.", "label": "content", "p_ad": 0.03, "p_content": 0.96, "p_transition": 0.01, "missing": false}
+{"idx": 34, "start": 141.87, "end": 145.79, "text": "Dan digs deep into culinary topics, some of them hiding in plain sight that can tell", "label": "content", "p_ad": 0.03, "p_content": 0.97, "p_transition": 0.0, "missing": false}
+{"idx": 35, "start": 145.79, "end": 148.31, "text": "us more about people and the world we live in.", "label": "content", "p_ad": 0.02, "p_content": 0.98, "p_transition": 0.0, "missing": false}
+{"idx": 36, "start": 148.31, "end": 151.73, "text": "And recently, the Spork Bowl teamed up with Planet Money to look into a trend you may", "label": "content", "p_ad": 0.02, "p_content": 0.95, "p_transition": 0.03, "missing": false}
+{"idx": 37, "start": 151.73, "end": 157.31, "text": "have noticed at the grocery store, the explosion in the varieties of fruits for sale.", "label": "content", "p_ad": 0.01, "p_content": 0.98, "p_transition": 0.01, "missing": false}
+{"idx": 38, "start": 157.31, "end": 161.39, "text": "It's never just your standard red delicious and Granny Smith's anymore, but Apple's", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 39, "start": 161.39, "end": 167.27, "text": "with all sorts of fancy sounding brand names, often with fancy price tags to go with them.", "label": "content", "p_ad": 0.01, "p_content": 0.99, "p_transition": 0.0, "missing": false}
+{"idx": 40, "start": 167.27, "end": 172.61, "text": "And this trend has spread from apples to all sorts of fruits, including tomatoes.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 41, "start": 172.61, "end": 174.03, "text": "So what's going on here?", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 42, "start": 174.03, "end": 177.19, "text": "And how do you even go about inventing a new tomato?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 43, "start": 177.19, "end": 178.19, "text": "It's all in this episode.", "label": "content", "p_ad": 0.15, "p_content": 0.49, "p_transition": 0.36, "missing": false}
+{"idx": 44, "start": 178.19, "end": 179.19, "text": "I think you'll enjoy it.", "label": "content", "p_ad": 0.38, "p_content": 0.58, "p_transition": 0.04, "missing": false}
+{"idx": 45, "start": 179.19, "end": 180.19, "text": "Here's Dan Pashman.", "label": "transition", "p_ad": 0.0, "p_content": 0.27, "p_transition": 0.73, "missing": false}
+{"idx": 46, "start": 180.19, "end": 183.77, "text": "See, Kenny, look at how beautiful New Jersey is.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 47, "start": 183.77, "end": 188.09, "text": "Rolling hills, farms that we just passed, a whole bunch of cows huddled together under", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 48, "start": 188.09, "end": 190.49, "text": "a tree to stay in the shade, wagging their tails.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 49, "start": 190.49, "end": 191.49, "text": "Smart cows.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 50, "start": 191.49, "end": 192.49, "text": "New Jersey cows are smart cows.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 51, "start": 192.49, "end": 193.49, "text": "Let it be known.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 52, "start": 193.49, "end": 194.49, "text": "That's right.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 53, "start": 194.49, "end": 197.25, "text": "I'm driving through my home state of New Jersey, just 15 minutes from the Pennsylvania border", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 54, "start": 197.25, "end": 199.05, "text": "with my friend Kenny Malone.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 55, "start": 199.05, "end": 201.57, "text": "Kenny hosts one of my favorite podcasts, Planet Money.", "label": "content", "p_ad": 0.06, "p_content": 0.93, "p_transition": 0.01, "missing": false}
+{"idx": 56, "start": 201.57, "end": 205.25, "text": "And while the cows are very cute, that's not why we're here.", "label": "content", "p_ad": 0.0, "p_content": 0.64, "p_transition": 0.36, "missing": false}
+{"idx": 57, "start": 205.25, "end": 210.41, "text": "We're here in the great state of New Jersey to explore tomatoes, which is something New Jersey is famous for.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 58, "start": 210.41, "end": 212.65, "text": "Jersey fresh, New Jersey tomatoes.", "label": "content", "p_ad": 0.15, "p_content": 0.84, "p_transition": 0.01, "missing": false}
+{"idx": 59, "start": 212.65, "end": 215.05, "text": "It sounds like a joke when you say it every time.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 60, "start": 215.05, "end": 218.24, "text": "Well, I'm here to tell you that it's not a joke.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 61, "start": 218.24, "end": 226.34, "text": "In fact, almost a century ago, a scientist at Rutgers University developed a new New Jersey tomato that became the tomato.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 62, "start": 226.34, "end": 234.64, "text": "For decades, if you were eating a tomato, you were most likely eating a descendant of the plump red platonic ideal of a tomato that the Rutgers scientists had helped to perfect.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 63, "start": 234.64, "end": 240.6, "text": "And that was a slicer style tomato, you know the big old kind that you slice a century later", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 64, "start": 240.6, "end": 244.0, "text": "Kenny and I are traveling to Rutgers research farm to see a new tomato", "label": "content", "p_ad": 0.0, "p_content": 0.96, "p_transition": 0.04, "missing": false}
+{"idx": 65, "start": 244.0, "end": 250.02, "text": "They've created this time. It's a smaller one a grape tomato called scarlet sunrise and as I tell Kenny", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 66, "start": 250.02, "end": 253.92, "text": "I'm not quite sure how to feel about it. I have to be honest as", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 67, "start": 254.6, "end": 259.68, "text": "Excited as I am to learn more about this new tomato. I am skeptical of it being a grape tomato", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 68, "start": 259.68, "end": 264.4, "text": "Yes, I'm concerned about that a grape tomato to me is always very hard", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 69, "start": 264.74, "end": 267.36, "text": "Uh-huh because it's like almost all firm", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 70, "start": 268.29, "end": 272.27, "text": "Hard stuff and very little pulp. Okay to me the cherry tomato", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 71, "start": 272.73, "end": 276.95, "text": "You bite into it. It pops you get that rush of sweet tart", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 72, "start": 277.61, "end": 281.45, "text": "Juiciness in your mouth ideally in your mouth and not on your right well", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 73, "start": 281.45, "end": 285.13, "text": "I mean if you're a professional you put the whole thing in your mouth and close your mouth before you bite", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 74, "start": 285.13, "end": 290.71, "text": "I would take a cherry tomato over a grape tomato. So when we taste test this thing. Are you just gonna like?", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 75, "start": 290.71, "end": 295.15, "text": "like crap all over this tomato because you inherently don't like grape tomatoes?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 76, "start": 295.15, "end": 297.23, "text": "I'm open to my mind being changed.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 77, "start": 297.23, "end": 301.48, "text": "Maybe I just haven't had a good grape tomato.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 78, "start": 301.48, "end": 302.48, "text": "This is the Sporkful.", "label": "transition", "p_ad": 0.18, "p_content": 0.39, "p_transition": 0.43, "missing": false}
+{"idx": 79, "start": 302.48, "end": 303.76, "text": "It's not for foodies.", "label": "content", "p_ad": 0.15, "p_content": 0.72, "p_transition": 0.13, "missing": false}
+{"idx": 80, "start": 303.76, "end": 304.76, "text": "It's for eaters.", "label": "content", "p_ad": 0.04, "p_content": 0.91, "p_transition": 0.05, "missing": false}
+{"idx": 81, "start": 304.76, "end": 305.92, "text": "I'm Dan Pashman.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 82, "start": 305.92, "end": 309.08, "text": "Each week on our show we obsess about food to learn more about people.", "label": "content", "p_ad": 0.01, "p_content": 0.99, "p_transition": 0.0, "missing": false}
+{"idx": 83, "start": 309.08, "end": 310.8, "text": "Now quick heads up before we start.", "label": "transition", "p_ad": 0.03, "p_content": 0.35, "p_transition": 0.62, "missing": false}
+{"idx": 84, "start": 310.8, "end": 313.6, "text": "We are looking for callers for an upcoming call-in show.", "label": "advertisement", "p_ad": 0.69, "p_content": 0.3, "p_transition": 0.01, "missing": false}
+{"idx": 85, "start": 313.6, "end": 316.4, "text": "Do you have a food-related disagreement with a friend or a loved one?", "label": "advertisement", "p_ad": 0.76, "p_content": 0.24, "p_transition": 0.0, "missing": false}
+{"idx": 86, "start": 316.4, "end": 317.6, "text": "You got a hot take?", "label": "content", "p_ad": 0.35, "p_content": 0.65, "p_transition": 0.0, "missing": false}
+{"idx": 87, "start": 317.6, "end": 318.64, "text": "You want to share with us?", "label": "advertisement", "p_ad": 0.75, "p_content": 0.25, "p_transition": 0.0, "missing": false}
+{"idx": 88, "start": 318.64, "end": 320.48, "text": "I want to hear from you.", "label": "advertisement", "p_ad": 0.8, "p_content": 0.2, "p_transition": 0.0, "missing": false}
+{"idx": 89, "start": 320.48, "end": 322.16, "text": "Send me an email or voice memo.", "label": "advertisement", "p_ad": 0.95, "p_content": 0.05, "p_transition": 0.0, "missing": false}
+{"idx": 90, "start": 322.16, "end": 326.48, "text": "your name, location, and what your issue is. You can send that to me at hello at", "label": "advertisement", "p_ad": 0.91, "p_content": 0.09, "p_transition": 0.0, "missing": false}
+{"idx": 91, "start": 326.48, "end": 331.45, "text": "sporkful.com. Alright, let's get into it. And for this episode I have a co-host,", "label": "content", "p_ad": 0.0, "p_content": 0.79, "p_transition": 0.21, "missing": false}
+{"idx": 92, "start": 331.45, "end": 335.01, "text": "Planet Money's Kenny Malone, who's from Pennsylvania, but we won't hold that", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 93, "start": 335.01, "end": 339.33, "text": "against him. Hey Kenny. Hi Dan. Yeah, I didn't know you had strong feelings about", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 94, "start": 339.33, "end": 342.77, "text": "Pennsylvania. Like you do about grape tomatoes apparently. I do. I do, it's", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 95, "start": 342.77, "end": 345.81, "text": "true. And one thing I want to clarify, because we're gonna be talking a lot", "label": "content", "p_ad": 0.0, "p_content": 0.95, "p_transition": 0.05, "missing": false}
+{"idx": 96, "start": 345.81, "end": 349.81, "text": "about grape tomatoes in this episode, grape tomatoes and cherry tomatoes are", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 97, "start": 349.81, "end": 354.49, "text": "not the same thing. Grape tomatoes are shaped more like grapes. They're like oblong. They", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 98, "start": 354.49, "end": 360.25, "text": "have a thicker skin, a longer shelf life, and to me a blander taste. Cherry tomatoes are", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 99, "start": 360.25, "end": 364.23, "text": "more round like cherries. They're more delicate. They've been round for longer, and they've", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 100, "start": 364.23, "end": 369.13, "text": "actually been bred for all kinds of characteristics. There's more variety and flavor in cherry", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 101, "start": 369.13, "end": 375.05, "text": "tomatoes. But Kenny, you're here because this isn't just a story about how this new tomato", "label": "content", "p_ad": 0.0, "p_content": 0.91, "p_transition": 0.09, "missing": false}
+{"idx": 102, "start": 375.05, "end": 378.29, "text": "we're going to talk about came to be, and it's not just about whether a grape tomato", "label": "content", "p_ad": 0.0, "p_content": 0.96, "p_transition": 0.04, "missing": false}
+{"idx": 103, "start": 378.29, "end": 383.77, "text": "can be good. No, no, there is a larger economic trend going on here that Dan, I think you", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 104, "start": 383.77, "end": 389.53, "text": "and I have come to call like the honey crispification of basically the entire produce aisle. Yeah,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 105, "start": 389.53, "end": 393.73, "text": "with apples, you've got honey crisp, as you said, there's cosmic crisp, pink lady, so many", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 106, "start": 393.73, "end": 398.33, "text": "others. And more and more, we're seeing all kinds of fancy versions of different fruits", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 107, "start": 398.33, "end": 403.65, "text": "that are sold at higher price points. And now it seems the old tomato bin is in the", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 108, "start": 403.65, "end": 408.61, "text": "of a similar explosion. Like maybe you listener, you've noticed tomatoes with brand names like", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 109, "start": 409.17, "end": 413.25, "text": "flavor bombs, sugar bombs, sprinkles. I saw sprinkles the other day.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 110, "start": 413.25, "end": 417.81, "text": "Yeah, so why is this happening? Well, it's a story of changing laws.", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 111, "start": 417.81, "end": 419.33, "text": "Changing incentives.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 112, "start": 419.33, "end": 423.17, "text": "And changes in all of us and what we want as food consumers.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 113, "start": 423.73, "end": 429.17, "text": "And what you, Dan, want as a food consumer is not a grape tomato. Is that still correct?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 114, "start": 429.17, "end": 430.41, "text": "Yeah, they're very hard.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 115, "start": 430.73, "end": 434.13, "text": "And as you and I were driving to the Rutgers Research Farm, I", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 116, "start": 434.13, "end": 437.15, "text": "realized I got to know how to explain my concerns to the", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 117, "start": 437.15, "end": 438.41, "text": "scientists we're going to meet.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 118, "start": 439.16, "end": 441.26, "text": "I'm pausing our conversation for a second because I meant to", "label": "content", "p_ad": 0.0, "p_content": 0.75, "p_transition": 0.25, "missing": false}
+{"idx": 119, "start": 441.26, "end": 442.58, "text": "look up tomato anatomy.", "label": "content", "p_ad": 0.0, "p_content": 0.9, "p_transition": 0.1, "missing": false}
+{"idx": 120, "start": 442.84, "end": 443.24, "text": "Okay.", "label": "content", "p_ad": 0.0, "p_content": 0.76, "p_transition": 0.24, "missing": false}
+{"idx": 121, "start": 443.48, "end": 445.62, "text": "So, because like I want to know what's the correct name for", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 122, "start": 445.62, "end": 446.92, "text": "like the there's like the skin.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 123, "start": 446.96, "end": 447.32, "text": "Yeah.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 124, "start": 447.6, "end": 449.36, "text": "And then that's probably the right name.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 125, "start": 449.4, "end": 450.52, "text": "And then there's the pulp.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 126, "start": 450.6, "end": 452.2, "text": "Yeah, I think that's probably right.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 127, "start": 452.24, "end": 455.0, "text": "But then what's the like the firm sort of cartilage?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 128, "start": 455.04, "end": 455.44, "text": "Yes.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 129, "start": 455.84, "end": 457.48, "text": "To hopefully not cartilage.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 130, "start": 457.48, "end": 460.08, "text": "We got a lot to learn.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 131, "start": 460.08, "end": 465.12, "text": "There's the funiculus, mesoc, there's…", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 132, "start": 465.12, "end": 467.12, "text": "You're going to casually try to drop these with the scientists?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 133, "start": 467.12, "end": 473.44, "text": "You'd be like, no, let me ask you about the Scarlet Sunrise's funiculus, Professor.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 134, "start": 473.44, "end": 477.5, "text": "I noticed a firm funiculus, sir.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 135, "start": 477.5, "end": 478.5, "text": "That's going to be my goal.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 136, "start": 478.5, "end": 479.5, "text": "You watch, Kenny.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 137, "start": 479.5, "end": 481.5, "text": "I'm going to drop the funiculus in somewhere here.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 138, "start": 481.5, "end": 484.13, "text": "I'm going to get it in.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 139, "start": 484.13, "end": 489.87, "text": "Because as Dan and I study up on Tomato Anatomy, we arrive at the Rutgers Experimental Farm", "label": "content", "p_ad": 0.0, "p_content": 0.91, "p_transition": 0.09, "missing": false}
+{"idx": 140, "start": 489.87, "end": 493.35, "text": "where we meet Peter Nietzsche and Tom Orton.", "label": "content", "p_ad": 0.0, "p_content": 0.76, "p_transition": 0.24, "missing": false}
+{"idx": 141, "start": 493.35, "end": 496.47, "text": "Tom is a retired Rutgers Agriculture Professor and Researcher.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 142, "start": 496.47, "end": 498.97, "text": "Pete helps run this experimental farm.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 143, "start": 498.97, "end": 499.97, "text": "How many acres is it?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 144, "start": 499.97, "end": 502.23, "text": "It's a total of 390 acres.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 145, "start": 502.23, "end": 503.23, "text": "We're not all cultivated.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 146, "start": 503.23, "end": 504.23, "text": "There's some...", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 147, "start": 504.23, "end": 507.97, "text": "We can see a few barns here, a greenhouse over there, and in the distance, there it", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 148, "start": 507.97, "end": 512.03, "text": "is, the star of the show, a small field of tomato plants.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 149, "start": 512.03, "end": 513.03, "text": "This is exciting, Kenny.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 150, "start": 513.03, "end": 520.66, "text": "Can we just stop and and let's behold reflect that we're looking at a bunch of rows of tomato plants", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 151, "start": 521.46, "end": 523.46, "text": "are these", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 152, "start": 523.5, "end": 529.5, "text": "Scarlet sunrise plants zero like all other scarlet sunrise have been birthed from what we see before us", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 153, "start": 530.02, "end": 536.82, "text": "Well, they're derived all from the same source. Okay, but this is the birthplace. Yes, you're the proud parents overlooking your little nursery", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 154, "start": 536.82, "end": 539.63, "text": "Oh, yeah, that's one way to put it.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 155, "start": 539.63, "end": 541.19, "text": "We don't usually look at it that way.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 156, "start": 541.19, "end": 541.69, "text": "Right.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 157, "start": 541.69, "end": 542.19, "text": "Okay.", "label": "content", "p_ad": 0.0, "p_content": 0.9, "p_transition": 0.1, "missing": false}
+{"idx": 158, "start": 542.19, "end": 543.99, "text": "I mean, this is what we're here for.", "label": "content", "p_ad": 0.0, "p_content": 0.96, "p_transition": 0.04, "missing": false}
+{"idx": 159, "start": 543.99, "end": 546.19, "text": "We're going to go take a look at them now.", "label": "content", "p_ad": 0.0, "p_content": 0.82, "p_transition": 0.18, "missing": false}
+{"idx": 160, "start": 546.19, "end": 549.59, "text": "We begin a rather muddy trek over to the tomato fields.", "label": "content", "p_ad": 0.0, "p_content": 0.95, "p_transition": 0.05, "missing": false}
+{"idx": 161, "start": 549.59, "end": 551.49, "text": "And one thing I learned about Dan Pashman,", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 162, "start": 551.49, "end": 555.49, "text": "you do not waste a second when you have time with two tomato experts.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 163, "start": 555.49, "end": 557.59, "text": "Especially when there's a tomato related question", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 164, "start": 557.59, "end": 559.49, "text": "that has been gnawing at me for years.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 165, "start": 559.49, "end": 562.72, "text": "Random question while we walk.", "label": "content", "p_ad": 0.0, "p_content": 0.88, "p_transition": 0.12, "missing": false}
+{"idx": 166, "start": 562.72, "end": 565.52, "text": "Are the tomatoes that still have some green vine attached", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 167, "start": 565.52, "end": 567.22, "text": "in the supermarket actually better?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 168, "start": 567.22, "end": 568.78, "text": "or is it just great marketing?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 169, "start": 568.78, "end": 570.33, "text": "I don't know.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 170, "start": 570.33, "end": 571.33, "text": "Why don't you cover that one?", "label": "content", "p_ad": 0.0, "p_content": 0.95, "p_transition": 0.05, "missing": false}
+{"idx": 171, "start": 571.33, "end": 574.33, "text": "Well, I think it's more of a marketing thing.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 172, "start": 574.33, "end": 576.69, "text": "Well, I guess I don't need to spend more for those anymore.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 173, "start": 576.69, "end": 578.29, "text": "You're off the hook, Dan.", "label": "content", "p_ad": 0.0, "p_content": 0.95, "p_transition": 0.05, "missing": false}
+{"idx": 174, "start": 578.29, "end": 585.01, "text": "Tom and Pete, they are very much part of this centuries-long tradition at Rutgers of scientists", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 175, "start": 585.01, "end": 590.41, "text": "who are really nerdy about fruits and veggies and really interested in trying to make better", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 176, "start": 590.41, "end": 592.01, "text": "fruits and veggies for farmers.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 177, "start": 592.01, "end": 593.01, "text": "Right.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 178, "start": 593.01, "end": 596.69, "text": "You know, like a huge part of what public research universities have always done is try", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 179, "start": 596.69, "end": 600.93, "text": "to make things better for the agricultural industries in their states. For Tom and Pete,", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 180, "start": 600.93, "end": 604.61, "text": "that specifically means doing things to help farmers in the great state of New Jersey.", "label": "content", "p_ad": 0.02, "p_content": 0.92, "p_transition": 0.06, "missing": false}
+{"idx": 181, "start": 604.61, "end": 610.13, "text": "Yeah, we're trying to give farmers new tools for them to be more profitable, trying to make the", "label": "content", "p_ad": 0.01, "p_content": 0.99, "p_transition": 0.0, "missing": false}
+{"idx": 182, "start": 610.13, "end": 617.81, "text": "farmers happy by giving them a plant that grows vigorously, has resistance to as many diseases", "label": "content", "p_ad": 0.01, "p_content": 0.99, "p_transition": 0.0, "missing": false}
+{"idx": 183, "start": 617.81, "end": 623.81, "text": "and insects as possible, and is easy to manage. Kenny and I start looking through the tomato", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 184, "start": 623.81, "end": 628.69, "text": "plants moving branches here and there to see if we can find some perfect scarlet sunrise.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 185, "start": 628.69, "end": 632.53, "text": "We should look for some ripies, right? Is that the word you guys use? Ripies?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 186, "start": 632.53, "end": 634.05, "text": "Ripe fruit.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 187, "start": 634.05, "end": 635.33, "text": "Ripe fruit. That ripe fruit's good.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 188, "start": 635.33, "end": 638.21, "text": "Slow down with all the technical mumbo jumbo, Kenny.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 189, "start": 638.21, "end": 643.25, "text": "Unfortunately for us, Tom and Pete have timed this crop to be ripe at the end of August", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 190, "start": 643.25, "end": 648.85, "text": "for a big public open house at the facility, clearly thinking about their, you know, New", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 191, "start": 648.85, "end": 652.37, "text": "Jersey neighbors and not us taste making journalists, Dan.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 192, "start": 652.37, "end": 654.09, "text": "Yeah, that hurt a little bit, Kenny,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 193, "start": 654.09, "end": 656.17, "text": "especially, you know, knowing my history with this date.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 194, "start": 656.17, "end": 660.41, "text": "But anyway, we dig around, hoping for a few early ripies.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 195, "start": 660.41, "end": 661.25, "text": "Oh yeah.", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 196, "start": 661.25, "end": 663.69, "text": "Kenny, any luck finding a ripe tomato here?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 197, "start": 663.69, "end": 665.68, "text": "I should disclose.", "label": "content", "p_ad": 0.0, "p_content": 0.95, "p_transition": 0.05, "missing": false}
+{"idx": 198, "start": 665.68, "end": 667.28, "text": "I am red-green colorblind.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 199, "start": 667.28, "end": 670.23, "text": "Why are you in charge of this then?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 200, "start": 670.23, "end": 671.39, "text": "Maybe you should do it.", "label": "content", "p_ad": 0.02, "p_content": 0.95, "p_transition": 0.03, "missing": false}
+{"idx": 201, "start": 671.39, "end": 672.23, "text": "Yeah.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 202, "start": 675.36, "end": 678.1, "text": "All right, well, in the meantime, allow us to share", "label": "transition", "p_ad": 0.0, "p_content": 0.43, "p_transition": 0.57, "missing": false}
+{"idx": 203, "start": 678.1, "end": 681.46, "text": "some context for the tomato we are on our hands and knees", "label": "content", "p_ad": 0.0, "p_content": 0.92, "p_transition": 0.08, "missing": false}
+{"idx": 204, "start": 681.46, "end": 682.8, "text": "trying to find and eat.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 205, "start": 682.8, "end": 686.4, "text": "because Tom and Pete, they are doing plant research", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 206, "start": 686.4, "end": 688.52, "text": "in a very different world", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 207, "start": 688.52, "end": 691.16, "text": "than the Rutgers scientists were 100 years ago.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 208, "start": 691.16, "end": 693.28, "text": "Yeah, some huge things have changed", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 209, "start": 693.28, "end": 695.48, "text": "that are at least part of the explanation", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 210, "start": 695.48, "end": 697.8, "text": "for why our produce aisle has exploded", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 211, "start": 697.8, "end": 699.56, "text": "with more and more of these branded", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 212, "start": 699.56, "end": 701.28, "text": "superstar fruits and veggies.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 213, "start": 701.28, "end": 704.92, "text": "So big change number one, Christmas Eve, 1970.", "label": "content", "p_ad": 0.0, "p_content": 0.96, "p_transition": 0.04, "missing": false}
+{"idx": 214, "start": 704.92, "end": 707.88, "text": "President Richard Nixon signs into law", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 215, "start": 707.88, "end": 711.24, "text": "the Plant Variety Protection Act.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 216, "start": 711.24, "end": 713.6, "text": "Yeah, and it didn't exactly make the front page,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 217, "start": 713.6, "end": 715.64, "text": "but it was actually a really big deal,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 218, "start": 715.64, "end": 717.48, "text": "because before this, it was a lot harder", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 219, "start": 717.48, "end": 720.26, "text": "to monetize a newly developed plant.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 220, "start": 720.26, "end": 722.72, "text": "But now, breeders could basically own the rights", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 221, "start": 722.72, "end": 725.68, "text": "to all kinds of fruits and veggies that they couldn't before.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 222, "start": 725.68, "end": 728.16, "text": "Big change number two, 10 years later,", "label": "content", "p_ad": 0.0, "p_content": 0.66, "p_transition": 0.34, "missing": false}
+{"idx": 223, "start": 728.16, "end": 730.64, "text": "another under-covered new law.", "label": "content", "p_ad": 0.0, "p_content": 0.9, "p_transition": 0.1, "missing": false}
+{"idx": 224, "start": 730.64, "end": 732.2, "text": "Yeah, the Buy Dole Act,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 225, "start": 732.2, "end": 735.16, "text": "named after Senators Birch Buy and Bob Dole.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 226, "start": 735.16, "end": 737.76, "text": "It gave federally funded researchers the default right", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 227, "start": 737.76, "end": 740.64, "text": "to own whatever they create with that federal funding.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 228, "start": 740.64, "end": 743.88, "text": "And public universities, you know, lots of federal funding,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 229, "start": 743.88, "end": 748.72, "text": "now they could control and monetize their medical breakthroughs,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 230, "start": 748.72, "end": 753.16, "text": "their developments in computers, and the new fruits and vegetables they created.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 231, "start": 753.16, "end": 756.32, "text": "Which brings us to what I think is probably the most important moment in", "label": "content", "p_ad": 0.0, "p_content": 0.81, "p_transition": 0.19, "missing": false}
+{"idx": 232, "start": 756.32, "end": 758.48, "text": "the produce aisle brand explosion.", "label": "content", "p_ad": 0.0, "p_content": 0.91, "p_transition": 0.09, "missing": false}
+{"idx": 233, "start": 758.48, "end": 764.52, "text": "Of course, that is the 1991 release of the Honeycrisp Apple.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 234, "start": 764.52, "end": 768.44, "text": "Yeah, the Honeycrisp was kind of the first big breakout produce star that came", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 235, "start": 768.44, "end": 769.84, "text": "out of all these changes.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 236, "start": 769.84, "end": 771.4, "text": "was developed at the University of Minnesota,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 237, "start": 771.4, "end": 773.24, "text": "and when it came out, they started licensing out", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 238, "start": 773.24, "end": 776.2, "text": "honeycrisp trees to growers for a one-time fee", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 239, "start": 776.2, "end": 777.76, "text": "of around a dollar a tree.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 240, "start": 777.76, "end": 780.36, "text": "The university made north of 20 million bucks from it,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 241, "start": 780.36, "end": 782.16, "text": "but they could have made much more.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 242, "start": 782.16, "end": 785.24, "text": "Yeah, they got a plant patent, which lasts 20 years,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 243, "start": 785.24, "end": 788.32, "text": "but they were not able to trademark the name,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 244, "start": 788.32, "end": 791.04, "text": "Honeycrisp, which would have lasted much longer.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 245, "start": 791.04, "end": 792.44, "text": "That's because they made the mistake", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 246, "start": 792.44, "end": 795.84, "text": "of naming the plant variety itself, Honeycrisp.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 247, "start": 795.84, "end": 798.96, "text": "So once that became the generic name for this type of apple,", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 248, "start": 798.96, "end": 801.92, "text": "they couldn't trademark it because you can't trademark a generic term.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 249, "start": 801.92, "end": 806.28, "text": "Like you can trademark the brand name Kleenex, but you cannot trademark the word tissue,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 250, "start": 806.28, "end": 807.28, "text": "you know?", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 251, "start": 807.28, "end": 808.28, "text": "Right.", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 252, "start": 808.28, "end": 813.28, "text": "So if they had given the plant variety any old name, then used the brand name Honeycrisp,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 253, "start": 813.28, "end": 814.8, "text": "they could have trademarked that.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 254, "start": 814.8, "end": 815.8, "text": "But they didn't.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 255, "start": 815.8, "end": 820.6, "text": "So the University of Minnesota lost its protection for this IP, which means they lost the ability", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 256, "start": 820.6, "end": 823.84, "text": "to charge royalties to growers sooner than they should have.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 257, "start": 823.84, "end": 825.52, "text": "Now, anyone can grow it.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 258, "start": 825.52, "end": 827.36, "text": "Other schools have learned from that mistake.", "label": "content", "p_ad": 0.0, "p_content": 0.96, "p_transition": 0.04, "missing": false}
+{"idx": 259, "start": 827.36, "end": 830.08, "text": "Washington State University developed the Cosmic Crisp Apple.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 260, "start": 830.08, "end": 832.52, "text": "We talked about that whole process in the show a few years back.", "label": "content", "p_ad": 0.0, "p_content": 0.95, "p_transition": 0.05, "missing": false}
+{"idx": 261, "start": 832.52, "end": 837.52, "text": "Yeah, and the plant variety name for Cosmic Crisp is WA-38.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 262, "start": 839.04, "end": 839.88, "text": "Yeah, that's sexy.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 263, "start": 839.88, "end": 841.6, "text": "That's the sexy name for an Apple, Kenny.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 264, "start": 841.6, "end": 845.28, "text": "It allows the trademarked brand name to be Cosmic Crisp.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 265, "start": 845.28, "end": 848.96, "text": "The school has made more than $30 million from this Apple", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 266, "start": 848.96, "end": 851.64, "text": "in much less time than the Honey Crisp.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 267, "start": 851.64, "end": 853.2, "text": "But as I said to Pete and Tom,", "label": "content", "p_ad": 0.0, "p_content": 0.77, "p_transition": 0.23, "missing": false}
+{"idx": 268, "start": 853.2, "end": 855.96, "text": "the larger lesson here was if universities funded", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 269, "start": 855.96, "end": 860.84, "text": "right agricultural breakthrough, that could become a major profit center for the school.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 270, "start": 860.84, "end": 865.56, "text": "Would you say that it's easier now to get support from the university for the kind of", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 271, "start": 865.56, "end": 869.72, "text": "research you do because it has a potential to bring a returner for the school?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 272, "start": 869.72, "end": 871.78, "text": "Well, I'm retired, so...", "label": "content", "p_ad": 0.0, "p_content": 0.95, "p_transition": 0.05, "missing": false}
+{"idx": 273, "start": 871.78, "end": 876.58, "text": "People tell you the bad news.", "label": "content", "p_ad": 0.0, "p_content": 0.83, "p_transition": 0.17, "missing": false}
+{"idx": 274, "start": 876.58, "end": 877.58, "text": "It certainly helps.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 275, "start": 877.58, "end": 883.26, "text": "You know, if it brings in money to support our work and our program, they're gonna...", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 276, "start": 883.26, "end": 884.46, "text": "More likely to support it.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 277, "start": 884.46, "end": 888.9, "text": "Yeah, you know, the agricultural research game has dramatically changed.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 278, "start": 888.9, "end": 894.7, "text": "As a system, for researchers like Pete and Tom, their incentives have maybe changed a little.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 279, "start": 894.7, "end": 899.5, "text": "They do get to share in the revenue from their invention, something like 35 percent.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 280, "start": 899.5, "end": 904.22, "text": "But Pete told us they're not getting rich, inventing the Scarlet Sunrise for Rutgers.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 281, "start": 904.22, "end": 909.66, "text": "In a lot of ways, they are still just like those old Rutgers plant nerds from 100 years ago,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 282, "start": 909.66, "end": 913.86, "text": "geeking out, tinkering and just trying to help New Jersey farmers.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 283, "start": 913.86, "end": 920.96, "text": "That's right. So all that that's the context for Pete and Tom and this fancy new tomato they decided to create at Rutgers", "label": "content", "p_ad": 0.0, "p_content": 0.92, "p_transition": 0.08, "missing": false}
+{"idx": 284, "start": 921.46, "end": 929.03, "text": "And that story well Pete says that starts about 14 years ago. We grow tomatoes here for our open house", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 285, "start": 929.91, "end": 932.69, "text": "And I noticed in the field we there was one cherry", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 286, "start": 933.39, "end": 939.51, "text": "Tomato called Isis candy a cherry tomato called the Isis candy and it had some pretty good traits", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 287, "start": 939.55, "end": 944.07, "text": "It was sweet which we know people like and then it also had this cool color situation", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 288, "start": 944.07, "end": 946.87, "text": "They have that, it's like a little red blush", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 289, "start": 946.87, "end": 948.51, "text": "on a kind of yellow background.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 290, "start": 948.51, "end": 950.07, "text": "That's why we call it a bicolor.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 291, "start": 950.07, "end": 952.55, "text": "Bicolor, yeah, like mostly yellow,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 292, "start": 952.55, "end": 957.23, "text": "then with this elegant, like streaky gradient into red.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 293, "start": 957.23, "end": 959.35, "text": "So it tasted great, it looked beautiful,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 294, "start": 959.35, "end": 960.31, "text": "but it had a problem.", "label": "content", "p_ad": 0.0, "p_content": 0.95, "p_transition": 0.05, "missing": false}
+{"idx": 295, "start": 960.31, "end": 963.07, "text": "The ISIS candy also cracks.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 296, "start": 963.07, "end": 965.39, "text": "The cherry was cracked a lot.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 297, "start": 965.39, "end": 967.35, "text": "Yeah, Dan, your beloved cherry tomatoes,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 298, "start": 967.35, "end": 968.95, "text": "cracking up tomatoes.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 299, "start": 968.95, "end": 972.27, "text": "Well, you know, that's why I never had an ISIS candy,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 300, "start": 972.27, "end": 973.11, "text": "I suppose.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 301, "start": 973.11, "end": 973.95, "text": "Probably true.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 302, "start": 973.95, "end": 976.39, "text": "That's a big problem for a tomato.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 303, "start": 976.39, "end": 978.07, "text": "No matter how good it tastes or looks,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 304, "start": 978.07, "end": 980.11, "text": "it's gotta be transported and it has to be able", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 305, "start": 980.11, "end": 981.03, "text": "to stay fresh.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 306, "start": 981.03, "end": 985.07, "text": "Yes, but for Pete and Tom, the light bulb moment was,", "label": "content", "p_ad": 0.0, "p_content": 0.96, "p_transition": 0.04, "missing": false}
+{"idx": 307, "start": 985.07, "end": 989.43, "text": "what if they took that by color ISIS candy cherry", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 308, "start": 989.43, "end": 994.19, "text": "and then crossed it, bred it with a hardier red grape tomato?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 309, "start": 994.19, "end": 997.95, "text": "So in talking to Tom, we got together and really,", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 310, "start": 997.95, "end": 999.55, "text": "wouldn't it be interesting if we could get some", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 311, "start": 999.55, "end": 1002.15, "text": "of the sweetness of ISIS candy in there?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 312, "start": 1002.15, "end": 1006.53, "text": "So can we get some of the firmness of the red and combine those traits together and get something", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 313, "start": 1007.37, "end": 1008.73, "text": "worthwhile for the market?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 314, "start": 1009.01, "end": 1016.49, "text": "Tom says that red-yellow-by-color mix, like that could help their sweet grape tomatoes chance of success.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 315, "start": 1016.69, "end": 1028.49, "text": "We figured people could identify it in the marketplace and therefore connect the flavor with the appearance and go back and there be repeat purchases of specifically this product.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 316, "start": 1028.61, "end": 1031.57, "text": "So in a sense, you made a very early branding decision.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 317, "start": 1031.57, "end": 1034.07, "text": "More or less, yeah, because we wanted to be unique.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 318, "start": 1034.07, "end": 1034.57, "text": "Right.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 319, "start": 1034.57, "end": 1039.57, "text": "You know, Pete explained to us that the market has become flooded with red grape tomatoes.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 320, "start": 1039.57, "end": 1043.57, "text": "You know, some of those are good, some are not, some get packaged up and refrigerated", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 321, "start": 1043.57, "end": 1045.57, "text": "for veggie trays and that makes them taste bad.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 322, "start": 1045.57, "end": 1047.07, "text": "Don't refrigerate tomatoes, Kenny.", "label": "content", "p_ad": 0.01, "p_content": 0.99, "p_transition": 0.0, "missing": false}
+{"idx": 323, "start": 1047.07, "end": 1049.57, "text": "Yes, this is your public service, I'm asking from Dan.", "label": "content", "p_ad": 0.02, "p_content": 0.91, "p_transition": 0.07, "missing": false}
+{"idx": 324, "start": 1049.57, "end": 1055.57, "text": "You end up with a situation though where a consumer, Dan, might taste bad red grape tomatoes", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 325, "start": 1055.57, "end": 1059.57, "text": "and decide that they hate all red grape tomatoes.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 326, "start": 1059.57, "end": 1061.93, "text": "Eight is a strong word, Kenny, but yeah,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 327, "start": 1061.93, "end": 1063.17, "text": "like maybe this is my issue.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 328, "start": 1063.17, "end": 1064.49, "text": "Maybe I just never tried a good one.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 329, "start": 1064.49, "end": 1067.05, "text": "And it makes sense to me that if Tom and Pete", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 330, "start": 1067.05, "end": 1068.93, "text": "are gonna create a good grape tomato", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 331, "start": 1068.93, "end": 1071.41, "text": "for New Jersey farmers to grow and sell,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 332, "start": 1071.41, "end": 1073.53, "text": "it would be helpful for it to look different", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 333, "start": 1073.53, "end": 1076.37, "text": "from all those other ones to avoid confusion.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 334, "start": 1076.37, "end": 1078.81, "text": "So, Tom and Pete, they get to work.", "label": "content", "p_ad": 0.0, "p_content": 0.93, "p_transition": 0.07, "missing": false}
+{"idx": 335, "start": 1078.81, "end": 1080.25, "text": "Step one, you might remember this", "label": "content", "p_ad": 0.0, "p_content": 0.79, "p_transition": 0.21, "missing": false}
+{"idx": 336, "start": 1080.25, "end": 1082.33, "text": "from your old Punnett Squares days in biology class.", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 337, "start": 1082.33, "end": 1085.61, "text": "You cross pollinate the two tomato plants.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 338, "start": 1085.61, "end": 1087.61, "text": "And then you have to wait like six months", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 339, "start": 1087.61, "end": 1090.17, "text": "And you see what kinds of tomatoes grow.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 340, "start": 1090.17, "end": 1091.53, "text": "And they all kind of look the same", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 341, "start": 1091.53, "end": 1095.73, "text": "because they're all half Isis Candian, half Seminus.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 342, "start": 1095.73, "end": 1098.77, "text": "Seminus, he's talking about the specific red grape tomato", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 343, "start": 1098.77, "end": 1099.89, "text": "they chose to use.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 344, "start": 1099.89, "end": 1101.77, "text": "Yeah, and when you're going through a process like this,", "label": "content", "p_ad": 0.0, "p_content": 0.94, "p_transition": 0.06, "missing": false}
+{"idx": 345, "start": 1101.77, "end": 1103.05, "text": "it takes a long time.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 346, "start": 1103.05, "end": 1105.45, "text": "You don't fix the problem on the first generation", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 347, "start": 1105.45, "end": 1106.57, "text": "of hybrid plant.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 348, "start": 1106.57, "end": 1108.97, "text": "It's the next generations after that.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 349, "start": 1108.97, "end": 1111.13, "text": "The traits start to sort out.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 350, "start": 1111.13, "end": 1113.61, "text": "So you have some that'll have like the red color", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 351, "start": 1113.61, "end": 1116.21, "text": "and the good flavor.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 352, "start": 1116.21, "end": 1118.65, "text": "So they select the plants that are closer to what they want.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 353, "start": 1118.65, "end": 1120.21, "text": "Breed again, repeat.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 354, "start": 1120.21, "end": 1121.61, "text": "This is a slow process.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 355, "start": 1121.61, "end": 1123.09, "text": "To grow a new generation of plants,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 356, "start": 1123.09, "end": 1124.89, "text": "you need a whole growing season.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 357, "start": 1124.89, "end": 1127.57, "text": "Now, Tom and Pete had access to a greenhouse,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 358, "start": 1127.57, "end": 1130.73, "text": "so they could squeeze two growing seasons in per year.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 359, "start": 1130.73, "end": 1131.93, "text": "But still, slow.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 360, "start": 1131.93, "end": 1134.89, "text": "So you get this big menagerie of different plants", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 361, "start": 1134.89, "end": 1137.85, "text": "that you go through and look for what you want,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 362, "start": 1137.85, "end": 1143.33, "text": "which is this color with the flavor and plant architecture", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 363, "start": 1143.33, "end": 1146.41, "text": "and resistance to insects and diseases and things,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 364, "start": 1146.41, "end": 1149.45, "text": "that's also taking it into consideration as you're going.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 365, "start": 1149.45, "end": 1151.09, "text": "Now, do you taste them also along the way?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 366, "start": 1151.09, "end": 1151.93, "text": "Oh, yeah.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 367, "start": 1151.93, "end": 1153.83, "text": "And if you taste one that's like the greatest tomato", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 368, "start": 1153.83, "end": 1155.09, "text": "you've ever eaten, are you like,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 369, "start": 1155.09, "end": 1157.67, "text": "oh, spit the seeds out, spit, we need to save these seeds.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 370, "start": 1157.67, "end": 1158.51, "text": "Like, how do you...", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 371, "start": 1158.51, "end": 1161.65, "text": "Well, you don't really take it that seriously", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 372, "start": 1161.65, "end": 1164.53, "text": "because the chances that you picked one fruit that,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 373, "start": 1164.53, "end": 1169.17, "text": "oh, this is the one that's got all the crown jewels in it", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 374, "start": 1169.17, "end": 1170.41, "text": "are pretty low.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 375, "start": 1170.41, "end": 1172.41, "text": "After 12 generations of growing.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 376, "start": 1172.41, "end": 1174.81, "text": "So six years of breeding and selecting,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 377, "start": 1174.81, "end": 1176.25, "text": "they felt like they had nailed it.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 378, "start": 1176.25, "end": 1179.41, "text": "A tomato that was sweet and colorful, like the ISIS candy,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 379, "start": 1179.41, "end": 1184.41, "text": "but sized like the very popular and hardier grape tomato.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 380, "start": 1184.85, "end": 1189.01, "text": "It was time for the agricultural industrial complex", "label": "content", "p_ad": 0.0, "p_content": 0.89, "p_transition": 0.11, "missing": false}
+{"idx": 381, "start": 1189.01, "end": 1189.85, "text": "to step in.", "label": "content", "p_ad": 0.0, "p_content": 0.92, "p_transition": 0.08, "missing": false}
+{"idx": 382, "start": 1189.85, "end": 1191.49, "text": "Yet universities have teams built", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 383, "start": 1191.49, "end": 1193.89, "text": "to handle staff inventions, new medicines,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 384, "start": 1193.89, "end": 1197.01, "text": "semiconductors, like those tomatoes need trademarking", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 385, "start": 1197.01, "end": 1198.97, "text": "and other intellectual property protections.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 386, "start": 1198.97, "end": 1200.49, "text": "They also need marketing plans.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 387, "start": 1200.49, "end": 1207.33, "text": "In 2019, Tom and Pete reached out to Rutgers Office for Research to say they were ready", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 388, "start": 1207.33, "end": 1208.77, "text": "to hand off their baby.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 389, "start": 1208.77, "end": 1211.21, "text": "How did you feel making that call?", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 390, "start": 1211.21, "end": 1214.26, "text": "Well, just thank God we got somewhere.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 391, "start": 1214.26, "end": 1221.82, "text": "Well, I think that's really one of the most gratifying parts of being an inventor, including", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 392, "start": 1221.82, "end": 1227.42, "text": "a plant breeder, is to have an idea that seems kind of harebrained because we're looking", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 393, "start": 1227.42, "end": 1230.82, "text": "at this ISIS candy back in 2011 and thinking,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 394, "start": 1230.82, "end": 1233.9, "text": "well, that's unique, but boy, it has an awful lot of problems.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 395, "start": 1233.9, "end": 1236.02, "text": "So yeah, it's a great feeling to see", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 396, "start": 1236.02, "end": 1240.1, "text": "that the principles that you learned in plant breeding", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 397, "start": 1240.1, "end": 1243.54, "text": "and applied the skills that they actually do work.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 398, "start": 1243.54, "end": 1245.38, "text": "Ultimately, it was the Rutgers business folks", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 399, "start": 1245.38, "end": 1249.02, "text": "who named Pete and Tom's tomato, the Scarlet Sunrise,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 400, "start": 1249.02, "end": 1252.98, "text": "color of sunrise and Scarlet like Rutgers, the Scarlet Nights.", "label": "content", "p_ad": 0.01, "p_content": 0.94, "p_transition": 0.05, "missing": false}
+{"idx": 401, "start": 1252.98, "end": 1255.22, "text": "So Pete and Tom, they have a new tomato", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 402, "start": 1255.22, "end": 1256.54, "text": "that's ready for the world,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 403, "start": 1256.54, "end": 1258.46, "text": "complete with its own brand name.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 404, "start": 1258.46, "end": 1264.38, "text": "But what I wanted to know was how big really is the opportunity for this type of tomato.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 405, "start": 1265.15, "end": 1267.19, "text": "Just in terms of the market.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 406, "start": 1267.19, "end": 1270.03, "text": "So if I go into the, I'm trying to picture the tomato aisle.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 407, "start": 1270.03, "end": 1272.91, "text": "So I see big old giant tomatoes.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 408, "start": 1272.91, "end": 1275.31, "text": "Those are probably what we would call beef steaks.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 409, "start": 1275.79, "end": 1276.07, "text": "Okay.", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 410, "start": 1276.07, "end": 1276.47, "text": "Yes.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 411, "start": 1276.79, "end": 1278.59, "text": "Is that a huge part of the tomato market?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 412, "start": 1278.63, "end": 1280.59, "text": "50%, 60%, 20%?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 413, "start": 1281.7, "end": 1284.62, "text": "I would say the really large, multilocular is...", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 414, "start": 1284.86, "end": 1286.06, "text": "Sorry, multilocular?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 415, "start": 1286.06, "end": 1291.66, "text": "Yeah, when tomatoes have little cells in them, if you open them up, you see that they have little", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 416, "start": 1291.66, "end": 1296.86, "text": "areas where there's gel and then there's tomatoes get bigger by adding locules.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 417, "start": 1296.86, "end": 1298.3, "text": "Is that like where the funicular is?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 418, "start": 1302.2, "end": 1302.84, "text": "Funicul...", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 419, "start": 1304.04, "end": 1304.68, "text": "Follacule?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 420, "start": 1305.24, "end": 1306.28, "text": "The follacule.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 421, "start": 1306.28, "end": 1307.64, "text": "What's the name of that part of the insides?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 422, "start": 1307.64, "end": 1309.88, "text": "I don't know, but a funicular is like...", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 423, "start": 1309.88, "end": 1310.68, "text": "Is that a funicular?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 424, "start": 1310.68, "end": 1312.04, "text": "A funicular is like a gondolizing.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 425, "start": 1312.04, "end": 1312.84, "text": "Is that a part of...", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 426, "start": 1312.84, "end": 1314.04, "text": "I don't know, I was...", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 427, "start": 1314.04, "end": 1314.28, "text": "No.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 428, "start": 1314.28, "end": 1315.08, "text": "A funicular is like a...", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 429, "start": 1315.08, "end": 1318.52, "text": "like a, like a, like a, I don't recall finicular.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 430, "start": 1318.52, "end": 1320.52, "text": "It's like an incline, finicular is like an incline.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 431, "start": 1320.52, "end": 1322.84, "text": "Right, right, it takes, no, isn't there a part of the", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 432, "start": 1322.84, "end": 1326.36, "text": "inside of tomato with a word that sounds like that?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 433, "start": 1326.36, "end": 1327.2, "text": "Not that I can think of.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 434, "start": 1327.2, "end": 1328.16, "text": "Oh man.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 435, "start": 1328.16, "end": 1329.52, "text": "You might be right, but I,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 436, "start": 1329.52, "end": 1331.36, "text": "Dan did some Googling in the car on the way here.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 437, "start": 1331.36, "end": 1333.32, "text": "I was Googling tomato anatomy before he got here.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 438, "start": 1333.32, "end": 1335.44, "text": "I could swear there's something with it.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 439, "start": 1335.44, "end": 1336.28, "text": "Anyway.", "label": "transition", "p_ad": 0.0, "p_content": 0.25, "p_transition": 0.75, "missing": false}
+{"idx": 440, "start": 1336.28, "end": 1337.12, "text": "It could be, but we don't.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 441, "start": 1337.12, "end": 1337.96, "text": "It's a good effort.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 442, "start": 1337.96, "end": 1339.24, "text": "10 out of 10, Dan.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 443, "start": 1339.24, "end": 1340.76, "text": "Let's put it this way, it's been a long time", "label": "content", "p_ad": 0.0, "p_content": 0.84, "p_transition": 0.16, "missing": false}
+{"idx": 444, "start": 1340.76, "end": 1342.24, "text": "since either one of us went to school.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 445, "start": 1342.24, "end": 1343.08, "text": "Okay.", "label": "content", "p_ad": 0.0, "p_content": 0.93, "p_transition": 0.07, "missing": false}
+{"idx": 446, "start": 1343.08, "end": 1344.0, "text": "So.", "label": "content", "p_ad": 0.0, "p_content": 0.65, "p_transition": 0.35, "missing": false}
+{"idx": 447, "start": 1344.0, "end": 1345.32, "text": "Dan too, apparently.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 448, "start": 1345.32, "end": 1346.32, "text": "Very plausible.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 449, "start": 1346.32, "end": 1352.05, "text": "All right, Candy, I think we can agree that I completely overwhelmed Pete and Tom with", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 450, "start": 1352.05, "end": 1354.35, "text": "my depth of tomato anatomy knowledge.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 451, "start": 1354.35, "end": 1358.39, "text": "Yes, and your knowledge of public transportation on hillside.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 452, "start": 1358.39, "end": 1362.83, "text": "And I think you named follicles in there too, which is just a different kind of anatomy.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 453, "start": 1362.83, "end": 1363.83, "text": "Well done.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 454, "start": 1363.83, "end": 1364.83, "text": "Look, tomatoes have a lot of parts.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 455, "start": 1364.83, "end": 1366.27, "text": "Even Pete and Tom don't know all of them.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 456, "start": 1366.27, "end": 1367.79, "text": "Yeah, that's right.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 457, "start": 1367.79, "end": 1368.79, "text": "Sure.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 458, "start": 1368.79, "end": 1372.07, "text": "All right, so coming up after the break, we're going to look into the tomato market with", "label": "transition", "p_ad": 0.0, "p_content": 0.01, "p_transition": 0.99, "missing": false}
+{"idx": 459, "start": 1372.07, "end": 1373.07, "text": "an economist.", "label": "transition", "p_ad": 0.0, "p_content": 0.11, "p_transition": 0.89, "missing": false}
+{"idx": 460, "start": 1373.07, "end": 1375.95, "text": "and new kinds of fancy tomatoes is too many.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 461, "start": 1375.95, "end": 1378.11, "text": "Then later, I finally get my first taste", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 462, "start": 1378.11, "end": 1379.43, "text": "of the Scarlet Sunrise.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 463, "start": 1379.43, "end": 1381.91, "text": "Will it change how I think about grape tomatoes,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 464, "start": 1381.91, "end": 1384.15, "text": "or will it be the first thing in the history of New Jersey", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 465, "start": 1384.15, "end": 1385.55, "text": "that isn't perfect?", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 466, "start": 1385.55, "end": 1393.01, "text": "Stick around.", "label": "transition", "p_ad": 0.02, "p_content": 0.03, "p_transition": 0.95, "missing": false}
+{"idx": 467, "start": 1393.01, "end": 1395.53, "text": "Have you taken a good hard look at your closet lately?", "label": "transition", "p_ad": 0.27, "p_content": 0.15, "p_transition": 0.58, "missing": false}
+{"idx": 468, "start": 1395.53, "end": 1397.81, "text": "Are the clothes in there you just never wear?", "label": "advertisement", "p_ad": 0.5, "p_content": 0.27, "p_transition": 0.23, "missing": false}
+{"idx": 469, "start": 1397.81, "end": 1399.25, "text": "Clothes you don't like anymore.", "label": "content", "p_ad": 0.4, "p_content": 0.43, "p_transition": 0.17, "missing": false}
+{"idx": 470, "start": 1399.25, "end": 1401.13, "text": "Clothes you think you're gonna wear one day,", "label": "advertisement", "p_ad": 0.51, "p_content": 0.45, "p_transition": 0.04, "missing": false}
+{"idx": 471, "start": 1401.13, "end": 1403.69, "text": "but it's just never, ever happened.", "label": "content", "p_ad": 0.43, "p_content": 0.52, "p_transition": 0.05, "missing": false}
+{"idx": 472, "start": 1403.69, "end": 1405.69, "text": "Are the things you'd like to get rid of,", "label": "advertisement", "p_ad": 0.48, "p_content": 0.27, "p_transition": 0.25, "missing": false}
+{"idx": 473, "start": 1405.69, "end": 1407.65, "text": "but you don't wanna just throw away?", "label": "advertisement", "p_ad": 0.44, "p_content": 0.31, "p_transition": 0.25, "missing": false}
+{"idx": 474, "start": 1407.65, "end": 1409.33, "text": "That's where Vinted comes in.", "label": "advertisement", "p_ad": 0.65, "p_content": 0.01, "p_transition": 0.34, "missing": false}
+{"idx": 475, "start": 1409.33, "end": 1414.33, "text": "Whatever you're trying to do, make space, declutter, earn some money, find the clothes", "label": "advertisement", "p_ad": 0.95, "p_content": 0.02, "p_transition": 0.03, "missing": false}
+{"idx": 476, "start": 1414.33, "end": 1416.21, "text": "you don't want a good home.", "label": "advertisement", "p_ad": 0.88, "p_content": 0.1, "p_transition": 0.02, "missing": false}
+{"idx": 477, "start": 1416.21, "end": 1417.49, "text": "It's the solution.", "label": "advertisement", "p_ad": 0.94, "p_content": 0.04, "p_transition": 0.02, "missing": false}
+{"idx": 478, "start": 1417.49, "end": 1419.89, "text": "Vinted makes it really easy.", "label": "advertisement", "p_ad": 0.94, "p_content": 0.02, "p_transition": 0.04, "missing": false}
+{"idx": 479, "start": 1419.89, "end": 1424.67, "text": "They make it simple to list your clothes and once an item sells, Vinted creates the prepaid", "label": "advertisement", "p_ad": 0.97, "p_content": 0.02, "p_transition": 0.01, "missing": false}
+{"idx": 480, "start": 1424.67, "end": 1426.57, "text": "shipping label for you.", "label": "advertisement", "p_ad": 0.43, "p_content": 0.17, "p_transition": 0.4, "missing": false}
+{"idx": 481, "start": 1426.57, "end": 1431.13, "text": "And there's no selling fees, so you keep everything that you earn.", "label": "advertisement", "p_ad": 0.98, "p_content": 0.02, "p_transition": 0.0, "missing": false}
+{"idx": 482, "start": 1431.13, "end": 1434.81, "text": "The clothes you're done with will have a new life and you'll have more space and more", "label": "advertisement", "p_ad": 0.9, "p_content": 0.09, "p_transition": 0.01, "missing": false}
+{"idx": 483, "start": 1434.81, "end": 1440.21, "text": "cash to spend on whatever you like, including more clothes, if that's your style.", "label": "advertisement", "p_ad": 0.76, "p_content": 0.23, "p_transition": 0.01, "missing": false}
+{"idx": 484, "start": 1440.21, "end": 1442.35, "text": "See what's hiding in your closet.", "label": "advertisement", "p_ad": 0.73, "p_content": 0.17, "p_transition": 0.1, "missing": false}
+{"idx": 485, "start": 1442.35, "end": 1445.95, "text": "You might be surprised how much you can earn with Vintage.", "label": "advertisement", "p_ad": 0.96, "p_content": 0.03, "p_transition": 0.01, "missing": false}
+{"idx": 486, "start": 1445.95, "end": 1455.3, "text": "Download the Vintage app for free to start listing with no seller fees.", "label": "advertisement", "p_ad": 1.0, "p_content": 0.0, "p_transition": 0.0, "missing": false}
+{"idx": 487, "start": 1455.3, "end": 1458.38, "text": "There's nothing quite like having pieces in your closet that you love and that you know", "label": "advertisement", "p_ad": 0.51, "p_content": 0.41, "p_transition": 0.08, "missing": false}
+{"idx": 488, "start": 1458.38, "end": 1460.94, "text": "you can count on for any occasion.", "label": "content", "p_ad": 0.36, "p_content": 0.61, "p_transition": 0.03, "missing": false}
+{"idx": 489, "start": 1460.94, "end": 1464.46, "text": "Except maybe giving someone else that same feeling.", "label": "transition", "p_ad": 0.03, "p_content": 0.42, "p_transition": 0.55, "missing": false}
+{"idx": 490, "start": 1464.46, "end": 1468.06, "text": "This holiday season, Quince is where you can find those pieces.", "label": "advertisement", "p_ad": 0.83, "p_content": 0.02, "p_transition": 0.15, "missing": false}
+{"idx": 491, "start": 1468.06, "end": 1472.58, "text": "Quince makes elevated, everyday essentials using premium materials like Mongolian cash", "label": "advertisement", "p_ad": 0.96, "p_content": 0.03, "p_transition": 0.01, "missing": false}
+{"idx": 492, "start": 1472.58, "end": 1475.3, "text": "mirror, organic cotton and premium stretch denim.", "label": "advertisement", "p_ad": 0.7, "p_content": 0.29, "p_transition": 0.01, "missing": false}
+{"idx": 493, "start": 1475.3, "end": 1478.9, "text": "And they're all the kind of pieces you'd be just as happy to give as you would be to", "label": "advertisement", "p_ad": 0.49, "p_content": 0.49, "p_transition": 0.02, "missing": false}
+{"idx": 494, "start": 1478.9, "end": 1479.9, "text": "receive.", "label": "content", "p_ad": 0.2, "p_content": 0.78, "p_transition": 0.02, "missing": false}
+{"idx": 495, "start": 1479.9, "end": 1482.14, "text": "I know they make a lot of things that are great for layering.", "label": "content", "p_ad": 0.18, "p_content": 0.79, "p_transition": 0.03, "missing": false}
+{"idx": 496, "start": 1482.14, "end": 1487.82, "text": "I have some cozy cashmere hats, chunky fisherman sweaters, patch pocket pants and denim and", "label": "content", "p_ad": 0.24, "p_content": 0.75, "p_transition": 0.01, "missing": false}
+{"idx": 497, "start": 1487.82, "end": 1489.26, "text": "other materials.", "label": "content", "p_ad": 0.06, "p_content": 0.93, "p_transition": 0.01, "missing": false}
+{"idx": 498, "start": 1489.26, "end": 1490.26, "text": "Underlayers too.", "label": "content", "p_ad": 0.04, "p_content": 0.95, "p_transition": 0.01, "missing": false}
+{"idx": 499, "start": 1490.26, "end": 1492.22, "text": "10 cell exercise clothes.", "label": "content", "p_ad": 0.14, "p_content": 0.85, "p_transition": 0.01, "missing": false}
+{"idx": 500, "start": 1492.22, "end": 1493.62, "text": "Lots of good stuff.", "label": "transition", "p_ad": 0.07, "p_content": 0.29, "p_transition": 0.64, "missing": false}
+{"idx": 501, "start": 1493.62, "end": 1497.02, "text": "Everything at Quince is priced 50 to 80% less than similar brands.", "label": "advertisement", "p_ad": 0.98, "p_content": 0.02, "p_transition": 0.0, "missing": false}
+{"idx": 502, "start": 1497.02, "end": 1499.54, "text": "They work directly with factories to cut out the middlemen", "label": "advertisement", "p_ad": 0.84, "p_content": 0.15, "p_transition": 0.01, "missing": false}
+{"idx": 503, "start": 1499.54, "end": 1501.54, "text": "so you can give luxury quality pieces", "label": "advertisement", "p_ad": 0.9, "p_content": 0.08, "p_transition": 0.02, "missing": false}
+{"idx": 504, "start": 1501.54, "end": 1503.78, "text": "without the luxury price tag.", "label": "advertisement", "p_ad": 0.89, "p_content": 0.1, "p_transition": 0.01, "missing": false}
+{"idx": 505, "start": 1503.78, "end": 1505.18, "text": "And they don't just have clothes.", "label": "advertisement", "p_ad": 0.48, "p_content": 0.08, "p_transition": 0.44, "missing": false}
+{"idx": 506, "start": 1505.18, "end": 1507.3, "text": "When it comes to gifting, Quince has leather bags,", "label": "advertisement", "p_ad": 0.83, "p_content": 0.05, "p_transition": 0.12, "missing": false}
+{"idx": 507, "start": 1507.3, "end": 1510.18, "text": "hotel quality bedding, chef grade cookware,", "label": "advertisement", "p_ad": 0.93, "p_content": 0.07, "p_transition": 0.0, "missing": false}
+{"idx": 508, "start": 1510.18, "end": 1512.58, "text": "five star luggage, kids clothes.", "label": "advertisement", "p_ad": 0.85, "p_content": 0.15, "p_transition": 0.0, "missing": false}
+{"idx": 509, "start": 1512.58, "end": 1515.32, "text": "Basically, there are plenty of ways to find something special", "label": "advertisement", "p_ad": 0.77, "p_content": 0.17, "p_transition": 0.06, "missing": false}
+{"idx": 510, "start": 1515.32, "end": 1517.18, "text": "for everyone on your list", "label": "advertisement", "p_ad": 0.76, "p_content": 0.23, "p_transition": 0.01, "missing": false}
+{"idx": 511, "start": 1517.18, "end": 1519.85, "text": "and they'll be thrilled to receive it.", "label": "advertisement", "p_ad": 0.82, "p_content": 0.17, "p_transition": 0.01, "missing": false}
+{"idx": 512, "start": 1519.85, "end": 1522.41, "text": "Give the gift of quality this holiday season.", "label": "advertisement", "p_ad": 0.98, "p_content": 0.01, "p_transition": 0.01, "missing": false}
+{"idx": 513, "start": 1522.41, "end": 1524.85, "text": "Download the Quince app for app exclusive offers", "label": "advertisement", "p_ad": 1.0, "p_content": 0.0, "p_transition": 0.0, "missing": false}
+{"idx": 514, "start": 1524.85, "end": 1527.09, "text": "or go to quince.com.", "label": "advertisement", "p_ad": 1.0, "p_content": 0.0, "p_transition": 0.0, "missing": false}
+{"idx": 515, "start": 1527.09, "end": 1531.05, "text": "Get free shipping on your order and 365 day returns.", "label": "advertisement", "p_ad": 1.0, "p_content": 0.0, "p_transition": 0.0, "missing": false}
+{"idx": 516, "start": 1531.05, "end": 1534.05, "text": "Now available in Canada and the UK too.", "label": "advertisement", "p_ad": 0.92, "p_content": 0.07, "p_transition": 0.01, "missing": false}
+{"idx": 517, "start": 1534.05, "end": 1536.21, "text": "And when Quince asks where you heard about them,", "label": "advertisement", "p_ad": 0.74, "p_content": 0.05, "p_transition": 0.21, "missing": false}
+{"idx": 518, "start": 1536.21, "end": 1538.41, "text": "let them know it was decoder ring.", "label": "advertisement", "p_ad": 0.92, "p_content": 0.07, "p_transition": 0.01, "missing": false}
+{"idx": 519, "start": 1538.41, "end": 1543.23, "text": "It's the best way to support the show.", "label": "advertisement", "p_ad": 0.49, "p_content": 0.45, "p_transition": 0.06, "missing": false}
+{"idx": 520, "start": 1543.23, "end": 1544.19, "text": "All right, back to the show.", "label": "transition", "p_ad": 0.0, "p_content": 0.01, "p_transition": 0.99, "missing": false}
+{"idx": 521, "start": 1544.19, "end": 1545.03, "text": "And I'm joined once again", "label": "content", "p_ad": 0.0, "p_content": 0.59, "p_transition": 0.41, "missing": false}
+{"idx": 522, "start": 1545.03, "end": 1546.39, "text": "by Kenny Malone from Planet Money.", "label": "content", "p_ad": 0.0, "p_content": 0.86, "p_transition": 0.14, "missing": false}
+{"idx": 523, "start": 1546.39, "end": 1547.23, "text": "Hey Kenny.", "label": "content", "p_ad": 0.0, "p_content": 0.95, "p_transition": 0.05, "missing": false}
+{"idx": 524, "start": 1547.23, "end": 1548.61, "text": "Hi Dan.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 525, "start": 1548.61, "end": 1550.99, "text": "So since the success of Honeycrisp,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 526, "start": 1550.99, "end": 1552.15, "text": "we've seen this explosion", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 527, "start": 1552.15, "end": 1554.47, "text": "of all different branded fruits and veggies.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 528, "start": 1554.47, "end": 1556.11, "text": "And we've talked about how the incentives", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 529, "start": 1556.11, "end": 1558.19, "text": "that universities have to create new products", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 530, "start": 1558.19, "end": 1559.63, "text": "changed over the years.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 531, "start": 1559.63, "end": 1561.63, "text": "But it is more than just that.", "label": "content", "p_ad": 0.0, "p_content": 0.92, "p_transition": 0.08, "missing": false}
+{"idx": 532, "start": 1561.63, "end": 1563.71, "text": "And to understand what else has changed,", "label": "content", "p_ad": 0.0, "p_content": 0.86, "p_transition": 0.14, "missing": false}
+{"idx": 533, "start": 1563.71, "end": 1566.43, "text": "we call it Miguel Gomez of Cornell University.", "label": "content", "p_ad": 0.0, "p_content": 0.85, "p_transition": 0.15, "missing": false}
+{"idx": 534, "start": 1566.43, "end": 1570.19, "text": "I am an economist, especially I seen on specialty crops,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 535, "start": 1570.19, "end": 1574.99, "text": "supply chains from genetics to consumers in fresh produce in particular.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 536, "start": 1574.99, "end": 1576.91, "text": "Do you have a favorite vegetable or fruit?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 537, "start": 1576.91, "end": 1577.95, "text": "Artichokes.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 538, "start": 1577.95, "end": 1579.15, "text": "Hey!", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 539, "start": 1579.15, "end": 1580.27, "text": "Oh, that's a curveball.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 540, "start": 1580.91, "end": 1583.39, "text": "Are you buying fresh artichokes and then like peeling them", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 541, "start": 1583.39, "end": 1584.83, "text": "and taking them apart by hand?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 542, "start": 1584.83, "end": 1585.71, "text": "Absolutely.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 543, "start": 1585.71, "end": 1591.47, "text": "and putting them to steam and then doing them with butter and then eat them.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 544, "start": 1591.47, "end": 1596.51, "text": "I don't know, artichokes are an awful lot of work for me. But anyway, first order business,", "label": "content", "p_ad": 0.0, "p_content": 0.87, "p_transition": 0.13, "missing": false}
+{"idx": 545, "start": 1596.51, "end": 1600.75, "text": "a gut check with the professor. We aren't imagining that our grocery stores exploded", "label": "content", "p_ad": 0.0, "p_content": 0.92, "p_transition": 0.08, "missing": false}
+{"idx": 546, "start": 1600.75, "end": 1603.31, "text": "with all this superstar branded produce, right?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 547, "start": 1603.31, "end": 1609.79, "text": "You are absolutely right. If you look at any fresh produce category, there is a", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 548, "start": 1609.79, "end": 1614.79, "text": "raise for differentiation in the fresh product category.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 549, "start": 1615.99, "end": 1620.85, "text": "The market is going toward this crazy amount", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 550, "start": 1620.85, "end": 1624.83, "text": "of new options in each product category.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 551, "start": 1624.83, "end": 1627.05, "text": "Yes, our instinct was right, Dan, we were correct.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 552, "start": 1627.05, "end": 1628.69, "text": "So, okay, great.", "label": "content", "p_ad": 0.0, "p_content": 0.87, "p_transition": 0.13, "missing": false}
+{"idx": 553, "start": 1628.69, "end": 1629.79, "text": "Why is this happening?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 554, "start": 1629.79, "end": 1632.83, "text": "Well, part of the story has to do with growers", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 555, "start": 1632.83, "end": 1635.89, "text": "trying to escape this classic economic pitfall", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 556, "start": 1635.89, "end": 1638.05, "text": "known as the commodity trap.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 557, "start": 1638.05, "end": 1640.57, "text": "Yeah, so if you grow soybeans, for example,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 558, "start": 1640.57, "end": 1642.41, "text": "you're growing a commodity crop.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 559, "start": 1642.41, "end": 1643.69, "text": "To an everyday consumer,", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 560, "start": 1643.69, "end": 1645.85, "text": "a soybean is a soybean is a soybean.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 561, "start": 1645.85, "end": 1647.49, "text": "And so the only way for you to compete", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 562, "start": 1647.49, "end": 1648.97, "text": "with the other soybean growers", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 563, "start": 1648.97, "end": 1651.45, "text": "is by selling your soybeans at a lower price.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 564, "start": 1651.45, "end": 1653.33, "text": "That sets up this race to the bottom", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 565, "start": 1653.33, "end": 1655.45, "text": "and it's a really tough way to make a living.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 566, "start": 1655.45, "end": 1657.37, "text": "But to escape that trap,", "label": "content", "p_ad": 0.0, "p_content": 0.85, "p_transition": 0.15, "missing": false}
+{"idx": 567, "start": 1657.37, "end": 1660.49, "text": "you need to find a way to differentiate your product,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 568, "start": 1660.49, "end": 1662.79, "text": "make your thing special somehow,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 569, "start": 1662.79, "end": 1666.21, "text": "and then ideally you can charge more for it.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 570, "start": 1666.21, "end": 1668.85, "text": "And Miguel told us there are a number of ways to differentiate.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 571, "start": 1669.13, "end": 1672.69, "text": "A one end of the spectrum, take a boring old commodity vegetable and be really", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 572, "start": 1672.69, "end": 1674.13, "text": "clever about how you package it.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 573, "start": 1674.33, "end": 1675.85, "text": "Here is my favorite one.", "label": "content", "p_ad": 0.0, "p_content": 0.96, "p_transition": 0.04, "missing": false}
+{"idx": 574, "start": 1675.89, "end": 1677.29, "text": "Love Beats.", "label": "content", "p_ad": 0.02, "p_content": 0.97, "p_transition": 0.01, "missing": false}
+{"idx": 575, "start": 1677.45, "end": 1682.05, "text": "Love Beats is like a brand of the vegetable Beats.", "label": "content", "p_ad": 0.02, "p_content": 0.98, "p_transition": 0.0, "missing": false}
+{"idx": 576, "start": 1682.33, "end": 1686.37, "text": "Something that is as accommodated as you can find that are Beats.", "label": "content", "p_ad": 0.06, "p_content": 0.93, "p_transition": 0.01, "missing": false}
+{"idx": 577, "start": 1686.61, "end": 1687.81, "text": "Love Beats.", "label": "content", "p_ad": 0.02, "p_content": 0.97, "p_transition": 0.01, "missing": false}
+{"idx": 578, "start": 1688.01, "end": 1688.29, "text": "Yeah.", "label": "content", "p_ad": 0.0, "p_content": 0.96, "p_transition": 0.04, "missing": false}
+{"idx": 579, "start": 1688.33, "end": 1690.77, "text": "The Love Beats company sells Beats.", "label": "content", "p_ad": 0.03, "p_content": 0.97, "p_transition": 0.0, "missing": false}
+{"idx": 580, "start": 1691.29, "end": 1692.37, "text": "They are packaged.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 581, "start": 1692.57, "end": 1693.93, "text": "They're well branded.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 582, "start": 1693.93, "end": 1696.43, "text": "They're often pickled or splashed with balsamic.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 583, "start": 1696.43, "end": 1699.23, "text": "So, you know, slightly more than just like raw commodity beats,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 584, "start": 1699.23, "end": 1702.63, "text": "but also they are still just beats, to be clear.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 585, "start": 1702.63, "end": 1704.43, "text": "They are excellent quality.", "label": "content", "p_ad": 0.02, "p_content": 0.98, "p_transition": 0.0, "missing": false}
+{"idx": 586, "start": 1704.43, "end": 1706.83, "text": "They are nicely packaged.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 587, "start": 1706.83, "end": 1708.43, "text": "The size is uniform.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 588, "start": 1708.43, "end": 1709.53, "text": "They are not huge.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 589, "start": 1709.53, "end": 1711.43, "text": "Are those beats proprietary?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 590, "start": 1711.43, "end": 1712.23, "text": "No.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 591, "start": 1712.23, "end": 1714.43, "text": "The genetics are not proprietary.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 592, "start": 1714.43, "end": 1717.73, "text": "No, right. Like Miguel says, there are no special patented genetics here.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 593, "start": 1717.73, "end": 1720.73, "text": "Love beats is just carefully selecting beats,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 594, "start": 1720.73, "end": 1722.13, "text": "often dressing them up,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 595, "start": 1722.13, "end": 1728.85, "text": "branding them really well and then as a result they've taken a commodity vegetable and can charge more.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 596, "start": 1728.85, "end": 1731.61, "text": "So that's one way you differentiate a commodity crop.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 597, "start": 1731.61, "end": 1734.25, "text": "Miguel says the other way is intellectual property.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 598, "start": 1734.25, "end": 1737.97, "text": "You create a vegetable or fruit that's actually genetically different and better", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 599, "start": 1737.97, "end": 1739.81, "text": "then get legal protection for that plant.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 600, "start": 1739.81, "end": 1742.05, "text": "That's what Rutgers is doing with Scarlet Sunrise.", "label": "content", "p_ad": 0.01, "p_content": 0.96, "p_transition": 0.03, "missing": false}
+{"idx": 601, "start": 1742.05, "end": 1745.01, "text": "Another perfect example, the cotton candy grape.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 602, "start": 1745.01, "end": 1751.09, "text": "It is a super sweet grape that tastes like cotton candy.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 603, "start": 1751.09, "end": 1755.09, "text": "So they're not spraying it with cotton candy flavor, which was my assumption.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 604, "start": 1755.09, "end": 1761.09, "text": "Not at all. Not at all. It's plant breeding and identifying the type of variety that produces", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 605, "start": 1761.09, "end": 1766.53, "text": "that type of very profile of flavor. Do you think someone was like, oh my god,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 606, "start": 1766.53, "end": 1770.29, "text": "we just made the worst grape. It's cloying, it's terrible. And someone in the back was like,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 607, "start": 1770.29, "end": 1776.21, "text": "I got it. Let's sell it to kids. I would like to see a double blind study, professor,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 608, "start": 1776.21, "end": 1780.25, "text": "because I, yes, the cotton candy grapes are very sweet.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 609, "start": 1780.25, "end": 1783.17, "text": "Do they truly taste like cotton candy?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 610, "start": 1783.17, "end": 1785.25, "text": "Or is that a trick our brains play on us", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 611, "start": 1785.25, "end": 1787.53, "text": "because they are called cotton candy grapes?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 612, "start": 1787.53, "end": 1788.53, "text": "I think you're right.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 613, "start": 1788.53, "end": 1790.77, "text": "I think you're right and we, you know, we-", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 614, "start": 1790.77, "end": 1791.61, "text": "We need to study that.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 615, "start": 1791.61, "end": 1793.65, "text": "I call this the LeCroy phenomenon.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 616, "start": 1793.65, "end": 1797.13, "text": "You are gonna be a lot of ideas about research, you know?", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 617, "start": 1797.13, "end": 1797.97, "text": "Yeah.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 618, "start": 1797.97, "end": 1802.09, "text": "I think we should launch cotton candy grapefruit.", "label": "content", "p_ad": 0.02, "p_content": 0.98, "p_transition": 0.0, "missing": false}
+{"idx": 619, "start": 1802.09, "end": 1802.93, "text": "I think so.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 620, "start": 1802.93, "end": 1803.97, "text": "Oh my God.", "label": "content", "p_ad": 0.0, "p_content": 0.94, "p_transition": 0.06, "missing": false}
+{"idx": 621, "start": 1803.97, "end": 1804.89, "text": "I am-", "label": "content", "p_ad": 0.0, "p_content": 0.82, "p_transition": 0.18, "missing": false}
+{"idx": 622, "start": 1804.89, "end": 1805.91, "text": "Don't change anything.", "label": "content", "p_ad": 0.02, "p_content": 0.78, "p_transition": 0.2, "missing": false}
+{"idx": 623, "start": 1805.91, "end": 1807.91, "text": "Just leave it in regular ass grapefruit.", "label": "content", "p_ad": 0.01, "p_content": 0.91, "p_transition": 0.08, "missing": false}
+{"idx": 624, "start": 1807.91, "end": 1808.91, "text": "See what happens.", "label": "content", "p_ad": 0.03, "p_content": 0.87, "p_transition": 0.1, "missing": false}
+{"idx": 625, "start": 1810.55, "end": 1813.23, "text": "So we talked about how influential the honey crisp was", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 626, "start": 1813.23, "end": 1815.19, "text": "and there's so many kinds of apples now.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 627, "start": 1815.19, "end": 1818.43, "text": "How close are we to market saturation", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 628, "start": 1818.43, "end": 1820.94, "text": "with all these varieties of apples?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 629, "start": 1820.94, "end": 1825.94, "text": "That's a difficult, we don't have hard data to show that", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 630, "start": 1826.68, "end": 1831.68, "text": "but in my humble opinion, I think we are past that threshold.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 631, "start": 1831.68, "end": 1833.68, "text": "we are past that threshold.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 632, "start": 1833.68, "end": 1838.48, "text": "Yeah, Miguel says people don't seem to be eating like more apples in total.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 633, "start": 1838.48, "end": 1843.92, "text": "So if you were to invent a new apple, you're just going to be jockeying for space", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 634, "start": 1843.92, "end": 1846.24, "text": "in that already crowded apple display.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 635, "start": 1846.24, "end": 1849.76, "text": "And you know, if you are a new inventor and you try to jump in there,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 636, "start": 1849.76, "end": 1853.92, "text": "it's just going to be harder to get a consumer to try your new fancy apple.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 637, "start": 1853.92, "end": 1857.52, "text": "You know, there is what we call the cost of searching for consumers.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 638, "start": 1857.52, "end": 1860.48, "text": "You know, when you have too many options,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 639, "start": 1860.48, "end": 1864.16, "text": "it becomes a burden to consumers to choose.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 640, "start": 1864.16, "end": 1868.16, "text": "I tried to buy almond butter a few weeks ago and I almost had a panic attack in the aisle.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 641, "start": 1868.16, "end": 1868.48, "text": "Exactly.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 642, "start": 1871.12, "end": 1875.2, "text": "However, this is not the landscape for Scarlett Sunrise. Miguel", "label": "content", "p_ad": 0.0, "p_content": 0.65, "p_transition": 0.35, "missing": false}
+{"idx": 643, "start": 1875.2, "end": 1878.08, "text": "thinks there's still plenty of room for new tomato varieties.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 644, "start": 1878.08, "end": 1885.52, "text": "Definitely, we are not in the moment of saturation. There is a lot of appetite. In fact, the category", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 645, "start": 1885.52, "end": 1891.04, "text": "is increasing. You know, if you look at the shelf space of tomatoes in many supermarkets,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 646, "start": 1891.04, "end": 1896.24, "text": "it's increasing not dramatically, but it's increasing maybe two, three years. We may come", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 647, "start": 1896.24, "end": 1904.48, "text": "to a more steady state in which say, hey, this is enough product variety and we have found all", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 648, "start": 1904.48, "end": 1910.24, "text": "the uses for tomatoes, you know, as a snack or as a midnight snack, morning snack.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 649, "start": 1910.24, "end": 1914.08, "text": "Right. Throw it throwing at people on stages who are performing poorly.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 650, "start": 1914.08, "end": 1917.08, "text": "We're not doing that enough, I'd say.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 651, "start": 1917.08, "end": 1920.08, "text": "Now, I will say, I bet that goes down", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 652, "start": 1920.08, "end": 1923.08, "text": "as we get more of these specialized varieties.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 653, "start": 1923.08, "end": 1925.08, "text": "That's a commodity move.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 654, "start": 1925.08, "end": 1928.08, "text": "I can't even afford to throw tomatoes at bad Indians anymore.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 655, "start": 1928.08, "end": 1931.08, "text": "Fuzzy Bear, poor Fuzzy Bear. He's just clean up there now.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 656, "start": 1934.08, "end": 1937.08, "text": "So, yeah, good news for Fuzzy Bear, actually, I think.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 657, "start": 1937.08, "end": 1940.08, "text": "But also, let's say good news for the folks at Rutgers here.", "label": "content", "p_ad": 0.01, "p_content": 0.96, "p_transition": 0.03, "missing": false}
+{"idx": 658, "start": 1940.08, "end": 1946.24, "text": "And the reason why there's still room for growth for new tomatoes and other kinds of produce,", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 659, "start": 1946.24, "end": 1950.88, "text": "it's in part, as we said, growers want to get out of that commodity trap. But Miguel says", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 660, "start": 1950.88, "end": 1955.36, "text": "there's more to it than that. Yeah, producers can push their fancy things all they want.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 661, "start": 1955.36, "end": 1960.88, "text": "He's more interested in the demand side of this. I am convinced that at the end of the day,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 662, "start": 1961.68, "end": 1967.44, "text": "the foods that you see in restaurants in the store are in response to what consumers want.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 663, "start": 1967.44, "end": 1972.6, "text": "And I think the consumer is the bigger driver of this change at the end.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 664, "start": 1972.68, "end": 1976.72, "text": "But the thing that showed everybody that big time was the Honeycrisp.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 665, "start": 1977.32, "end": 1980.64, "text": "Because when it came on the scene, it was so much more expensive.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 666, "start": 1981.24, "end": 1981.72, "text": "Yes.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 667, "start": 1981.72, "end": 1988.12, "text": "And that was the lesson that people were like, oh, people will pay more if they think it really", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 668, "start": 1988.12, "end": 1993.32, "text": "think it's better. And to this day, I mean, if I come home with Honeycrisp, my wife is", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 669, "start": 1993.32, "end": 1994.4, "text": "like, let me see that receipt.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 670, "start": 1994.96, "end": 1996.56, "text": "You know, those better have been on sale.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 671, "start": 1996.56, "end": 1999.36, "text": "We don't make Honeycris money in this house.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 672, "start": 1999.36, "end": 2003.79, "text": "So I think when we think of the commodities trap,", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 673, "start": 2003.79, "end": 2006.27, "text": "we think of this as a producer push.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 674, "start": 2006.27, "end": 2010.15, "text": "But what you feel like with a lot of these pieces of produce,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 675, "start": 2010.15, "end": 2015.15, "text": "this is coming from some fancification of our pallets,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 676, "start": 2015.51, "end": 2017.79, "text": "our demands, because we're all learning how to eat", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 677, "start": 2017.79, "end": 2019.35, "text": "and we're learning how to differentiate.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 678, "start": 2019.35, "end": 2020.31, "text": "Absolutely.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 679, "start": 2020.31, "end": 2021.15, "text": "Yes.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 680, "start": 2021.15, "end": 2023.35, "text": "Of course, there is also a feedback loop", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 681, "start": 2023.35, "end": 2025.39, "text": "between supply and demand here.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 682, "start": 2025.39, "end": 2028.11, "text": "Growers can only escape the commodity trap", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 683, "start": 2028.11, "end": 2031.55, "text": "if we are willing to buy into whatever they're selling,", "label": "content", "p_ad": 0.01, "p_content": 0.99, "p_transition": 0.0, "missing": false}
+{"idx": 684, "start": 2031.55, "end": 2033.43, "text": "a fancier thing at a higher price.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 685, "start": 2033.43, "end": 2034.91, "text": "And if we are willing to buy in,", "label": "content", "p_ad": 0.01, "p_content": 0.98, "p_transition": 0.01, "missing": false}
+{"idx": 686, "start": 2034.91, "end": 2038.23, "text": "then more growers can try and escape the commodity trap", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 687, "start": 2038.23, "end": 2041.03, "text": "and on and on and on.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 688, "start": 2041.03, "end": 2043.35, "text": "What's the produce category that you feel like", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 689, "start": 2043.35, "end": 2045.43, "text": "is ripe, no pun intended,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 690, "start": 2045.43, "end": 2047.43, "text": "for some new innovation and branding?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 691, "start": 2047.43, "end": 2049.95, "text": "Dan's been sitting on that pun for three days, by the way.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 692, "start": 2049.95, "end": 2051.91, "text": "Ha ha ha ha.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 693, "start": 2051.91, "end": 2053.19, "text": "What's your pick?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 694, "start": 2053.19, "end": 2055.87, "text": "I would say avocados.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 695, "start": 2055.87, "end": 2057.15, "text": "Oh.", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 696, "start": 2057.15, "end": 2062.15, "text": "If you look at the genetic richness of avocado,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 697, "start": 2063.23, "end": 2065.95, "text": "different sizes, different flavors,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 698, "start": 2065.95, "end": 2068.31, "text": "different textures, level of grease.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 699, "start": 2068.31, "end": 2069.15, "text": "Yep.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 700, "start": 2069.15, "end": 2072.83, "text": "And if you look at the per capita consumption", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 701, "start": 2072.83, "end": 2074.67, "text": "of avocado, it's just increasing.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 702, "start": 2074.67, "end": 2077.15, "text": "It's the most successful category", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 703, "start": 2077.15, "end": 2079.63, "text": "in the past 15 years in fresh produce.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 704, "start": 2079.63, "end": 2081.87, "text": "So your pick is avocado, professor.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 705, "start": 2081.87, "end": 2083.43, "text": "Here's my pick.", "label": "content", "p_ad": 0.0, "p_content": 0.9, "p_transition": 0.1, "missing": false}
+{"idx": 706, "start": 2083.43, "end": 2085.55, "text": "I pick mangoes.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 707, "start": 2085.55, "end": 2086.71, "text": "Wow.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 708, "start": 2086.71, "end": 2088.75, "text": "I got my money on mangoes, and I'll tell you why.", "label": "content", "p_ad": 0.01, "p_content": 0.94, "p_transition": 0.05, "missing": false}
+{"idx": 709, "start": 2088.75, "end": 2090.99, "text": "First of all, there's a lot of varieties of mangoes", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 710, "start": 2090.99, "end": 2094.71, "text": "out there already, but only a tiny handful", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 711, "start": 2094.71, "end": 2097.71, "text": "that are widely available in US stores.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 712, "start": 2097.71, "end": 2099.63, "text": "I think that for people who didn't grow up", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 713, "start": 2099.63, "end": 2102.39, "text": "in a mango-centric food culture,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 714, "start": 2102.39, "end": 2107.27, "text": "cutting up, getting the inside of a mango out is annoying.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 715, "start": 2107.27, "end": 2108.69, "text": "The pit is gigantic.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 716, "start": 2108.69, "end": 2110.87, "text": "If you could breed it to have a smaller pit", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 717, "start": 2110.87, "end": 2115.19, "text": "and be easier to navigate, I think that that would make more people want to buy them.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 718, "start": 2115.19, "end": 2120.11, "text": "And I think if you could solve that problem, you would be well in your way to selling more", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 719, "start": 2120.11, "end": 2121.11, "text": "mangoes.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 720, "start": 2121.11, "end": 2122.63, "text": "I think you convinced me.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 721, "start": 2122.63, "end": 2125.63, "text": "I think that is true.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 722, "start": 2125.63, "end": 2126.63, "text": "That is true.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 723, "start": 2126.63, "end": 2133.71, "text": "I remember I grew up in Colombia and in the farm we had like nine different types of mangoes.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 724, "start": 2133.71, "end": 2134.71, "text": "Delicious.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 725, "start": 2134.71, "end": 2139.83, "text": "Problem, they are not easy to eat and they are not easy to transport.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 726, "start": 2139.83, "end": 2145.43, "text": "They are not easy to, you don't know how to preserve them better, how to, but the mango", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 727, "start": 2145.43, "end": 2152.75, "text": "man is so, and they have fiber, they have, oh, they're delicious.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 728, "start": 2152.75, "end": 2156.39, "text": "Coming up, we return to the Rutgers Research Farm and finally get to taste the Scarlet", "label": "transition", "p_ad": 0.0, "p_content": 0.21, "p_transition": 0.79, "missing": false}
+{"idx": 729, "start": 2156.39, "end": 2157.39, "text": "Sunrise.", "label": "content", "p_ad": 0.0, "p_content": 0.89, "p_transition": 0.11, "missing": false}
+{"idx": 730, "start": 2157.39, "end": 2159.19, "text": "Then, a twist.", "label": "transition", "p_ad": 0.0, "p_content": 0.46, "p_transition": 0.54, "missing": false}
+{"idx": 731, "start": 2159.19, "end": 2163.43, "text": "We discover that it may only be the beginning of something much bigger for tomatoes.", "label": "content", "p_ad": 0.0, "p_content": 0.89, "p_transition": 0.11, "missing": false}
+{"idx": 732, "start": 2163.43, "end": 2170.32, "text": "Stick around.", "label": "transition", "p_ad": 0.08, "p_content": 0.08, "p_transition": 0.84, "missing": false}
+{"idx": 733, "start": 2170.32, "end": 2172.68, "text": "Verizon knows that holiday math can be complicated.", "label": "advertisement", "p_ad": 0.7, "p_content": 0.01, "p_transition": 0.29, "missing": false}
+{"idx": 734, "start": 2172.68, "end": 2175.4, "text": "Okay, let's see, we got the four kids.", "label": "content", "p_ad": 0.31, "p_content": 0.61, "p_transition": 0.08, "missing": false}
+{"idx": 735, "start": 2175.4, "end": 2183.16, "text": "gifts each. Six teacher gifts? Wait, oh, what do we get and Sandy? And the dogs. Oh, can't forget the dogs.", "label": "content", "p_ad": 0.23, "p_content": 0.74, "p_transition": 0.03, "missing": false}
+{"idx": 736, "start": 2183.8, "end": 2191.2, "text": "Know what doesn't need math? Simplicity plan from Verizon. One plan, one price. Just $30 a line per month for you or the whole family.", "label": "advertisement", "p_ad": 1.0, "p_content": 0.0, "p_transition": 0.0, "missing": false}
+{"idx": 737, "start": 2191.2, "end": 2198.2, "text": "The holidays are complicated. Shopping our best deals and switching to Verizon is simple. For new customers, $30 per line includes auto-pay and", "label": "advertisement", "p_ad": 1.0, "p_content": 0.0, "p_transition": 0.0, "missing": false}
+{"idx": 738, "start": 2198.2, "end": 2200.2, "text": "switch discount additional taxes fees and terms apply.", "label": "advertisement", "p_ad": 0.98, "p_content": 0.01, "p_transition": 0.01, "missing": false}
+{"idx": 739, "start": 2200.2, "end": 2204.8, "text": "Hey, we're Nick and Jack hosts of the best one yet. Behind every episode, there's research, email,", "label": "transition", "p_ad": 0.03, "p_content": 0.43, "p_transition": 0.54, "missing": false}
+{"idx": 740, "start": 2204.8, "end": 2207.92, "text": "spreadsheets and our shared Google Doc, the headline hammer.", "label": "content", "p_ad": 0.33, "p_content": 0.47, "p_transition": 0.2, "missing": false}
+{"idx": 741, "start": 2207.92, "end": 2212.64, "text": "With Google Workspace with Gemini, Google's AI is built right into the premium versions of tools we", "label": "advertisement", "p_ad": 0.94, "p_content": 0.02, "p_transition": 0.04, "missing": false}
+{"idx": 742, "start": 2212.64, "end": 2218.4, "text": "already use, like Gmail, Docs and Sheets. No new tools or extra logins, just personalized AI for the", "label": "advertisement", "p_ad": 0.95, "p_content": 0.04, "p_transition": 0.01, "missing": false}
+{"idx": 743, "start": 2218.4, "end": 2222.64, "text": "way we work. That means less time on the work around the work and more time finding the stories", "label": "advertisement", "p_ad": 0.84, "p_content": 0.12, "p_transition": 0.04, "missing": false}
+{"idx": 744, "start": 2222.64, "end": 2228.72, "text": "worth talking about. Get AI tools for work. Upgrade to Google Workspace with Gemini at go.gle", "label": "advertisement", "p_ad": 1.0, "p_content": 0.0, "p_transition": 0.0, "missing": false}
+{"idx": 745, "start": 2228.72, "end": 2238.57, "text": "slash workspace with Gemini. That's go.jle slash workspace with Gemini. Welcome back.", "label": "transition", "p_ad": 0.46, "p_content": 0.0, "p_transition": 0.54, "missing": false}
+{"idx": 746, "start": 2239.69, "end": 2244.01, "text": "Are these guys, I really, it's true, I can't tell if they're green. I'm not seeing much,", "label": "content", "p_ad": 0.0, "p_content": 0.96, "p_transition": 0.04, "missing": false}
+{"idx": 747, "start": 2244.01, "end": 2248.89, "text": "you know, again, we plant them late so that we ripen up. Back at the Rutgers Experimental Farm,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 748, "start": 2248.89, "end": 2254.01, "text": "we've been searching for a solid 30 minutes and still haven't found an actual proper ripy in the", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 749, "start": 2254.01, "end": 2260.17, "text": "field. Luckily, Tom has a backup plan. Yeah, so you guys can have these. They came out of my home", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 750, "start": 2260.17, "end": 2262.17, "text": "Oh, wow. All right.", "label": "content", "p_ad": 0.0, "p_content": 0.95, "p_transition": 0.05, "missing": false}
+{"idx": 751, "start": 2262.17, "end": 2264.17, "text": "I planted them a little bit earlier, but...", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 752, "start": 2264.17, "end": 2267.17, "text": "Tom is holding one of those little pint baskets", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 753, "start": 2267.17, "end": 2270.17, "text": "full of these gorgeous little yellow tomatoes", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 754, "start": 2270.17, "end": 2272.17, "text": "with that telltale blush of red.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 755, "start": 2272.17, "end": 2275.46, "text": "Actually, these are the Scarlet Sunrise.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 756, "start": 2275.46, "end": 2278.46, "text": "These are actually a breeding line.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 757, "start": 2278.46, "end": 2282.49, "text": "They were from Scarlet Sunrise. It's a derivative.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 758, "start": 2282.49, "end": 2284.49, "text": "Because of the Scarlet Sunrise.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 759, "start": 2284.49, "end": 2286.49, "text": "They look like order tasting out there.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 760, "start": 2286.49, "end": 2289.49, "text": "Yeah, so the flavor and the fruit type came from Scarlet Sunrise.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 761, "start": 2289.49, "end": 2290.81, "text": "Yeah, all right, fine, fine.", "label": "content", "p_ad": 0.0, "p_content": 0.93, "p_transition": 0.07, "missing": false}
+{"idx": 762, "start": 2290.81, "end": 2293.93, "text": "Technically, these are descendants of the Scarlet Sunrise.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 763, "start": 2293.93, "end": 2296.21, "text": "And I guess once there's a trademark in legal plant protection,", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 764, "start": 2296.45, "end": 2299.53, "text": "distinctions like cousin of breeding line may matter technically.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 765, "start": 2299.53, "end": 2305.37, "text": "But for our purposes, Tom is presenting us with actually ripe Scarlet Sunrise tomatoes.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 766, "start": 2305.57, "end": 2309.29, "text": "Now, before we try this tomato, we asked Tom and Pete to each pop one.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 767, "start": 2309.37, "end": 2313.65, "text": "He was like, we want to see what people who taste and evaluate hundreds of tomatoes", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 768, "start": 2313.65, "end": 2315.21, "text": "each year are looking for.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 769, "start": 2315.21, "end": 2326.75, "text": "All right. Oh, that was a little bit low in acidity, but high in sugar good texture", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 770, "start": 2327.76, "end": 2332.64, "text": "You know, I would give I would give that a favorable score maybe four out of five something like that", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 771, "start": 2332.8, "end": 2337.32, "text": "Yeah, it's got a good pop in the mouth and it's got a good combination of sugar and acid so", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 772, "start": 2337.76, "end": 2345.28, "text": "You know that if it doesn't have any acid, it's bland and right. It's a sickly sweet as opposed, you know, I", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 773, "start": 2346.6, "end": 2348.6, "text": "Love them. They are so scientific", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 774, "start": 2349.12, "end": 2350.68, "text": "tasting tomatoes.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 775, "start": 2350.68, "end": 2353.32, "text": "They are earning their designation as plant nerds.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 776, "start": 2353.32, "end": 2354.64, "text": "Yes, yeah.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 777, "start": 2354.64, "end": 2356.04, "text": "But it was so interesting to watch this", "label": "content", "p_ad": 0.0, "p_content": 0.94, "p_transition": 0.06, "missing": false}
+{"idx": 778, "start": 2356.04, "end": 2359.6, "text": "because this is the process of developing a new tomato.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 779, "start": 2359.6, "end": 2361.24, "text": "Like in some ways it's super scientific.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 780, "start": 2361.24, "end": 2363.16, "text": "In some ways it's just like two guys in a field", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 781, "start": 2363.16, "end": 2364.04, "text": "eating tomatoes.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 782, "start": 2364.04, "end": 2365.12, "text": "You like this bud?", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 783, "start": 2365.12, "end": 2365.96, "text": "Yeah, I like this.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 784, "start": 2365.96, "end": 2366.8, "text": "Right, right, right, right, this one's good.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 785, "start": 2366.8, "end": 2367.76, "text": "Do it like this, you know.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 786, "start": 2367.76, "end": 2369.08, "text": "And it's like that over and over.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 787, "start": 2369.08, "end": 2372.68, "text": "Crossbreed, taste the results, discuss, repeat, repeat, repeat.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 788, "start": 2372.68, "end": 2374.2, "text": "But, you know, okay, great.", "label": "content", "p_ad": 0.0, "p_content": 0.81, "p_transition": 0.19, "missing": false}
+{"idx": 789, "start": 2374.2, "end": 2377.16, "text": "They are tasting dispassionately, objectively.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 790, "start": 2377.16, "end": 2380.28, "text": "By this point, the only taste test that matters to me is whether or not this", "label": "content", "p_ad": 0.0, "p_content": 0.96, "p_transition": 0.04, "missing": false}
+{"idx": 791, "start": 2380.28, "end": 2386.88, "text": "Scarlet Sunrise Tomato could convert notorious Grape Tomato Hater, Dan Pashman.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 792, "start": 2386.88, "end": 2391.28, "text": "I prefer the term Grape Tomato Skeptic, but anyway, there was only one way to find out.", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 793, "start": 2391.28, "end": 2394.16, "text": "We just grab a Scarlet Sunrise and pop them in.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 794, "start": 2394.16, "end": 2396.89, "text": "All right, all right.", "label": "content", "p_ad": 0.0, "p_content": 0.82, "p_transition": 0.18, "missing": false}
+{"idx": 795, "start": 2396.89, "end": 2398.57, "text": "Oh my gosh.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 796, "start": 2398.57, "end": 2401.64, "text": "That's really good.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 797, "start": 2401.64, "end": 2405.16, "text": "That is a full course tomato meal right there.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 798, "start": 2405.16, "end": 2406.16, "text": "The pop.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 799, "start": 2406.16, "end": 2408.08, "text": "There's a lot in a little package.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 800, "start": 2408.08, "end": 2409.08, "text": "Yeah.", "label": "content", "p_ad": 0.0, "p_content": 0.91, "p_transition": 0.09, "missing": false}
+{"idx": 801, "start": 2409.08, "end": 2411.76, "text": "I told you Kenny that I was skeptical of grape tomatoes.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 802, "start": 2411.76, "end": 2414.88, "text": "And the reason why I have often not liked grape tomatoes", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 803, "start": 2414.88, "end": 2416.48, "text": "is I feel like they're too hard.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 804, "start": 2416.48, "end": 2418.66, "text": "You want to balance between the sort of the firmness", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 805, "start": 2418.66, "end": 2420.7, "text": "and the soft juiciness of the pulp.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 806, "start": 2420.7, "end": 2422.18, "text": "You don't want it to be mushy,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 807, "start": 2422.18, "end": 2424.16, "text": "but you also don't want it to be hard as a rock.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 808, "start": 2424.16, "end": 2426.08, "text": "This, I think, solves that.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 809, "start": 2426.08, "end": 2427.28, "text": "This is not too hard.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 810, "start": 2427.28, "end": 2430.42, "text": "It's got a bit of a meatiness that's very pleasant,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 811, "start": 2430.42, "end": 2431.52, "text": "which a good tomato should have.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 812, "start": 2431.52, "end": 2432.74, "text": "It's a little bit meaty,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 813, "start": 2432.74, "end": 2435.28, "text": "but it's still sort of yield so the bite is soft and tender", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 814, "start": 2435.28, "end": 2439.34, "text": "and it's got that sweetness and acidity.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 815, "start": 2439.34, "end": 2441.66, "text": "So where can you try Scarlet Sunrise?", "label": "content", "p_ad": 0.12, "p_content": 0.86, "p_transition": 0.02, "missing": false}
+{"idx": 816, "start": 2441.66, "end": 2443.3, "text": "Currently it's more of a specialty tomato", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 817, "start": 2443.3, "end": 2445.22, "text": "being sold by a small seed company.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 818, "start": 2445.22, "end": 2447.18, "text": "As it exists now, it may never have", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 819, "start": 2447.18, "end": 2448.94, "text": "big mass commercial distribution", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 820, "start": 2448.94, "end": 2451.82, "text": "because the current iteration is pretty expensive to grow.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 821, "start": 2451.82, "end": 2453.62, "text": "But honestly, Tom and Pete's goal", "label": "content", "p_ad": 0.0, "p_content": 0.95, "p_transition": 0.05, "missing": false}
+{"idx": 822, "start": 2453.62, "end": 2455.98, "text": "of helping New Jersey farmers here,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 823, "start": 2455.98, "end": 2458.1, "text": "this ended up going well beyond just", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 824, "start": 2458.1, "end": 2461.28, "text": "inventing another tasty tomato for them to sell.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 825, "start": 2461.28, "end": 2462.14, "text": "Yeah, that's right Kenny,", "label": "content", "p_ad": 0.0, "p_content": 0.96, "p_transition": 0.04, "missing": false}
+{"idx": 826, "start": 2462.14, "end": 2464.26, "text": "because during this whole development process,", "label": "content", "p_ad": 0.0, "p_content": 0.97, "p_transition": 0.03, "missing": false}
+{"idx": 827, "start": 2464.26, "end": 2465.9, "text": "they made a different discovery", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 828, "start": 2465.9, "end": 2468.42, "text": "that could really change things for tomato growers", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 829, "start": 2468.42, "end": 2469.98, "text": "far beyond New Jersey.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 830, "start": 2469.98, "end": 2472.1, "text": "Yeah, as they worked on the Scarlet Sunrise,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 831, "start": 2472.1, "end": 2474.64, "text": "they noticed that one of their experimental tomato plants", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 832, "start": 2474.64, "end": 2477.66, "text": "was really small, like half the size", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 833, "start": 2477.66, "end": 2480.66, "text": "of a normal tomato plant, but was still yielding", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 834, "start": 2480.66, "end": 2483.14, "text": "a roughly similar quality,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 835, "start": 2483.14, "end": 2485.94, "text": "and maybe quantity of tomato fruit.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 836, "start": 2485.94, "end": 2488.58, "text": "As soon as we saw that,", "label": "content", "p_ad": 0.0, "p_content": 0.96, "p_transition": 0.04, "missing": false}
+{"idx": 837, "start": 2488.58, "end": 2491.78, "text": "Pete saw the one that you see out in the field now,", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 838, "start": 2492.82, "end": 2494.78, "text": "as soon as you see that, you get excited", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 839, "start": 2494.78, "end": 2496.5, "text": "because you know that that plant", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 840, "start": 2496.5, "end": 2498.94, "text": "is just gonna be much cheaper to grow.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 841, "start": 2498.94, "end": 2501.94, "text": "And what surprised us was that as excited as we were", "label": "content", "p_ad": 0.0, "p_content": 0.98, "p_transition": 0.02, "missing": false}
+{"idx": 842, "start": 2501.94, "end": 2504.52, "text": "to find and eat and talk about the Scarlet Sunrise,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 843, "start": 2504.52, "end": 2508.74, "text": "Tom and Pete were clearly way more excited about this.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 844, "start": 2508.74, "end": 2511.06, "text": "Yeah, because the cost of growing grape tomatoes", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 845, "start": 2511.06, "end": 2512.62, "text": "is one of the biggest deterrents.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 846, "start": 2512.62, "end": 2515.22, "text": "It requires a lot of picking by hand, a lot of labor.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 847, "start": 2515.22, "end": 2517.78, "text": "The standard tall plants have tomatoes from top to bottom", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 848, "start": 2517.78, "end": 2519.3, "text": "that ripen at different rates.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 849, "start": 2519.3, "end": 2520.9, "text": "So you gotta send pickers through your field", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 850, "start": 2520.9, "end": 2522.74, "text": "several times over weeks.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 851, "start": 2522.74, "end": 2525.9, "text": "The more compact plants have a shorter ripening window,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 852, "start": 2525.9, "end": 2530.5, "text": "So fewer trips through the fields, plus more compact plants means like you just save money", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 853, "start": 2530.5, "end": 2532.62, "text": "on ties and stakes and stuff.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 854, "start": 2532.62, "end": 2537.26, "text": "Tom actually estimates this could save growers somewhere between 25 and 50%.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 855, "start": 2537.26, "end": 2541.5, "text": "Yeah, they're excited because this is the kind of innovation that doesn't just help", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 856, "start": 2541.5, "end": 2542.5, "text": "farmers a little.", "label": "content", "p_ad": 0.0, "p_content": 0.99, "p_transition": 0.01, "missing": false}
+{"idx": 857, "start": 2542.5, "end": 2547.62, "text": "Like it could completely change the economics of tomato growing for those farmers.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 858, "start": 2547.62, "end": 2552.46, "text": "I think this is something that, you know, it can have a much bigger impact, you know,", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 859, "start": 2552.46, "end": 2553.46, "text": "worldwide.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 860, "start": 2553.46, "end": 2557.78, "text": "could, like I said, I want to overstate it right now, but we're, we don't, we haven't", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 861, "start": 2557.78, "end": 2559.58, "text": "seen anything like this on the market.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 862, "start": 2560.02, "end": 2562.86, "text": "What I hear you saying is that this tomato could change the world.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 863, "start": 2564.5, "end": 2565.98, "text": "Like I said, I don't want to overstate it.", "label": "content", "p_ad": 0.0, "p_content": 1.0, "p_transition": 0.0, "missing": false}
+{"idx": 864, "start": 2572.88, "end": 2576.4, "text": "That was Dan Pashman from the Sportful and Kenny Malone from Planet Money.", "label": "content", "p_ad": 0.0, "p_content": 0.76, "p_transition": 0.24, "missing": false}
+{"idx": 865, "start": 2576.8, "end": 2580.26, "text": "The team that made this episode also includes James Snead, Keith Romer,", "label": "content", "p_ad": 0.0, "p_content": 0.9, "p_transition": 0.1, "missing": false}
+{"idx": 866, "start": 2580.26, "end": 2585.32, "text": "Sierra Juarez, Sina Lofredo, Jimmy Keely, Emma Morgenstern, Andre Sohara,", "label": "content", "p_ad": 0.0, "p_content": 0.94, "p_transition": 0.06, "missing": false}
+{"idx": 867, "start": 2585.44, "end": 2587.36, "text": "Camille Stanley and Jared O'Connell.", "label": "content", "p_ad": 0.0, "p_content": 0.94, "p_transition": 0.06, "missing": false}
+{"idx": 868, "start": 2587.36, "end": 2592.36, "text": "Thanks for listening. We'll be back with a brand new episode of Decoderang in two weeks.", "label": "transition", "p_ad": 0.01, "p_content": 0.49, "p_transition": 0.5, "missing": false}
+{"idx": 869, "start": 2592.36, "end": 2601.6, "text": "Verizon knows that holiday math can be complicated.", "label": "advertisement", "p_ad": 0.63, "p_content": 0.01, "p_transition": 0.36, "missing": false}
+{"idx": 870, "start": 2601.6, "end": 2606.6, "text": "Okay, let's see, we got the four kids. Four gifts each. Six teacher gifts?", "label": "content", "p_ad": 0.36, "p_content": 0.56, "p_transition": 0.08, "missing": false}
+{"idx": 871, "start": 2606.6, "end": 2611.6, "text": "Wait, oh, what do we get and Sandy? And the dogs. Oh, can't forget the dogs.", "label": "content", "p_ad": 0.3, "p_content": 0.67, "p_transition": 0.03, "missing": false}
+{"idx": 872, "start": 2611.6, "end": 2616.6, "text": "Know what doesn't need math? Simplicity plan from Verizon. One plan, one price.", "label": "advertisement", "p_ad": 0.86, "p_content": 0.02, "p_transition": 0.12, "missing": false}
+{"idx": 873, "start": 2616.6, "end": 2619.6, "text": "Just $30 a line per month for you or the whole family.", "label": "advertisement", "p_ad": 1.0, "p_content": 0.0, "p_transition": 0.0, "missing": false}
+{"idx": 874, "start": 2619.6, "end": 2624.16, "text": "The holidays are complicated. Shopping our best deals and switching to Verizon is simple.", "label": "advertisement", "p_ad": 0.96, "p_content": 0.01, "p_transition": 0.03, "missing": false}
+{"idx": 875, "start": 2624.16, "end": 2627.28, "text": "For new customers, $30 per line includes auto-pay and switch discount additional", "label": "advertisement", "p_ad": 1.0, "p_content": 0.0, "p_transition": 0.0, "missing": false}
+{"idx": 876, "start": 2627.28, "end": 2630.8, "text": "taxes fees in terms of apply. Hey, we're Nick and Jack hosts of The Best One Yet.", "label": "transition", "p_ad": 0.16, "p_content": 0.16, "p_transition": 0.68, "missing": false}
+{"idx": 877, "start": 2630.8, "end": 2635.12, "text": "Behind every episode, there's research, email, spreadsheets, and our shared Google Doc,", "label": "content", "p_ad": 0.37, "p_content": 0.53, "p_transition": 0.1, "missing": false}
+{"idx": 878, "start": 2635.12, "end": 2639.6, "text": "the headline hammer. With Google Workspace with Gemini, Google's AI is built right into the", "label": "advertisement", "p_ad": 0.94, "p_content": 0.05, "p_transition": 0.01, "missing": false}
+{"idx": 879, "start": 2639.6, "end": 2644.72, "text": "premium versions of tools we already use, like Gmail, Docs, and Sheets. No new tools or extra", "label": "advertisement", "p_ad": 0.95, "p_content": 0.04, "p_transition": 0.01, "missing": false}
+{"idx": 880, "start": 2644.72, "end": 2649.6, "text": "logins just personalized AI for the way we work. That means less time on the work around the work", "label": "advertisement", "p_ad": 0.71, "p_content": 0.25, "p_transition": 0.04, "missing": false}
+{"idx": 881, "start": 2649.6, "end": 2654.16, "text": "and more time finding the stories worth talking about. Get AI tools for work. Upgrade to Google", "label": "advertisement", "p_ad": 0.99, "p_content": 0.01, "p_transition": 0.0, "missing": false}
+{"idx": 882, "start": 2654.16, "end": 2661.68, "text": "Workspace with Gemini at go.gle slash workspace with Gemini. That's go.gle slash workspace with Gemini.", "label": "advertisement", "p_ad": 0.99, "p_content": 0.0, "p_transition": 0.01, "missing": false}

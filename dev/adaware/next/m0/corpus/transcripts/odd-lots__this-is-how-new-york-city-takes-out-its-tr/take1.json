@@ -1,0 +1,5764 @@
+{
+ "duration": 3790.97,
+ "language": "en",
+ "segments": [
+  {
+   "start": 0.46,
+   "end": 3.78,
+   "text": "Finance is increasingly being built on digital rails,"
+  },
+  {
+   "start": 3.78,
+   "end": 5.74,
+   "text": "but as the adoption of virtual assets,"
+  },
+  {
+   "start": 5.74,
+   "end": 8.14,
+   "text": "tokenization and stable coins grows,"
+  },
+  {
+   "start": 8.14,
+   "end": 11.94,
+   "text": "can regulation not only keep pace but help accelerate it?"
+  },
+  {
+   "start": 11.94,
+   "end": 14.3,
+   "text": "Find out more later in the podcast."
+  },
+  {
+   "start": 14.3,
+   "end": 17.97,
+   "text": "In Heelspet Nutrition, sabemos que la culpa es real."
+  },
+  {
+   "start": 17.97,
+   "end": 20.85,
+   "text": "Por eso existe Heels, nutrición científicamente probada"
+  },
+  {
+   "start": 20.85,
+   "end": 23.05,
+   "text": "para darles más amor del humanamente posible."
+  },
+  {
+   "start": 23.05,
+   "end": 25.97,
+   "text": "Como humanos tenemos límites, por eso existe Heels."
+  },
+  {
+   "start": 25.97,
+   "end": 28.33,
+   "text": "Encuentre el alimento adecuado en Heelspet.com,"
+  },
+  {
+   "start": 28.33,
+   "end": 30.05,
+   "text": "diagonal la ciencia lo hace por ti."
+  },
+  {
+   "start": 30.05,
+   "end": 32.89,
+   "text": "Small businesses are the pulse of every community."
+  },
+  {
+   "start": 32.89,
+   "end": 36.65,
+   "text": "They bring people together, create opportunities, and drive growth."
+  },
+  {
+   "start": 36.65,
+   "end": 40.97,
+   "text": "Chase for Business helps business owners like you with personalized guidance and convenient"
+  },
+  {
+   "start": 40.97,
+   "end": 43.33,
+   "text": "digital tools all in one place."
+  },
+  {
+   "start": 43.33,
+   "end": 47.55,
+   "text": "With that guidance and your determination, you can take your business farther and help"
+  },
+  {
+   "start": 47.55,
+   "end": 50.25,
+   "text": "build a brighter future for your community."
+  },
+  {
+   "start": 50.25,
+   "end": 52.77,
+   "text": "Learn more at Chase.com slash business."
+  },
+  {
+   "start": 52.77,
+   "end": 53.83,
+   "text": "Chase for Business."
+  },
+  {
+   "start": 53.83,
+   "end": 55.45,
+   "text": "Make more of what's yours."
+  },
+  {
+   "start": 55.45,
+   "end": 58.61,
+   "text": "The Chase mobile app is available for select mobile devices."
+  },
+  {
+   "start": 58.61,
+   "end": 65.89,
+   "text": "and data rates may apply. JP Morgan Chase Bank NA, member FDIC. Copyright 2026, JP Morgan Chase and"
+  },
+  {
+   "start": 65.89,
+   "end": 66.61,
+   "text": "Company."
+  },
+  {
+   "start": 66.61,
+   "end": 74.62,
+   "text": "Hamburg Audio Studios, podcasts, radio, news."
+  },
+  {
+   "start": 85.47,
+   "end": 89.47,
+   "text": "Hello and welcome to another episode of the OddLots podcast. I'm Tracy Allaway."
+  },
+  {
+   "start": 89.47,
+   "end": 90.99,
+   "text": "And I'm Joe Weissenthal."
+  },
+  {
+   "start": 90.99,
+   "end": 94.27,
+   "text": "Joe, I was talking trash with a guy at a party recently."
+  },
+  {
+   "start": 95.07,
+   "end": 95.95,
+   "text": "Go on."
+  },
+  {
+   "start": 95.95,
+   "end": 100.75,
+   "text": "No, I met this guy at a party. And you know, some people are so into their work."
+  },
+  {
+   "start": 100.75,
+   "end": 101.31,
+   "text": "Yeah."
+  },
+  {
+   "start": 101.31,
+   "end": 106.43,
+   "text": "an area of expertise that they just start talking to you about it. And this guy happened to be"
+  },
+  {
+   "start": 106.43,
+   "end": 112.51,
+   "text": "an expert in trash. That's really cool. I don't know much about trash. I'm impressed at like,"
+  },
+  {
+   "start": 113.15,
+   "end": 118.51,
+   "text": "what a complex logistical operation it must be to collect trash in a city like New York City."
+  },
+  {
+   "start": 118.51,
+   "end": 124.11,
+   "text": "Yeah. I also understand that, you know, it's sort of one of those classic things where,"
+  },
+  {
+   "start": 124.11,
+   "end": 128.91,
+   "text": "isn't there a cliche like, there's no Democrat or Republican way to pick up trash? That's like a"
+  },
+  {
+   "start": 128.91,
+   "end": 133.63,
+   "text": "a lot. Some famous politician once said that. And they were talking about city management"
+  },
+  {
+   "start": 133.63,
+   "end": 137.95,
+   "text": "and what makes city management different than other sort of political thing. It's like the"
+  },
+  {
+   "start": 137.95,
+   "end": 141.15,
+   "text": "trash isn't picked up, it's not picked up. And it's not an ideological thing."
+  },
+  {
+   "start": 141.15,
+   "end": 145.31,
+   "text": "Well, it's interesting you say that because the person I was talking to at this party who"
+  },
+  {
+   "start": 145.31,
+   "end": 150.59,
+   "text": "we're about to have on the show as a guest described trash collection in New York City as one of the"
+  },
+  {
+   "start": 150.59,
+   "end": 156.03,
+   "text": "last services untouched by neoliberalism. And that's when I knew, I knew we had to have him on"
+  },
+  {
+   "start": 156.03,
+   "end": 160.03,
+   "text": "on a lot and then he introduced his wife as his garbage queen."
+  },
+  {
+   "start": 160.03,
+   "end": 164.03,
+   "text": "And then I was doubly sure that we needed to have him on a lot."
+  },
+  {
+   "start": 164.03,
+   "end": 166.73,
+   "text": "But trash collection is such a fascinating thing."
+  },
+  {
+   "start": 166.73,
+   "end": 171.23,
+   "text": "I wasn't planning on doing an episode on it, but I've been converted,"
+  },
+  {
+   "start": 171.23,
+   "end": 175.93,
+   "text": "I guess, after this conversation because you think about in a city like New York,"
+  },
+  {
+   "start": 176.23,
+   "end": 179.73,
+   "text": "just how much trash has to be dealt with on a daily basis."
+  },
+  {
+   "start": 179.73,
+   "end": 183.43,
+   "text": "And obviously in New York specifically, it's not like we're putting it,"
+  },
+  {
+   "start": 183.43,
+   "end": 188.91,
+   "text": "you know, in the city, we have to find other places to store our trash."
+  },
+  {
+   "start": 189.11,
+   "end": 193.59,
+   "text": "And at the same time, New York City is not well known for being the cleanest place"
+  },
+  {
+   "start": 193.59,
+   "end": 198.87,
+   "text": "in the world. In fact, we famously stick our garbage out in bags on the curb"
+  },
+  {
+   "start": 198.87,
+   "end": 202.67,
+   "text": "and wait for collection. And we are in a giant process of trying to change that."
+  },
+  {
+   "start": 202.67,
+   "end": 204.15,
+   "text": "So there's a lot to discuss here."
+  },
+  {
+   "start": 204.15,
+   "end": 205.19,
+   "text": "There's a lot to discuss."
+  },
+  {
+   "start": 205.19,
+   "end": 209.19,
+   "text": "By the way, that quote, according to Google, Gemini, there's no Republican"
+  },
+  {
+   "start": 209.19,
+   "end": 214.95,
+   "text": "or democratic way to pick up the garbage. Former mayor Fiorella LaGuardia was the one who said that."
+  },
+  {
+   "start": 214.95,
+   "end": 220.15,
+   "text": "And so he's running as a Republican on a fusion nonpart of anyway, that's not the point. But it"
+  },
+  {
+   "start": 220.15,
+   "end": 224.23,
+   "text": "is, you know, it's just a thing either you do it well, you don't and people get really upset. And"
+  },
+  {
+   "start": 224.23,
+   "end": 229.11,
+   "text": "if you don't, New York is tricky for multiple reasons. But you know, you think in a suburb,"
+  },
+  {
+   "start": 229.67,
+   "end": 235.51,
+   "text": "right, you put the trash out, but there aren't cars in the way between the trash bins and the"
+  },
+  {
+   "start": 235.51,
+   "end": 239.11,
+   "text": "garbage truck, etc. Because they're in the driveway or the garage or something like that."
+  },
+  {
+   "start": 239.19,
+   "end": 243.19,
+   "text": "New York has all kinds of things in between the road and the bins."
+  },
+  {
+   "start": 243.19,
+   "end": 249.83,
+   "text": "I know there's this big effort to do containerization, I think, at one point or headlines about some"
+  },
+  {
+   "start": 250.79,
+   "end": 256.95,
+   "text": "outside study from McKinsey, et cetera. There's a lot of interesting logistical questions about"
+  },
+  {
+   "start": 256.95,
+   "end": 261.99,
+   "text": "trash collection. And so it's a quartile. Even though we haven't done it, it sits firmly in our"
+  },
+  {
+   "start": 261.99,
+   "end": 266.07,
+   "text": "wheelhouse. Absolutely. All right. So without further ado, we have the perfect guest. We're"
+  },
+  {
+   "start": 266.07,
+   "end": 267.95,
+   "text": "We're going to be speaking with Joshua Goodman."
+  },
+  {
+   "start": 267.95,
+   "end": 269.99,
+   "text": "He is, of course, Deputy Commissioner at New York"
+  },
+  {
+   "start": 269.99,
+   "end": 271.47,
+   "text": "City's Department of Sanitation."
+  },
+  {
+   "start": 271.47,
+   "end": 273.43,
+   "text": "So Josh, thanks so much for coming on all odds."
+  },
+  {
+   "start": 273.43,
+   "end": 274.51,
+   "text": "Thank you both for having me."
+  },
+  {
+   "start": 274.51,
+   "end": 276.87,
+   "text": "Is trash collection apolitical?"
+  },
+  {
+   "start": 276.87,
+   "end": 279.75,
+   "text": "So obviously, we all admire and respect Mayor LaGuardia."
+  },
+  {
+   "start": 279.75,
+   "end": 280.59,
+   "text": "It's a famous quote."
+  },
+  {
+   "start": 280.59,
+   "end": 281.51,
+   "text": "You hear it all the time."
+  },
+  {
+   "start": 281.51,
+   "end": 283.11,
+   "text": "You hear paraphrases it all the time."
+  },
+  {
+   "start": 283.11,
+   "end": 284.71,
+   "text": "It's patently untrue, right?"
+  },
+  {
+   "start": 284.71,
+   "end": 286.79,
+   "text": "The moment you start to dissect it."
+  },
+  {
+   "start": 286.79,
+   "end": 289.67,
+   "text": "You realize that, of course, an enormous public space"
+  },
+  {
+   "start": 289.67,
+   "end": 293.23,
+   "text": "logistical initiative is going to be colored by ideology."
+  },
+  {
+   "start": 293.23,
+   "end": 294.87,
+   "text": "Partisanship maybe not."
+  },
+  {
+   "start": 294.87,
+   "end": 296.79,
+   "text": "But the sort of implication behind the quote"
+  },
+  {
+   "start": 296.79,
+   "end": 300.03,
+   "text": "that it's a binary, yes, it's picked up, no, it's not picked up,"
+  },
+  {
+   "start": 300.03,
+   "end": 305.23,
+   "text": "really undersells substantially the amount of planning"
+  },
+  {
+   "start": 305.23,
+   "end": 307.53,
+   "text": "that needs to go into this, both in the short term"
+  },
+  {
+   "start": 307.53,
+   "end": 308.83,
+   "text": "and in the long term."
+  },
+  {
+   "start": 308.83,
+   "end": 312.07,
+   "text": "In New York City, we at the Department of Sanitation"
+  },
+  {
+   "start": 312.07,
+   "end": 315.79,
+   "text": "pick up, process, and export 24 million pounds"
+  },
+  {
+   "start": 315.79,
+   "end": 319.31,
+   "text": "of trash recycling and compostable material every single day."
+  },
+  {
+   "start": 319.31,
+   "end": 320.75,
+   "text": "One of the things I like to tell people"
+  },
+  {
+   "start": 320.75,
+   "end": 322.95,
+   "text": "is that there's a word that you'll hear a lot,"
+  },
+  {
+   "start": 322.95,
+   "end": 329.31,
+   "text": "Sisyphian, right? And you hear it used imprecisely, in my opinion. It's often used as just a synonym for heart."
+  },
+  {
+   "start": 329.43,
+   "end": 333.71,
+   "text": "Oh, I, you know, school was a Sisyphian task or this home improvement project, whatever."
+  },
+  {
+   "start": 333.83,
+   "end": 334.75,
+   "text": "But it ended."
+  },
+  {
+   "start": 334.79,
+   "end": 341.59,
+   "text": "Right. And we have the definitional Sisyphian task, just as Sisyphus faced the boulder again each day."
+  },
+  {
+   "start": 341.87,
+   "end": 347.55,
+   "text": "We pick up 24 million pounds today. We pick up 24 million pounds tomorrow. We pick up 24 million pounds the next day."
+  },
+  {
+   "start": 347.71,
+   "end": 351.11,
+   "text": "There will never be a time when DSNY says great news, everyone."
+  },
+  {
+   "start": 351.11,
+   "end": 352.11,
+   "text": "You know, we got it all."
+  },
+  {
+   "start": 352.11,
+   "end": 353.11,
+   "text": "Right."
+  },
+  {
+   "start": 353.11,
+   "end": 354.11,
+   "text": "Exactly."
+  },
+  {
+   "start": 354.11,
+   "end": 359.69,
+   "text": "And this is, as Tracy mentioned, we think of it as the last free unlimited service."
+  },
+  {
+   "start": 359.69,
+   "end": 360.69,
+   "text": "There's no sign up."
+  },
+  {
+   "start": 360.69,
+   "end": 361.69,
+   "text": "There's no opt-in."
+  },
+  {
+   "start": 361.69,
+   "end": 363.29,
+   "text": "There's no means test."
+  },
+  {
+   "start": 363.29,
+   "end": 365.41,
+   "text": "You put it out, we come and get it."
+  },
+  {
+   "start": 365.41,
+   "end": 368.17,
+   "text": "It's basically us in the public library at this point."
+  },
+  {
+   "start": 368.17,
+   "end": 372.93,
+   "text": "And that means, and that's specific to New York, of course, but it means that as we think"
+  },
+  {
+   "start": 372.93,
+   "end": 379.53,
+   "text": "about changes in global best practices, we need to keep that commitment to full universal"
+  },
+  {
+   "start": 379.53,
+   "end": 380.53,
+   "text": "service."
+  },
+  {
+   "start": 380.53,
+   "end": 385.01,
+   "text": "I don't want to like get too bogged down in this question of"
+  },
+  {
+   "start": 385.01,
+   "end": 388.93,
+   "text": "Sisyphean and the philosophy of what the Greeks were trying to"
+  },
+  {
+   "start": 388.93,
+   "end": 392.21,
+   "text": "teach with the lesson of Sisyphus and the philosophers like"
+  },
+  {
+   "start": 392.21,
+   "end": 396.85,
+   "text": "Camus and so forth who studied Sisyphus over the years. But one"
+  },
+  {
+   "start": 396.89,
+   "end": 402.49,
+   "text": "element of that lesson is the boulder. Yes, it was endless and"
+  },
+  {
+   "start": 402.53,
+   "end": 405.45,
+   "text": "it never ended much like trash collection. But there was no"
+  },
+  {
+   "start": 405.45,
+   "end": 408.85,
+   "text": "purpose to it. There was no internal satisfaction that one"
+  },
+  {
+   "start": 408.85,
+   "end": 415.53,
+   "text": "could perceive from the outside, whereas helping the public that could in theory be satisfactory."
+  },
+  {
+   "start": 415.53,
+   "end": 419.89,
+   "text": "So had Sisyphus pushed up the boulder every day and then something great happened to the"
+  },
+  {
+   "start": 419.89,
+   "end": 424.17,
+   "text": "land, oh, it was clean, maybe that would have been satisfying internally."
+  },
+  {
+   "start": 424.17,
+   "end": 429.53,
+   "text": "And what's tortuous about the Sisyphian metaphor is that there does not seem to be any reward"
+  },
+  {
+   "start": 429.53,
+   "end": 430.53,
+   "text": "for it."
+  },
+  {
+   "start": 430.53,
+   "end": 434.81,
+   "text": "Well, it is true that most New Yorkers think of cleanliness as the natural state, right?"
+  },
+  {
+   "start": 434.81,
+   "end": 435.81,
+   "text": "It's not, wow, you did agree to tell."
+  },
+  {
+   "start": 435.81,
+   "end": 436.81,
+   "text": "Are you sure about that?"
+  },
+  {
+   "start": 436.81,
+   "end": 437.81,
+   "text": "Well, that's the goal, right?"
+  },
+  {
+   "start": 437.81,
+   "end": 439.49,
+   "text": "The idea is that a street is supposed to be clean."
+  },
+  {
+   "start": 439.49,
+   "end": 440.53,
+   "text": "And you mentioned Camus."
+  },
+  {
+   "start": 440.53,
+   "end": 442.29,
+   "text": "Our guy at sanitation has actually"
+  },
+  {
+   "start": 442.29,
+   "end": 446.75,
+   "text": "started because many people notice black bags of trash."
+  },
+  {
+   "start": 446.75,
+   "end": 448.31,
+   "text": "They notice piles of trash."
+  },
+  {
+   "start": 448.31,
+   "end": 451.59,
+   "text": "They rarely, if ever, notice the absence of piles of trash."
+  },
+  {
+   "start": 451.59,
+   "end": 454.27,
+   "text": "And so there is a philosophical element to this."
+  },
+  {
+   "start": 454.27,
+   "end": 456.23,
+   "text": "But obviously, I know we're going"
+  },
+  {
+   "start": 456.23,
+   "end": 457.99,
+   "text": "to spend a lot more time on the details today."
+  },
+  {
+   "start": 457.99,
+   "end": 460.51,
+   "text": "We could just talk about Camus and start the whole time."
+  },
+  {
+   "start": 460.51,
+   "end": 465.63,
+   "text": "What it really came down to was about four or five years ago,"
+  },
+  {
+   "start": 465.63,
+   "end": 468.31,
+   "text": "We had spent decades of people coming to New York"
+  },
+  {
+   "start": 468.31,
+   "end": 471.11,
+   "text": "from Barcelona, from Buenos Aires, from Paris, from London,"
+  },
+  {
+   "start": 471.11,
+   "end": 472.35,
+   "text": "even from Chicago and LA and saying,"
+  },
+  {
+   "start": 472.35,
+   "end": 474.07,
+   "text": "why do you live like this?"
+  },
+  {
+   "start": 474.07,
+   "end": 476.47,
+   "text": "And for many decades, our answer had basically been like,"
+  },
+  {
+   "start": 476.47,
+   "end": 478.15,
+   "text": "well, have you tried a bagel?"
+  },
+  {
+   "start": 478.15,
+   "end": 480.39,
+   "text": "We have a better pizza than you do."
+  },
+  {
+   "start": 480.39,
+   "end": 483.11,
+   "text": "We had not gotten serious about addressing these challenges"
+  },
+  {
+   "start": 483.11,
+   "end": 484.35,
+   "text": "in a meaningful, long-term way."
+  },
+  {
+   "start": 484.35,
+   "end": 487.87,
+   "text": "And that's what's begun to change over the last few years"
+  },
+  {
+   "start": 487.87,
+   "end": 489.99,
+   "text": "through a process that we call the Tres Revolution, which"
+  },
+  {
+   "start": 489.99,
+   "end": 493.03,
+   "text": "is a complete reimagining of the relationship"
+  },
+  {
+   "start": 493.03,
+   "end": 498.64,
+   "text": "that 8.5 million New Yorkers have with 24 million pounds of trash a day, what they expect from"
+  },
+  {
+   "start": 498.64,
+   "end": 505.92,
+   "text": "us, what we expect from them. And it's required an enormous amount of data analysis, of streetscape"
+  },
+  {
+   "start": 505.92,
+   "end": 510.88,
+   "text": "redesign, of work across agencies, of breaking down silos. And fortunately, it's getting results"
+  },
+  {
+   "start": 510.88,
+   "end": 514.12,
+   "text": "as a lot we can talk about that really shows that this is working."
+  },
+  {
+   "start": 514.12,
+   "end": 520.4,
+   "text": "Before we get into all the ins and outs of the trash revolution, which I love as a designation,"
+  },
+  {
+   "start": 520.4,
+   "end": 525.36,
+   "text": "How did black bags of garbage become a thing in New York in the first place?"
+  },
+  {
+   "start": 525.36,
+   "end": 529.4,
+   "text": "Because I remember this was one of the big culture shocks when I first moved to New York"
+  },
+  {
+   "start": 529.4,
+   "end": 531.56,
+   "text": "for college and then I dropped out."
+  },
+  {
+   "start": 531.56,
+   "end": 533.24,
+   "text": "So I was only here for two or three weeks."
+  },
+  {
+   "start": 533.24,
+   "end": 535.92,
+   "text": "Maybe all the trash bags had something to do with it."
+  },
+  {
+   "start": 535.92,
+   "end": 541.4,
+   "text": "But walking down the street, coming from places like London and Tokyo and seeing these bags"
+  },
+  {
+   "start": 541.4,
+   "end": 543.88,
+   "text": "of trash laid out, it was kind of weird."
+  },
+  {
+   "start": 543.88,
+   "end": 544.88,
+   "text": "Yeah."
+  },
+  {
+   "start": 544.88,
+   "end": 548.76,
+   "text": "There were really two key events that led to New York's unique status here."
+  },
+  {
+   "start": 548.76,
+   "end": 551.32,
+   "text": "What is the 1811 street grid?"
+  },
+  {
+   "start": 551.32,
+   "end": 554.76,
+   "text": "In New York City, the only non-renewable resource is public space."
+  },
+  {
+   "start": 554.76,
+   "end": 556.6,
+   "text": "There is a finite amount of room."
+  },
+  {
+   "start": 556.6,
+   "end": 561.36,
+   "text": "And so when the streets were laid out in the 1811 master plan, the city was built without"
+  },
+  {
+   "start": 561.36,
+   "end": 562.36,
+   "text": "alleyways."
+  },
+  {
+   "start": 562.36,
+   "end": 566.44,
+   "text": "You go to Chicago, which has similar density, there are alleys behind almost all buildings"
+  },
+  {
+   "start": 566.44,
+   "end": 567.44,
+   "text": "to store the trash."
+  },
+  {
+   "start": 567.44,
+   "end": 571.48,
+   "text": "So if you're watching a movie and it's set in New York and someone jumps out of a dark"
+  },
+  {
+   "start": 571.48,
+   "end": 574.96,
+   "text": "alley, it's almost certainly shot in Chicago or an LA soundstage because we don't really"
+  },
+  {
+   "start": 574.96,
+   "end": 576.04,
+   "text": "have them."
+  },
+  {
+   "start": 576.04,
+   "end": 579.82,
+   "text": "So that meant there was no storage space behind the buildings, which other cities have."
+  },
+  {
+   "start": 579.82,
+   "end": 585.22,
+   "text": "And then throughout much of the 19th and 20th century, the city used sort of the old Oscar"
+  },
+  {
+   "start": 585.22,
+   "end": 587.6,
+   "text": "the Grouch metal garbage can."
+  },
+  {
+   "start": 587.6,
+   "end": 592.44,
+   "text": "Following the 1968 sanitation strikes, the last major New York City sanitation labor"
+  },
+  {
+   "start": 592.44,
+   "end": 599.82,
+   "text": "action, there was an overflowing amount more than those metal cans can handle."
+  },
+  {
+   "start": 599.82,
+   "end": 603.6,
+   "text": "And when the strike was resolved, Marilyn Lindsay put together a group to study a number"
+  },
+  {
+   "start": 603.6,
+   "end": 608.88,
+   "text": "of after effects of the issues the city had faced during that time, one of which was a"
+  },
+  {
+   "start": 608.88,
+   "end": 613.52,
+   "text": "task force called the Committee on the Black Bag. It studied plastic trash bags, which"
+  },
+  {
+   "start": 613.52,
+   "end": 619.14,
+   "text": "were basically new at that time. And the plastics industry pushed them as rodent resistant,"
+  },
+  {
+   "start": 619.14,
+   "end": 623.3,
+   "text": "which obviously we know they're not. And you can easily find New York Times coverage"
+  },
+  {
+   "start": 623.3,
+   "end": 627.72,
+   "text": "from that time of people proudly stating that the transition from metal garbage cans to"
+  },
+  {
+   "start": 627.72,
+   "end": 632.08,
+   "text": "black bags will reduce rats while freeing up public space. Obviously, it became clear"
+  },
+  {
+   "start": 632.08,
+   "end": 636.58,
+   "text": "almost immediately that that was not the case, but it took another five decades or so to get"
+  },
+  {
+   "start": 636.58,
+   "end": 638.78,
+   "text": "serious about promoting a new solution."
+  },
+  {
+   "start": 638.78,
+   "end": 642.78,
+   "text": "So I understand, and we're going to get into this, that there are different approaches,"
+  },
+  {
+   "start": 642.78,
+   "end": 649.14,
+   "text": "etc., to picking up the trash, etc. But why is the LaGuardia quote wrong? Like, I understand"
+  },
+  {
+   "start": 649.14,
+   "end": 654.14,
+   "text": "different views, but that still doesn't necessarily mean to me, it still seems like it could be"
+  },
+  {
+   "start": 654.14,
+   "end": 658.66,
+   "text": "right in the sense that different views don't necessarily map to politics."
+  },
+  {
+   "start": 658.66,
+   "end": 664.34,
+   "text": "But it's true that it's not a neat left-right split necessarily, but it's not true that"
+  },
+  {
+   "start": 664.34,
+   "end": 668.62,
+   "text": "who you put into office has no bearing on what happens to trash."
+  },
+  {
+   "start": 668.62,
+   "end": 672.06,
+   "text": "I think this point was that it transcends ideology and it doesn't, or else this would"
+  },
+  {
+   "start": 672.06,
+   "end": 673.26,
+   "text": "have been done a long time ago."
+  },
+  {
+   "start": 673.26,
+   "end": 678.38,
+   "text": "Okay, then what are the different ideological frameworks from which we can view the question"
+  },
+  {
+   "start": 678.38,
+   "end": 680.14,
+   "text": "of optimal trash collection?"
+  },
+  {
+   "start": 680.14,
+   "end": 688.82,
+   "text": "So one of the things to think about is that cleanliness is not just an abstract concept."
+  },
+  {
+   "start": 688.82,
+   "end": 693.12,
+   "text": "It has a tremendous impact on a person's quality of life."
+  },
+  {
+   "start": 693.12,
+   "end": 697.32,
+   "text": "Every morning, hundreds of thousands of New Yorkers get up, they go out, they go to work,"
+  },
+  {
+   "start": 697.32,
+   "end": 698.32,
+   "text": "they go to school."
+  },
+  {
+   "start": 698.32,
+   "end": 702.24,
+   "text": "If they walk down a dirty street, the first thing they think is no one cares about me."
+  },
+  {
+   "start": 702.24,
+   "end": 706.6,
+   "text": "And I can't necessarily blame people for feeling that way."
+  },
+  {
+   "start": 706.6,
+   "end": 712.9,
+   "text": "Even thoughts about cleanliness in public space are, you have to think about who you're"
+  },
+  {
+   "start": 712.9,
+   "end": 713.9,
+   "text": "prioritizing, right?"
+  },
+  {
+   "start": 713.9,
+   "end": 717.54,
+   "text": "So, is it someone who spends the bulk of their time in public in a car versus someone who"
+  },
+  {
+   "start": 717.54,
+   "end": 720.04,
+   "text": "spends the bulk of their time in public walking?"
+  },
+  {
+   "start": 720.04,
+   "end": 724.98,
+   "text": "Is it someone for whom a rat is a curiosity versus a reality that they have to live with?"
+  },
+  {
+   "start": 724.98,
+   "end": 726.22,
+   "text": "I kind of like the rats."
+  },
+  {
+   "start": 726.22,
+   "end": 730.7,
+   "text": "I get really bored walking down the street and seeing some wildlife, which in New York"
+  },
+  {
+   "start": 730.7,
+   "end": 733.9,
+   "text": "City is just pigeons and rats is somewhat entertaining."
+  },
+  {
+   "start": 733.9,
+   "end": 734.9,
+   "text": "I get it."
+  },
+  {
+   "start": 734.9,
+   "end": 735.9,
+   "text": "Look, I love all animals."
+  },
+  {
+   "start": 735.9,
+   "end": 741.56,
+   "text": "a long time vegan, but the fact is that there is a Jungian reaction to a rat for most people."
+  },
+  {
+   "start": 741.56,
+   "end": 744.4,
+   "text": "You walk down a street in New York and a rat runs across your foot."
+  },
+  {
+   "start": 744.4,
+   "end": 747.2,
+   "text": "You remember it every time you're on that block for the rest of your life."
+  },
+  {
+   "start": 747.2,
+   "end": 752.08,
+   "text": "And the same goes for public space trash, which I know certain New Yorkers have sort"
+  },
+  {
+   "start": 752.08,
+   "end": 753.38,
+   "text": "of romanticized."
+  },
+  {
+   "start": 753.38,
+   "end": 758.6,
+   "text": "I think that you can only do that if it's not your reality, you know, that living around"
+  },
+  {
+   "start": 758.6,
+   "end": 760.64,
+   "text": "trash and rats is not a good thing."
+  },
+  {
+   "start": 760.64,
+   "end": 765.24,
+   "text": "And we would like it to, you know, people sometimes assume that anyone at the Department"
+  },
+  {
+   "start": 765.24,
+   "end": 768.16,
+   "text": "sanitation loves the trash and I always tell them, no, no, our job is to get rid of it."
+  },
+  {
+   "start": 768.16,
+   "end": 769.16,
+   "text": "We hate the trash."
+  },
+  {
+   "start": 769.16,
+   "end": 772.08,
+   "text": "The trash is our enemy, as fascinating as it is to study."
+  },
+  {
+   "start": 772.08,
+   "end": 776.96,
+   "text": "And so, you know, when we thought about putting global best practices into place just the"
+  },
+  {
+   "start": 776.96,
+   "end": 781.84,
+   "text": "last few years, this is actually a very data driven agency, probably not surprising, but"
+  },
+  {
+   "start": 781.84,
+   "end": 786.8,
+   "text": "we had about a century of data about the weight of the trash, which had long been our primary"
+  },
+  {
+   "start": 786.8,
+   "end": 789.12,
+   "text": "metric for efficiency."
+  },
+  {
+   "start": 789.12,
+   "end": 792.92,
+   "text": "And what we needed was data about the volume of the trash."
+  },
+  {
+   "start": 792.92,
+   "end": 799.64,
+   "text": "what you need for containerization programs. And so we had to do a 70,000 block volumetric"
+  },
+  {
+   "start": 799.64,
+   "end": 804.36,
+   "text": "analysis. We went block by block and converted those weights into volumes and developed the"
+  },
+  {
+   "start": 804.36,
+   "end": 809.56,
+   "text": "programs that are coming out now. And there were a lot of different both left and right"
+  },
+  {
+   "start": 809.56,
+   "end": 816.6,
+   "text": "thoughts about what approach we should take, if any. And we've developed a strategy that we think"
+  },
+  {
+   "start": 816.6,
+   "end": 821.44,
+   "text": "will work for the unique streetscape of New York. When I first got involved in this work,"
+  },
+  {
+   "start": 821.44,
+   "end": 825.68,
+   "text": "I would often hear from people, well, you know, there's no place as dense as New York that does"
+  },
+  {
+   "start": 825.68,
+   "end": 829.92,
+   "text": "this. Not true. There's no place with as much weather flexibility as New York. Not true. You"
+  },
+  {
+   "start": 829.92,
+   "end": 832.88,
+   "text": "know, there's no place that produces as much volume of trash. Not true. We actually produce"
+  },
+  {
+   "start": 832.88,
+   "end": 838.96,
+   "text": "per person less trash than most other Western cities. There's no reason that they can have this"
+  },
+  {
+   "start": 838.96,
+   "end": 844.32,
+   "text": "everywhere else in the world other than a political inertia, right? And that's what's begun to change"
+  },
+  {
+   "start": 844.32,
+   "end": 848.88,
+   "text": "based on the data that we've used. Well, to me, one of the obvious political choices that's been"
+  },
+  {
+   "start": 848.88,
+   "end": 853.96,
+   "text": "been made in New York is also we don't have a pay as you go service or you're not paying"
+  },
+  {
+   "start": 853.96,
+   "end": 856.64,
+   "text": "per pound of trash that you produce, right?"
+  },
+  {
+   "start": 856.64,
+   "end": 861.28,
+   "text": "I can produce a lot of trash and it's sort of incumbent on the city to collect it versus"
+  },
+  {
+   "start": 861.28,
+   "end": 866.04,
+   "text": "someone who's trying their best to recycle and compost and things like that."
+  },
+  {
+   "start": 866.04,
+   "end": 870.16,
+   "text": "Why don't we talk about logistics for a second just to better understand the current state"
+  },
+  {
+   "start": 870.16,
+   "end": 873.58,
+   "text": "so that we can figure out where we're trying to get to."
+  },
+  {
+   "start": 873.58,
+   "end": 878.82,
+   "text": "I take out a bag of trash from my apartment building and it's a Wednesday in Soho and"
+  },
+  {
+   "start": 878.82,
+   "end": 880.85,
+   "text": "I place it on the curb."
+  },
+  {
+   "start": 880.85,
+   "end": 882.13,
+   "text": "What happens to it from there?"
+  },
+  {
+   "start": 882.13,
+   "end": 885.57,
+   "text": "So a collection truck, we don't call them garbage trucks because they also pick up recycling"
+  },
+  {
+   "start": 885.57,
+   "end": 892.69,
+   "text": "and compost, comes by sometime generally between midnight and 8.30 in the morning."
+  },
+  {
+   "start": 892.69,
+   "end": 896.69,
+   "text": "Try to get as much of it done before peak rush hour."
+  },
+  {
+   "start": 896.69,
+   "end": 901.29,
+   "text": "The trucks are on routes that are optimized for a few things."
+  },
+  {
+   "start": 901.29,
+   "end": 906.56,
+   "text": "They hold about 12 to 13 tons of trash each."
+  },
+  {
+   "start": 906.56,
+   "end": 909.94,
+   "text": "You want it to get full on its route, and you want the route to be completed in a single"
+  },
+  {
+   "start": 909.94,
+   "end": 910.94,
+   "text": "shift."
+  },
+  {
+   "start": 910.94,
+   "end": 913.2,
+   "text": "So they're optimized around those factors."
+  },
+  {
+   "start": 913.2,
+   "end": 918.4,
+   "text": "And then once the truck is full or loaded out as the jargon, it's taken to a network"
+  },
+  {
+   "start": 918.4,
+   "end": 919.64,
+   "text": "of transfer stations."
+  },
+  {
+   "start": 919.64,
+   "end": 925.34,
+   "text": "So prior to 2000, it was all taken to the Staten Island landfill."
+  },
+  {
+   "start": 925.34,
+   "end": 928.68,
+   "text": "When the landfill closed, the city moved to a waste export model."
+  },
+  {
+   "start": 928.68,
+   "end": 933.96,
+   "text": "It was a multi-billion dollar 15-year infrastructure project to build five transfer stations around"
+  },
+  {
+   "start": 933.96,
+   "end": 934.96,
+   "text": "the city."
+  },
+  {
+   "start": 934.96,
+   "end": 940.99,
+   "text": "places where the truck comes, it dumps out onto a big floor, the tipping floor,"
+  },
+  {
+   "start": 940.99,
+   "end": 946.97,
+   "text": "a big floor where a large front-end loader pushes it down holes in the floor into like a"
+  },
+  {
+   "start": 946.97,
+   "end": 951.89,
+   "text": "shipping container that's underneath. Robotic arms seal up the shipping container, a giant crane"
+  },
+  {
+   "start": 951.89,
+   "end": 956.81,
+   "text": "puts it on either a barge or a rail car and it's taken to its final destination outside the city."
+  },
+  {
+   "start": 956.81,
+   "end": 962.93,
+   "text": "This is obviously far more environmentally sustainable than an in-city landfill and also"
+  },
+  {
+   "start": 962.93,
+   "end": 964.85,
+   "text": "also then the old trucking model, right?"
+  },
+  {
+   "start": 964.85,
+   "end": 967.81,
+   "text": "Barges and rail cars, much, much better for the environment."
+  },
+  {
+   "start": 967.81,
+   "end": 972.77,
+   "text": "When you see these barges with 50 or 75 packed storage"
+  },
+  {
+   "start": 972.77,
+   "end": 974.69,
+   "text": "containers on them, you think, wow, that would have been"
+  },
+  {
+   "start": 974.69,
+   "end": 977.57,
+   "text": "75 trucks driving to landfill."
+  },
+  {
+   "start": 977.57,
+   "end": 981.23,
+   "text": "That's for your regular trash, refuse is the term"
+  },
+  {
+   "start": 981.23,
+   "end": 983.37,
+   "text": "that appears in our materials."
+  },
+  {
+   "start": 984.21,
+   "end": 987.05,
+   "text": "For your metal glass and plastic,"
+  },
+  {
+   "start": 987.05,
+   "end": 989.01,
+   "text": "they're taken to a facility in Sunset Park"
+  },
+  {
+   "start": 989.01,
+   "end": 990.77,
+   "text": "where they're pelletized and prepared to be sold"
+  },
+  {
+   "start": 990.77,
+   "end": 992.41,
+   "text": "on the recycling market."
+  },
+  {
+   "start": 992.41,
+   "end": 995.45,
+   "text": "New York City is a great opportunity for me to mention something really important, which"
+  },
+  {
+   "start": 995.45,
+   "end": 1001.69,
+   "text": "is lots of people in sort of the demographic that listens to odd lots, educated, smart"
+  },
+  {
+   "start": 1001.69,
+   "end": 1006.01,
+   "text": "people, the cocktail party set, think that it makes them sound really smart to say, I"
+  },
+  {
+   "start": 1006.01,
+   "end": 1007.65,
+   "text": "heard recycling as a scam."
+  },
+  {
+   "start": 1007.65,
+   "end": 1012.01,
+   "text": "Didn't someone once tell me, I have to tell you, I can't speak for other municipalities."
+  },
+  {
+   "start": 1012.01,
+   "end": 1016.25,
+   "text": "New York City's recycling system is protected by long-term contracts that guarantee beneficial"
+  },
+  {
+   "start": 1016.25,
+   "end": 1017.85,
+   "text": "reuse of those materials."
+  },
+  {
+   "start": 1017.85,
+   "end": 1021.93,
+   "text": "If you properly sort a can or bottle in New York City, it will become a new can or bottle"
+  },
+  {
+   "start": 1021.93,
+   "end": 1023.29,
+   "text": "or other use reusable item."
+  },
+  {
+   "start": 1023.29,
+   "end": 1024.53,
+   "text": "Wait, slight tangent."
+  },
+  {
+   "start": 1024.53,
+   "end": 1025.85,
+   "text": "What about a styrofoam cup?"
+  },
+  {
+   "start": 1025.85,
+   "end": 1028.25,
+   "text": "So styrofoams are banned in the city, right?"
+  },
+  {
+   "start": 1028.25,
+   "end": 1029.85,
+   "text": "So you shouldn't see them too often."
+  },
+  {
+   "start": 1029.85,
+   "end": 1032.97,
+   "text": "Styrofoam actually hits on the great issue with this."
+  },
+  {
+   "start": 1032.97,
+   "end": 1035.65,
+   "text": "Styrofoam is often used as the archetypical example"
+  },
+  {
+   "start": 1035.65,
+   "end": 1037.49,
+   "text": "of a non-recyclable item."
+  },
+  {
+   "start": 1037.49,
+   "end": 1038.89,
+   "text": "Can't be recycled, can't be recycled."
+  },
+  {
+   "start": 1038.89,
+   "end": 1041.25,
+   "text": "On a pure molecular level, of course it can be recycled."
+  },
+  {
+   "start": 1041.25,
+   "end": 1042.49,
+   "text": "It's just plastic."
+  },
+  {
+   "start": 1042.49,
+   "end": 1044.61,
+   "text": "The issue is that it's so light"
+  },
+  {
+   "start": 1044.61,
+   "end": 1047.41,
+   "text": "that no plastics manufacturer would ever feel"
+  },
+  {
+   "start": 1047.41,
+   "end": 1049.97,
+   "text": "that they had enough in one space to make money off of it."
+  },
+  {
+   "start": 1049.97,
+   "end": 1053.65,
+   "text": "It's a good example of how this is actually a market-based system"
+  },
+  {
+   "start": 1053.65,
+   "end": 1057.69,
+   "text": "for recycling specifically, because many more things are recyclable"
+  },
+  {
+   "start": 1057.69,
+   "end": 1060.73,
+   "text": "from a chemical standpoint than are actually accepted as recycling."
+  },
+  {
+   "start": 1061.17,
+   "end": 1065.65,
+   "text": "In New York City, you probably know that in 2017, 2018,"
+  },
+  {
+   "start": 1065.65,
+   "end": 1068.73,
+   "text": "there were domestic policy changes in China that collapsed a lot of cities"
+  },
+  {
+   "start": 1069.49,
+   "end": 1072.33,
+   "text": "recycling markets. New York was protected from those changes"
+  },
+  {
+   "start": 1072.81,
+   "end": 1074.93,
+   "text": "by long term strategic planning before that."
+  },
+  {
+   "start": 1075.21,
+   "end": 1079.81,
+   "text": "We also had resisted an urge that a lot of cities gave into in a few"
+  },
+  {
+   "start": 1079.81,
+   "end": 1083.37,
+   "text": "years before that to combine their paper and their metal glass and plastic."
+  },
+  {
+   "start": 1083.37,
+   "end": 1084.29,
+   "text": "Oh, it's easier for residents."
+  },
+  {
+   "start": 1084.65,
+   "end": 1090.01,
+   "text": "It turned out to be a huge money loser for cities that did it and also for the"
+  },
+  {
+   "start": 1090.01,
+   "end": 1093.85,
+   "text": "environment when this market change happened in 1718."
+  },
+  {
+   "start": 1094.89,
+   "end": 1096.69,
+   "text": "What was the argument for doing that?"
+  },
+  {
+   "start": 1096.69,
+   "end": 1098.93,
+   "text": "Because when I think about it in my head, it's like, well, of course,"
+  },
+  {
+   "start": 1098.93,
+   "end": 1101.01,
+   "text": "it's going to cost more to sort it out."
+  },
+  {
+   "start": 1101.01,
+   "end": 1104.21,
+   "text": "The idea was more people will participate because it's easier, which is a"
+  },
+  {
+   "start": 1104.21,
+   "end": 1106.09,
+   "text": "good motivating principle in general."
+  },
+  {
+   "start": 1106.37,
+   "end": 1109.13,
+   "text": "But on this specific topic, the technology is not there yet."
+  },
+  {
+   "start": 1109.13,
+   "end": 1111.69,
+   "text": "or at least we don't feel the technologies there yet."
+  },
+  {
+   "start": 1111.69,
+   "end": 1114.05,
+   "text": "Your paper, just to get back to where it all goes,"
+  },
+  {
+   "start": 1114.05,
+   "end": 1115.57,
+   "text": "it goes to Staten Island,"
+  },
+  {
+   "start": 1115.57,
+   "end": 1119.45,
+   "text": "where it is actually one of the fastest processes"
+  },
+  {
+   "start": 1119.45,
+   "end": 1121.01,
+   "text": "in the waste stream."
+  },
+  {
+   "start": 1121.01,
+   "end": 1122.57,
+   "text": "Cardboard and paper that you recycle today"
+  },
+  {
+   "start": 1122.57,
+   "end": 1124.09,
+   "text": "might become a new pizza box tomorrow."
+  },
+  {
+   "start": 1124.09,
+   "end": 1125.69,
+   "text": "Pizza boxes are one of the primary things"
+  },
+  {
+   "start": 1125.69,
+   "end": 1127.65,
+   "text": "made at that facility."
+  },
+  {
+   "start": 1127.65,
+   "end": 1128.69,
+   "text": "And then your compost,"
+  },
+  {
+   "start": 1128.69,
+   "end": 1133.05,
+   "text": "which is sort of our best and newest and most exciting stream."
+  },
+  {
+   "start": 1133.05,
+   "end": 1135.37,
+   "text": "Your food waste goes to a few places,"
+  },
+  {
+   "start": 1135.37,
+   "end": 1138.17,
+   "text": "but primarily to our Staten Island compost facility."
+  },
+  {
+   "start": 1138.17,
+   "end": 1144.57,
+   "text": "It's a 33 acre site where over a period of three or four months, we turn and aerate your"
+  },
+  {
+   "start": 1144.57,
+   "end": 1149.61,
+   "text": "material until it's broken down into finished compost, which we give away to parks and gardens,"
+  },
+  {
+   "start": 1149.61,
+   "end": 1150.61,
+   "text": "to residents directly."
+  },
+  {
+   "start": 1150.61,
+   "end": 1152.65,
+   "text": "We just finished our summer compost give back season."
+  },
+  {
+   "start": 1152.65,
+   "end": 1155.37,
+   "text": "We gave away about 15 million pounds of finished compost to New Yorkers."
+  },
+  {
+   "start": 1155.37,
+   "end": 1157.69,
+   "text": "I didn't know you could get New York City home."
+  },
+  {
+   "start": 1157.69,
+   "end": 1158.69,
+   "text": "NYC.gov."
+  },
+  {
+   "start": 1158.69,
+   "end": 1159.69,
+   "text": "Get compost."
+  },
+  {
+   "start": 1159.69,
+   "end": 1162.97,
+   "text": "You can find events near you to get 40 pound bags."
+  },
+  {
+   "start": 1162.97,
+   "end": 1167.61,
+   "text": "And some of it goes to the Department of Environmental Protection's New Town Creek Digester Eggs."
+  },
+  {
+   "start": 1167.61,
+   "end": 1172.85,
+   "text": "you've been on the BQE right as you go over the Koshesco and come between Brooklyn and"
+  },
+  {
+   "start": 1172.85,
+   "end": 1176.73,
+   "text": "Queens, you'll see the big eggs. Those are large facilities where your food waste will"
+  },
+  {
+   "start": 1176.73,
+   "end": 1181.45,
+   "text": "be mixed with wastewater. So it gets mixed there with everything that you put down the"
+  },
+  {
+   "start": 1181.45,
+   "end": 1187.53,
+   "text": "sink or that you flush down the toilet where it's digested into bio solids for fertilizer"
+  },
+  {
+   "start": 1187.53,
+   "end": 1193.85,
+   "text": "and usable biogas that heats homes in Brooklyn. So your waste goes to a lot of different places,"
+  },
+  {
+   "start": 1193.85,
+   "end": 1199.01,
+   "text": "The idea is to divert as much of it as possible to beneficial use and hopefully to reduce"
+  },
+  {
+   "start": 1199.01,
+   "end": 1215.06,
+   "text": "the total amount over time."
+  },
+  {
+   "start": 1215.06,
+   "end": 1217.02,
+   "text": "What's next for Virtual Assets?"
+  },
+  {
+   "start": 1217.02,
+   "end": 1222.34,
+   "text": "I'm Jacob Greese, host of Economy Scale, a series exploring growth in key global sectors."
+  },
+  {
+   "start": 1222.34,
+   "end": 1226.58,
+   "text": "And in this episode, we're diving into the digital forces shaping finance."
+  },
+  {
+   "start": 1226.58,
+   "end": 1230.94,
+   "text": "Sean McHugh from Dubai based Virtual Assets for Energy Authority has this to say."
+  },
+  {
+   "start": 1230.94,
+   "end": 1235.14,
+   "text": "We're seeing a lot of in-social players come in, digital asset dedicated hedge funds, high"
+  },
+  {
+   "start": 1235.14,
+   "end": 1239.38,
+   "text": "premiums to traders and that sort of thing and folks who service institutional clients."
+  },
+  {
+   "start": 1239.38,
+   "end": 1245.3,
+   "text": "As more capital enters the market, adaptive regulation is likely to become increasingly key."
+  },
+  {
+   "start": 1245.3,
+   "end": 1250.82,
+   "text": "Rhys Merrick of Ripple says, a lot of regulators globally would like to creep the industry"
+  },
+  {
+   "start": 1250.82,
+   "end": 1255.7,
+   "text": "at arm's length. That's the opposite here. I think also what you'll find is that regulation"
+  },
+  {
+   "start": 1255.7,
+   "end": 1261.14,
+   "text": "and frameworks can come out, but some of them are maybe a slight iteration on some 80-year-old"
+  },
+  {
+   "start": 1261.14,
+   "end": 1265.02,
+   "text": "policy and not actually in line with what the technology can do and offer. And again,"
+  },
+  {
+   "start": 1265.02,
+   "end": 1266.82,
+   "text": "that's very different in Dubai."
+  },
+  {
+   "start": 1266.82,
+   "end": 1270.32,
+   "text": "Listen to the full episode wherever you get your podcasts. This series is brought to you"
+  },
+  {
+   "start": 1270.32,
+   "end": 1275.42,
+   "text": "by Bloomberg Media Studios and the Dubai Department of Economy and Tourism."
+  },
+  {
+   "start": 1275.42,
+   "end": 1280.34,
+   "text": "Underdog already has team picks, player props, money lines, spreads. You name it, they got"
+  },
+  {
+   "start": 1280.34,
+   "end": 1284.22,
+   "text": "it. But apparently somebody over there said, you know what's missing? Screaming like a"
+  },
+  {
+   "start": 1284.22,
+   "end": 1288.9,
+   "text": "maniac about a rookie card on your couch. And we love them for that. Because Underdog"
+  },
+  {
+   "start": 1288.9,
+   "end": 1290.2,
+   "text": "It now has Rips."
+  },
+  {
+   "start": 1290.2,
+   "end": 1292.7,
+   "text": "You get a digital pack starting at just $5."
+  },
+  {
+   "start": 1292.7,
+   "end": 1296.98,
+   "text": "You check the live odds, see which grails you could pull, then rip it open to reveal"
+  },
+  {
+   "start": 1296.98,
+   "end": 1298.54,
+   "text": "a real physical card."
+  },
+  {
+   "start": 1298.54,
+   "end": 1299.9,
+   "text": "And the grails are no joke."
+  },
+  {
+   "start": 1299.9,
+   "end": 1304.96,
+   "text": "They have cards up to $125,000 in value and plenty to pull."
+  },
+  {
+   "start": 1304.96,
+   "end": 1310.74,
+   "text": "From football and basketball to Pokemon, with new limited edition packs dropping regularly."
+  },
+  {
+   "start": 1310.74,
+   "end": 1314.66,
+   "text": "Even cooler, you can decide to keep the card and Underdog will ship it straight to your"
+  },
+  {
+   "start": 1314.66,
+   "end": 1319.1,
+   "text": "home or sell it back instantly at 100% of its fair market value."
+  },
+  {
+   "start": 1319.1,
+   "end": 1321.02,
+   "text": "And the cash goes right in your account."
+  },
+  {
+   "start": 1321.02,
+   "end": 1326.22,
+   "text": "No listing it online, no stranger low-balling you in the messages, just rip, reveal, and"
+  },
+  {
+   "start": 1326.22,
+   "end": 1327.9,
+   "text": "cash out instantly."
+  },
+  {
+   "start": 1327.9,
+   "end": 1329.74,
+   "text": "Or make some room on your shelf."
+  },
+  {
+   "start": 1329.74,
+   "end": 1331.98,
+   "text": "Download Underdog and get in on the chase."
+  },
+  {
+   "start": 1331.98,
+   "end": 1335.42,
+   "text": "Get 5 free Rips Packs when you deposit $5."
+  },
+  {
+   "start": 1335.42,
+   "end": 1338.36,
+   "text": "Real Rips, Real Cards, Real Cash."
+  },
+  {
+   "start": 1338.36,
+   "end": 1339.7,
+   "text": "Only on Underdog."
+  },
+  {
+   "start": 1339.7,
+   "end": 1340.94,
+   "text": "Unleash your dog."
+  },
+  {
+   "start": 1340.94,
+   "end": 1342.26,
+   "text": "18-plus terms apply."
+  },
+  {
+   "start": 1342.26,
+   "end": 1343.7,
+   "text": "Top Grails are extremely rare."
+  },
+  {
+   "start": 1343.7,
+   "end": 1346.84,
+   "text": "The world of business is constantly evolving."
+  },
+  {
+   "start": 1346.84,
+   "end": 1351.54,
+   "text": "Every day, new challenges, new opportunities, new ways of working."
+  },
+  {
+   "start": 1351.54,
+   "end": 1356.42,
+   "text": "Comcast business keeps you totally in step with secure AI-backed networking built to"
+  },
+  {
+   "start": 1356.42,
+   "end": 1361.66,
+   "text": "power the way modern business gets things done today in more than 100 countries around"
+  },
+  {
+   "start": 1361.66,
+   "end": 1362.66,
+   "text": "the world."
+  },
+  {
+   "start": 1362.66,
+   "end": 1364.3,
+   "text": "That's some serious muscle."
+  },
+  {
+   "start": 1364.3,
+   "end": 1370.66,
+   "text": "And get this, Comcast business powers over 90% of the Fortune 500 and millions of small"
+  },
+  {
+   "start": 1370.66,
+   "end": 1372.06,
+   "text": "businesses."
+  },
+  {
+   "start": 1372.06,
+   "end": 1378.54,
+   "text": "at all? Network engineers, cybersecurity specialists, support teams, thousands of experts answering"
+  },
+  {
+   "start": 1378.54,
+   "end": 1385.94,
+   "text": "your call at 2 a.m. like it's 2 p.m. Always on, always ready. That's a lot of coffee."
+  },
+  {
+   "start": 1385.94,
+   "end": 1390.86,
+   "text": "One partner powering how business gets done for companies of every size all around the"
+  },
+  {
+   "start": 1390.86,
+   "end": 1396.94,
+   "text": "globe. When you add it all up, no one does business like Comcast Business."
+  },
+  {
+   "start": 1396.94,
+   "end": 1401.98,
+   "text": "Most meeting note takers get the easy words right and the important ones wrong. The clients"
+  },
+  {
+   "start": 1401.98,
+   "end": 1407.26,
+   "text": "Last name, the acronym, WhisperFlow Notetaker, is built to get the hard words right."
+  },
+  {
+   "start": 1407.26,
+   "end": 1409.42,
+   "text": "It takes notes on any meeting platform."
+  },
+  {
+   "start": 1409.42,
+   "end": 1415.06,
+   "text": "Zoom, Google Meet, Teams, even WhatsApp calls keeps every meeting searchable and connects"
+  },
+  {
+   "start": 1415.06,
+   "end": 1416.74,
+   "text": "to cloud or chat GPTs."
+  },
+  {
+   "start": 1416.74,
+   "end": 1420.1,
+   "text": "So you can ask, what did we agree to last Tuesday?"
+  },
+  {
+   "start": 1420.1,
+   "end": 1423.62,
+   "text": "Free to try on Mac and Windows at whisperflow.ai."
+  },
+  {
+   "start": 1423.62,
+   "end": 1426.86,
+   "text": "That's W-I-S-P-R flow.ai."
+  },
+  {
+   "start": 1426.86,
+   "end": 1430.46,
+   "text": "I'm thinking about that guy and it's a guy at the cocktail party."
+  },
+  {
+   "start": 1430.46,
+   "end": 1435.5,
+   "text": "So, you know, it's like the classic like I heard two minute segment on the radio once."
+  },
+  {
+   "start": 1435.5,
+   "end": 1436.5,
+   "text": "I hate that guy."
+  },
+  {
+   "start": 1436.5,
+   "end": 1438.46,
+   "text": "I think a lot of listeners are better than that."
+  },
+  {
+   "start": 1438.46,
+   "end": 1441.46,
+   "text": "They always say things if they've researched the topic for at least 30 minutes."
+  },
+  {
+   "start": 1441.46,
+   "end": 1442.46,
+   "text": "Right."
+  },
+  {
+   "start": 1442.46,
+   "end": 1444.66,
+   "text": "They certainly, I'm sure a lot of listeners know that person at least."
+  },
+  {
+   "start": 1444.66,
+   "end": 1445.66,
+   "text": "They know that person."
+  },
+  {
+   "start": 1445.66,
+   "end": 1446.66,
+   "text": "Oh my God, we are prepared to take it on."
+  },
+  {
+   "start": 1446.66,
+   "end": 1448.58,
+   "text": "Oh my God, I can't stand that person."
+  },
+  {
+   "start": 1448.58,
+   "end": 1451.62,
+   "text": "On the other hand, and I don't want to get into this, it might, the fact that like New"
+  },
+  {
+   "start": 1451.62,
+   "end": 1453.26,
+   "text": "York has guaranteed contracts."
+  },
+  {
+   "start": 1453.26,
+   "end": 1454.7,
+   "text": "Anyway."
+  },
+  {
+   "start": 1454.7,
+   "end": 1458.3,
+   "text": "Anyway, does not necessarily vindicate recycling."
+  },
+  {
+   "start": 1458.3,
+   "end": 1460.58,
+   "text": "I might vindicate it from the New York City perspective,"
+  },
+  {
+   "start": 1460.58,
+   "end": 1461.66,
+   "text": "but let's move on."
+  },
+  {
+   "start": 1461.66,
+   "end": 1464.7,
+   "text": "All right, that's an rough overview of, let's say,"
+  },
+  {
+   "start": 1464.7,
+   "end": 1466.54,
+   "text": "the old regime."
+  },
+  {
+   "start": 1466.54,
+   "end": 1468.74,
+   "text": "Why don't you give us the equivalent sort of like,"
+  },
+  {
+   "start": 1468.74,
+   "end": 1472.7,
+   "text": "rough overview of the new regime of what we're going."
+  },
+  {
+   "start": 1472.7,
+   "end": 1475.98,
+   "text": "So the big changes in what I just described"
+  },
+  {
+   "start": 1475.98,
+   "end": 1478.66,
+   "text": "were that were conducted between 2000 and 2015"
+  },
+  {
+   "start": 1478.66,
+   "end": 1482.3,
+   "text": "to move from a landfill model to a waste export model."
+  },
+  {
+   "start": 1482.3,
+   "end": 1486.22,
+   "text": "Those were huge back of house changes on our operations."
+  },
+  {
+   "start": 1486.22,
+   "end": 1488.86,
+   "text": "And what we're doing now is making sort of front of house"
+  },
+  {
+   "start": 1488.86,
+   "end": 1491.18,
+   "text": "changes for how New Yorkers interact with the trash."
+  },
+  {
+   "start": 1491.18,
+   "end": 1493.18,
+   "text": "It's actually, I don't mean to use it as an excuse,"
+  },
+  {
+   "start": 1493.18,
+   "end": 1496.3,
+   "text": "but it's one of the reasons why, as other cities moved"
+  },
+  {
+   "start": 1496.3,
+   "end": 1498.34,
+   "text": "to on-street containerization, New York didn't."
+  },
+  {
+   "start": 1498.34,
+   "end": 1499.74,
+   "text": "We had this big project going on"
+  },
+  {
+   "start": 1499.74,
+   "end": 1501.54,
+   "text": "and putting the transfer stations."
+  },
+  {
+   "start": 1501.54,
+   "end": 1503.1,
+   "text": "Obviously we should be able to do both."
+  },
+  {
+   "start": 1503.1,
+   "end": 1505.9,
+   "text": "But so now what we're doing is,"
+  },
+  {
+   "start": 1505.9,
+   "end": 1509.58,
+   "text": "after we completed this 70,000 block volumetric analysis."
+  },
+  {
+   "start": 1509.58,
+   "end": 1511.7,
+   "text": "Can you say a little bit more about the analysis?"
+  },
+  {
+   "start": 1511.7,
+   "end": 1515.3,
+   "text": "Because I don't even know how you would start such a project."
+  },
+  {
+   "start": 1515.3,
+   "end": 1517.46,
+   "text": "Because if you look at an apartment building, it's like, OK,"
+  },
+  {
+   "start": 1517.46,
+   "end": 1521.14,
+   "text": "maybe they produce like x pounds of waste on a certain day."
+  },
+  {
+   "start": 1521.14,
+   "end": 1524.3,
+   "text": "But then the day after Christmas, that suddenly explodes"
+  },
+  {
+   "start": 1524.3,
+   "end": 1525.58,
+   "text": "and becomes five times as much."
+  },
+  {
+   "start": 1525.58,
+   "end": 1526.34,
+   "text": "Yeah, absolutely."
+  },
+  {
+   "start": 1526.34,
+   "end": 1529.5,
+   "text": "So when you look at one thing that I think"
+  },
+  {
+   "start": 1529.5,
+   "end": 1531.26,
+   "text": "is important to remember as we talk about this"
+  },
+  {
+   "start": 1531.26,
+   "end": 1533.46,
+   "text": "is that even though New York has a reputation for being"
+  },
+  {
+   "start": 1533.46,
+   "end": 1534.98,
+   "text": "behind the curve, there's actually"
+  },
+  {
+   "start": 1534.98,
+   "end": 1536.66,
+   "text": "no city in North America that does"
+  },
+  {
+   "start": 1536.66,
+   "end": 1538.26,
+   "text": "on-street containerization."
+  },
+  {
+   "start": 1538.26,
+   "end": 1541.02,
+   "text": "It's a purely European, South American, and Asian thing."
+  },
+  {
+   "start": 1541.02,
+   "end": 1543.58,
+   "text": "And when this program is implemented,"
+  },
+  {
+   "start": 1543.58,
+   "end": 1546.02,
+   "text": "New York will have gone, I would never say worse,"
+  },
+  {
+   "start": 1546.02,
+   "end": 1548.42,
+   "text": "but have gone from the back of the pack to first."
+  },
+  {
+   "start": 1548.42,
+   "end": 1550.74,
+   "text": "And that means that we had to develop a system"
+  },
+  {
+   "start": 1550.74,
+   "end": 1553.62,
+   "text": "that would work for us specifically, right?"
+  },
+  {
+   "start": 1553.62,
+   "end": 1555.26,
+   "text": "As we first started to confront this,"
+  },
+  {
+   "start": 1555.26,
+   "end": 1557.42,
+   "text": "I heard from a lot from sort of two groups,"
+  },
+  {
+   "start": 1557.42,
+   "end": 1560.06,
+   "text": "urbanists who would say, this is a solved problem,"
+  },
+  {
+   "start": 1560.06,
+   "end": 1563.06,
+   "text": "copy, paste Barcelona, copy, paste Amsterdam."
+  },
+  {
+   "start": 1563.06,
+   "end": 1565.5,
+   "text": "And also community leaders in the city who said,"
+  },
+  {
+   "start": 1565.5,
+   "end": 1566.82,
+   "text": "this would never work here, right?"
+  },
+  {
+   "start": 1566.82,
+   "end": 1568.38,
+   "text": "And when we did this study,"
+  },
+  {
+   "start": 1568.38,
+   "end": 1570.72,
+   "text": "what we really found was that both of those groups were wrong."
+  },
+  {
+   "start": 1570.72,
+   "end": 1573.66,
+   "text": "It is of course achievable and it is of course difficult."
+  },
+  {
+   "start": 1573.66,
+   "end": 1578.66,
+   "text": "So when we had all this data about the weight of the trash,"
+  },
+  {
+   "start": 1578.66,
+   "end": 1581.86,
+   "text": "what we wanted to do was, again, as I mentioned,"
+  },
+  {
+   "start": 1581.86,
+   "end": 1583.64,
+   "text": "that there's a finite amount of street space,"
+  },
+  {
+   "start": 1583.64,
+   "end": 1587.16,
+   "text": "you want to establish a containerization model"
+  },
+  {
+   "start": 1587.16,
+   "end": 1590.82,
+   "text": "that can hold all the waste, but that is not oversized"
+  },
+  {
+   "start": 1590.82,
+   "end": 1592.62,
+   "text": "because then you're wasting that space."
+  },
+  {
+   "start": 1592.62,
+   "end": 1595.22,
+   "text": "So we planned for one extra day, you mentioned Christmas,"
+  },
+  {
+   "start": 1595.22,
+   "end": 1597.1,
+   "text": "and we planned for basically one extra day"
+  },
+  {
+   "start": 1597.1,
+   "end": 1599.02,
+   "text": "above their collection, and we went out"
+  },
+  {
+   "start": 1599.02,
+   "end": 1606.14,
+   "text": "measured piles of trash. We eventually were able to come up with conversion formula to use,"
+  },
+  {
+   "start": 1606.14,
+   "end": 1611.82,
+   "text": "but it was a lot of on-the-street work measuring both the trash itself and also the streetscape"
+  },
+  {
+   "start": 1611.82,
+   "end": 1617.34,
+   "text": "because you might know the length of a block, but you know that you can't put the bin in front of"
+  },
+  {
+   "start": 1617.34,
+   "end": 1621.82,
+   "text": "a curb cut. You know it can't go in front of a fire hydrant. We had determined that we were"
+  },
+  {
+   "start": 1621.82,
+   "end": 1625.98,
+   "text": "going to go with a side loading model. There are different ways the trucks can be serviced."
+  },
+  {
+   "start": 1625.98,
+   "end": 1628.3,
+   "text": "That meant that we had to think about tree canopy height."
+  },
+  {
+   "start": 1628.3,
+   "end": 1630.62,
+   "text": "Bin can't go up into the tree."
+  },
+  {
+   "start": 1630.62,
+   "end": 1633.74,
+   "text": "There are so many factors in really four dimensions"
+  },
+  {
+   "start": 1633.74,
+   "end": 1634.94,
+   "text": "on this to consider."
+  },
+  {
+   "start": 1634.94,
+   "end": 1641.13,
+   "text": "And in Europe in particular, what you see are open shared bins."
+  },
+  {
+   "start": 1641.13,
+   "end": 1644.17,
+   "text": "And this is what had kind of been contemplated in earlier"
+  },
+  {
+   "start": 1644.17,
+   "end": 1647.77,
+   "text": "pilots that we had done going back to 2021."
+  },
+  {
+   "start": 1647.77,
+   "end": 1650.09,
+   "text": "OK, just a European style, basically a dumpster"
+  },
+  {
+   "start": 1650.09,
+   "end": 1652.01,
+   "text": "on the street that everybody on the block is to use."
+  },
+  {
+   "start": 1652.01,
+   "end": 1655.89,
+   "text": "We always had a lot of issues with that as an at scale"
+  },
+  {
+   "start": 1655.89,
+   "end": 1662.53,
+   "text": "solution because a few reasons. First of all, in New York City, we provide this free unlimited"
+  },
+  {
+   "start": 1662.53,
+   "end": 1668.45,
+   "text": "service for residents. Businesses have to pay for trash collection and through a network of"
+  },
+  {
+   "start": 1668.45,
+   "end": 1672.93,
+   "text": "private carters. And so there was a concern about, well, if it's a free open bin, why wouldn't a"
+  },
+  {
+   "start": 1672.93,
+   "end": 1676.93,
+   "text": "business just steal space in that bin with our trash in there? So we didn't want to go forward"
+  },
+  {
+   "start": 1676.93,
+   "end": 1681.33,
+   "text": "with that model. We also knew that there are many neighborhoods in the city where an on-street"
+  },
+  {
+   "start": 1681.33,
+   "end": 1685.73,
+   "text": "container was not going to improve the situation. If you think about a low-density neighborhood,"
+  },
+  {
+   "start": 1685.89,
+   "end": 1688.89,
+   "text": "making everybody all of a sudden walk down to the middle of the block."
+  },
+  {
+   "start": 1688.89,
+   "end": 1692.89,
+   "text": "That doesn't help just in the name of saying, well, we've done the whole city."
+  },
+  {
+   "start": 1692.89,
+   "end": 1700.89,
+   "text": "So the model we eventually came up with after we had this volumetric data was a containerization system for low density buildings,"
+  },
+  {
+   "start": 1700.89,
+   "end": 1710.89,
+   "text": "one to nine residential units, a single family home up through a small apartment using a wheeled trash bin and then eventually a specific wheeled trash bin."
+  },
+  {
+   "start": 1710.89,
+   "end": 1715.21,
+   "text": "The largest buildings, 31 or more units is the point we came up with where they can certainly"
+  },
+  {
+   "start": 1715.21,
+   "end": 1720.41,
+   "text": "support at least one of what we call empire bins, the on-street containers. And then the 10 to 30s,"
+  },
+  {
+   "start": 1720.41,
+   "end": 1724.17,
+   "text": "the mid-sized buildings was where we found there's a lot of variety. Might be 11 studios,"
+  },
+  {
+   "start": 1724.17,
+   "end": 1731.45,
+   "text": "there's 11 people in the building versus 29 two-bedrooms. They have to use one or the other,"
+  },
+  {
+   "start": 1731.45,
+   "end": 1739.19,
+   "text": "but they choose. And that program with that model was implemented in the cities divided into 59"
+  },
+  {
+   "start": 1739.19,
+   "end": 1743.83,
+   "text": "community districts. We began in one community district, Manhattan Nine, which is West Harlem,"
+  },
+  {
+   "start": 1743.83,
+   "end": 1754.87,
+   "text": "Amsterdam to the river, 111 to 155 in June of last year, 2025. And now fall 2026, this is coming"
+  },
+  {
+   "start": 1754.87,
+   "end": 1761.03,
+   "text": "to a second district, Brooklyn Community District two downtown Brooklyn, through Fort Green, Clinton"
+  },
+  {
+   "start": 1761.03,
+   "end": 1768.23,
+   "text": "Hill, Brooklyn Heights. That is the point that this really moves beyond a pilot, and becomes a"
+  },
+  {
+   "start": 1768.23,
+   "end": 1771.23,
+   "text": "a real program that New Yorkers can expect to see in their neighborhood."
+  },
+  {
+   "start": 1771.23,
+   "end": 1774.31,
+   "text": "And the mayor has actually committed to funding this program for a full"
+  },
+  {
+   "start": 1774.31,
+   "end": 1776.11,
+   "text": "rollout by the end of 2031."
+  },
+  {
+   "start": 1776.11,
+   "end": 1780.59,
+   "text": "I'm kind of curious, like, I actually don't know which what I have right now."
+  },
+  {
+   "start": 1780.59,
+   "end": 1784.43,
+   "text": "So what I have right now in my damning indictment of how often you take"
+  },
+  {
+   "start": 1784.43,
+   "end": 1785.99,
+   "text": "out the trash every day."
+  },
+  {
+   "start": 1785.99,
+   "end": 1788.99,
+   "text": "But like, so the way like you take it to a central location, right?"
+  },
+  {
+   "start": 1788.99,
+   "end": 1794.19,
+   "text": "No, we have like this sort of like I live in a building that's like four units."
+  },
+  {
+   "start": 1794.19,
+   "end": 1796.63,
+   "text": "It's like fairly small in the East Village."
+  },
+  {
+   "start": 1796.63,
+   "end": 1801.99,
+   "text": "And I don't just like put my trash out on the street. We have like this closed container and"
+  },
+  {
+   "start": 1801.99,
+   "end": 1808.87,
+   "text": "then I lift it up and then etc. Walk me through from the perspective of the sanitation worker."
+  },
+  {
+   "start": 1808.87,
+   "end": 1814.55,
+   "text": "So what are they doing now and to get that trash out of it? And then how will their day be different"
+  },
+  {
+   "start": 1814.55,
+   "end": 1818.71,
+   "text": "onto the container? Like walk me through that when they're going down my block, what does it look"
+  },
+  {
+   "start": 1818.71,
+   "end": 1823.59,
+   "text": "like today and what does it look like when this is implemented? These filters are great example"
+  },
+  {
+   "start": 1823.59,
+   "end": 1826.35,
+   "text": "because you'll have every kind of building"
+  },
+  {
+   "start": 1826.35,
+   "end": 1827.51,
+   "text": "within a single year out there."
+  },
+  {
+   "start": 1827.51,
+   "end": 1831.19,
+   "text": "So a sanitation worker is not servicing"
+  },
+  {
+   "start": 1831.19,
+   "end": 1832.71,
+   "text": "the container that you're describing."
+  },
+  {
+   "start": 1832.71,
+   "end": 1833.99,
+   "text": "It's like up against the building wall."
+  },
+  {
+   "start": 1833.99,
+   "end": 1835.07,
+   "text": "Yeah, it's up against the building."
+  },
+  {
+   "start": 1835.07,
+   "end": 1836.87,
+   "text": "Someone that your landlord is paying"
+  },
+  {
+   "start": 1836.87,
+   "end": 1839.99,
+   "text": "is coming and moving the material out to the curb."
+  },
+  {
+   "start": 1839.99,
+   "end": 1843.39,
+   "text": "That's actually one of the things that we were able to build."
+  },
+  {
+   "start": 1843.39,
+   "end": 1845.35,
+   "text": "Well, someone is coming and moving it out."
+  },
+  {
+   "start": 1845.35,
+   "end": 1846.67,
+   "text": "Our building hires this person."
+  },
+  {
+   "start": 1846.67,
+   "end": 1850.35,
+   "text": "In New York City, most buildings are required"
+  },
+  {
+   "start": 1850.35,
+   "end": 1851.83,
+   "text": "to have a professional waste manager."
+  },
+  {
+   "start": 1851.83,
+   "end": 1853.47,
+   "text": "Someone who takes the trash out."
+  },
+  {
+   "start": 1853.47,
+   "end": 1857.99,
+   "text": "And we wanted to maintain that system because they do a lot of things and because it builds"
+  },
+  {
+   "start": 1857.99,
+   "end": 1860.51,
+   "text": "cleanliness in the neighborhood in general."
+  },
+  {
+   "start": 1860.51,
+   "end": 1863.91,
+   "text": "So right now, those bags are coming out of your sealed container."
+  },
+  {
+   "start": 1863.91,
+   "end": 1864.91,
+   "text": "They're going to the curb."
+  },
+  {
+   "start": 1864.91,
+   "end": 1868.66,
+   "text": "Sanitation workers are taking them out and putting them in the back."
+  },
+  {
+   "start": 1868.66,
+   "end": 1873.76,
+   "text": "They should be going out because you have fewer than nine units in an official NYC bin."
+  },
+  {
+   "start": 1873.76,
+   "end": 1879.5,
+   "text": "And if they are not, you are subject to a summons as of September of this year."
+  },
+  {
+   "start": 1879.5,
+   "end": 1881.42,
+   "text": "But the trash is not supposed to..."
+  },
+  {
+   "start": 1881.42,
+   "end": 1883.02,
+   "text": "The trash is essentially not supposed to,"
+  },
+  {
+   "start": 1883.02,
+   "end": 1884.18,
+   "text": "from a building of your size,"
+  },
+  {
+   "start": 1884.18,
+   "end": 1887.22,
+   "text": "not supposed to sit on the ground directly anymore."
+  },
+  {
+   "start": 1887.22,
+   "end": 1888.06,
+   "text": "You go inside in a bin."
+  },
+  {
+   "start": 1888.06,
+   "end": 1889.18,
+   "text": "I never do this, actually."
+  },
+  {
+   "start": 1889.18,
+   "end": 1890.42,
+   "text": "So it goes out in a bin."
+  },
+  {
+   "start": 1890.42,
+   "end": 1893.58,
+   "text": "Sanitation workers can either tip the bin manually"
+  },
+  {
+   "start": 1893.58,
+   "end": 1896.46,
+   "text": "or soon the trucks will have a rear tipper"
+  },
+  {
+   "start": 1896.46,
+   "end": 1897.54,
+   "text": "for the small buildings."
+  },
+  {
+   "start": 1897.54,
+   "end": 1899.42,
+   "text": "Yeah, we have the real bins."
+  },
+  {
+   "start": 1899.42,
+   "end": 1901.66,
+   "text": "So they have the bar on them,"
+  },
+  {
+   "start": 1901.66,
+   "end": 1903.18,
+   "text": "the bar hooks up to the rear tipper,"
+  },
+  {
+   "start": 1903.18,
+   "end": 1904.22,
+   "text": "and it goes in the back."
+  },
+  {
+   "start": 1904.22,
+   "end": 1907.26,
+   "text": "For the empire bin, for larger buildings,"
+  },
+  {
+   "start": 1907.26,
+   "end": 1910.62,
+   "text": "we had to design an all new truck for this."
+  },
+  {
+   "start": 1910.62,
+   "end": 1915.26,
+   "text": "I mentioned that New York City is the first place in North America to do answer containerization."
+  },
+  {
+   "start": 1915.26,
+   "end": 1919.34,
+   "text": "Once we studied rear loading versus side loading, container models, we came up with what we"
+  },
+  {
+   "start": 1919.34,
+   "end": 1920.9,
+   "text": "wanted to do."
+  },
+  {
+   "start": 1920.9,
+   "end": 1924.54,
+   "text": "And we discovered that one of the long poles in the tent was going to be that there was"
+  },
+  {
+   "start": 1924.54,
+   "end": 1929.22,
+   "text": "no what's called an automated side loader ASL truck that was appropriate for residential"
+  },
+  {
+   "start": 1929.22,
+   "end": 1930.22,
+   "text": "use in New York City."
+  },
+  {
+   "start": 1930.22,
+   "end": 1932.38,
+   "text": "Like they have one that they use at the port of Philadelphia."
+  },
+  {
+   "start": 1932.38,
+   "end": 1933.38,
+   "text": "I saw this thing operate."
+  },
+  {
+   "start": 1933.38,
+   "end": 1934.38,
+   "text": "It was so loud."
+  },
+  {
+   "start": 1934.38,
+   "end": 1937.74,
+   "text": "Like the idea that it was going to come down your street was ludicrous."
+  },
+  {
+   "start": 1937.74,
+   "end": 1941.7,
+   "text": "So we talked to some truck industry experts and heard that it would probably take about"
+  },
+  {
+   "start": 1941.7,
+   "end": 1944.78,
+   "text": "five years to design a truck from scratch."
+  },
+  {
+   "start": 1944.78,
+   "end": 1946.38,
+   "text": "You can't just import the ones from Europe."
+  },
+  {
+   "start": 1946.38,
+   "end": 1948.82,
+   "text": "There's different emission standards."
+  },
+  {
+   "start": 1948.82,
+   "end": 1950.9,
+   "text": "We were not going to wait five years for that."
+  },
+  {
+   "start": 1950.9,
+   "end": 1954.82,
+   "text": "So we actually got involved in the Department of Sanitation in the truck design business,"
+  },
+  {
+   "start": 1954.82,
+   "end": 1956.9,
+   "text": "something I knew nothing about going into this."
+  },
+  {
+   "start": 1956.9,
+   "end": 1958.28,
+   "text": "And we learned how to do it."
+  },
+  {
+   "start": 1958.28,
+   "end": 1960.66,
+   "text": "And we got a prototype truck built in about 10 months."
+  },
+  {
+   "start": 1960.66,
+   "end": 1963.34,
+   "text": "And that's the truck that is now rolling off the line."
+  },
+  {
+   "start": 1963.34,
+   "end": 1964.74,
+   "text": "It's operating in West Harlem."
+  },
+  {
+   "start": 1964.74,
+   "end": 1967.58,
+   "text": "We're getting them in for the other districts going forward."
+  },
+  {
+   "start": 1967.58,
+   "end": 1972.02,
+   "text": "its combination of vendors is actually how we were able to do it so quickly. It's the"
+  },
+  {
+   "start": 1972.02,
+   "end": 1980.46,
+   "text": "European body, the side loading body. And Mac makes the chassis exactly the same as"
+  },
+  {
+   "start": 1980.46,
+   "end": 1986.54,
+   "text": "they do for many of our current collection trucks. And then we work with a firm that"
+  },
+  {
+   "start": 1986.54,
+   "end": 1991.7,
+   "text": "specializes in getting the two sets of electronics to talk to each other. And we've got about"
+  },
+  {
+   "start": 1991.7,
+   "end": 1998.3,
+   "text": "But probably about 20 of them operating now out of our full fleet of 2300 or so."
+  },
+  {
+   "start": 1998.3,
+   "end": 2001.78,
+   "text": "But they'll continue to come in as this program rolls out over the next five or six years."
+  },
+  {
+   "start": 2001.78,
+   "end": 2005.94,
+   "text": "I want to go back to something you touched on earlier, which is deciding where the bins"
+  },
+  {
+   "start": 2005.94,
+   "end": 2007.06,
+   "text": "actually go."
+  },
+  {
+   "start": 2007.06,
+   "end": 2011.06,
+   "text": "Because this is a meaningful way in which the Department of Sanitation might actually"
+  },
+  {
+   "start": 2011.06,
+   "end": 2014.22,
+   "text": "change the look and feel of New York."
+  },
+  {
+   "start": 2014.22,
+   "end": 2019.14,
+   "text": "So when you're choosing where to put a bin, I mean, as you said, space is at a premium"
+  },
+  {
+   "start": 2019.14,
+   "end": 2020.14,
+   "text": "in New York."
+  },
+  {
+   "start": 2020.14,
+   "end": 2023.42,
+   "text": "There's a bunch of other stuff that could go in that bin space."
+  },
+  {
+   "start": 2023.42,
+   "end": 2027.9,
+   "text": "You know, you could have a parking space being the obvious one or I don't know, space for"
+  },
+  {
+   "start": 2027.9,
+   "end": 2032.18,
+   "text": "deliveries or people to get in and out of taxi cabs, whatever."
+  },
+  {
+   "start": 2032.18,
+   "end": 2036.46,
+   "text": "Talk a little bit more about like the decision making process for doing that and how you're"
+  },
+  {
+   "start": 2036.46,
+   "end": 2040.06,
+   "text": "judging the value of collecting trash versus other things."
+  },
+  {
+   "start": 2040.06,
+   "end": 2041.06,
+   "text": "Absolutely."
+  },
+  {
+   "start": 2041.06,
+   "end": 2046.86,
+   "text": "So one of the reasons that we were not interested in the European model of shared containers"
+  },
+  {
+   "start": 2046.86,
+   "end": 2051.04,
+   "text": "for the most part, is because you then face this challenge of like, well, why is it in"
+  },
+  {
+   "start": 2051.04,
+   "end": 2052.44,
+   "text": "front of my house and not your house?"
+  },
+  {
+   "start": 2052.44,
+   "end": 2054.22,
+   "text": "It fits for both of us."
+  },
+  {
+   "start": 2054.22,
+   "end": 2058.7,
+   "text": "Under the model we came up with, where larger buildings support their own bin, it's in front"
+  },
+  {
+   "start": 2058.7,
+   "end": 2061.12,
+   "text": "of your building because it's for your building."
+  },
+  {
+   "start": 2061.12,
+   "end": 2064.98,
+   "text": "So that eliminates a lot of the concerns about spatial jockeying."
+  },
+  {
+   "start": 2064.98,
+   "end": 2067.2,
+   "text": "Okay, I live in a 50 unit building."
+  },
+  {
+   "start": 2067.2,
+   "end": 2070.14,
+   "text": "We get an empire bin and it goes right in front of the building."
+  },
+  {
+   "start": 2070.14,
+   "end": 2076.26,
+   "text": "And it's important to remember that while this is taking up curb space, it's freeing"
+  },
+  {
+   "start": 2076.26,
+   "end": 2081.22,
+   "text": "up sidewalk space where the bags are currently kept for collection, so you get that space back"
+  },
+  {
+   "start": 2081.22,
+   "end": 2087.22,
+   "text": "for pedestrians. We've also heard, especially in West Harlem, from quite a few supers and waste"
+  },
+  {
+   "start": 2087.22,
+   "end": 2092.5,
+   "text": "managers who say, I love that I don't have to keep it in the building anymore. I just got"
+  },
+  {
+   "start": 2093.85,
+   "end": 2098.49,
+   "text": "30 to 50 square feet of building space back without any new additional construction,"
+  },
+  {
+   "start": 2098.49,
+   "end": 2101.69,
+   "text": "because where I used to put the trash, it can now go straight into the bin outside."
+  },
+  {
+   "start": 2101.69,
+   "end": 2106.64,
+   "text": "That said, the street layout issues are huge."
+  },
+  {
+   "start": 2106.64,
+   "end": 2112.81,
+   "text": "And we work very closely with the city department of transportation on coordinating around some"
+  },
+  {
+   "start": 2112.81,
+   "end": 2116.49,
+   "text": "of the things that I mentioned, you know, hydrants, curb cuts."
+  },
+  {
+   "start": 2116.49,
+   "end": 2121.17,
+   "text": "We don't take designated handicapped spaces."
+  },
+  {
+   "start": 2121.17,
+   "end": 2127.68,
+   "text": "We've also in BK2, the second district that's coming online, we were interested in piloting"
+  },
+  {
+   "start": 2127.68,
+   "end": 2132.2,
+   "text": "shared containers within our locked model by buildings that opt in to share."
+  },
+  {
+   "start": 2132.2,
+   "end": 2135.2,
+   "text": "So we said, you know, two small buildings decide they don't qualify on their own, but"
+  },
+  {
+   "start": 2135.2,
+   "end": 2136.64,
+   "text": "they want to share one."
+  },
+  {
+   "start": 2136.64,
+   "end": 2139.22,
+   "text": "And that actually really exposed some of the street limitations."
+  },
+  {
+   "start": 2139.22,
+   "end": 2143.16,
+   "text": "There were a handful of buildings that were interested and they were on streets with full"
+  },
+  {
+   "start": 2143.16,
+   "end": 2144.98,
+   "text": "no parking, no place to put them."
+  },
+  {
+   "start": 2144.98,
+   "end": 2148.2,
+   "text": "So it's something we'll continue to explore in future zones."
+  },
+  {
+   "start": 2148.2,
+   "end": 2152.98,
+   "text": "But absolutely, you know, we think that the initial, what we call the future of trash"
+  },
+  {
+   "start": 2152.98,
+   "end": 2158.18,
+   "text": "report back in spring of 22, where we sort of first began to look at the feasibility"
+  },
+  {
+   "start": 2158.18,
+   "end": 2163.46,
+   "text": "of this in a meaningful way, said that on-suit containerization could take up to 150,000"
+  },
+  {
+   "start": 2163.46,
+   "end": 2164.46,
+   "text": "parking spaces."
+  },
+  {
+   "start": 2164.46,
+   "end": 2167.64,
+   "text": "Now that was before we had gotten into, that's out of 3 million total in the city, that was"
+  },
+  {
+   "start": 2167.64,
+   "end": 2170.22,
+   "text": "before we had gotten into some of the details."
+  },
+  {
+   "start": 2170.22,
+   "end": 2174.46,
+   "text": "Once we had analyzed it much further and gone down the road in implementation, we're now"
+  },
+  {
+   "start": 2174.46,
+   "end": 2176.3,
+   "text": "looking at about a fifth of that."
+  },
+  {
+   "start": 2176.3,
+   "end": 2180.7,
+   "text": "When we went back into the back to the future of Trash Report, we found that it was more"
+  },
+  {
+   "start": 2180.7,
+   "end": 2188.06,
+   "text": "like 30,000 spaces at full rollout. And it could be, it could be fewer based on the opt-ins."
+  },
+  {
+   "start": 2188.06,
+   "end": 2193.34,
+   "text": "Can we just talk a little bit more about the perspective of the sanitation worker?"
+  },
+  {
+   "start": 2193.34,
+   "end": 2195.82,
+   "text": "So first of all, how many are on a truck right now?"
+  },
+  {
+   "start": 2195.82,
+   "end": 2196.86,
+   "text": "Two. There's two people."
+  },
+  {
+   "start": 2196.86,
+   "end": 2197.82,
+   "text": "Currently. Yes."
+  },
+  {
+   "start": 2197.82,
+   "end": 2199.74,
+   "text": "And it will still be two under the new."
+  },
+  {
+   "start": 2199.74,
+   "end": 2200.94,
+   "text": "That's correct. Yes."
+  },
+  {
+   "start": 2200.94,
+   "end": 2205.66,
+   "text": "And how does they're like walk me through literally what they physically do, they go and collect it,"
+  },
+  {
+   "start": 2205.66,
+   "end": 2208.94,
+   "text": "et cetera. How does it look different now or future versus now?"
+  },
+  {
+   "start": 2208.94,
+   "end": 2211.82,
+   "text": "Yeah, so sanitation workers have an incredibly difficult job."
+  },
+  {
+   "start": 2211.82,
+   "end": 2218.42,
+   "text": "They're out there collecting 12 to 13 tons of trash in all weather, in all conditions."
+  },
+  {
+   "start": 2218.42,
+   "end": 2220.7,
+   "text": "They can't say, you know, I couldn't get to it today."
+  },
+  {
+   "start": 2220.7,
+   "end": 2221.22,
+   "text": "Right?"
+  },
+  {
+   "start": 2221.22,
+   "end": 2223.18,
+   "text": "There's an expectation that it will be gone."
+  },
+  {
+   "start": 2223.18,
+   "end": 2228.82,
+   "text": "And about 50% of their line of duty injuries are sprains and strains from throwing bags."
+  },
+  {
+   "start": 2228.82,
+   "end": 2231.54,
+   "text": "So we're excited to see that go away."
+  },
+  {
+   "start": 2231.54,
+   "end": 2235.78,
+   "text": "There are about 6,500 people with the title of sanitation worker out of 10,000 people total"
+  },
+  {
+   "start": 2235.78,
+   "end": 2236.58,
+   "text": "at the department."
+  },
+  {
+   "start": 2236.58,
+   "end": 2238.74,
+   "text": "So those are the people who are actually collecting and processing"
+  },
+  {
+   "start": 2238.74,
+   "end": 2244.66,
+   "text": "your trash, they are subject to a number of hazards on the job."
+  },
+  {
+   "start": 2244.66,
+   "end": 2248.5,
+   "text": "One thing we've seen a big increase is being poked by needles."
+  },
+  {
+   "start": 2248.5,
+   "end": 2253.46,
+   "text": "We assume it's from an increase in GLP1 usage with people buying them online."
+  },
+  {
+   "start": 2253.46,
+   "end": 2256.06,
+   "text": "And it comes with an instruction booklet, but they don't necessarily read it"
+  },
+  {
+   "start": 2256.06,
+   "end": 2257.86,
+   "text": "because it came from an online pharmacy and whatever."
+  },
+  {
+   "start": 2257.86,
+   "end": 2258.98,
+   "text": "And then they think, this is trash."
+  },
+  {
+   "start": 2258.98,
+   "end": 2261.3,
+   "text": "I put it in the bag and it goes away."
+  },
+  {
+   "start": 2261.3,
+   "end": 2264.38,
+   "text": "And so a big thing that we want people to remember, of course, is a human being"
+  },
+  {
+   "start": 2264.38,
+   "end": 2265.9,
+   "text": "handles your garbage."
+  },
+  {
+   "start": 2265.9,
+   "end": 2274.14,
+   "text": "But the move to mechanize collection, the side loading truck in high density areas will make a huge difference for the backs and knees of sanitation workers."
+  },
+  {
+   "start": 2275.34,
+   "end": 2280.02,
+   "text": "They go out, they begin their day with a roll call at their garage."
+  },
+  {
+   "start": 2280.98,
+   "end": 2283.18,
+   "text": "I mentioned the cities divided into 59 districts."
+  },
+  {
+   "start": 2283.22,
+   "end": 2285.02,
+   "text": "They start at one of their assigned district."
+  },
+  {
+   "start": 2285.46,
+   "end": 2287.34,
+   "text": "They do a roll call, they get their assignment for the day."
+  },
+  {
+   "start": 2287.34,
+   "end": 2291.26,
+   "text": "There's a big electronic board where they find out where they're working that day."
+  },
+  {
+   "start": 2291.26,
+   "end": 2294.54,
+   "text": "They go out with their partner and they collect the trash."
+  },
+  {
+   "start": 2294.54,
+   "end": 2300.34,
+   "text": "And then in many but not all districts, they get to dump it at the transfer station on the same shift."
+  },
+  {
+   "start": 2300.54,
+   "end": 2307.86,
+   "text": "Some districts where the routes are optimized differently, it's another shift comes in and empties the truck so that it's empty when people come back in the morning."
+  },
+  {
+   "start": 2309.18,
+   "end": 2312.26,
+   "text": "These are people who deal with every possible situation you can imagine."
+  },
+  {
+   "start": 2312.26,
+   "end": 2317.1,
+   "text": "And if we can get it so that they are not lifting your garbage as much, it will make a huge difference."
+  },
+  {
+   "start": 2317.34,
+   "end": 2320.34,
+   "text": "What happens to bulky waste under the new system?"
+  },
+  {
+   "start": 2320.34,
+   "end": 2324.34,
+   "text": "Because one of the nice things about New York City right now is, you know,"
+  },
+  {
+   "start": 2324.34,
+   "end": 2329.1,
+   "text": "you can put a couch on a curb and sometimes people will just take it and use it on their own."
+  },
+  {
+   "start": 2329.1,
+   "end": 2334.1,
+   "text": "But if they don't, then the trash collectors will come and they'll throw it away and you don't have to pay extra to do that."
+  },
+  {
+   "start": 2334.1,
+   "end": 2337.94,
+   "text": "Yeah, no change. If there's an item that doesn't fit in your bin, you know, a couch is a great example."
+  },
+  {
+   "start": 2337.94,
+   "end": 2340.42,
+   "text": "Just leave it next to it. A truck will still be coming down."
+  },
+  {
+   "start": 2341.14,
+   "end": 2345.1,
+   "text": "We hope to find efficiencies at full rollout and have to run fewer of the trucks,"
+  },
+  {
+   "start": 2345.1,
+   "end": 2349.86,
+   "text": "the rear loader, the sort of traditional collection truck that can get bulky items."
+  },
+  {
+   "start": 2349.86,
+   "end": 2352.54,
+   "text": "But that was actually one of the things we learned from Barcelona."
+  },
+  {
+   "start": 2352.54,
+   "end": 2356.86,
+   "text": "Barcelona's often held up as the gold standard of waste management in urban environment."
+  },
+  {
+   "start": 2356.86,
+   "end": 2361.42,
+   "text": "We talked to them at the beginning of this process and asked them quite a few questions"
+  },
+  {
+   "start": 2361.42,
+   "end": 2365.1,
+   "text": "about what worked and also what they would have done differently."
+  },
+  {
+   "start": 2365.1,
+   "end": 2369.06,
+   "text": "And it was interesting because American urbanists will tell you that they're, that Barcelona"
+  },
+  {
+   "start": 2369.06,
+   "end": 2370.06,
+   "text": "is perfect."
+  },
+  {
+   "start": 2370.06,
+   "end": 2371.06,
+   "text": "We should just do this."
+  },
+  {
+   "start": 2371.06,
+   "end": 2373.2,
+   "text": "And the Barcelona people were like, we still have a lot of issues."
+  },
+  {
+   "start": 2373.2,
+   "end": 2378.02,
+   "text": "One of which was that they had converted their fleet too heavily to side loaders and then"
+  },
+  {
+   "start": 2378.02,
+   "end": 2381.82,
+   "text": "learned well actually people still put a loose bag next to it once in a while"
+  },
+  {
+   "start": 2381.82,
+   "end": 2385.82,
+   "text": "they still need the couch and they had to go back and get a different truck so"
+  },
+  {
+   "start": 2385.82,
+   "end": 2389.9,
+   "text": "we're making sure to keep that as part of the program. Just out of curiosity you"
+  },
+  {
+   "start": 2389.9,
+   "end": 2393.54,
+   "text": "tell in this international exploration did you ever look into Mexico City"
+  },
+  {
+   "start": 2393.54,
+   "end": 2399.06,
+   "text": "because I've never been to a city that's a more clean and B you can't find a"
+  },
+  {
+   "start": 2399.06,
+   "end": 2401.98,
+   "text": "trash can for the life of you and I'm like where do people like put there like"
+  },
+  {
+   "start": 2401.98,
+   "end": 2405.82,
+   "text": "you buy something from a street food vendor you have this wrapper and I'm"
+  },
+  {
+   "start": 2405.82,
+   "end": 2407.34,
+   "text": "I don't know where to throw it away."
+  },
+  {
+   "start": 2407.34,
+   "end": 2408.86,
+   "text": "There's no trash cans anywhere."
+  },
+  {
+   "start": 2408.86,
+   "end": 2411.02,
+   "text": "And yet the streets are spotless."
+  },
+  {
+   "start": 2411.02,
+   "end": 2411.86,
+   "text": "I don't get it."
+  },
+  {
+   "start": 2411.86,
+   "end": 2413.18,
+   "text": "I'm curious if you have a real message in there."
+  },
+  {
+   "start": 2413.18,
+   "end": 2414.3,
+   "text": "You know, public space litter baskets and public space"
+  },
+  {
+   "start": 2414.3,
+   "end": 2416.26,
+   "text": "maintenance are different across the world."
+  },
+  {
+   "start": 2416.26,
+   "end": 2418.1,
+   "text": "And we have talked to them and we"
+  },
+  {
+   "start": 2418.1,
+   "end": 2420.3,
+   "text": "have responsibility here for the property owner"
+  },
+  {
+   "start": 2420.3,
+   "end": 2422.54,
+   "text": "to maintain the sidewalk."
+  },
+  {
+   "start": 2422.54,
+   "end": 2425.22,
+   "text": "In Mexico City and in Tokyo, which"
+  },
+  {
+   "start": 2425.22,
+   "end": 2429.62,
+   "text": "is the other sort of famously clean streetscape city,"
+  },
+  {
+   "start": 2429.62,
+   "end": 2432.98,
+   "text": "there are community groups who are paid or tasked"
+  },
+  {
+   "start": 2432.98,
+   "end": 2433.74,
+   "text": "with maintenance."
+  },
+  {
+   "start": 2433.74,
+   "end": 2435.86,
+   "text": "And we have that as well for the business improvement"
+  },
+  {
+   "start": 2435.86,
+   "end": 2437.54,
+   "text": "districts system."
+  },
+  {
+   "start": 2437.54,
+   "end": 2441.36,
+   "text": "We did in 2018, conduct a one district pilot"
+  },
+  {
+   "start": 2441.36,
+   "end": 2443.66,
+   "text": "where we tried going with the Tokyo, Mexico City model"
+  },
+  {
+   "start": 2443.66,
+   "end": 2445.5,
+   "text": "and removed every litter basket."
+  },
+  {
+   "start": 2445.5,
+   "end": 2447.42,
+   "text": "Because people sometimes say like, oh, the litter baskets,"
+  },
+  {
+   "start": 2447.42,
+   "end": 2448.58,
+   "text": "they attract the trash."
+  },
+  {
+   "start": 2448.58,
+   "end": 2452.1,
+   "text": "You know, when people littered everywhere."
+  },
+  {
+   "start": 2452.1,
+   "end": 2457.54,
+   "text": "So that said, I don't want to preclude for your future study."
+  },
+  {
+   "start": 2457.54,
+   "end": 2461.7,
+   "text": "It is true that piles of trash attract additional trash."
+  },
+  {
+   "start": 2461.7,
+   "end": 2464.34,
+   "text": "And when you're in a neighborhood that is not containerized"
+  },
+  {
+   "start": 2464.34,
+   "end": 2465.86,
+   "text": "and you see a pile of black bags,"
+  },
+  {
+   "start": 2465.86,
+   "end": 2469.22,
+   "text": "it is natural to think I can put my garbage on top of this."
+  },
+  {
+   "start": 2469.22,
+   "end": 2471.18,
+   "text": "So my hope is that after full containerization,"
+  },
+  {
+   "start": 2471.18,
+   "end": 2473.94,
+   "text": "we can reevaluate some of that further and say,"
+  },
+  {
+   "start": 2473.94,
+   "end": 2477.42,
+   "text": "okay, now that the city broadly doesn't have trash everywhere,"
+  },
+  {
+   "start": 2477.42,
+   "end": 2479.06,
+   "text": "what can we do to limit littering"
+  },
+  {
+   "start": 2479.06,
+   "end": 2496.05,
+   "text": "and public space cleanliness issues?"
+  },
+  {
+   "start": 2496.05,
+   "end": 2497.31,
+   "text": "In Hills Pet Nutrition,"
+  },
+  {
+   "start": 2497.31,
+   "end": 2498.91,
+   "text": "sabemos que la culpa es real."
+  },
+  {
+   "start": 2498.91,
+   "end": 2500.07,
+   "text": "Por eso existe Hills,"
+  },
+  {
+   "start": 2500.07,
+   "end": 2501.73,
+   "text": "nutrición científicamente probada"
+  },
+  {
+   "start": 2501.73,
+   "end": 2503.91,
+   "text": "para darles más amor del humanamente posible."
+  },
+  {
+   "start": 2503.91,
+   "end": 2505.43,
+   "text": "Como humanos tenemos límites,"
+  },
+  {
+   "start": 2505.43,
+   "end": 2506.87,
+   "text": "That's why there are hills."
+  },
+  {
+   "start": 2506.87,
+   "end": 2509.31,
+   "text": "Find the right food at hillspad.com."
+  },
+  {
+   "start": 2509.31,
+   "end": 2510.91,
+   "text": "The science makes it for you."
+  },
+  {
+   "start": 2510.91,
+   "end": 2515.31,
+   "text": "Underdog already has team picks, player props, money lines, spreads."
+  },
+  {
+   "start": 2515.31,
+   "end": 2516.51,
+   "text": "You name it, they got it."
+  },
+  {
+   "start": 2516.51,
+   "end": 2518.31,
+   "text": "But apparently somebody over there said,"
+  },
+  {
+   "start": 2518.31,
+   "end": 2519.31,
+   "text": "you know what's missing?"
+  },
+  {
+   "start": 2519.31,
+   "end": 2522.43,
+   "text": "Screaming like a maniac about a rookie card on your couch."
+  },
+  {
+   "start": 2522.43,
+   "end": 2523.83,
+   "text": "And we love them for that."
+  },
+  {
+   "start": 2523.83,
+   "end": 2525.99,
+   "text": "Because Underdog now has rips."
+  },
+  {
+   "start": 2525.99,
+   "end": 2528.51,
+   "text": "You get a digital pack starting at just five bucks."
+  },
+  {
+   "start": 2528.51,
+   "end": 2531.35,
+   "text": "You check the live odds, see which grails you could pull,"
+  },
+  {
+   "start": 2531.35,
+   "end": 2534.31,
+   "text": "then rip it open to reveal a real physical card."
+  },
+  {
+   "start": 2534.31,
+   "end": 2535.71,
+   "text": "And the Grails are no joke."
+  },
+  {
+   "start": 2535.71,
+   "end": 2540.67,
+   "text": "They have cards up to $125,000 in value, and plenty to pull."
+  },
+  {
+   "start": 2540.67,
+   "end": 2543.31,
+   "text": "From football and basketball to Pokemon,"
+  },
+  {
+   "start": 2543.31,
+   "end": 2546.35,
+   "text": "with new limited edition packs dropping regularly."
+  },
+  {
+   "start": 2546.35,
+   "end": 2548.67,
+   "text": "Even cooler, you can decide to keep the card"
+  },
+  {
+   "start": 2548.67,
+   "end": 2550.95,
+   "text": "and Underdog will ship it straight to your home,"
+  },
+  {
+   "start": 2550.95,
+   "end": 2554.91,
+   "text": "or sell it back instantly at 100% of its fair market value."
+  },
+  {
+   "start": 2554.91,
+   "end": 2556.79,
+   "text": "And the cash goes right in your account."
+  },
+  {
+   "start": 2556.79,
+   "end": 2559.63,
+   "text": "No listing it online, no stranger low-balling you"
+  },
+  {
+   "start": 2559.63,
+   "end": 2563.59,
+   "text": "in the messages, just rip, reveal, and cash out instantly."
+  },
+  {
+   "start": 2563.59,
+   "end": 2565.15,
+   "text": "or make some room on your shelf."
+  },
+  {
+   "start": 2565.15,
+   "end": 2567.71,
+   "text": "Download Underdog and get in on the chase."
+  },
+  {
+   "start": 2567.71,
+   "end": 2571.11,
+   "text": "Get five free RIPs packs when you deposit $5."
+  },
+  {
+   "start": 2571.11,
+   "end": 2573.95,
+   "text": "Real RIPs, real cards, real cash."
+  },
+  {
+   "start": 2573.95,
+   "end": 2576.87,
+   "text": "Only on Underdog, unleash your dog."
+  },
+  {
+   "start": 2576.87,
+   "end": 2579.51,
+   "text": "18 plus terms apply, top grails are extremely rare."
+  },
+  {
+   "start": 2579.51,
+   "end": 2582.47,
+   "text": "The world of business is constantly evolving."
+  },
+  {
+   "start": 2582.47,
+   "end": 2585.27,
+   "text": "Every day, new challenges, new opportunities,"
+  },
+  {
+   "start": 2585.27,
+   "end": 2586.83,
+   "text": "new ways of working."
+  },
+  {
+   "start": 2586.83,
+   "end": 2589.75,
+   "text": "Comcast business keeps you totally in step"
+  },
+  {
+   "start": 2589.75,
+   "end": 2592.79,
+   "text": "with secure AI-backed networking built to power"
+  },
+  {
+   "start": 2592.79,
+   "end": 2598.67,
+   "text": "the way modern business gets things done today in more than 100 countries around the world."
+  },
+  {
+   "start": 2598.67,
+   "end": 2600.23,
+   "text": "That's some serious muscle."
+  },
+  {
+   "start": 2600.23,
+   "end": 2606.55,
+   "text": "And get this, Comcast business powers over 90% of the Fortune 500 and millions of small"
+  },
+  {
+   "start": 2606.55,
+   "end": 2607.55,
+   "text": "businesses."
+  },
+  {
+   "start": 2607.55,
+   "end": 2614.03,
+   "text": "Behind it all, network engineers, cyber security specialists, support teams, thousands of experts"
+  },
+  {
+   "start": 2614.03,
+   "end": 2618.03,
+   "text": "answering your call at 2 AM like it's 2 PM."
+  },
+  {
+   "start": 2618.03,
+   "end": 2620.15,
+   "text": "Always on, always ready."
+  },
+  {
+   "start": 2620.15,
+   "end": 2621.83,
+   "text": "That's a lot of coffee."
+  },
+  {
+   "start": 2621.83,
+   "end": 2627.59,
+   "text": "partner powering how business gets done for companies of every size all around the globe."
+  },
+  {
+   "start": 2627.59,
+   "end": 2632.63,
+   "text": "When you add it all up, no one does business like Comcast Business."
+  },
+  {
+   "start": 2632.63,
+   "end": 2633.79,
+   "text": "Quick question for you."
+  },
+  {
+   "start": 2633.79,
+   "end": 2635.47,
+   "text": "How much of your day has spent typing?"
+  },
+  {
+   "start": 2635.47,
+   "end": 2638.67,
+   "text": "Email, Slack, Notes, prompts to chat GPT."
+  },
+  {
+   "start": 2638.67,
+   "end": 2640.39,
+   "text": "Whisper flow is a voice to text app."
+  },
+  {
+   "start": 2640.39,
+   "end": 2642.87,
+   "text": "Instead of typing, you're talking it types for you."
+  },
+  {
+   "start": 2642.87,
+   "end": 2648.67,
+   "text": "In any app on your Mac, Windows, iPhone, or Android, it takes out the ums, fixes the typos,"
+  },
+  {
+   "start": 2648.67,
+   "end": 2650.63,
+   "text": "and the result sounds like you wrote it."
+  },
+  {
+   "start": 2650.63,
+   "end": 2655.99,
+   "text": "times faster than typing. So the email that used to take two minutes now takes 30 seconds."
+  },
+  {
+   "start": 2655.99,
+   "end": 2662.15,
+   "text": "WhisperFlow is free. Download it at whisperflow.ai. That's wisprflow.ai."
+  },
+  {
+   "start": 2663.27,
+   "end": 2667.83,
+   "text": "This is a slightly random question, but what happened to the anti-literating"
+  },
+  {
+   "start": 2667.83,
+   "end": 2672.63,
+   "text": "campaigns of like the 80s and 90s, I guess as far back as the 70s, because I feel like you just"
+  },
+  {
+   "start": 2672.63,
+   "end": 2676.79,
+   "text": "don't see them as much anymore. And it's not like, I don't think you can look at New York and say"
+  },
+  {
+   "start": 2676.79,
+   "end": 2678.79,
+   "text": "mission accomplished, there's no more littering."
+  },
+  {
+   "start": 2678.79,
+   "end": 2684.79,
+   "text": "I agree. I will say that I do think that there's some confirmation bias and selective memory about these"
+  },
+  {
+   "start": 2684.79,
+   "end": 2692.79,
+   "text": "because we ran a multimillion dollar one last year, the We Hard NYC anti-littering campaign. We ran"
+  },
+  {
+   "start": 2692.79,
+   "end": 2698.79,
+   "text": "one that was well into the six figures recently that had a picture of a finger pointing up into"
+  },
+  {
+   "start": 2698.79,
+   "end": 2702.47,
+   "text": "an NYC litter basket. Instead of you see someone littering, tell them where to stick it. We ran a"
+  },
+  {
+   "start": 2702.47,
+   "end": 2703.71,
+   "text": "A few of these."
+  },
+  {
+   "start": 2703.71,
+   "end": 2706.61,
+   "text": "And the issue is, I think, probably the same one"
+  },
+  {
+   "start": 2706.61,
+   "end": 2708.83,
+   "text": "that you find across the media landscape, right?"
+  },
+  {
+   "start": 2708.83,
+   "end": 2711.59,
+   "text": "Of the monoculture is long over."
+  },
+  {
+   "start": 2711.59,
+   "end": 2715.07,
+   "text": "And we try to do a tremendous amount of littering outreach."
+  },
+  {
+   "start": 2715.07,
+   "end": 2717.87,
+   "text": "But this came up a lot in January, February, this year,"
+  },
+  {
+   "start": 2717.87,
+   "end": 2721.19,
+   "text": "when there was a sort of persistent dog waste issue."
+  },
+  {
+   "start": 2721.19,
+   "end": 2721.63,
+   "text": "Oh, yeah."
+  },
+  {
+   "start": 2721.63,
+   "end": 2724.15,
+   "text": "And I would often remind people that as frustrating as it is"
+  },
+  {
+   "start": 2724.15,
+   "end": 2726.99,
+   "text": "and as much as we do want to and are planning to do more,"
+  },
+  {
+   "start": 2726.99,
+   "end": 2729.11,
+   "text": "there is no one in the city who doesn't clean up"
+  },
+  {
+   "start": 2729.11,
+   "end": 2732.15,
+   "text": "there for their dog because they don't know the rules."
+  },
+  {
+   "start": 2732.15,
+   "end": 2737.31,
+   "text": "Of course, outreach and education is great, but it's not like they go, oh, yeah, I didn't"
+  },
+  {
+   "start": 2737.31,
+   "end": 2741.03,
+   "text": "know you had to clean up after your dog, and now I saw the ad."
+  },
+  {
+   "start": 2741.03,
+   "end": 2742.31,
+   "text": "We do them."
+  },
+  {
+   "start": 2742.31,
+   "end": 2745.35,
+   "text": "Every sanitation truck comes with a poster space on the side."
+  },
+  {
+   "start": 2745.35,
+   "end": 2749.75,
+   "text": "We put anti-literating messages on those posters frequently."
+  },
+  {
+   "start": 2749.75,
+   "end": 2754.71,
+   "text": "We love to do sort of, we've had longstanding relationships with the arts community."
+  },
+  {
+   "start": 2754.71,
+   "end": 2759.71,
+   "text": "You've probably seen the early 90s, David Lynch anti-literating ad that he did with"
+  },
+  {
+   "start": 2759.71,
+   "end": 2761.31,
+   "text": "the SNY."
+  },
+  {
+   "start": 2761.31,
+   "end": 2765.74,
+   "text": "something that we're interested in, but also I do think that we're at the point where we see"
+  },
+  {
+   "start": 2766.38,
+   "end": 2771.1,
+   "text": "the built environment as the bigger issue here. And I'll bring it back to some of the philosophy"
+  },
+  {
+   "start": 2771.1,
+   "end": 2775.49,
+   "text": "behind this. One of the thinkers who informed a lot of the work of the Tresh Revolution that"
+  },
+  {
+   "start": 2775.49,
+   "end": 2783.17,
+   "text": "really gets at what you're talking about is a 70s urban planner named Oscar Newman who wrote a book"
+  },
+  {
+   "start": 2783.17,
+   "end": 2788.29,
+   "text": "called Defensible Space that was basically what he did in the book was he said that controlling"
+  },
+  {
+   "start": 2788.29,
+   "end": 2794.53,
+   "text": "even for income, for age, for all demographics, he found that public housing still had a higher"
+  },
+  {
+   "start": 2794.53,
+   "end": 2800.21,
+   "text": "rate of crime than market rate housing. And so what was the cause? And he proposed that there were"
+  },
+  {
+   "start": 2800.21,
+   "end": 2806.53,
+   "text": "elements of the design of the space that caused this issue, specifically that there were significant"
+  },
+  {
+   "start": 2806.53,
+   "end": 2811.65,
+   "text": "parts of many urban public housing developments that didn't feel like they belonged to anyone."
+  },
+  {
+   "start": 2811.65,
+   "end": 2818.38,
+   "text": "They were everyone's. And so he proposed a design model that would be did. So the most"
+  },
+  {
+   "start": 2818.38,
+   "end": 2826.3,
+   "text": "famous example of his design is the Yonkers row houses that were the subject of Lisa Belkin's"
+  },
+  {
+   "start": 2826.3,
+   "end": 2832.3,
+   "text": "book Show Me a Hero that won her the Pulitzer I guess in the late 90s. A big part of what we were"
+  },
+  {
+   "start": 2832.3,
+   "end": 2838.94,
+   "text": "thinking with this was how do we apply that same finding about crime to cleanliness? What do we do"
+  },
+  {
+   "start": 2839.5,
+   "end": 2845.66,
+   "text": "that makes it so that every part of the city belongs to someone? So that cleanliness is not"
+  },
+  {
+   "start": 2845.66,
+   "end": 2850.5,
+   "text": "just about trash removal, but about real care for public spaces."
+  },
+  {
+   "start": 2850.5,
+   "end": 2853.9,
+   "text": "That's one of the reasons why the empire bins are assigned to a specific building rather"
+  },
+  {
+   "start": 2853.9,
+   "end": 2854.9,
+   "text": "than shared."
+  },
+  {
+   "start": 2854.9,
+   "end": 2860.78,
+   "text": "It's one of the reasons that we have done a lot of sort of continued expansion of the"
+  },
+  {
+   "start": 2860.78,
+   "end": 2864.02,
+   "text": "property owners are required to clean 18 inches of the street, you know, that we've done a"
+  },
+  {
+   "start": 2864.02,
+   "end": 2870.34,
+   "text": "lot of work on that, that we have been so focused on expanding the ways in which we enforce"
+  },
+  {
+   "start": 2870.34,
+   "end": 2874.66,
+   "text": "alternate side parking, street sweeping regulations, because there should be no part of the city"
+  },
+  {
+   "start": 2874.66,
+   "end": 2878.9,
+   "text": "where someone can litter or someone can observe someone else litter and think that is not my fault."
+  },
+  {
+   "start": 2878.9,
+   "end": 2883.22,
+   "text": "You know, and the design that Newman put into place has been broadly seen as effective and"
+  },
+  {
+   "start": 2883.22,
+   "end": 2887.54,
+   "text": "we're hopeful that over the next five or so years we'll see those same design elements work on the"
+  },
+  {
+   "start": 2887.54,
+   "end": 2893.38,
+   "text": "cleanliness space. Tracy, is it well known that don't mess with Texas, that phrase you hear a lot,"
+  },
+  {
+   "start": 2893.38,
+   "end": 2897.86,
+   "text": "was an anti-literating thing? I know about it because my dad's Texas. I lived in Dallas."
+  },
+  {
+   "start": 2897.86,
+   "end": 2901.7,
+   "text": "You know, now everyone don't mess with Texas and people think it's some sort of political thing."
+  },
+  {
+   "start": 2901.7,
+   "end": 2904.06,
+   "text": "And it literally is just, and it still is."
+  },
+  {
+   "start": 2904.06,
+   "end": 2906.14,
+   "text": "No, I mean, some of the anti-literating campaigns,"
+  },
+  {
+   "start": 2906.14,
+   "end": 2906.98,
+   "text": "it's iconic."
+  },
+  {
+   "start": 2906.98,
+   "end": 2908.22,
+   "text": "Exactly."
+  },
+  {
+   "start": 2908.22,
+   "end": 2911.5,
+   "text": "But to your point, I mean, this is also the,"
+  },
+  {
+   "start": 2911.5,
+   "end": 2913.74,
+   "text": "this is also the problem with public shaming, by the way."
+  },
+  {
+   "start": 2913.74,
+   "end": 2915.5,
+   "text": "If you see someone littering,"
+  },
+  {
+   "start": 2915.5,
+   "end": 2917.58,
+   "text": "they probably know what they're doing is bad."
+  },
+  {
+   "start": 2917.58,
+   "end": 2920.74,
+   "text": "And so pointing out to someone who's doing a bad thing,"
+  },
+  {
+   "start": 2920.74,
+   "end": 2921.94,
+   "text": "that what they're doing is bad"
+  },
+  {
+   "start": 2921.94,
+   "end": 2924.5,
+   "text": "is a little bit risky in New York sometimes."
+  },
+  {
+   "start": 2924.5,
+   "end": 2925.48,
+   "text": "It could be, yeah."
+  },
+  {
+   "start": 2925.48,
+   "end": 2927.7,
+   "text": "I'm still, I'm pro, I think I'm pro-shaming."
+  },
+  {
+   "start": 2927.7,
+   "end": 2930.26,
+   "text": "I'm pro-public shaming, but that's different"
+  },
+  {
+   "start": 2930.26,
+   "end": 2933.46,
+   "text": "from saying that like I'm comfortable doing it constantly."
+  },
+  {
+   "start": 2933.46,
+   "end": 2935.26,
+   "text": "We don't think of anything we do as shame."
+  },
+  {
+   "start": 2935.26,
+   "end": 2936.38,
+   "text": "We just want people to know,"
+  },
+  {
+   "start": 2936.38,
+   "end": 2938.18,
+   "text": "if you are someone who cares about your neighborhood,"
+  },
+  {
+   "start": 2938.18,
+   "end": 2939.02,
+   "text": "you are not alone."
+  },
+  {
+   "start": 2939.02,
+   "end": 2941.74,
+   "text": "You are actually in the majority, not the person littering."
+  },
+  {
+   "start": 2941.74,
+   "end": 2943.42,
+   "text": "Can you talk a little bit about,"
+  },
+  {
+   "start": 2943.42,
+   "end": 2947.02,
+   "text": "you mentioned, okay, this containerization,"
+  },
+  {
+   "start": 2947.02,
+   "end": 2949.1,
+   "text": "it's in West Harlem, it's about to be in Brooklyn."
+  },
+  {
+   "start": 2949.1,
+   "end": 2950.38,
+   "text": "So that's two of 59."
+  },
+  {
+   "start": 2950.38,
+   "end": 2951.22,
+   "text": "Yes."
+  },
+  {
+   "start": 2951.22,
+   "end": 2952.06,
+   "text": "And it will start going much faster."
+  },
+  {
+   "start": 2952.06,
+   "end": 2953.62,
+   "text": "What is the roadmap?"
+  },
+  {
+   "start": 2953.62,
+   "end": 2956.74,
+   "text": "And like you said, like the mayor is committed"
+  },
+  {
+   "start": 2956.74,
+   "end": 2957.78,
+   "text": "to funding it through."
+  },
+  {
+   "start": 2957.78,
+   "end": 2962.7,
+   "text": "Does that mean it's not guaranteed currently that it will be rolled out to the entire?"
+  },
+  {
+   "start": 2962.7,
+   "end": 2964.06,
+   "text": "No, it's guaranteed."
+  },
+  {
+   "start": 2964.06,
+   "end": 2966.5,
+   "text": "It's I mean, we do annual budget cycles here."
+  },
+  {
+   "start": 2966.5,
+   "end": 2970.94,
+   "text": "So he's not literally there, but the commitment is as good as it gets to roll this out."
+  },
+  {
+   "start": 2970.94,
+   "end": 2973.62,
+   "text": "And we've got strong support from the city council on this too."
+  },
+  {
+   "start": 2973.86,
+   "end": 2979.59,
+   "text": "You know, it's funny when we first started this, we heard a lot of concerns about pushback"
+  },
+  {
+   "start": 2979.59,
+   "end": 2981.59,
+   "text": "and those concerns were mostly conceptual."
+  },
+  {
+   "start": 2981.91,
+   "end": 2983.95,
+   "text": "I bet people will be mad about parking."
+  },
+  {
+   "start": 2983.95,
+   "end": 2984.95,
+   "text": "Oh, yeah. We heard that a lot."
+  },
+  {
+   "start": 2984.95,
+   "end": 2987.51,
+   "text": "Very few people are actually mad about parking, but we heard a lot."
+  },
+  {
+   "start": 2987.51,
+   "end": 2988.75,
+   "text": "I bet people are going to push back."
+  },
+  {
+   "start": 2988.75,
+   "end": 2992.71,
+   "text": "So as far as the rollout, it took, you know, 50 years to do the first district,"
+  },
+  {
+   "start": 2992.75,
+   "end": 2996.43,
+   "text": "another year to do the second, but we're going to do the remaining 57 in about"
+  },
+  {
+   "start": 2996.43,
+   "end": 2998.75,
+   "text": "five years as trucks start rolling off the line."
+  },
+  {
+   "start": 2998.79,
+   "end": 3004.23,
+   "text": "Can you talk a little bit more about, you know, as you, you, you concede it to one"
+  },
+  {
+   "start": 3004.23,
+   "end": 3008.23,
+   "text": "fact, which is that you can't just copy and paste and eat other cities model"
+  },
+  {
+   "start": 3008.23,
+   "end": 3008.99,
+   "text": "onto New York City."
+  },
+  {
+   "start": 3009.31,
+   "end": 3012.75,
+   "text": "So it's not, you know, even if containerization, et cetera, works, it's a"
+  },
+  {
+   "start": 3012.75,
+   "end": 3013.31,
+   "text": "little different."
+  },
+  {
+   "start": 3013.31,
+   "end": 3014.95,
+   "text": "We don't have, we might not have alleys."
+  },
+  {
+   "start": 3014.95,
+   "end": 3015.75,
+   "text": "That's a difference."
+  },
+  {
+   "start": 3015.75,
+   "end": 3031.75,
+   "text": "We might whatever every city is a little bit different. But then as you mentioned, people can take a little bit too far and convince themselves that New York is just different. Yes, it looks like you can have and then people really get dug in and they come up with stories. What is that? Where does this impulse come from?"
+  },
+  {
+   "start": 3031.75,
+   "end": 3038.47,
+   "text": "that all around you look at trash and you have like there was an article in the New Yorker about like a trash anthropologist and do a"
+  },
+  {
+   "start": 3038.47,
+   "end": 3043.23,
+   "text": "Some quote. It's like, oh, you don't understand New York. Is it really a city? It's a series of sub"
+  },
+  {
+   "start": 3044.03,
+   "end": 3047.67,
+   "text": "Societies and blah blah blah. It's just not like other cities and that's why it doesn't work"
+  },
+  {
+   "start": 3047.67,
+   "end": 3053.37,
+   "text": "Where does this impulse come from this sort of I would call it like an anti-New York exceptionalism"
+  },
+  {
+   "start": 3053.37,
+   "end": 3059.27,
+   "text": "We just can't there's something fundamental. We just can't have cleanest. I don't even think it's anti-New York exceptionalism"
+  },
+  {
+   "start": 3059.27,
+   "end": 3062.37,
+   "text": "I think it's just a different manifestation of the same New York exceptionalism."
+  },
+  {
+   "start": 3062.37,
+   "end": 3064.83,
+   "text": "Our trash is special in some ways."
+  },
+  {
+   "start": 3064.83,
+   "end": 3067.63,
+   "text": "Our bags are a beautiful part of our landscape."
+  },
+  {
+   "start": 3067.63,
+   "end": 3069.11,
+   "text": "And of course they're not."
+  },
+  {
+   "start": 3069.11,
+   "end": 3071.95,
+   "text": "And the waste stream has changed many times before."
+  },
+  {
+   "start": 3071.95,
+   "end": 3076.43,
+   "text": "One of the impotences, impotences, impotences for the creation of the Department of Sanitation"
+  },
+  {
+   "start": 3076.43,
+   "end": 3080.35,
+   "text": "in the first place was that in the mid to late 19th century, there were dead horses all over"
+  },
+  {
+   "start": 3080.35,
+   "end": 3083.43,
+   "text": "the city and nobody whose job it was to pick them up."
+  },
+  {
+   "start": 3083.43,
+   "end": 3088.59,
+   "text": "And then throughout the early 20th century, many buildings had in building incinerators."
+  },
+  {
+   "start": 3088.59,
+   "end": 3091.99,
+   "text": "primary waste stream that we picked up was Piles of Ash."
+  },
+  {
+   "start": 3091.99,
+   "end": 3093.59,
+   "text": "And then that moved to solid waste."
+  },
+  {
+   "start": 3093.59,
+   "end": 3095.39,
+   "text": "We had the landfill model."
+  },
+  {
+   "start": 3095.39,
+   "end": 3097.95,
+   "text": "This stuff has changed many times before."
+  },
+  {
+   "start": 3097.95,
+   "end": 3102.23,
+   "text": "And I think it's the same nostalgic impulse that you see, like, you know, why every movie"
+  },
+  {
+   "start": 3102.23,
+   "end": 3105.59,
+   "text": "is a sequel, you know, because people want what they grew up with."
+  },
+  {
+   "start": 3105.59,
+   "end": 3110.67,
+   "text": "And I think one of the big things we're trying to do is remind people that what you should"
+  },
+  {
+   "start": 3110.67,
+   "end": 3113.27,
+   "text": "be proud of is what's under the trash, right?"
+  },
+  {
+   "start": 3113.27,
+   "end": 3116.27,
+   "text": "It's not, and you know, we've done this a lot of different ways over the years."
+  },
+  {
+   "start": 3116.27,
+   "end": 3118.07,
+   "text": "I'm sorry, did you say what's under the trash?"
+  },
+  {
+   "start": 3118.07,
+   "end": 3120.07,
+   "text": "The streets, the people, you know."
+  },
+  {
+   "start": 3120.47,
+   "end": 3126.95,
+   "text": "We have an artist that we've worked with for many decades, Meryl Lader-Manukuly did in the early 80s,"
+  },
+  {
+   "start": 3126.95,
+   "end": 3130.13,
+   "text": "designed a collection truck that's fully mirrored on the side."
+  },
+  {
+   "start": 3130.71,
+   "end": 3135.63,
+   "text": "And the idea is called the social mirror. It's a great piece and it was intended to remind people,"
+  },
+  {
+   "start": 3135.63,
+   "end": 3139.99,
+   "text": "I make the trash. Right? Yeah. When I see the trash, that's me. And"
+  },
+  {
+   "start": 3141.43,
+   "end": 3144.99,
+   "text": "unfortunately, you know, we bring it out to parades now and people go, oh, it's the, you know, selfie truck."
+  },
+  {
+   "start": 3144.99,
+   "end": 3147.79,
+   "text": "It's not the selfie truck. It's the truck with a deeper meaning behind it."
+  },
+  {
+   "start": 3147.79,
+   "end": 3155.8,
+   "text": "But to your point about reproducibility and differences, the trash in New York takes on"
+  },
+  {
+   "start": 3155.8,
+   "end": 3158.72,
+   "text": "sort of unique logistical space."
+  },
+  {
+   "start": 3158.72,
+   "end": 3161.76,
+   "text": "We don't have the alleyways, we produce certain volumes, we're our density."
+  },
+  {
+   "start": 3161.76,
+   "end": 3165.4,
+   "text": "But many cities face different challenges in the trash space and in other infrastructural"
+  },
+  {
+   "start": 3165.4,
+   "end": 3169.2,
+   "text": "areas and I know a lot of them are looking at that now."
+  },
+  {
+   "start": 3169.2,
+   "end": 3174.4,
+   "text": "Voters in Los Angeles have a ballot measure this year that would substantially rethink"
+  },
+  {
+   "start": 3174.4,
+   "end": 3177.08,
+   "text": "their structure of their public works agencies."
+  },
+  {
+   "start": 3177.08,
+   "end": 3179.88,
+   "text": "I know Portland, Oregon just reorganized"
+  },
+  {
+   "start": 3179.88,
+   "end": 3183.36,
+   "text": "its city fleet asset management, DC eliminated"
+  },
+  {
+   "start": 3183.36,
+   "end": 3185.08,
+   "text": "the deputy mayor for operations two years ago"
+  },
+  {
+   "start": 3185.08,
+   "end": 3186.68,
+   "text": "and is now rethinking that decision."
+  },
+  {
+   "start": 3186.68,
+   "end": 3189.57,
+   "text": "So, you know, these are the questions, right?"
+  },
+  {
+   "start": 3189.57,
+   "end": 3191.21,
+   "text": "It's not so much necessarily about"
+  },
+  {
+   "start": 3191.21,
+   "end": 3192.65,
+   "text": "what do you do with the trash,"
+  },
+  {
+   "start": 3192.65,
+   "end": 3196.77,
+   "text": "but what do you do to say the way I've lived for 50 years"
+  },
+  {
+   "start": 3196.77,
+   "end": 3198.89,
+   "text": "is not the only way to live, right?"
+  },
+  {
+   "start": 3198.89,
+   "end": 3202.73,
+   "text": "That, you know, just as activists in this country"
+  },
+  {
+   "start": 3202.73,
+   "end": 3206.77,
+   "text": "look and say, you know, well, you know, they have this here, I want that, you know, you"
+  },
+  {
+   "start": 3206.77,
+   "end": 3210.23,
+   "text": "know, we can have what every place has."
+  },
+  {
+   "start": 3210.23,
+   "end": 3213.37,
+   "text": "Everyone can have a standard of living that they deserve."
+  },
+  {
+   "start": 3213.37,
+   "end": 3218.25,
+   "text": "Even as you make the trash, and even as you expect someone else to just make it go away,"
+  },
+  {
+   "start": 3218.25,
+   "end": 3222.17,
+   "text": "there is more that you can do as a resident to sort of encourage responsible design around"
+  },
+  {
+   "start": 3222.17,
+   "end": 3223.26,
+   "text": "this stuff."
+  },
+  {
+   "start": 3223.26,
+   "end": 3227.76,
+   "text": "Setting the New York exceptionalism argument aside for one second and setting all of New"
+  },
+  {
+   "start": 3227.76,
+   "end": 3233.92,
+   "text": "Yorkside, do you have a favorite trash collection system internationally? Like what's your platonic"
+  },
+  {
+   "start": 3233.92,
+   "end": 3239.12,
+   "text": "ideal of a trash collection system? So there are a couple of places that had the opportunity"
+  },
+  {
+   "start": 3239.12,
+   "end": 3245.97,
+   "text": "to build them sort of from scratch. I wouldn't call them the platonic ideal because I'm very"
+  },
+  {
+   "start": 3245.97,
+   "end": 3251.33,
+   "text": "aware that these are not replicable models, but Singapore, which did a tremendous amount of"
+  },
+  {
+   "start": 3251.33,
+   "end": 3255.49,
+   "text": "greenfield development and was able to sort of put best practices in place from the beginning,"
+  },
+  {
+   "start": 3255.49,
+   "end": 3259.81,
+   "text": "And also Amsterdam, which was in a similar situation in the post-war era of being able"
+  },
+  {
+   "start": 3259.81,
+   "end": 3263.41,
+   "text": "to kind of restart a lot of their public space design. They used underground trash containers,"
+  },
+  {
+   "start": 3264.13,
+   "end": 3267.49,
+   "text": "had some advantages that I wish we would have had. You know, one of the things we learned in"
+  },
+  {
+   "start": 3267.49,
+   "end": 3272.77,
+   "text": "this process, it really surprised me. Was it there's actually no map of what's underneath the streets"
+  },
+  {
+   "start": 3272.77,
+   "end": 3277.01,
+   "text": "in New York? There's no one, you know, Con Ed knows where their stuff is and the subway knows"
+  },
+  {
+   "start": 3277.01,
+   "end": 3281.65,
+   "text": "where their stuff is, but there is not one master what we started calling the underground spaghetti."
+  },
+  {
+   "start": 3281.65,
+   "end": 3285.73,
+   "text": "All the guys who've been caught on camera coming out of the subway or out of the sewer system,"
+  },
+  {
+   "start": 3285.73,
+   "end": 3288.77,
+   "text": "they're just, they're trying to map it, right? Yeah, exactly. They're trying to figure out what's"
+  },
+  {
+   "start": 3288.77,
+   "end": 3293.33,
+   "text": "there. You know, and my hope is that that will change. And, you know, I love the fact that in"
+  },
+  {
+   "start": 3293.33,
+   "end": 3298.13,
+   "text": "in Tokyo, they have seven waste streams, whereas we've just gone from three to four."
+  },
+  {
+   "start": 3298.93,
+   "end": 3303.25,
+   "text": "They separate so many more types of material. There are things that we could take from all"
+  },
+  {
+   "start": 3303.25,
+   "end": 3309.01,
+   "text": "over the world. But I think that the biggest thing that I hope that we continue to take is just a"
+  },
+  {
+   "start": 3309.01,
+   "end": 3311.05,
+   "text": "a willingness to change."
+  },
+  {
+   "start": 3311.05,
+   "end": 3313.05,
+   "text": "By the way, if anyone's listening to this episode,"
+  },
+  {
+   "start": 3313.05,
+   "end": 3314.53,
+   "text": "you should watch it on YouTube"
+  },
+  {
+   "start": 3314.53,
+   "end": 3316.93,
+   "text": "because our guest here has a really cool jacket"
+  },
+  {
+   "start": 3316.93,
+   "end": 3318.85,
+   "text": "that I'm very jealous of."
+  },
+  {
+   "start": 3318.85,
+   "end": 3322.89,
+   "text": "And I'm always jealous of Zoran's jackets too."
+  },
+  {
+   "start": 3322.89,
+   "end": 3323.73,
+   "text": "It's just-"
+  },
+  {
+   "start": 3323.73,
+   "end": 3324.57,
+   "text": "He's got one of these."
+  },
+  {
+   "start": 3324.57,
+   "end": 3325.41,
+   "text": "Yeah, I'm sure he does."
+  },
+  {
+   "start": 3325.41,
+   "end": 3329.05,
+   "text": "And every time I see one of these press conferences,"
+  },
+  {
+   "start": 3329.05,
+   "end": 3330.69,
+   "text": "oh, that's a sick jacket."
+  },
+  {
+   "start": 3330.69,
+   "end": 3331.77,
+   "text": "It's autumn in New York."
+  },
+  {
+   "start": 3331.77,
+   "end": 3333.77,
+   "text": "No matter how cool you think your jacket is."
+  },
+  {
+   "start": 3333.77,
+   "end": 3335.77,
+   "text": "Yeah, someone has a cooler jacket."
+  },
+  {
+   "start": 3335.77,
+   "end": 3337.69,
+   "text": "So it's just part of the job."
+  },
+  {
+   "start": 3337.69,
+   "end": 3339.77,
+   "text": "Josh Goodman, thank you so much for coming on AughtThoughts."
+  },
+  {
+   "start": 3339.77,
+   "end": 3340.49,
+   "text": "Really appreciate it."
+  },
+  {
+   "start": 3340.49,
+   "end": 3341.13,
+   "text": "It was my pleasure."
+  },
+  {
+   "start": 3341.13,
+   "end": 3342.49,
+   "text": "Thank you both so much and don't litter."
+  },
+  {
+   "start": 3357.22,
+   "end": 3359.96,
+   "text": "Joe, that was a really interesting conversation."
+  },
+  {
+   "start": 3359.96,
+   "end": 3364.6,
+   "text": "Um, something that I don't think about that much, even though I'm in New York"
+  },
+  {
+   "start": 3364.6,
+   "end": 3367.96,
+   "text": "City all the time, um, how our trash actually gets collected."
+  },
+  {
+   "start": 3367.98,
+   "end": 3371.36,
+   "text": "I do think there is an underlying political architecture that is like,"
+  },
+  {
+   "start": 3371.76,
+   "end": 3375.88,
+   "text": "there, there's a major political choice in having residential garbage,"
+  },
+  {
+   "start": 3375.88,
+   "end": 3377.24,
+   "text": "not be pay as you go."
+  },
+  {
+   "start": 3377.24,
+   "end": 3377.6,
+   "text": "True."
+  },
+  {
+   "start": 3377.6,
+   "end": 3383.2,
+   "text": "Right. And so the big question is, do heavy wasters basically get subsidized by people"
+  },
+  {
+   "start": 3383.2,
+   "end": 3384.8,
+   "text": "who aren't throwing out that much?"
+  },
+  {
+   "start": 3384.8,
+   "end": 3389.36,
+   "text": "No, you're right. There's a lot. And, you know, we could have gotten into that question"
+  },
+  {
+   "start": 3389.36,
+   "end": 3394.64,
+   "text": "of like, should it be completely, I guess, socialized? One thing I appreciate, you know,"
+  },
+  {
+   "start": 3394.64,
+   "end": 3399.2,
+   "text": "people always wanted to let go. New York City paid a million and a half dollars to McKinsey"
+  },
+  {
+   "start": 3399.2,
+   "end": 3404.88,
+   "text": "to do a study on trash and they produced it. Like, it's complicated. And there's two things. One is"
+  },
+  {
+   "start": 3404.88,
+   "end": 3407.96,
+   "text": "is collecting the data, et cetera."
+  },
+  {
+   "start": 3407.96,
+   "end": 3409.92,
+   "text": "These are complicated things."
+  },
+  {
+   "start": 3409.92,
+   "end": 3412.92,
+   "text": "And two, it would be kind of weird for a city"
+  },
+  {
+   "start": 3412.92,
+   "end": 3416.64,
+   "text": "to already have had that expertise in house"
+  },
+  {
+   "start": 3416.64,
+   "end": 3419.72,
+   "text": "because you're not doing major studies"
+  },
+  {
+   "start": 3419.72,
+   "end": 3421.32,
+   "text": "of the track system every year."
+  },
+  {
+   "start": 3421.32,
+   "end": 3423.76,
+   "text": "You hopefully maybe do this once every couple of decades"
+  },
+  {
+   "start": 3423.76,
+   "end": 3425.2,
+   "text": "or something like that."
+  },
+  {
+   "start": 3425.2,
+   "end": 3426.24,
+   "text": "So I don't know."
+  },
+  {
+   "start": 3426.24,
+   "end": 3430.28,
+   "text": "I'm very like, I think people have this knee-jerk response."
+  },
+  {
+   "start": 3430.28,
+   "end": 3432.92,
+   "text": "Like why did you pay another company to tell you"
+  },
+  {
+   "start": 3432.92,
+   "end": 3435.16,
+   "text": "that this is how they do it in Barcelona."
+  },
+  {
+   "start": 3435.16,
+   "end": 3438.2,
+   "text": "Well, it's like, well, there's a lot of very interesting data."
+  },
+  {
+   "start": 3438.2,
+   "end": 3440.76,
+   "text": "This whole question of you asked the question,"
+  },
+  {
+   "start": 3440.76,
+   "end": 3446.12,
+   "text": "how do you switch from measuring weight of volume of trash?"
+  },
+  {
+   "start": 3446.12,
+   "end": 3446.84,
+   "text": "How do you do it?"
+  },
+  {
+   "start": 3446.84,
+   "end": 3448.28,
+   "text": "Doesn't seem like a trivial question."
+  },
+  {
+   "start": 3448.28,
+   "end": 3449.0,
+   "text": "I have no idea."
+  },
+  {
+   "start": 3449.0,
+   "end": 3452.08,
+   "text": "So I'm talking about bringing in a bunch of measurements,"
+  },
+  {
+   "start": 3452.08,
+   "end": 3453.48,
+   "text": "et cetera."
+  },
+  {
+   "start": 3453.48,
+   "end": 3456.96,
+   "text": "So I have an appreciation for just the amount of planning"
+  },
+  {
+   "start": 3456.96,
+   "end": 3458.24,
+   "text": "work that would have to go into this."
+  },
+  {
+   "start": 3458.24,
+   "end": 3459.0,
+   "text": "Yeah."
+  },
+  {
+   "start": 3459.0,
+   "end": 3462.84,
+   "text": "The volumetric analysis seems really difficult to me."
+  },
+  {
+   "start": 3462.84,
+   "end": 3465.2,
+   "text": "And despite that, they seem to have done it"
+  },
+  {
+   "start": 3465.2,
+   "end": 3467.12,
+   "text": "and they're getting a handle on what's needed."
+  },
+  {
+   "start": 3467.12,
+   "end": 3469.16,
+   "text": "But the other thing that's really difficult"
+  },
+  {
+   "start": 3469.16,
+   "end": 3470.88,
+   "text": "or strikes me as very difficult"
+  },
+  {
+   "start": 3470.88,
+   "end": 3473.64,
+   "text": "is the placement of the bins, right?"
+  },
+  {
+   "start": 3473.64,
+   "end": 3476.32,
+   "text": "And this idea that you are actually changing"
+  },
+  {
+   "start": 3476.32,
+   "end": 3479.36,
+   "text": "New York's landscape, hopefully for the better."
+  },
+  {
+   "start": 3479.36,
+   "end": 3481.68,
+   "text": "But in the meantime, you are taking up"
+  },
+  {
+   "start": 3481.68,
+   "end": 3485.64,
+   "text": "previously public space and having to figure out"
+  },
+  {
+   "start": 3485.64,
+   "end": 3487.86,
+   "text": "like the cost benefit analysis of doing that"
+  },
+  {
+   "start": 3487.86,
+   "end": 3490.84,
+   "text": "for literally every single building in New York."
+  },
+  {
+   "start": 3490.84,
+   "end": 3492.52,
+   "text": "your city. Yeah, that's pretty"
+  },
+  {
+   "start": 3492.52,
+   "end": 3494.32,
+   "text": "a lot to think about just like"
+  },
+  {
+   "start": 3494.32,
+   "end": 3496.2,
+   "text": "how many blocks there are. But you"
+  },
+  {
+   "start": 3496.2,
+   "end": 3497.32,
+   "text": "know what, like,"
+  },
+  {
+   "start": 3499.28,
+   "end": 3501.42,
+   "text": "I mean, I understand people park"
+  },
+  {
+   "start": 3501.42,
+   "end": 3502.96,
+   "text": "on the street and stuff like that."
+  },
+  {
+   "start": 3502.96,
+   "end": 3504.48,
+   "text": "But that's socialized to why do why"
+  },
+  {
+   "start": 3504.48,
+   "end": 3506.44,
+   "text": "do you know, that's really valuable"
+  },
+  {
+   "start": 3506.44,
+   "end": 3509.16,
+   "text": "real estate that some lucky people"
+  },
+  {
+   "start": 3509.16,
+   "end": 3511.04,
+   "text": "get to like park for free, etc."
+  },
+  {
+   "start": 3511.04,
+   "end": 3513.16,
+   "text": "So the only thing I'm going to miss"
+  },
+  {
+   "start": 3513.16,
+   "end": 3515.48,
+   "text": "is seeing the occasional rat"
+  },
+  {
+   "start": 3515.6,
+   "end": 3517.28,
+   "text": "eating pizza or something."
+  },
+  {
+   "start": 3517.28,
+   "end": 3518.72,
+   "text": "You know, I'm really interested in"
+  },
+  {
+   "start": 3518.8,
+   "end": 3520.64,
+   "text": "the war on rats. You know, that was I"
+  },
+  {
+   "start": 3520.64,
+   "end": 3526.88,
+   "text": "I thought something very, very inspiring during the Adams administration is seeing those numbers"
+  },
+  {
+   "start": 3526.88,
+   "end": 3527.88,
+   "text": "of rat sightings."
+  },
+  {
+   "start": 3527.88,
+   "end": 3530.96,
+   "text": "I remember you were a single issue voter in the war on rats."
+  },
+  {
+   "start": 3530.96,
+   "end": 3531.96,
+   "text": "Yeah, I was."
+  },
+  {
+   "start": 3531.96,
+   "end": 3532.96,
+   "text": "All right."
+  },
+  {
+   "start": 3532.96,
+   "end": 3533.96,
+   "text": "Shall we leave it there?"
+  },
+  {
+   "start": 3533.96,
+   "end": 3534.96,
+   "text": "Let's leave it there."
+  },
+  {
+   "start": 3534.96,
+   "end": 3536.84,
+   "text": "This has been another episode of the All Thoughts podcast."
+  },
+  {
+   "start": 3536.84,
+   "end": 3537.84,
+   "text": "I'm Tracy Allaway."
+  },
+  {
+   "start": 3537.84,
+   "end": 3540.12,
+   "text": "You can follow me at Tracy Allaway."
+  },
+  {
+   "start": 3540.12,
+   "end": 3541.2,
+   "text": "And I'm Joe Wiesenthal."
+  },
+  {
+   "start": 3541.2,
+   "end": 3543.2,
+   "text": "You can follow me at the stalwart."
+  },
+  {
+   "start": 3543.2,
+   "end": 3544.4,
+   "text": "Follow our guest, Josh Goodman."
+  },
+  {
+   "start": 3544.4,
+   "end": 3547.4,
+   "text": "He's at JSHGDMN."
+  },
+  {
+   "start": 3547.4,
+   "end": 3550.16,
+   "text": "Follow our producers, Carmen Rodriguez, and Carmen Armin."
+  },
+  {
+   "start": 3550.16,
+   "end": 3551.88,
+   "text": "Dash O'Bennett at Dash Bot."
+  },
+  {
+   "start": 3551.88,
+   "end": 3553.88,
+   "text": "Kale Brooks at Kale Brooks and Kevin Lozano"
+  },
+  {
+   "start": 3553.88,
+   "end": 3555.4,
+   "text": "at Kevin Lloyd Lozano."
+  },
+  {
+   "start": 3555.4,
+   "end": 3557.6,
+   "text": "And you can chat about all of these topics 24-7"
+  },
+  {
+   "start": 3557.6,
+   "end": 3560.76,
+   "text": "in our Discord, discord.gg slash OddLots."
+  },
+  {
+   "start": 3560.76,
+   "end": 3562.36,
+   "text": "And for more OddLots content,"
+  },
+  {
+   "start": 3562.36,
+   "end": 3563.56,
+   "text": "check out our daily newsletter,"
+  },
+  {
+   "start": 3563.56,
+   "end": 3566.56,
+   "text": "which you can find at lemberg.com slash oddline."
+  },
+  {
+   "start": 3566.56,
+   "end": 3568.28,
+   "text": "And if you enjoyed this conversation,"
+  },
+  {
+   "start": 3568.28,
+   "end": 3569.8,
+   "text": "if you like it, when we talk about"
+  },
+  {
+   "start": 3569.8,
+   "end": 3571.52,
+   "text": "how New York takes out its trash,"
+  },
+  {
+   "start": 3571.52,
+   "end": 3573.44,
+   "text": "then please leave us a positive review"
+  },
+  {
+   "start": 3573.44,
+   "end": 3575.32,
+   "text": "on your favorite podcast platform."
+  },
+  {
+   "start": 3575.32,
+   "end": 3576.56,
+   "text": "If you're watching on video,"
+  },
+  {
+   "start": 3576.56,
+   "end": 3579.08,
+   "text": "then please like or leave a comment"
+  },
+  {
+   "start": 3579.08,
+   "end": 3580.88,
+   "text": "or better yet, subscribe."
+  },
+  {
+   "start": 3580.88,
+   "end": 3582.92,
+   "text": "And remember, if you're a Bloomberg subscriber,"
+  },
+  {
+   "start": 3582.92,
+   "end": 3586.12,
+   "text": "you can listen to all of our episodes absolutely ad-free."
+  },
+  {
+   "start": 3586.12,
+   "end": 3588.0,
+   "text": "All you need to do is find the Bloomberg channel"
+  },
+  {
+   "start": 3588.0,
+   "end": 3591.2,
+   "text": "on Apple Podcasts and follow the instructions there."
+  },
+  {
+   "start": 3591.2,
+   "end": 3623.83,
+   "text": "Thanks for joining."
+  },
+  {
+   "start": 3623.83,
+   "end": 3626.71,
+   "text": "Underdog already has team picks, player props,"
+  },
+  {
+   "start": 3626.71,
+   "end": 3629.27,
+   "text": "money lines, spreads, you name it, they got it."
+  },
+  {
+   "start": 3629.27,
+   "end": 3630.99,
+   "text": "But apparently somebody over there said,"
+  },
+  {
+   "start": 3630.99,
+   "end": 3632.03,
+   "text": "you know what's missing?"
+  },
+  {
+   "start": 3632.03,
+   "end": 3635.15,
+   "text": "Screaming like a maniac about a rookie card on your couch."
+  },
+  {
+   "start": 3635.15,
+   "end": 3636.55,
+   "text": "And we love them for that."
+  },
+  {
+   "start": 3636.55,
+   "end": 3638.71,
+   "text": "Because Underdog now has rips."
+  },
+  {
+   "start": 3638.71,
+   "end": 3641.23,
+   "text": "You get a digital pack starting at just five bucks."
+  },
+  {
+   "start": 3641.23,
+   "end": 3644.07,
+   "text": "You check the live odds, see which grails you could pull,"
+  },
+  {
+   "start": 3644.07,
+   "end": 3647.07,
+   "text": "then rip it open to reveal a real physical card."
+  },
+  {
+   "start": 3647.07,
+   "end": 3648.47,
+   "text": "And the grails are no joke."
+  },
+  {
+   "start": 3648.47,
+   "end": 3652.03,
+   "text": "They have cards up to $125,000 in value"
+  },
+  {
+   "start": 3652.03,
+   "end": 3656.07,
+   "text": "and plenty to pull from football and basketball to Pokemon"
+  },
+  {
+   "start": 3656.07,
+   "end": 3659.11,
+   "text": "with new limited edition packs dropping regularly."
+  },
+  {
+   "start": 3659.11,
+   "end": 3661.43,
+   "text": "Even cooler, you can decide to keep the card"
+  },
+  {
+   "start": 3661.43,
+   "end": 3663.67,
+   "text": "and underdog will ship it straight to your home"
+  },
+  {
+   "start": 3663.67,
+   "end": 3667.67,
+   "text": "or sell it back instantly at 100% of its fair market value."
+  },
+  {
+   "start": 3667.67,
+   "end": 3672.11,
+   "text": "When the cash goes right in your account, no listing it online, no stranger lobolling"
+  },
+  {
+   "start": 3672.11,
+   "end": 3676.45,
+   "text": "you in the messages, just rip, reveal, and cash out instantly."
+  },
+  {
+   "start": 3676.45,
+   "end": 3678.31,
+   "text": "Or make some room on your shelf."
+  },
+  {
+   "start": 3678.31,
+   "end": 3680.55,
+   "text": "Download Underdog and get in on the chase."
+  },
+  {
+   "start": 3680.55,
+   "end": 3683.99,
+   "text": "Get five free RIPs packs when you deposit $5.00."
+  },
+  {
+   "start": 3683.99,
+   "end": 3686.91,
+   "text": "Real RIPs, real cards, real cash."
+  },
+  {
+   "start": 3686.91,
+   "end": 3688.55,
+   "text": "Only on Underdog."
+  },
+  {
+   "start": 3688.55,
+   "end": 3689.55,
+   "text": "Unleash your dog."
+  },
+  {
+   "start": 3689.55,
+   "end": 3690.83,
+   "text": "18 plus terms apply."
+  },
+  {
+   "start": 3690.83,
+   "end": 3692.43,
+   "text": "Top Grails are extremely rare."
+  },
+  {
+   "start": 3692.43,
+   "end": 3696.91,
+   "text": "If you listen to financial news, you know a lot of time to spend thinking about what's"
+  },
+  {
+   "start": 3696.91,
+   "end": 3701.83,
+   "text": "the next opportunity, the next investment, the next move."
+  },
+  {
+   "start": 3701.83,
+   "end": 3704.39,
+   "text": "But sometimes what matters most is being ready"
+  },
+  {
+   "start": 3704.39,
+   "end": 3706.45,
+   "text": "for what you never saw coming."
+  },
+  {
+   "start": 3706.45,
+   "end": 3709.23,
+   "text": "For more than 75 years, Cincinnati Insurance"
+  },
+  {
+   "start": 3709.23,
+   "end": 3710.93,
+   "text": "has worked with independent agents"
+  },
+  {
+   "start": 3710.93,
+   "end": 3714.67,
+   "text": "to help protect businesses, homes, valuables, and more."
+  },
+  {
+   "start": 3714.67,
+   "end": 3716.15,
+   "text": "Because planning for the future"
+  },
+  {
+   "start": 3716.15,
+   "end": 3718.49,
+   "text": "isn't only about knowing what's next."
+  },
+  {
+   "start": 3718.49,
+   "end": 3720.23,
+   "text": "It's about making sure you're ready"
+  },
+  {
+   "start": 3720.23,
+   "end": 3722.03,
+   "text": "for what you can't predict."
+  },
+  {
+   "start": 3722.03,
+   "end": 3725.07,
+   "text": "Let Cincinnati Insurance make your bad day better."
+  },
+  {
+   "start": 3725.07,
+   "end": 3729.07,
+   "text": "Find an independent agent at cinefin.com."
+  },
+  {
+   "start": 3729.07,
+   "end": 3731.87,
+   "text": "Most meeting note takers get the easy words right,"
+  },
+  {
+   "start": 3731.87,
+   "end": 3733.99,
+   "text": "and the important ones wrong."
+  },
+  {
+   "start": 3733.99,
+   "end": 3736.19,
+   "text": "The client's name, the acronym,"
+  },
+  {
+   "start": 3736.19,
+   "end": 3739.61,
+   "text": "WhisperFlow NoteTaker is built to get the hard words right."
+  },
+  {
+   "start": 3739.61,
+   "end": 3741.87,
+   "text": "It takes notes on any meeting platform."
+  },
+  {
+   "start": 3741.87,
+   "end": 3745.23,
+   "text": "Zoom, Google Meet, Teams, even WhatsApp calls,"
+  },
+  {
+   "start": 3745.23,
+   "end": 3747.07,
+   "text": "keeps every meeting searchable"
+  },
+  {
+   "start": 3747.07,
+   "end": 3749.15,
+   "text": "and connects to cloud or chat GPTs."
+  },
+  {
+   "start": 3749.15,
+   "end": 3752.43,
+   "text": "So you can ask, what did we agree to last Tuesday?"
+  },
+  {
+   "start": 3752.43,
+   "end": 3755.91,
+   "text": "free to try on Mac and Windows at whisperflow.ai."
+  },
+  {
+   "start": 3755.91,
+   "end": 3758.83,
+   "text": "That's w-i-s-p-r-flow.ai."
+  },
+  {
+   "start": 3758.83,
+   "end": 3761.79,
+   "text": "For big business, AI opened up a world of promise,"
+  },
+  {
+   "start": 3761.79,
+   "end": 3765.23,
+   "text": "but that world of promise turned into a world of pain,"
+  },
+  {
+   "start": 3765.23,
+   "end": 3767.99,
+   "text": "costs spiraling, data trapped, security"
+  },
+  {
+   "start": 3767.99,
+   "end": 3769.75,
+   "text": "and governance risks multiplying,"
+  },
+  {
+   "start": 3769.75,
+   "end": 3771.99,
+   "text": "and ROI out of reach."
+  },
+  {
+   "start": 3771.99,
+   "end": 3774.03,
+   "text": "That's why enterprises turned to Bumi"
+  },
+  {
+   "start": 3774.03,
+   "end": 3776.33,
+   "text": "to connect data, apps and AI,"
+  },
+  {
+   "start": 3776.33,
+   "end": 3779.83,
+   "text": "helping them operate securely, efficiently and at scale."
+  },
+  {
+   "start": 3779.83,
+   "end": 3782.23,
+   "text": "Bumi turns a world of AI pain"
+  },
+  {
+   "start": 3782.23,
+   "end": 3784.11,
+   "text": "into a world of AI gain."
+  },
+  {
+   "start": 3784.11,
+   "end": 3786.23,
+   "text": "As Boomi says, we got you."
+  },
+  {
+   "start": 3786.23,
+   "end": 3787.95,
+   "text": "Head to boomi.com."
+  },
+  {
+   "start": 3787.95,
+   "end": 3790.95,
+   "text": "That's B-O-O-M-I dot com."
+  }
+ ],
+ "seconds": 134.0,
+ "file": "odd-lots__this-is-how-new-york-city-takes-out-its-tr/take1.mp3",
+ "model": "small"
+}

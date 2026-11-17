@@ -1,0 +1,781 @@
+EPISODE hard-fork__jensen-huang-is-out-at-nvidia TAKE 0
+
+start : 0.96
+end   : 36.68
+text  : are already spending more on ai than they realize ai token spend is growing faster than any other category of business spend and most businesses have almost zero 
+        visibility into where it s going ramp is the only company that works with you to ensure your ai spend is going to the highest roi areas stop guessing where your ai spend 
+        is going get started with ramp and if you re to ramp you can get $250 off at ramp com slash hard fork go to ramp com slash hard fork ramp com slash hard fork jensen wong
+
+start : 184.36
+end   : 215.23
+text  : hard fork your team is on a deadline but moving all your enterprise data will take time your business simply doesn t have ibm technology lets ai work with your data where 
+        it already lives with an open hybrid cloud approach designed to build on your existing investments it s another way ibm helps you put your data to work let s create 
+        smarter business ibm visit ibm com to learn more ripple has been
+
+start : 1262.79
+end   : 1333.53
+text  : ramp com slash hard fork go to ramp com slash hard fork ramp com slash hard fork your team is on a deadline but moving all your enterprise data will take time your 
+        business simply doesn t have ibm technology let s ai work with your data where it already lives with an open hybrid cloud approach designed to build on your existing 
+        investments it s another way ibm helps you put your data to work ripple has been powering modern finance for a decade it s not our first trip around the blockchain and it 
+        won t be our last we are leading the charge to bridge the gap between existing financial systems and the future of finance you can have it all legacy stability and digital 
+        innovation systems that work with your other systems because with the right partner the question isn t crypto or traditional finance finance the question is simply why 
+        choose a new standard of modern finance it s happening with ripple for informational purposes only availability of products can vary and may be provided by different 
+        ripple entities welcome back fork your team is on a deadline but moving all your enterprise data will take time your business simply doesn t have ibm technology let s ai 
+        work with your data where it already lives with an open hybrid cloud approach designed to build on your existing investments it s another way ibm helps you put your data 
+        to work ripple has
+
+start : 2566.84
+end   : 2599.49
+text  : different ripple entities your team is on a deadline but moving all your enterprise data will take time your business simply doesn t have ibm technology lets ai work with 
+        your data where it already lives with an open hybrid cloud approach designed to build on your existing investments it s another way ibm helps you put your data to work let 
+        s create smarter business ibm visit ibm com to learn more next week
+
+
+ start    end text
+ -----    --- ----
+141.43 146.10 just one week before the first frontier lab goes public. What could go wrong?
+146.99 149.41 I'm Max Reed. This is Hard Fork.
+153.32 156.88 Most companies are already spending more on AI than they realize.
+157.30 161.10 AI token spend is growing faster than any other category of business spend,
+161.28 164.66 and most businesses have almost zero visibility into where it's going.
+165.14 170.12 Ramp is the only company that works with you to ensure your AI spend is going to the highest ROI
+170.12 175.84 areas. Stop guessing where your AI spend is going. Get started with Ramp. And if
+175.84 180.76 you're new to Ramp, you can get $250 off at ramp.com slash hard fork. Go to
+180.76 188.29 ramp.com slash hard fork. Ramp.com slash hard fork. Your team is on a deadline, but
+188.29 192.13 moving all your enterprise data will take time your business simply doesn't
+192.13 198.54 have. IBM technology lets AI work with your data where it already lives. With an
+198.54 202.32 open hybrid cloud approach designed to build on your existing investments.
+203.14 205.96 It's another way IBM helps you put your data to work.
+206.60 207.88 Let's create smarter business.
+208.66 209.06 IBM.
+210.09 212.31 Visit IBM.com to learn more.
+214.93 217.41 Ripple has been powering modern finance for a decade.
+217.73 220.67 It's not our first trip around the blockchain, and it won't be our last.
+220.85 224.11 We're leading the charge to bridge the gap between existing financial systems
+224.11 225.47 and the future of finance.
+225.93 227.15 You can have it all.
+227.51 229.89 Legacy stability and digital innovation.
+229.89 232.01 systems that work with your other systems.
+232.25 235.95 Because with the right partner, the question isn't crypto or traditional finance.
+236.41 238.25 The question is simply, why choose?
+238.67 240.73 A new standard of modern finance.
+241.13 242.49 It's happening with Ripple.
+242.95 246.01 For informational purposes only, availability of products can vary,
+246.05 247.55 maybe provided by different Ripple entities.
+249.83 254.19 Hello and welcome to the first hard fork from the post Jensen Wong era.
+254.55 257.75 For a momentous occasion like this, we've got a killer panel.
+
+
+  start     end text
+  -----     --- ----
+1218.20 1220.98 So that kind of feels very telling to me.
+1221.60 1222.78 This is a good place to pause.
+1223.40 1225.94 We're going to take a quick break and when we come back, we're going to get into a little
+1225.94 1226.20 deeper.
+1236.95 1240.79 Most companies are already spending more on AI than they realize.
+1241.23 1245.01 AI token spend is growing faster than any other category of business spend,
+1245.21 1248.57 and most businesses have almost zero visibility into where it's going.
+1249.01 1254.69 Ramp is the only company that works with you to ensure your AI spend is going to the highest ROI areas.
+1255.05 1259.13 Stop guessing where your AI spend is going. Get started with Ramp.
+1259.47 1264.05 And if you're new to Ramp, you can get $250 off at ramp.com slash hard fork.
+1264.05 1271.16 go to ramp.com slash hard fork ramp.com slash hard fork your team is on a
+1271.16 1275.32 deadline but moving all your enterprise data will take time your business
+1275.32 1280.95 simply doesn't have IBM technology let's AI work with your data where it
+1280.95 1285.37 already lives with an open hybrid cloud approach designed to build on your
+1285.37 1289.87 existing investments it's another way IBM helps you put your data to work
+1298.73 1301.29 Ripple has been powering modern finance for a decade.
+1301.61 1303.21 It's not our first trip around the blockchain.
+1303.59 1304.57 And it won't be our last.
+1304.75 1308.51 We are leading the charge to bridge the gap between existing financial systems and the
+1308.51 1309.37 future of finance.
+1309.83 1311.05 You can have it all.
+1311.51 1313.79 Legacy, stability, and digital innovation.
+1314.17 1315.89 Systems that work with your other systems.
+1316.17 1319.85 Because with the right partner, the question isn't crypto or traditional finance.
+1319.85 1325.63 finance. The question is simply, why choose? A new standard of modern finance. It's happening
+1325.63 1330.11 with Ripple. For informational purposes only, availability of products can vary and may
+1330.11 1331.47 be provided by different Ripple entities.
+1333.23 1337.27 Welcome back. This is Hard Fork. I'm with Ryan Mack, Anna Swanson, and Stephen Witt,
+
+
+  start     end text
+  -----     --- ----
+2477.29 2481.43 Well, that actually is exactly and precisely a Greek tragedy.
+2482.33 2484.45 This has been a really enlightening conversation, guys.
+2484.57 2487.23 I really appreciate you coming and talking me through this.
+2487.49 2490.17 This has been Ryan Mack, Anna Swanson, and Stephen Witt,
+2490.37 2491.89 and I'm Max Reed, and this is Hardfork.
+2502.88 2506.60 Most companies are already spending more on AI than they realize.
+2507.02 2510.84 AI token spend is growing faster than any other category of business spend,
+2511.02 2514.40 and most businesses have almost zero visibility into where it's going.
+2514.40 2520.54 Ramp is the only company that works with you to ensure your AI spend is going to the highest ROI areas.
+2520.90 2523.24 Stop guessing where your AI spend is going.
+2523.60 2524.96 Get started with Ramp.
+2525.32 2529.88 And if you're new to Ramp, you can get $250 off at ramp.com slash hard fork.
+2530.22 2532.28 Go to ramp.com slash hard fork.
+2532.60 2534.42 Ramp.com slash hard fork.
+2534.64 2537.02 Ripple has been powering modern finance for a decade.
+2537.30 2540.24 It's not our first trip around the blockchain, and it won't be our last.
+2540.24 2544.22 We are leading the charge to bridge the gap between existing financial systems and the
+2544.22 2545.06 future of finance.
+2545.60 2550.62 You can have it all, legacies, stability, and digital innovation, systems that work
+2550.62 2551.60 with your other systems.
+2551.86 2555.56 Because with the right partner, the question isn't crypto or traditional finance.
+2556.04 2557.84 The question is simply, why choose?
+2558.28 2562.08 A new standard of modern finance, it's happening with Ripple.
+2562.52 2566.60 For informational purposes only, availability of products can vary may be provided by different
+2566.60 2567.14 Ripple entities.
+2567.14 2575.18 Your team is on a deadline, but moving all your enterprise data will take time your business simply doesn't have.
+2576.22 2585.08 IBM Technology lets AI work with your data where it already lives, with an open hybrid cloud approach designed to build on your existing investments.
+2585.92 2595.09 It's another way IBM helps you put your data to work. Let's create smarter business. IBM. Visit IBM.com to learn more.
+2599.19 2603.21 Next week, Sam Altman, Elon Musk, and many other tech leaders will be interviewed by
+2603.21 2607.61 Andrew Ross Sorkin on stage at the Dealbook Summit, and it's hard to imagine they won't
+2607.61 2609.51 be asked for their thoughts on Jensen Wong.
+2609.99 2615.25 You can watch Select Conversations from Dealbook on November 18th for free at nytimes.com or
+2615.25 2616.21 in the New York Times app.
+2617.25 2621.55 This episode of Hard Fork was produced by Whitney Jones and Sawyer Rokey and edited
+2621.55 2626.29 by Viren Pavich, with additional editorial support from Brendan Klinkenberg, Lisa Tobin,
+2626.47 2627.07 and Brooke Minters.
+2627.73 2633.67 original music by Marion Lazano, Rowan Nemistel, and Dan Powell. Additional video
+2633.67 2637.33 production by Chris Schott. You can watch this full episode on YouTube at
+2637.33 2641.71 youtube.com slash hard fork. Special thanks to Sam Dolnick, Jessica Testa,
+2641.95 2645.99 Hui Wing Tam, Maddie Masiello, Zach Caldwell, Luke Wylander, Thomas Trudeau,
+2646.17 2650.79 Chris Moore, Michael Cordero, and Dahlia Haddad. We love to hear from our
+2650.79 2653.43 audience. If you have any questions or comments or want to give us a piece of
+2653.43 2659.63 your mind, find us at nytimes.com slash hardfork or you can email us hardfork at nytimes.com.
+2677.34 2682.62 Most companies are already spending more on AI than they realize. AI token spend is growing
+2682.62 2687.04 faster than any other category of business spend, and most businesses have almost zero
+2687.04 2691.82 visibility into where it's going. Ramp is the only company that works with you to ensure
+2691.82 2697.26 your AI spend is going to the highest ROI areas. Stop guessing where your AI spend is
+2697.26 2703.24 going. Get started with Ramp. And if you're new to Ramp, you can get $250 off at ramp.com
+2703.24 2708.64 slash hard fork. Go to ramp.com slash hard fork. Ramp.com slash hard fork.
+
+EPISODE hard-fork__jensen-huang-is-out-at-nvidia TAKE 1
+
+start : 0.96
+end   : 36.68
+text  : are already spending more on ai than they realize ai token spend is growing faster than any other category of business spend and most businesses have almost zero 
+        visibility into where it s going ramp is the only company that works with you to ensure your ai spend is going to the highest roi areas stop guessing where your ai spend 
+        is going get started with ramp and if you re to ramp you can get $250 off at ramp com slash hard fork go to ramp com slash hard fork ramp com slash hard fork jensen wong
+
+start : 217.12
+end   : 250.31
+text  : different ripple entities running a business means keeping pace with the latest tech you put a lot into building your enterprise software stack and scrapping it to 
+        integrate ai is out of the question that s why ibm technology works with all the apps data and models you need it s another way ibm helps you build on the technology you 
+        rely on let s create smarter business ibm visit ibm com to learn more hello and
+
+start : 1225.9
+end   : 1299.01
+text  : get into a little deeper your team is on a deadline but moving all your enterprise data will take time your business simply doesn t have ibm technology lets ai work with 
+        your data where it already lives with an open hybrid cloud approach designed to build on your existing investments it s another way ibm helps you put your data to work let 
+        s create smarter business ibm visit ibm com to learn more most companies learn more most companies are already spending more on ai than they realize ai token spend is 
+        growing faster than any other category of business spend and most businesses have almost zero visibility into where it s going ramp is the only company that works with you 
+        to ensure your ai spend is going to the highest roi areas stop guessing where your ai spend is going get started with ramp and if you re new to ramp you can get $250 off 
+        at ramp com slash hard fork go to ramp com slash hard fork ramp com slash hard fork ripple has
+
+start : 2490.5
+end   : 2533.54
+text  : and i m max reed and this is hardfork your team is on a deadline but moving all your enterprise data will take time your business simply doesn t have ibm technology lets 
+        ai work with your data where it already lives with an open hybrid cloud approach designed to build on your existing investments it s another way ibm helps you put your 
+        data to work let s create smarter business ibm visit ibm com to learn more most companies
+
+
+ start    end text
+ -----    --- ----
+141.43 146.10 just one week before the first frontier lab goes public. What could go wrong?
+146.99 149.41 I'm Max Reed. This is Hard Fork.
+153.32 156.88 Most companies are already spending more on AI than they realize.
+157.30 161.10 AI token spend is growing faster than any other category of business spend,
+161.28 164.66 and most businesses have almost zero visibility into where it's going.
+165.14 170.12 Ramp is the only company that works with you to ensure your AI spend is going to the highest ROI
+170.12 175.84 areas. Stop guessing where your AI spend is going. Get started with Ramp, and if
+175.84 180.76 you're new to Ramp, you can get $250 off at ramp.com slash hard fork. Go to
+180.76 186.24 ramp.com slash hard fork. Ramp.com slash hard fork. Ripple has been powering modern
+186.24 189.96 finance for a decade. It's not our first trip around the blockchain, and it won't
+189.96 193.10 be our last. We are leading the charge to bridge the gap between existing
+193.10 197.48 financial systems and the future of finance. You can have it all. Legacy,
+197.48 201.86 stability and digital innovation, systems that work with your other systems.
+202.14 205.80 Because with the right partner, the question isn't crypto or traditional finance.
+206.30 208.12 The question is simply, why choose?
+208.54 210.58 A new standard of modern finance.
+211.06 212.34 It's happening with Ripple.
+212.80 215.88 For informational purposes only, availability of products can vary
+215.88 217.42 may be provided by different Ripple entities.
+219.17 222.33 Running a business means keeping pace with the latest tech.
+222.87 225.55 You put a lot into building your enterprise software stack
+225.55 228.91 and scrapping it to integrate AI is out of the question.
+230.12 232.86 That's why IBM technology works with all the apps,
+233.14 234.82 data, and models you need.
+235.44 237.08 It's another way IBM helps you build
+237.08 238.80 on the technology you rely on.
+239.62 240.88 Let's create smarter business.
+241.50 245.00 IBM, visit IBM.com to learn more.
+250.01 251.95 Hello and welcome to the first hard fork
+251.95 254.19 from the post Jensen Wong era.
+254.57 256.33 For a momentous occasion like this,
+
+
+  start     end text
+  -----     --- ----
+1218.10 1220.98 So that kind of feels very telling to me.
+1221.54 1222.78 This is a good place to pause.
+1223.42 1225.96 We're going to take a quick break and when we come back, we're going to get into a little
+1225.96 1226.20 deeper.
+1238.81 1243.61 Your team is on a deadline, but moving all your enterprise data will take time your
+1243.61 1248.86 business simply doesn't have. IBM technology lets AI work with your data
+1248.86 1253.34 where it already lives with an open-hybrid cloud approach designed to
+1253.34 1257.86 build on your existing investments. It's another way IBM helps you put your data
+1257.86 1264.74 to work. Let's create smarter business. IBM. Visit IBM.com to learn more.
+1267.41 1272.19 Most companies are already spending more on AI than they realize. AI token spend
+1272.19 1276.71 is growing faster than any other category of business spend, and most businesses have almost
+1276.71 1282.05 zero visibility into where it's going. Ramp is the only company that works with you to ensure your
+1282.05 1287.55 AI spend is going to the highest ROI areas. Stop guessing where your AI spend is going.
+1287.93 1293.25 Get started with Ramp. And if you're new to Ramp, you can get $250 off at ramp.com
+1293.25 1298.71 slash hard fork. Go to ramp.com slash hard fork. Ramp.com slash hard fork.
+1298.71 1301.31 Ripple has been powering modern finance for a decade.
+1301.71 1304.59 It's not our first trip around the blockchain, and it won't be our last.
+1304.75 1309.39 We are leading the charge to bridge the gap between existing financial systems and the future of finance.
+1309.89 1311.05 You can have it all.
+1311.51 1313.79 Legacy stability and digital innovation.
+1314.17 1315.91 Systems that work with your other systems.
+1316.19 1319.87 Because with the right partner, the question isn't crypto or traditional finance.
+1320.31 1322.13 The question is simply, why choose?
+1322.57 1324.71 A new standard of modern finance.
+1325.03 1326.45 It's happening with Ripple.
+1326.79 1328.23 For informational purposes only.
+1328.69 1331.51 Availability of products can vary and may be provided by different ripple entities.
+1333.35 1334.01 Welcome back.
+1334.21 1334.79 This is Hard Fork.
+1334.85 1339.03 I'm with Ryan Mack, Anna Swanson, and Stephen Witt, and we're talking about Jensen Wong's
+
+
+  start     end text
+  -----     --- ----
+2477.30 2481.42 Well that that actually is exactly and precisely a Greek tragedy
+2482.32 2484.46 This has been a really enlightening conversation guys
+2484.46 2487.22 I really appreciate you coming and talking me through this
+2487.22 2490.16 This has been Ryan Mack, Anna Swanson, and Steven Witt,
+2490.40 2491.88 and I'm Max Reed, and this is Hardfork.
+2504.38 2505.90 Your team is on a deadline,
+2506.32 2508.26 but moving all your enterprise data
+2508.26 2510.66 will take time your business simply doesn't have.
+2511.76 2514.70 IBM Technology lets AI work with your data
+2514.70 2515.88 where it already lives,
+2516.30 2518.64 with an open hybrid cloud approach designed
+2518.64 2520.58 to build on your existing investments.
+2521.36 2524.24 It's another way IBM helps you put your data to work.
+2524.82 2526.16 Let's create smarter business.
+2526.92 2527.36 IBM.
+2528.12 2530.58 visit ibm.com to learn more.
+2533.24 2538.46 Most companies are already spending more on AI than they realize. AI token spend is growing
+2538.46 2542.88 faster than any other category of business spend, and most businesses have almost zero
+2542.88 2547.70 visibility into where it's going. Ramp is the only company that works with you to ensure
+2547.70 2553.10 your AI spend is going to the highest ROI areas. Stop guessing where your AI spend is
+2553.10 2559.10 going. Get started with Ramp. And if you're new to Ramp, you can get $250 off at ramp.com
+2564.58 2567.14 Ripple has been powering modern finance for a decade.
+2567.48 2569.06 It's not our first trip around the blockchain.
+2569.44 2570.44 And it won't be our last.
+2570.58 2574.38 We are leading the charge to bridge the gap between existing financial systems and the
+2574.38 2575.20 future of finance.
+2575.68 2576.90 You can have it all.
+2577.34 2579.62 Legacy stability and digital innovation.
+2580.02 2581.70 Systems that work with your other systems.
+2582.02 2585.70 Because with the right partner, the question isn't crypto or traditional finance.
+2586.14 2587.96 The question is simply, why choose?
+2587.96 2592.22 news. A new standard of modern finance. It's happening with Ripple.
+2592.64 2596.54 For informational purposes only, availability of products can vary and may be provided by
+2596.54 2597.30 different Ripple entities.
+2599.16 2603.22 Next week, Sam Altman, Elon Musk, and many other tech leaders will be interviewed by
+2603.22 2607.62 Andrew Ross Sorkin on stage at the Dealbook Summit, and it's hard to imagine they won't
+2607.62 2612.04 be asked for their thoughts on Jensen Wong. You can watch select conversations from Dealbook
+2612.04 2616.20 on November 18th for free at nytimes.com or in the New York Times app.
+2616.20 2621.82 This episode of Hard Fork was produced by Whitney Jones and Sawyer Ok and edited by
+2621.82 2626.70 Viren Pavich with additional editorial support from Brendan Klinkenberg, Lisa Tobin and Brooke
+2626.70 2633.38 Minters. Original music by Marion Lazano, Rowan Nemistel, and Dan Powell. Additional
+2633.38 2638.08 video production by Chris Shaw. You can watch this full episode on YouTube at youtube.com
+2638.08 2643.40 slash hard fork. Special thanks to Sam Dolnick, Jessica Testa, Huy Weng Tam, Maddie Masiello,
+2643.40 2648.64 Zach Caldwell, Luke Weilander, Thomas Trudeau, Chris Moore, Michael Cordero, and Dalia Haddad.
+2649.16 2652.82 We love to hear from our audience. If you have any questions or comments or want to
+2652.82 2656.70 give us a piece of your mind, find us at nytimes.com slash hard fork,
+2657.12 2679.68 or you can email us hard fork at nytimes.com. Most companies are already spending more on
+2679.68 2685.14 AI than they realize. AI token spend is growing faster than any other category of business spend,
+2685.32 2688.68 and most businesses have almost zero visibility into where it's going.
+2688.68 2694.82 Ramp is the only company that works with you to ensure your AI spend is going to the highest ROI areas.
+2695.14 2697.52 Stop guessing where your AI spend is going.
+2697.90 2699.28 Get started with Ramp.
+2699.60 2704.18 And if you're new to Ramp, you can get $250 off at ramp.com slash hard fork.
+2704.54 2708.64 Go to ramp.com slash hard fork, ramp.com slash hard fork.
+
+EPISODE hard-fork__jensen-huang-is-out-at-nvidia TAKE 2
+
+start : 0
+end   : 35.13
+text  : running a business means keeping pace with the latest tech you put a lot into building your enterprise software stack and scrapping it to integrate ai is out of the 
+        question that s why ibm technology works with all the apps data and models you need it s another way ibm helps you build on the technology you rely on let s create smarter 
+        business ibm visit ibm com to learn more jensen
+
+start : 215.81
+end   : 248.8
+text  : different ripple entities your team is on a deadline but moving all your enterprise data will take time your business simply doesn t have ibm technology lets ai work with 
+        your data where it already lives with an open hybrid cloud approach designed to build on your existing investments it s another way ibm helps you put your data to work let 
+        s create smarter business ibm visit ibm com to learn more hello
+
+start : 1224.59
+end   : 1332.3
+text  : get into a little deeper running a business means keeping pace with the latest tech you ve put a lot into building your enterprise software stack and scrapping it to 
+        integrate ai is out of the question that s why ibm technology works with all the apps data and models you need it s another way ibm helps you build on the technology you 
+        rely on let s create smarter business ibm visit ibm com to learn more ripple has been powering modern finance for a decade it s not our first trip around the blockchain 
+        and it won t be our last we are leading the charge to bridge the gap between existing financial systems and the future of finance you can have it all legacy stability and 
+        digital innovation systems that work with your other systems because with the right partner the question isn t crypto or traditional finance the question is simply why 
+        choose a new standard of modern finance it s happening with ripple for informational purposes only availability of products can vary may be provided by different ripple 
+        entities companies most companies get into a little deeper running a business means keeping pace with the latest tech you ve put a lot into building your enterprise 
+        software stack and scrapping it to integrate ai is out of the question that s why ibm technology works with all the apps data and models you need it s another way 
+        different ripple entities companies most companies are already spending more on ai than they realize ai token spend is growing faster than any other category of business 
+        spend and most businesses have almost zero visibility into where it s going ramp is the only company that works with you to ensure your ai spend is going to the highest 
+        roi areas stop guessing where your ai spend is going get started with ramp and if you re new to ramp you can get $250 off at ramp com welcome back
+
+start : 2565.58
+end   : 2598.1
+text  : different ripple entities your team is on a deadline but moving all your enterprise data will take time your business simply doesn t have ibm technology lets ai work with 
+        your data where it already lives with an open hybrid cloud approach designed to build on your existing investments it s another way ibm helps you put your data to work let 
+        s create smarter business ibm visit ibm com to learn more next
+
+
+ start    end text
+ -----    --- ----
+145.70 146.46 I'm Max Reed.
+147.12 148.10 This is Hard Fork.
+151.49 155.59 Most companies are already spending more on AI than they realize.
+155.97 159.81 AI token spend is growing faster than any other category of business spend,
+160.01 163.35 and most businesses have almost zero visibility into where it's going.
+163.83 168.81 Ramp is the only company that works with you to ensure your AI spend is going to the highest ROI
+168.81 173.91 areas. Stop guessing where your AI spend is going. Get started with Ramp.
+174.25 178.85 And if you're new to Ramp, you can get $250 off at ramp.com slash hard fork.
+178.85 183.37 go to ramp.com slash hard fork, ramp.com slash hard fork.
+183.59 185.97 Ripple has been powering modern finance for a decade.
+186.27 187.87 It's not our first trip around the blockchain,
+188.25 189.25 and it won't be our last.
+189.39 191.09 We're leading the charge to bridge the gap
+191.09 192.65 between existing financial systems
+192.65 194.03 and the future of finance.
+194.51 195.71 You can have it all.
+196.13 198.43 Legacy stability and digital innovation,
+198.75 200.55 systems that work with your other systems.
+200.81 201.95 Because with the right partner,
+202.19 204.53 the question isn't crypto or traditional finance.
+204.95 206.77 The question is simply, why choose?
+206.77 209.29 news, a new standard of modern finance.
+209.73 211.03 It's happening with Ripple.
+211.47 215.35 For informational purposes only, availability of products can vary and may be provided by
+215.35 216.11 different Ripple entities.
+217.99 223.15 Your team is on a deadline, but moving all your enterprise data will take time your business
+223.15 224.09 simply doesn't have.
+225.34 230.88 IBM Technology lets AI work with your data where it already lives, with an open hybrid
+230.88 234.00 cloud approach designed to build on your existing investments.
+234.56 237.70 It's another way IBM helps you put your data to work.
+238.26 239.62 Let's create smarter business.
+240.32 240.76 IBM.
+241.80 244.04 Visit IBM.com to learn more.
+248.50 252.88 Hello, and welcome to the first hard fork from the post Jensen Wong era.
+253.28 256.44 For a momentous occasion like this, we've got a killer panel.
+
+
+  start     end text
+  -----     --- ----
+1220.25 1221.47 This is a good place to pause.
+1222.11 1224.65 We're going to take a quick break and when we come back, we're going to get into a little
+1224.65 1224.89 deeper.
+1237.57 1240.43 Running a business means keeping pace with the latest tech.
+1240.43 1245.39 You've put a lot into building your enterprise software stack, and scrapping it to integrate
+1245.39 1247.01 AI is out of the question.
+1248.20 1252.90 That's why IBM Technology works with all the apps, data, and models you need.
+1253.56 1256.90 It's another way IBM helps you build on the technology you rely on.
+1257.71 1258.99 Let's create smarter business.
+1259.69 1263.11 IBM, visit IBM.com to learn more.
+1266.08 1268.54 Ripple has been powering modern finance for a decade.
+1268.88 1271.84 It's not our first trip around the blockchain, and it won't be our last.
+1271.84 1275.78 We are leading the charge to bridge the gap between existing financial systems and the
+1275.78 1276.62 future of finance.
+1277.12 1278.30 You can have it all.
+1278.74 1281.02 Legacy stability and digital innovation.
+1281.40 1283.14 Systems that work with your other systems.
+1283.42 1287.10 Because with the right partner, the question isn't crypto or traditional finance.
+1287.56 1289.38 The question is simply, why choose?
+1289.82 1291.98 A new standard of modern finance.
+1292.32 1293.62 It's happening with Ripple.
+1294.06 1298.16 For informational purposes only, availability of products can vary may be provided by different
+1298.16 1298.72 Ripple entities.
+1298.72 1303.92 companies. Most companies are already spending more on AI than they realize. AI token spend
+1303.92 1308.20 is growing faster than any other category of business spend, and most businesses have
+1308.20 1313.12 almost zero visibility into where it's going. Ramp is the only company that works with you
+1313.12 1318.82 to ensure your AI spend is going to the highest ROI areas. Stop guessing where your AI spend
+1318.82 1324.98 is going. Get started with Ramp. And if you're new to Ramp, you can get $250 off at ramp.com
+1332.00 1332.70 Welcome back.
+1332.86 1333.50 This is Hard Fork.
+1333.54 1337.72 I'm with Ryan Mack, Anna Swanson, and Stephen Witt, and we're talking about Jensen Wong's
+
+
+  start     end text
+  -----     --- ----
+2478.58 2483.58 and precisely a Greek tragedy. This has been a really enlightening conversation, guys. I really
+2483.58 2488.02 appreciate you coming and talking me through this. This has been Ryan Mack, Anna Swanson,
+2488.28 2490.72 and Steven Witt, and I'm Max Street, and this is Hard Fork.
+2501.60 2507.02 Most companies are already spending more on AI than they realize. AI token spend is growing
+2507.02 2511.44 faster than any other category of business spend, and most businesses have almost zero
+2511.44 2516.72 visibility into where it's going. Ramp is the only company that works with you to ensure your AI
+2516.72 2523.00 spend is going to the highest ROI areas. Stop guessing where your AI spend is going. Get started
+2523.00 2529.20 with Ramp. And if you're new to Ramp, you can get $250 off at ramp.com slash hard fork. Go to
+2529.20 2535.48 ramp.com slash hard fork. Ramp.com slash hard fork. Ripple has been powering modern finance for a
+2535.48 2539.32 decade. It's not our first trip around the blockchain, and it won't be our last. We're
+2539.32 2543.76 leading the charge to bridge the gap between existing financial systems and the future of finance.
+2543.76 2548.16 You can have it all, legacy, stability, and digital innovation,
+2548.50 2550.32 systems that work with your other systems.
+2550.54 2554.24 Because with the right partner, the question isn't crypto or traditional finance.
+2554.70 2556.54 The question is simply, why choose?
+2556.96 2559.02 A new standard of modern finance.
+2559.48 2560.78 It's happening with Ripple.
+2561.26 2562.62 For informational purposes only,
+2562.94 2565.88 availability of products can vary maybe provided by different Ripple entities.
+2567.66 2569.06 Your team is on a deadline,
+2569.50 2573.80 but moving all your enterprise data will take time your business simply doesn't have.
+2574.21 2580.61 IBM Technology lets AI work with your data where it already lives with an open hybrid
+2580.61 2586.43 cloud approach designed to build on your existing investments. It's another way IBM helps you put
+2586.43 2593.77 your data to work. Let's create smarter business. IBM. Visit IBM.com to learn more.
+2597.80 2601.90 Next week, Sam Altman, Elon Musk, and many other tech leaders will be interviewed by
+2601.90 2606.30 Andrew Ross Sorkin on stage at the Dealbook Summit, and it's hard to imagine they won't
+2606.30 2608.20 be asked for their thoughts on Jensen Wong.
+2608.68 2610.74 You can watch Select Conversations from Dealbook
+2610.74 2613.58 on November 18th for free at nytimes.com
+2613.58 2614.92 or in the New York Times app.
+2616.20 2617.82 This episode of Hard Fork was produced
+2617.82 2619.76 by Whitney Jones and Sawyer Rokey
+2619.76 2621.28 and edited by Viren Pavich
+2621.28 2622.96 with additional editorial support
+2622.96 2625.78 from Brendan Klinkenberg, Lisa Tobin, and Brooke Minters.
+2626.48 2630.02 Original music by Marion Lizano, Rowan Neymastel,
+2630.50 2631.14 and Dan Powell.
+2631.74 2633.60 Additional video production by Chris Schott.
+2634.16 2635.60 You can watch this full episode on YouTube
+2635.60 2641.14 at youtube.com slash hardfork. Special thanks to Sam Dolnick, Jessica Testa, Hui Wing Tam,
+2641.44 2646.30 Maddie Masiello, Zach Caldwell, Luke Wylander, Thomas Trudeau, Chris Moore, Michael Cordero,
+2646.54 2651.06 and Dalia Haddad. We love to hear from our audience. If you have any questions or comments,
+2651.20 2656.24 or want to give us a piece of your mind, find us at nytimes.com slash hardfork. Or you can
+2656.24 2679.59 email us hardfork at nytimes.com. Most companies are already spending more on AI than they realize.
+2679.59 2684.45 AI token spend is growing faster than any other category of business spend, and most
+2684.45 2687.39 businesses have almost zero visibility into where it's going.
+2687.81 2692.41 Ramp is the only company that works with you to ensure your AI spend is going to the highest
+2692.41 2693.51 ROI areas.
+2693.87 2696.23 Stop guessing where your AI spend is going.
+2696.63 2697.95 Get started with Ramp.
+2698.31 2703.27 And if you're new to Ramp, you can get $250 off at ramp.com slash hard fork.
+2703.27 2707.35 Go to ramp.com slash hard fork, ramp.com slash hard fork.
+
+EPISODE odd-lots__what-nvidia-s-megaspeed-scandal-is-reall TAKE 0
+
+start : 13.42
+end   : 103.8
+text  : in the podcast small businesses are the pulse of every community they bring people together create opportunities and drive growth chase for business helps business owners 
+        like you with personalized guidance and convenient digital tools all in one place with that guidance and your determination you can take your business farther and help 
+        build a brighter future for your community learn more at chase com slash business chase for business make more of what s yours the chase mobile app is available for select 
+        mobile devices message and data rates may apply jpmorgan chase bank na member fdic copyright 2026 jpmorgan chase and company wise is the smart way to manage the currencies 
+        you need around the globe when you send money abroad using your bank you could get hit with hidden fees and exchange rate markups there s a better way try wise wise uses 
+        the exchange rate you d usually find on google with no unwelcome surprises plus most transfers happen in under 20 seconds which means your money arrives in less time than 
+        you ve been listening to me it s simple and free to sign up when you download the wise app be smart get wise t s and c s apply bloomberg audio studios podcasts radio news 
+        hello and welcome to another episode of the oddlots podcast
+
+start : 1036.04
+end   : 1059
+text  : just 5 bucks you check the live odds see which grails you could pull then rip it open to reveal a real physical card and the grails are no joke they have cards up to $125 
+        000 in value and plenty to pull from football and basketball to pokemon with new limited edition packs dropping regularly even cooler you can decide to keep the card and 
+        underdog will ship it straight to your home or
+
+start : 1085.72
+end   : 1117.27
+text  : terms apply top grails are extremely rare when you own your own business you own every decision catch the red eye or take the 6am make a new hire or promote internally 
+        celebrate a win with a toast at the gate or unwind at the lounge big props to this team some decisions are win win like earning eight times points on chase travel chase 
+        sapphire reserve for business the business card that gives back all you put in visit chase com slash reserve business to learn more cards issued by jpmorgan chase bank any 
+        member of dic subject to credit approval terms apply
+
+start : 2421.94
+end   : 2466.69
+text  : every day we will invent a new one oh yeah that s it games on a break instead of doom scrolling try rips on underdog rip real player cards worth real money right there in 
+        the app it s instant cash in the palm of your hand buy a digital pack rip it open on your phone and reveal a real physical card football basketball pokemon yes pokemon and 
+        more the best part pack start at just $5 and if you pull something you don t want to let go of just yet have it shipped straight to your door want the cash sell it
+
+start : 2468.97
+end   : 2492.37
+text  : % of its fair market value no listing no negotiating no stranger asking if you ll trade it for a used jet ski even though jet skis are super sick best part there are some 
+        serious grails in the mix with maximum card values reaching up to $125 000 depending on your pack tier you can also check the live odds and see what you could pull before 
+        your rip and what other cards are being pulled by fans download
+
+start : 2504.75
+end   : 2538.14
+text  : terms apply top grails are extremely rare when you own your own business you need to keep things moving need to book a last minute flight earn a $300 travel credit to 
+        cover that need to take a meeting before takeoff do it from the comfort of the chase sapphire lounge by the club need to catch your breath before you board done chase 
+        sapphire reserve for business the business card that gives back all you put in visit chase com slash reserve business to learn more cards issued by jpmorgan chase bank any 
+        member of dic subject to credit approval terms apply with chachi bt you can do more
+
+start : 2572.9
+end   : 2603.94
+text  : com quick question for you how much of your day has spent typing email slack notes prompts to chat gpt whisper flow as a voice to text app instead of typing you re talking 
+        it types for you in any app on your mac windows iphone or android it takes out the ums fixes the typos and the result sounds like you wrote it four times faster than 
+        typing so the email that used to take two minutes now takes 30 seconds whisper flow is free download it at whisperflow ai that s w i s p r flow ai one more
+
+start : 3658.86
+end   : 3835.25
+text  : thanks for joining underdog already has team picks player props money lines spreads you name it they got it but apparently somebody over there said you know what s missing 
+        screaming like a maniac about a rookie card on your couch and we love them for that because underdog now has rips you get a digital pack starting at just five bucks you 
+        check the live odds see which grails you could pull then rip it open to reveal a real physical card and the grails are no joke they have cards up to $125 000 in value and 
+        plenty to pull from football and basketball to pokemon with new limited edition packs dropping regularly even cooler you can decide to keep the card and underdog will ship 
+        it straight to your home or sell it back instantly at 100 % of its fair market value and the cash goes right in your account no listing it online no stranger low balling 
+        you in the messages just rip reveal and cash out instantly or make some room on your shelf download underdog and get in on the chase get 5 free rips packs when you deposit 
+        $5 real rips real cards real cash only on underdog unleash your dog 18 plus terms apply top grails are extremely rare empower is all about helping you invest well so you 
+        can go out and live a little and their free empower personal dashboard shows you your full financial life in one place you ll be able to see your net worth monitor budgets 
+        analyze your portfolio set retirement goals and more whether you re saving for something big want to treat yourself friends or family or meet long term goals empower helps 
+        you see where you stand you ve worked hard for your money and empower can help you make the most of it download the empower personal dashboard or visit empower com not an 
+        empower client paid or sponsored rain outside your house relaxing rain inside your house less relaxing that s the sound of a bad day that s when you want to hear something 
+        reassuring cincinnati insurance works with local independent agents who get to know you and bring personal attention to protecting your home and most valuable possessions 
+        so when a bad day sounds like this you have 75 years of expertise helping make it better find an independent agent at cinfin com in heelspet nutrition sabemos que la culpa 
+        es real por eso existe heels nutrici n cient ficamente probada para darles m s amor del humanamente posible como humanos tenemos l mites por eso existe heels encuentre el 
+        alimento adecuado en heelspet com diagonal la ciencia lo hace por ti thanks for joining underdog already has team picks player props money lines spreads you name it they 
+        got it but apparently somebody over there said you know what s missing screaming like a maniac about a rookie card on your couch and we love them for that because underdog 
+        now has rips you get a digital pack starting at just five bucks you check the live odds see which grails you could pull then rip it open to reveal a are extremely rare 
+        empower is all about helping you invest well so you can go out and live a little and their free empower personal dashboard shows you your full financial life in one place 
+        you ll be able to see your net worth monitor budgets analyze your portfolio set retirement goals and more whether you re saving for something big want to treat yourself 
+        friends or family or meet long term goals empower helps you see where you stand you ve worked hard for your money and empower can help you make the most of it download the 
+        empower personal dashboard or visit empower com not an empower client paid or sponsored rain outside your house relaxing rain inside your house less relaxing that s the 
+        sound of a bad day that s when you want to hear something reassuring cincinnati insurance works with local independent agents who get to know you and bring personal 
+        attention to protecting your home and most valuable possessions so when a bad day sounds like this you have 75 years of expertise helping make it better find an 
+        independent agent at cinfin com in heelspet nutrition sabemos que la culpa es real por eso existe heels nutrici n cient ficamente probada para darles m s amor del 
+        humanamente posible como humanos tenemos l mites por eso existe heels encuentre el alimento adecuado en heelspet com diagonal la ciencia lo hace por ti
+
+
+  start     end text
+  -----     --- ----
+1017.16 1018.32 Economy and Tourism.
+1019.26 1024.54 Underdog already has team picks, player props, money lines, spreads, you name it, they got it.
+1024.66 1027.16 But apparently somebody over there said, you know what's missing?
+1027.50 1030.24 Screaming like a maniac about a rookie card on your couch.
+1030.52 1031.76 And we love them for that.
+1031.96 1033.86 Because Underdog now has rips.
+1034.16 1036.34 You get a digital pack starting at just 5 bucks.
+1036.66 1039.28 You check the live odds, see which grails you could pull,
+1039.50 1042.30 then rip it open to reveal a real physical card.
+1042.46 1043.68 And the grails are no joke.
+1043.88 1047.26 They have cards up to $125,000 in value.
+1047.44 1048.56 And plenty to pull.
+1048.56 1054.22 From football and basketball to Pokemon, with new limited edition packs dropping regularly.
+1054.52 1058.96 Even cooler, you can decide to keep the card and Underdog will ship it straight to your home.
+1059.10 1062.94 Or sell it back instantly at 100% of its fair market value.
+1063.08 1064.76 And the cash goes right in your account.
+1064.98 1068.28 No listing it online, no stranger low-balling you in the messages.
+1068.76 1071.38 Just rip, reveal, and cash out instantly.
+1071.74 1073.08 Or make some room on your shelf.
+1073.34 1075.46 Download Underdog and get in on the chase.
+1075.46 1081.76 Get 5 free Rips Packs when you deposit $5. Real Rips, Real Cards, Real Cash.
+1082.10 1084.72 Only on Underdog. Unleash your dog.
+1085.00 1087.26 18 plus terms apply. Top Grails are extremely rare.
+1087.66 1089.76 When you own your own business, you own every decision.
+
+
+  start     end text
+  -----     --- ----
+2440.17 2443.99 Games on a break? Instead of doom-scrolling, try rips on Underdog.
+2444.19 2447.57 Rip real player cards worth real money right there in the app.
+2447.77 2451.99 It's instant cash in the palm of your hand. Buy a digital pack, rip it open on your phone,
+2452.19 2458.21 and reveal a real physical card. Football, basketball, Pokemon, yes, Pokemon, and more.
+2458.51 2463.71 The best part? Pack start at just $5. And if you pull something you don't want to let go of just yet,
+2463.93 2466.39 have it shipped straight to your door. Want the cash?
+2466.39 2470.35 Sell it back instantly at 100% of its fair market value.
+2470.63 2475.33 No listing, no negotiating, no stranger asking if you'll trade it for a used jet ski.
+2475.59 2477.27 Even though jet skis are super sick.
+2477.65 2480.51 Best part? There are some serious grails in the mix,
+2480.73 2486.13 with maximum card values reaching up to $125,000 depending on your pack tier.
+2486.35 2489.65 You can also check the live odds and see what you could pull before your rip,
+2489.85 2491.75 and what other cards are being pulled by fans.
+2492.07 2494.17 Download Underdog and get in on the chase.
+2494.17 2500.57 Get five free rips packs when you deposit $5. Real rips, real cards, real cash.
+2500.97 2506.27 Only on Underdog. Unleash your dog. 18-plus terms apply. Top grails are extremely rare.
+2506.91 2509.17 When you own your own business, you need to keep things moving.
+
+EPISODE freakonomics-radio__694-does-democracy-really-need-elections TAKE 0
+
+start : 1451.13
+end   : 1500.82
+text  : com pre economics radio is sponsored by peloton somewhere in a run things get fun you stop counting you stop trying you re just here weightless wide open more alive than 
+        you ve been all day that s the run doing what it does clearing the noise loosening the grip the day had on you reminding you what your body s capable of when you finally 
+        let it go there and now that feeling fits wherever you need it to the new peloton treadflex is designed to fit your life moveable and foldable so you can run walk or hike 
+        when you need to and roll it away when you don t with instructors worth showing up for and workouts that meet you where you are you ve got the freedom to move on your own 
+        terms that s what running gives back let yourself run explore treadflex at onepeloton
+
+start : 1586.42
+end   : 1606.48
+text  : and
+
+start : 3018.74
+end   : 3050.13
+text  : is sponsored by us bank smartly checking and savings you know us bank smartly checking and savings are bank accounts that work harder for you you get better savings rates 
+        fee waivers and rewards from day one so you spend less time worrying about money and more on what matters sign up for us bank smartly checking and savings today at usbank 
+        com slash smartly remember fdic copyright 2026 us bank freakonomics radio
+
+start : 4247.94
+end   : 4294.76
+text  : approved osempic pill freakonomics radio is sponsored by adien adien knows executives love talking about the future five year plans 10 year goals the occasional 100 year 
+        vision then comes the quarterly earnings report funny how quickly long term thinking can become a short term decision that s why adien built one financial technology 
+        platform for where your business is going not just where it is today today one integration designed to help you grow across markets because the next quarter matters but 
+        you don t want to lose sight of what s ahead go long with adien freakinomics radio is sponsored by mazda
+
+EPISODE freakonomics-radio__694-does-democracy-really-need-elections TAKE 1
+
+start : 1459.41
+end   : 1490.81
+text  : is sponsored by us bank smartly checking and savings you know us bank smartly checking and savings are bank accounts that work harder for you you get better savings rates 
+        fee waivers and rewards from day one so you spend less time worrying about money and more on what matters sign up for us bank smartly checking and savings today at usbank 
+        com slash smartly member fdic copyright 2026 us bank freakin omics radio is
+
+start : 1569.58
+end   : 1589.86
+text  : representative appointments are sought from three motives ambition personal interest and the public good unhappily the two first are proved by experience to be most 
+        prevalent madison realized that elections were basically people looking for ambition and personal interest and he
+
+start : 3001.72
+end   : 3050.28
+text  : is sponsored by peloton somewhere in a run things get fun you stop counting you stop trying you re just here weightless wide open more alive than you ve been all day that 
+        s the run doing what it does clearing the noise loosening the grip the day had on you reminding you what your body s capable of when you finally let it go there and now 
+        that feeling fits wherever you need it to the new peloton treadflex is designed to fit your life moveable and foldable so you can run walk or hike when you need to and 
+        roll it away when you don t with instructors worth showing up for and workouts that meet you where you are you ve got the freedom to move on your own terms that s what 
+        running gives back let yourself run explore treadflex at onepeloton com freakonomics radio is
+
+start : 4286.06
+end   : 4332.16
+text  : services freakonomics radio is sponsored by adien adien knows executives love talking about the future five year plans 10 year goals the occasional 100 year vision then 
+        comes the quarterly earnings report funny how quickly long term thinking can become a short term decision that s why adien built one financial technology platform for 
+        where your business is going not just where it is today one integration designed to help you grow across markets because the next quarter matters but you don t want to 
+        lose sight of what s ahead go long with adien self directed investing trading full service wealth
+
+EPISODE freakonomics-radio__694-does-democracy-really-need-elections TAKE 2
+
+start : 1451.13
+end   : 1500.82
+text  : com pre economics radio is sponsored by peloton somewhere in a run things get fun you stop counting you stop trying you re just here weightless wide open more alive than 
+        you ve been all day that s the run doing what it does clearing the noise loosening the grip the day had on you reminding you what your body s capable of when you finally 
+        let it go there and now that feeling fits wherever you need it to the new peloton treadflex is designed to fit your life moveable and foldable so you can run walk or hike 
+        when you need to and roll it away when you don t with instructors worth showing up for and workouts that meet you where you are you ve got the freedom to move on your own 
+        terms that s what running gives back let yourself run explore treadflex at onepeloton
+
+start : 1586.42
+end   : 1606.48
+text  : and
+
+start : 3018.74
+end   : 3050.13
+text  : is sponsored by us bank smartly checking and savings you know us bank smartly checking and savings are bank accounts that work harder for you you get better savings rates 
+        fee waivers and rewards from day one so you spend less time worrying about money and more on what matters sign up for us bank smartly checking and savings today at usbank 
+        com slash smartly remember fdic copyright 2026 us bank freakonomics radio
+
+start : 4247.94
+end   : 4294.76
+text  : approved osempic pill freakonomics radio is sponsored by adien adien knows executives love talking about the future five year plans 10 year goals the occasional 100 year 
+        vision then comes the quarterly earnings report funny how quickly long term thinking can become a short term decision that s why adien built one financial technology 
+        platform for where your business is going not just where it is today today one integration designed to help you grow across markets because the next quarter matters but 
+        you don t want to lose sight of what s ahead go long with adien freakinomics radio is sponsored by mazda
+
+EPISODE planet-money__how-bodegas-led-to-the-yemeni-coffeehous TAKE 0
+
+start : 273.13
+end   : 338.17
+text  : comes from the hartford one of the most powerful things you can do for someone is to believe in them strengthening that belief they already have in themselves the hartford 
+        does that every day for over 200 years now providing insurance for businesses from small and middle to large and global and for employees and employers navigating life s 
+        ups and downs the hartford delivers insights that reduce risk and keep customers ahead of what s next visit thehartford com today and see what s possible when belief is 
+        put into action this message comes from capella university you know that feeling when there s a spark building inside you that you were meant for more that s your own 
+        drive pushing you towards what s next capella university gets that with their flexpath learning format you can set the pace and earn your degree without putting life on 
+        pause you ve built experience and know what you re capable of now this is your time to turn that momentum into more the only real question is what can t you do learn more 
+        at capella edu the first
+
+start : 613.39
+end   : 634.03
+text  : 000 altogether i see everywhere is a yemeni guy all over the city so if you re traveling around the city and you re like i don t know you need to use a bathroom or you 
+        need a coffee or something will you go in and will you be like hey i m also from yemen i didn t even introduce myself they wouldn t know me you don t even need to 
+        introduce yourself why do you start talking to them and you can
+
+start : 1099.66
+end   : 1188.87
+text  : comes from the hartford one of the most powerful things you can do for someone is to believe in them strengthening understanding that belief they already have in 
+        themselves the hartford does that every day for over 200 years now providing insurance for businesses from small and middle to large and global and for employees and 
+        employers navigating life s ups and downs the hartford delivers insights that reduce risk and keep customers ahead of what s next visit thehartford com today and see what 
+        s possible when belief is put into action this comes from capella university you know that feeling when there s a spark building inside you that you were meant for more 
+        that s your own drive pushing you towards what s next capella university gets that with their flex path learning format you can set the pace and earn your degree without 
+        putting life on pause you ve built experience and know what you re capable of now this is your time to turn that momentum into more the only real question is what can t 
+        you do learn more at capella edu this episode s sponsor is hubspot which offers the following message what if instead of updating your crm your crm updated you no catching 
+        up on manual edits no more guesswork hubspot s self updating crm keeps your customer context current and helps you understand what to do next so marketing builds more 
+        demand sales wins more deals and customers keep coming back learn more at hubspot com edu this episode s sponsor is hubspot which offers the following message what if 
+        instead of updating your crm your crm updated you no catching up on manual edits no more guesswork hubspot s self updating crm keeps your customer context current and 
+        helps you understand what to do next so marketing builds more demand sales wins more deals and customers keep coming back learn more at hubspot com
+
+EPISODE planet-money__how-bodegas-led-to-the-yemeni-coffeehous TAKE 1
+
+start : 0
+end   : 20.02
+text  : this message comes from edward jones where they believe rich is about taking care of what gives your life meaning that s why your financial advisor personalizes your plan 
+        to help you preserve your progress and create something that lasts let s find your rich edward jones member sipc this
+
+start : 275.55
+end   : 322.44
+text  : comes from schwab at schwab you can get everything from self directed investing to full service wealth management all in one place no matter your investing goal life stage 
+        amount to invest or know how you can invest your way with schwab support for this podcast and the following message come from etrade from morgan stanley discover a wide 
+        range of investing choices and banking solutions all in one place plus get up to $1 500 when you open a brokerage account with a qualifying deposit today learn more at 
+        etrade com slash offer banking products and services are provided by morgan stanley private bank national association member fdic terms and other fees apply investing 
+        involves risks morgan stanley smith barney llc member sipic this message
+
+start : 614.11
+end   : 634.26
+text  : altogether and
+
+start : 1100.07
+end   : 1147.87
+text  : comes from schwab at schwab you can get everything from self directed investing to full service wealth management all in one place no matter your investing goal life stage 
+        amount to invest or know how you can invest your way with schwab support for this podcast and the following message come from etrade from morgan stanley simplify your 
+        finances and discover the convenience of investing in banking all in one place plus get up to $1 500 when you open a brokerage account with a qualifying deposit today 
+        learn more at etrade com slash offer banking products and services are provided by morgan stanley private bank national association member fdic terms and other fees apply 
+        investing involves risks morgan stanley smith barney llc member cipic this message
+
+start : 1617.49
+end   : 1649.49
+text  : comes from capella university you know that feeling when there s a spark building inside you that you were meant for more that s your own drive pushing you towards what s 
+        next capella university gets that with their flexpath learning format you can set the pace and earn your degree without putting life on pause you ve built experience and 
+        know what you re capable of now this is your time to turn that momentum into more the only real question is what can t you do learn more at capella edu
+
+EPISODE planet-money__how-bodegas-led-to-the-yemeni-coffeehous TAKE 2
+
+start : 272.08
+end   : 338.23
+text  : comes from schwab at schwab you can get everything from self directed investing to full service wealth management all in one place no matter your investing goal life stage 
+        amount to invest or know how you can invest your way with schwab this message comes from odoo the all in one business management software platform whether you re a small 
+        or large business odoo gives you one flexible platform built to grow with you try today for free at odoo com slash planetmoney this message slash planetmoney this message 
+        comes from capella university you know that feeling when there s a spark building inside you that you were meant for more that s your own drive pushing you towards what s 
+        next next capella university gets that with their flexpath learning format you can set the pace and earn your degree without putting life on pause you ve built experience 
+        and know what you re capable of now this is your time to turn that momentum into more the only real question is what can t you do learn more at capella edu the first
+
+start : 613.48
+end   : 633.61
+text  : 000 altogether i see everywhere is a yemeni guy all over the city so if you re traveling around the city and you re like i don t know you need to use a bathroom or you 
+        need a coffee or something will you go in and will you be like hey i m also from yemen and
+
+start : 1099.85
+end   : 1167.49
+text  : comes from schwab at schwab you can get everything from self directed investing to full service wealth management all in one place no matter your investing goal life stage 
+        amount to invest or know how you can invest your way with schwab this message comes from odoo running a business shouldn t feel like surviving a software group project 
+        start managing your business with one unified system odoo is the all in one business management software try for free today at odoo com slash planetmoney this message 
+        software try for free today at odoo com slash planetmoney this message comes from capella university you know that feeling when there s a spark building inside you that 
+        you were meant for more that s your own drive pushing you towards what s next capella university gets that with their flex path learning format you can set the pace and 
+        earn your degree without putting life on pause you ve built experience and know what you re capable of now this is your time to turn that momentum into more the only real 
+        question is what can t you do you learn more at capella edu up until now
+
+start : 1603.76
+end   : 1644.94
+text  : comes from google workspace with gemini one subscription that does it all personalized ai and premium business versions of gmail google docs drive and more try it free for 
+        14 days at goo gle slash workspace with gemini this message message comes from boll and branch a bed you can t wait to un make starts with buttery soft signature sheets 
+        made with organic cotton only 1 % of the world s cotton meets their standards of softness pillows to sink into and a duvet to pull close learn more about 25 % off site 
+        wide at bolenbranch com with code npr magic in every moment exclusions apply see site for details
+
+

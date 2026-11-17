@@ -64,6 +64,7 @@ internal fun EffectsPage(
     trimMode: TrimMode,
     trimDetail: String,
     isVolumeBoosted: Boolean,
+    isAdSkipEnabled: Boolean,
     colors: EffectsColors,
     onSpeedDownClick: () -> Unit,
     onSpeedUpClick: () -> Unit,
@@ -71,6 +72,7 @@ internal fun EffectsPage(
     onTrimToggle: (Boolean) -> Unit,
     onTrimModeSelect: (TrimMode) -> Unit,
     onVolumeBoostToggle: (Boolean) -> Unit,
+    onAdSkipToggle: (Boolean) -> Unit,
     modifier: Modifier = Modifier,
     settingsTabBar: @Composable () -> Unit = {},
 ) {
@@ -148,6 +150,21 @@ internal fun EffectsPage(
             colors = colors,
             onCheckedChange = onVolumeBoostToggle,
             isDetailFullWidth = false,
+        )
+        EffectsDivider(colors.contrast05)
+        EffectSection(
+            iconId = IR.drawable.ic_skip_forward,
+            title = stringResource(LR.string.player_effects_skip_ads),
+            detail = stringResource(
+                if (isAdSkipEnabled) {
+                    LR.string.player_effects_skip_ads_detail_on
+                } else {
+                    LR.string.player_effects_skip_ads_detail_off
+                },
+            ),
+            isChecked = isAdSkipEnabled,
+            colors = colors,
+            onCheckedChange = onAdSkipToggle,
         )
         val bottomPadding = with(LocalDensity.current) { ((if (isTrimOn) 16 else 68) * density).toInt().toDp() }
         Spacer(Modifier.height(bottomPadding))

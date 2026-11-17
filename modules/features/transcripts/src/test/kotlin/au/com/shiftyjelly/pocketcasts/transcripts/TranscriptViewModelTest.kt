@@ -860,6 +860,8 @@ private class TestTranscriptManager : TranscriptManager {
 
     override fun observeIsGeneratedTranscriptAvailable(episodeUuid: String) = emptyFlow<Boolean>()
 
+    override fun observeTranscriptUpdated(episodeUuid: String) = emptyFlow<Unit>()
+
     override suspend fun loadTranscript(episodeUuid: String): Transcript? {
         yield()
         return avaiableTranscript.takeIf { shouldLoadTranscripts }
@@ -873,6 +875,8 @@ private class TestTranscriptManager : TranscriptManager {
     override fun resetInvalidTranscripts(episodeUuid: String) {
         shouldLoadTranscripts = true
     }
+
+    override fun invalidateTranscript(episodeUuid: String) = Unit
 
     override suspend fun loadGeneratedChapters(episodeUuid: String) = GeneratedChaptersResult.Unavailable
 }

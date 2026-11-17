@@ -50,6 +50,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlin.time.Duration.Companion.milliseconds
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancelAndJoin
 import kotlinx.coroutines.channels.Channel
@@ -57,6 +58,7 @@ import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.debounce
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.receiveAsFlow
@@ -114,11 +116,13 @@ class TranscriptViewModel @AssistedInject constructor(
 
     private var loadTranscriptJob: Job? = null
     private var searchJob: Job? = null
+    private var transcriptUpdatesJob: Job? = null
 
     fun loadTranscript(episodeUuid: String) {
         loadTranscriptJob?.cancel()
         syncedStateJob?.cancel()
         syncedPlaybackJob?.cancel()
+        transcriptUpdatesJob?.cancel()
         loadTranscriptJob = viewModelScope.launch {
             searchJob?.cancelAndJoin()
 
@@ -171,6 +175,31 @@ class TranscriptViewModel @AssistedInject constructor(
             if (transcriptState is TranscriptState.Loaded) {
                 trackTranscriptShown(transcriptState.transcript, episodeUuid)
             }
+
+            observeTranscriptUpdates(episodeUuid)
+        }
+    }
+
+    /**
+     * Follows the recognizer while recognition is still running. The transcript file is rewritten
+     * after every completed line; reloading it keeps a visible tab in step, including when it was
+     * showing "no transcript" when the first line arrived.
+     */
+    @OptIn(FlowPreview::class)
+    private fun observeTranscriptUpdates(episodeUuid: String) {
+        transcriptUpdatesJob?.cancel()
+        transcriptUpdatesJob = viewModelScope.launch(Dispatchers.Default) {
+            transcriptManager.observeTranscriptUpdated(episodeUuid)
+                .debounce(TRANSCRIPT_UPDATE_DEBOUNCE_MS)
+                .collect {
+                    val transcript = transcriptManager.loadTranscript(episodeUuid) as? Transcript.Text ?: return@collect
+                    if (transcript.entries.isEmpty()) return@collect
+                    val alreadyLoaded = (_uiState.value.transcriptState as? TranscriptState.Loaded)?.transcript
+                    if (alreadyLoaded is Transcript.Text && alreadyLoaded.entries == transcript.entries) return@collect
+                    _uiState.update { state -> state.copy(transcriptState = TranscriptState.Loaded(transcript)) }
+                    observeSyncedState()
+                    observePlaybackForSyncing(episodeUuid)
+                }
         }
     }
 
@@ -328,6 +357,7 @@ class TranscriptViewModel @AssistedInject constructor(
         loadTranscriptJob?.cancel()
         syncedStateJob?.cancel()
         syncedPlaybackJob?.cancel()
+        transcriptUpdatesJob?.cancel()
     }
 
     fun reloadTranscript() {
@@ -596,6 +626,9 @@ sealed interface TranscriptMessage {
     data object BookmarkFailed : TranscriptMessage
     data class OpenBookmarkEditor(val bookmarkUuid: String, val isNewBookmark: Boolean, val fromEpisode: Boolean) : TranscriptMessage
 }
+
+/** Recognition writes a new line every few seconds; reloading faster only re-parses the same text. */
+private const val TRANSCRIPT_UPDATE_DEBOUNCE_MS = 750L
 
 data class UiState(
     val transcriptState: TranscriptState,

@@ -11,6 +11,7 @@ import au.com.shiftyjelly.pocketcasts.models.to.Transcript
 import au.com.shiftyjelly.pocketcasts.models.to.TranscriptEntry
 import au.com.shiftyjelly.pocketcasts.models.to.TranscriptType
 import au.com.shiftyjelly.pocketcasts.payment.SubscriptionTier
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.LocalTranscriptStore
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.ChapterManager
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.GeneratedChaptersFixture
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.testSubscription
@@ -114,6 +115,7 @@ class TranscriptManagerTest {
         parsers = parsers,
         eventHorizon = EventHorizon(eventSink),
         context = context,
+        localTranscriptStore = mock(),
     )
 
     @Test
@@ -483,6 +485,7 @@ class TranscriptManagerTest {
             parsers = parsers,
             eventHorizon = EventHorizon(eventSink),
             context = context,
+            localTranscriptStore = mock(),
         )
 
         assertEquals(GeneratedChaptersResult.Loaded, managerWithChapters.loadGeneratedChapters("episode-id"))

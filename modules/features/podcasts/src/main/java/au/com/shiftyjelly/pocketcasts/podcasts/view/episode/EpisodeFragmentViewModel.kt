@@ -14,6 +14,7 @@ import au.com.shiftyjelly.pocketcasts.models.entity.Podcast
 import au.com.shiftyjelly.pocketcasts.models.entity.PodcastEpisode
 import au.com.shiftyjelly.pocketcasts.models.to.Transcript
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.AdAnalysisQueue
 import au.com.shiftyjelly.pocketcasts.repositories.download.DownloadProgressCache
 import au.com.shiftyjelly.pocketcasts.repositories.download.DownloadQueue
 import au.com.shiftyjelly.pocketcasts.repositories.download.DownloadType
@@ -69,6 +70,7 @@ class EpisodeFragmentViewModel @Inject constructor(
     private val showNotesManager: ShowNotesManager,
     private val eventHorizon: EventHorizon,
     private val transcriptManager: TranscriptManager,
+    private val adAnalysisQueue: AdAnalysisQueue,
 ) : ViewModel(),
     CoroutineScope {
     override val coroutineContext: CoroutineContext
@@ -88,10 +90,13 @@ class EpisodeFragmentViewModel @Inject constructor(
     private var startPlaybackTimestamp: Duration? = null
     private var autoDispatchPlay = false
 
-    private var loadTranscriptJob: Job? = null
+    private var transcriptJob: Job? = null
+    private var observedTranscriptEpisodeUuid: String? = null
+    private var scheduledAnalysisEpisodeUuid: String? = null
 
     data class EpisodePageState(
         val transcript: Transcript? = null,
+        val isTranscriptGenerating: Boolean = false,
     )
 
     private val _pageState = MutableStateFlow(EpisodePageState())
@@ -154,15 +159,34 @@ class EpisodeFragmentViewModel @Inject constructor(
             }
             .distinctUntilChanged()
 
-        if (pageState.value.transcript?.episodeUuid != episodeUuid) {
-            val oldJob = loadTranscriptJob
-            loadTranscriptJob = launch {
-                oldJob?.cancelAndJoin()
-                val transcript = transcriptManager.loadTranscript(episodeUuid)
-                _pageState.update { state ->
-                    state.copy(transcript = transcript)
+        if (observedTranscriptEpisodeUuid != episodeUuid) {
+            observedTranscriptEpisodeUuid = episodeUuid
+            observeTranscript(episodeUuid)
+        }
+    }
+
+    /**
+     * Follows the transcript while the screen is open, so a transcript that the background analysis
+     * finishes after the screen opened still appears, and shows that one is being generated.
+     */
+    private fun observeTranscript(episodeUuid: String) {
+        val oldJob = transcriptJob
+        transcriptJob = launch {
+            oldJob?.cancelAndJoin()
+            combine(
+                transcriptManager.observeIsTranscriptAvailable(episodeUuid),
+                adAnalysisQueue.observeIsAnalysisPending(episodeUuid),
+            ) { isAvailable, isPending -> isAvailable to isPending }
+                .distinctUntilChanged()
+                .collect { (isAvailable, isPending) ->
+                    val transcript = if (isAvailable) transcriptManager.loadTranscript(episodeUuid) else null
+                    _pageState.update { state ->
+                        state.copy(
+                            transcript = transcript,
+                            isTranscriptGenerating = transcript == null && isPending,
+                        )
+                    }
                 }
-            }
         }
     }
 
@@ -194,6 +218,18 @@ class EpisodeFragmentViewModel @Inject constructor(
         }
         episode = episodeState.episode
         podcast = episodeState.podcast
+        scheduleTranscriptAnalysis(episodeState.episode)
+    }
+
+    /**
+     * Opening a downloaded episode is a backstop for the analysis that is queued when the download
+     * finishes: if that pass was missed or has not run yet, this queues it again. WorkManager keeps
+     * a single analysis per episode, so the call is a no-op when one is already waiting or running.
+     */
+    private fun scheduleTranscriptAnalysis(episode: BaseEpisode) {
+        if (!episode.isDownloaded || scheduledAnalysisEpisodeUuid == episode.uuid) return
+        scheduledAnalysisEpisodeUuid = episode.uuid
+        adAnalysisQueue.schedule(episode.uuid)
     }
 
     fun deleteDownloadedEpisode() {

@@ -1,0 +1,882 @@
+{
+ "corpus": {
+  "episodes": 32,
+  "train_episodes": 20,
+  "test_episodes": 12,
+  "shows": 21,
+  "test_shows": 5,
+  "segments": 55528,
+  "positive_segments": 4048,
+  "adbundle": "/mnt/i/Android_Projects/Pocket_Casts/dev/adaware/next/m0/bundle/model.json",
+  "vocab_hash": "7626b92e943ca256"
+ },
+ "decoder": {
+  "threshold": 0.05,
+  "boundary_penalty": 8.0,
+  "duration_weight": 0.75,
+  "merge_gap": 0.0
+ },
+ "train": {
+  "strict": {
+   "tolerance_seconds": 10.0,
+   "tp": 81,
+   "fp": 86,
+   "fn": 80,
+   "precision": 0.48502994011976047,
+   "recall": 0.5031055900621118,
+   "takes": [
+    {
+     "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+     "take": "0",
+     "tp": 2,
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.6666666666666666,
+     "recall": 0.6666666666666666
+    },
+    {
+     "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+     "take": "1",
+     "tp": 3,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    {
+     "episode": "99-invisible__perfectly-leveraged-for-the-squat",
+     "take": "2",
+     "tp": 3,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    {
+     "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+     "take": "0",
+     "tp": 2,
+     "fp": 2,
+     "fn": 2,
+     "precision": 0.5,
+     "recall": 0.5
+    },
+    {
+     "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+     "take": "1",
+     "tp": 1,
+     "fp": 4,
+     "fn": 3,
+     "precision": 0.2,
+     "recall": 0.25
+    },
+    {
+     "episode": "dan-snow-s-history-hit__how-rasputin-destroyed-the-romanovs-with",
+     "take": "2",
+     "tp": 1,
+     "fp": 3,
+     "fn": 3,
+     "precision": 0.25,
+     "recall": 0.25
+    },
+    {
+     "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+     "take": "0",
+     "tp": 2,
+     "fp": 2,
+     "fn": 2,
+     "precision": 0.5,
+     "recall": 0.5
+    },
+    {
+     "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+     "take": "1",
+     "tp": 4,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    {
+     "episode": "freakonomics-radio__694-does-democracy-really-need-elections",
+     "take": "2",
+     "tp": 2,
+     "fp": 2,
+     "fn": 2,
+     "precision": 0.5,
+     "recall": 0.5
+    },
+    {
+     "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+     "take": "0",
+     "tp": 3,
+     "fp": 2,
+     "fn": 2,
+     "precision": 0.6,
+     "recall": 0.6
+    },
+    {
+     "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+     "take": "1",
+     "tp": 2,
+     "fp": 3,
+     "fn": 3,
+     "precision": 0.4,
+     "recall": 0.4
+    },
+    {
+     "episode": "hard-fork__jensen-huang-is-out-at-nvidia",
+     "take": "2",
+     "tp": 3,
+     "fp": 2,
+     "fn": 2,
+     "precision": 0.6,
+     "recall": 0.6
+    },
+    {
+     "episode": "how-i-built-this-with-guy-raz__airbnb-ceo-brian-chesky-i-was-a-great-foun",
+     "take": "0",
+     "tp": 3,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    {
+     "episode": "how-i-built-this-with-guy-raz__airbnb-ceo-brian-chesky-i-was-a-great-foun",
+     "take": "1",
+     "tp": 3,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    {
+     "episode": "odd-lots__james-bosworth-on-what-comes-after-lula-s",
+     "take": "0",
+     "tp": 0,
+     "fp": 4,
+     "fn": 3,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "odd-lots__james-bosworth-on-what-comes-after-lula-s",
+     "take": "1",
+     "tp": 0,
+     "fp": 4,
+     "fn": 4,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "odd-lots__this-is-how-new-york-city-takes-out-its-tr",
+     "take": "0",
+     "tp": 0,
+     "fp": 4,
+     "fn": 5,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "odd-lots__this-is-how-new-york-city-takes-out-its-tr",
+     "take": "1",
+     "tp": 0,
+     "fp": 4,
+     "fn": 4,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+     "take": "0",
+     "tp": 2,
+     "fp": 2,
+     "fn": 2,
+     "precision": 0.5,
+     "recall": 0.5
+    },
+    {
+     "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+     "take": "1",
+     "tp": 2,
+     "fp": 2,
+     "fn": 1,
+     "precision": 0.5,
+     "recall": 0.6666666666666666
+    },
+    {
+     "episode": "odd-lots__what-nvidia-s-megaspeed-scandal-is-reall",
+     "take": "2",
+     "tp": 2,
+     "fp": 2,
+     "fn": 2,
+     "precision": 0.5,
+     "recall": 0.5
+    },
+    {
+     "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+     "take": "0",
+     "tp": 5,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    {
+     "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+     "take": "1",
+     "tp": 4,
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.8,
+     "recall": 0.8
+    },
+    {
+     "episode": "planet-money__how-bodegas-led-to-the-yemeni-coffeehous",
+     "take": "2",
+     "tp": 5,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    {
+     "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+     "take": "0",
+     "tp": 1,
+     "fp": 2,
+     "fn": 2,
+     "precision": 0.3333333333333333,
+     "recall": 0.3333333333333333
+    },
+    {
+     "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+     "take": "1",
+     "tp": 1,
+     "fp": 2,
+     "fn": 2,
+     "precision": 0.3333333333333333,
+     "recall": 0.3333333333333333
+    },
+    {
+     "episode": "revisionist-history__from-the-big-dig-mitt-ted",
+     "take": "2",
+     "tp": 1,
+     "fp": 2,
+     "fn": 2,
+     "precision": 0.3333333333333333,
+     "recall": 0.3333333333333333
+    },
+    {
+     "episode": "shell-game__bonus-episode-shell-game-x-no-such-thing",
+     "take": "0",
+     "tp": 0,
+     "fp": 4,
+     "fn": 6,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "shell-game__bonus-episode-shell-game-x-no-such-thing",
+     "take": "1",
+     "tp": 1,
+     "fp": 5,
+     "fn": 4,
+     "precision": 0.16666666666666666,
+     "recall": 0.2
+    },
+    {
+     "episode": "the-daily__introducing-metro-from-serial-productions",
+     "take": "0",
+     "tp": 2,
+     "fp": 2,
+     "fn": 2,
+     "precision": 0.5,
+     "recall": 0.5
+    },
+    {
+     "episode": "the-daily__introducing-metro-from-serial-productions",
+     "take": "1",
+     "tp": 2,
+     "fp": 2,
+     "fn": 2,
+     "precision": 0.5,
+     "recall": 0.5
+    },
+    {
+     "episode": "the-daily__keisha-lance-bottoms-on-what-democrats-hav",
+     "take": "0",
+     "tp": 2,
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.6666666666666666,
+     "recall": 0.6666666666666666
+    },
+    {
+     "episode": "the-daily__keisha-lance-bottoms-on-what-democrats-hav",
+     "take": "1",
+     "tp": 2,
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.6666666666666666,
+     "recall": 0.6666666666666666
+    },
+    {
+     "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+     "take": "0",
+     "tp": 3,
+     "fp": 1,
+     "fn": 2,
+     "precision": 0.75,
+     "recall": 0.6
+    },
+    {
+     "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+     "take": "1",
+     "tp": 2,
+     "fp": 3,
+     "fn": 1,
+     "precision": 0.4,
+     "recall": 0.6666666666666666
+    },
+    {
+     "episode": "the-daily__what-jensen-huang-s-resignation-will-mea",
+     "take": "2",
+     "tp": 3,
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.75,
+     "recall": 0.75
+    },
+    {
+     "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+     "take": "0",
+     "tp": 1,
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.5,
+     "recall": 0.5
+    },
+    {
+     "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+     "take": "1",
+     "tp": 1,
+     "fp": 2,
+     "fn": 1,
+     "precision": 0.3333333333333333,
+     "recall": 0.5
+    },
+    {
+     "episode": "the-economics-show-with-soumaya-keynes__can-economics-fight-fascism-with-isabell",
+     "take": "2",
+     "tp": 0,
+     "fp": 3,
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "the-rest-is-classified__203-watergate-the-spies-who-went-rogue-ep",
+     "take": "0",
+     "tp": 1,
+     "fp": 2,
+     "fn": 1,
+     "precision": 0.3333333333333333,
+     "recall": 0.5
+    },
+    {
+     "episode": "the-rest-is-classified__203-watergate-the-spies-who-went-rogue-ep",
+     "take": "1",
+     "tp": 0,
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "the-rest-is-classified__intelligence-scoop-how-nvidia-s-ceo-fell-f",
+     "take": "0",
+     "tp": 0,
+     "fp": 2,
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "the-rest-is-classified__intelligence-scoop-how-nvidia-s-ceo-fell-f",
+     "take": "1",
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    {
+     "episode": "the-rest-is-politics__what-living-under-isis-taught-me-about-e",
+     "take": "0",
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    {
+     "episode": "the-rest-is-politics__what-living-under-isis-taught-me-about-e",
+     "take": "1",
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    {
+     "episode": "the-rest-is-politics__what-living-under-isis-taught-me-about-e",
+     "take": "2",
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    {
+     "episode": "the-weekly-show-with-jon-stewart__bursting-the-ai-bubble-with-ed-zitron",
+     "take": "0",
+     "tp": 1,
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.5,
+     "recall": 0.5
+    },
+    {
+     "episode": "the-weekly-show-with-jon-stewart__bursting-the-ai-bubble-with-ed-zitron",
+     "take": "1",
+     "tp": 1,
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.5,
+     "recall": 0.5
+    },
+    {
+     "episode": "the-weekly-show-with-jon-stewart__feeling-the-win-with-sen-bernie-sanders",
+     "take": "0",
+     "tp": 0,
+     "fp": 2,
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "the-weekly-show-with-jon-stewart__feeling-the-win-with-sen-bernie-sanders",
+     "take": "1",
+     "tp": 1,
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.5,
+     "recall": 0.5
+    }
+   ]
+  },
+  "frame": {
+   "frame_seconds": 1,
+   "tp_seconds": 11044,
+   "fp_seconds": 3205,
+   "fn_seconds": 810,
+   "tn_seconds": 133528,
+   "precision": 0.7750719348726226,
+   "recall": 0.9316686350598954,
+   "f1": 0.8461862621154657,
+   "average_precision": 0.8882160200834391
+  },
+  "per_show": {
+   "99-invisible": {
+    "tp": 8,
+    "fp": 1,
+    "fn": 1,
+    "precision": 0.8888888888888888,
+    "recall": 0.8888888888888888
+   },
+   "dan-snow-s-history-hit": {
+    "tp": 4,
+    "fp": 9,
+    "fn": 8,
+    "precision": 0.3076923076923077,
+    "recall": 0.3333333333333333
+   },
+   "freakonomics-radio": {
+    "tp": 8,
+    "fp": 4,
+    "fn": 4,
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666
+   },
+   "hard-fork": {
+    "tp": 8,
+    "fp": 7,
+    "fn": 7,
+    "precision": 0.5333333333333333,
+    "recall": 0.5333333333333333
+   },
+   "How I Built This with Guy Raz": {
+    "tp": 6,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "Odd Lots": {
+    "tp": 0,
+    "fp": 16,
+    "fn": 16,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "odd-lots": {
+    "tp": 6,
+    "fp": 6,
+    "fn": 5,
+    "precision": 0.5,
+    "recall": 0.5454545454545454
+   },
+   "planet-money": {
+    "tp": 14,
+    "fp": 1,
+    "fn": 1,
+    "precision": 0.9333333333333333,
+    "recall": 0.9333333333333333
+   },
+   "revisionist-history": {
+    "tp": 3,
+    "fp": 6,
+    "fn": 6,
+    "precision": 0.3333333333333333,
+    "recall": 0.3333333333333333
+   },
+   "Shell Game": {
+    "tp": 1,
+    "fp": 9,
+    "fn": 10,
+    "precision": 0.1,
+    "recall": 0.09090909090909091
+   },
+   "The Daily": {
+    "tp": 8,
+    "fp": 6,
+    "fn": 6,
+    "precision": 0.5714285714285714,
+    "recall": 0.5714285714285714
+   },
+   "the-daily": {
+    "tp": 8,
+    "fp": 5,
+    "fn": 4,
+    "precision": 0.6153846153846154,
+    "recall": 0.6666666666666666
+   },
+   "the-economics-show-with-soumaya-keynes": {
+    "tp": 2,
+    "fp": 6,
+    "fn": 4,
+    "precision": 0.25,
+    "recall": 0.3333333333333333
+   },
+   "The Rest Is Classified": {
+    "tp": 2,
+    "fp": 5,
+    "fn": 3,
+    "precision": 0.2857142857142857,
+    "recall": 0.4
+   },
+   "the-rest-is-politics": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": null,
+    "recall": null
+   },
+   "The Weekly Show with Jon Stewart": {
+    "tp": 3,
+    "fp": 5,
+    "fn": 5,
+    "precision": 0.375,
+    "recall": 0.375
+   }
+  }
+ },
+ "test": {
+  "strict": {
+   "tolerance_seconds": 10.0,
+   "tp": 6,
+   "fp": 59,
+   "fn": 59,
+   "precision": 0.09230769230769231,
+   "recall": 0.09230769230769231,
+   "takes": [
+    {
+     "episode": "decoder-ring__gandhi-never-said-be-the-change",
+     "take": "0",
+     "tp": 0,
+     "fp": 6,
+     "fn": 5,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "decoder-ring__gandhi-never-said-be-the-change",
+     "take": "1",
+     "tp": 2,
+     "fp": 3,
+     "fn": 2,
+     "precision": 0.4,
+     "recall": 0.5
+    },
+    {
+     "episode": "decoder-ring__presenting-the-sporkful-does-the-world-nee",
+     "take": "0",
+     "tp": 0,
+     "fp": 5,
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "decoder-ring__presenting-the-sporkful-does-the-world-nee",
+     "take": "1",
+     "tp": 0,
+     "fp": 5,
+     "fn": 3,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "decoder-ring__the-spooky-saga-of-the-icelandic-dracula",
+     "take": "0",
+     "tp": 0,
+     "fp": 5,
+     "fn": 3,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "decoder-ring__the-spooky-saga-of-the-icelandic-dracula",
+     "take": "1",
+     "tp": 0,
+     "fp": 5,
+     "fn": 3,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "grammar-girl__4-tiny-writing-errors-that-caused-huge-pro",
+     "take": "0",
+     "tp": 0,
+     "fp": 3,
+     "fn": 3,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "grammar-girl__4-tiny-writing-errors-that-caused-huge-pro",
+     "take": "1",
+     "tp": 0,
+     "fp": 3,
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "grammar-girl__why-english-loves-animals-from-the-bee-s-k",
+     "take": "0",
+     "tp": 0,
+     "fp": 3,
+     "fn": 3,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "grammar-girl__why-english-loves-animals-from-the-bee-s-k",
+     "take": "1",
+     "tp": 0,
+     "fp": 3,
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "state-of-the-world-from-npr__anthony-bourdain-s-legacy-in-russia",
+     "take": "0",
+     "tp": 0,
+     "fp": 1,
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "state-of-the-world-from-npr__anthony-bourdain-s-legacy-in-russia",
+     "take": "1",
+     "tp": 1,
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.5,
+     "recall": 0.5
+    },
+    {
+     "episode": "state-of-the-world-from-npr__gaza-struck-by-deadly-storm-israel-debates",
+     "take": "0",
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    {
+     "episode": "state-of-the-world-from-npr__gaza-struck-by-deadly-storm-israel-debates",
+     "take": "1",
+     "tp": 1,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    {
+     "episode": "the-political-scene-the-new-yorker__democrats-might-take-back-the-house-then-w",
+     "take": "0",
+     "tp": 0,
+     "fp": 3,
+     "fn": 3,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "the-political-scene-the-new-yorker__democrats-might-take-back-the-house-then-w",
+     "take": "1",
+     "tp": 0,
+     "fp": 3,
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "the-political-scene-the-new-yorker__pete-buttigieg-on-the-democrats-sweep-of-c",
+     "take": "0",
+     "tp": 0,
+     "fp": 1,
+     "fn": 4,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "the-political-scene-the-new-yorker__pete-buttigieg-on-the-democrats-sweep-of-c",
+     "take": "1",
+     "tp": 0,
+     "fp": 0,
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "the-political-scene-the-new-yorker__the-democrats-big-night-and-the-repudiatio",
+     "take": "0",
+     "tp": 0,
+     "fp": 1,
+     "fn": 5,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "the-political-scene-the-new-yorker__the-democrats-big-night-and-the-repudiatio",
+     "take": "1",
+     "tp": 1,
+     "fp": 0,
+     "fn": 5,
+     "precision": 1.0,
+     "recall": 0.16666666666666666
+    },
+    {
+     "episode": "the-rest-is-history__719-revolution-in-the-soviet-empire-the-hu",
+     "take": "0",
+     "tp": 0,
+     "fp": 3,
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "the-rest-is-history__719-revolution-in-the-soviet-empire-the-hu",
+     "take": "1",
+     "tp": 0,
+     "fp": 1,
+     "fn": 1,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "the-rest-is-history__721-the-charge-of-the-light-brigade-outbre",
+     "take": "0",
+     "tp": 0,
+     "fp": 2,
+     "fn": 2,
+     "precision": 0.0,
+     "recall": 0.0
+    },
+    {
+     "episode": "the-rest-is-history__721-the-charge-of-the-light-brigade-outbre",
+     "take": "1",
+     "tp": 0,
+     "fp": 2,
+     "fn": 3,
+     "precision": 0.0,
+     "recall": 0.0
+    }
+   ]
+  },
+  "frame": {
+   "frame_seconds": 1,
+   "tp_seconds": 1822,
+   "fp_seconds": 2559,
+   "fn_seconds": 1550,
+   "tn_seconds": 55832,
+   "precision": 0.4158867838393061,
+   "recall": 0.5403321470937129,
+   "f1": 0.4700116084096479,
+   "average_precision": 0.3158030072774626
+  },
+  "per_show": {
+   "Decoder Ring": {
+    "tp": 2,
+    "fp": 29,
+    "fn": 18,
+    "precision": 0.06451612903225806,
+    "recall": 0.1
+   },
+   "Grammar Girl": {
+    "tp": 0,
+    "fp": 12,
+    "fn": 10,
+    "precision": 0.0,
+    "recall": 0.0
+   },
+   "State of the World from NPR": {
+    "tp": 3,
+    "fp": 2,
+    "fn": 3,
+    "precision": 0.6,
+    "recall": 0.5
+   },
+   "The Political Scene | The New Yorker": {
+    "tp": 1,
+    "fp": 8,
+    "fn": 21,
+    "precision": 0.1111111111111111,
+    "recall": 0.045454545454545456
+   },
+   "The Rest Is History": {
+    "tp": 0,
+    "fp": 8,
+    "fn": 7,
+    "precision": 0.0,
+    "recall": 0.0
+   }
+  }
+ }
+}

@@ -1,0 +1,5689 @@
+{
+ "duration": 3801.03,
+ "language": "en",
+ "segments": [
+  {
+   "start": 3.41,
+   "end": 9.25,
+   "text": "For exclusive interviews, bonus episodes, ad-free listening, early access to series,"
+  },
+  {
+   "start": 9.25,
+   "end": 13.37,
+   "text": "first look at live show tickets, a weekly newsletter and discounted books. Join the"
+  },
+  {
+   "start": 13.37,
+   "end": 25.46,
+   "text": "Declassified Club at therestisclassified.com"
+  },
+  {
+   "start": 25.46,
+   "end": 31.7,
+   "text": "Was the CIA behind the Watergate breaking and cover-up? And why did CIA technicians"
+  },
+  {
+   "start": 31.7,
+   "end": 37.62,
+   "text": "hand one of the burglars a wig, a driving license, and a camera hidden in a tobacco"
+  },
+  {
+   "start": 37.62,
+   "end": 42.02,
+   "text": "pouch. Well, welcome to the Rest is Classified. I'm Gordon Carara. And I'm David McCloskey."
+  },
+  {
+   "start": 42.02,
+   "end": 49.22,
+   "text": "And David, today we begin a four-part series on the CIA and Watergate. Most of us know the"
+  },
+  {
+   "start": 49.22,
+   "end": 55.94,
+   "text": "outlines of the story, the break in the cover-up, and the resignation of a President of the United"
+  },
+  {
+   "start": 55.94,
+   "end": 61.86,
+   "text": "States. But what people may not realize is that this is a spy story. And we're going to be exploring"
+  },
+  {
+   "start": 61.86,
+   "end": 67.86,
+   "text": "some of the big questions around it, some of which are still debated and resonate today."
+  },
+  {
+   "start": 67.86,
+   "end": 74.06,
+   "text": "How involved was the CIA? Did the CIA have a direct role in the break-in? And what role"
+  },
+  {
+   "start": 74.06,
+   "end": 81.06,
+   "text": "did it play in the cover-up? Was it a participant or was it used and manipulated? What does"
+  },
+  {
+   "start": 81.06,
+   "end": 86.7,
+   "text": "that tell us about the relationship between presidents and spy masters? I think there"
+  },
+  {
+   "start": 86.7,
+   "end": 92.22,
+   "text": "There are some very interesting parallels to today and some of those questions and debates"
+  },
+  {
+   "start": 92.22,
+   "end": 96.62,
+   "text": "about the deep state and what presidents can get spies to do."
+  },
+  {
+   "start": 96.62,
+   "end": 100.22,
+   "text": "To set up this story, we're going to begin with the man who's occupying the White House"
+  },
+  {
+   "start": 100.22,
+   "end": 102.54,
+   "text": "at the time, Richard Nixon."
+  },
+  {
+   "start": 102.54,
+   "end": 107.36,
+   "text": "But first, a word from our sponsors, HP."
+  },
+  {
+   "start": 107.36,
+   "end": 111.76,
+   "text": "This episode is brought to you by HP, an intelligence you quickly learn that you are"
+  },
+  {
+   "start": 111.76,
+   "end": 114.44,
+   "text": "only as strong as the network around you."
+  },
+  {
+   "start": 114.44,
+   "end": 118.02,
+   "text": "It's rarely a single major event that undermines an operation."
+  },
+  {
+   "start": 118.02,
+   "end": 121.62,
+   "text": "the gaps between systems. That's where information leaks."
+  },
+  {
+   "start": 121.62,
+   "end": 127.62,
+   "text": "It's the same in business. Leaders face a constant battle against strict timelines, mismatch"
+  },
+  {
+   "start": 127.62,
+   "end": 133.22,
+   "text": "tools and the worry their security isn't as tight as they think it is. Which is why"
+  },
+  {
+   "start": 133.22,
+   "end": 138.12,
+   "text": "HP approaches technology not as a collection of gadgets but as an integrated system."
+  },
+  {
+   "start": 138.12,
+   "end": 143.24,
+   "text": "And crucially, that protection is built in at hardware level. It runs quietly in the"
+  },
+  {
+   "start": 143.24,
+   "end": 148.64,
+   "text": "background blocking threats without requiring constant specialist oversight."
+  },
+  {
+   "start": 148.64,
+   "end": 153.68,
+   "text": "With the team of business advisors, HP helps businesses of all sizes find technology that"
+  },
+  {
+   "start": 153.68,
+   "end": 156.0,
+   "text": "fits their needs and budget."
+  },
+  {
+   "start": 156.0,
+   "end": 163.36,
+   "text": "To see how HP helps businesses work securely and productively, visit hp.com forward slash"
+  },
+  {
+   "start": 163.36,
+   "end": 164.64,
+   "text": "classified."
+  },
+  {
+   "start": 164.64,
+   "end": 176.43,
+   "text": "Trick listeners also benefit from 10% off HP business technology with the code TRICK10."
+  },
+  {
+   "start": 176.43,
+   "end": 179.87,
+   "text": "This episode is brought to you by Solana Breakpoint."
+  },
+  {
+   "start": 179.87,
+   "end": 184.83,
+   "text": "In intelligence work, your most valuable asset is timing, knowing what's coming before anyone"
+  },
+  {
+   "start": 184.83,
+   "end": 190.83,
+   "text": "else does. The biggest mistake isn't taking a calculated risk, it's operating on outdated"
+  },
+  {
+   "start": 190.83,
+   "end": 191.83,
+   "text": "information."
+  },
+  {
+   "start": 191.83,
+   "end": 196.83,
+   "text": "AI and capital markets are dominating our headlines and rewriting the rules of business"
+  },
+  {
+   "start": 196.83,
+   "end": 197.83,
+   "text": "as we speak."
+  },
+  {
+   "start": 197.83,
+   "end": 202.87,
+   "text": "That's why Solana Breakpoint is bringing together investors, builders and policymakers"
+  },
+  {
+   "start": 202.87,
+   "end": 208.83,
+   "text": "in one room. Think of it like an unfiltered briefing, mapping out the exciting opportunities"
+  },
+  {
+   "start": 208.83,
+   "end": 210.83,
+   "text": "as well as the potential risks."
+  },
+  {
+   "start": 210.83,
+   "end": 216.47,
+   "text": "From November 15th to 17th in Olympia, London, you have the chance to hear from global experts"
+  },
+  {
+   "start": 216.47,
+   "end": 219.03,
+   "text": "at the Centre of Finance, Tech and AI."
+  },
+  {
+   "start": 219.03,
+   "end": 224.27,
+   "text": "That includes key speakers from the London Stock Exchange, Revolute, JP Morgan and X."
+  },
+  {
+   "start": 224.27,
+   "end": 228.59,
+   "text": "Plus, I'll be there asking the hard questions and moderating the sessions."
+  },
+  {
+   "start": 228.59,
+   "end": 238.03,
+   "text": "sign up, go to www.salana.com.com. Use code BP26-goalhanger for 25% off."
+  },
+  {
+   "start": 238.03,
+   "end": 243.23,
+   "text": "Hi, this is Gary Linneke from Goalhangers. The rest is football. This episode is brought to you by"
+  },
+  {
+   "start": 243.23,
+   "end": 248.67,
+   "text": "Wyze. It's only when you start moving money between currencies that you really think about the exchange"
+  },
+  {
+   "start": 248.67,
+   "end": 253.87,
+   "text": "rate, the fee, and what might be hidden away in the small print. Whether you're living abroad,"
+  },
+  {
+   "start": 253.87,
+   "end": 259.47,
+   "text": "paying someone overseas or just trying to manage your money across borders, you want a fair exchange"
+  },
+  {
+   "start": 259.47,
+   "end": 265.79,
+   "text": "rate and easy transfer and no surprises along the way. WISE keeps things simple. WISE is a smart"
+  },
+  {
+   "start": 265.79,
+   "end": 271.87,
+   "text": "way to move the currencies you need around the globe. It works in more than 160 countries and with"
+  },
+  {
+   "start": 271.87,
+   "end": 279.23,
+   "text": "over 40 currencies, most transfers arrive instantly. WISE uses the mid-market exchange rate like the"
+  },
+  {
+   "start": 279.23,
+   "end": 284.47,
+   "text": "the one you see on Google with no markups or hidden fees. So when money needs to move,"
+  },
+  {
+   "start": 284.47,
+   "end": 289.25,
+   "text": "you can see the rate, know the fee and get on with it. Join millions saving billions"
+  },
+  {
+   "start": 289.25,
+   "end": 296.64,
+   "text": "on hidden fees by downloading the Wise app today. Be smart, get wise, teas and teas apply."
+  },
+  {
+   "start": 296.64,
+   "end": 301.76,
+   "text": "So David, let's start with the man I'm going to call tricky dick or tricky dicky President"
+  },
+  {
+   "start": 301.76,
+   "end": 307.4,
+   "text": "Nixon. No one calls him tricky dicky. Is that a British way to describe Richard Nixon?"
+  },
+  {
+   "start": 307.4,
+   "end": 309.28,
+   "text": "Nixon we should give him his full title."
+  },
+  {
+   "start": 309.28,
+   "end": 310.8,
+   "text": "We should ask Dominic Sandbrook,"
+  },
+  {
+   "start": 310.8,
+   "end": 312.76,
+   "text": "what he refers to a spy."
+  },
+  {
+   "start": 312.76,
+   "end": 314.68,
+   "text": "Any spy story that starts with Richard Nixon,"
+  },
+  {
+   "start": 314.68,
+   "end": 316.4,
+   "text": "we know is gonna have a happy ending, right?"
+  },
+  {
+   "start": 316.4,
+   "end": 317.24,
+   "text": "It's gonna be good."
+  },
+  {
+   "start": 317.24,
+   "end": 319.88,
+   "text": "All right, so Nixon, important to set up who he is"
+  },
+  {
+   "start": 319.88,
+   "end": 323.24,
+   "text": "and his personality because I think so much of,"
+  },
+  {
+   "start": 323.24,
+   "end": 327.84,
+   "text": "as we'll see, the illegality and the paranoia and the chaos"
+  },
+  {
+   "start": 327.84,
+   "end": 330.16,
+   "text": "I think come out of his personality."
+  },
+  {
+   "start": 330.16,
+   "end": 332.22,
+   "text": "So Nixon comes from nothing."
+  },
+  {
+   "start": 332.22,
+   "end": 335.68,
+   "text": "He's born in 1913 in Yoruba, Linda, California."
+  },
+  {
+   "start": 335.68,
+   "end": 336.84,
+   "text": "Nixon's a Quaker."
+  },
+  {
+   "start": 336.84,
+   "end": 339.3,
+   "text": "Doesn't give off Quaker vibes."
+  },
+  {
+   "start": 339.3,
+   "end": 340.62,
+   "text": "He comes from a Quaker family."
+  },
+  {
+   "start": 340.62,
+   "end": 342.0,
+   "text": "He is whip smart."
+  },
+  {
+   "start": 342.0,
+   "end": 343.42,
+   "text": "He is ambitious."
+  },
+  {
+   "start": 343.42,
+   "end": 347.42,
+   "text": "He gets into Harvard and then famously cannot afford to go."
+  },
+  {
+   "start": 347.42,
+   "end": 350.26,
+   "text": "Goes to Whittier College instead, not quite Harvard."
+  },
+  {
+   "start": 350.26,
+   "end": 351.66,
+   "text": "Then he goes to Duke Law."
+  },
+  {
+   "start": 351.66,
+   "end": 354.34,
+   "text": "He applies to a whole bunch of New York law firms."
+  },
+  {
+   "start": 354.34,
+   "end": 355.22,
+   "text": "He's rejected."
+  },
+  {
+   "start": 355.22,
+   "end": 356.5,
+   "text": "He's got a chip on his shoulder."
+  },
+  {
+   "start": 356.5,
+   "end": 358.3,
+   "text": "He's got a big chip on his shoulder."
+  },
+  {
+   "start": 358.3,
+   "end": 359.86,
+   "text": "A big chip on his shoulder."
+  },
+  {
+   "start": 359.86,
+   "end": 363.26,
+   "text": "Also applies to be an FBI special agent."
+  },
+  {
+   "start": 363.26,
+   "end": 363.86,
+   "text": "Wow."
+  },
+  {
+   "start": 363.86,
+   "end": 364.86,
+   "text": "Also rejected."
+  },
+  {
+   "start": 364.86,
+   "end": 365.5,
+   "text": "Wow."
+  },
+  {
+   "start": 365.5,
+   "end": 367.14,
+   "text": "by the Phoebes."
+  },
+  {
+   "start": 367.14,
+   "end": 370.26,
+   "text": "You know, he's one of these guys who was kind of part"
+  },
+  {
+   "start": 370.26,
+   "end": 373.14,
+   "text": "of the establishment, but always feels like"
+  },
+  {
+   "start": 373.14,
+   "end": 374.82,
+   "text": "he's just outside."
+  },
+  {
+   "start": 374.82,
+   "end": 375.98,
+   "text": "And they're not letting him in."
+  },
+  {
+   "start": 375.98,
+   "end": 376.82,
+   "text": "Yeah."
+  },
+  {
+   "start": 376.82,
+   "end": 379.58,
+   "text": "Nixon's elected to Congress in 1946,"
+  },
+  {
+   "start": 379.58,
+   "end": 383.38,
+   "text": "makes his name famously by being an anti-communist crusader."
+  },
+  {
+   "start": 383.38,
+   "end": 386.22,
+   "text": "He's part of the House Un-American Activities Committee,"
+  },
+  {
+   "start": 386.22,
+   "end": 388.46,
+   "text": "one of the best House Committee names, I think,"
+  },
+  {
+   "start": 388.46,
+   "end": 390.1,
+   "text": "of all the various committees."
+  },
+  {
+   "start": 390.1,
+   "end": 392.78,
+   "text": "Which is the McCarthyites investigating the Reds"
+  },
+  {
+   "start": 392.78,
+   "end": 394.1,
+   "text": "and the Communists under the bed."
+  },
+  {
+   "start": 394.1,
+   "end": 396.14,
+   "text": "Now, that makes him nationally known."
+  },
+  {
+   "start": 396.14,
+   "end": 398.86,
+   "text": "He's elected to the Senate in 1950."
+  },
+  {
+   "start": 398.86,
+   "end": 401.86,
+   "text": "Eisenhower makes him vice president in 1952."
+  },
+  {
+   "start": 401.86,
+   "end": 404.22,
+   "text": "Nixon's only 39 when that happens."
+  },
+  {
+   "start": 404.22,
+   "end": 407.66,
+   "text": "Now, in 1960, after his run as VP,"
+  },
+  {
+   "start": 407.66,
+   "end": 410.34,
+   "text": "he narrowly loses the election to JFK."
+  },
+  {
+   "start": 410.34,
+   "end": 411.38,
+   "text": "Very narrowly."
+  },
+  {
+   "start": 411.38,
+   "end": 412.74,
+   "text": "Very narrowly."
+  },
+  {
+   "start": 412.74,
+   "end": 417.38,
+   "text": "And I think this is where a very practical grievance"
+  },
+  {
+   "start": 417.38,
+   "end": 420.1,
+   "text": "against the Central Intelligence Agency comes in,"
+  },
+  {
+   "start": 420.1,
+   "end": 423.42,
+   "text": "because Nixon suspects that there has been"
+  },
+  {
+   "start": 423.42,
+   "end": 426.02,
+   "text": "essentially election fraud in Illinois."
+  },
+  {
+   "start": 426.02,
+   "end": 430.86,
+   "text": "And also that the CIA has helped Kennedy win."
+  },
+  {
+   "start": 430.86,
+   "end": 431.7,
+   "text": "And of course, you know,"
+  },
+  {
+   "start": 431.7,
+   "end": 434.54,
+   "text": "Kennedy is this kind of golden boy,"
+  },
+  {
+   "start": 434.54,
+   "end": 437.18,
+   "text": "been to Harvard military service,"
+  },
+  {
+   "start": 437.18,
+   "end": 439.38,
+   "text": "and the CIA is full of those kind of people."
+  },
+  {
+   "start": 439.38,
+   "end": 442.46,
+   "text": "So I think he sees them both as kind of the enemy already."
+  },
+  {
+   "start": 442.46,
+   "end": 445.26,
+   "text": "Doesn't he or at least part of the problem that he's against?"
+  },
+  {
+   "start": 445.26,
+   "end": 446.66,
+   "text": "I think there's definitely a cultural gap"
+  },
+  {
+   "start": 446.66,
+   "end": 449.0,
+   "text": "because at this point in time,"
+  },
+  {
+   "start": 449.0,
+   "end": 453.22,
+   "text": "a huge number of the people who comprise the CIA"
+  },
+  {
+   "start": 453.22,
+   "end": 457.26,
+   "text": "our Ivy educated Northeastern kind of waspy,"
+  },
+  {
+   "start": 457.26,
+   "end": 459.1,
+   "text": "white Anglo-Saxon Protestants."
+  },
+  {
+   "start": 459.1,
+   "end": 462.42,
+   "text": "And here's Nixon who's this kind of semi outsider,"
+  },
+  {
+   "start": 462.42,
+   "end": 465.66,
+   "text": "Quaker background, got into an Ivy but then couldn't go."
+  },
+  {
+   "start": 465.66,
+   "end": 467.74,
+   "text": "Gets rejected by all these New York law firms"
+  },
+  {
+   "start": 467.74,
+   "end": 470.98,
+   "text": "that were feeders into the CIA back in this era."
+  },
+  {
+   "start": 470.98,
+   "end": 473.3,
+   "text": "So culturally he's outside."
+  },
+  {
+   "start": 473.3,
+   "end": 477.22,
+   "text": "We also have, I think there's interesting issue"
+  },
+  {
+   "start": 477.22,
+   "end": 480.52,
+   "text": "during the 1960 election where Nixon thinks"
+  },
+  {
+   "start": 480.52,
+   "end": 485.52,
+   "text": "that CIA briefings to Kennedy in advance of the election"
+  },
+  {
+   "start": 485.6,
+   "end": 487.24,
+   "text": "have given Kennedy ammunition"
+  },
+  {
+   "start": 487.24,
+   "end": 488.52,
+   "text": "that he can use against him."
+  },
+  {
+   "start": 488.52,
+   "end": 492.64,
+   "text": "So there's a very cultural, I think, gap between Nixon"
+  },
+  {
+   "start": 492.64,
+   "end": 494.44,
+   "text": "and the CIA and there's also a practical one."
+  },
+  {
+   "start": 494.44,
+   "end": 496.48,
+   "text": "And he feels like, I mean,"
+  },
+  {
+   "start": 496.48,
+   "end": 498.0,
+   "text": "he doesn't call it the deep state,"
+  },
+  {
+   "start": 498.0,
+   "end": 501.44,
+   "text": "but he feels like there's sort of enemies within"
+  },
+  {
+   "start": 501.44,
+   "end": 502.8,
+   "text": "the CIA against him."
+  },
+  {
+   "start": 502.8,
+   "end": 507.36,
+   "text": "Nixon, he loses obviously the 1960 election."
+  },
+  {
+   "start": 507.36,
+   "end": 511.62,
+   "text": "And then essentially wanders the political wilderness."
+  },
+  {
+   "start": 511.62,
+   "end": 514.1,
+   "text": "It looks like he's done, but he comes back."
+  },
+  {
+   "start": 514.1,
+   "end": 518.38,
+   "text": "He makes an improbable comeback and wins the 1968 election"
+  },
+  {
+   "start": 518.38,
+   "end": 521.26,
+   "text": "on the back of some chaos in the Republican field."
+  },
+  {
+   "start": 521.26,
+   "end": 523.22,
+   "text": "The assassination of a very popular,"
+  },
+  {
+   "start": 523.22,
+   "end": 525.42,
+   "text": "presumed Democratic nominee, RFK."
+  },
+  {
+   "start": 525.42,
+   "end": 529.1,
+   "text": "And then Nixon also promises on the foreign policy"
+  },
+  {
+   "start": 529.1,
+   "end": 531.78,
+   "text": "kind of spectrum that he is going to finally be the one"
+  },
+  {
+   "start": 531.78,
+   "end": 533.98,
+   "text": "to deliver a peace deal in Vietnam."
+  },
+  {
+   "start": 533.98,
+   "end": 535.18,
+   "text": "Interesting."
+  },
+  {
+   "start": 535.18,
+   "end": 537.34,
+   "text": "First, maybe a few little parallels."
+  },
+  {
+   "start": 537.34,
+   "end": 540.94,
+   "text": "someone who loses a presidential election and comes back a few years later and wins one,"
+  },
+  {
+   "start": 540.94,
+   "end": 544.94,
+   "text": "may he be a little bit reminiscent of the current president of the United States just saying."
+  },
+  {
+   "start": 544.94,
+   "end": 549.34,
+   "text": "Who may have some interesting thoughts about the Central Intelligence Agency,"
+  },
+  {
+   "start": 549.34,
+   "end": 550.54,
+   "text": "the pigs that work inside of it."
+  },
+  {
+   "start": 550.54,
+   "end": 554.14,
+   "text": "Just drawing a small parallel there."
+  },
+  {
+   "start": 554.14,
+   "end": 556.3,
+   "text": "But so he comes back slightly different, doesn't he?"
+  },
+  {
+   "start": 556.3,
+   "end": 559.58,
+   "text": "He comes back a kind of slightly angry and more determined figure,"
+  },
+  {
+   "start": 559.58,
+   "end": 562.06,
+   "text": "but he's also quite odd, isn't he?"
+  },
+  {
+   "start": 562.06,
+   "end": 564.46,
+   "text": "Yeah, he's kind of an odd guy."
+  },
+  {
+   "start": 564.46,
+   "end": 568.16,
+   "text": "So he, I love getting into this"
+  },
+  {
+   "start": 568.16,
+   "end": 571.64,
+   "text": "because the details of Nixon's life in the White House"
+  },
+  {
+   "start": 571.64,
+   "end": 573.36,
+   "text": "kind of give you a sense of the man."
+  },
+  {
+   "start": 573.36,
+   "end": 576.6,
+   "text": "So Nixon eats the same lunch nearly every day"
+  },
+  {
+   "start": 576.6,
+   "end": 579.68,
+   "text": "of his presidency, which I guess it's very similar"
+  },
+  {
+   "start": 579.68,
+   "end": 580.52,
+   "text": "to your lunch."
+  },
+  {
+   "start": 580.52,
+   "end": 581.36,
+   "text": "It is identical."
+  },
+  {
+   "start": 581.36,
+   "end": 585.6,
+   "text": "A ring of tinned pineapple, cottage cheese, crackers,"
+  },
+  {
+   "start": 585.6,
+   "end": 586.8,
+   "text": "and a glass of milk."
+  },
+  {
+   "start": 586.8,
+   "end": 588.0,
+   "text": "Yeah, I tend to have sherry."
+  },
+  {
+   "start": 588.0,
+   "end": 589.04,
+   "text": "Right, but nearly."
+  },
+  {
+   "start": 589.04,
+   "end": 591.86,
+   "text": "The cottage cheese is flown to Washington every week"
+  },
+  {
+   "start": 591.86,
+   "end": 594.9,
+   "text": "from a dairy in California that he prefers."
+  },
+  {
+   "start": 594.9,
+   "end": 597.26,
+   "text": "And Nixon also, he can't really hold his booze."
+  },
+  {
+   "start": 597.26,
+   "end": 599.46,
+   "text": "Two drinks totally tip him over."
+  },
+  {
+   "start": 599.46,
+   "end": 601.26,
+   "text": "He's probably depressed throughout his life."
+  },
+  {
+   "start": 601.26,
+   "end": 603.46,
+   "text": "He took the lantern, he takes sleeping pills."
+  },
+  {
+   "start": 603.46,
+   "end": 606.17,
+   "text": "He's very alone."
+  },
+  {
+   "start": 606.17,
+   "end": 607.01,
+   "text": "Yeah."
+  },
+  {
+   "start": 607.01,
+   "end": 608.45,
+   "text": "He bowls alone, he walks alone."
+  },
+  {
+   "start": 608.45,
+   "end": 611.01,
+   "text": "He takes vacations alone."
+  },
+  {
+   "start": 611.01,
+   "end": 613.53,
+   "text": "Human connection is not something"
+  },
+  {
+   "start": 613.53,
+   "end": 616.01,
+   "text": "that Richard Milhouse Nixon excels at."
+  },
+  {
+   "start": 616.01,
+   "end": 618.93,
+   "text": "He seems to have had only two real friends"
+  },
+  {
+   "start": 618.93,
+   "end": 619.99,
+   "text": "throughout his life."
+  },
+  {
+   "start": 619.99,
+   "end": 624.33,
+   "text": "As one does, it's a Florida laundromat owner turned banker and the guy who invented the"
+  },
+  {
+   "start": 624.33,
+   "end": 625.33,
+   "text": "aerosol valve."
+  },
+  {
+   "start": 625.33,
+   "end": 628.41,
+   "text": "So he is keeping interesting company."
+  },
+  {
+   "start": 628.41,
+   "end": 631.89,
+   "text": "Great story when Nixon goes on a fishing trip for the first time."
+  },
+  {
+   "start": 631.89,
+   "end": 638.45,
+   "text": "He comes aboard the boat with his briefcase and works in silence throughout the fishing"
+  },
+  {
+   "start": 638.45,
+   "end": 639.45,
+   "text": "trip."
+  },
+  {
+   "start": 639.45,
+   "end": 642.97,
+   "text": "He doesn't know how to spell the name of one of his aides, a guy who's going to feature"
+  },
+  {
+   "start": 642.97,
+   "end": 645.21,
+   "text": "prominently in the story, the Air Lickman, right?"
+  },
+  {
+   "start": 645.21,
+   "end": 647.81,
+   "text": "Who's kind of, he's a Nixon guy."
+  },
+  {
+   "start": 647.81,
+   "end": 651.17,
+   "text": "Nixon doesn't know how to spell his name and just writes it E."
+  },
+  {
+   "start": 653.01,
+   "end": 657.33,
+   "text": "His chief of staff will later say that he doesn't think Nixon knew how many kids he had."
+  },
+  {
+   "start": 657.33,
+   "end": 661.97,
+   "text": "So he's a loner, but he's also getting quite paranoid, isn't he?"
+  },
+  {
+   "start": 661.97,
+   "end": 665.17,
+   "text": "I mean, I think there's always an element of paranoia in him,"
+  },
+  {
+   "start": 666.13,
+   "end": 671.25,
+   "text": "but he's, that's going to intensify, I think, after the loss in 1960,"
+  },
+  {
+   "start": 672.21,
+   "end": 675.01,
+   "text": "and as he comes back in 68 as president."
+  },
+  {
+   "start": 675.01,
+   "end": 679.97,
+   "text": "Running theme of this four-part series, spoiler alert, will be that Nixon and the White House"
+  },
+  {
+   "start": 679.97,
+   "end": 686.69,
+   "text": "around him believe they are besieged, that there are enemies everywhere. I think the style carries"
+  },
+  {
+   "start": 686.69,
+   "end": 693.33,
+   "text": "over into his foreign policy as well. For example, during his term very early on, he authorizes this"
+  },
+  {
+   "start": 693.33,
+   "end": 698.21,
+   "text": "secret bombing of Cambodia right next door to Vietnam. This is concealed from the public. It's"
+  },
+  {
+   "start": 698.21,
+   "end": 702.53,
+   "text": "concealed from Congress. It's even concealed from the aircrews on the bombing runs. Only the"
+  },
+  {
+   "start": 702.53,
+   "end": 706.77,
+   "text": "the pilots and the navigators know what country they're bombing."
+  },
+  {
+   "start": 706.77,
+   "end": 712.21,
+   "text": "And then in May of 1969, about four months into his presidency, the New York Times covers"
+  },
+  {
+   "start": 712.21,
+   "end": 713.21,
+   "text": "the story."
+  },
+  {
+   "start": 713.21,
+   "end": 714.41,
+   "text": "They break the story."
+  },
+  {
+   "start": 714.41,
+   "end": 718.45,
+   "text": "And by this time, the administration is also keeping close tabs on the number of leaks."
+  },
+  {
+   "start": 718.45,
+   "end": 721.45,
+   "text": "They think there have been 21 serious leaks at this point."
+  },
+  {
+   "start": 721.45,
+   "end": 726.41,
+   "text": "Nixon, in his very charming way, says, what is this cock-sucking story?"
+  },
+  {
+   "start": 726.41,
+   "end": 728.92,
+   "text": "Find out who leaked it and fire him."
+  },
+  {
+   "start": 728.92,
+   "end": 731.68,
+   "text": "So Nixon's language is quite fruity."
+  },
+  {
+   "start": 731.68,
+   "end": 732.68,
+   "text": "I think it's fair to say."
+  },
+  {
+   "start": 732.68,
+   "end": 733.68,
+   "text": "Yes, it's fruity."
+  },
+  {
+   "start": 733.68,
+   "end": 735.24,
+   "text": "We'll do our best to be-"
+  },
+  {
+   "start": 735.24,
+   "end": 736.24,
+   "text": "It's quite colorful."
+  },
+  {
+   "start": 736.24,
+   "end": 739.2,
+   "text": "Paranoia, Paranoia about leaks."
+  },
+  {
+   "start": 739.2,
+   "end": 741.48,
+   "text": "Yeah, we might have seen some echoes of that recently."
+  },
+  {
+   "start": 741.48,
+   "end": 743.12,
+   "text": "I think there was a little bit of a leak"
+  },
+  {
+   "start": 743.12,
+   "end": 746.04,
+   "text": "about Air Force One a few months ago,"
+  },
+  {
+   "start": 746.04,
+   "end": 748.92,
+   "text": "which caused a current investigation"
+  },
+  {
+   "start": 748.92,
+   "end": 750.68,
+   "text": "into the New York Times, I think, for leaks."
+  },
+  {
+   "start": 750.68,
+   "end": 753.08,
+   "text": "So there's this paranoia that everyone's out to get him"
+  },
+  {
+   "start": 753.08,
+   "end": 756.08,
+   "text": "and people are leaking from inside his administration."
+  },
+  {
+   "start": 756.08,
+   "end": 757.16,
+   "text": "And so immediately,"
+  },
+  {
+   "start": 757.16,
+   "end": 758.84,
+   "text": "the Nixon White House springs into action."
+  },
+  {
+   "start": 758.84,
+   "end": 761.24,
+   "text": "They call up J. Edgar Hoover at the FBI"
+  },
+  {
+   "start": 761.24,
+   "end": 764.84,
+   "text": "And they say, find out who did this, who leaked it,"
+  },
+  {
+   "start": 764.84,
+   "end": 766.18,
+   "text": "and destroy them."
+  },
+  {
+   "start": 766.18,
+   "end": 768.16,
+   "text": "It's also very similar to what happened recently."
+  },
+  {
+   "start": 768.16,
+   "end": 770.64,
+   "text": "I think the FBI director was called in to the White House"
+  },
+  {
+   "start": 770.64,
+   "end": 773.88,
+   "text": "to sit there and spend a day looking at who leaked the stuff"
+  },
+  {
+   "start": 773.88,
+   "end": 774.72,
+   "text": "about Air Force One."
+  },
+  {
+   "start": 774.72,
+   "end": 777.24,
+   "text": "So anyway, back to Nixon."
+  },
+  {
+   "start": 777.24,
+   "end": 779.44,
+   "text": "Wiretaps are running by the end of the day."
+  },
+  {
+   "start": 779.44,
+   "end": 782.76,
+   "text": "The suspect list starts at four, grows to 17."
+  },
+  {
+   "start": 782.76,
+   "end": 784.96,
+   "text": "They're looking at people specifically on the NSC,"
+  },
+  {
+   "start": 784.96,
+   "end": 786.68,
+   "text": "the National Security Council,"
+  },
+  {
+   "start": 786.68,
+   "end": 788.16,
+   "text": "and a few others inside the White House."
+  },
+  {
+   "start": 788.16,
+   "end": 790.84,
+   "text": "The wiretaps wind up rolling in a lot of other people,"
+  },
+  {
+   "start": 790.84,
+   "end": 796.44,
+   "text": "journalists, Nixon's senior staff says, don't keep any records of this."
+  },
+  {
+   "start": 796.94,
+   "end": 801.04,
+   "text": "And the FBI says, well, look, you know, we need technicians and"
+  },
+  {
+   "start": 801.04,
+   "end": 801.94,
+   "text": "typists involved."
+  },
+  {
+   "start": 801.94,
+   "end": 804.64,
+   "text": "It's not just like one guy in a room running the wire tap."
+  },
+  {
+   "start": 804.64,
+   "end": 806.88,
+   "text": "There's, there's sort of a, you know, an element of a machine here."
+  },
+  {
+   "start": 806.88,
+   "end": 808.44,
+   "text": "So this is going to be hard to keep secret."
+  },
+  {
+   "start": 808.44,
+   "end": 812.54,
+   "text": "Also, it may not be so legal to do this."
+  },
+  {
+   "start": 812.94,
+   "end": 816.64,
+   "text": "And this will be a really important part of the story is that Nixon's"
+  },
+  {
+   "start": 816.64,
+   "end": 826.16,
+   "text": "expectations for what the FBI can do are very colored by his time in Congress and also in the"
+  },
+  {
+   "start": 826.16,
+   "end": 828.96,
+   "text": "vice presidency a decade before."
+  },
+  {
+   "start": 828.96,
+   "end": 835.28,
+   "text": "Jay Agahoova, who's been this FBI director for decades and is associated with using the FBI"
+  },
+  {
+   "start": 835.28,
+   "end": 839.68,
+   "text": "pretty aggressively, is still the director at this time. In my head, I'd have thought, well,"
+  },
+  {
+   "start": 839.68,
+   "end": 843.28,
+   "text": "you know, the FBI are going to kind of play ball with the president's requests"
+  },
+  {
+   "start": 843.28,
+   "end": 847.84,
+   "text": "to do all this spying on his enemies and going off to them. But Hoover actually pushes back,"
+  },
+  {
+   "start": 847.84,
+   "end": 853.44,
+   "text": "partly because he's been burned by some recent publicity about what the FBI have done in recent"
+  },
+  {
+   "start": 853.44,
+   "end": 859.28,
+   "text": "years. Yeah, because in 1965, when Nixon is wandering the political wilderness, Hoover is"
+  },
+  {
+   "start": 859.28,
+   "end": 865.12,
+   "text": "getting absolutely raked over the calls by Congress, by the Senate, who hold hearings on FBI"
+  },
+  {
+   "start": 865.12,
+   "end": 871.36,
+   "text": "wiretapping. And in response, Hoover has a guy named Mark Felt, who will later on become Deep"
+  },
+  {
+   "start": 871.36,
+   "end": 876.16,
+   "text": "throat, the source of so much of the Watergate leaks, look at the wiretapping procedure inside the"
+  },
+  {
+   "start": 876.16,
+   "end": 884.64,
+   "text": "Bureau and felt fines nearly 80 wiretaps that he thinks are of dubious legality and recommends"
+  },
+  {
+   "start": 884.64,
+   "end": 891.84,
+   "text": "cutting the number in half. The following year, so 1966, Hoover basically ends what had been a very"
+  },
+  {
+   "start": 891.84,
+   "end": 896.72,
+   "text": "common fee practice, which are called black bag jobs. So essentially a break-in where you're"
+  },
+  {
+   "start": 896.72,
+   "end": 902.64,
+   "text": "using lockpicking, burglar tools to go into an office or whatever and steal documents or install"
+  },
+  {
+   "start": 902.64,
+   "end": 912.24,
+   "text": "wiretaps. So the FBI that Nixon has inherited in 1968 is a different animal from what it had been"
+  },
+  {
+   "start": 912.24,
+   "end": 917.04,
+   "text": "in the 30s, 40s and 50s. I mean, it is wild to think Hoover's FBI won't do this stuff for him."
+  },
+  {
+   "start": 917.04,
+   "end": 921.68,
+   "text": "Right. But he really wants it done. But he really wants it done. And he sees his enemies"
+  },
+  {
+   "start": 921.68,
+   "end": 926.24,
+   "text": "everywhere, doesn't he, Nixon? So he's convinced that there are enemies, including within the state,"
+  },
+  {
+   "start": 926.72,
+   "end": 931.76,
+   "text": "You could say the deep state who are probably leaking and he wants to find them after digging into this."
+  },
+  {
+   "start": 931.76,
+   "end": 934.94,
+   "text": "I felt some measure of sympathy for Nixon."
+  },
+  {
+   "start": 934.94,
+   "end": 947.07,
+   "text": "I have to say seeing from the Nixon White House, you not only have all these issues with, as you've said, the deep state, but you have a kind of low level domestic insurgency."
+  },
+  {
+   "start": 947.11,
+   "end": 948.15,
+   "text": "Yeah, that's going on."
+  },
+  {
+   "start": 948.31,
+   "end": 953.57,
+   "text": "I mean, there's an American kind of Marxist militant organization called the weather underground."
+  },
+  {
+   "start": 953.57,
+   "end": 957.13,
+   "text": "three weather underground members blew themselves up"
+  },
+  {
+   "start": 957.13,
+   "end": 960.09,
+   "text": "in a Greenwich Village townhouse in March of 1969."
+  },
+  {
+   "start": 960.09,
+   "end": 961.21,
+   "text": "Did they mean to blow themselves up?"
+  },
+  {
+   "start": 961.21,
+   "end": 962.37,
+   "text": "I'm not sure."
+  },
+  {
+   "start": 962.37,
+   "end": 964.41,
+   "text": "I don't, I think it was a, I think it was an accident."
+  },
+  {
+   "start": 964.41,
+   "end": 965.57,
+   "text": "I think it was an accident."
+  },
+  {
+   "start": 965.57,
+   "end": 967.85,
+   "text": "Four students were shot dead at Kent State University,"
+  },
+  {
+   "start": 967.85,
+   "end": 969.37,
+   "text": "famously on the 4th of May."
+  },
+  {
+   "start": 969.37,
+   "end": 971.85,
+   "text": "Two more at Jackson State on the 14th of May."
+  },
+  {
+   "start": 971.85,
+   "end": 973.85,
+   "text": "The weathermen, members of the weather underground"
+  },
+  {
+   "start": 973.85,
+   "end": 977.13,
+   "text": "issue a declaration of war, promising more attacks."
+  },
+  {
+   "start": 977.13,
+   "end": 979.51,
+   "text": "Nixon's own memoirs, now that could be a self-serving"
+  },
+  {
+   "start": 979.51,
+   "end": 981.05,
+   "text": "aspect of this, we must say."
+  },
+  {
+   "start": 981.05,
+   "end": 984.35,
+   "text": "Nixon's own memoirs count more than 40,000 bombings,"
+  },
+  {
+   "start": 984.35,
+   "end": 986.47,
+   "text": "attempted bombings and bomb threats"
+  },
+  {
+   "start": 986.47,
+   "end": 988.35,
+   "text": "in the first two years of his presidency."
+  },
+  {
+   "start": 988.35,
+   "end": 990.15,
+   "text": "That is an average of 80 a day."
+  },
+  {
+   "start": 990.15,
+   "end": 992.43,
+   "text": "And in this period, 43 people are killed"
+  },
+  {
+   "start": 992.43,
+   "end": 994.43,
+   "text": "in kind of domestic violence and terrorism."
+  },
+  {
+   "start": 994.43,
+   "end": 995.51,
+   "text": "Yeah, and it's worth saying, isn't it?"
+  },
+  {
+   "start": 995.51,
+   "end": 996.99,
+   "text": "That the backdrop to this is, you know,"
+  },
+  {
+   "start": 996.99,
+   "end": 999.43,
+   "text": "you've had 1968 where you've had the assassination"
+  },
+  {
+   "start": 999.43,
+   "end": 1000.75,
+   "text": "of Martin Luther King,"
+  },
+  {
+   "start": 1000.75,
+   "end": 1002.83,
+   "text": "you've had assassination of Robert Kennedy,"
+  },
+  {
+   "start": 1002.83,
+   "end": 1006.27,
+   "text": "you've got this upsurging, quite extreme violence,"
+  },
+  {
+   "start": 1006.27,
+   "end": 1008.35,
+   "text": "you've got student protests over Vietnam,"
+  },
+  {
+   "start": 1008.35,
+   "end": 1009.47,
+   "text": "which are starting to grow."
+  },
+  {
+   "start": 1009.47,
+   "end": 1011.95,
+   "text": "So there's a kind of pretty fibrile atmosphere"
+  },
+  {
+   "start": 1011.95,
+   "end": 1013.95,
+   "text": "in the United States at that time, isn't there?"
+  },
+  {
+   "start": 1013.95,
+   "end": 1016.99,
+   "text": "There's kind of a sense of unrest and militancy."
+  },
+  {
+   "start": 1016.99,
+   "end": 1021.03,
+   "text": "One man's revolution is another man's domestic conspiracy."
+  },
+  {
+   "start": 1021.03,
+   "end": 1024.03,
+   "text": "And I think for Nixon, I think he has a tendency"
+  },
+  {
+   "start": 1024.03,
+   "end": 1026.63,
+   "text": "to take this information in and say,"
+  },
+  {
+   "start": 1026.63,
+   "end": 1030.33,
+   "text": "I am both the center of attention, the narcissism,"
+  },
+  {
+   "start": 1030.33,
+   "end": 1031.71,
+   "text": "and also the victim."
+  },
+  {
+   "start": 1031.71,
+   "end": 1033.77,
+   "text": "So there's this kind of tension between those two poles"
+  },
+  {
+   "start": 1033.77,
+   "end": 1035.27,
+   "text": "of his personality throughout."
+  },
+  {
+   "start": 1035.27,
+   "end": 1039.55,
+   "text": "And Nixon doesn't have the same FBI."
+  },
+  {
+   "start": 1039.55,
+   "end": 1043.47,
+   "text": "He doesn't have an FBI that's willing to get really dirty"
+  },
+  {
+   "start": 1043.47,
+   "end": 1044.31,
+   "text": "domestically."
+  },
+  {
+   "start": 1044.31,
+   "end": 1047.59,
+   "text": "And so he turns to White House staff,"
+  },
+  {
+   "start": 1047.59,
+   "end": 1049.91,
+   "text": "to loyalists inside the White House."
+  },
+  {
+   "start": 1049.91,
+   "end": 1053.39,
+   "text": "This first staffer who Nixon turns to for help"
+  },
+  {
+   "start": 1053.39,
+   "end": 1056.91,
+   "text": "is a very intense and slightly cadaverous"
+  },
+  {
+   "start": 1056.91,
+   "end": 1059.55,
+   "text": "29 year old former Army Intelligence Officer"
+  },
+  {
+   "start": 1059.55,
+   "end": 1061.23,
+   "text": "who had been in the White House"
+  },
+  {
+   "start": 1061.23,
+   "end": 1064.11,
+   "text": "helping put together morning news summaries"
+  },
+  {
+   "start": 1064.11,
+   "end": 1067.43,
+   "text": "and who had kind of drifted into a domestic security portfolio."
+  },
+  {
+   "start": 1067.43,
+   "end": 1071.71,
+   "text": "Now he had already been involved in helping push the IRS"
+  },
+  {
+   "start": 1071.71,
+   "end": 1073.77,
+   "text": "to target left-wing groups."
+  },
+  {
+   "start": 1073.77,
+   "end": 1076.91,
+   "text": "Also in analog, we see today where this sort of IRS"
+  },
+  {
+   "start": 1076.91,
+   "end": 1079.03,
+   "text": "is a political football going after people"
+  },
+  {
+   "start": 1079.03,
+   "end": 1079.99,
+   "text": "and their tax returns."
+  },
+  {
+   "start": 1079.99,
+   "end": 1081.39,
+   "text": "So on the 5th of June, 1970,"
+  },
+  {
+   "start": 1081.39,
+   "end": 1085.57,
+   "text": "this aid helps arrange a very important meeting."
+  },
+  {
+   "start": 1085.57,
+   "end": 1087.95,
+   "text": "Nixon's there, he's got his Chief of Staff,"
+  },
+  {
+   "start": 1087.95,
+   "end": 1090.44,
+   "text": "HR Haldeman, John Ehrlichman,"
+  },
+  {
+   "start": 1090.44,
+   "end": 1092.0,
+   "text": "who's one of his chief aides,"
+  },
+  {
+   "start": 1092.0,
+   "end": 1093.84,
+   "text": "kind of a domestic policy advisor,"
+  },
+  {
+   "start": 1093.84,
+   "end": 1094.68,
+   "text": "is also there."
+  },
+  {
+   "start": 1094.68,
+   "end": 1097.72,
+   "text": "The Stephen Miller of the Nixon White House, you could say."
+  },
+  {
+   "start": 1097.72,
+   "end": 1101.64,
+   "text": "And then four intelligence chiefs, Hoover at the FBI,"
+  },
+  {
+   "start": 1101.64,
+   "end": 1103.48,
+   "text": "Helms, Richard Helms at the CIA,"
+  },
+  {
+   "start": 1103.48,
+   "end": 1105.32,
+   "text": "will be important character in the story,"
+  },
+  {
+   "start": 1105.32,
+   "end": 1107.56,
+   "text": "and the chiefs of the National Security Agency"
+  },
+  {
+   "start": 1107.56,
+   "end": 1109.24,
+   "text": "and our friends at the DIA,"
+  },
+  {
+   "start": 1109.24,
+   "end": 1111.6,
+   "text": "the Defense Intelligence Agency, God bless them."
+  },
+  {
+   "start": 1111.6,
+   "end": 1116.16,
+   "text": "Now, Nixon starts off by telling this assembled group"
+  },
+  {
+   "start": 1116.16,
+   "end": 1119.38,
+   "text": "that the country is in the middle of a crisis"
+  },
+  {
+   "start": 1119.38,
+   "end": 1123.56,
+   "text": "and it's radicals on campus, it's this domestic terrorism,"
+  },
+  {
+   "start": 1123.56,
+   "end": 1127.32,
+   "text": "It's as dangerous as anything, Nixon says,"
+  },
+  {
+   "start": 1127.32,
+   "end": 1130.55,
+   "text": "that might come from Cuba or China,"
+  },
+  {
+   "start": 1130.55,
+   "end": 1133.59,
+   "text": "and that Americans broadly, sort of middle-aged older"
+  },
+  {
+   "start": 1133.59,
+   "end": 1135.99,
+   "text": "Americans are unwilling to face the fact"
+  },
+  {
+   "start": 1135.99,
+   "end": 1138.15,
+   "text": "that their children might want to destroy the country."
+  },
+  {
+   "start": 1138.15,
+   "end": 1142.51,
+   "text": "Nixon and his aides set up a working group,"
+  },
+  {
+   "start": 1142.51,
+   "end": 1144.59,
+   "text": "as one does, to deal with this problem."
+  },
+  {
+   "start": 1144.59,
+   "end": 1147.55,
+   "text": "And out of it comes a 43-page document"
+  },
+  {
+   "start": 1147.55,
+   "end": 1149.03,
+   "text": "that's drafted by that staffer"
+  },
+  {
+   "start": 1149.03,
+   "end": 1151.43,
+   "text": "and one of Hoover's deputies at FBI."
+  },
+  {
+   "start": 1151.43,
+   "end": 1156.11,
+   "text": "And the essence of this is to turn foreign intelligence agencies"
+  },
+  {
+   "start": 1156.11,
+   "end": 1158.43,
+   "text": "inward to run domestic operations."
+  },
+  {
+   "start": 1158.43,
+   "end": 1161.71,
+   "text": "So looking at things like mail opening,"
+  },
+  {
+   "start": 1161.71,
+   "end": 1164.67,
+   "text": "the document itself actually concedes that this is illegal,"
+  },
+  {
+   "start": 1164.67,
+   "end": 1167.51,
+   "text": "but that the advantages to be derived outweigh the risks."
+  },
+  {
+   "start": 1167.51,
+   "end": 1168.35,
+   "text": "Fair enough, then."
+  },
+  {
+   "start": 1168.35,
+   "end": 1171.71,
+   "text": "Burglary under the heading, surreptitious entry,"
+  },
+  {
+   "start": 1171.71,
+   "end": 1173.75,
+   "text": "says, look, present restrictions on this"
+  },
+  {
+   "start": 1173.75,
+   "end": 1177.03,
+   "text": "should be modified so that we can do this selectively"
+  },
+  {
+   "start": 1177.03,
+   "end": 1180.23,
+   "text": "against really high priority internal security targets."
+  },
+  {
+   "start": 1180.23,
+   "end": 1183.89,
+   "text": "Again, admits that it's illegal, it's burglary,"
+  },
+  {
+   "start": 1183.89,
+   "end": 1188.07,
+   "text": "it's highly risky, but it's nonetheless the best way"
+  },
+  {
+   "start": 1188.07,
+   "end": 1190.55,
+   "text": "to produce the intelligence that they want."
+  },
+  {
+   "start": 1190.55,
+   "end": 1194.95,
+   "text": "And by the way, the FBI had done this decades before."
+  },
+  {
+   "start": 1194.95,
+   "end": 1196.43,
+   "text": "And it's only recently out of this game."
+  },
+  {
+   "start": 1196.43,
+   "end": 1199.25,
+   "text": "It also proposes expanded electronic surveillance"
+  },
+  {
+   "start": 1199.25,
+   "end": 1201.99,
+   "text": "and recruiting informants on campus"
+  },
+  {
+   "start": 1201.99,
+   "end": 1204.46,
+   "text": "to help spy on the radicals."
+  },
+  {
+   "start": 1204.46,
+   "end": 1209.1,
+   "text": "Very interestingly enough, Hoover at the FBI"
+  },
+  {
+   "start": 1209.1,
+   "end": 1213.06,
+   "text": "appends a dissenting footnote to every major point."
+  },
+  {
+   "start": 1213.06,
+   "end": 1214.62,
+   "text": "And the other three directors, I think,"
+  },
+  {
+   "start": 1214.62,
+   "end": 1217.66,
+   "text": "kind of go along with it or at least don't voice."
+  },
+  {
+   "start": 1217.66,
+   "end": 1219.62,
+   "text": "So who's the only one who actually dissents?"
+  },
+  {
+   "start": 1219.62,
+   "end": 1221.38,
+   "text": "Well, I think it's because he has"
+  },
+  {
+   "start": 1221.38,
+   "end": 1222.66,
+   "text": "the domestic security portfolio."
+  },
+  {
+   "start": 1222.66,
+   "end": 1223.66,
+   "text": "Yeah, he doesn't do it."
+  },
+  {
+   "start": 1223.66,
+   "end": 1225.46,
+   "text": "He would be the one, presumably,"
+  },
+  {
+   "start": 1225.46,
+   "end": 1226.98,
+   "text": "whose people would be most engaged in this."
+  },
+  {
+   "start": 1226.98,
+   "end": 1228.58,
+   "text": "And he says, no way."
+  },
+  {
+   "start": 1228.58,
+   "end": 1231.46,
+   "text": "So the staffer then puts together a directive"
+  },
+  {
+   "start": 1231.46,
+   "end": 1234.3,
+   "text": "for Nixon's signature that will formally terminate"
+  },
+  {
+   "start": 1234.3,
+   "end": 1236.9,
+   "text": "restrictions on mail opening and the black bag jobs."
+  },
+  {
+   "start": 1236.9,
+   "end": 1240.22,
+   "text": "Nixon approves it, Hoover objects again,"
+  },
+  {
+   "start": 1240.22,
+   "end": 1243.57,
+   "text": "and then within days, it's rescinded."
+  },
+  {
+   "start": 1243.57,
+   "end": 1246.05,
+   "text": "It's important to bring this up though,"
+  },
+  {
+   "start": 1246.05,
+   "end": 1249.05,
+   "text": "because Garrett Graff, who's written this great book"
+  },
+  {
+   "start": 1249.05,
+   "end": 1252.21,
+   "text": "on Watergate, I think it's called Watergate, A New History,"
+  },
+  {
+   "start": 1252.21,
+   "end": 1255.29,
+   "text": "wrote that the plan was dead, but it would have nine lives."
+  },
+  {
+   "start": 1255.29,
+   "end": 1257.65,
+   "text": "And the essence here is that the structure"
+  },
+  {
+   "start": 1257.65,
+   "end": 1260.17,
+   "text": "of what this staffer is proposing"
+  },
+  {
+   "start": 1260.17,
+   "end": 1262.37,
+   "text": "and what Nixon has signed off on,"
+  },
+  {
+   "start": 1262.37,
+   "end": 1266.16,
+   "text": "which essentially is a White House directed"
+  },
+  {
+   "start": 1266.16,
+   "end": 1270.36,
+   "text": "political intelligence slash burglary unit is going to come back."
+  },
+  {
+   "start": 1270.72,
+   "end": 1276.24,
+   "text": "And that's what's so interesting about this is that it doesn't die, even though the FBI director has said no,"
+  },
+  {
+   "start": 1276.44,
+   "end": 1284.84,
+   "text": "because Nixon is so determined to do it, he's going to find other ways to do it less formally in a way through his aides,"
+  },
+  {
+   "start": 1284.88,
+   "end": 1293.52,
+   "text": "but also, and this is what's so interesting to some extent through maybe slightly indirectly the CIA as well."
+  },
+  {
+   "start": 1293.52,
+   "end": 1297.84,
+   "text": "So it is worth just saying, why is the CIA even in these meetings?"
+  },
+  {
+   "start": 1297.84,
+   "end": 1303.14,
+   "text": "And the CIA, David, I would suggest is a foreign intelligence agency whose job it is to spy"
+  },
+  {
+   "start": 1303.14,
+   "end": 1304.54,
+   "text": "outside the United States."
+  },
+  {
+   "start": 1304.54,
+   "end": 1306.3,
+   "text": "Why is it in the meetings?"
+  },
+  {
+   "start": 1306.3,
+   "end": 1310.62,
+   "text": "You just don't have the creative mindset, Gordon, to think about how you might use the"
+  },
+  {
+   "start": 1310.62,
+   "end": 1311.62,
+   "text": "CIA domestically."
+  },
+  {
+   "start": 1311.62,
+   "end": 1312.62,
+   "text": "No."
+  },
+  {
+   "start": 1312.62,
+   "end": 1313.62,
+   "text": "The 1960s and 1970s."
+  },
+  {
+   "start": 1313.62,
+   "end": 1316.42,
+   "text": "But yes, worth setting up this CIA."
+  },
+  {
+   "start": 1316.42,
+   "end": 1321.1,
+   "text": "And I think in particular, the spy chief that's in those meetings, because this is Richard"
+  },
+  {
+   "start": 1321.1,
+   "end": 1322.1,
+   "text": "Helms."
+  },
+  {
+   "start": 1322.1,
+   "end": 1326.5,
+   "text": "kept Helms at the CIA. Helms has actually holed over from the Johnson years, kind of surprising"
+  },
+  {
+   "start": 1326.5,
+   "end": 1333.62,
+   "text": "at the time. Now this is an era where it was more common to just keep the CIA director on for"
+  },
+  {
+   "start": 1333.62,
+   "end": 1341.22,
+   "text": "continuity. But again, Helms was very much not seen as a Nixon man. So it's a bit of a surprising"
+  },
+  {
+   "start": 1341.22,
+   "end": 1346.98,
+   "text": "decision to keep him on. Although I was reading somewhere that part of it was that Helms has"
+  },
+  {
+   "start": 1346.98,
+   "end": 1353.62,
+   "text": "got a deep career inside American intelligence. Nixon has been vice president in the 50s when"
+  },
+  {
+   "start": 1353.62,
+   "end": 1359.78,
+   "text": "Helms was doing some pretty spicy operations. And the suggestion was they basically both have so much"
+  },
+  {
+   "start": 1359.78,
+   "end": 1364.42,
+   "text": "dirt on each other that they're bound together. And I think there is a bit of that, isn't there,"
+  },
+  {
+   "start": 1364.42,
+   "end": 1368.98,
+   "text": "where they both know each other almost so well. They don't want to fall out with each other."
+  },
+  {
+   "start": 1368.98,
+   "end": 1374.18,
+   "text": "I think there is an aspect to that. And actually one of the sources that we're drawn on pretty"
+  },
+  {
+   "start": 1374.18,
+   "end": 1379.54,
+   "text": "for the series is a great book written by a guy named Jefferson Morley called Scorpion's Dance,"
+  },
+  {
+   "start": 1379.54,
+   "end": 1384.66,
+   "text": "and it's all about the Nixon and Helms dynamic. And his overall thesis is exactly your point,"
+  },
+  {
+   "start": 1384.66,
+   "end": 1390.9,
+   "text": "which is these two guys had so much on each other that it was mutually assured destruction."
+  },
+  {
+   "start": 1390.9,
+   "end": 1391.38,
+   "text": "Yeah."
+  },
+  {
+   "start": 1391.38,
+   "end": 1395.06,
+   "text": "And so they kind of had to tolerate each other, even if they didn't particularly like each other."
+  },
+  {
+   "start": 1395.7,
+   "end": 1401.54,
+   "text": "I think aspects of that are true. I think it is slightly overplayed. My sense is that Kissinger"
+  },
+  {
+   "start": 1401.54,
+   "end": 1406.54,
+   "text": "saw Helms as a professional and wanted him kept on."
+  },
+  {
+   "start": 1407.98,
+   "end": 1410.58,
+   "text": "And that that's probably the main reason"
+  },
+  {
+   "start": 1410.58,
+   "end": 1412.78,
+   "text": "why Nixon keeps Helms."
+  },
+  {
+   "start": 1412.78,
+   "end": 1416.42,
+   "text": "Morley advances this idea that Nixon knew,"
+  },
+  {
+   "start": 1416.42,
+   "end": 1419.62,
+   "text": "that Helms knew about some of his secret contacts"
+  },
+  {
+   "start": 1419.62,
+   "end": 1422.06,
+   "text": "with the North Vietnamese during the campaign."
+  },
+  {
+   "start": 1422.06,
+   "end": 1425.66,
+   "text": "And so there is, you know, there's an interesting dynamic."
+  },
+  {
+   "start": 1425.66,
+   "end": 1428.18,
+   "text": "Now, set up Helms a bit."
+  },
+  {
+   "start": 1428.18,
+   "end": 1431.26,
+   "text": "So he is a consummate, career CIA man."
+  },
+  {
+   "start": 1431.26,
+   "end": 1434.7,
+   "text": "He's six two, he's lanky, he speaks French and German."
+  },
+  {
+   "start": 1434.7,
+   "end": 1437.66,
+   "text": "He'd been in the Navy and then recruited into the OSS,"
+  },
+  {
+   "start": 1437.66,
+   "end": 1441.22,
+   "text": "the forerunner to the CIA during World War II."
+  },
+  {
+   "start": 1441.22,
+   "end": 1443.92,
+   "text": "He comes up through the clandestine service,"
+  },
+  {
+   "start": 1443.92,
+   "end": 1447.92,
+   "text": "he survives the bloodletting after the Bay of Pigs fiasco,"
+  },
+  {
+   "start": 1447.92,
+   "end": 1450.3,
+   "text": "rises to become the deputy director for plans,"
+  },
+  {
+   "start": 1450.3,
+   "end": 1452.22,
+   "text": "which is then the equivalent"
+  },
+  {
+   "start": 1452.22,
+   "end": 1454.7,
+   "text": "of being the director of operations."
+  },
+  {
+   "start": 1454.7,
+   "end": 1458.22,
+   "text": "He's named director of central intelligence DCI in 1966."
+  },
+  {
+   "start": 1458.22,
+   "end": 1461.14,
+   "text": "And he's the first kind of fully career Intel guy"
+  },
+  {
+   "start": 1461.14,
+   "end": 1462.18,
+   "text": "to hold the job."
+  },
+  {
+   "start": 1462.18,
+   "end": 1464.26,
+   "text": "Helms, maculately dressed."
+  },
+  {
+   "start": 1464.26,
+   "end": 1466.42,
+   "text": "He's an exceptional ballroom dancer,"
+  },
+  {
+   "start": 1466.42,
+   "end": 1469.46,
+   "text": "pretty good tennis player, relentless networker"
+  },
+  {
+   "start": 1469.46,
+   "end": 1470.38,
+   "text": "and flatterer."
+  },
+  {
+   "start": 1470.38,
+   "end": 1472.3,
+   "text": "He's a core member of what was then called"
+  },
+  {
+   "start": 1472.3,
+   "end": 1476.26,
+   "text": "the Georgetown set, which is this group of Washington elites"
+  },
+  {
+   "start": 1476.26,
+   "end": 1480.38,
+   "text": "who were largely Ivy educated, who like to have martinis"
+  },
+  {
+   "start": 1480.38,
+   "end": 1483.5,
+   "text": "and socialize in better parts of DC."
+  },
+  {
+   "start": 1483.5,
+   "end": 1487.86,
+   "text": "And this is a group of people that Nixon absolutely despises."
+  },
+  {
+   "start": 1487.86,
+   "end": 1492.98,
+   "text": "He is a kind of deep state of the time, the establishment, the Georgetown establishment,"
+  },
+  {
+   "start": 1492.98,
+   "end": 1496.02,
+   "text": "where they would kind of meet and hang out and have martinis, wasn't he?"
+  },
+  {
+   "start": 1496.02,
+   "end": 1503.79,
+   "text": "And he's also, he's kind of an aristocrat inside the spy business and yet almost entirely"
+  },
+  {
+   "start": 1503.79,
+   "end": 1505.71,
+   "text": "unknown outside of BC."
+  },
+  {
+   "start": 1505.71,
+   "end": 1506.71,
+   "text": "The Grey Ghost."
+  },
+  {
+   "start": 1506.71,
+   "end": 1507.71,
+   "text": "The Grey Ghost."
+  },
+  {
+   "start": 1507.71,
+   "end": 1508.71,
+   "text": "I love that title."
+  },
+  {
+   "start": 1508.71,
+   "end": 1513.46,
+   "text": "As he's described, the CIA that he's running is not the modern CIA."
+  },
+  {
+   "start": 1513.46,
+   "end": 1517.82,
+   "text": "This is a very different CIA and that is going to be in a very important part of this story"
+  },
+  {
+   "start": 1517.82,
+   "end": 1525.42,
+   "text": "because the things it's going to get on with are slightly illegal and against its charter."
+  },
+  {
+   "start": 1525.42,
+   "end": 1530.94,
+   "text": "But we're setting up what it is. So it is an organization that has an annual budget of around"
+  },
+  {
+   "start": 1530.94,
+   "end": 1536.14,
+   "text": "a billion dollars. It has at least 15,000 staff. It has an absolutely global reach."
+  },
+  {
+   "start": 1536.14,
+   "end": 1540.62,
+   "text": "It is covering 80 countries at this point, probably has stations in 80 countries,"
+  },
+  {
+   "start": 1540.62,
+   "end": 1544.14,
+   "text": "extensive history at this time of covert action."
+  },
+  {
+   "start": 1544.14,
+   "end": 1547.98,
+   "text": "And we've covered some of these, haven't we? We've covered everything from Guatemala to Iran,"
+  },
+  {
+   "start": 1548.54,
+   "end": 1554.86,
+   "text": "Bay of Pigs, you know, they've got a taste for overthrowing governments for assassination plots,"
+  },
+  {
+   "start": 1555.82,
+   "end": 1559.42,
+   "text": "for all kinds of things. And it's fair to say with very little oversight."
+  },
+  {
+   "start": 1560.46,
+   "end": 1566.06,
+   "text": "It's this period, we have a little bit of oversight on the appropriation side"
+  },
+  {
+   "start": 1566.7,
+   "end": 1568.22,
+   "text": "in the Senate in the House, a little bit."
+  },
+  {
+   "start": 1568.78,
+   "end": 1573.74,
+   "text": "There are not formal intelligence oversight committees in this era."
+  },
+  {
+   "start": 1573.74,
+   "end": 1582.84,
+   "text": "And the arrangement between Helms and the White House and senior members of Congress is kind of a gentleman's agreement."
+  },
+  {
+   "start": 1582.84,
+   "end": 1589.44,
+   "text": "Where if Helms feels that he needs to, if he needs to approve a particularly large budget outlay,"
+  },
+  {
+   "start": 1589.44,
+   "end": 1594.84,
+   "text": "or if there's a particularly spicy piece of covert action that they're running,"
+  },
+  {
+   "start": 1594.84,
+   "end": 1600.84,
+   "text": "he will raise it with the White House and with a few members of Congress."
+  },
+  {
+   "start": 1600.84,
+   "end": 1602.84,
+   "text": "It's not particularly formal."
+  },
+  {
+   "start": 1602.84,
+   "end": 1603.34,
+   "text": "Yeah."
+  },
+  {
+   "start": 1603.34,
+   "end": 1607.88,
+   "text": "It is very much an arrangement in which the CIA more or less"
+  },
+  {
+   "start": 1607.88,
+   "end": 1610.44,
+   "text": "does what it's asked or told by the White House."
+  },
+  {
+   "start": 1610.44,
+   "end": 1613.71,
+   "text": "And it basically promises not to embarrass anybody."
+  },
+  {
+   "start": 1613.71,
+   "end": 1617.31,
+   "text": "As we said, it's got into some pretty spicy actions."
+  },
+  {
+   "start": 1617.31,
+   "end": 1619.67,
+   "text": "I mean, assassinations, coups, things like that."
+  },
+  {
+   "start": 1619.67,
+   "end": 1622.27,
+   "text": "But also some things with a domestic edge already."
+  },
+  {
+   "start": 1622.27,
+   "end": 1626.03,
+   "text": "And it's got involved not just in assassinations and coups"
+  },
+  {
+   "start": 1626.03,
+   "end": 1628.51,
+   "text": "abroad, but also domestic activities already."
+  },
+  {
+   "start": 1628.51,
+   "end": 1630.79,
+   "text": "So spying on the anti-war movement."
+  },
+  {
+   "start": 1630.79,
+   "end": 1632.15,
+   "text": "I mean, this is a classic thing, isn't it?"
+  },
+  {
+   "start": 1632.15,
+   "end": 1637.43,
+   "text": "to look for whether there might be a foreign hand behind domestic subversive movements."
+  },
+  {
+   "start": 1637.43,
+   "end": 1640.63,
+   "text": "I mean, it's something you see in the UK in the 80s, actually, with MI5 again."
+  },
+  {
+   "start": 1640.67,
+   "end": 1643.27,
+   "text": "Are the communists backing some of these anti-war movements?"
+  },
+  {
+   "start": 1643.27,
+   "end": 1644.87,
+   "text": "So they're doing surveillance there."
+  },
+  {
+   "start": 1645.11,
+   "end": 1653.55,
+   "text": "And, you know, we talked previously in episodes about MKUltra, which is this famous kind of work on mind control and LSD,"
+  },
+  {
+   "start": 1653.55,
+   "end": 1659.15,
+   "text": "in which it's testing it on people within the United States, including at brothels and things like that."
+  },
+  {
+   "start": 1659.15,
+   "end": 1662.11,
+   "text": "So it's it's prisoners, prisoners, brothels."
+  },
+  {
+   "start": 1662.31,
+   "end": 1667.71,
+   "text": "So it's already got its hand in inside the US in a way which now seems pretty unusual."
+  },
+  {
+   "start": 1667.75,
+   "end": 1673.27,
+   "text": "My favorite sub project under MKLTRO and a sign of how out of control some of this"
+  },
+  {
+   "start": 1673.47,
+   "end": 1679.71,
+   "text": "had gotten was when an agency contractor injected a gigantic bull elephant"
+  },
+  {
+   "start": 1679.91,
+   "end": 1685.59,
+   "text": "named Tusko at the Oklahoma City Zoo with, I think, 350,000 micrograms of LSD"
+  },
+  {
+   "start": 1685.91,
+   "end": 1687.87,
+   "text": "to see what would happen and the elephant died."
+  },
+  {
+   "start": 1687.87,
+   "end": 1692.25,
+   "text": "And the only reason we know about this is because the agency had to compensate through cutouts"
+  },
+  {
+   "start": 1692.65,
+   "end": 1699.59,
+   "text": "The Oklahoma City Zoo for the loss of tusco all of the stuff though that we're talking about it's important to say is not public"
+  },
+  {
+   "start": 1699.59,
+   "end": 1705.83,
+   "text": "Yeah, in this period really nobody outside of CIA knows much of any of this"
+  },
+  {
+   "start": 1705.83,
+   "end": 1710.37,
+   "text": "I mean there've been some rumors about Castro assassination plots and obviously the Bay of Pigs is very popular"
+  },
+  {
+   "start": 1710.51,
+   "end": 1713.41,
+   "text": "But what specifically the CIA got up to in Iran?"
+  },
+  {
+   "start": 1713.41,
+   "end": 1717.09,
+   "text": "on what it did in Guatemala, all of the mind control"
+  },
+  {
+   "start": 1717.09,
+   "end": 1718.43,
+   "text": "and LSD experiments."
+  },
+  {
+   "start": 1718.43,
+   "end": 1719.27,
+   "text": "It's secret."
+  },
+  {
+   "start": 1719.27,
+   "end": 1720.11,
+   "text": "It's totally secret."
+  },
+  {
+   "start": 1720.11,
+   "end": 1721.97,
+   "text": "I mean, this is the culture of secrecy"
+  },
+  {
+   "start": 1721.97,
+   "end": 1726.05,
+   "text": "around the agency at this point is almost total."
+  },
+  {
+   "start": 1726.05,
+   "end": 1727.53,
+   "text": "There's no press office."
+  },
+  {
+   "start": 1727.53,
+   "end": 1729.85,
+   "text": "There's no gift shop yet, Gordon, right?"
+  },
+  {
+   "start": 1729.85,
+   "end": 1732.49,
+   "text": "There's no former analysts running their mouths"
+  },
+  {
+   "start": 1732.49,
+   "end": 1734.69,
+   "text": "on podcasts constantly every week,"
+  },
+  {
+   "start": 1734.69,
+   "end": 1736.93,
+   "text": "talking about what's going on at CIA."
+  },
+  {
+   "start": 1736.93,
+   "end": 1737.77,
+   "text": "Those were the days."
+  },
+  {
+   "start": 1737.77,
+   "end": 1738.61,
+   "text": "Those were the days."
+  },
+  {
+   "start": 1738.61,
+   "end": 1742.93,
+   "text": "There aren't really memoirs published by former CIA officers"
+  },
+  {
+   "start": 1742.93,
+   "end": 1744.25,
+   "text": "until the mid 1970s."
+  },
+  {
+   "start": 1744.25,
+   "end": 1745.45,
+   "text": "And as we'll see in this story,"
+  },
+  {
+   "start": 1745.45,
+   "end": 1747.77,
+   "text": "officers who wanted to write spy novels"
+  },
+  {
+   "start": 1747.77,
+   "end": 1750.53,
+   "text": "had tremendous hurdles to overcome to do so."
+  },
+  {
+   "start": 1750.53,
+   "end": 1753.69,
+   "text": "So the agency is a very different animal."
+  },
+  {
+   "start": 1753.69,
+   "end": 1758.11,
+   "text": "And going back to your point on what it has done domestically,"
+  },
+  {
+   "start": 1758.11,
+   "end": 1759.37,
+   "text": "this is really, really important"
+  },
+  {
+   "start": 1759.37,
+   "end": 1763.45,
+   "text": "because the agency's charter explicitly restricts it"
+  },
+  {
+   "start": 1763.45,
+   "end": 1766.41,
+   "text": "to operations abroad and prohibits it"
+  },
+  {
+   "start": 1766.41,
+   "end": 1769.39,
+   "text": "from conducting domestic security functions."
+  },
+  {
+   "start": 1769.39,
+   "end": 1772.05,
+   "text": "And this has been knowingly violated"
+  },
+  {
+   "start": 1772.05,
+   "end": 1776.09,
+   "text": "on a number of occasions up to this point in time."
+  },
+  {
+   "start": 1776.09,
+   "end": 1777.37,
+   "text": "There was, as you mentioned,"
+  },
+  {
+   "start": 1777.37,
+   "end": 1779.75,
+   "text": "the spying on the anti-war movement."
+  },
+  {
+   "start": 1779.75,
+   "end": 1782.33,
+   "text": "There was a case in which Helms actually puts together"
+  },
+  {
+   "start": 1782.33,
+   "end": 1785.41,
+   "text": "a CIA study called Restless Youth."
+  },
+  {
+   "start": 1785.41,
+   "end": 1788.01,
+   "text": "And when he sends it to the Johnson White House,"
+  },
+  {
+   "start": 1788.01,
+   "end": 1790.97,
+   "text": "he says, look, this has a section unsurprisingly"
+  },
+  {
+   "start": 1790.97,
+   "end": 1793.33,
+   "text": "from the title on American students."
+  },
+  {
+   "start": 1793.33,
+   "end": 1795.29,
+   "text": "This is an area that is not within the charter"
+  },
+  {
+   "start": 1795.29,
+   "end": 1796.45,
+   "text": "of the agency."
+  },
+  {
+   "start": 1796.45,
+   "end": 1799.61,
+   "text": "And he needed to emphasize how absolutely sensitive"
+  },
+  {
+   "start": 1799.61,
+   "end": 1800.81,
+   "text": "it made the paper."
+  },
+  {
+   "start": 1800.81,
+   "end": 1802.53,
+   "text": "and that if anyone learned of its existence,"
+  },
+  {
+   "start": 1802.53,
+   "end": 1805.61,
+   "text": "it would prove most embarrassing for all concerned."
+  },
+  {
+   "start": 1805.61,
+   "end": 1808.77,
+   "text": "So you have a CIA in this period, again,"
+  },
+  {
+   "start": 1808.77,
+   "end": 1811.29,
+   "text": "it's very secretive,"
+  },
+  {
+   "start": 1811.29,
+   "end": 1813.97,
+   "text": "it doesn't really have a whole lot of oversight,"
+  },
+  {
+   "start": 1813.97,
+   "end": 1819.0,
+   "text": "and it has, on a couple instances, violated its charter."
+  },
+  {
+   "start": 1819.8,
+   "end": 1823.08,
+   "text": "So there I think with the Nixon White House under siege,"
+  },
+  {
+   "start": 1823.08,
+   "end": 1826.72,
+   "text": "filled with paranoia and a secretive CIA prime"
+  },
+  {
+   "start": 1826.72,
+   "end": 1829.2,
+   "text": "to help the president, let's take a break."
+  },
+  {
+   "start": 1829.2,
+   "end": 1833.04,
+   "text": "And when we come back, we'll see how a new batch of leaks"
+  },
+  {
+   "start": 1833.04,
+   "end": 1836.68,
+   "text": "sends us down the long road to the CIA's involvement"
+  },
+  {
+   "start": 1836.68,
+   "end": 1839.44,
+   "text": "in the biggest political scandal in American history."
+  },
+  {
+   "start": 1841.0,
+   "end": 1844.56,
+   "text": "Ever check out online and think, wow, that was easy."
+  },
+  {
+   "start": 1844.56,
+   "end": 1847.84,
+   "text": "That might have been Link, no card hunt, no address typing,"
+  },
+  {
+   "start": 1847.84,
+   "end": 1850.04,
+   "text": "no checkout obstacle course."
+  },
+  {
+   "start": 1850.04,
+   "end": 1853.68,
+   "text": "Link fills in your details, helps protect eligible purchases"
+  },
+  {
+   "start": 1853.68,
+   "end": 1856.44,
+   "text": "and makes subscriptions easier to manage."
+  },
+  {
+   "start": 1856.44,
+   "end": 1860.2,
+   "text": "Next time you're at checkout, look for the green button."
+  },
+  {
+   "start": 1860.2,
+   "end": 1862.56,
+   "text": "Blink, the smarter way to pay."
+  },
+  {
+   "start": 1862.56,
+   "end": 1865.32,
+   "text": "Learn more at link.com."
+  },
+  {
+   "start": 1865.32,
+   "end": 1867.48,
+   "text": "Some personality quirks are really funny."
+  },
+  {
+   "start": 1867.48,
+   "end": 1871.24,
+   "text": "Like I talk to my left foot more than I talk to my right."
+  },
+  {
+   "start": 1871.24,
+   "end": 1874.32,
+   "text": "You know what's not funny and not a personality quirk?"
+  },
+  {
+   "start": 1874.32,
+   "end": 1875.14,
+   "text": "OCD."
+  },
+  {
+   "start": 1875.14,
+   "end": 1877.76,
+   "text": "Although the term OCD is widely recognized,"
+  },
+  {
+   "start": 1877.76,
+   "end": 1879.56,
+   "text": "it's misunderstood by most people."
+  },
+  {
+   "start": 1879.56,
+   "end": 1881.88,
+   "text": "It doesn't mean being tidy or clean."
+  },
+  {
+   "start": 1881.88,
+   "end": 1885.96,
+   "text": "It's having obsessive fears, thoughts, and urges."
+  },
+  {
+   "start": 1885.96,
+   "end": 1888.42,
+   "text": "You question your character, you question your safety."
+  },
+  {
+   "start": 1888.42,
+   "end": 1889.54,
+   "text": "That's OCD."
+  },
+  {
+   "start": 1889.54,
+   "end": 1892.34,
+   "text": "Breaking the OCD cycle takes effective treatment."
+  },
+  {
+   "start": 1892.34,
+   "end": 1896.5,
+   "text": "Go to nocd.com to learn more."
+  },
+  {
+   "start": 1896.5,
+   "end": 1898.78,
+   "text": "Hey, y'all, Kelly Clarkson here with Wayfair."
+  },
+  {
+   "start": 1898.78,
+   "end": 1900.98,
+   "text": "You know my favorite compliment during the holidays?"
+  },
+  {
+   "start": 1900.98,
+   "end": 1903.02,
+   "text": "Your house feels so cozy."
+  },
+  {
+   "start": 1903.02,
+   "end": 1904.94,
+   "text": "That's when I know everyone's comfortable enough"
+  },
+  {
+   "start": 1904.94,
+   "end": 1907.26,
+   "text": "to kick off their shoes, grab more dessert,"
+  },
+  {
+   "start": 1907.26,
+   "end": 1908.78,
+   "text": "and stay a little longer."
+  },
+  {
+   "start": 1908.78,
+   "end": 1911.46,
+   "text": "Wayfair makes it easy with everything from dining furniture"
+  },
+  {
+   "start": 1911.46,
+   "end": 1914.7,
+   "text": "to festive guest room essentials, all in one place."
+  },
+  {
+   "start": 1914.7,
+   "end": 1916.3,
+   "text": "So whether you're hosting for an afternoon"
+  },
+  {
+   "start": 1916.3,
+   "end": 1921.1,
+   "text": "all weekend, everyone fills right at home. Get holiday guests ready at Wayfair.com or"
+  },
+  {
+   "start": 1921.1,
+   "end": 1922.7,
+   "text": "on the Wayfair app today."
+  },
+  {
+   "start": 1922.7,
+   "end": 1930.6,
+   "text": "Wayfair, every style, every home."
+  },
+  {
+   "start": 1930.6,
+   "end": 1938.04,
+   "text": "Welcome back. It's 1971. Richard Nixon increasingly paranoid inside the White House believes he's"
+  },
+  {
+   "start": 1938.04,
+   "end": 1944.84,
+   "text": "battling a domestic insurgency, enemies within the leaks, and Vietnam is also causing problems"
+  },
+  {
+   "start": 1944.84,
+   "end": 1945.84,
+   "text": "for him, isn't he?"
+  },
+  {
+   "start": 1945.84,
+   "end": 1949.08,
+   "text": "Well, it is because even though these numbers are down"
+  },
+  {
+   "start": 1949.08,
+   "end": 1951.54,
+   "text": "from the Johnson years, about 250 Americans"
+  },
+  {
+   "start": 1951.54,
+   "end": 1953.52,
+   "text": "are still being killed every month."
+  },
+  {
+   "start": 1953.52,
+   "end": 1956.2,
+   "text": "And that is creating political problems for him"
+  },
+  {
+   "start": 1956.2,
+   "end": 1958.64,
+   "text": "because he had campaigned on a promise"
+  },
+  {
+   "start": 1958.64,
+   "end": 1961.62,
+   "text": "of bringing the war to a halt."
+  },
+  {
+   "start": 1961.62,
+   "end": 1964.06,
+   "text": "The Cambodia bombing that we had talked about"
+  },
+  {
+   "start": 1964.06,
+   "end": 1966.9,
+   "text": "before the break hasn't really, really pressure"
+  },
+  {
+   "start": 1966.9,
+   "end": 1968.8,
+   "text": "on the South Vietnamese."
+  },
+  {
+   "start": 1968.8,
+   "end": 1971.08,
+   "text": "It's simply opened up another front"
+  },
+  {
+   "start": 1971.08,
+   "end": 1972.4,
+   "text": "that Nixon is now fighting."
+  },
+  {
+   "start": 1972.4,
+   "end": 1976.36,
+   "text": "and senior Republican lawmakers, Nixon's own party,"
+  },
+  {
+   "start": 1976.36,
+   "end": 1978.52,
+   "text": "are starting to think, maybe we can't win."
+  },
+  {
+   "start": 1978.52,
+   "end": 1979.56,
+   "text": "Maybe we can't win."
+  },
+  {
+   "start": 1979.56,
+   "end": 1981.96,
+   "text": "CIA assessments in this period also agree."
+  },
+  {
+   "start": 1981.96,
+   "end": 1985.56,
+   "text": "I mean, Helms has been warning since probably 68,"
+  },
+  {
+   "start": 1985.56,
+   "end": 1987.28,
+   "text": "since the Tet Offensive,"
+  },
+  {
+   "start": 1987.28,
+   "end": 1991.72,
+   "text": "that South Vietnam can't be bucked up enough to win."
+  },
+  {
+   "start": 1991.72,
+   "end": 1995.76,
+   "text": "So this is a toxic brew for the Nixon White House,"
+  },
+  {
+   "start": 1995.76,
+   "end": 1997.92,
+   "text": "foreign policy issues in Vietnam,"
+  },
+  {
+   "start": 1997.92,
+   "end": 1999.44,
+   "text": "domestic problems at home."
+  },
+  {
+   "start": 1999.44,
+   "end": 2001.76,
+   "text": "The economy is also not doing well in this period."
+  },
+  {
+   "start": 2001.76,
+   "end": 2005.31,
+   "text": "Nixon is feeling like this is not going well."
+  },
+  {
+   "start": 2005.31,
+   "end": 2007.79,
+   "text": "Dropped into this is what has become known"
+  },
+  {
+   "start": 2007.79,
+   "end": 2009.82,
+   "text": "as the Pentagon Papers."
+  },
+  {
+   "start": 2009.82,
+   "end": 2015.17,
+   "text": "Now, this is in actuality a classified year-long 7,000"
+  },
+  {
+   "start": 2015.17,
+   "end": 2018.89,
+   "text": "page study that had been commissioned by President"
+  },
+  {
+   "start": 2018.89,
+   "end": 2020.45,
+   "text": "Kennedy's Defense Secretary."
+  },
+  {
+   "start": 2020.45,
+   "end": 2023.97,
+   "text": "So kind of internal history, isn't it, of US involvement"
+  },
+  {
+   "start": 2023.97,
+   "end": 2026.73,
+   "text": "in Vietnam, of decision-making."
+  },
+  {
+   "start": 2026.73,
+   "end": 2030.89,
+   "text": "But it shows the mistakes and what's gone wrong."
+  },
+  {
+   "start": 2030.89,
+   "end": 2035.17,
+   "text": "It shows a tremendous gap between the way the White House,"
+  },
+  {
+   "start": 2035.17,
+   "end": 2036.77,
+   "text": "successive White Houses,"
+  },
+  {
+   "start": 2036.77,
+   "end": 2039.57,
+   "text": "have spoken about the war and how it's going"
+  },
+  {
+   "start": 2039.57,
+   "end": 2040.97,
+   "text": "and how it's actually going."
+  },
+  {
+   "start": 2040.97,
+   "end": 2044.05,
+   "text": "And the New York Times is gonna publish this 13th of June,"
+  },
+  {
+   "start": 2044.05,
+   "end": 2048.73,
+   "text": "1971, the first installment, you know, with the headline"
+  },
+  {
+   "start": 2048.73,
+   "end": 2051.73,
+   "text": "tracing the kind of all these mistakes in Vietnam."
+  },
+  {
+   "start": 2051.73,
+   "end": 2054.85,
+   "text": "Now this is gonna wind Nixon up, isn't it?"
+  },
+  {
+   "start": 2054.85,
+   "end": 2059.17,
+   "text": "Here are some leaks that have come from within the states."
+  },
+  {
+   "start": 2059.17,
+   "end": 2062.45,
+   "text": "more leaks, but about the most sensitive subject."
+  },
+  {
+   "start": 2062.45,
+   "end": 2064.73,
+   "text": "Although it is interesting on the day of,"
+  },
+  {
+   "start": 2064.73,
+   "end": 2066.25,
+   "text": "when it drops on the 13th of June,"
+  },
+  {
+   "start": 2066.25,
+   "end": 2068.21,
+   "text": "Nixon is initially more annoyed"
+  },
+  {
+   "start": 2068.21,
+   "end": 2071.41,
+   "text": "about the Washington post coverage of his daughter's wedding"
+  },
+  {
+   "start": 2071.41,
+   "end": 2072.77,
+   "text": "than he is about the Pentagon Papers,"
+  },
+  {
+   "start": 2072.77,
+   "end": 2075.09,
+   "text": "because the Pentagon Papers were drafted"
+  },
+  {
+   "start": 2075.09,
+   "end": 2076.09,
+   "text": "before his presidency."
+  },
+  {
+   "start": 2076.09,
+   "end": 2077.45,
+   "text": "Yeah, it's the Kennedy and Johnson."
+  },
+  {
+   "start": 2077.45,
+   "end": 2081.57,
+   "text": "So a slightly more open-minded, less paranoid president"
+  },
+  {
+   "start": 2081.57,
+   "end": 2085.15,
+   "text": "might have said, this kind of thing is exactly why"
+  },
+  {
+   "start": 2085.15,
+   "end": 2086.65,
+   "text": "I'm trying to end the war."
+  },
+  {
+   "start": 2086.65,
+   "end": 2093.49,
+   "text": "But Nixon, again, paranoid, there's all these leaks at this point that we've already spoken"
+  },
+  {
+   "start": 2093.49,
+   "end": 2098.97,
+   "text": "about and they really play into, I think this plays into his antipathy toward the press"
+  },
+  {
+   "start": 2098.97,
+   "end": 2100.33,
+   "text": "in general."
+  },
+  {
+   "start": 2100.33,
+   "end": 2101.89,
+   "text": "He doesn't like the Washington Post."
+  },
+  {
+   "start": 2101.89,
+   "end": 2104.01,
+   "text": "He doesn't like the New York Times."
+  },
+  {
+   "start": 2104.01,
+   "end": 2108.21,
+   "text": "It focuses on a government cover-up, which you journalists love."
+  },
+  {
+   "start": 2108.21,
+   "end": 2109.21,
+   "text": "Yeah."
+  },
+  {
+   "start": 2109.21,
+   "end": 2110.21,
+   "text": "I love you, Gordon."
+  },
+  {
+   "start": 2110.21,
+   "end": 2111.33,
+   "text": "Love you a government cover-up."
+  },
+  {
+   "start": 2111.33,
+   "end": 2116.33,
+   "text": "They stem from leaking, which is the thing that Nixon hates the most."
+  },
+  {
+   "start": 2116.63,
+   "end": 2119.37,
+   "text": "It also focuses attention on Henry Kissinger,"
+  },
+  {
+   "start": 2119.37,
+   "end": 2120.61,
+   "text": "his national security advisor,"
+  },
+  {
+   "start": 2120.61,
+   "end": 2122.93,
+   "text": "and Nixon doesn't like that either."
+  },
+  {
+   "start": 2122.93,
+   "end": 2125.49,
+   "text": "Pretty much immediately clear that the leaker"
+  },
+  {
+   "start": 2125.49,
+   "end": 2127.73,
+   "text": "is a researcher at Rand."
+  },
+  {
+   "start": 2127.73,
+   "end": 2128.57,
+   "text": "Sure, big think tank."
+  },
+  {
+   "start": 2128.57,
+   "end": 2129.41,
+   "text": "Big think tank."
+  },
+  {
+   "start": 2129.41,
+   "end": 2130.25,
+   "text": "Link to the Pentagon, yeah."
+  },
+  {
+   "start": 2130.25,
+   "end": 2131.85,
+   "text": "Right, named Daniel Ellsberg."
+  },
+  {
+   "start": 2131.85,
+   "end": 2135.93,
+   "text": "And Ellsberg has done this because he wants these secrets out,"
+  },
+  {
+   "start": 2135.93,
+   "end": 2137.89,
+   "text": "talks about wanting them out of safes"
+  },
+  {
+   "start": 2137.89,
+   "end": 2140.69,
+   "text": "and into homes of ordinary Americans"
+  },
+  {
+   "start": 2140.69,
+   "end": 2141.81,
+   "text": "so they can debate it."
+  },
+  {
+   "start": 2141.81,
+   "end": 2144.29,
+   "text": "And he comes out pretty quickly as the source."
+  },
+  {
+   "start": 2144.29,
+   "end": 2148.95,
+   "text": "I believe he gives an interview to Walter Cronkite on CBS"
+  },
+  {
+   "start": 2148.95,
+   "end": 2152.05,
+   "text": "where he, I mean, I guess sort of Snowden-esque in a way"
+  },
+  {
+   "start": 2152.05,
+   "end": 2154.77,
+   "text": "says I'm the one who brought this information out."
+  },
+  {
+   "start": 2154.77,
+   "end": 2157.21,
+   "text": "So he becomes kind of a symbol,"
+  },
+  {
+   "start": 2157.21,
+   "end": 2160.45,
+   "text": "I think to many Americans of kind of truth"
+  },
+  {
+   "start": 2160.45,
+   "end": 2164.45,
+   "text": "and transparency and patriotism, but to Nixon."
+  },
+  {
+   "start": 2164.45,
+   "end": 2165.29,
+   "text": "To Nixon."
+  },
+  {
+   "start": 2165.29,
+   "end": 2167.21,
+   "text": "This is a man who worked, I mean, he'd worked with,"
+  },
+  {
+   "start": 2167.21,
+   "end": 2168.69,
+   "text": "I think, you know, people in the Pentagon"
+  },
+  {
+   "start": 2168.69,
+   "end": 2169.53,
+   "text": "worked with Kissinger."
+  },
+  {
+   "start": 2169.53,
+   "end": 2175.69,
+   "text": "a Kissinger guy. Kissinger aid and he is now leaking. And so you can see for Nixon this is"
+  },
+  {
+   "start": 2175.69,
+   "end": 2180.97,
+   "text": "going to drive him nuts. And he is going to want the FBI to really go after Ellsberg."
+  },
+  {
+   "start": 2180.97,
+   "end": 2186.01,
+   "text": "The CIA damage assessment of the Pentagon Papers is also scathing because the papers name"
+  },
+  {
+   "start": 2186.73,
+   "end": 2191.93,
+   "text": "CIA proprietary relationships. There's agency officers who are identified by name."
+  },
+  {
+   "start": 2191.93,
+   "end": 2196.49,
+   "text": "There's repeated references to what had been covert paramilitary operations."
+  },
+  {
+   "start": 2196.49,
+   "end": 2204.01,
+   "text": "It's seen inside CIA as a windfall for hostile intelligence services."
+  },
+  {
+   "start": 2204.01,
+   "end": 2208.25,
+   "text": "And eventually the CIA will get information that the full scope of the papers, the actual"
+  },
+  {
+   "start": 2208.25,
+   "end": 2211.41,
+   "text": "papers themselves, make their way to foreign embassies."
+  },
+  {
+   "start": 2211.41,
+   "end": 2216.01,
+   "text": "And so seen from the Nixon White House, I mean, I think even a little bit seen from"
+  },
+  {
+   "start": 2216.01,
+   "end": 2220.49,
+   "text": "CIA, Ellsberg is an enemy of the state."
+  },
+  {
+   "start": 2220.49,
+   "end": 2225.73,
+   "text": "He's a traitor who has given up sensitive information and made the entire government"
+  },
+  {
+   "start": 2225.73,
+   "end": 2227.69,
+   "text": "look foolish in the process."
+  },
+  {
+   "start": 2227.69,
+   "end": 2231.86,
+   "text": "And Nixon writes later in his memoirs"
+  },
+  {
+   "start": 2231.86,
+   "end": 2235.78,
+   "text": "that he's basically determined not to sit back"
+  },
+  {
+   "start": 2235.78,
+   "end": 2239.9,
+   "text": "and in his view, let all the democratic architects"
+  },
+  {
+   "start": 2239.9,
+   "end": 2243.42,
+   "text": "of the war, Johnson and Kennedy,"
+  },
+  {
+   "start": 2243.42,
+   "end": 2245.86,
+   "text": "make him pay for it politically."
+  },
+  {
+   "start": 2245.86,
+   "end": 2248.54,
+   "text": "And he wants a good political operative"
+  },
+  {
+   "start": 2248.54,
+   "end": 2250.62,
+   "text": "who can go through the state and defense files,"
+  },
+  {
+   "start": 2250.62,
+   "end": 2252.62,
+   "text": "get everything on the Bay of Pigs,"
+  },
+  {
+   "start": 2252.62,
+   "end": 2259.98,
+   "text": "everything on Johnson's 1968 bombing halt, he wants to go into essentially the archive"
+  },
+  {
+   "start": 2259.98,
+   "end": 2263.66,
+   "text": "and find information that will then be embarrassing for the Democrats."
+  },
+  {
+   "start": 2263.66,
+   "end": 2264.46,
+   "text": "Which he can weaponize."
+  },
+  {
+   "start": 2264.46,
+   "end": 2268.46,
+   "text": "But this is the key thing, because if that's all he was doing, that would be one thing. But he"
+  },
+  {
+   "start": 2268.46,
+   "end": 2276.22,
+   "text": "goes a step further. He says, I also want you to get information from think tanks, which he thinks"
+  },
+  {
+   "start": 2276.22,
+   "end": 2280.38,
+   "text": "contains some of this historical and useful information that might have, you know, been"
+  },
+  {
+   "start": 2280.38,
+   "end": 2284.44,
+   "text": "working with leakers and others to kind of push a particular agenda, particularly the"
+  },
+  {
+   "start": 2284.44,
+   "end": 2288.18,
+   "text": "Brookings Institution, which is still around, a kind of center left think tank."
+  },
+  {
+   "start": 2288.18,
+   "end": 2289.7,
+   "text": "A hotbed of radicalism."
+  },
+  {
+   "start": 2289.7,
+   "end": 2291.2,
+   "text": "A hotbed of radicalism."
+  },
+  {
+   "start": 2291.2,
+   "end": 2292.2,
+   "text": "This is what I find crazy."
+  },
+  {
+   "start": 2292.2,
+   "end": 2296.04,
+   "text": "It's one thing to go through your own files and say stuff, but it's like, I want you to"
+  },
+  {
+   "start": 2296.04,
+   "end": 2300.2,
+   "text": "get stuff from other places, which immediately raises the question of how are you going"
+  },
+  {
+   "start": 2300.2,
+   "end": 2301.2,
+   "text": "to get it?"
+  },
+  {
+   "start": 2301.2,
+   "end": 2303.34,
+   "text": "Well, how are you going to get it?"
+  },
+  {
+   "start": 2303.34,
+   "end": 2309.08,
+   "text": "And Nixon, because again, yeah, Brookings, it's not the files at the State Department."
+  },
+  {
+   "start": 2309.08,
+   "end": 2310.64,
+   "text": "It's not the executive branch."
+  },
+  {
+   "start": 2310.64,
+   "end": 2314.32,
+   "text": "And Nixon raises this idea to a larger group in the Oval Office."
+  },
+  {
+   "start": 2314.32,
+   "end": 2317.92,
+   "text": "H.R. Haldeman is there, his chief of staff, Kissinger is there,"
+  },
+  {
+   "start": 2317.92,
+   "end": 2320.28,
+   "text": "the attorney general is there, the defense secretary."
+  },
+  {
+   "start": 2320.28,
+   "end": 2323.84,
+   "text": "And Nixon basically says, well, why don't we have someone go in,"
+  },
+  {
+   "start": 2323.84,
+   "end": 2327.16,
+   "text": "break into Brookings, and just take the information out?"
+  },
+  {
+   "start": 2327.16,
+   "end": 2330.68,
+   "text": "Because he thinks Brookings has information on Johnson's bombing halt"
+  },
+  {
+   "start": 2330.68,
+   "end": 2332.88,
+   "text": "in 1968 that would be of use."
+  },
+  {
+   "start": 2332.88,
+   "end": 2337.24,
+   "text": "And Haldeman, the chief of staff says, that's a good idea,"
+  },
+  {
+   "start": 2337.24,
+   "end": 2340.4,
+   "text": "But we need to have somebody who can do that."
+  },
+  {
+   "start": 2340.44,
+   "end": 2345.72,
+   "text": "Because remember the FBI who've said no, doesn't want to play this kind of out of this game."
+  },
+  {
+   "start": 2345.72,
+   "end": 2347.96,
+   "text": "So who, who are you going to get?"
+  },
+  {
+   "start": 2347.96,
+   "end": 2349.68,
+   "text": "Who do you get into a think tank?"
+  },
+  {
+   "start": 2350.2,
+   "end": 2351.0,
+   "text": "Who do you get?"
+  },
+  {
+   "start": 2351.24,
+   "end": 2355.32,
+   "text": "Well, some former CIA men might be might be interesting choices."
+  },
+  {
+   "start": 2355.48,
+   "end": 2362.24,
+   "text": "So on July 1st of 1971, so just a few weeks after the Pentagon papers have come out,"
+  },
+  {
+   "start": 2362.4,
+   "end": 2365.88,
+   "text": "a guy named Charles Coulson, who is special counsel to the president."
+  },
+  {
+   "start": 2365.88,
+   "end": 2371.56,
+   "text": "He's an ex-marine. He's a guy who reportedly said he'd walk over his grandmother to reelect Nixon"
+  },
+  {
+   "start": 2372.16,
+   "end": 2381.1,
+   "text": "Calls a friend to ask what he makes the Pentagon Fapers. This friend is a man named E. Howard Hunt a very important character in the story"
+  },
+  {
+   "start": 2381.1,
+   "end": 2382.66,
+   "text": "We should say for club members"
+  },
+  {
+   "start": 2382.66,
+   "end": 2389.26,
+   "text": "We've got a a whole two-part mini series on the life and times of Howard Hunt because it is such a wild story"
+  },
+  {
+   "start": 2389.26,
+   "end": 2392.68,
+   "text": "So do join up at the rest is classified comm if you want to hear about that"
+  },
+  {
+   "start": 2392.68,
+   "end": 2399.54,
+   "text": "He's a recently retired CIA guy. He's just left in spring of 1970 and he has had he's had a very interesting"
+  },
+  {
+   "start": 2399.98,
+   "end": 2403.02,
+   "text": "CIA career you might even remember him from some previous"
+  },
+  {
+   "start": 2403.7,
+   "end": 2408.42,
+   "text": "He's come up before in our episode. I think I'm the part the Guatemala and other places right?"
+  },
+  {
+   "start": 2408.42,
+   "end": 2413.22,
+   "text": "Yeah, let's explain a little bit about who he is. So hunt comes from upstate, New York"
+  },
+  {
+   "start": 2413.66,
+   "end": 2416.58,
+   "text": "He goes to university at Brown"
+  },
+  {
+   "start": 2416.58,
+   "end": 2423.26,
+   "text": "So it's a prestigious Ivy University, but he's not from kind of old Eastern money."
+  },
+  {
+   "start": 2423.26,
+   "end": 2429.58,
+   "text": "So he's a little bit outside of the kind of Georgetown set, very similar path into espionage"
+  },
+  {
+   "start": 2429.58,
+   "end": 2430.58,
+   "text": "as Helms."
+  },
+  {
+   "start": 2430.58,
+   "end": 2437.38,
+   "text": "He joins the Navy, then he joins the OS Aster and war, where he gets the sort of full chaotic"
+  },
+  {
+   "start": 2437.38,
+   "end": 2441.78,
+   "text": "schooling and lockpicking and hand-to-hand combat and blowing stuff up."
+  },
+  {
+   "start": 2441.78,
+   "end": 2446.5,
+   "text": "And he's actually sent to China, where he later talked about how he dynamited bridges"
+  },
+  {
+   "start": 2446.5,
+   "end": 2453.48,
+   "text": "and convoys, he's running agents, he's recovering downed allied pilots, but like all good CIA"
+  },
+  {
+   "start": 2453.48,
+   "end": 2456.62,
+   "text": "men, Gordon, his ambition was always to write."
+  },
+  {
+   "start": 2456.62,
+   "end": 2457.62,
+   "text": "To be a novelist."
+  },
+  {
+   "start": 2457.62,
+   "end": 2458.62,
+   "text": "To be a novelist."
+  },
+  {
+   "start": 2458.62,
+   "end": 2465.06,
+   "text": "When World War II ends, he doesn't immediately go into what becomes the CIA."
+  },
+  {
+   "start": 2465.06,
+   "end": 2468.42,
+   "text": "And in fact, he turns his back on intelligence for the writing life."
+  },
+  {
+   "start": 2468.42,
+   "end": 2475.86,
+   "text": "And in 1948, he wins a Guggenheim Fellowship in a year when the applications submitted"
+  },
+  {
+   "start": 2475.86,
+   "end": 2480.3,
+   "text": "by Gore Vidal and Truman Capote were both turned down."
+  },
+  {
+   "start": 2480.3,
+   "end": 2485.26,
+   "text": "So he gets picked ahead of Truman Capote to be one of these fellows."
+  },
+  {
+   "start": 2485.26,
+   "end": 2489.5,
+   "text": "So he wins a Guggenheim, then he decides to go out to Hollywood and try to make his way"
+  },
+  {
+   "start": 2489.5,
+   "end": 2491.26,
+   "text": "as a screenwriter."
+  },
+  {
+   "start": 2491.26,
+   "end": 2492.78,
+   "text": "It doesn't work."
+  },
+  {
+   "start": 2492.78,
+   "end": 2495.06,
+   "text": "He cannot make a living as a screenwriter."
+  },
+  {
+   "start": 2495.06,
+   "end": 2499.9,
+   "text": "He ends up going to Paris to help administer the Marshall Plan and then decides after this"
+  },
+  {
+   "start": 2499.9,
+   "end": 2504.36,
+   "text": "very strange interlude to go back to the spy business."
+  },
+  {
+   "start": 2504.36,
+   "end": 2506.96,
+   "text": "So he joins the CIA in 1950."
+  },
+  {
+   "start": 2506.96,
+   "end": 2512.56,
+   "text": "He's involved in opening up the first station, really V station in Mexico City, where he"
+  },
+  {
+   "start": 2512.56,
+   "end": 2515.1,
+   "text": "does all kinds of colorful things."
+  },
+  {
+   "start": 2515.1,
+   "end": 2516.84,
+   "text": "He funds anti-communist fronts."
+  },
+  {
+   "start": 2516.84,
+   "end": 2518.54,
+   "text": "He recruits journalists."
+  },
+  {
+   "start": 2518.54,
+   "end": 2524.24,
+   "text": "He's involved in burgling the Guatemalan embassy in Mexico City and running agents inside the"
+  },
+  {
+   "start": 2524.24,
+   "end": 2526.08,
+   "text": "Mexican Communist Party."
+  },
+  {
+   "start": 2526.08,
+   "end": 2528.64,
+   "text": "But the next detail is the one I find truly bizarre."
+  },
+  {
+   "start": 2528.64,
+   "end": 2532.72,
+   "text": "He acquires the film rights to George Orwell's Animal Farm."
+  },
+  {
+   "start": 2532.72,
+   "end": 2533.72,
+   "text": "Yes."
+  },
+  {
+   "start": 2533.72,
+   "end": 2535.4,
+   "text": "I mean, that's not something I was expecting."
+  },
+  {
+   "start": 2535.4,
+   "end": 2536.16,
+   "text": "No."
+  },
+  {
+   "start": 2536.16,
+   "end": 2538.68,
+   "text": "One running theme with Hunt is whatever beat"
+  },
+  {
+   "start": 2538.68,
+   "end": 2541.2,
+   "text": "you think is coming next, it's going to be something"
+  },
+  {
+   "start": 2541.2,
+   "end": 2542.2,
+   "text": "entirely different, right?"
+  },
+  {
+   "start": 2542.2,
+   "end": 2543.88,
+   "text": "So he acquires the rights to Animal Farm"
+  },
+  {
+   "start": 2543.88,
+   "end": 2545.72,
+   "text": "and has an animated version made,"
+  },
+  {
+   "start": 2545.72,
+   "end": 2548.48,
+   "text": "and then tweaks the message to make it more sharply"
+  },
+  {
+   "start": 2548.48,
+   "end": 2549.56,
+   "text": "anti-communist."
+  },
+  {
+   "start": 2549.56,
+   "end": 2551.96,
+   "text": "It's a critical on commercial success."
+  },
+  {
+   "start": 2551.96,
+   "end": 2557.12,
+   "text": "Almost nobody knows that it had a role in it."
+  },
+  {
+   "start": 2557.12,
+   "end": 2561.12,
+   "text": "So you have this kind of literary and storytelling"
+  },
+  {
+   "start": 2561.12,
+   "end": 2563.04,
+   "text": "ambition that's always there."
+  },
+  {
+   "start": 2563.04,
+   "end": 2569.04,
+   "text": "And interestingly, his daughter will say later that he wrote for four to eight hours a day during the week,"
+  },
+  {
+   "start": 2569.68,
+   "end": 2574.14,
+   "text": "presumably while he was working at the CIA, and all day on the weekends."
+  },
+  {
+   "start": 2574.14,
+   "end": 2574.84,
+   "text": "It's more than you."
+  },
+  {
+   "start": 2574.84,
+   "end": 2575.84,
+   "text": "It is more than me."
+  },
+  {
+   "start": 2575.84,
+   "end": 2578.04,
+   "text": "And I'm not even working at the CIA anymore."
+  },
+  {
+   "start": 2578.04,
+   "end": 2579.04,
+   "text": "I don't know how he's managing this."
+  },
+  {
+   "start": 2579.04,
+   "end": 2580.94,
+   "text": "He has multiple pen names throughout his career."
+  },
+  {
+   "start": 2580.94,
+   "end": 2583.14,
+   "text": "One of them, my favorite is David St. John."
+  },
+  {
+   "start": 2583.54,
+   "end": 2590.24,
+   "text": "And he creates a character called Peter Ward, who is this kind of like natty, pipe smoking,"
+  },
+  {
+   "start": 2590.24,
+   "end": 2599.52,
+   "text": "world weary, but also very charismatic person who's just women love him and he is he's at war with international communism and"
+  },
+  {
+   "start": 2600.56,
+   "end": 2602.56,
+   "text": "Hunt crafts him"
+  },
+  {
+   "start": 2602.64,
+   "end": 2607.9,
+   "text": "Essentially to be America's answer to James Bond, but it never quite takes never quite takes off"
+  },
+  {
+   "start": 2607.92,
+   "end": 2613.58,
+   "text": "There's a book though that he writes where Peter Ward is the protagonist called on hazardous duty"
+  },
+  {
+   "start": 2613.58,
+   "end": 2619.18,
+   "text": "And it opens with a black bag job breaking in breaking an entry and he's then involved in"
+  },
+  {
+   "start": 2619.18,
+   "end": 2624.14,
+   "text": "in the Guatemala operation, which we covered in a couple of episodes earlier in the year,"
+  },
+  {
+   "start": 2624.14,
+   "end": 2626.3,
+   "text": "PB Success, as it was known."
+  },
+  {
+   "start": 2626.3,
+   "end": 2626.86,
+   "text": "It was a success."
+  },
+  {
+   "start": 2626.86,
+   "end": 2632.22,
+   "text": "It was a success, which involves, we should say, recruiting exiles."
+  },
+  {
+   "start": 2632.22,
+   "end": 2637.66,
+   "text": "This is the world of exiles in Miami, which are going to be part of this story,"
+  },
+  {
+   "start": 2637.66,
+   "end": 2641.26,
+   "text": "working with exiles to try and do dodgy operations."
+  },
+  {
+   "start": 2641.26,
+   "end": 2646.86,
+   "text": "Definitely a theme, which runs through as we know, Bear Pigs, but then into these years as well."
+  },
+  {
+   "start": 2646.86,
+   "end": 2649.86,
+   "text": "So he's a colorful character."
+  },
+  {
+   "start": 2649.86,
+   "end": 2652.5,
+   "text": "Well, he was deeply involved in the epic"
+  },
+  {
+   "start": 2652.5,
+   "end": 2655.78,
+   "text": "and has really never forgiven Kennedy"
+  },
+  {
+   "start": 2655.78,
+   "end": 2660.34,
+   "text": "for what he sees as not supporting the operation"
+  },
+  {
+   "start": 2660.34,
+   "end": 2661.42,
+   "text": "when it came under threat."
+  },
+  {
+   "start": 2661.42,
+   "end": 2665.02,
+   "text": "Not providing the air power is very vocal about this."
+  },
+  {
+   "start": 2665.02,
+   "end": 2670.02,
+   "text": "And he uses that lens essentially"
+  },
+  {
+   "start": 2670.69,
+   "end": 2674.41,
+   "text": "to publicly, after he retires from CIA,"
+  },
+  {
+   "start": 2674.41,
+   "end": 2676.29,
+   "text": "ingratiate himself with the Nixon people"
+  },
+  {
+   "start": 2676.29,
+   "end": 2678.69,
+   "text": "because he has carried forward,"
+  },
+  {
+   "start": 2678.69,
+   "end": 2681.41,
+   "text": "I mean, we're 10 years after the Bay of Pigs,"
+  },
+  {
+   "start": 2681.41,
+   "end": 2685.25,
+   "text": "and he's still deeply resentful and very loud"
+  },
+  {
+   "start": 2685.25,
+   "end": 2687.21,
+   "text": "about how Kennedy and the Democrats"
+  },
+  {
+   "start": 2687.21,
+   "end": 2690.77,
+   "text": "essentially left the CIA and its agents to die on the beach."
+  },
+  {
+   "start": 2690.77,
+   "end": 2691.69,
+   "text": "It's a big theme, isn't it?"
+  },
+  {
+   "start": 2691.69,
+   "end": 2695.51,
+   "text": "So Hunt, though, he leaves CIA, he needs a job."
+  },
+  {
+   "start": 2695.51,
+   "end": 2696.35,
+   "text": "Yep."
+  },
+  {
+   "start": 2696.35,
+   "end": 2700.47,
+   "text": "And he finds one at a firm called the Robert R. Mullen Company,"
+  },
+  {
+   "start": 2700.47,
+   "end": 2702.89,
+   "text": "and this is a Washington public relations firm."
+  },
+  {
+   "start": 2702.89,
+   "end": 2711.4,
+   "text": "Now, the ins and outs of how Hunt came to find this job are much debated in the source material,"
+  },
+  {
+   "start": 2711.4,
+   "end": 2717.2,
+   "text": "but it seems that what happened was that Hunt leaves the CIA and he actually has a letter"
+  },
+  {
+   "start": 2717.2,
+   "end": 2720.16,
+   "text": "of recommendation from Richard Helms."
+  },
+  {
+   "start": 2720.16,
+   "end": 2724.68,
+   "text": "He uses that letter of recommendation with Mullen and he gets the job."
+  },
+  {
+   "start": 2724.68,
+   "end": 2728.75,
+   "text": "Now, Mullen is not a normal firm."
+  },
+  {
+   "start": 2728.75,
+   "end": 2735.31,
+   "text": "has actually been collaborating with the CIA for years to supply cover for NOx, non-official"
+  },
+  {
+   "start": 2735.31,
+   "end": 2743.19,
+   "text": "cover officers overseas in Europe and Asia. And again, there's markiness here. I think"
+  },
+  {
+   "start": 2743.19,
+   "end": 2750.03,
+   "text": "Hunt probably knew when he applied that Mullen had a relationship with the CIA. It also seems,"
+  },
+  {
+   "start": 2750.03,
+   "end": 2755.64,
+   "text": "as there's a whole bunch of conspiracy literature on this, it seems like CIA was actually not"
+  },
+  {
+   "start": 2755.64,
+   "end": 2760.76,
+   "text": "so thrilled about Hunt's employment there because it could draw attention to the fact"
+  },
+  {
+   "start": 2760.76,
+   "end": 2764.56,
+   "text": "that Mullen was providing cover to the case officers overseas."
+  },
+  {
+   "start": 2764.56,
+   "end": 2770.04,
+   "text": "But in any case, once Hunt is there, he's read into the cover arrangement and he's actually"
+  },
+  {
+   "start": 2770.04,
+   "end": 2776.72,
+   "text": "his security clearance is actually extended so that he can manage those cover relationships"
+  },
+  {
+   "start": 2776.72,
+   "end": 2777.72,
+   "text": "for Mullen."
+  },
+  {
+   "start": 2777.72,
+   "end": 2781.6,
+   "text": "So he's connected with the CIA through this Mullen company."
+  },
+  {
+   "start": 2781.6,
+   "end": 2789.2,
+   "text": "But what is the relationship with the White House that leads Nixon's guy, Chuck Colson,"
+  },
+  {
+   "start": 2789.2,
+   "end": 2790.2,
+   "text": "to call him?"
+  },
+  {
+   "start": 2790.2,
+   "end": 2792.76,
+   "text": "Because that's the interesting bit, I think, isn't it?"
+  },
+  {
+   "start": 2792.76,
+   "end": 2793.76,
+   "text": "They're friends."
+  },
+  {
+   "start": 2793.76,
+   "end": 2794.76,
+   "text": "They're social friends."
+  },
+  {
+   "start": 2794.76,
+   "end": 2798.16,
+   "text": "They both went to Brown, knew each other there."
+  },
+  {
+   "start": 2798.16,
+   "end": 2800.96,
+   "text": "In DC, they're both part of the Brown University Club."
+  },
+  {
+   "start": 2800.96,
+   "end": 2803.68,
+   "text": "In fact, they're president and vice president."
+  },
+  {
+   "start": 2803.68,
+   "end": 2808.12,
+   "text": "Hunt has actually gone to the White House to have lunch with Colson."
+  },
+  {
+   "start": 2808.12,
+   "end": 2815.49,
+   "text": "I think they both share a kind of collective outrage about what's going on in the country."
+  },
+  {
+   "start": 2815.49,
+   "end": 2819.17,
+   "text": "And interestingly, there had been an incident at Brown in which Henry Kissinger was getting"
+  },
+  {
+   "start": 2819.17,
+   "end": 2822.69,
+   "text": "an honorary degree and a whole bunch of Brown University students actually turned their"
+  },
+  {
+   "start": 2822.69,
+   "end": 2826.05,
+   "text": "backs to him as he was receiving this degree on stage."
+  },
+  {
+   "start": 2826.05,
+   "end": 2828.13,
+   "text": "That made Coulson obviously very upset."
+  },
+  {
+   "start": 2828.13,
+   "end": 2829.13,
+   "text": "Left wing university students."
+  },
+  {
+   "start": 2829.13,
+   "end": 2830.13,
+   "text": "Right, left wing university students."
+  },
+  {
+   "start": 2830.13,
+   "end": 2835.23,
+   "text": "It's a bit like, you know, we've had recently at Columbia and other, you know, battles where"
+  },
+  {
+   "start": 2835.23,
+   "end": 2837.69,
+   "text": "people are like, we've got to deal with these lefties."
+  },
+  {
+   "start": 2837.69,
+   "end": 2840.95,
+   "text": "You can imagine Hunt and Coulson kind of moaning at each other."
+  },
+  {
+   "start": 2840.95,
+   "end": 2841.95,
+   "text": "They don't like hippies."
+  },
+  {
+   "start": 2841.95,
+   "end": 2842.95,
+   "text": "No, they don't like hippies."
+  },
+  {
+   "start": 2842.95,
+   "end": 2843.95,
+   "text": "It's fair to say."
+  },
+  {
+   "start": 2843.95,
+   "end": 2847.25,
+   "text": "And hence you get this phone call from Coulson to Hunt."
+  },
+  {
+   "start": 2847.25,
+   "end": 2853.98,
+   "text": "And Hunt has written a memoir called American Spy, which I would highly recommend to listeners."
+  },
+  {
+   "start": 2853.98,
+   "end": 2857.46,
+   "text": "It is an incredibly self-serving memoir, but revealing."
+  },
+  {
+   "start": 2857.46,
+   "end": 2858.7,
+   "text": "He writes very revealing."
+  },
+  {
+   "start": 2858.7,
+   "end": 2864.5,
+   "text": "He writes an incredible detail about his life and in particular about Watergate."
+  },
+  {
+   "start": 2864.5,
+   "end": 2869.24,
+   "text": "So Hunt talks about this call called Coulson and he get on the phone and Coulson kind of"
+  },
+  {
+   "start": 2869.24,
+   "end": 2874.02,
+   "text": "works his way to the key question, which is, you know, this Ellsberg guy who leaked the"
+  },
+  {
+   "start": 2874.02,
+   "end": 2878.21,
+   "text": "Pentagon papers, this is turning into a big problem for us."
+  },
+  {
+   "start": 2878.21,
+   "end": 2881.57,
+   "text": "Could we do something about Ellsberg?"
+  },
+  {
+   "start": 2881.57,
+   "end": 2886.85,
+   "text": "Could we kind of turn the tables on him if we had the right resources employed?"
+  },
+  {
+   "start": 2886.85,
+   "end": 2887.85,
+   "text": "resources."
+  },
+  {
+   "start": 2887.85,
+   "end": 2891.05,
+   "text": "And Hunt says yes."
+  },
+  {
+   "start": 2891.05,
+   "end": 2894.37,
+   "text": "In days, Hunt is on the rolls as a White House consultant."
+  },
+  {
+   "start": 2894.37,
+   "end": 2899.69,
+   "text": "And on the 7th of July, John Ehrlichman, who again is Nixon, you know, chief domestic policy"
+  },
+  {
+   "start": 2899.69,
+   "end": 2906.93,
+   "text": "advisor, the Stephen Miller of the Nixon White House, calls up General Robert Cushman, who"
+  },
+  {
+   "start": 2906.93,
+   "end": 2909.49,
+   "text": "is the deputy director of the CIA."
+  },
+  {
+   "start": 2909.49,
+   "end": 2914.53,
+   "text": "Now Cushman, unlike Helms, is a Nixon man."
+  },
+  {
+   "start": 2914.53,
+   "end": 2919.21,
+   "text": "He'd been Nixon's chief national security aide when Nixon had been VP."
+  },
+  {
+   "start": 2919.21,
+   "end": 2923.41,
+   "text": "He is very much Nixon's guy at Langley and he's probably there in part to spy on Helms,"
+  },
+  {
+   "start": 2923.41,
+   "end": 2924.73,
+   "text": "to be quite honest."
+  },
+  {
+   "start": 2924.73,
+   "end": 2932.74,
+   "text": "Erlichman says, look, to Cushman, this guy, Hunt, we've asked him to do some consulting"
+  },
+  {
+   "start": 2932.74,
+   "end": 2936.16,
+   "text": "work on security and he's going to be in touch."
+  },
+  {
+   "start": 2936.16,
+   "end": 2937.16,
+   "text": "Could you help him?"
+  },
+  {
+   "start": 2937.16,
+   "end": 2938.16,
+   "text": "Could you help him?"
+  },
+  {
+   "start": 2938.16,
+   "end": 2942.96,
+   "text": "And Jefferson Morley in his book, Scorpion's Dance, has the line that ends the call, which"
+  },
+  {
+   "start": 2942.96,
+   "end": 2947.28,
+   "text": "is, you should consider he has pretty much carte blanche."
+  },
+  {
+   "start": 2947.28,
+   "end": 2952.56,
+   "text": "So we have a chief White House aide calling the deputy director of CIA to say, look, we've"
+  },
+  {
+   "start": 2952.56,
+   "end": 2954.32,
+   "text": "hired this guy Hunt."
+  },
+  {
+   "start": 2954.32,
+   "end": 2956.36,
+   "text": "He's going to come to you with some requests."
+  },
+  {
+   "start": 2956.36,
+   "end": 2957.36,
+   "text": "Help him out."
+  },
+  {
+   "start": 2957.36,
+   "end": 2958.36,
+   "text": "Help him out."
+  },
+  {
+   "start": 2958.36,
+   "end": 2962.99,
+   "text": "And as we've discussed, the CIA of this era is not making tremendously stark distinctions"
+  },
+  {
+   "start": 2962.99,
+   "end": 2968.79,
+   "text": "between former officers and current officers, and it's very inclined when the White House"
+  },
+  {
+   "start": 2968.79,
+   "end": 2971.49,
+   "text": "asked for something to do it, right?"
+  },
+  {
+   "start": 2971.49,
+   "end": 2976.95,
+   "text": "So Cushman says, of course, and he tells the agency's director of security, which is a"
+  },
+  {
+   "start": 2976.95,
+   "end": 2981.27,
+   "text": "kind of interesting role in this period. They've been involved in dealings with the mafia in"
+  },
+  {
+   "start": 2981.27,
+   "end": 2985.79,
+   "text": "the Castro assassination plots. So, Cushman, the deputy director says, yeah, we'll help"
+  },
+  {
+   "start": 2985.79,
+   "end": 2991.59,
+   "text": "him out. He calls the agency's director of security and says, Hunt's coming out. He's"
+  },
+  {
+   "start": 2991.59,
+   "end": 2997.79,
+   "text": "kind of working with a new group and you should help them. Now, this group at the White House"
+  },
+  {
+   "start": 2997.79,
+   "end": 3002.19,
+   "text": "that Hunt is involved in, they will become known as the plumbers."
+  },
+  {
+   "start": 3002.19,
+   "end": 3003.19,
+   "text": "Reason being."
+  },
+  {
+   "start": 3003.19,
+   "end": 3004.19,
+   "text": "Reason being."
+  },
+  {
+   "start": 3004.19,
+   "end": 3005.19,
+   "text": "Their job is to stop leaks."
+  },
+  {
+   "start": 3005.19,
+   "end": 3006.19,
+   "text": "Exactly."
+  },
+  {
+   "start": 3006.19,
+   "end": 3010.47,
+   "text": "One of them is a Kissinger staffer is actually the accidental"
+  },
+  {
+   "start": 3011.07,
+   "end": 3017.49,
+   "text": "Origin story behind the name because his his grandmother had been asking him what he did at the White House and he said"
+  },
+  {
+   "start": 3017.71,
+   "end": 3023.67,
+   "text": "My job is to help the president stops him leaks and she says quite proudly. Oh, you're a plumber"
+  },
+  {
+   "start": 3025.87,
+   "end": 3028.39,
+   "text": "They're known colloquially as the plumbers"
+  },
+  {
+   "start": 3028.59,
+   "end": 3034.05,
+   "text": "It's actually formally called the White House special investigations unit anytime you're doing investigations"
+  },
+  {
+   "start": 3034.05,
+   "end": 3035.17,
+   "text": "you want them to be special."
+  },
+  {
+   "start": 3035.17,
+   "end": 3035.85,
+   "text": "Yes."
+  },
+  {
+   "start": 3035.85,
+   "end": 3037.49,
+   "text": "I've always supported that idea."
+  },
+  {
+   "start": 3037.49,
+   "end": 3040.29,
+   "text": "They're based in room 16 of the old executive office building."
+  },
+  {
+   "start": 3040.29,
+   "end": 3044.93,
+   "text": "They report up to John Ehrlichman, the cheap domestic aid."
+  },
+  {
+   "start": 3044.93,
+   "end": 3048.53,
+   "text": "It is made up of a couple guys from Kissinger's NSC staff."
+  },
+  {
+   "start": 3048.53,
+   "end": 3051.17,
+   "text": "There's also a guy from Ehrlichman's old law firm."
+  },
+  {
+   "start": 3051.17,
+   "end": 3052.57,
+   "text": "Hunt is on board."
+  },
+  {
+   "start": 3052.57,
+   "end": 3054.17,
+   "text": "He's kind of not formally part of it."
+  },
+  {
+   "start": 3054.17,
+   "end": 3057.65,
+   "text": "He's a consultant, but he's really embedded into its operations."
+  },
+  {
+   "start": 3057.65,
+   "end": 3061.09,
+   "text": "And there's also a guy named G Gordon Liddy."
+  },
+  {
+   "start": 3061.09,
+   "end": 3062.17,
+   "text": "Anyone call Gordon?"
+  },
+  {
+   "start": 3062.17,
+   "end": 3063.41,
+   "text": "But this guy."
+  },
+  {
+   "start": 3063.41,
+   "end": 3064.81,
+   "text": "Maybe not this guy."
+  },
+  {
+   "start": 3064.81,
+   "end": 3065.81,
+   "text": "Maybe not this Gordon."
+  },
+  {
+   "start": 3065.81,
+   "end": 3067.41,
+   "text": "He's a pretty crazy character."
+  },
+  {
+   "start": 3067.41,
+   "end": 3072.41,
+   "text": "If we thought Hunt was crazy, G-Gordon Liddy is another level up, isn't he?"
+  },
+  {
+   "start": 3072.41,
+   "end": 3074.81,
+   "text": "I mean, partly he's ex-FBI though."
+  },
+  {
+   "start": 3074.81,
+   "end": 3075.81,
+   "text": "He is."
+  },
+  {
+   "start": 3075.81,
+   "end": 3078.01,
+   "text": "I mean, so, you know, think kind of serious study guy."
+  },
+  {
+   "start": 3078.01,
+   "end": 3082.11,
+   "text": "His next feedback's prosecutor been at the treasury, but he's also got a thing about"
+  },
+  {
+   "start": 3082.11,
+   "end": 3083.81,
+   "text": "Nazis, hasn't he?"
+  },
+  {
+   "start": 3083.81,
+   "end": 3086.33,
+   "text": "He's got a thing about the Nazis."
+  },
+  {
+   "start": 3086.33,
+   "end": 3091.93,
+   "text": "He is one of those guys who, as I think we would agree, there's a lot of interest in"
+  },
+  {
+   "start": 3091.93,
+   "end": 3097.49,
+   "text": "Nazis, people, you know, on the rest of history, they do an episode or they do a series every"
+  },
+  {
+   "start": 3097.49,
+   "end": 3098.49,
+   "text": "year on Nazis."
+  },
+  {
+   "start": 3098.49,
+   "end": 3099.49,
+   "text": "Yeah."
+  },
+  {
+   "start": 3099.49,
+   "end": 3100.49,
+   "text": "There's tremendous interest in that."
+  },
+  {
+   "start": 3100.49,
+   "end": 3101.49,
+   "text": "That's okay."
+  },
+  {
+   "start": 3101.49,
+   "end": 3106.85,
+   "text": "But there is a point in the journey where you start to wonder if the interest bleeds into"
+  },
+  {
+   "start": 3106.85,
+   "end": 3107.85,
+   "text": "sympathy."
+  },
+  {
+   "start": 3107.85,
+   "end": 3108.85,
+   "text": "Yes."
+  },
+  {
+   "start": 3108.85,
+   "end": 3111.17,
+   "text": "And G. Gordon Liddy, I think, has sort of crossed that line."
+  },
+  {
+   "start": 3111.17,
+   "end": 3112.17,
+   "text": "Crossed that line."
+  },
+  {
+   "start": 3112.17,
+   "end": 3117.45,
+   "text": "So he, he, he and Hunt get on pretty well."
+  },
+  {
+   "start": 3117.45,
+   "end": 3124.24,
+   "text": "And he plays a recording of Hitler giving a speech while he's at Hunt's house."
+  },
+  {
+   "start": 3124.24,
+   "end": 3127.88,
+   "text": "They actually called Hunt and says, look, I have an important record you should listen"
+  },
+  {
+   "start": 3127.88,
+   "end": 3131.48,
+   "text": "to and he comes over and it's a Hitler speech."
+  },
+  {
+   "start": 3131.48,
+   "end": 3136.96,
+   "text": "He allegedly arranges a private screening of Triumph of the Will."
+  },
+  {
+   "start": 3136.96,
+   "end": 3137.96,
+   "text": "Which is the Nazi propaganda film."
+  },
+  {
+   "start": 3137.96,
+   "end": 3138.96,
+   "text": "The Nazi propaganda film."
+  },
+  {
+   "start": 3138.96,
+   "end": 3142.28,
+   "text": "The propaganda film at the White House."
+  },
+  {
+   "start": 3142.28,
+   "end": 3146.12,
+   "text": "So all of the documents that come out of the plumbers,"
+  },
+  {
+   "start": 3146.12,
+   "end": 3149.87,
+   "text": "the Special Investigations Unit, are stamped Odessa,"
+  },
+  {
+   "start": 3149.87,
+   "end": 3152.67,
+   "text": "which is the post-war network"
+  },
+  {
+   "start": 3152.67,
+   "end": 3155.75,
+   "text": "that had been used to smuggle SS officers out of Germany."
+  },
+  {
+   "start": 3155.75,
+   "end": 3158.31,
+   "text": "And also a very good novel in film, the Odessa Bomb."
+  },
+  {
+   "start": 3158.31,
+   "end": 3159.15,
+   "text": "Yeah."
+  },
+  {
+   "start": 3159.15,
+   "end": 3164.15,
+   "text": "So there's this weird fascination slash obsession."
+  },
+  {
+   "start": 3164.19,
+   "end": 3166.39,
+   "text": "So Huntin and Liddy hit it off."
+  },
+  {
+   "start": 3166.39,
+   "end": 3169.15,
+   "text": "And actually the two families will spend some time together."
+  },
+  {
+   "start": 3169.15,
+   "end": 3173.31,
+   "text": "And in one case, when the Liddy's are overdining with the Hunts,"
+  },
+  {
+   "start": 3173.31,
+   "end": 3176.75,
+   "text": "Liddy sits down at the Grand Pieddow in the Hunts' home"
+  },
+  {
+   "start": 3176.75,
+   "end": 3179.95,
+   "text": "and starts belting out a Nazi dog."
+  },
+  {
+   "start": 3179.95,
+   "end": 3183.31,
+   "text": "And it's enough that Hunts' wife Dorothy,"
+  },
+  {
+   "start": 3183.31,
+   "end": 3185.79,
+   "text": "who actually worked at Treasury after the war,"
+  },
+  {
+   "start": 3185.79,
+   "end": 3189.15,
+   "text": "tracking down looted Nazi assets,"
+  },
+  {
+   "start": 3189.15,
+   "end": 3192.27,
+   "text": "basically says enough and goes into the kitchen"
+  },
+  {
+   "start": 3192.27,
+   "end": 3193.79,
+   "text": "to do something else."
+  },
+  {
+   "start": 3193.79,
+   "end": 3199.07,
+   "text": "So they're close and Liddy is Nazi."
+  },
+  {
+   "start": 3199.07,
+   "end": 3204.91,
+   "text": "sort of Nazi adjacent back to the operational side though the plumbers in this period I think"
+  },
+  {
+   "start": 3205.81,
+   "end": 3209.65,
+   "text": "don't have a tremendous amount of direction from above about exactly"
+  },
+  {
+   "start": 3210.45,
+   "end": 3217.01,
+   "text": "who their target should be so hunt goes out to see the deputy director at Langley and he says look"
+  },
+  {
+   "start": 3217.73,
+   "end": 3221.49,
+   "text": "I need flash alias documentation right so flash meaning it's not gonna"
+  },
+  {
+   "start": 3222.42,
+   "end": 3226.18,
+   "text": "It's not deep it's not deep cover but I need some documents in alias"
+  },
+  {
+   "start": 3226.18,
+   "end": 3229.35,
+   "text": "And I need a physical disguise."
+  },
+  {
+   "start": 3229.35,
+   "end": 3230.35,
+   "text": "Hence the wig."
+  },
+  {
+   "start": 3230.35,
+   "end": 3231.35,
+   "text": "Hence the wig."
+  },
+  {
+   "start": 3231.35,
+   "end": 3235.35,
+   "text": "For what he describes as a one-time operation, in and out."
+  },
+  {
+   "start": 3235.35,
+   "end": 3239.92,
+   "text": "Cushman, the deputy director says, okay, why don't you work with the Technical Services"
+  },
+  {
+   "start": 3239.92,
+   "end": 3243.72,
+   "text": "Division, which is the crew that is doing all of the spy tech."
+  },
+  {
+   "start": 3243.72,
+   "end": 3244.72,
+   "text": "Yeah, the gadgets."
+  },
+  {
+   "start": 3244.72,
+   "end": 3246.72,
+   "text": "The gadgets and also gadgets disguises."
+  },
+  {
+   "start": 3246.72,
+   "end": 3249.2,
+   "text": "And also the LSD experimentation."
+  },
+  {
+   "start": 3249.2,
+   "end": 3250.2,
+   "text": "Yeah."
+  },
+  {
+   "start": 3250.2,
+   "end": 3251.2,
+   "text": "Different, different sort of departments."
+  },
+  {
+   "start": 3251.2,
+   "end": 3252.2,
+   "text": "It's the 60s."
+  },
+  {
+   "start": 3252.2,
+   "end": 3257.8,
+   "text": "Some interesting details about Hunt's visit to Langley that are odd when you look back"
+  },
+  {
+   "start": 3257.8,
+   "end": 3258.8,
+   "text": "at them."
+  },
+  {
+   "start": 3258.8,
+   "end": 3260.72,
+   "text": "The first one is there's no record that Hunt was ever there."
+  },
+  {
+   "start": 3260.72,
+   "end": 3265.24,
+   "text": "Normally, a visitor would sign in and be issued a visitor badge and there'd be a record of"
+  },
+  {
+   "start": 3265.24,
+   "end": 3270.2,
+   "text": "came and who came and when and the kind of login data that doesn't exist."
+  },
+  {
+   "start": 3270.2,
+   "end": 3273.96,
+   "text": "There's no actually record at all that he was ever there."
+  },
+  {
+   "start": 3273.96,
+   "end": 3280.32,
+   "text": "Also odd, Cushman, the deputy director, records the meeting apparently explicitly because"
+  },
+  {
+   "start": 3280.32,
+   "end": 3282.78,
+   "text": "as Hunt said not to."
+  },
+  {
+   "start": 3282.78,
+   "end": 3287.78,
+   "text": "Whenever someone says, this must be entirely off the record,"
+  },
+  {
+   "start": 3287.78,
+   "end": 3288.96,
+   "text": "immediately, Chris was like,"
+  },
+  {
+   "start": 3288.96,
+   "end": 3289.8,
+   "text": "he has to record this."
+  },
+  {
+   "start": 3289.8,
+   "end": 3290.88,
+   "text": "I've got to record the video."
+  },
+  {
+   "start": 3290.88,
+   "end": 3292.6,
+   "text": "Because it's going to be bad."
+  },
+  {
+   "start": 3292.6,
+   "end": 3295.6,
+   "text": "But so Hunt, he goes and meets with the technical services"
+  },
+  {
+   "start": 3295.6,
+   "end": 3299.2,
+   "text": "people, and he gets the alias documents,"
+  },
+  {
+   "start": 3299.2,
+   "end": 3301.6,
+   "text": "he gets the disguise materials, he gets a wig, glasses,"
+  },
+  {
+   "start": 3301.6,
+   "end": 3303.96,
+   "text": "and a speech alteration device."
+  },
+  {
+   "start": 3303.96,
+   "end": 3305.76,
+   "text": "So the first tasking that Hunt seems"
+  },
+  {
+   "start": 3305.76,
+   "end": 3315.45,
+   "text": "to have gotten for the plumbers was pinning an assassination in Vietnam on the Kennedy"
+  },
+  {
+   "start": 3315.45,
+   "end": 3316.45,
+   "text": "administration."
+  },
+  {
+   "start": 3316.45,
+   "end": 3321.05,
+   "text": "So it's back to the Nixon desire to say all the bad stuff that happened linked to Vietnam."
+  },
+  {
+   "start": 3321.05,
+   "end": 3322.69,
+   "text": "It's all those Kennedy and Johnson guys."
+  },
+  {
+   "start": 3322.69,
+   "end": 3323.69,
+   "text": "Yeah."
+  },
+  {
+   "start": 3323.69,
+   "end": 3326.45,
+   "text": "And this, I mean, this is an assassination of the president of South Vietnam."
+  },
+  {
+   "start": 3326.45,
+   "end": 3327.85,
+   "text": "So kind of a big deal."
+  },
+  {
+   "start": 3327.85,
+   "end": 3332.97,
+   "text": "But again, he wants, you know, dig up some dirt that makes this look like it's the Democrats"
+  },
+  {
+   "start": 3332.97,
+   "end": 3333.97,
+   "text": "fault."
+  },
+  {
+   "start": 3333.97,
+   "end": 3343.25,
+   "text": "What Hunt does is he goes and finds an old CIA colleague who had been involved in the coup in Saigon in 1963 and who also knew"
+  },
+  {
+   "start": 3343.25,
+   "end": 3345.57,
+   "text": "Ellsberg, the leaker of the Pentagon Papers."
+  },
+  {
+   "start": 3346.21,
+   "end": 3351.19,
+   "text": "And they have an interview in Air Lechman's office, which is secretly recorded."
+  },
+  {
+   "start": 3351.75,
+   "end": 3355.67,
+   "text": "And they have a bottle of scotch, as one does during an interview."
+  },
+  {
+   "start": 3356.9,
+   "end": 3360.38,
+   "text": "It really produces nothing usable because the recording fails."
+  },
+  {
+   "start": 3360.58,
+   "end": 3364.22,
+   "text": "And apparently the technician had hidden the recorder under the couch cushions."
+  },
+  {
+   "start": 3364.54,
+   "end": 3368.86,
+   "text": "And Hunt's old CIA colleague sat on it and crushed it."
+  },
+  {
+   "start": 3368.86,
+   "end": 3372.54,
+   "text": "Hunt, in his memoir, merely says that it was improperly installed."
+  },
+  {
+   "start": 3372.54,
+   "end": 3375.34,
+   "text": "And he also says that he had had so much scotch"
+  },
+  {
+   "start": 3375.34,
+   "end": 3377.94,
+   "text": "that the tapes would have been useless anyway."
+  },
+  {
+   "start": 3377.94,
+   "end": 3380.02,
+   "text": "So you get a sense that the plumbers in this period"
+  },
+  {
+   "start": 3380.02,
+   "end": 3382.02,
+   "text": "are kind of looking for something that's going to stick."
+  },
+  {
+   "start": 3382.02,
+   "end": 3383.06,
+   "text": "What can we do?"
+  },
+  {
+   "start": 3383.06,
+   "end": 3387.3,
+   "text": "By late July, Hunt puts together a written proposal"
+  },
+  {
+   "start": 3387.3,
+   "end": 3390.66,
+   "text": "to Chuck Colson, his buddy, for a series of operations"
+  },
+  {
+   "start": 3390.66,
+   "end": 3397.22,
+   "text": "to assemble a file on Ellsberg that would destroy his image and his credibility. Because at this"
+  },
+  {
+   "start": 3397.22,
+   "end": 3400.82,
+   "text": "point, he's kind of being lauded as- The great whistleblower. The great whistleblower."
+  },
+  {
+   "start": 3400.82,
+   "end": 3401.22,
+   "text": "Yeah. Exactly."
+  },
+  {
+   "start": 3401.22,
+   "end": 3402.98,
+   "text": "For having leaked the Pentagon papers, yeah."
+  },
+  {
+   "start": 3402.98,
+   "end": 3408.82,
+   "text": "Hunt makes two important points or suggestions. He says, look, we should have the CIA"
+  },
+  {
+   "start": 3409.38,
+   "end": 3415.71,
+   "text": "prepare a covert psychological assessment of Ellsberg. And we should get Ellsberg's file"
+  },
+  {
+   "start": 3415.71,
+   "end": 3419.95,
+   "text": "from his psychiatrist because they knew that he had been seeing a psychiatrist in LA."
+  },
+  {
+   "start": 3420.91,
+   "end": 3427.95,
+   "text": "One of the plumbers calls the agency's director of security and asks that this profile be put"
+  },
+  {
+   "start": 3427.95,
+   "end": 3432.83,
+   "text": "together. And he says, you know, look, we saw this psychological profile you guys did on Castro,"
+  },
+  {
+   "start": 3433.47,
+   "end": 3440.37,
+   "text": "and that had really impressed us. And remember, Daniel Ellsberg is not the communist dictator"
+  },
+  {
+   "start": 3440.37,
+   "end": 3447.01,
+   "text": "of Cuba. He's an American citizen. And so the director of security says, that is something that"
+  },
+  {
+   "start": 3447.01,
+   "end": 3454.38,
+   "text": "only the director can decide to do. And Helms resists at first. He's uncomfortable with this."
+  },
+  {
+   "start": 3454.38,
+   "end": 3457.26,
+   "text": "Even for the CIA in those days, it's a bit too far."
+  },
+  {
+   "start": 3457.26,
+   "end": 3462.7,
+   "text": "Well, he was uncomfortable, even if you go back to the Johnson years, when Johnson had asked Helms"
+  },
+  {
+   "start": 3463.34,
+   "end": 3470.14,
+   "text": "to essentially do work on the domestic anti-war movement, Helms didn't want to. And it had actually"
+  },
+  {
+   "start": 3470.14,
+   "end": 3474.14,
+   "text": "protested. And the records of that meeting are that he protests, and then Johnson kind of looks"
+  },
+  {
+   "start": 3474.14,
+   "end": 3477.66,
+   "text": "Adam and says, so here's what you're going to do. You're going to do that thing for me. So there"
+  },
+  {
+   "start": 3477.66,
+   "end": 3483.18,
+   "text": "is a history here of when the White House asks, even if it violates the agency's charter,"
+  },
+  {
+   "start": 3483.82,
+   "end": 3487.58,
+   "text": "you'll probably do it. The agency is going to do it. But Helms at first resists, but then"
+  },
+  {
+   "start": 3488.3,
+   "end": 3492.94,
+   "text": "they get a report at CIA, you know, part of this damage assessment for the Pentagon papers,"
+  },
+  {
+   "start": 3492.94,
+   "end": 3498.22,
+   "text": "saying that some of the Pentagon papers might have reached a foreign embassy. And again, it's that"
+  },
+  {
+   "start": 3498.22,
+   "end": 3502.94,
+   "text": "as long as you can make some kind of link to a foreign state, you've got a bit of a kind of"
+  },
+  {
+   "start": 3502.94,
+   "end": 3507.82,
+   "text": "locus ahold which allows the CIA to get involved. So at that point, Helms changes his mind basically"
+  },
+  {
+   "start": 3507.82,
+   "end": 3509.82,
+   "text": "and goes, yeah, okay, we're going to get involved in this."
+  },
+  {
+   "start": 3509.82,
+   "end": 3516.98,
+   "text": "So Helms says, yes, we'll have the agency do it. The task goes to the chief of medical services,"
+  },
+  {
+   "start": 3516.98,
+   "end": 3522.5,
+   "text": "then to the chief of the psychiatric staff, then to a staff psychiatrist to put the report together."
+  },
+  {
+   "start": 3523.42,
+   "end": 3528.38,
+   "text": "Everybody in that chain says, wait a minute, this falls outside the agency's charter. This is an"
+  },
+  {
+   "start": 3528.38,
+   "end": 3533.66,
+   "text": "American citizen, they're also very uneasy that the order has come from the director"
+  },
+  {
+   "start": 3533.66,
+   "end": 3537.66,
+   "text": "of security, which again, in this period, this is an office that had been involved in"
+  },
+  {
+   "start": 3537.66,
+   "end": 3542.78,
+   "text": "some of the dealings with the mafia around Castro assassination plot."
+  },
+  {
+   "start": 3542.78,
+   "end": 3549.18,
+   "text": "So it's kind of this, I think even inside the CIA, it's seen as this kind of murky,"
+  },
+  {
+   "start": 3549.18,
+   "end": 3552.34,
+   "text": "slightly belowboard outfit."
+  },
+  {
+   "start": 3552.34,
+   "end": 3554.42,
+   "text": "When they come and knock on your door, you're a big wary."
+  },
+  {
+   "start": 3554.42,
+   "end": 3555.42,
+   "text": "Maybe not."
+  },
+  {
+   "start": 3555.42,
+   "end": 3559.66,
+   "text": "if you're on the psychiatric staff, but they do it anyway."
+  },
+  {
+   "start": 3559.66,
+   "end": 3563.98,
+   "text": "So they put this profile, again, another theme of this series is going to be"
+  },
+  {
+   "start": 3564.54,
+   "end": 3568.3,
+   "text": "some reservations, but we'll do it anyway. So they do it."
+  },
+  {
+   "start": 3568.3,
+   "end": 3569.98,
+   "text": "But it's not good enough."
+  },
+  {
+   "start": 3569.98,
+   "end": 3575.09,
+   "text": "Yeah, Hunt and Lydia go out and they complain. They're like, this, this sucks."
+  },
+  {
+   "start": 3575.09,
+   "end": 3579.25,
+   "text": "I don't like this profile. And the psychiatrist who put it together said,"
+  },
+  {
+   "start": 3579.25,
+   "end": 3582.61,
+   "text": "I don't have enough information to put together a good profile,"
+  },
+  {
+   "start": 3582.61,
+   "end": 3589.15,
+   "text": "probably thinking that that might end it right there. But Liddy remembers, of course, that"
+  },
+  {
+   "start": 3589.15,
+   "end": 3595.39,
+   "text": "Ellsberg has been seeing this psychiatrist, a doctor fielding out in Los Angeles, and says,"
+  },
+  {
+   "start": 3595.39,
+   "end": 3601.47,
+   "text": "well, look, there's probably more information that Dr. Fielding has. And so if we can go and get"
+  },
+  {
+   "start": 3601.47,
+   "end": 3608.67,
+   "text": "that information, we can take it to the CIA psychiatrist, and then we can use that profile"
+  },
+  {
+   "start": 3608.67,
+   "end": 3616.51,
+   "text": "to basically try Ellsberg in public, presumably as some kind of psychologically unstable individual."
+  },
+  {
+   "start": 3616.51,
+   "end": 3624.19,
+   "text": "So you've now got to the point where you want to get the psychiatrist's notes and reports on one of"
+  },
+  {
+   "start": 3624.19,
+   "end": 3628.83,
+   "text": "the people who's seeing them. What are you going to do about it? You're going to break into the"
+  },
+  {
+   "start": 3628.83,
+   "end": 3633.63,
+   "text": "psychiatrist. I mean, that's what's crazy, isn't it? This leap. I mean, how quickly they get to that"
+  },
+  {
+   "start": 3633.63,
+   "end": 3641.98,
+   "text": "point by the 11th of August that the plumbers send Aerlikmen a status report on this Ellsberg"
+  },
+  {
+   "start": 3641.98,
+   "end": 3650.14,
+   "text": "Pentagon Papers project. And they recommend in this briefing that a covert operation be undertaken"
+  },
+  {
+   "start": 3650.14,
+   "end": 3655.9,
+   "text": "to look at the medical files still held by Ellsberg psychiatrist out in California,"
+  },
+  {
+   "start": 3655.9,
+   "end": 3659.66,
+   "text": "because he'd been, I guess he'd been an analysis for a couple years, so they think there's probably"
+  },
+  {
+   "start": 3659.66,
+   "end": 3660.98,
+   "text": "probably a lot of material out there."
+  },
+  {
+   "start": 3660.98,
+   "end": 3663.86,
+   "text": "And Erlichman, chief White House domestic aid,"
+  },
+  {
+   "start": 3663.86,
+   "end": 3666.62,
+   "text": "initials the approval line on this memo E,"
+  },
+  {
+   "start": 3666.62,
+   "end": 3668.42,
+   "text": "which remember that's how he signs everything"
+  },
+  {
+   "start": 3668.42,
+   "end": 3670.3,
+   "text": "because Nixon can't spell his name."
+  },
+  {
+   "start": 3670.3,
+   "end": 3672.02,
+   "text": "And then he adds a condition,"
+  },
+  {
+   "start": 3672.02,
+   "end": 3675.7,
+   "text": "if done under your assurance that it is not traceable."
+  },
+  {
+   "start": 3675.7,
+   "end": 3679.1,
+   "text": "Well, let's stop there and next time we'll see"
+  },
+  {
+   "start": 3679.1,
+   "end": 3683.14,
+   "text": "how the break-ins that eventually lead to Watergate"
+  },
+  {
+   "start": 3683.14,
+   "end": 3685.66,
+   "text": "and the downfall of a president start"
+  },
+  {
+   "start": 3685.66,
+   "end": 3689.5,
+   "text": "and how much the CIA really knew about what was going on."
+  },
+  {
+   "start": 3689.5,
+   "end": 3692.62,
+   "text": "But of course, if you want to experience that break in now,"
+  },
+  {
+   "start": 3692.62,
+   "end": 3696.06,
+   "text": "you can by going and joining the Declassified Club"
+  },
+  {
+   "start": 3696.06,
+   "end": 3698.42,
+   "text": "at therestisclassified.com,"
+  },
+  {
+   "start": 3698.42,
+   "end": 3701.34,
+   "text": "where you will get early access to this series"
+  },
+  {
+   "start": 3701.34,
+   "end": 3702.78,
+   "text": "and all series to come"
+  },
+  {
+   "start": 3702.78,
+   "end": 3705.6,
+   "text": "and experience the bonus interviews that we do"
+  },
+  {
+   "start": 3705.6,
+   "end": 3707.22,
+   "text": "with some really amazing guests."
+  },
+  {
+   "start": 3707.22,
+   "end": 3708.06,
+   "text": "That's right."
+  },
+  {
+   "start": 3708.06,
+   "end": 3710.86,
+   "text": "So do join at therestisclassified.com"
+  },
+  {
+   "start": 3710.86,
+   "end": 3711.78,
+   "text": "and we'll see you next time."
+  },
+  {
+   "start": 3711.78,
+   "end": 3718.14,
+   "text": "We'll see you next time."
+  },
+  {
+   "start": 3718.14,
+   "end": 3721.66,
+   "text": "Ever check out online and think, wow, that was easy."
+  },
+  {
+   "start": 3721.66,
+   "end": 3723.0,
+   "text": "That might have been Link."
+  },
+  {
+   "start": 3723.0,
+   "end": 3724.96,
+   "text": "No card hunt, no address typing,"
+  },
+  {
+   "start": 3724.96,
+   "end": 3727.16,
+   "text": "no checkout obstacle course."
+  },
+  {
+   "start": 3727.16,
+   "end": 3728.76,
+   "text": "Link fills in your details,"
+  },
+  {
+   "start": 3728.76,
+   "end": 3730.84,
+   "text": "helps protect eligible purchases,"
+  },
+  {
+   "start": 3730.84,
+   "end": 3733.56,
+   "text": "and makes subscriptions easier to manage."
+  },
+  {
+   "start": 3733.56,
+   "end": 3737.36,
+   "text": "Next time you're at checkout, look for the green button."
+  },
+  {
+   "start": 3737.36,
+   "end": 3739.68,
+   "text": "Link, the smarter way to pay."
+  },
+  {
+   "start": 3739.68,
+   "end": 3742.95,
+   "text": "Learn more at link.com."
+  },
+  {
+   "start": 3742.95,
+   "end": 3745.71,
+   "text": "Starting a business can seem like a daunting task,"
+  },
+  {
+   "start": 3745.71,
+   "end": 3748.31,
+   "text": "unless you have a partner like Shopify."
+  },
+  {
+   "start": 3748.31,
+   "end": 3751.27,
+   "text": "They have the tools you need to start and grow your business,"
+  },
+  {
+   "start": 3751.27,
+   "end": 3753.15,
+   "text": "from designing a website to marketing,"
+  },
+  {
+   "start": 3753.15,
+   "end": 3756.67,
+   "text": "to selling and beyond, Shopify can help with everything you need."
+  },
+  {
+   "start": 3756.67,
+   "end": 3759.03,
+   "text": "There's a reason millions of companies like Mattel,"
+  },
+  {
+   "start": 3759.03,
+   "end": 3762.07,
+   "text": "Heinz, and Allbirds continue to trust and use them."
+  },
+  {
+   "start": 3762.07,
+   "end": 3765.43,
+   "text": "With Shopify on your side, turn your big business idea into..."
+  },
+  {
+   "start": 3765.43,
+   "end": 3770.91,
+   "text": "Sign up for your $1 per month trial at Shopify.com slash special offer."
+  },
+  {
+   "start": 3770.91,
+   "end": 3773.15,
+   "text": "Some personality quirks are really funny."
+  },
+  {
+   "start": 3773.15,
+   "end": 3776.87,
+   "text": "Like, I talk to my left foot more than I talk to my right."
+  },
+  {
+   "start": 3776.87,
+   "end": 3779.91,
+   "text": "You know what's not funny and not a personality quirk?"
+  },
+  {
+   "start": 3779.91,
+   "end": 3780.75,
+   "text": "OCD."
+  },
+  {
+   "start": 3780.75,
+   "end": 3785.23,
+   "text": "Although the term OCD is widely recognized, it's misunderstood by most people."
+  },
+  {
+   "start": 3785.23,
+   "end": 3787.55,
+   "text": "It doesn't mean being tidy or clean."
+  },
+  {
+   "start": 3787.55,
+   "end": 3791.63,
+   "text": "It's having obsessive fears, thoughts, and urges."
+  },
+  {
+   "start": 3791.63,
+   "end": 3794.07,
+   "text": "You question your character, you question your safety."
+  },
+  {
+   "start": 3794.07,
+   "end": 3795.23,
+   "text": "That's OCD."
+  },
+  {
+   "start": 3795.23,
+   "end": 3798.03,
+   "text": "Breaking the OCD cycle takes effective treatment."
+  },
+  {
+   "start": 3798.03,
+   "end": 3800.95,
+   "text": "Go to nocd.com to learn more."
+  }
+ ],
+ "seconds": 101.5,
+ "file": "the-rest-is-classified__202-watergate-the-cia-conspiracy-ep-1/take1.mp3",
+ "model": "small"
+}

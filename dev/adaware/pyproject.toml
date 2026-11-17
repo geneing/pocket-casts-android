@@ -1,0 +1,31 @@
+[project]
+name = "adaware"
+version = "0.1.0"
+description = "Podcast ad detection research pipeline (data collection, transcription, features, classifier)"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.27",
+    "feedparser>=6.0.11",
+    "numpy>=1.26",
+    "scipy>=1.13",
+    "soundfile>=0.12",
+    "pandas>=2.2",
+    "scikit-learn>=1.5",
+    "matplotlib>=3.9",
+    "faster-whisper>=1.0.3",
+    "rapidfuzz>=3.9",
+    "tqdm>=4.66",
+    "nvidia-cublas-cu12>=12.9.3.13",
+    "nvidia-cudnn-cu12>=9.28.1.4",
+    "huggingface-hub<1.0",
+    "av>=14",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29",
+    "pytest>=8.3",
+]
+
+[tool.uv]
+package = false

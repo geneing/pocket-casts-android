@@ -1,0 +1,26 @@
+{
+  "npr-s-book-of-the-day__journalist-emily-feng-on-how-uyghur-militants-took-up-arms-in-syria-s-ci": {
+    "show": "NPR's Book of the Day",
+    "host": "npr",
+    "episode": "Journalist Emily Feng on how Uyghur militants took up arms in Syria's civil war",
+    "duration": "654",
+    "takes": [
+      {
+        "take": 0,
+        "file": "sample_audio/npr-s-book-of-the-day__journalist-emily-feng-on-how-uyghur-militants-took-up-arms-in-syria-s-ci/take0.mp3",
+        "bytes": 12449780,
+        "seconds": 12.2,
+        "sha256": "0bc3ec7d5062ba906d2e80c7577f4d16be61c8c9bf5ecf230288fb020c3f7519",
+        "fetched_at_utc": "2026-11-13T05:13:53+00:00"
+      },
+      {
+        "take": 1,
+        "file": "sample_audio/npr-s-book-of-the-day__journalist-emily-feng-on-how-uyghur-militants-took-up-arms-in-syria-s-ci/take1.mp3",
+        "bytes": 12449780,
+        "seconds": 7.4,
+        "sha256": "0bc3ec7d5062ba906d2e80c7577f4d16be61c8c9bf5ecf230288fb020c3f7519",
+        "fetched_at_utc": "2026-11-13T05:14:06+00:00"
+      }
+    ]
+  }
+}

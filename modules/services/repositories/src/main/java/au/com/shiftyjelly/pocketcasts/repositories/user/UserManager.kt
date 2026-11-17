@@ -39,6 +39,7 @@ import io.reactivex.BackpressureStrategy
 import io.reactivex.Flowable
 import io.reactivex.Single
 import io.reactivex.rxkotlin.combineLatest
+import java.time.Instant
 import javax.inject.Inject
 import kotlin.coroutines.CoroutineContext
 import kotlinx.coroutines.CoroutineScope
@@ -123,6 +124,10 @@ class UserManagerImpl @Inject constructor(
     }
 
     override fun getSignInState(): Flowable<SignInState> {
+        return getSignInStateUnmodified().map { it.withForcedPaidSubscription() }
+    }
+
+    private fun getSignInStateUnmodified(): Flowable<SignInState> {
         return syncManager.isLoggedInObservable.toFlowable(BackpressureStrategy.LATEST)
             .switchMap { isLoggedIn ->
                 if (isLoggedIn) {
@@ -254,5 +259,34 @@ class UserManagerImpl @Inject constructor(
             episodeManager.deleteAll(SourceView.UNKNOWN)
         }
         return signOutJob
+    }
+}
+
+/**
+ * Local development override: a signed-in account is reported as a Plus subscriber so paid
+ * features can be exercised without a real subscription. Set [FORCE_PAID_SIGN_IN] to false to
+ * restore the membership reported by the server.
+ *
+ * This never changes whether the user is signed in: a signed-out app stays signed out, so the
+ * sign-in screens still appear on a fresh install.
+ *
+ * Features that read [Settings.cachedSubscription] directly instead of the sign-in state are not
+ * covered by this: the ads manager (`MembershipFeature.NoBannerAds`) and the player's Up Next
+ * shuffle still follow the real membership.
+ */
+private const val FORCE_PAID_SIGN_IN = true
+
+private val forcedPaidSubscription = Subscription.PlusPreview.copy(
+    expiryDate = Instant.parse("2099-12-31T00:00:00Z"),
+)
+
+private fun SignInState.withForcedPaidSubscription(): SignInState {
+    if (!FORCE_PAID_SIGN_IN) return this
+    return when (this) {
+        // Keep a real subscription as is, unlock everything else for a signed-in account.
+        is SignInState.SignedIn -> copy(subscription = subscription ?: forcedPaidSubscription)
+
+        // Subscription reporting only applies to a logged-in account.
+        SignInState.SignedOut -> this
     }
 }

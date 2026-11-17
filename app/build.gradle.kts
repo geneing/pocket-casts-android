@@ -175,3 +175,5 @@ dependencies {
     androidTestImplementation(projects.modules.services.sharedtest)
     androidTestImplementation(projects.modules.services.analytics.testing)
 }
+
+apply(from = "../gradle/adaware.gradle")

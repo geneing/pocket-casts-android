@@ -696,6 +696,12 @@ class SettingsImpl @Inject constructor(
         sharedPrefs = sharedPreferences,
     )
 
+    override val skipAds: UserSetting<Boolean> = UserSetting.BoolPref(
+        sharedPrefKey = "skipAds",
+        defaultValue = false,
+        sharedPrefs = sharedPreferences,
+    )
+
     override val showWhatsNewDot: UserSetting<Boolean> = UserSetting.BoolPref(
         sharedPrefKey = "showWhatsNewDot",
         defaultValue = true,

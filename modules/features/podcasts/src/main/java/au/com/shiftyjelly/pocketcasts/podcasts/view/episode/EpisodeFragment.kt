@@ -57,6 +57,7 @@ import au.com.shiftyjelly.pocketcasts.transcripts.TranscriptFragment
 import au.com.shiftyjelly.pocketcasts.transcripts.ui.TranscriptExcerptBanner
 import au.com.shiftyjelly.pocketcasts.transcripts.ui.TranscriptExcerptBannerColors
 import au.com.shiftyjelly.pocketcasts.transcripts.ui.TranscriptExcerptBannerDimensions
+import au.com.shiftyjelly.pocketcasts.transcripts.ui.TranscriptGeneratingBanner
 import au.com.shiftyjelly.pocketcasts.ui.R
 import au.com.shiftyjelly.pocketcasts.ui.extensions.getThemeColor
 import au.com.shiftyjelly.pocketcasts.ui.extensions.themed
@@ -584,6 +585,7 @@ class EpisodeFragment : BaseFragment() {
         binding?.episodeTranscript?.setContentWithViewCompositionStrategy {
             val pageState = viewModel.pageState.collectAsState().value
             val transcript = pageState.transcript as? Transcript.Text
+            val isGenerating = pageState.isTranscriptGenerating
 
             AppTheme(activeTheme) {
                 val podcastTint = (viewModel.state.value as? EpisodeFragmentState.Loaded)?.tintColor ?: Color.BLACK
@@ -616,6 +618,12 @@ class EpisodeFragment : BaseFragment() {
                                         ),
                                     )
                                 },
+                        )
+                    } else if (isGenerating) {
+                        TranscriptGeneratingBanner(
+                            colors = TranscriptExcerptBannerColors.default().copy(leadingIcon = episodeIconColor),
+                            dimensions = TranscriptExcerptBannerDimensions.compact(),
+                            modifier = Modifier.fillMaxWidth(),
                         )
                     }
                 }

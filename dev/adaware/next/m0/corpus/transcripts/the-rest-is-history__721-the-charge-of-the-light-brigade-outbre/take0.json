@@ -1,0 +1,5369 @@
+{
+ "duration": 4291.89,
+ "language": "en",
+ "segments": [
+  {
+   "start": 0.94,
+   "end": 4.06,
+   "text": "This episode is brought to you by Revolut."
+  },
+  {
+   "start": 4.06,
+   "end": 7.82,
+   "text": "Standing still leaves no legacy."
+  },
+  {
+   "start": 7.82,
+   "end": 12.62,
+   "text": "History is written by progress, by revolution."
+  },
+  {
+   "start": 12.62,
+   "end": 18.06,
+   "text": "Fighting for independence, dismantling those broken systems, defying injustice."
+  },
+  {
+   "start": 18.06,
+   "end": 22.78,
+   "text": "Every revolution begins with the refusal to accept the norm."
+  },
+  {
+   "start": 22.78,
+   "end": 24.38,
+   "text": "A demand for more."
+  },
+  {
+   "start": 24.38,
+   "end": 27.82,
+   "text": "And Revolut is founded on the same principle."
+  },
+  {
+   "start": 27.82,
+   "end": 36.22,
+   "text": "Originally established to push back the frontiers of traditional banking, it puts the power back into your hands."
+  },
+  {
+   "start": 36.22,
+   "end": 44.82,
+   "text": "You can manage all of your money in one app. Plus, you can earn while you spend with the Rev Points Reward System."
+  },
+  {
+   "start": 44.82,
+   "end": 50.62,
+   "text": "As a fully authorized UK bank, your money is FSCS Protected."
+  },
+  {
+   "start": 50.62,
+   "end": 57.66,
+   "text": "Sign up to Revolut today at Revolut.com forward slash TRIH. That's all lowercase."
+  },
+  {
+   "start": 57.66,
+   "end": 62.06,
+   "text": "And you'll get £20 after the first time that you spend."
+  },
+  {
+   "start": 62.06,
+   "end": 67.82,
+   "text": "18 plus. End date and promotion, teas and seas apply. And rev points, teas and seas apply."
+  },
+  {
+   "start": 67.82,
+   "end": 73.5,
+   "text": "This episode is brought to you by Anthropic, the team behind Claude. Has there ever been"
+  },
+  {
+   "start": 73.5,
+   "end": 77.34,
+   "text": "an occasion where you've watched something in episode, perhaps, and you just wish that you"
+  },
+  {
+   "start": 77.34,
+   "end": 81.66,
+   "text": "you could know more about it. Tom, the genuine he has. As you know, it was recently half term"
+  },
+  {
+   "start": 81.66,
+   "end": 86.38,
+   "text": "and nothing says a half term holiday than a trip to the Baltic States. I went to a San"
+  },
+  {
+   "start": 86.38,
+   "end": 93.26,
+   "text": "Brett Jr. to Vilnius and Riga and I became completely obsessed with the Grand Duchy of Lithuania."
+  },
+  {
+   "start": 93.26,
+   "end": 97.5,
+   "text": "And I was really interested to read more about it because I know nothing about the history of this"
+  },
+  {
+   "start": 97.5,
+   "end": 103.26,
+   "text": "exotic and glamorous part of the world. And so I went and I asked Claude, tell me everything that"
+  },
+  {
+   "start": 103.26,
+   "end": 105.34,
+   "text": "that I need to know about the Grand Duchy of Lithuania."
+  },
+  {
+   "start": 105.34,
+   "end": 106.18,
+   "text": "And it did."
+  },
+  {
+   "start": 106.18,
+   "end": 107.02,
+   "text": "It was brilliant."
+  },
+  {
+   "start": 107.02,
+   "end": 107.86,
+   "text": "Incredible."
+  },
+  {
+   "start": 107.86,
+   "end": 109.62,
+   "text": "So if you want to know more about Lithuania"
+  },
+  {
+   "start": 109.62,
+   "end": 111.18,
+   "text": "or if you want to know about anything at all,"
+  },
+  {
+   "start": 111.18,
+   "end": 112.1,
+   "text": "go to Claude."
+  },
+  {
+   "start": 112.1,
+   "end": 113.58,
+   "text": "It's a thinking partner."
+  },
+  {
+   "start": 113.58,
+   "end": 116.26,
+   "text": "And you can discover more about Claude at"
+  },
+  {
+   "start": 116.26,
+   "end": 120.42,
+   "text": "Claude.ai slash Rest is History."
+  },
+  {
+   "start": 124.24,
+   "end": 127.32,
+   "text": "This episode is brought to you by Mint Mobile."
+  },
+  {
+   "start": 127.32,
+   "end": 131.72,
+   "text": "Right now, all of Mint's plans are $15 per month,"
+  },
+  {
+   "start": 131.72,
+   "end": 133.16,
+   "text": "even unlimited."
+  },
+  {
+   "start": 133.16,
+   "end": 140.16,
+   "text": "to go to mintmobile.com."
+  },
+  {
+   "start": 172.98,
+   "end": 177.98,
+   "text": "Half a league onward, all in the valley of death rode the 600."
+  },
+  {
+   "start": 177.98,
+   "end": 181.98,
+   "text": "Forward the Light Brigade, charge for the guns, he said."
+  },
+  {
+   "start": 181.98,
+   "end": 185.98,
+   "text": "Into the valley of death rode the 600."
+  },
+  {
+   "start": 185.98,
+   "end": 187.98,
+   "text": "Forward the Light Brigade!"
+  },
+  {
+   "start": 187.98,
+   "end": 189.98,
+   "text": "Was there a man dismayed?"
+  },
+  {
+   "start": 189.98,
+   "end": 192.98,
+   "text": "Not though the soldier knew someone had blundered."
+  },
+  {
+   "start": 192.98,
+   "end": 197.98,
+   "text": "There's not to make reply, there's not to reason why,"
+  },
+  {
+   "start": 197.98,
+   "end": 206.35,
+   "text": "theirs, but to do and die into the valley of death rode the 600.\""
+  },
+  {
+   "start": 206.35,
+   "end": 212.39,
+   "text": "So that was the Charge of the Light Brigade by Britain's poet laureate Alfred Lord Tennyson."
+  },
+  {
+   "start": 212.39,
+   "end": 218.29,
+   "text": "Great poem, very memorable poem, one of the most famous in all Victorian literature, often"
+  },
+  {
+   "start": 218.29,
+   "end": 220.75,
+   "text": "recited by small boys."
+  },
+  {
+   "start": 220.75,
+   "end": 227.75,
+   "text": "Sambrook Jr. included in his prize-winning appearance a few years ago at his old school."
+  },
+  {
+   "start": 227.75,
+   "end": 233.87,
+   "text": "So Tennyson wrote this on the 2nd of December 1854 and he wrote it less than six weeks,"
+  },
+  {
+   "start": 233.87,
+   "end": 241.11,
+   "text": "five and a half weeks to be precise, after one of the most celebrated moments in the"
+  },
+  {
+   "start": 241.11,
+   "end": 245.15,
+   "text": "long history of British warfare."
+  },
+  {
+   "start": 245.15,
+   "end": 251.21,
+   "text": "So a moment that perhaps it's not one of the great victories in British history."
+  },
+  {
+   "start": 251.21,
+   "end": 252.51,
+   "text": "It was glorious."
+  },
+  {
+   "start": 252.51,
+   "end": 254.27,
+   "text": "It was catastrophic."
+  },
+  {
+   "start": 254.27,
+   "end": 256.19,
+   "text": "It was heroic."
+  },
+  {
+   "start": 256.19,
+   "end": 260.33,
+   "text": "It was blackly comical."
+  },
+  {
+   "start": 260.33,
+   "end": 265.57,
+   "text": "It was an absolutely tremendous occasion, the kind of thing that we love on the rest"
+  },
+  {
+   "start": 265.57,
+   "end": 266.57,
+   "text": "is history."
+  },
+  {
+   "start": 266.57,
+   "end": 272.41,
+   "text": "Now, Tom, you know, there was only one way to start this story with Tennyson's poem."
+  },
+  {
+   "start": 272.41,
+   "end": 276.21,
+   "text": "And Tennyson's poem actually captures, certainly in those lines that we've read, there'll be"
+  },
+  {
+   "start": 276.21,
+   "end": 278.77,
+   "text": "more of the poem in future episodes."
+  },
+  {
+   "start": 278.77,
+   "end": 283.29,
+   "text": "In those lines that we've read, it captures quite a lot of the detail, actually, of this"
+  },
+  {
+   "start": 283.29,
+   "end": 284.29,
+   "text": "story, doesn't it?"
+  },
+  {
+   "start": 284.29,
+   "end": 285.29,
+   "text": "Yeah."
+  },
+  {
+   "start": 285.29,
+   "end": 290.53,
+   "text": "mad drama of it. And Dominic, I've got a compliment you that was a fantastic reading. And I can"
+  },
+  {
+   "start": 290.53,
+   "end": 292.01,
+   "text": "see where Sam Brooke Jr gets it from."
+  },
+  {
+   "start": 292.05,
+   "end": 294.73,
+   "text": "Joe, I actually watched his performance to inspire me."
+  },
+  {
+   "start": 294.77,
+   "end": 295.81,
+   "text": "Oh, when you copied it?"
+  },
+  {
+   "start": 295.93,
+   "end": 296.97,
+   "text": "Well, he was so good."
+  },
+  {
+   "start": 297.45,
+   "end": 301.21,
+   "text": "He was so good. There was like 300 kids or something doing these readings. He went"
+  },
+  {
+   "start": 301.21,
+   "end": 306.53,
+   "text": "first. And I thought, Christ, they made him go first. And you could have heard a"
+  },
+  {
+   "start": 306.53,
+   "end": 312.45,
+   "text": "pin drop. It was brilliant. And also all the others did like woke poems. So he did"
+  },
+  {
+   "start": 312.45,
+   "end": 318.05,
+   "text": "He did something really punchy and I could see loads of the other parents looking at me and going,"
+  },
+  {
+   "start": 318.05,
+   "end": 319.65,
+   "text": "come on, you must be so proud."
+  },
+  {
+   "start": 319.65,
+   "end": 326.13,
+   "text": "I mean, it's not Unwoke because it's about the common man galloping into this kind of disastrous"
+  },
+  {
+   "start": 326.13,
+   "end": 331.73,
+   "text": "furnace of gunfire led by aristocrats as we've said, that's basically the story."
+  },
+  {
+   "start": 331.73,
+   "end": 333.01,
+   "text": "So we'll see where that goes."
+  },
+  {
+   "start": 333.01,
+   "end": 335.09,
+   "text": "Yeah, Lions led by donkeys."
+  },
+  {
+   "start": 335.09,
+   "end": 338.21,
+   "text": "I think this is the kind of the primal origin of that trope."
+  },
+  {
+   "start": 338.21,
+   "end": 338.53,
+   "text": "Yeah."
+  },
+  {
+   "start": 338.53,
+   "end": 343.49,
+   "text": "And as you say, Tennyson's poem, which is an absolute kind of A-class banger, it does give"
+  },
+  {
+   "start": 343.49,
+   "end": 348.85,
+   "text": "you quite a lot of detail. The valley of death, such a memorable phrase. Where is that? It lies to"
+  },
+  {
+   "start": 348.85,
+   "end": 355.57,
+   "text": "the north of a place called Balaclava, which is a port on the coast of Crimea in the Black Sea,"
+  },
+  {
+   "start": 356.37,
+   "end": 364.45,
+   "text": "which had been occupied by the British army on the 26th of September 1854. And it is 100%"
+  },
+  {
+   "start": 364.45,
+   "end": 371.45,
+   "text": "percent a death trap. So it's a mile and a half long, it's a mile wide, there is"
+  },
+  {
+   "start": 371.45,
+   "end": 376.49,
+   "text": "cannon to the right, there is cannon to the left, there is cannon in front and in"
+  },
+  {
+   "start": 376.49,
+   "end": 383.17,
+   "text": "total there are about 50 heavy guns loaded with grape shot and shells and"
+  },
+  {
+   "start": 383.17,
+   "end": 388.21,
+   "text": "it's a very bad place to be a cavalryman. The Light Brigade are separated from the"
+  },
+  {
+   "start": 388.21,
+   "end": 392.73,
+   "text": "guns at the bottom of the valley by about a mile and a quarter and so only a"
+  },
+  {
+   "start": 392.73,
+   "end": 401.21,
+   "text": "a complete lunatic would ever lead a charge down this valley. But that is exactly what"
+  },
+  {
+   "start": 401.21,
+   "end": 410.53,
+   "text": "the Light Brigade ended up doing at 11.10 on the morning of 25th October, 1854. And unsurprisingly,"
+  },
+  {
+   "start": 410.53,
+   "end": 417.01,
+   "text": "this charge resulted in utter carnage. And Tennyson, when he came to write the poem, was"
+  },
+  {
+   "start": 417.01,
+   "end": 423.57,
+   "text": "relying for his details on an initial report in the Times which had actually got its numbers wrong."
+  },
+  {
+   "start": 424.21,
+   "end": 430.13,
+   "text": "The Light Brigade's total was closer to 700 than 600 and when Tennyson was told this he said,"
+  },
+  {
+   "start": 430.13,
+   "end": 435.33,
+   "text": "well I can't change it because it would ruin the scanche and so in Tennyson's poem it's the 600."
+  },
+  {
+   "start": 435.89,
+   "end": 443.81,
+   "text": "But historically it was 700 and of the 700 Amir 195 managed to make their way back up the valley"
+  },
+  {
+   "start": 443.81,
+   "end": 454.57,
+   "text": "And behind them, they left the mangled remains of their fallen comrades, many hundreds of horses as well, dead or dying amid the dust of the Crimea."
+  },
+  {
+   "start": 454.97,
+   "end": 463.53,
+   "text": "So it was an absolutely stupefying display of courage, but also in military terms, a complete screw up."
+  },
+  {
+   "start": 463.97,
+   "end": 468.85,
+   "text": "And that is how the Victorian public like their their kind of military feats."
+  },
+  {
+   "start": 468.85,
+   "end": 473.09,
+   "text": "They like it to be a mixture of utter heroism and total incompetence."
+  },
+  {
+   "start": 473.53,
+   "end": 476.13,
+   "text": "And the charge of the light brigade is the archetype of that."
+  },
+  {
+   "start": 476.49,
+   "end": 479.13,
+   "text": "There's an interesting book about this by Stephanie Barczewski"
+  },
+  {
+   "start": 479.65,
+   "end": 481.65,
+   "text": "called Heroic Failure and the British."
+  },
+  {
+   "start": 481.73,
+   "end": 485.05,
+   "text": "And she argues that basically the Victorian public became fixated"
+  },
+  {
+   "start": 485.05,
+   "end": 487.53,
+   "text": "on stories of ludicrous disasters,"
+  },
+  {
+   "start": 487.81,
+   "end": 491.29,
+   "text": "because it enabled them to cope with the moral ambiguities of empire."
+  },
+  {
+   "start": 493.13,
+   "end": 494.77,
+   "text": "It's certainly a perspective."
+  },
+  {
+   "start": 494.77,
+   "end": 498.53,
+   "text": "Yeah, I think people just love stories of ludicrous incompetence."
+  },
+  {
+   "start": 498.53,
+   "end": 500.37,
+   "text": "And people love disasters, no?"
+  },
+  {
+   "start": 500.89,
+   "end": 504.45,
+   "text": "Also, I think there's something hardwired, the sort of the island"
+  },
+  {
+   "start": 504.45,
+   "end": 506.25,
+   "text": "nation with its backs to the wall."
+  },
+  {
+   "start": 506.49,
+   "end": 509.81,
+   "text": "But, you know, even though the odds are against us, we don't lose"
+  },
+  {
+   "start": 509.81,
+   "end": 510.73,
+   "text": "our stiff upper lip."
+  },
+  {
+   "start": 510.73,
+   "end": 511.69,
+   "text": "I think people love that."
+  },
+  {
+   "start": 511.69,
+   "end": 512.73,
+   "text": "It's part of the self image."
+  },
+  {
+   "start": 512.81,
+   "end": 515.89,
+   "text": "I think also in the context of the Light Brigade, it's because there"
+  },
+  {
+   "start": 515.89,
+   "end": 518.37,
+   "text": "is an incredible degree of flamboyance about it, as we will see."
+  },
+  {
+   "start": 518.45,
+   "end": 520.37,
+   "text": "They're kind of amazing uniforms."
+  },
+  {
+   "start": 520.49,
+   "end": 520.93,
+   "text": "Right."
+  },
+  {
+   "start": 521.17,
+   "end": 521.85,
+   "text": "Good whiskers."
+  },
+  {
+   "start": 521.89,
+   "end": 523.01,
+   "text": "Tremendous whiskers."
+  },
+  {
+   "start": 523.49,
+   "end": 525.69,
+   "text": "And of course, Tennyson is right."
+  },
+  {
+   "start": 525.69,
+   "end": 527.41,
+   "text": "Someone had blundered."
+  },
+  {
+   "start": 527.41,
+   "end": 533.79,
+   "text": "So a really spectacular military blunder, especially if it's coming from a gormless aristocrat. I think people love that as well"
+  },
+  {
+   "start": 533.79,
+   "end": 536.41,
+   "text": "That's so too. So the question is I guess"
+  },
+  {
+   "start": 536.87,
+   "end": 544.49,
+   "text": "Why is the charge launched and who if anyone had blundered and so that's what we're going to be exploring over the course of this series"
+  },
+  {
+   "start": 545.33,
+   "end": 547.33,
+   "text": "And it's a series that"
+  },
+  {
+   "start": 547.77,
+   "end": 550.43,
+   "text": "Is going to feature not just one blunder"
+  },
+  {
+   "start": 550.69,
+   "end": 557.21,
+   "text": "But numerous blunders and I would say that the rule of thumb in this series is that if something can be screwed up"
+  },
+  {
+   "start": 557.41,
+   "end": 562.73,
+   "text": "It is screwed up. Okay. So let's pull the camera back for a second"
+  },
+  {
+   "start": 563.13,
+   "end": 567.33,
+   "text": "And ask a question that's bothering me is bothering our listeners"
+  },
+  {
+   "start": 567.33,
+   "end": 572.05,
+   "text": "And it definitely bothered friend of the show the emperor Ted Wardros the second of Abyssinia"
+  },
+  {
+   "start": 572.29,
+   "end": 574.99,
+   "text": "So you may remember if you listen to the Abyssinian expedition"
+  },
+  {
+   "start": 574.99,
+   "end": 580.76,
+   "text": "Teotros was obsessed with the Crimean War and he couldn't get his head around the fact that"
+  },
+  {
+   "start": 580.76,
+   "end": 589.36,
+   "text": "that Britain and France, Christian countries, had teamed up with the preeminent Muslim power, the Ottoman Empire,"
+  },
+  {
+   "start": 589.36,
+   "end": 593.76,
+   "text": "to have a crack at the Russians, who were of course Orthodox Christians."
+  },
+  {
+   "start": 593.76,
+   "end": 597.56,
+   "text": "And what clearly would have baffled Teodros even more was,"
+  },
+  {
+   "start": 597.56,
+   "end": 600.26,
+   "text": "one earth would you attack in the Crimea?"
+  },
+  {
+   "start": 600.26,
+   "end": 604.26,
+   "text": "I mean, why don't you attack over land? Why don't you do what Napoleon did or whatever?"
+  },
+  {
+   "start": 604.26,
+   "end": 606.46,
+   "text": "So what are the British doing there?"
+  },
+  {
+   "start": 606.46,
+   "end": 611.02,
+   "text": "Just to say up front, the question of why the British and French had gone to war with Russia"
+  },
+  {
+   "start": 611.02,
+   "end": 616.14,
+   "text": "is, I mean, it's not surprising that Teodros was puzzled, because lots of people in Britain end up"
+  },
+  {
+   "start": 616.14,
+   "end": 622.14,
+   "text": "being puzzled as well. And the truth is that the reasons for it are never entirely nailed down."
+  },
+  {
+   "start": 622.14,
+   "end": 626.54,
+   "text": "And you could say that this is kind of the ultimate blunder. There's no particular reason why they"
+  },
+  {
+   "start": 626.54,
+   "end": 633.9,
+   "text": "needed to go to Crimea, as we shall see. And the war itself, one of the reasons why Teodros is"
+  },
+  {
+   "start": 633.9,
+   "end": 639.29,
+   "text": "obsessed by it why so many people are, is that it's the first war that is fought by"
+  },
+  {
+   "start": 639.29,
+   "end": 644.85,
+   "text": "the great powers of Europe against one another since Waterloo. And even in 1854, so that is"
+  },
+  {
+   "start": 644.85,
+   "end": 654.2,
+   "text": "almost 40 years since the end of the Napoleonic Wars, the shadow of Napoleon's campaigns,"
+  },
+  {
+   "start": 654.2,
+   "end": 660.44,
+   "text": "the struggle to bring Napoleon down, the shadow of that struggle still lies over the entire"
+  },
+  {
+   "start": 660.44,
+   "end": 665.3,
+   "text": "continent. So if we look at the three major competence in the Crimean War, you can see"
+  },
+  {
+   "start": 665.3,
+   "end": 671.08,
+   "text": "how memories of the Napoleonic Wars shape all three. So Russia first, a bit like with"
+  },
+  {
+   "start": 671.08,
+   "end": 675.32,
+   "text": "the defeat of the Nazis, so with the defeat of Napoleon, the Russians feel incredible"
+  },
+  {
+   "start": 675.32,
+   "end": 681.22,
+   "text": "pride at the role that they've played. So in 1812, Napoleon had invaded Russia. The"
+  },
+  {
+   "start": 681.22,
+   "end": 686.8,
+   "text": "Russians had burnt Moscow and withdrawn. Napoleon had been forced to retreat and it"
+  },
+  {
+   "start": 686.8,
+   "end": 690.02,
+   "text": "was it effectively kind of destroys his invasion force."
+  },
+  {
+   "start": 690.02,
+   "end": 694.32,
+   "text": "And it enables the Russians in 1814 to enter Paris"
+  },
+  {
+   "start": 694.32,
+   "end": 697.18,
+   "text": "as the self-appointed saviours of Europe."
+  },
+  {
+   "start": 697.18,
+   "end": 700.88,
+   "text": "And in 1815, they are at this great Congress in Vienna"
+  },
+  {
+   "start": 700.88,
+   "end": 704.5,
+   "text": "with the British, with the Austrians, with the Prussians."
+  },
+  {
+   "start": 704.5,
+   "end": 706.9,
+   "text": "And they agree a post war settlement"
+  },
+  {
+   "start": 706.9,
+   "end": 709.52,
+   "text": "and the Russians are one of the guarantors"
+  },
+  {
+   "start": 709.52,
+   "end": 711.2,
+   "text": "of this settlement."
+  },
+  {
+   "start": 711.2,
+   "end": 714.24,
+   "text": "Now, obviously for the French, the Congress of Vienna,"
+  },
+  {
+   "start": 714.24,
+   "end": 717.32,
+   "text": "the Treaty of Vienna, this is very bad news."
+  },
+  {
+   "start": 717.32,
+   "end": 721.36,
+   "text": "And Waterloo and this treaty are still being experienced"
+  },
+  {
+   "start": 721.36,
+   "end": 724.52,
+   "text": "decades on as great humiliations."
+  },
+  {
+   "start": 724.52,
+   "end": 728.47,
+   "text": "And by this point, the nephew of Napoleon,"
+  },
+  {
+   "start": 728.47,
+   "end": 732.71,
+   "text": "so Louis Napoleon, had staged a coup in 1851"
+  },
+  {
+   "start": 732.71,
+   "end": 735.03,
+   "text": "and the following year had proclaimed himself emperor"
+  },
+  {
+   "start": 735.03,
+   "end": 737.39,
+   "text": "as his uncle had been and is now ruling France"
+  },
+  {
+   "start": 737.39,
+   "end": 739.11,
+   "text": "as Napoleon III."
+  },
+  {
+   "start": 739.11,
+   "end": 741.63,
+   "text": "And as a Napoleon and as a Frenchman,"
+  },
+  {
+   "start": 741.63,
+   "end": 746.19,
+   "text": "He is very keen to reclaim France's traditional role"
+  },
+  {
+   "start": 746.19,
+   "end": 748.87,
+   "text": "as the leading military power in Europe."
+  },
+  {
+   "start": 748.87,
+   "end": 753.87,
+   "text": "But with the caveat that he wants to get this status,"
+  },
+  {
+   "start": 754.39,
+   "end": 757.47,
+   "text": "but he doesn't want to risk war with Britain"
+  },
+  {
+   "start": 757.47,
+   "end": 759.11,
+   "text": "in the process of obtaining it."
+  },
+  {
+   "start": 759.11,
+   "end": 760.79,
+   "text": "Because the one lesson that he's picked up"
+  },
+  {
+   "start": 760.79,
+   "end": 764.03,
+   "text": "from the Napoleonic Wars is never go to war with Britain."
+  },
+  {
+   "start": 764.03,
+   "end": 767.67,
+   "text": "And so this is why the French are very open"
+  },
+  {
+   "start": 767.67,
+   "end": 770.07,
+   "text": "to an alliance with Britain."
+  },
+  {
+   "start": 770.07,
+   "end": 774.91,
+   "text": "Now Britain, Britain has immense self-confidence."
+  },
+  {
+   "start": 774.91,
+   "end": 776.19,
+   "text": "And I think this is another reason"
+  },
+  {
+   "start": 776.19,
+   "end": 778.23,
+   "text": "why they can enjoy tales of catastrophe"
+  },
+  {
+   "start": 778.23,
+   "end": 780.03,
+   "text": "is that the kind of the gut at sense"
+  },
+  {
+   "start": 780.03,
+   "end": 781.83,
+   "text": "that they are the top nation"
+  },
+  {
+   "start": 781.83,
+   "end": 783.59,
+   "text": "and it doesn't really matter what happens."
+  },
+  {
+   "start": 783.59,
+   "end": 785.43,
+   "text": "I think is hardwired."
+  },
+  {
+   "start": 785.43,
+   "end": 787.79,
+   "text": "There's enormous complacency."
+  },
+  {
+   "start": 787.79,
+   "end": 789.07,
+   "text": "They're rich, they're prosperous,"
+  },
+  {
+   "start": 789.07,
+   "end": 790.27,
+   "text": "they've got an enormous empire."
+  },
+  {
+   "start": 790.27,
+   "end": 793.35,
+   "text": "They've in 1851, they just staged the great exhibition"
+  },
+  {
+   "start": 793.35,
+   "end": 795.55,
+   "text": "to show off how advanced they were"
+  },
+  {
+   "start": 795.55,
+   "end": 797.51,
+   "text": "with all their steam engines and dinosaurs"
+  },
+  {
+   "start": 797.51,
+   "end": 799.35,
+   "text": "and things like that."
+  },
+  {
+   "start": 799.35,
+   "end": 802.43,
+   "text": "But there does remain from the age of the Napoleonic wars,"
+  },
+  {
+   "start": 802.43,
+   "end": 804.43,
+   "text": "a kind of enduring dread of France,"
+  },
+  {
+   "start": 805.55,
+   "end": 807.47,
+   "text": "a suspicion that they're always waiting"
+  },
+  {
+   "start": 807.47,
+   "end": 810.31,
+   "text": "to seize power in Europe again."
+  },
+  {
+   "start": 810.31,
+   "end": 813.51,
+   "text": "But it's combined with a growing anxiety about Russia."
+  },
+  {
+   "start": 813.51,
+   "end": 815.03,
+   "text": "They're looking eastwards and thinking,"
+  },
+  {
+   "start": 815.03,
+   "end": 815.91,
+   "text": "well, actually I don't know,"
+  },
+  {
+   "start": 815.91,
+   "end": 818.79,
+   "text": "maybe Russia's a bigger threat than France."
+  },
+  {
+   "start": 818.79,
+   "end": 821.27,
+   "text": "And on top of that, the other way"
+  },
+  {
+   "start": 821.27,
+   "end": 824.31,
+   "text": "in which the Napoleonic wars has an enduring legacy"
+  },
+  {
+   "start": 824.31,
+   "end": 827.75,
+   "text": "in Britain is the legacy of the Duke of Wellington,"
+  },
+  {
+   "start": 827.75,
+   "end": 832.63,
+   "text": "the man who had defeated Napoleon at Waterloo and who had died in 1852."
+  },
+  {
+   "start": 832.91,
+   "end": 836.31,
+   "text": "And Tennyson again, in his role as Poet Laureate, he's always popping up."
+  },
+  {
+   "start": 836.63,
+   "end": 841.55,
+   "text": "He'd written a tremendous elegy on Wellington and he framed it as though"
+  },
+  {
+   "start": 841.55,
+   "end": 845.23,
+   "text": "with Wellington's passing, Britain's own Age of Military Glory was gone."
+  },
+  {
+   "start": 845.23,
+   "end": 851.15,
+   "text": "So he wrote mourn, for to us he seems the last remembering all his greatness in the past."
+  },
+  {
+   "start": 851.79,
+   "end": 856.63,
+   "text": "And the army, which had always looked to Wellington in the wake of his death,"
+  },
+  {
+   "start": 856.63,
+   "end": 862.39,
+   "text": "There's a feeling that to be true to his legacy, they have to constantly ask themselves,"
+  },
+  {
+   "start": 862.39,
+   "end": 864.75,
+   "text": "well, what would Wellington have done?"
+  },
+  {
+   "start": 864.75,
+   "end": 868.15,
+   "text": "And that means, I think, that to a degree, the army has become a bit fossilized."
+  },
+  {
+   "start": 868.15,
+   "end": 869.15,
+   "text": "I mean, not entirely."
+  },
+  {
+   "start": 869.15,
+   "end": 872.07,
+   "text": "There have been developments, as we will see, innovations."
+  },
+  {
+   "start": 872.07,
+   "end": 874.55,
+   "text": "They're always asking, what would Wellington have done?"
+  },
+  {
+   "start": 874.55,
+   "end": 877.95,
+   "text": "Ignores the fact that Wellington had fought his last battle 40 years before."
+  },
+  {
+   "start": 877.95,
+   "end": 884.48,
+   "text": "So you can see in all of those that the Napoleonic Wars are a completely living thing for people"
+  },
+  {
+   "start": 884.48,
+   "end": 886.24,
+   "text": "in all three of those countries."
+  },
+  {
+   "start": 886.24,
+   "end": 890.52,
+   "text": "But we'll come back to the causes of the Crimean War because of course there are lots of ways in which you could argue"
+  },
+  {
+   "start": 890.52,
+   "end": 897.84,
+   "text": "This is the first modern war, you know newspaper reports and photography and the new technology of killing and so on"
+  },
+  {
+   "start": 897.84,
+   "end": 903.52,
+   "text": "But I think you're dead right that there is something Napoleonic about this idea of the cavalry charge towards the guns"
+  },
+  {
+   "start": 903.52,
+   "end": 906.64,
+   "text": "I mean it feels like you know a scene from Waterloo doesn't it?"
+  },
+  {
+   "start": 906.76,
+   "end": 911.64,
+   "text": "Yes completely so for the British the fate there's this famous cavalry charge the Union Brigade"
+  },
+  {
+   "start": 911.64,
+   "end": 916.56,
+   "text": "So it's kind of made up of an English, a Scottish and an Irish cavalry regiments."
+  },
+  {
+   "start": 916.56,
+   "end": 923.0,
+   "text": "So hence the Union Brigade and they launched this heroic attack at French infantry."
+  },
+  {
+   "start": 923.0,
+   "end": 926.68,
+   "text": "And people keep going on and on about it. The cavalry absolutely love it."
+  },
+  {
+   "start": 926.68,
+   "end": 930.8,
+   "text": "It's their kind of Battle of Britain, I guess. And then the uniforms."
+  },
+  {
+   "start": 930.8,
+   "end": 935.84,
+   "text": "So in the series we did on the Abyssinian expedition, you mentioned that the British"
+  },
+  {
+   "start": 935.84,
+   "end": 939.76,
+   "text": "have begun wearing khaki, but there's absolutely none of that nonsense in the"
+  },
+  {
+   "start": 939.76,
+   "end": 944.68,
+   "text": "Crimea. This kind of blood-red uniforms are actually, I mean, even more spectacular uniforms"
+  },
+  {
+   "start": 944.68,
+   "end": 950.07,
+   "text": "because the light brigade, as we will see, are probably the most handsomely dressed unit,"
+  },
+  {
+   "start": 950.07,
+   "end": 954.55,
+   "text": "not just in the British Army, but in the world. I mean, the blaze of color that they bring"
+  },
+  {
+   "start": 954.55,
+   "end": 960.03,
+   "text": "to their charge is a crucial aspect of its glamour. And then you have the commanding officers,"
+  },
+  {
+   "start": 960.03,
+   "end": 964.63,
+   "text": "and some of them, as we will see, have actually fought in the Napoleonic Wars. And even those"
+  },
+  {
+   "start": 964.63,
+   "end": 969.6,
+   "text": "who were too young to have done so kind of dreamed, you know, wished that they had done."
+  },
+  {
+   "start": 969.6,
+   "end": 974.84,
+   "text": "And I think that that sense of yearning, that sense of identity with the glory of the past"
+  },
+  {
+   "start": 974.84,
+   "end": 981.92,
+   "text": "is strongest in the cavalry and particularly among the guys who are commanding the cavalry."
+  },
+  {
+   "start": 981.92,
+   "end": 985.52,
+   "text": "And on the guys who are commanding the cavalry, so the people who will really be the main"
+  },
+  {
+   "start": 985.52,
+   "end": 988.68,
+   "text": "characters in these four episodes."
+  },
+  {
+   "start": 988.68,
+   "end": 994.64,
+   "text": "These are people from the absolute, the highest echelon of the British social system, aren't"
+  },
+  {
+   "start": 994.64,
+   "end": 995.64,
+   "text": "they?"
+  },
+  {
+   "start": 995.64,
+   "end": 999.04,
+   "text": "There's no pretence whatsoever of this being a meritocratic army."
+  },
+  {
+   "start": 999.04,
+   "end": 1003.44,
+   "text": "we will see this lies behind some of the blunders. I mean, this was true of Waterloo or the Napoleon"
+  },
+  {
+   "start": 1003.44,
+   "end": 1008.0,
+   "text": "Wars as well. The cavalry particularly. So the commander of the cavalry at Waterloo is Lord"
+  },
+  {
+   "start": 1008.0,
+   "end": 1013.92,
+   "text": "Uxbridge. He famously loses his leg to a cannonball and cries out, by God, sir, I've lost my leg."
+  },
+  {
+   "start": 1015.6,
+   "end": 1021.2,
+   "text": "So it's by God, sir, so you have. And I was just surely the greatest exchange in the history of"
+  },
+  {
+   "start": 1021.2,
+   "end": 1026.08,
+   "text": "the British army. Undoubtedly. Undoubtedly. And then the commander of the Union Brigade was a guy"
+  },
+  {
+   "start": 1026.08,
+   "end": 1031.12,
+   "text": "called Major General Sir William Ponsonby, or is that Ponsby? I don't know. I mean, it's a kind of"
+  },
+  {
+   "start": 1031.12,
+   "end": 1037.04,
+   "text": "posh pronunciation. Yeah, exactly. Pomby. Yeah. He's the son of a baron. So the commanders of"
+  },
+  {
+   "start": 1037.04,
+   "end": 1042.94,
+   "text": "the cavalry, they're kind of completely blue-blooded, absolutely from the top echelons of the"
+  },
+  {
+   "start": 1043.82,
+   "end": 1048.62,
+   "text": "aristocracy. And at the Battle of Balaclava II, where the charge of the Light Brigade happens,"
+  },
+  {
+   "start": 1049.26,
+   "end": 1053.9,
+   "text": "both of the leading cavalry commanders are peers. So the overall commander of the cavalry"
+  },
+  {
+   "start": 1053.9,
+   "end": 1062.94,
+   "text": "is a guy called Lord Lucan and he is the great great grandfather of the Lord Lucan who in 1974"
+  },
+  {
+   "start": 1063.82,
+   "end": 1070.94,
+   "text": "vanished into thin air after attacking his wife and almost certainly bludgeoning his"
+  },
+  {
+   "start": 1070.94,
+   "end": 1077.02,
+   "text": "children's nanny to death. So that's Lord Lucan and then the commander of the Light Brigade"
+  },
+  {
+   "start": 1077.02,
+   "end": 1083.34,
+   "text": "is a guy called Lord Cardigan and he is the man who gives his name to Jimmy Carter's"
+  },
+  {
+   "start": 1083.34,
+   "end": 1085.66,
+   "text": "favorite item of nowhere, the cardigan."
+  },
+  {
+   "start": 1085.74,
+   "end": 1087.78,
+   "text": "So hold on, let me just dig into this for a second."
+  },
+  {
+   "start": 1088.1,
+   "end": 1090.14,
+   "text": "Did Lord Cardigan invent the cardigan?"
+  },
+  {
+   "start": 1090.7,
+   "end": 1095.98,
+   "text": "No, he didn't, but he becomes so famous in the wake of the Light Brigade."
+  },
+  {
+   "start": 1096.06,
+   "end": 1100.42,
+   "text": "And the cardigan is being worn by people in the Crimea because it's getting very,"
+  },
+  {
+   "start": 1100.42,
+   "end": 1103.1,
+   "text": "very cold that it comes to be associated with him."
+  },
+  {
+   "start": 1103.14,
+   "end": 1105.06,
+   "text": "Wow. OK, good fact."
+  },
+  {
+   "start": 1105.26,
+   "end": 1109.1,
+   "text": "As we will see, Lord Cardigan's sense of fashion doesn't really lend itself to"
+  },
+  {
+   "start": 1109.1,
+   "end": 1111.38,
+   "text": "cardigans. That's the irony of it."
+  },
+  {
+   "start": 1111.38,
+   "end": 1114.18,
+   "text": "Yeah, he's the last person who would have won a cardigan."
+  },
+  {
+   "start": 1114.18,
+   "end": 1115.3,
+   "text": "I think so, yes."
+  },
+  {
+   "start": 1115.3,
+   "end": 1121.14,
+   "text": "And now, an important point about these two characters, Lord Lucan and Lord Cardigan,"
+  },
+  {
+   "start": 1121.14,
+   "end": 1126.02,
+   "text": "they are not just, you know, fellow members of the British peerage."
+  },
+  {
+   "start": 1126.02,
+   "end": 1129.38,
+   "text": "They are brothers-in-law, aren't they? And brothers-in-law with a lovely twist."
+  },
+  {
+   "start": 1130.74,
+   "end": 1136.74,
+   "text": "They absolutely detest each other. And so the question of whether this mutual hostility between"
+  },
+  {
+   "start": 1136.74,
+   "end": 1143.3,
+   "text": "them, which is of an almost comical dimension. The degree to which this plays into the disastrous"
+  },
+  {
+   "start": 1143.3,
+   "end": 1147.38,
+   "text": "sequence of events which culminates in the charge of the Leprechaun, it's a very interesting question"
+  },
+  {
+   "start": 1147.38,
+   "end": 1152.34,
+   "text": "and we will be exploring it over the course of the series. But I think one thing is absolutely"
+  },
+  {
+   "start": 1152.34,
+   "end": 1159.59,
+   "text": "not in question and that is the fact that the characters of these two men are a crucial part"
+  },
+  {
+   "start": 1159.59,
+   "end": 1165.59,
+   "text": "of the story. And so I think we should, in this episode, we should look at both of them and we"
+  },
+  {
+   "start": 1165.59,
+   "end": 1168.29,
+   "text": "we should begin by looking at the guy who is undoubtedly"
+  },
+  {
+   "start": 1168.29,
+   "end": 1170.31,
+   "text": "the star of the whole story."
+  },
+  {
+   "start": 1170.31,
+   "end": 1173.19,
+   "text": "This is the man who will end up leading the charge"
+  },
+  {
+   "start": 1173.19,
+   "end": 1175.51,
+   "text": "of the Light Brigade into the Valley of Death."
+  },
+  {
+   "start": 1175.51,
+   "end": 1178.59,
+   "text": "And this is James Thomas Brudenel,"
+  },
+  {
+   "start": 1178.59,
+   "end": 1180.99,
+   "text": "the seventh Earl of Cardigan."
+  },
+  {
+   "start": 1180.99,
+   "end": 1183.11,
+   "text": "And Dominic, you're a big fan of Flashman, aren't you?"
+  },
+  {
+   "start": 1183.11,
+   "end": 1184.75,
+   "text": "The Flashman novels."
+  },
+  {
+   "start": 1184.75,
+   "end": 1187.43,
+   "text": "So you will know that,"
+  },
+  {
+   "start": 1187.43,
+   "end": 1189.67,
+   "text": "you'll know from reading the Flashman novels"
+  },
+  {
+   "start": 1189.67,
+   "end": 1194.64,
+   "text": "that Cardigan ranks as one of the kind of the great comedy"
+  },
+  {
+   "start": 1194.64,
+   "end": 1197.12,
+   "text": "grotesques of the Victorian period."
+  },
+  {
+   "start": 1197.12,
+   "end": 1200.12,
+   "text": "Well, he of course wouldn't say ranks, would he?"
+  },
+  {
+   "start": 1200.12,
+   "end": 1201.12,
+   "text": "Wanks, you would say."
+  },
+  {
+   "start": 1201.12,
+   "end": 1202.64,
+   "text": "Yes, he would say."
+  },
+  {
+   "start": 1202.64,
+   "end": 1203.48,
+   "text": "Well, come to that."
+  },
+  {
+   "start": 1203.48,
+   "end": 1204.92,
+   "text": "He'd say, hello, freshman."
+  },
+  {
+   "start": 1204.92,
+   "end": 1208.68,
+   "text": "So we will come onto his extraordinary way of speaking."
+  },
+  {
+   "start": 1208.68,
+   "end": 1211.6,
+   "text": "So he has, like with lots of aristocrats,"
+  },
+  {
+   "start": 1211.6,
+   "end": 1214.08,
+   "text": "going back to the 70th century,"
+  },
+  {
+   "start": 1214.08,
+   "end": 1217.52,
+   "text": "he has bought his command, hasn't he?"
+  },
+  {
+   "start": 1217.52,
+   "end": 1219.04,
+   "text": "He's not a man who has worked his way"
+  },
+  {
+   "start": 1219.04,
+   "end": 1222.24,
+   "text": "through the ranks of the army, he has bought his place."
+  },
+  {
+   "start": 1222.24,
+   "end": 1228.04,
+   "text": "And just to say why that happens, it's not just because the aristocracy want to monopolise"
+  },
+  {
+   "start": 1228.04,
+   "end": 1230.0,
+   "text": "everything, although it's definitely a factor."
+  },
+  {
+   "start": 1230.0,
+   "end": 1234.24,
+   "text": "It's because it's seen as an expression of English liberty that there will never again"
+  },
+  {
+   "start": 1234.24,
+   "end": 1238.58,
+   "text": "be something like Cromwell's army, where you have professional soldiers in a position to"
+  },
+  {
+   "start": 1238.58,
+   "end": 1242.36,
+   "text": "take over the country, that if you have a peer in charge of the cavalry, then you can"
+  },
+  {
+   "start": 1242.36,
+   "end": 1243.76,
+   "text": "rely on them to do the decent thing."
+  },
+  {
+   "start": 1243.76,
+   "end": 1244.76,
+   "text": "That's the thinking."
+  },
+  {
+   "start": 1244.76,
+   "end": 1247.96,
+   "text": "So I'm just sticking up for the Victorian aristocracy there."
+  },
+  {
+   "start": 1247.96,
+   "end": 1250.32,
+   "text": "So let's go to the spring of 1853."
+  },
+  {
+   "start": 1250.32,
+   "end": 1255.74,
+   "text": "say, so a year before the outbreak of the Crimean War, imagine that I bumped into Lord"
+  },
+  {
+   "start": 1255.74,
+   "end": 1259.88,
+   "text": "Cardigan at a Restis history club members get together."
+  },
+  {
+   "start": 1259.88,
+   "end": 1263.2,
+   "text": "Well, he's not the kind of person who would go to such a thing, I suppose."
+  },
+  {
+   "start": 1263.2,
+   "end": 1264.24,
+   "text": "But what would I make of him?"
+  },
+  {
+   "start": 1264.24,
+   "end": 1265.4,
+   "text": "So what's he like to meet?"
+  },
+  {
+   "start": 1265.4,
+   "end": 1268.56,
+   "text": "Well, Tilly, one thing you couldn't do is ask him about his campaigns because he hasn't"
+  },
+  {
+   "start": 1268.56,
+   "end": 1269.56,
+   "text": "been on any."
+  },
+  {
+   "start": 1269.56,
+   "end": 1271.96,
+   "text": "He sounds like a brilliant man to be commanding the Lebrouge."
+  },
+  {
+   "start": 1271.96,
+   "end": 1275.36,
+   "text": "He's 56 years old and he has never seen active service."
+  },
+  {
+   "start": 1275.36,
+   "end": 1277.36,
+   "text": "So that's one thing to bear in mind."
+  },
+  {
+   "start": 1277.36,
+   "end": 1280.4,
+   "text": "I think even you Dominic would find it a little bit intimidating."
+  },
+  {
+   "start": 1280.4,
+   "end": 1282.04,
+   "text": "You are of a middle class background."
+  },
+  {
+   "start": 1282.28,
+   "end": 1283.84,
+   "text": "Yes, no question about that."
+  },
+  {
+   "start": 1283.88,
+   "end": 1287.2,
+   "text": "And Lord Cardigan, as we will see, does not like the middle classes."
+  },
+  {
+   "start": 1287.4,
+   "end": 1288.96,
+   "text": "He's he's very haughty."
+  },
+  {
+   "start": 1289.08,
+   "end": 1290.32,
+   "text": "He's very snobbish."
+  },
+  {
+   "start": 1290.32,
+   "end": 1291.16,
+   "text": "He's very petulant."
+  },
+  {
+   "start": 1291.16,
+   "end": 1292.0,
+   "text": "He's very vain."
+  },
+  {
+   "start": 1292.36,
+   "end": 1294.12,
+   "text": "He's a massive bully, basically."
+  },
+  {
+   "start": 1294.68,
+   "end": 1300.44,
+   "text": "And so liberals and literary types and doubtless prune juice drinkers."
+  },
+  {
+   "start": 1300.44,
+   "end": 1300.88,
+   "text": "Don't they?"
+  },
+  {
+   "start": 1300.88,
+   "end": 1301.24,
+   "text": "Oh, I know."
+  },
+  {
+   "start": 1301.28,
+   "end": 1302.04,
+   "text": "Bien pensons."
+  },
+  {
+   "start": 1302.12,
+   "end": 1303.48,
+   "text": "They all detest him."
+  },
+  {
+   "start": 1303.48,
+   "end": 1309.98,
+   "text": "But he does have a certain kind of social cache among the kind of people who love a Lord."
+  },
+  {
+   "start": 1309.98,
+   "end": 1310.98,
+   "text": "Yeah, yeah."
+  },
+  {
+   "start": 1310.98,
+   "end": 1314.94,
+   "text": "I mean, he's the kind of the archetype of a haughty Lord."
+  },
+  {
+   "start": 1314.94,
+   "end": 1319.62,
+   "text": "And I think the reason that people love him is because he's the embodiment of what the"
+  },
+  {
+   "start": 1319.62,
+   "end": 1322.19,
+   "text": "Victorians call a swell."
+  },
+  {
+   "start": 1322.19,
+   "end": 1327.07,
+   "text": "And specifically, he's a plunger, which is a very aristocratic kind of cavalryman."
+  },
+  {
+   "start": 1327.07,
+   "end": 1331.25,
+   "text": "They have their own, as we will see, their own language, their own style, their own swagger."
+  },
+  {
+   "start": 1331.25,
+   "end": 1336.77,
+   "text": "Cardigan is the absolute archetype. I mean, he's the guy who sets the fashion for the plunger"
+  },
+  {
+   "start": 1337.33,
+   "end": 1343.49,
+   "text": "across Britain. So just to give him a physical description, as I said, he's 56 in 1853, but"
+  },
+  {
+   "start": 1343.49,
+   "end": 1349.89,
+   "text": "he's still very, very handsome. He's tall. He's as slender as a young man. He's got golden hair."
+  },
+  {
+   "start": 1349.89,
+   "end": 1355.33,
+   "text": "He's got pale blue eyes. And he has luxuriant mustaches and whiskers, which Tabby weirdly"
+  },
+  {
+   "start": 1355.33,
+   "end": 1361.57,
+   "text": "doesn't seem to like, but the ladies back in the mid 19th century, they loved a"
+  },
+  {
+   "start": 1361.57,
+   "end": 1366.29,
+   "text": "resplendent set of whiskers and Lord Cardigan has them to a magnificent degree."
+  },
+  {
+   "start": 1366.29,
+   "end": 1372.45,
+   "text": "And he's a man who loves to ride, isn't he? Of course. He's one of the best riders in the"
+  },
+  {
+   "start": 1372.45,
+   "end": 1378.37,
+   "text": "country. He is famously fearless and he's a veteran of numerous celebrated hunts."
+  },
+  {
+   "start": 1378.37,
+   "end": 1386.21,
+   "text": "That's one of the markers of the way that Britain has changed."
+  },
+  {
+   "start": 1386.21,
+   "end": 1392.61,
+   "text": "Back in the mid-Victorian period, if you were someone who'd stormed your way through a celebrated"
+  },
+  {
+   "start": 1392.61,
+   "end": 1396.29,
+   "text": "hunt, Fox Hunt, then you became an absolute sports star."
+  },
+  {
+   "start": 1396.29,
+   "end": 1399.41,
+   "text": "And there's one particular hunt, isn't there, in which he distinguished himself."
+  },
+  {
+   "start": 1399.41,
+   "end": 1402.53,
+   "text": "It was a run of the Quorn, the Quorn Hunt."
+  },
+  {
+   "start": 1402.53,
+   "end": 1407.61,
+   "text": "So 200 riders had set off over the fields and only 10 had managed to keep up the pace and"
+  },
+  {
+   "start": 1407.61,
+   "end": 1415.65,
+   "text": "Cardigan is the person who goes the fastest and gets the fox and the key to his success. It was observed by a kind of"
+  },
+  {
+   "start": 1416.25,
+   "end": 1423.51,
+   "text": "Fox hunting sports correspondent that it was observed that he leaves his horses very much to their own sagacity never pulling them about"
+  },
+  {
+   "start": 1423.81,
+   "end": 1428.25,
+   "text": "So in other words, he relies on the horse. He's man and horse are perfectly integrated"
+  },
+  {
+   "start": 1428.25,
+   "end": 1436.33,
+   "text": "He is also of course a superb swordsman and he's a first-class shot or a proper more properly a crack shot"
+  },
+  {
+   "start": 1436.33,
+   "end": 1438.41,
+   "text": "He's a crack shot."
+  },
+  {
+   "start": 1438.41,
+   "end": 1439.41,
+   "text": "Yeah."
+  },
+  {
+   "start": 1439.41,
+   "end": 1440.97,
+   "text": "I mean, to be fair, you're doing a good job of selling him."
+  },
+  {
+   "start": 1440.97,
+   "end": 1441.97,
+   "text": "He has a glamour."
+  },
+  {
+   "start": 1441.97,
+   "end": 1442.97,
+   "text": "He has a glamour."
+  },
+  {
+   "start": 1442.97,
+   "end": 1443.97,
+   "text": "Yeah."
+  },
+  {
+   "start": 1443.97,
+   "end": 1444.97,
+   "text": "And he looks incredible."
+  },
+  {
+   "start": 1444.97,
+   "end": 1448.97,
+   "text": "And his regiments, who are the Eleventh Thessars, they look incredible too, which is no coincidence,"
+  },
+  {
+   "start": 1448.97,
+   "end": 1452.49,
+   "text": "because Cardigan has basically kitted them out himself, hasn't he?"
+  },
+  {
+   "start": 1452.49,
+   "end": 1453.49,
+   "text": "Yeah."
+  },
+  {
+   "start": 1453.49,
+   "end": 1455.69,
+   "text": "So he spends £10,000 a year on their uniforms."
+  },
+  {
+   "start": 1455.69,
+   "end": 1459.09,
+   "text": "I mean, that is millions in today's money."
+  },
+  {
+   "start": 1459.09,
+   "end": 1462.85,
+   "text": "They are, by miles, the best dressed soldiers in the British Army, which means probably"
+  },
+  {
+   "start": 1462.85,
+   "end": 1465.17,
+   "text": "they're the best dressed soldiers in the world."
+  },
+  {
+   "start": 1465.17,
+   "end": 1469.17,
+   "text": "And the uniforms are run up by a top Bond Street tailor."
+  },
+  {
+   "start": 1469.17,
+   "end": 1475.81,
+   "text": "So they wear bright cherry pants, which are unfeasibly tight."
+  },
+  {
+   "start": 1475.81,
+   "end": 1479.77,
+   "text": "And they have yellow stripes if you're a trooper, gold stripes if you're an officer down the"
+  },
+  {
+   "start": 1479.77,
+   "end": 1480.77,
+   "text": "sides."
+  },
+  {
+   "start": 1480.77,
+   "end": 1486.17,
+   "text": "And so the 11th Hussars are nicknamed cherry pickers or cherry bums."
+  },
+  {
+   "start": 1486.17,
+   "end": 1491.33,
+   "text": "They also wear a nine inch Busby and they have a matching cherry bag."
+  },
+  {
+   "start": 1491.33,
+   "end": 1492.89,
+   "text": "And what's the bag exactly?"
+  },
+  {
+   "start": 1492.89,
+   "end": 1497.51,
+   "text": "of fabric which placed over the top of the Busby and it drapes down the side and you"
+  },
+  {
+   "start": 1497.51,
+   "end": 1503.13,
+   "text": "complement it with a white plume. And then you have magnificent jackets, they're royal"
+  },
+  {
+   "start": 1503.13,
+   "end": 1508.29,
+   "text": "blue, they've got yellow frogging if you're a trooper, gold again if you're an officer"
+  },
+  {
+   "start": 1508.29,
+   "end": 1514.25,
+   "text": "and they're worn with fur trimmed polices on the shoulder, so kind of little jackets."
+  },
+  {
+   "start": 1514.25,
+   "end": 1520.25,
+   "text": "And again, they're laced with gold frogging. And this is the kind of police that Jimi Hendrix"
+  },
+  {
+   "start": 1520.25,
+   "end": 1522.77,
+   "text": "a century on would wear when he came to London."
+  },
+  {
+   "start": 1522.77,
+   "end": 1523.97,
+   "text": "I was law kitchen as valid."
+  },
+  {
+   "start": 1524.09,
+   "end": 1524.49,
+   "text": "Yeah."
+  },
+  {
+   "start": 1524.69,
+   "end": 1526.65,
+   "text": "So still looking stylish in the 60s."
+  },
+  {
+   "start": 1526.69,
+   "end": 1529.97,
+   "text": "But what Jimi Hendrix doesn't do, although personally, I think he should have"
+  },
+  {
+   "start": 1529.97,
+   "end": 1534.17,
+   "text": "done is to emulate the way that Lord Cardigan and co speak because they have"
+  },
+  {
+   "start": 1534.17,
+   "end": 1535.69,
+   "text": "a very particular style of speech."
+  },
+  {
+   "start": 1535.69,
+   "end": 1537.77,
+   "text": "The Flashman book actually captures this perfectly."
+  },
+  {
+   "start": 1537.77,
+   "end": 1539.05,
+   "text": "The cavalry drawl."
+  },
+  {
+   "start": 1539.21,
+   "end": 1539.69,
+   "text": "Right."
+  },
+  {
+   "start": 1540.01,
+   "end": 1544.65,
+   "text": "I hadn't realized that it was so affected that it's consciously affected rather"
+  },
+  {
+   "start": 1544.65,
+   "end": 1545.45,
+   "text": "than organic."
+  },
+  {
+   "start": 1545.73,
+   "end": 1549.73,
+   "text": "So give us give us your very best cardigan style cavalry drawl, please, Tom."
+  },
+  {
+   "start": 1549.73,
+   "end": 1557.06,
+   "text": "So it's a style that is affected by all the quack."
+  },
+  {
+   "start": 1557.66,
+   "end": 1559.18,
+   "text": "Cavalry vigilance."
+  },
+  {
+   "start": 1559.98,
+   "end": 1560.34,
+   "text": "Right."
+  },
+  {
+   "start": 1560.38,
+   "end": 1564.3,
+   "text": "And it is Cartaghan who basically sets the fashion."
+  },
+  {
+   "start": 1564.7,
+   "end": 1569.78,
+   "text": "And so it involves very elongated vowels, kind of agonizingly,"
+  },
+  {
+   "start": 1569.98,
+   "end": 1574.46,
+   "text": "slow speech patterns, a lot of yawning."
+  },
+  {
+   "start": 1574.46,
+   "end": 1577.86,
+   "text": "If anyone says anything even faintly middle class."
+  },
+  {
+   "start": 1578.18,
+   "end": 1578.54,
+   "text": "Right."
+  },
+  {
+   "start": 1578.58,
+   "end": 1578.9,
+   "text": "Yeah."
+  },
+  {
+   "start": 1578.9,
+   "end": 1585.78,
+   "text": "Or if you're excessively enthusiastic or sort of earnest about something, then yeah."
+  },
+  {
+   "start": 1585.78,
+   "end": 1586.78,
+   "text": "A height of vulgar."
+  },
+  {
+   "start": 1586.78,
+   "end": 1588.78,
+   "text": "Oh, ho, ho, ho, ho, ho."
+  },
+  {
+   "start": 1588.78,
+   "end": 1593.22,
+   "text": "So the other thing that you do is you drop the G off of the participle."
+  },
+  {
+   "start": 1593.22,
+   "end": 1595.78,
+   "text": "And the legacy of that still with us, so hunting, shooting, fishing."
+  },
+  {
+   "start": 1595.78,
+   "end": 1601.54,
+   "text": "The brilliant example was Edward VII, seeing Lord Harris at Ascot wearing a brown bowler."
+  },
+  {
+   "start": 1601.54,
+   "end": 1603.82,
+   "text": "And he said, go in, ratten."
+  },
+  {
+   "start": 1603.82,
+   "end": 1606.5,
+   "text": "So there's a legacy there of the cavalry draw."
+  },
+  {
+   "start": 1606.5,
+   "end": 1612.4,
+   "text": "And as we said, the R's are pronounced as W, so it's ho-id and sorry and very bit like"
+  },
+  {
+   "start": 1612.4,
+   "end": 1613.4,
+   "text": "Antony Eden."
+  },
+  {
+   "start": 1613.4,
+   "end": 1614.4,
+   "text": "Flashman's wife?"
+  },
+  {
+   "start": 1614.4,
+   "end": 1616.4,
+   "text": "How far there was a Guasco Weaver?"
+  },
+  {
+   "start": 1616.4,
+   "end": 1623.64,
+   "text": "And so the question is why does he adopt this ludicrous pattern of speech?"
+  },
+  {
+   "start": 1623.64,
+   "end": 1627.52,
+   "text": "And the answer is basically because he wants to put the middle classes in their place."
+  },
+  {
+   "start": 1627.52,
+   "end": 1634.24,
+   "text": "He despises self-made men, the kind of person who buys his own furniture, despises them."
+  },
+  {
+   "start": 1634.24,
+   "end": 1639.72,
+   "text": "And in the military context, his particular target are officers who he refers to as Indian"
+  },
+  {
+   "start": 1639.72,
+   "end": 1640.72,
+   "text": "officers."
+  },
+  {
+   "start": 1640.72,
+   "end": 1646.28,
+   "text": "And so these are men who had secured commissions by serving overseas stereotypically in India"
+  },
+  {
+   "start": 1646.28,
+   "end": 1650.22,
+   "text": "and proving themselves in combat rather than purchasing them."
+  },
+  {
+   "start": 1650.22,
+   "end": 1651.96,
+   "text": "And so Cardigan despises this."
+  },
+  {
+   "start": 1651.96,
+   "end": 1653.12,
+   "text": "No, have common."
+  },
+  {
+   "start": 1653.12,
+   "end": 1654.12,
+   "text": "Volga."
+  },
+  {
+   "start": 1654.12,
+   "end": 1655.12,
+   "text": "Very Volga."
+  },
+  {
+   "start": 1655.12,
+   "end": 1659.2,
+   "text": "Basically snubbing these kinds of people is his whole vibe."
+  },
+  {
+   "start": 1659.2,
+   "end": 1662.6,
+   "text": "That is what he's about."
+  },
+  {
+   "start": 1662.6,
+   "end": 1668.2,
+   "text": "this tendency in turn and his general utter arrogance over the course of his career has"
+  },
+  {
+   "start": 1668.2,
+   "end": 1673.88,
+   "text": "resulted in a succession of scandals with the result that by 1853, so the year before"
+  },
+  {
+   "start": 1673.88,
+   "end": 1676.92,
+   "text": "the charge of the Light Brigade, he's not just one of the most famous men in Britain,"
+  },
+  {
+   "start": 1676.92,
+   "end": 1683.8,
+   "text": "he's one of the most notorious. He is an absolute staple of the newspapers, almost invariably"
+  },
+  {
+   "start": 1683.8,
+   "end": 1690.05,
+   "text": "portrayed in a negative manner. So I'll just list just a few of these scandals, some of"
+  },
+  {
+   "start": 1690.05,
+   "end": 1696.53,
+   "text": "greatest hits. So the first to kicked off back in 1823 when Cardigan was, he was only 26 and he"
+  },
+  {
+   "start": 1696.53,
+   "end": 1703.09,
+   "text": "was just plain humble Lord Brudennell because Brudennell is his family name. Lord Brudennell?"
+  },
+  {
+   "start": 1703.09,
+   "end": 1710.0,
+   "text": "Yeah, Lord Brudennell. And he had seduced a woman called Elizabeth Johnston and Elizabeth Johnston"
+  },
+  {
+   "start": 1710.0,
+   "end": 1718.37,
+   "text": "inevitably was the wife of an old family friend, Captain Johnson. And Johnston had sued Brudennell"
+  },
+  {
+   "start": 1718.37,
+   "end": 1723.25,
+   "text": "as he was then, and Brudanel had had to pay a thousand pounds in damages. And then having"
+  },
+  {
+   "start": 1723.25,
+   "end": 1727.81,
+   "text": "done that, he'd eloped with Elizabeth and they'd been a very messy and expensive divorce and divorces"
+  },
+  {
+   "start": 1727.81,
+   "end": 1732.69,
+   "text": "are very difficult to get in the mid-19th century. And Brudanel and Elizabeth had then got married"
+  },
+  {
+   "start": 1732.69,
+   "end": 1739.41,
+   "text": "and the marriage was a disaster. And the reason for this may be suggested by Captain Johnson's"
+  },
+  {
+   "start": 1739.41,
+   "end": 1745.01,
+   "text": "comment on his wife. Brudanel wrote and apologized for having eloped with his wife and he replied,"
+  },
+  {
+   "start": 1745.01,
+   "end": 1750.21,
+   "text": "I don't care. She's the most damned, bed-timpered and extravagant bitch in the kingdom."
+  },
+  {
+   "start": 1752.45,
+   "end": 1754.77,
+   "text": "No hard feelings there. Yeah, they're clearly."
+  },
+  {
+   "start": 1754.77,
+   "end": 1760.21,
+   "text": "And I'm just going to give a shout out to a book I read when I was a child. The reason why,"
+  },
+  {
+   "start": 1760.21,
+   "end": 1765.73,
+   "text": "by, it's either Cecil or Cecil Woodham Smith, and she's a woman, not a man."
+  },
+  {
+   "start": 1766.45,
+   "end": 1770.61,
+   "text": "But this is an absolutely brilliant book. And I loved it so much, I must have read it four or"
+  },
+  {
+   "start": 1770.61,
+   "end": 1775.37,
+   "text": "or five times. And I returned to it to do the research for the series. And it's just as good"
+  },
+  {
+   "start": 1775.37,
+   "end": 1781.09,
+   "text": "as I remembered it. So this is her comment on the marriage and why it was a disaster"
+  },
+  {
+   "start": 1781.09,
+   "end": 1785.93,
+   "text": "that it was a bad marriage. So she wrote, it is too much to say that married to a different"
+  },
+  {
+   "start": 1785.93,
+   "end": 1789.73,
+   "text": "woman, he might have been a different man, but perhaps married to a different woman,"
+  },
+  {
+   "start": 1789.73,
+   "end": 1795.61,
+   "text": "his faults might not have been so public and nuisance. However, they do go on to become"
+  },
+  {
+   "start": 1795.61,
+   "end": 1801.93,
+   "text": "a public nuisance because by this point he's purchased his command. And in 1833, there's"
+  },
+  {
+   "start": 1801.93,
+   "end": 1809.61,
+   "text": "a massive bust up about tailoring and specifically jackets with an officer called Augustus Wathen"
+  },
+  {
+   "start": 1809.61,
+   "end": 1815.61,
+   "text": "who is a captain. And that's not Wathen, that's Wathen. It's literally with a W who's a captain"
+  },
+  {
+   "start": 1815.61,
+   "end": 1821.53,
+   "text": "in Brudenell's regiment who had fought at Waterloo. And Wathen complains that the jackets"
+  },
+  {
+   "start": 1821.53,
+   "end": 1828.2,
+   "text": "that Brudanel is buying for the regiment are too expensive. And that there's too much"
+  },
+  {
+   "start": 1828.2,
+   "end": 1834.32,
+   "text": "bling on the jackets. And Brudanel has absolutely exploded this is I rate, I mean, you can't"
+  },
+  {
+   "start": 1834.32,
+   "end": 1838.64,
+   "text": "get more middle class and complaining about there being too much bling on a jacket. And"
+  },
+  {
+   "start": 1838.64,
+   "end": 1843.38,
+   "text": "he has Waffen arrested and put on court martial. And at the court martial, the case against"
+  },
+  {
+   "start": 1843.38,
+   "end": 1847.36,
+   "text": "him completely falls to pieces because it's a ludicrous one. I mean, arguing over jackets,"
+  },
+  {
+   "start": 1847.36,
+   "end": 1853.92,
+   "text": "mad. So Waffen gets acquitted and Brudel is not only officially rebuked but actually dismissed"
+  },
+  {
+   "start": 1853.92,
+   "end": 1859.84,
+   "text": "from service by the king William IV himself. So it's a massive humiliation and I think that"
+  },
+  {
+   "start": 1859.84,
+   "end": 1867.12,
+   "text": "anyone else would have kind of crawled away and licked his wounds and just led a life of obscurity,"
+  },
+  {
+   "start": 1867.12,
+   "end": 1874.72,
+   "text": "of silent obscurity. But that is not how Cardigan rolls. So he is utterly shameless and he pulls on"
+  },
+  {
+   "start": 1874.72,
+   "end": 1880.16,
+   "text": "on every string he can, he draws on every aristocratic connection that he possesses."
+  },
+  {
+   "start": 1880.16,
+   "end": 1883.24,
+   "text": "He ends up winning himself an official exoneration in Parliament."
+  },
+  {
+   "start": 1883.24,
+   "end": 1887.12,
+   "text": "So parliamentary time, he's used up to say that Brudnell had been mistreated and it's"
+  },
+  {
+   "start": 1887.12,
+   "end": 1888.12,
+   "text": "unfair."
+  },
+  {
+   "start": 1888.12,
+   "end": 1893.88,
+   "text": "And so he gets another commission and he buys himself the command of the 11th Hussars."
+  },
+  {
+   "start": 1893.88,
+   "end": 1896.08,
+   "text": "And then shortly after that, his father dies."
+  },
+  {
+   "start": 1896.08,
+   "end": 1899.92,
+   "text": "And so he inherits his title and he becomes the Earl of Cardigan."
+  },
+  {
+   "start": 1899.92,
+   "end": 1903.84,
+   "text": "But this is just the prelude to the best of these scandals."
+  },
+  {
+   "start": 1903.84,
+   "end": 1910.31,
+   "text": "favorite bus stop. This is over. This is over. I mean, I mean,"
+  },
+  {
+   "start": 1910.31,
+   "end": 1913.95,
+   "text": "everyone knows we love a joke about the wrong shoes. But this"
+  },
+  {
+   "start": 1913.95,
+   "end": 1916.39,
+   "text": "is a joke about the wrong bottle. Am I wrong?"
+  },
+  {
+   "start": 1916.67,
+   "end": 1922.39,
+   "text": "Yeah, and specifically a black bottle. And shockingly, there's"
+  },
+  {
+   "start": 1923.39,
+   "end": 1928.11,
+   "text": "the regimental mess hall. Yeah, on the mess table, there"
+  },
+  {
+   "start": 1928.11,
+   "end": 1932.83,
+   "text": "appears a black bottle. Oh my God. Oh no. And this is common."
+  },
+  {
+   "start": 1932.83,
+   "end": 1941.23,
+   "text": "This is a horror show because Cardigan has specified that only champagne should be served"
+  },
+  {
+   "start": 1941.23,
+   "end": 1942.23,
+   "text": "at the mess table."
+  },
+  {
+   "start": 1942.23,
+   "end": 1944.27,
+   "text": "I mean, obviously."
+  },
+  {
+   "start": 1944.27,
+   "end": 1949.51,
+   "text": "And so he sees this black bottle and he assumes that it's a bottle of porter."
+  },
+  {
+   "start": 1949.51,
+   "end": 1950.51,
+   "text": "You know, porter's..."
+  },
+  {
+   "start": 1950.51,
+   "end": 1951.51,
+   "text": "Oh, beer!"
+  },
+  {
+   "start": 1951.51,
+   "end": 1952.51,
+   "text": "That kind of beer."
+  },
+  {
+   "start": 1952.51,
+   "end": 1956.28,
+   "text": "There's a beer in the regimental mess table."
+  },
+  {
+   "start": 1956.28,
+   "end": 1957.78,
+   "text": "And he explodes."
+  },
+  {
+   "start": 1957.78,
+   "end": 1959.76,
+   "text": "And again, there's this kind of massive bust up."
+  },
+  {
+   "start": 1959.76,
+   "end": 1967.76,
+   "text": "In fact, the black bottle is a bottle of a Moselle and it had been ordered by the guest of an officer called Captain John Reynolds."
+  },
+  {
+   "start": 1967.76,
+   "end": 1971.76,
+   "text": "This doesn't really change things because Reynolds is an Indian officer."
+  },
+  {
+   "start": 1971.76,
+   "end": 1978.83,
+   "text": "Cardigan is inherently prejudiced against him and the fact that it wasn't a bottle porter doesn't really make things better."
+  },
+  {
+   "start": 1978.83,
+   "end": 1982.02,
+   "text": "So Reynolds tries to explain this, Cardigan isn't having it."
+  },
+  {
+   "start": 1982.02,
+   "end": 1986.02,
+   "text": "The mess should be conducted like a gentleman's table, not a pot house, he says."
+  },
+  {
+   "start": 1986.02,
+   "end": 1990.9,
+   "text": "And so again, as he had done with Waffen So Now with Reynolds, he has him arrested for"
+  },
+  {
+   "start": 1990.9,
+   "end": 1994.54,
+   "text": "bringing the wrong bottle to the mess table."
+  },
+  {
+   "start": 1994.54,
+   "end": 1999.34,
+   "text": "And this time, I'm delighted to report the military authorities back him."
+  },
+  {
+   "start": 1999.34,
+   "end": 2000.46,
+   "text": "Yeah."
+  },
+  {
+   "start": 2000.46,
+   "end": 2003.62,
+   "text": "But we would be like this if it was the rest of history Christmas lunch, if people brought"
+  },
+  {
+   "start": 2003.62,
+   "end": 2007.74,
+   "text": "the wrong bottle to the table, that would be unforgivable, absolutely unforgivable."
+  },
+  {
+   "start": 2007.74,
+   "end": 2010.22,
+   "text": "I'm admitting to some sympathy with Cartaghan here."
+  },
+  {
+   "start": 2010.22,
+   "end": 2016.58,
+   "text": "So, Cardigan, he becomes an object of absolute public hatred because it gets leaked to the"
+  },
+  {
+   "start": 2016.58,
+   "end": 2019.9,
+   "text": "press and the press think this is hilarious and they can't leave it alone and they go"
+  },
+  {
+   "start": 2019.9,
+   "end": 2021.74,
+   "text": "on and on about it."
+  },
+  {
+   "start": 2021.74,
+   "end": 2028.3,
+   "text": "And whenever Cardigan appears now in public, everyone starts shouting, black bottle at"
+  },
+  {
+   "start": 2028.3,
+   "end": 2035.22,
+   "text": "him wherever he goes and then booing him and hissing him and he starts precipitating riots"
+  },
+  {
+   "start": 2035.22,
+   "end": 2038.74,
+   "text": "so he goes to a show at Drury Lane where we have performed ourselves Dominic."
+  },
+  {
+   "start": 2038.74,
+   "end": 2040.34,
+   "text": "Love this story."
+  },
+  {
+   "start": 2040.34,
+   "end": 2044.66,
+   "text": "The reaction is so extraordinary that gets reported in the times."
+  },
+  {
+   "start": 2044.66,
+   "end": 2045.54,
+   "text": "So here's the times."
+  },
+  {
+   "start": 2045.54,
+   "end": 2049.94,
+   "text": "The first audible indication of his presence was a cry of the black bottle,"
+  },
+  {
+   "start": 2050.58,
+   "end": 2052.1,
+   "text": "followed by a general hiss."
+  },
+  {
+   "start": 2052.74,
+   "end": 2056.42,
+   "text": "A crowd gathered under his box, shaking their fists and shouting,"
+  },
+  {
+   "start": 2056.42,
+   "end": 2057.7,
+   "text": "turn him out, shame!"
+  },
+  {
+   "start": 2057.7,
+   "end": 2060.26,
+   "text": "But Cartigan, I mean, he's nothing abashed."
+  },
+  {
+   "start": 2060.9,
+   "end": 2063.38,
+   "text": "He treats the display with open contempt."
+  },
+  {
+   "start": 2063.38,
+   "end": 2064.98,
+   "text": "So the times again."
+  },
+  {
+   "start": 2064.98,
+   "end": 2067.78,
+   "text": "His lordship, advancing very deliberately to the front of the box,"
+  },
+  {
+   "start": 2067.78,
+   "end": 2072.98,
+   "text": "put on his great coat and making a bow retired amid one universal shout of"
+  },
+  {
+   "start": 2072.98,
+   "end": 2078.34,
+   "text": "disapprobation. And I think this is his reaction to every criticism. One of utter"
+  },
+  {
+   "start": 2078.34,
+   "end": 2083.78,
+   "text": "contempt. It just never crosses his mind that he might ever be in the wrong."
+  },
+  {
+   "start": 2083.78,
+   "end": 2091.22,
+   "text": "Yeah. So because he has that utter sense of conviction, of self-confidence, it"
+  },
+  {
+   "start": 2091.22,
+   "end": 2096.34,
+   "text": "enables him to ride out escapades that would utterly have destroyed someone"
+  },
+  {
+   "start": 2096.34,
+   "end": 2101.7,
+   "text": "less, kind of, less obtuse. So just a couple of examples of this before we come to the break."
+  },
+  {
+   "start": 2101.7,
+   "end": 2107.7,
+   "text": "So in 1841 a former officer criticizes him in the press, this is kind of the follow-up from"
+  },
+  {
+   "start": 2107.7,
+   "end": 2113.14,
+   "text": "the Black Bottle Affair. The cardigan promptly challenges him to a duel and it's held on Wimbledon"
+  },
+  {
+   "start": 2113.14,
+   "end": 2117.86,
+   "text": "Common and cardigan shoots this officer in the lower ribs. This is a capital offense,"
+  },
+  {
+   "start": 2117.86,
+   "end": 2121.86,
+   "text": "you can't go around shooting people. And he's arrested and he ends up being tried by his peers"
+  },
+  {
+   "start": 2121.86,
+   "end": 2126.34,
+   "text": "in the House of Lords for attempted murder. Even if you don't get sentenced to death for this,"
+  },
+  {
+   "start": 2126.34,
+   "end": 2131.46,
+   "text": "you might get kind of years of hard labour and the times who's clearly taken against"
+  },
+  {
+   "start": 2131.46,
+   "end": 2136.9,
+   "text": "Cardigan is gloating about this. Let his head be cropped. Let him be put on an oatmeal diet."
+  },
+  {
+   "start": 2136.9,
+   "end": 2140.98,
+   "text": "Let him labour on the treadmill. They really think that Cardigan is going to be convicted."
+  },
+  {
+   "start": 2140.98,
+   "end": 2144.1,
+   "text": "But of course he isn't because he's a little Cardigan, he's a peer. Peers aren't going to"
+  },
+  {
+   "start": 2144.1,
+   "end": 2148.9,
+   "text": "convict him. And so he gets off on a ludicrous technicality. And again, there's outrage. And"
+  },
+  {
+   "start": 2148.9,
+   "end": 2150.94,
+   "text": "And again, Cardigan doesn't care."
+  },
+  {
+   "start": 2150.94,
+   "end": 2155.38,
+   "text": "And then just a year later, an amusing bit of sexual misconduct."
+  },
+  {
+   "start": 2155.38,
+   "end": 2157.82,
+   "text": "Yes, he's the victim of a sting."
+  },
+  {
+   "start": 2157.82,
+   "end": 2163.74,
+   "text": "So he is having an affair with the wife of a chap called Lord William Padgett."
+  },
+  {
+   "start": 2163.74,
+   "end": 2165.22,
+   "text": "And Padgett suspects what's going on."
+  },
+  {
+   "start": 2165.22,
+   "end": 2168.9,
+   "text": "And so he employs a private detective to hide under a sofa."
+  },
+  {
+   "start": 2168.9,
+   "end": 2172.78,
+   "text": "And the detective hides under this sofa."
+  },
+  {
+   "start": 2172.78,
+   "end": 2178.34,
+   "text": "And Lord Cardigan and Lady Padgett come in and they lie down on the sofa."
+  },
+  {
+   "start": 2178.34,
+   "end": 2183.56,
+   "text": "And the detective reports that Cardigan is wearing his full SARS uniform."
+  },
+  {
+   "start": 2183.64,
+   "end": 2184.0,
+   "text": "Brilliant."
+  },
+  {
+   "start": 2184.0,
+   "end": 2186.28,
+   "text": "With his tight cherry pants or whatever they call it."
+  },
+  {
+   "start": 2186.32,
+   "end": 2187.76,
+   "text": "Very tight cherry pants."
+  },
+  {
+   "start": 2188.28,
+   "end": 2191.56,
+   "text": "And he also reports that the breathing of the couple was hard, like that of"
+  },
+  {
+   "start": 2191.56,
+   "end": 2194.24,
+   "text": "persons distressed for breath after running."
+  },
+  {
+   "start": 2194.64,
+   "end": 2194.96,
+   "text": "Right."
+  },
+  {
+   "start": 2195.0,
+   "end": 2199.64,
+   "text": "But again, when Cardigan is brought to court and that this detective is produced as a witness,"
+  },
+  {
+   "start": 2199.68,
+   "end": 2203.68,
+   "text": "Cardigan is able to get off on a technicality because the detective is brought to confess"
+  },
+  {
+   "start": 2203.68,
+   "end": 2209.68,
+   "text": "that he hadn't actually seen the adulterous couple on the sofa because Cardigan had been"
+  },
+  {
+   "start": 2209.68,
+   "end": 2214.64,
+   "text": "wearing spurs and so the detective was so nervous of being hit in the face by Lord Cardigan's"
+  },
+  {
+   "start": 2214.64,
+   "end": 2223.04,
+   "text": "spurs that he hadn't wanted to show his face. So Cardigan gets off. And so this is the guy"
+  },
+  {
+   "start": 2223.04,
+   "end": 2229.44,
+   "text": "who in 1853 is, I would say by some measure, the best known officer in the British Army."
+  },
+  {
+   "start": 2229.44,
+   "end": 2238.24,
+   "text": "He is famous in breakfast rooms across Britain for his pride, for his arrogance, for his stubbornness,"
+  },
+  {
+   "start": 2238.24,
+   "end": 2243.52,
+   "text": "for his ability to attract trouble, his refusal ever to back down."
+  },
+  {
+   "start": 2243.52,
+   "end": 2248.28,
+   "text": "And yet as we said, despite his fame, he has never actually experienced military combat."
+  },
+  {
+   "start": 2248.28,
+   "end": 2253.0,
+   "text": "Well, that would seem to be the one thing missing on his CV as a potential leader of"
+  },
+  {
+   "start": 2253.0,
+   "end": 2257.08,
+   "text": "men into battle, is that he's never actually been anywhere near a battle, right?"
+  },
+  {
+   "start": 2257.08,
+   "end": 2258.2,
+   "text": "No, he hasn't."
+  },
+  {
+   "start": 2258.2,
+   "end": 2261.64,
+   "text": "And by 1853, it seems like he never will."
+  },
+  {
+   "start": 2261.64,
+   "end": 2263.48,
+   "text": "He's 56 after all."
+  },
+  {
+   "start": 2263.48,
+   "end": 2266.52,
+   "text": "Europe's been at peace for almost four decades."
+  },
+  {
+   "start": 2266.52,
+   "end": 2268.58,
+   "text": "No prospect of a war, surely."
+  },
+  {
+   "start": 2268.58,
+   "end": 2274.4,
+   "text": "But then Dominic, that winter, news reaches Britain of dramatic developments in the Black"
+  },
+  {
+   "start": 2274.4,
+   "end": 2281.64,
+   "text": "Sea and suddenly people realise that the storm clouds of war have not only gathered but might"
+  },
+  {
+   "start": 2281.64,
+   "end": 2283.44,
+   "text": "be ready to break."
+  },
+  {
+   "start": 2283.44,
+   "end": 2284.92,
+   "text": "Oh my word, we're on that thrilling note."
+  },
+  {
+   "start": 2284.92,
+   "end": 2313.83,
+   "text": "Let's take a break and we'll return with the Crimean War."
+  },
+  {
+   "start": 2313.83,
+   "end": 2321.83,
+   "text": "What's lovely about it is it's so authentic and organic isn't it something in drive to artificial about it so ask the archive built with Claude"
+  },
+  {
+   "start": 2321.83,
+   "end": 2327.83,
+   "text": "Let's you search through the episode transcripts and you can find where a person a phrase or completely organic"
+  },
+  {
+   "start": 2327.83,
+   "end": 2335.83,
+   "text": "Authentic catchphrase has cropped up across the show so to just take the kind of things that I know we say a lot in our ordinary lives"
+  },
+  {
+   "start": 2335.83,
+   "end": 2339.51,
+   "text": "So on which phrase do you think has appeared in more episodes?"
+  },
+  {
+   "start": 2339.51,
+   "end": 2342.47,
+   "text": "Sacral or poor form?"
+  },
+  {
+   "start": 2342.47,
+   "end": 2344.07,
+   "text": "Oh, poor form."
+  },
+  {
+   "start": 2344.07,
+   "end": 2345.27,
+   "text": "Do you think so?"
+  },
+  {
+   "start": 2345.27,
+   "end": 2346.07,
+   "text": "Yeah, definitely."
+  },
+  {
+   "start": 2346.07,
+   "end": 2348.31,
+   "text": "I don't actually say sacral that much."
+  },
+  {
+   "start": 2348.31,
+   "end": 2350.31,
+   "text": "Which phrase appears more often?"
+  },
+  {
+   "start": 2350.31,
+   "end": 2351.86,
+   "text": "What do you think?"
+  },
+  {
+   "start": 2351.86,
+   "end": 2353.62,
+   "text": "I think probably poor form, sadly."
+  },
+  {
+   "start": 2353.62,
+   "end": 2354.58,
+   "text": "It's okay."
+  },
+  {
+   "start": 2354.58,
+   "end": 2358.02,
+   "text": "You guys, you've got a massive, you've got a massive shortcoming."
+  },
+  {
+   "start": 2358.02,
+   "end": 2360.5,
+   "text": "You can have to rethink some of your life choices."
+  },
+  {
+   "start": 2360.5,
+   "end": 2370.14,
+   "text": "is, Sacral has been mentioned 130 times, but poor form doesn't even remotely..."
+  },
+  {
+   "start": 2370.14,
+   "end": 2374.4,
+   "text": "I think poor form might have come up in England versus Italy first of all. So Sacral has"
+  },
+  {
+   "start": 2374.4,
+   "end": 2378.02,
+   "text": "appeared 130 times in poor form in 33 only."
+  },
+  {
+   "start": 2378.02,
+   "end": 2383.38,
+   "text": "OK, well I'm astounded and that is amazing tribute isn't it to the power of Anthropic"
+  },
+  {
+   "start": 2383.38,
+   "end": 2387.4,
+   "text": "that they can uncover these incredible facts."
+  },
+  {
+   "start": 2387.4,
+   "end": 2394.44,
+   "text": "the archive is built with Claude from Anthropic. You can find it at ask-the-archives.com and ask"
+  },
+  {
+   "start": 2394.44,
+   "end": 2399.0,
+   "text": "it something you've always wanted about and it will find the episodes where we've talked about it."
+  },
+  {
+   "start": 2405.02,
+   "end": 2412.86,
+   "text": "Welcome back to The Rest is History. It is the 12th of December, 1853 and Bombshell News has"
+  },
+  {
+   "start": 2412.86,
+   "end": 2420.38,
+   "text": "just reached Britain, literally. So a fortnight earlier, the 30th of November, a Russian fleet"
+  },
+  {
+   "start": 2420.38,
+   "end": 2430.38,
+   "text": "had attacked the fleet of the Ottoman Empire at Sunape, which is a port midway along the Black Sea coast of Anatolia."
+  },
+  {
+   "start": 2431.24,
+   "end": 2434.28,
+   "text": "People in Russia remember this, but nobody else remembers this today."
+  },
+  {
+   "start": 2434.68,
+   "end": 2442.4,
+   "text": "But I'm told, Tom, by you that Trevor Royal, no less, thinks the result was to be a turning point in the history of naval warfare."
+  },
+  {
+   "start": 2442.84,
+   "end": 2443.88,
+   "text": "Why does he think that?"
+  },
+  {
+   "start": 2444.2,
+   "end": 2444.88,
+   "text": "He absolutely does."
+  },
+  {
+   "start": 2444.88,
+   "end": 2448.76,
+   "text": "So author of the best military account of the Crimean War."
+  },
+  {
+   "start": 2448.76,
+   "end": 2450.96,
+   "text": "So he is entirely to be trusted."
+  },
+  {
+   "start": 2450.96,
+   "end": 2453.72,
+   "text": "And the reason why he thinks this is because the,"
+  },
+  {
+   "start": 2453.72,
+   "end": 2459.92,
+   "text": "the attack at Sinapea spectacularly demonstrates how vulnerable wooden ships,"
+  },
+  {
+   "start": 2459.92,
+   "end": 2462.52,
+   "text": "so ships of the kind that had won the Battle of Trafalgar,"
+  },
+  {
+   "start": 2462.52,
+   "end": 2466.72,
+   "text": "have become to kind of recent developments in munition technology."
+  },
+  {
+   "start": 2466.72,
+   "end": 2472.6,
+   "text": "So instead of cannon shot, the Russians use explosive shells to attack the Ottoman fleet."
+  },
+  {
+   "start": 2472.6,
+   "end": 2475.16,
+   "text": "And the result is complete carnage."
+  },
+  {
+   "start": 2475.16,
+   "end": 2478.56,
+   "text": "The entire Ottoman fleet is sent to the sea."
+  },
+  {
+   "start": 2478.56,
+   "end": 2482.56,
+   "text": "Thousands of Turkish sailors are killed and the whole port is set on fire."
+  },
+  {
+   "start": 2482.56,
+   "end": 2488.06,
+   "text": "And there's a British observer from the Navy who's watching this and is completely stunned by what he sees."
+  },
+  {
+   "start": 2488.06,
+   "end": 2491.56,
+   "text": "So he wrote, the shore of the bay was lined with wrecks and screwed with corpses."
+  },
+  {
+   "start": 2491.56,
+   "end": 2494.06,
+   "text": "Havoc had done her worst."
+  },
+  {
+   "start": 2494.06,
+   "end": 2497.56,
+   "text": "Not a mast was standing. Not a timber was left whole."
+  },
+  {
+   "start": 2497.56,
+   "end": 2501.56,
+   "text": "And obviously if you are a British naval officer, this is a very alarming sight."
+  },
+  {
+   "start": 2501.56,
+   "end": 2506.06,
+   "text": "Because you've got to ask yourself, what does this mean for the viability of the Royal Navy?"
+  },
+  {
+   "start": 2506.06,
+   "end": 2509.9,
+   "text": "if suddenly, you know, these kind of shells can inflict this on timber."
+  },
+  {
+   "start": 2509.9,
+   "end": 2511.78,
+   "text": "So it's unsettling for that reason."
+  },
+  {
+   "start": 2511.78,
+   "end": 2516.98,
+   "text": "But I think what happens at the massacre of Sinopee, as the British press immediately call it,"
+  },
+  {
+   "start": 2517.34,
+   "end": 2522.5,
+   "text": "it's unsettling to Britain and also to France for a more immediate reason as well."
+  },
+  {
+   "start": 2522.9,
+   "end": 2525.74,
+   "text": "And this is because the Russian attack on the Ottoman fleet"
+  },
+  {
+   "start": 2526.38,
+   "end": 2531.26,
+   "text": "strikes the British and the French as basically being an attack on them as well,"
+  },
+  {
+   "start": 2531.3,
+   "end": 2533.98,
+   "text": "because less than a week before it was launched,"
+  },
+  {
+   "start": 2533.98,
+   "end": 2542.04,
+   "text": "both Britain and France had signed a defensive treaty with the Sublime Port as its court."
+  },
+  {
+   "start": 2542.04,
+   "end": 2543.04,
+   "text": "It's a metonym."
+  },
+  {
+   "start": 2543.04,
+   "end": 2546.28,
+   "text": "Yeah, which is the, that's the gate, isn't it?"
+  },
+  {
+   "start": 2546.28,
+   "end": 2550.64,
+   "text": "Through which ambassadors come to visit the, the, the Sultan's court or something like"
+  },
+  {
+   "start": 2550.64,
+   "end": 2551.64,
+   "text": "that."
+  },
+  {
+   "start": 2551.64,
+   "end": 2555.04,
+   "text": "So it's like using the White House to refer to the American government."
+  },
+  {
+   "start": 2555.04,
+   "end": 2558.4,
+   "text": "So the Sublime Port, that's the, the Ottoman government."
+  },
+  {
+   "start": 2558.4,
+   "end": 2562.04,
+   "text": "So not merely had they signed a defensive alliance, but they had sent a fleet, hadn't"
+  },
+  {
+   "start": 2562.04,
+   "end": 2563.04,
+   "text": "they?"
+  },
+  {
+   "start": 2563.04,
+   "end": 2568.0,
+   "text": "British fleet to protect the Bosphorus. Because basically, Britain and France, the Storm Clause"
+  },
+  {
+   "start": 2568.0,
+   "end": 2573.36,
+   "text": "of War have been gathering, and Britain and France had tried to deter the Russians by sending"
+  },
+  {
+   "start": 2573.36,
+   "end": 2578.32,
+   "text": "this fleet. Now, if the Emperor Tael dross the second of Abyssinia, as this into this podcast,"
+  },
+  {
+   "start": 2578.32,
+   "end": 2582.8,
+   "text": "he'd have loved all the stuff about Lord Gardigan. But at this point, he would be frowning with"
+  },
+  {
+   "start": 2582.8,
+   "end": 2588.32,
+   "text": "displeasure, he would say, hold on, these are two Christian powers teaming up with the leading Muslim"
+  },
+  {
+   "start": 2588.32,
+   "end": 2594.84,
+   "text": "power against another Christian power. What on earth is going on here? So Tom, now is"
+  },
+  {
+   "start": 2594.84,
+   "end": 2599.64,
+   "text": "your chance to explain the entire origins of the Crimean War."
+  },
+  {
+   "start": 2599.64,
+   "end": 2605.72,
+   "text": "Yeah. Okay. Well, I think the key to understanding it is to remember that just as the Crimean"
+  },
+  {
+   "start": 2605.72,
+   "end": 2610.76,
+   "text": "War happens 40 years after Napoleonic Wars, it also happened 60 years before the outbreak"
+  },
+  {
+   "start": 2610.76,
+   "end": 2618.04,
+   "text": "of the First World War. You said, you could see this as being the first modern war. And"
+  },
+  {
+   "start": 2618.04,
+   "end": 2624.36,
+   "text": "know who else thinks that is Orlando Fygese, the great historian of Russia. So he's written"
+  },
+  {
+   "start": 2624.36,
+   "end": 2628.76,
+   "text": "the definitive history really, recent history of the Crimea. He'd agree with you, Dominic. It was"
+  },
+  {
+   "start": 2628.76,
+   "end": 2633.32,
+   "text": "the earliest example of a truly modern war, fought with new industrial technologies, modern rifles,"
+  },
+  {
+   "start": 2633.32,
+   "end": 2637.88,
+   "text": "steamships and railways, novel forms of logistics and communications like the Telegraph, important"
+  },
+  {
+   "start": 2637.88,
+   "end": 2643.16,
+   "text": "innovations in military medicine and war reporters and photographers directly on the scene. In all"
+  },
+  {
+   "start": 2643.16,
+   "end": 2648.92,
+   "text": "those ways, it's like the First World War. But I think that even more striking is the way that"
+  },
+  {
+   "start": 2649.9,
+   "end": 2659.02,
+   "text": "the Great Powers in late 1853 and early 1854, as in 1914, kind of find themselves"
+  },
+  {
+   "start": 2659.02,
+   "end": 2664.7,
+   "text": "sleepwalking into conflict. And the context is the same as in the July crisis of 1914."
+  },
+  {
+   "start": 2664.7,
+   "end": 2669.9,
+   "text": "So it's the decline of the Ottoman Empire and the sense of chaos that this is breeding in the"
+  },
+  {
+   "start": 2669.9,
+   "end": 2677.18,
+   "text": "Balkans, the question of what might replace Ottoman power. As we said, the settings are"
+  },
+  {
+   "start": 2677.18,
+   "end": 2682.7,
+   "text": "saying the Balkans and the misjudgments are the same. So you get military moves that are"
+  },
+  {
+   "start": 2682.7,
+   "end": 2689.26,
+   "text": "intended to intimidate your opponents that instead serve as provocations. You have alliances,"
+  },
+  {
+   "start": 2689.26,
+   "end": 2695.02,
+   "text": "you have ultimatums that are designed to ward off conflict that instead help lead to it."
+  },
+  {
+   "start": 2695.02,
+   "end": 2700.6,
+   "text": "you have disastrous misreadings in all the major capitals of how the crisis is being"
+  },
+  {
+   "start": 2700.6,
+   "end": 2707.2,
+   "text": "seen by their rivals. And if the First World War was triggered by an assassination in Sarajevo,"
+  },
+  {
+   "start": 2707.2,
+   "end": 2712.06,
+   "text": "the Crimean War is triggered by an argument over a key in Bethlehem."
+  },
+  {
+   "start": 2712.06,
+   "end": 2715.92,
+   "text": "I mean, this is the brilliant thing about this story that never has there been a war,"
+  },
+  {
+   "start": 2715.92,
+   "end": 2722.68,
+   "text": "except possibly for the War of Jenkins's Ear, where the immediate cause, the kind of trigger,"
+  },
+  {
+   "start": 2722.68,
+   "end": 2727.59,
+   "text": "is to be so extraordinarily inconsequential."
+  },
+  {
+   "start": 2727.59,
+   "end": 2730.91,
+   "text": "So talk us through the key in Bethlehem and why that matters."
+  },
+  {
+   "start": 2730.91,
+   "end": 2732.75,
+   "text": "I mean, I think to public opinion in Britain,"
+  },
+  {
+   "start": 2732.75,
+   "end": 2734.79,
+   "text": "it does seem inconsequential,"
+  },
+  {
+   "start": 2734.79,
+   "end": 2737.39,
+   "text": "but there are people in France and in definitely Russia"
+  },
+  {
+   "start": 2737.39,
+   "end": 2739.91,
+   "text": "for whom this argument is something very, very serious,"
+  },
+  {
+   "start": 2739.91,
+   "end": 2743.83,
+   "text": "indeed, and ultimately goes back to the age of the Crusades"
+  },
+  {
+   "start": 2743.83,
+   "end": 2747.99,
+   "text": "because the churches in the Holy Land did not look to Rome"
+  },
+  {
+   "start": 2747.99,
+   "end": 2749.15,
+   "text": "and then you have the Catholic powers"
+  },
+  {
+   "start": 2749.15,
+   "end": 2750.71,
+   "text": "turning up the Crusades and everything."
+  },
+  {
+   "start": 2750.71,
+   "end": 2753.11,
+   "text": "And so it introduces the Catholic Church there."
+  },
+  {
+   "start": 2753.11,
+   "end": 2754.91,
+   "text": "And so you have these endless rows"
+  },
+  {
+   "start": 2754.91,
+   "end": 2757.31,
+   "text": "between the Orthodox Church and the Catholic Church"
+  },
+  {
+   "start": 2757.31,
+   "end": 2759.19,
+   "text": "over who has primacy."
+  },
+  {
+   "start": 2759.19,
+   "end": 2762.07,
+   "text": "And because the Holy Land has been subject"
+  },
+  {
+   "start": 2762.07,
+   "end": 2765.51,
+   "text": "to the Ottoman Empire for about 300 years in the 1850s,"
+  },
+  {
+   "start": 2765.51,
+   "end": 2767.47,
+   "text": "it's ultimately up to the Sultan"
+  },
+  {
+   "start": 2767.47,
+   "end": 2771.03,
+   "text": "who gets to hold the key to the Church of the Nativity."
+  },
+  {
+   "start": 2771.03,
+   "end": 2772.43,
+   "text": "So it's the Church of the Nativity"
+  },
+  {
+   "start": 2772.43,
+   "end": 2774.51,
+   "text": "that's the center of this."
+  },
+  {
+   "start": 2774.51,
+   "end": 2777.71,
+   "text": "A massive tourist attraction for pilgrims and stuff, I suppose."
+  },
+  {
+   "start": 2777.71,
+   "end": 2778.55,
+   "text": "Yeah, of course."
+  },
+  {
+   "start": 2778.55,
+   "end": 2780.71,
+   "text": "I mean, it's the place of Christ's birth."
+  },
+  {
+   "start": 2780.71,
+   "end": 2782.67,
+   "text": "And the question of who has which key,"
+  },
+  {
+   "start": 2782.67,
+   "end": 2783.71,
+   "text": "who has the precedence,"
+  },
+  {
+   "start": 2783.71,
+   "end": 2785.83,
+   "text": "who's allowed to put up what star where?"
+  },
+  {
+   "start": 2785.83,
+   "end": 2788.51,
+   "text": "I mean, it's just been going on and on and on."
+  },
+  {
+   "start": 2788.51,
+   "end": 2792.99,
+   "text": "And it suddenly really starts kicking off in the 1850s."
+  },
+  {
+   "start": 2792.99,
+   "end": 2795.35,
+   "text": "And the reason for this is basically,"
+  },
+  {
+   "start": 2795.35,
+   "end": 2797.91,
+   "text": "it's the machinations of French politics."
+  },
+  {
+   "start": 2797.91,
+   "end": 2799.99,
+   "text": "And specifically the coup in 1851"
+  },
+  {
+   "start": 2799.99,
+   "end": 2802.15,
+   "text": "that had brought Louis Napoleon to power,"
+  },
+  {
+   "start": 2802.15,
+   "end": 2803.87,
+   "text": "so he becomes Napoleon III."
+  },
+  {
+   "start": 2803.87,
+   "end": 2807.31,
+   "text": "And in May 1851, Napoleon sends"
+  },
+  {
+   "start": 2807.31,
+   "end": 2811.27,
+   "text": "a very close ally of his, a guy called the Marquis de Lavalette,"
+  },
+  {
+   "start": 2811.27,
+   "end": 2814.99,
+   "text": "to be his ambassador to the Sublime Port in Constantinople."
+  },
+  {
+   "start": 2814.99,
+   "end": 2819.31,
+   "text": "And this guy is a very, very fervent Catholic."
+  },
+  {
+   "start": 2819.31,
+   "end": 2821.79,
+   "text": "And when he gets to Constantinople,"
+  },
+  {
+   "start": 2821.79,
+   "end": 2824.91,
+   "text": "he immediately starts throwing his weight around,"
+  },
+  {
+   "start": 2824.91,
+   "end": 2826.87,
+   "text": "endlessly pestering the Sultan's court"
+  },
+  {
+   "start": 2826.87,
+   "end": 2829.95,
+   "text": "about this key issue in Bethlehem."
+  },
+  {
+   "start": 2829.95,
+   "end": 2832.15,
+   "text": "And essentially threatening war."
+  },
+  {
+   "start": 2832.15,
+   "end": 2835.17,
+   "text": "And if the Catholics don't get the top key,"
+  },
+  {
+   "start": 2835.17,
+   "end": 2838.97,
+   "text": "He's always muttering about gunboats and things like that."
+  },
+  {
+   "start": 2838.97,
+   "end": 2839.97,
+   "text": "Right."
+  },
+  {
+   "start": 2839.97,
+   "end": 2841.33,
+   "text": "It's like it would be Lord Palmerston."
+  },
+  {
+   "start": 2841.33,
+   "end": 2842.73,
+   "text": "Yeah, kind of."
+  },
+  {
+   "start": 2842.73,
+   "end": 2846.93,
+   "text": "But I don't think Lord Palmerston would care about keys in Bethlehem, whereas De La Velet,"
+  },
+  {
+   "start": 2846.93,
+   "end": 2848.45,
+   "text": "he's all over it."
+  },
+  {
+   "start": 2848.45,
+   "end": 2850.57,
+   "text": "And the question is, what does Napoleon think of this?"
+  },
+  {
+   "start": 2850.57,
+   "end": 2853.77,
+   "text": "Because Napoleon himself has no real interest in religion at all."
+  },
+  {
+   "start": 2853.77,
+   "end": 2856.69,
+   "text": "He doesn't really care about keys in Bethlehem."
+  },
+  {
+   "start": 2856.69,
+   "end": 2862.77,
+   "text": "But I think he probably has given De La Velet the green light and probably for two reasons."
+  },
+  {
+   "start": 2862.77,
+   "end": 2865.29,
+   "text": "And the first is that he needs Catholic backing."
+  },
+  {
+   "start": 2865.29,
+   "end": 2867.77,
+   "text": "There are lots of people in France who are very against him."
+  },
+  {
+   "start": 2867.77,
+   "end": 2869.93,
+   "text": "Catholics are naturally his allies."
+  },
+  {
+   "start": 2869.93,
+   "end": 2872.77,
+   "text": "So he's throwing them some red meat, I guess."
+  },
+  {
+   "start": 2872.77,
+   "end": 2875.73,
+   "text": "But also he is looking to sow mischief"
+  },
+  {
+   "start": 2875.73,
+   "end": 2880.21,
+   "text": "between the two most powerful victors in the Napoleonic Wars."
+  },
+  {
+   "start": 2880.21,
+   "end": 2883.29,
+   "text": "And these are the countries that for almost four decades"
+  },
+  {
+   "start": 2883.29,
+   "end": 2885.65,
+   "text": "have been serving as the guarantors"
+  },
+  {
+   "start": 2885.65,
+   "end": 2888.21,
+   "text": "of the post-Waterloo settlement in Europe."
+  },
+  {
+   "start": 2888.21,
+   "end": 2891.53,
+   "text": "And these, of course, are Russia and Britain."
+  },
+  {
+   "start": 2891.53,
+   "end": 2896.61,
+   "text": "And Napoleon is able to recognize an opportunity to make mischief between"
+  },
+  {
+   "start": 2896.65,
+   "end": 2900.93,
+   "text": "Russia and Britain, because he, he's familiar with both of them."
+  },
+  {
+   "start": 2901.73,
+   "end": 2903.77,
+   "text": "He knows their workings."
+  },
+  {
+   "start": 2903.93,
+   "end": 2906.53,
+   "text": "So let's go with Russia first."
+  },
+  {
+   "start": 2907.01,
+   "end": 2908.41,
+   "text": "So you were ready to said this."
+  },
+  {
+   "start": 2908.65,
+   "end": 2912.25,
+   "text": "You only made this point that the issue of the key, which I dismissed as"
+  },
+  {
+   "start": 2912.25,
+   "end": 2918.05,
+   "text": "inconsequential, were I a Russian in the 1840s or 1850s?"
+  },
+  {
+   "start": 2918.09,
+   "end": 2919.29,
+   "text": "Were you a Tsar Dominic?"
+  },
+  {
+   "start": 2919.29,
+   "end": 2926.41,
+   "text": "Yeah, this issue of the key is of tremendous spiritual and therefore political importance"
+  },
+  {
+   "start": 2926.41,
+   "end": 2931.37,
+   "text": "because the spiritual and the political are interwoven in 19th century Russia in a way,"
+  },
+  {
+   "start": 2931.37,
+   "end": 2937.45,
+   "text": "perhaps they're not in Western Europe. Is that fair? Yeah. And Russia sees herself as the new"
+  },
+  {
+   "start": 2937.45,
+   "end": 2943.69,
+   "text": "Byzantium as the divinely appointed protector of the many millions of Orthodox Christians who"
+  },
+  {
+   "start": 2943.69,
+   "end": 2948.28,
+   "text": "who live as subjects of the Muslim Sultan."
+  },
+  {
+   "start": 2948.28,
+   "end": 2952.2,
+   "text": "And more than that, I think they see the growth"
+  },
+  {
+   "start": 2952.2,
+   "end": 2956.94,
+   "text": "of the Russian Empire as a kind of an orthodox crusade,"
+  },
+  {
+   "start": 2956.94,
+   "end": 2960.86,
+   "text": "the expression of a mission to liberate the orthodox"
+  },
+  {
+   "start": 2960.86,
+   "end": 2965.28,
+   "text": "from Muslim rule and ultimately restore Constantinople"
+  },
+  {
+   "start": 2965.28,
+   "end": 2969.58,
+   "text": "to her ancient status as a great Christian capital."
+  },
+  {
+   "start": 2969.58,
+   "end": 2973.16,
+   "text": "And the first step of this crusade had come in 1783"
+  },
+  {
+   "start": 2973.16,
+   "end": 2979.44,
+   "text": "under Catherine the Great. And this was the annexation of Crimea. And this was the first"
+  },
+  {
+   "start": 2979.44,
+   "end": 2985.24,
+   "text": "ever territory to be lost by the Ottomans to a Christian power. So it seems to both"
+  },
+  {
+   "start": 2985.24,
+   "end": 2989.84,
+   "text": "the Russians and the Ottomans a real straw in the wind. And of course, we've talked"
+  },
+  {
+   "start": 2989.84,
+   "end": 2994.76,
+   "text": "about this a lot on the rest of history in the past. But Crimea is holy to the Russians,"
+  },
+  {
+   "start": 2994.76,
+   "end": 3002.8,
+   "text": "because it's the site of Chersenesos, where Vladimir had been baptized in 988. So the"
+  },
+  {
+   "start": 3002.8,
+   "end": 3007.16,
+   "text": "Prince of Kiev, the kind of the founder of Russian orthodoxy"
+  },
+  {
+   "start": 3007.16,
+   "end": 3009.1,
+   "text": "as the Russians see him."
+  },
+  {
+   "start": 3009.1,
+   "end": 3012.52,
+   "text": "And so this site becomes a place of pilgrims for Russians"
+  },
+  {
+   "start": 3012.52,
+   "end": 3015.72,
+   "text": "and they excavated in 1827 and they build a church"
+  },
+  {
+   "start": 3015.72,
+   "end": 3018.7,
+   "text": "on the site of the supposed site of the baptism."
+  },
+  {
+   "start": 3018.7,
+   "end": 3023.3,
+   "text": "And I guess it kind of turbocharges a sense of mission"
+  },
+  {
+   "start": 3023.3,
+   "end": 3025.6,
+   "text": "in the Kremlin and in Russian more generally,"
+  },
+  {
+   "start": 3025.6,
+   "end": 3028.2,
+   "text": "thinking, well, if we've taken Crimea, why not more?"
+  },
+  {
+   "start": 3028.2,
+   "end": 3031.12,
+   "text": "What about all those orthodox Christians in the Balkans?"
+  },
+  {
+   "start": 3031.12,
+   "end": 3034.72,
+   "text": "Yeah, Rumi, what's now Romania, Bulgaria and so on and so forth."
+  },
+  {
+   "start": 3034.92,
+   "end": 3040.76,
+   "text": "And the Tsar, Nicholas I, he believes in this mission absolutely."
+  },
+  {
+   "start": 3040.96,
+   "end": 3044.16,
+   "text": "I mean, very, very fervently, very devoutly."
+  },
+  {
+   "start": 3044.36,
+   "end": 3048.16,
+   "text": "And in 1853, he is 59."
+  },
+  {
+   "start": 3048.36,
+   "end": 3051.0,
+   "text": "He's been on the Russian throne since 1825."
+  },
+  {
+   "start": 3051.2,
+   "end": 3052.2,
+   "text": "He's a very uptight man."
+  },
+  {
+   "start": 3052.4,
+   "end": 3057.8,
+   "text": "He's a man of rigid principle, very tall, has a notoriously terrifying stare."
+  },
+  {
+   "start": 3057.8,
+   "end": 3060.8,
+   "text": "If he fixes his eye on you, you kind of shrivel up."
+  },
+  {
+   "start": 3061.2,
+   "end": 3063.2,
+   "text": "He'd been trained as a military engineer."
+  },
+  {
+   "start": 3063.3,
+   "end": 3066.2,
+   "text": "So he was a younger son who ends up inheriting."
+  },
+  {
+   "start": 3066.2,
+   "end": 3068.2,
+   "text": "So this is why he has this engineering background."
+  },
+  {
+   "start": 3068.2,
+   "end": 3070.3,
+   "text": "And he he's all about military discipline."
+  },
+  {
+   "start": 3070.4,
+   "end": 3071.9,
+   "text": "He gets up very early."
+  },
+  {
+   "start": 3071.9,
+   "end": 3073.2,
+   "text": "He works till late."
+  },
+  {
+   "start": 3073.2,
+   "end": 3077.2,
+   "text": "He sleeps on a narrow camp bed with a mattress made of straw"
+  },
+  {
+   "start": 3077.2,
+   "end": 3081.2,
+   "text": "and he takes it with him wherever he goes and judged by his own standards."
+  },
+  {
+   "start": 3081.7,
+   "end": 3086.3,
+   "text": "And I guess by the standards, probably of the of the the royal classes"
+  },
+  {
+   "start": 3086.3,
+   "end": 3091.06,
+   "text": "in Europe in the 19th century, he is a man of honour and he expects the rulers of other"
+  },
+  {
+   "start": 3091.06,
+   "end": 3097.03,
+   "text": "countries to behave according to similar standards of honour. The people he does not trust at"
+  },
+  {
+   "start": 3097.03,
+   "end": 3102.03,
+   "text": "all to do this are the French because they are republican and revolutionary and they're"
+  },
+  {
+   "start": 3102.03,
+   "end": 3106.19,
+   "text": "always throwing up shysters like Napoleon III. He doesn't trust them at all. He thinks"
+  },
+  {
+   "start": 3106.19,
+   "end": 3111.71,
+   "text": "they have no sense of honour whatsoever. And he's familiar with Paris because he had ridden"
+  },
+  {
+   "start": 3111.71,
+   "end": 3117.71,
+   "text": "into it in 1814 with the Cossacks. So he feels that this gives him an ability to take the"
+  },
+  {
+   "start": 3117.71,
+   "end": 3122.79,
+   "text": "temperature of the French state. The British, however, he thinks they are tremendous. He"
+  },
+  {
+   "start": 3122.79,
+   "end": 3128.23,
+   "text": "loves them. And actually in 1844 he'd kind of done a Pete of the Great who'd come incognito"
+  },
+  {
+   "start": 3128.23,
+   "end": 3134.55,
+   "text": "to London. And Nicholas does the same. He arrives incognito in London on a steamer. And he'd"
+  },
+  {
+   "start": 3134.55,
+   "end": 3139.99,
+   "text": "met with Queen Victoria, got on very well with her. And he'd enjoyed what he had assumed"
+  },
+  {
+   "start": 3139.99,
+   "end": 3144.89,
+   "text": "at the time were very fruitful discussions with assorted British ministers. And when"
+  },
+  {
+   "start": 3144.89,
+   "end": 3150.59,
+   "text": "he left London, he assumed that he had a gentleman's agreement that the British would not object"
+  },
+  {
+   "start": 3150.59,
+   "end": 3154.87,
+   "text": "to his liberation of the Balkans, and that together the Russians and the British could"
+  },
+  {
+   "start": 3154.87,
+   "end": 3160.23,
+   "text": "carve up the Ottoman Empire. And he thinks that, you know, in his discussions in Downing"
+  },
+  {
+   "start": 3160.23,
+   "end": 3165.67,
+   "text": "Street and in Buckingham Palace and at Windsor, this has all basically been agreed. But it's"
+  },
+  {
+   "start": 3165.67,
+   "end": 3172.72,
+   "text": "a fateful miscalculation because Britain doesn't work like that. There are too many different"
+  },
+  {
+   "start": 3172.72,
+   "end": 3176.84,
+   "text": "centres of power. And the S.A.R. thinks that if you've talked about it with Queen, if you've"
+  },
+  {
+   "start": 3176.84,
+   "end": 3180.08,
+   "text": "talked about it with the Prime Minister and the Foreign Secretary, then that's all that"
+  },
+  {
+   "start": 3180.08,
+   "end": 3185.4,
+   "text": "matters. He doesn't appreciate that the operation of politics in Britain by the mid 19th century"
+  },
+  {
+   "start": 3185.4,
+   "end": 3188.08,
+   "text": "is becoming very, very complicated indeed."
+  },
+  {
+   "start": 3188.08,
+   "end": 3195.24,
+   "text": "So that's the Tsar, Nicholas I. But Napoleon has been in London as an exile, hasn't he?"
+  },
+  {
+   "start": 3195.24,
+   "end": 3203.2,
+   "text": "He'd returned from London to France to become president and then emperor."
+  },
+  {
+   "start": 3203.2,
+   "end": 3207.32,
+   "text": "Napoleon understands the British much better and he knows how much British policy is driven"
+  },
+  {
+   "start": 3207.32,
+   "end": 3208.8,
+   "text": "by distrust of rivals."
+  },
+  {
+   "start": 3208.8,
+   "end": 3209.96,
+   "text": "So that could be France."
+  },
+  {
+   "start": 3209.96,
+   "end": 3212.0,
+   "text": "It could of course be Russia as well."
+  },
+  {
+   "start": 3212.0,
+   "end": 3213.36,
+   "text": "Yeah, definitely France."
+  },
+  {
+   "start": 3213.36,
+   "end": 3216.4,
+   "text": "So when Napoleon comes to power and makes himself emperor, there's a massive war panic"
+  },
+  {
+   "start": 3216.4,
+   "end": 3221.92,
+   "text": "in Britain and they start rushing around trying to beef up their defences."
+  },
+  {
+   "start": 3221.92,
+   "end": 3226.7,
+   "text": "we'll actually be meeting in our next episode, the general who was put in charge of that"
+  },
+  {
+   "start": 3226.7,
+   "end": 3232.64,
+   "text": "policy. But Napoleon knows that in Britain, the hostility to Russia is even greater than"
+  },
+  {
+   "start": 3232.64,
+   "end": 3237.52,
+   "text": "the hostility to France, not necessarily in the government itself, which is quite broadly"
+  },
+  {
+   "start": 3237.52,
+   "end": 3244.44,
+   "text": "split, but more generally in the country. And he knows that by 1853, the mood in Parliament,"
+  },
+  {
+   "start": 3244.44,
+   "end": 3251.48,
+   "text": "in the press, among the mass of people in Britain is really quite violently Russophobic."
+  },
+  {
+   "start": 3251.48,
+   "end": 3254.76,
+   "text": "And this is for a number of reasons and some of these reasons may sound familiar to people"
+  },
+  {
+   "start": 3254.76,
+   "end": 3257.54,
+   "text": "who are reading the newspapers today."
+  },
+  {
+   "start": 3257.54,
+   "end": 3264.32,
+   "text": "So there's a kind of a dread of Russia as a despotism, as an autocracy where the rule"
+  },
+  {
+   "start": 3264.32,
+   "end": 3266.62,
+   "text": "of law doesn't apply."
+  },
+  {
+   "start": 3266.62,
+   "end": 3269.68,
+   "text": "And the Tsar himself is seen as a menacing and sinister figure."
+  },
+  {
+   "start": 3269.68,
+   "end": 3274.92,
+   "text": "So his nickname among liberals in Europe is the Jean-Dame of Europe."
+  },
+  {
+   "start": 3274.92,
+   "end": 3282.28,
+   "text": "And the particular focus of Russophobia in Britain is the treatment of the Poles by the"
+  },
+  {
+   "start": 3282.28,
+   "end": 3283.28,
+   "text": "Russians."
+  },
+  {
+   "start": 3283.28,
+   "end": 3284.52,
+   "text": "So the Poles have had an absolutely terrible time."
+  },
+  {
+   "start": 3284.52,
+   "end": 3287.8,
+   "text": "They've been kind of carved up and occupied and chopped around."
+  },
+  {
+   "start": 3287.8,
+   "end": 3292.52,
+   "text": "And after the Permanent Wars, they've ended up under Russian rule."
+  },
+  {
+   "start": 3292.52,
+   "end": 3300.28,
+   "text": "And in 1831, the Poles had risen in rebellion and Nicholas had crushed it incredibly brutally."
+  },
+  {
+   "start": 3300.28,
+   "end": 3306.56,
+   "text": "And the British, I think, see the polls as embodying ideals that they like to think of"
+  },
+  {
+   "start": 3306.56,
+   "end": 3307.56,
+   "text": "as their own."
+  },
+  {
+   "start": 3307.56,
+   "end": 3312.68,
+   "text": "So to quote Orlando Fygge's, a love of liberty and the commitment to defend the little man"
+  },
+  {
+   "start": 3312.68,
+   "end": 3313.88,
+   "text": "against bullies."
+  },
+  {
+   "start": 3313.88,
+   "end": 3318.36,
+   "text": "But also there's some very melodramatic sort of tabloid worthy stories, aren't there?"
+  },
+  {
+   "start": 3318.36,
+   "end": 3324.36,
+   "text": "So there's one about some nuns, manacled, lashed and Polish nuns."
+  },
+  {
+   "start": 3324.36,
+   "end": 3325.36,
+   "text": "So what's gone on with them?"
+  },
+  {
+   "start": 3325.36,
+   "end": 3326.36,
+   "text": "They've been told to..."
+  },
+  {
+   "start": 3326.36,
+   "end": 3330.38,
+   "text": "been told to submit to an orthodox bishop and their Catholic and so they"
+  },
+  {
+   "start": 3330.38,
+   "end": 3333.48,
+   "text": "refuse and they have their heads shaved and they're shackled and whipped and"
+  },
+  {
+   "start": 3333.48,
+   "end": 3337.86,
+   "text": "deported and put to hard labor and it becomes a cause for labor because it"
+  },
+  {
+   "start": 3337.86,
+   "end": 3344.02,
+   "text": "gets written up by a woman who's not very well known she's a nurse so she has"
+  },
+  {
+   "start": 3344.02,
+   "end": 3347.38,
+   "text": "quite a few contacts but she's not by any means a household name and the name of"
+  },
+  {
+   "start": 3347.38,
+   "end": 3352.18,
+   "text": "this woman is Florence Lightingale nobody's heard of her but she she"
+  },
+  {
+   "start": 3352.18,
+   "end": 3355.46,
+   "text": "manages to get the story published by Charles Dickens in his journal"
+  },
+  {
+   "start": 3355.46,
+   "end": 3360.86,
+   "text": "household words and so that has a massive readership. And so it's all part of the propaganda war"
+  },
+  {
+   "start": 3360.86,
+   "end": 3362.34,
+   "text": "against Russian despotism."
+  },
+  {
+   "start": 3362.34,
+   "end": 3366.54,
+   "text": "But there is a sort of quite a serious point about the balance of power here, isn't there?"
+  },
+  {
+   "start": 3366.54,
+   "end": 3373.02,
+   "text": "Because the great anxiety in mid-century Britain is about India. And it's about the enormously"
+  },
+  {
+   "start": 3373.02,
+   "end": 3380.58,
+   "text": "rapid expansion of Russian power across Asia. And Russian power is beginning to penetrate"
+  },
+  {
+   "start": 3380.58,
+   "end": 3386.58,
+   "text": "kind of Central Asia. So this is the heyday of the great game. And, you know, successive"
+  },
+  {
+   "start": 3386.58,
+   "end": 3394.08,
+   "text": "kind of British governments and legions of British policymakers and diplomats and spies"
+  },
+  {
+   "start": 3394.08,
+   "end": 3400.86,
+   "text": "and so on are drawn into this great drama for control of Central Asia, because they see"
+  },
+  {
+   "start": 3400.86,
+   "end": 3405.1,
+   "text": "it as the key to India. And if we lose to Russia here, if we give ground to the Russians,"
+  },
+  {
+   "start": 3405.1,
+   "end": 3409.38,
+   "text": "if we don't contain them, then they will expand and expand and they will supplant us in India"
+  },
+  {
+   "start": 3409.38,
+   "end": 3410.58,
+   "text": "and then we will be nothing."
+  },
+  {
+   "start": 3411.14,
+   "end": 3413.34,
+   "text": "I mean, that's the anxiety that underpins all this, isn't it?"
+  },
+  {
+   "start": 3413.34,
+   "end": 3415.78,
+   "text": "Yeah, it's something that the British have worked themselves into an"
+  },
+  {
+   "start": 3415.78,
+   "end": 3419.3,
+   "text": "absolute lather about and will continue to do, you know, right the way up to"
+  },
+  {
+   "start": 3419.3,
+   "end": 3420.54,
+   "text": "the outbreak of the First World War."
+  },
+  {
+   "start": 3420.58,
+   "end": 3423.02,
+   "text": "This will be their great strategic anxiety."
+  },
+  {
+   "start": 3423.5,
+   "end": 3426.22,
+   "text": "At this point, it's a ludicrous thing to be worrying about."
+  },
+  {
+   "start": 3426.22,
+   "end": 3429.06,
+   "text": "The Russians have no, you know, they're in no position to invade India."
+  },
+  {
+   "start": 3429.06,
+   "end": 3430.42,
+   "text": "It's simply not on their horizon."
+  },
+  {
+   "start": 3430.74,
+   "end": 3433.78,
+   "text": "But the British have worked themselves up into a lather of paranoia about it."
+  },
+  {
+   "start": 3434.1,
+   "end": 3438.3,
+   "text": "That means that in the Councils of Power in Whitehall, you know, the"
+  },
+  {
+   "start": 3438.3,
+   "end": 3442.27,
+   "text": "endlessly pouring over maps of Central Asia and panicking about it."
+  },
+  {
+   "start": 3442.27,
+   "end": 3444.95,
+   "text": "In the Kremlin, it's just not an issue."
+  },
+  {
+   "start": 3444.95,
+   "end": 3450.03,
+   "text": "And the Tsar, Nicholas, I mean, he's completely oblivious to this as a factor in his relationships"
+  },
+  {
+   "start": 3450.03,
+   "end": 3451.03,
+   "text": "with Britain."
+  },
+  {
+   "start": 3451.03,
+   "end": 3458.15,
+   "text": "And so even in early 1853, he's still assuming that he has this gentleman's agreement with"
+  },
+  {
+   "start": 3458.15,
+   "end": 3461.87,
+   "text": "Britain to go ahead and carve up the Ottoman Empire."
+  },
+  {
+   "start": 3461.87,
+   "end": 3465.71,
+   "text": "And he summons the British ambassador in Moscow for talks."
+  },
+  {
+   "start": 3465.71,
+   "end": 3467.95,
+   "text": "And he makes this absolutely explicit."
+  },
+  {
+   "start": 3467.95,
+   "end": 3471.03,
+   "text": "And he adopts a very celebrated metaphor,"
+  },
+  {
+   "start": 3471.03,
+   "end": 3472.75,
+   "text": "the star says to the British ambassador,"
+  },
+  {
+   "start": 3472.75,
+   "end": 3477.03,
+   "text": "we have a sick man on our hands, a man gravely ill."
+  },
+  {
+   "start": 3477.03,
+   "end": 3481.27,
+   "text": "It will be a great misfortune if he slips through our hands,"
+  },
+  {
+   "start": 3481.27,
+   "end": 3485.91,
+   "text": "especially before the necessary arrangements are made."
+  },
+  {
+   "start": 3485.91,
+   "end": 3489.23,
+   "text": "And Nicholas over the course of 1853,"
+  },
+  {
+   "start": 3489.23,
+   "end": 3492.97,
+   "text": "thinks that it is time to make the arrangements"
+  },
+  {
+   "start": 3492.97,
+   "end": 3496.87,
+   "text": "to finish off this sick man, the Ottoman Empire."
+  },
+  {
+   "start": 3496.87,
+   "end": 3499.29,
+   "text": "This is where the phrase, the sick man of Europe,"
+  },
+  {
+   "start": 3499.29,
+   "end": 3500.83,
+   "text": "originates it."
+  },
+  {
+   "start": 3500.83,
+   "end": 3503.31,
+   "text": "And Nicholas feels that Russia cannot squander"
+  },
+  {
+   "start": 3503.31,
+   "end": 3507.39,
+   "text": "a God-given opportunity to dispatch the invalid"
+  },
+  {
+   "start": 3507.39,
+   "end": 3510.71,
+   "text": "and take over all his possessions."
+  },
+  {
+   "start": 3510.71,
+   "end": 3512.55,
+   "text": "God has appointed him the defender"
+  },
+  {
+   "start": 3512.55,
+   "end": 3513.79,
+   "text": "of the Orthodox Christians,"
+  },
+  {
+   "start": 3513.79,
+   "end": 3515.83,
+   "text": "and he is summoned to liberate them"
+  },
+  {
+   "start": 3515.83,
+   "end": 3520.3,
+   "text": "from the evils of Muslim tyranny."
+  },
+  {
+   "start": 3520.3,
+   "end": 3522.62,
+   "text": "And so over the course of 1853,"
+  },
+  {
+   "start": 3522.62,
+   "end": 3524.26,
+   "text": "he duly pushes his advantage,"
+  },
+  {
+   "start": 3524.26,
+   "end": 3527.14,
+   "text": "never suspecting that the British will object to this."
+  },
+  {
+   "start": 3527.14,
+   "end": 3530.7,
+   "text": "So he sends a diplomatic mission to browbeat the Sultan"
+  },
+  {
+   "start": 3530.7,
+   "end": 3533.98,
+   "text": "into accepting his status as protector of the Christians"
+  },
+  {
+   "start": 3533.98,
+   "end": 3535.26,
+   "text": "in the Ottoman Empire."
+  },
+  {
+   "start": 3535.26,
+   "end": 3537.7,
+   "text": "There's loads of stuff about keys in Bethlehem"
+  },
+  {
+   "start": 3537.7,
+   "end": 3539.42,
+   "text": "and all of that."
+  },
+  {
+   "start": 3539.42,
+   "end": 3542.62,
+   "text": "And the Ottomans hold firm."
+  },
+  {
+   "start": 3542.62,
+   "end": 3545.7,
+   "text": "They refuse to give in to this browbeating."
+  },
+  {
+   "start": 3545.7,
+   "end": 3547.78,
+   "text": "And so the next step that Nicholas takes"
+  },
+  {
+   "start": 3547.78,
+   "end": 3549.06,
+   "text": "is an armed invasion."
+  },
+  {
+   "start": 3549.06,
+   "end": 3553.96,
+   "text": "And he sends a Russian army across the border"
+  },
+  {
+   "start": 3553.96,
+   "end": 3557.52,
+   "text": "into the two most northerly provinces"
+  },
+  {
+   "start": 3557.52,
+   "end": 3559.52,
+   "text": "that the Ottomans rule in the Balkans."
+  },
+  {
+   "start": 3559.52,
+   "end": 3561.92,
+   "text": "And these in Moldova and Wallachia."
+  },
+  {
+   "start": 3561.92,
+   "end": 3563.28,
+   "text": "So there are a pair of principalities,"
+  },
+  {
+   "start": 3563.28,
+   "end": 3565.4,
+   "text": "both of which lie north of the Danube."
+  },
+  {
+   "start": 3565.4,
+   "end": 3568.16,
+   "text": "So the Danube kind of, you know, is a key divider"
+  },
+  {
+   "start": 3568.16,
+   "end": 3569.72,
+   "text": "between these two provinces"
+  },
+  {
+   "start": 3569.72,
+   "end": 3572.4,
+   "text": "and the rest of Ottoman Europe."
+  },
+  {
+   "start": 3572.4,
+   "end": 3575.6,
+   "text": "Basically it's Romania, the country of Romania today."
+  },
+  {
+   "start": 3575.6,
+   "end": 3577.92,
+   "text": "And then there is a declaration of war"
+  },
+  {
+   "start": 3577.92,
+   "end": 3581.36,
+   "text": "by the Ottomans on Russia after this invasion,"
+  },
+  {
+   "start": 3581.36,
+   "end": 3582.6,
+   "text": "understandably."
+  },
+  {
+   "start": 3582.6,
+   "end": 3585.12,
+   "text": "And so on the 30th of November, as we've heard,"
+  },
+  {
+   "start": 3585.12,
+   "end": 3589.8,
+   "text": "the Russians sent the Black Sea Fleet from Sebastopol"
+  },
+  {
+   "start": 3589.8,
+   "end": 3594.6,
+   "text": "in the Crimea to attack the Ottoman fleet in Sinope"
+  },
+  {
+   "start": 3594.6,
+   "end": 3596.46,
+   "text": "and wipes it out."
+  },
+  {
+   "start": 3596.46,
+   "end": 3599.92,
+   "text": "And it is now with the destruction of the Turkish fleet"
+  },
+  {
+   "start": 3599.92,
+   "end": 3604.92,
+   "text": "that preparations start to be made back in London for war."
+  },
+  {
+   "start": 3605.68,
+   "end": 3607.72,
+   "text": "And it's now that you get high ranking officers"
+  },
+  {
+   "start": 3607.72,
+   "end": 3610.36,
+   "text": "in the British Army, many who have known nothing,"
+  },
+  {
+   "start": 3610.36,
+   "end": 3613.96,
+   "text": "all their careers save for a kind of dreary peace."
+  },
+  {
+   "start": 3613.96,
+   "end": 3618.96,
+   "text": "These men are starting for the first time to dream of glory."
+  },
+  {
+   "start": 3619.2,
+   "end": 3622.56,
+   "text": "So one of these people, obviously, is at the Earl of Cardigan,"
+  },
+  {
+   "start": 3622.56,
+   "end": 3625.72,
+   "text": "who's been the great protagonist of today's episode."
+  },
+  {
+   "start": 3625.72,
+   "end": 3629.16,
+   "text": "He's now 57 and, you know,"
+  },
+  {
+   "start": 3629.16,
+   "end": 3630.58,
+   "text": "the Storm clouds of war have gathered,"
+  },
+  {
+   "start": 3630.58,
+   "end": 3633.08,
+   "text": "have broken in the early weeks of 1854."
+  },
+  {
+   "start": 3633.08,
+   "end": 3634.92,
+   "text": "He's drawing all his contacts, isn't he?"
+  },
+  {
+   "start": 3634.92,
+   "end": 3638.24,
+   "text": "Trying to to wangle a post, but he has,"
+  },
+  {
+   "start": 3638.24,
+   "end": 3645.9,
+   "text": "Well, there was another officer who has connections to Cardigan, and he is a much more obvious"
+  },
+  {
+   "start": 3645.9,
+   "end": 3651.8,
+   "text": "candidate to send east, because this is an officer who already has experience in the"
+  },
+  {
+   "start": 3651.8,
+   "end": 3652.8,
+   "text": "Balkans."
+  },
+  {
+   "start": 3652.8,
+   "end": 3657.56,
+   "text": "He's an old hand, and he is George Charles being in the third Earl of Lucan."
+  },
+  {
+   "start": 3657.56,
+   "end": 3659.96,
+   "text": "And Tom, how come he's been to the Balkans?"
+  },
+  {
+   "start": 3659.96,
+   "end": 3664.08,
+   "text": "So he'd gone there in 1828, and he was, he was 1828, and he went there kind of as an"
+  },
+  {
+   "start": 3664.08,
+   "end": 3668.64,
+   "text": "observer, a military observer and served on the staff of a Russian prince who was campaigning"
+  },
+  {
+   "start": 3668.64,
+   "end": 3674.32,
+   "text": "against the Tuck in Bulgaria. And Lukin had been a great success. He was Lord Bingham"
+  },
+  {
+   "start": 3674.32,
+   "end": 3678.56,
+   "text": "at that point. He hadn't yet inherited the title, but we'll call him Lukin. The Russians"
+  },
+  {
+   "start": 3678.56,
+   "end": 3684.08,
+   "text": "thought he was, they were impressed by him. And Lukin does have numerous qualities. So"
+  },
+  {
+   "start": 3684.08,
+   "end": 3690.52,
+   "text": "he's very brave. He's completely indifferent to hardship. And he is madly hardworking."
+  },
+  {
+   "start": 3690.52,
+   "end": 3693.32,
+   "text": "I mean, he just cannot stop working."
+  },
+  {
+   "start": 3693.32,
+   "end": 3695.6,
+   "text": "And so when he leaves Russia,"
+  },
+  {
+   "start": 3695.6,
+   "end": 3699.62,
+   "text": "he's been noted by the Tsar, by Nicholas himself,"
+  },
+  {
+   "start": 3699.62,
+   "end": 3701.16,
+   "text": "and praised by him,"
+  },
+  {
+   "start": 3701.16,
+   "end": 3704.64,
+   "text": "and he's awarded the Order of St. Anna second class,"
+  },
+  {
+   "start": 3704.64,
+   "end": 3707.16,
+   "text": "which I think is a great honor."
+  },
+  {
+   "start": 3707.16,
+   "end": 3709.76,
+   "text": "I mean, you'd accept that."
+  },
+  {
+   "start": 3709.76,
+   "end": 3711.44,
+   "text": "But when he comes back to Britain, his career,"
+  },
+  {
+   "start": 3711.44,
+   "end": 3713.0,
+   "text": "it's a bit of a disappointment."
+  },
+  {
+   "start": 3713.0,
+   "end": 3715.12,
+   "text": "He never really makes the name for himself"
+  },
+  {
+   "start": 3715.12,
+   "end": 3717.08,
+   "text": "that his record in the Balkans suggested"
+  },
+  {
+   "start": 3717.08,
+   "end": 3718.08,
+   "text": "that he should have done."
+  },
+  {
+   "start": 3718.08,
+   "end": 3719.56,
+   "text": "And maybe this is because, like Cardigan,"
+  },
+  {
+   "start": 3719.56,
+   "end": 3725.04,
+   "text": "he's bought his commission. And so there is that kind of snobbery towards men with actual"
+  },
+  {
+   "start": 3725.04,
+   "end": 3732.56,
+   "text": "experience. Like Cardigan, he lavishes insane amounts of money on his regiments. His men"
+  },
+  {
+   "start": 3732.56,
+   "end": 3739.52,
+   "text": "wear uniforms designed by London's most fashionable tailor. And they're nicknamed Bingham's dandies."
+  },
+  {
+   "start": 3739.52,
+   "end": 3744.36,
+   "text": "So there's probably a kind of sartorial rivalry between the two brothers in law, as well as"
+  },
+  {
+   "start": 3744.36,
+   "end": 3747.84,
+   "text": "everything else going on. But we'll come to the rivalry in due course."
+  },
+  {
+   "start": 3747.84,
+   "end": 3752.4,
+   "text": "of temperamental difference, right? The cardigan is a swell. We'll see a plunger."
+  },
+  {
+   "start": 3752.4,
+   "end": 3760.56,
+   "text": "A plunger. Whereas this bloke, Lueckon, is a much more prickly and difficult and it's not a"
+  },
+  {
+   "start": 3760.56,
+   "end": 3764.4,
+   "text": "charmer. Cardigan is a charmer for all his ludicrous eccentricities, whereas this bloke is"
+  },
+  {
+   "start": 3764.4,
+   "end": 3768.48,
+   "text": "not a charmer at all. No, and there's an additional reason which we'll come to in a minute, but"
+  },
+  {
+   "start": 3768.48,
+   "end": 3773.28,
+   "text": "first just on Lueckon's character. So he does have these qualities, but as you said, he is very"
+  },
+  {
+   "start": 3773.28,
+   "end": 3779.68,
+   "text": "prickly and I think he lacks any hint of charm or charisma. He has none of it."
+  },
+  {
+   "start": 3779.68,
+   "end": 3784.36,
+   "text": "People basically don't really like him. So to quote Cecil Woodham Smith, he was"
+  },
+  {
+   "start": 3784.36,
+   "end": 3787.16,
+   "text": "totally unable to distinguish between what was important and what was not."
+  },
+  {
+   "start": 3787.16,
+   "end": 3790.96,
+   "text": "He was perpetually entangled in trifles forever struggling in a web of"
+  },
+  {
+   "start": 3790.96,
+   "end": 3795.76,
+   "text": "trivialities. His temper was irritable and his severity grew. And so no one in his"
+  },
+  {
+   "start": 3795.76,
+   "end": 3799.56,
+   "text": "regiment likes him and nor, as we've been saying, does his brother in law the Earl"
+  },
+  {
+   "start": 3799.56,
+   "end": 3806.2,
+   "text": "of Cardigan and nor does Lucas wife, Cardigan's youngest sister, Anne. And that's sad because"
+  },
+  {
+   "start": 3806.2,
+   "end": 3812.2,
+   "text": "initially it had been a love match. Anne was very famously beautiful, one of the great beauties of"
+  },
+  {
+   "start": 3812.2,
+   "end": 3819.8,
+   "text": "the kingdom. And Lucas young man had, you know, he's kind of handsome in the dark by Ronick Manor."
+  },
+  {
+   "start": 3820.77,
+   "end": 3827.73,
+   "text": "But they fall out very rapidly. And Anne ends up detesting her husband. And she hates everything"
+  },
+  {
+   "start": 3827.73,
+   "end": 3834.21,
+   "text": "about him. She hates the way that he's very harsh, very controlling. He's unbelievably"
+  },
+  {
+   "start": 3834.21,
+   "end": 3842.61,
+   "text": "stingy. And he is a member of the Irish aristocracy. So he has ancestral lands in Mayo. And these"
+  },
+  {
+   "start": 3842.61,
+   "end": 3850.13,
+   "text": "have been carved out by an ancestor back in the age of Elizabeth. And Anne finds her husband's"
+  },
+  {
+   "start": 3850.13,
+   "end": 3855.25,
+   "text": "lands in Mayo kind of very poverty stricken, very backward and worst of all, rightfully"
+  },
+  {
+   "start": 3855.25,
+   "end": 3861.94,
+   "text": "boring, can't stand it, wet, dripping, dull, they want to talk to. And so this generates"
+  },
+  {
+   "start": 3861.94,
+   "end": 3867.58,
+   "text": "this great feud between Luke and Cardigan, who absolutely adores Anne, as he adores"
+  },
+  {
+   "start": 3867.58,
+   "end": 3877.62,
+   "text": "all his sisters, because he is, he's the only brother with seven sisters. And so they have"
+  },
+  {
+   "start": 3877.62,
+   "end": 3882.5,
+   "text": "spoiled him rotten as a child, you know, helps to explain his psychology, perhaps."
+  },
+  {
+   "start": 3882.5,
+   "end": 3889.82,
+   "text": "Yeah, anyway by the 1840s and has given up on living in Mayo. She's returned to to England"
+  },
+  {
+   "start": 3889.98,
+   "end": 3891.98,
+   "text": "Luke and is mostly in Mayo, which is unusual"
+  },
+  {
+   "start": 3892.7,
+   "end": 3895.98,
+   "text": "Most of the the Irish aristocrats, you know, they're absentee"
+  },
+  {
+   "start": 3896.22,
+   "end": 3902.38,
+   "text": "Luke and is I'm typically he feels an immense responsibility towards his holdings and he wants to make them pay"
+  },
+  {
+   "start": 3903.22,
+   "end": 3907.54,
+   "text": "And he wants to do this by modernizing his agricultural holdings"
+  },
+  {
+   "start": 3907.54,
+   "end": 3911.5,
+   "text": "And people may wonder, well, what does this mean in practice?"
+  },
+  {
+   "start": 3911.5,
+   "end": 3917.38,
+   "text": "And what it means in practice is mass evictions and mass clearances."
+  },
+  {
+   "start": 3917.38,
+   "end": 3923.78,
+   "text": "And Luke and being Luke and he carries on doing this, even as the potato famine hits"
+  },
+  {
+   "start": 3923.78,
+   "end": 3928.5,
+   "text": "Ireland, because he feels it's the obvious rational thing to do."
+  },
+  {
+   "start": 3928.5,
+   "end": 3933.46,
+   "text": "And he's not going to be swayed by sentimental concern for people starving to death."
+  },
+  {
+   "start": 3933.46,
+   "end": 3935.98,
+   "text": "That's that's his kind of his approach to things."
+  },
+  {
+   "start": 3935.98,
+   "end": 3943.14,
+   "text": "And in fact, right in the teeth of the potato famine, he intensifies his modernization program."
+  },
+  {
+   "start": 3943.14,
+   "end": 3950.84,
+   "text": "So he evicts over 2,000 people, he demolishes over 300 homes, and he even, I mean, he closes"
+  },
+  {
+   "start": 3950.84,
+   "end": 3957.46,
+   "text": "down the local workhouse, which is the only place that the starving have to go."
+  },
+  {
+   "start": 3957.46,
+   "end": 3959.98,
+   "text": "And even at the time, he gets a lot of criticism for it, doesn't he?"
+  },
+  {
+   "start": 3959.98,
+   "end": 3962.18,
+   "text": "He gets criticism in the House of Lords, for example."
+  },
+  {
+   "start": 3962.18,
+   "end": 3963.18,
+   "text": "Yeah."
+  },
+  {
+   "start": 3963.18,
+   "end": 3967.62,
+   "text": "accused in the House of Lords of having turned out his tenants when there was no food in"
+  },
+  {
+   "start": 3967.62,
+   "end": 3972.18,
+   "text": "the country and no money to buy it. And in Mayo itself, he's called the exterminator."
+  },
+  {
+   "start": 3972.18,
+   "end": 3977.28,
+   "text": "To reiterate, he's not doing it as he would see it out of cruelty. He's doing it as he"
+  },
+  {
+   "start": 3977.28,
+   "end": 3981.68,
+   "text": "sees it because these are backward lands and they need to be modernized. But it's just"
+  },
+  {
+   "start": 3981.68,
+   "end": 3986.0,
+   "text": "he has no, you know, he lacks the heart, he lacks the soul to see what this means in practical"
+  },
+  {
+   "start": 3986.0,
+   "end": 3987.0,
+   "text": "terms."
+  },
+  {
+   "start": 3987.0,
+   "end": 3989.04,
+   "text": "He's not a man of great sensitivity, but it that way."
+  },
+  {
+   "start": 3989.04,
+   "end": 3991.28,
+   "text": "I think he has no theory of mind."
+  },
+  {
+   "start": 3991.28,
+   "end": 3995.84,
+   "text": "He's unable to think himself into the shoes of other people."
+  },
+  {
+   "start": 3995.84,
+   "end": 3997.36,
+   "text": "And of course, the people that he's evicting"
+  },
+  {
+   "start": 3997.36,
+   "end": 3999.16,
+   "text": "may not even have shoes."
+  },
+  {
+   "start": 3999.16,
+   "end": 4002.48,
+   "text": "So it's definitely a character flaw."
+  },
+  {
+   "start": 4002.48,
+   "end": 4005.24,
+   "text": "But I mean, the truth is that the feeling"
+  },
+  {
+   "start": 4005.24,
+   "end": 4006.84,
+   "text": "that he's prepared to do whatever it takes"
+  },
+  {
+   "start": 4006.84,
+   "end": 4011.25,
+   "text": "to get something done is noted by the war office."
+  },
+  {
+   "start": 4011.25,
+   "end": 4013.81,
+   "text": "And so in the early weeks of 1854,"
+  },
+  {
+   "start": 4013.81,
+   "end": 4016.53,
+   "text": "this combines with the fact that he does have experience"
+  },
+  {
+   "start": 4016.53,
+   "end": 4019.01,
+   "text": "of service with the Russians in the Balkans"
+  },
+  {
+   "start": 4019.01,
+   "end": 4022.25,
+   "text": "to, you know, kind of it makes people at the war office think, well,"
+  },
+  {
+   "start": 4022.25,
+   "end": 4024.85,
+   "text": "this may be someone who we can use."
+  },
+  {
+   "start": 4024.85,
+   "end": 4026.49,
+   "text": "And so in early February, 1854,"
+  },
+  {
+   "start": 4026.49,
+   "end": 4027.89,
+   "text": "Lucan writes to Lord Harding."
+  },
+  {
+   "start": 4027.93,
+   "end": 4029.77,
+   "text": "He's the commander in chief of the British army."
+  },
+  {
+   "start": 4029.77,
+   "end": 4033.21,
+   "text": "He's become commander in chief in the wake of the death of Duke of Wellington."
+  },
+  {
+   "start": 4033.37,
+   "end": 4037.49,
+   "text": "And Lucan puts in his application to Harding and he requests"
+  },
+  {
+   "start": 4037.49,
+   "end": 4040.49,
+   "text": "command of a cavalry regiment in the war against Russia."
+  },
+  {
+   "start": 4040.73,
+   "end": 4041.65,
+   "text": "Should it come to that?"
+  },
+  {
+   "start": 4041.69,
+   "end": 4043.37,
+   "text": "Should war be declared against Russia?"
+  },
+  {
+   "start": 4044.05,
+   "end": 4048.09,
+   "text": "And the essence of his CV is, you know, I've commanded this regiment."
+  },
+  {
+   "start": 4048.09,
+   "end": 4053.45,
+   "text": "I have familiarity with the Balkans and I know how the Russian military mind works."
+  },
+  {
+   "start": 4053.45,
+   "end": 4058.47,
+   "text": "His job application is incredibly successful and on the 21st of February,"
+  },
+  {
+   "start": 4058.47,
+   "end": 4063.99,
+   "text": "Lukin is awarded a really splendid command, not of a single cavalry regiment,"
+  },
+  {
+   "start": 4063.99,
+   "end": 4069.51,
+   "text": "but of the entire cavalry division. And one month later, on the 28th of March,"
+  },
+  {
+   "start": 4069.51,
+   "end": 4077.59,
+   "text": "Britain and France declare war on Russia. And this means that Lord Lukin is heading eastwards"
+  },
+  {
+   "start": 4077.59,
+   "end": 4084.79,
+   "text": "Again, he is going to resume his familiarity with the Balkans. He is going to war."
+  },
+  {
+   "start": 4085.51,
+   "end": 4093.99,
+   "text": "So ahead lie the Peninsula of Crimea, the Valley of Death, and the charge of the Library Gate."
+  },
+  {
+   "start": 4093.99,
+   "end": 4098.79,
+   "text": "Of course, Lucan is heading eastwards, but what about Lord Cardigan? Is he heading there too? If"
+  },
+  {
+   "start": 4098.79,
+   "end": 4105.43,
+   "text": "they do end up going to war together, how are they going to get on? And does this bode well or ill"
+  },
+  {
+   "start": 4105.43,
+   "end": 4110.23,
+   "text": "for the performance of the British cavalry as they come up against the Russian guns. Well,"
+  },
+  {
+   "start": 4110.23,
+   "end": 4114.47,
+   "text": "there's only one way to find out. So if you are a member of the Restless History Club,"
+  },
+  {
+   "start": 4114.47,
+   "end": 4118.79,
+   "text": "you can find out right now. You can stop listening to me doing this hard sell and you can plunge"
+  },
+  {
+   "start": 4118.79,
+   "end": 4123.03,
+   "text": "straight back in, you know, what's not to like. If you're not a member of the Restless History"
+  },
+  {
+   "start": 4123.03,
+   "end": 4127.27,
+   "text": "Club and you would, you know, you'd want to rethink your life choices, what you want to do,"
+  },
+  {
+   "start": 4127.27,
+   "end": 4134.15,
+   "text": "you want to join our own crack brigade of swells and plungers and head to therestlesshistory.com,"
+  },
+  {
+   "start": 4134.15,
+   "end": 4139.51,
+   "text": "sign up, you get a whole range of supplementary benefits. It's not quite a uniform. I wouldn't"
+  },
+  {
+   "start": 4139.51,
+   "end": 4145.27,
+   "text": "say you get a nice uniform, but you can get a kind of mental uniform, which is nice. And a key point,"
+  },
+  {
+   "start": 4145.99,
+   "end": 4149.59,
+   "text": "and this is really worth people just stopping for a second and having a long"
+  },
+  {
+   "start": 4150.23,
+   "end": 4157.27,
+   "text": "think. Christmas is coming. And Brest is History Club membership would make an absolutely brilliant"
+  },
+  {
+   "start": 4157.27,
+   "end": 4161.75,
+   "text": "gift for your nearest and dearest. It's not for me to tell you what to do with your money,"
+  },
+  {
+   "start": 4161.75,
+   "end": 4170.99,
+   "text": "But i think you regret it if you don't get club membership for some of your friends and family i produce a column thinks that you're incapable of buying gifts without him holding your hand."
+  },
+  {
+   "start": 4171.05,
+   "end": 4177.23,
+   "text": "So calm really wants me to say that to buy those gifts you have to select the word."
+  },
+  {
+   "start": 4177.59,
+   "end": 4186.35,
+   "text": "Gifts at the rest is history dot com that's not me telling you this this is calm who thinks you're an idiot so on that."
+  },
+  {
+   "start": 4186.35,
+   "end": 4192.55,
+   "text": "festive bombshell. We will see you next time for more of the Charge of the Light Brigade. Goodbye. Bye-bye."
+  },
+  {
+   "start": 4224.74,
+   "end": 4226.98,
+   "text": "Ha ha ha ha ha."
+  },
+  {
+   "start": 4226.98,
+   "end": 4229.78,
+   "text": "From our tradition to yours, Stone Fire."
+  },
+  {
+   "start": 4229.78,
+   "end": 4231.58,
+   "text": "Together we know."
+  },
+  {
+   "start": 4231.58,
+   "end": 4234.82,
+   "text": "Traditional home security only alerts you after a break-in."
+  },
+  {
+   "start": 4234.82,
+   "end": 4236.1,
+   "text": "And that's too late."
+  },
+  {
+   "start": 4236.1,
+   "end": 4237.98,
+   "text": "Simply Safe is changing that."
+  },
+  {
+   "start": 4237.98,
+   "end": 4240.7,
+   "text": "Stop way."
+  },
+  {
+   "start": 4240.7,
+   "end": 4241.98,
+   "text": "We don't just alert."
+  },
+  {
+   "start": 4241.98,
+   "end": 4244.22,
+   "text": "We help stop crime before it starts."
+  },
+  {
+   "start": 4244.22,
+   "end": 4246.22,
+   "text": "Plan starting around $1 a day."
+  },
+  {
+   "start": 4246.22,
+   "end": 4248.86,
+   "text": "Right now, get 70% off your new system"
+  },
+  {
+   "start": 4248.86,
+   "end": 4252.9,
+   "text": "with professional monitoring at simplysafe.com."
+  },
+  {
+   "start": 4252.9,
+   "end": 4256.02,
+   "text": "Simply Safe, ahead of crime in real time."
+  },
+  {
+   "start": 4256.02,
+   "end": 4257.86,
+   "text": "Outdoor deterrence plans start at $49.99 a month."
+  },
+  {
+   "start": 4257.86,
+   "end": 4259.42,
+   "text": "Visit simplysafe.com slash licenses"
+  },
+  {
+   "start": 4259.42,
+   "end": 4262.06,
+   "text": "for alarm license information."
+  },
+  {
+   "start": 4262.06,
+   "end": 4265.5,
+   "text": "Get more from every job with Kubota construction equipment."
+  },
+  {
+   "start": 4265.5,
+   "end": 4269.3,
+   "text": "From SVL compact track loaders to KX compact excavators,"
+  },
+  {
+   "start": 4269.3,
+   "end": 4272.22,
+   "text": "Kubota brings proven performance, smart value,"
+  },
+  {
+   "start": 4272.22,
+   "end": 4274.64,
+   "text": "and job site reliability to the crews who count"
+  },
+  {
+   "start": 4274.64,
+   "end": 4276.66,
+   "text": "on their equipment every day."
+  },
+  {
+   "start": 4276.66,
+   "end": 4279.66,
+   "text": "Built for demanding work and backed by dealer support,"
+  },
+  {
+   "start": 4279.66,
+   "end": 4282.02,
+   "text": "Kubota equipment helps crews stay productive"
+  },
+  {
+   "start": 4282.02,
+   "end": 4286.25,
+   "text": "through long days, tight timelines, and tough conditions."
+  },
+  {
+   "start": 4286.25,
+   "end": 4288.33,
+   "text": "performance that pays you back."
+  },
+  {
+   "start": 4288.33,
+   "end": 4291.49,
+   "text": "Get more from every job with Kubota Construction Equipment."
+  }
+ ],
+ "seconds": 184.6,
+ "file": "the-rest-is-history__721-the-charge-of-the-light-brigade-outbre/take0.mp3",
+ "model": "small"
+}

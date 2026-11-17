@@ -1,0 +1,6414 @@
+{
+ "duration": 3597.71,
+ "language": "en",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 5.28,
+   "text": "Our presenting sponsor today is Anthropic, the team behind Claude."
+  },
+  {
+   "start": 5.28,
+   "end": 8.94,
+   "text": "Every founder on this show started with a hard question."
+  },
+  {
+   "start": 8.94,
+   "end": 12.32,
+   "text": "Not the marketing plan, the 2AM kind."
+  },
+  {
+   "start": 12.32,
+   "end": 14.28,
+   "text": "Is this idea any good?"
+  },
+  {
+   "start": 14.28,
+   "end": 16.0,
+   "text": "Am I the one to build it?"
+  },
+  {
+   "start": 16.0,
+   "end": 18.0,
+   "text": "Should I quit my job?"
+  },
+  {
+   "start": 18.0,
+   "end": 20.36,
+   "text": "Anthropic got built the same way."
+  },
+  {
+   "start": 20.36,
+   "end": 24.8,
+   "text": "A public benefit corporation founded on one hard question."
+  },
+  {
+   "start": 24.8,
+   "end": 28.08,
+   "text": "How do we make sure AI goes well for people?"
+  },
+  {
+   "start": 28.08,
+   "end": 37.08,
+   "text": "So they asked over 100,000 people, their hopes and their fears, and are publishing what they find, even the uncomfortable parts."
+  },
+  {
+   "start": 37.08,
+   "end": 41.58,
+   "text": "Me? I've got my own hard question about AI. Here it is."
+  },
+  {
+   "start": 41.58,
+   "end": 51.08,
+   "text": "If everyone has access to something that can help them write the business plan, build the prototype, analyze the market, maybe even come up with the idea."
+  },
+  {
+   "start": 51.08,
+   "end": 55.58,
+   "text": "What separates the people who actually build something from everyone else?"
+  },
+  {
+   "start": 55.58,
+   "end": 60.86,
+   "text": "I don't have a clean answer yet, so I've been sitting with it with Claude."
+  },
+  {
+   "start": 60.86,
+   "end": 63.22,
+   "text": "There's hope in hard questions."
+  },
+  {
+   "start": 63.22,
+   "end": 68.22,
+   "text": "Ask yours at clod.ai.hibt."
+  },
+  {
+   "start": 68.22,
+   "end": 69.22,
+   "text": "You're busy."
+  },
+  {
+   "start": 69.22,
+   "end": 70.22,
+   "text": "We know that."
+  },
+  {
+   "start": 70.22,
+   "end": 72.02,
+   "text": "So, we'll keep this quick."
+  },
+  {
+   "start": 72.02,
+   "end": 75.62,
+   "text": "Introducing AmEx Corporate, now featuring the corporate cashback card."
+  },
+  {
+   "start": 75.62,
+   "end": 81.74,
+   "text": "For one annual flat fee, get 1.5% cashback on eligible business purchases, plus intelligent"
+  },
+  {
+   "start": 81.74,
+   "end": 86.78,
+   "text": "expense management with the unmatched expertise and backing of American Express, built to"
+  },
+  {
+   "start": 86.78,
+   "end": 94.3,
+   "text": "simplify designed to scale. Get started at go.mx slash mx corporate terms and cap apply."
+  },
+  {
+   "start": 115.87,
+   "end": 119.51,
+   "text": "actually want in a job, and it just sends me rolls that fit?"
+  },
+  {
+   "start": 119.51,
+   "end": 121.31,
+   "text": "I hate it when you're right."
+  },
+  {
+   "start": 121.31,
+   "end": 124.91,
+   "text": "Yes, you were right about Derek and the microbangs."
+  },
+  {
+   "start": 124.91,
+   "end": 125.79,
+   "text": "Fit happens."
+  },
+  {
+   "start": 125.79,
+   "end": 137.45,
+   "text": "Find the right job with Glassdoor Recruiter."
+  },
+  {
+   "start": 137.45,
+   "end": 138.93,
+   "text": "Hello, and welcome to the Advice Line"
+  },
+  {
+   "start": 138.93,
+   "end": 140.09,
+   "text": "on How I Built This Lab."
+  },
+  {
+   "start": 140.09,
+   "end": 140.93,
+   "text": "I'm Guy Ross."
+  },
+  {
+   "start": 140.93,
+   "end": 143.29,
+   "text": "This is the place where we help try to solve"
+  },
+  {
+   "start": 143.29,
+   "end": 144.73,
+   "text": "your business challenges."
+  },
+  {
+   "start": 144.73,
+   "end": 147.49,
+   "text": "Each week, I'm joined by a legendary founder,"
+  },
+  {
+   "start": 147.49,
+   "end": 152.28,
+   "text": "a former guest on the show who will help me try to help you."
+  },
+  {
+   "start": 152.28,
+   "end": 154.0,
+   "text": "Joining me this week is Tope Oatana,"
+  },
+  {
+   "start": 154.0,
+   "end": 156.76,
+   "text": "the founder of the scheduling platform, Calendly."
+  },
+  {
+   "start": 156.76,
+   "end": 158.64,
+   "text": "Toped great to have you back on the show."
+  },
+  {
+   "start": 158.64,
+   "end": 159.72,
+   "text": "Guy, it's great to be here."
+  },
+  {
+   "start": 159.72,
+   "end": 160.96,
+   "text": "Thanks for having me."
+  },
+  {
+   "start": 160.96,
+   "end": 163.76,
+   "text": "So you were first on the show back in 2020"
+  },
+  {
+   "start": 163.76,
+   "end": 164.92,
+   "text": "and you told the story of Calendly."
+  },
+  {
+   "start": 164.92,
+   "end": 167.64,
+   "text": "And I have referred to this story so many times"
+  },
+  {
+   "start": 167.64,
+   "end": 170.12,
+   "text": "because it was basically you started out selling,"
+  },
+  {
+   "start": 170.12,
+   "end": 171.52,
+   "text": "I think alarm systems door to door."
+  },
+  {
+   "start": 171.52,
+   "end": 172.96,
+   "text": "I remember you said, you know,"
+  },
+  {
+   "start": 172.96,
+   "end": 174.4,
+   "text": "basically I'd go to a hundred doors"
+  },
+  {
+   "start": 174.4,
+   "end": 176.44,
+   "text": "and if I had a hit rate of one that was successful"
+  },
+  {
+   "start": 176.44,
+   "end": 178.44,
+   "text": "I'd make a commission on that."
+  },
+  {
+   "start": 178.44,
+   "end": 179.48,
+   "text": "And I love that story."
+  },
+  {
+   "start": 179.48,
+   "end": 181.68,
+   "text": "It's a story of perseverance and persistence"
+  },
+  {
+   "start": 181.68,
+   "end": 183.72,
+   "text": "and also learning how to deal with people"
+  },
+  {
+   "start": 183.72,
+   "end": 186.02,
+   "text": "saying no and slamming the door in your face."
+  },
+  {
+   "start": 186.02,
+   "end": 189.52,
+   "text": "And that eventually led you to try out different e-commerce"
+  },
+  {
+   "start": 189.52,
+   "end": 191.32,
+   "text": "businesses and startups that fizzled."
+  },
+  {
+   "start": 191.32,
+   "end": 196.02,
+   "text": "But you came upon this idea to launch what became known as"
+  },
+  {
+   "start": 196.02,
+   "end": 199.42,
+   "text": "Calendly, a scheduling platform that now has, I think,"
+  },
+  {
+   "start": 199.42,
+   "end": 201.42,
+   "text": "over 20 million users worldwide."
+  },
+  {
+   "start": 201.42,
+   "end": 203.82,
+   "text": "It was, you know, multi-billion dollar valuation."
+  },
+  {
+   "start": 203.82,
+   "end": 205.72,
+   "text": "An amazing story."
+  },
+  {
+   "start": 205.72,
+   "end": 209.22,
+   "text": "And of course, you grew up, you're an immigrant to America."
+  },
+  {
+   "start": 209.22,
+   "end": 213.22,
+   "text": "You only came to the U.S. when you were 12 or 13 years old,"
+  },
+  {
+   "start": 213.22,
+   "end": 214.04,
+   "text": "I think, right?"
+  },
+  {
+   "start": 214.04,
+   "end": 214.88,
+   "text": "15."
+  },
+  {
+   "start": 214.88,
+   "end": 216.22,
+   "text": "15, yeah."
+  },
+  {
+   "start": 216.22,
+   "end": 218.5,
+   "text": "Before we get into questions for you,"
+  },
+  {
+   "start": 218.5,
+   "end": 220.92,
+   "text": "Tope, when your episode aired,"
+  },
+  {
+   "start": 220.92,
+   "end": 222.42,
+   "text": "and I don't know if you know this,"
+  },
+  {
+   "start": 222.42,
+   "end": 227.22,
+   "text": "but I got mountains of comments on social media,"
+  },
+  {
+   "start": 227.22,
+   "end": 229.14,
+   "text": "not only on how the story was great,"
+  },
+  {
+   "start": 229.14,
+   "end": 230.58,
+   "text": "but do you know what the number one comment"
+  },
+  {
+   "start": 230.58,
+   "end": 232.1,
+   "text": "I got from people was?"
+  },
+  {
+   "start": 232.1,
+   "end": 232.94,
+   "text": "No, I do not."
+  },
+  {
+   "start": 232.94,
+   "end": 235.26,
+   "text": "It was Nigerians writing and saying,"
+  },
+  {
+   "start": 235.26,
+   "end": 236.66,
+   "text": "why are you calling him Tope?"
+  },
+  {
+   "start": 236.66,
+   "end": 238.98,
+   "text": "That is a mispronunciation."
+  },
+  {
+   "start": 238.98,
+   "end": 240.7,
+   "text": "His name is not Tope."
+  },
+  {
+   "start": 240.7,
+   "end": 243.66,
+   "text": "Can you clarify this for everybody, please?"
+  },
+  {
+   "start": 243.66,
+   "end": 246.18,
+   "text": "You know, I'm a fan of efficiency and productivity."
+  },
+  {
+   "start": 246.18,
+   "end": 247.02,
+   "text": "They are right."
+  },
+  {
+   "start": 247.02,
+   "end": 249.06,
+   "text": "Tope is not the proper Nigerian pronunciation,"
+  },
+  {
+   "start": 249.06,
+   "end": 250.66,
+   "text": "but you know, I do live in America"
+  },
+  {
+   "start": 250.66,
+   "end": 253.42,
+   "text": "and most people do not speak Yoruba, my native language."
+  },
+  {
+   "start": 253.42,
+   "end": 256.3,
+   "text": "And so I have anglicized the pronunciation of my name"
+  },
+  {
+   "start": 256.3,
+   "end": 258.74,
+   "text": "for efficiency's sake, but I'm a chill guy."
+  },
+  {
+   "start": 258.74,
+   "end": 260.94,
+   "text": "If I know you're talking to me, I'll respond."
+  },
+  {
+   "start": 260.94,
+   "end": 263.9,
+   "text": "So if a Nigerian American or Nigerian meets you,"
+  },
+  {
+   "start": 263.9,
+   "end": 266.18,
+   "text": "they might call you Tope, or not Tope."
+  },
+  {
+   "start": 266.18,
+   "end": 267.58,
+   "text": "They might indeed, yes."
+  },
+  {
+   "start": 267.58,
+   "end": 269.26,
+   "text": "Okay, I got so much grief."
+  },
+  {
+   "start": 269.26,
+   "end": 272.58,
+   "text": "People were saying, this rose does not pronounce a name."
+  },
+  {
+   "start": 272.58,
+   "end": 273.78,
+   "text": "And I said, that's his name."
+  },
+  {
+   "start": 273.78,
+   "end": 274.78,
+   "text": "That's what he told us."
+  },
+  {
+   "start": 274.78,
+   "end": 276.18,
+   "text": "We always ask for a pronunciation."
+  },
+  {
+   "start": 276.18,
+   "end": 277.42,
+   "text": "So thank you for clarifying."
+  },
+  {
+   "start": 277.42,
+   "end": 278.26,
+   "text": "I appreciate it."
+  },
+  {
+   "start": 278.26,
+   "end": 280.08,
+   "text": "Super funny."
+  },
+  {
+   "start": 280.08,
+   "end": 282.68,
+   "text": "Anyway, before we dive into our callers,"
+  },
+  {
+   "start": 282.68,
+   "end": 284.48,
+   "text": "just want to kind of get an update on your life."
+  },
+  {
+   "start": 284.48,
+   "end": 287.2,
+   "text": "When we last met you, you had not yet"
+  },
+  {
+   "start": 287.2,
+   "end": 290.56,
+   "text": "done that significant raise that brought the valuation of Calendly"
+  },
+  {
+   "start": 290.56,
+   "end": 292.08,
+   "text": "up to several billion dollars."
+  },
+  {
+   "start": 292.08,
+   "end": 295.52,
+   "text": "And you're still the CEO of Calendly."
+  },
+  {
+   "start": 295.52,
+   "end": 298.2,
+   "text": "Tell me a little bit about what's going on in your life"
+  },
+  {
+   "start": 298.2,
+   "end": 299.04,
+   "text": "in your world."
+  },
+  {
+   "start": 299.04,
+   "end": 302.76,
+   "text": "Yes, you know, almost nothing is the same."
+  },
+  {
+   "start": 302.76,
+   "end": 304.64,
+   "text": "Literally almost nothing is the same."
+  },
+  {
+   "start": 304.64,
+   "end": 307.96,
+   "text": "So starting with the personal side, at the time,"
+  },
+  {
+   "start": 307.96,
+   "end": 309.88,
+   "text": "my then-girlfriend is now my wife"
+  },
+  {
+   "start": 309.88,
+   "end": 312.44,
+   "text": "and I'm blessed with two beautiful kids"
+  },
+  {
+   "start": 312.44,
+   "end": 314.12,
+   "text": "that we love and adore."
+  },
+  {
+   "start": 314.12,
+   "end": 317.84,
+   "text": "That's been a massive life-changing event."
+  },
+  {
+   "start": 317.84,
+   "end": 319.28,
+   "text": "And then on the business side,"
+  },
+  {
+   "start": 319.28,
+   "end": 321.72,
+   "text": "almost nothing is the same in tech, right?"
+  },
+  {
+   "start": 321.72,
+   "end": 324.52,
+   "text": "And that disrupting event being AI."
+  },
+  {
+   "start": 324.52,
+   "end": 326.48,
+   "text": "And so in just last month actually,"
+  },
+  {
+   "start": 326.48,
+   "end": 328.88,
+   "text": "we announced a major launch"
+  },
+  {
+   "start": 328.88,
+   "end": 332.0,
+   "text": "and a repositioning of Cali, not just as a scheduling platform,"
+  },
+  {
+   "start": 332.0,
+   "end": 334.16,
+   "text": "but as a as a meeting assistant platform."
+  },
+  {
+   "start": 334.16,
+   "end": 336.12,
+   "text": "And we're so, so excited about, you know,"
+  },
+  {
+   "start": 336.12,
+   "end": 340.16,
+   "text": "so we popularized this idea of online scheduling, right?"
+  },
+  {
+   "start": 340.16,
+   "end": 342.48,
+   "text": "That is still a huge part of the business"
+  },
+  {
+   "start": 342.48,
+   "end": 344.6,
+   "text": "and will be for a very, very long time."
+  },
+  {
+   "start": 344.6,
+   "end": 346.24,
+   "text": "It served a great purpose."
+  },
+  {
+   "start": 346.24,
+   "end": 349.48,
+   "text": "But what we've added on top of that is an AI assistant"
+  },
+  {
+   "start": 349.48,
+   "end": 351.04,
+   "text": "that we are calling Cali."
+  },
+  {
+   "start": 351.04,
+   "end": 352.64,
+   "text": "Cali has a lot of different skills,"
+  },
+  {
+   "start": 352.64,
+   "end": 354.56,
+   "text": "but one of the skills that Cali has"
+  },
+  {
+   "start": 354.56,
+   "end": 358.36,
+   "text": "is that it can be your, your scheduling assistant, right?"
+  },
+  {
+   "start": 358.36,
+   "end": 361.06,
+   "text": "So, guy, you send me an email, you say, hey, Toblet's Meets,"
+  },
+  {
+   "start": 361.06,
+   "end": 362.64,
+   "text": "let's grab coffee."
+  },
+  {
+   "start": 362.64,
+   "end": 365.68,
+   "text": "I can introduce Kali to that email thread."
+  },
+  {
+   "start": 365.68,
+   "end": 369.52,
+   "text": "And Kali can respond like a human being with my availability."
+  },
+  {
+   "start": 369.52,
+   "end": 371.68,
+   "text": "And just like a human assistant, it"
+  },
+  {
+   "start": 371.68,
+   "end": 375.24,
+   "text": "is really privy to your preferences,"
+  },
+  {
+   "start": 375.24,
+   "end": 378.4,
+   "text": "has context on who you're meeting with and what availability"
+  },
+  {
+   "start": 378.4,
+   "end": 379.56,
+   "text": "you might want to offer them."
+  },
+  {
+   "start": 379.56,
+   "end": 381.08,
+   "text": "And even the preferences around that."
+  },
+  {
+   "start": 381.08,
+   "end": 384.6,
+   "text": "So while the legacy and the classic currently experience"
+  },
+  {
+   "start": 384.6,
+   "end": 388.08,
+   "text": "still remains, we are augmenting it with this AI system that's"
+  },
+  {
+   "start": 388.08,
+   "end": 390.7,
+   "text": "very intelligent and flexible like a human being."
+  },
+  {
+   "start": 390.7,
+   "end": 391.54,
+   "text": "That's cool."
+  },
+  {
+   "start": 391.54,
+   "end": 392.38,
+   "text": "That's really cool."
+  },
+  {
+   "start": 392.38,
+   "end": 394.3,
+   "text": "You know, Tope, I'm sure you get a version of this question"
+  },
+  {
+   "start": 394.3,
+   "end": 395.24,
+   "text": "and we get it a lot."
+  },
+  {
+   "start": 395.24,
+   "end": 397.38,
+   "text": "And mainly around building products,"
+  },
+  {
+   "start": 397.38,
+   "end": 399.38,
+   "text": "you know, not necessarily software,"
+  },
+  {
+   "start": 399.38,
+   "end": 401.16,
+   "text": "but a lot of founders will say,"
+  },
+  {
+   "start": 401.16,
+   "end": 403.3,
+   "text": "I don't have access to easy money or to any money."
+  },
+  {
+   "start": 403.3,
+   "end": 405.1,
+   "text": "I don't know how to do this thing."
+  },
+  {
+   "start": 405.1,
+   "end": 406.22,
+   "text": "I don't know where to go."
+  },
+  {
+   "start": 406.22,
+   "end": 407.22,
+   "text": "And of course, you know,"
+  },
+  {
+   "start": 407.22,
+   "end": 409.24,
+   "text": "they're different pieces of advice you can give somebody."
+  },
+  {
+   "start": 409.24,
+   "end": 410.42,
+   "text": "In your case, I mean,"
+  },
+  {
+   "start": 410.42,
+   "end": 413.38,
+   "text": "you really finance this business for many years"
+  },
+  {
+   "start": 413.38,
+   "end": 417.78,
+   "text": "on savings you had from like being an alarm system salesman."
+  },
+  {
+   "start": 417.78,
+   "end": 419.74,
+   "text": "I think you like emptied your 401k."
+  },
+  {
+   "start": 419.74,
+   "end": 423.32,
+   "text": "You worked with a developer in Ukraine,"
+  },
+  {
+   "start": 423.32,
+   "end": 425.16,
+   "text": "I think to save money for some time."
+  },
+  {
+   "start": 425.16,
+   "end": 429.0,
+   "text": "I mean, it was, you got Calendly to a certain level,"
+  },
+  {
+   "start": 429.0,
+   "end": 431.54,
+   "text": "like with really not a whole lot of money."
+  },
+  {
+   "start": 431.54,
+   "end": 433.8,
+   "text": "And so when people say to you,"
+  },
+  {
+   "start": 433.8,
+   "end": 435.1,
+   "text": "these kinds of things can be done"
+  },
+  {
+   "start": 435.1,
+   "end": 437.56,
+   "text": "without raising millions and millions of dollars,"
+  },
+  {
+   "start": 437.56,
+   "end": 439.4,
+   "text": "do you think that's true or do you think"
+  },
+  {
+   "start": 439.4,
+   "end": 441.72,
+   "text": "the way you did it is still applicable?"
+  },
+  {
+   "start": 441.72,
+   "end": 443.5,
+   "text": "It can still be done that way."
+  },
+  {
+   "start": 443.5,
+   "end": 447.24,
+   "text": "Yeah, so I think the punchline is I think it is possible."
+  },
+  {
+   "start": 447.24,
+   "end": 448.4,
+   "text": "in certain categories."
+  },
+  {
+   "start": 448.4,
+   "end": 451.2,
+   "text": "If you're looking to build a frontier lab,"
+  },
+  {
+   "start": 451.2,
+   "end": 453.16,
+   "text": "you're gonna need billions of dollars, right?"
+  },
+  {
+   "start": 453.16,
+   "end": 455.04,
+   "text": "But if you're looking to build application software,"
+  },
+  {
+   "start": 455.04,
+   "end": 458.8,
+   "text": "I would actually argue that the barrier to building software"
+  },
+  {
+   "start": 458.8,
+   "end": 461.6,
+   "text": "and building technology has never been lower because of AI."
+  },
+  {
+   "start": 461.6,
+   "end": 466.0,
+   "text": "You look at tools like lovable, replete, et cetera, et cetera."
+  },
+  {
+   "start": 466.0,
+   "end": 468.52,
+   "text": "Anybody with who can write,"
+  },
+  {
+   "start": 469.48,
+   "end": 471.08,
+   "text": "you know, like can you produce words?"
+  },
+  {
+   "start": 471.08,
+   "end": 473.4,
+   "text": "Can you articulate what your requirements are?"
+  },
+  {
+   "start": 473.4,
+   "end": 476.72,
+   "text": "They can pick any one of these tools and create a product."
+  },
+  {
+   "start": 476.72,
+   "end": 479.68,
+   "text": "Is it going to be the product that's skills to millions of users on day one?"
+  },
+  {
+   "start": 479.68,
+   "end": 484.16,
+   "text": "No, it's not going to be you, but you can get your first version out there without a lot of money."
+  },
+  {
+   "start": 484.16,
+   "end": 488.88,
+   "text": "So, you know, the most critical part of building a launching a product is getting"
+  },
+  {
+   "start": 488.88,
+   "end": 494.16,
+   "text": "to product market fit, creating something that is solving a real problem for people."
+  },
+  {
+   "start": 494.16,
+   "end": 499.28,
+   "text": "And I think once you have that validation, the ability to get capital to scale it and recruit"
+  },
+  {
+   "start": 499.28,
+   "end": 505.92,
+   "text": "people exists. Yeah. How do you think about protecting your business, staying ahead of"
+  },
+  {
+   "start": 505.92,
+   "end": 510.16,
+   "text": "of competition and maintaining momentum."
+  },
+  {
+   "start": 510.16,
+   "end": 512.16,
+   "text": "As you grow and as you get bigger"
+  },
+  {
+   "start": 512.16,
+   "end": 514.12,
+   "text": "and the expenses become bigger"
+  },
+  {
+   "start": 514.12,
+   "end": 517.56,
+   "text": "and the competitors become more fiercer."
+  },
+  {
+   "start": 517.56,
+   "end": 520.6,
+   "text": "I think that's one of the things people don't talk enough"
+  },
+  {
+   "start": 520.6,
+   "end": 523.88,
+   "text": "about business is actually the longer you're in business,"
+  },
+  {
+   "start": 523.88,
+   "end": 525.2,
+   "text": "it actually gets harder."
+  },
+  {
+   "start": 525.2,
+   "end": 527.12,
+   "text": "And it gets harder because when you start,"
+  },
+  {
+   "start": 527.12,
+   "end": 528.48,
+   "text": "you're the challenger, right?"
+  },
+  {
+   "start": 528.48,
+   "end": 532.48,
+   "text": "And your only goal is to add it more and more revenue."
+  },
+  {
+   "start": 532.48,
+   "end": 535.32,
+   "text": "There's more to gain than to protect."
+  },
+  {
+   "start": 535.32,
+   "end": 540.16,
+   "text": "And I think we're at a moment in 2026 where the intensity of competition in tech has never"
+  },
+  {
+   "start": 540.16,
+   "end": 541.4,
+   "text": "been greater."
+  },
+  {
+   "start": 541.4,
+   "end": 546.44,
+   "text": "And so those are the reasons why I've, you know, last time we met, my title was just"
+  },
+  {
+   "start": 546.44,
+   "end": 547.44,
+   "text": "CEO."
+  },
+  {
+   "start": 547.44,
+   "end": 551.84,
+   "text": "Fast forward to now my title was CEO and CPO, Chief Product Officer."
+  },
+  {
+   "start": 551.84,
+   "end": 554.72,
+   "text": "Because innovation is the key to staying ahead in 2026."
+  },
+  {
+   "start": 554.72,
+   "end": 557.04,
+   "text": "It's a very, very disruptive time."
+  },
+  {
+   "start": 557.04,
+   "end": 560.76,
+   "text": "And you know, I think that the founders have a little bit of a, maybe a little bit of a"
+  },
+  {
+   "start": 560.76,
+   "end": 564.88,
+   "text": "capital within the organization that they can leverage to take bigger bets and move"
+  },
+  {
+   "start": 564.88,
+   "end": 569.76,
+   "text": "a lot faster and break through some of the bureaucracy. I hate to use that word, you"
+  },
+  {
+   "start": 569.76,
+   "end": 573.64,
+   "text": "know, we're a small company. But even then, you know, there are elements of bureaucracy"
+  },
+  {
+   "start": 573.64,
+   "end": 575.56,
+   "text": "in any time you get people together."
+  },
+  {
+   "start": 575.56,
+   "end": 579.84,
+   "text": "Yeah. All right. Tope, are you ready to take our first call?"
+  },
+  {
+   "start": 579.84,
+   "end": 580.84,
+   "text": "Let's do it."
+  },
+  {
+   "start": 580.84,
+   "end": 584.56,
+   "text": "Okay. Welcome to the advice line you are on with Tope Ootana, the founder of Calendly."
+  },
+  {
+   "start": 584.56,
+   "end": 588.16,
+   "text": "Please tell us your name, where you're calling from in just one brief line about your business,"
+  },
+  {
+   "start": 588.16,
+   "end": 589.16,
+   "text": "please."
+  },
+  {
+   "start": 589.16,
+   "end": 592.2,
+   "text": "Thank you, guys. Yeah. Great to be here. My name's Dom. I'm calling from London in the"
+  },
+  {
+   "start": 592.2,
+   "end": 598.06,
+   "text": "I'm the co-founder of a business called New Lane and we make a patented safety certified"
+  },
+  {
+   "start": 598.06,
+   "end": 603.28,
+   "text": "folding helmet for the growing number of city cyclists all over the world."
+  },
+  {
+   "start": 603.28,
+   "end": 604.28,
+   "text": "Welcome to the show."
+  },
+  {
+   "start": 604.28,
+   "end": 605.52,
+   "text": "Thank you for calling in New Lane."
+  },
+  {
+   "start": 605.52,
+   "end": 610.8,
+   "text": "It's a foldable bike helmet, which is a great idea because you could just slip it in your"
+  },
+  {
+   "start": 610.8,
+   "end": 611.8,
+   "text": "bag, right?"
+  },
+  {
+   "start": 611.8,
+   "end": 615.52,
+   "text": "And I think probably there are versions of this out there, but what tell me a little"
+  },
+  {
+   "start": 615.52,
+   "end": 617.84,
+   "text": "bit about what is the design?"
+  },
+  {
+   "start": 617.84,
+   "end": 618.84,
+   "text": "How does it work?"
+  },
+  {
+   "start": 618.84,
+   "end": 623.64,
+   "text": "I know this is an audio show, but basically it's a clamp at the back."
+  },
+  {
+   "start": 623.64,
+   "end": 627.0,
+   "text": "You raise the crown, you turn over 180 degrees and you fold it and there you have a bike"
+  },
+  {
+   "start": 627.0,
+   "end": 628.0,
+   "text": "helmet."
+  },
+  {
+   "start": 628.0,
+   "end": 633.68,
+   "text": "Oh, so the crown folds back over into the helmet, so it's thinner."
+  },
+  {
+   "start": 633.68,
+   "end": 634.68,
+   "text": "It's like a Frisbee."
+  },
+  {
+   "start": 634.68,
+   "end": 635.68,
+   "text": "It's like a Frisbee."
+  },
+  {
+   "start": 635.68,
+   "end": 637.64,
+   "text": "It goes from being a helmet to being a Frisbee."
+  },
+  {
+   "start": 637.64,
+   "end": 641.48,
+   "text": "And absolutely as you said, the idea is that much is the same way on a cloudy day you might"
+  },
+  {
+   "start": 641.48,
+   "end": 644.68,
+   "text": "put a folding umbrella into your bag in case it rains."
+  },
+  {
+   "start": 644.68,
+   "end": 648.2,
+   "text": "You have a folding bike helmet in there in case you jump onto your own bike."
+  },
+  {
+   "start": 648.2,
+   "end": 652.92,
+   "text": "actually, if you jump onto one of the numerous hire bike schemes, that's really what we designed it for."
+  },
+  {
+   "start": 652.92,
+   "end": 655.56,
+   "text": "That's cool. And are you the designer?"
+  },
+  {
+   "start": 655.56,
+   "end": 660.36,
+   "text": "Well, I'm the chief product officer, but we've used professional designers because my background"
+  },
+  {
+   "start": 660.36,
+   "end": 663.96,
+   "text": "wasn't in making things. I was a journalist for myself back in the day for the BBC."
+  },
+  {
+   "start": 664.92,
+   "end": 668.68,
+   "text": "Oh, well, 12 years worked as a sports broadcaster and then moved into nonprofits."
+  },
+  {
+   "start": 669.24,
+   "end": 674.28,
+   "text": "And then my co-founder nearly got knocked off a hire bike in central London, didn't have a helmet"
+  },
+  {
+   "start": 674.28,
+   "end": 678.8,
+   "text": "on his head. He was meeting me and I had my rucksack on the back with my helmet hanging"
+  },
+  {
+   "start": 678.8,
+   "end": 683.0,
+   "text": "off the back and he said, can we create a product that will solve both my problem and"
+  },
+  {
+   "start": 683.0,
+   "end": 690.0,
+   "text": "his problem. So that was 2018. It took us six years to refine the design and pass the safety"
+  },
+  {
+   "start": 690.0,
+   "end": 695.0,
+   "text": "standards before we started selling it. So we had six years of, well, it's been persistence."
+  },
+  {
+   "start": 695.0,
+   "end": 696.6,
+   "text": "Yeah, it's been great."
+  },
+  {
+   "start": 696.6,
+   "end": 700.0,
+   "text": "And how, tell me a little bit about how sales are going so far."
+  },
+  {
+   "start": 700.0,
+   "end": 703.8,
+   "text": "So we launched the product into the market in 24, almost exactly two years ago."
+  },
+  {
+   "start": 703.8,
+   "end": 711.48,
+   "text": "We did about $650,000 in year one revenue, we're approaching $1 million in revenue of"
+  },
+  {
+   "start": 711.48,
+   "end": 712.64,
+   "text": "this year."
+  },
+  {
+   "start": 712.64,
+   "end": 715.2,
+   "text": "So we're getting somewhere."
+  },
+  {
+   "start": 715.2,
+   "end": 717.76,
+   "text": "The honest truth is profitability is very challenging."
+  },
+  {
+   "start": 717.76,
+   "end": 719.88,
+   "text": "And we make it here in the UK, which is unusual."
+  },
+  {
+   "start": 719.88,
+   "end": 721.76,
+   "text": "Most of these kinds of products get made in the Far East."
+  },
+  {
+   "start": 721.76,
+   "end": 725.4,
+   "text": "So we're making it here, which you could argue is we're making it difficult for ourselves,"
+  },
+  {
+   "start": 725.4,
+   "end": 726.68,
+   "text": "but we want to have line of sight."
+  },
+  {
+   "start": 726.68,
+   "end": 729.04,
+   "text": "We want to control the quality of it."
+  },
+  {
+   "start": 729.04,
+   "end": 733.28,
+   "text": "Is most of your, most of your sales are directed to consumer or through bike shops?"
+  },
+  {
+   "start": 733.28,
+   "end": 734.6,
+   "text": "Most of them are directed to consumer."
+  },
+  {
+   "start": 734.6,
+   "end": 739.24,
+   "text": "We have a pretty good Shopify site which we use and we go through social media advertising."
+  },
+  {
+   "start": 739.24,
+   "end": 745.42,
+   "text": "We are about to sign a distribution deal with a pretty significant UK and European distributor."
+  },
+  {
+   "start": 745.42,
+   "end": 749.96,
+   "text": "So truth be told, this is really why I want to speak to you guys is that we've got to"
+  },
+  {
+   "start": 749.96,
+   "end": 754.6,
+   "text": "a really, really strong inflection point where we're in a really good position."
+  },
+  {
+   "start": 754.6,
+   "end": 759.96,
+   "text": "But scale and growth is challenging because paid media is really expensive and becoming"
+  },
+  {
+   "start": 759.96,
+   "end": 763.04,
+   "text": "more so, it seems to me, for whatever reason, all sorts of reasons."
+  },
+  {
+   "start": 763.04,
+   "end": 766.32,
+   "text": "And distribution is challenging because of the margins you have to give away to the distribution"
+  },
+  {
+   "start": 766.32,
+   "end": 768.04,
+   "text": "network and to the retailers."
+  },
+  {
+   "start": 768.04,
+   "end": 772.68,
+   "text": "So we're trying to work out how we scale as we try to become more profitable and try"
+  },
+  {
+   "start": 772.68,
+   "end": 773.68,
+   "text": "to grow."
+  },
+  {
+   "start": 773.68,
+   "end": 774.68,
+   "text": "And it's a really tough challenge."
+  },
+  {
+   "start": 774.68,
+   "end": 777.0,
+   "text": "All right, Dom, I want to bring in Tope here."
+  },
+  {
+   "start": 777.0,
+   "end": 779.4,
+   "text": "Tope Oatana, please meet Dom."
+  },
+  {
+   "start": 779.4,
+   "end": 781.64,
+   "text": "Thoughts, questions, ideas for Dom."
+  },
+  {
+   "start": 781.64,
+   "end": 784.92,
+   "text": "Dom, nice to meet you and congrats on building a great product."
+  },
+  {
+   "start": 784.92,
+   "end": 785.42,
+   "text": "Thank you."
+  },
+  {
+   "start": 785.42,
+   "end": 786.86,
+   "text": "Just a few questions for you."
+  },
+  {
+   "start": 786.86,
+   "end": 789.56,
+   "text": "So who are your customers?"
+  },
+  {
+   "start": 789.56,
+   "end": 791.56,
+   "text": "Like, who's buying the product?"
+  },
+  {
+   "start": 791.56,
+   "end": 796.68,
+   "text": "And you mentioned that the primary channels are digital and direct to consumer,"
+  },
+  {
+   "start": 796.68,
+   "end": 798.32,
+   "text": "but can you give us a sense of margins?"
+  },
+  {
+   "start": 798.32,
+   "end": 805.56,
+   "text": "Because that seems to be one of the constraints you have in terms of being able to scale your customer acquisition methods."
+  },
+  {
+   "start": 805.56,
+   "end": 811.8,
+   "text": "So customers, essentially city riders who either commute into London from outside of London"
+  },
+  {
+   "start": 811.8,
+   "end": 816.04,
+   "text": "moment, predominantly our market is London because London is huge and cycling is really"
+  },
+  {
+   "start": 816.04,
+   "end": 820.44,
+   "text": "kicked off over here in the last three, five years. Model line bikes and regular bikes,"
+  },
+  {
+   "start": 820.44,
+   "end": 824.68,
+   "text": "they're all here and it's gone. So we're talking about Londoners, we're talking about people who use"
+  },
+  {
+   "start": 824.68,
+   "end": 829.64,
+   "text": "bikes to go from A to B rather than sports cyclists. We're talking about transport cyclists or the"
+  },
+  {
+   "start": 829.64,
+   "end": 834.6,
+   "text": "functional cyclists. And the demographic of those people is pretty broad, to be honest. We, you"
+  },
+  {
+   "start": 834.6,
+   "end": 836.6,
+   "text": "men, women, young and old."
+  },
+  {
+   "start": 836.6,
+   "end": 841.16,
+   "text": "Margins, well, I mean, you know, the gross margins are pretty healthy."
+  },
+  {
+   "start": 841.16,
+   "end": 847.52,
+   "text": "So, you know, we sell it for £100 and we have an upgraded version, which we sell for"
+  },
+  {
+   "start": 847.52,
+   "end": 848.52,
+   "text": "more."
+  },
+  {
+   "start": 848.52,
+   "end": 852.88,
+   "text": "But when, you know, you pay a distributor, somewhere near, you know, we pay a retailer"
+  },
+  {
+   "start": 852.88,
+   "end": 857.6,
+   "text": "40% and we pay a distributor somewhere near 35, 40% of what's left and then where we have"
+  },
+  {
+   "start": 857.6,
+   "end": 859.44,
+   "text": "to see what we can make out of that."
+  },
+  {
+   "start": 859.44,
+   "end": 864.08,
+   "text": "But margins, we can make them better by increasing the price or trying to drive our prices down,"
+  },
+  {
+   "start": 864.08,
+   "end": 865.08,
+   "text": "But that's challenging."
+  },
+  {
+   "start": 865.08,
+   "end": 867.24,
+   "text": "So I'm looking at this."
+  },
+  {
+   "start": 867.24,
+   "end": 870.32,
+   "text": "First of all, your prices in at least $1, I'm sure it's the same amount are great."
+  },
+  {
+   "start": 870.32,
+   "end": 871.88,
+   "text": "I mean, I'm a cyclist."
+  },
+  {
+   "start": 871.88,
+   "end": 872.88,
+   "text": "I've got a bunch of helmets."
+  },
+  {
+   "start": 872.88,
+   "end": 877.28,
+   "text": "You've got a MIPS helmet, which is an extra layer of safety for $176."
+  },
+  {
+   "start": 877.28,
+   "end": 879.6,
+   "text": "We're the only folding helmet to have that on the planet."
+  },
+  {
+   "start": 879.6,
+   "end": 883.36,
+   "text": "I mean, that's a really good price for a high quality helmet."
+  },
+  {
+   "start": 883.36,
+   "end": 888.0,
+   "text": "The thing that is kind of amazing to me that you mentioned and that is not clear, at least"
+  },
+  {
+   "start": 888.0,
+   "end": 891.24,
+   "text": "on your website, this is a UK made product."
+  },
+  {
+   "start": 891.24,
+   "end": 896.78,
+   "text": "And I feel like if that's a selling point, you should push that or you should make it"
+  },
+  {
+   "start": 896.78,
+   "end": 899.16,
+   "text": "abroad and you should cut your costs."
+  },
+  {
+   "start": 899.16,
+   "end": 900.16,
+   "text": "Sure."
+  },
+  {
+   "start": 900.16,
+   "end": 901.16,
+   "text": "Yeah."
+  },
+  {
+   "start": 901.16,
+   "end": 902.16,
+   "text": "We thought about that."
+  },
+  {
+   "start": 902.16,
+   "end": 905.04,
+   "text": "We have discussed taking it to the far east."
+  },
+  {
+   "start": 905.04,
+   "end": 908.24,
+   "text": "The problem is we've gone so far down the line, we have a great manufacturer here."
+  },
+  {
+   "start": 908.24,
+   "end": 911.12,
+   "text": "The cost of moving all our tools is pretty heavy."
+  },
+  {
+   "start": 911.12,
+   "end": 916.16,
+   "text": "And with the world being what it is, the geopolitical landscape is also slightly challenging."
+  },
+  {
+   "start": 916.16,
+   "end": 919.08,
+   "text": "Well maybe you should lean into the made in the UK for now."
+  },
+  {
+   "start": 919.08,
+   "end": 921.48,
+   "text": "I feel like that's worth a lot."
+  },
+  {
+   "start": 921.48,
+   "end": 924.08,
+   "text": "I mean, that's a premium right there."
+  },
+  {
+   "start": 924.08,
+   "end": 928.28,
+   "text": "And then you're paying for really high quality product,"
+  },
+  {
+   "start": 928.28,
+   "end": 931.52,
+   "text": "you know, probably very skilled manufacturers."
+  },
+  {
+   "start": 931.52,
+   "end": 932.72,
+   "text": "So that's one thing."
+  },
+  {
+   "start": 932.72,
+   "end": 934.0,
+   "text": "Topa, I have a question for you"
+  },
+  {
+   "start": 934.0,
+   "end": 936.08,
+   "text": "because you came up with an idea"
+  },
+  {
+   "start": 936.08,
+   "end": 938.4,
+   "text": "for people who you knew who you were going after."
+  },
+  {
+   "start": 938.4,
+   "end": 940.2,
+   "text": "It was like people who just didn't have the money"
+  },
+  {
+   "start": 940.2,
+   "end": 942.96,
+   "text": "to have a full-time assistant or even a part-time assistant."
+  },
+  {
+   "start": 942.96,
+   "end": 946.92,
+   "text": "To me, this seems like a product really made for commuters,"
+  },
+  {
+   "start": 946.92,
+   "end": 952.44,
+   "text": "right, for everyday cyclists. Obviously, neither of us are experts in this particular"
+  },
+  {
+   "start": 952.44,
+   "end": 958.04,
+   "text": "lane, but how would you even think about, if you should think about really reaching"
+  },
+  {
+   "start": 958.04,
+   "end": 960.12,
+   "text": "that specific type of consumer?"
+  },
+  {
+   "start": 960.12,
+   "end": 965.54,
+   "text": "Yeah. So I have a lot of different thoughts on this. So I have a few bikes. I have two"
+  },
+  {
+   "start": 965.54,
+   "end": 971.94,
+   "text": "bikes and I have one helmet, but I only have the helmet because my wife is, my wife really"
+  },
+  {
+   "start": 971.94,
+   "end": 976.68,
+   "text": "loves me and my wife insisted that I needed to get a helmet. Just this past, I hadn't"
+  },
+  {
+   "start": 976.68,
+   "end": 978.36,
+   "text": "worn the helmet in many years actually."
+  },
+  {
+   "start": 978.36,
+   "end": 980.92,
+   "text": "So just this past Sunday, biking with my kids,"
+  },
+  {
+   "start": 980.92,
+   "end": 982.12,
+   "text": "they didn't wanna wear their helmets."
+  },
+  {
+   "start": 982.12,
+   "end": 985.52,
+   "text": "And so I had a helmet to set it good for my kids."
+  },
+  {
+   "start": 985.52,
+   "end": 987.74,
+   "text": "And so maybe what I'm trying to get at is like,"
+  },
+  {
+   "start": 987.74,
+   "end": 989.88,
+   "text": "there's the rider, but there's maybe like the actual,"
+  },
+  {
+   "start": 989.88,
+   "end": 992.6,
+   "text": "maybe buyer or the person who's influencing the rider"
+  },
+  {
+   "start": 992.6,
+   "end": 994.24,
+   "text": "to buy that helmet."
+  },
+  {
+   "start": 994.24,
+   "end": 996.84,
+   "text": "And I wonder if there's an opportunity for you to,"
+  },
+  {
+   "start": 996.84,
+   "end": 998.8,
+   "text": "is there like a gift inflow on your website"
+  },
+  {
+   "start": 998.8,
+   "end": 1003.28,
+   "text": "so that my wife gets an ad for New Lane"
+  },
+  {
+   "start": 1003.28,
+   "end": 1004.64,
+   "text": "and that she goes on the website"
+  },
+  {
+   "start": 1004.64,
+   "end": 1007.0,
+   "text": "and she can easily buy for."
+  },
+  {
+   "start": 1007.0,
+   "end": 1007.84,
+   "text": "Protect your kids."
+  },
+  {
+   "start": 1007.84,
+   "end": 1009.2,
+   "text": "Are they wearing a helmet?"
+  },
+  {
+   "start": 1009.2,
+   "end": 1010.52,
+   "text": "Right, exactly."
+  },
+  {
+   "start": 1010.52,
+   "end": 1013.28,
+   "text": "And there's just generally more opportunities"
+  },
+  {
+   "start": 1013.28,
+   "end": 1014.64,
+   "text": "to market directly to those people."
+  },
+  {
+   "start": 1014.64,
+   "end": 1015.84,
+   "text": "So that's one thought."
+  },
+  {
+   "start": 1015.84,
+   "end": 1019.68,
+   "text": "The other thought is when I go on your websites,"
+  },
+  {
+   "start": 1019.68,
+   "end": 1022.44,
+   "text": "I see that your main pitch is,"
+  },
+  {
+   "start": 1022.44,
+   "end": 1024.32,
+   "text": "this is the helmet that works around your life,"
+  },
+  {
+   "start": 1024.32,
+   "end": 1025.42,
+   "text": "which I think is great."
+  },
+  {
+   "start": 1025.42,
+   "end": 1027.44,
+   "text": "But I wonder if there's an even bigger objection"
+  },
+  {
+   "start": 1027.44,
+   "end": 1029.96,
+   "text": "that you are facing that is maybe not a physical one,"
+  },
+  {
+   "start": 1029.96,
+   "end": 1031.52,
+   "text": "but maybe a behavioral one,"
+  },
+  {
+   "start": 1031.52,
+   "end": 1034.16,
+   "text": "which is that many people are buying helmets,"
+  },
+  {
+   "start": 1034.16,
+   "end": 1037.4,
+   "text": "but they're not using them or many people are not buying helmets in the first place"
+  },
+  {
+   "start": 1037.4,
+   "end": 1040.76,
+   "text": "because they don't think they're going to weld them because they're painting the neck."
+  },
+  {
+   "start": 1040.76,
+   "end": 1045.48,
+   "text": "Right? And so is there a higher level thing you can appeal to around this is the helmet"
+  },
+  {
+   "start": 1045.48,
+   "end": 1046.98,
+   "text": "you're actually going to use?"
+  },
+  {
+   "start": 1046.98,
+   "end": 1047.98,
+   "text": "It's an interesting thought."
+  },
+  {
+   "start": 1047.98,
+   "end": 1052.4,
+   "text": "I mean, it's fantastic points. I mean, and to be honest, the conversation we're having"
+  },
+  {
+   "start": 1052.4,
+   "end": 1056.76,
+   "text": "here makes me realize we've got to lean into both those points very strongly. Gifting is"
+  },
+  {
+   "start": 1056.76,
+   "end": 1061.84,
+   "text": "really important because people on line bikes, the mothers of the riders, although husbands"
+  },
+  {
+   "start": 1061.84,
+   "end": 1062.84,
+   "text": "of the riders are the ones."
+  },
+  {
+   "start": 1062.84,
+   "end": 1063.84,
+   "text": "Exactly."
+  },
+  {
+   "start": 1063.84,
+   "end": 1067.08,
+   "text": "And 20% of our sales in gifting season last year"
+  },
+  {
+   "start": 1067.08,
+   "end": 1069.28,
+   "text": "were not, they were bought by people for other people."
+  },
+  {
+   "start": 1069.28,
+   "end": 1070.6,
+   "text": "To the people you're going to use them."
+  },
+  {
+   "start": 1070.6,
+   "end": 1071.6,
+   "text": "Super interesting."
+  },
+  {
+   "start": 1071.6,
+   "end": 1072.92,
+   "text": "It was very significant for us."
+  },
+  {
+   "start": 1072.92,
+   "end": 1074.44,
+   "text": "Yeah."
+  },
+  {
+   "start": 1074.44,
+   "end": 1078.04,
+   "text": "Calendly, the way we grew, just like you,"
+  },
+  {
+   "start": 1078.04,
+   "end": 1081.96,
+   "text": "I didn't really have the ability to pay a lot"
+  },
+  {
+   "start": 1081.96,
+   "end": 1083.28,
+   "text": "for customer acquisition."
+  },
+  {
+   "start": 1083.28,
+   "end": 1086.08,
+   "text": "And so what really we created instead"
+  },
+  {
+   "start": 1086.08,
+   "end": 1087.48,
+   "text": "was this virality, right?"
+  },
+  {
+   "start": 1087.48,
+   "end": 1089.72,
+   "text": "Every time you use the product, you introduce other people"
+  },
+  {
+   "start": 1089.72,
+   "end": 1090.64,
+   "text": "to it."
+  },
+  {
+   "start": 1090.64,
+   "end": 1093.44,
+   "text": "And obviously, like in software,"
+  },
+  {
+   "start": 1093.44,
+   "end": 1094.66,
+   "text": "We know we did it through virality."
+  },
+  {
+   "start": 1094.66,
+   "end": 1096.92,
+   "text": "I don't know what the physical equivalent of that is,"
+  },
+  {
+   "start": 1096.92,
+   "end": 1099.64,
+   "text": "but is there a moment in which, sorry,"
+  },
+  {
+   "start": 1099.64,
+   "end": 1101.88,
+   "text": "at the risk of talking about myself too much, but-"
+  },
+  {
+   "start": 1101.88,
+   "end": 1102.72,
+   "text": "So please."
+  },
+  {
+   "start": 1102.72,
+   "end": 1104.28,
+   "text": "I own this classic Defender."
+  },
+  {
+   "start": 1104.28,
+   "end": 1106.24,
+   "text": "It's a 97, you know, Defender 90."
+  },
+  {
+   "start": 1106.24,
+   "end": 1107.08,
+   "text": "I love it."
+  },
+  {
+   "start": 1107.08,
+   "end": 1107.92,
+   "text": "It's my favorite, you know,"
+  },
+  {
+   "start": 1107.92,
+   "end": 1109.72,
+   "text": "one of my favorite material positions."
+  },
+  {
+   "start": 1109.72,
+   "end": 1111.52,
+   "text": "And I can't drive that car"
+  },
+  {
+   "start": 1111.52,
+   "end": 1113.92,
+   "text": "without people asking me about it."
+  },
+  {
+   "start": 1113.92,
+   "end": 1116.88,
+   "text": "And you have this very, very interest in product, right?"
+  },
+  {
+   "start": 1116.88,
+   "end": 1118.44,
+   "text": "Is there an opportunity to think about"
+  },
+  {
+   "start": 1118.44,
+   "end": 1120.72,
+   "text": "when I use this product, when it's folded,"
+  },
+  {
+   "start": 1120.72,
+   "end": 1121.96,
+   "text": "it creates this conversation."
+  },
+  {
+   "start": 1121.96,
+   "end": 1123.04,
+   "text": "People want to know where I got it"
+  },
+  {
+   "start": 1123.04,
+   "end": 1124.54,
+   "text": "and they're also interested in it."
+  },
+  {
+   "start": 1124.54,
+   "end": 1126.04,
+   "text": "I don't know what it is,"
+  },
+  {
+   "start": 1126.04,
+   "end": 1127.84,
+   "text": "but I wonder if there's an angle for you there."
+  },
+  {
+   "start": 1127.84,
+   "end": 1130.5,
+   "text": "Because it's such a unique product."
+  },
+  {
+   "start": 1130.5,
+   "end": 1131.34,
+   "text": "It's awesome."
+  },
+  {
+   "start": 1131.34,
+   "end": 1132.54,
+   "text": "Well, the product is called New Lane,"
+  },
+  {
+   "start": 1132.54,
+   "end": 1135.08,
+   "text": "the only foldable helmet made in the UK."
+  },
+  {
+   "start": 1135.08,
+   "end": 1136.76,
+   "text": "It's really cool."
+  },
+  {
+   "start": 1136.76,
+   "end": 1138.88,
+   "text": "Dom Cotton, thank you so much for calling in,"
+  },
+  {
+   "start": 1138.88,
+   "end": 1139.72,
+   "text": "and good luck."
+  },
+  {
+   "start": 1139.72,
+   "end": 1140.84,
+   "text": "Thank you."
+  },
+  {
+   "start": 1140.84,
+   "end": 1141.68,
+   "text": "This is the, yeah,"
+  },
+  {
+   "start": 1141.68,
+   "end": 1143.72,
+   "text": "this is the Dyson of bike helmets."
+  },
+  {
+   "start": 1143.72,
+   "end": 1144.64,
+   "text": "It's so cool."
+  },
+  {
+   "start": 1144.64,
+   "end": 1146.04,
+   "text": "It's so, so cool."
+  },
+  {
+   "start": 1146.04,
+   "end": 1148.0,
+   "text": "You know, we do huge brands on a show,"
+  },
+  {
+   "start": 1148.0,
+   "end": 1150.48,
+   "text": "like multi-million, multi-billion dollar companies"
+  },
+  {
+   "start": 1150.48,
+   "end": 1151.32,
+   "text": "on how I built this."
+  },
+  {
+   "start": 1151.32,
+   "end": 1153.32,
+   "text": "We do the device line."
+  },
+  {
+   "start": 1153.32,
+   "end": 1154.56,
+   "text": "We're talking to smaller companies"
+  },
+  {
+   "start": 1154.56,
+   "end": 1158.48,
+   "text": "that are doing some $10,000 a year, 200,000,"
+  },
+  {
+   "start": 1158.48,
+   "end": 1160.32,
+   "text": "if they're lucky a million."
+  },
+  {
+   "start": 1160.32,
+   "end": 1161.84,
+   "text": "And here you go."
+  },
+  {
+   "start": 1161.84,
+   "end": 1165.12,
+   "text": "It's like a reminder that there's so many cool products"
+  },
+  {
+   "start": 1165.12,
+   "end": 1167.64,
+   "text": "out there that we just don't know about yet."
+  },
+  {
+   "start": 1167.64,
+   "end": 1169.36,
+   "text": "This may be a controversial thing to say,"
+  },
+  {
+   "start": 1169.36,
+   "end": 1175.19,
+   "text": "but I think this is also a good deal flow pipeline"
+  },
+  {
+   "start": 1175.23,
+   "end": 1176.43,
+   "text": "for a potential investor."
+  },
+  {
+   "start": 1176.43,
+   "end": 1177.27,
+   "text": "I agree."
+  },
+  {
+   "start": 1177.27,
+   "end": 1178.87,
+   "text": "Like I'm thinking about reaching out to Dom."
+  },
+  {
+   "start": 1178.87,
+   "end": 1179.99,
+   "text": "I mean, I don't do it."
+  },
+  {
+   "start": 1179.99,
+   "end": 1181.39,
+   "text": "I don't make the investments."
+  },
+  {
+   "start": 1181.39,
+   "end": 1182.75,
+   "text": "I'm just here putting it out there."
+  },
+  {
+   "start": 1182.75,
+   "end": 1184.79,
+   "text": "Maybe I should get paid like a commission from listeners."
+  },
+  {
+   "start": 1184.79,
+   "end": 1185.63,
+   "text": "Maybe you should."
+  },
+  {
+   "start": 1185.63,
+   "end": 1187.63,
+   "text": "I think I'm gonna reach out to Dom and yeah."
+  },
+  {
+   "start": 1187.63,
+   "end": 1188.87,
+   "text": "Absolutely you should."
+  },
+  {
+   "start": 1188.87,
+   "end": 1190.35,
+   "text": "And by the way, anyone who does that,"
+  },
+  {
+   "start": 1190.35,
+   "end": 1192.35,
+   "text": "if you wanna send me like a commission check,"
+  },
+  {
+   "start": 1192.35,
+   "end": 1195.19,
+   "text": "happy to take whatever the going rate is."
+  },
+  {
+   "start": 1195.19,
+   "end": 1196.63,
+   "text": "Do I get one in turn as the one"
+  },
+  {
+   "start": 1196.63,
+   "end": 1197.99,
+   "text": "who suggested the idea as well?"
+  },
+  {
+   "start": 1197.99,
+   "end": 1199.11,
+   "text": "Yeah, absolutely."
+  },
+  {
+   "start": 1199.11,
+   "end": 1203.92,
+   "text": "Okay, next up after the break,"
+  },
+  {
+   "start": 1203.92,
+   "end": 1206.8,
+   "text": "another caller with another business challenge."
+  },
+  {
+   "start": 1206.8,
+   "end": 1208.48,
+   "text": "I'm Guy Ross and we're answering"
+  },
+  {
+   "start": 1208.48,
+   "end": 1210.64,
+   "text": "your business questions right here."
+  },
+  {
+   "start": 1210.64,
+   "end": 1234.79,
+   "text": "I need advice line on how I built this lab."
+  },
+  {
+   "start": 1234.79,
+   "end": 1236.43,
+   "text": "Welcome back to the advice line right here"
+  },
+  {
+   "start": 1236.43,
+   "end": 1237.51,
+   "text": "on how I built this lab."
+  },
+  {
+   "start": 1237.51,
+   "end": 1238.35,
+   "text": "I'm Guy Raz."
+  },
+  {
+   "start": 1238.35,
+   "end": 1239.83,
+   "text": "And my guest today is Tope Owatana,"
+  },
+  {
+   "start": 1239.83,
+   "end": 1242.31,
+   "text": "founder of Calendly and Tope."
+  },
+  {
+   "start": 1242.31,
+   "end": 1243.87,
+   "text": "You ready to take our next call?"
+  },
+  {
+   "start": 1243.87,
+   "end": 1244.79,
+   "text": "Yes, I am."
+  },
+  {
+   "start": 1244.79,
+   "end": 1246.47,
+   "text": "All right, let's bring our next caller."
+  },
+  {
+   "start": 1246.47,
+   "end": 1248.31,
+   "text": "Please tell us your name, where you're calling from,"
+  },
+  {
+   "start": 1248.31,
+   "end": 1251.19,
+   "text": "and just one brief line about your business."
+  },
+  {
+   "start": 1251.19,
+   "end": 1252.19,
+   "text": "Hi, Guy and Tope."
+  },
+  {
+   "start": 1252.19,
+   "end": 1253.03,
+   "text": "I'm Ivana."
+  },
+  {
+   "start": 1253.03,
+   "end": 1255.31,
+   "text": "I'm dialing in from Vancouver, Canada,"
+  },
+  {
+   "start": 1255.31,
+   "end": 1257.39,
+   "text": "and I'm the founder of Playfield."
+  },
+  {
+   "start": 1257.39,
+   "end": 1260.71,
+   "text": "We make human-centric products for pet lovers."
+  },
+  {
+   "start": 1260.71,
+   "end": 1262.19,
+   "text": "Awesome, welcome to the show, Ivana."
+  },
+  {
+   "start": 1262.19,
+   "end": 1264.87,
+   "text": "And thanks for listening in Vancouver."
+  },
+  {
+   "start": 1264.87,
+   "end": 1268.75,
+   "text": "Human-centric products for, I'm a pet lover and a human."
+  },
+  {
+   "start": 1268.75,
+   "end": 1270.71,
+   "text": "I'm a human who loves pets."
+  },
+  {
+   "start": 1270.71,
+   "end": 1272.23,
+   "text": "Tell me what you make."
+  },
+  {
+   "start": 1272.23,
+   "end": 1275.03,
+   "text": "Yeah, so our hero product is the Bailey Kit"
+  },
+  {
+   "start": 1275.03,
+   "end": 1278.03,
+   "text": "and it's a modular, multifunctional dog walking bag"
+  },
+  {
+   "start": 1278.03,
+   "end": 1279.27,
+   "text": "and treat pouch combo."
+  },
+  {
+   "start": 1279.27,
+   "end": 1280.11,
+   "text": "Nice."
+  },
+  {
+   "start": 1280.11,
+   "end": 1282.23,
+   "text": "So I have one that's ugly."
+  },
+  {
+   "start": 1282.23,
+   "end": 1283.63,
+   "text": "And I'm like, I don't even know what the brand is,"
+  },
+  {
+   "start": 1283.63,
+   "end": 1285.47,
+   "text": "where I put like, I got dog treats in there"
+  },
+  {
+   "start": 1285.47,
+   "end": 1287.19,
+   "text": "and I got poop bags in there."
+  },
+  {
+   "start": 1287.19,
+   "end": 1289.87,
+   "text": "And I've got a ball in there for my dog."
+  },
+  {
+   "start": 1289.87,
+   "end": 1293.67,
+   "text": "You know, if you to distract her sometimes, if another dog comes and they want to just"
+  },
+  {
+   "start": 1293.67,
+   "end": 1298.75,
+   "text": "go at it, uh, what is described, what it looks like and how it, how it fits."
+  },
+  {
+   "start": 1298.75,
+   "end": 1299.75,
+   "text": "Yeah."
+  },
+  {
+   "start": 1299.75,
+   "end": 1301.67,
+   "text": "So it's designed to look really sleek, right?"
+  },
+  {
+   "start": 1301.67,
+   "end": 1306.79,
+   "text": "So sometimes it's very unassuming, but we have a built in poo bag dispenser in the back"
+  },
+  {
+   "start": 1306.79,
+   "end": 1307.79,
+   "text": "panel."
+  },
+  {
+   "start": 1307.79,
+   "end": 1313.23,
+   "text": "We have, um, what's unique about our product is this hidden retractable water bottle pocket."
+  },
+  {
+   "start": 1313.23,
+   "end": 1315.87,
+   "text": "It's actually helped us go viral on social media a few times."
+  },
+  {
+   "start": 1315.87,
+   "end": 1321.15,
+   "text": "People love being able to just expand it so they can carry water with them without bringing a backpack."
+  },
+  {
+   "start": 1321.47,
+   "end": 1327.51,
+   "text": "You can attach your leash to the D-ring on the bag. We have compartments for your keys, credit cards."
+  },
+  {
+   "start": 1327.51,
+   "end": 1331.19,
+   "text": "So it's a design I came up with because like you, you know,"
+  },
+  {
+   "start": 1331.19,
+   "end": 1337.67,
+   "text": "I had a different bag before that I was kind of using to carry all my things, taking my dog out for walks."
+  },
+  {
+   "start": 1337.67,
+   "end": 1342.47,
+   "text": "But I'm just with her so much throughout the day that I, you know,"
+  },
+  {
+   "start": 1342.47,
+   "end": 1347.11,
+   "text": "why would I trade in the dog walking bag for my everyday bag and back and forth if I could just"
+  },
+  {
+   "start": 1347.11,
+   "end": 1352.47,
+   "text": "have everything in one well-designed product that I could also use when she wasn't with me."
+  },
+  {
+   "start": 1352.47,
+   "end": 1357.03,
+   "text": "Awesome. Okay. And tell me a little bit about how the business is doing. You've launched when and"
+  },
+  {
+   "start": 1357.03,
+   "end": 1361.43,
+   "text": "tell me a little bit about your sales so far. Yeah. So we launched in April 2024."
+  },
+  {
+   "start": 1362.47,
+   "end": 1367.03,
+   "text": "In our first full year, we did a little over 200,000 in sales."
+  },
+  {
+   "start": 1367.03,
+   "end": 1368.03,
+   "text": "Fantastic."
+  },
+  {
+   "start": 1368.03,
+   "end": 1373.07,
+   "text": "And then this year, we're probably on track, might come a little under that, for reasons"
+  },
+  {
+   "start": 1373.07,
+   "end": 1374.07,
+   "text": "I'll get into."
+  },
+  {
+   "start": 1374.07,
+   "end": 1375.07,
+   "text": "Yeah, tell me why."
+  },
+  {
+   "start": 1375.07,
+   "end": 1379.59,
+   "text": "I mean, I'm assuming it's mostly direct to consumer, but why are the sales flat?"
+  },
+  {
+   "start": 1379.59,
+   "end": 1382.63,
+   "text": "Yeah, so we are primarily direct to consumer."
+  },
+  {
+   "start": 1382.63,
+   "end": 1385.99,
+   "text": "We're also in Chewy and a few independent pet boutiques."
+  },
+  {
+   "start": 1385.99,
+   "end": 1390.91,
+   "text": "We're also launching in a nationwide retailer in October."
+  },
+  {
+   "start": 1390.91,
+   "end": 1395.81,
+   "text": "But the reason why it hasn't been a growth year for us is because I'm actually eight"
+  },
+  {
+   "start": 1395.81,
+   "end": 1397.05,
+   "text": "months pregnant right now."
+  },
+  {
+   "start": 1397.05,
+   "end": 1402.05,
+   "text": "So that was something that sort of knocked me off my feet."
+  },
+  {
+   "start": 1403.29,
+   "end": 1405.83,
+   "text": "As a solo founder that's bootstrapped the business,"
+  },
+  {
+   "start": 1405.83,
+   "end": 1408.97,
+   "text": "I think it was certainly a catalyst for me"
+  },
+  {
+   "start": 1408.97,
+   "end": 1411.15,
+   "text": "to think about what needs to change."
+  },
+  {
+   "start": 1411.15,
+   "end": 1412.61,
+   "text": "I've been doing everything myself."
+  },
+  {
+   "start": 1412.61,
+   "end": 1414.77,
+   "text": "We do have, for context,"
+  },
+  {
+   "start": 1414.77,
+   "end": 1417.43,
+   "text": "we have a fulfillment center in Arizona."
+  },
+  {
+   "start": 1417.43,
+   "end": 1420.21,
+   "text": "I've just recently brought on a social media agency"
+  },
+  {
+   "start": 1420.21,
+   "end": 1422.69,
+   "text": "about a month ago to help us with content."
+  },
+  {
+   "start": 1422.69,
+   "end": 1425.09,
+   "text": "So I'm starting to outsource things,"
+  },
+  {
+   "start": 1425.09,
+   "end": 1428.77,
+   "text": "But I think this leads well into my question, which is really around"
+  },
+  {
+   "start": 1429.13,
+   "end": 1432.93,
+   "text": "knowing that I'm about a month away from giving birth to my first child."
+  },
+  {
+   "start": 1433.33,
+   "end": 1436.69,
+   "text": "What are some systems I should really think about building so that"
+  },
+  {
+   "start": 1437.25,
+   "end": 1440.05,
+   "text": "the business can still continue without me doing everything?"
+  },
+  {
+   "start": 1440.05,
+   "end": 1443.73,
+   "text": "And, you know, what should I be delegating or how do I think about this longer term?"
+  },
+  {
+   "start": 1444.13,
+   "end": 1445.33,
+   "text": "I love that question."
+  },
+  {
+   "start": 1445.33,
+   "end": 1446.49,
+   "text": "Um, thank you for it."
+  },
+  {
+   "start": 1446.49,
+   "end": 1447.57,
+   "text": "Tupo, I want to bring you in here."
+  },
+  {
+   "start": 1447.57,
+   "end": 1447.89,
+   "text": "I mean,"
+  },
+  {
+   "start": 1448.13,
+   "end": 1451.01,
+   "text": "Sorry, I just broke my mic, but I'm just going to hold it."
+  },
+  {
+   "start": 1451.01,
+   "end": 1451.25,
+   "text": "I think"
+  },
+  {
+   "start": 1451.25,
+   "end": 1452.09,
+   "text": "Oh."
+  },
+  {
+   "start": 1452.09,
+   "end": 1452.93,
+   "text": "Okay."
+  },
+  {
+   "start": 1452.93,
+   "end": 1455.62,
+   "text": "Devana, congratulations on your first child."
+  },
+  {
+   "start": 1455.62,
+   "end": 1456.46,
+   "text": "Thank you."
+  },
+  {
+   "start": 1456.46,
+   "end": 1457.84,
+   "text": "Big, big, big excited moment."
+  },
+  {
+   "start": 1457.84,
+   "end": 1459.56,
+   "text": "Just maybe just a few questions for you."
+  },
+  {
+   "start": 1459.56,
+   "end": 1461.2,
+   "text": "So you mentioned the fulfillment center"
+  },
+  {
+   "start": 1461.2,
+   "end": 1462.8,
+   "text": "and you mentioned the social media agency"
+  },
+  {
+   "start": 1462.8,
+   "end": 1463.64,
+   "text": "that you just brought on,"
+  },
+  {
+   "start": 1463.64,
+   "end": 1465.16,
+   "text": "but do you have any other people"
+  },
+  {
+   "start": 1465.16,
+   "end": 1467.32,
+   "text": "helping you in the business today?"
+  },
+  {
+   "start": 1467.32,
+   "end": 1470.24,
+   "text": "The only other person who I also have just brought on"
+  },
+  {
+   "start": 1470.24,
+   "end": 1472.92,
+   "text": "as of this week is a freelancer"
+  },
+  {
+   "start": 1472.92,
+   "end": 1474.8,
+   "text": "to help us run our ambassador program."
+  },
+  {
+   "start": 1474.8,
+   "end": 1476.68,
+   "text": "But besides that, that's pretty much it."
+  },
+  {
+   "start": 1476.68,
+   "end": 1480.0,
+   "text": "I do all product design, customer service,"
+  },
+  {
+   "start": 1480.0,
+   "end": 1483.36,
+   "text": "all the logistics with our manufacturer overseas."
+  },
+  {
+   "start": 1483.36,
+   "end": 1486.44,
+   "text": "So pretty much like everything still falls in my lab."
+  },
+  {
+   "start": 1486.44,
+   "end": 1487.28,
+   "text": "Got it."
+  },
+  {
+   "start": 1487.28,
+   "end": 1489.04,
+   "text": "Do you have any thoughts on who runs the business"
+  },
+  {
+   "start": 1489.04,
+   "end": 1490.64,
+   "text": "while you're out?"
+  },
+  {
+   "start": 1490.64,
+   "end": 1492.12,
+   "text": "Or is it you pushing out a baby"
+  },
+  {
+   "start": 1492.12,
+   "end": 1495.16,
+   "text": "and then responding to customer emails?"
+  },
+  {
+   "start": 1495.16,
+   "end": 1496.6,
+   "text": "I know it's not ideal, but I'm like,"
+  },
+  {
+   "start": 1496.6,
+   "end": 1498.92,
+   "text": "I think I'm bringing my laptop to the hospital."
+  },
+  {
+   "start": 1498.92,
+   "end": 1499.76,
+   "text": "Oh no."
+  },
+  {
+   "start": 1500.76,
+   "end": 1502.04,
+   "text": "I know."
+  },
+  {
+   "start": 1502.04,
+   "end": 1503.68,
+   "text": "I do want to be present too, right?"
+  },
+  {
+   "start": 1503.68,
+   "end": 1508.0,
+   "text": "When the baby comes and I know this is such a beautiful"
+  },
+  {
+   "start": 1508.0,
+   "end": 1509.94,
+   "text": "chapter in our lives."
+  },
+  {
+   "start": 1509.94,
+   "end": 1511.94,
+   "text": "but it's also the start of Q4."
+  },
+  {
+   "start": 1511.94,
+   "end": 1514.58,
+   "text": "So it's just a crazy, crazy timing."
+  },
+  {
+   "start": 1514.58,
+   "end": 1516.14,
+   "text": "The Christmas time."
+  },
+  {
+   "start": 1516.14,
+   "end": 1517.54,
+   "text": "First thing I just wanna say is,"
+  },
+  {
+   "start": 1517.54,
+   "end": 1520.21,
+   "text": "I, you know, people are gonna interpret this"
+  },
+  {
+   "start": 1520.21,
+   "end": 1523.73,
+   "text": "in different ways and people have their own views on this."
+  },
+  {
+   "start": 1523.73,
+   "end": 1527.45,
+   "text": "There is nothing, nothing I've done in my career,"
+  },
+  {
+   "start": 1527.45,
+   "end": 1531.45,
+   "text": "30 years of my career, nothing that is remotely"
+  },
+  {
+   "start": 1531.45,
+   "end": 1536.52,
+   "text": "as fulfilling or important or meaningful as being a dad."
+  },
+  {
+   "start": 1537.0,
+   "end": 1539.44,
+   "text": "And even when my kids are, they're like their teenagers now,"
+  },
+  {
+   "start": 1539.44,
+   "end": 1540.44,
+   "text": "They don't want to talk to me."
+  },
+  {
+   "start": 1540.44,
+   "end": 1542.44,
+   "text": "You know, the door is closed."
+  },
+  {
+   "start": 1542.44,
+   "end": 1544.92,
+   "text": "They're doing their own thing."
+  },
+  {
+   "start": 1544.92,
+   "end": 1546.76,
+   "text": "It's everything to me."
+  },
+  {
+   "start": 1546.76,
+   "end": 1549.0,
+   "text": "And so that's just, I'm just gonna leave it there."
+  },
+  {
+   "start": 1549.0,
+   "end": 1550.64,
+   "text": "But now I wanna say something else,"
+  },
+  {
+   "start": 1550.64,
+   "end": 1553.72,
+   "text": "which is we had an episode on the show a couple weeks ago,"
+  },
+  {
+   "start": 1553.72,
+   "end": 1555.64,
+   "text": "and you should listen to it, Bog Bags."
+  },
+  {
+   "start": 1555.64,
+   "end": 1557.44,
+   "text": "Kim Beccarela started this brand."
+  },
+  {
+   "start": 1557.44,
+   "end": 1562.12,
+   "text": "It is now, they're doing over $250 million in sales a year."
+  },
+  {
+   "start": 1562.12,
+   "end": 1564.28,
+   "text": "She started it on her own, bootstrapped it."
+  },
+  {
+   "start": 1564.28,
+   "end": 1566.72,
+   "text": "It's basically a bag that's made out of the material"
+  },
+  {
+   "start": 1566.72,
+   "end": 1569.16,
+   "text": "like that makes crock shoes, okay?"
+  },
+  {
+   "start": 1569.16,
+   "end": 1571.44,
+   "text": "It's a beach bag."
+  },
+  {
+   "start": 1571.44,
+   "end": 1578.32,
+   "text": "And she started it in like 2010, 2011 and got some momentum, you know, probably got"
+  },
+  {
+   "start": 1578.32,
+   "end": 1580.76,
+   "text": "it to about where you got your brand."
+  },
+  {
+   "start": 1580.76,
+   "end": 1587.4,
+   "text": "And then there was just a disaster with her manufacturer and she lost like $30,000, $40,000."
+  },
+  {
+   "start": 1587.4,
+   "end": 1588.4,
+   "text": "So she stopped."
+  },
+  {
+   "start": 1588.4,
+   "end": 1592.66,
+   "text": "She just shut down the business for two years."
+  },
+  {
+   "start": 1592.66,
+   "end": 1597.6,
+   "text": "And what happened was people started to ask her what happened to these bags."
+  },
+  {
+   "start": 1597.6,
+   "end": 1602.04,
+   "text": "And that inspired her to restart it in like 2013."
+  },
+  {
+   "start": 1602.04,
+   "end": 1607.76,
+   "text": "And she reconstituted it and went back full force and it is what it is today."
+  },
+  {
+   "start": 1607.76,
+   "end": 1613.24,
+   "text": "So I just want to use that as an example of a brand that put things on pause."
+  },
+  {
+   "start": 1613.24,
+   "end": 1617.68,
+   "text": "I'm not saying that's what you do, but if you have to, it's okay."
+  },
+  {
+   "start": 1617.68,
+   "end": 1619.44,
+   "text": "It doesn't go away."
+  },
+  {
+   "start": 1619.44,
+   "end": 1623.72,
+   "text": "It's still there and you can still come back to it if you take three months or six months"
+  },
+  {
+   "start": 1623.72,
+   "end": 1627.44,
+   "text": "or whatever you decide to do, that is also okay."
+  },
+  {
+   "start": 1629.04,
+   "end": 1631.16,
+   "text": "Thank you for saying that."
+  },
+  {
+   "start": 1631.16,
+   "end": 1633.88,
+   "text": "But Tope, let's just do some nuts and bolts stuff here."
+  },
+  {
+   "start": 1633.88,
+   "end": 1636.9,
+   "text": "Let's say, okay, Ivana's got a limited budget"
+  },
+  {
+   "start": 1636.9,
+   "end": 1640.28,
+   "text": "if she was going to allocate some of her resources, right?"
+  },
+  {
+   "start": 1640.28,
+   "end": 1642.0,
+   "text": "Let's say even a part-time person."
+  },
+  {
+   "start": 1642.0,
+   "end": 1643.64,
+   "text": "What should she think about?"
+  },
+  {
+   "start": 1643.64,
+   "end": 1646.4,
+   "text": "What kind of person should she potentially look for?"
+  },
+  {
+   "start": 1646.4,
+   "end": 1650.36,
+   "text": "Yeah, I have one more question before I answer that."
+  },
+  {
+   "start": 1651.28,
+   "end": 1652.88,
+   "text": "What do you think is the most important job"
+  },
+  {
+   "start": 1652.88,
+   "end": 1653.72,
+   "text": "while you're out."
+  },
+  {
+   "start": 1653.72,
+   "end": 1655.24,
+   "text": "Is it keeping the lights on?"
+  },
+  {
+   "start": 1655.24,
+   "end": 1658.92,
+   "text": "Is it, you know, you have this major retail partnership"
+  },
+  {
+   "start": 1658.92,
+   "end": 1659.8,
+   "text": "that's about to kick off."
+  },
+  {
+   "start": 1659.8,
+   "end": 1661.58,
+   "text": "Is it really nailing that and, you know,"
+  },
+  {
+   "start": 1661.58,
+   "end": 1663.52,
+   "text": "making that as successful as possible?"
+  },
+  {
+   "start": 1663.52,
+   "end": 1666.36,
+   "text": "Like, assuming you could only pick one or the two, right?"
+  },
+  {
+   "start": 1666.36,
+   "end": 1668.12,
+   "text": "Just like, which would you pick?"
+  },
+  {
+   "start": 1668.12,
+   "end": 1670.02,
+   "text": "I think the good news is most of the things"
+  },
+  {
+   "start": 1670.02,
+   "end": 1671.92,
+   "text": "are in motion already with the retail launch."
+  },
+  {
+   "start": 1671.92,
+   "end": 1675.84,
+   "text": "So I do think it's primarily just keeping the lights on."
+  },
+  {
+   "start": 1675.84,
+   "end": 1677.72,
+   "text": "As an ambitious person, it's hard to say that."
+  },
+  {
+   "start": 1677.72,
+   "end": 1680.8,
+   "text": "We're like, I really want to grow this year."
+  },
+  {
+   "start": 1680.8,
+   "end": 1682.54,
+   "text": "But yeah, I think just keeping the lights on,"
+  },
+  {
+   "start": 1682.54,
+   "end": 1685.58,
+   "text": "moving inventory, any like future product development"
+  },
+  {
+   "start": 1685.58,
+   "end": 1688.88,
+   "text": "I've kind of punted to next year, but even then, right?"
+  },
+  {
+   "start": 1688.88,
+   "end": 1691.9,
+   "text": "Like I'm not sure just how much free time"
+  },
+  {
+   "start": 1691.9,
+   "end": 1693.9,
+   "text": "I'm going to have once the baby's here."
+  },
+  {
+   "start": 1693.9,
+   "end": 1697.42,
+   "text": "So I think even some advice from two fathers,"
+  },
+  {
+   "start": 1697.42,
+   "end": 1699.82,
+   "text": "you can give me a glimpse into what my future,"
+  },
+  {
+   "start": 1699.82,
+   "end": 1701.34,
+   "text": "early future might look like."
+  },
+  {
+   "start": 1701.34,
+   "end": 1703.66,
+   "text": "Well, this might be blasphemous to say,"
+  },
+  {
+   "start": 1703.66,
+   "end": 1707.26,
+   "text": "but having your first child is brutal,"
+  },
+  {
+   "start": 1707.26,
+   "end": 1708.74,
+   "text": "especially as the mother."
+  },
+  {
+   "start": 1708.74,
+   "end": 1710.22,
+   "text": "But then also I think one of the things"
+  },
+  {
+   "start": 1710.22,
+   "end": 1715.02,
+   "text": "parents always struggle with is, you know, losing sort of, sort of like their own"
+  },
+  {
+   "start": 1715.1,
+   "end": 1717.26,
+   "text": "individual identity as they become a parent."
+  },
+  {
+   "start": 1717.66,
+   "end": 1720.7,
+   "text": "And so you might actually find that, yes, you want to be a great mother and you"
+  },
+  {
+   "start": 1720.7,
+   "end": 1722.3,
+   "text": "want to make sure that your child is taken care of."
+  },
+  {
+   "start": 1722.46,
+   "end": 1727.38,
+   "text": "But, you know, I can tell you from personal experience that being able to"
+  },
+  {
+   "start": 1727.38,
+   "end": 1731.06,
+   "text": "maintain your individual identity, uh, I suspect is going to be really, really"
+  },
+  {
+   "start": 1731.06,
+   "end": 1732.46,
+   "text": "important to you after the baby."
+  },
+  {
+   "start": 1732.74,
+   "end": 1735.82,
+   "text": "And you may find that going right back into play field at whatever level"
+  },
+  {
+   "start": 1735.9,
+   "end": 1738.26,
+   "text": "you want to is going to be a huge part of that."
+  },
+  {
+   "start": 1738.5,
+   "end": 1739.58,
+   "text": "I kind of think so too."
+  },
+  {
+   "start": 1739.58,
+   "end": 1740.9,
+   "text": "I get that inkling."
+  },
+  {
+   "start": 1740.9,
+   "end": 1742.9,
+   "text": "Yeah, I'm just gonna offer a flip side,"
+  },
+  {
+   "start": 1742.9,
+   "end": 1744.9,
+   "text": "which is I didn't care about my identity."
+  },
+  {
+   "start": 1744.9,
+   "end": 1746.74,
+   "text": "I was happy to be called dad for it."
+  },
+  {
+   "start": 1746.74,
+   "end": 1748.74,
+   "text": "Like, I don't care how I built this hose."
+  },
+  {
+   "start": 1748.74,
+   "end": 1749.86,
+   "text": "It doesn't matter."
+  },
+  {
+   "start": 1749.86,
+   "end": 1750.82,
+   "text": "But no, but I hear you."
+  },
+  {
+   "start": 1750.82,
+   "end": 1752.1,
+   "text": "I hear, here's another,"
+  },
+  {
+   "start": 1752.1,
+   "end": 1754.46,
+   "text": "I know now that was turning into like a parenting,"
+  },
+  {
+   "start": 1754.46,
+   "end": 1756.02,
+   "text": "a marital advice show."
+  },
+  {
+   "start": 1756.02,
+   "end": 1757.86,
+   "text": "And maybe, maybe Tope, we should do that."
+  },
+  {
+   "start": 1757.86,
+   "end": 1758.7,
+   "text": "I should start it."
+  },
+  {
+   "start": 1758.7,
+   "end": 1759.54,
+   "text": "I'm down."
+  },
+  {
+   "start": 1759.54,
+   "end": 1762.3,
+   "text": "Tope, the point Tope made is really critical."
+  },
+  {
+   "start": 1762.3,
+   "end": 1766.1,
+   "text": "It's gonna be an amazing time to see this little human"
+  },
+  {
+   "start": 1766.1,
+   "end": 1767.86,
+   "text": "and it's just so special."
+  },
+  {
+   "start": 1767.86,
+   "end": 1768.78,
+   "text": "It's really hard."
+  },
+  {
+   "start": 1768.78,
+   "end": 1774.14,
+   "text": "And there's, you know, you're not gonna get a lot of sleep and you're gonna be tired and overwhelmed and"
+  },
+  {
+   "start": 1774.54,
+   "end": 1777.46,
+   "text": "And somehow then a lot of people just forget it and have another kid"
+  },
+  {
+   "start": 1778.5,
+   "end": 1782.18,
+   "text": "But it is it is, you know, the challenge is of course worth it"
+  },
+  {
+   "start": 1782.18,
+   "end": 1784.86,
+   "text": "And so again, I would say that you know"
+  },
+  {
+   "start": 1785.26,
+   "end": 1790.26,
+   "text": "Give yourself grace and if you don't and you said another thing which I think is really important"
+  },
+  {
+   "start": 1790.26,
+   "end": 1793.94,
+   "text": "You said it's hard for an ambitious person not to expand the business right now"
+  },
+  {
+   "start": 1794.38,
+   "end": 1797.5,
+   "text": "You are ambitious. This is gonna succeed because you are"
+  },
+  {
+   "start": 1797.5,
+   "end": 1803.42,
+   "text": "motivated to make it succeed and to make it grow. And so it may mean that you put"
+  },
+  {
+   "start": 1803.42,
+   "end": 1806.9,
+   "text": "the brakes on for a couple of months. And it may mean that this quarter it might"
+  },
+  {
+   "start": 1806.9,
+   "end": 1811.38,
+   "text": "not be what you want it to be even though it's a Christmas quarter. Yes. But"
+  },
+  {
+   "start": 1811.38,
+   "end": 1815.9,
+   "text": "that's sort of like that's what fate handed you. The baby is gonna be born in"
+  },
+  {
+   "start": 1815.9,
+   "end": 1822.06,
+   "text": "the quarter before Christmas. And okay, you've got next year to ramp up once"
+  },
+  {
+   "start": 1822.06,
+   "end": 1825.94,
+   "text": "you've had some time to get all your home systems in place."
+  },
+  {
+   "start": 1825.94,
+   "end": 1827.78,
+   "text": "Mm-hmm, totally fair."
+  },
+  {
+   "start": 1827.78,
+   "end": 1832.7,
+   "text": "Yeah, I'll throw in a few, you know, maybe more pointed advice then."
+  },
+  {
+   "start": 1832.7,
+   "end": 1835.66,
+   "text": "So, I think the most important thing is keeping the business afloat."
+  },
+  {
+   "start": 1835.66,
+   "end": 1838.22,
+   "text": "If the business is afloat, you live to fight for another day."
+  },
+  {
+   "start": 1838.22,
+   "end": 1841.74,
+   "text": "And I think you've already identified kind of like the skills that are most important,"
+  },
+  {
+   "start": 1841.74,
+   "end": 1843.74,
+   "text": "the person that you need."
+  },
+  {
+   "start": 1843.74,
+   "end": 1844.9,
+   "text": "It's operational excellence."
+  },
+  {
+   "start": 1844.9,
+   "end": 1848.82,
+   "text": "There's a lot of, you know, things that happen on a day-to-day basis and the trains need"
+  },
+  {
+   "start": 1848.82,
+   "end": 1850.22,
+   "text": "to keep on running."
+  },
+  {
+   "start": 1850.22,
+   "end": 1852.22,
+   "text": "And I think the fact that you've identified that, I think,"
+  },
+  {
+   "start": 1852.22,
+   "end": 1853.38,
+   "text": "is also telling."
+  },
+  {
+   "start": 1853.38,
+   "end": 1855.7,
+   "text": "And actually also mirrors my experience with Calendly."
+  },
+  {
+   "start": 1855.7,
+   "end": 1860.74,
+   "text": "So when I started Calendly, my first employee was an engineer."
+  },
+  {
+   "start": 1860.74,
+   "end": 1863.18,
+   "text": "And the next hire that I made was a marketing person,"
+  },
+  {
+   "start": 1863.18,
+   "end": 1864.98,
+   "text": "because I thought the thing we needed to do"
+  },
+  {
+   "start": 1864.98,
+   "end": 1867.78,
+   "text": "was grow the top line and increase demand."
+  },
+  {
+   "start": 1867.78,
+   "end": 1870.1,
+   "text": "But what happened in our case is that the virality"
+  },
+  {
+   "start": 1870.1,
+   "end": 1873.5,
+   "text": "and the product took off so much that marketing was not"
+  },
+  {
+   "start": 1873.5,
+   "end": 1874.42,
+   "text": "the bottleneck."
+  },
+  {
+   "start": 1874.42,
+   "end": 1875.9,
+   "text": "It was servicing all these customers that"
+  },
+  {
+   "start": 1875.9,
+   "end": 1877.94,
+   "text": "were coming into our product."
+  },
+  {
+   "start": 1877.94,
+   "end": 1880.06,
+   "text": "And so this marketing person that I hired,"
+  },
+  {
+   "start": 1880.06,
+   "end": 1882.9,
+   "text": "quickly pivoted to a customer success person"
+  },
+  {
+   "start": 1882.9,
+   "end": 1885.42,
+   "text": "because we needed these customers to be successful."
+  },
+  {
+   "start": 1885.42,
+   "end": 1887.62,
+   "text": "And maybe what I'm trying to say is,"
+  },
+  {
+   "start": 1887.62,
+   "end": 1888.86,
+   "text": "a lot of times as a business owner,"
+  },
+  {
+   "start": 1888.86,
+   "end": 1890.58,
+   "text": "you have all these ideas of,"
+  },
+  {
+   "start": 1890.58,
+   "end": 1892.74,
+   "text": "I need to scale this next, I need to scale that."
+  },
+  {
+   "start": 1892.74,
+   "end": 1894.38,
+   "text": "I think what you're gonna find is something"
+  },
+  {
+   "start": 1894.38,
+   "end": 1896.26,
+   "text": "is clearly gonna be broken,"
+  },
+  {
+   "start": 1896.26,
+   "end": 1897.58,
+   "text": "and it's gonna be so obvious"
+  },
+  {
+   "start": 1897.58,
+   "end": 1899.34,
+   "text": "the next thing you need to go automate."
+  },
+  {
+   "start": 1899.34,
+   "end": 1901.14,
+   "text": "And I think in your case,"
+  },
+  {
+   "start": 1901.14,
+   "end": 1902.94,
+   "text": "it sounds like it's the operations part of it."
+  },
+  {
+   "start": 1902.94,
+   "end": 1904.62,
+   "text": "And I think that would also give you a lot of relief"
+  },
+  {
+   "start": 1904.62,
+   "end": 1907.62,
+   "text": "once you've come back and you can focus your energy"
+  },
+  {
+   "start": 1907.62,
+   "end": 1909.7,
+   "text": "and your intellect on thinking big"
+  },
+  {
+   "start": 1909.7,
+   "end": 1912.14,
+   "text": "and product and growing revenue"
+  },
+  {
+   "start": 1912.14,
+   "end": 1913.26,
+   "text": "and all these different things."
+  },
+  {
+   "start": 1913.26,
+   "end": 1914.58,
+   "text": "I think you're totally spot on"
+  },
+  {
+   "start": 1914.58,
+   "end": 1917.3,
+   "text": "because with the pregnancy being this catalyst"
+  },
+  {
+   "start": 1917.3,
+   "end": 1918.8,
+   "text": "to force me to think about things,"
+  },
+  {
+   "start": 1918.8,
+   "end": 1922.72,
+   "text": "I also did a bit of like a delegate, elevate,"
+  },
+  {
+   "start": 1922.72,
+   "end": 1925.48,
+   "text": "just kind of figuring out the whole quadrant system"
+  },
+  {
+   "start": 1925.48,
+   "end": 1927.58,
+   "text": "of where I wanna spend my time."
+  },
+  {
+   "start": 1927.58,
+   "end": 1929.48,
+   "text": "And I was realizing so much of my time"
+  },
+  {
+   "start": 1929.48,
+   "end": 1931.12,
+   "text": "was being sucked into the operations"
+  },
+  {
+   "start": 1931.12,
+   "end": 1933.78,
+   "text": "that I haven't been designing new products"
+  },
+  {
+   "start": 1933.78,
+   "end": 1936.5,
+   "text": "and I haven't been able to do the brand building,"
+  },
+  {
+   "start": 1936.5,
+   "end": 1937.94,
+   "text": "the bigger strategic partnerships"
+  },
+  {
+   "start": 1937.94,
+   "end": 1939.78,
+   "text": "that really get me excited."
+  },
+  {
+   "start": 1939.78,
+   "end": 1941.62,
+   "text": "So it was sort of this like, okay,"
+  },
+  {
+   "start": 1941.62,
+   "end": 1944.32,
+   "text": "I'm faced with a very real reality of,"
+  },
+  {
+   "start": 1944.32,
+   "end": 1946.02,
+   "text": "I'm not gonna have a lot of bandwidth"
+  },
+  {
+   "start": 1946.02,
+   "end": 1949.42,
+   "text": "in this short period of time, but when I do come back,"
+  },
+  {
+   "start": 1949.42,
+   "end": 1951.9,
+   "text": "it's making sure I do have the right people in place"
+  },
+  {
+   "start": 1951.9,
+   "end": 1954.14,
+   "text": "or the systems in place or to your point,"
+  },
+  {
+   "start": 1954.14,
+   "end": 1956.22,
+   "text": "automating things so I can have more time back"
+  },
+  {
+   "start": 1956.22,
+   "end": 1958.18,
+   "text": "to do the things I really enjoy."
+  },
+  {
+   "start": 1958.18,
+   "end": 1959.02,
+   "text": "For sure."
+  },
+  {
+   "start": 1959.02,
+   "end": 1960.5,
+   "text": "Like those are things that like,"
+  },
+  {
+   "start": 1960.5,
+   "end": 1962.9,
+   "text": "I think it's much easier to find somebody"
+  },
+  {
+   "start": 1962.9,
+   "end": 1965.38,
+   "text": "who can make the operations run smooth"
+  },
+  {
+   "start": 1965.38,
+   "end": 1967.86,
+   "text": "than it is to find somebody who can think about brand,"
+  },
+  {
+   "start": 1967.86,
+   "end": 1971.06,
+   "text": "can think about product and the intersection of all that."
+  },
+  {
+   "start": 1971.06,
+   "end": 1972.26,
+   "text": "And that's you."
+  },
+  {
+   "start": 1972.26,
+   "end": 1973.14,
+   "text": "Like that's you."
+  },
+  {
+   "start": 1973.14,
+   "end": 1975.26,
+   "text": "You're the only person who can really do that."
+  },
+  {
+   "start": 1975.26,
+   "end": 1977.86,
+   "text": "Ivana, before I forget, do you know the baby's gender?"
+  },
+  {
+   "start": 1977.86,
+   "end": 1978.46,
+   "text": "I do."
+  },
+  {
+   "start": 1978.46,
+   "end": 1979.66,
+   "text": "We're having a boy."
+  },
+  {
+   "start": 1979.66,
+   "end": 1980.46,
+   "text": "Congratulations."
+  },
+  {
+   "start": 1980.46,
+   "end": 1981.1,
+   "text": "Congratulations."
+  },
+  {
+   "start": 1981.1,
+   "end": 1983.74,
+   "text": "They're boys really easy."
+  },
+  {
+   "start": 1983.74,
+   "end": 1985.34,
+   "text": "Harder than girls' babies, but you"
+  },
+  {
+   "start": 1985.34,
+   "end": 1989.9,
+   "text": "will be so happy when that boy's a teenager, as are we."
+  },
+  {
+   "start": 1989.9,
+   "end": 1992.54,
+   "text": "Much easier than girl teenagers, for what I understand."
+  },
+  {
+   "start": 1992.54,
+   "end": 1994.98,
+   "text": "I was telling my parents, I'm like, I was a good daughter,"
+  },
+  {
+   "start": 1994.98,
+   "end": 1995.48,
+   "text": "though."
+  },
+  {
+   "start": 1995.48,
+   "end": 1996.22,
+   "text": "I was easy."
+  },
+  {
+   "start": 1996.22,
+   "end": 1997.58,
+   "text": "You know, it's an easy girl."
+  },
+  {
+   "start": 1997.82,
+   "end": 1998.14,
+   "text": "Yeah."
+  },
+  {
+   "start": 1998.5,
+   "end": 1999.86,
+   "text": "Well, congratulations."
+  },
+  {
+   "start": 1999.9,
+   "end": 2001.3,
+   "text": "I'm so happy for you."
+  },
+  {
+   "start": 2001.82,
+   "end": 2003.26,
+   "text": "The brand is called Playfield."
+  },
+  {
+   "start": 2003.3,
+   "end": 2005.26,
+   "text": "Ivana Tay is the founder in Vancouver."
+  },
+  {
+   "start": 2005.26,
+   "end": 2005.7,
+   "text": "Good luck."
+  },
+  {
+   "start": 2005.82,
+   "end": 2006.78,
+   "text": "Ivana, best of luck."
+  },
+  {
+   "start": 2007.06,
+   "end": 2007.9,
+   "text": "Thank you guys."
+  },
+  {
+   "start": 2007.98,
+   "end": 2008.78,
+   "text": "Means the world."
+  },
+  {
+   "start": 2009.82,
+   "end": 2014.98,
+   "text": "Um, yeah, it's like, you know, things just happen when they're meant to"
+  },
+  {
+   "start": 2014.98,
+   "end": 2018.66,
+   "text": "happen and sometimes the timing is tricky and that's okay."
+  },
+  {
+   "start": 2018.98,
+   "end": 2021.26,
+   "text": "You know, if you leave long enough, you're going to have challenging moments"
+  },
+  {
+   "start": 2021.26,
+   "end": 2024.1,
+   "text": "and at the time when you're dealing with something because it's, you know, it"
+  },
+  {
+   "start": 2024.1,
+   "end": 2024.7,
+   "text": "feels daunting."
+  },
+  {
+   "start": 2024.7,
+   "end": 2025.9,
+   "text": "It feels impossible."
+  },
+  {
+   "start": 2026.42,
+   "end": 2028.9,
+   "text": "But with the benefit of hindsight, that thing seems so trivial."
+  },
+  {
+   "start": 2029.1,
+   "end": 2030.78,
+   "text": "All right, I can think of many things at a time."
+  },
+  {
+   "start": 2030.78,
+   "end": 2033.38,
+   "text": "I was like, man, how am I, how are you going to get through this?"
+  },
+  {
+   "start": 2033.38,
+   "end": 2034.58,
+   "text": "How do you, how do you ever go on?"
+  },
+  {
+   "start": 2034.58,
+   "end": 2038.18,
+   "text": "But you then you look back at that thing many years after the fact, and it just"
+  },
+  {
+   "start": 2038.18,
+   "end": 2039.98,
+   "text": "seems trivial in the grand scheme of things."
+  },
+  {
+   "start": 2042.42,
+   "end": 2045.42,
+   "text": "All right, we're going to take another quick break, but we'll be right back"
+  },
+  {
+   "start": 2045.42,
+   "end": 2046.62,
+   "text": "with another caller."
+  },
+  {
+   "start": 2046.94,
+   "end": 2047.58,
+   "text": "Stay with us."
+  },
+  {
+   "start": 2047.78,
+   "end": 2052.22,
+   "text": "I'm Guy Ross, and you're listening to the advice line right here on how I built this lab."
+  },
+  {
+   "start": 2070.28,
+   "end": 2071.2,
+   "text": "Hi, mom."
+  },
+  {
+   "start": 2071.6,
+   "end": 2073.28,
+   "text": "No, I haven't found a job yet."
+  },
+  {
+   "start": 2073.28,
+   "end": 2078.36,
+   "text": "Because everything is three states away or the salary is missing a zero."
+  },
+  {
+   "start": 2078.36,
+   "end": 2080.36,
+   "text": "Glassdoor has jobs?"
+  },
+  {
+   "start": 2080.36,
+   "end": 2081.36,
+   "text": "That's a review site."
+  },
+  {
+   "start": 2081.36,
+   "end": 2086.98,
+   "text": "Wait, so Glassdoor Recruiter takes everything Glassdoor knows about companies and matches"
+  },
+  {
+   "start": 2086.98,
+   "end": 2088.88,
+   "text": "it to what I actually want in a job?"
+  },
+  {
+   "start": 2088.88,
+   "end": 2091.08,
+   "text": "And it just sends me roles that fit?"
+  },
+  {
+   "start": 2091.08,
+   "end": 2092.84,
+   "text": "I hate it when you're right."
+  },
+  {
+   "start": 2092.84,
+   "end": 2096.68,
+   "text": "Yes, you were right about Derek and the micro bangs."
+  },
+  {
+   "start": 2096.68,
+   "end": 2097.68,
+   "text": "Fit happens."
+  },
+  {
+   "start": 2097.68,
+   "end": 2110.45,
+   "text": "Find the right job with Glassdoor Recruiter."
+  },
+  {
+   "start": 2110.45,
+   "end": 2113.01,
+   "text": "Welcome back to the advice line right here on how I built this lab."
+  },
+  {
+   "start": 2113.01,
+   "end": 2117.85,
+   "text": "I'm Guy Ross and my guest today is Tope Awatana, founder of Calendly and we are taking your"
+  },
+  {
+   "start": 2117.85,
+   "end": 2120.21,
+   "text": "calls and let's bring in our next caller."
+  },
+  {
+   "start": 2120.21,
+   "end": 2121.21,
+   "text": "Hello."
+  },
+  {
+   "start": 2121.21,
+   "end": 2122.21,
+   "text": "Hey Guy, hey Tope."
+  },
+  {
+   "start": 2122.21,
+   "end": 2123.21,
+   "text": "Thanks so much for having me on."
+  },
+  {
+   "start": 2123.21,
+   "end": 2126.01,
+   "text": "I'm super grateful to get to chat with you guys today."
+  },
+  {
+   "start": 2126.01,
+   "end": 2130.97,
+   "text": "My name is Danny and I'm the owner of a boutique style nail salon in Greer, South Carolina"
+  },
+  {
+   "start": 2130.97,
+   "end": 2137.29,
+   "text": "called the Nail Room where we are trying to end the cycle of women being made to choose"
+  },
+  {
+   "start": 2137.29,
+   "end": 2143.11,
+   "text": "between healthy natural nails and a beautiful long-lasting manicure using our signature"
+  },
+  {
+   "start": 2143.11,
+   "end": 2145.59,
+   "text": "techniques and a product called Builder Gel."
+  },
+  {
+   "start": 2145.59,
+   "end": 2146.59,
+   "text": "All right."
+  },
+  {
+   "start": 2146.59,
+   "end": 2147.95,
+   "text": "Welcome to the show, Danny."
+  },
+  {
+   "start": 2147.95,
+   "end": 2148.95,
+   "text": "The nail room."
+  },
+  {
+   "start": 2148.95,
+   "end": 2149.95,
+   "text": "Okay."
+  },
+  {
+   "start": 2149.95,
+   "end": 2153.55,
+   "text": "I'll admit, I have had, never had my nails done, but I've had a pedicure before."
+  },
+  {
+   "start": 2153.55,
+   "end": 2155.59,
+   "text": "It was an amazing experience."
+  },
+  {
+   "start": 2155.59,
+   "end": 2161.59,
+   "text": "So what happens when you go to the nail salon, normally the choice is between like what and"
+  },
+  {
+   "start": 2161.59,
+   "end": 2162.75,
+   "text": "what?"
+  },
+  {
+   "start": 2162.75,
+   "end": 2167.81,
+   "text": "So kind of the way it's typically done now is you go into the nail salon and they'll"
+  },
+  {
+   "start": 2167.81,
+   "end": 2174.31,
+   "text": "glue on artificial tips to your nails and they're just not natural and when you come"
+  },
+  {
+   "start": 2174.31,
+   "end": 2179.71,
+   "text": "back in they have to soak them off using chemicals like acetone, continually thinning and damaging"
+  },
+  {
+   "start": 2179.71,
+   "end": 2181.03,
+   "text": "your nails."
+  },
+  {
+   "start": 2181.03,
+   "end": 2186.23,
+   "text": "So our approach is we use a product called Builder Gel which is just a clear thick gel"
+  },
+  {
+   "start": 2186.23,
+   "end": 2188.71,
+   "text": "that you apply to the nail and it strengthens it."
+  },
+  {
+   "start": 2188.71,
+   "end": 2192.39,
+   "text": "You paint it and when the client comes back in and wants them redone you just remove the"
+  },
+  {
+   "start": 2192.39,
+   "end": 2196.59,
+   "text": "color, fill in the new growth and paint them again so you never have to soak off."
+  },
+  {
+   "start": 2196.59,
+   "end": 2197.59,
+   "text": "Okay, cool."
+  },
+  {
+   "start": 2197.59,
+   "end": 2198.59,
+   "text": "That's awesome."
+  },
+  {
+   "start": 2198.59,
+   "end": 2199.59,
+   "text": "All right."
+  },
+  {
+   "start": 2199.59,
+   "end": 2202.83,
+   "text": "So you've got this different way of doing nails so your nails don't just descend right"
+  },
+  {
+   "start": 2202.83,
+   "end": 2204.67,
+   "text": "and fall off."
+  },
+  {
+   "start": 2204.67,
+   "end": 2207.15,
+   "text": "And by the way, where is Greer, South Carolina?"
+  },
+  {
+   "start": 2207.15,
+   "end": 2208.59,
+   "text": "It's in Greenville, South Carolina."
+  },
+  {
+   "start": 2208.59,
+   "end": 2210.47,
+   "text": "It's in the upstate of South Carolina."
+  },
+  {
+   "start": 2210.47,
+   "end": 2211.47,
+   "text": "Okay."
+  },
+  {
+   "start": 2211.47,
+   "end": 2212.47,
+   "text": "I got it."
+  },
+  {
+   "start": 2212.47,
+   "end": 2213.47,
+   "text": "Okay."
+  },
+  {
+   "start": 2213.47,
+   "end": 2214.47,
+   "text": "And tell me a little bit about the business."
+  },
+  {
+   "start": 2214.47,
+   "end": 2218.07,
+   "text": "When did you launch it and how is the business going?"
+  },
+  {
+   "start": 2218.07,
+   "end": 2220.27,
+   "text": "So we opened four months ago and..."
+  },
+  {
+   "start": 2220.27,
+   "end": 2221.27,
+   "text": "Oh, new brand new."
+  },
+  {
+   "start": 2221.27,
+   "end": 2226.07,
+   "text": "Yes, and our gross sales to date, we just hit 100,000."
+  },
+  {
+   "start": 2226.07,
+   "end": 2227.27,
+   "text": "Congrats, that's awesome."
+  },
+  {
+   "start": 2227.27,
+   "end": 2227.77,
+   "text": "Thank you."
+  },
+  {
+   "start": 2227.77,
+   "end": 2229.87,
+   "text": "And had you worked in this field before,"
+  },
+  {
+   "start": 2229.87,
+   "end": 2234.67,
+   "text": "because this is your business, were you a manicurist before"
+  },
+  {
+   "start": 2234.67,
+   "end": 2235.67,
+   "text": "and decided to start your own?"
+  },
+  {
+   "start": 2235.67,
+   "end": 2236.67,
+   "text": "Tell me a little bit about that."
+  },
+  {
+   "start": 2236.67,
+   "end": 2239.57,
+   "text": "So I was a stay-at-home mom for five years."
+  },
+  {
+   "start": 2239.57,
+   "end": 2240.77,
+   "text": "I have three little ones."
+  },
+  {
+   "start": 2240.77,
+   "end": 2244.87,
+   "text": "And after we had our third baby and we knew we were done,"
+  },
+  {
+   "start": 2244.87,
+   "end": 2247.37,
+   "text": "well, I had started many businesses from home"
+  },
+  {
+   "start": 2247.37,
+   "end": 2248.27,
+   "text": "and then stopped them."
+  },
+  {
+   "start": 2248.27,
+   "end": 2253.15,
+   "text": "I think I always just had the entrepreneurial spirit."
+  },
+  {
+   "start": 2253.15,
+   "end": 2258.19,
+   "text": "And so after we had our third, I told my husband I was ready to really hunker in and"
+  },
+  {
+   "start": 2258.19,
+   "end": 2259.43,
+   "text": "do something."
+  },
+  {
+   "start": 2259.43,
+   "end": 2262.69,
+   "text": "And I had been doing my own nails at home and I've always been artistic."
+  },
+  {
+   "start": 2262.69,
+   "end": 2266.83,
+   "text": "And he actually encouraged me and said, I think you should attend nail school."
+  },
+  {
+   "start": 2266.83,
+   "end": 2267.83,
+   "text": "And cool."
+  },
+  {
+   "start": 2267.83,
+   "end": 2268.83,
+   "text": "Yeah."
+  },
+  {
+   "start": 2268.83,
+   "end": 2272.07,
+   "text": "So I looked into it and it was simple enough and I went and I started doing nails out of"
+  },
+  {
+   "start": 2272.07,
+   "end": 2275.37,
+   "text": "my room in my grandma's home actually."
+  },
+  {
+   "start": 2275.37,
+   "end": 2281.05,
+   "text": "And just based off of the signature technique I was using and the product I was using, I"
+  },
+  {
+   "start": 2281.05,
+   "end": 2285.69,
+   "text": "had to close my books within a couple months working out of a studio at my grandma's house."
+  },
+  {
+   "start": 2285.69,
+   "end": 2290.09,
+   "text": "So my husband and I kind of thought, is this something we could just duplicate in more"
+  },
+  {
+   "start": 2290.09,
+   "end": 2291.77,
+   "text": "girls and start a salon?"
+  },
+  {
+   "start": 2291.77,
+   "end": 2292.77,
+   "text": "And we did."
+  },
+  {
+   "start": 2292.77,
+   "end": 2294.85,
+   "text": "And the demand was there and it's taken off since."
+  },
+  {
+   "start": 2294.85,
+   "end": 2297.97,
+   "text": "And do you have other, to call them stylists or nail technicians?"
+  },
+  {
+   "start": 2297.97,
+   "end": 2300.49,
+   "text": "Do you have others working at the salon?"
+  },
+  {
+   "start": 2300.49,
+   "end": 2302.57,
+   "text": "Yes, there are six of us."
+  },
+  {
+   "start": 2302.57,
+   "end": 2304.97,
+   "text": "So are you even doing nails anymore yourself?"
+  },
+  {
+   "start": 2304.97,
+   "end": 2308.61,
+   "text": "I do nails, I see six clients a week only"
+  },
+  {
+   "start": 2308.61,
+   "end": 2310.49,
+   "text": "so that I can spend time with my kids otherwise."
+  },
+  {
+   "start": 2310.49,
+   "end": 2312.41,
+   "text": "And the business, running the business is a lot, yeah."
+  },
+  {
+   "start": 2312.41,
+   "end": 2313.25,
+   "text": "Yes."
+  },
+  {
+   "start": 2313.25,
+   "end": 2314.17,
+   "text": "All right, before we dive in further,"
+  },
+  {
+   "start": 2314.17,
+   "end": 2315.93,
+   "text": "what is your question for us?"
+  },
+  {
+   "start": 2315.93,
+   "end": 2318.17,
+   "text": "So naturally, like everyone else,"
+  },
+  {
+   "start": 2318.17,
+   "end": 2320.61,
+   "text": "I do wanna know how I can take the success"
+  },
+  {
+   "start": 2320.61,
+   "end": 2321.89,
+   "text": "we've seen on a small scale"
+  },
+  {
+   "start": 2321.89,
+   "end": 2323.65,
+   "text": "and translate it to a big scale."
+  },
+  {
+   "start": 2323.65,
+   "end": 2326.65,
+   "text": "But however, maybe even more so as a wife"
+  },
+  {
+   "start": 2326.65,
+   "end": 2328.05,
+   "text": "and a mother of three kids,"
+  },
+  {
+   "start": 2328.05,
+   "end": 2330.25,
+   "text": "I also wonder, even if you know you can"
+  },
+  {
+   "start": 2330.25,
+   "end": 2332.25,
+   "text": "and the market's there, how do you know if you should?"
+  },
+  {
+   "start": 2332.25,
+   "end": 2334.49,
+   "text": "And if it's right for you, your family and your marriage?"
+  },
+  {
+   "start": 2334.49,
+   "end": 2337.49,
+   "text": "to grow, to scale, like what would you like this to be"
+  },
+  {
+   "start": 2337.49,
+   "end": 2339.61,
+   "text": "in your dream house world?"
+  },
+  {
+   "start": 2339.61,
+   "end": 2343.57,
+   "text": "I would love, honestly, I'm very inspired by Aliweb"
+  },
+  {
+   "start": 2343.57,
+   "end": 2345.61,
+   "text": "of Drybar and what she's done with Drybar."
+  },
+  {
+   "start": 2345.61,
+   "end": 2348.79,
+   "text": "I would love to see the nail room be comparable to that"
+  },
+  {
+   "start": 2348.79,
+   "end": 2353.65,
+   "text": "and see many locations and see it be a new accessible nail"
+  },
+  {
+   "start": 2353.65,
+   "end": 2354.89,
+   "text": "salon, high quality nail salon."
+  },
+  {
+   "start": 2354.89,
+   "end": 2356.05,
+   "text": "That's cool, I love that."
+  },
+  {
+   "start": 2356.05,
+   "end": 2357.61,
+   "text": "Okay, you should reach out to Aliweb,"
+  },
+  {
+   "start": 2357.61,
+   "end": 2359.45,
+   "text": "who's as you probably know was on the show"
+  },
+  {
+   "start": 2359.45,
+   "end": 2361.25,
+   "text": "a few, several years ago."
+  },
+  {
+   "start": 2361.25,
+   "end": 2362.69,
+   "text": "Tope, I wanna bring you in,"
+  },
+  {
+   "start": 2362.69,
+   "end": 2365.21,
+   "text": "Please say hello to Danny, the nail room."
+  },
+  {
+   "start": 2365.21,
+   "end": 2366.05,
+   "text": "Hi, Danny."
+  },
+  {
+   "start": 2366.05,
+   "end": 2366.89,
+   "text": "Hey, Tope."
+  },
+  {
+   "start": 2366.89,
+   "end": 2368.85,
+   "text": "I don't know, have you had a manicure or pedicure before?"
+  },
+  {
+   "start": 2368.85,
+   "end": 2372.01,
+   "text": "I have, everyone's gonna hear this, right?"
+  },
+  {
+   "start": 2372.01,
+   "end": 2372.85,
+   "text": "Everyone's gonna hear it."
+  },
+  {
+   "start": 2372.85,
+   "end": 2374.09,
+   "text": "There's nothing wrong, I've had one."
+  },
+  {
+   "start": 2374.09,
+   "end": 2375.93,
+   "text": "I've had a pedicure, I love it."
+  },
+  {
+   "start": 2375.93,
+   "end": 2377.73,
+   "text": "I have, I do with my wife."
+  },
+  {
+   "start": 2377.73,
+   "end": 2378.69,
+   "text": "Yeah, it's the best."
+  },
+  {
+   "start": 2378.69,
+   "end": 2379.81,
+   "text": "Yeah, yeah, it is, yeah."
+  },
+  {
+   "start": 2379.81,
+   "end": 2381.51,
+   "text": "That's great, we have a lot of men that come in,"
+  },
+  {
+   "start": 2381.51,
+   "end": 2384.61,
+   "text": "we actually offer a pedicure called the Manly Petty."
+  },
+  {
+   "start": 2384.61,
+   "end": 2385.45,
+   "text": "Ah."
+  },
+  {
+   "start": 2385.45,
+   "end": 2387.69,
+   "text": "And it helps that they have alcohol."
+  },
+  {
+   "start": 2387.69,
+   "end": 2388.53,
+   "text": "Yes."
+  },
+  {
+   "start": 2388.53,
+   "end": 2389.61,
+   "text": "Oh, nice."
+  },
+  {
+   "start": 2389.61,
+   "end": 2391.25,
+   "text": "Yeah, I mean, so, all right."
+  },
+  {
+   "start": 2391.25,
+   "end": 2393.77,
+   "text": "So, I mean, there's this vision, a dream,"
+  },
+  {
+   "start": 2393.77,
+   "end": 2396.09,
+   "text": "a sort of a dry bar of nail salons."
+  },
+  {
+   "start": 2396.09,
+   "end": 2399.81,
+   "text": "I think there are a couple of sort of national chains,"
+  },
+  {
+   "start": 2399.81,
+   "end": 2402.13,
+   "text": "if I'm not mistaken, like regal nails"
+  },
+  {
+   "start": 2402.13,
+   "end": 2403.93,
+   "text": "is one that I can think of."
+  },
+  {
+   "start": 2403.93,
+   "end": 2405.17,
+   "text": "So, Tope, what do you think?"
+  },
+  {
+   "start": 2405.17,
+   "end": 2409.45,
+   "text": "I mean, how should somebody like Danny think"
+  },
+  {
+   "start": 2409.45,
+   "end": 2411.21,
+   "text": "about her next move?"
+  },
+  {
+   "start": 2411.21,
+   "end": 2413.33,
+   "text": "Yeah, so congratulations."
+  },
+  {
+   "start": 2413.33,
+   "end": 2415.29,
+   "text": "I mean, the growth that you've had in a short amount"
+  },
+  {
+   "start": 2415.29,
+   "end": 2417.13,
+   "text": "of time is really, really impressive."
+  },
+  {
+   "start": 2418.25,
+   "end": 2420.93,
+   "text": "I think maybe the things I'm trying to understand is,"
+  },
+  {
+   "start": 2420.93,
+   "end": 2424.41,
+   "text": "The business that you have today, how full are you?"
+  },
+  {
+   "start": 2424.41,
+   "end": 2424.65,
+   "text": "Right?"
+  },
+  {
+   "start": 2424.65,
+   "end": 2430.17,
+   "text": "So if you have six technicians, assume you are open 40 hours a week and that's"
+  },
+  {
+   "start": 2430.17,
+   "end": 2432.45,
+   "text": "roughly 240 shift hours."
+  },
+  {
+   "start": 2432.65,
+   "end": 2435.93,
+   "text": "How full are you within those full hour, within those 240 hours?"
+  },
+  {
+   "start": 2436.33,
+   "end": 2440.61,
+   "text": "We are extremely, extremely booked and we're constantly getting complaints"
+  },
+  {
+   "start": 2440.61,
+   "end": 2442.05,
+   "text": "that we don't have more openings."
+  },
+  {
+   "start": 2442.33,
+   "end": 2447.65,
+   "text": "So it has the demand is far surpassing what we can meet at this point."
+  },
+  {
+   "start": 2447.93,
+   "end": 2448.81,
+   "text": "That's fantastic."
+  },
+  {
+   "start": 2448.93,
+   "end": 2450.81,
+   "text": "And you are, you're profitable."
+  },
+  {
+   "start": 2450.93,
+   "end": 2451.43,
+   "text": "Yes."
+  },
+  {
+   "start": 2451.43,
+   "end": 2454.69,
+   "text": "And there's this business skill without you."
+  },
+  {
+   "start": 2454.69,
+   "end": 2458.61,
+   "text": "How much, what, what, when you look at the business today, like, what do you feel like you have to be involved in?"
+  },
+  {
+   "start": 2458.61,
+   "end": 2462.37,
+   "text": "Versus, you know, what do you feel like happens automatically whether you're there or not?"
+  },
+  {
+   "start": 2462.37,
+   "end": 2471.33,
+   "text": "I feel like at this point, we've definitely started, I feel like doing a good job of, we have a manager in play, we have an assistant in play, and that helps a lot."
+  },
+  {
+   "start": 2471.33,
+   "end": 2480.89,
+   "text": "I would say, honestly, probably a lot of the numbers and making sure that our costs aren't too high and, yeah, making sure that, you know, the times are short enough for services."
+  },
+  {
+   "start": 2480.89,
+   "end": 2484.89,
+   "text": "that we can fit enough people in in the same, in the day to, you know, make it profitable"
+  },
+  {
+   "start": 2484.89,
+   "end": 2488.49,
+   "text": "and everything. So really, I think the numbers is where I think I'm feeling like I have to"
+  },
+  {
+   "start": 2488.49,
+   "end": 2491.77,
+   "text": "spend a lot of time watching and making sure it's all going correctly."
+  },
+  {
+   "start": 2491.77,
+   "end": 2496.33,
+   "text": "Okay. A couple of thoughts here. I love that you're thinking of AlleyWeb and Drybar because that is"
+  },
+  {
+   "start": 2496.33,
+   "end": 2502.25,
+   "text": "a really interesting model to think about. And in this space, again, I don't, I'm not super familiar"
+  },
+  {
+   "start": 2502.25,
+   "end": 2508.17,
+   "text": "with it, but it seems to me that like there's an opportunity to do something elevated, almost"
+  },
+  {
+   "start": 2508.17,
+   "end": 2513.05,
+   "text": "like a luxury. You're in, now I know where you are. You're in an interesting part of the country"
+  },
+  {
+   "start": 2513.05,
+   "end": 2519.21,
+   "text": "because even though people might not know a whole lot about Greenville, there is a huge BMW"
+  },
+  {
+   "start": 2519.21,
+   "end": 2526.17,
+   "text": "manufacturing facility there and also a lot of international people who are BMW executives in"
+  },
+  {
+   "start": 2526.17,
+   "end": 2532.01,
+   "text": "that area. So I'm thinking, I love the idea of dreaming big and imagining what it could be like"
+  },
+  {
+   "start": 2532.01,
+   "end": 2535.97,
+   "text": "and you've got a technique, and yes, you can replicate it."
+  },
+  {
+   "start": 2535.97,
+   "end": 2538.57,
+   "text": "But I don't think the technique is enough"
+  },
+  {
+   "start": 2538.57,
+   "end": 2539.69,
+   "text": "to get people into the door,"
+  },
+  {
+   "start": 2539.69,
+   "end": 2541.65,
+   "text": "because I'm sure there are a lot of nail salons"
+  },
+  {
+   "start": 2541.65,
+   "end": 2543.17,
+   "text": "around the country that do this technique,"
+  },
+  {
+   "start": 2543.17,
+   "end": 2546.65,
+   "text": "and that's not the differentiating factor to me."
+  },
+  {
+   "start": 2546.65,
+   "end": 2549.61,
+   "text": "What is gonna make this business different,"
+  },
+  {
+   "start": 2549.61,
+   "end": 2552.49,
+   "text": "and I think you really need to hone in and perfect it"
+  },
+  {
+   "start": 2552.49,
+   "end": 2556.17,
+   "text": "at this salon, is to focus on experience,"
+  },
+  {
+   "start": 2556.17,
+   "end": 2558.33,
+   "text": "not just how your nails are gonna look"
+  },
+  {
+   "start": 2558.33,
+   "end": 2560.13,
+   "text": "and how beautiful they're gonna be and healthy."
+  },
+  {
+   "start": 2560.13,
+   "end": 2561.13,
+   "text": "That's great."
+  },
+  {
+   "start": 2561.13,
+   "end": 2563.17,
+   "text": "But how are you going to feel when you're there?"
+  },
+  {
+   "start": 2563.17,
+   "end": 2565.09,
+   "text": "Are you going to get a glass of champagne?"
+  },
+  {
+   "start": 2565.09,
+   "end": 2570.13,
+   "text": "Are you going to invest in a little espresso maker and offer a little espresso?"
+  },
+  {
+   "start": 2570.13,
+   "end": 2576.05,
+   "text": "Or even something like, can you bring your kid in and somebody will watch your kid?"
+  },
+  {
+   "start": 2576.05,
+   "end": 2578.85,
+   "text": "I'm not saying you just..."
+  },
+  {
+   "start": 2578.85,
+   "end": 2584.05,
+   "text": "Interesting innovative ideas that create an experience for people like, oh, the nail room."
+  },
+  {
+   "start": 2584.05,
+   "end": 2585.45,
+   "text": "That's what Drybar did."
+  },
+  {
+   "start": 2585.45,
+   "end": 2586.45,
+   "text": "Yeah."
+  },
+  {
+   "start": 2586.45,
+   "end": 2587.45,
+   "text": "I love that."
+  },
+  {
+   "start": 2587.45,
+   "end": 2593.93,
+   "text": "actually offer craft lattes when they come in and they change with the season and people"
+  },
+  {
+   "start": 2593.93,
+   "end": 2598.01,
+   "text": "genuinely come in inside and they're like, I've been looking forward to this latte all day."
+  },
+  {
+   "start": 2598.89,
+   "end": 2602.01,
+   "text": "So yes, we're tapping into the luxury side and the experience."
+  },
+  {
+   "start": 2602.01,
+   "end": 2606.65,
+   "text": "Experience, experience. And because the gel technique, like, not everyone's doing that,"
+  },
+  {
+   "start": 2606.65,
+   "end": 2612.89,
+   "text": "I agree, but that's replicable. You can't replicate a feeling. It's not easy. And if you really"
+  },
+  {
+   "start": 2612.89,
+   "end": 2618.01,
+   "text": "make people feel like they're getting more value than what they paid for, that's a game"
+  },
+  {
+   "start": 2618.01,
+   "end": 2619.01,
+   "text": "changer."
+  },
+  {
+   "start": 2619.01,
+   "end": 2620.01,
+   "text": "I think you're absolutely right."
+  },
+  {
+   "start": 2620.01,
+   "end": 2622.05,
+   "text": "So, I mean, let's take my wife, for example."
+  },
+  {
+   "start": 2622.05,
+   "end": 2623.71,
+   "text": "My wife actually has all this equipment."
+  },
+  {
+   "start": 2623.71,
+   "end": 2627.53,
+   "text": "She does her nails and she does it so well that one time she went to a salon and they"
+  },
+  {
+   "start": 2627.53,
+   "end": 2628.53,
+   "text": "wanted to hire her."
+  },
+  {
+   "start": 2628.53,
+   "end": 2629.53,
+   "text": "Wow."
+  },
+  {
+   "start": 2629.53,
+   "end": 2630.53,
+   "text": "Wow."
+  },
+  {
+   "start": 2630.53,
+   "end": 2631.53,
+   "text": "Which is kind of similar to your story."
+  },
+  {
+   "start": 2631.53,
+   "end": 2632.53,
+   "text": "Yes."
+  },
+  {
+   "start": 2632.53,
+   "end": 2635.09,
+   "text": "But at the end of the day, when she has all the equipment, why did she go to the salon?"
+  },
+  {
+   "start": 2635.09,
+   "end": 2636.85,
+   "text": "I think that ultimately has to do with experience."
+  },
+  {
+   "start": 2636.85,
+   "end": 2639.49,
+   "text": "So, Guy, I think you're absolutely right."
+  },
+  {
+   "start": 2639.49,
+   "end": 2643.85,
+   "text": "I think the other part of your question, Danny, is should I expand and how do I go about it?"
+  },
+  {
+   "start": 2644.01,
+   "end": 2646.41,
+   "text": "And I feel like it's ultimately a personal question."
+  },
+  {
+   "start": 2646.81,
+   "end": 2650.17,
+   "text": "Only you can kind of answer that question about how big it should be."
+  },
+  {
+   "start": 2650.17,
+   "end": 2653.61,
+   "text": "I think you're going to be successful regardless of which path you, you're"
+  },
+  {
+   "start": 2653.61,
+   "end": 2656.01,
+   "text": "already successful and you remain successful regardless of what you do."
+  },
+  {
+   "start": 2656.01,
+   "end": 2658.73,
+   "text": "But I think it comes with a lot of sacrifices, right?"
+  },
+  {
+   "start": 2658.77,
+   "end": 2661.25,
+   "text": "I don't get to hang out with my friends as much as I would like to."
+  },
+  {
+   "start": 2661.65,
+   "end": 2665.53,
+   "text": "I'm not a great cousin or brother at times."
+  },
+  {
+   "start": 2665.53,
+   "end": 2666.89,
+   "text": "Those are sacrifices that I've made."
+  },
+  {
+   "start": 2666.89,
+   "end": 2673.05,
+   "text": "But on the flip side, the financial sort of rewards of county have allowed me to impact a lot of"
+  },
+  {
+   "start": 2673.05,
+   "end": 2676.17,
+   "text": "people in a lot of different ways and that's something that I'm proud of. And so I think"
+  },
+  {
+   "start": 2676.17,
+   "end": 2680.73,
+   "text": "you just have to look at the pros and the cons and make that decision ultimately for yourself."
+  },
+  {
+   "start": 2680.73,
+   "end": 2683.77,
+   "text": "And as you're thinking about expansion, given that you're already full today,"
+  },
+  {
+   "start": 2683.77,
+   "end": 2689.29,
+   "text": "I'd be more inclined to think about how do you get a bigger location and get more revenue out of"
+  },
+  {
+   "start": 2689.29,
+   "end": 2695.29,
+   "text": "each individual location first, maximizing revenue per store before you think about even the second"
+  },
+  {
+   "start": 2695.29,
+   "end": 2702.03,
+   "text": "Yes. Yeah. Exactly. And once you've got things down at the first store, then you start with"
+  },
+  {
+   "start": 2702.03,
+   "end": 2707.13,
+   "text": "one store and you do that for a year before you go to store three and you go to Greenville,"
+  },
+  {
+   "start": 2707.13,
+   "end": 2712.71,
+   "text": "downtown Greenville, right? You go from, and then maybe then you go to Charlotte, you know,"
+  },
+  {
+   "start": 2712.71,
+   "end": 2717.87,
+   "text": "only, but you really start really local. That's such great advice."
+  },
+  {
+   "start": 2717.87,
+   "end": 2721.21,
+   "text": "Danny Sarkella, Nail Room, thanks for calling and good luck."
+  },
+  {
+   "start": 2721.21,
+   "end": 2722.21,
+   "text": "Thank you so much."
+  },
+  {
+   "start": 2722.21,
+   "end": 2723.93,
+   "text": "Thank you."
+  },
+  {
+   "start": 2723.93,
+   "end": 2728.01,
+   "text": "Yeah, I have not had a pedicure in a long, long time."
+  },
+  {
+   "start": 2728.01,
+   "end": 2728.85,
+   "text": "I don't need to go back."
+  },
+  {
+   "start": 2728.85,
+   "end": 2730.41,
+   "text": "It was a nice bonding experience."
+  },
+  {
+   "start": 2730.41,
+   "end": 2731.77,
+   "text": "My wife was sitting in those chairs,"
+  },
+  {
+   "start": 2731.77,
+   "end": 2734.29,
+   "text": "and you know, your feet are on the bath,"
+  },
+  {
+   "start": 2734.29,
+   "end": 2735.89,
+   "text": "and it's nice."
+  },
+  {
+   "start": 2735.89,
+   "end": 2736.73,
+   "text": "It's very nice."
+  },
+  {
+   "start": 2736.73,
+   "end": 2737.65,
+   "text": "I'm due for one with my wife."
+  },
+  {
+   "start": 2737.65,
+   "end": 2739.69,
+   "text": "It's a great day-date."
+  },
+  {
+   "start": 2739.69,
+   "end": 2740.53,
+   "text": "Yeah."
+  },
+  {
+   "start": 2740.53,
+   "end": 2741.37,
+   "text": "Maybe I'll go to Atlanta."
+  },
+  {
+   "start": 2741.37,
+   "end": 2743.41,
+   "text": "We'll do like a double date."
+  },
+  {
+   "start": 2743.41,
+   "end": 2745.13,
+   "text": "Just sitting four chairs, get pedicures."
+  },
+  {
+   "start": 2745.13,
+   "end": 2749.78,
+   "text": "Let's do it."
+  },
+  {
+   "start": 2749.78,
+   "end": 2750.94,
+   "text": "We're going to take a quick break,"
+  },
+  {
+   "start": 2750.94,
+   "end": 2753.9,
+   "text": "but when we come back, another caller, another question,"
+  },
+  {
+   "start": 2753.9,
+   "end": 2755.62,
+   "text": "and another round of advice."
+  },
+  {
+   "start": 2755.62,
+   "end": 2756.7,
+   "text": "I'm Guy Razz, stick around,"
+  },
+  {
+   "start": 2756.7,
+   "end": 2759.5,
+   "text": "you're listening to the Advice Line on How I Built This."
+  },
+  {
+   "start": 2778.38,
+   "end": 2786.07,
+   "text": "Duel is now available everywhere in the U.S."
+  },
+  {
+   "start": 2786.07,
+   "end": 2787.71,
+   "text": "So you can get in on the sports action"
+  },
+  {
+   "start": 2787.71,
+   "end": 2790.87,
+   "text": "no matter where you are, including these places."
+  },
+  {
+   "start": 2790.87,
+   "end": 2794.34,
+   "text": "And you go to the buffer on Lincoln,"
+  },
+  {
+   "start": 2794.34,
+   "end": 2795.58,
+   "text": "shot down on the 10."
+  },
+  {
+   "start": 2795.58,
+   "end": 2798.54,
+   "text": "Make this your most rewarding season ever with FanDuel."
+  },
+  {
+   "start": 2798.54,
+   "end": 2800.14,
+   "text": "Agent location restriction supply,"
+  },
+  {
+   "start": 2800.14,
+   "end": 2801.9,
+   "text": "product availability varies by market."
+  },
+  {
+   "start": 2801.9,
+   "end": 2803.46,
+   "text": "See FanDuel.com for eligibility."
+  },
+  {
+   "start": 2803.46,
+   "end": 2816.64,
+   "text": "Gambling problem called 1-800-GEMBLER."
+  },
+  {
+   "start": 2816.64,
+   "end": 2819.6,
+   "text": "Welcome back to the Advice Line on How I Built This Lab."
+  },
+  {
+   "start": 2819.6,
+   "end": 2820.6,
+   "text": "I'm Guy Roz."
+  },
+  {
+   "start": 2820.6,
+   "end": 2821.82,
+   "text": "All right, let's bring in our final caller."
+  },
+  {
+   "start": 2821.82,
+   "end": 2823.14,
+   "text": "Welcome to the device line you're on"
+  },
+  {
+   "start": 2823.14,
+   "end": 2825.12,
+   "text": "with Topa Ohtana, founder of Calendly."
+  },
+  {
+   "start": 2825.12,
+   "end": 2826.74,
+   "text": "Please tell us your name or you're calling from"
+  },
+  {
+   "start": 2826.74,
+   "end": 2828.78,
+   "text": "and just a line or two by your business."
+  },
+  {
+   "start": 2828.78,
+   "end": 2829.62,
+   "text": "Sure."
+  },
+  {
+   "start": 2829.62,
+   "end": 2830.86,
+   "text": "Hey guy, hey Top."
+  },
+  {
+   "start": 2830.86,
+   "end": 2833.9,
+   "text": "My name is Justin Kittrich from Boston, Massachusetts."
+  },
+  {
+   "start": 2833.9,
+   "end": 2835.54,
+   "text": "I am the founder of iSlide."
+  },
+  {
+   "start": 2835.54,
+   "end": 2838.38,
+   "text": "We are a premium customized footwear company"
+  },
+  {
+   "start": 2838.38,
+   "end": 2842.22,
+   "text": "focusing on slide sandals, slippers and socks."
+  },
+  {
+   "start": 2842.22,
+   "end": 2843.24,
+   "text": "Awesome, welcome to the show."
+  },
+  {
+   "start": 2843.24,
+   "end": 2845.54,
+   "text": "Okay, slide sandals, slippers and socks."
+  },
+  {
+   "start": 2845.54,
+   "end": 2848.1,
+   "text": "And what, tell me a little bit about what"
+  },
+  {
+   "start": 2848.1,
+   "end": 2849.78,
+   "text": "Are they designed differently?"
+  },
+  {
+   "start": 2849.78,
+   "end": 2851.78,
+   "text": "What makes them unusual?"
+  },
+  {
+   "start": 2851.78,
+   "end": 2853.66,
+   "text": "So the biggest thing about them,"
+  },
+  {
+   "start": 2853.66,
+   "end": 2856.22,
+   "text": "the slides themselves are customized."
+  },
+  {
+   "start": 2856.22,
+   "end": 2860.34,
+   "text": "So almost no one does customized slide sandals."
+  },
+  {
+   "start": 2860.34,
+   "end": 2862.7,
+   "text": "So it's the slides that you think of like kind of going"
+  },
+  {
+   "start": 2862.7,
+   "end": 2865.54,
+   "text": "to and from a basketball court or football field,"
+  },
+  {
+   "start": 2865.54,
+   "end": 2867.02,
+   "text": "baseball field."
+  },
+  {
+   "start": 2867.02,
+   "end": 2869.34,
+   "text": "I don't want to say like some of these bigger brands,"
+  },
+  {
+   "start": 2869.34,
+   "end": 2870.94,
+   "text": "but like they're very similar looking."
+  },
+  {
+   "start": 2870.94,
+   "end": 2873.7,
+   "text": "But our biggest thing is it's all customized"
+  },
+  {
+   "start": 2873.7,
+   "end": 2875.06,
+   "text": "one pair at a time."
+  },
+  {
+   "start": 2875.06,
+   "end": 2876.46,
+   "text": "Customized meaning what?"
+  },
+  {
+   "start": 2876.46,
+   "end": 2880.3,
+   "text": "there's what, like a branding or corporate customization"
+  },
+  {
+   "start": 2880.3,
+   "end": 2881.14,
+   "text": "or what?"
+  },
+  {
+   "start": 2881.14,
+   "end": 2881.98,
+   "text": "You can do anything."
+  },
+  {
+   "start": 2881.98,
+   "end": 2885.26,
+   "text": "So we have licensing, so we have NBA, MLB, NHL."
+  },
+  {
+   "start": 2885.26,
+   "end": 2887.06,
+   "text": "We do local teams."
+  },
+  {
+   "start": 2887.06,
+   "end": 2889.5,
+   "text": "We have over 100 colleges."
+  },
+  {
+   "start": 2889.5,
+   "end": 2892.46,
+   "text": "We do brands, we do companies, we do, you know,"
+  },
+  {
+   "start": 2892.46,
+   "end": 2894.32,
+   "text": "and anything that you want,"
+  },
+  {
+   "start": 2894.32,
+   "end": 2896.26,
+   "text": "we actually will customize logo on it."
+  },
+  {
+   "start": 2896.26,
+   "end": 2899.18,
+   "text": "So I could do like how I built this slides or slippers."
+  },
+  {
+   "start": 2899.18,
+   "end": 2901.1,
+   "text": "You just upload the logo and you print them on."
+  },
+  {
+   "start": 2901.1,
+   "end": 2902.3,
+   "text": "100%."
+  },
+  {
+   "start": 2902.3,
+   "end": 2904.56,
+   "text": "Tell me a little bit about the business."
+  },
+  {
+   "start": 2904.56,
+   "end": 2907.96,
+   "text": "What did you start it and how is it doing now?"
+  },
+  {
+   "start": 2907.96,
+   "end": 2911.84,
+   "text": "Sure, so we started the company 13 years ago."
+  },
+  {
+   "start": 2911.84,
+   "end": 2914.44,
+   "text": "We've grown 12 out of 13 years."
+  },
+  {
+   "start": 2914.44,
+   "end": 2917.2,
+   "text": "However, we've experienced only slight growth"
+  },
+  {
+   "start": 2917.2,
+   "end": 2918.76,
+   "text": "these last few years,"
+  },
+  {
+   "start": 2918.76,
+   "end": 2921.96,
+   "text": "as we really just focus much more on profit."
+  },
+  {
+   "start": 2921.96,
+   "end": 2924.2,
+   "text": "But as we look into the next few years"
+  },
+  {
+   "start": 2924.2,
+   "end": 2925.76,
+   "text": "in higher growth mode,"
+  },
+  {
+   "start": 2925.76,
+   "end": 2927.84,
+   "text": "we're struggling of where to focus,"
+  },
+  {
+   "start": 2927.84,
+   "end": 2931.6,
+   "text": "mainly because we sell into so many different channels"
+  },
+  {
+   "start": 2931.6,
+   "end": 2934.48,
+   "text": "and we have so many different types of target consumers"
+  },
+  {
+   "start": 2934.48,
+   "end": 2936.2,
+   "text": "that we actually that will buy our product."
+  },
+  {
+   "start": 2936.2,
+   "end": 2939.0,
+   "text": "So as we kind of get back into growth mode,"
+  },
+  {
+   "start": 2939.0,
+   "end": 2941.6,
+   "text": "is it's really just trying to figure out,"
+  },
+  {
+   "start": 2941.6,
+   "end": 2943.56,
+   "text": "instead of trying to do a little bit of everything,"
+  },
+  {
+   "start": 2943.56,
+   "end": 2945.6,
+   "text": "are there some certain channels"
+  },
+  {
+   "start": 2945.6,
+   "end": 2947.88,
+   "text": "that we really should be focusing on?"
+  },
+  {
+   "start": 2947.88,
+   "end": 2950.04,
+   "text": "All right, that's your question just for context."
+  },
+  {
+   "start": 2950.04,
+   "end": 2952.88,
+   "text": "Roughly what are your annual sales?"
+  },
+  {
+   "start": 2952.88,
+   "end": 2954.56,
+   "text": "About five and a half million."
+  },
+  {
+   "start": 2954.56,
+   "end": 2956.92,
+   "text": "And this is all direct to consumer?"
+  },
+  {
+   "start": 2956.92,
+   "end": 2959.68,
+   "text": "No, like our, we actually don't focus"
+  },
+  {
+   "start": 2959.68,
+   "end": 2961.56,
+   "text": "on our website sales a lot."
+  },
+  {
+   "start": 2961.56,
+   "end": 2963.84,
+   "text": "We really focus on four different channels."
+  },
+  {
+   "start": 2963.84,
+   "end": 2967.76,
+   "text": "So our E-Com is our just sole director consumer."
+  },
+  {
+   "start": 2967.76,
+   "end": 2969.72,
+   "text": "We do have traditional wholesale."
+  },
+  {
+   "start": 2969.72,
+   "end": 2973.92,
+   "text": "So we will sell into brick and mortar and even some other e-commerce sites that will"
+  },
+  {
+   "start": 2973.92,
+   "end": 2978.08,
+   "text": "take our product and then resell it just on their own site."
+  },
+  {
+   "start": 2978.08,
+   "end": 2984.84,
+   "text": "We do direct to like teams, that's that bulk ordering and that could be for a team, that"
+  },
+  {
+   "start": 2984.84,
+   "end": 2989.32,
+   "text": "could be a company outing, that could be for a brand that is going, you know, that just"
+  },
+  {
+   "start": 2989.32,
+   "end": 2991.76,
+   "text": "wants to buy a lot at one time."
+  },
+  {
+   "start": 2991.76,
+   "end": 2996.08,
+   "text": "And then lastly, which is kind of falls in between this wholesale direct to consumer"
+  },
+  {
+   "start": 2996.08,
+   "end": 3001.12,
+   "text": "is we do a lot and we're growing our business within the drop ship model."
+  },
+  {
+   "start": 3001.12,
+   "end": 3008.48,
+   "text": "So basically a company like Fanatics, they might have a thousand of our different teams"
+  },
+  {
+   "start": 3008.48,
+   "end": 3011.56,
+   "text": "of our slides on their platform."
+  },
+  {
+   "start": 3011.56,
+   "end": 3016.88,
+   "text": "And we'll bring all those sales in to go right into our kind of printing process center."
+  },
+  {
+   "start": 3016.88,
+   "end": 3020.58,
+   "text": "And then within a couple of days, we'll print them and ship them to those, all these different"
+  },
+  {
+   "start": 3020.58,
+   "end": 3021.58,
+   "text": "consumers."
+  },
+  {
+   "start": 3021.58,
+   "end": 3025.98,
+   "text": "Okay. And so you're doing about five million sales and you're looking, I'm assuming, to"
+  },
+  {
+   "start": 3025.98,
+   "end": 3029.66,
+   "text": "expand to get to sort of maybe break through to 10 or even more."
+  },
+  {
+   "start": 3029.66,
+   "end": 3035.98,
+   "text": "Yeah. I mean, I think for us, 10 is that next kind of plateau that kind of goal to strive for."
+  },
+  {
+   "start": 3035.98,
+   "end": 3037.26,
+   "text": "How many employees do you guys have?"
+  },
+  {
+   "start": 3037.9,
+   "end": 3038.94,
+   "text": "Today we have 10."
+  },
+  {
+   "start": 3038.94,
+   "end": 3043.1,
+   "text": "Okay. 10 in place. All right. I want to bring Tope in here. You've been there. You were,"
+  },
+  {
+   "start": 3043.1,
+   "end": 3047.42,
+   "text": "you're a business that was doing a few hundred thousand or less than that. And then you had to"
+  },
+  {
+   "start": 3047.42,
+   "end": 3053.22,
+   "text": "to grow it and then 10 million is a, it is a really significant milestone to reach that"
+  },
+  {
+   "start": 3053.22,
+   "end": 3058.06,
+   "text": "number. It's hard. How do you break through? How do you get to that point?"
+  },
+  {
+   "start": 3058.06,
+   "end": 3062.86,
+   "text": "Yeah, Justin, congratulations on the business you've built. I started Calendly 13 years"
+  },
+  {
+   "start": 3062.86,
+   "end": 3069.09,
+   "text": "ago, so we have that in common. In general, I'm a fan of the Apple model, which is like"
+  },
+  {
+   "start": 3069.09,
+   "end": 3074.29,
+   "text": "the fewest products you can have that generate the most amount of revenue. So I'm a huge"
+  },
+  {
+   "start": 3074.29,
+   "end": 3079.09,
+   "text": "fan of focus and getting leverage through that. But as you think about the different channels"
+  },
+  {
+   "start": 3079.09,
+   "end": 3086.69,
+   "text": "and different products, are there some that have stronger metrics on repeat orders, on"
+  },
+  {
+   "start": 3086.69,
+   "end": 3090.93,
+   "text": "average revenue? Are there parts of the business that you're more excited and more passionate"
+  },
+  {
+   "start": 3090.93,
+   "end": 3092.61,
+   "text": "about than others, for example?"
+  },
+  {
+   "start": 3092.61,
+   "end": 3099.73,
+   "text": "Yeah, I love our licensed business for sure. But I really do love our directed team model,"
+  },
+  {
+   "start": 3099.73,
+   "end": 3103.97,
+   "text": "right? And again, we will sell to pro teams, college, high school, and youth. So they have"
+  },
+  {
+   "start": 3103.97,
+   "end": 3105.37,
+   "text": "They have the hat, they have the jersey,"
+  },
+  {
+   "start": 3105.37,
+   "end": 3107.87,
+   "text": "they have everything with their logo on it,"
+  },
+  {
+   "start": 3107.87,
+   "end": 3110.37,
+   "text": "but they've always just worn like a regular"
+  },
+  {
+   "start": 3110.37,
+   "end": 3112.05,
+   "text": "Nike or Adidas type of product."
+  },
+  {
+   "start": 3112.05,
+   "end": 3114.25,
+   "text": "Now they can have the full headed toe."
+  },
+  {
+   "start": 3114.25,
+   "end": 3117.53,
+   "text": "So I really do love those two elements."
+  },
+  {
+   "start": 3117.53,
+   "end": 3119.99,
+   "text": "I think the part for us, it's funny that like,"
+  },
+  {
+   "start": 3119.99,
+   "end": 3123.37,
+   "text": "I would love to focus more, but then you look at"
+  },
+  {
+   "start": 3123.37,
+   "end": 3127.13,
+   "text": "things that have happened in our career like COVID,"
+  },
+  {
+   "start": 3127.13,
+   "end": 3130.45,
+   "text": "where our e-commerce businesses, if we didn't have them,"
+  },
+  {
+   "start": 3130.45,
+   "end": 3133.45,
+   "text": "those direct to consumer and drop ship models,"
+  },
+  {
+   "start": 3133.45,
+   "end": 3136.29,
+   "text": "like absolutely took off and was amazing"
+  },
+  {
+   "start": 3136.29,
+   "end": 3139.29,
+   "text": "where wholesale and brick and mortar was dead."
+  },
+  {
+   "start": 3139.29,
+   "end": 3140.61,
+   "text": "And then the following year,"
+  },
+  {
+   "start": 3140.61,
+   "end": 3143.85,
+   "text": "you see some of that econ business kind of take a fall"
+  },
+  {
+   "start": 3143.85,
+   "end": 3146.89,
+   "text": "and the other parts of our business actually like thrived."
+  },
+  {
+   "start": 3146.89,
+   "end": 3150.29,
+   "text": "And I think the thought of getting rid of one or two"
+  },
+  {
+   "start": 3150.29,
+   "end": 3152.45,
+   "text": "was just kind of like the scary part of like,"
+  },
+  {
+   "start": 3152.45,
+   "end": 3155.05,
+   "text": "well, if I did and something else happens,"
+  },
+  {
+   "start": 3155.05,
+   "end": 3156.65,
+   "text": "I mean, we could have been out of business, right?"
+  },
+  {
+   "start": 3156.65,
+   "end": 3159.17,
+   "text": "Like during COVID or maybe even the year after"
+  },
+  {
+   "start": 3159.17,
+   "end": 3161.01,
+   "text": "depending on the channels we had."
+  },
+  {
+   "start": 3161.01,
+   "end": 3163.61,
+   "text": "Yeah, I think you're absolutely right."
+  },
+  {
+   "start": 3164.51,
+   "end": 3167.67,
+   "text": "I do think that, again, generally speaking, right?"
+  },
+  {
+   "start": 3167.67,
+   "end": 3169.71,
+   "text": "Within every business, there's gonna be an inflection point."
+  },
+  {
+   "start": 3169.71,
+   "end": 3171.95,
+   "text": "The things that got you from zero to one"
+  },
+  {
+   "start": 3171.95,
+   "end": 3172.95,
+   "text": "are gonna be different for the things"
+  },
+  {
+   "start": 3172.95,
+   "end": 3175.59,
+   "text": "that got you from one to $5 million in revenue."
+  },
+  {
+   "start": 3175.59,
+   "end": 3178.63,
+   "text": "And I think likewise, going from $5 to $10 million in revenue"
+  },
+  {
+   "start": 3178.63,
+   "end": 3181.03,
+   "text": "will probably require some fundamental,"
+  },
+  {
+   "start": 3181.03,
+   "end": 3182.83,
+   "text": "will probably require some trade-offs."
+  },
+  {
+   "start": 3183.79,
+   "end": 3186.99,
+   "text": "There's this guy, Naval, he's a sort of, you know,"
+  },
+  {
+   "start": 3186.99,
+   "end": 3188.59,
+   "text": "philosopher, as the founder of-"
+  },
+  {
+   "start": 3188.59,
+   "end": 3189.55,
+   "text": "Naval Revacot, right?"
+  },
+  {
+   "start": 3189.55,
+   "end": 3196.67,
+   "text": "Yeah, exactly. Angel's list or what it's called. He had this really profound quote and what he said was,"
+  },
+  {
+   "start": 3197.23,
+   "end": 3202.99,
+   "text": "you know, a happy man has a million wishes, but a dying man has one wish, right? Which is to live."
+  },
+  {
+   "start": 3202.99,
+   "end": 3207.39,
+   "text": "And you know, your business is not in any way dying, but if you, and it's not going to die,"
+  },
+  {
+   "start": 3207.39,
+   "end": 3213.23,
+   "text": "it's doing great. It's been around for 13 years. But if you were to kind of approach the problem"
+  },
+  {
+   "start": 3213.23,
+   "end": 3218.59,
+   "text": "from that standpoint of like, I have one goal and that goal is to get from five to 10 million"
+  },
+  {
+   "start": 3218.59,
+   "end": 3222.27,
+   "text": "dollars, it might force you to make some trade-offs."
+  },
+  {
+   "start": 3222.27,
+   "end": 3226.27,
+   "text": "Because I think right now, you both want the diversification."
+  },
+  {
+   "start": 3226.27,
+   "end": 3230.87,
+   "text": "I think you can have diversification while also looking to grow the business."
+  },
+  {
+   "start": 3230.87,
+   "end": 3234.31,
+   "text": "Maybe you have four different products, a X number of channels, maybe you don't, maybe"
+  },
+  {
+   "start": 3234.31,
+   "end": 3239.87,
+   "text": "you don't scale all of them down, but can you gradually begin to bet on one or two of"
+  },
+  {
+   "start": 3239.87,
+   "end": 3245.63,
+   "text": "them and put 80% of your time and effort in those and not even, you know, you as the CEO"
+  },
+  {
+   "start": 3245.63,
+   "end": 3250.43,
+   "text": "and founder, don't even spend your time on the channels that are deprioritized."
+  },
+  {
+   "start": 3250.43,
+   "end": 3256.35,
+   "text": "Yeah. Yeah. I mean, I think that it's a big question and it's a very hard question to answer."
+  },
+  {
+   "start": 3256.35,
+   "end": 3260.51,
+   "text": "And there are many, many different ways to answer it. I mean, part of that can be answered by"
+  },
+  {
+   "start": 3260.51,
+   "end": 3266.19,
+   "text": "efficiencies and how you source. But some of those things you may not want to change."
+  },
+  {
+   "start": 3267.47,
+   "end": 3271.63,
+   "text": "I'm not sure whether it's selling into too many channels. I mean, to me, selling into"
+  },
+  {
+   "start": 3271.63,
+   "end": 3276.67,
+   "text": "lots of different channels is a good thing to be doing. But of course, you want to be more"
+  },
+  {
+   "start": 3276.67,
+   "end": 3282.43,
+   "text": "efficient about the order sizes, right? But better to sell into 20 channels with big orders than"
+  },
+  {
+   "start": 3283.15,
+   "end": 3287.71,
+   "text": "300 channels with tiny orders, fair enough, right? And I'm assuming that's what you're looking for."
+  },
+  {
+   "start": 3287.71,
+   "end": 3292.27,
+   "text": "You're looking for bigger partnerships. Absolutely. I mean, some of our, we talk"
+  },
+  {
+   "start": 3292.27,
+   "end": 3297.95,
+   "text": "about the drop ship model, even some of the wholesale that we have, those are great partners"
+  },
+  {
+   "start": 3297.95,
+   "end": 3303.79,
+   "text": "that are consistent sales coming in every single day. And it's like, okay, yeah, how do we find more"
+  },
+  {
+   "start": 3303.79,
+   "end": 3310.59,
+   "text": "like that in our target demographic group? We are trying to lean more into AI. And I think,"
+  },
+  {
+   "start": 3310.59,
+   "end": 3318.51,
+   "text": "by doing that, that might, from a sales outreach and communication back and forth, it could go"
+  },
+  {
+   "start": 3318.51,
+   "end": 3322.83,
+   "text": "a really long way. Just kind of a little bit what Tope was saying in the beginning about,"
+  },
+  {
+   "start": 3322.83,
+   "end": 3328.91,
+   "text": "He can have his AI assistant just all of a sudden now come on board and set these meetings."
+  },
+  {
+   "start": 3328.91,
+   "end": 3334.27,
+   "text": "Exactly. We are trying to lean into that a lot more and we have great sales reps now,"
+  },
+  {
+   "start": 3334.27,
+   "end": 3340.75,
+   "text": "but imagine if those sales reps that we have could almost be doing 10x what they're doing now"
+  },
+  {
+   "start": 3340.75,
+   "end": 3344.51,
+   "text": "because of how much easier we can make their life through AI."
+  },
+  {
+   "start": 3344.51,
+   "end": 3349.15,
+   "text": "Yeah, awesome. Justin Kitchridge, the brand is called iSlide. Thank you for calling and good luck."
+  },
+  {
+   "start": 3349.15,
+   "end": 3350.67,
+   "text": "All right. Thanks, guys. Thanks, Tope."
+  },
+  {
+   "start": 3350.67,
+   "end": 3351.79,
+   "text": "All right. Thank you. Take care."
+  },
+  {
+   "start": 3351.79,
+   "end": 3353.41,
+   "text": "All right, bye-bye."
+  },
+  {
+   "start": 3353.41,
+   "end": 3355.93,
+   "text": "Tope, Tope, Tope."
+  },
+  {
+   "start": 3355.93,
+   "end": 3357.97,
+   "text": "You have been very wise."
+  },
+  {
+   "start": 3357.97,
+   "end": 3360.13,
+   "text": "Your advice is incredibly helpful."
+  },
+  {
+   "start": 3360.13,
+   "end": 3360.97,
+   "text": "But before I let you go,"
+  },
+  {
+   "start": 3360.97,
+   "end": 3363.85,
+   "text": "I do wanna ask you a question about you,"
+  },
+  {
+   "start": 3363.85,
+   "end": 3366.75,
+   "text": "which is, you know, when you started out,"
+  },
+  {
+   "start": 3366.75,
+   "end": 3367.59,
+   "text": "there are a lot of things you didn't know"
+  },
+  {
+   "start": 3367.59,
+   "end": 3370.37,
+   "text": "that you now know running a huge business."
+  },
+  {
+   "start": 3370.37,
+   "end": 3371.53,
+   "text": "If you could go back to you"
+  },
+  {
+   "start": 3371.53,
+   "end": 3372.85,
+   "text": "when you were starting Calimla,"
+  },
+  {
+   "start": 3372.85,
+   "end": 3374.93,
+   "text": "you know, that guy in Ukraine or whatever,"
+  },
+  {
+   "start": 3374.93,
+   "end": 3378.41,
+   "text": "what advice do you think you could pass on to him"
+  },
+  {
+   "start": 3378.41,
+   "end": 3381.41,
+   "text": "to the younger Tope now that might have been helpful?"
+  },
+  {
+   "start": 3381.41,
+   "end": 3386.25,
+   "text": "I think what I've learned 13 years in is you build a business around a customer and not"
+  },
+  {
+   "start": 3386.25,
+   "end": 3387.53,
+   "text": "a product."
+  },
+  {
+   "start": 3387.53,
+   "end": 3391.89,
+   "text": "I think that entrepreneurs, first time entrepreneurs who are still kind of learning, they have"
+  },
+  {
+   "start": 3391.89,
+   "end": 3394.09,
+   "text": "a tendency to think product first."
+  },
+  {
+   "start": 3394.09,
+   "end": 3398.85,
+   "text": "But I think, I now think customer first and it's really what's sort of guiding us in this"
+  },
+  {
+   "start": 3398.85,
+   "end": 3401.37,
+   "text": "moment when we are expanding our product."
+  },
+  {
+   "start": 3401.37,
+   "end": 3404.97,
+   "text": "So once you acquire a customer and you're servicing them really well and you've created"
+  },
+  {
+   "start": 3404.97,
+   "end": 3409.93,
+   "text": "a brand for them, it is a lot easier to expand with that existing customer type than it is"
+  },
+  {
+   "start": 3409.93,
+   "end": 3413.81,
+   "text": "to go try to expand the different types of customers you serve."
+  },
+  {
+   "start": 3413.81,
+   "end": 3416.09,
+   "text": "And ultimately over time, you need to do both."
+  },
+  {
+   "start": 3416.09,
+   "end": 3420.49,
+   "text": "But maybe that's the biggest thing I think about differently, 13 years on."
+  },
+  {
+   "start": 3420.49,
+   "end": 3421.45,
+   "text": "That's awesome."
+  },
+  {
+   "start": 3421.45,
+   "end": 3423.69,
+   "text": "Tope, thank you so much for coming back onto the show."
+  },
+  {
+   "start": 3423.69,
+   "end": 3424.73,
+   "text": "Thanks for having me."
+  },
+  {
+   "start": 3424.73,
+   "end": 3427.05,
+   "text": "That is Tope Awatana, founder of Calendly."
+  },
+  {
+   "start": 3427.05,
+   "end": 3428.21,
+   "text": "And it is pronounced Tope."
+  },
+  {
+   "start": 3428.21,
+   "end": 3429.37,
+   "text": "It is pronounced Tope."
+  },
+  {
+   "start": 3429.37,
+   "end": 3430.53,
+   "text": "It's pronounced Tope."
+  },
+  {
+   "start": 3430.53,
+   "end": 3433.53,
+   "text": "And by the way, if you haven't heard Tope's original, how I built this episode,"
+  },
+  {
+   "start": 3433.53,
+   "end": 3434.81,
+   "text": "please go back and check it out."
+  },
+  {
+   "start": 3434.81,
+   "end": 3437.05,
+   "text": "Really, it's so good."
+  },
+  {
+   "start": 3437.05,
+   "end": 3438.37,
+   "text": "It's such a good episode."
+  },
+  {
+   "start": 3438.37,
+   "end": 3439.49,
+   "text": "There's so much to learn from it."
+  },
+  {
+   "start": 3439.49,
+   "end": 3441.29,
+   "text": "You can find a link to it in the podcast description."
+  },
+  {
+   "start": 3441.29,
+   "end": 3443.89,
+   "text": "And here's one of my favorite moments from that episode."
+  },
+  {
+   "start": 3445.58,
+   "end": 3449.08,
+   "text": "How much was it going to cost you to get this prototype built?"
+  },
+  {
+   "start": 3449.48,
+   "end": 3452.18,
+   "text": "A little over $200,000 is what we thought it would cost."
+  },
+  {
+   "start": 3452.58,
+   "end": 3453.48,
+   "text": "Wow."
+  },
+  {
+   "start": 3453.48,
+   "end": 3459.11,
+   "text": "So I had to empty every single dollar in my 401k, use every single dollar in my savings account."
+  },
+  {
+   "start": 3459.31,
+   "end": 3461.31,
+   "text": "I had to borrow a little bit on top of that."
+  },
+  {
+   "start": 3461.71,
+   "end": 3463.71,
+   "text": "I need to borrow a little bit from Linden Club."
+  },
+  {
+   "start": 3463.81,
+   "end": 3464.91,
+   "text": "I had a high interest rate."
+  },
+  {
+   "start": 3465.11,
+   "end": 3468.91,
+   "text": "I had a very high interest rate and maxed out all my credit cards"
+  },
+  {
+   "start": 3468.91,
+   "end": 3477.46,
+   "text": "and put it all in on this idea that at the time didn't even have a name."
+  },
+  {
+   "start": 3477.46,
+   "end": 3479.78,
+   "text": "Hey, thanks so much for listening to the show this week."
+  },
+  {
+   "start": 3479.78,
+   "end": 3481.98,
+   "text": "And by the way, please make sure to check out my newsletter."
+  },
+  {
+   "start": 3481.98,
+   "end": 3486.26,
+   "text": "You can sign up for it for free at GuyRoz.com or on Substack."
+  },
+  {
+   "start": 3486.26,
+   "end": 3490.58,
+   "text": "This episode was produced by Alex Chung with music composed by Rumtinaire Bluey."
+  },
+  {
+   "start": 3490.58,
+   "end": 3492.58,
+   "text": "It was edited by John Isabella."
+  },
+  {
+   "start": 3492.58,
+   "end": 3494.9,
+   "text": "Our engineer was An Li Huang."
+  },
+  {
+   "start": 3494.9,
+   "end": 3496.78,
+   "text": "Our production staff also includes"
+  },
+  {
+   "start": 3496.78,
+   "end": 3499.22,
+   "text": "Carrie Thompson, Carla Estevez, Kasey Herman,"
+  },
+  {
+   "start": 3499.22,
+   "end": 3501.58,
+   "text": "J.C. Howard, Sam Paulson, Chris Messini,"
+  },
+  {
+   "start": 3501.58,
+   "end": 3504.74,
+   "text": "Catherine Seifer, Neva Grant, and Elaine Coates."
+  },
+  {
+   "start": 3504.74,
+   "end": 3506.42,
+   "text": "I'm Guy Ross, and you've been listening"
+  },
+  {
+   "start": 3506.42,
+   "end": 3523.06,
+   "text": "to How I Built This."
+  },
+  {
+   "start": 3523.06,
+   "end": 3525.46,
+   "text": "Members who switched to USAA auto insurance"
+  },
+  {
+   "start": 3525.46,
+   "end": 3527.78,
+   "text": "saved an average of $80 a month."
+  },
+  {
+   "start": 3527.78,
+   "end": 3529.14,
+   "text": "All you have to do is switch once"
+  },
+  {
+   "start": 3529.14,
+   "end": 3532.22,
+   "text": "and then enjoy the same excellent service year after year."
+  },
+  {
+   "start": 3532.22,
+   "end": 3534.66,
+   "text": "Visit usa.com slash auto quote"
+  },
+  {
+   "start": 3534.66,
+   "end": 3536.22,
+   "text": "to see how much you could save."
+  },
+  {
+   "start": 3536.22,
+   "end": 3538.25,
+   "text": "Restriction supply."
+  },
+  {
+   "start": 3538.25,
+   "end": 3539.61,
+   "text": "Hi, mom."
+  },
+  {
+   "start": 3539.61,
+   "end": 3541.77,
+   "text": "No, I haven't found a job yet."
+  },
+  {
+   "start": 3541.77,
+   "end": 3547.09,
+   "text": "Because everything is three states away, or the salary is missing a zero."
+  },
+  {
+   "start": 3547.09,
+   "end": 3548.49,
+   "text": "Glassdoor has jobs?"
+  },
+  {
+   "start": 3548.49,
+   "end": 3550.58,
+   "text": "That's a review site."
+  },
+  {
+   "start": 3550.58,
+   "end": 3554.58,
+   "text": "Wait, so Glassdoor Recruiter takes everything Glassdoor knows about companies"
+  },
+  {
+   "start": 3554.58,
+   "end": 3556.82,
+   "text": "and matches it to what I actually want in a job?"
+  },
+  {
+   "start": 3556.82,
+   "end": 3559.1,
+   "text": "And it just sends me roles that fit?"
+  },
+  {
+   "start": 3559.1,
+   "end": 3560.94,
+   "text": "I hate it when you're right."
+  },
+  {
+   "start": 3560.94,
+   "end": 3564.5,
+   "text": "Yes, you were right about Derek and the micro bangs."
+  },
+  {
+   "start": 3564.5,
+   "end": 3565.42,
+   "text": "Fit happens."
+  },
+  {
+   "start": 3565.42,
+   "end": 3568.95,
+   "text": "Find the right job with Glassdoor Recruiter."
+  },
+  {
+   "start": 3568.95,
+   "end": 3577.0,
+   "text": "VanDool is now available everywhere in the US."
+  },
+  {
+   "start": 3577.0,
+   "end": 3580.28,
+   "text": "You can get in on the sports action no matter where you are."
+  },
+  {
+   "start": 3580.28,
+   "end": 3586.34,
+   "text": "Including these places."
+  },
+  {
+   "start": 3586.34,
+   "end": 3589.34,
+   "text": "Make this your most rewarding season ever with FanDuel."
+  },
+  {
+   "start": 3589.34,
+   "end": 3590.94,
+   "text": "Agent location restrictions apply."
+  },
+  {
+   "start": 3590.94,
+   "end": 3592.7,
+   "text": "Product availability varies by market."
+  },
+  {
+   "start": 3592.7,
+   "end": 3594.26,
+   "text": "See FanDuel.com for eligibility."
+  },
+  {
+   "start": 3594.26,
+   "end": 3596.14,
+   "text": "Gambling problem call 1-800-GAMLER."
+  }
+ ],
+ "seconds": 108.1,
+ "file": "how-i-built-this-with-guy-raz__advice-line-with-tope-awotona-of-calendly/take0.mp3",
+ "model": "small"
+}

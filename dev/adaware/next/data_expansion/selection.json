@@ -1,0 +1,52 @@
+{
+  "purpose": "Candidate show-held-out diversity expansion from the existing public-feed manifest. No feed or audio URLs are copied into this file.",
+  "proof_sample": {
+    "show": "NPR's Book of the Day",
+    "host": "npr",
+    "episode": "Journalist Emily Feng on how Uyghur militants took up arms in Syria's civil war",
+    "duration_minutes": 10.9,
+    "takes": 2,
+    "reason": "Short, new show with international reporting/interview content; NPR requests are known to vary in the existing experiments."
+  },
+  "next_candidates": [
+    {
+      "show": "The New Yorker Radio Hour",
+      "host": "simplecast",
+      "episode": "What Does a Blue Texas Mean for America?",
+      "duration_minutes": 18.5,
+      "takes": 2,
+      "reason": "Short interview format and a new show-level holdout. The publisher exposes a transcript, but its downloaded transcript must be checked against the episode because the page currently links to text for a different episode."
+    },
+    {
+      "show": "WSJ What’s News",
+      "host": "dowjones",
+      "episode": "How One Guy Saves Past Pop Hits From Extinction in the Age of Streaming",
+      "duration_minutes": 12.5,
+      "takes": 2,
+      "reason": "Short episode and new publisher/audio network; adds a non-NPR, non-Simplecast holdout."
+    },
+    {
+      "show": "The World, the Universe and Us",
+      "host": "megaphone",
+      "episode": "Secrets of the World’s Longest-Lived Animals",
+      "duration_minutes": 12.2,
+      "takes": 2,
+      "reason": "Science/environment subject matter on Megaphone; broadens topic and feed-network mix."
+    },
+    {
+      "show": "Marketplace All-in-One",
+      "host": "publicradio",
+      "episode": "Nvidia was AI's linchpin. Now what?",
+      "duration_minutes": 25.4,
+      "takes": 2,
+      "reason": "Public-radio economics reporting; adds show and publisher diversity, though the topic is closer to existing business/news material."
+    }
+  ],
+  "planned_total_if_expanded": {
+    "episodes": 5,
+    "new_shows": 5,
+    "takes_per_episode": 2,
+    "audio_hours": 2.65,
+    "estimated_audio_mb": 151
+  }
+}

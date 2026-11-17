@@ -1,0 +1,8194 @@
+{
+ "duration": 4618.79,
+ "language": "en",
+ "segments": [
+  {
+   "start": 0.91,
+   "end": 3.03,
+   "text": "It was a crucible moment."
+  },
+  {
+   "start": 3.03,
+   "end": 8.63,
+   "text": "It was the first moment I had to be a good CEO and it was a life or death moment."
+  },
+  {
+   "start": 8.63,
+   "end": 10.75,
+   "text": "Because before that, it was nice to have to be a CEO."
+  },
+  {
+   "start": 10.75,
+   "end": 15.15,
+   "text": "Well, we could grow faster, be less chaotic, but at that moment, either I'm a great CEO"
+  },
+  {
+   "start": 15.15,
+   "end": 17.63,
+   "text": "and the company survives or I'm a bad CEO and the company dies."
+  },
+  {
+   "start": 17.63,
+   "end": 26.81,
+   "text": "So it became life or death."
+  },
+  {
+   "start": 26.81,
+   "end": 32.05,
+   "text": "Welcome to How I Built This, a show about innovators, entrepreneurs, idealists, and"
+  },
+  {
+   "start": 32.05,
+   "end": 38.28,
+   "text": "the stories behind the movements they built."
+  },
+  {
+   "start": 38.28,
+   "end": 39.78,
+   "text": "I'm Guy Ross and on the show today,"
+  },
+  {
+   "start": 39.78,
+   "end": 42.68,
+   "text": "how Brian Chesky went from an art school student"
+  },
+  {
+   "start": 42.68,
+   "end": 47.04,
+   "text": "with no business experience to the CEO of Airbnb,"
+  },
+  {
+   "start": 47.04,
+   "end": 50.12,
+   "text": "a company worth more than $100 billion."
+  },
+  {
+   "start": 50.12,
+   "end": 53.98,
+   "text": "And why building Airbnb turned out to be a lot easier"
+  },
+  {
+   "start": 53.98,
+   "end": 58.54,
+   "text": "than learning how to lead it."
+  },
+  {
+   "start": 58.54,
+   "end": 61.3,
+   "text": "Our presenting sponsor today is Anthropic,"
+  },
+  {
+   "start": 61.3,
+   "end": 63.38,
+   "text": "the team behind Claude."
+  },
+  {
+   "start": 63.38,
+   "end": 67.14,
+   "text": "Every founder on this show started with a hard question,"
+  },
+  {
+   "start": 67.14,
+   "end": 70.54,
+   "text": "not the marketing plan, the 2AM kind."
+  },
+  {
+   "start": 70.54,
+   "end": 72.58,
+   "text": "Is this idea any good?"
+  },
+  {
+   "start": 72.58,
+   "end": 74.14,
+   "text": "Am I the one to build it?"
+  },
+  {
+   "start": 74.14,
+   "end": 76.34,
+   "text": "Should I quit my job?"
+  },
+  {
+   "start": 76.34,
+   "end": 78.84,
+   "text": "Anthropic got built the same way."
+  },
+  {
+   "start": 78.84,
+   "end": 80.34,
+   "text": "A public benefit corporation"
+  },
+  {
+   "start": 80.34,
+   "end": 83.1,
+   "text": "founded on one hard question."
+  },
+  {
+   "start": 83.1,
+   "end": 86.38,
+   "text": "How do we make sure AI goes well for people?"
+  },
+  {
+   "start": 86.38,
+   "end": 89.16,
+   "text": "So they asked over a hundred thousand people,"
+  },
+  {
+   "start": 89.16,
+   "end": 91.34,
+   "text": "their hopes and their fears,"
+  },
+  {
+   "start": 91.34,
+   "end": 93.48,
+   "text": "and are publishing what they find,"
+  },
+  {
+   "start": 93.48,
+   "end": 95.56,
+   "text": "even the uncomfortable parts."
+  },
+  {
+   "start": 95.56,
+   "end": 96.5,
+   "text": "Me?"
+  },
+  {
+   "start": 96.5,
+   "end": 98.98,
+   "text": "I've got my own hard question about AI."
+  },
+  {
+   "start": 98.98,
+   "end": 100.06,
+   "text": "Here it is."
+  },
+  {
+   "start": 100.06,
+   "end": 109.06,
+   "text": "If everyone has access to something that can help them write the business plan, build the prototype, analyze the market, maybe even come up with the idea."
+  },
+  {
+   "start": 109.06,
+   "end": 114.06,
+   "text": "What separates the people who actually build something from everyone else?"
+  },
+  {
+   "start": 114.06,
+   "end": 119.06,
+   "text": "I don't have a clean answer yet, so I've been sitting with it with Claude."
+  },
+  {
+   "start": 119.06,
+   "end": 121.06,
+   "text": "There's hope in hard questions."
+  },
+  {
+   "start": 121.06,
+   "end": 126.12,
+   "text": "Ask yours at clod.ai.hibt"
+  },
+  {
+   "start": 126.12,
+   "end": 130.92,
+   "text": "Growing teams need a corporate card built for more, something that doesn't sacrifice"
+  },
+  {
+   "start": 130.92,
+   "end": 132.72,
+   "text": "speed for control."
+  },
+  {
+   "start": 132.72,
+   "end": 136.36,
+   "text": "Introducing the American Express Corporate Cashback Card."
+  },
+  {
+   "start": 136.36,
+   "end": 143.04,
+   "text": "Get 1.5% cashback on eligible business purchases, advanced spending controls, and real-time visibility."
+  },
+  {
+   "start": 143.04,
+   "end": 145.44,
+   "text": "Plus intelligent expense management."
+  },
+  {
+   "start": 145.44,
+   "end": 149.72,
+   "text": "Get started at go.amex.com."
+  },
+  {
+   "start": 149.72,
+   "end": 155.55,
+   "text": "Terms and Cap apply."
+  },
+  {
+   "start": 155.55,
+   "end": 157.87,
+   "text": "This episode is brought to you by Indeed."
+  },
+  {
+   "start": 157.87,
+   "end": 162.13,
+   "text": "ready to level up your business, but the pressure to find the right person to make that happen"
+  },
+  {
+   "start": 162.13,
+   "end": 167.73,
+   "text": "is intense. Indeed Sponsored Jobs can help carry the load. It boosts your job post to"
+  },
+  {
+   "start": 167.73,
+   "end": 172.81,
+   "text": "help it reach quality talent fast. Cut through the chaos with Indeed Sponsored Jobs. Get"
+  },
+  {
+   "start": 172.81,
+   "end": 178.91,
+   "text": "a $75 Sponsored Job Credit at indeed.com slash podcast. Terms and conditions apply."
+  },
+  {
+   "start": 178.91,
+   "end": 192.47,
+   "text": "Hiring now? Then this is a job for Indeed Sponsored Jobs."
+  },
+  {
+   "start": 192.47,
+   "end": 197.71,
+   "text": "10 years ago on this show, I interviewed Joe Jebya, one of the three founders of Airbnb."
+  },
+  {
+   "start": 197.71,
+   "end": 202.55,
+   "text": "And Joe told me the incredible story about how he and his friends Brian Chesky and Nathan"
+  },
+  {
+   "start": 202.55,
+   "end": 207.83,
+   "text": "Blacharsik turned a few air mattresses on the floor of a San Francisco apartment into"
+  },
+  {
+   "start": 207.83,
+   "end": 211.59,
+   "text": "a business that transformed the travel industry."
+  },
+  {
+   "start": 211.59,
+   "end": 214.95,
+   "text": "It is one of my favorite stories we have ever told on this show."
+  },
+  {
+   "start": 214.95,
+   "end": 218.51,
+   "text": "And today, we're picking up where that story left off."
+  },
+  {
+   "start": 218.51,
+   "end": 223.43,
+   "text": "I've interviewed plenty of founders who spent years, sometimes decades, struggling"
+  },
+  {
+   "start": 223.43,
+   "end": 225.95,
+   "text": "to get their ideas off the ground."
+  },
+  {
+   "start": 225.95,
+   "end": 231.31,
+   "text": "Colin Engel, for example, who, by the way, grew up in the same small town as Brian Chesky,"
+  },
+  {
+   "start": 231.31,
+   "end": 235.87,
+   "text": "spent more than a decade trying to find the product that would make iRobot a success,"
+  },
+  {
+   "start": 235.87,
+   "end": 238.83,
+   "text": "which if you don't remember, it was a Roomba."
+  },
+  {
+   "start": 238.83,
+   "end": 241.59,
+   "text": "But Airbnb wasn't really one of those stories."
+  },
+  {
+   "start": 241.59,
+   "end": 247.11,
+   "text": "Sure, there were some very difficult early days, but once Airbnb found its footing, it"
+  },
+  {
+   "start": 247.11,
+   "end": 253.11,
+   "text": "took off and it became one of the most successful startups of all time. Product market fit,"
+  },
+  {
+   "start": 253.11,
+   "end": 259.83,
+   "text": "timing and great leadership, right? Well, not according to Brian. In fact, he now says"
+  },
+  {
+   "start": 259.83,
+   "end": 265.06,
+   "text": "Airbnb succeeded in spite of his leadership, not because of it."
+  },
+  {
+   "start": 265.06,
+   "end": 270.66,
+   "text": "Brian's been CEO from the very beginning. He was just 26 when they started Airbnb and"
+  },
+  {
+   "start": 270.66,
+   "end": 276.7,
+   "text": "today he's 45. And he spent almost his entire adult life learning how to lead the company"
+  },
+  {
+   "start": 276.7,
+   "end": 283.69,
+   "text": "he created. Brian grew up in upstate New York, the son of two social workers. Before Airbnb,"
+  },
+  {
+   "start": 283.69,
+   "end": 288.57,
+   "text": "he'd never run a company and he'd never been to business school. So to help him run the company,"
+  },
+  {
+   "start": 288.57,
+   "end": 294.09,
+   "text": "he hired experienced executives and deferred to their judgment and watched as the company became"
+  },
+  {
+   "start": 294.09,
+   "end": 300.57,
+   "text": "increasingly sprawling and difficult to manage. But then came the pandemic. And here's what he"
+  },
+  {
+   "start": 300.57,
+   "end": 306.49,
+   "text": "told me the first time we spoke back in the summer of 2020. We spent 12 years building Airbnb and"
+  },
+  {
+   "start": 306.49,
+   "end": 309.53,
+   "text": "and then we lost 80% of the business in eight weeks."
+  },
+  {
+   "start": 309.53,
+   "end": 311.77,
+   "text": "All of a sudden, Brian had to figure out"
+  },
+  {
+   "start": 311.77,
+   "end": 313.53,
+   "text": "how to save the company he'd spent"
+  },
+  {
+   "start": 313.53,
+   "end": 315.65,
+   "text": "more than a decade building."
+  },
+  {
+   "start": 315.65,
+   "end": 318.69,
+   "text": "What followed was a major transformation,"
+  },
+  {
+   "start": 318.69,
+   "end": 321.37,
+   "text": "not just in how he runs Airbnb,"
+  },
+  {
+   "start": 321.37,
+   "end": 324.45,
+   "text": "but in how he looks at leadership, success,"
+  },
+  {
+   "start": 324.45,
+   "end": 329.25,
+   "text": "and his own life."
+  },
+  {
+   "start": 329.25,
+   "end": 332.41,
+   "text": "I wanna start on December 10th, 2020."
+  },
+  {
+   "start": 332.41,
+   "end": 334.56,
+   "text": "Airbnb goes public."
+  },
+  {
+   "start": 334.56,
+   "end": 336.84,
+   "text": "At an amazing value, I think by the end of the day,"
+  },
+  {
+   "start": 336.84,
+   "end": 339.56,
+   "text": "the company's worth over $100 billion, right?"
+  },
+  {
+   "start": 339.56,
+   "end": 342.62,
+   "text": "you are gonna become extremely wealthy."
+  },
+  {
+   "start": 342.62,
+   "end": 346.86,
+   "text": "This is an extraordinary moment, an amazing achievement."
+  },
+  {
+   "start": 346.86,
+   "end": 349.58,
+   "text": "And you've described that as one of the loneliest moments"
+  },
+  {
+   "start": 349.58,
+   "end": 350.48,
+   "text": "of your life."
+  },
+  {
+   "start": 350.48,
+   "end": 351.42,
+   "text": "The day after."
+  },
+  {
+   "start": 351.42,
+   "end": 353.1,
+   "text": "Yeah, why?"
+  },
+  {
+   "start": 353.1,
+   "end": 356.62,
+   "text": "Well, first of all, the IPO was a weirder experience"
+  },
+  {
+   "start": 356.62,
+   "end": 358.98,
+   "text": "because it was on Zoom, because it was the pandemic."
+  },
+  {
+   "start": 358.98,
+   "end": 360.62,
+   "text": "And so there's no bell ringing,"
+  },
+  {
+   "start": 360.62,
+   "end": 362.82,
+   "text": "there was no like celebrating with your family,"
+  },
+  {
+   "start": 362.82,
+   "end": 364.46,
+   "text": "your friends, all the early in people"
+  },
+  {
+   "start": 364.46,
+   "end": 365.86,
+   "text": "to help you build a company."
+  },
+  {
+   "start": 365.86,
+   "end": 368.54,
+   "text": "It was just a bunch of boxes on a Zoom"
+  },
+  {
+   "start": 368.54,
+   "end": 370.42,
+   "text": "and it felt really amazing."
+  },
+  {
+   "start": 370.42,
+   "end": 373.14,
+   "text": "And I went to bed, CEO of a $100 billion public company,"
+  },
+  {
+   "start": 373.14,
+   "end": 376.62,
+   "text": "never imagining, I'd be CEO of a 10-person company."
+  },
+  {
+   "start": 376.62,
+   "end": 379.7,
+   "text": "And I woke up the next day, and no one's in my house."
+  },
+  {
+   "start": 379.7,
+   "end": 381.46,
+   "text": "It's still the pandemic."
+  },
+  {
+   "start": 381.46,
+   "end": 383.46,
+   "text": "You're still sheltering in place."
+  },
+  {
+   "start": 383.46,
+   "end": 385.78,
+   "text": "And I wake up, put on sweatpants,"
+  },
+  {
+   "start": 385.78,
+   "end": 386.86,
+   "text": "I get on a Zoom meeting."
+  },
+  {
+   "start": 386.86,
+   "end": 390.5,
+   "text": "We just have like some meeting, ran a meeting."
+  },
+  {
+   "start": 390.5,
+   "end": 393.9,
+   "text": "And it was almost like,"
+  },
+  {
+   "start": 393.9,
+   "end": 395.78,
+   "text": "I felt like my whole life had built up"
+  },
+  {
+   "start": 395.78,
+   "end": 397.98,
+   "text": "to wanting that moment."
+  },
+  {
+   "start": 397.98,
+   "end": 400.98,
+   "text": "not necessarily an IPO, but being really successful."
+  },
+  {
+   "start": 400.98,
+   "end": 403.34,
+   "text": "And then I think what happened was"
+  },
+  {
+   "start": 403.34,
+   "end": 405.86,
+   "text": "I had this crisis of realizing,"
+  },
+  {
+   "start": 405.86,
+   "end": 408.02,
+   "text": "okay, now that I've gone at my life"
+  },
+  {
+   "start": 408.02,
+   "end": 409.26,
+   "text": "really isn't any different."
+  },
+  {
+   "start": 409.26,
+   "end": 411.64,
+   "text": "I don't feel that much happier than did the day before."
+  },
+  {
+   "start": 411.64,
+   "end": 415.38,
+   "text": "It was a rush, and then the rush is over."
+  },
+  {
+   "start": 415.38,
+   "end": 417.98,
+   "text": "And I'm back to a regular life."
+  },
+  {
+   "start": 417.98,
+   "end": 422.9,
+   "text": "And it kind of created a little bit of an inner crisis."
+  },
+  {
+   "start": 422.9,
+   "end": 425.74,
+   "text": "Because I think so much of my life,"
+  },
+  {
+   "start": 425.74,
+   "end": 429.42,
+   "text": "starting with childhood was wanting to be special."
+  },
+  {
+   "start": 429.42,
+   "end": 431.82,
+   "text": "But I don't know if I even realized I was doing it."
+  },
+  {
+   "start": 431.82,
+   "end": 434.18,
+   "text": "And maybe a lot of my ambition came from"
+  },
+  {
+   "start": 434.18,
+   "end": 437.46,
+   "text": "like wanting to get validation, wanting to be special,"
+  },
+  {
+   "start": 437.46,
+   "end": 438.98,
+   "text": "wanting, you know, having this sense."
+  },
+  {
+   "start": 438.98,
+   "end": 440.42,
+   "text": "I think a lot of people that are really successful,"
+  },
+  {
+   "start": 440.42,
+   "end": 442.56,
+   "text": "they want the world to love them."
+  },
+  {
+   "start": 442.56,
+   "end": 445.3,
+   "text": "And I think, you know, maybe that's not love,"
+  },
+  {
+   "start": 445.3,
+   "end": 447.46,
+   "text": "I mean, it's adulation and it's kind of like a drug"
+  },
+  {
+   "start": 447.46,
+   "end": 449.18,
+   "text": "and you need more and more and more of it."
+  },
+  {
+   "start": 449.18,
+   "end": 451.26,
+   "text": "And it wears off very, very quickly."
+  },
+  {
+   "start": 451.26,
+   "end": 453.7,
+   "text": "And the inner crisis when you get to the mountaintop,"
+  },
+  {
+   "start": 453.7,
+   "end": 455.74,
+   "text": "because you spent your whole life trying to climb the mountain top,"
+  },
+  {
+   "start": 455.74,
+   "end": 458.7,
+   "text": "and you realized this is not going to change how I feel inside."
+  },
+  {
+   "start": 458.7,
+   "end": 460.02,
+   "text": "What do I do now?"
+  },
+  {
+   "start": 460.02,
+   "end": 462.26,
+   "text": "What other mountain is there even to climb?"
+  },
+  {
+   "start": 462.26,
+   "end": 466.58,
+   "text": "And that began a whole other journey,"
+  },
+  {
+   "start": 466.58,
+   "end": 469.06,
+   "text": "which is, well, what do I want out of my life?"
+  },
+  {
+   "start": 469.06,
+   "end": 470.54,
+   "text": "Why am I even doing this?"
+  },
+  {
+   "start": 470.54,
+   "end": 474.18,
+   "text": "And to be honest, we didn't start this company to be successful."
+  },
+  {
+   "start": 474.18,
+   "end": 476.02,
+   "text": "I joked that if I tried to make money,"
+  },
+  {
+   "start": 476.02,
+   "end": 478.02,
+   "text": "I wouldn't have been in a flighting air mattresses."
+  },
+  {
+   "start": 478.02,
+   "end": 480.9,
+   "text": "We didn't try to become successful."
+  },
+  {
+   "start": 480.9,
+   "end": 484.66,
+   "text": "We started, it was somewhere along the way, it got so successful."
+  },
+  {
+   "start": 484.66,
+   "end": 488.74,
+   "text": "We started getting magazine covers and we started believing the hype."
+  },
+  {
+   "start": 488.74,
+   "end": 491.78,
+   "text": "And that was a little bit of an addiction."
+  },
+  {
+   "start": 491.78,
+   "end": 496.46,
+   "text": "I want to get back to that later on because I know that you made some conscious decisions"
+  },
+  {
+   "start": 496.46,
+   "end": 499.14,
+   "text": "about your life and how to live it."
+  },
+  {
+   "start": 499.14,
+   "end": 503.66,
+   "text": "But to get to that moment, I want to go back many, many years."
+  },
+  {
+   "start": 503.66,
+   "end": 510.22,
+   "text": "When I interviewed Joe on the show 10 years ago, telling us a story about Airbnb, he told"
+  },
+  {
+   "start": 510.22,
+   "end": 515.74,
+   "text": "us a story about how the night before you graduated from RISD, you went out for pizza."
+  },
+  {
+   "start": 515.74,
+   "end": 520.46,
+   "text": "And he said, and this is a quote, he said, we're going to start a company together someday."
+  },
+  {
+   "start": 520.46,
+   "end": 521.46,
+   "text": "That's what he said."
+  },
+  {
+   "start": 521.46,
+   "end": 522.78,
+   "text": "He told us, he told you."
+  },
+  {
+   "start": 522.78,
+   "end": 524.58,
+   "text": "And they're going to write a book about it."
+  },
+  {
+   "start": 524.58,
+   "end": 525.58,
+   "text": "Do you remember that?"
+  },
+  {
+   "start": 525.58,
+   "end": 526.58,
+   "text": "Yeah."
+  },
+  {
+   "start": 526.58,
+   "end": 530.02,
+   "text": "He said this to you in Rhode Island the night before you graduated."
+  },
+  {
+   "start": 530.02,
+   "end": 531.02,
+   "text": "Yeah."
+  },
+  {
+   "start": 531.02,
+   "end": 534.02,
+   "text": "We were in Rhode Island because we went to Rhode Island School of Design."
+  },
+  {
+   "start": 534.02,
+   "end": 538.26,
+   "text": "There was a, like, in Providence, there's like, you know, it's very much a college town."
+  },
+  {
+   "start": 538.26,
+   "end": 541.86,
+   "text": "Like a lot of college towns, there's like a main street with all the bars and restaurants"
+  },
+  {
+   "start": 541.86,
+   "end": 543.5,
+   "text": "called Thayer Street."
+  },
+  {
+   "start": 543.5,
+   "end": 548.02,
+   "text": "And on Thayer Street, there was a restaurant, I think a pizza shop called Antonio's Pizza,"
+  },
+  {
+   "start": 548.02,
+   "end": 550.02,
+   "text": "if I remember to recall correctly."
+  },
+  {
+   "start": 550.02,
+   "end": 554.02,
+   "text": "And it was really funny because they had like pineapple pizza and all these exotic types"
+  },
+  {
+   "start": 554.02,
+   "end": 555.02,
+   "text": "of pizzas."
+  },
+  {
+   "start": 555.02,
+   "end": 557.14,
+   "text": "I can't believe I remember this."
+  },
+  {
+   "start": 557.14,
+   "end": 559.38,
+   "text": "And we're sitting by the window."
+  },
+  {
+   "start": 559.38,
+   "end": 561.3,
+   "text": "And he kind of says this out of nowhere."
+  },
+  {
+   "start": 561.3,
+   "end": 564.74,
+   "text": "And to me, it was a little random."
+  },
+  {
+   "start": 564.74,
+   "end": 567.62,
+   "text": "Not that maybe we start a company together, but the pressions of they'll write a book"
+  },
+  {
+   "start": 567.62,
+   "end": 570.9,
+   "text": "about it because there were a few books written about it."
+  },
+  {
+   "start": 570.9,
+   "end": 577.86,
+   "text": "But I think I want to give credit to Joe because in my co-founders, because I think he saw"
+  },
+  {
+   "start": 577.86,
+   "end": 580.94,
+   "text": "something in me maybe I didn't see in myself."
+  },
+  {
+   "start": 580.94,
+   "end": 584.38,
+   "text": "One of the greatest gifts you can give to somebody is believe in them and see something"
+  },
+  {
+   "start": 584.38,
+   "end": 585.38,
+   "text": "in them."
+  },
+  {
+   "start": 585.38,
+   "end": 586.38,
+   "text": "He saw something in me."
+  },
+  {
+   "start": 586.38,
+   "end": 587.82,
+   "text": "I don't know quite what it was."
+  },
+  {
+   "start": 587.82,
+   "end": 589.74,
+   "text": "That's the thing for him to answer."
+  },
+  {
+   "start": 589.74,
+   "end": 595.38,
+   "text": "And I feel like along the way, the only reason I'm here is because some people saw something"
+  },
+  {
+   "start": 595.38,
+   "end": 600.36,
+   "text": "It took a bet on me because the fact that I became, I went to Brown School Zion as an"
+  },
+  {
+   "start": 600.36,
+   "end": 601.36,
+   "text": "artist."
+  },
+  {
+   "start": 601.36,
+   "end": 604.4,
+   "text": "I became CEO of a $100 billion tech company."
+  },
+  {
+   "start": 604.4,
+   "end": 608.24,
+   "text": "The metaphor was like, is this Silicon Valley's a nightclub and the doorman was like looking"
+  },
+  {
+   "start": 608.24,
+   "end": 609.74,
+   "text": "away and I snuck in."
+  },
+  {
+   "start": 609.74,
+   "end": 611.36,
+   "text": "It's like I wasn't supposed to be in this part."
+  },
+  {
+   "start": 611.36,
+   "end": 614.76,
+   "text": "I think I heard that your dad said to you, because he said, I want to be an artist."
+  },
+  {
+   "start": 614.76,
+   "end": 616.76,
+   "text": "He was like, just make sure you have health insurance, please."
+  },
+  {
+   "start": 616.76,
+   "end": 617.76,
+   "text": "Yes."
+  },
+  {
+   "start": 617.76,
+   "end": 620.52,
+   "text": "In my high school yearbook quote, it's a very weird yearbook quote."
+  },
+  {
+   "start": 620.52,
+   "end": 623.76,
+   "text": "My yearbook quote was, I'm strong, mountain nothing."
+  },
+  {
+   "start": 623.76,
+   "end": 624.76,
+   "text": "It was half a joke."
+  },
+  {
+   "start": 624.76,
+   "end": 625.76,
+   "text": "Yeah."
+  },
+  {
+   "start": 625.76,
+   "end": 627.46,
+   "text": "Because I thought all the yearbook quotes were kind of ridiculous."
+  },
+  {
+   "start": 627.46,
+   "end": 629.68,
+   "text": "People were like taking themselves too seriously."
+  },
+  {
+   "start": 629.68,
+   "end": 631.84,
+   "text": "But there had to have been a little bit of truth to that."
+  },
+  {
+   "start": 631.84,
+   "end": 635.6,
+   "text": "That like I was going to be an artist and that was probably not a path to a lot of money"
+  },
+  {
+   "start": 635.6,
+   "end": 636.6,
+   "text": "and success."
+  },
+  {
+   "start": 636.6,
+   "end": 639.92,
+   "text": "Like I like to joke that I went to like one of the only schools in America was uncool"
+  },
+  {
+   "start": 639.92,
+   "end": 644.36,
+   "text": "to make money, you know, because the cool kids at RISD were artists, not commercial"
+  },
+  {
+   "start": 644.36,
+   "end": 645.44,
+   "text": "and you didn't do it for money."
+  },
+  {
+   "start": 645.44,
+   "end": 646.72,
+   "text": "It was like pure."
+  },
+  {
+   "start": 646.72,
+   "end": 650.56,
+   "text": "And so I had to go through this weird journey of even getting around the idea of making"
+  },
+  {
+   "start": 650.56,
+   "end": 651.56,
+   "text": "money."
+  },
+  {
+   "start": 651.56,
+   "end": 656.16,
+   "text": "Originally, I was actually of the three of us, the one most opposed to having a business"
+  },
+  {
+   "start": 656.16,
+   "end": 657.52,
+   "text": "model and want to make money."
+  },
+  {
+   "start": 657.52,
+   "end": 661.32,
+   "text": "I like the purity of it being not a business model."
+  },
+  {
+   "start": 661.32,
+   "end": 664.76,
+   "text": "Then I think, well, I had a conversation with Joe and Nate, we realized it was completely"
+  },
+  {
+   "start": 664.76,
+   "end": 667.76,
+   "text": "impractical for this company not to have a business model."
+  },
+  {
+   "start": 667.76,
+   "end": 668.76,
+   "text": "Then I worked with the team."
+  },
+  {
+   "start": 668.76,
+   "end": 671.92,
+   "text": "We designed this business model that turned out to be one of the greatest business models"
+  },
+  {
+   "start": 671.92,
+   "end": 672.92,
+   "text": "on the internet."
+  },
+  {
+   "start": 672.92,
+   "end": 679.6,
+   "text": "It turns out I am now an avant supporter of capitalism because I've realized having"
+  },
+  {
+   "start": 679.6,
+   "end": 685.1,
+   "text": "given money to nonprofits that there is something unique about the innovation model of a corporate"
+  },
+  {
+   "start": 685.1,
+   "end": 687.66,
+   "text": "company that you can't do as a nonprofit."
+  },
+  {
+   "start": 687.66,
+   "end": 688.85,
+   "text": "Yeah."
+  },
+  {
+   "start": 688.85,
+   "end": 693.09,
+   "text": "You eventually, you go to LA for a couple of years and, but Joe manages to convince you"
+  },
+  {
+   "start": 693.09,
+   "end": 696.69,
+   "text": "to come to San Francisco where he's living with Nate, his roommate."
+  },
+  {
+   "start": 696.69,
+   "end": 698.97,
+   "text": "And eventually he wants to fulfill this."
+  },
+  {
+   "start": 698.97,
+   "end": 701.77,
+   "text": "He really, I mean he says to you, we're going to start a business."
+  },
+  {
+   "start": 701.77,
+   "end": 706.01,
+   "text": "So he sees something in you which you don't see in yourself."
+  },
+  {
+   "start": 706.01,
+   "end": 707.77,
+   "text": "Did you see yourself as a leader?"
+  },
+  {
+   "start": 707.77,
+   "end": 716.17,
+   "text": "Because early on, Nate, Joe, you, you start this company, you're the CEO."
+  },
+  {
+   "start": 716.17,
+   "end": 718.57,
+   "text": "This is a decision that the three of you make."
+  },
+  {
+   "start": 718.57,
+   "end": 726.1,
+   "text": "Did you see yourself in that role or did they see you doing that?"
+  },
+  {
+   "start": 726.1,
+   "end": 730.38,
+   "text": "I saw myself as a leader of like five people, maybe 10 people."
+  },
+  {
+   "start": 730.38,
+   "end": 736.5,
+   "text": "I remember saying, it was going to be huge one day, thousands of people do this."
+  },
+  {
+   "start": 736.5,
+   "end": 739.66,
+   "text": "I believed in myself at a very small scale."
+  },
+  {
+   "start": 739.66,
+   "end": 742.66,
+   "text": "It might have been the scale that Joe and Nate believed in me,"
+  },
+  {
+   "start": 742.66,
+   "end": 745.14,
+   "text": "that was hard for me to see in myself."
+  },
+  {
+   "start": 745.14,
+   "end": 750.14,
+   "text": "We told the story of how you guys sold these cereal boxes"
+  },
+  {
+   "start": 750.42,
+   "end": 751.5,
+   "text": "at the Democratic Convention,"
+  },
+  {
+   "start": 751.5,
+   "end": 753.98,
+   "text": "and how that really sort of helped get you"
+  },
+  {
+   "start": 753.98,
+   "end": 756.06,
+   "text": "into Y Combinator, and it's an amazing story,"
+  },
+  {
+   "start": 756.06,
+   "end": 760.5,
+   "text": "and people can hear that on the earlier story"
+  },
+  {
+   "start": 760.5,
+   "end": 762.22,
+   "text": "we told with Joe."
+  },
+  {
+   "start": 762.22,
+   "end": 763.58,
+   "text": "But I wanna jump ahead a little bit."
+  },
+  {
+   "start": 763.58,
+   "end": 768.26,
+   "text": "I mean, you were now almost 20 years since you started, right?"
+  },
+  {
+   "start": 768.26,
+   "end": 771.3,
+   "text": "And I think about, you know, I've been doing this for 30 years."
+  },
+  {
+   "start": 771.3,
+   "end": 773.74,
+   "text": "And if I think about where I was 30 years ago,"
+  },
+  {
+   "start": 773.74,
+   "end": 776.18,
+   "text": "I sucked at what I do."
+  },
+  {
+   "start": 776.18,
+   "end": 778.26,
+   "text": "And so part of it is you just do it,"
+  },
+  {
+   "start": 778.26,
+   "end": 780.86,
+   "text": "and you're gonna suck less over time."
+  },
+  {
+   "start": 780.86,
+   "end": 784.3,
+   "text": "And when you think about the first, let's say, five years,"
+  },
+  {
+   "start": 784.3,
+   "end": 787.06,
+   "text": "right, here you are, your designer, Joseph designer,"
+  },
+  {
+   "start": 787.06,
+   "end": 791.14,
+   "text": "Nate is a tech guy, but you're two designers in a tech city."
+  },
+  {
+   "start": 791.14,
+   "end": 791.98,
+   "text": "Yes."
+  },
+  {
+   "start": 791.98,
+   "end": 793.32,
+   "text": "Trying to convince people that you know what you're..."
+  },
+  {
+   "start": 793.32,
+   "end": 794.32,
+   "text": "water."
+  },
+  {
+   "start": 794.32,
+   "end": 802.7,
+   "text": "Doing and you're trying to learn how to hire people, how to tell them what to do."
+  },
+  {
+   "start": 802.7,
+   "end": 813.3,
+   "text": "And what do you remember about just learning those things and how it kind of evolved in"
+  },
+  {
+   "start": 813.3,
+   "end": 815.33,
+   "text": "those first few years?"
+  },
+  {
+   "start": 815.33,
+   "end": 818.58,
+   "text": "Here's what I would say, Guy."
+  },
+  {
+   "start": 818.58,
+   "end": 825.2,
+   "text": "I think I was pretty much naturally a great founder and I was naturally a terrible CEO."
+  },
+  {
+   "start": 825.2,
+   "end": 828.0,
+   "text": "Which is a very classic story."
+  },
+  {
+   "start": 828.0,
+   "end": 829.88,
+   "text": "I don't know an exception."
+  },
+  {
+   "start": 829.88,
+   "end": 835.48,
+   "text": "I'm sure there are exceptions, but I don't know a person, especially a founder, that"
+  },
+  {
+   "start": 835.48,
+   "end": 837.44,
+   "text": "just becoming a CEO is completely intuitive."
+  },
+  {
+   "start": 837.44,
+   "end": 840.2,
+   "text": "See, there's something about being a founder that's intuitive."
+  },
+  {
+   "start": 840.2,
+   "end": 842.8,
+   "text": "It's possible people are born good founders."
+  },
+  {
+   "start": 842.8,
+   "end": 847.2,
+   "text": "It's also possible we're not born good founders, but we spent our whole life being founders."
+  },
+  {
+   "start": 847.2,
+   "end": 850.88,
+   "text": "Maybe that's the real answer, is that when you're a child, you're making things, you're"
+  },
+  {
+   "start": 850.88,
+   "end": 851.88,
+   "text": "building things."
+  },
+  {
+   "start": 851.88,
+   "end": 853.6,
+   "text": "You're practicing being a founder."
+  },
+  {
+   "start": 853.6,
+   "end": 857.92,
+   "text": "the moment you found a company, it's probably not the first time you try to make something."
+  },
+  {
+   "start": 857.92,
+   "end": 862.88,
+   "text": "So I probably had 20 years of experience as a founder, starting as a child, designing,"
+  },
+  {
+   "start": 862.88,
+   "end": 864.48,
+   "text": "disassembling Christmas toys."
+  },
+  {
+   "start": 864.48,
+   "end": 867.84,
+   "text": "When I used to sell things to my friends, Joe and I had 20 years of experience as founders."
+  },
+  {
+   "start": 867.84,
+   "end": 871.4,
+   "text": "So by the time we were founders, we were like, we had decades on our belt."
+  },
+  {
+   "start": 871.4,
+   "end": 873.92,
+   "text": "And then suddenly you got to be this CEO."
+  },
+  {
+   "start": 873.92,
+   "end": 878.08,
+   "text": "And the problem with being a CEO is it's so counterintuitive."
+  },
+  {
+   "start": 878.08,
+   "end": 882.16,
+   "text": "Like for example, people tell you to hire great people and trust them and get out of"
+  },
+  {
+   "start": 882.16,
+   "end": 883.96,
+   "text": "other way to do their job."
+  },
+  {
+   "start": 883.96,
+   "end": 887.66,
+   "text": "That is what you do once you're very mature."
+  },
+  {
+   "start": 887.66,
+   "end": 890.2,
+   "text": "That is a death sentence to a young company."
+  },
+  {
+   "start": 890.2,
+   "end": 897.32,
+   "text": "What you actually need to do is not hire big grownups that don't understand your stage."
+  },
+  {
+   "start": 897.32,
+   "end": 898.32,
+   "text": "That's counterintuitive."
+  },
+  {
+   "start": 898.32,
+   "end": 902.44,
+   "text": "You have to hire people just a little bit ahead of you that are smart, hungry, and you"
+  },
+  {
+   "start": 902.44,
+   "end": 904.2,
+   "text": "got to stay really close to them."
+  },
+  {
+   "start": 904.2,
+   "end": 905.76,
+   "text": "You got to stay really close to the company."
+  },
+  {
+   "start": 905.76,
+   "end": 910.48,
+   "text": "So said differently, so much of the CEO job is counterintuitive."
+  },
+  {
+   "start": 910.48,
+   "end": 916.26,
+   "text": "How do you create a culture where people do what you want them to do when you're not in"
+  },
+  {
+   "start": 916.26,
+   "end": 917.38,
+   "text": "the room?"
+  },
+  {
+   "start": 917.38,
+   "end": 918.78,
+   "text": "Like, that's the hard stuff."
+  },
+  {
+   "start": 918.78,
+   "end": 919.78,
+   "text": "That's really hard."
+  },
+  {
+   "start": 919.78,
+   "end": 924.35,
+   "text": "Not, you know, becoming profitable."
+  },
+  {
+   "start": 924.35,
+   "end": 925.35,
+   "text": "Expense management."
+  },
+  {
+   "start": 925.35,
+   "end": 927.27,
+   "text": "This stuff is easy."
+  },
+  {
+   "start": 927.27,
+   "end": 931.55,
+   "text": "I interviewed a CEO many years ago, really excellent CEO."
+  },
+  {
+   "start": 931.55,
+   "end": 937.43,
+   "text": "He said the job of a CEO is not to have the answers, but to identify the people who do"
+  },
+  {
+   "start": 937.43,
+   "end": 939.67,
+   "text": "have the answers."
+  },
+  {
+   "start": 939.67,
+   "end": 945.21,
+   "text": "And as you grew, I mean, you alluded to this, you were given the advice to start hiring"
+  },
+  {
+   "start": 945.21,
+   "end": 947.21,
+   "text": "people with more experience."
+  },
+  {
+   "start": 947.21,
+   "end": 948.21,
+   "text": "Much, much more."
+  },
+  {
+   "start": 948.21,
+   "end": 949.41,
+   "text": "Much older than you, right?"
+  },
+  {
+   "start": 949.41,
+   "end": 953.17,
+   "text": "And so first of all, before we kind of dig into some of those experiences, because I"
+  },
+  {
+   "start": 953.17,
+   "end": 955.81,
+   "text": "know what would have actually happened, right?"
+  },
+  {
+   "start": 955.81,
+   "end": 957.45,
+   "text": "What was that like for you?"
+  },
+  {
+   "start": 957.45,
+   "end": 959.53,
+   "text": "To have, I mean, was it intimidating, you know?"
+  },
+  {
+   "start": 959.53,
+   "end": 960.53,
+   "text": "Yeah."
+  },
+  {
+   "start": 960.53,
+   "end": 961.53,
+   "text": "Yeah."
+  },
+  {
+   "start": 961.53,
+   "end": 964.41,
+   "text": "To have people who are coming in there like, Brian, I got it here."
+  },
+  {
+   "start": 964.41,
+   "end": 969.21,
+   "text": "You know, like, I have 20 years of experience in the hospitality industry."
+  },
+  {
+   "start": 969.21,
+   "end": 970.73,
+   "text": "And this is actually how it's done."
+  },
+  {
+   "start": 970.73,
+   "end": 972.09,
+   "text": "And you probably deferred, right?"
+  },
+  {
+   "start": 972.09,
+   "end": 973.09,
+   "text": "Yeah."
+  },
+  {
+   "start": 973.09,
+   "end": 977.29,
+   "text": "I mean, many of them are old enough to be my parents or almost old enough to be my parents."
+  },
+  {
+   "start": 977.29,
+   "end": 979.61,
+   "text": "Someone more than 20 years older than me."
+  },
+  {
+   "start": 979.61,
+   "end": 981.65,
+   "text": "They had way more experience."
+  },
+  {
+   "start": 981.65,
+   "end": 987.09,
+   "text": "And the hard part for me was sometimes my intuition would tell me one thing and they"
+  },
+  {
+   "start": 987.09,
+   "end": 988.88,
+   "text": "tell me another."
+  },
+  {
+   "start": 988.88,
+   "end": 993.76,
+   "text": "And what do I do when my intuition and their experience collide?"
+  },
+  {
+   "start": 993.76,
+   "end": 995.12,
+   "text": "Usually I deferred."
+  },
+  {
+   "start": 995.12,
+   "end": 996.32,
+   "text": "And that was usually a mistake."
+  },
+  {
+   "start": 996.32,
+   "end": 1002.7,
+   "text": "It doesn't mean I was right, but it might have been that the solution was some engagement."
+  },
+  {
+   "start": 1002.7,
+   "end": 1004.66,
+   "text": "My intuition is telling me this thing."
+  },
+  {
+   "start": 1004.66,
+   "end": 1006.86,
+   "text": "It doesn't mean you're wrong, but now let's talk about it."
+  },
+  {
+   "start": 1006.86,
+   "end": 1009.07,
+   "text": "Let's work through it together."
+  },
+  {
+   "start": 1009.07,
+   "end": 1015.21,
+   "text": "By not working through it, I knew the company so well that it's just really hard for somebody"
+  },
+  {
+   "start": 1015.21,
+   "end": 1019.33,
+   "text": "with experience that someone else's company know to do at your company."
+  },
+  {
+   "start": 1019.33,
+   "end": 1024.99,
+   "text": "One of the reasons why is they usually come from big companies and they have trouble applying"
+  },
+  {
+   "start": 1024.99,
+   "end": 1027.59,
+   "text": "their big scale to a small company."
+  },
+  {
+   "start": 1027.59,
+   "end": 1030.15,
+   "text": "They also come from companies where they didn't build it."
+  },
+  {
+   "start": 1030.15,
+   "end": 1031.39,
+   "text": "They managed it."
+  },
+  {
+   "start": 1031.39,
+   "end": 1033.07,
+   "text": "And now they have to build it."
+  },
+  {
+   "start": 1033.07,
+   "end": 1034.55,
+   "text": "And they have never done that."
+  },
+  {
+   "start": 1034.55,
+   "end": 1036.11,
+   "text": "But you didn't know that at the time."
+  },
+  {
+   "start": 1036.11,
+   "end": 1036.95,
+   "text": "I didn't know any of that at the time."
+  },
+  {
+   "start": 1036.95,
+   "end": 1037.95,
+   "text": "So they were making decisions."
+  },
+  {
+   "start": 1037.95,
+   "end": 1039.55,
+   "text": "And probably some of the decisions were good."
+  },
+  {
+   "start": 1039.55,
+   "end": 1040.39,
+   "text": "Yes."
+  },
+  {
+   "start": 1040.39,
+   "end": 1042.19,
+   "text": "But your instinct was to defer."
+  },
+  {
+   "start": 1042.19,
+   "end": 1045.07,
+   "text": "Because you didn't want to seem like you were arrogant,"
+  },
+  {
+   "start": 1045.07,
+   "end": 1045.91,
+   "text": "like you were no-doll."
+  },
+  {
+   "start": 1045.91,
+   "end": 1047.31,
+   "text": "I was low intimidated."
+  },
+  {
+   "start": 1047.31,
+   "end": 1051.85,
+   "text": "And yeah, I felt cautious about being a boss."
+  },
+  {
+   "start": 1051.85,
+   "end": 1054.53,
+   "text": "I felt a little shy about like,"
+  },
+  {
+   "start": 1054.53,
+   "end": 1056.19,
+   "text": "wanting to tell people what to do."
+  },
+  {
+   "start": 1056.19,
+   "end": 1057.75,
+   "text": "You know what it was?"
+  },
+  {
+   "start": 1057.75,
+   "end": 1060.27,
+   "text": "I think I was a little bit of a people pleaser."
+  },
+  {
+   "start": 1060.27,
+   "end": 1061.39,
+   "text": "I wanted people to like me."
+  },
+  {
+   "start": 1061.39,
+   "end": 1062.55,
+   "text": "I think that's normal by the way."
+  },
+  {
+   "start": 1062.55,
+   "end": 1063.39,
+   "text": "Very normal."
+  },
+  {
+   "start": 1063.39,
+   "end": 1064.23,
+   "text": "I want people to like me,"
+  },
+  {
+   "start": 1064.23,
+   "end": 1067.31,
+   "text": "especially people that seem older and more experienced."
+  },
+  {
+   "start": 1067.31,
+   "end": 1068.69,
+   "text": "I don't want to tell them what to do."
+  },
+  {
+   "start": 1068.69,
+   "end": 1069.75,
+   "text": "I want them to like me."
+  },
+  {
+   "start": 1069.75,
+   "end": 1074.91,
+   "text": "And so I would be a little bit overly deferential."
+  },
+  {
+   "start": 1076.27,
+   "end": 1077.65,
+   "text": "Conflict of verse two?"
+  },
+  {
+   "start": 1077.65,
+   "end": 1078.75,
+   "text": "100% conflict of verse."
+  },
+  {
+   "start": 1078.75,
+   "end": 1080.71,
+   "text": "In conflict of verse, to the point that"
+  },
+  {
+   "start": 1080.71,
+   "end": 1084.97,
+   "text": "if somebody wasn't working out, I would not take action."
+  },
+  {
+   "start": 1084.97,
+   "end": 1087.21,
+   "text": "Take action doesn't necessarily mean fire them."
+  },
+  {
+   "start": 1087.21,
+   "end": 1089.41,
+   "text": "Take action might mean having a really hard conversation"
+  },
+  {
+   "start": 1089.41,
+   "end": 1091.29,
+   "text": "about how things aren't going really well."
+  },
+  {
+   "start": 1091.29,
+   "end": 1092.93,
+   "text": "And if they aren't fixable, yes,"
+  },
+  {
+   "start": 1092.93,
+   "end": 1094.81,
+   "text": "then you have to make a change."
+  },
+  {
+   "start": 1094.81,
+   "end": 1097.09,
+   "text": "And somebody years later told me,"
+  },
+  {
+   "start": 1097.09,
+   "end": 1100.09,
+   "text": "a pitcher never takes themself off of the mound."
+  },
+  {
+   "start": 1100.09,
+   "end": 1101.93,
+   "text": "And as a coach, I kept hoping"
+  },
+  {
+   "start": 1101.93,
+   "end": 1103.41,
+   "text": "the pitchers would take themselves off the mound."
+  },
+  {
+   "start": 1103.41,
+   "end": 1106.81,
+   "text": "Like you get up five home runs, it's now obvious."
+  },
+  {
+   "start": 1106.81,
+   "end": 1109.73,
+   "text": "No one ever comes to you and say my arm's tired."
+  },
+  {
+   "start": 1109.73,
+   "end": 1112.05,
+   "text": "most people think they're doing a good job,"
+  },
+  {
+   "start": 1112.05,
+   "end": 1113.61,
+   "text": "whether you think they're doing a good job or not,"
+  },
+  {
+   "start": 1113.61,
+   "end": 1114.57,
+   "text": "they think they're doing a good job,"
+  },
+  {
+   "start": 1114.57,
+   "end": 1116.09,
+   "text": "and they're doing the very best."
+  },
+  {
+   "start": 1116.09,
+   "end": 1118.41,
+   "text": "And you are responsible if they're not doing a good job,"
+  },
+  {
+   "start": 1118.41,
+   "end": 1119.65,
+   "text": "because you're the one that convinced them"
+  },
+  {
+   "start": 1119.65,
+   "end": 1121.37,
+   "text": "to do the job in the first place."
+  },
+  {
+   "start": 1121.37,
+   "end": 1125.73,
+   "text": "And I would just avoid people that weren't being successful,"
+  },
+  {
+   "start": 1125.73,
+   "end": 1126.73,
+   "text": "because I was conflict averse,"
+  },
+  {
+   "start": 1126.73,
+   "end": 1129.37,
+   "text": "and I'd gravitate to people that were being successful."
+  },
+  {
+   "start": 1129.37,
+   "end": 1131.13,
+   "text": "The other mistake I would make is I'd sometimes"
+  },
+  {
+   "start": 1131.13,
+   "end": 1133.73,
+   "text": "do their job for them, not realizing,"
+  },
+  {
+   "start": 1133.73,
+   "end": 1137.0,
+   "text": "well, the fact that I'm doing their job for them"
+  },
+  {
+   "start": 1137.0,
+   "end": 1139.24,
+   "text": "means maybe they can do the job and I'm not empowering them,"
+  },
+  {
+   "start": 1139.24,
+   "end": 1146.4,
+   "text": "Or maybe this is a crutch and now they're successful because I am helping them, but that is actually"
+  },
+  {
+   "start": 1146.4,
+   "end": 1149.52,
+   "text": "ultimately perpetuating something that's unsustainable."
+  },
+  {
+   "start": 1149.52,
+   "end": 1152.24,
+   "text": "And the other thing you do is you don't say no enough."
+  },
+  {
+   "start": 1152.24,
+   "end": 1157.58,
+   "text": "Like if five execs want to go in five different directions, it's one team."
+  },
+  {
+   "start": 1157.58,
+   "end": 1162.7,
+   "text": "So like if five of us get in a car and one says let's go to Tahoe, the other says let's"
+  },
+  {
+   "start": 1162.7,
+   "end": 1168.02,
+   "text": "go to Reno, the other says let's go to LA, the right way is one way and one way has to"
+  },
+  {
+   "start": 1168.02,
+   "end": 1169.02,
+   "text": "be your way."
+  },
+  {
+   "start": 1169.02,
+   "end": 1170.42,
+   "text": "So you have to have one way."
+  },
+  {
+   "start": 1170.42,
+   "end": 1174.16,
+   "text": "And if you hire people and they take you in the direction you don't believe in or it's"
+  },
+  {
+   "start": 1174.16,
+   "end": 1179.4,
+   "text": "the wrong direction, they'll eventually leave having built their own people that follow"
+  },
+  {
+   "start": 1179.4,
+   "end": 1181.1,
+   "text": "them down that direction."
+  },
+  {
+   "start": 1181.1,
+   "end": 1183.94,
+   "text": "Now you've got to basically fix that thing."
+  },
+  {
+   "start": 1183.94,
+   "end": 1185.66,
+   "text": "And so you might have hired someone."
+  },
+  {
+   "start": 1185.66,
+   "end": 1187.1,
+   "text": "They've gone down a path for two years."
+  },
+  {
+   "start": 1187.1,
+   "end": 1188.1,
+   "text": "Guess what happens?"
+  },
+  {
+   "start": 1188.1,
+   "end": 1189.1,
+   "text": "They leave."
+  },
+  {
+   "start": 1189.1,
+   "end": 1193.04,
+   "text": "You might spend five or 10 years fixing or correcting that decision that person made."
+  },
+  {
+   "start": 1193.04,
+   "end": 1198.77,
+   "text": "So I like to tell people they're not your people because when you leave, there are people"
+  },
+  {
+   "start": 1198.77,
+   "end": 1205.24,
+   "text": "And that direction is our direction not your direction because I have to live with it long after you do"
+  },
+  {
+   "start": 1206.52,
+   "end": 1209.2,
+   "text": "When you would go home at night, right?"
+  },
+  {
+   "start": 1209.2,
+   "end": 1215.46,
+   "text": "And you know in that time during that time and you'd go you'd like lay in bed and you're done with it today"
+  },
+  {
+   "start": 1216.28,
+   "end": 1218.9,
+   "text": "Were you ever did you ever think?"
+  },
+  {
+   "start": 1219.54,
+   "end": 1225.14,
+   "text": "Maybe I'm not right the right person do this all the time all the time all the time. I will I lived in this"
+  },
+  {
+   "start": 1226.1,
+   "end": 1228.1,
+   "text": "almost prison where"
+  },
+  {
+   "start": 1228.1,
+   "end": 1235.48,
+   "text": "where I felt like I don't know if I'm ever going to have the capacity to be a great CEO,"
+  },
+  {
+   "start": 1235.48,
+   "end": 1240.48,
+   "text": "but I also saw failure after failure of what happened to a company in the founder left."
+  },
+  {
+   "start": 1240.48,
+   "end": 1242.4,
+   "text": "But what would you tell yourself?"
+  },
+  {
+   "start": 1242.4,
+   "end": 1244.36,
+   "text": "I was like, I don't know how to get out of this."
+  },
+  {
+   "start": 1244.36,
+   "end": 1249.28,
+   "text": "And I said to myself, I think I need to run this company long term."
+  },
+  {
+   "start": 1249.28,
+   "end": 1252.2,
+   "text": "I don't know if I'm ever going to be a great CEO."
+  },
+  {
+   "start": 1252.2,
+   "end": 1255.64,
+   "text": "I think the limit of the company's potential is the limit of me."
+  },
+  {
+   "start": 1255.64,
+   "end": 1258.84,
+   "text": "A company can grow faster in a CEO's learning curve."
+  },
+  {
+   "start": 1258.84,
+   "end": 1260.92,
+   "text": "And so I just said, like, how did these grades"
+  },
+  {
+   "start": 1260.92,
+   "end": 1262.6,
+   "text": "before me do it?"
+  },
+  {
+   "start": 1262.6,
+   "end": 1264.6,
+   "text": "I must not have this ability."
+  },
+  {
+   "start": 1264.6,
+   "end": 1266.4,
+   "text": "But I'm going to just do my very best,"
+  },
+  {
+   "start": 1266.4,
+   "end": 1269.16,
+   "text": "because I don't know what to do."
+  },
+  {
+   "start": 1269.16,
+   "end": 1271.6,
+   "text": "I looked for presidents and COOs."
+  },
+  {
+   "start": 1271.6,
+   "end": 1274.08,
+   "text": "I hired those types of people."
+  },
+  {
+   "start": 1274.08,
+   "end": 1277.68,
+   "text": "They didn't, that wasn't really successful."
+  },
+  {
+   "start": 1277.68,
+   "end": 1279.68,
+   "text": "I never got to the point where I told the board, like,"
+  },
+  {
+   "start": 1279.68,
+   "end": 1281.96,
+   "text": "you need to find someone to replace me."
+  },
+  {
+   "start": 1281.96,
+   "end": 1285.32,
+   "text": "And the company, to be clear, wasn't like nose diving."
+  },
+  {
+   "start": 1285.32,
+   "end": 1287.04,
+   "text": "It was still growing."
+  },
+  {
+   "start": 1287.04,
+   "end": 1295.84,
+   "text": "But it was clearly not like, in the mid-2010s or the late-2010s, there was this period where"
+  },
+  {
+   "start": 1295.84,
+   "end": 1299.48,
+   "text": "we're growing, but it's really clear the company is chaos."
+  },
+  {
+   "start": 1299.48,
+   "end": 1301.44,
+   "text": "And I just didn't know how to manage the chaos."
+  },
+  {
+   "start": 1301.44,
+   "end": 1305.64,
+   "text": "I didn't know how to manage excellence, how to align everyone and get them all to go in"
+  },
+  {
+   "start": 1305.64,
+   "end": 1307.32,
+   "text": "one direction."
+  },
+  {
+   "start": 1307.32,
+   "end": 1311.08,
+   "text": "And it just felt like sand falling through your fingers."
+  },
+  {
+   "start": 1311.08,
+   "end": 1315.04,
+   "text": "And all the things told me about big companies was becoming us."
+  },
+  {
+   "start": 1315.04,
+   "end": 1319.52,
+   "text": "There's meetings about meetings and then people are going in many different directions."
+  },
+  {
+   "start": 1319.52,
+   "end": 1324.34,
+   "text": "What ends up happening, and this is happening with a lot of AI companies now, is they just"
+  },
+  {
+   "start": 1324.34,
+   "end": 1330.64,
+   "text": "have too many people doing too many things and there's too many yeses, not enough nos,"
+  },
+  {
+   "start": 1330.64,
+   "end": 1335.72,
+   "text": "and the job of a CEO is to say no probably more than to say yes."
+  },
+  {
+   "start": 1335.72,
+   "end": 1340.6,
+   "text": "To make sure that we're a captain on one ship, we're not presiding over our motto of ships"
+  },
+  {
+   "start": 1340.6,
+   "end": 1342.44,
+   "text": "going in different directions because we have no leverage."
+  },
+  {
+   "start": 1342.44,
+   "end": 1347.88,
+   "text": "I mean, it would take you years to discover that and that is what like that's what age and wisdom"
+  },
+  {
+   "start": 1348.32,
+   "end": 1352.9,
+   "text": "Right. Yeah, who I mean when you're sitting there saying I don't know if I'm the right person"
+  },
+  {
+   "start": 1353.14,
+   "end": 1359.38,
+   "text": "You're also withstanding a lot of pressure that is coming from you and maybe just I don't know the general"
+  },
+  {
+   "start": 1359.96,
+   "end": 1365.08,
+   "text": "Sense that you had around you the company's growing, but you know as you described it. They're still chaos"
+  },
+  {
+   "start": 1365.72,
+   "end": 1367.72,
+   "text": "What was the thing that kept you?"
+  },
+  {
+   "start": 1367.72,
+   "end": 1371.64,
+   "text": "saying to yourself, no, I'm going to stay doing this."
+  },
+  {
+   "start": 1371.64,
+   "end": 1373.08,
+   "text": "Right, because it's really, it is,"
+  },
+  {
+   "start": 1373.08,
+   "end": 1374.88,
+   "text": "I mean, there are, you mentioned examples,"
+  },
+  {
+   "start": 1374.88,
+   "end": 1376.04,
+   "text": "the founders who are still CEOs,"
+  },
+  {
+   "start": 1376.04,
+   "end": 1377.96,
+   "text": "Jensen Wong is another great example,"
+  },
+  {
+   "start": 1377.96,
+   "end": 1380.04,
+   "text": "but there are so many examples"
+  },
+  {
+   "start": 1380.04,
+   "end": 1382.44,
+   "text": "who are not operationally involved."
+  },
+  {
+   "start": 1382.44,
+   "end": 1384.74,
+   "text": "You are still here, almost 20 years later."
+  },
+  {
+   "start": 1384.74,
+   "end": 1387.48,
+   "text": "So what was it, or who was it?"
+  },
+  {
+   "start": 1387.48,
+   "end": 1390.92,
+   "text": "Was there a person, was there a mentor who said,"
+  },
+  {
+   "start": 1390.92,
+   "end": 1393.68,
+   "text": "you should stay, you should keep doing this."
+  },
+  {
+   "start": 1393.68,
+   "end": 1396.57,
+   "text": "You're going to get better at this."
+  },
+  {
+   "start": 1396.57,
+   "end": 1400.08,
+   "text": "Such a good question."
+  },
+  {
+   "start": 1400.08,
+   "end": 1402.22,
+   "text": "What do you remember?"
+  },
+  {
+   "start": 1402.22,
+   "end": 1403.06,
+   "text": "Because I would have left."
+  },
+  {
+   "start": 1403.06,
+   "end": 1403.9,
+   "text": "I would have said, you know what?"
+  },
+  {
+   "start": 1403.9,
+   "end": 1405.62,
+   "text": "I want to just do a design job, not just."
+  },
+  {
+   "start": 1405.62,
+   "end": 1406.78,
+   "text": "I want to do something."
+  },
+  {
+   "start": 1406.78,
+   "end": 1408.66,
+   "text": "I want to be a brand ambassador."
+  },
+  {
+   "start": 1408.66,
+   "end": 1411.26,
+   "text": "Let me bring somebody else to deal with all the bullshit."
+  },
+  {
+   "start": 1411.26,
+   "end": 1414.06,
+   "text": "A couple of things come to mind."
+  },
+  {
+   "start": 1414.06,
+   "end": 1420.34,
+   "text": "The first is my dad, my dad taught me growing up"
+  },
+  {
+   "start": 1420.34,
+   "end": 1421.7,
+   "text": "never to quit."
+  },
+  {
+   "start": 1421.7,
+   "end": 1423.54,
+   "text": "He said, I don't care how talented you are."
+  },
+  {
+   "start": 1423.54,
+   "end": 1424.74,
+   "text": "I'm not very tall."
+  },
+  {
+   "start": 1424.74,
+   "end": 1426.38,
+   "text": "I'm pretty short, 5'8\"."
+  },
+  {
+   "start": 1426.38,
+   "end": 1430.14,
+   "text": "So I played ice hockey and I hit puberty late."
+  },
+  {
+   "start": 1430.14,
+   "end": 1434.06,
+   "text": "And I went to this military sports academy for hockey."
+  },
+  {
+   "start": 1434.06,
+   "end": 1436.38,
+   "text": "My dad and I both knew I wasn't the biggest."
+  },
+  {
+   "start": 1436.38,
+   "end": 1437.5,
+   "text": "I wasn't the most talented."
+  },
+  {
+   "start": 1437.5,
+   "end": 1439.98,
+   "text": "In fact, my favorite movie as a kid was Rudy."
+  },
+  {
+   "start": 1439.98,
+   "end": 1443.62,
+   "text": "Some people might be too young to know what that was with this young little guy that was"
+  },
+  {
+   "start": 1443.62,
+   "end": 1445.94,
+   "text": "like five, seven, it was a walk in a Miller Dame."
+  },
+  {
+   "start": 1445.94,
+   "end": 1446.94,
+   "text": "And that was my hero."
+  },
+  {
+   "start": 1446.94,
+   "end": 1448.7,
+   "text": "I was the underdog."
+  },
+  {
+   "start": 1448.7,
+   "end": 1452.02,
+   "text": "My dad said, it's not the size of the dog in the fight."
+  },
+  {
+   "start": 1452.02,
+   "end": 1453.9,
+   "text": "It's the size of the fight in the dog that matters."
+  },
+  {
+   "start": 1453.9,
+   "end": 1455.58,
+   "text": "That used to say that to me all the time."
+  },
+  {
+   "start": 1455.58,
+   "end": 1456.94,
+   "text": "100% or nothing."
+  },
+  {
+   "start": 1456.94,
+   "end": 1458.98,
+   "text": "Never quit, never quit, never quit."
+  },
+  {
+   "start": 1458.98,
+   "end": 1460.78,
+   "text": "So first of all, that's ingrained in me."
+  },
+  {
+   "start": 1460.78,
+   "end": 1462.26,
+   "text": "I don't even know how to quit."
+  },
+  {
+   "start": 1462.26,
+   "end": 1463.26,
+   "text": "That seems like defeat."
+  },
+  {
+   "start": 1463.26,
+   "end": 1467.38,
+   "text": "Now, if the board or the world told me, please stop, I would have."
+  },
+  {
+   "start": 1467.38,
+   "end": 1471.46,
+   "text": "If Joe and Nate said, Brian, I need to take you off the mound, I would have gone off the"
+  },
+  {
+   "start": 1471.46,
+   "end": 1472.46,
+   "text": "mound, but they never did."
+  },
+  {
+   "start": 1472.46,
+   "end": 1477.7,
+   "text": "In fact, they told me, even in my darkest hours, I believe in you, including during"
+  },
+  {
+   "start": 1477.7,
+   "end": 1484.66,
+   "text": "the pandemic, my darkest moment beyond the IPO, my darkest actual professional moment,"
+  },
+  {
+   "start": 1484.66,
+   "end": 1491.5,
+   "text": "was the pandemic hit. I remember Ken Chenal, CEO of AMX was on our board. He was CEO of"
+  },
+  {
+   "start": 1491.5,
+   "end": 1495.7,
+   "text": "AMX during 9-11, 2008. He said, Brian, sometime in your career, you're going to have to deal"
+  },
+  {
+   "start": 1495.7,
+   "end": 1501.1,
+   "text": "with a 9-11 or 2008. It was literally March 15th, I'd say March. Ken calls me, he said,"
+  },
+  {
+   "start": 1501.1,
+   "end": 1505.22,
+   "text": "remember 9-11? This is going to be 10 times the size of 9-11 for travel as far as impact"
+  },
+  {
+   "start": 1505.22,
+   "end": 1507.94,
+   "text": "it was. We lost 80% of our business in two weeks."
+  },
+  {
+   "start": 1507.94,
+   "end": 1511.9,
+   "text": "Right. I remember we interviewed you that time. You said, we spent 12 years building"
+  },
+  {
+   "start": 1511.9,
+   "end": 1515.62,
+   "text": "this business and we have lost 80% of it in a matter of weeks."
+  },
+  {
+   "start": 1515.62,
+   "end": 1516.62,
+   "text": "Eight weeks."
+  },
+  {
+   "start": 1516.62,
+   "end": 1518.82,
+   "text": "And people were asking, is this the end of Airbnb?"
+  },
+  {
+   "start": 1518.82,
+   "end": 1519.82,
+   "text": "Is Airbnb going to exist?"
+  },
+  {
+   "start": 1519.82,
+   "end": 1524.46,
+   "text": "And it was that moment that the board rallied behind me and my co-founders rallied behind"
+  },
+  {
+   "start": 1524.46,
+   "end": 1525.46,
+   "text": "me."
+  },
+  {
+   "start": 1525.46,
+   "end": 1528.98,
+   "text": "I think it was the people who believed in me that told me to keep going."
+  },
+  {
+   "start": 1528.98,
+   "end": 1531.9,
+   "text": "It was me feeling like I can't quit."
+  },
+  {
+   "start": 1531.9,
+   "end": 1535.26,
+   "text": "And it was me just believing that we're just starting."
+  },
+  {
+   "start": 1535.26,
+   "end": 1538.54,
+   "text": "This is a book and they had written a book about us and it was like 14 chapters."
+  },
+  {
+   "start": 1538.54,
+   "end": 1541.7,
+   "text": "I'm like, really, you've only written the first chapter."
+  },
+  {
+   "start": 1541.7,
+   "end": 1547.74,
+   "text": "That 14 chapter book is really just chapter one because we have so much longer to go."
+  },
+  {
+   "start": 1547.74,
+   "end": 1553.0,
+   "text": "One other thing though that really got me down and I didn't mention this the first question"
+  },
+  {
+   "start": 1553.0,
+   "end": 1554.54,
+   "text": "I asked about the IPO."
+  },
+  {
+   "start": 1554.54,
+   "end": 1560.58,
+   "text": "The thing that really I think got me down was how lonely I was."
+  },
+  {
+   "start": 1560.58,
+   "end": 1564.0,
+   "text": "The job of a CEO can be so lonely."
+  },
+  {
+   "start": 1564.0,
+   "end": 1566.36,
+   "text": "See being a founder, if you have co-founders, not lonely."
+  },
+  {
+   "start": 1566.36,
+   "end": 1569.8,
+   "text": "In fact, when you're a co-founder, you have your friends, you're in it together, you know"
+  },
+  {
+   "start": 1569.8,
+   "end": 1571.64,
+   "text": "No one's really in charge."
+  },
+  {
+   "start": 1571.64,
+   "end": 1573.2,
+   "text": "You hire your friends."
+  },
+  {
+   "start": 1573.2,
+   "end": 1574.96,
+   "text": "They are young in your 20s."
+  },
+  {
+   "start": 1574.96,
+   "end": 1576.12,
+   "text": "You go out drinking together."
+  },
+  {
+   "start": 1576.12,
+   "end": 1577.12,
+   "text": "You hang out together."
+  },
+  {
+   "start": 1577.12,
+   "end": 1580.84,
+   "text": "It feels kind of like a college crew."
+  },
+  {
+   "start": 1580.84,
+   "end": 1582.44,
+   "text": "And then you become CEO."
+  },
+  {
+   "start": 1582.44,
+   "end": 1584.4,
+   "text": "You're not exposed to socializing."
+  },
+  {
+   "start": 1584.4,
+   "end": 1585.8,
+   "text": "Your employees as much."
+  },
+  {
+   "start": 1585.8,
+   "end": 1589.08,
+   "text": "Your employees have family, so they're not going to hang out with you."
+  },
+  {
+   "start": 1589.08,
+   "end": 1592.88,
+   "text": "Everyone's looking at you every direction and you feel like the walls are caving in"
+  },
+  {
+   "start": 1592.88,
+   "end": 1597.08,
+   "text": "and you feel like the whole, everyone's just staring at you, evaluating you."
+  },
+  {
+   "start": 1597.08,
+   "end": 1601.58,
+   "text": "It's like imagine like you're a high school student and all of a sudden someone told you"
+  },
+  {
+   "start": 1601.58,
+   "end": 1604.2,
+   "text": "to be the principal of your own high school and you're like, wait a second and everyone"
+  },
+  {
+   "start": 1604.2,
+   "end": 1605.96,
+   "text": "in school is talking about you."
+  },
+  {
+   "start": 1605.96,
+   "end": 1609.16,
+   "text": "And every time you walk into a room, everyone's like preparing for you to enter that room"
+  },
+  {
+   "start": 1609.16,
+   "end": 1612.64,
+   "text": "and it's all like a production, a performance."
+  },
+  {
+   "start": 1612.64,
+   "end": 1615.8,
+   "text": "It's very, very hard to wrap your head around that."
+  },
+  {
+   "start": 1615.8,
+   "end": 1622.44,
+   "text": "And I didn't realize at the time that so much of the emptiness that I felt was just loneliness"
+  },
+  {
+   "start": 1622.44,
+   "end": 1626.02,
+   "text": "and that I had to reconnect with myself,"
+  },
+  {
+   "start": 1626.02,
+   "end": 1627.8,
+   "text": "my purpose, like why am I even doing this?"
+  },
+  {
+   "start": 1627.8,
+   "end": 1631.52,
+   "text": "I'm not doing this to become a $100 billion company,"
+  },
+  {
+   "start": 1631.52,
+   "end": 1634.2,
+   "text": "because I realized that I wasn't any happier"
+  },
+  {
+   "start": 1634.2,
+   "end": 1636.48,
+   "text": "as a $100 billion company than a $20 billion company."
+  },
+  {
+   "start": 1636.48,
+   "end": 1638.92,
+   "text": "It's an idea."
+  },
+  {
+   "start": 1638.92,
+   "end": 1643.08,
+   "text": "It's like a drug, it's a rush, and it wears off."
+  },
+  {
+   "start": 1643.08,
+   "end": 1644.52,
+   "text": "And so then you gotta go back to,"
+  },
+  {
+   "start": 1644.52,
+   "end": 1646.28,
+   "text": "what do I want in my life?"
+  },
+  {
+   "start": 1646.28,
+   "end": 1648.8,
+   "text": "And I said, well, first, I need to have more friends."
+  },
+  {
+   "start": 1648.8,
+   "end": 1649.96,
+   "text": "I need to reconnect with my friends."
+  },
+  {
+   "start": 1649.96,
+   "end": 1653.24,
+   "text": "In fact, it was President Obama who became a mentor to me."
+  },
+  {
+   "start": 1653.24,
+   "end": 1655.24,
+   "text": "You wrote him a letter, right, in the middle of this."
+  },
+  {
+   "start": 1655.24,
+   "end": 1656.24,
+   "text": "A middle of this."
+  },
+  {
+   "start": 1656.24,
+   "end": 1658.96,
+   "text": "You reach out to him and asked for help."
+  },
+  {
+   "start": 1658.96,
+   "end": 1659.96,
+   "text": "Yeah."
+  },
+  {
+   "start": 1659.96,
+   "end": 1664.08,
+   "text": "I just wrote this long letter for help and he basically told me, Brian, I think it's"
+  },
+  {
+   "start": 1664.08,
+   "end": 1666.52,
+   "text": "pretty simple, you're really lonely."
+  },
+  {
+   "start": 1666.52,
+   "end": 1672.36,
+   "text": "And he said, I remember him telling, I have at least 15 friends that I could call at any"
+  },
+  {
+   "start": 1672.36,
+   "end": 1675.24,
+   "text": "moment and I don't need to catch them up to when I'm going my life."
+  },
+  {
+   "start": 1675.24,
+   "end": 1677.08,
+   "text": "And many of them were his high school friends."
+  },
+  {
+   "start": 1677.08,
+   "end": 1680.74,
+   "text": "If I got asked him, I said, how did you basically get the most famous person alive and not lose"
+  },
+  {
+   "start": 1680.74,
+   "end": 1681.74,
+   "text": "your mind?"
+  },
+  {
+   "start": 1681.74,
+   "end": 1683.56,
+   "text": "Because a lot of celebrities lose their mind."
+  },
+  {
+   "start": 1683.56,
+   "end": 1686.44,
+   "text": "A lot of rich people lose their mind and get really powerful."
+  },
+  {
+   "start": 1686.44,
+   "end": 1690.28,
+   "text": "And one of the things he told me, and I'll never forget this, is that the way I didn't"
+  },
+  {
+   "start": 1690.28,
+   "end": 1692.16,
+   "text": "lose my mind is I stayed grounded."
+  },
+  {
+   "start": 1692.16,
+   "end": 1694.24,
+   "text": "And the way you stay grounded, you stay connected to your roots."
+  },
+  {
+   "start": 1694.24,
+   "end": 1697.84,
+   "text": "And the way you stay connected to your roots is you stay connected to people in your roots."
+  },
+  {
+   "start": 1697.84,
+   "end": 1699.56,
+   "text": "And he had these high school friends."
+  },
+  {
+   "start": 1699.56,
+   "end": 1701.52,
+   "text": "He had this guy named Bobby."
+  },
+  {
+   "start": 1701.52,
+   "end": 1702.52,
+   "text": "He's a fisherman."
+  },
+  {
+   "start": 1702.52,
+   "end": 1704.84,
+   "text": "He's like, you've been friends since high school."
+  },
+  {
+   "start": 1704.84,
+   "end": 1705.84,
+   "text": "And I had a friend named Bob."
+  },
+  {
+   "start": 1705.84,
+   "end": 1708.6,
+   "text": "But I had talked to my friend Bob for like a decade."
+  },
+  {
+   "start": 1708.6,
+   "end": 1709.72,
+   "text": "And so I kind of realized,"
+  },
+  {
+   "start": 1709.72,
+   "end": 1711.6,
+   "text": "I thought I hold all these friends,"
+  },
+  {
+   "start": 1711.6,
+   "end": 1713.24,
+   "text": "but then I realized if I called any of them,"
+  },
+  {
+   "start": 1713.24,
+   "end": 1714.8,
+   "text": "I'd have to get them up to speed in my life."
+  },
+  {
+   "start": 1714.8,
+   "end": 1718.0,
+   "text": "And I'm like, okay, those are dormant relationships."
+  },
+  {
+   "start": 1718.0,
+   "end": 1720.2,
+   "text": "Cause I put my whole life on hold."
+  },
+  {
+   "start": 1720.2,
+   "end": 1722.36,
+   "text": "I realized that I wasn't very vulnerable"
+  },
+  {
+   "start": 1722.36,
+   "end": 1723.72,
+   "text": "around my employees."
+  },
+  {
+   "start": 1723.72,
+   "end": 1725.12,
+   "text": "I was closed off."
+  },
+  {
+   "start": 1725.12,
+   "end": 1726.68,
+   "text": "I wanted to look strong."
+  },
+  {
+   "start": 1726.68,
+   "end": 1728.8,
+   "text": "I didn't want to admit that I was vulnerable."
+  },
+  {
+   "start": 1728.8,
+   "end": 1730.2,
+   "text": "I didn't want to admit I don't have the answer."
+  },
+  {
+   "start": 1730.2,
+   "end": 1731.92,
+   "text": "I didn't want to admit I'm struggling."
+  },
+  {
+   "start": 1731.92,
+   "end": 1732.76,
+   "text": "I didn't want to admit like,"
+  },
+  {
+   "start": 1732.76,
+   "end": 1734.32,
+   "text": "hey, I don't know if I'm really good at this."
+  },
+  {
+   "start": 1734.32,
+   "end": 1735.64,
+   "text": "I need your help."
+  },
+  {
+   "start": 1735.64,
+   "end": 1737.52,
+   "text": "And so I wouldn't let people in."
+  },
+  {
+   "start": 1737.52,
+   "end": 1739.64,
+   "text": "And so a lot of this was loneliness."
+  },
+  {
+   "start": 1739.64,
+   "end": 1742.92,
+   "text": "And a lot of loneliness was just a lack of vulnerability,"
+  },
+  {
+   "start": 1742.92,
+   "end": 1745.36,
+   "text": "not wanting to let people in and just allowing walls"
+  },
+  {
+   "start": 1745.36,
+   "end": 1747.68,
+   "text": "to keep on on you, just being coming too busy"
+  },
+  {
+   "start": 1747.68,
+   "end": 1750.64,
+   "text": "for things that seem unimportant like relationships,"
+  },
+  {
+   "start": 1750.64,
+   "end": 1751.64,
+   "text": "which are the most important thing."
+  },
+  {
+   "start": 1751.64,
+   "end": 1752.48,
+   "text": "Well, that's a thing."
+  },
+  {
+   "start": 1752.48,
+   "end": 1753.24,
+   "text": "I mean, here you are."
+  },
+  {
+   "start": 1753.24,
+   "end": 1755.6,
+   "text": "And I remember we spoke at that time"
+  },
+  {
+   "start": 1755.6,
+   "end": 1757.16,
+   "text": "and you said I'm staring at a green dot all day."
+  },
+  {
+   "start": 1757.16,
+   "end": 1760.08,
+   "text": "I remember you saying that, I mean,"
+  },
+  {
+   "start": 1760.08,
+   "end": 1763.04,
+   "text": "you started so young, right?"
+  },
+  {
+   "start": 1763.04,
+   "end": 1766.14,
+   "text": "and you're grinding for so long."
+  },
+  {
+   "start": 1766.14,
+   "end": 1769.94,
+   "text": "You're just, this is it, this is your life."
+  },
+  {
+   "start": 1769.94,
+   "end": 1774.46,
+   "text": "And you get to a point where you're well-known,"
+  },
+  {
+   "start": 1774.46,
+   "end": 1778.22,
+   "text": "you have money, but you have focused on this."
+  },
+  {
+   "start": 1778.22,
+   "end": 1781.5,
+   "text": "And so your personal life takes a backseat."
+  },
+  {
+   "start": 1781.5,
+   "end": 1782.34,
+   "text": "I had no personal life."
+  },
+  {
+   "start": 1782.34,
+   "end": 1784.26,
+   "text": "It becomes much more complicated, right?"
+  },
+  {
+   "start": 1784.26,
+   "end": 1787.77,
+   "text": "And complex to try to build one"
+  },
+  {
+   "start": 1787.77,
+   "end": 1790.05,
+   "text": "when you are known and all of these things."
+  },
+  {
+   "start": 1790.05,
+   "end": 1793.81,
+   "text": "I would walk down the street and I wasn't famous,"
+  },
+  {
+   "start": 1793.81,
+   "end": 1796.57,
+   "text": "but I would hear people say, that's the Airbnb guy."
+  },
+  {
+   "start": 1796.57,
+   "end": 1799.37,
+   "text": "And it was weird because it wasn't that's Brian Chesky,"
+  },
+  {
+   "start": 1799.37,
+   "end": 1800.85,
+   "text": "that's the Airbnb guy."
+  },
+  {
+   "start": 1800.85,
+   "end": 1804.21,
+   "text": "And the weird part about that is at one point,"
+  },
+  {
+   "start": 1804.21,
+   "end": 1807.38,
+   "text": "me and Airbnb started blurring together."
+  },
+  {
+   "start": 1807.38,
+   "end": 1809.94,
+   "text": "Like literally people call me the Airbnb guy."
+  },
+  {
+   "start": 1809.94,
+   "end": 1812.7,
+   "text": "And so I started losing a,"
+  },
+  {
+   "start": 1812.7,
+   "end": 1816.14,
+   "text": "and if all you do is Airbnb, you're the Airbnb guy"
+  },
+  {
+   "start": 1816.14,
+   "end": 1816.98,
+   "text": "and there's nothing else,"
+  },
+  {
+   "start": 1816.98,
+   "end": 1819.42,
+   "text": "then maybe you are just the Airbnb guy."
+  },
+  {
+   "start": 1819.42,
+   "end": 1821.14,
+   "text": "there's nothing else about you."
+  },
+  {
+   "start": 1821.14,
+   "end": 1823.46,
+   "text": "At one point, I had nothing to talk about by Airbnb"
+  },
+  {
+   "start": 1823.46,
+   "end": 1824.94,
+   "text": "because I didn't do anything, I didn't read anything,"
+  },
+  {
+   "start": 1824.94,
+   "end": 1826.9,
+   "text": "I didn't know anything but Airbnb."
+  },
+  {
+   "start": 1826.9,
+   "end": 1828.9,
+   "text": "I was probably an uninteresting person to talk to"
+  },
+  {
+   "start": 1828.9,
+   "end": 1830.78,
+   "text": "if it was unless you wanted to learn about Airbnb."
+  },
+  {
+   "start": 1830.78,
+   "end": 1835.3,
+   "text": "And in paradoxically, that made me a worse leader"
+  },
+  {
+   "start": 1835.3,
+   "end": 1837.06,
+   "text": "because it was almost like I was just staring"
+  },
+  {
+   "start": 1837.06,
+   "end": 1838.5,
+   "text": "at the painting for too long."
+  },
+  {
+   "start": 1838.5,
+   "end": 1840.26,
+   "text": "And if you just get like two in your head"
+  },
+  {
+   "start": 1840.26,
+   "end": 1843.54,
+   "text": "and you stare at things, you can start to like just kinda,"
+  },
+  {
+   "start": 1843.54,
+   "end": 1845.94,
+   "text": "like an artist has to step away from the campus."
+  },
+  {
+   "start": 1845.94,
+   "end": 1847.7,
+   "text": "And if you stare at something too long,"
+  },
+  {
+   "start": 1847.7,
+   "end": 1850.34,
+   "text": "you kind of start getting stuck in iterative."
+  },
+  {
+   "start": 1850.34,
+   "end": 1855.34,
+   "text": "And I think that was a really big thing for me to realize,"
+  },
+  {
+   "start": 1856.1,
+   "end": 1858.02,
+   "text": "I can dedicate my life to something,"
+  },
+  {
+   "start": 1858.02,
+   "end": 1859.74,
+   "text": "but that doesn't make me that."
+  },
+  {
+   "start": 1859.74,
+   "end": 1862.14,
+   "text": "And that this company is separate from me."
+  },
+  {
+   "start": 1862.14,
+   "end": 1864.7,
+   "text": "There has to be some separation of identity."
+  },
+  {
+   "start": 1864.7,
+   "end": 1867.54,
+   "text": "So what did you do?"
+  },
+  {
+   "start": 1867.54,
+   "end": 1870.18,
+   "text": "The first thing I did is I called up a bunch of,"
+  },
+  {
+   "start": 1870.18,
+   "end": 1871.9,
+   "text": "in the middle of the pandemic, my high school and college"
+  },
+  {
+   "start": 1871.9,
+   "end": 1875.64,
+   "text": "friends, and I just started doing Zooms with them."
+  },
+  {
+   "start": 1875.64,
+   "end": 1877.8,
+   "text": "Then I said we should do an annual trip,"
+  },
+  {
+   "start": 1877.8,
+   "end": 1879.84,
+   "text": "because the first thing we do in Zoom's,"
+  },
+  {
+   "start": 1879.84,
+   "end": 1881.8,
+   "text": "but we'd have had no new experiences."
+  },
+  {
+   "start": 1881.8,
+   "end": 1884.16,
+   "text": "So all we're doing is talking about shit 15 years ago."
+  },
+  {
+   "start": 1884.16,
+   "end": 1885.32,
+   "text": "So we started traveling together."
+  },
+  {
+   "start": 1885.32,
+   "end": 1886.52,
+   "text": "We started doing trips together."
+  },
+  {
+   "start": 1886.52,
+   "end": 1889.4,
+   "text": "And that was like completely changed my life."
+  },
+  {
+   "start": 1889.4,
+   "end": 1891.7,
+   "text": "A lot of people think, oh, I'm in a relationship."
+  },
+  {
+   "start": 1891.7,
+   "end": 1893.04,
+   "text": "I'm in a happy marriage, I'm not lonely."
+  },
+  {
+   "start": 1893.04,
+   "end": 1895.6,
+   "text": "Well, actually, loneliness I learned,"
+  },
+  {
+   "start": 1895.6,
+   "end": 1898.44,
+   "text": "because we hired the Surgeon General of the United States"
+  },
+  {
+   "start": 1898.44,
+   "end": 1901.88,
+   "text": "to help during COVID, and he actually studied loneliness."
+  },
+  {
+   "start": 1901.88,
+   "end": 1903.4,
+   "text": "He said, Brian, the way to think about loneliness"
+  },
+  {
+   "start": 1903.4,
+   "end": 1904.88,
+   "text": "is concentric circles."
+  },
+  {
+   "start": 1904.88,
+   "end": 1907.76,
+   "text": "First, you have to have a relationship yourself, solitude."
+  },
+  {
+   "start": 1907.76,
+   "end": 1910.0,
+   "text": "then family, maybe call it five people."
+  },
+  {
+   "start": 1910.0,
+   "end": 1912.16,
+   "text": "Then the next in centric circles, 15 people"
+  },
+  {
+   "start": 1912.16,
+   "end": 1914.44,
+   "text": "you can confide in, 10 to 15."
+  },
+  {
+   "start": 1914.44,
+   "end": 1917.36,
+   "text": "Then it's 150, you might call this your workplace,"
+  },
+  {
+   "start": 1917.36,
+   "end": 1920.28,
+   "text": "your community, and then there's the cosmos."
+  },
+  {
+   "start": 1920.28,
+   "end": 1922.84,
+   "text": "You know, your country, your community,"
+  },
+  {
+   "start": 1922.84,
+   "end": 1926.0,
+   "text": "something much bigger than anything you can ever fathom."
+  },
+  {
+   "start": 1926.0,
+   "end": 1929.02,
+   "text": "If you have any disconnection to any of those rings,"
+  },
+  {
+   "start": 1929.02,
+   "end": 1931.92,
+   "text": "there is an element of disconnection that makes you lonely."
+  },
+  {
+   "start": 1931.92,
+   "end": 1934.72,
+   "text": "And I think so much of the unhappiness today in the world"
+  },
+  {
+   "start": 1934.72,
+   "end": 1937.92,
+   "text": "is people feeling disconnected to one of those rings."
+  },
+  {
+   "start": 1937.92,
+   "end": 1941.32,
+   "text": "And I was disconnected to almost all of those rings"
+  },
+  {
+   "start": 1941.32,
+   "end": 1942.48,
+   "text": "if I really asked myself."
+  },
+  {
+   "start": 1942.48,
+   "end": 1945.12,
+   "text": "I was just connected to this Airbnb,"
+  },
+  {
+   "start": 1945.12,
+   "end": 1946.68,
+   "text": "mostly this idea at this point."
+  },
+  {
+   "start": 1946.68,
+   "end": 1948.84,
+   "text": "I was even disconnected to people I'm working with."
+  },
+  {
+   "start": 1948.84,
+   "end": 1950.44,
+   "text": "And the pandemic made it worse."
+  },
+  {
+   "start": 1950.44,
+   "end": 1951.92,
+   "text": "They moved my house for two years."
+  },
+  {
+   "start": 1951.92,
+   "end": 1953.52,
+   "text": "I worked 100 hours a week."
+  },
+  {
+   "start": 1953.52,
+   "end": 1956.2,
+   "text": "It was the best thing for Airbnb for the short term."
+  },
+  {
+   "start": 1956.2,
+   "end": 1957.16,
+   "text": "But by the end of it, man,"
+  },
+  {
+   "start": 1957.16,
+   "end": 1972.08,
+   "text": "I was in a pretty rough, tenuous place."
+  },
+  {
+   "start": 1972.08,
+   "end": 1974.32,
+   "text": "This episode is brought to you by Indeed."
+  },
+  {
+   "start": 1974.32,
+   "end": 1976.22,
+   "text": "you're ready to level up your business,"
+  },
+  {
+   "start": 1976.22,
+   "end": 1977.96,
+   "text": "but the pressure to find the right person"
+  },
+  {
+   "start": 1977.96,
+   "end": 1980.44,
+   "text": "to make that happen is intense."
+  },
+  {
+   "start": 1980.44,
+   "end": 1983.12,
+   "text": "Indeed Sponsored Jobs can help carry the load."
+  },
+  {
+   "start": 1983.12,
+   "end": 1984.36,
+   "text": "It boosts your job post"
+  },
+  {
+   "start": 1984.36,
+   "end": 1986.72,
+   "text": "to help it reach quality talent fast."
+  },
+  {
+   "start": 1986.72,
+   "end": 1989.36,
+   "text": "Cut through the chaos with Indeed Sponsored Jobs."
+  },
+  {
+   "start": 1989.36,
+   "end": 1993.8,
+   "text": "Get a $75 Sponsored Job Credit at indeed.com slash podcast."
+  },
+  {
+   "start": 1993.8,
+   "end": 1995.52,
+   "text": "Terms and conditions apply."
+  },
+  {
+   "start": 1995.52,
+   "end": 2002.31,
+   "text": "Hiring now, then this is a job for Indeed Sponsored Jobs."
+  },
+  {
+   "start": 2002.31,
+   "end": 2005.07,
+   "text": "Low energy, unfocused, foggy."
+  },
+  {
+   "start": 2005.07,
+   "end": 2007.33,
+   "text": "You might be dehydrated."
+  },
+  {
+   "start": 2007.33,
+   "end": 2010.17,
+   "text": "Gatorade zero powders have been scientifically designed"
+  },
+  {
+   "start": 2010.17,
+   "end": 2012.57,
+   "text": "to help improve hydration balance in the body"
+  },
+  {
+   "start": 2012.57,
+   "end": 2014.49,
+   "text": "with a clinically proven electrolyte blend"
+  },
+  {
+   "start": 2014.49,
+   "end": 2016.61,
+   "text": "and no artificial colors or flavors."
+  },
+  {
+   "start": 2016.61,
+   "end": 2019.45,
+   "text": "Great tasting hydration no matter where you're going."
+  },
+  {
+   "start": 2019.45,
+   "end": 2022.33,
+   "text": "Shop now online or at retailers nationwide."
+  },
+  {
+   "start": 2022.33,
+   "end": 2024.73,
+   "text": "Gatorade hydrates better than water."
+  },
+  {
+   "start": 2024.73,
+   "end": 2025.69,
+   "text": "Is it in you?"
+  },
+  {
+   "start": 2025.69,
+   "end": 2028.41,
+   "text": "Symptoms noted are signs of mild to moderate dehydration."
+  },
+  {
+   "start": 2028.41,
+   "end": 2031.56,
+   "text": "Consult a healthcare professional if symptoms persist."
+  },
+  {
+   "start": 2031.56,
+   "end": 2033.52,
+   "text": "Those here, you know when a song"
+  },
+  {
+   "start": 2033.52,
+   "end": 2035.28,
+   "text": "leaves that breath in the beginning,"
+  },
+  {
+   "start": 2035.28,
+   "end": 2037.84,
+   "text": "or you hear that bit of feedback right at the end."
+  },
+  {
+   "start": 2037.84,
+   "end": 2041.44,
+   "text": "Those details are what make the song the song."
+  },
+  {
+   "start": 2041.44,
+   "end": 2044.04,
+   "text": "With Bose, you'll hear everyone."
+  },
+  {
+   "start": 2044.04,
+   "end": 2051.88,
+   "text": "Your music deserves Bose."
+  },
+  {
+   "start": 2051.88,
+   "end": 2054.76,
+   "text": "But how do you know, how do you know who to trust, right?"
+  },
+  {
+   "start": 2054.76,
+   "end": 2059.12,
+   "text": "Especially when people know the value of the company,"
+  },
+  {
+   "start": 2059.12,
+   "end": 2060.6,
+   "text": "what that means for you."
+  },
+  {
+   "start": 2060.6,
+   "end": 2062.12,
+   "text": "You're well known."
+  },
+  {
+   "start": 2062.12,
+   "end": 2067.19,
+   "text": "You know, you are like, I met my wife when I was 24."
+  },
+  {
+   "start": 2067.19,
+   "end": 2069.59,
+   "text": "24, I'm 52, right?"
+  },
+  {
+   "start": 2069.59,
+   "end": 2075.59,
+   "text": "So how do you know who to trust when your entire adult life up"
+  },
+  {
+   "start": 2075.59,
+   "end": 2078.67,
+   "text": "until that point is so focused on work,"
+  },
+  {
+   "start": 2078.67,
+   "end": 2080.99,
+   "text": "understandably, you're building something,"
+  },
+  {
+   "start": 2080.99,
+   "end": 2084.2,
+   "text": "and then you have to consciously decide"
+  },
+  {
+   "start": 2084.2,
+   "end": 2086.64,
+   "text": "to focus on the things that you neglected."
+  },
+  {
+   "start": 2086.64,
+   "end": 2089.36,
+   "text": "But you've got to now, but you're now known."
+  },
+  {
+   "start": 2089.36,
+   "end": 2092.96,
+   "text": "And there are consequences in trusting people"
+  },
+  {
+   "start": 2092.96,
+   "end": 2095.87,
+   "text": "who violate that trust."
+  },
+  {
+   "start": 2095.87,
+   "end": 2100.79,
+   "text": "I did something that might be unpopular or counter-attuitive, which is I just decided"
+  },
+  {
+   "start": 2100.79,
+   "end": 2105.97,
+   "text": "to give everyone the benefit of doubt, trust them, and let people tell me who they really"
+  },
+  {
+   "start": 2105.97,
+   "end": 2106.97,
+   "text": "were."
+  },
+  {
+   "start": 2106.97,
+   "end": 2109.13,
+   "text": "And if they invited them my trust, then they wouldn't be in my life, but I would assume"
+  },
+  {
+   "start": 2109.13,
+   "end": 2110.77,
+   "text": "good intent."
+  },
+  {
+   "start": 2110.77,
+   "end": 2114.81,
+   "text": "Said differently, there are some people I met in Silicon Valley that said no new friends,"
+  },
+  {
+   "start": 2114.81,
+   "end": 2117.91,
+   "text": "because I only feel like I can trust my old friends."
+  },
+  {
+   "start": 2117.91,
+   "end": 2122.85,
+   "text": "The problem is when you don't have new friends, and there are people, I bet you people watching"
+  },
+  {
+   "start": 2122.85,
+   "end": 2126.61,
+   "text": "their parents when you get to a certain age and stop making new friends."
+  },
+  {
+   "start": 2126.61,
+   "end": 2129.73,
+   "text": "But when you stop making new friends and you stop letting new people in your life, you"
+  },
+  {
+   "start": 2129.73,
+   "end": 2131.77,
+   "text": "stop growing, you stop learning."
+  },
+  {
+   "start": 2131.77,
+   "end": 2134.29,
+   "text": "And so I decided I'm going to take the risk."
+  },
+  {
+   "start": 2134.29,
+   "end": 2140.65,
+   "text": "Now maybe I'm not going to send them my bank account information and I'm going to ease"
+  },
+  {
+   "start": 2140.65,
+   "end": 2141.88,
+   "text": "into it."
+  },
+  {
+   "start": 2141.88,
+   "end": 2147.12,
+   "text": "But I decided to take the conscious effort to say the risk of a few people violating"
+  },
+  {
+   "start": 2147.12,
+   "end": 2153.04,
+   "text": "my trust is better than the risk of living alone the rest of my life."
+  },
+  {
+   "start": 2153.04,
+   "end": 2154.78,
+   "text": "And did a few people buy my trust?"
+  },
+  {
+   "start": 2154.78,
+   "end": 2155.78,
+   "text": "Yes."
+  },
+  {
+   "start": 2155.78,
+   "end": 2156.78,
+   "text": "Was it irreparable?"
+  },
+  {
+   "start": 2156.78,
+   "end": 2157.94,
+   "text": "No."
+  },
+  {
+   "start": 2157.94,
+   "end": 2159.14,
+   "text": "Was it worth taking the risk?"
+  },
+  {
+   "start": 2159.14,
+   "end": 2160.3,
+   "text": "100%."
+  },
+  {
+   "start": 2160.3,
+   "end": 2161.54,
+   "text": "And so that's what I did."
+  },
+  {
+   "start": 2161.54,
+   "end": 2166.7,
+   "text": "I think what happens with a lot of people that become wealthy, for example, is the world"
+  },
+  {
+   "start": 2166.7,
+   "end": 2168.9,
+   "text": "gets small because I don't know who to trust."
+  },
+  {
+   "start": 2168.9,
+   "end": 2171.94,
+   "text": "And my only answer is you got to give people a chance."
+  },
+  {
+   "start": 2171.94,
+   "end": 2177.62,
+   "text": "Now, you know, one way to know how you can, like there's some tactics you can do is if"
+  },
+  {
+   "start": 2177.62,
+   "end": 2181.34,
+   "text": "people are really, the more success you get, the nicer everyone is to you."
+  },
+  {
+   "start": 2181.34,
+   "end": 2184.4,
+   "text": "So you start to become a bad read of character because everyone's really nice to you"
+  },
+  {
+   "start": 2184.58,
+   "end": 2187.1,
+   "text": "So we have to pay attention how nice they did other people"
+  },
+  {
+   "start": 2187.1,
+   "end": 2187.58,
+   "text": "Mm-hmm"
+  },
+  {
+   "start": 2187.58,
+   "end": 2192.18,
+   "text": "And so one of the things I used to do is I asked my assistant how nice people were to her"
+  },
+  {
+   "start": 2192.62,
+   "end": 2196.12,
+   "text": "because there were people that were very obsequious and unkiest to me and"
+  },
+  {
+   "start": 2197.05,
+   "end": 2202.65,
+   "text": "They were really the wind treat her well, but your default was to trust my default was a trust and just"
+  },
+  {
+   "start": 2203.17,
+   "end": 2209.25,
+   "text": "Wherever the consequences land they land they land and and and and I think you're gonna get hurt"
+  },
+  {
+   "start": 2209.25,
+   "end": 2214.21,
+   "text": "It's like saying I'll never date because I don't want to be in a relationship because I want to date because I have a date"
+  },
+  {
+   "start": 2214.21,
+   "end": 2218.53,
+   "text": "Someone might break my heart. Well, what's worse having your heart broken or like dying alone?"
+  },
+  {
+   "start": 2218.53,
+   "end": 2223.83,
+   "text": "I don't know you pick your poison. Yeah, so the same thing with fail. I don't want to start a company because it might fail"
+  },
+  {
+   "start": 2223.83,
+   "end": 2229.03,
+   "text": "I don't want to like hire this person. It might not work out. I don't want to exercise it might get hurt"
+  },
+  {
+   "start": 2229.03,
+   "end": 2232.99,
+   "text": "I might I might injure myself. I don't want to live my life because I might die"
+  },
+  {
+   "start": 2233.01,
+   "end": 2235.01,
+   "text": "It's like you're gonna die anyway"
+  },
+  {
+   "start": 2235.01,
+   "end": 2236.21,
+   "text": "Might as well live."
+  },
+  {
+   "start": 2236.21,
+   "end": 2239.09,
+   "text": "I looked over the transcript from our interview in 2020"
+  },
+  {
+   "start": 2239.09,
+   "end": 2242.09,
+   "text": "during COVID and you said, at the time you said"
+  },
+  {
+   "start": 2242.09,
+   "end": 2244.57,
+   "text": "that Airbnb had become stretched and sprawling."
+  },
+  {
+   "start": 2244.57,
+   "end": 2246.17,
+   "text": "Those are your words."
+  },
+  {
+   "start": 2246.17,
+   "end": 2248.17,
+   "text": "That we were trying to do too many things."
+  },
+  {
+   "start": 2248.17,
+   "end": 2250.53,
+   "text": "And I think, I think that's the time"
+  },
+  {
+   "start": 2250.53,
+   "end": 2252.53,
+   "text": "where you started to understand"
+  },
+  {
+   "start": 2252.53,
+   "end": 2255.45,
+   "text": "all of the things that would follow, right?"
+  },
+  {
+   "start": 2255.45,
+   "end": 2258.49,
+   "text": "As you kind of began to rethink"
+  },
+  {
+   "start": 2258.49,
+   "end": 2261.46,
+   "text": "how you want it to organize your life,"
+  },
+  {
+   "start": 2261.46,
+   "end": 2263.5,
+   "text": "your role, this company."
+  },
+  {
+   "start": 2263.5,
+   "end": 2269.02,
+   "text": "What do you think, why do you think that happened in the first place when you reflect on it?"
+  },
+  {
+   "start": 2269.02,
+   "end": 2272.98,
+   "text": "I mean, you obviously started to recognize some of these challenges."
+  },
+  {
+   "start": 2272.98,
+   "end": 2279.74,
+   "text": "Do you think you were, again, was it connected to trying to please investors, employees,"
+  },
+  {
+   "start": 2279.74,
+   "end": 2286.53,
+   "text": "not having enough confidence in how you, your decision-making, why had it gotten to that point?"
+  },
+  {
+   "start": 2286.53,
+   "end": 2291.77,
+   "text": "Actually, it was a, I think, I actually think it's a very different thing that I also suffer from,"
+  },
+  {
+   "start": 2291.77,
+   "end": 2299.73,
+   "text": "which is hubris. I think that I see this a lot. You have a hit. So I had the good fortune"
+  },
+  {
+   "start": 2299.73,
+   "end": 2304.33,
+   "text": "of like Joe and I and we romanticized how hard it was. But in the grand scheme of things,"
+  },
+  {
+   "start": 2304.33,
+   "end": 2308.25,
+   "text": "it took off within a year and a half. That's not that long. And it became a phenomenon."
+  },
+  {
+   "start": 2308.25,
+   "end": 2312.97,
+   "text": "And before you knew 100 million people were doing it, it was almost as if it was too easy."
+  },
+  {
+   "start": 2312.97,
+   "end": 2316.89,
+   "text": "And we thought, well, everything else must be this easy. That's hubris. Saying, I can"
+  },
+  {
+   "start": 2316.89,
+   "end": 2319.45,
+   "text": "do anything, therefore I could do everything.\""
+  },
+  {
+   "start": 2319.45,
+   "end": 2325.69,
+   "text": "We miscalculated how hard it would be to both grow something and start something new"
+  },
+  {
+   "start": 2325.69,
+   "end": 2327.81,
+   "text": "at the same time."
+  },
+  {
+   "start": 2327.81,
+   "end": 2329.73,
+   "text": "We didn't build the foundation in place."
+  },
+  {
+   "start": 2329.73,
+   "end": 2333.33,
+   "text": "We didn't have the right leaders or structure support."
+  },
+  {
+   "start": 2333.33,
+   "end": 2340.25,
+   "text": "We just quickly, without enough rigor or discipline, I think we forgot how hard it was to create"
+  },
+  {
+   "start": 2340.25,
+   "end": 2342.09,
+   "text": "the first thing."
+  },
+  {
+   "start": 2342.09,
+   "end": 2347.41,
+   "text": "differently, I think we iterated like 30 versions of our website before we figured"
+  },
+  {
+   "start": 2347.41,
+   "end": 2351.93,
+   "text": "out how to make Airbnb work. And then we just expected everything else to just work."
+  },
+  {
+   "start": 2351.93,
+   "end": 2357.77,
+   "text": "And we like would fund teams and we'd find employees expecting them to come up with the"
+  },
+  {
+   "start": 2357.77,
+   "end": 2362.17,
+   "text": "next great thing. And we had many good employees, but not many of them could have started Airbnb."
+  },
+  {
+   "start": 2362.17,
+   "end": 2367.65,
+   "text": "And so asking them to start the next Airbnb, it was just too much to ask people. So I think"
+  },
+  {
+   "start": 2367.65,
+   "end": 2373.57,
+   "text": "I think it was actually at one point a little bit of hubris, a little bit of overconfidence,"
+  },
+  {
+   "start": 2373.57,
+   "end": 2375.29,
+   "text": "and a little bit of indulgence."
+  },
+  {
+   "start": 2375.29,
+   "end": 2379.61,
+   "text": "It's like you have an abundance of money, you have abundance of resources."
+  },
+  {
+   "start": 2379.61,
+   "end": 2382.01,
+   "text": "You actually get pressure to expand."
+  },
+  {
+   "start": 2382.01,
+   "end": 2389.25,
+   "text": "But a lot of what we do as founders is we always have the ability to suffer from hubris."
+  },
+  {
+   "start": 2389.25,
+   "end": 2394.41,
+   "text": "We have a hit and we go from like being, we have no money, you're really disciplined."
+  },
+  {
+   "start": 2394.41,
+   "end": 2395.41,
+   "text": "You say no."
+  },
+  {
+   "start": 2395.41,
+   "end": 2396.41,
+   "text": "You have constraints."
+  },
+  {
+   "start": 2396.41,
+   "end": 2399.21,
+   "text": "and you're really thoughtful and principled."
+  },
+  {
+   "start": 2399.21,
+   "end": 2401.37,
+   "text": "And the first time you go on a rocket ship,"
+  },
+  {
+   "start": 2401.37,
+   "end": 2404.17,
+   "text": "your judgment can go down."
+  },
+  {
+   "start": 2404.17,
+   "end": 2405.93,
+   "text": "And you start thinking you do everything,"
+  },
+  {
+   "start": 2405.93,
+   "end": 2410.29,
+   "text": "you have sloppy thinking, you get sloppy."
+  },
+  {
+   "start": 2410.29,
+   "end": 2413.21,
+   "text": "And you just start throwing money at things,"
+  },
+  {
+   "start": 2413.21,
+   "end": 2414.89,
+   "text": "and you see what sticks."
+  },
+  {
+   "start": 2414.89,
+   "end": 2416.55,
+   "text": "And I don't wanna call any companies out today,"
+  },
+  {
+   "start": 2416.55,
+   "end": 2417.85,
+   "text": "but you can see this."
+  },
+  {
+   "start": 2417.85,
+   "end": 2420.77,
+   "text": "When companies have fast success,"
+  },
+  {
+   "start": 2420.77,
+   "end": 2422.81,
+   "text": "they try to expand to equally another things,"
+  },
+  {
+   "start": 2422.81,
+   "end": 2424.35,
+   "text": "and they just don't stick."
+  },
+  {
+   "start": 2424.35,
+   "end": 2426.25,
+   "text": "It's really low quality, and that happened to us."
+  },
+  {
+   "start": 2426.25,
+   "end": 2429.37,
+   "text": "And that I think is the adolescence of a company."
+  },
+  {
+   "start": 2429.37,
+   "end": 2431.57,
+   "text": "You go through what we call growing pains."
+  },
+  {
+   "start": 2431.57,
+   "end": 2433.33,
+   "text": "You basically, the company outgrows you."
+  },
+  {
+   "start": 2433.33,
+   "end": 2434.57,
+   "text": "You know how to manage."
+  },
+  {
+   "start": 2434.57,
+   "end": 2435.93,
+   "text": "There's chaos."
+  },
+  {
+   "start": 2435.93,
+   "end": 2437.97,
+   "text": "Everyone's got a new manager every few months."
+  },
+  {
+   "start": 2437.97,
+   "end": 2439.97,
+   "text": "You're doing everything but nothing well."
+  },
+  {
+   "start": 2441.73,
+   "end": 2443.97,
+   "text": "The company is like getting deluded."
+  },
+  {
+   "start": 2443.97,
+   "end": 2447.33,
+   "text": "Suddenly like, you know, it becomes wayward."
+  },
+  {
+   "start": 2447.33,
+   "end": 2449.45,
+   "text": "There's more bureaucracy set in."
+  },
+  {
+   "start": 2449.45,
+   "end": 2451.37,
+   "text": "You know, things get calcified."
+  },
+  {
+   "start": 2453.25,
+   "end": 2454.73,
+   "text": "And there's this other thing that happens"
+  },
+  {
+   "start": 2454.73,
+   "end": 2456.29,
+   "text": "where the more dysfunctional company gets,"
+  },
+  {
+   "start": 2456.29,
+   "end": 2457.85,
+   "text": "the more you think, well, I must be the problem,"
+  },
+  {
+   "start": 2457.85,
+   "end": 2461.05,
+   "text": "so step away when actually the best leadership"
+  },
+  {
+   "start": 2461.05,
+   "end": 2462.69,
+   "text": "is presence and absence."
+  },
+  {
+   "start": 2462.69,
+   "end": 2464.17,
+   "text": "So now you've kind of made it worse"
+  },
+  {
+   "start": 2464.17,
+   "end": 2466.45,
+   "text": "by perpetuating even more things."
+  },
+  {
+   "start": 2466.45,
+   "end": 2469.73,
+   "text": "And it just gets worse and worse and worse."
+  },
+  {
+   "start": 2469.73,
+   "end": 2474.33,
+   "text": "And at some point, your castle becomes your prison."
+  },
+  {
+   "start": 2474.33,
+   "end": 2476.41,
+   "text": "And you basically build this beautiful castle"
+  },
+  {
+   "start": 2476.41,
+   "end": 2477.93,
+   "text": "and then you've locked yourself in the top of it."
+  },
+  {
+   "start": 2477.93,
+   "end": 2479.85,
+   "text": "And you're like, I don't know how to get out of it."
+  },
+  {
+   "start": 2479.85,
+   "end": 2481.89,
+   "text": "And then you have to basically figure out,"
+  },
+  {
+   "start": 2481.89,
+   "end": 2484.41,
+   "text": "okay, I created this beautiful thing"
+  },
+  {
+   "start": 2484.41,
+   "end": 2487.13,
+   "text": "I'm now stuck inside of how do I fix it?"
+  },
+  {
+   "start": 2487.13,
+   "end": 2488.97,
+   "text": "And that can get really, really difficult."
+  },
+  {
+   "start": 2488.97,
+   "end": 2491.93,
+   "text": "And that's the journey I'd do for like five, six years."
+  },
+  {
+   "start": 2491.93,
+   "end": 2496.93,
+   "text": "When do you remember, I mean, was it during COVID or before"
+  },
+  {
+   "start": 2497.21,
+   "end": 2502.1,
+   "text": "when you started to really understand"
+  },
+  {
+   "start": 2502.1,
+   "end": 2505.04,
+   "text": "what it meant to be a good leader?"
+  },
+  {
+   "start": 2505.04,
+   "end": 2507.0,
+   "text": "I know you studied Steve Jobs, you talked about him"
+  },
+  {
+   "start": 2507.0,
+   "end": 2510.16,
+   "text": "and you really have studied him deeply."
+  },
+  {
+   "start": 2510.16,
+   "end": 2511.36,
+   "text": "And you've had mentors, right?"
+  },
+  {
+   "start": 2511.36,
+   "end": 2512.56,
+   "text": "I mean, President Obama, right?"
+  },
+  {
+   "start": 2512.56,
+   "end": 2519.04,
+   "text": "Paul Graham and other people, when do you remember or what was it where you started to think,"
+  },
+  {
+   "start": 2519.04,
+   "end": 2524.16,
+   "text": "okay, I think that I'm, I think that I got this."
+  },
+  {
+   "start": 2524.16,
+   "end": 2525.16,
+   "text": "After the pandemic."
+  },
+  {
+   "start": 2525.16,
+   "end": 2526.16,
+   "text": "After the pandemic."
+  },
+  {
+   "start": 2526.16,
+   "end": 2527.64,
+   "text": "So we're talking 12 years in."
+  },
+  {
+   "start": 2527.64,
+   "end": 2530.42,
+   "text": "Yeah, 13, 13."
+  },
+  {
+   "start": 2530.42,
+   "end": 2531.74,
+   "text": "And what was it?"
+  },
+  {
+   "start": 2531.74,
+   "end": 2537.36,
+   "text": "What was the, was it just an accumulation of things or was there a moment or a moment"
+  },
+  {
+   "start": 2537.36,
+   "end": 2543.39,
+   "text": "or something or a conversation where you thought, okay, this is going to change everything?"
+  },
+  {
+   "start": 2543.39,
+   "end": 2546.06,
+   "text": "There's probably like three things."
+  },
+  {
+   "start": 2546.06,
+   "end": 2547.7,
+   "text": "The first thing was maturity."
+  },
+  {
+   "start": 2547.7,
+   "end": 2550.38,
+   "text": "I was like 38, 39."
+  },
+  {
+   "start": 2550.38,
+   "end": 2555.46,
+   "text": "Like literally like, I think I grew up with like pretty bad ADD, ADHD."
+  },
+  {
+   "start": 2555.46,
+   "end": 2561.02,
+   "text": "And I wouldn't say I grew out of it, but like I became more mature somehow and I started"
+  },
+  {
+   "start": 2561.02,
+   "end": 2565.82,
+   "text": "like being more predictable, not the most predictable, but less of a procrastinator,"
+  },
+  {
+   "start": 2565.82,
+   "end": 2569.74,
+   "text": "little more mature, a little more decisive, a little less impulsive."
+  },
+  {
+   "start": 2569.74,
+   "end": 2571.66,
+   "text": "So that was the first thing, just some maturity."
+  },
+  {
+   "start": 2571.66,
+   "end": 2575.56,
+   "text": "And I think related to that was just 12 years of experience."
+  },
+  {
+   "start": 2575.56,
+   "end": 2578.3,
+   "text": "Some point you figure it out or you're never going to."
+  },
+  {
+   "start": 2578.3,
+   "end": 2580.96,
+   "text": "And that's like a good amount of time."
+  },
+  {
+   "start": 2580.96,
+   "end": 2584.2,
+   "text": "I think the second thing was it was a crucible moment."
+  },
+  {
+   "start": 2584.2,
+   "end": 2589.48,
+   "text": "In other words, it was the first moment I had to be a good CEO and it was a life or"
+  },
+  {
+   "start": 2589.48,
+   "end": 2591.01,
+   "text": "death moment."
+  },
+  {
+   "start": 2591.01,
+   "end": 2593.15,
+   "text": "Because before that, it was a nice to have to be CEO."
+  },
+  {
+   "start": 2593.15,
+   "end": 2595.63,
+   "text": "Well, we could grow faster, be less chaotic."
+  },
+  {
+   "start": 2595.63,
+   "end": 2599.11,
+   "text": "But at that moment, either I'm a great CEO and the company survives or I'm a bad CEO"
+  },
+  {
+   "start": 2599.11,
+   "end": 2600.11,
+   "text": "and the company dies."
+  },
+  {
+   "start": 2600.11,
+   "end": 2601.11,
+   "text": "So it became life or death."
+  },
+  {
+   "start": 2601.11,
+   "end": 2604.43,
+   "text": "The stakes were too high."
+  },
+  {
+   "start": 2604.43,
+   "end": 2606.51,
+   "text": "For better or worse, I'm good in a crisis."
+  },
+  {
+   "start": 2606.51,
+   "end": 2609.59,
+   "text": "I realized I could rise to the occasion."
+  },
+  {
+   "start": 2609.59,
+   "end": 2612.59,
+   "text": "So I think it was the stakes, the moment."
+  },
+  {
+   "start": 2612.59,
+   "end": 2615.03,
+   "text": "Sometimes you have to rise to the moment."
+  },
+  {
+   "start": 2615.03,
+   "end": 2616.19,
+   "text": "I think that's the second thing."
+  },
+  {
+   "start": 2616.19,
+   "end": 2620.83,
+   "text": "And I think the third thing was this whole founder mode,"
+  },
+  {
+   "start": 2620.83,
+   "end": 2624.03,
+   "text": "this whole thing of being in the details, being hands on,"
+  },
+  {
+   "start": 2624.03,
+   "end": 2626.39,
+   "text": "that only came from the crisis."
+  },
+  {
+   "start": 2626.39,
+   "end": 2630.27,
+   "text": "I had no notion I should do that."
+  },
+  {
+   "start": 2630.27,
+   "end": 2635.25,
+   "text": "In fact, even Steve Jobs, I didn't think about after he died for like eight, nine years."
+  },
+  {
+   "start": 2635.25,
+   "end": 2639.11,
+   "text": "It was only when people thought we were going out of business."
+  },
+  {
+   "start": 2639.11,
+   "end": 2642.27,
+   "text": "I said, well, who else was almost going out of business?"
+  },
+  {
+   "start": 2642.27,
+   "end": 2643.27,
+   "text": "Steve Jobs."
+  },
+  {
+   "start": 2643.27,
+   "end": 2647.95,
+   "text": "Around the same time, I met Heroke Asai, who was this creative director at Apple."
+  },
+  {
+   "start": 2647.95,
+   "end": 2654.99,
+   "text": "I hired Johnny Ive, who was industrial designer for Steve Jobs, to work as a consultant for"
+  },
+  {
+   "start": 2654.99,
+   "end": 2656.27,
+   "text": "me."
+  },
+  {
+   "start": 2656.27,
+   "end": 2658.15,
+   "text": "And they told me all these Steve Jobs stories."
+  },
+  {
+   "start": 2658.15,
+   "end": 2659.83,
+   "text": "And that's when I really started studying them."
+  },
+  {
+   "start": 2659.83,
+   "end": 2660.83,
+   "text": "I knew a little bit about him."
+  },
+  {
+   "start": 2660.83,
+   "end": 2662.35,
+   "text": "I didn't know a lot about him."
+  },
+  {
+   "start": 2662.35,
+   "end": 2668.07,
+   "text": "So I first studied how did this guy, 12 weeks from bankruptcy, where it was take the company"
+  },
+  {
+   "start": 2668.07,
+   "end": 2670.59,
+   "text": "out of this tailspin."
+  },
+  {
+   "start": 2670.59,
+   "end": 2673.59,
+   "text": "And basically what I realized is he got in all the details."
+  },
+  {
+   "start": 2673.59,
+   "end": 2675.27,
+   "text": "He cut a bunch of projects."
+  },
+  {
+   "start": 2675.27,
+   "end": 2677.19,
+   "text": "He made a lot of really hard decisions."
+  },
+  {
+   "start": 2677.19,
+   "end": 2679.95,
+   "text": "And the single thing was he simplified."
+  },
+  {
+   "start": 2679.95,
+   "end": 2681.43,
+   "text": "He was present."
+  },
+  {
+   "start": 2681.43,
+   "end": 2683.55,
+   "text": "Leadership was present, not absence."
+  },
+  {
+   "start": 2683.55,
+   "end": 2687.43,
+   "text": "He was dictatorial, which seems like not something you should do."
+  },
+  {
+   "start": 2687.43,
+   "end": 2688.43,
+   "text": "He said no more."
+  },
+  {
+   "start": 2688.43,
+   "end": 2689.63,
+   "text": "He said yes."
+  },
+  {
+   "start": 2689.63,
+   "end": 2692.67,
+   "text": "He was brutal about everyone going in the same direction."
+  },
+  {
+   "start": 2692.67,
+   "end": 2694.51,
+   "text": "He was exacting with standards."
+  },
+  {
+   "start": 2694.51,
+   "end": 2697.91,
+   "text": "And he paid attention to every pixel, every word."
+  },
+  {
+   "start": 2697.91,
+   "end": 2700.87,
+   "text": "And I did every, I decided, and I only did that"
+  },
+  {
+   "start": 2700.87,
+   "end": 2702.39,
+   "text": "to navigate the crisis."
+  },
+  {
+   "start": 2702.39,
+   "end": 2704.19,
+   "text": "Because in the crisis, I had to look through"
+  },
+  {
+   "start": 2704.19,
+   "end": 2705.83,
+   "text": "all of our expenses."
+  },
+  {
+   "start": 2705.83,
+   "end": 2707.47,
+   "text": "We had to be very, very hands on."
+  },
+  {
+   "start": 2707.47,
+   "end": 2709.75,
+   "text": "Basically, it was like we're all in a foxhole."
+  },
+  {
+   "start": 2709.75,
+   "end": 2712.31,
+   "text": "So now I'm running the company hands on"
+  },
+  {
+   "start": 2712.31,
+   "end": 2714.51,
+   "text": "for the first time in 15 years."
+  },
+  {
+   "start": 2714.51,
+   "end": 2717.31,
+   "text": "Not telling it to do, but like we're in the foxhole together."
+  },
+  {
+   "start": 2717.31,
+   "end": 2719.61,
+   "text": "We get out of the tailspin."
+  },
+  {
+   "start": 2719.61,
+   "end": 2722.71,
+   "text": "And then I think a bunch of employees thought, okay, let's go back to operating the way we"
+  },
+  {
+   "start": 2722.71,
+   "end": 2723.71,
+   "text": "were."
+  },
+  {
+   "start": 2723.71,
+   "end": 2724.71,
+   "text": "I'm like, no way."
+  },
+  {
+   "start": 2724.71,
+   "end": 2729.05,
+   "text": "And operating you the way you were meant you had like back off a bunch of give us space"
+  },
+  {
+   "start": 2729.05,
+   "end": 2731.63,
+   "text": "now and then direct reports and you got your information."
+  },
+  {
+   "start": 2731.63,
+   "end": 2732.63,
+   "text": "Yeah."
+  },
+  {
+   "start": 2732.63,
+   "end": 2735.31,
+   "text": "Because the other things Steve Jobs would do is he would get his information from people"
+  },
+  {
+   "start": 2735.31,
+   "end": 2736.31,
+   "text": "to skip."
+  },
+  {
+   "start": 2736.31,
+   "end": 2737.31,
+   "text": "Right."
+  },
+  {
+   "start": 2737.31,
+   "end": 2738.31,
+   "text": "He had a hunt."
+  },
+  {
+   "start": 2738.31,
+   "end": 2739.31,
+   "text": "He would gather 100 people."
+  },
+  {
+   "start": 2739.31,
+   "end": 2740.59,
+   "text": "So here's something that a lot of CEOs do."
+  },
+  {
+   "start": 2740.59,
+   "end": 2743.23,
+   "text": "They only talk to their directs."
+  },
+  {
+   "start": 2743.23,
+   "end": 2744.23,
+   "text": "Yeah."
+  },
+  {
+   "start": 2744.23,
+   "end": 2749.59,
+   "text": "I don't want to name the person, but I was, I saw an interview of CEO who appointed"
+  },
+  {
+   "start": 2749.59,
+   "end": 2752.55,
+   "text": "as his success or somebody who failed."
+  },
+  {
+   "start": 2752.55,
+   "end": 2755.11,
+   "text": "And they asked him, how come,"
+  },
+  {
+   "start": 2755.11,
+   "end": 2756.03,
+   "text": "did you have a good relationship?"
+  },
+  {
+   "start": 2756.03,
+   "end": 2757.51,
+   "text": "He said, yes."
+  },
+  {
+   "start": 2757.51,
+   "end": 2760.43,
+   "text": "And you go, how come you didn't know what you missed?"
+  },
+  {
+   "start": 2760.43,
+   "end": 2761.55,
+   "text": "He goes, well, I didn't talk to the people"
+  },
+  {
+   "start": 2761.55,
+   "end": 2764.08,
+   "text": "that worked for him."
+  },
+  {
+   "start": 2764.08,
+   "end": 2765.2,
+   "text": "I'm like, really?"
+  },
+  {
+   "start": 2765.2,
+   "end": 2767.72,
+   "text": "And now this is one of the biggest companies in the world."
+  },
+  {
+   "start": 2767.72,
+   "end": 2769.92,
+   "text": "At really big companies, these really corporate people"
+  },
+  {
+   "start": 2769.92,
+   "end": 2772.48,
+   "text": "often the only talk to their own executive suite."
+  },
+  {
+   "start": 2772.48,
+   "end": 2774.56,
+   "text": "And so it's called managing up."
+  },
+  {
+   "start": 2774.56,
+   "end": 2776.12,
+   "text": "What I do is I skip level."
+  },
+  {
+   "start": 2776.12,
+   "end": 2778.0,
+   "text": "I talk two, three layers down."
+  },
+  {
+   "start": 2778.0,
+   "end": 2782.56,
+   "text": "Now, initially you do that, you might piss off the executive."
+  },
+  {
+   "start": 2782.56,
+   "end": 2783.4,
+   "text": "They might feel threatened."
+  },
+  {
+   "start": 2783.4,
+   "end": 2785.2,
+   "text": "This started during right after COVID."
+  },
+  {
+   "start": 2785.2,
+   "end": 2786.04,
+   "text": "Yes."
+  },
+  {
+   "start": 2786.04,
+   "end": 2786.88,
+   "text": "This is sort of the evolution of this."
+  },
+  {
+   "start": 2786.88,
+   "end": 2787.84,
+   "text": "I pissed off a bunch of Zex."
+  },
+  {
+   "start": 2787.84,
+   "end": 2788.68,
+   "text": "Yes."
+  },
+  {
+   "start": 2788.68,
+   "end": 2790.44,
+   "text": "Because you were saying to them,"
+  },
+  {
+   "start": 2790.44,
+   "end": 2791.68,
+   "text": "I'm actually gonna talk to the people who work for you."
+  },
+  {
+   "start": 2791.68,
+   "end": 2792.88,
+   "text": "And they said, you're undermining me,"
+  },
+  {
+   "start": 2792.88,
+   "end": 2795.4,
+   "text": "you're going around me, you don't trust me."
+  },
+  {
+   "start": 2795.4,
+   "end": 2796.52,
+   "text": "What are you trying to do?"
+  },
+  {
+   "start": 2796.52,
+   "end": 2797.36,
+   "text": "Yeah, not everyone."
+  },
+  {
+   "start": 2797.36,
+   "end": 2798.2,
+   "text": "Micromanaging."
+  },
+  {
+   "start": 2798.2,
+   "end": 2799.32,
+   "text": "Yeah, micromanaging."
+  },
+  {
+   "start": 2799.32,
+   "end": 2802.55,
+   "text": "So what was your response?"
+  },
+  {
+   "start": 2802.55,
+   "end": 2804.71,
+   "text": "I said, we have to save this company."
+  },
+  {
+   "start": 2804.71,
+   "end": 2805.63,
+   "text": "Cause it was a crisis."
+  },
+  {
+   "start": 2805.63,
+   "end": 2808.15,
+   "text": "So I was like, I was like, you're feelings"
+  },
+  {
+   "start": 2808.15,
+   "end": 2814.97,
+   "text": "And you're like in how you feel has to come second to less saving this company."
+  },
+  {
+   "start": 2814.97,
+   "end": 2816.85,
+   "text": "But they're saying, well, you don't trust me."
+  },
+  {
+   "start": 2816.85,
+   "end": 2819.13,
+   "text": "I'm telling you what you need to know."
+  },
+  {
+   "start": 2819.13,
+   "end": 2820.33,
+   "text": "This is a waste of your time."
+  },
+  {
+   "start": 2820.33,
+   "end": 2821.69,
+   "text": "You don't need to know this."
+  },
+  {
+   "start": 2821.69,
+   "end": 2822.69,
+   "text": "You're the CEO."
+  },
+  {
+   "start": 2822.69,
+   "end": 2824.33,
+   "text": "You've got to focus on big picture stuff."
+  },
+  {
+   "start": 2824.33,
+   "end": 2825.33,
+   "text": "Let me do the details."
+  },
+  {
+   "start": 2825.33,
+   "end": 2827.97,
+   "text": "And that's what I did for 10, 12 years."
+  },
+  {
+   "start": 2827.97,
+   "end": 2831.33,
+   "text": "And so I told them I've tried this for 12 years and look at where it got us."
+  },
+  {
+   "start": 2831.33,
+   "end": 2832.33,
+   "text": "Look at where it got us."
+  },
+  {
+   "start": 2832.33,
+   "end": 2835.45,
+   "text": "Well, I mean, but the company was doing well."
+  },
+  {
+   "start": 2835.45,
+   "end": 2839.43,
+   "text": "in spite of my leadership, not because of my leadership, is what I said."
+  },
+  {
+   "start": 2839.43,
+   "end": 2840.43,
+   "text": "The company was chaotic."
+  },
+  {
+   "start": 2840.43,
+   "end": 2843.45,
+   "text": "I mean, we had the curse of having too good of a business model."
+  },
+  {
+   "start": 2843.45,
+   "end": 2846.07,
+   "text": "I joke that we had the curse of having too good of a business model."
+  },
+  {
+   "start": 2846.07,
+   "end": 2848.15,
+   "text": "eBay versus Amazon."
+  },
+  {
+   "start": 2848.15,
+   "end": 2851.07,
+   "text": "eBay had this great business model, so they didn't have to be great at execution."
+  },
+  {
+   "start": 2851.07,
+   "end": 2853.43,
+   "text": "Amazon had this horrible business model, low margins."
+  },
+  {
+   "start": 2853.43,
+   "end": 2855.19,
+   "text": "They lived by execution."
+  },
+  {
+   "start": 2855.19,
+   "end": 2856.31,
+   "text": "Gassu won."
+  },
+  {
+   "start": 2856.31,
+   "end": 2859.51,
+   "text": "The company that had great execution because they compounded."
+  },
+  {
+   "start": 2859.51,
+   "end": 2864.79,
+   "text": "And so we succeeded in spite often of my leadership during those wilderness years."
+  },
+  {
+   "start": 2864.79,
+   "end": 2866.39,
+   "text": "And I said, and then masked."
+  },
+  {
+   "start": 2866.39,
+   "end": 2868.71,
+   "text": "You're saying that the business model that was just,"
+  },
+  {
+   "start": 2868.71,
+   "end": 2869.55,
+   "text": "it was lucky, it was really good."
+  },
+  {
+   "start": 2869.55,
+   "end": 2871.83,
+   "text": "Masked mismanagement, my own mismanagement."
+  },
+  {
+   "start": 2871.83,
+   "end": 2873.83,
+   "text": "And masked my own mismanagement."
+  },
+  {
+   "start": 2873.83,
+   "end": 2875.15,
+   "text": "But the other thing I told execs,"
+  },
+  {
+   "start": 2875.15,
+   "end": 2877.35,
+   "text": "I remember one exec said, is this your job"
+  },
+  {
+   "start": 2877.35,
+   "end": 2878.93,
+   "text": "or is this my job?"
+  },
+  {
+   "start": 2878.93,
+   "end": 2880.27,
+   "text": "She's like, do you wanna own it or not?"
+  },
+  {
+   "start": 2880.27,
+   "end": 2881.83,
+   "text": "I remember saying to this person,"
+  },
+  {
+   "start": 2881.83,
+   "end": 2884.0,
+   "text": "it should never be either."
+  },
+  {
+   "start": 2884.0,
+   "end": 2886.86,
+   "text": "That this is not about me just delgaining to you."
+  },
+  {
+   "start": 2886.86,
+   "end": 2889.84,
+   "text": "This is not about you just me telling you what to do."
+  },
+  {
+   "start": 2889.84,
+   "end": 2891.74,
+   "text": "Like the whole point is I'm not in the details"
+  },
+  {
+   "start": 2891.74,
+   "end": 2893.38,
+   "text": "telling people to do."
+  },
+  {
+   "start": 2893.38,
+   "end": 2896.74,
+   "text": "I'm the detail, so I have the information."
+  },
+  {
+   "start": 2896.74,
+   "end": 2899.54,
+   "text": "You see, the board, every board of a Pocone"
+  },
+  {
+   "start": 2899.54,
+   "end": 2901.3,
+   "text": "is an audit committee."
+  },
+  {
+   "start": 2901.3,
+   "end": 2902.46,
+   "text": "The word audit is key."
+  },
+  {
+   "start": 2902.46,
+   "end": 2904.42,
+   "text": "It means they know every detail."
+  },
+  {
+   "start": 2904.42,
+   "end": 2906.22,
+   "text": "If the board audit committee knows every detail,"
+  },
+  {
+   "start": 2906.22,
+   "end": 2907.7,
+   "text": "why wouldn't the CEO know every detail?"
+  },
+  {
+   "start": 2907.7,
+   "end": 2909.02,
+   "text": "And by the way, with AI now you can."
+  },
+  {
+   "start": 2909.02,
+   "end": 2911.26,
+   "text": "You can just prompt and find anything."
+  },
+  {
+   "start": 2911.26,
+   "end": 2914.38,
+   "text": "And it's, AI is the ultimate skip leveling."
+  },
+  {
+   "start": 2914.38,
+   "end": 2915.22,
+   "text": "I can know anything."
+  },
+  {
+   "start": 2915.22,
+   "end": 2916.86,
+   "text": "And skip leveling for people who don't know,"
+  },
+  {
+   "start": 2916.86,
+   "end": 2919.46,
+   "text": "it means literally going two, three levels down."
+  },
+  {
+   "start": 2919.46,
+   "end": 2921.18,
+   "text": "Yeah, to get information."
+  },
+  {
+   "start": 2921.18,
+   "end": 2923.06,
+   "text": "Because how do you identify those people"
+  },
+  {
+   "start": 2923.06,
+   "end": 2925.52,
+   "text": "in an 8,000 person company?"
+  },
+  {
+   "start": 2925.52,
+   "end": 2928.28,
+   "text": "So the way I did it is I picked key projects"
+  },
+  {
+   "start": 2928.28,
+   "end": 2930.48,
+   "text": "and I would have the full chain of command in the room."
+  },
+  {
+   "start": 2930.48,
+   "end": 2931.84,
+   "text": "Like this project I care about,"
+  },
+  {
+   "start": 2931.84,
+   "end": 2933.8,
+   "text": "someone have the person doing the work"
+  },
+  {
+   "start": 2933.8,
+   "end": 2936.76,
+   "text": "and all the managers in a line in the room."
+  },
+  {
+   "start": 2936.76,
+   "end": 2939.64,
+   "text": "And then that way, the person doesn't have to wait"
+  },
+  {
+   "start": 2939.64,
+   "end": 2941.32,
+   "text": "to get all the managers approval."
+  },
+  {
+   "start": 2941.32,
+   "end": 2942.8,
+   "text": "I'll listen to everyone's opinion in the room"
+  },
+  {
+   "start": 2942.8,
+   "end": 2944.4,
+   "text": "that I'll make the final decision."
+  },
+  {
+   "start": 2944.4,
+   "end": 2948.0,
+   "text": "So a junior person doesn't have to go up the chain of command."
+  },
+  {
+   "start": 2948.0,
+   "end": 2949.6,
+   "text": "The chain of command can disagree with them"
+  },
+  {
+   "start": 2949.6,
+   "end": 2952.2,
+   "text": "and I can rule over all the entire chain of command."
+  },
+  {
+   "start": 2952.2,
+   "end": 2953.4,
+   "text": "Now, usually I don't."
+  },
+  {
+   "start": 2953.4,
+   "end": 2956.48,
+   "text": "And if I'm overruling the chain of command every time,"
+  },
+  {
+   "start": 2956.48,
+   "end": 2959.68,
+   "text": "either I have the wrong people or..."
+  },
+  {
+   "start": 2959.68,
+   "end": 2960.68,
+   "text": "They're not gonna wanna work for you."
+  },
+  {
+   "start": 2960.68,
+   "end": 2961.68,
+   "text": "Or not gonna wanna work for me."
+  },
+  {
+   "start": 2961.68,
+   "end": 2965.18,
+   "text": "So hopefully I'm only ruling them like 10% of time."
+  },
+  {
+   "start": 2965.18,
+   "end": 2967.28,
+   "text": "If I'm overruling them 50% of time,"
+  },
+  {
+   "start": 2967.28,
+   "end": 2969.44,
+   "text": "I'm wrong or have the wrong people."
+  },
+  {
+   "start": 2969.44,
+   "end": 2971.96,
+   "text": "If I'm never overruling them, I'm adding no value."
+  },
+  {
+   "start": 2971.96,
+   "end": 2976.04,
+   "text": "And so I should be overruling people only occasionally"
+  },
+  {
+   "start": 2976.04,
+   "end": 2978.6,
+   "text": "because you should be doing things not obvious."
+  },
+  {
+   "start": 2978.6,
+   "end": 2981.48,
+   "text": "And so, basically the final, the finished answer"
+  },
+  {
+   "start": 2981.48,
+   "end": 2983.52,
+   "text": "in your question about being the details,"
+  },
+  {
+   "start": 2983.52,
+   "end": 2986.44,
+   "text": "I said, you know, you can call micro management."
+  },
+  {
+   "start": 2986.44,
+   "end": 2988.92,
+   "text": "I don't wanna like, I don't wanna like put spin"
+  },
+  {
+   "start": 2988.92,
+   "end": 2990.64,
+   "text": "on the ball and pretend like it is what it is."
+  },
+  {
+   "start": 2990.64,
+   "end": 2992.64,
+   "text": "I don't even know what you mean by that."
+  },
+  {
+   "start": 2992.64,
+   "end": 2994.32,
+   "text": "I call it being in the details."
+  },
+  {
+   "start": 2994.32,
+   "end": 2996.22,
+   "text": "I'm not gonna tell you what to do,"
+  },
+  {
+   "start": 2996.22,
+   "end": 2998.44,
+   "text": "but you're not gonna tell me to back off."
+  },
+  {
+   "start": 2998.44,
+   "end": 3000.54,
+   "text": "We're gonna be in the foxhole together."
+  },
+  {
+   "start": 3000.54,
+   "end": 3004.12,
+   "text": "And the idea is that we're gonna play ping pong"
+  },
+  {
+   "start": 3004.12,
+   "end": 3006.08,
+   "text": "and I'm gonna tell you an idea."
+  },
+  {
+   "start": 3006.08,
+   "end": 3007.04,
+   "text": "You're gonna tell it back to me."
+  },
+  {
+   "start": 3007.04,
+   "end": 3010.04,
+   "text": "we're gonna partner in one plus one equals three,"
+  },
+  {
+   "start": 3010.04,
+   "end": 3012.36,
+   "text": "that together we're gonna come up with the best answer."
+  },
+  {
+   "start": 3012.36,
+   "end": 3014.64,
+   "text": "And if you don't wanna collaborate,"
+  },
+  {
+   "start": 3014.64,
+   "end": 3016.0,
+   "text": "then you don't work here."
+  },
+  {
+   "start": 3016.0,
+   "end": 3019.87,
+   "text": "And notice I'll give you empowerment, but not autonomy."
+  },
+  {
+   "start": 3019.87,
+   "end": 3022.49,
+   "text": "You'll have a ton of the way to do your work,"
+  },
+  {
+   "start": 3022.49,
+   "end": 3024.47,
+   "text": "like I won't tell engineer how to code,"
+  },
+  {
+   "start": 3024.47,
+   "end": 3025.63,
+   "text": "but you're not gonna have autonomy"
+  },
+  {
+   "start": 3025.63,
+   "end": 3027.51,
+   "text": "over what direction to go."
+  },
+  {
+   "start": 3027.51,
+   "end": 3028.91,
+   "text": "Because if everyone has time to go,"
+  },
+  {
+   "start": 3028.91,
+   "end": 3029.83,
+   "text": "you have a what direction,"
+  },
+  {
+   "start": 3029.83,
+   "end": 3031.39,
+   "text": "then everyone goes in different directions."
+  },
+  {
+   "start": 3031.39,
+   "end": 3032.55,
+   "text": "That's bad."
+  },
+  {
+   "start": 3032.55,
+   "end": 3034.31,
+   "text": "So you'll have empowerment."
+  },
+  {
+   "start": 3034.31,
+   "end": 3036.07,
+   "text": "And then this, people get this confused,"
+  },
+  {
+   "start": 3036.07,
+   "end": 3036.99,
+   "text": "Powerment autonomy."
+  },
+  {
+   "start": 3036.99,
+   "end": 3039.16,
+   "text": "People think everyone wants autonomy."
+  },
+  {
+   "start": 3039.16,
+   "end": 3040.92,
+   "text": "I think people want empowerment."
+  },
+  {
+   "start": 3040.92,
+   "end": 3043.12,
+   "text": "Empowerment means when I'm in the details,"
+  },
+  {
+   "start": 3043.12,
+   "end": 3044.88,
+   "text": "I can prove anything right away."
+  },
+  {
+   "start": 3044.88,
+   "end": 3046.08,
+   "text": "You want resources, I'll give it to you."
+  },
+  {
+   "start": 3046.08,
+   "end": 3048.52,
+   "text": "If somebody's blocking you, somebody's illegal saying you this,"
+  },
+  {
+   "start": 3048.52,
+   "end": 3049.8,
+   "text": "I clear the path."
+  },
+  {
+   "start": 3049.8,
+   "end": 3051.68,
+   "text": "I like to joke to people that I'm actually"
+  },
+  {
+   "start": 3051.68,
+   "end": 3054.0,
+   "text": "like an offensive line."
+  },
+  {
+   "start": 3054.0,
+   "end": 3055.8,
+   "text": "You're the running back, I'm the offensive line,"
+  },
+  {
+   "start": 3055.8,
+   "end": 3058.64,
+   "text": "I stand in front and I clear the path for your idea."
+  },
+  {
+   "start": 3058.64,
+   "end": 3059.48,
+   "text": "And if you have an idea,"
+  },
+  {
+   "start": 3059.48,
+   "end": 3060.76,
+   "text": "I'll put the weight of the company behind you."
+  },
+  {
+   "start": 3060.76,
+   "end": 3062.28,
+   "text": "That is empowerment."
+  },
+  {
+   "start": 3062.28,
+   "end": 3065.4,
+   "text": "That's not possible with total independence autonomy."
+  },
+  {
+   "start": 3065.4,
+   "end": 3069.24,
+   "text": "This whole idea came to light when Paul Grammert has things,"
+  },
+  {
+   "start": 3069.24,
+   "end": 3070.72,
+   "text": "now famous as the founder of the boat."
+  },
+  {
+   "start": 3070.72,
+   "end": 3074.12,
+   "text": "He saw a talk he gave, a white commentator talking"
+  },
+  {
+   "start": 3074.12,
+   "end": 3074.96,
+   "text": "about this thing."
+  },
+  {
+   "start": 3074.96,
+   "end": 3077.76,
+   "text": "It was a private talk, but you were basically saying,"
+  },
+  {
+   "start": 3077.76,
+   "end": 3080.0,
+   "text": "I was told my whole career,"
+  },
+  {
+   "start": 3080.0,
+   "end": 3081.72,
+   "text": "hire great people, get out of the way."
+  },
+  {
+   "start": 3081.72,
+   "end": 3085.16,
+   "text": "And I learned or discovered that that actually wasn't working."
+  },
+  {
+   "start": 3085.16,
+   "end": 3086.8,
+   "text": "So this is what I decided to do."
+  },
+  {
+   "start": 3086.8,
+   "end": 3090.8,
+   "text": "I decided to get into the details, really go deep,"
+  },
+  {
+   "start": 3090.8,
+   "end": 3096.22,
+   "text": "and just have my fingers in every place as possible."
+  },
+  {
+   "start": 3096.22,
+   "end": 3097.82,
+   "text": "How did you convince?"
+  },
+  {
+   "start": 3097.82,
+   "end": 3099.22,
+   "text": "I'm sure a lot of people left."
+  },
+  {
+   "start": 3099.22,
+   "end": 3100.58,
+   "text": "I'm sure a lot of your director, of course,"
+  },
+  {
+   "start": 3100.58,
+   "end": 3101.78,
+   "text": "are like, I don't want to do this."
+  },
+  {
+   "start": 3101.78,
+   "end": 3103.02,
+   "text": "I don't need this and I want to work in a more-"
+  },
+  {
+   "start": 3103.02,
+   "end": 3104.7,
+   "text": "Almost entire exact team left."
+  },
+  {
+   "start": 3104.7,
+   "end": 3105.54,
+   "text": "Wow."
+  },
+  {
+   "start": 3105.54,
+   "end": 3117.52,
+   "text": "Eventually."
+  },
+  {
+   "start": 3117.52,
+   "end": 3119.6,
+   "text": "This episode is brought to you by Indeed."
+  },
+  {
+   "start": 3119.6,
+   "end": 3121.5,
+   "text": "You're ready to level up your business,"
+  },
+  {
+   "start": 3121.5,
+   "end": 3123.24,
+   "text": "but the pressure to find the right person"
+  },
+  {
+   "start": 3123.24,
+   "end": 3125.72,
+   "text": "to make that happen is intense."
+  },
+  {
+   "start": 3125.72,
+   "end": 3128.4,
+   "text": "Indeed Sponsored Jobs can help carry the load."
+  },
+  {
+   "start": 3128.4,
+   "end": 3132.0,
+   "text": "It boosts your job post to help it reach quality talent fast."
+  },
+  {
+   "start": 3132.0,
+   "end": 3134.64,
+   "text": "Cut through the chaos with Indeed Sponsored Jobs,"
+  },
+  {
+   "start": 3134.64,
+   "end": 3136.72,
+   "text": "get a $75 Sponsored Job Credit"
+  },
+  {
+   "start": 3136.72,
+   "end": 3140.8,
+   "text": "at indeed.com slash podcast, terms and conditions apply."
+  },
+  {
+   "start": 3140.8,
+   "end": 3147.58,
+   "text": "Hiring now, then this is a job for Indeed sponsor jobs."
+  },
+  {
+   "start": 3147.58,
+   "end": 3152.61,
+   "text": "Low energy, unfocused, foggy, you might be dehydrated."
+  },
+  {
+   "start": 3152.61,
+   "end": 3155.49,
+   "text": "Gatorade zero powders have been scientifically designed"
+  },
+  {
+   "start": 3155.49,
+   "end": 3157.89,
+   "text": "to help improve hydration balance in the body"
+  },
+  {
+   "start": 3157.89,
+   "end": 3159.81,
+   "text": "with a clinically proven electrolyte blend"
+  },
+  {
+   "start": 3159.81,
+   "end": 3161.89,
+   "text": "and no artificial colors or flavors."
+  },
+  {
+   "start": 3161.89,
+   "end": 3164.73,
+   "text": "Great tasting hydration, no matter where you're going."
+  },
+  {
+   "start": 3164.73,
+   "end": 3167.61,
+   "text": "Shop now online or at retailers nationwide."
+  },
+  {
+   "start": 3167.61,
+   "end": 3170.05,
+   "text": "Gatorade hydrates better than water."
+  },
+  {
+   "start": 3170.05,
+   "end": 3171.01,
+   "text": "Is it in you?"
+  },
+  {
+   "start": 3171.01,
+   "end": 3173.73,
+   "text": "Symptoms noted are signs of mild to moderate dehydration."
+  },
+  {
+   "start": 3173.73,
+   "end": 3176.89,
+   "text": "Consult a healthcare professional if symptoms persist."
+  },
+  {
+   "start": 3176.89,
+   "end": 3177.81,
+   "text": "Bose here."
+  },
+  {
+   "start": 3177.81,
+   "end": 3180.57,
+   "text": "You know when a song leaves that breath in the beginning?"
+  },
+  {
+   "start": 3180.57,
+   "end": 3183.17,
+   "text": "Or you hear that bit of feedback right at the end?"
+  },
+  {
+   "start": 3183.17,
+   "end": 3186.77,
+   "text": "Those details are what make the song the song."
+  },
+  {
+   "start": 3186.77,
+   "end": 3189.33,
+   "text": "With Bose, you'll hear everyone."
+  },
+  {
+   "start": 3189.33,
+   "end": 3196.5,
+   "text": "Your music deserves Bose."
+  },
+  {
+   "start": 3196.5,
+   "end": 3199.2,
+   "text": "So how did you convince people"
+  },
+  {
+   "start": 3199.2,
+   "end": 3201.64,
+   "text": "that this is actually the way to go?"
+  },
+  {
+   "start": 3201.64,
+   "end": 3202.48,
+   "text": "How do you do that?"
+  },
+  {
+   "start": 3202.48,
+   "end": 3208.8,
+   "text": "When conventional wisdom is, no, no, this is how big companies have to operate."
+  },
+  {
+   "start": 3208.8,
+   "end": 3210.92,
+   "text": "Well, the good news is you don't have to convince everyone."
+  },
+  {
+   "start": 3210.92,
+   "end": 3214.24,
+   "text": "You just have to convince the people that are willing to stay and you have to convince"
+  },
+  {
+   "start": 3214.24,
+   "end": 3215.8,
+   "text": "enough people to join."
+  },
+  {
+   "start": 3215.8,
+   "end": 3217.92,
+   "text": "And a whole bunch of people were turned off by this."
+  },
+  {
+   "start": 3217.92,
+   "end": 3219.48,
+   "text": "They left or they didn't want to work for me."
+  },
+  {
+   "start": 3219.48,
+   "end": 3223.96,
+   "text": "And I said kind of similar to how in the early days not everyone wanted to use Airbnb, I"
+  },
+  {
+   "start": 3223.96,
+   "end": 3225.92,
+   "text": "said, I don't need everyone to work for me."
+  },
+  {
+   "start": 3225.92,
+   "end": 3228.6,
+   "text": "I just need 10 people on my executive to work for me."
+  },
+  {
+   "start": 3228.6,
+   "end": 3232.28,
+   "text": "So as long as you convince 10 people to work this way and give it a shot, the way we'll"
+  },
+  {
+   "start": 3232.28,
+   "end": 3234.96,
+   "text": "really convince them as we'll deliver results."
+  },
+  {
+   "start": 3234.96,
+   "end": 3239.72,
+   "text": "And if we keep delivering results, then it also, the way I'm going to convince them is"
+  },
+  {
+   "start": 3239.72,
+   "end": 3240.72,
+   "text": "give this a try."
+  },
+  {
+   "start": 3240.72,
+   "end": 3243.52,
+   "text": "There was a risk it could be wrong though."
+  },
+  {
+   "start": 3243.52,
+   "end": 3244.52,
+   "text": "Yes."
+  },
+  {
+   "start": 3244.52,
+   "end": 3250.83,
+   "text": "Although the data proved that founders, not all founders become great CEOs, but all the"
+  },
+  {
+   "start": 3250.83,
+   "end": 3254.25,
+   "text": "greatest CEOs were founders."
+  },
+  {
+   "start": 3254.25,
+   "end": 3259.29,
+   "text": "From Sam Walton in Walt Disney to Steve Jobs to Jeff Bezos to Larry Ellison."
+  },
+  {
+   "start": 3259.29,
+   "end": 3261.53,
+   "text": "I mean, we could go down the list."
+  },
+  {
+   "start": 3261.53,
+   "end": 3262.93,
+   "text": "We can go down the list."
+  },
+  {
+   "start": 3262.93,
+   "end": 3266.21,
+   "text": "There's almost no exception to the rule"
+  },
+  {
+   "start": 3266.21,
+   "end": 3269.81,
+   "text": "that the best CEOs have that founder mode mentality"
+  },
+  {
+   "start": 3269.81,
+   "end": 3271.73,
+   "text": "and they never lose that."
+  },
+  {
+   "start": 3271.73,
+   "end": 3274.25,
+   "text": "And I think that's really, really important."
+  },
+  {
+   "start": 3274.25,
+   "end": 3277.49,
+   "text": "And so the way I was able to convince people"
+  },
+  {
+   "start": 3277.49,
+   "end": 3279.01,
+   "text": "was just say, give it a shot."
+  },
+  {
+   "start": 3279.01,
+   "end": 3281.25,
+   "text": "By the way, I said, we did it in the pandemic and it worked."
+  },
+  {
+   "start": 3281.25,
+   "end": 3282.69,
+   "text": "So let's keep doing it."
+  },
+  {
+   "start": 3282.69,
+   "end": 3284.89,
+   "text": "I also hired people from Apple."
+  },
+  {
+   "start": 3284.89,
+   "end": 3286.05,
+   "text": "I hired people that work for founders."
+  },
+  {
+   "start": 3286.05,
+   "end": 3287.29,
+   "text": "This is the other thing."
+  },
+  {
+   "start": 3287.29,
+   "end": 3291.29,
+   "text": "If you've worked for a founder like Jeff Bezos, I work for Jeff Bezos, I work for people that"
+  },
+  {
+   "start": 3291.29,
+   "end": 3293.29,
+   "text": "work for Steve Jobs, they need to know convincing."
+  },
+  {
+   "start": 3293.29,
+   "end": 3294.29,
+   "text": "They understand."
+  },
+  {
+   "start": 3294.29,
+   "end": 3295.29,
+   "text": "They already understood."
+  },
+  {
+   "start": 3295.29,
+   "end": 3299.89,
+   "text": "Whereas someone from Procter & Gamble, I didn't hire someone just picking a company, they"
+  },
+  {
+   "start": 3299.89,
+   "end": 3303.29,
+   "text": "would not understand because that founder has been dead for 100 years."
+  },
+  {
+   "start": 3303.29,
+   "end": 3304.29,
+   "text": "So how do you know?"
+  },
+  {
+   "start": 3304.29,
+   "end": 3305.99,
+   "text": "One more detail about being in details."
+  },
+  {
+   "start": 3305.99,
+   "end": 3308.25,
+   "text": "People probably think I'm in all the details right now."
+  },
+  {
+   "start": 3308.25,
+   "end": 3309.25,
+   "text": "I'm not."
+  },
+  {
+   "start": 3309.25,
+   "end": 3310.25,
+   "text": "Yeah, you can't be."
+  },
+  {
+   "start": 3310.25,
+   "end": 3311.25,
+   "text": "There's too many."
+  },
+  {
+   "start": 3311.25,
+   "end": 3312.25,
+   "text": "I can't be."
+  },
+  {
+   "start": 3312.25,
+   "end": 3313.86,
+   "text": "So here's the analogy I made."
+  },
+  {
+   "start": 3313.86,
+   "end": 3316.46,
+   "text": "You aren't forever in all the details."
+  },
+  {
+   "start": 3316.46,
+   "end": 3317.46,
+   "text": "is not sustainable."
+  },
+  {
+   "start": 3317.46,
+   "end": 3322.38,
+   "text": "It's like this is a kind of cheesy analogy."
+  },
+  {
+   "start": 3322.38,
+   "end": 3326.4,
+   "text": "You're like a golf instructor and you watch their swing."
+  },
+  {
+   "start": 3326.4,
+   "end": 3330.27,
+   "text": "And if somebody develops a bad swing, it's really hard to fix it."
+  },
+  {
+   "start": 3330.27,
+   "end": 3333.19,
+   "text": "So you watch them a hundred times."
+  },
+  {
+   "start": 3333.19,
+   "end": 3336.23,
+   "text": "And at some point, the hundred first time, it's muscle memory."
+  },
+  {
+   "start": 3336.23,
+   "end": 3337.23,
+   "text": "And then you can let go."
+  },
+  {
+   "start": 3337.23,
+   "end": 3340.19,
+   "text": "And then you can watch them every 10 swings."
+  },
+  {
+   "start": 3340.19,
+   "end": 3342.86,
+   "text": "And at some point, it's just muscle memory."
+  },
+  {
+   "start": 3342.86,
+   "end": 3346.82,
+   "text": "I remember the first time I went back in the founder mode, we had to do a press release."
+  },
+  {
+   "start": 3346.82,
+   "end": 3351.62,
+   "text": "We did like 70 iterations of the press release because it just, we couldn't get to excellence."
+  },
+  {
+   "start": 3351.62,
+   "end": 3353.42,
+   "text": "And I said, well, we'll just keep doing this until we get to excellence."
+  },
+  {
+   "start": 3353.42,
+   "end": 3355.7,
+   "text": "It was like 70 like versions."
+  },
+  {
+   "start": 3355.7,
+   "end": 3357.86,
+   "text": "And everyone was like, we'll never ever do this again."
+  },
+  {
+   "start": 3357.86,
+   "end": 3358.86,
+   "text": "And I said,"
+  },
+  {
+   "start": 3358.86,
+   "end": 3359.86,
+   "text": "Was it press release?"
+  },
+  {
+   "start": 3359.86,
+   "end": 3361.14,
+   "text": "It was one press release."
+  },
+  {
+   "start": 3361.14,
+   "end": 3362.14,
+   "text": "Okay."
+  },
+  {
+   "start": 3362.14,
+   "end": 3365.22,
+   "text": "So it's basically the idea is if this room's perfect, I'm going to start by making this"
+  },
+  {
+   "start": 3365.22,
+   "end": 3366.22,
+   "text": "class perfect."
+  },
+  {
+   "start": 3366.22,
+   "end": 3368.42,
+   "text": "Then I'm going to make this little thing perfect."
+  },
+  {
+   "start": 3368.42,
+   "end": 3371.54,
+   "text": "And so I said, we're going to make the whole company perfect by starting with one little"
+  },
+  {
+   "start": 3371.54,
+   "end": 3372.62,
+   "text": "thing."
+  },
+  {
+   "start": 3372.62,
+   "end": 3374.1,
+   "text": "And people were like, this is crazy."
+  },
+  {
+   "start": 3374.1,
+   "end": 3375.38,
+   "text": "Why are you doing this?"
+  },
+  {
+   "start": 3375.38,
+   "end": 3378.06,
+   "text": "I was trying to teach where the bar was."
+  },
+  {
+   "start": 3378.06,
+   "end": 3382.1,
+   "text": "And now I just read it once"
+  },
+  {
+   "start": 3382.1,
+   "end": 3384.52,
+   "text": "because I've instituted the muscle."
+  },
+  {
+   "start": 3384.52,
+   "end": 3388.74,
+   "text": "So to be very clear, founder mode is a way to teach people"
+  },
+  {
+   "start": 3388.74,
+   "end": 3390.02,
+   "text": "by staying in the details,"
+  },
+  {
+   "start": 3390.02,
+   "end": 3393.02,
+   "text": "by letting go only after it's muscle memory."
+  },
+  {
+   "start": 3393.02,
+   "end": 3395.82,
+   "text": "And then you still see everything,"
+  },
+  {
+   "start": 3395.82,
+   "end": 3397.82,
+   "text": "but you do eventually let go."
+  },
+  {
+   "start": 3397.82,
+   "end": 3400.62,
+   "text": "And so the mistake people make is they see people"
+  },
+  {
+   "start": 3400.62,
+   "end": 3403.26,
+   "text": "who have let go, because there is excellence."
+  },
+  {
+   "start": 3403.26,
+   "end": 3408.14,
+   "text": "And they don't understand that the way they got excellence was to be in the details."
+  },
+  {
+   "start": 3408.14,
+   "end": 3409.14,
+   "text": "How do you know?"
+  },
+  {
+   "start": 3409.14,
+   "end": 3412.3,
+   "text": "So here, we had read Hastings on the show a couple months ago, maybe a year ago."
+  },
+  {
+   "start": 3412.3,
+   "end": 3416.3,
+   "text": "And you know, they have a famous, Netflix has this famous model, right, about how that"
+  },
+  {
+   "start": 3416.3,
+   "end": 3417.3,
+   "text": "they're called."
+  },
+  {
+   "start": 3417.3,
+   "end": 3423.22,
+   "text": "And so it's sort of a version of a question I asked him, but it really applies here, which"
+  },
+  {
+   "start": 3423.22,
+   "end": 3425.66,
+   "text": "is there was a lot of friction."
+  },
+  {
+   "start": 3425.66,
+   "end": 3429.38,
+   "text": "I can't imagine how much friction there was when you were kind of transitioning to this"
+  },
+  {
+   "start": 3429.38,
+   "end": 3431.42,
+   "text": "model."
+  },
+  {
+   "start": 3431.42,
+   "end": 3440.82,
+   "text": "But when you have this model, right, and you have a vision of something, how do you make"
+  },
+  {
+   "start": 3440.82,
+   "end": 3444.82,
+   "text": "sure that people feel comfortable pushing back?"
+  },
+  {
+   "start": 3444.82,
+   "end": 3450.5,
+   "text": "Because even Steve Jobs, even God, isn't right, although maybe God, but you can't be right"
+  },
+  {
+   "start": 3450.5,
+   "end": 3452.94,
+   "text": "all the time, and you have to know that, right?"
+  },
+  {
+   "start": 3452.94,
+   "end": 3457.3,
+   "text": "But you have a vision, you have an idea that you feel really strongly about."
+  },
+  {
+   "start": 3457.3,
+   "end": 3463.93,
+   "text": "How do you create an environment where people are willing to say, I'm only so?"
+  },
+  {
+   "start": 3463.93,
+   "end": 3464.93,
+   "text": "Okay."
+  },
+  {
+   "start": 3464.93,
+   "end": 3465.93,
+   "text": "Great question."
+  },
+  {
+   "start": 3465.93,
+   "end": 3467.02,
+   "text": "A few things."
+  },
+  {
+   "start": 3467.02,
+   "end": 3473.69,
+   "text": "The first thing is you have these people that are willing to tell you the truth."
+  },
+  {
+   "start": 3473.69,
+   "end": 3475.81,
+   "text": "Some people call it like CEO whispers."
+  },
+  {
+   "start": 3475.81,
+   "end": 3477.57,
+   "text": "There are some people that are willing."
+  },
+  {
+   "start": 3477.57,
+   "end": 3478.57,
+   "text": "They've been- You have them?"
+  },
+  {
+   "start": 3478.57,
+   "end": 3479.57,
+   "text": "Yes."
+  },
+  {
+   "start": 3479.57,
+   "end": 3481.57,
+   "text": "And most of them have been with me more than 10 years."
+  },
+  {
+   "start": 3481.57,
+   "end": 3483.85,
+   "text": "So it's hard for somebody that hasn't been with me for a long time."
+  },
+  {
+   "start": 3483.85,
+   "end": 3485.77,
+   "text": "So it's good to keep some people around a long time."
+  },
+  {
+   "start": 3485.77,
+   "end": 3491.17,
+   "text": "My co-founders, but also I have people that have been around for about a decade or people"
+  },
+  {
+   "start": 3491.17,
+   "end": 3497.09,
+   "text": "that are, I have a few people that they don't need this job and literally so that like they"
+  },
+  {
+   "start": 3497.09,
+   "end": 3501.77,
+   "text": "can afford to say whatever and get fired or not be afraid."
+  },
+  {
+   "start": 3501.77,
+   "end": 3505.03,
+   "text": "So that's the first thing is that."
+  },
+  {
+   "start": 3505.03,
+   "end": 3506.57,
+   "text": "But I'll give you a trick I do."
+  },
+  {
+   "start": 3506.57,
+   "end": 3510.29,
+   "text": "Not a trick and it's gonna manipulate them, but something I did recently."
+  },
+  {
+   "start": 3510.29,
+   "end": 3515.65,
+   "text": "I was in London last week and I was talking with my team and we came up with a new tag"
+  },
+  {
+   "start": 3515.65,
+   "end": 3516.65,
+   "text": "tagline for the company."
+  },
+  {
+   "start": 3516.65,
+   "end": 3517.89,
+   "text": "Our tagline used to be belonging to you."
+  },
+  {
+   "start": 3517.89,
+   "end": 3518.89,
+   "text": "And I won't say what it is."
+  },
+  {
+   "start": 3518.89,
+   "end": 3519.89,
+   "text": "We'll unveil it."
+  },
+  {
+   "start": 3519.89,
+   "end": 3520.89,
+   "text": "And came up with a tagline."
+  },
+  {
+   "start": 3520.89,
+   "end": 3525.41,
+   "text": "And I then texted my CMO and my two creative leads said, this is it."
+  },
+  {
+   "start": 3525.41,
+   "end": 3526.41,
+   "text": "This is the tagline."
+  },
+  {
+   "start": 3526.41,
+   "end": 3527.41,
+   "text": "We're doing it."
+  },
+  {
+   "start": 3527.41,
+   "end": 3528.41,
+   "text": "I don't care what anyone says."
+  },
+  {
+   "start": 3528.41,
+   "end": 3529.41,
+   "text": "We're doing it."
+  },
+  {
+   "start": 3529.41,
+   "end": 3533.21,
+   "text": "And I felt certain."
+  },
+  {
+   "start": 3533.21,
+   "end": 3534.65,
+   "text": "And I was like, and then I slept on it."
+  },
+  {
+   "start": 3534.65,
+   "end": 3539.25,
+   "text": "And I realized they might not agree with me, but I'm so certain that I probably sucked"
+  },
+  {
+   "start": 3539.25,
+   "end": 3540.45,
+   "text": "all the oxygen out of the room."
+  },
+  {
+   "start": 3540.45,
+   "end": 3547.28,
+   "text": "So the next day I sent them a message and I said, I realized I got really excited."
+  },
+  {
+   "start": 3547.28,
+   "end": 3550.82,
+   "text": "You have two weeks, I want you to come up with a better tagline."
+  },
+  {
+   "start": 3550.82,
+   "end": 3552.5,
+   "text": "I think there's a better tagline."
+  },
+  {
+   "start": 3552.5,
+   "end": 3554.14,
+   "text": "So I actually took the opposing position."
+  },
+  {
+   "start": 3554.14,
+   "end": 3555.98,
+   "text": "I don't think this is the tagline."
+  },
+  {
+   "start": 3555.98,
+   "end": 3558.36,
+   "text": "I think there's a better tagline."
+  },
+  {
+   "start": 3558.36,
+   "end": 3561.52,
+   "text": "Two weeks later, they came back to me, or a week later, because it was one that was"
+  },
+  {
+   "start": 3561.52,
+   "end": 3562.52,
+   "text": "last week."
+  },
+  {
+   "start": 3562.52,
+   "end": 3566.83,
+   "text": "They came to me, sorry, I said you have two weeks."
+  },
+  {
+   "start": 3566.83,
+   "end": 3567.83,
+   "text": "They cut the time in half."
+  },
+  {
+   "start": 3567.83,
+   "end": 3573.23,
+   "text": "They said, we're already down with the process and we actually think the original tagline"
+  },
+  {
+   "start": 3573.23,
+   "end": 3574.59,
+   "text": "is the right one."
+  },
+  {
+   "start": 3574.59,
+   "end": 3578.19,
+   "text": "But in other words, you can take the counter position."
+  },
+  {
+   "start": 3578.19,
+   "end": 3580.35,
+   "text": "You give them permission to disagree."
+  },
+  {
+   "start": 3580.35,
+   "end": 3582.83,
+   "text": "Sometimes what you give permission to disagree is you actually change your mind."
+  },
+  {
+   "start": 3582.83,
+   "end": 3584.03,
+   "text": "You might say, we're doing this."
+  },
+  {
+   "start": 3584.03,
+   "end": 3586.07,
+   "text": "They actually maybe do this."
+  },
+  {
+   "start": 3586.07,
+   "end": 3589.51,
+   "text": "If they keep agreeing with you every time you change your position, now you know they're"
+  },
+  {
+   "start": 3589.51,
+   "end": 3590.95,
+   "text": "not comfortable."
+  },
+  {
+   "start": 3590.95,
+   "end": 3595.47,
+   "text": "You also have to ask people their opinion."
+  },
+  {
+   "start": 3595.47,
+   "end": 3597.75,
+   "text": "Sometimes you have to have their opinion before you give yours."
+  },
+  {
+   "start": 3597.75,
+   "end": 3600.79,
+   "text": "If I see something, if I say this is great, everyone in the room is going, oh yeah, it's"
+  },
+  {
+   "start": 3600.79,
+   "end": 3601.79,
+   "text": "great."
+  },
+  {
+   "start": 3601.79,
+   "end": 3602.79,
+   "text": "I'll ask them."
+  },
+  {
+   "start": 3602.79,
+   "end": 3604.63,
+   "text": "They don't even know what the right answer is."
+  },
+  {
+   "start": 3604.63,
+   "end": 3608.19,
+   "text": "If the right answer is my opinion, they just have to give their opinion."
+  },
+  {
+   "start": 3608.19,
+   "end": 3612.79,
+   "text": "their opinions right answer. So often you give your opinion last, you have whispers"
+  },
+  {
+   "start": 3612.79,
+   "end": 3620.27,
+   "text": "that can tell you the truth, you can take the counter position, or you ask people like"
+  },
+  {
+   "start": 3620.27,
+   "end": 3621.55,
+   "text": "what's my blind spot?"
+  },
+  {
+   "start": 3621.55,
+   "end": 3628.0,
+   "text": "Like let's say you're reviewing a project. Like a team's been working on something for"
+  },
+  {
+   "start": 3628.0,
+   "end": 3634.85,
+   "text": "six months and you don't like it and you gotta kill it. What happens? What do you do? How"
+  },
+  {
+   "start": 3634.85,
+   "end": 3638.57,
+   "text": "do you do it? Do you try to prevent that from happening in the first place?"
+  },
+  {
+   "start": 3638.57,
+   "end": 3641.93,
+   "text": "Yeah. If a team's working on something for six months and I have to kill it,"
+  },
+  {
+   "start": 3641.93,
+   "end": 3645.13,
+   "text": "I feel there's a leader that they've gone six months down a journey and having to"
+  },
+  {
+   "start": 3645.13,
+   "end": 3645.97,
+   "text": "pull the plug."
+  },
+  {
+   "start": 3647.33,
+   "end": 3650.65,
+   "text": "This is why you should be in the details because you never,"
+  },
+  {
+   "start": 3650.67,
+   "end": 3653.29,
+   "text": "I like to say I want to be the beginning and end of the process."
+  },
+  {
+   "start": 3653.73,
+   "end": 3656.57,
+   "text": "And then the middle I check in the reason,"
+  },
+  {
+   "start": 3656.57,
+   "end": 3660.13,
+   "text": "company projects go in the wrong direction is because of one or two reasons."
+  },
+  {
+   "start": 3660.13,
+   "end": 3661.17,
+   "text": "They start wrong."
+  },
+  {
+   "start": 3662.5,
+   "end": 3667.02,
+   "text": "They're not set for success or they're off an island without oversight in the"
+  },
+  {
+   "start": 3667.02,
+   "end": 3670.97,
+   "text": "in the wrong direction as in something you're unhappy with."
+  },
+  {
+   "start": 3670.97,
+   "end": 3673.09,
+   "text": "If those two things aren't true,"
+  },
+  {
+   "start": 3673.09,
+   "end": 3675.61,
+   "text": "then you'll never ever have that problem."
+  },
+  {
+   "start": 3675.61,
+   "end": 3678.35,
+   "text": "So the first thing is you have to set something up for success."
+  },
+  {
+   "start": 3678.35,
+   "end": 3681.24,
+   "text": "Do we have a clear vision of what we're trying to do?"
+  },
+  {
+   "start": 3681.24,
+   "end": 3682.96,
+   "text": "Are the right people working on it?"
+  },
+  {
+   "start": 3682.96,
+   "end": 3685.6,
+   "text": "Is there a clear, directly responsible individual?"
+  },
+  {
+   "start": 3685.6,
+   "end": 3687.1,
+   "text": "Do we have all the resources?"
+  },
+  {
+   "start": 3687.1,
+   "end": 3689.36,
+   "text": "Do we have total alignment on what we're gonna do?"
+  },
+  {
+   "start": 3689.36,
+   "end": 3690.88,
+   "text": "Do we have the right process?"
+  },
+  {
+   "start": 3690.88,
+   "end": 3692.64,
+   "text": "Are we trying to do something too big or too small?"
+  },
+  {
+   "start": 3692.64,
+   "end": 3695.16,
+   "text": "And this is like a whole checklist of things you do."
+  },
+  {
+   "start": 3695.16,
+   "end": 3697.86,
+   "text": "Okay, so at some point the project's set for success."
+  },
+  {
+   "start": 3697.86,
+   "end": 3699.98,
+   "text": "Now you have to create a rhythm."
+  },
+  {
+   "start": 3699.98,
+   "end": 3703.14,
+   "text": "And the rhythm can be every day, every week, every month,"
+  },
+  {
+   "start": 3703.14,
+   "end": 3705.18,
+   "text": "but you have to establish a rhythm."
+  },
+  {
+   "start": 3705.18,
+   "end": 3707.62,
+   "text": "So how many projects could do the capacity"
+  },
+  {
+   "start": 3707.62,
+   "end": 3710.84,
+   "text": "to be involved with it at any given time?"
+  },
+  {
+   "start": 3710.84,
+   "end": 3712.94,
+   "text": "Couple dozen, maybe 20."
+  },
+  {
+   "start": 3712.94,
+   "end": 3714.86,
+   "text": "But they're all not 20 a day."
+  },
+  {
+   "start": 3714.86,
+   "end": 3716.06,
+   "text": "Yeah."
+  },
+  {
+   "start": 3716.06,
+   "end": 3720.64,
+   "text": "Probably 20-ish at different rhythms."
+  },
+  {
+   "start": 3720.64,
+   "end": 3723.44,
+   "text": "So maybe there's two projects, two or three at a time"
+  },
+  {
+   "start": 3723.44,
+   "end": 3725.04,
+   "text": "where I have a daily rhythm."
+  },
+  {
+   "start": 3725.04,
+   "end": 3726.56,
+   "text": "Then other projects I have a week"
+  },
+  {
+   "start": 3726.56,
+   "end": 3728.12,
+   "text": "where I have a bi-week rhythm."
+  },
+  {
+   "start": 3728.12,
+   "end": 3730.2,
+   "text": "and have their projects have a monthly rhythm."
+  },
+  {
+   "start": 3730.2,
+   "end": 3731.92,
+   "text": "And if I'm not meeting it monthly,"
+  },
+  {
+   "start": 3731.92,
+   "end": 3734.64,
+   "text": "then I would call myself not involved."
+  },
+  {
+   "start": 3734.64,
+   "end": 3736.0,
+   "text": "All right, let me ask you a couple questions"
+  },
+  {
+   "start": 3736.0,
+   "end": 3739.0,
+   "text": "about specifically about Airbnb"
+  },
+  {
+   "start": 3739.0,
+   "end": 3741.04,
+   "text": "and about where it's heading, right?"
+  },
+  {
+   "start": 3742.44,
+   "end": 3744.6,
+   "text": "There are a lot of opportunities, right?"
+  },
+  {
+   "start": 3744.6,
+   "end": 3748.32,
+   "text": "And the company's core business model remains, right?"
+  },
+  {
+   "start": 3748.32,
+   "end": 3751.52,
+   "text": "It's the Kings and obviously there's some,"
+  },
+  {
+   "start": 3751.52,
+   "end": 3754.32,
+   "text": "I know, independent hotels and things like that."
+  },
+  {
+   "start": 3754.32,
+   "end": 3756.04,
+   "text": "I fly United a lot."
+  },
+  {
+   "start": 3756.04,
+   "end": 3758.98,
+   "text": "So I get to border lay and I get other perks."
+  },
+  {
+   "start": 3758.98,
+   "end": 3762.48,
+   "text": "If I'm not saying Airbnb, I book through Chase,"
+  },
+  {
+   "start": 3762.48,
+   "end": 3765.04,
+   "text": "I get the edit or whatever."
+  },
+  {
+   "start": 3765.04,
+   "end": 3767.9,
+   "text": "A lot of people use Marriott because of loyalty points."
+  },
+  {
+   "start": 3767.9,
+   "end": 3771.52,
+   "text": "Is there something about those models"
+  },
+  {
+   "start": 3771.52,
+   "end": 3774.14,
+   "text": "that's interesting to you that you think,"
+  },
+  {
+   "start": 3774.14,
+   "end": 3777.2,
+   "text": "I mean, Marriott is basically a loyalty points company."
+  },
+  {
+   "start": 3777.2,
+   "end": 3778.04,
+   "text": "Yeah, it is."
+  },
+  {
+   "start": 3778.04,
+   "end": 3778.88,
+   "text": "Own buildings, they don't."
+  },
+  {
+   "start": 3778.88,
+   "end": 3780.08,
+   "text": "People don't realize this, but Marriott's"
+  },
+  {
+   "start": 3780.08,
+   "end": 3781.48,
+   "text": "basically a loyalty program, a company."
+  },
+  {
+   "start": 3781.48,
+   "end": 3784.36,
+   "text": "Right, and it's what works for them, right?"
+  },
+  {
+   "start": 3784.36,
+   "end": 3786.6,
+   "text": "We know these loyalty programs work."
+  },
+  {
+   "start": 3786.6,
+   "end": 3788.2,
+   "text": "I think they were started with casinos"
+  },
+  {
+   "start": 3788.2,
+   "end": 3790.3,
+   "text": "back in the 70s or 80s."
+  },
+  {
+   "start": 3790.3,
+   "end": 3791.6,
+   "text": "Is that interesting?"
+  },
+  {
+   "start": 3791.6,
+   "end": 3795.96,
+   "text": "Is that something that I know at times has been discussed?"
+  },
+  {
+   "start": 3795.96,
+   "end": 3801.02,
+   "text": "But is that a potential growth area?"
+  },
+  {
+   "start": 3801.02,
+   "end": 3801.86,
+   "text": "Yeah, absolutely."
+  },
+  {
+   "start": 3805.17,
+   "end": 3807.59,
+   "text": "There are three things I said I'd never do."
+  },
+  {
+   "start": 3809.09,
+   "end": 3811.33,
+   "text": "The first is I said I'd never do advertising."
+  },
+  {
+   "start": 3813.0,
+   "end": 3815.16,
+   "text": "Somebody once said in the design community,"
+  },
+  {
+   "start": 3815.16,
+   "end": 3817.6,
+   "text": "Advertisers are the price you pay for being unoriginal."
+  },
+  {
+   "start": 3817.6,
+   "end": 3819.92,
+   "text": "And so I'm like, we don't do advertising."
+  },
+  {
+   "start": 3819.92,
+   "end": 3821.76,
+   "text": "And then we started doing advertising."
+  },
+  {
+   "start": 3821.76,
+   "end": 3826.8,
+   "text": "And it turns out when you sell something, no matter how original you are, and Tesla's"
+  },
+  {
+   "start": 3826.8,
+   "end": 3832.76,
+   "text": "an exception, but even Apple and Disney and Nike, very inspirational companies have to"
+  },
+  {
+   "start": 3832.76,
+   "end": 3833.76,
+   "text": "do advertising."
+  },
+  {
+   "start": 3833.76,
+   "end": 3834.76,
+   "text": "You've got to remind people."
+  },
+  {
+   "start": 3834.76,
+   "end": 3835.76,
+   "text": "I said we never do hotels."
+  },
+  {
+   "start": 3835.76,
+   "end": 3836.96,
+   "text": "We bought hotels tonight."
+  },
+  {
+   "start": 3836.96,
+   "end": 3838.96,
+   "text": "We bought hotels tonight."
+  },
+  {
+   "start": 3838.96,
+   "end": 3843.12,
+   "text": "And the reason why is because our customers told me and I realized this is my ideology."
+  },
+  {
+   "start": 3843.12,
+   "end": 3849.62,
+   "text": "And actually the only reason I was even anti-hotels was because Airbnb was like competition."
+  },
+  {
+   "start": 3849.62,
+   "end": 3851.54,
+   "text": "I'm like the Red Sox through the Yankees."
+  },
+  {
+   "start": 3851.54,
+   "end": 3852.78,
+   "text": "And I wasn't seeing it clearly."
+  },
+  {
+   "start": 3852.78,
+   "end": 3854.54,
+   "text": "And people like hotels."
+  },
+  {
+   "start": 3854.54,
+   "end": 3858.46,
+   "text": "And I had to be honest that actually half the hotels are all their independence."
+  },
+  {
+   "start": 3858.46,
+   "end": 3861.46,
+   "text": "B&Bs are technically clatter-gras hotel."
+  },
+  {
+   "start": 3861.46,
+   "end": 3863.18,
+   "text": "It's in our freaking name."
+  },
+  {
+   "start": 3863.18,
+   "end": 3866.66,
+   "text": "And a lot of our guests, more than half them, do occasionally in hotels, so why don't we"
+  },
+  {
+   "start": 3866.66,
+   "end": 3867.66,
+   "text": "have them?"
+  },
+  {
+   "start": 3867.66,
+   "end": 3873.14,
+   "text": "And the third thing I said is the, I really pushed against the loyalty program because"
+  },
+  {
+   "start": 3873.14,
+   "end": 3876.02,
+   "text": "I said the best loyalty programs people just loving your product."
+  },
+  {
+   "start": 3876.02,
+   "end": 3877.02,
+   "text": "Yeah."
+  },
+  {
+   "start": 3877.02,
+   "end": 3880.51,
+   "text": "Again, I don't think Disney, Apple or Nike, these three companies are talking about how"
+  },
+  {
+   "start": 3880.51,
+   "end": 3882.15,
+   "text": "to loyalty program."
+  },
+  {
+   "start": 3882.15,
+   "end": 3884.08,
+   "text": "And I've revisited that."
+  },
+  {
+   "start": 3884.08,
+   "end": 3887.72,
+   "text": "So you see there's a pattern here of me saying I'll never do something and then having to"
+  },
+  {
+   "start": 3887.72,
+   "end": 3891.72,
+   "text": "become more practical, which is maybe another version of going from a founder or CEO, which"
+  },
+  {
+   "start": 3891.72,
+   "end": 3894.4,
+   "text": "is becoming less ideological."
+  },
+  {
+   "start": 3894.4,
+   "end": 3901.22,
+   "text": "You want to have a company that's got a cult like following, but it's not ideological where"
+  },
+  {
+   "start": 3901.22,
+   "end": 3902.22,
+   "text": "it's so impractical."
+  },
+  {
+   "start": 3902.22,
+   "end": 3904.14,
+   "text": "actually a call, then you're going to get in deep trouble."
+  },
+  {
+   "start": 3904.14,
+   "end": 3906.66,
+   "text": "So you have to have this practicality."
+  },
+  {
+   "start": 3906.66,
+   "end": 3913.5,
+   "text": "And so I can't say too much except to say that we are looking at this type of program,"
+  },
+  {
+   "start": 3913.5,
+   "end": 3916.6,
+   "text": "but we aren't going to do something out of the tube or me never does."
+  },
+  {
+   "start": 3916.6,
+   "end": 3923.08,
+   "text": "So if we were to do something, it would be very original, very cool, very different."
+  },
+  {
+   "start": 3923.08,
+   "end": 3924.4,
+   "text": "And that's what I can say."
+  },
+  {
+   "start": 3924.4,
+   "end": 3925.4,
+   "text": "Okay."
+  },
+  {
+   "start": 3925.4,
+   "end": 3928.58,
+   "text": "I know that you guys are going to, you have an initiative."
+  },
+  {
+   "start": 3928.58,
+   "end": 3936.3,
+   "text": "You're going to fund a million nights for free for people in distress or displaced by natural"
+  },
+  {
+   "start": 3936.3,
+   "end": 3937.3,
+   "text": "disasters."
+  },
+  {
+   "start": 3937.3,
+   "end": 3942.46,
+   "text": "I think the plan is to put half a million dollars, half a billion dollars into this."
+  },
+  {
+   "start": 3942.46,
+   "end": 3946.7,
+   "text": "Because this is part of a non-profit Airbnb.org that actually I think started around Hurricane"
+  },
+  {
+   "start": 3946.7,
+   "end": 3948.9,
+   "text": "Sandy, came out of that time."
+  },
+  {
+   "start": 3948.9,
+   "end": 3950.98,
+   "text": "So tell me about this."
+  },
+  {
+   "start": 3950.98,
+   "end": 3952.94,
+   "text": "This is 18 years in the making."
+  },
+  {
+   "start": 3952.94,
+   "end": 3955.58,
+   "text": "In 2008, I emailed my co-founders."
+  },
+  {
+   "start": 3955.58,
+   "end": 3958.42,
+   "text": "The subject line email was Airbnb.org."
+  },
+  {
+   "start": 3958.42,
+   "end": 3962.94,
+   "text": "We hadn't even launched yet, and we already had the idea of our immediate order."
+  },
+  {
+   "start": 3962.94,
+   "end": 3965.68,
+   "text": "We didn't quite know what it meant, but we kind of thought it was going to be something"
+  },
+  {
+   "start": 3965.68,
+   "end": 3968.24,
+   "text": "around housing."
+  },
+  {
+   "start": 3968.24,
+   "end": 3971.44,
+   "text": "Nothing happens for four years because now we got our hands full."
+  },
+  {
+   "start": 3971.44,
+   "end": 3973.84,
+   "text": "2012, Hurricane Sandy hits."
+  },
+  {
+   "start": 3973.84,
+   "end": 3975.6,
+   "text": "A woman emailed us."
+  },
+  {
+   "start": 3975.6,
+   "end": 3978.48,
+   "text": "She said, I want to host one of the disaster evacuees."
+  },
+  {
+   "start": 3978.48,
+   "end": 3979.48,
+   "text": "I want to host for free."
+  },
+  {
+   "start": 3979.48,
+   "end": 3982.28,
+   "text": "We had to change our system to allow her to do that."
+  },
+  {
+   "start": 3982.28,
+   "end": 3985.68,
+   "text": "That began an effort of whenever there was a disaster, we would try to respond."
+  },
+  {
+   "start": 3985.68,
+   "end": 3986.92,
+   "text": "We couldn't do many."
+  },
+  {
+   "start": 3986.92,
+   "end": 3988.48,
+   "text": "We started responding to disasters."
+  },
+  {
+   "start": 3988.48,
+   "end": 3990.76,
+   "text": "Now, some hosts open their homes for free."
+  },
+  {
+   "start": 3990.76,
+   "end": 3993.96,
+   "text": "A bunch of people would need to get paid."
+  },
+  {
+   "start": 3993.96,
+   "end": 3998.28,
+   "text": "So we started raising money or using our own money to pay the host so make sure the guests"
+  },
+  {
+   "start": 3998.28,
+   "end": 4000.16,
+   "text": "could stay for free."
+  },
+  {
+   "start": 4000.16,
+   "end": 4003.9,
+   "text": "This happened disaster after disaster after disaster."
+  },
+  {
+   "start": 4003.9,
+   "end": 4008.81,
+   "text": "Then Afghanistan, tens of thousands of refugees needed housing."
+  },
+  {
+   "start": 4008.81,
+   "end": 4011.77,
+   "text": "We housed 20,000 Afghan refugees."
+  },
+  {
+   "start": 4011.77,
+   "end": 4013.21,
+   "text": "Russia invades Ukraine."
+  },
+  {
+   "start": 4013.21,
+   "end": 4014.69,
+   "text": "There's millions of refugees."
+  },
+  {
+   "start": 4014.69,
+   "end": 4017.65,
+   "text": "We housed 100,000 refugees for free."
+  },
+  {
+   "start": 4017.65,
+   "end": 4019.09,
+   "text": "LA fires broke out."
+  },
+  {
+   "start": 4019.09,
+   "end": 4022.37,
+   "text": "We provided 70,000 free nights in LA."
+  },
+  {
+   "start": 4022.37,
+   "end": 4024.65,
+   "text": "And so now, what people don't realize"
+  },
+  {
+   "start": 4024.65,
+   "end": 4027.53,
+   "text": "is we have this nonprofit, irimi.org,"
+  },
+  {
+   "start": 4027.53,
+   "end": 4031.25,
+   "text": "where we house people for a natural disaster every other day,"
+  },
+  {
+   "start": 4031.25,
+   "end": 4033.49,
+   "text": "about 170 disasters a year."
+  },
+  {
+   "start": 4033.49,
+   "end": 4035.77,
+   "text": "We house thousands of people."
+  },
+  {
+   "start": 4035.77,
+   "end": 4037.37,
+   "text": "Medical stays."
+  },
+  {
+   "start": 4037.37,
+   "end": 4040.09,
+   "text": "My mom in 2011 had breast cancer."
+  },
+  {
+   "start": 4040.09,
+   "end": 4042.01,
+   "text": "Thankfully, she's OK now."
+  },
+  {
+   "start": 4042.01,
+   "end": 4043.09,
+   "text": "She's living in Albany."
+  },
+  {
+   "start": 4043.09,
+   "end": 4047.21,
+   "text": "It should take the Amtrak train to Sloan-Catering in New York City every day."
+  },
+  {
+   "start": 4047.21,
+   "end": 4051.56,
+   "text": "And apparently she's told me there were other people that would go every day on the train."
+  },
+  {
+   "start": 4051.56,
+   "end": 4053.72,
+   "text": "And they'd go every day on the train because they couldn't afford to stay overnight in"
+  },
+  {
+   "start": 4053.72,
+   "end": 4056.58,
+   "text": "New York because of how expensive the hotels were."
+  },
+  {
+   "start": 4056.58,
+   "end": 4060.64,
+   "text": "My mom had the idea you should provide medical stays, free stays for people getting medical"
+  },
+  {
+   "start": 4060.64,
+   "end": 4061.64,
+   "text": "treatment."
+  },
+  {
+   "start": 4061.64,
+   "end": 4062.84,
+   "text": "So we eventually did that."
+  },
+  {
+   "start": 4062.84,
+   "end": 4064.72,
+   "text": "And now we have medical stay treatment."
+  },
+  {
+   "start": 4064.72,
+   "end": 4068.8,
+   "text": "So if you want to get treatment or let's say a child sick in a children's hospital in"
+  },
+  {
+   "start": 4068.8,
+   "end": 4071.63,
+   "text": "Mexico City, this is where we launched it."
+  },
+  {
+   "start": 4071.63,
+   "end": 4075.07,
+   "text": "wanted to stay with the children, but they couldn't afford to stay in hotels."
+  },
+  {
+   "start": 4075.07,
+   "end": 4078.15,
+   "text": "So now the child's alone in a hospital and their parents aren't there."
+  },
+  {
+   "start": 4078.15,
+   "end": 4082.43,
+   "text": "But we could put them in a house for free near the hospital and they can visit the child"
+  },
+  {
+   "start": 4082.43,
+   "end": 4083.43,
+   "text": "every day."
+  },
+  {
+   "start": 4083.43,
+   "end": 4087.11,
+   "text": "And this obviously is really good for the child, but also really good for the parents."
+  },
+  {
+   "start": 4087.11,
+   "end": 4089.39,
+   "text": "Domestic violence victims."
+  },
+  {
+   "start": 4089.39,
+   "end": 4091.11,
+   "text": "What happens when you're a victim of death of violence?"
+  },
+  {
+   "start": 4091.11,
+   "end": 4092.11,
+   "text": "Where do you go?"
+  },
+  {
+   "start": 4092.11,
+   "end": 4093.14,
+   "text": "A shelter?"
+  },
+  {
+   "start": 4093.14,
+   "end": 4094.14,
+   "text": "That's not a very good living condition."
+  },
+  {
+   "start": 4094.14,
+   "end": 4096.66,
+   "text": "What if you could be at home where our family could take care of you?"
+  },
+  {
+   "start": 4096.66,
+   "end": 4103.52,
+   "text": "So he started realizing whether it's natural disasters, refugees, medical stays, or domestic"
+  },
+  {
+   "start": 4103.52,
+   "end": 4104.52,
+   "text": "violence."
+  },
+  {
+   "start": 4104.52,
+   "end": 4106.64,
+   "text": "There's a lot of people that need housing."
+  },
+  {
+   "start": 4106.64,
+   "end": 4110.99,
+   "text": "My parents taught us simple, Brian, just be useful in life."
+  },
+  {
+   "start": 4110.99,
+   "end": 4113.02,
+   "text": "Be of service to someone else."
+  },
+  {
+   "start": 4113.02,
+   "end": 4115.74,
+   "text": "In fact, one of my favorite designers is Charles Eames."
+  },
+  {
+   "start": 4115.74,
+   "end": 4119.14,
+   "text": "He said, the role of a designer is that of a very thoughtful host anticipating the needs"
+  },
+  {
+   "start": 4119.14,
+   "end": 4120.58,
+   "text": "of his guest."
+  },
+  {
+   "start": 4120.58,
+   "end": 4123.78,
+   "text": "So therefore, let's be of service to others."
+  },
+  {
+   "start": 4123.78,
+   "end": 4127.86,
+   "text": "Let's take the one thing we know how to do really well, provide housing, unless house"
+  },
+  {
+   "start": 4127.86,
+   "end": 4128.86,
+   "text": "people need."
+  },
+  {
+   "start": 4128.86,
+   "end": 4131.06,
+   "text": "That's our superpower."
+  },
+  {
+   "start": 4131.06,
+   "end": 4133.31,
+   "text": "We decided to do that."
+  },
+  {
+   "start": 4133.31,
+   "end": 4135.37,
+   "text": "We are able to scale it."
+  },
+  {
+   "start": 4135.37,
+   "end": 4139.57,
+   "text": "I asked our leader, what's the biggest possible scale we could pull off operationally?"
+  },
+  {
+   "start": 4139.57,
+   "end": 4145.85,
+   "text": "He said, I think in a few years we could house a million nights with the free housing, which"
+  },
+  {
+   "start": 4145.85,
+   "end": 4148.93,
+   "text": "would probably make us the largest organization in the world that provides free housing, bigger"
+  },
+  {
+   "start": 4148.93,
+   "end": 4153.29,
+   "text": "than Ronald McDonald House, which has gone on for like 40, 50 years, bigger I think than"
+  },
+  {
+   "start": 4153.29,
+   "end": 4154.29,
+   "text": "any government."
+  },
+  {
+   "start": 4154.29,
+   "end": 4156.44,
+   "text": "I said, well, what would that cost?"
+  },
+  {
+   "start": 4156.44,
+   "end": 4159.25,
+   "text": "It turned out it cost about half a billion."
+  },
+  {
+   "start": 4159.25,
+   "end": 4161.21,
+   "text": "I said, well, it's not my money."
+  },
+  {
+   "start": 4161.21,
+   "end": 4162.69,
+   "text": "It's the company's money."
+  },
+  {
+   "start": 4162.69,
+   "end": 4163.85,
+   "text": "We're a public company."
+  },
+  {
+   "start": 4163.85,
+   "end": 4167.01,
+   "text": "Could we do that responsibly and shareholder's?"
+  },
+  {
+   "start": 4167.01,
+   "end": 4170.08,
+   "text": "I think we ultimately came to the conclusion we're going to do it."
+  },
+  {
+   "start": 4170.08,
+   "end": 4173.44,
+   "text": "I think it's good business to do good in the world."
+  },
+  {
+   "start": 4173.44,
+   "end": 4175.48,
+   "text": "I think that's what we're going to do."
+  },
+  {
+   "start": 4175.48,
+   "end": 4181.08,
+   "text": "We're going to try to house a million nights for free a year over the next five years."
+  },
+  {
+   "start": 4181.08,
+   "end": 4183.64,
+   "text": "I think this is going to be one of the most important things the company ends up doing"
+  },
+  {
+   "start": 4183.64,
+   "end": 4186.32,
+   "text": "in its lifetime."
+  },
+  {
+   "start": 4186.32,
+   "end": 4191.16,
+   "text": "Normally ask our founders on the show, founders on the show how much of their journey do they"
+  },
+  {
+   "start": 4191.16,
+   "end": 4193.0,
+   "text": "attribute to luck or success."
+  },
+  {
+   "start": 4193.0,
+   "end": 4194.16,
+   "text": "I'm not going to ask you that question."
+  },
+  {
+   "start": 4194.16,
+   "end": 4195.96,
+   "text": "You can answer that question."
+  },
+  {
+   "start": 4195.96,
+   "end": 4201.68,
+   "text": "But I looked back on my interview with Joe 10 years ago and I asked him, I said, can"
+  },
+  {
+   "start": 4201.68,
+   "end": 4205.68,
+   "text": "you imagine a time when you aren't involved with the company?"
+  },
+  {
+   "start": 4205.68,
+   "end": 4209.56,
+   "text": "And he, what would you do if you weren't working?"
+  },
+  {
+   "start": 4209.56,
+   "end": 4214.36,
+   "text": "He answered the question three different times, started and stopped and started and stopped"
+  },
+  {
+   "start": 4214.36,
+   "end": 4218.24,
+   "text": "because I think it was a tough thing for him to think about back then."
+  },
+  {
+   "start": 4218.24,
+   "end": 4222.03,
+   "text": "Obviously he's moved on, he's still involved, he's on the board."
+  },
+  {
+   "start": 4222.03,
+   "end": 4224.07,
+   "text": "You're 45, I think now, right?"
+  },
+  {
+   "start": 4224.07,
+   "end": 4227.87,
+   "text": "I mean, you've been doing this for a long time."
+  },
+  {
+   "start": 4227.87,
+   "end": 4229.83,
+   "text": "You've had incredible professional success."
+  },
+  {
+   "start": 4229.83,
+   "end": 4236.69,
+   "text": "Can you, could you imagine a future where you're not here?"
+  },
+  {
+   "start": 4236.69,
+   "end": 4238.93,
+   "text": "Does that, is it a part of that appeal to you?"
+  },
+  {
+   "start": 4238.93,
+   "end": 4240.77,
+   "text": "Is it scare you?"
+  },
+  {
+   "start": 4240.77,
+   "end": 4241.77,
+   "text": "I don't know."
+  },
+  {
+   "start": 4241.77,
+   "end": 4244.09,
+   "text": "What do you think?"
+  },
+  {
+   "start": 4244.09,
+   "end": 4253.8,
+   "text": "I mean, where are you going to be in 10 or 20 years from now?"
+  },
+  {
+   "start": 4253.8,
+   "end": 4259.31,
+   "text": "I'll answer that with like a story of my heroes."
+  },
+  {
+   "start": 4259.31,
+   "end": 4267.08,
+   "text": "Leonardo Da Vinci, Steve Jobs, Walt Disney, Sam Wallin, Vincent Van Gogh, though he died"
+  },
+  {
+   "start": 4267.08,
+   "end": 4268.08,
+   "text": "early."
+  },
+  {
+   "start": 4268.08,
+   "end": 4272.44,
+   "text": "I go down, Frank Lloyd Wright, what do they all have in common?"
+  },
+  {
+   "start": 4272.44,
+   "end": 4275.95,
+   "text": "All five or six of them worked the last week of their life."
+  },
+  {
+   "start": 4275.95,
+   "end": 4280.07,
+   "text": "Walt Disney was dying of lung cancer, laying on his hospital bed, looking up at the ceiling"
+  },
+  {
+   "start": 4280.07,
+   "end": 4283.27,
+   "text": "tiles while his brother was rubbing his cold toes."
+  },
+  {
+   "start": 4283.27,
+   "end": 4286.49,
+   "text": "He was plotting out Disney World."
+  },
+  {
+   "start": 4286.49,
+   "end": 4291.01,
+   "text": "I know numerous people that visited Steve on his deathbed and he was, he was surrounded"
+  },
+  {
+   "start": 4291.01,
+   "end": 4294.09,
+   "text": "by family, family was most important, but he still cared about Apple."
+  },
+  {
+   "start": 4294.09,
+   "end": 4297.13,
+   "text": "The only thing he did was he carried the Mona Lisa with him until he died."
+  },
+  {
+   "start": 4297.13,
+   "end": 4299.81,
+   "text": "It was never even on display."
+  },
+  {
+   "start": 4299.81,
+   "end": 4302.57,
+   "text": "Now some people could hear that and say that's really grim."
+  },
+  {
+   "start": 4302.57,
+   "end": 4305.72,
+   "text": "You're working the last week of your life."
+  },
+  {
+   "start": 4305.72,
+   "end": 4308.58,
+   "text": "But if you love it, it's not grim at all."
+  },
+  {
+   "start": 4308.58,
+   "end": 4309.92,
+   "text": "They would love it."
+  },
+  {
+   "start": 4309.92,
+   "end": 4312.34,
+   "text": "And it doesn't mean you're not available to your family."
+  },
+  {
+   "start": 4312.34,
+   "end": 4314.38,
+   "text": "I think the most important thing at the end of my life"
+  },
+  {
+   "start": 4314.38,
+   "end": 4316.66,
+   "text": "is I have family surrounded by me."
+  },
+  {
+   "start": 4316.66,
+   "end": 4319.1,
+   "text": "But I hope not long before that I'm still doing something"
+  },
+  {
+   "start": 4319.1,
+   "end": 4320.32,
+   "text": "I love here."
+  },
+  {
+   "start": 4320.32,
+   "end": 4321.26,
+   "text": "I hope so."
+  },
+  {
+   "start": 4321.26,
+   "end": 4322.62,
+   "text": "Now, who knows?"
+  },
+  {
+   "start": 4322.62,
+   "end": 4324.64,
+   "text": "With AI, if I'm like 100 years old,"
+  },
+  {
+   "start": 4324.64,
+   "end": 4326.46,
+   "text": "I probably shouldn't be running a tech company."
+  },
+  {
+   "start": 4326.46,
+   "end": 4329.58,
+   "text": "So it's really about how long I live."
+  },
+  {
+   "start": 4329.58,
+   "end": 4333.34,
+   "text": "But I hope that if I live longer than 20 years more,"
+  },
+  {
+   "start": 4333.34,
+   "end": 4335.02,
+   "text": "and I hope that I would,"
+  },
+  {
+   "start": 4335.02,
+   "end": 4338.26,
+   "text": "I hope I'd still be doing this because my heroes were doing it."
+  },
+  {
+   "start": 4338.26,
+   "end": 4339.26,
+   "text": "And I just love it."
+  },
+  {
+   "start": 4339.26,
+   "end": 4347.09,
+   "text": "And I know parents, my friends' parents, were some of them retired and some didn't."
+  },
+  {
+   "start": 4347.09,
+   "end": 4350.49,
+   "text": "The ones that retired got older a lot faster than the ones that didn't."
+  },
+  {
+   "start": 4350.49,
+   "end": 4354.21,
+   "text": "And so whether I'm doing this or not, I'm always going to be creating."
+  },
+  {
+   "start": 4354.21,
+   "end": 4356.09,
+   "text": "I'm always going to be building."
+  },
+  {
+   "start": 4356.09,
+   "end": 4358.81,
+   "text": "And I'm not doing it anymore for adulation."
+  },
+  {
+   "start": 4358.81,
+   "end": 4360.53,
+   "text": "I'm certainly not doing it for money."
+  },
+  {
+   "start": 4360.53,
+   "end": 4362.09,
+   "text": "Can't spend what I have."
+  },
+  {
+   "start": 4362.09,
+   "end": 4363.57,
+   "text": "I'm doing it because I love it."
+  },
+  {
+   "start": 4363.57,
+   "end": 4370.41,
+   "text": "because I have one of the largest canvases any artist or designer has ever been given"
+  },
+  {
+   "start": 4370.41,
+   "end": 4371.41,
+   "text": "in human history."
+  },
+  {
+   "start": 4371.41,
+   "end": 4374.2,
+   "text": "And it was probably a bunch of luck."
+  },
+  {
+   "start": 4374.2,
+   "end": 4381.52,
+   "text": "I don't think getting from 2016 to here was luck, but I think Joe and Nate, that idea,"
+  },
+  {
+   "start": 4381.52,
+   "end": 4384.16,
+   "text": "people, what was luck was getting the shot."
+  },
+  {
+   "start": 4384.16,
+   "end": 4388.04,
+   "text": "There are so many people as talented as me or more talented that never got the shot."
+  },
+  {
+   "start": 4388.04,
+   "end": 4389.04,
+   "text": "I got the shot."
+  },
+  {
+   "start": 4389.04,
+   "end": 4394.6,
+   "text": "Who wasn't luck was then I got I gave myself the training now. I have the skill that was just hard work"
+  },
+  {
+   "start": 4394.6,
+   "end": 4398.24,
+   "text": "But getting in the door that was pure luck getting in the door was luck"
+  },
+  {
+   "start": 4398.72,
+   "end": 4406.26,
+   "text": "Now them in the door in the club. I don't want to leave because I feel like I have like 20 years of ideas and"
+  },
+  {
+   "start": 4407.4,
+   "end": 4411.36,
+   "text": "Whether it's all these problems I see in the world all these ideas all these dreams. I"
+  },
+  {
+   "start": 4412.2,
+   "end": 4418.28,
+   "text": "Just envision a more creative magical world than when we live in now whether or not people want to live in that world is or"
+  },
+  {
+   "start": 4418.28,
+   "end": 4423.9,
+   "text": "Or they want to participate, creating that world is up to them and it's not up to me."
+  },
+  {
+   "start": 4423.9,
+   "end": 4428.08,
+   "text": "It's up to me to convince people that this is compelling."
+  },
+  {
+   "start": 4428.08,
+   "end": 4431.48,
+   "text": "But I think I'm going to be doing this for a long time."
+  },
+  {
+   "start": 4431.48,
+   "end": 4434.44,
+   "text": "And one of my other heroes is Pablo Picasso."
+  },
+  {
+   "start": 4434.44,
+   "end": 4436.84,
+   "text": "Or at least he had a lot of big quotes about Pablo Picasso, by the way, he painted until"
+  },
+  {
+   "start": 4436.84,
+   "end": 4438.36,
+   "text": "the end of his life."
+  },
+  {
+   "start": 4438.36,
+   "end": 4442.37,
+   "text": "He had so many great quotes, but he said, all children are born artists."
+  },
+  {
+   "start": 4442.37,
+   "end": 4445.62,
+   "text": "The problem is to remain an artist as one grows up."
+  },
+  {
+   "start": 4445.62,
+   "end": 4448.66,
+   "text": "He also said, it took me four years to paint like Raphael, but the lifetime to learn to"
+  },
+  {
+   "start": 4448.66,
+   "end": 4450.34,
+   "text": "to paint like a child."
+  },
+  {
+   "start": 4450.34,
+   "end": 4452.66,
+   "text": "I want to stay young the rest of my life."
+  },
+  {
+   "start": 4452.66,
+   "end": 4455.86,
+   "text": "And the thing is, therefore, I want to have a childlike,"
+  },
+  {
+   "start": 4455.86,
+   "end": 4457.92,
+   "text": "not childish, but childlike quality."
+  },
+  {
+   "start": 4457.92,
+   "end": 4459.98,
+   "text": "I want to remain an explorer."
+  },
+  {
+   "start": 4459.98,
+   "end": 4462.26,
+   "text": "I want to learn, I want to grow, I want to keep making,"
+  },
+  {
+   "start": 4462.26,
+   "end": 4465.56,
+   "text": "every year in my life, I want to make at least one new friend."
+  },
+  {
+   "start": 4465.56,
+   "end": 4468.02,
+   "text": "I want to keep creating to the end of my life."
+  },
+  {
+   "start": 4468.02,
+   "end": 4470.56,
+   "text": "I want to keep connecting and helping people"
+  },
+  {
+   "start": 4470.56,
+   "end": 4472.14,
+   "text": "to the end of my life."
+  },
+  {
+   "start": 4472.14,
+   "end": 4474.22,
+   "text": "I don't know how long that is,"
+  },
+  {
+   "start": 4474.22,
+   "end": 4476.74,
+   "text": "but I just want to just keep creating,"
+  },
+  {
+   "start": 4476.74,
+   "end": 4479.96,
+   "text": "keep painting on this giant canvas I've been given."
+  },
+  {
+   "start": 4479.96,
+   "end": 4482.84,
+   "text": "And so long as I have this canvas,"
+  },
+  {
+   "start": 4482.84,
+   "end": 4485.05,
+   "text": "I'm not gonna stop painting."
+  },
+  {
+   "start": 4485.05,
+   "end": 4495.95,
+   "text": "Thank you, thank you."
+  },
+  {
+   "start": 4495.95,
+   "end": 4501.19,
+   "text": "That's Brian Chesky, co-founder and CEO of Airbnb."
+  },
+  {
+   "start": 4501.19,
+   "end": 4504.19,
+   "text": "By the way, if you haven't heard our original Airbnb episode"
+  },
+  {
+   "start": 4504.19,
+   "end": 4505.79,
+   "text": "with this co-founder Joe Jebia,"
+  },
+  {
+   "start": 4505.79,
+   "end": 4508.57,
+   "text": "who after finding out about his Italian roots,"
+  },
+  {
+   "start": 4508.57,
+   "end": 4512.19,
+   "text": "now pronounces his name Jebia, not Gebia."
+  },
+  {
+   "start": 4512.19,
+   "end": 4514.35,
+   "text": "Or even if you have heard that episode,"
+  },
+  {
+   "start": 4514.35,
+   "end": 4515.63,
+   "text": "it's worth going back to."
+  },
+  {
+   "start": 4515.63,
+   "end": 4517.91,
+   "text": "You'll find a link to it in the episode description."
+  },
+  {
+   "start": 4517.91,
+   "end": 4519.27,
+   "text": "Just scroll down."
+  },
+  {
+   "start": 4519.27,
+   "end": 4521.11,
+   "text": "And some exciting news."
+  },
+  {
+   "start": 4521.11,
+   "end": 4524.19,
+   "text": "You can now watch How I Built This on YouTube."
+  },
+  {
+   "start": 4524.19,
+   "end": 4527.35,
+   "text": "This conversation with Brian is the very first episode"
+  },
+  {
+   "start": 4527.35,
+   "end": 4529.11,
+   "text": "on our brand new channel."
+  },
+  {
+   "start": 4529.11,
+   "end": 4531.99,
+   "text": "Just search How I Built This on YouTube and subscribe."
+  },
+  {
+   "start": 4531.99,
+   "end": 4534.31,
+   "text": "We'll also put a link to our new YouTube channel"
+  },
+  {
+   "start": 4534.31,
+   "end": 4537.39,
+   "text": "in the episode description, so please check it out."
+  },
+  {
+   "start": 4537.39,
+   "end": 4539.99,
+   "text": "Our show is produced by Podcast Pointman."
+  },
+  {
+   "start": 4539.99,
+   "end": 4559.99,
+   "text": "I'm Guy Riz and you've been listening to How I Built This."
+  },
+  {
+   "start": 4559.99,
+   "end": 4562.87,
+   "text": "But anyone know where the bass is?"
+  },
+  {
+   "start": 4562.87,
+   "end": 4564.63,
+   "text": "Hey, Bose here."
+  },
+  {
+   "start": 4564.63,
+   "end": 4566.99,
+   "text": "That thing you just noticed in the song you've heard"
+  },
+  {
+   "start": 4566.99,
+   "end": 4568.79,
+   "text": "100 times before?"
+  },
+  {
+   "start": 4568.79,
+   "end": 4571.11,
+   "text": "That breath before the first vocal."
+  },
+  {
+   "start": 4571.11,
+   "end": 4573.27,
+   "text": "The harmony hiding underneath it,"
+  },
+  {
+   "start": 4573.27,
+   "end": 4576.15,
+   "text": "and that tiny bit of feedback right at the end."
+  },
+  {
+   "start": 4576.15,
+   "end": 4578.31,
+   "text": "Yeah, it's supposed to be there."
+  },
+  {
+   "start": 4578.31,
+   "end": 4581.31,
+   "text": "Someone heard it, loved it, kept it."
+  },
+  {
+   "start": 4581.31,
+   "end": 4584.55,
+   "text": "With Bose, you hear the details that make the song,"
+  },
+  {
+   "start": 4584.55,
+   "end": 4585.87,
+   "text": "the song."
+  },
+  {
+   "start": 4585.87,
+   "end": 4588.86,
+   "text": "Your music deserves Bose."
+  },
+  {
+   "start": 4588.86,
+   "end": 4591.98,
+   "text": "When FIC leads to accidents outside the litter box,"
+  },
+  {
+   "start": 4591.98,
+   "end": 4595.26,
+   "text": "Hill's prescription diet CD multi-care stress cat food"
+  },
+  {
+   "start": 4595.26,
+   "end": 4598.46,
+   "text": "has nutrition to help reduce the recurrence of FIC signs"
+  },
+  {
+   "start": 4598.46,
+   "end": 4602.18,
+   "text": "by 89% so they can get back to feeling good,"
+  },
+  {
+   "start": 4602.18,
+   "end": 4603.82,
+   "text": "intended for veterinary professionals."
+  },
+  {
+   "start": 4603.82,
+   "end": 4606.78,
+   "text": "USAA knows dynamic duos can save the day,"
+  },
+  {
+   "start": 4606.78,
+   "end": 4609.98,
+   "text": "like superheroes inside chicks or auto and home insurance."
+  },
+  {
+   "start": 4609.98,
+   "end": 4612.34,
+   "text": "With USAA, you can bundle your auto and home"
+  },
+  {
+   "start": 4612.34,
+   "end": 4613.9,
+   "text": "and save up to 10%."
+  },
+  {
+   "start": 4613.9,
+   "end": 4615.62,
+   "text": "Tap the banner to learn more and get a quote"
+  },
+  {
+   "start": 4615.62,
+   "end": 4617.48,
+   "text": "at usa.com slash bundle."
+  },
+  {
+   "start": 4617.48,
+   "end": 4619.48,
+   "text": "Restriction supply."
+  }
+ ],
+ "seconds": 163.7,
+ "file": "how-i-built-this-with-guy-raz__airbnb-ceo-brian-chesky-i-was-a-great-foun/take1.mp3",
+ "model": "small"
+}

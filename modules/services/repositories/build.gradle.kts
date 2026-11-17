@@ -10,6 +10,12 @@ android {
     buildFeatures {
         buildConfig = true
     }
+    defaultConfig {
+        // Moonshine's AAR declares minSdkVersion 26, so this module needs that floor while the
+        // phone app still installs on 24 (the engine is gated at runtime). The floor is set here
+        // rather than raised globally so the other modules keep upstream's.
+        minSdk = 26
+    }
 }
 
 dependencies {
@@ -62,6 +68,7 @@ dependencies {
     implementation(libs.media3.exoplayer.hls)
     api(libs.media3.session)
     implementation(libs.media3.ui)
+    implementation(libs.moonshine.voice)
     implementation(libs.play.auth)
     implementation(libs.play.cast)
     implementation(libs.protobuf.javalite)

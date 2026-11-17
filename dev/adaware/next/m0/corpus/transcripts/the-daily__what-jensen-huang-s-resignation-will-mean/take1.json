@@ -1,0 +1,2074 @@
+{
+ "duration": 1707.42,
+ "language": "en",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 2.4,
+   "text": "Brought to you by the Capital One Saver Card."
+  },
+  {
+   "start": 2.4,
+   "end": 7.92,
+   "text": "With Saver, you earn unlimited 3% cash back on dining, entertainment, and at grocery stores."
+  },
+  {
+   "start": 7.92,
+   "end": 11.04,
+   "text": "That's unlimited cash back on ordering takeout from home,"
+  },
+  {
+   "start": 11.04,
+   "end": 14.4,
+   "text": "or unlimited cash back on tickets to concerts and games."
+  },
+  {
+   "start": 14.4,
+   "end": 19.68,
+   "text": "So grab a bite, grab a seat, and earn unlimited 3% cash back with the Saver Card."
+  },
+  {
+   "start": 19.68,
+   "end": 20.64,
+   "text": "Capital One"
+  },
+  {
+   "start": 20.64,
+   "end": 21.84,
+   "text": "What's in your wallet?"
+  },
+  {
+   "start": 21.84,
+   "end": 22.8,
+   "text": "Terms apply."
+  },
+  {
+   "start": 22.8,
+   "end": 24.64,
+   "text": "See CapitalOne.com for details."
+  },
+  {
+   "start": 26.32,
+   "end": 28.72,
+   "text": "From New York Times, I'm Michael Voboro."
+  },
+  {
+   "start": 28.72,
+   "end": 29.84,
+   "text": "This is The Daily."
+  },
+  {
+   "start": 29.84,
+   "end": 38.7,
+   "text": "today."
+  },
+  {
+   "start": 38.7,
+   "end": 43.66,
+   "text": "After new revelations from the Times, Jensen Wong, the CEO of NVIDIA and the man at the"
+  },
+  {
+   "start": 43.66,
+   "end": 47.64,
+   "text": "center of the AI revolution, has resigned."
+  },
+  {
+   "start": 47.64,
+   "end": 53.04,
+   "text": "As NVIDIA's board wrestled with Wong's fate overnight, I spoke with my colleague, Trip"
+  },
+  {
+   "start": 53.04,
+   "end": 58.76,
+   "text": "Mickle, about the new reporting on Wong's conduct and what his ouster could mean for"
+  },
+  {
+   "start": 58.76,
+   "end": 69.97,
+   "text": "the future of artificial intelligence."
+  },
+  {
+   "start": 69.97,
+   "end": 77.97,
+   "text": "Thursday, November 12th."
+  },
+  {
+   "start": 77.97,
+   "end": 82.62,
+   "text": "We did not expect to have you back on the show this soon."
+  },
+  {
+   "start": 83.78,
+   "end": 87.78,
+   "text": "This has moved much faster than anybody expected it to."
+  },
+  {
+   "start": 87.78,
+   "end": 88.62,
+   "text": "Yeah."
+  },
+  {
+   "start": 88.62,
+   "end": 90.54,
+   "text": "And I'm surprised to be back as well."
+  },
+  {
+   "start": 90.54,
+   "end": 93.1,
+   "text": "Well, it's moved fast in part because of you"
+  },
+  {
+   "start": 93.1,
+   "end": 95.74,
+   "text": "and the reporting you and our colleagues are doing."
+  },
+  {
+   "start": 95.74,
+   "end": 99.5,
+   "text": "And at this moment at 12, 30 a.m. Eastern time,"
+  },
+  {
+   "start": 99.5,
+   "end": 101.98,
+   "text": "NVIDIA's directors are finishing up"
+  },
+  {
+   "start": 101.98,
+   "end": 104.46,
+   "text": "what may be one of the most closely watched"
+  },
+  {
+   "start": 104.46,
+   "end": 108.22,
+   "text": "emergency board meetings in corporate history,"
+  },
+  {
+   "start": 108.22,
+   "end": 113.06,
+   "text": "and they are sorting out the fate of the company's CEO,"
+  },
+  {
+   "start": 113.06,
+   "end": 116.94,
+   "text": "Jensen Wong, a future that now appears to be in grave,"
+  },
+  {
+   "start": 116.94,
+   "end": 118.66,
+   "text": "grave danger."
+  },
+  {
+   "start": 118.66,
+   "end": 120.9,
+   "text": "And I know that things might change by the time"
+  },
+  {
+   "start": 120.9,
+   "end": 123.22,
+   "text": "our episode publishes at 6 a.m. Eastern time,"
+  },
+  {
+   "start": 123.22,
+   "end": 125.5,
+   "text": "but at this particular moment,"
+  },
+  {
+   "start": 125.5,
+   "end": 130.21,
+   "text": "what do we know about where the board's deliberations are?"
+  },
+  {
+   "start": 130.21,
+   "end": 133.05,
+   "text": "We know that 10 people who are serving on this"
+  },
+  {
+   "start": 133.05,
+   "end": 138.19,
+   "text": "video board that have been there a long time are wrestling with the decision they never"
+  },
+  {
+   "start": 138.19,
+   "end": 139.95,
+   "text": "thought they would have to make."
+  },
+  {
+   "start": 139.95,
+   "end": 145.95,
+   "text": "And that's whether or not Jensen Wong should not only continue to lead the company, which"
+  },
+  {
+   "start": 145.95,
+   "end": 150.35,
+   "text": "our reporting suggests will not happen, but should even have a role at the company going"
+  },
+  {
+   "start": 150.35,
+   "end": 151.35,
+   "text": "forward."
+  },
+  {
+   "start": 151.35,
+   "end": 156.71,
+   "text": "This is the company he co-founded in a Denny's in 1993."
+  },
+  {
+   "start": 156.71,
+   "end": 162.21,
+   "text": "So it's really an unimaginable moment for this group of 10 people."
+  },
+  {
+   "start": 162.21,
+   "end": 169.35,
+   "text": "And from what you're saying, they are leaning towards an outcome in which he is no longer"
+  },
+  {
+   "start": 169.35,
+   "end": 172.23,
+   "text": "chief executive officer of the company he founded."
+  },
+  {
+   "start": 172.23,
+   "end": 178.05,
+   "text": "This company, not an overstatement to say, is at the heart of the AI boom, the heart"
+  },
+  {
+   "start": 178.05,
+   "end": 180.84,
+   "text": "of the AI revolution, the heart of the global economy."
+  },
+  {
+   "start": 180.84,
+   "end": 186.36,
+   "text": "Yes, they are leaning towards an outcome that would take the man who has very much become"
+  },
+  {
+   "start": 186.36,
+   "end": 193.96,
+   "text": "the face of AI around the world, who's perceived to be the maestro of artificial intelligence,"
+  },
+  {
+   "start": 193.96,
+   "end": 200.7,
+   "text": "and removing him from leadership of the most important company in the AI movement."
+  },
+  {
+   "start": 200.7,
+   "end": 206.87,
+   "text": "Okay, well, tell us how this seemingly unimaginable outcome, just a few days ago when you were"
+  },
+  {
+   "start": 206.87,
+   "end": 214.95,
+   "text": "on the show talking to my co-host, Ali Kittorov, you said that Jensen Wong's future is seen"
+  },
+  {
+   "start": 214.95,
+   "end": 216.29,
+   "text": "relatively safe."
+  },
+  {
+   "start": 216.29,
+   "end": 220.89,
+   "text": "How do we get to this point where it's now in such serious doubt?"
+  },
+  {
+   "start": 220.89,
+   "end": 228.57,
+   "text": "In recent days and really more than a week, we've been tracking a tip that Jensen Wong"
+  },
+  {
+   "start": 228.57,
+   "end": 234.97,
+   "text": "had had a relationship with an executive at the company, one of his direct reports."
+  },
+  {
+   "start": 234.97,
+   "end": 240.65,
+   "text": "That would basically be a second romantic relationship with somebody, in this case,"
+  },
+  {
+   "start": 240.65,
+   "end": 242.61,
+   "text": "a colleague."
+  },
+  {
+   "start": 242.61,
+   "end": 247.77,
+   "text": "In this case, it would be a second breach of the company's code of conduct to come to"
+  },
+  {
+   "start": 247.77,
+   "end": 250.97,
+   "text": "light in a matter of days."
+  },
+  {
+   "start": 250.97,
+   "end": 255.73,
+   "text": "The first being a breach of the code of conduct for having an intimate relationship with a"
+  },
+  {
+   "start": 255.73,
+   "end": 261.63,
+   "text": "supplier, the woman who we've written about extensively, Alice Wong at Megaspeed, who US"
+  },
+  {
+   "start": 261.63,
+   "end": 265.01,
+   "text": "Intelligence has determined is a Chinese spy."
+  },
+  {
+   "start": 265.01,
+   "end": 267.95,
+   "text": "This would be a totally different thing."
+  },
+  {
+   "start": 267.95,
+   "end": 274.07,
+   "text": "On Wednesday morning, my colleagues Ryan Mack and Georgia and I decided that we had enough"
+  },
+  {
+   "start": 274.07,
+   "end": 278.47,
+   "text": "reporting to move forward with a story about the second intimate relationship."
+  },
+  {
+   "start": 278.47,
+   "end": 279.47,
+   "text": "Okay."
+  },
+  {
+   "start": 279.47,
+   "end": 287.43,
+   "text": "And tell us about who this woman is, who Jensen Wong had according to your reporting this"
+  },
+  {
+   "start": 287.43,
+   "end": 290.43,
+   "text": "intimate relationship with the second woman."
+  },
+  {
+   "start": 290.43,
+   "end": 293.47,
+   "text": "The second woman is an executive on his leadership team."
+  },
+  {
+   "start": 293.47,
+   "end": 295.07,
+   "text": "Her name is Kimberly Powell."
+  },
+  {
+   "start": 295.07,
+   "end": 297.87,
+   "text": "She leads their medical and healthcare group."
+  },
+  {
+   "start": 297.87,
+   "end": 304.03,
+   "text": "has been with the company since 2008. She is often traveling with Jensen and is entourage"
+  },
+  {
+   "start": 304.03,
+   "end": 311.07,
+   "text": "at conferences and events and things like that. And according to a reporting at their"
+  },
+  {
+   "start": 311.07,
+   "end": 318.83,
+   "text": "recent annual conference in San Jose, the two of them were in an affectionate moment that"
+  },
+  {
+   "start": 318.83,
+   "end": 327.19,
+   "text": "someone caught on camera with their phone and that NVIDIA security came over and got"
+  },
+  {
+   "start": 327.19,
+   "end": 332.47,
+   "text": "the person to sign an NDA for that moment of affection."
+  },
+  {
+   "start": 332.47,
+   "end": 339.23,
+   "text": "So the company security team would have understood that somebody noticed Jensen Wong and this"
+  },
+  {
+   "start": 339.23,
+   "end": 346.87,
+   "text": "female executive in some sort of moment that felt perhaps not quite right and asked someone"
+  },
+  {
+   "start": 346.87,
+   "end": 350.23,
+   "text": "to sign a document saying that they would never share that information with anybody"
+  },
+  {
+   "start": 350.23,
+   "end": 351.26,
+   "text": "else."
+  },
+  {
+   "start": 351.26,
+   "end": 352.26,
+   "text": "That's right."
+  },
+  {
+   "start": 352.26,
+   "end": 353.26,
+   "text": "That's right."
+  },
+  {
+   "start": 353.26,
+   "end": 356.68,
+   "text": "And this executive, presumably since Jensen Wong is the CEO,"
+  },
+  {
+   "start": 356.68,
+   "end": 360.0,
+   "text": "somehow reports to him what exactly is their relationship."
+  },
+  {
+   "start": 360.0,
+   "end": 362.92,
+   "text": "She's one of 60 direct reports at the company"
+  },
+  {
+   "start": 362.92,
+   "end": 364.92,
+   "text": "who report directly to Jensen Wong."
+  },
+  {
+   "start": 364.92,
+   "end": 368.76,
+   "text": "And as we all know, in the world of HR,"
+  },
+  {
+   "start": 368.76,
+   "end": 371.82,
+   "text": "one of the kind of cardinal sins in the HR world"
+  },
+  {
+   "start": 371.82,
+   "end": 375.64,
+   "text": "is you don't have a relationship, a close relationship"
+  },
+  {
+   "start": 375.64,
+   "end": 378.0,
+   "text": "with somebody who directly reports to you."
+  },
+  {
+   "start": 378.0,
+   "end": 380.2,
+   "text": "Right. In fact, most companies expressly forbid"
+  },
+  {
+   "start": 380.2,
+   "end": 382.2,
+   "text": "this kind of relationship because of the power dynamic"
+  },
+  {
+   "start": 382.2,
+   "end": 389.64,
+   "text": "play with a boss being obviously capable of, in theory, coercing a subordinate into a romantic"
+  },
+  {
+   "start": 389.64,
+   "end": 395.56,
+   "text": "relationship. Do we know if NVIDIA has that kind of expressly forbidden policy?"
+  },
+  {
+   "start": 396.2,
+   "end": 401.56,
+   "text": "We know that their code of conduct says that employees at NVIDIA are supposed to, quote,"
+  },
+  {
+   "start": 401.56,
+   "end": 408.68,
+   "text": "avoid situations where our actions create conflict, including, quote, personal relationships."
+  },
+  {
+   "start": 408.68,
+   "end": 414.28,
+   "text": "And the company states that it promptly investigates any reports of that kind of misconduct."
+  },
+  {
+   "start": 416.06,
+   "end": 423.98,
+   "text": "Okay. So did this relationship make its way to NVIDIA's leadership before you found out about it?"
+  },
+  {
+   "start": 424.54,
+   "end": 425.9,
+   "text": "Not that we're aware of."
+  },
+  {
+   "start": 425.9,
+   "end": 431.26,
+   "text": "Okay. So once the company learns presumably through your reporting about this relationship,"
+  },
+  {
+   "start": 431.82,
+   "end": 434.54,
+   "text": "what do you understand to have occurred?"
+  },
+  {
+   "start": 434.54,
+   "end": 440.98,
+   "text": "What I understand played out after that is that after the company got our inquiry and"
+  },
+  {
+   "start": 440.98,
+   "end": 449.1,
+   "text": "knew that we were moving forward with a story that the board was notified and fast forward"
+  },
+  {
+   "start": 449.1,
+   "end": 453.74,
+   "text": "they're having a meeting by the end of the day to discuss and deliberate over whether"
+  },
+  {
+   "start": 453.74,
+   "end": 458.08,
+   "text": "or not Jensen Wong should continue to lead the company."
+  },
+  {
+   "start": 458.08,
+   "end": 461.32,
+   "text": "Help me understand why this requires so much deliberation."
+  },
+  {
+   "start": 461.32,
+   "end": 468.84,
+   "text": "I have been a business reporter and in that time I watched CEO after CEO after CEO from McDonald's"
+  },
+  {
+   "start": 469.48,
+   "end": 478.92,
+   "text": "to BP be pretty much summarily fired for this very kind of relationship with a subordinate."
+  },
+  {
+   "start": 479.48,
+   "end": 486.84,
+   "text": "Yeah, why does it cause this much deliberation? I mean, this company is Jensen Wong, right? I mean,"
+  },
+  {
+   "start": 486.84,
+   "end": 491.87,
+   "text": "and it is built around his leadership, his vision,"
+  },
+  {
+   "start": 493.19,
+   "end": 496.23,
+   "text": "and the structure of the company makes it such"
+  },
+  {
+   "start": 496.23,
+   "end": 500.27,
+   "text": "that there's not a clear successor at all either, right?"
+  },
+  {
+   "start": 500.27,
+   "end": 502.59,
+   "text": "When you have 60 people reporting to you,"
+  },
+  {
+   "start": 502.59,
+   "end": 504.47,
+   "text": "yes, you can pull somebody from those ranks"
+  },
+  {
+   "start": 504.47,
+   "end": 506.75,
+   "text": "and they could lead the company in his absence."
+  },
+  {
+   "start": 506.75,
+   "end": 509.19,
+   "text": "But this isn't something like,"
+  },
+  {
+   "start": 509.19,
+   "end": 511.67,
+   "text": "take for example, I used to cover Apple for a lot of years,"
+  },
+  {
+   "start": 511.67,
+   "end": 513.83,
+   "text": "like Apple when Steve Jobs was about to die,"
+  },
+  {
+   "start": 513.83,
+   "end": 518.11,
+   "text": "he had something on the order of like six very trusted"
+  },
+  {
+   "start": 518.11,
+   "end": 521.79,
+   "text": "lieutenants that were in position to take over that company."
+  },
+  {
+   "start": 521.79,
+   "end": 524.51,
+   "text": "I mean, it was clear that if it wasn't Tim Cook,"
+  },
+  {
+   "start": 524.51,
+   "end": 526.63,
+   "text": "it could have been Scott Forstall."
+  },
+  {
+   "start": 526.63,
+   "end": 530.55,
+   "text": "If it wasn't Scott Forstall, it could have been Phil Shiller."
+  },
+  {
+   "start": 530.55,
+   "end": 533.19,
+   "text": "I mean, there were just a number of people at the company"
+  },
+  {
+   "start": 533.19,
+   "end": 536.75,
+   "text": "that had the wherewithal to lead that company forward."
+  },
+  {
+   "start": 536.75,
+   "end": 539.83,
+   "text": "And that's just not something that's known about NVIDIA"
+  },
+  {
+   "start": 539.83,
+   "end": 541.79,
+   "text": "because what's known about NVIDIA"
+  },
+  {
+   "start": 541.79,
+   "end": 543.91,
+   "text": "is Jensen Wong is the visionary."
+  },
+  {
+   "start": 543.91,
+   "end": 546.67,
+   "text": "Jensen Wong sets the pace for the company."
+  },
+  {
+   "start": 546.67,
+   "end": 548.95,
+   "text": "Jensen Wong drives its innovation."
+  },
+  {
+   "start": 548.95,
+   "end": 553.63,
+   "text": "And Jensen Wong is its biggest and arguably the best salesman"
+  },
+  {
+   "start": 553.63,
+   "end": 555.31,
+   "text": "in all of technology."
+  },
+  {
+   "start": 555.31,
+   "end": 558.51,
+   "text": "He's the one who's helped persuade the world"
+  },
+  {
+   "start": 558.51,
+   "end": 560.79,
+   "text": "that these chips are not only so valuable,"
+  },
+  {
+   "start": 560.79,
+   "end": 563.23,
+   "text": "but help make these chips into something"
+  },
+  {
+   "start": 563.23,
+   "end": 568.07,
+   "text": "that enjoys a 90% market share in the AI chip world."
+  },
+  {
+   "start": 568.07,
+   "end": 570.67,
+   "text": "You're saying to the degree that the board has gotten"
+  },
+  {
+   "start": 570.67,
+   "end": 573.07,
+   "text": "to the point where it may be ready,"
+  },
+  {
+   "start": 573.07,
+   "end": 576.59,
+   "text": "and perhaps already is ready to push him aside"
+  },
+  {
+   "start": 576.59,
+   "end": 579.19,
+   "text": "and knock him off as CEO,"
+  },
+  {
+   "start": 579.19,
+   "end": 583.55,
+   "text": "it has been probably pained and reluctant"
+  },
+  {
+   "start": 583.55,
+   "end": 586.31,
+   "text": "and agonizing as it gets there."
+  },
+  {
+   "start": 586.31,
+   "end": 588.61,
+   "text": "It has to come to terms with a possibility"
+  },
+  {
+   "start": 588.61,
+   "end": 592.15,
+   "text": "that no one on this board ever thought would be a reality."
+  },
+  {
+   "start": 592.15,
+   "end": 596.35,
+   "text": "I mean, this is a monumental decision for this board."
+  },
+  {
+   "start": 596.35,
+   "end": 599.75,
+   "text": "And he's been on a rocket ride the past three years."
+  },
+  {
+   "start": 599.75,
+   "end": 607.35,
+   "text": "We could literally do no wrong until all of a sudden all this problematic behavior spilled"
+  },
+  {
+   "start": 607.35,
+   "end": 609.19,
+   "text": "out in a public view."
+  },
+  {
+   "start": 609.19,
+   "end": 610.19,
+   "text": "Right."
+  },
+  {
+   "start": 610.19,
+   "end": 616.27,
+   "text": "And what may be fascinating, if in fact, Jensen Wong is ousted as CEO, is that after digesting"
+  },
+  {
+   "start": 616.27,
+   "end": 620.23,
+   "text": "the fact that he had had a romantic relationship with a, according to U.S. officials, Chinese"
+  },
+  {
+   "start": 620.23,
+   "end": 629.21,
+   "text": "spy who funneled information back to the Chinese government may end up being this other second"
+  },
+  {
+   "start": 629.21,
+   "end": 634.01,
+   "text": "relationship with an employee, not a spy, that may end up costing him his job."
+  },
+  {
+   "start": 634.01,
+   "end": 639.45,
+   "text": "Yes. And I think part of the problem here is the board is dealing with a one-two punch"
+  },
+  {
+   "start": 639.45,
+   "end": 645.53,
+   "text": "that must make them wonder if this is not necessarily the end of the story."
+  },
+  {
+   "start": 645.53,
+   "end": 647.13,
+   "text": "Yeah. Yeah."
+  },
+  {
+   "start": 647.13,
+   "end": 657.13,
+   "text": "Which is a troubling thing to ponder. They're making the most complicated and most important"
+  },
+  {
+   "start": 657.13,
+   "end": 662.49,
+   "text": "technology of our time that is like not just important to them and not just important to"
+  },
+  {
+   "start": 662.49,
+   "end": 667.05,
+   "text": "the economy and not just important to open AI, you know, down the street and right and"
+  },
+  {
+   "start": 667.05,
+   "end": 673.49,
+   "text": "anthropic down the street to my left, but also important to the US government and the"
+  },
+  {
+   "start": 673.49,
+   "end": 678.77,
+   "text": "potential and prosperity of the US economy. These are the rails on which artificial intelligence"
+  },
+  {
+   "start": 678.77,
+   "end": 686.77,
+   "text": "run and it's what has allowed the US to take a sizable lead and enjoy a lead and sustain"
+  },
+  {
+   "start": 686.77,
+   "end": 691.25,
+   "text": "that lead over China and the development of artificial intelligence. And that's why for"
+  },
+  {
+   "start": 691.25,
+   "end": 703.56,
+   "text": "the board this is such a difficult decision to move forward on. We'll be right back."
+  },
+  {
+   "start": 709.96,
+   "end": 716.12,
+   "text": "This podcast is supported by the Capital One VentureX card. VentureX offers the premium benefits"
+  },
+  {
+   "start": 716.12,
+   "end": 721.4,
+   "text": "you expect, like a $300 annual Capital One travel credit for less than you expect."
+  },
+  {
+   "start": 721.4,
+   "end": 724.68,
+   "text": "Elevate your earn with unlimited double miles on every purchase,"
+  },
+  {
+   "start": 724.68,
+   "end": 728.44,
+   "text": "bringing you one step closer to your next dream destination."
+  },
+  {
+   "start": 728.44,
+   "end": 732.68,
+   "text": "Plus, enjoy access to over 1,000 airport lounges worldwide."
+  },
+  {
+   "start": 732.68,
+   "end": 734.44,
+   "text": "The Capital One Venture X card."
+  },
+  {
+   "start": 734.44,
+   "end": 735.56,
+   "text": "What's in your wallet?"
+  },
+  {
+   "start": 735.56,
+   "end": 736.36,
+   "text": "Terms apply."
+  },
+  {
+   "start": 736.36,
+   "end": 738.12,
+   "text": "Lounge access is subject to change."
+  },
+  {
+   "start": 738.12,
+   "end": 739.88,
+   "text": "See CapitalOne.com for details."
+  },
+  {
+   "start": 739.88,
+   "end": 742.36,
+   "text": "This podcast is supported by Starbucks."
+  },
+  {
+   "start": 742.36,
+   "end": 746.28,
+   "text": "Starbucks Baristas can nominate local nonprofits to receive grants."
+  },
+  {
+   "start": 746.28,
+   "end": 750.52,
+   "text": "With more than 16,000 grants awarded to local organizations so far,"
+  },
+  {
+   "start": 750.52,
+   "end": 751.8,
+   "text": "because it's Starbucks,"
+  },
+  {
+   "start": 751.8,
+   "end": 754.44,
+   "text": "making an impact together is just the start."
+  },
+  {
+   "start": 754.44,
+   "end": 756.44,
+   "text": "Learn more at starbucks.com."
+  },
+  {
+   "start": 784.44,
+   "end": 786.0,
+   "text": "all in one place."
+  },
+  {
+   "start": 786.0,
+   "end": 788.3,
+   "text": "Learn more at Schwab.com."
+  },
+  {
+   "start": 788.3,
+   "end": 793.01,
+   "text": "Investing involves risk, including loss of principle."
+  },
+  {
+   "start": 793.01,
+   "end": 800.49,
+   "text": "Tripp, let's envision a world in which Jensen Huang is no longer the CEO of NVIDIA."
+  },
+  {
+   "start": 800.49,
+   "end": 805.81,
+   "text": "Just walk us through the scenarios in which that happens."
+  },
+  {
+   "start": 805.81,
+   "end": 807.73,
+   "text": "Does he somehow remain at the company?"
+  },
+  {
+   "start": 807.73,
+   "end": 812.21,
+   "text": "It sounds like the board would like to find a way perhaps for that to happen."
+  },
+  {
+   "start": 812.21,
+   "end": 815.97,
+   "text": "There isn't a huge succession plan written anywhere."
+  },
+  {
+   "start": 815.97,
+   "end": 819.69,
+   "text": "He gets to stick around and help develop that."
+  },
+  {
+   "start": 819.69,
+   "end": 823.77,
+   "text": "Or is it more likely he needs to be completely untethered"
+  },
+  {
+   "start": 823.77,
+   "end": 825.51,
+   "text": "from this company?"
+  },
+  {
+   "start": 825.51,
+   "end": 827.39,
+   "text": "We are in such uncharted waters"
+  },
+  {
+   "start": 827.39,
+   "end": 829.65,
+   "text": "that this is an impossible question to answer."
+  },
+  {
+   "start": 829.65,
+   "end": 832.15,
+   "text": "And I am so glad I'm not one of those 10 people."
+  },
+  {
+   "start": 832.15,
+   "end": 834.83,
+   "text": "I mean, let's just do analysis here, right?"
+  },
+  {
+   "start": 834.83,
+   "end": 838.35,
+   "text": "And just what we know about this circumstance."
+  },
+  {
+   "start": 838.35,
+   "end": 842.55,
+   "text": "If he stays and they conceivably do a search"
+  },
+  {
+   "start": 842.55,
+   "end": 846.67,
+   "text": "to find a new chief executive to lead the company long term."
+  },
+  {
+   "start": 846.67,
+   "end": 850.47,
+   "text": "And they install an interim to help the company navigate"
+  },
+  {
+   "start": 850.47,
+   "end": 853.31,
+   "text": "the next several months while that search plays out."
+  },
+  {
+   "start": 853.31,
+   "end": 855.11,
+   "text": "If he's still there,"
+  },
+  {
+   "start": 855.11,
+   "end": 857.99,
+   "text": "who is everybody at the company gonna look up to?"
+  },
+  {
+   "start": 857.99,
+   "end": 860.47,
+   "text": "Who do they turn to to make decisions?"
+  },
+  {
+   "start": 860.47,
+   "end": 862.43,
+   "text": "It would be him, not the interim CEO."
+  },
+  {
+   "start": 862.43,
+   "end": 863.27,
+   "text": "Right."
+  },
+  {
+   "start": 863.27,
+   "end": 866.59,
+   "text": "So it could undermine the standing of the interim CEO."
+  },
+  {
+   "start": 866.59,
+   "end": 870.47,
+   "text": "It could create challenges for any incoming CEO"
+  },
+  {
+   "start": 870.47,
+   "end": 872.99,
+   "text": "and for like the search process, right?"
+  },
+  {
+   "start": 872.99,
+   "end": 874.43,
+   "text": "Well, what's Jensen gonna be doing?"
+  },
+  {
+   "start": 874.43,
+   "end": 875.55,
+   "text": "Like, is he still gonna be there"
+  },
+  {
+   "start": 875.55,
+   "end": 877.67,
+   "text": "if I take this job or not?"
+  },
+  {
+   "start": 877.67,
+   "end": 881.09,
+   "text": "And then there's also the question of like trust, right?"
+  },
+  {
+   "start": 881.09,
+   "end": 884.11,
+   "text": "The reason that this has become an issue of trust"
+  },
+  {
+   "start": 884.11,
+   "end": 888.31,
+   "text": "is that when we did our first report"
+  },
+  {
+   "start": 888.31,
+   "end": 891.11,
+   "text": "about US surveillance,"
+  },
+  {
+   "start": 891.11,
+   "end": 895.31,
+   "text": "discovering that Jensen had a close relationship"
+  },
+  {
+   "start": 895.31,
+   "end": 898.63,
+   "text": "with this woman who was a Chinese citizen"
+  },
+  {
+   "start": 898.63,
+   "end": 901.95,
+   "text": "and the executive at the Singaporean data center firm,"
+  },
+  {
+   "start": 901.95,
+   "end": 906.95,
+   "text": "Jensen went to Bloomberg News and told them on the record"
+  },
+  {
+   "start": 907.31,
+   "end": 910.19,
+   "text": "that it was just a normal business relationship."
+  },
+  {
+   "start": 910.19,
+   "end": 911.75,
+   "text": "That has turned out not to be true, yeah."
+  },
+  {
+   "start": 911.75,
+   "end": 913.03,
+   "text": "That proved not to be true."
+  },
+  {
+   "start": 913.03,
+   "end": 915.83,
+   "text": "I mean, he sent an email to the entire company telling him"
+  },
+  {
+   "start": 915.83,
+   "end": 918.83,
+   "text": "that he'd had an affair and been unpayable to his wife."
+  },
+  {
+   "start": 918.83,
+   "end": 921.11,
+   "text": "Now that was in the span of, I don't know,"
+  },
+  {
+   "start": 921.11,
+   "end": 922.43,
+   "text": "less than two weeks."
+  },
+  {
+   "start": 922.43,
+   "end": 926.63,
+   "text": "That would seem to be the case for a clean break perhaps."
+  },
+  {
+   "start": 926.63,
+   "end": 928.03,
+   "text": "Yeah, it would."
+  },
+  {
+   "start": 928.03,
+   "end": 932.55,
+   "text": "And we haven't even talked about the implications for Washington and"
+  },
+  {
+   "start": 932.87,
+   "end": 938.43,
+   "text": "NVIDIA's position on selling chips to China and the US government policy on that,"
+  },
+  {
+   "start": 938.43,
+   "end": 942.71,
+   "text": "which has been moved in the direction that Jensen Wong wanted,"
+  },
+  {
+   "start": 942.73,
+   "end": 946.39,
+   "text": "which was permitting and allowing the sale of some chips to China."
+  },
+  {
+   "start": 946.91,
+   "end": 950.51,
+   "text": "You and I know we've talked about this many times in the past couple of years."
+  },
+  {
+   "start": 950.91,
+   "end": 955.59,
+   "text": "He has a contrarian view of what the US government's strategies"
+  },
+  {
+   "start": 955.59,
+   "end": 963.51,
+   "text": "should be relative to what many people in Congress believe and what a large faction of the Trump"
+  },
+  {
+   "start": 963.51,
+   "end": 968.87,
+   "text": "administration believes. Many people think that we should deprive China of that technology"
+  },
+  {
+   "start": 968.87,
+   "end": 974.63,
+   "text": "so that the US can keep a lead in artificial intelligence. Jensen believes that those chips"
+  },
+  {
+   "start": 974.63,
+   "end": 980.79,
+   "text": "should be sold to China so that the US chip companies, namely NVIDIA, can stay ahead of the"
+  },
+  {
+   "start": 980.79,
+   "end": 985.43,
+   "text": "Chinese companies by making money in China and competing against Chinese companies."
+  },
+  {
+   "start": 986.15,
+   "end": 989.03,
+   "text": "Right. And his view has prevailed. He's persuasively argued to the Trump"
+  },
+  {
+   "start": 989.03,
+   "end": 992.47,
+   "text": "administration that those chips should be sold to China. I'm guessing where you're"
+  },
+  {
+   "start": 992.47,
+   "end": 996.95,
+   "text": "headed here, Tripp, is that if Jensen Huang has suddenly gone entirely from Nvidia,"
+  },
+  {
+   "start": 997.51,
+   "end": 1003.35,
+   "text": "the most powerful persuasive proponent of that case for selling chips to China might not be"
+  },
+  {
+   "start": 1003.35,
+   "end": 1005.99,
+   "text": "making that case anymore. Perhaps that policy changes."
+  },
+  {
+   "start": 1005.99,
+   "end": 1006.55,
+   "text": "Exactly."
+  },
+  {
+   "start": 1006.55,
+   "end": 1010.39,
+   "text": "Well, this makes me want to ask about President Trump."
+  },
+  {
+   "start": 1010.39,
+   "end": 1014.07,
+   "text": "We've talked a lot about Jensen Wong's very close relationship with the president."
+  },
+  {
+   "start": 1014.07,
+   "end": 1018.39,
+   "text": "And I wonder how that closeness might influence what comes next."
+  },
+  {
+   "start": 1018.39,
+   "end": 1022.03,
+   "text": "It doesn't seem entirely outside the realm of possibility that President Trump might"
+  },
+  {
+   "start": 1022.03,
+   "end": 1025.95,
+   "text": "want to put his finger on the scale of this board's deliberations as it figures out what"
+  },
+  {
+   "start": 1025.95,
+   "end": 1027.83,
+   "text": "to do with Jensen Wong."
+  },
+  {
+   "start": 1027.83,
+   "end": 1032.79,
+   "text": "Given Nvidia's importance to the economy, given President Trump's personal relationship"
+  },
+  {
+   "start": 1032.79,
+   "end": 1039.68,
+   "text": "with Jens O'Long, you can almost rest assured that there is a truth social post in our future"
+  },
+  {
+   "start": 1039.68,
+   "end": 1042.88,
+   "text": "with the president weighing in on the outcome of this board's decision."
+  },
+  {
+   "start": 1044.34,
+   "end": 1050.26,
+   "text": "One of the questions we found ourselves asking is, is there a world in which or a mechanism"
+  },
+  {
+   "start": 1050.26,
+   "end": 1054.26,
+   "text": "through which the US government could take an interest in NVIDIA? We've seen it do that with"
+  },
+  {
+   "start": 1054.26,
+   "end": 1059.7,
+   "text": "another chip company as well. A financial stake in it. Yeah, financial stake. We saw that a year ago"
+  },
+  {
+   "start": 1059.7,
+   "end": 1065.9,
+   "text": "with Intel. The US government now owns 10% of Intel. Now I was able to do that because"
+  },
+  {
+   "start": 1065.9,
+   "end": 1071.78,
+   "text": "it had already made a commitment to pay Intel about $10 billion for building out manufacturing"
+  },
+  {
+   "start": 1071.78,
+   "end": 1076.14,
+   "text": "plants in the US. And it just kind of pushed that money forward earlier than it would have"
+  },
+  {
+   "start": 1076.14,
+   "end": 1081.68,
+   "text": "otherwise. We don't know what the mechanism would be here, but we know this is an administration"
+  },
+  {
+   "start": 1081.68,
+   "end": 1089.18,
+   "text": "that likes to have skin in the game and is willing to be active in taking stakes in companies."
+  },
+  {
+   "start": 1089.18,
+   "end": 1095.73,
+   "text": "Just so I understand, the listeners can understand, for President Trump, who so very much likes"
+  },
+  {
+   "start": 1095.73,
+   "end": 1100.47,
+   "text": "Jensen Wong and presumably wants him to stay on as CEO, what would a U.S. government financial"
+  },
+  {
+   "start": 1100.47,
+   "end": 1104.45,
+   "text": "stake in Nvidia do to advance that?"
+  },
+  {
+   "start": 1104.45,
+   "end": 1106.89,
+   "text": "Or would it have nothing to do with whether Jensen Wong stays on?"
+  },
+  {
+   "start": 1106.89,
+   "end": 1110.93,
+   "text": "It would just be to try to make sure the company remains healthy even without him."
+  },
+  {
+   "start": 1110.93,
+   "end": 1116.37,
+   "text": "It would be a sign to the market that this company has the full faith and backing of"
+  },
+  {
+   "start": 1116.37,
+   "end": 1117.37,
+   "text": "the U.S. government."
+  },
+  {
+   "start": 1117.37,
+   "end": 1124.05,
+   "text": "I don't want to get into like Wall Street jargon here too much, but when there's a growing"
+  },
+  {
+   "start": 1124.05,
+   "end": 1129.69,
+   "text": "sense that Jensen may not be leading this company going forward, one of the leading semiconductor"
+  },
+  {
+   "start": 1129.69,
+   "end": 1134.65,
+   "text": "analysts on Wall Street cut what is called a price target, where he thinks the stock"
+  },
+  {
+   "start": 1134.65,
+   "end": 1141.85,
+   "text": "could go based on its performance from $400 to $200, which is only $27 above where Nvidia"
+  },
+  {
+   "start": 1141.85,
+   "end": 1143.45,
+   "text": "is trading at the moment."
+  },
+  {
+   "start": 1143.45,
+   "end": 1148.25,
+   "text": "I mean, this was a company that was on the cusp of being a $6 trillion company a few"
+  },
+  {
+   "start": 1148.25,
+   "end": 1152.57,
+   "text": "months ago and is now valued at $4 trillion."
+  },
+  {
+   "start": 1152.57,
+   "end": 1158.01,
+   "text": "So if the US government came in, it at least tells investors around the world, investors"
+  },
+  {
+   "start": 1158.01,
+   "end": 1162.41,
+   "text": "in the United States that this company is valuable and we're standing behind it and"
+  },
+  {
+   "start": 1162.41,
+   "end": 1169.72,
+   "text": "we'll make sure that it weathers the choppy waters here and gets back on its feet."
+  },
+  {
+   "start": 1169.72,
+   "end": 1175.16,
+   "text": "What are the next steps for a video's board and when do you expect to know for sure what"
+  },
+  {
+   "start": 1175.16,
+   "end": 1177.32,
+   "text": "Jensen Wong's faith is going to be?"
+  },
+  {
+   "start": 1177.32,
+   "end": 1181.64,
+   "text": "The next step for the board is to make this immediate decision in terms of how it's going"
+  },
+  {
+   "start": 1181.64,
+   "end": 1186.36,
+   "text": "to set up the structure going forward in terms of the leadership structure."
+  },
+  {
+   "start": 1186.36,
+   "end": 1192.08,
+   "text": "It also has to fulfill its promise to investigate Jensen Wong and it needs to proceed with that"
+  },
+  {
+   "start": 1192.08,
+   "end": 1193.08,
+   "text": "investigation."
+  },
+  {
+   "start": 1193.08,
+   "end": 1198.96,
+   "text": "They hired a lawyer earlier this week from Wachtell Lipton to do the investigation."
+  },
+  {
+   "start": 1198.96,
+   "end": 1204.04,
+   "text": "and experienced investigators, so that will need to proceed. And they'll presumably need"
+  },
+  {
+   "start": 1204.04,
+   "end": 1209.48,
+   "text": "to run an executive search process and select a new CEO for a chip company, which is not"
+  },
+  {
+   "start": 1209.48,
+   "end": 1215.08,
+   "text": "an easy thing to do. I mean, you have to find somebody who's technically knowledgeable and"
+  },
+  {
+   "start": 1215.08,
+   "end": 1219.8,
+   "text": "also experienced at leading a large enterprise. And there are not that many people like that"
+  },
+  {
+   "start": 1219.8,
+   "end": 1220.8,
+   "text": "out there in the world."
+  },
+  {
+   "start": 1220.8,
+   "end": 1227.24,
+   "text": "Right. You're saying it's not at all clear who would take Jensen Wong's place long term."
+  },
+  {
+   "start": 1227.24,
+   "end": 1230.18,
+   "text": "It doesn't sound like the board necessarily has much of a list."
+  },
+  {
+   "start": 1230.18,
+   "end": 1231.58,
+   "text": "No, no."
+  },
+  {
+   "start": 1231.58,
+   "end": 1234.36,
+   "text": "I mean, I think they'd be starting from scratch."
+  },
+  {
+   "start": 1234.36,
+   "end": 1237.54,
+   "text": "If Johnson-Wong is completely forced out of his company,"
+  },
+  {
+   "start": 1237.54,
+   "end": 1242.4,
+   "text": "is there any real risk that it impacts the future of AI,"
+  },
+  {
+   "start": 1242.4,
+   "end": 1247.1,
+   "text": "that him not being there slows this company's production"
+  },
+  {
+   "start": 1247.1,
+   "end": 1252.7,
+   "text": "of these chips and therefore slows the pace of US supremacy"
+  },
+  {
+   "start": 1252.7,
+   "end": 1254.18,
+   "text": "and AI?"
+  },
+  {
+   "start": 1254.18,
+   "end": 1255.98,
+   "text": "The companies that do business with NVIDIA,"
+  },
+  {
+   "start": 1255.98,
+   "end": 1258.42,
+   "text": "who I talked to about this dilemma,"
+  },
+  {
+   "start": 1258.42,
+   "end": 1260.58,
+   "text": "like what happens if Jensen's not there?"
+  },
+  {
+   "start": 1260.58,
+   "end": 1265.5,
+   "text": "Say that the leadership ranks at NVIDIA are solid and strong"
+  },
+  {
+   "start": 1265.5,
+   "end": 1268.46,
+   "text": "and that there can be continuity at this company,"
+  },
+  {
+   "start": 1268.46,
+   "end": 1271.74,
+   "text": "that it can continue to crank out the kind of chips"
+  },
+  {
+   "start": 1271.74,
+   "end": 1274.34,
+   "text": "and technology that we're accustomed to seeing from it"
+  },
+  {
+   "start": 1274.34,
+   "end": 1276.14,
+   "text": "with or without Jensen."
+  },
+  {
+   "start": 1276.14,
+   "end": 1277.98,
+   "text": "But it is gonna take somebody to come in"
+  },
+  {
+   "start": 1277.98,
+   "end": 1281.7,
+   "text": "and look at the leadership structure and reorganize it"
+  },
+  {
+   "start": 1281.7,
+   "end": 1285.58,
+   "text": "in a way that can work with a different CEO."
+  },
+  {
+   "start": 1285.58,
+   "end": 1289.7,
+   "text": "because this was really a structure in an organization"
+  },
+  {
+   "start": 1289.7,
+   "end": 1294.7,
+   "text": "that was developed by one man for his own purposes."
+  },
+  {
+   "start": 1294.78,
+   "end": 1299.38,
+   "text": "And it worked with him as the conductor of the orchestra,"
+  },
+  {
+   "start": 1299.38,
+   "end": 1301.8,
+   "text": "but there's no other company in the country"
+  },
+  {
+   "start": 1301.8,
+   "end": 1303.54,
+   "text": "that's structured this way."
+  },
+  {
+   "start": 1303.54,
+   "end": 1306.14,
+   "text": "Well, that brings me to my final question."
+  },
+  {
+   "start": 1306.14,
+   "end": 1309.06,
+   "text": "One thing in this whole saga feels quite certain,"
+  },
+  {
+   "start": 1309.06,
+   "end": 1312.86,
+   "text": "which is that NVIDIA's board did not plan for this day"
+  },
+  {
+   "start": 1312.86,
+   "end": 1316.34,
+   "text": "and did not push Jensen Wong to plan for this day,"
+  },
+  {
+   "start": 1316.34,
+   "end": 1318.9,
+   "text": "where he might be in serious trouble,"
+  },
+  {
+   "start": 1318.9,
+   "end": 1320.54,
+   "text": "and this judgment will be called into question,"
+  },
+  {
+   "start": 1320.54,
+   "end": 1323.22,
+   "text": "and that they might need to get rid of him."
+  },
+  {
+   "start": 1323.22,
+   "end": 1325.78,
+   "text": "And that is the job of a board of directors"
+  },
+  {
+   "start": 1325.78,
+   "end": 1327.78,
+   "text": "to come up with that kind of succession plan."
+  },
+  {
+   "start": 1327.78,
+   "end": 1330.82,
+   "text": "And so are we learning that NVIDIA,"
+  },
+  {
+   "start": 1330.82,
+   "end": 1333.7,
+   "text": "for all its success and its extraordinary influence"
+  },
+  {
+   "start": 1333.7,
+   "end": 1335.94,
+   "text": "in place in the global economy,"
+  },
+  {
+   "start": 1335.94,
+   "end": 1338.34,
+   "text": "wasn't quite ready to be the company"
+  },
+  {
+   "start": 1338.34,
+   "end": 1342.24,
+   "text": "that it has become in our global economy?"
+  },
+  {
+   "start": 1342.24,
+   "end": 1346.0,
+   "text": "Yes, and making matters worse, you know,"
+  },
+  {
+   "start": 1346.0,
+   "end": 1347.92,
+   "text": "in addition to not having the internal structure"
+  },
+  {
+   "start": 1347.92,
+   "end": 1351.36,
+   "text": "to get through some of this easily,"
+  },
+  {
+   "start": 1351.36,
+   "end": 1353.66,
+   "text": "is the fact that the company has put themselves"
+  },
+  {
+   "start": 1353.66,
+   "end": 1357.96,
+   "text": "at the epicenter of the entire AI boom."
+  },
+  {
+   "start": 1357.96,
+   "end": 1360.8,
+   "text": "I mean, they have been investing in startups."
+  },
+  {
+   "start": 1360.8,
+   "end": 1363.76,
+   "text": "They have been funding data center buildouts."
+  },
+  {
+   "start": 1363.76,
+   "end": 1366.96,
+   "text": "They have been backstopping financiers"
+  },
+  {
+   "start": 1366.96,
+   "end": 1369.16,
+   "text": "who are helping build data centers."
+  },
+  {
+   "start": 1369.16,
+   "end": 1372.08,
+   "text": "They have been putting their foot on the gas"
+  },
+  {
+   "start": 1372.08,
+   "end": 1375.0,
+   "text": "and making this entire thing go."
+  },
+  {
+   "start": 1375.0,
+   "end": 1379.04,
+   "text": "And now the guy who was the main guy putting his foot down"
+  },
+  {
+   "start": 1379.04,
+   "end": 1380.84,
+   "text": "may be pulled out of the equation."
+  },
+  {
+   "start": 1380.84,
+   "end": 1383.52,
+   "text": "And that begs the question, if overall this time"
+  },
+  {
+   "start": 1383.52,
+   "end": 1385.32,
+   "text": "and we've been thinking about,"
+  },
+  {
+   "start": 1385.32,
+   "end": 1387.32,
+   "text": "what could make the AI bubble burst?"
+  },
+  {
+   "start": 1387.32,
+   "end": 1390.28,
+   "text": "And we've asked about startups that don't fulfill"
+  },
+  {
+   "start": 1390.28,
+   "end": 1392.88,
+   "text": "on their potential, we've asked about-"
+  },
+  {
+   "start": 1392.88,
+   "end": 1394.48,
+   "text": "AI agents going rogue."
+  },
+  {
+   "start": 1394.48,
+   "end": 1397.56,
+   "text": "AI agents going rogue, data centers not being built"
+  },
+  {
+   "start": 1397.56,
+   "end": 1402.39,
+   "text": "because of moratoriums and policy."
+  },
+  {
+   "start": 1402.39,
+   "end": 1411.55,
+   "text": "What if it actually all comes down to one executive's poor judgment?"
+  },
+  {
+   "start": 1411.55,
+   "end": 1414.82,
+   "text": "Well, Tripp, get some sleep, and we'll talk to you soon."
+  },
+  {
+   "start": 1414.82,
+   "end": 1415.46,
+   "text": "Appreciate it."
+  },
+  {
+   "start": 1415.46,
+   "end": 1426.7,
+   "text": "Thanks so much."
+  },
+  {
+   "start": 1426.7,
+   "end": 1431.46,
+   "text": "In a statement on Thursday morning, NVIDIA's board said that the company's chief financial"
+  },
+  {
+   "start": 1431.46,
+   "end": 1437.54,
+   "text": "officer, Colette Cress, would serve as interim chief executive until a permanent successor"
+  },
+  {
+   "start": 1437.54,
+   "end": 1441.16,
+   "text": "to Jensen Wong is named."
+  },
+  {
+   "start": 1441.16,
+   "end": 1446.92,
+   "text": "When the stock market opened a few hours later, NVIDIA's share price plunged by about"
+  },
+  {
+   "start": 1446.92,
+   "end": 1457.56,
+   "text": "11%. We'll be right back."
+  },
+  {
+   "start": 1484.44,
+   "end": 1485.44,
+   "text": "is subject to change."
+  },
+  {
+   "start": 1485.44,
+   "end": 1487.44,
+   "text": "See CapitalOne.com for details."
+  },
+  {
+   "start": 1514.44,
+   "end": 1516.28,
+   "text": "and in communities like yours."
+  },
+  {
+   "start": 1516.28,
+   "end": 1518.58,
+   "text": "Your gift today is triple matched."
+  },
+  {
+   "start": 1518.58,
+   "end": 1521.84,
+   "text": "Donate at wilderness.org slash donation."
+  },
+  {
+   "start": 1521.84,
+   "end": 1523.8,
+   "text": "As the original biotech company,"
+  },
+  {
+   "start": 1523.8,
+   "end": 1525.92,
+   "text": "Genentech has spent the last 50 years"
+  },
+  {
+   "start": 1525.92,
+   "end": 1527.64,
+   "text": "pushing scientific boundaries"
+  },
+  {
+   "start": 1527.64,
+   "end": 1528.96,
+   "text": "and redefining what's possible"
+  },
+  {
+   "start": 1528.96,
+   "end": 1531.88,
+   "text": "by continuously challenging the status quo."
+  },
+  {
+   "start": 1531.88,
+   "end": 1534.24,
+   "text": "They've been at the forefront of more than 40 breakthroughs"
+  },
+  {
+   "start": 1534.24,
+   "end": 1535.84,
+   "text": "across various diseases,"
+  },
+  {
+   "start": 1535.84,
+   "end": 1538.64,
+   "text": "including multiple sclerosis, cancer, vision loss,"
+  },
+  {
+   "start": 1538.64,
+   "end": 1539.76,
+   "text": "and food allergies."
+  },
+  {
+   "start": 1539.76,
+   "end": 1541.2,
+   "text": "And these breakthroughs in the lab"
+  },
+  {
+   "start": 1541.2,
+   "end": 1543.92,
+   "text": "allow for greater breakthroughs in patients' lives."
+  },
+  {
+   "start": 1543.92,
+   "end": 1547.48,
+   "text": "Whether it's getting back to familiar routines or creating new ones,"
+  },
+  {
+   "start": 1547.48,
+   "end": 1551.22,
+   "text": "learn more about Genentech's lasting impact at gene.com."
+  },
+  {
+   "start": 1551.22,
+   "end": 1553.72,
+   "text": "That's G-E-N-E.com."
+  },
+  {
+   "start": 1556.95,
+   "end": 1559.95,
+   "text": "Here's what else you need to know today."
+  },
+  {
+   "start": 1559.95,
+   "end": 1562.99,
+   "text": "God didn't want us to get it the easy way."
+  },
+  {
+   "start": 1562.99,
+   "end": 1566.33,
+   "text": "He wanted us to get it the Mississippi way."
+  },
+  {
+   "start": 1566.33,
+   "end": 1569.69,
+   "text": "On Wednesday night, after more than a week of vote counting,"
+  },
+  {
+   "start": 1569.69,
+   "end": 1575.07,
+   "text": "Democrats Scott Cologne was declared the winner of the U.S. Senate seat in Mississippi,"
+  },
+  {
+   "start": 1575.07,
+   "end": 1580.83,
+   "text": "Making him the first black senator from the state in nearly 150 years,"
+  },
+  {
+   "start": 1580.83,
+   "end": 1584.67,
+   "text": "and the state's first Democratic senator in decades."
+  },
+  {
+   "start": 1584.67,
+   "end": 1589.31,
+   "text": "His narrow victory over incumbent Republican Cindy Hyde Smith"
+  },
+  {
+   "start": 1589.31,
+   "end": 1592.99,
+   "text": "highlights just how much success Democrats had this year"
+  },
+  {
+   "start": 1592.99,
+   "end": 1598.59,
+   "text": "in heavily Republican states, including Texas, Iowa, and Kansas."
+  },
+  {
+   "start": 1598.59,
+   "end": 1603.71,
+   "text": "Democrats now have a 55-seat majority in the U.S. Senate."
+  },
+  {
+   "start": 1603.71,
+   "end": 1606.83,
+   "text": "It's not something that I did y'all."
+  },
+  {
+   "start": 1606.83,
+   "end": 1615.17,
+   "text": "It's something that we did."
+  },
+  {
+   "start": 1615.17,
+   "end": 1620.17,
+   "text": "I did was have the courage to imagine a night like this."
+  },
+  {
+   "start": 1621.77,
+   "end": 1625.83,
+   "text": "I had the courage to believe in Mississippi."
+  },
+  {
+   "start": 1625.83,
+   "end": 1628.51,
+   "text": "I had the courage to understand"
+  },
+  {
+   "start": 1628.51,
+   "end": 1631.99,
+   "text": "that we could show the country that Mississippi matters."
+  },
+  {
+   "start": 1640.88,
+   "end": 1645.44,
+   "text": "Tide's episode was produced by Diana Nguyen and Eric Krupke."
+  },
+  {
+   "start": 1645.44,
+   "end": 1652.08,
+   "text": "It was edited by Mark George, contains music by Dan Powell and Mary and Lazzano, and was"
+  },
+  {
+   "start": 1652.08,
+   "end": 1654.72,
+   "text": "engineered by Alyssa Moxley."
+  },
+  {
+   "start": 1654.72,
+   "end": 1658.26,
+   "text": "Our theme music is by Wonderly."
+  },
+  {
+   "start": 1658.26,
+   "end": 1660.26,
+   "text": "Special thanks to Erin Griffith."
+  },
+  {
+   "start": 1660.26,
+   "end": 1673.32,
+   "text": "That's it for the Daily."
+  },
+  {
+   "start": 1673.32,
+   "end": 1674.32,
+   "text": "I'm Micah Barbaro."
+  },
+  {
+   "start": 1674.32,
+   "end": 1675.7,
+   "text": "See you tomorrow."
+  },
+  {
+   "start": 1675.7,
+   "end": 1685.15,
+   "text": "Brought to you by the Capital One Saver card."
+  },
+  {
+   "start": 1685.15,
+   "end": 1690.79,
+   "text": "With Saver, you earn unlimited 3% cashback on dining, entertainment, and at grocery stores."
+  },
+  {
+   "start": 1690.79,
+   "end": 1693.63,
+   "text": "on limited cashback on ordering takeout from home,"
+  },
+  {
+   "start": 1693.63,
+   "end": 1696.95,
+   "text": "or unlimited cashback on tickets to concerts and games."
+  },
+  {
+   "start": 1696.95,
+   "end": 1698.99,
+   "text": "So grab a bite, grab a seat,"
+  },
+  {
+   "start": 1698.99,
+   "end": 1702.19,
+   "text": "and earn unlimited 3% cashback with the Saber card."
+  },
+  {
+   "start": 1702.19,
+   "end": 1704.35,
+   "text": "Capital One, what's in your wallet?"
+  },
+  {
+   "start": 1704.35,
+   "end": 1707.43,
+   "text": "Terms apply, see capitalone.com for details."
+  }
+ ],
+ "seconds": 40.5,
+ "file": "the-daily__what-jensen-huang-s-resignation-will-mean/take1.mp3",
+ "model": "small"
+}

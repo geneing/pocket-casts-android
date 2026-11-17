@@ -19,6 +19,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.distinctUntilChangedBy
+import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.sample
 import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
@@ -31,6 +32,9 @@ class ChapterManagerImpl @Inject constructor(
     private val generatedChaptersAvailability: GeneratedChaptersAvailability,
 ) : ChapterManager {
     private var unalignedLogEpisodeUuid: String? = null
+
+    @Volatile
+    private var lastChaptersLog = ""
 
     override suspend fun updateChapters(
         episodeUuid: String,
@@ -68,7 +72,13 @@ class ChapterManagerImpl @Inject constructor(
 
         // Generated chapter timestamps are in the server reference timeline; align them to the real audio
         // stream via the fingerprint map. Phone only, to spare resources on automotive/wear.
-        if (appPlatform != AppPlatform.Phone) return rawChapters
+        if (appPlatform != AppPlatform.Phone) {
+            LogBuffer.i(
+                LogBuffer.TAG_PLAYBACK,
+                "Observing chapters for $episodeUuid without fingerprint alignment (platform=$appPlatform)",
+            )
+            return rawChapters.onEach { logChaptersRead(episodeUuid, it) }
+        }
 
         // -1L primes combine so chapters emit immediately, before sample's first throttled tick.
         val mappingTicks = fingerprintTimingManager.get().mappingVersion
@@ -76,7 +86,35 @@ class ChapterManagerImpl @Inject constructor(
             .onStart { emit(-1L) }
         return combine(rawChapters, mappingTicks) { chapters, _ ->
             alignGeneratedChapters(episodeUuid, chapters)
-        }.distinctUntilChanged()
+        }
+            .distinctUntilChanged()
+            .onEach { logChaptersRead(episodeUuid, it) }
+    }
+
+    private fun logChaptersRead(episodeUuid: String, chapters: Chapters) {
+        val manager = fingerprintTimingManager.get()
+        val hasMapping = appPlatform == AppPlatform.Phone &&
+            manager.activeEpisodeUuid == episodeUuid &&
+            manager.mappingSnapshot.isNotEmpty()
+        val generatedCount = chapters.count { it.isGenerated }
+        val signature = buildString {
+            append(episodeUuid)
+            append(':').append(chapters.size)
+            append(':').append(chapters.origin)
+            append(':').append(generatedCount)
+            append(':').append(chapters.hasHiddenGeneratedChapters)
+            append(':').append(hasMapping)
+        }
+        if (signature == lastChaptersLog) {
+            return
+        }
+        lastChaptersLog = signature
+        LogBuffer.i(
+            LogBuffer.TAG_PLAYBACK,
+            "Chapters read for $episodeUuid: ${chapters.size} total, origin=${chapters.origin}, " +
+                "generated=$generatedCount, hiddenGenerated=${chapters.hasHiddenGeneratedChapters}, " +
+                "fingerprintMap=$hasMapping",
+        )
     }
 
     /**
@@ -85,12 +123,21 @@ class ChapterManagerImpl @Inject constructor(
      */
     private fun alignGeneratedChapters(episodeUuid: String, chapters: Chapters): Chapters {
         val manager = fingerprintTimingManager.get()
-        if (manager.activeEpisodeUuid != episodeUuid || manager.mappingSnapshot.isEmpty()) {
+        val hasMapping = manager.activeEpisodeUuid == episodeUuid && manager.mappingSnapshot.isNotEmpty()
+        if (!hasMapping) {
             if (chapters.hasGeneratedChapters && unalignedLogEpisodeUuid != episodeUuid) {
                 unalignedLogEpisodeUuid = episodeUuid
                 LogBuffer.i(LogBuffer.TAG_PLAYBACK, "Generated chapters for $episodeUuid are unaligned: no fingerprint mapping available")
             }
             return chapters
+        }
+        if (unalignedLogEpisodeUuid == episodeUuid) {
+            unalignedLogEpisodeUuid = null
+            LogBuffer.i(
+                LogBuffer.TAG_PLAYBACK,
+                "Fingerprint mapping available for $episodeUuid (${manager.mappingSnapshot.size} entries), " +
+                    "aligning generated chapters",
+            )
         }
         return alignGeneratedChapters(chapters) { reference ->
             manager.playbackTimeMs(reference.toDouble(DurationUnit.SECONDS))?.milliseconds

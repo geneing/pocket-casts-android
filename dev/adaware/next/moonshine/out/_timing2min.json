@@ -1,0 +1,53 @@
+{
+ "hardware": {
+  "cpu": "Intel(R) Core(TM) Ultra 9 185H",
+  "threads": 22,
+  "loadavg": [
+   33.19140625,
+   24.26953125,
+   17.46044921875
+  ],
+  "ort_providers": "CPUExecutionProvider (only provider in the linux x86_64 libmoonshine.so)",
+  "gpu_used": false,
+  "python": "3.12.10",
+  "kernel": "6.18.58.1-microsoft-standard-WSL2"
+ },
+ "runs": [
+  {
+   "mode": "batch",
+   "chunk_s": null,
+   "audio_seconds": 120.0,
+   "wall_seconds": 8.49,
+   "rtf": 14.141,
+   "n_words": 318,
+   "n_lines": 22
+  },
+  {
+   "mode": "streaming",
+   "chunk_s": 0.5,
+   "audio_seconds": 120.0,
+   "wall_seconds": 51.71,
+   "rtf": 2.321,
+   "n_words": 317,
+   "n_lines": 22
+  },
+  {
+   "mode": "streaming",
+   "chunk_s": 1.0,
+   "audio_seconds": 120.0,
+   "wall_seconds": 33.34,
+   "rtf": 3.599,
+   "n_words": 314,
+   "n_lines": 22
+  },
+  {
+   "mode": "streaming",
+   "chunk_s": 2.0,
+   "audio_seconds": 120.0,
+   "wall_seconds": 24.1,
+   "rtf": 4.979,
+   "n_words": 317,
+   "n_lines": 22
+  }
+ ]
+}

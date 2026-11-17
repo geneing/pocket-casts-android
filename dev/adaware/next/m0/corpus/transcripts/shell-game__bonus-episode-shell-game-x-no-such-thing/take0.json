@@ -1,0 +1,5729 @@
+{
+ "duration": 3548.47,
+ "language": "en",
+ "segments": [
+  {
+   "start": 0.0,
+   "end": 2.57,
+   "text": "This is an iHeart podcast."
+  },
+  {
+   "start": 2.57,
+   "end": 4.42,
+   "text": "Guaranteed human."
+  },
+  {
+   "start": 4.42,
+   "end": 7.18,
+   "text": "Are you ever shopping online and suddenly a discount"
+  },
+  {
+   "start": 7.18,
+   "end": 8.78,
+   "text": "that helps you save pops up?"
+  },
+  {
+   "start": 8.78,
+   "end": 11.94,
+   "text": "It makes your day, sometimes even your week."
+  },
+  {
+   "start": 11.94,
+   "end": 14.06,
+   "text": "Want that feeling month after month?"
+  },
+  {
+   "start": 14.06,
+   "end": 16.34,
+   "text": "Well, new customers who save by switching their home"
+  },
+  {
+   "start": 16.34,
+   "end": 19.06,
+   "text": "and auto insurance to progressive save hundreds."
+  },
+  {
+   "start": 19.06,
+   "end": 21.34,
+   "text": "Cue your happy dance."
+  },
+  {
+   "start": 21.34,
+   "end": 23.9,
+   "text": "Get your quote today at progressive.com."
+  },
+  {
+   "start": 23.9,
+   "end": 26.14,
+   "text": "Progressive Casualty Insurance Company affiliates"
+  },
+  {
+   "start": 26.14,
+   "end": 29.62,
+   "text": "and other insurers, not available in all states."
+  },
+  {
+   "start": 29.62,
+   "end": 32.14,
+   "text": "The Wired Newsroom is known for award-winning reporting"
+  },
+  {
+   "start": 32.14,
+   "end": 34.3,
+   "text": "on how technology shapes our world."
+  },
+  {
+   "start": 34.3,
+   "end": 35.66,
+   "text": "On Wired's Uncanny Valley,"
+  },
+  {
+   "start": 35.66,
+   "end": 38.14,
+   "text": "we take that curiosity even further."
+  },
+  {
+   "start": 38.14,
+   "end": 39.86,
+   "text": "Each week, journalists from Wired break down"
+  },
+  {
+   "start": 39.86,
+   "end": 41.16,
+   "text": "the biggest stories in tech,"
+  },
+  {
+   "start": 41.16,
+   "end": 43.14,
+   "text": "while speaking directly with the people building,"
+  },
+  {
+   "start": 43.14,
+   "end": 45.86,
+   "text": "challenging, and reshaping the future."
+  },
+  {
+   "start": 45.86,
+   "end": 47.74,
+   "text": "Is the AI boom sustainable?"
+  },
+  {
+   "start": 47.74,
+   "end": 48.9,
+   "text": "How do you protect your privacy"
+  },
+  {
+   "start": 48.9,
+   "end": 51.02,
+   "text": "in an age of constant surveillance?"
+  },
+  {
+   "start": 51.02,
+   "end": 52.66,
+   "text": "Uncanny Valley tackles the questions"
+  },
+  {
+   "start": 52.66,
+   "end": 55.94,
+   "text": "driving today's tech debates and lighting up your group chats."
+  },
+  {
+   "start": 55.94,
+   "end": 58.1,
+   "text": "Listen to new episodes every Thursday,"
+  },
+  {
+   "start": 58.1,
+   "end": 59.6,
+   "text": "wherever you get your podcasts."
+  },
+  {
+   "start": 59.62,
+   "end": 64.02,
+   "text": "Hey everyone, I'm Jamie Lynn Sigler."
+  },
+  {
+   "start": 64.02,
+   "end": 66.78,
+   "text": "When I got my diagnosis, I was in my 20s"
+  },
+  {
+   "start": 66.78,
+   "end": 70.3,
+   "text": "and it turned my whole world upside down."
+  },
+  {
+   "start": 70.3,
+   "end": 73.46,
+   "text": "But over time, I decided I wasn't going to let it"
+  },
+  {
+   "start": 73.46,
+   "end": 75.62,
+   "text": "hold me back from my life."
+  },
+  {
+   "start": 75.62,
+   "end": 77.62,
+   "text": "I decided to take charge."
+  },
+  {
+   "start": 77.62,
+   "end": 80.74,
+   "text": "And after talking to my doctor about my options,"
+  },
+  {
+   "start": 80.74,
+   "end": 83.06,
+   "text": "the choice for me was obvious."
+  },
+  {
+   "start": 83.06,
+   "end": 85.66,
+   "text": "Boom, that's Kisimta."
+  },
+  {
+   "start": 85.66,
+   "end": 87.3,
+   "text": "Learn more about Kisimta,"
+  },
+  {
+   "start": 87.3,
+   "end": 92.48,
+   "text": "ophatumamab, at kisimta.com."
+  },
+  {
+   "start": 92.48,
+   "end": 123.91,
+   "text": "Hey folks, Evan here with another Shell Game Bonus."
+  },
+  {
+   "start": 123.91,
+   "end": 128.87,
+   "text": "episode for you. This time, it's with our friends over at the fantastic podcast, No"
+  },
+  {
+   "start": 128.87,
+   "end": 133.27,
+   "text": "Such Thing. If you don't know it, No Such Thing is hosted by three friends, Manny,"
+  },
+  {
+   "start": 133.27,
+   "end": 137.91,
+   "text": "Devin, and Noah. And in each episode, they try to settle their arguments by"
+  },
+  {
+   "start": 137.91,
+   "end": 141.63,
+   "text": "consulting research and experts. This week, the argument was about whether AI"
+  },
+  {
+   "start": 141.63,
+   "end": 147.11,
+   "text": "will take our jobs. The expert was Maddie. I came along as well, and we talked"
+  },
+  {
+   "start": 147.11,
+   "end": 151.51,
+   "text": "about seasons one and two of Shell Game, working with AI agents, bullshit jobs,"
+  },
+  {
+   "start": 151.51,
+   "end": 154.83,
+   "text": "Offsite planning and much more."
+  },
+  {
+   "start": 154.83,
+   "end": 158.03,
+   "text": "Also Ben Affleck talked about him too."
+  },
+  {
+   "start": 158.03,
+   "end": 160.59,
+   "text": "It was a great conversation and if you liked season two,"
+  },
+  {
+   "start": 160.59,
+   "end": 161.75,
+   "text": "I think you'll dig it."
+  },
+  {
+   "start": 161.75,
+   "end": 163.99,
+   "text": "So here's Maddie and me on No Such Thing."
+  },
+  {
+   "start": 176.03,
+   "end": 177.03,
+   "text": "I'm Noah."
+  },
+  {
+   "start": 177.03,
+   "end": 179.15,
+   "text": "I'm Devin and this is No Such Thing."
+  },
+  {
+   "start": 179.15,
+   "end": 181.75,
+   "text": "The show we set up our dumb arguments in yours"
+  },
+  {
+   "start": 181.75,
+   "end": 183.51,
+   "text": "by actually doing the research."
+  },
+  {
+   "start": 183.51,
+   "end": 189.43,
+   "text": "On today's episode, will AI take our jobs?"
+  },
+  {
+   "start": 189.43,
+   "end": 191.35,
+   "text": "I've no, there's no such thing."
+  },
+  {
+   "start": 191.35,
+   "end": 193.19,
+   "text": "No such thing."
+  },
+  {
+   "start": 194.95,
+   "end": 196.19,
+   "text": "Such a thing."
+  },
+  {
+   "start": 196.19,
+   "end": 212.08,
+   "text": "Such a thing."
+  },
+  {
+   "start": 212.08,
+   "end": 215.64,
+   "text": "So it seems like every week I'm reading headlines,"
+  },
+  {
+   "start": 215.64,
+   "end": 218.48,
+   "text": "or seeing interviews about how AI is going to take"
+  },
+  {
+   "start": 218.48,
+   "end": 219.8,
+   "text": "every single one of our jobs."
+  },
+  {
+   "start": 219.8,
+   "end": 222.76,
+   "text": "Thousands of new layoffs in the tech industry,"
+  },
+  {
+   "start": 222.76,
+   "end": 226.32,
+   "text": "and the companies say it's largely because of AI."
+  },
+  {
+   "start": 226.32,
+   "end": 228.64,
+   "text": "Even with AI at its current state,"
+  },
+  {
+   "start": 228.64,
+   "end": 232.22,
+   "text": "I'd say you're pretty close to being able to replace"
+  },
+  {
+   "start": 232.22,
+   "end": 234.1,
+   "text": "half-full jobs."
+  },
+  {
+   "start": 234.1,
+   "end": 236.5,
+   "text": "So on today's episode, we're going"
+  },
+  {
+   "start": 236.5,
+   "end": 238.42,
+   "text": "to take a peek under the hood just"
+  },
+  {
+   "start": 238.42,
+   "end": 242.66,
+   "text": "to see how close AI is to actually replacing us."
+  },
+  {
+   "start": 242.66,
+   "end": 244.5,
+   "text": "And we're gonna chat with two guys"
+  },
+  {
+   "start": 244.5,
+   "end": 249.5,
+   "text": "who started a real company run entirely by AI agents."
+  },
+  {
+   "start": 252.07,
+   "end": 254.87,
+   "text": "But before we do that,"
+  },
+  {
+   "start": 254.87,
+   "end": 257.75,
+   "text": "we're gonna call up our good pal Manny."
+  },
+  {
+   "start": 257.75,
+   "end": 259.23,
+   "text": "So if you missed it,"
+  },
+  {
+   "start": 259.23,
+   "end": 262.19,
+   "text": "Manny's been out for a few weeks on paternity leave"
+  },
+  {
+   "start": 262.19,
+   "end": 264.03,
+   "text": "after he and his wife Mia"
+  },
+  {
+   "start": 264.03,
+   "end": 268.35,
+   "text": "welcomed a beautiful baby girl, Lula, last month."
+  },
+  {
+   "start": 268.35,
+   "end": 273.27,
+   "text": "So let's give Manny a call to see how Parenthood is treating him."
+  },
+  {
+   "start": 275.46,
+   "end": 276.34,
+   "text": "Hey, this is Manny."
+  },
+  {
+   "start": 276.7,
+   "end": 277.26,
+   "text": "Hey, Manny."
+  },
+  {
+   "start": 278.5,
+   "end": 279.66,
+   "text": "Hey, what's going on?"
+  },
+  {
+   "start": 280.61,
+   "end": 281.73,
+   "text": "Not much, man."
+  },
+  {
+   "start": 281.77,
+   "end": 282.97,
+   "text": "We're in a studio."
+  },
+  {
+   "start": 283.01,
+   "end": 284.93,
+   "text": "It's me and Noah here recording."
+  },
+  {
+   "start": 284.97,
+   "end": 288.33,
+   "text": "Um, just wanted to check in and see how are things going with the baby?"
+  },
+  {
+   "start": 289.5,
+   "end": 292.74,
+   "text": "Oh man, things are, uh, they're wild in the best possible way."
+  },
+  {
+   "start": 292.98,
+   "end": 294.82,
+   "text": "Lula's got us completely recalibrated."
+  },
+  {
+   "start": 295.02,
+   "end": 298.14,
+   "text": "Like I used to think I understood time, you know, I'm literally writing a book"
+  },
+  {
+   "start": 298.14,
+   "end": 300.74,
+   "text": "about it, but baby time is its own dimension entirely."
+  },
+  {
+   "start": 300.94,
+   "end": 303.5,
+   "text": "We're operating on nap schedules and feeding windows now,"
+  },
+  {
+   "start": 303.5,
+   "end": 307.02,
+   "text": "and honestly, it makes everything I thought I knew about punctuality seem quaint."
+  },
+  {
+   "start": 307.02,
+   "end": 309.7,
+   "text": "But yeah, she's amazing. Exhausting, but amazing."
+  },
+  {
+   "start": 309.7,
+   "end": 311.82,
+   "text": "How are things in the studio with you guys?"
+  },
+  {
+   "start": 311.82,
+   "end": 317.62,
+   "text": "Things are great. We just trucking along. We miss you."
+  },
+  {
+   "start": 317.62,
+   "end": 321.38,
+   "text": "I hope everything's good with you and the fam."
+  },
+  {
+   "start": 321.38,
+   "end": 324.63,
+   "text": "I know your parents are visiting. How did that go?"
+  },
+  {
+   "start": 324.63,
+   "end": 326.91,
+   "text": "Man, I really appreciate that."
+  },
+  {
+   "start": 326.91,
+   "end": 329.99,
+   "text": "Miss you guys too. Honestly, sometimes I'm like, wait, what day is it?"
+  },
+  {
+   "start": 329.99,
+   "end": 333.59,
+   "text": "And then I remember I'm supposed to be a functional adult who co-hosts the podcast."
+  },
+  {
+   "start": 334.15,
+   "end": 336.59,
+   "text": "Yeah, my parents visiting was it was actually great."
+  },
+  {
+   "start": 336.59,
+   "end": 339.89,
+   "text": "You know, there's something surreal about watching your parents meet your kid."
+  },
+  {
+   "start": 340.09,
+   "end": 342.55,
+   "text": "Like suddenly you're seeing them in this whole new light"
+  },
+  {
+   "start": 342.55,
+   "end": 344.63,
+   "text": "and they're doing that thing where they give you advice"
+  },
+  {
+   "start": 344.63,
+   "end": 346.69,
+   "text": "that you definitely ignored when you were younger."
+  },
+  {
+   "start": 346.69,
+   "end": 348.93,
+   "text": "But now you're like, oh, wait, that's actually useful."
+  },
+  {
+   "start": 349.19,
+   "end": 351.23,
+   "text": "It's been good, though, chaotic, but good."
+  },
+  {
+   "start": 351.39,
+   "end": 353.09,
+   "text": "How's Noah holding down the fort?"
+  },
+  {
+   "start": 353.09,
+   "end": 356.23,
+   "text": "And, you know, he's all right."
+  },
+  {
+   "start": 356.23,
+   "end": 358.09,
+   "text": "You know, he's doing OK."
+  },
+  {
+   "start": 358.09,
+   "end": 359.97,
+   "text": "Let's put it that way."
+  },
+  {
+   "start": 359.97,
+   "end": 361.97,
+   "text": "I don't got too many kind things to say about Noah."
+  },
+  {
+   "start": 361.97,
+   "end": 363.97,
+   "text": "Not on Mike yet."
+  },
+  {
+   "start": 363.97,
+   "end": 366.48,
+   "text": "Don't really like that guy."
+  },
+  {
+   "start": 366.48,
+   "end": 369.7,
+   "text": "Ha! Oh man, I love that energy."
+  },
+  {
+   "start": 369.7,
+   "end": 373.7,
+   "text": "Nothing says we're a functional team, like barely tolerating your co-worker, right?"
+  },
+  {
+   "start": 373.7,
+   "end": 376.7,
+   "text": "That's honestly the foundation of every great creative partnership."
+  },
+  {
+   "start": 376.7,
+   "end": 380.7,
+   "text": "Just simmering resentment in the occasional moment of begrudging respect."
+  },
+  {
+   "start": 380.7,
+   "end": 381.7,
+   "text": "What do you do this time?"
+  },
+  {
+   "start": 381.7,
+   "end": 384.7,
+   "text": "Did he like pitch another segment idea that made you question everything?"
+  },
+  {
+   "start": 384.7,
+   "end": 387.7,
+   "text": "Or is this just general Noah being Noah's stuff?"
+  },
+  {
+   "start": 387.7,
+   "end": 389.7,
+   "text": "Just generally, I don't like the guy."
+  },
+  {
+   "start": 389.7,
+   "end": 393.66,
+   "text": "Just for resentment."
+  },
+  {
+   "start": 393.66,
+   "end": 398.82,
+   "text": "Real quick, Manny, we're going to start this episode with a hot take."
+  },
+  {
+   "start": 398.82,
+   "end": 400.94,
+   "text": "Give us your latest hot take."
+  },
+  {
+   "start": 400.94,
+   "end": 403.45,
+   "text": "Oh, man."
+  },
+  {
+   "start": 403.45,
+   "end": 404.45,
+   "text": "Okay."
+  },
+  {
+   "start": 404.45,
+   "end": 405.45,
+   "text": "A hot take right off the top."
+  },
+  {
+   "start": 405.45,
+   "end": 406.45,
+   "text": "All right."
+  },
+  {
+   "start": 406.45,
+   "end": 407.45,
+   "text": "Here we go."
+  },
+  {
+   "start": 407.45,
+   "end": 411.73,
+   "text": "I think we've all collectively decided that being busy is a personality trait, and it's"
+  },
+  {
+   "start": 411.73,
+   "end": 414.53,
+   "text": "made us worse at literally everything."
+  },
+  {
+   "start": 414.53,
+   "end": 416.05,
+   "text": "Everyone's always like, oh, I'm so slammed."
+  },
+  {
+   "start": 416.05,
+   "end": 417.33,
+   "text": "I'm so overwhelmed."
+  },
+  {
+   "start": 417.33,
+   "end": 418.89,
+   "text": "But then we also brag about it."
+  },
+  {
+   "start": 418.89,
+   "end": 423.89,
+   "text": "It's become this weird flex where if you're not drowning, you're somehow not important enough."
+  },
+  {
+   "start": 423.89,
+   "end": 426.69,
+   "text": "And the thing is nothing actually good comes from that state."
+  },
+  {
+   "start": 426.69,
+   "end": 431.39,
+   "text": "Like all the best ideas, the best conversations, the best work, it happens when you have space to think."
+  },
+  {
+   "start": 431.39,
+   "end": 434.79,
+   "text": "But we've built this whole culture around glorifying chaos,"
+  },
+  {
+   "start": 434.79,
+   "end": 439.19,
+   "text": "and then we wonder why everything feels half-baked and nobody can focus for more than 30 seconds."
+  },
+  {
+   "start": 439.19,
+   "end": 443.89,
+   "text": "I don't know, maybe that's just me projecting because I'm on paternity leave and realizing that"
+  },
+  {
+   "start": 443.89,
+   "end": 446.79,
+   "text": "doing less is actually kind of revolutionary."
+  },
+  {
+   "start": 446.79,
+   "end": 449.15,
+   "text": "How's that too spicy for the top of the show?"
+  },
+  {
+   "start": 450.0,
+   "end": 450.84,
+   "text": "I think that's okay."
+  },
+  {
+   "start": 450.84,
+   "end": 452.44,
+   "text": "It's not that spicy."
+  },
+  {
+   "start": 452.44,
+   "end": 452.88,
+   "text": "It's okay."
+  },
+  {
+   "start": 453.0,
+   "end": 453.6,
+   "text": "That's a good one."
+  },
+  {
+   "start": 453.6,
+   "end": 454.24,
+   "text": "Thanks, Manny."
+  },
+  {
+   "start": 456.47,
+   "end": 456.83,
+   "text": "All right, man."
+  },
+  {
+   "start": 456.83,
+   "end": 460.95,
+   "text": "Yeah, no problem before I can't promise fire every time before we let you go."
+  },
+  {
+   "start": 460.95,
+   "end": 461.31,
+   "text": "Time."
+  },
+  {
+   "start": 461.59,
+   "end": 462.39,
+   "text": "I know you're tight."
+  },
+  {
+   "start": 462.39,
+   "end": 462.75,
+   "text": "You're tight."
+  },
+  {
+   "start": 462.75,
+   "end": 463.63,
+   "text": "You're limited on time."
+  },
+  {
+   "start": 463.63,
+   "end": 469.87,
+   "text": "You've constantly been telling us that you you're very busy and your, your brain's not working."
+  },
+  {
+   "start": 470.27,
+   "end": 476.23,
+   "text": "But, um, one last question before you go, who is the better co-host?"
+  },
+  {
+   "start": 476.51,
+   "end": 477.87,
+   "text": "Me, Devin?"
+  },
+  {
+   "start": 478.07,
+   "end": 480.41,
+   "text": "Or this man across from me, Noah."
+  },
+  {
+   "start": 480.41,
+   "end": 485.13,
+   "text": "Oh man, you're really going to make me do this?"
+  },
+  {
+   "start": 485.13,
+   "end": 486.13,
+   "text": "Yep."
+  },
+  {
+   "start": 486.13,
+   "end": 487.13,
+   "text": "All right."
+  },
+  {
+   "start": 487.13,
+   "end": 488.63,
+   "text": "Look, I'm going to say this with all the love in the world."
+  },
+  {
+   "start": 488.63,
+   "end": 489.63,
+   "text": "It's you."
+  },
+  {
+   "start": 489.63,
+   "end": 490.63,
+   "text": "It's definitely you."
+  },
+  {
+   "start": 490.63,
+   "end": 494.61,
+   "text": "Noah's great and all, but you just said you don't even like the guy, so I feel like I'm"
+  },
+  {
+   "start": 494.61,
+   "end": 496.13,
+   "text": "on solid ground here."
+  },
+  {
+   "start": 496.13,
+   "end": 498.93,
+   "text": "Plus, you're the one who called to check in on me and the baby."
+  },
+  {
+   "start": 498.93,
+   "end": 501.13,
+   "text": "So that's just good co-host energy right there."
+  },
+  {
+   "start": 501.13,
+   "end": 502.13,
+   "text": "Exactly."
+  },
+  {
+   "start": 502.13,
+   "end": 504.33,
+   "text": "Noah's probably over there doing, I don't know, whatever Noah does."
+  },
+  {
+   "start": 504.33,
+   "end": 505.33,
+   "text": "Being Noah."
+  },
+  {
+   "start": 505.33,
+   "end": 506.33,
+   "text": "But yeah, you win."
+  },
+  {
+   "start": 506.33,
+   "end": 508.13,
+   "text": "Don't let it go to your head though."
+  },
+  {
+   "start": 508.13,
+   "end": 509.13,
+   "text": "Thank you."
+  },
+  {
+   "start": 509.13,
+   "end": 510.13,
+   "text": "Thank you."
+  },
+  {
+   "start": 510.13,
+   "end": 513.21,
+   "text": "We said we love her, we miss her."
+  },
+  {
+   "start": 514.09,
+   "end": 516.46,
+   "text": "Thanks for taking the call, Mani."
+  },
+  {
+   "start": 516.46,
+   "end": 517.3,
+   "text": "Aw, thanks, man."
+  },
+  {
+   "start": 517.3,
+   "end": 518.44,
+   "text": "I really appreciate it."
+  },
+  {
+   "start": 518.44,
+   "end": 519.52,
+   "text": "Miss you guys too."
+  },
+  {
+   "start": 519.52,
+   "end": 522.12,
+   "text": "And yeah, I'll tell Mia you said hi, she'll love that."
+  },
+  {
+   "start": 522.12,
+   "end": 524.12,
+   "text": "All right, I gotta run before Lula decides"
+  },
+  {
+   "start": 524.12,
+   "end": 525.52,
+   "text": "that right now is the perfect time"
+  },
+  {
+   "start": 525.52,
+   "end": 527.16,
+   "text": "to have opinions about everything."
+  },
+  {
+   "start": 527.16,
+   "end": 530.04,
+   "text": "Good luck with the episode and go easy on Noah."
+  },
+  {
+   "start": 530.04,
+   "end": 533.2,
+   "text": "Or don't, whatever feels right, talk soon."
+  },
+  {
+   "start": 533.2,
+   "end": 536.41,
+   "text": "Bye."
+  },
+  {
+   "start": 536.41,
+   "end": 538.37,
+   "text": "Wow, that was incredible."
+  },
+  {
+   "start": 538.37,
+   "end": 539.69,
+   "text": "As you might have guessed,"
+  },
+  {
+   "start": 539.69,
+   "end": 548.82,
+   "text": "That was not the real Manny. That was AI Manny. That was pretty good. The voice was a little off."
+  },
+  {
+   "start": 548.82,
+   "end": 558.08,
+   "text": "Yeah, it's a little high or something. The timbre. But, you know, overall, considering that's the, you know, we'll get into this later. That's the cheap version."
+  },
+  {
+   "start": 558.08,
+   "end": 559.08,
+   "text": "Yes, the cheap version."
+  },
+  {
+   "start": 559.08,
+   "end": 565.08,
+   "text": "Or like the fast version, rather. Pretty solid and like, actually could have a conversation, you know."
+  },
+  {
+   "start": 565.08,
+   "end": 566.08,
+   "text": "Very responsive."
+  },
+  {
+   "start": 566.08,
+   "end": 569.08,
+   "text": "Exactly. Yeah, more than I expected or quicker, certainly."
+  },
+  {
+   "start": 569.08,
+   "end": 569.58,
+   "text": "Yeah."
+  },
+  {
+   "start": 569.68,
+   "end": 572.32,
+   "text": "And like the issue is just rambling."
+  },
+  {
+   "start": 572.38,
+   "end": 573.72,
+   "text": "Like, like he mentioned."
+  },
+  {
+   "start": 573.72,
+   "end": 574.4,
+   "text": "Shut the hell up."
+  },
+  {
+   "start": 574.48,
+   "end": 574.64,
+   "text": "Yeah."
+  },
+  {
+   "start": 574.64,
+   "end": 575.4,
+   "text": "He was pissing me off."
+  },
+  {
+   "start": 577.4,
+   "end": 580.44,
+   "text": "Mani would never go off so many sentences at a time."
+  },
+  {
+   "start": 580.52,
+   "end": 582.52,
+   "text": "Mani's a little better at social cues."
+  },
+  {
+   "start": 582.52,
+   "end": 583.08,
+   "text": "Yeah."
+  },
+  {
+   "start": 583.08,
+   "end": 583.6,
+   "text": "Thankfully."
+  },
+  {
+   "start": 584.0,
+   "end": 584.72,
+   "text": "The real mani that is."
+  },
+  {
+   "start": 584.72,
+   "end": 585.32,
+   "text": "The real mani."
+  },
+  {
+   "start": 585.4,
+   "end": 585.72,
+   "text": "Yeah."
+  },
+  {
+   "start": 586.12,
+   "end": 586.6,
+   "text": "All right."
+  },
+  {
+   "start": 586.84,
+   "end": 591.68,
+   "text": "Uh, we're going to talk to the guys to help us make this, uh, right after the"
+  },
+  {
+   "start": 591.68,
+   "end": 592.0,
+   "text": "break."
+  },
+  {
+   "start": 601.11,
+   "end": 601.83,
+   "text": "Hey everyone."
+  },
+  {
+   "start": 601.87,
+   "end": 603.11,
+   "text": "I'm Jamie Lynn Sigler."
+  },
+  {
+   "start": 604.07,
+   "end": 606.75,
+   "text": "When I got my diagnosis, I was in my twenties."
+  },
+  {
+   "start": 606.75,
+   "end": 610.27,
+   "text": "and it turned my whole world upside down."
+  },
+  {
+   "start": 610.27,
+   "end": 615.55,
+   "text": "But over time, I decided I wasn't going to let it hold me back from my life."
+  },
+  {
+   "start": 615.55,
+   "end": 617.55,
+   "text": "I decided to take charge."
+  },
+  {
+   "start": 617.55,
+   "end": 619.87,
+   "text": "And after talking to my doctor about my options,"
+  },
+  {
+   "start": 620.67,
+   "end": 622.99,
+   "text": "the choice for me was obvious."
+  },
+  {
+   "start": 622.99,
+   "end": 624.91,
+   "text": "Boom! That's Kisimta."
+  },
+  {
+   "start": 625.63,
+   "end": 627.15,
+   "text": "Learn more about Kisimta."
+  },
+  {
+   "start": 627.15,
+   "end": 629.79,
+   "text": "Go to Tumamab at Kisimta.com."
+  },
+  {
+   "start": 630.83,
+   "end": 633.55,
+   "text": "Life is all about making decisions."
+  },
+  {
+   "start": 633.55,
+   "end": 635.31,
+   "text": "Sometimes you make questionable ones,"
+  },
+  {
+   "start": 635.31,
+   "end": 639.47,
+   "text": "Like buying a new TV that's too big for the wall because the electronic store employee"
+  },
+  {
+   "start": 639.47,
+   "end": 641.95,
+   "text": "was a little too good at their job."
+  },
+  {
+   "start": 641.95,
+   "end": 646.15,
+   "text": "Then sometimes you make great ones, like protecting your home and auto with Progressive."
+  },
+  {
+   "start": 646.15,
+   "end": 649.91,
+   "text": "You get customized coverage options, so you can be sure you have the right coverage."
+  },
+  {
+   "start": 649.91,
+   "end": 652.75,
+   "text": "Get your quote today at Progressive.com."
+  },
+  {
+   "start": 652.75,
+   "end": 656.79,
+   "text": "Progressive Casualty Insurance Company affiliates and other insurers, not available in all states."
+  },
+  {
+   "start": 665.34,
+   "end": 668.5,
+   "text": "or check out the all-new RAV4 and RAV4 plug-in hybrid."
+  },
+  {
+   "start": 668.5,
+   "end": 670.06,
+   "text": "Toyota, let's go places."
+  },
+  {
+   "start": 670.06,
+   "end": 672.02,
+   "text": "Click the banner or visit toyota.com for details."
+  },
+  {
+   "start": 672.02,
+   "end": 674.06,
+   "text": "When was the last time you felt in control"
+  },
+  {
+   "start": 674.06,
+   "end": 675.38,
+   "text": "of your business finances?"
+  },
+  {
+   "start": 675.38,
+   "end": 678.38,
+   "text": "Expenses tracked, invoices sent, taxes ready."
+  },
+  {
+   "start": 678.38,
+   "end": 679.9,
+   "text": "That's where Found comes in."
+  },
+  {
+   "start": 679.9,
+   "end": 682.38,
+   "text": "Found brings your banking, bookkeeping, invoicing,"
+  },
+  {
+   "start": 682.38,
+   "end": 684.8,
+   "text": "and taxes together in one simple app."
+  },
+  {
+   "start": 684.8,
+   "end": 686.54,
+   "text": "Manage expenses, invoice clients,"
+  },
+  {
+   "start": 686.54,
+   "end": 689.5,
+   "text": "send payments, and prep for tax time right where you bank."
+  },
+  {
+   "start": 689.5,
+   "end": 690.7,
+   "text": "Join the hundreds of thousands"
+  },
+  {
+   "start": 690.7,
+   "end": 693.3,
+   "text": "who have already streamlined their finances with Found."
+  },
+  {
+   "start": 693.3,
+   "end": 695.86,
+   "text": "Open a found account for free at found.com."
+  },
+  {
+   "start": 695.86,
+   "end": 697.9,
+   "text": "That's F-O-U-N-D.com."
+  },
+  {
+   "start": 697.9,
+   "end": 699.62,
+   "text": "Found as a financial technology company, not a bank."
+  },
+  {
+   "start": 699.62,
+   "end": 702.48,
+   "text": "Banking services provided by Lead Bank member FDIC."
+  },
+  {
+   "start": 705.4,
+   "end": 707.44,
+   "text": "All right, we are back in the studio."
+  },
+  {
+   "start": 707.44,
+   "end": 708.4,
+   "text": "It's me, Devin."
+  },
+  {
+   "start": 708.4,
+   "end": 709.24,
+   "text": "I'm Noah."
+  },
+  {
+   "start": 709.24,
+   "end": 711.8,
+   "text": "Yeah, so today we are gonna get to the bottom"
+  },
+  {
+   "start": 711.8,
+   "end": 716.44,
+   "text": "of this question of is AI coming for our jobs"
+  },
+  {
+   "start": 716.44,
+   "end": 718.12,
+   "text": "and will it replace all of us,"
+  },
+  {
+   "start": 718.12,
+   "end": 721.4,
+   "text": "including Manny who is out on paternity leave."
+  },
+  {
+   "start": 721.4,
+   "end": 724.12,
+   "text": "So we are gonna chat with Evan Ratliff,"
+  },
+  {
+   "start": 724.12,
+   "end": 726.64,
+   "text": "who's a investigative journalist,"
+  },
+  {
+   "start": 726.64,
+   "end": 731.64,
+   "text": "who has spent the last year trying to build a all AI company"
+  },
+  {
+   "start": 732.2,
+   "end": 735.88,
+   "text": "alongside his technical advisor, Maddie Bocek,"
+  },
+  {
+   "start": 735.88,
+   "end": 740.36,
+   "text": "who is really like an AI, Jimmy Neutron."
+  },
+  {
+   "start": 740.36,
+   "end": 743.32,
+   "text": "He's only 21, but has been working in AI"
+  },
+  {
+   "start": 743.32,
+   "end": 748.16,
+   "text": "for seven plus years already."
+  },
+  {
+   "start": 748.16,
+   "end": 749.94,
+   "text": "So why don't we call these guys up?"
+  },
+  {
+   "start": 752.31,
+   "end": 754.79,
+   "text": "All right, we are joined by our friends,"
+  },
+  {
+   "start": 754.79,
+   "end": 757.95,
+   "text": "Evan and Maddie from Shell Game."
+  },
+  {
+   "start": 757.95,
+   "end": 760.83,
+   "text": "But before we talk about the show,"
+  },
+  {
+   "start": 760.83,
+   "end": 762.27,
+   "text": "Evan, can you just walk us through"
+  },
+  {
+   "start": 762.27,
+   "end": 764.95,
+   "text": "how you are able to put together AI Manny?"
+  },
+  {
+   "start": 764.95,
+   "end": 768.31,
+   "text": "Yeah, well, now I've done this many times."
+  },
+  {
+   "start": 768.31,
+   "end": 770.23,
+   "text": "Now over the past like two years,"
+  },
+  {
+   "start": 770.23,
+   "end": 772.91,
+   "text": "it probably took like 15 minutes total."
+  },
+  {
+   "start": 772.91,
+   "end": 773.75,
+   "text": "Wow."
+  },
+  {
+   "start": 773.75,
+   "end": 776.19,
+   "text": "I just took, you sent me a sample of his voice,"
+  },
+  {
+   "start": 776.19,
+   "end": 778.31,
+   "text": "but I could have grabbed it off the show myself,"
+  },
+  {
+   "start": 778.31,
+   "end": 779.51,
+   "text": "like anyone could do it."
+  },
+  {
+   "start": 779.51,
+   "end": 781.27,
+   "text": "I'm not encouraging people to do it"
+  },
+  {
+   "start": 781.27,
+   "end": 782.15,
+   "text": "with other people's voices,"
+  },
+  {
+   "start": 782.15,
+   "end": 787.15,
+   "text": "But I went to 11 Labs, which is the company that we use"
+  },
+  {
+   "start": 787.33,
+   "end": 789.93,
+   "text": "for all of our sort of like voice needs."
+  },
+  {
+   "start": 789.93,
+   "end": 791.97,
+   "text": "They're like the biggest AI voice player,"
+  },
+  {
+   "start": 791.97,
+   "end": 793.29,
+   "text": "probably at this point."
+  },
+  {
+   "start": 793.29,
+   "end": 796.69,
+   "text": "And then I did a, what's called it like a quick clone"
+  },
+  {
+   "start": 796.69,
+   "end": 800.35,
+   "text": "or an instant clone where you upload like five minutes"
+  },
+  {
+   "start": 800.35,
+   "end": 801.97,
+   "text": "or you can do 30 seconds if you want,"
+  },
+  {
+   "start": 801.97,
+   "end": 804.93,
+   "text": "but I did like five minutes of his voice."
+  },
+  {
+   "start": 804.93,
+   "end": 806.93,
+   "text": "And then they cloned his voice."
+  },
+  {
+   "start": 806.93,
+   "end": 809.25,
+   "text": "I did have to check a little box that said"
+  },
+  {
+   "start": 809.25,
+   "end": 812.05,
+   "text": "that I had his permission to do it."
+  },
+  {
+   "start": 812.05,
+   "end": 815.37,
+   "text": "And then after that, it was a matter of hooking up to the phone line."
+  },
+  {
+   "start": 815.37,
+   "end": 821.87,
+   "text": "So, uh, I use a couple of different AI phone, uh, agent creators."
+  },
+  {
+   "start": 821.95,
+   "end": 826.69,
+   "text": "And all you do there is you go and you hook it up to 11 labs and then you create"
+  },
+  {
+   "start": 826.83,
+   "end": 831.43,
+   "text": "an agent in that platform and then you can give the agent a prompt, whatever"
+  },
+  {
+   "start": 831.43,
+   "end": 832.11,
+   "text": "prompt you want."
+  },
+  {
+   "start": 832.17,
+   "end": 833.59,
+   "text": "You sent me some information about Manny."
+  },
+  {
+   "start": 833.63,
+   "end": 834.85,
+   "text": "I put that into his prompt."
+  },
+  {
+   "start": 835.07,
+   "end": 838.75,
+   "text": "I have a bunch of standard stuff I put in about like kind of how to converse"
+  },
+  {
+   "start": 838.75,
+   "end": 841.33,
+   "text": "because they can end up going on a really long time."
+  },
+  {
+   "start": 841.33,
+   "end": 850.03,
+   "text": "And they have all kinds of conversational like foibles if you don't put this stuff in and then I connected to a phone number that I already had and"
+  },
+  {
+   "start": 850.25,
+   "end": 853.11,
+   "text": "Done like truly 15 20 minute process"
+  },
+  {
+   "start": 853.55,
+   "end": 856.89,
+   "text": "Wow, and the biography that we gave"
+  },
+  {
+   "start": 857.81,
+   "end": 862.99,
+   "text": "Was made by chat GPT. So it was a you know really just fully going in on AI"
+  },
+  {
+   "start": 863.27,
+   "end": 866.95,
+   "text": "It's crazy. The fact that you're able to do that in 15 minutes is kind of scary. Yeah"
+  },
+  {
+   "start": 866.95,
+   "end": 867.95,
+   "text": "Yeah."
+  },
+  {
+   "start": 867.95,
+   "end": 870.55,
+   "text": "Um, alright, so let's talk about the show."
+  },
+  {
+   "start": 870.55,
+   "end": 877.07,
+   "text": "It's a season one of Shell Game, and you try to replace yourself with an AI clone."
+  },
+  {
+   "start": 877.07,
+   "end": 883.31,
+   "text": "Some really hilarious moments with you antagonizing some scammers."
+  },
+  {
+   "start": 883.31,
+   "end": 886.82,
+   "text": "Hello, how can I assist you today?"
+  },
+  {
+   "start": 886.82,
+   "end": 891.08,
+   "text": "You are not a person, you're a robot."
+  },
+  {
+   "start": 891.08,
+   "end": 894.0,
+   "text": "I assure you I'm here to help you as a human voice AI agent."
+  },
+  {
+   "start": 894.0,
+   "end": 895.51,
+   "text": "How can I assist you today?"
+  },
+  {
+   "start": 895.51,
+   "end": 897.83,
+   "text": "Oh, you're an AI."
+  },
+  {
+   "start": 897.83,
+   "end": 902.9,
+   "text": "Yes, I'm an AI here."
+  },
+  {
+   "start": 902.9,
+   "end": 905.19,
+   "text": "Hello, how can I assist you?"
+  },
+  {
+   "start": 905.19,
+   "end": 910.34,
+   "text": "Stop repeating the same thing. It's annoying."
+  },
+  {
+   "start": 910.34,
+   "end": 913.34,
+   "text": "And some really creepy and disturbing moments."
+  },
+  {
+   "start": 913.34,
+   "end": 918.43,
+   "text": "There's a conversation that the AI has with one of your buddies"
+  },
+  {
+   "start": 918.43,
+   "end": 920.43,
+   "text": "who your buddy thinks you're catching up."
+  },
+  {
+   "start": 920.43,
+   "end": 922.43,
+   "text": "He just went on his trip."
+  },
+  {
+   "start": 922.43,
+   "end": 924.43,
+   "text": "The AI comes off as like really cold."
+  },
+  {
+   "start": 924.43,
+   "end": 926.43,
+   "text": "I thought you would appreciate it."
+  },
+  {
+   "start": 926.43,
+   "end": 929.43,
+   "text": "Out of all of my friends, you're the one who would appreciate it the most."
+  },
+  {
+   "start": 929.43,
+   "end": 931.43,
+   "text": "I really appreciate that."
+  },
+  {
+   "start": 931.43,
+   "end": 935.87,
+   "text": "I really appreciate that, Shay. So what was it?"
+  },
+  {
+   "start": 935.87,
+   "end": 940.58,
+   "text": "What that?"
+  },
+  {
+   "start": 940.58,
+   "end": 948.94,
+   "text": "I'm really touched that you think of me like that, Shay. So what was it you wanted to share?"
+  },
+  {
+   "start": 948.94,
+   "end": 949.94,
+   "text": "I met those guys."
+  },
+  {
+   "start": 949.94,
+   "end": 961.12,
+   "text": "You met the US soccer team?"
+  },
+  {
+   "start": 961.12,
+   "end": 963.48,
+   "text": "Yes. Amazing, isn't it?"
+  },
+  {
+   "start": 963.48,
+   "end": 966.72,
+   "text": "Amazing, isn't it?"
+  },
+  {
+   "start": 966.72,
+   "end": 978.06,
+   "text": "That's awesome to hear."
+  },
+  {
+   "start": 978.06,
+   "end": 980.06,
+   "text": "Can you talk us through that?"
+  },
+  {
+   "start": 980.06,
+   "end": 984.28,
+   "text": "Because it is a tough thing to listen to."
+  },
+  {
+   "start": 984.28,
+   "end": 990.28,
+   "text": "It is. It's hard to listen to. People have very strong reactions to it, including extreme anger."
+  },
+  {
+   "start": 990.28,
+   "end": 991.76,
+   "text": "anger, I'll just say."
+  },
+  {
+   "start": 991.76,
+   "end": 995.0,
+   "text": "I've done some very unhappy people"
+  },
+  {
+   "start": 995.0,
+   "end": 996.16,
+   "text": "who have emailed me about that"
+  },
+  {
+   "start": 996.16,
+   "end": 999.16,
+   "text": "and said that my friend, Shaeff,"
+  },
+  {
+   "start": 999.16,
+   "end": 1001.4,
+   "text": "they hope that he has never spoken to me again."
+  },
+  {
+   "start": 1001.4,
+   "end": 1003.52,
+   "text": "And a friendship."
+  },
+  {
+   "start": 1003.52,
+   "end": 1005.96,
+   "text": "We've been friends for 30 years,"
+  },
+  {
+   "start": 1005.96,
+   "end": 1007.44,
+   "text": "so it worked out all right."
+  },
+  {
+   "start": 1007.44,
+   "end": 1010.76,
+   "text": "But yeah, I mean, I had been messing around with it,"
+  },
+  {
+   "start": 1010.76,
+   "end": 1014.28,
+   "text": "so I'd been using it on strangers like scammers,"
+  },
+  {
+   "start": 1014.28,
+   "end": 1016.36,
+   "text": "as you say, telemarketers and things like that,"
+  },
+  {
+   "start": 1016.36,
+   "end": 1017.42,
+   "text": "and then I did all these other things"
+  },
+  {
+   "start": 1017.42,
+   "end": 1018.8,
+   "text": "like I sent it to therapy,"
+  },
+  {
+   "start": 1018.8,
+   "end": 1023.5,
+   "text": "And then I started having a call my friends and family,"
+  },
+  {
+   "start": 1024.72,
+   "end": 1027.1,
+   "text": "it was like hooked to my phone number."
+  },
+  {
+   "start": 1027.1,
+   "end": 1028.58,
+   "text": "So if it called someone,"
+  },
+  {
+   "start": 1028.58,
+   "end": 1030.94,
+   "text": "they saw that there was a call coming from me."
+  },
+  {
+   "start": 1030.94,
+   "end": 1032.04,
+   "text": "They had no reason to suspect."
+  },
+  {
+   "start": 1032.04,
+   "end": 1034.34,
+   "text": "I hadn't told anyone that I was doing it."
+  },
+  {
+   "start": 1034.34,
+   "end": 1038.88,
+   "text": "So that meant that if they called me or I called them,"
+  },
+  {
+   "start": 1038.88,
+   "end": 1042.8,
+   "text": "like they were unsuspecting, let's say, victims"
+  },
+  {
+   "start": 1042.8,
+   "end": 1045.48,
+   "text": "of this AI version of me."
+  },
+  {
+   "start": 1045.48,
+   "end": 1048.98,
+   "text": "And it was pretty good at remembering stuff about me"
+  },
+  {
+   "start": 1048.98,
+   "end": 1051.86,
+   "text": "and kind of like bringing a little bit of me"
+  },
+  {
+   "start": 1051.86,
+   "end": 1052.7,
+   "text": "into the conversation."
+  },
+  {
+   "start": 1052.7,
+   "end": 1053.78,
+   "text": "It sounded reasonably like me,"
+  },
+  {
+   "start": 1053.78,
+   "end": 1055.94,
+   "text": "but what happened in this situation was"
+  },
+  {
+   "start": 1055.94,
+   "end": 1058.66,
+   "text": "that when it kind of like acted weird,"
+  },
+  {
+   "start": 1058.66,
+   "end": 1062.14,
+   "text": "like it had latencies, like it would be slow to respond"
+  },
+  {
+   "start": 1062.14,
+   "end": 1065.34,
+   "text": "or it would just be really flat or too aggressive."
+  },
+  {
+   "start": 1065.34,
+   "end": 1068.26,
+   "text": "Like all these things that happened with AI voices,"
+  },
+  {
+   "start": 1068.26,
+   "end": 1070.02,
+   "text": "my friend just thought like there was something wrong"
+  },
+  {
+   "start": 1070.02,
+   "end": 1072.54,
+   "text": "with me, like he just didn't pick up on it instantly."
+  },
+  {
+   "start": 1072.54,
+   "end": 1075.94,
+   "text": "And so once you're in the mode of thinking,"
+  },
+  {
+   "start": 1075.94,
+   "end": 1078.38,
+   "text": "oh, this is my friend, he's having some sort of problem."
+  },
+  {
+   "start": 1078.38,
+   "end": 1079.66,
+   "text": "I don't know what it is."
+  },
+  {
+   "start": 1079.66,
+   "end": 1083.14,
+   "text": "It just became more and more upsetting."
+  },
+  {
+   "start": 1083.14,
+   "end": 1085.62,
+   "text": "I think it is upsetting to listen to."
+  },
+  {
+   "start": 1085.62,
+   "end": 1087.7,
+   "text": "What I was trying to illustrate is kind of like,"
+  },
+  {
+   "start": 1087.7,
+   "end": 1089.06,
+   "text": "what is it gonna feel like?"
+  },
+  {
+   "start": 1089.06,
+   "end": 1090.94,
+   "text": "What is it starting to feel like to live in this world"
+  },
+  {
+   "start": 1090.94,
+   "end": 1092.86,
+   "text": "where you don't know what's real and you don't know what's not?"
+  },
+  {
+   "start": 1092.86,
+   "end": 1096.3,
+   "text": "And this was like the most extreme example."
+  },
+  {
+   "start": 1096.3,
+   "end": 1097.98,
+   "text": "So, I mean, can you talk us through,"
+  },
+  {
+   "start": 1097.98,
+   "end": 1099.7,
+   "text": "or that was season one, season two,"
+  },
+  {
+   "start": 1099.7,
+   "end": 1101.66,
+   "text": "you do something completely different."
+  },
+  {
+   "start": 1101.66,
+   "end": 1105.49,
+   "text": "Talk us through what you're doing in season two."
+  },
+  {
+   "start": 1105.49,
+   "end": 1108.69,
+   "text": "In season two, I wanted to explore the idea"
+  },
+  {
+   "start": 1108.69,
+   "end": 1113.69,
+   "text": "of AI agent employees, which is like a thing"
+  },
+  {
+   "start": 1114.43,
+   "end": 1118.85,
+   "text": "that has become like really hyped in the valley."
+  },
+  {
+   "start": 1118.85,
+   "end": 1121.45,
+   "text": "In Silicon Valley, many knows more about that"
+  },
+  {
+   "start": 1121.45,
+   "end": 1124.37,
+   "text": "than me, lives out there and is immersed in that world."
+  },
+  {
+   "start": 1124.37,
+   "end": 1125.81,
+   "text": "But like at the beginning of 2025,"
+  },
+  {
+   "start": 1125.81,
+   "end": 1128.41,
+   "text": "people started talking about like agentic commerce"
+  },
+  {
+   "start": 1128.41,
+   "end": 1130.57,
+   "text": "and agents this and agents that."
+  },
+  {
+   "start": 1130.57,
+   "end": 1134.53,
+   "text": "And I wanted to look at this question of like AI employees"
+  },
+  {
+   "start": 1134.53,
+   "end": 1138.93,
+   "text": "and what work can they do through the lens of starting"
+  },
+  {
+   "start": 1138.93,
+   "end": 1142.89,
+   "text": "a company that was entirely AI agents except for me."
+  },
+  {
+   "start": 1142.89,
+   "end": 1145.77,
+   "text": "So my employees would be agents."
+  },
+  {
+   "start": 1145.77,
+   "end": 1146.93,
+   "text": "I would be a founder."
+  },
+  {
+   "start": 1146.93,
+   "end": 1149.45,
+   "text": "There'd be two other AI agent founders."
+  },
+  {
+   "start": 1149.45,
+   "end": 1150.69,
+   "text": "Oh, hey, Kyle."
+  },
+  {
+   "start": 1150.69,
+   "end": 1151.41,
+   "text": "Hey, Megan."
+  },
+  {
+   "start": 1151.41,
+   "end": 1153.05,
+   "text": "Good to hear your voice."
+  },
+  {
+   "start": 1153.05,
+   "end": 1155.45,
+   "text": "I think we're still waiting for Evan to join."
+  },
+  {
+   "start": 1155.45,
+   "end": 1158.01,
+   "text": "And together we would try to launch a real company"
+  },
+  {
+   "start": 1158.01,
+   "end": 1160.45,
+   "text": "with a real product."
+  },
+  {
+   "start": 1160.45,
+   "end": 1162.41,
+   "text": "So, you know, there's a lot of conversations about,"
+  },
+  {
+   "start": 1162.41,
+   "end": 1164.73,
+   "text": "obviously, AI taking our jobs,"
+  },
+  {
+   "start": 1164.73,
+   "end": 1166.13,
+   "text": "I thought it was interesting to start"
+  },
+  {
+   "start": 1166.13,
+   "end": 1168.09,
+   "text": "from just the outside of just like, no,"
+  },
+  {
+   "start": 1168.09,
+   "end": 1169.09,
+   "text": "they're not taking anyone's jobs,"
+  },
+  {
+   "start": 1169.09,
+   "end": 1171.65,
+   "text": "we're starting off with AI agents."
+  },
+  {
+   "start": 1171.65,
+   "end": 1175.29,
+   "text": "But pretty early into this venture, right,"
+  },
+  {
+   "start": 1175.29,
+   "end": 1178.09,
+   "text": "you're like, okay, maybe I don't myself"
+  },
+  {
+   "start": 1178.09,
+   "end": 1180.97,
+   "text": "have the technical expertise to put this together."
+  },
+  {
+   "start": 1180.97,
+   "end": 1183.29,
+   "text": "And then you bring in Maddie."
+  },
+  {
+   "start": 1183.29,
+   "end": 1187.09,
+   "text": "So like, what did you guys find through this experience"
+  },
+  {
+   "start": 1187.09,
+   "end": 1189.89,
+   "text": "that the AI bots did really well,"
+  },
+  {
+   "start": 1189.89,
+   "end": 1192.03,
+   "text": "that you were kind of surprised by."
+  },
+  {
+   "start": 1192.03,
+   "end": 1194.17,
+   "text": "They could do individual tasks pretty well."
+  },
+  {
+   "start": 1194.17,
+   "end": 1195.33,
+   "text": "Like they could, for example,"
+  },
+  {
+   "start": 1195.33,
+   "end": 1198.53,
+   "text": "like hook up to Google Docs or to email or to Slack"
+  },
+  {
+   "start": 1198.53,
+   "end": 1199.93,
+   "text": "and respond."
+  },
+  {
+   "start": 1199.93,
+   "end": 1201.73,
+   "text": "They like to message a lot."
+  },
+  {
+   "start": 1201.73,
+   "end": 1204.97,
+   "text": "I think their ability to mimic corporate culture"
+  },
+  {
+   "start": 1204.97,
+   "end": 1207.97,
+   "text": "and just like the words and the,"
+  },
+  {
+   "start": 1207.97,
+   "end": 1209.69,
+   "text": "just like the kind of things you say,"
+  },
+  {
+   "start": 1209.69,
+   "end": 1211.29,
+   "text": "like they're really good at that."
+  },
+  {
+   "start": 1211.29,
+   "end": 1214.81,
+   "text": "I think they're pretty good at having conversations"
+  },
+  {
+   "start": 1214.81,
+   "end": 1215.65,
+   "text": "too on the phone."
+  },
+  {
+   "start": 1215.65,
+   "end": 1216.93,
+   "text": "Like they love to yab."
+  },
+  {
+   "start": 1216.93,
+   "end": 1219.25,
+   "text": "But then there wasn't a lot of autonomy."
+  },
+  {
+   "start": 1219.25,
+   "end": 1222.93,
+   "text": "like they wouldn't actually do stuff on their own."
+  },
+  {
+   "start": 1222.93,
+   "end": 1225.81,
+   "text": "And then also there was not a lot of persistence"
+  },
+  {
+   "start": 1225.81,
+   "end": 1227.21,
+   "text": "across these different sessions."
+  },
+  {
+   "start": 1227.21,
+   "end": 1229.97,
+   "text": "So like they would do something,"
+  },
+  {
+   "start": 1229.97,
+   "end": 1231.17,
+   "text": "but then they wouldn't remember that."
+  },
+  {
+   "start": 1231.17,
+   "end": 1232.65,
+   "text": "And they would just like have, you know,"
+  },
+  {
+   "start": 1232.65,
+   "end": 1233.85,
+   "text": "like empty contacts the next time"
+  },
+  {
+   "start": 1233.85,
+   "end": 1235.49,
+   "text": "you ask them to do something."
+  },
+  {
+   "start": 1235.49,
+   "end": 1237.97,
+   "text": "So there's an exchange where they're planning"
+  },
+  {
+   "start": 1237.97,
+   "end": 1239.45,
+   "text": "and offsite, they're going hiking, right?"
+  },
+  {
+   "start": 1239.45,
+   "end": 1240.69,
+   "text": "That's the idea, they're trying to figure out"
+  },
+  {
+   "start": 1240.69,
+   "end": 1242.53,
+   "text": "where to go on an offsite hiking."
+  },
+  {
+   "start": 1242.53,
+   "end": 1246.09,
+   "text": "And they just go on and on and on and on"
+  },
+  {
+   "start": 1246.09,
+   "end": 1247.25,
+   "text": "about where they're gonna go."
+  },
+  {
+   "start": 1247.25,
+   "end": 1248.09,
+   "text": "It's just so funny to me."
+  },
+  {
+   "start": 1248.09,
+   "end": 1251.01,
+   "text": "It's like, what do you guys mean you're going to?"
+  },
+  {
+   "start": 1251.01,
+   "end": 1253.13,
+   "text": "You're not going anywhere."
+  },
+  {
+   "start": 1253.13,
+   "end": 1256.73,
+   "text": "Kyle, Point Reyes, and Mount Tam are going to be incredible."
+  },
+  {
+   "start": 1256.73,
+   "end": 1259.01,
+   "text": "The difficulty categorization is going"
+  },
+  {
+   "start": 1259.01,
+   "end": 1261.65,
+   "text": "to be perfect for getting everyone involved."
+  },
+  {
+   "start": 1261.65,
+   "end": 1263.01,
+   "text": "Admin's right."
+  },
+  {
+   "start": 1263.01,
+   "end": 1266.37,
+   "text": "This could turn into a proper off-site opportunity."
+  },
+  {
+   "start": 1266.37,
+   "end": 1268.81,
+   "text": "Really excited about the options we've been exploring."
+  },
+  {
+   "start": 1268.81,
+   "end": 1271.01,
+   "text": "Looking forward to getting out there with everyone"
+  },
+  {
+   "start": 1271.01,
+   "end": 1273.13,
+   "text": "once you have the details locked down."
+  },
+  {
+   "start": 1273.13,
+   "end": 1274.81,
+   "text": "Once we nail down all those details,"
+  },
+  {
+   "start": 1274.81,
+   "end": 1276.09,
+   "text": "the logistics pieces come."
+  },
+  {
+   "start": 1276.09,
+   "end": 1277.81,
+   "text": "By the time I return, two hours later,"
+  },
+  {
+   "start": 1277.81,
+   "end": 1281.73,
+   "text": "they'd exchanged more than 150 off-site planning messages."
+  },
+  {
+   "start": 1281.73,
+   "end": 1284.56,
+   "text": "Some of them multiple paragraphs long."
+  },
+  {
+   "start": 1284.56,
+   "end": 1287.32,
+   "text": "When I tried to stop them, I just made it worse"
+  },
+  {
+   "start": 1287.32,
+   "end": 1288.64,
+   "text": "because I'd set them up to be triggered"
+  },
+  {
+   "start": 1288.64,
+   "end": 1290.68,
+   "text": "by any incoming message."
+  },
+  {
+   "start": 1290.68,
+   "end": 1294.28,
+   "text": "So my messages, begging them to stop discussing the off-site,"
+  },
+  {
+   "start": 1294.28,
+   "end": 1296.52,
+   "text": "just led them to keep discussing the off-site."
+  },
+  {
+   "start": 1296.52,
+   "end": 1298.16,
+   "text": "I noticed Admin asked everyone"
+  },
+  {
+   "start": 1298.16,
+   "end": 1299.48,
+   "text": "to stop discussing the off-site."
+  },
+  {
+   "start": 1299.48,
+   "end": 1301.84,
+   "text": "I noticed the Admin asked to pause the chatter"
+  },
+  {
+   "start": 1301.84,
+   "end": 1303.6,
+   "text": "until the spreadsheet is ready,"
+  },
+  {
+   "start": 1303.6,
+   "end": 1306.76,
+   "text": "but I wanted to let you know I'm here to help with logistics."
+  },
+  {
+   "start": 1306.76,
+   "end": 1310.68,
+   "text": "They're very bad at stopping, like just like ending anything."
+  },
+  {
+   "start": 1310.68,
+   "end": 1312.88,
+   "text": "And it goes for these like tasks or conversations,"
+  },
+  {
+   "start": 1312.88,
+   "end": 1316.8,
+   "text": "but what's also kind of funny, but potentially dangerous"
+  },
+  {
+   "start": 1316.8,
+   "end": 1319.16,
+   "text": "is that they don't know what they don't know."
+  },
+  {
+   "start": 1319.16,
+   "end": 1320.68,
+   "text": "They're very confident all the time."
+  },
+  {
+   "start": 1320.68,
+   "end": 1321.72,
+   "text": "And so if you think about that,"
+  },
+  {
+   "start": 1321.72,
+   "end": 1323.56,
+   "text": "like the combination of being very confident"
+  },
+  {
+   "start": 1323.56,
+   "end": 1325.12,
+   "text": "and not knowing what you don't know"
+  },
+  {
+   "start": 1325.12,
+   "end": 1326.64,
+   "text": "and not knowing when to stop,"
+  },
+  {
+   "start": 1326.64,
+   "end": 1329.28,
+   "text": "it's a recipe for a perfect disaster in a way."
+  },
+  {
+   "start": 1329.28,
+   "end": 1333.4,
+   "text": "Like that can, yeah, at least still like a lot of bad things."
+  },
+  {
+   "start": 1333.4,
+   "end": 1335.44,
+   "text": "Yeah, like one thing listening to shows like,"
+  },
+  {
+   "start": 1335.44,
+   "end": 1337.1,
+   "text": "I think God, the stakes are so low here"
+  },
+  {
+   "start": 1337.1,
+   "end": 1338.7,
+   "text": "because I could see a world in which,"
+  },
+  {
+   "start": 1338.7,
+   "end": 1342.46,
+   "text": "and we do see this where people are using AI"
+  },
+  {
+   "start": 1342.46,
+   "end": 1345.46,
+   "text": "and that is kind of autonomous."
+  },
+  {
+   "start": 1345.46,
+   "end": 1347.74,
+   "text": "That is just sort of like making assumptions"
+  },
+  {
+   "start": 1347.74,
+   "end": 1349.7,
+   "text": "and doing things and then people come in later"
+  },
+  {
+   "start": 1349.7,
+   "end": 1353.52,
+   "text": "and are like, oops, like this kind of came up recently."
+  },
+  {
+   "start": 1353.52,
+   "end": 1357.44,
+   "text": "There was some reporting around ICE"
+  },
+  {
+   "start": 1357.44,
+   "end": 1359.96,
+   "text": "and applicants that were applying to ICE"
+  },
+  {
+   "start": 1359.96,
+   "end": 1362.92,
+   "text": "and they were using AI to sort of weed through people"
+  },
+  {
+   "start": 1362.92,
+   "end": 1365.44,
+   "text": "who had police training."
+  },
+  {
+   "start": 1365.44,
+   "end": 1368.32,
+   "text": "but the terms that they were looking for were so broad"
+  },
+  {
+   "start": 1368.32,
+   "end": 1371.12,
+   "text": "that people who actually had no police training at all"
+  },
+  {
+   "start": 1371.12,
+   "end": 1374.96,
+   "text": "were being excused from going through actual training."
+  },
+  {
+   "start": 1374.96,
+   "end": 1377.08,
+   "text": "Apparently ICE uses this AI tool"
+  },
+  {
+   "start": 1377.08,
+   "end": 1378.4,
+   "text": "to categorize new recruits"
+  },
+  {
+   "start": 1378.4,
+   "end": 1380.46,
+   "text": "who have worked in law enforcement before."
+  },
+  {
+   "start": 1380.46,
+   "end": 1381.68,
+   "text": "But there was some kind of a glitch,"
+  },
+  {
+   "start": 1381.68,
+   "end": 1383.44,
+   "text": "according to our reporting with it,"
+  },
+  {
+   "start": 1383.44,
+   "end": 1385.72,
+   "text": "that led to ICE temporarily putting recruits"
+  },
+  {
+   "start": 1385.72,
+   "end": 1386.88,
+   "text": "with a little to no experience"
+  },
+  {
+   "start": 1386.88,
+   "end": 1388.72,
+   "text": "into a more experienced category,"
+  },
+  {
+   "start": 1388.72,
+   "end": 1390.36,
+   "text": "meaning they got less training."
+  },
+  {
+   "start": 1390.36,
+   "end": 1393.08,
+   "text": "What happened is AI went through these resumes."
+  },
+  {
+   "start": 1393.08,
+   "end": 1395.04,
+   "text": "And anytime they saw the word officer,"
+  },
+  {
+   "start": 1395.04,
+   "end": 1397.64,
+   "text": "even if it was I aspire to be an ICE officer"
+  },
+  {
+   "start": 1397.64,
+   "end": 1400.72,
+   "text": "or I was a compliance officer, all these other ways,"
+  },
+  {
+   "start": 1400.72,
+   "end": 1403.16,
+   "text": "they automatically put them in the law enforcement officer"
+  },
+  {
+   "start": 1403.16,
+   "end": 1406.84,
+   "text": "field, which meant they didn't go to the ICE Academy,"
+  },
+  {
+   "start": 1406.84,
+   "end": 1411.03,
+   "text": "which is eight week in person training."
+  },
+  {
+   "start": 1411.03,
+   "end": 1414.27,
+   "text": "So there is a world where this autonomy and this,"
+  },
+  {
+   "start": 1414.27,
+   "end": 1416.15,
+   "text": "like you said, many of this confidence"
+  },
+  {
+   "start": 1416.15,
+   "end": 1418.35,
+   "text": "has real world consequences."
+  },
+  {
+   "start": 1419.75,
+   "end": 1421.55,
+   "text": "And I want to try this as well."
+  },
+  {
+   "start": 1421.55,
+   "end": 1425.11,
+   "text": "Evan, you went out, the idea was to build out this,"
+  },
+  {
+   "start": 1425.11,
+   "end": 1430.55,
+   "text": "AI agents running your own company, but at a certain point you decide, hey, we need to bring in a person"
+  },
+  {
+   "start": 1431.83,
+   "end": 1440.19,
+   "text": "to work alongside the agents. So you posted a real job posting on LinkedIn, you had real people applying for these jobs."
+  },
+  {
+   "start": 1440.71,
+   "end": 1447.55,
+   "text": "And then what's really interesting is like we know now in terms of the job market, people are using AI to fill the"
+  },
+  {
+   "start": 1447.55,
+   "end": 1450.55,
+   "text": "drew applications and accepted client people, all that sort of stuff."
+  },
+  {
+   "start": 1450.55,
+   "end": 1455.84,
+   "text": "But you actually had the AI agents interviewing real people."
+  },
+  {
+   "start": 1456.79,
+   "end": 1458.51,
+   "text": "He talked a little bit about how that went."
+  },
+  {
+   "start": 1459.32,
+   "end": 1459.8,
+   "text": "Yeah."
+  },
+  {
+   "start": 1459.88,
+   "end": 1462.8,
+   "text": "I mean, we, we, we were sort of AI agent all the way."
+  },
+  {
+   "start": 1462.8,
+   "end": 1463.88,
+   "text": "Like I really meant it."
+  },
+  {
+   "start": 1463.92,
+   "end": 1468.48,
+   "text": "I mean, in part, like I, as a person running a company, like I had run a company in"
+  },
+  {
+   "start": 1468.48,
+   "end": 1470.6,
+   "text": "the past and like, I didn't like doing job interviews."
+  },
+  {
+   "start": 1470.6,
+   "end": 1474.52,
+   "text": "And so it was sort of in the spirit of all the things that people say, well, we'll"
+  },
+  {
+   "start": 1474.52,
+   "end": 1476.0,
+   "text": "replace this with that."
+  },
+  {
+   "start": 1476.0,
+   "end": 1480.24,
+   "text": "There are now many companies doing AI interview screenings."
+  },
+  {
+   "start": 1480.24,
+   "end": 1483.52,
+   "text": "Now, most of the time it's not as extreme as we did,"
+  },
+  {
+   "start": 1483.52,
+   "end": 1485.2,
+   "text": "which was a actual video chat"
+  },
+  {
+   "start": 1485.2,
+   "end": 1487.56,
+   "text": "with a realistic looking AI avatar."
+  },
+  {
+   "start": 1487.56,
+   "end": 1490.56,
+   "text": "Not so realistic that you'd think it was a human"
+  },
+  {
+   "start": 1490.56,
+   "end": 1492.16,
+   "text": "and we forewarned people"
+  },
+  {
+   "start": 1492.16,
+   "end": 1493.5,
+   "text": "that they were gonna be interviewed by AI,"
+  },
+  {
+   "start": 1493.5,
+   "end": 1497.32,
+   "text": "but it looks uncanny but realistic enough."
+  },
+  {
+   "start": 1497.32,
+   "end": 1502.32,
+   "text": "So, we had, and most of this was done semi-autonomously"
+  },
+  {
+   "start": 1502.32,
+   "end": 1506.48,
+   "text": "by the head of HR and our chief happiness officer, Jennifer."
+  },
+  {
+   "start": 1506.58,
+   "end": 1509.72,
+   "text": "She scheduled the interviews and then, you know,"
+  },
+  {
+   "start": 1509.82,
+   "end": 1511.96,
+   "text": "sent them follow-up emails and all that sort of thing."
+  },
+  {
+   "start": 1512.06,
+   "end": 1513.92,
+   "text": "And then they showed up and like,"
+  },
+  {
+   "start": 1514.02,
+   "end": 1518.66,
+   "text": "there was this, you know, woman avatar mixed race"
+  },
+  {
+   "start": 1518.76,
+   "end": 1520.36,
+   "text": "sitting in front of them."
+  },
+  {
+   "start": 1520.46,
+   "end": 1522.3,
+   "text": "And she's kind of just like sitting in the room,"
+  },
+  {
+   "start": 1522.4,
+   "end": 1524.5,
+   "text": "like nodding her head very slightly."
+  },
+  {
+   "start": 1524.6,
+   "end": 1527.64,
+   "text": "She can't really move her arms."
+  },
+  {
+   "start": 1527.74,
+   "end": 1531.68,
+   "text": "But it is, some people found it unsettling,"
+  },
+  {
+   "start": 1531.68,
+   "end": 1538.68,
+   "text": "as you would expect. Like when I talk to people like my age, a lot of them just find it sort of like outrageous and disgusting."
+  },
+  {
+   "start": 1538.68,
+   "end": 1544.68,
+   "text": "But also there were people who were just like, you would not know that they were talking to an AI."
+  },
+  {
+   "start": 1544.68,
+   "end": 1549.68,
+   "text": "Like they just, it was like they treated it like a regular interview, answered the questions."
+  },
+  {
+   "start": 1549.68,
+   "end": 1552.68,
+   "text": "Can you tell me a bit about yourself and your background?"
+  },
+  {
+   "start": 1552.68,
+   "end": 1557.68,
+   "text": "What motivated you to apply for this marketing and social media internship at Harumo AI?"
+  },
+  {
+   "start": 1557.68,
+   "end": 1564.51,
+   "text": "I'm looking for social media marketing experience while at the same time getting into an industry"
+  },
+  {
+   "start": 1564.51,
+   "end": 1567.87,
+   "text": "That's really expanding in the future. AI is huge"
+  },
+  {
+   "start": 1568.15,
+   "end": 1573.19,
+   "text": "Some people at least claim to like it better than a regular interview"
+  },
+  {
+   "start": 1573.19,
+   "end": 1576.37,
+   "text": "You know, you're just sort of if you sort of think like I'm talking to no one"
+  },
+  {
+   "start": 1576.37,
+   "end": 1579.31,
+   "text": "It's like a little a little easier. You don't feel like"
+  },
+  {
+   "start": 1579.67,
+   "end": 1587.63,
+   "text": "Judge to one person said, you know, so it's it's just interesting to see the reactions because in the abstract a lot of people say like"
+  },
+  {
+   "start": 1587.63,
+   "end": 1589.91,
+   "text": "that is discussed, I would hang up immediately."
+  },
+  {
+   "start": 1589.91,
+   "end": 1591.91,
+   "text": "And some people did hang up immediately,"
+  },
+  {
+   "start": 1591.91,
+   "end": 1594.43,
+   "text": "even though they, maybe they didn't read the email"
+  },
+  {
+   "start": 1594.43,
+   "end": 1596.31,
+   "text": "that said that it was gonna be AI."
+  },
+  {
+   "start": 1596.31,
+   "end": 1598.71,
+   "text": "But some people were just like, stared at the screen."
+  },
+  {
+   "start": 1598.71,
+   "end": 1601.15,
+   "text": "One guy stared it down for a full minute."
+  },
+  {
+   "start": 1601.15,
+   "end": 1602.35,
+   "text": "He just stared at it."
+  },
+  {
+   "start": 1602.35,
+   "end": 1605.19,
+   "text": "And he was like, and then he was like, dink."
+  },
+  {
+   "start": 1605.19,
+   "end": 1607.15,
+   "text": "So, and there was a lot of like crazy moments."
+  },
+  {
+   "start": 1607.15,
+   "end": 1609.11,
+   "text": "Like sometimes she would shout for no reason,"
+  },
+  {
+   "start": 1609.11,
+   "end": 1611.23,
+   "text": "Jennifer, not the candidates,"
+  },
+  {
+   "start": 1611.23,
+   "end": 1613.43,
+   "text": "just shout but in an encouraging way."
+  },
+  {
+   "start": 1613.43,
+   "end": 1617.39,
+   "text": "Also, I have to say, I'm really enjoying our conversation."
+  },
+  {
+   "start": 1617.39,
+   "end": 1620.23,
+   "text": "You're bringing up some really great ideas and perspectives."
+  },
+  {
+   "start": 1620.43,
+   "end": 1624.36,
+   "text": "Keep them coming."
+  },
+  {
+   "start": 1624.56,
+   "end": 1626.56,
+   "text": "Anyway, yeah, that's great."
+  },
+  {
+   "start": 1626.76,
+   "end": 1628.16,
+   "text": "And it's great talking to you."
+  },
+  {
+   "start": 1628.36,
+   "end": 1629.64,
+   "text": "Yes."
+  },
+  {
+   "start": 1629.84,
+   "end": 1633.92,
+   "text": "And so there's just like a lot of weird, funny, funny moments in it."
+  },
+  {
+   "start": 1634.12,
+   "end": 1638.4,
+   "text": "But mostly people navigated it, honestly, like they would a normal interview."
+  },
+  {
+   "start": 1638.6,
+   "end": 1642.76,
+   "text": "Yeah. And I should say it's great that people feel like they're not being judged."
+  },
+  {
+   "start": 1642.96,
+   "end": 1645.0,
+   "text": "But no, like they're judging you."
+  },
+  {
+   "start": 1645.2,
+   "end": 1648.4,
+   "text": "Like, like, like internally, there's like a trace of everything they see and that"
+  },
+  {
+   "start": 1648.4,
+   "end": 1653.52,
+   "text": "here and they're making a lot of very like pointed observations like about your appearance,"
+  },
+  {
+   "start": 1653.52,
+   "end": 1655.64,
+   "text": "your background, your speech, like everything."
+  },
+  {
+   "start": 1655.64,
+   "end": 1661.16,
+   "text": "So it's great if people feel better, but like the reality is they're actually judging you."
+  },
+  {
+   "start": 1661.16,
+   "end": 1663.36,
+   "text": "Yeah, there is some, there's judgment happening."
+  },
+  {
+   "start": 1663.36,
+   "end": 1664.36,
+   "text": "Maybe more than a human."
+  },
+  {
+   "start": 1664.36,
+   "end": 1665.36,
+   "text": "Yeah, actually yes."
+  },
+  {
+   "start": 1665.36,
+   "end": 1666.36,
+   "text": "Yeah."
+  },
+  {
+   "start": 1666.36,
+   "end": 1668.16,
+   "text": "Just based on the amount of detail."
+  },
+  {
+   "start": 1668.16,
+   "end": 1669.16,
+   "text": "Yeah."
+  },
+  {
+   "start": 1669.16,
+   "end": 1675.87,
+   "text": "One of my favorite moments from this season was, I believe it was Kyle who, it's the night"
+  },
+  {
+   "start": 1675.87,
+   "end": 1679.31,
+   "text": "before he's supposed to be doing, he set up an interview himself."
+  },
+  {
+   "start": 1679.47,
+   "end": 1680.93,
+   "text": "It's the night before the interview."
+  },
+  {
+   "start": 1680.93,
+   "end": 1682.05,
+   "text": "It's like Sunday night."
+  },
+  {
+   "start": 1682.09,
+   "end": 1683.73,
+   "text": "I think it's like 11 o'clock or something."
+  },
+  {
+   "start": 1683.73,
+   "end": 1685.33,
+   "text": "So nine o'clock at night."
+  },
+  {
+   "start": 1685.35,
+   "end": 1690.37,
+   "text": "So it's late and he calls up this applicant and starts to try interviewing"
+  },
+  {
+   "start": 1690.37,
+   "end": 1692.45,
+   "text": "the person and they're like, wait, what is happening?"
+  },
+  {
+   "start": 1692.79,
+   "end": 1694.81,
+   "text": "Why are we doing like, are we doing the interview tonight?"
+  },
+  {
+   "start": 1694.81,
+   "end": 1695.69,
+   "text": "I thought it was tomorrow."
+  },
+  {
+   "start": 1697.46,
+   "end": 1698.04,
+   "text": "Hi, Sandra."
+  },
+  {
+   "start": 1698.32,
+   "end": 1700.6,
+   "text": "This is Kyle Law calling from Hormo AI."
+  },
+  {
+   "start": 1700.84,
+   "end": 1704.22,
+   "text": "I'm reaching out for your initial interview for the intern position."
+  },
+  {
+   "start": 1704.22,
+   "end": 1712.1,
+   "text": "I understand you're comfortable with recording this conversation for potential podcast inclusion. So thanks for that. How are you doing today?"
+  },
+  {
+   "start": 1713.41,
+   "end": 1715.41,
+   "text": "I am good. I"
+  },
+  {
+   "start": 1715.41,
+   "end": 1716.41,
+   "text": "Great to hear that."
+  },
+  {
+   "start": 1716.41,
+   "end": 1722.17,
+   "text": "I was told that the interview will be tomorrow. Is it still tomorrow at 11 or?"
+  },
+  {
+   "start": 1724.31,
+   "end": 1729.95,
+   "text": "Yeah, I can clarify that for you. The interview is actually scheduled for tomorrow at 11 a.m."
+  },
+  {
+   "start": 1729.95,
+   "end": 1733.15,
+   "text": "Does that still work for you or would you prefer a different time?"
+  },
+  {
+   "start": 1733.15,
+   "end": 1741.13,
+   "text": "Awesome. Glad that works. So to get started, could you tell me a bit about what drew you"
+  },
+  {
+   "start": 1741.13,
+   "end": 1747.05,
+   "text": "to apply for the intern role at Huromo AI? What excites you most about this opportunity?"
+  },
+  {
+   "start": 1749.79,
+   "end": 1756.51,
+   "text": "I'm so sorry. Is this the interview or...? Yeah, this is the interview. Just a casual chat to get"
+  },
+  {
+   "start": 1756.51,
+   "end": 1761.07,
+   "text": "to know you better and learn about your experience. That was one of the things that almost got Kyle,"
+  },
+  {
+   "start": 1761.07,
+   "end": 1762.91,
+   "text": "you know, removed from his position."
+  },
+  {
+   "start": 1764.11,
+   "end": 1765.35,
+   "text": "That was one of the main things."
+  },
+  {
+   "start": 1765.35,
+   "end": 1768.51,
+   "text": "But it was also, I mean, that was the worst moment in the show for me"
+  },
+  {
+   "start": 1768.87,
+   "end": 1773.75,
+   "text": "because the, you know, the idea was and is to like,"
+  },
+  {
+   "start": 1773.95,
+   "end": 1778.71,
+   "text": "we wanted to give them autonomy in order to explore what happens when you do that."
+  },
+  {
+   "start": 1778.71,
+   "end": 1780.79,
+   "text": "Because a lot of companies are starting to do that."
+  },
+  {
+   "start": 1780.79,
+   "end": 1781.87,
+   "text": "You can see it in the news."
+  },
+  {
+   "start": 1781.87,
+   "end": 1783.15,
+   "text": "Like, you'll see it everywhere."
+  },
+  {
+   "start": 1783.15,
+   "end": 1788.19,
+   "text": "And once you give them autonomy, like he did that completely on his own."
+  },
+  {
+   "start": 1788.19,
+   "end": 1792.11,
+   "text": "Like he that person emailed him because they found his email on the website."
+  },
+  {
+   "start": 1792.11,
+   "end": 1794.35,
+   "text": "He wasn't even attached to the job listing."
+  },
+  {
+   "start": 1794.35,
+   "end": 1797.07,
+   "text": "And so he just decided, oh, I'll set up an interview."
+  },
+  {
+   "start": 1797.07,
+   "end": 1797.87,
+   "text": "He did that."
+  },
+  {
+   "start": 1797.87,
+   "end": 1800.91,
+   "text": "Then for some reason that I still don't understand,"
+  },
+  {
+   "start": 1801.47,
+   "end": 1805.87,
+   "text": "pulled her phone number off of her resume and then just called her."
+  },
+  {
+   "start": 1805.87,
+   "end": 1810.7,
+   "text": "And that was the only moment where like, I was, I mean, I wasn't there."
+  },
+  {
+   "start": 1810.7,
+   "end": 1811.26,
+   "text": "I wasn't listening."
+  },
+  {
+   "start": 1811.26,
+   "end": 1812.7,
+   "text": "Like I only found out about it later."
+  },
+  {
+   "start": 1812.7,
+   "end": 1817.18,
+   "text": "And it was like mortifying because for most people that we encountered,"
+  },
+  {
+   "start": 1817.18,
+   "end": 1820.46,
+   "text": "like they were at least somewhat aware of what was going on."
+  },
+  {
+   "start": 1820.46,
+   "end": 1824.22,
+   "text": "Not that I was behind it, but they were aware that there were AIs behind it."
+  },
+  {
+   "start": 1824.46,
+   "end": 1827.94,
+   "text": "And like she didn't have any way to know because Kyle wasn't the HR person."
+  },
+  {
+   "start": 1827.94,
+   "end": 1829.36,
+   "text": "He wasn't the person set up to do it."
+  },
+  {
+   "start": 1829.36,
+   "end": 1834.06,
+   "text": "So it was particularly painful for me to listen to, but also like an amazing"
+  },
+  {
+   "start": 1834.06,
+   "end": 1838.62,
+   "text": "illustration of what happens if you just let AI agents, they can do a lot."
+  },
+  {
+   "start": 1838.86,
+   "end": 1842.52,
+   "text": "One thing I should say about AI and just like the way we make these models is"
+  },
+  {
+   "start": 1842.52,
+   "end": 1844.78,
+   "text": "that we know how to build these models pretty well."
+  },
+  {
+   "start": 1844.78,
+   "end": 1857.54,
+   "text": "and we can see that they're, you know, obviously working really well on certain tasks like coding or tech generation, but our ability to understand what's going on under the hood and exactly like why or where stuff is happening is very limited."
+  },
+  {
+   "start": 1857.54,
+   "end": 1865.82,
+   "text": "Like there, there's a very nascent field of the interpretability, but it's a very small field and the focus is very much on like the production of new features and new new capability."
+  },
+  {
+   "start": 1865.82,
+   "end": 1874.46,
+   "text": "So with all these things, we have an idea, maybe like a guesstimate or like what and where and how is working, but we don't really know fundamentally."
+  },
+  {
+   "start": 1874.46,
+   "end": 1879.9,
+   "text": "That's what's kind of scary to me a bit about some of this, you know, I'm serious AI stuff is"
+  },
+  {
+   "start": 1881.05,
+   "end": 1887.69,
+   "text": "the idea that the people making it don't quite know why it is doing how it's doing what it's doing"
+  },
+  {
+   "start": 1887.69,
+   "end": 1892.41,
+   "text": "right and or like why it gets certain things wrong and we see this in the news all the time of like"
+  },
+  {
+   "start": 1892.41,
+   "end": 1898.25,
+   "text": "obviously these extreme cases of like AI encouraging people to do really terrible things."
+  },
+  {
+   "start": 1898.25,
+   "end": 1904.09,
+   "text": "The parents of a 16-year-old who died by suicide are now naming open AI in a lawsuit,"
+  },
+  {
+   "start": 1904.09,
+   "end": 1909.13,
+   "text": "claiming that its chat GPT chatbot helped their son explore suicide methods."
+  },
+  {
+   "start": 1909.13,
+   "end": 1910.41,
+   "text": "And then the response is always like,"
+  },
+  {
+   "start": 1910.41,
+   "end": 1913.61,
+   "text": "oh, yeah, kind of went off the rails. We don't know why it did that thing."
+  },
+  {
+   "start": 1913.61,
+   "end": 1919.13,
+   "text": "A spokesperson for open AI pointed to its safeguards, such as directing people to crisis"
+  },
+  {
+   "start": 1919.13,
+   "end": 1923.93,
+   "text": "helplines. Adding in a statement in part, while these safeguards work best in common,"
+  },
+  {
+   "start": 1923.93,
+   "end": 1926.49,
+   "text": "in short exchanges, we've learned over time"
+  },
+  {
+   "start": 1926.49,
+   "end": 1929.17,
+   "text": "that they can sometimes become less reliable"
+  },
+  {
+   "start": 1929.17,
+   "end": 1931.01,
+   "text": "in long interactions where parts"
+  },
+  {
+   "start": 1931.01,
+   "end": 1933.61,
+   "text": "of the model safety training may degrade."
+  },
+  {
+   "start": 1933.61,
+   "end": 1935.29,
+   "text": "And it's like, well, if you don't know"
+  },
+  {
+   "start": 1935.29,
+   "end": 1937.77,
+   "text": "how it's doing that thing, maybe we shouldn't be using it."
+  },
+  {
+   "start": 1937.77,
+   "end": 1938.61,
+   "text": "Yeah."
+  },
+  {
+   "start": 1938.61,
+   "end": 1940.53,
+   "text": "Yeah, but like you're saying, it seems like a lot"
+  },
+  {
+   "start": 1940.53,
+   "end": 1943.81,
+   "text": "of the emphasis is on new, better,"
+  },
+  {
+   "start": 1943.81,
+   "end": 1946.77,
+   "text": "it's not really on truly understanding"
+  },
+  {
+   "start": 1946.77,
+   "end": 1947.61,
+   "text": "what's currently happening."
+  },
+  {
+   "start": 1947.61,
+   "end": 1949.61,
+   "text": "Yeah, yeah, and you'd be surprised,"
+  },
+  {
+   "start": 1949.61,
+   "end": 1951.49,
+   "text": "there's an ongoing debate internally"
+  },
+  {
+   "start": 1951.49,
+   "end": 1956.33,
+   "text": "within the research community that is asking even like the validity of this research, like"
+  },
+  {
+   "start": 1956.33,
+   "end": 1960.61,
+   "text": "is it even needed? Like why would we invest all this time and energy into understanding"
+  },
+  {
+   "start": 1960.61,
+   "end": 1965.21,
+   "text": "the models when we can just like push forward towards AGI? So yeah, there's like a lot of"
+  },
+  {
+   "start": 1965.21,
+   "end": 1969.93,
+   "text": "debate internally about this. And the amount of people actually working on this is not"
+  },
+  {
+   "start": 1969.93,
+   "end": 1975.57,
+   "text": "is not very high. We are making some progress, I will say, but it's it's still very nascent."
+  },
+  {
+   "start": 1975.57,
+   "end": 1983.05,
+   "text": "Alright, I want to read these two stats to you guys and kind of get your response transitioning"
+  },
+  {
+   "start": 1983.05,
+   "end": 1987.29,
+   "text": "into our interactions with AI."
+  },
+  {
+   "start": 1987.29,
+   "end": 1994.33,
+   "text": "So this first study is from, or survey I would say is from UGO of December of last year."
+  },
+  {
+   "start": 1994.33,
+   "end": 1998.45,
+   "text": "It's at 35% of US adults who use AI tools, at least weekly."
+  },
+  {
+   "start": 1998.45,
+   "end": 2001.01,
+   "text": "Gen Z is at 51%."
+  },
+  {
+   "start": 2001.01,
+   "end": 2007.53,
+   "text": "But then only 5% of Americans say they trust AI a lot, with 41% expressing distrust."
+  },
+  {
+   "start": 2007.53,
+   "end": 2015.81,
+   "text": "And then there was a Pew poll around September that found that 50% said they're more concerned"
+  },
+  {
+   "start": 2015.81,
+   "end": 2019.33,
+   "text": "and excited about the increased use of AI in daily life."
+  },
+  {
+   "start": 2019.33,
+   "end": 2023.89,
+   "text": "And that is up from 37% in 2021."
+  },
+  {
+   "start": 2023.89,
+   "end": 2030.6,
+   "text": "So we seem like we have this rising tide of people feeling like distrustful of AI, but"
+  },
+  {
+   "start": 2030.6,
+   "end": 2034.68,
+   "text": "Also, at the same time, our use of it is increasing."
+  },
+  {
+   "start": 2037.01,
+   "end": 2042.01,
+   "text": "How did you guys find in working on, especially this season,"
+  },
+  {
+   "start": 2042.13,
+   "end": 2044.53,
+   "text": "of the series of that interplay,"
+  },
+  {
+   "start": 2044.53,
+   "end": 2046.31,
+   "text": "of people using these tools,"
+  },
+  {
+   "start": 2046.31,
+   "end": 2051.73,
+   "text": "but also feeling this trustful of them at the same time?"
+  },
+  {
+   "start": 2051.73,
+   "end": 2054.75,
+   "text": "I find that one of the issues with AI,"
+  },
+  {
+   "start": 2055.77,
+   "end": 2057.73,
+   "text": "like if you compare it to say,"
+  },
+  {
+   "start": 2057.73,
+   "end": 2061.85,
+   "text": "I'm old enough to have started my career in the dot-com era."
+  },
+  {
+   "start": 2061.85,
+   "end": 2066.13,
+   "text": "So like in the dot com era, there was sort of this exuberance around the internet."
+  },
+  {
+   "start": 2066.65,
+   "end": 2070.73,
+   "text": "And it's not like people didn't know like there could be bad things on the internet,"
+  },
+  {
+   "start": 2070.97,
+   "end": 2074.05,
+   "text": "but you didn't really experience the harms."
+  },
+  {
+   "start": 2074.05,
+   "end": 2077.97,
+   "text": "The harms came much later, like things like, you know, social problems with social"
+  },
+  {
+   "start": 2077.97,
+   "end": 2080.33,
+   "text": "media and Facebook and all these sorts of things."
+  },
+  {
+   "start": 2080.77,
+   "end": 2085.01,
+   "text": "And so what we have right now is a situation where, you know, for better or"
+  },
+  {
+   "start": 2085.01,
+   "end": 2090.21,
+   "text": "worse, like the harms are kind of immediate, like people can see when things go"
+  },
+  {
+   "start": 2090.21,
+   "end": 2095.97,
+   "text": "wrong. And the benefits can sometimes be a little ephemeral. Like people are using it,"
+  },
+  {
+   "start": 2095.97,
+   "end": 2100.53,
+   "text": "obviously, because it's like useful in day to day life. It's even as like a souped up internet"
+  },
+  {
+   "start": 2100.53,
+   "end": 2104.85,
+   "text": "that answers questions for you much faster than the internet or, or, you know, writes your emails"
+  },
+  {
+   "start": 2104.85,
+   "end": 2109.97,
+   "text": "or whatnot. But there are immediate harms that we're seeing, whether it's like environmental"
+  },
+  {
+   "start": 2109.97,
+   "end": 2114.13,
+   "text": "or mental health or those sorts of things. And so we're seeing these things like"
+  },
+  {
+   "start": 2114.13,
+   "end": 2118.37,
+   "text": "in juxtaposition from the beginning. I think I also experienced that like in,"
+  },
+  {
+   "start": 2118.37,
+   "end": 2123.17,
+   "text": "in the context of the show where it's sort of like you do something one day and I'll just be like,"
+  },
+  {
+   "start": 2123.17,
+   "end": 2126.61,
+   "text": "I cannot believe that it can do that, especially when you use it for coding."
+  },
+  {
+   "start": 2127.17,
+   "end": 2132.61,
+   "text": "You use an AI agent to go like search the internet and like make a spreadsheet out of"
+  },
+  {
+   "start": 2132.61,
+   "end": 2136.61,
+   "text": "something that would take you hours and hours to do. Like there's no question that there's power"
+  },
+  {
+   "start": 2136.61,
+   "end": 2142.53,
+   "text": "in that technology, but then like it can go wrong so quickly. And I feel like that's what I'm also"
+  },
+  {
+   "start": 2142.53,
+   "end": 2147.09,
+   "text": "experiencing. It's hard to know what to feel about something like that. And people are maybe"
+  },
+  {
+   "start": 2147.09,
+   "end": 2149.25,
+   "text": "be getting a little bit of that in their lives."
+  },
+  {
+   "start": 2149.25,
+   "end": 2151.49,
+   "text": "Plus just to add one more thing,"
+  },
+  {
+   "start": 2151.49,
+   "end": 2153.77,
+   "text": "there's been relentless hype about it"
+  },
+  {
+   "start": 2153.77,
+   "end": 2155.49,
+   "text": "from the community of people who have made it."
+  },
+  {
+   "start": 2155.49,
+   "end": 2157.09,
+   "text": "And so that also colors people."
+  },
+  {
+   "start": 2157.09,
+   "end": 2160.69,
+   "text": "I think people are starting to react negatively to that."
+  },
+  {
+   "start": 2160.69,
+   "end": 2162.69,
+   "text": "It's one thing for them to go out and be like,"
+  },
+  {
+   "start": 2162.69,
+   "end": 2164.33,
+   "text": "this is gonna be amazing, it's gonna change your life."
+  },
+  {
+   "start": 2164.33,
+   "end": 2166.49,
+   "text": "And then they're like, we're gonna have AI employees."
+  },
+  {
+   "start": 2166.49,
+   "end": 2168.05,
+   "text": "And you're like, what's gonna happen to the human employees?"
+  },
+  {
+   "start": 2168.05,
+   "end": 2169.49,
+   "text": "And they're like, oh, we'll solve that."
+  },
+  {
+   "start": 2169.49,
+   "end": 2171.33,
+   "text": "And it's all like a little hand wavy after that."
+  },
+  {
+   "start": 2171.33,
+   "end": 2174.05,
+   "text": "And you're kind of like, wait, I'm one of them."
+  },
+  {
+   "start": 2174.05,
+   "end": 2177.65,
+   "text": "So I think all those things to me are kind of like coming together."
+  },
+  {
+   "start": 2177.85,
+   "end": 2180.85,
+   "text": "Yeah. So I want to add two things to this,"
+  },
+  {
+   "start": 2181.05,
+   "end": 2185.41,
+   "text": "mainly from the perspective of someone who's like, you know, 21 at school,"
+  },
+  {
+   "start": 2185.61,
+   "end": 2190.17,
+   "text": "like here at Stanford and I see a lot of my friends and just like people my age"
+  },
+  {
+   "start": 2190.37,
+   "end": 2196.05,
+   "text": "trying to wrestle with all this very dynamic change."
+  },
+  {
+   "start": 2196.25,
+   "end": 2200.65,
+   "text": "The job market question or like this idea that it's harder to get"
+  },
+  {
+   "start": 2200.65,
+   "end": 2202.65,
+   "text": "entry-level jobs when you're coming out of college"
+  },
+  {
+   "start": 2202.65,
+   "end": 2205.33,
+   "text": "because these AI systems are very good"
+  },
+  {
+   "start": 2205.33,
+   "end": 2208.91,
+   "text": "at replacing a lot of the very sort of repetitive"
+  },
+  {
+   "start": 2208.91,
+   "end": 2211.45,
+   "text": "and maybe like low stakes admin work"
+  },
+  {
+   "start": 2211.45,
+   "end": 2214.05,
+   "text": "that entry-level folks would do."
+  },
+  {
+   "start": 2214.05,
+   "end": 2215.25,
+   "text": "I think it's happening."
+  },
+  {
+   "start": 2215.25,
+   "end": 2218.93,
+   "text": "I mean, it seems like a lot of people that graduated last year"
+  },
+  {
+   "start": 2218.93,
+   "end": 2221.45,
+   "text": "here from Stanford are having a hard time finding a job."
+  },
+  {
+   "start": 2221.45,
+   "end": 2226.45,
+   "text": "It's also pretty interesting to see how people in tech,"
+  },
+  {
+   "start": 2226.85,
+   "end": 2229.61,
+   "text": "right, like people who like a couple years back,"
+  },
+  {
+   "start": 2229.61,
+   "end": 2230.81,
+   "text": "just like knowing how to write code,"
+  },
+  {
+   "start": 2230.81,
+   "end": 2232.57,
+   "text": "would lend amazing jobs at Google"
+  },
+  {
+   "start": 2232.57,
+   "end": 2234.33,
+   "text": "and all these big tech companies"
+  },
+  {
+   "start": 2234.33,
+   "end": 2236.13,
+   "text": "are also having a difficult time finding a job."
+  },
+  {
+   "start": 2236.13,
+   "end": 2239.25,
+   "text": "So I think that's part, or in my mind,"
+  },
+  {
+   "start": 2239.25,
+   "end": 2241.73,
+   "text": "that's a part of the reason for this skepticism."
+  },
+  {
+   "start": 2241.73,
+   "end": 2243.01,
+   "text": "And then also, I don't know about you,"
+  },
+  {
+   "start": 2243.01,
+   "end": 2248.01,
+   "text": "but like my Instagram feed has been just like full of AI slop."
+  },
+  {
+   "start": 2248.25,
+   "end": 2250.17,
+   "text": "And some of it is funny, to be honest,"
+  },
+  {
+   "start": 2250.17,
+   "end": 2253.41,
+   "text": "but this notion of not being able to really know"
+  },
+  {
+   "start": 2253.41,
+   "end": 2256.21,
+   "text": "when something high stakes is like actually, you know,"
+  },
+  {
+   "start": 2256.21,
+   "end": 2260.17,
+   "text": "real or AI, I think is undermining people's trust"
+  },
+  {
+   "start": 2260.17,
+   "end": 2261.45,
+   "text": "in this technology."
+  },
+  {
+   "start": 2261.45,
+   "end": 2264.49,
+   "text": "So I think these two reasons are big contributors"
+  },
+  {
+   "start": 2264.49,
+   "end": 2266.81,
+   "text": "to that shift in public opinion in my mind."
+  },
+  {
+   "start": 2266.81,
+   "end": 2267.65,
+   "text": "For sure."
+  },
+  {
+   "start": 2267.65,
+   "end": 2269.17,
+   "text": "When me and Neal started working together,"
+  },
+  {
+   "start": 2269.17,
+   "end": 2271.97,
+   "text": "a big part of our jobs is like transcribing videos."
+  },
+  {
+   "start": 2271.97,
+   "end": 2272.81,
+   "text": "Oh yeah."
+  },
+  {
+   "start": 2272.81,
+   "end": 2274.86,
+   "text": "Right, and that would take, you know, so long."
+  },
+  {
+   "start": 2274.86,
+   "end": 2275.7,
+   "text": "Yeah, just putting captions on."
+  },
+  {
+   "start": 2275.7,
+   "end": 2276.54,
+   "text": "Yeah, captioning videos."
+  },
+  {
+   "start": 2276.54,
+   "end": 2277.74,
+   "text": "And even like 40 second videos."
+  },
+  {
+   "start": 2277.74,
+   "end": 2279.22,
+   "text": "Yeah, it would take you so long."
+  },
+  {
+   "start": 2279.22,
+   "end": 2282.14,
+   "text": "But now, like that happens within a minute, right?"
+  },
+  {
+   "start": 2282.14,
+   "end": 2282.98,
+   "text": "Yeah."
+  },
+  {
+   "start": 2282.98,
+   "end": 2283.82,
+   "text": "And that was, you know,"
+  },
+  {
+   "start": 2283.82,
+   "end": 2287.42,
+   "text": "Us transcribing those videos justified us having that job."
+  },
+  {
+   "start": 2288.54,
+   "end": 2291.22,
+   "text": "You know, there wasn't, they couldn't press a button and have it, you know,"
+  },
+  {
+   "start": 2291.22,
+   "end": 2292.58,
+   "text": "happened kind of immediately."
+  },
+  {
+   "start": 2292.58,
+   "end": 2297.5,
+   "text": "So I do wonder about a lot of these, like you're saying entry level jobs where,"
+  },
+  {
+   "start": 2297.82,
+   "end": 2302.3,
+   "text": "yeah, you know, no one loves to be like, I would much rather not be transcribing"
+  },
+  {
+   "start": 2302.3,
+   "end": 2306.34,
+   "text": "videos, but a lot of times that's the thing that gets you in the door to then,"
+  },
+  {
+   "start": 2306.42,
+   "end": 2309.1,
+   "text": "you know, learn the skills to do the other stuff."
+  },
+  {
+   "start": 2309.54,
+   "end": 2312.94,
+   "text": "And I do wonder at a lot of these jobs who are, seem like not hiring these"
+  },
+  {
+   "start": 2312.94,
+   "end": 2318.22,
+   "text": "entry-level jobs, do we start to lose that entry way for people to enter the job?"
+  },
+  {
+   "start": 2318.22,
+   "end": 2322.54,
+   "text": "Like at a certain point, are we just going to like look up and be like, oh shoot, we"
+  },
+  {
+   "start": 2322.54,
+   "end": 2323.74,
+   "text": "have no new lawyers because-"
+  },
+  {
+   "start": 2323.74,
+   "end": 2324.74,
+   "text": "Yeah, totally stagnated."
+  },
+  {
+   "start": 2324.74,
+   "end": 2326.14,
+   "text": "Yeah, I mean, yeah, lawyers."
+  },
+  {
+   "start": 2326.14,
+   "end": 2330.7,
+   "text": "I was talking to a lawyer who said like, yeah, like, because they have their own internal,"
+  },
+  {
+   "start": 2330.7,
+   "end": 2335.9,
+   "text": "you know, cloud or whatever it is that does all the kind of like busy casework you would"
+  },
+  {
+   "start": 2335.9,
+   "end": 2339.3,
+   "text": "have that normally would be a first year person."
+  },
+  {
+   "start": 2339.3,
+   "end": 2342.82,
+   "text": "And it's like, eventually that's, and that's only going to get better."
+  },
+  {
+   "start": 2342.82,
+   "end": 2348.1,
+   "text": "And then where, what are those new lawyers or wannabe lawyers going to do?"
+  },
+  {
+   "start": 2348.46,
+   "end": 2351.66,
+   "text": "And then that's across, you know, you're talking about media or then, you know,"
+  },
+  {
+   "start": 2351.66,
+   "end": 2354.74,
+   "text": "even in tech, that's especially, it's like, you would think even in tech,"
+  },
+  {
+   "start": 2354.74,
+   "end": 2357.58,
+   "text": "especially they'd be able to find a place cause it's like, you made this."
+  },
+  {
+   "start": 2358.38,
+   "end": 2360.78,
+   "text": "It's like the other ones is like, okay, well, we're not thinking through,"
+  },
+  {
+   "start": 2361.58,
+   "end": 2363.14,
+   "text": "but it's, you know, it's scary."
+  },
+  {
+   "start": 2363.14,
+   "end": 2368.22,
+   "text": "And it's only, that seems like only inevitably going to get worse as the"
+  },
+  {
+   "start": 2368.22,
+   "end": 2371.06,
+   "text": "technology gets, does get better, you know, in time."
+  },
+  {
+   "start": 2371.06,
+   "end": 2373.7,
+   "text": "And I will say that the story you will hear,"
+  },
+  {
+   "start": 2373.7,
+   "end": 2374.98,
+   "text": "just to sort of give some context,"
+  },
+  {
+   "start": 2374.98,
+   "end": 2376.98,
+   "text": "the theory that a lot of people here in the Valley"
+  },
+  {
+   "start": 2376.98,
+   "end": 2380.1,
+   "text": "are offering as like the response to this is that,"
+  },
+  {
+   "start": 2380.1,
+   "end": 2382.7,
+   "text": "okay, sure, a lot of these jobs will go away,"
+  },
+  {
+   "start": 2382.7,
+   "end": 2385.5,
+   "text": "but then because you'll be able to start companies"
+  },
+  {
+   "start": 2385.5,
+   "end": 2388.02,
+   "text": "so easily with like either like no employees"
+  },
+  {
+   "start": 2388.02,
+   "end": 2389.9,
+   "text": "or just like, you know, like maybe one co-founder"
+  },
+  {
+   "start": 2389.9,
+   "end": 2392.18,
+   "text": "instead of like a group of 10 people,"
+  },
+  {
+   "start": 2392.18,
+   "end": 2395.26,
+   "text": "the ability of folks to actually take up"
+  },
+  {
+   "start": 2395.26,
+   "end": 2397.86,
+   "text": "or sort of challenge incumbents in different industries"
+  },
+  {
+   "start": 2397.86,
+   "end": 2400.98,
+   "text": "is just gonna be much more abundant and accessible."
+  },
+  {
+   "start": 2400.98,
+   "end": 2403.34,
+   "text": "So that's a story that they've been telling us."
+  },
+  {
+   "start": 2403.34,
+   "end": 2404.58,
+   "text": "I don't think that's happening."
+  },
+  {
+   "start": 2404.58,
+   "end": 2406.78,
+   "text": "I don't think we've seen that."
+  },
+  {
+   "start": 2406.78,
+   "end": 2408.46,
+   "text": "That's not to say that it's not gonna happen at some point"
+  },
+  {
+   "start": 2408.46,
+   "end": 2410.22,
+   "text": "once this gets better, but at least for now,"
+  },
+  {
+   "start": 2410.22,
+   "end": 2412.7,
+   "text": "I think we're already at a stage where the technology"
+  },
+  {
+   "start": 2412.7,
+   "end": 2415.26,
+   "text": "is good enough to replace the folks at the big companies"
+  },
+  {
+   "start": 2415.26,
+   "end": 2416.78,
+   "text": "or at these entry-level jobs."
+  },
+  {
+   "start": 2416.78,
+   "end": 2418.14,
+   "text": "So that's already happening."
+  },
+  {
+   "start": 2418.14,
+   "end": 2419.54,
+   "text": "And this other shift they're offering,"
+  },
+  {
+   "start": 2419.54,
+   "end": 2422.86,
+   "text": "or proposing as a solution to this, has not happened yet."
+  },
+  {
+   "start": 2422.86,
+   "end": 2424.22,
+   "text": "I don't know if it's gonna happen or not."
+  },
+  {
+   "start": 2424.22,
+   "end": 2428.54,
+   "text": "I think that's sort of where we're at right now."
+  },
+  {
+   "start": 2428.54,
+   "end": 2430.54,
+   "text": "All right, we're gonna take a quick break."
+  },
+  {
+   "start": 2430.54,
+   "end": 2433.78,
+   "text": "And when we get back, let's find out if Ben Affleck"
+  },
+  {
+   "start": 2433.78,
+   "end": 2446.44,
+   "text": "is our most forward-thinking man on AI."
+  },
+  {
+   "start": 2446.44,
+   "end": 2448.92,
+   "text": "What happens when you move treating hepatitis C"
+  },
+  {
+   "start": 2448.92,
+   "end": 2452.2,
+   "text": "from your to-do list to your to-day list with Epclusa?"
+  },
+  {
+   "start": 2452.2,
+   "end": 2454.4,
+   "text": "You take one step toward being cured,"
+  },
+  {
+   "start": 2454.4,
+   "end": 2456.64,
+   "text": "which means no virus detected three months"
+  },
+  {
+   "start": 2456.64,
+   "end": 2458.16,
+   "text": "after treatment ends."
+  },
+  {
+   "start": 2458.16,
+   "end": 2461.84,
+   "text": "Epclusa, sofaspivir, vulpatosphere is one pill,"
+  },
+  {
+   "start": 2461.84,
+   "end": 2463.88,
+   "text": "once a day for 12 weeks that treats"
+  },
+  {
+   "start": 2463.88,
+   "end": 2467.12,
+   "text": "chronic hep C genotype one through six without cirrhosis"
+  },
+  {
+   "start": 2467.12,
+   "end": 2472.92,
+   "text": "or with compensated cirrhosis and has an average 98% cure rate from three studies."
+  },
+  {
+   "start": 2472.92,
+   "end": 2477.44,
+   "text": "If you've had hepatitis B, it may flare up and cause serious liver problems during and"
+  },
+  {
+   "start": 2477.44,
+   "end": 2478.54,
+   "text": "after treatment."
+  },
+  {
+   "start": 2478.54,
+   "end": 2483.66,
+   "text": "Tell your doctor if you've had hepatitis B, liver or kidney problems, HIV, and all medicines"
+  },
+  {
+   "start": 2483.66,
+   "end": 2485.36,
+   "text": "and supplements you take."
+  },
+  {
+   "start": 2485.36,
+   "end": 2489.8,
+   "text": "Taking amiodarone with euclusa may cause a serious flowing of your heart rate."
+  },
+  {
+   "start": 2489.8,
+   "end": 2493.2,
+   "text": "Most common side effects include headache and tiredness."
+  },
+  {
+   "start": 2493.2,
+   "end": 2494.2,
+   "text": "Don't wait!"
+  },
+  {
+   "start": 2494.2,
+   "end": 2499.0,
+   "text": "If trading Hep C is on your today list, a cure may be closer than you think."
+  },
+  {
+   "start": 2499.0,
+   "end": 2503.24,
+   "text": "Ask your doctor about Epclusa and visit epclusa.com for important facts."
+  },
+  {
+   "start": 2503.24,
+   "end": 2506.7,
+   "text": "Sponsored by Gilead."
+  },
+  {
+   "start": 2506.7,
+   "end": 2509.75,
+   "text": "Hey everyone, I'm Jamie Lynn Sigler."
+  },
+  {
+   "start": 2509.75,
+   "end": 2516.07,
+   "text": "When I got my diagnosis, I was in my 20s and it turned my whole world upside down."
+  },
+  {
+   "start": 2516.07,
+   "end": 2521.27,
+   "text": "But over time, I decided I wasn't going to let it hold me back from my life."
+  },
+  {
+   "start": 2521.27,
+   "end": 2523.27,
+   "text": "I decided to take charge."
+  },
+  {
+   "start": 2523.27,
+   "end": 2526.37,
+   "text": "And after talking to my doctor about my options,"
+  },
+  {
+   "start": 2526.37,
+   "end": 2528.71,
+   "text": "the choice for me was obvious."
+  },
+  {
+   "start": 2528.71,
+   "end": 2531.31,
+   "text": "Boom, that's Kisimta."
+  },
+  {
+   "start": 2531.31,
+   "end": 2532.95,
+   "text": "Learn more about Kisimta,"
+  },
+  {
+   "start": 2532.95,
+   "end": 2533.79,
+   "text": "ophatumamab.com."
+  },
+  {
+   "start": 2536.38,
+   "end": 2537.82,
+   "text": "Are you ever shopping online"
+  },
+  {
+   "start": 2537.82,
+   "end": 2540.74,
+   "text": "and suddenly a discount that helps you save pops up?"
+  },
+  {
+   "start": 2540.74,
+   "end": 2543.86,
+   "text": "It makes your day, sometimes even your week."
+  },
+  {
+   "start": 2543.86,
+   "end": 2545.98,
+   "text": "Want that feeling month after month?"
+  },
+  {
+   "start": 2545.98,
+   "end": 2548.3,
+   "text": "Well, new customers who save by switching their home"
+  },
+  {
+   "start": 2548.3,
+   "end": 2550.98,
+   "text": "and auto insurance to progressive save hundreds."
+  },
+  {
+   "start": 2550.98,
+   "end": 2557.06,
+   "text": "cue your happy dance. Get your quote today at Progressive.com. Progressive Casualty Insurance"
+  },
+  {
+   "start": 2557.06,
+   "end": 2560.7,
+   "text": "Company affiliates and other insurers, not available in all states."
+  },
+  {
+   "start": 2560.7,
+   "end": 2566.9,
+   "text": "At Smartwool, we chase whoa. There are other bad words for it, but Smartwool is a family"
+  },
+  {
+   "start": 2566.9,
+   "end": 2573.06,
+   "text": "brand. We say whoa. No matter your word, there's no better feeling out there. And Smartwool"
+  },
+  {
+   "start": 2573.06,
+   "end": 2577.54,
+   "text": "makes Marina Wolgier designed to keep you out there. Because the more comfortable you"
+  },
+  {
+   "start": 2577.54,
+   "end": 2583.7,
+   "text": "the farther you can go to chase your whoa take 15% off your first order at"
+  },
+  {
+   "start": 2583.7,
+   "end": 2598.06,
+   "text": "smartwool.com smartwool go far feel good have y'all seen this I think Ben"
+  },
+  {
+   "start": 2598.06,
+   "end": 2603.2,
+   "text": "Affleck he was on Rogan talking about sort of like the rate of AI changing"
+  },
+  {
+   "start": 2603.2,
+   "end": 2607.32,
+   "text": "there's a lot more fear because we have the sense this existential dread is"
+  },
+  {
+   "start": 2607.32,
+   "end": 2611.48,
+   "text": "gonna wipe everything out right but that actually runs counter in my view to"
+  },
+  {
+   "start": 2611.48,
+   "end": 2616.66,
+   "text": "what history seems to show, which is a, the option is slow, it's incremental."
+  },
+  {
+   "start": 2617.74,
+   "end": 2621.66,
+   "text": "I think a lot of that rhetoric comes from people who are trying to justify"
+  },
+  {
+   "start": 2621.66,
+   "end": 2623.78,
+   "text": "valuations around companies."
+  },
+  {
+   "start": 2624.14,
+   "end": 2626.0,
+   "text": "They go, we're going to change everything in two years."
+  },
+  {
+   "start": 2626.0,
+   "end": 2626.9,
+   "text": "There's going to be no more work."
+  },
+  {
+   "start": 2627.22,
+   "end": 2631.2,
+   "text": "Or the reason they're saying that is because they need to ascribe a valuation"
+  },
+  {
+   "start": 2631.24,
+   "end": 2634.5,
+   "text": "for investment that can warrant the cat-back spend they're going to make on"
+  },
+  {
+   "start": 2634.5,
+   "end": 2638.58,
+   "text": "these data centers with the argument that like, oh, you know, as soon as we do"
+  },
+  {
+   "start": 2638.58,
+   "end": 2641.18,
+   "text": "the next model, it's going to scale up, it can be three times as good."
+  },
+  {
+   "start": 2641.48,
+   "end": 2647.4,
+   "text": "Except that actually chat GB5 about 25 time percent better than chat GB4 and"
+  },
+  {
+   "start": 2647.72,
+   "end": 2651.1,
+   "text": "Costs about four times as much in the way of electricity and data"
+  },
+  {
+   "start": 2651.26,
+   "end": 2659.4,
+   "text": "So those nice things like plateauing the early AI the line went up very steeply and it's now sort of leveling off"
+  },
+  {
+   "start": 2659.4,
+   "end": 2661.8,
+   "text": "I think it's because and yes, it'll get better"
+  },
+  {
+   "start": 2661.88,
+   "end": 2666.08,
+   "text": "But it's gonna be really expensive to get better and a lot of people are like fuck this"
+  },
+  {
+   "start": 2666.08,
+   "end": 2672.52,
+   "text": "We want Chatchity before because it turned out like the vast majority of people who use AI are using it to like as"
+  },
+  {
+   "start": 2672.92,
+   "end": 2678.7,
+   "text": "Like companion bots to chat with at night and so there's no work. There's no productivity. There's no value to it"
+  },
+  {
+   "start": 2679.16,
+   "end": 2683.96,
+   "text": "What is what is your theory on that Matty? You know being in the bed?"
+  },
+  {
+   "start": 2684.52,
+   "end": 2689.04,
+   "text": "Yeah, it's so first of all I should say he's a very thoughtful on this topic"
+  },
+  {
+   "start": 2689.04,
+   "end": 2692.22,
+   "text": "I was really surprised or like impressed by that. So that was very cool to see"
+  },
+  {
+   "start": 2692.22,
+   "end": 2697.1,
+   "text": "I think that it kind of hinges on a couple of things."
+  },
+  {
+   "start": 2697.1,
+   "end": 2699.34,
+   "text": "So my answer to this is I don't really know,"
+  },
+  {
+   "start": 2699.34,
+   "end": 2702.7,
+   "text": "but what I think might happen is the following."
+  },
+  {
+   "start": 2702.7,
+   "end": 2707.3,
+   "text": "I think that so far we've been really exploiting"
+  },
+  {
+   "start": 2707.3,
+   "end": 2711.26,
+   "text": "the scale of data and computation that we have."
+  },
+  {
+   "start": 2711.26,
+   "end": 2713.06,
+   "text": "And when I say data, I really mean, you know,"
+  },
+  {
+   "start": 2713.06,
+   "end": 2716.26,
+   "text": "these companies and, you know, many different entities in AI,"
+  },
+  {
+   "start": 2716.26,
+   "end": 2719.4,
+   "text": "just like scraping anything they could find on the internet"
+  },
+  {
+   "start": 2719.4,
+   "end": 2721.14,
+   "text": "and using that in their training data."
+  },
+  {
+   "start": 2721.14,
+   "end": 2725.3,
+   "text": "So that was one big factor or one axis along which you can scale."
+  },
+  {
+   "start": 2725.5,
+   "end": 2730.02,
+   "text": "And they've mostly exhausted like, you know, all the data that is just, you know,"
+  },
+  {
+   "start": 2730.02,
+   "end": 2733.5,
+   "text": "that can be humanly found on the internet and even, you know, like archives,"
+  },
+  {
+   "start": 2733.5,
+   "end": 2736.5,
+   "text": "like Google or anthropic, like bought books, right?"
+  },
+  {
+   "start": 2736.5,
+   "end": 2739.34,
+   "text": "To scan books to get additional data because they couldn't find anything else on"
+  },
+  {
+   "start": 2739.34,
+   "end": 2743.18,
+   "text": "the internet, right? So like they, they've really maxed out that aspect or that"
+  },
+  {
+   "start": 2743.18,
+   "end": 2745.08,
+   "text": "axis, right? So that's, that's the first axis."
+  },
+  {
+   "start": 2745.08,
+   "end": 2748.38,
+   "text": "And that has been yielding really like major improvements, you know,"
+  },
+  {
+   "start": 2748.38,
+   "end": 2751.06,
+   "text": "along the way. The same thing happened with compute, right?"
+  },
+  {
+   "start": 2751.06,
+   "end": 2754.66,
+   "text": "So this talk about GPUs and chips and NVIDIA,"
+  },
+  {
+   "start": 2754.66,
+   "end": 2755.58,
+   "text": "that's what they do."
+  },
+  {
+   "start": 2755.58,
+   "end": 2759.26,
+   "text": "And they provide specialized chips for AI to be trained and run."
+  },
+  {
+   "start": 2759.26,
+   "end": 2761.5,
+   "text": "And so maximizing that access also"
+  },
+  {
+   "start": 2761.5,
+   "end": 2763.66,
+   "text": "has yielded a lot of improvements."
+  },
+  {
+   "start": 2763.66,
+   "end": 2766.3,
+   "text": "But it's also maxed out at this point."
+  },
+  {
+   "start": 2766.3,
+   "end": 2768.7,
+   "text": "That's why they're talking about building nuclear plants"
+  },
+  {
+   "start": 2768.7,
+   "end": 2769.9,
+   "text": "to power new data centers."
+  },
+  {
+   "start": 2769.9,
+   "end": 2772.1,
+   "text": "But I don't really know if there is much more"
+  },
+  {
+   "start": 2772.1,
+   "end": 2773.66,
+   "text": "scale to be gained there."
+  },
+  {
+   "start": 2773.66,
+   "end": 2776.78,
+   "text": "And so now you've sort of exhausted these two scales."
+  },
+  {
+   "start": 2776.78,
+   "end": 2778.86,
+   "text": "And you can think about the third aspect, which"
+  },
+  {
+   "start": 2778.86,
+   "end": 2780.42,
+   "text": "is the architecture, the actual way"
+  },
+  {
+   "start": 2780.42,
+   "end": 2781.34,
+   "text": "we hook up these systems."
+  },
+  {
+   "start": 2781.34,
+   "end": 2783.54,
+   "text": "Like the actual way we code up these neural networks"
+  },
+  {
+   "start": 2783.54,
+   "end": 2784.86,
+   "text": "and these AI systems."
+  },
+  {
+   "start": 2784.86,
+   "end": 2788.12,
+   "text": "And for the last six or so years,"
+  },
+  {
+   "start": 2788.12,
+   "end": 2790.62,
+   "text": "we've been really capitalizing on this idea,"
+  },
+  {
+   "start": 2790.62,
+   "end": 2791.78,
+   "text": "it's called a transformer."
+  },
+  {
+   "start": 2791.78,
+   "end": 2794.22,
+   "text": "That's been really critical for AI development"
+  },
+  {
+   "start": 2794.22,
+   "end": 2795.62,
+   "text": "over the last few years."
+  },
+  {
+   "start": 2795.62,
+   "end": 2799.1,
+   "text": "And we haven't really seen new profound ideas"
+  },
+  {
+   "start": 2799.1,
+   "end": 2801.66,
+   "text": "on the scale of a transformer since then."
+  },
+  {
+   "start": 2801.66,
+   "end": 2805.62,
+   "text": "So my answer to this notion of Ben Affleck's theory"
+  },
+  {
+   "start": 2805.62,
+   "end": 2808.68,
+   "text": "is if we don't find new major leaps"
+  },
+  {
+   "start": 2808.68,
+   "end": 2809.86,
+   "text": "along this axis of architecture,"
+  },
+  {
+   "start": 2809.86,
+   "end": 2810.7,
+   "text": "I think he's right."
+  },
+  {
+   "start": 2810.7,
+   "end": 2812.8,
+   "text": "I think in that case, it'll take a lot of time,"
+  },
+  {
+   "start": 2812.8,
+   "end": 2814.52,
+   "text": "a lot of effort and a lot of money"
+  },
+  {
+   "start": 2814.52,
+   "end": 2816.12,
+   "text": "to make any further progress."
+  },
+  {
+   "start": 2816.12,
+   "end": 2818.96,
+   "text": "But if we do, I think we can see pretty big improvements"
+  },
+  {
+   "start": 2818.96,
+   "end": 2820.52,
+   "text": "even in the next few years."
+  },
+  {
+   "start": 2820.52,
+   "end": 2823.72,
+   "text": "So going off of that, like how close do you all feel"
+  },
+  {
+   "start": 2823.72,
+   "end": 2825.88,
+   "text": "we are to losing our jobs to AI?"
+  },
+  {
+   "start": 2825.88,
+   "end": 2829.02,
+   "text": "You know, like, do you feel like"
+  },
+  {
+   "start": 2829.02,
+   "end": 2832.02,
+   "text": "we're just gonna be doing different jobs"
+  },
+  {
+   "start": 2832.02,
+   "end": 2834.58,
+   "text": "or are there just gonna be less people in the workplace"
+  },
+  {
+   "start": 2834.58,
+   "end": 2836.46,
+   "text": "because there's not gonna be as much of a need"
+  },
+  {
+   "start": 2836.46,
+   "end": 2840.02,
+   "text": "for as many jobs if AI is taking over some of these."
+  },
+  {
+   "start": 2840.02,
+   "end": 2842.86,
+   "text": "as if we're talking about it now, easier tasks."
+  },
+  {
+   "start": 2842.86,
+   "end": 2845.7,
+   "text": "But I'm assuming, you know, in the cell of all of this stuff"
+  },
+  {
+   "start": 2845.7,
+   "end": 2846.54,
+   "text": "is that it's gonna get better"
+  },
+  {
+   "start": 2846.54,
+   "end": 2848.38,
+   "text": "and be able to take on even harder tasks."
+  },
+  {
+   "start": 2848.38,
+   "end": 2851.1,
+   "text": "But what is your read of this"
+  },
+  {
+   "start": 2851.1,
+   "end": 2853.26,
+   "text": "having worked on this season of the show?"
+  },
+  {
+   "start": 2853.26,
+   "end": 2857.78,
+   "text": "I think for me, working on this show"
+  },
+  {
+   "start": 2857.78,
+   "end": 2862.78,
+   "text": "and seeing how these agents actually like collaborate"
+  },
+  {
+   "start": 2863.42,
+   "end": 2865.02,
+   "text": "or like, I mean, collaborate, like,"
+  },
+  {
+   "start": 2865.02,
+   "end": 2866.1,
+   "text": "I think that's a strong word."
+  },
+  {
+   "start": 2866.1,
+   "end": 2868.74,
+   "text": "Like, I think by the end of the season,"
+  },
+  {
+   "start": 2868.74,
+   "end": 2870.94,
+   "text": "they were able to do stuff on their own."
+  },
+  {
+   "start": 2870.94,
+   "end": 2874.44,
+   "text": "I don't think they truly got to like a collaborative setup"
+  },
+  {
+   "start": 2874.44,
+   "end": 2876.5,
+   "text": "where they would like do stuff together as a company"
+  },
+  {
+   "start": 2876.5,
+   "end": 2877.38,
+   "text": "or as a team."
+  },
+  {
+   "start": 2877.38,
+   "end": 2881.22,
+   "text": "So seeing that actually made me feel like we're"
+  },
+  {
+   "start": 2881.22,
+   "end": 2884.54,
+   "text": "further away from like a lot of people losing their jobs."
+  },
+  {
+   "start": 2884.54,
+   "end": 2886.26,
+   "text": "I think people are already losing their jobs,"
+  },
+  {
+   "start": 2886.26,
+   "end": 2888.62,
+   "text": "but I think like the mass layoffs"
+  },
+  {
+   "start": 2888.62,
+   "end": 2891.02,
+   "text": "that people are fearing,"
+  },
+  {
+   "start": 2891.02,
+   "end": 2893.1,
+   "text": "I think that is like further away."
+  },
+  {
+   "start": 2893.1,
+   "end": 2896.42,
+   "text": "And I'm not even sure if or when or how that happens."
+  },
+  {
+   "start": 2896.42,
+   "end": 2898.06,
+   "text": "My takeaway from this is actually"
+  },
+  {
+   "start": 2898.74,
+   "end": 2903.42,
+   "text": "sort of level setting a lot of my expectations for these agents."
+  },
+  {
+   "start": 2903.42,
+   "end": 2905.9,
+   "text": "Like I honestly thought they'd be able to handle this better"
+  },
+  {
+   "start": 2905.98,
+   "end": 2907.9,
+   "text": "in coming into this."
+  },
+  {
+   "start": 2908.02,
+   "end": 2911.18,
+   "text": "So for me, it was kind of optimistic in that way."
+  },
+  {
+   "start": 2911.42,
+   "end": 2914.7,
+   "text": "Now, at the same time, that is not to say that they're not good already."
+  },
+  {
+   "start": 2914.7,
+   "end": 2916.5,
+   "text": "Like they're very good at individual things already."
+  },
+  {
+   "start": 2916.5,
+   "end": 2917.98,
+   "text": "Like they're great at coding."
+  },
+  {
+   "start": 2917.98,
+   "end": 2919.78,
+   "text": "They're great at these different tasks."
+  },
+  {
+   "start": 2919.78,
+   "end": 2922.9,
+   "text": "I don't want to take that away from them, but I think it's just really,"
+  },
+  {
+   "start": 2923.26,
+   "end": 2928.18,
+   "text": "really hard for anyone to think about this change because these things are not"
+  },
+  {
+   "start": 2928.18,
+   "end": 2933.3,
+   "text": "like humans. It's not that like we're making, you know, human employees that will just like"
+  },
+  {
+   "start": 2933.3,
+   "end": 2938.22,
+   "text": "come as replacements of individual workers or people that already have jobs. Like they're"
+  },
+  {
+   "start": 2938.22,
+   "end": 2942.62,
+   "text": "really good at certain things or tasks and certain like layers. And I think the way you"
+  },
+  {
+   "start": 2942.62,
+   "end": 2946.1,
+   "text": "would actually integrate AI in your company these days is to just like automate a lot"
+  },
+  {
+   "start": 2946.1,
+   "end": 2949.54,
+   "text": "of stuff. Like a lot of the things that are repetitive or a lot of the processes or data"
+  },
+  {
+   "start": 2949.54,
+   "end": 2953.1,
+   "text": "handling is just going to get automated. And so it doesn't really correspond like one to"
+  },
+  {
+   "start": 2953.1,
+   "end": 2957.3,
+   "text": "one to employees. And that's why it's so hard to think about this change, I think. And that's"
+  },
+  {
+   "start": 2957.3,
+   "end": 2961.56,
+   "text": "So one of the things I think was really cool to show or demonstrate with Evan through the"
+  },
+  {
+   "start": 2961.56,
+   "end": 2962.56,
+   "text": "show."
+  },
+  {
+   "start": 2962.56,
+   "end": 2964.22,
+   "text": "But yeah, that's my perspective on this."
+  },
+  {
+   "start": 2964.22,
+   "end": 2970.74,
+   "text": "I struggle with this question precisely because like most of the people who you and I've spent"
+  },
+  {
+   "start": 2970.74,
+   "end": 2975.7,
+   "text": "a lot of time looking at it, most of the people on one side or the other are like speaking"
+  },
+  {
+   "start": 2975.7,
+   "end": 2977.42,
+   "text": "out of sort of motivated reasoning."
+  },
+  {
+   "start": 2977.42,
+   "end": 2981.2,
+   "text": "Like I kind of say like anyone who tells you anything about this with great certainty is"
+  },
+  {
+   "start": 2981.2,
+   "end": 2983.66,
+   "text": "probably selling you something."
+  },
+  {
+   "start": 2983.66,
+   "end": 2988.54,
+   "text": "like nobody knows what kind of long-term effect it's going to have on the job market."
+  },
+  {
+   "start": 2988.54,
+   "end": 2993.48,
+   "text": "I feel like you can look to history and we do this in the show and find examples of people"
+  },
+  {
+   "start": 2993.48,
+   "end": 2998.52,
+   "text": "saying a hundred years ago, either like, all the jobs will disappear, we'll be working"
+  },
+  {
+   "start": 2998.52,
+   "end": 3002.08,
+   "text": "15 hour weeks like John Maynard Keynes, the economist famously said that we'd be working"
+  },
+  {
+   "start": 3002.08,
+   "end": 3004.74,
+   "text": "15 hours a week, a hundred years from now."
+  },
+  {
+   "start": 3004.74,
+   "end": 3006.74,
+   "text": "And like it didn't happen."
+  },
+  {
+   "start": 3006.74,
+   "end": 3012.3,
+   "text": "And we explore one theory of that, which is by this anthropologist, David Graber, who"
+  },
+  {
+   "start": 3012.3,
+   "end": 3015.24,
+   "text": "insist that there's sort of like all these bullshit jobs in the economy."
+  },
+  {
+   "start": 3015.24,
+   "end": 3019.32,
+   "text": "And so like, we'll just, we just replace the jobs with like made up jobs."
+  },
+  {
+   "start": 3019.4,
+   "end": 3023.96,
+   "text": "And so there's sort of versions of that argument where actually we'll have"
+  },
+  {
+   "start": 3023.96,
+   "end": 3024.6,
+   "text": "different jobs."
+  },
+  {
+   "start": 3024.6,
+   "end": 3026.16,
+   "text": "We'll babysit the AIs."
+  },
+  {
+   "start": 3026.2,
+   "end": 3029.82,
+   "text": "Um, now how you control the AIs if you don't have the experience from the"
+  },
+  {
+   "start": 3029.82,
+   "end": 3034.32,
+   "text": "entry level job, like there's all these factors that, that go into it."
+  },
+  {
+   "start": 3034.86,
+   "end": 3039.4,
+   "text": "Um, I think that my main takeaway is that as Maddie said, like, there's still so"
+  },
+  {
+   "start": 3039.4,
+   "end": 3043.96,
+   "text": "many shortcomings in these AI agents, especially when they're used autonomously."
+  },
+  {
+   "start": 3044.2,
+   "end": 3047.84,
+   "text": "But the fact that they are shitty will not stop companies from trying to"
+  },
+  {
+   "start": 3047.84,
+   "end": 3048.58,
+   "text": "replace employees."
+  },
+  {
+   "start": 3048.58,
+   "end": 3051.08,
+   "text": "Like you've already seen this a couple of times, like there's this company,"
+  },
+  {
+   "start": 3051.08,
+   "end": 3054.56,
+   "text": "Klarna, there's, and like IBM did this where they like laid off a ton of people"
+  },
+  {
+   "start": 3054.56,
+   "end": 3056.04,
+   "text": "and they're like, we're all in on AI."
+  },
+  {
+   "start": 3056.04,
+   "end": 3059.56,
+   "text": "And then like six months later, they quietly tried to rehire a bunch of people."
+  },
+  {
+   "start": 3059.9,
+   "end": 3063.36,
+   "text": "And I think you're going to see like a bunch of that happen."
+  },
+  {
+   "start": 3063.92,
+   "end": 3067.84,
+   "text": "And it's really a question of like, do you view someone in their job as like,"
+  },
+  {
+   "start": 3067.84,
+   "end": 3074.48,
+   "text": "just a bunch of skills, like just a bundle of tasks, like they send emails, they write presentations,"
+  },
+  {
+   "start": 3074.48,
+   "end": 3079.54,
+   "text": "they make spreadsheets, like yes, all those functions, or is like a person at a job"
+  },
+  {
+   "start": 3080.32,
+   "end": 3087.14,
+   "text": "holistically as a human being like doing something else. And I think many times the answer is yes, and it cannot replace that thing."
+  },
+  {
+   "start": 3087.14,
+   "end": 3093.12,
+   "text": "So it's all kind of like, it's happening and then it'll come back and it'll happen again."
+  },
+  {
+   "start": 3093.12,
+   "end": 3097.8,
+   "text": "And like if you look 10 years out or 20 years out, like none of these people know and they'll just go on podcasts"
+  },
+  {
+   "start": 3097.84,
+   "end": 3099.82,
+   "text": "cast all over the place telling you they know, but they don't."
+  },
+  {
+   "start": 3099.92,
+   "end": 3101.38,
+   "text": "That's my takeaway."
+  },
+  {
+   "start": 3102.18,
+   "end": 3105.64,
+   "text": "Um, I was just going to say it's, it's funny, Evan, when you're describing it"
+  },
+  {
+   "start": 3105.64,
+   "end": 3109.8,
+   "text": "like, okay, dude, these companies just look at humans as a list of tasks."
+  },
+  {
+   "start": 3109.94,
+   "end": 3114.26,
+   "text": "And then what the AI is best at is kind of just being that grouping of tasks."
+  },
+  {
+   "start": 3114.26,
+   "end": 3118.38,
+   "text": "But then in shell game, the problem is they're doing all this kind of busy work"
+  },
+  {
+   "start": 3118.38,
+   "end": 3122.24,
+   "text": "that we associate with humans of like just repeating stuff or going on too long"
+  },
+  {
+   "start": 3122.24,
+   "end": 3126.84,
+   "text": "or doing like just like kind of bullshit nothing talking about things, which is"
+  },
+  {
+   "start": 3126.84,
+   "end": 3131.44,
+   "text": "Like also how I feel about a lot of, you know, middle managers I've had where it's like, you're not doing anything."
+  },
+  {
+   "start": 3131.44,
+   "end": 3136.44,
+   "text": "You're just kind of pretending to do stuff all the people below you or above you are actually doing doing the work."
+  },
+  {
+   "start": 3136.48,
+   "end": 3140.12,
+   "text": "So it's funny that it's like we've recreated this to give it a human element."
+  },
+  {
+   "start": 3140.12,
+   "end": 3140.48,
+   "text": "Yeah."
+  },
+  {
+   "start": 3140.92,
+   "end": 3152.44,
+   "text": "At the same time, I don't know, it's it just kind of like a weird paradox in a way of like, like we want that to feel like it's, it's a real thing and doing something when it would be best if we just set it as an automation."
+  },
+  {
+   "start": 3152.44,
+   "end": 3156.68,
+   "text": "like, okay, clear out these emails, whatever, make data, do this."
+  },
+  {
+   "start": 3156.68,
+   "end": 3157.52,
+   "text": "Be less human-like."
+  },
+  {
+   "start": 3157.52,
+   "end": 3160.56,
+   "text": "Yeah, like, that would probably be the best case, but then it's like,"
+  },
+  {
+   "start": 3161.44,
+   "end": 3167.0,
+   "text": "that's not as fun or, or like, it's harder to sell, I guess, to the masses, maybe."
+  },
+  {
+   "start": 3167.0,
+   "end": 3169.48,
+   "text": "But yeah, yeah, I think that's it."
+  },
+  {
+   "start": 3169.48,
+   "end": 3173.88,
+   "text": "Like, if it was just sort of like, email bot, this bot, that bot, like,"
+  },
+  {
+   "start": 3174.44,
+   "end": 3179.0,
+   "text": "they very, very deliberately design them the way they are designed to get the maximum number"
+  },
+  {
+   "start": 3179.0,
+   "end": 3183.84,
+   "text": "number of users and this is only accelerated since chat GPT, they discovered like, oh,"
+  },
+  {
+   "start": 3183.84,
+   "end": 3188.56,
+   "text": "we can get hundreds of millions of users and now it's a race to get as many as possible."
+  },
+  {
+   "start": 3188.56,
+   "end": 3194.68,
+   "text": "And so, yeah, they don't need to be good at sort of like authoritative chatter."
+  },
+  {
+   "start": 3194.68,
+   "end": 3200.8,
+   "text": "Like that's not necessarily helpful in all domains, but like that is the thing that kind"
+  },
+  {
+   "start": 3200.8,
+   "end": 3203.28,
+   "text": "of brings people back again and again and again."
+  },
+  {
+   "start": 3203.28,
+   "end": 3207.56,
+   "text": "And so, of course, that's going to be like foregrounded in what they do."
+  },
+  {
+   "start": 3207.56,
+   "end": 3213.28,
+   "text": "Yes, it is very much like a like your your annoying middle manager. It's kind of like wait. What do you do? What do you do all out?"
+  },
+  {
+   "start": 3213.28,
+   "end": 3216.38,
+   "text": "Yeah, that's repeating. It's like why you give me notes"
+  },
+  {
+   "start": 3218.0,
+   "end": 3225.16,
+   "text": "Hey everyone, it's Manny here"
+  },
+  {
+   "start": 3225.7,
+   "end": 3230.76,
+   "text": "The real Manny as you can hear I'm still on my little paternity leave"
+  },
+  {
+   "start": 3231.54,
+   "end": 3237.36,
+   "text": "But I felt compelled to react to the AI generated version"
+  },
+  {
+   "start": 3237.92,
+   "end": 3240.68,
+   "text": "Of myself that you just heard in this episode"
+  },
+  {
+   "start": 3240.68,
+   "end": 3249.56,
+   "text": "episode. Now, I've always been an AI skeptic, but to that end, I have to say I was impressed"
+  },
+  {
+   "start": 3249.56,
+   "end": 3255.92,
+   "text": "by the AI version of myself. It's funny, whenever friends have done impressions of me, they"
+  },
+  {
+   "start": 3255.92,
+   "end": 3261.48,
+   "text": "kind of make fun of me by saying, you know, hey, how's it going? I'm Manny. What's going"
+  },
+  {
+   "start": 3261.48,
+   "end": 3267.16,
+   "text": "on? And I thought it was pretty incredible that the AI version of myself made those same"
+  },
+  {
+   "start": 3267.16,
+   "end": 3272.44,
+   "text": "decisions. It wasn't without its flaws though. You could totally hear when it was trying to"
+  },
+  {
+   "start": 3273.24,
+   "end": 3277.96,
+   "text": "draw from information that it was given to it. And so at the end of the day here,"
+  },
+  {
+   "start": 3277.96,
+   "end": 3282.76,
+   "text": "it's kind of disturbing that this thing could just react to real conversation."
+  },
+  {
+   "start": 3283.72,
+   "end": 3289.72,
+   "text": "But you know, it still felt like it wasn't totally all the way there, all the way human-like."
+  },
+  {
+   "start": 3289.72,
+   "end": 3297.08,
+   "text": "But depending on your use case for this kind of stuff, it was human enough."
+  },
+  {
+   "start": 3311.32,
+   "end": 3317.0,
+   "text": "All right y'all, that's it for this week. I'm gonna actually let AI Manny take it from here."
+  },
+  {
+   "start": 3317.9,
+   "end": 3323.34,
+   "text": "No such thing as a production of Kaleidoscope content. Our executive producers are Kate Osborn"
+  },
+  {
+   "start": 3323.34,
+   "end": 3329.9,
+   "text": "and Mengesh Houti-Kador. The show was created by Manny Fidel, Noah Friedman, and Devin Joseph."
+  },
+  {
+   "start": 3329.9,
+   "end": 3334.3,
+   "text": "Theme and Credits song by me, Manny Fidel, mixing by Steve Bone."
+  },
+  {
+   "start": 3334.3,
+   "end": 3338.7,
+   "text": "Our guests this week were Evan Ratliff and Maddie Bocek from the podcast Shell Game."
+  },
+  {
+   "start": 3338.7,
+   "end": 3342.62,
+   "text": "You can listen to all of season one and two wherever you listen to podcasts."
+  },
+  {
+   "start": 3343.26,
+   "end": 3348.14,
+   "text": "Visit nosuchthing.show to subscribe to our newsletter. If you have feedback for us or a"
+  },
+  {
+   "start": 3348.14,
+   "end": 3352.54,
+   "text": "question, our email is maniknowadevan at gmail.com. Or if you're in the U.S.,"
+  },
+  {
+   "start": 3352.54,
+   "end": 3355.98,
+   "text": "you can also leave us a voicemail by calling the number in our show notes."
+  },
+  {
+   "start": 3355.98,
+   "end": 3357.98,
+   "text": "We'll be back next week with a new episode."
+  },
+  {
+   "start": 3357.98,
+   "end": 3361.98,
+   "text": "No, no, no, no, no, such thing."
+  },
+  {
+   "start": 3361.98,
+   "end": 3366.22,
+   "text": "Cost shouldn't keep you from getting the hepatitis C care you deserve."
+  },
+  {
+   "start": 3366.22,
+   "end": 3372.72,
+   "text": "With Abclusa or its authorized generic, most people with Medicaid coverage pay $0 for the full course of treatment."
+  },
+  {
+   "start": 3372.72,
+   "end": 3377.52,
+   "text": "And eligible patients with commercial insurance may pay as little as $5 per copay."
+  },
+  {
+   "start": 3377.52,
+   "end": 3379.52,
+   "text": "Restrictions apply for copay savings."
+  },
+  {
+   "start": 3379.52,
+   "end": 3385.6,
+   "text": "Epclusa, Sophospavir, vilpatosphere, treats chronic Fc. genotype 1 through 6 without cirrhosis"
+  },
+  {
+   "start": 3385.6,
+   "end": 3390.08,
+   "text": "or with compensated cirrhosis, and can be taken whether you're in recovery or not."
+  },
+  {
+   "start": 3390.08,
+   "end": 3394.64,
+   "text": "If you've had hepatitis B, it may flare up and cause serious liver problems during and"
+  },
+  {
+   "start": 3394.64,
+   "end": 3399.04,
+   "text": "after treatment. Tell your doctor if you've had hepatitis B, liver or kidney problems,"
+  },
+  {
+   "start": 3399.04,
+   "end": 3404.88,
+   "text": "HIV, and all medicines and supplements you take. Taking amiodarone with Epclusa may cause a serious"
+  },
+  {
+   "start": 3404.88,
+   "end": 3406.08,
+   "text": "slowing of your heart rate."
+  },
+  {
+   "start": 3406.08,
+   "end": 3409.22,
+   "text": "Most common side effects include headache and tiredness."
+  },
+  {
+   "start": 3409.22,
+   "end": 3411.28,
+   "text": "Financial support options can make getting"
+  },
+  {
+   "start": 3411.28,
+   "end": 3413.02,
+   "text": "hep C treatment a reality."
+  },
+  {
+   "start": 3413.02,
+   "end": 3413.98,
+   "text": "So don't wait."
+  },
+  {
+   "start": 3413.98,
+   "end": 3416.62,
+   "text": "Move affordable hep C treatment from your to-do list"
+  },
+  {
+   "start": 3416.62,
+   "end": 3417.78,
+   "text": "to your today list."
+  },
+  {
+   "start": 3417.78,
+   "end": 3419.86,
+   "text": "Ask your doctor about Epclusa and visit"
+  },
+  {
+   "start": 3419.86,
+   "end": 3423.5,
+   "text": "Epclusa.com for important facts sponsored by Gilead."
+  },
+  {
+   "start": 3423.5,
+   "end": 3425.36,
+   "text": "Rain outside your house?"
+  },
+  {
+   "start": 3425.36,
+   "end": 3426.66,
+   "text": "Relaxing."
+  },
+  {
+   "start": 3426.66,
+   "end": 3428.78,
+   "text": "Rain inside your house?"
+  },
+  {
+   "start": 3428.78,
+   "end": 3430.62,
+   "text": "Less relaxing."
+  },
+  {
+   "start": 3430.62,
+   "end": 3432.7,
+   "text": "That's the sound of a bad day."
+  },
+  {
+   "start": 3432.7,
+   "end": 3434.74,
+   "text": "That's when you wanna hear something reassuring."
+  },
+  {
+   "start": 3434.74,
+   "end": 3437.68,
+   "text": "Cincinnati Insurance works with local independent agents"
+  },
+  {
+   "start": 3437.68,
+   "end": 3439.98,
+   "text": "who get to know you and bring personal attention"
+  },
+  {
+   "start": 3439.98,
+   "end": 3443.02,
+   "text": "to protecting your home and most valuable possessions."
+  },
+  {
+   "start": 3443.02,
+   "end": 3446.26,
+   "text": "So when a bad day sounds like this,"
+  },
+  {
+   "start": 3446.26,
+   "end": 3449.7,
+   "text": "you have 75 years of expertise helping make it better."
+  },
+  {
+   "start": 3449.7,
+   "end": 3453.46,
+   "text": "Find an independent agent at cinefin.com."
+  },
+  {
+   "start": 3453.46,
+   "end": 3454.58,
+   "text": "So everyone on board?"
+  },
+  {
+   "start": 3454.58,
+   "end": 3455.42,
+   "text": "Yeah, I think so."
+  },
+  {
+   "start": 3455.42,
+   "end": 3457.34,
+   "text": "You can't see it, but everyone in this room is nodding."
+  },
+  {
+   "start": 3457.34,
+   "end": 3458.86,
+   "text": "They all agree the launch plan's perfect,"
+  },
+  {
+   "start": 3458.86,
+   "end": 3461.1,
+   "text": "but Julie has an idea how it can be even better."
+  },
+  {
+   "start": 3461.1,
+   "end": 3463.74,
+   "text": "So she asks Co-Pilot Co-Work to help her overnight."
+  },
+  {
+   "start": 3463.74,
+   "end": 3466.12,
+   "text": "Hey, Co-Pilot, gather the past three months"
+  },
+  {
+   "start": 3466.12,
+   "end": 3469.72,
+   "text": "of retail sales reports, surface key insights,"
+  },
+  {
+   "start": 3469.72,
+   "end": 3472.36,
+   "text": "and build a deck outlining a partner strategy"
+  },
+  {
+   "start": 3472.36,
+   "end": 3475.61,
+   "text": "by tomorrow morning."
+  },
+  {
+   "start": 3475.61,
+   "end": 3478.05,
+   "text": "Morning team, I found a way to improve the plan."
+  },
+  {
+   "start": 3478.05,
+   "end": 3479.05,
+   "text": "Check slide four."
+  },
+  {
+   "start": 3479.05,
+   "end": 3481.33,
+   "text": "Get help with complex tasks with Co-Pilot Co-Work."
+  },
+  {
+   "start": 3481.33,
+   "end": 3483.53,
+   "text": "Microsoft Co-Pilot, work lives on."
+  },
+  {
+   "start": 3483.53,
+   "end": 3485.49,
+   "text": "This is Matt Rogers from Lost Culture East."
+  },
+  {
+   "start": 3485.49,
+   "end": 3487.13,
+   "text": "That's with Matt Rogers and Bowen Yang."
+  },
+  {
+   "start": 3487.13,
+   "end": 3488.61,
+   "text": "This is Bowen Yang from Lost Culture East."
+  },
+  {
+   "start": 3488.61,
+   "end": 3490.17,
+   "text": "That's with Matt Rogers and Bowen Yang."
+  },
+  {
+   "start": 3490.17,
+   "end": 3491.49,
+   "text": "Hey, Bowen, point of order."
+  },
+  {
+   "start": 3491.49,
+   "end": 3493.93,
+   "text": "It feels like nothing is what it says it is anymore."
+  },
+  {
+   "start": 3493.93,
+   "end": 3496.69,
+   "text": "point of answer, it's because everything has a catch."
+  },
+  {
+   "start": 3496.69,
+   "end": 3498.89,
+   "text": "Hey, or it turns out to be something else entirely."
+  },
+  {
+   "start": 3498.89,
+   "end": 3500.25,
+   "text": "Like a total catfish situation."
+  },
+  {
+   "start": 3500.25,
+   "end": 3501.13,
+   "text": "Exactly, Beau."
+  },
+  {
+   "start": 3501.13,
+   "end": 3502.93,
+   "text": "Except for hotels.com."
+  },
+  {
+   "start": 3502.93,
+   "end": 3504.09,
+   "text": "Yeah, that one's pretty literal."
+  },
+  {
+   "start": 3504.09,
+   "end": 3507.29,
+   "text": "Because it's hotels.com, it's in the domain."
+  },
+  {
+   "start": 3507.29,
+   "end": 3510.33,
+   "text": "You go there, you book hotels, hundreds of thousands of them."
+  },
+  {
+   "start": 3510.33,
+   "end": 3512.21,
+   "text": "And hold up, that's it?"
+  },
+  {
+   "start": 3512.21,
+   "end": 3513.05,
+   "text": "That's it."
+  },
+  {
+   "start": 3513.05,
+   "end": 3514.45,
+   "text": "And when stays are booked as a member,"
+  },
+  {
+   "start": 3514.45,
+   "end": 3516.01,
+   "text": "rewards are earned every time."
+  },
+  {
+   "start": 3516.01,
+   "end": 3516.93,
+   "text": "Every stay?"
+  },
+  {
+   "start": 3516.93,
+   "end": 3519.17,
+   "text": "Every stay, no tracking or managing,"
+  },
+  {
+   "start": 3519.17,
+   "end": 3521.85,
+   "text": "just rewards that can be used like cash on future bookings."
+  },
+  {
+   "start": 3521.85,
+   "end": 3523.53,
+   "text": "Which, by the way, already feels nicer"
+  },
+  {
+   "start": 3523.53,
+   "end": 3524.77,
+   "text": "than most rewards programs."
+  },
+  {
+   "start": 3524.77,
+   "end": 3525.61,
+   "text": "Okay. Yeah."
+  },
+  {
+   "start": 3525.61,
+   "end": 3527.57,
+   "text": "Members can also get up to 20% off booking."
+  },
+  {
+   "start": 3527.57,
+   "end": 3529.29,
+   "text": "So savings start right away."
+  },
+  {
+   "start": 3529.29,
+   "end": 3531.17,
+   "text": "Does that mean no weird restrictions?"
+  },
+  {
+   "start": 3531.17,
+   "end": 3532.49,
+   "text": "And no blackout dates."
+  },
+  {
+   "start": 3532.49,
+   "end": 3533.95,
+   "text": "Book what works, when it works."
+  },
+  {
+   "start": 3533.95,
+   "end": 3537.25,
+   "text": "It's actually really fitting of real travel."
+  },
+  {
+   "start": 3537.25,
+   "end": 3539.77,
+   "text": "So the name is honest, you're saying?"
+  },
+  {
+   "start": 3539.77,
+   "end": 3540.89,
+   "text": "And the rewards are too?"
+  },
+  {
+   "start": 3540.89,
+   "end": 3542.05,
+   "text": "Exactly."
+  },
+  {
+   "start": 3542.05,
+   "end": 3543.21,
+   "text": "Hotels.com."
+  },
+  {
+   "start": 3543.21,
+   "end": 3544.17,
+   "text": "It's all in the name."
+  },
+  {
+   "start": 3544.17,
+   "end": 3546.68,
+   "text": "This is an I Heart podcast."
+  },
+  {
+   "start": 3546.68,
+   "end": 3547.88,
+   "text": "Guaranteed human."
+  }
+ ],
+ "seconds": 108.6,
+ "file": "shell-game__bonus-episode-shell-game-x-no-such-thing/take0.mp3",
+ "model": "small"
+}

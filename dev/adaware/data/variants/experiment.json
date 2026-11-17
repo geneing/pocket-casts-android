@@ -1,0 +1,122 @@
+[
+ {
+  "name": "hardfork_a1",
+  "status": 200,
+  "bytes": 43369630,
+  "md5": "126eb60a7c3f",
+  "final": "https://nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/66354d0c-214e-4370-a0df-240d93e522f8/audio/128/default.mp3/default.mp3_ywr3ahjkcgo",
+  "path": null
+ },
+ {
+  "name": "hardfork_a2",
+  "status": 200,
+  "bytes": 43369630,
+  "md5": "4de08e4534e1",
+  "final": "https://nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/66354d0c-214e-4370-a0df-240d93e522f8/audio/128/default.mp3/default.mp3_ywr3ahjkcgo",
+  "path": null
+ },
+ {
+  "name": "hardfork_a3",
+  "status": 200,
+  "bytes": 43348732,
+  "md5": "c99dff7c0e79",
+  "final": "https://nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/66354d0c-214e-4370-a0df-240d93e522f8/audio/128/default.mp3/default.mp3_ywr3ahjkcgo",
+  "path": null
+ },
+ {
+  "name": "restishistory_a1",
+  "status": 200,
+  "bytes": 157850813,
+  "md5": "921de3f5aff4",
+  "final": "https://dcs-spotify.megaphone.fm/GLT7837711407.mp3?key=8e7e38a2a57774e03bd90a79e6c5ab2a&request_event_id=71909b75-9a24-4d97-ac0f-1dea71995ec4&session_id=71909b7",
+  "path": null
+ },
+ {
+  "name": "restishistory_a2",
+  "status": 200,
+  "bytes": 157819466,
+  "md5": "1a98e317db26",
+  "final": "https://dcs-spotify.megaphone.fm/GLT7837711407.mp3?key=38eca7fe60b9fc975e3b19e9f29b6ff2&request_event_id=f7c1cb96-05a9-456b-b847-a4a604f5dad3&session_id=f7c1cb9",
+  "path": null
+ },
+ {
+  "name": "restishistory_a3",
+  "status": 200,
+  "bytes": 158174731,
+  "md5": "117c63294e0c",
+  "final": "https://dcs-spotify.megaphone.fm/GLT7837711407.mp3?key=16391714cef0dff0032985ed5fa8ba05&request_event_id=c9d7c486-34a0-4383-a603-8e19912cb8e7&session_id=c9d7c48",
+  "path": null
+ },
+ {
+  "name": "dansnow_a1",
+  "status": 200,
+  "bytes": 50698952,
+  "md5": "dd2852f7c793",
+  "final": "https://stitcher2.acast.com/livestitches/5a8f1c2fb853919ef02891340290e9a8.mp3?aid=6af1c7eced870dba3df8f172&chid=c939f8d1-c4bc-478e-8bb9-e5343f9a7ab5&ci=NoYbohiF",
+  "path": null
+ },
+ {
+  "name": "dansnow_a2",
+  "status": 200,
+  "bytes": 52307102,
+  "md5": "e57a8f8edfcb",
+  "final": "https://stitcher2.acast.com/livestitches/da0a97d9ae921efc1f73aaeff00c967a.mp3?aid=6af1c7eced870dba3df8f172&chid=c939f8d1-c4bc-478e-8bb9-e5343f9a7ab5&ci=OrdB1Ze8",
+  "path": null
+ },
+ {
+  "name": "dansnow_a3",
+  "status": 200,
+  "bytes": 52153412,
+  "md5": "96dd9e06a863",
+  "final": "https://stitcher2.acast.com/livestitches/4569e2e82d4f9b1b6ae094082b347978.mp3?aid=6af1c7eced870dba3df8f172&chid=c939f8d1-c4bc-478e-8bb9-e5343f9a7ab5&ci=pkeApAne",
+  "path": null
+ },
+ {
+  "name": "oddlots_a1",
+  "status": 200,
+  "bytes": 63122810,
+  "md5": "48a62fc59a1c",
+  "final": "https://27073.mc.tritondigital.com/OMNY_ODDLOTS_PODCAST_P/media-session/97a50fd8-ab3d-428f-9c01-433f22868b47/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a9444",
+  "path": null
+ },
+ {
+  "name": "oddlots_a2",
+  "status": 200,
+  "bytes": 63360630,
+  "md5": "13ce85c4ac08",
+  "final": "https://27073.mc.tritondigital.com/OMNY_ODDLOTS_PODCAST_P/media-session/db8199df-011c-4266-b25b-4b669b51e2e8/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a9444",
+  "path": null
+ },
+ {
+  "name": "oddlots_a3",
+  "status": 200,
+  "bytes": 61590157,
+  "md5": "62dcfdc87da3",
+  "final": "https://27073.mc.tritondigital.com/OMNY_ODDLOTS_PODCAST_P/media-session/be7beb44-de30-4626-a076-e4380010336f/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/8a9444",
+  "path": null
+ },
+ {
+  "name": "planetmoney_a1",
+  "status": 200,
+  "bytes": 26518328,
+  "md5": "b965beaaaf77",
+  "final": "https://npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7/audio/128/default.mp3/default.mp3_ywr3ahjkcgo",
+  "path": null
+ },
+ {
+  "name": "planetmoney_a2",
+  "status": 200,
+  "bytes": 26405894,
+  "md5": "c8ac29f09b1f",
+  "final": "https://npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7/audio/128/default.mp3/default.mp3_ywr3ahjkcgo",
+  "path": null
+ },
+ {
+  "name": "planetmoney_a3",
+  "status": 200,
+  "bytes": 26334007,
+  "md5": "051a193cec99",
+  "final": "https://npr.simplecastaudio.com/43b5acee-463e-4612-95ad-d2596d9dd337/episodes/2b2b7650-a4cf-405c-89a0-9c4dc4e2daf7/audio/128/default.mp3/default.mp3_ywr3ahjkcgo",
+  "path": null
+ }
+]

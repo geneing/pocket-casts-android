@@ -3,6 +3,10 @@ package au.com.shiftyjelly.pocketcasts.settings.developer
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.fragment.app.viewModels
@@ -32,6 +36,7 @@ class DeveloperFragment : BaseFragment() {
     ) = contentWithoutConsumedInsets {
         AppThemeWithBackground(theme.activeTheme) {
             val bottomInset = settings.bottomInset.collectAsStateWithLifecycle(0)
+            var jevAdModel by remember { mutableStateOf(viewModel.jevAdModel.slug) }
             DeveloperPage(
                 onBackPress = ::onBackPress,
                 onForceRefreshClick = viewModel::forceRefresh,
@@ -56,6 +61,11 @@ class DeveloperFragment : BaseFragment() {
                 onResetEpisodeChatSurvey = viewModel::resetEpisodeChatSurvey,
                 onTriggerPlaybackError = viewModel::triggerPlaybackError,
                 onTriggerConnectionError = viewModel::triggerConnectionError,
+                jevAdModel = jevAdModel,
+                onCycleJevAdModel = {
+                    viewModel.cycleJevAdModel()
+                    jevAdModel = viewModel.jevAdModel.slug
+                },
             )
         }
     }

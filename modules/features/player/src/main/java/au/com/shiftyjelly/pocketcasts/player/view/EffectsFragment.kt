@@ -91,6 +91,7 @@ class EffectsFragment : BaseDialogFragment() {
     private var speedText by mutableStateOf("")
     private var trimMode by mutableStateOf(TrimMode.OFF)
     private var isVolumeBoosted by mutableStateOf(false)
+    private var isAdSkipEnabled by mutableStateOf(false)
     private var backgroundColor by mutableStateOf(Color.Black)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -125,6 +126,7 @@ class EffectsFragment : BaseDialogFragment() {
                     trimMode = trimMode,
                     trimDetail = trimDetail(),
                     isVolumeBoosted = isVolumeBoosted,
+                    isAdSkipEnabled = isAdSkipEnabled,
                     colors = EffectsColors(
                         background = backgroundColor,
                         contrast01 = Color(ThemeColor.playerContrast01(theme.activeTheme)),
@@ -149,6 +151,7 @@ class EffectsFragment : BaseDialogFragment() {
                     onTrimToggle = ::onTrimToggle,
                     onTrimModeSelect = ::onTrimModeSelect,
                     onVolumeBoostToggle = ::onVolumeBoostToggle,
+                    onAdSkipToggle = ::onAdSkipToggle,
                     settingsTabBar = { EffectsSettingsTabBar() },
                     modifier = Modifier
                         .windowInsetsPadding(WindowInsets.systemBars.union(WindowInsets.displayCutout).only(WindowInsetsSides.Bottom))
@@ -172,6 +175,7 @@ class EffectsFragment : BaseDialogFragment() {
         speedText = String.format("%.1fx", effects.playbackSpeed)
         trimMode = effects.trimMode
         isVolumeBoosted = effects.isVolumeBoosted
+        isAdSkipEnabled = settings.skipAds.value
     }
 
     private fun trimDetail(): String {
@@ -264,6 +268,11 @@ class EffectsFragment : BaseDialogFragment() {
         effects.isVolumeBoosted = isChecked
         isVolumeBoosted = isChecked
         viewModel.saveEffects(effects, podcast)
+    }
+
+    private fun onAdSkipToggle(isChecked: Boolean) {
+        isAdSkipEnabled = isChecked
+        settings.skipAds.set(isChecked, updateModifiedAt = true)
     }
 
     private fun trackPlaybackEffectsEvent(event: (SourceView, PlaybackContentType, SettingType) -> Trackable) {
