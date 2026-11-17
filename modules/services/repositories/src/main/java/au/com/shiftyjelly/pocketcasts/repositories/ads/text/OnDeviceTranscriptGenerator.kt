@@ -9,6 +9,7 @@ import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
 import java.io.File
 import javax.inject.Inject
 import javax.inject.Singleton
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.mapNotNull
@@ -62,6 +63,27 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         episodeUuid: String,
         onModelProgress: (ModelDownloadProgress) -> Unit = {},
     ): AsrOutcome = mutex.withLock {
+        try {
+            runPass(episodeUuid, onModelProgress)
+        } catch (e: CancellationException) {
+            throw e
+        } catch (e: Throwable) {
+            // A row that throws before it can record its own failure is picked again on every pass,
+            // and the worker drains in arrival order, so one bad episode would keep every episode
+            // added after it from ever running. Recording the failure is what lets the queue move on;
+            // the pass itself is resumable, so the retry only redoes what was missing.
+            LogBuffer.e(TAG, e, "Recognition of $episodeUuid threw before it could report")
+            runCatching {
+                queue.failAsr(episodeUuid, "crashed: ${e.javaClass.simpleName}: ${e.message}", ASR_RETRY_DELAY_MS)
+            }
+            AsrOutcome.Retry
+        }
+    }
+
+    private suspend fun runPass(
+        episodeUuid: String,
+        onModelProgress: (ModelDownloadProgress) -> Unit,
+    ): AsrOutcome {
         var item = queue.asrItem(episodeUuid) ?: return AsrOutcome.NotQueued
         if (item.isComplete) return AsrOutcome.Completed
 

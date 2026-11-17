@@ -74,8 +74,13 @@ class TranscriptAsrWorker @AssistedInject constructor(
         }
 
         // A row whose backoff has not expired yet is still work: returning retry keeps the queue
-        // alive through a metered network or a failed download without another UI event.
-        return if (queue.countAsrPending() > 0) Result.retry() else Result.success()
+        // alive through a metered network or a failed download without another UI event. The split
+        // is logged because "why is the worker still retrying" is otherwise unanswerable from a
+        // report: `due=0` means nothing could run and the next attempt is the row's own retry time.
+        val pending = queue.countAsrPending()
+        val due = queue.countAsrDue(System.currentTimeMillis())
+        LogBuffer.i(TAG, "Recognition queue: pending=$pending due=$due")
+        return if (pending > 0) Result.retry() else Result.success()
     }
 
     /** The notification that keeps a recognition pass alive past the job time limit. */

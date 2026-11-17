@@ -134,6 +134,33 @@ class AdAnalysisQueue @Inject constructor(
         }
     }
 
+    /**
+     * Re-enqueues both workers for rows a previous process left behind.
+     *
+     * The rows survive a process death, but the WorkManager requests do not always: a force-stop or
+     * an app update cancels them, and WorkManager only re-schedules its own work on the next process
+     * start. Without this, an episode queued before the app was killed sat in the table with nothing
+     * to drain it — the queue was durable and still did nothing.
+     */
+    fun resumeInterruptedWork() {
+        if (!isEnabled()) return
+        scope.launch(Dispatchers.IO) {
+            val asrPending = asrQueueDao.countPending()
+            val detectionPending = detectionQueueDao.countPending()
+            if (asrPending == 0 && detectionPending == 0) return@launch
+            LogBuffer.i(TAG, "Resuming analysis after a restart: asr=$asrPending detection=$detectionPending")
+            if (asrPending > 0) {
+                // A chain inherited from a previous process can be sleeping in a long backoff that
+                // the current rules would no longer use; appending behind it would wait out that
+                // sleep first. Nothing has started a pass yet in this process, so dropping the chain
+                // costs nothing and the fresh request runs now.
+                WorkManager.getInstance(context).cancelUniqueWork(TranscriptAsrWorker.UNIQUE_NAME)
+                ensureAsrWorker()
+            }
+            if (detectionPending > 0) ensureDetectionWorker()
+        }
+    }
+
     /** Reports whether either queue still has work for the episode, for the "generating" banner. */
     fun observeIsAnalysisPending(episodeUuid: String): Flow<Boolean> {
         if (!isEnabled()) return flowOf(false)
@@ -156,6 +183,9 @@ class AdAnalysisQueue @Inject constructor(
     suspend fun nextAsrDue(now: Long): AsrQueueItem? = asrQueueDao.findNextDue(now)
 
     suspend fun countAsrPending(): Int = asrQueueDao.countPending()
+
+    /** Rows that may be recognised right now; the rest are waiting for their own retry time. */
+    suspend fun countAsrDue(now: Long): Int = asrQueueDao.countDue(now)
 
     suspend fun nextDetectionDue(now: Long) = detectionQueueDao.findNextDue(now)
 
@@ -232,7 +262,12 @@ class AdAnalysisQueue @Inject constructor(
                     .setRequiresBatteryNotLow(true)
                     .build(),
             )
-            .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, ASR_BACKOFF_MINUTES, TimeUnit.MINUTES)
+            // Linear and short, deliberately. This work is a single unique chain, so a retrying head
+            // parks everything appended behind it: with exponential backoff at 15 minutes one episode
+            // waiting for a download kept four ready ones from running for two hours. The real retry
+            // schedule lives in `episode_asr_queue.next_attempt_at`, which the worker loops over, so
+            // the work-level delay only has to be short enough that an added episode starts soon.
+            .setBackoffCriteria(BackoffPolicy.LINEAR, ASR_BACKOFF_MINUTES, TimeUnit.MINUTES)
             .build()
         WorkManager.getInstance(context).enqueueUniqueWork(
             TranscriptAsrWorker.UNIQUE_NAME,
@@ -248,7 +283,10 @@ class AdAnalysisQueue @Inject constructor(
                     .setRequiredNetworkType(NetworkType.CONNECTED)
                     .build(),
             )
-            .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, DETECTION_BACKOFF_MINUTES, TimeUnit.MINUTES)
+            // Linear, so a failing detection cannot grow its own retry gap without bound: the row's
+            // `next_attempt_at` is the real schedule, and this is only when the worker is allowed to
+            // look again. It still waits for the network constraint, which is what gates a paid call.
+            .setBackoffCriteria(BackoffPolicy.LINEAR, DETECTION_BACKOFF_MINUTES, TimeUnit.MINUTES)
             .build()
         WorkManager.getInstance(context).enqueueUniqueWork(
             AdDetectionWorker.UNIQUE_NAME,
@@ -270,7 +308,14 @@ class AdAnalysisQueue @Inject constructor(
         const val MAX_QUEUED_PER_LAUNCH = 3
         const val DETECTION_WAKE_DELAY_MS = 60_000L
         const val DEFERRED_RETRY_MS = 30 * 60_000L
-        const val ASR_BACKOFF_MINUTES = 15L
+
+        /**
+         * How long the worker chain waits after a retry. Not the retry schedule for an episode: that
+         * is `episode_asr_queue.next_attempt_at`, which the worker loops over. This only bounds how
+         * long an episode appended behind a retrying head has to wait, so it is minutes, not tens of
+         * minutes.
+         */
+        const val ASR_BACKOFF_MINUTES = 1L
         const val DETECTION_BACKOFF_MINUTES = 10L
     }
 }
