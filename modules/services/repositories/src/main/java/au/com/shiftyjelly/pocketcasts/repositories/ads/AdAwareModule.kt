@@ -1,7 +1,7 @@
 package au.com.shiftyjelly.pocketcasts.repositories.ads
 
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.EpisodeTranscriber
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.moonshine.MoonshineEpisodeTranscriber
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.ParakeetEpisodeTranscriber
 import au.com.shiftyjelly.pocketcasts.repositories.di.OpenRouterApiKey
 import dagger.Binds
 import dagger.BindsOptionalOf
@@ -18,10 +18,14 @@ abstract class AdAwareModule {
     @Binds
     abstract fun provideAdSegmentManager(adSegmentManagerImpl: AdSegmentManagerImpl): AdSegmentManager
 
-    /** The only speech recognizer: Moonshine streaming, models installed on device. */
+    /**
+     * The only speech recognizer: Parakeet TDT 0.6B v3 on MediaPipe's LiteRT-LM audio transcriber,
+     * with the 586 MiB bundle installed on device or downloaded on Wi-Fi. One multilingual bundle
+     * covers every allowed language, so there is nothing per-language to bind.
+     */
     @Binds
     @Singleton
-    abstract fun provideEpisodeTranscriber(impl: MoonshineEpisodeTranscriber): EpisodeTranscriber
+    abstract fun provideEpisodeTranscriber(impl: ParakeetEpisodeTranscriber): EpisodeTranscriber
 
     /**
      * The OpenRouter key is optional so every app variant's graph stays valid: the app binds it

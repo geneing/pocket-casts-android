@@ -246,6 +246,6 @@ class TranscriptAdAnalyzerTest {
 
     private companion object {
         const val EPISODE = "episode-uuid"
-        const val ENGINE = "moonshine-0.1.6/tiny-streaming-en-wt"
+        const val ENGINE = "parakeet-tdt-0.6b-v3/i8-5s-stateful/litertlm-1.2.3/cues1"
     }
 }

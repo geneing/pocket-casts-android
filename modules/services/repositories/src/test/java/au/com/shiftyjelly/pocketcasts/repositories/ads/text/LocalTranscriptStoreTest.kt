@@ -106,15 +106,15 @@ class LocalTranscriptStoreTest {
 
     @Test
     fun `a completion marker pins the transcript to the engine that finished it`() = runTest {
-        store.markComplete(EPISODE, "moonshine-v1")
-        assertTrue(store.isComplete(EPISODE, "moonshine-v1"))
-        assertFalse(store.isComplete(EPISODE, "moonshine-v2"))
+        store.markComplete(EPISODE, "engine-v1")
+        assertTrue(store.isComplete(EPISODE, "engine-v1"))
+        assertFalse(store.isComplete(EPISODE, "engine-v2"))
 
         store.delete(EPISODE)
-        assertFalse(store.isComplete(EPISODE, "moonshine-v1"))
+        assertFalse(store.isComplete(EPISODE, "engine-v1"))
     }
 
     private companion object {
-        const val EPISODE = "moonshine-store-test-episode"
+        const val EPISODE = "transcript-store-test-episode"
     }
 }

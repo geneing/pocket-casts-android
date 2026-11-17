@@ -37,6 +37,12 @@
 -keep,allowobfuscation,allowshrinking class au.com.shiftyjelly.pocketcasts.repositories.playback.PlaybackService { *; }
 -keep,allowobfuscation,allowshrinking class au.com.shiftyjelly.pocketcasts.repositories.playback.LegacyPlaybackService { *; }
 
+# MediaPipe Tasks (on-device speech recognition) calls into these classes from JNI by name.
+# The recogniser and its task core are loaded regardless of what the app references directly,
+# so renaming or stripping them turns a release build into a crash on first transcription.
+-keep class com.google.mediapipe.tasks.core.** { *; }
+-keep class com.google.mediapipe.tasks.audio.audiotranscriber.** { *; }
+
 # https://issuetracker.google.com/issues/374691245
 -dontwarn com.google.android.gms.common.annotation.**
 

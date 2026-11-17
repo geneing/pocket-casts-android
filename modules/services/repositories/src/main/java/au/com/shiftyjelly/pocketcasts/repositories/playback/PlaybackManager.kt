@@ -46,6 +46,7 @@ import au.com.shiftyjelly.pocketcasts.preferences.model.PlayOverNotificationSett
 import au.com.shiftyjelly.pocketcasts.repositories.R
 import au.com.shiftyjelly.pocketcasts.repositories.ads.AdSegmentManager
 import au.com.shiftyjelly.pocketcasts.repositories.ads.AdSkipper
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.AdAnalysisQueue
 import au.com.shiftyjelly.pocketcasts.repositories.bookmark.BookmarkManager
 import au.com.shiftyjelly.pocketcasts.repositories.chromecast.CastManager
 import au.com.shiftyjelly.pocketcasts.repositories.di.NotificationPermissionChecker
@@ -173,6 +174,7 @@ open class PlaybackManager @Inject constructor(
     private val bookmarkManager: BookmarkManager,
     private val showNotesManager: ShowNotesManager,
     private val chapterManager: ChapterManager,
+    private val adAnalysisQueue: AdAnalysisQueue,
     private val adSegmentManager: AdSegmentManager,
     private val sleepTimer: SleepTimer,
     private val playbackManagerNetworkWatcherFactory: PlaybackManagerNetworkWatcher.Factory,
@@ -2552,6 +2554,13 @@ open class PlaybackManager @Inject constructor(
         return PendingIntent.getBroadcast(application, intentId, intent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
     }
 
+    /**
+     * Starts or resumes whatever the player has loaded.
+     *
+     * Every user-initiated start funnels through here — a resume, a player switch, a streamed
+     * episode that never sees a download callback — so this is the one place ad analysis can be
+     * queued for a streamed episode. `schedule` is idempotent, so a resume costs nothing.
+     */
     private suspend fun play(
         sourceView: SourceView = SourceView.UNKNOWN,
         posUpdatedOnPlayerReset: Boolean = false,
@@ -2566,6 +2575,16 @@ open class PlaybackManager @Inject constructor(
         }
         if (episode == null || player == null) {
             return
+        }
+
+        // Recognition must never be what stops an episode from playing, so a failure here is logged
+        // and forgotten rather than allowed to abort the start.
+        if (episode is PodcastEpisode) {
+            runCatching { adAnalysisQueue.schedule(episode.uuid) }
+                .onFailure {
+                    val message = "Could not queue ad analysis for ${episode.uuid}: ${it.message}"
+                    LogBuffer.w(LogBuffer.TAG_PLAYBACK, message)
+                }
         }
 
         // Android 17: reach the foreground service before requesting audio focus, otherwise focus is denied.

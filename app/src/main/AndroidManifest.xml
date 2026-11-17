@@ -30,14 +30,6 @@
     <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" tools:node="remove"/>
     <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" tools:node="remove"/>
 
-    <!--
-        Moonshine's AAR declares RECORD_AUDIO and a microphone activity for its live-microphone
-        API. This app only transcribes audio it already has, so both are stripped: a podcast player
-        that never records must not ship the microphone permission (Play data-safety) or an activity
-        that can raise the system dialog for it.
-    -->
-    <uses-permission android:name="android.permission.RECORD_AUDIO" tools:node="remove"/>
-
     <application
             android:name=".PocketCastsApplication"
             android:allowBackup="false"
@@ -55,11 +47,6 @@
 
     <meta-data android:name="com.google.android.gms.car.application"
                    android:resource="@xml/automotive_app_desc"/>
-
-    <!-- Merged in by Moonshine's AAR for its live-microphone API, which this app does not use. -->
-    <activity
-            android:name="ai.moonshine.voice.MicrophonePermissionActivity"
-            tools:node="remove"/>
 
         <meta-data android:name="com.google.android.wearable.media.theme"
                    android:resource="@style/WearMediaTheme"/>

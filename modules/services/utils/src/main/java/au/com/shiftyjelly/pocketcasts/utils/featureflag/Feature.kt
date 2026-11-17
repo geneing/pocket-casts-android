@@ -309,7 +309,7 @@ enum class Feature(
 
     /**
      * Debug switch for the ad-skipping work: ignore the transcript the show or our servers publish
-     * and recognise the episode on the device with Moonshine instead. The remote transcript is
+     * and recognise the episode on the device with Parakeet instead. The remote transcript is
      * usually the better input, so this is off everywhere and exists only to exercise the recogniser
      * end to end; turn it on from the developer settings to check a pass on real episodes.
      */

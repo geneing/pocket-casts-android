@@ -8,7 +8,7 @@ __pycache__/
 # Downloaded / generated media and model weights
 data/models/
 data/model/
-next/moonshine/models/
+next/parakeet/model/
 *.mp3
 *.m4a
 *.wav
@@ -19,9 +19,14 @@ next/moonshine/models/
 *.onnx
 *.ort
 *.bin
+*.litertlm
 *.safetensors
 *.exe
 *.rkyv
 next/audio_review/
 next/semantic/*.npz
-next/moonshine/*.log
+next/parakeet/*.log
+
+# Leftovers of the retired Moonshine pipeline, deleted from git but still on some
+# laptops' disks. Ignored so a bulk `git add` cannot resurrect a dead engine.
+next/moonshine/

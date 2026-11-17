@@ -2,6 +2,7 @@ package au.com.shiftyjelly.pocketcasts.repositories.ads.text
 
 import au.com.shiftyjelly.pocketcasts.models.entity.BaseEpisode
 import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.ParakeetModel
 import au.com.shiftyjelly.pocketcasts.repositories.file.FileStorage
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.PodcastManager
@@ -9,6 +10,7 @@ import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
 import java.io.File
 import javax.inject.Inject
 import javax.inject.Singleton
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.mapNotNull
@@ -62,6 +64,27 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         episodeUuid: String,
         onModelProgress: (ModelDownloadProgress) -> Unit = {},
     ): AsrOutcome = mutex.withLock {
+        try {
+            runPass(episodeUuid, onModelProgress)
+        } catch (e: CancellationException) {
+            throw e
+        } catch (e: Throwable) {
+            // A row that throws before it can record its own failure is picked again on every pass,
+            // and the worker drains in arrival order, so one bad episode would keep every episode
+            // added after it from ever running. Recording the failure is what lets the queue move on;
+            // the pass itself is resumable, so the retry only redoes what was missing.
+            LogBuffer.e(TAG, e, "Recognition of $episodeUuid threw before it could report")
+            runCatching {
+                queue.failAsr(episodeUuid, "crashed: ${e.javaClass.simpleName}: ${e.message}", ASR_RETRY_DELAY_MS)
+            }
+            AsrOutcome.Retry
+        }
+    }
+
+    private suspend fun runPass(
+        episodeUuid: String,
+        onModelProgress: (ModelDownloadProgress) -> Unit,
+    ): AsrOutcome {
         var item = queue.asrItem(episodeUuid) ?: return AsrOutcome.NotQueued
         if (item.isComplete) return AsrOutcome.Completed
 
@@ -208,7 +231,8 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         val signature = AnalysisIdentity.audioSignature(source)
         val staleAudio = state.audioSignature.isNotBlank() && state.audioSignature != signature
         val staleEngine = state.sttVersion.isNotBlank() && state.sttVersion != transcriber.version
-        val fromPublishedTranscript = state.sttVersion.isNotBlank() && !state.sttVersion.startsWith(MOONSHINE_PREFIX)
+        val fromPublishedTranscript = state.sttVersion.isNotBlank() &&
+            !state.sttVersion.startsWith(ParakeetModel.ENGINE_TAG)
         if (!staleAudio && !staleEngine && !fromPublishedTranscript) return
         LogBuffer.i(
             TAG,
@@ -293,7 +317,6 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         const val ASR_RETRY_DELAY_MS = 15 * 60_000L
         const val DETECTION_BATCH_CUES = 12
         const val DETECTION_MAX_DELAY_MS = 60_000L
-        const val MOONSHINE_PREFIX = "moonshine"
         const val REASON_METERED = "speech model needs an unmetered network"
     }
 }

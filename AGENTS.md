@@ -13,17 +13,18 @@ for the POSIX scripts under `dev/`.
 # local.properties, so an unset ANDROID_HOME fails configuration.
 $env:ANDROID_HOME = "$env:LOCALAPPDATA\Android\Sdk"
 
-# Build :app:assembleDebugProd, install it with `adb install -r`, then push the speech models.
-.\dev\adaware\next\moonshine\install-app.ps1
+# Build :app:assembleDebugProd, install it with `adb install -r`, then fetch the 586 MiB speech
+# bundle once and push it. Both halves of that are skipped when they are already in place.
+.\dev\adaware\next\parakeet\install-app.ps1
 
-# Code changed, models already on the phone.
-.\dev\adaware\next\moonshine\install-app.ps1 -SkipModels
+# Code changed, model already on the phone.
+.\dev\adaware\next\parakeet\install-app.ps1 -SkipModels
 
-# Models changed, APK already installed.
-.\dev\adaware\next\moonshine\install-models.ps1
+# Model changed or phone wiped, APK already installed.
+.\dev\adaware\next\parakeet\install-model.ps1
 
 # Several phones attached: name the target.
-.\dev\adaware\next\moonshine\install-app.ps1 -Serial <serial>
+.\dev\adaware\next\parakeet\install-app.ps1 -Serial <serial>
 ```
 
 `JAVA_HOME` is Android Studio's bundled JDK; the `java = "17"` toolchain is provisioned by Gradle, so
@@ -35,7 +36,7 @@ agent), and `-q` when only failures matter.
 It points at the production servers, so the installed app sees the real library and account; the
 staging `debug` build does not. Both carry the `.debug` application id, so they replace each other —
 and because the data belongs to that id, **switching between `debug` and `debugProd` wipes the app**
-(sign-in, library, and the pushed speech models). Stay on `debugProd` unless a staging server is the
+(sign-in, library, and the pushed speech model). Stay on `debugProd` unless a staging server is the
 thing being tested.
 
 Never uninstall to get a clean state: `adb install -r` keeps the data, models and account, and a
@@ -71,7 +72,7 @@ $adb = "$env:LOCALAPPDATA\Android\Sdk\platform-tools\adb.exe"
 Instrumentation tests run on the attached phone. The Gradle tasks work
 (`:app:connectedDebugProdAndroidTest`, or `:modules:features:search:connectedDebugAndroidTest`), but
 running them by hand installs the test APK with `-r` and leaves the app's data — account, library,
-pushed models — alone:
+pushed model — alone:
 
 ```powershell
 .\gradlew.bat :app:assembleDebugProdAndroidTest
@@ -300,41 +301,73 @@ Use `AnalyticsTracker` service for event tracking. Analytics are integrated with
 
 ### On-device speech to text (ad skipping)
 
-Ad detection reads only a transcript the app produced on the device with Moonshine
-(`ai.moonshine:moonshine-voice`, ONNX Runtime, CPU only). Code and models are MIT. A transcript the
-show or our servers publish is never used for detection or navigation: its cue times do not match
-the audio and it is missing ad reads.
+Ad detection reads only a transcript the app produced on the device with NVIDIA Parakeet TDT 0.6B
+v3, run through MediaPipe's audio transcriber (`com.google.mediapipe:tasks-audio`, CPU only) on a
+LiteRT-LM export. A transcript the show or our servers publish is never used for detection or
+navigation: its cue times do not match the audio and it is missing ad reads.
 
-- Models: **tiny streaming** for English and Spanish, requested with the architecture passed
-  explicitly (`MOONSHINE_MODEL_ARCH_TINY_STREAMING`); the catalog's default for `en` is *medium* and
-  for `es` is *small*, so relying on the default silently downloads hundreds of megabytes.
-  Downloaded on demand (unmetered only) into `noBackupFilesDir/moonshine-models`, never bundled.
-- On a device, a private build gets them with `dev/adaware/next/moonshine/install-app.ps1` (builds `:app:assembleDebugProd`, `adb install -r`, then pushes the models with `install-models.ps1`; `-SkipBuild`/`-SkipModels` skip either half).
-- Language: chosen from `Podcast.podcastLanguage` by primary subtag (`es-us` -> `es`). Any other
+- Model: one bundle, `parakeet_tdt_0.6b_v3_5s_i8_stateful.litertlm`, exactly 614 588 752 bytes
+  (~586 MiB), from the `litert-community/parakeet-tdt-0.6b-v3` Hugging Face repo. Downloaded on
+  demand (unmetered only) into `noBackupFilesDir/parakeet-model`, never bundled: half a gigabyte of
+  weights for a gated feature does not belong in the APK. A file of any other size counts as
+  absent, so a truncated copy falls back to the download instead of failing inside the interpreter.
+- Licence: the model is NVIDIA's under CC-BY-4.0 and MediaPipe is Apache-2.0. CC-BY-4.0 requires
+  visible attribution to NVIDIA wherever the app is distributed, and the licences screen is built
+  from the Gradle dependency graph, so it will never list the model — the note a release checklist
+  has to find is in `dev/adaware/next/parakeet/README.md`.
+- On a device, a private build gets the bundle with `dev/adaware/next/parakeet/install-app.ps1`
+  (builds `:app:assembleDebugProd`, `adb install -r`, then pushes it with `install-model.ps1`;
+  `-SkipBuild`/`-SkipModels` skip either half, and the push is skipped when the device copy is
+  already the right size). MediaPipe compiles the bundle into `noBackupFilesDir/parakeet-cache` on
+  first use; nothing is pushed there and nothing in it is worth backing up.
+- Language: Parakeet covers 25 European languages (bg, hr, cs, da, nl, en, et, fi, fr, de, hu, it,
+  lv, lt, mt, pl, pt, ro, sk, sl, es, sv, ru, uk), chosen from `Podcast.podcastLanguage` by primary
+  subtag (`es-us` -> `es`) and defaulting to English when the podcast declares nothing. Any other
   language makes the engine unavailable for that episode, which leaves it without on-device
   detection instead of falling back to a published transcript.
-- Timestamps: word-level times come from the model's cross-attention DTW. They are **English only**
-  (the Spanish bundle ships no attention decoder), so cue building must also work from line-level
-  `startTime`/`duration`. Cues are stored as WebVTT through `LocalTranscriptStore`, one cue per
-  complete streaming line, and the old ML Kit energy-region reconstruction is gone for good.
-  Measured against Whisper, Moonshine's word times sit a constant ~0.25 s late; at hand-labelled ad
-  boundaries that still lands within 0.3 s at p90, so do not "fix" the offset without new evidence.
+- Timestamps: MediaPipe reports segments with a start and an end and no word-level alignment, so
+  cues are sentence-level, built from completed segments and stored as WebVTT through
+  `LocalTranscriptStore`. Nothing else may supply times: no DTW, no energy regions, no constant
+  offset. When cue positions look wrong, read `segment_ms_median` in the pass log before changing
+  anything.
 - Recognition always runs for a queued episode. Scheduling drops the published transcript rows so
-  the transcript tab and tap-to-seek can only read the recognized text; `AdAnalysisQueue.schedule`
-  is called from the download, playback, episode-details and Up Next paths.
+  the transcript tab and tap-to-seek can only read the recognized text. `AdAnalysisQueue.schedule`
+  runs from every path that can start an episode: download completion, playback start (which is how
+  a streamed episode gets queued), episode details, any Up Next mutation, the Up Next sweep (one
+  minute after each launch, then every six hours), and `resumeInterruptedWork` at launch. The sweep
+  exists because an episode can enter Up Next from another device or a backup restore without passing
+  through `UpNextQueueImpl`.
 - The pipeline is two durable queues (`episode_asr_queue`, `ad_detection_queue`) drained by one
   worker each, so several playlist episodes add rows instead of starting several passes. Each pass
-  resumes from the last stored cue: cues are written after every completed line, and the detection
-  queue records the end of the last scored cue. Failures and metered-network deferrals stay in the
-  row with a retry time, so a process death or a dropped connection does not restart the episode.
-- Recognition is minutes of CPU (about 3x realtime here), so `TranscriptAsrWorker` promotes itself
-  to a `dataSync` foreground service with a quiet notification. An ordinary WorkManager job is
-  stopped by the system after a few minutes and loses the pass in flight — a
-  `JobCancellationException` in `AdAnalysisWorker` means exactly that, not a recognition error.
-  `moonshineTranscribeStream: transcription error: 0` in logcat is the JNI logging its success code.
-- Where: `modules/services/repositories/.../repositories/ads/text/moonshine/`. The decisions, the
-  laptop comparison against the Whisper corpus and the integration notes live in
-  `dev/adaware/next/moonshine/`; read `RESEARCH.md` before changing the engine, the model choice or
-  the cue rules, and `REPORT.md` before trusting a timestamp change.
-- The library merges `RECORD_AUDIO` and a microphone activity into the manifest; both are stripped
-  in `app/src/main/AndroidManifest.xml` because the app never records audio.
+  resumes from the last stored cue: cues are written after every completed segment, and the
+  detection queue records the end of the last scored cue. Failures and metered-network deferrals
+  stay in the row with a retry time, so a process death or a dropped connection does not restart the
+  episode.
+- A transcript belongs to the engine and model identity that produced it. A different MediaPipe
+  version or a different bundle invalidates the stored transcript and the ad analysis built from it,
+  so a model swap is followed by a full re-transcription of the library. That is intended: old cues
+  need not agree with the new engine's segments.
+- The queue is durable and serialised, but the work that drains it is one unique chain, so a
+  *retrying* head blocks whatever is appended behind it. Work-level backoff is therefore LINEAR at 1
+  minute, and the real retry schedule is the row's `next_attempt_at`. Never put exponential backoff
+  on `TranscriptAsrWorker`: at 15 minutes it parked four ready episodes behind one deferral for two
+  hours, which is why an added episode looked like it was never queued. A pass that throws before it
+  can record its own failure marks the row failed (`crashed: …`) so one bad episode cannot starve the
+  ones behind it. `resumeInterruptedWork` re-enqueues both workers at launch and drops a chain
+  inherited from a previous process, because a force-stop cancels the requests while the rows stay.
+- `TranscriptAsrWorker` logs `Recognition queue: pending=N due=M` on every run; `due=0` means the
+  retry is the row's own retry time, not a stuck worker.
+- Recognition is still minutes of CPU on a long episode, so `TranscriptAsrWorker` promotes itself to
+  a `dataSync` foreground service with a quiet notification. An ordinary WorkManager job is stopped
+  by the system after a few minutes and loses the pass in flight — a `JobCancellationException` in
+  `AdAnalysisWorker` means exactly that, not a recognition error, and the pass resumes from its last
+  stored cue.
+- Logging: `ParakeetStats` writes the trace under the `ParakeetStt` tag. Progress lines carry
+  `chars=`, `at=`, `elapsed=`, `audio=`, `rtf=` and `segments=`; the pass line is
+  `pass: model_load_ms=… audio_ms=… wall_ms=… rtf=… segments=… cues=… segment_ms_median=…`.
+  `rtf` is audio time over wall time, so above 1 is faster than real time. One measured pass over a
+  34 s clip logged `rtf=2.05` with a cold bundle; a full episode should be better because the first
+  call pays for loading. The logged number, not that expectation, is the measurement.
+- Where: `modules/services/repositories/.../repositories/ads/text/parakeet/` for the engine and
+  `dev/adaware/next/parakeet/` for the model scripts (`download-model.ps1`, `install-model.ps1`,
+  `install-app.ps1`) plus the log/RTF field reference in its `README.md`.

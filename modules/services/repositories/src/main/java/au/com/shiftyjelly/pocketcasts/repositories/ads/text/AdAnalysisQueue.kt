@@ -3,9 +3,11 @@ package au.com.shiftyjelly.pocketcasts.repositories.ads.text
 import android.content.Context
 import androidx.work.BackoffPolicy
 import androidx.work.Constraints
+import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.ExistingWorkPolicy
 import androidx.work.NetworkType
 import androidx.work.OneTimeWorkRequestBuilder
+import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
 import au.com.shiftyjelly.pocketcasts.coroutines.di.ApplicationScope
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdAnalysisDao
@@ -14,6 +16,7 @@ import au.com.shiftyjelly.pocketcasts.models.db.dao.AdDetectionQueueDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdSegmentDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AsrQueueDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.TranscriptDao
+import au.com.shiftyjelly.pocketcasts.models.db.dao.UpNextDao
 import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
 import au.com.shiftyjelly.pocketcasts.models.to.AsrQueueItem
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
@@ -52,6 +55,7 @@ class AdAnalysisQueue @Inject constructor(
     private val adSegmentDao: AdSegmentDao,
     private val adCueScoreDao: AdCueScoreDao,
     private val transcriptDao: TranscriptDao,
+    private val upNextDao: UpNextDao,
     private val transcriber: EpisodeTranscriber,
     private val transcriptStore: LocalTranscriptStore,
     private val episodeManager: EpisodeManager,
@@ -134,6 +138,61 @@ class AdAnalysisQueue @Inject constructor(
         }
     }
 
+    /**
+     * Queues recognition for every podcast episode in Up Next; returns how many were queued.
+     *
+     * Up Next is where the next thing to play usually comes from, and an episode that arrives there
+     * from another device or from a backup never passes through `UpNextQueueImpl`, so no user action
+     * looks at it. Like [scheduleDownloadedWithoutTranscript] this only submits rows; the single
+     * recognition worker serialises whatever is queued.
+     */
+    suspend fun scheduleUpNext(): Int {
+        if (!isEnabled()) return 0
+        val uuids = runCatching { upNextDao.findEpisodeUuidsBlocking() }
+            .onFailure { LogBuffer.e(TAG, it, "Could not list the Up Next episodes for recognition") }
+            .getOrDefault(emptyList())
+        if (uuids.isEmpty()) return 0
+        // The uuid query covers every row in Up Next, user files included, while recognition is only
+        // ever queued for podcast episodes: a user file has no podcast language and no ad segments.
+        val userUuids = runCatching { upNextDao.findUserEpisodesBlocking() }
+            .getOrDefault(emptyList())
+            .mapTo(HashSet<String>()) { it.uuid }
+        val podcastUuids = uuids.filterNot { it in userUuids }
+        podcastUuids.forEach(::schedule)
+        LogBuffer.i(TAG, "Queueing on-device recognition for ${podcastUuids.size} Up Next episode(s)")
+        return podcastUuids.size
+    }
+
+    /**
+     * Re-enqueues both workers for rows a previous process left behind.
+     *
+     * The rows survive a process death, but the WorkManager requests do not always: a force-stop or
+     * an app update cancels them, and WorkManager only re-schedules its own work on the next process
+     * start. Without this, an episode queued before the app was killed sat in the table with nothing
+     * to drain it — the queue was durable and still did nothing.
+     */
+    fun resumeInterruptedWork() {
+        if (!isEnabled()) return
+        scope.launch(Dispatchers.IO) {
+            // Registered before the pending check: the sweep has to exist even when both queues are
+            // empty, which is exactly the state of a fresh install whose Up Next was synced in.
+            ensureUpNextWorker()
+            val asrPending = asrQueueDao.countPending()
+            val detectionPending = detectionQueueDao.countPending()
+            if (asrPending == 0 && detectionPending == 0) return@launch
+            LogBuffer.i(TAG, "Resuming analysis after a restart: asr=$asrPending detection=$detectionPending")
+            if (asrPending > 0) {
+                // A chain inherited from a previous process can be sleeping in a long backoff that
+                // the current rules would no longer use; appending behind it would wait out that
+                // sleep first. Nothing has started a pass yet in this process, so dropping the chain
+                // costs nothing and the fresh request runs now.
+                WorkManager.getInstance(context).cancelUniqueWork(TranscriptAsrWorker.UNIQUE_NAME)
+                ensureAsrWorker()
+            }
+            if (detectionPending > 0) ensureDetectionWorker()
+        }
+    }
+
     /** Reports whether either queue still has work for the episode, for the "generating" banner. */
     fun observeIsAnalysisPending(episodeUuid: String): Flow<Boolean> {
         if (!isEnabled()) return flowOf(false)
@@ -156,6 +215,9 @@ class AdAnalysisQueue @Inject constructor(
     suspend fun nextAsrDue(now: Long): AsrQueueItem? = asrQueueDao.findNextDue(now)
 
     suspend fun countAsrPending(): Int = asrQueueDao.countPending()
+
+    /** Rows that may be recognised right now; the rest are waiting for their own retry time. */
+    suspend fun countAsrDue(now: Long): Int = asrQueueDao.countDue(now)
 
     suspend fun nextDetectionDue(now: Long) = detectionQueueDao.findNextDue(now)
 
@@ -232,7 +294,12 @@ class AdAnalysisQueue @Inject constructor(
                     .setRequiresBatteryNotLow(true)
                     .build(),
             )
-            .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, ASR_BACKOFF_MINUTES, TimeUnit.MINUTES)
+            // Linear and short, deliberately. This work is a single unique chain, so a retrying head
+            // parks everything appended behind it: with exponential backoff at 15 minutes one episode
+            // waiting for a download kept four ready ones from running for two hours. The real retry
+            // schedule lives in `episode_asr_queue.next_attempt_at`, which the worker loops over, so
+            // the work-level delay only has to be short enough that an added episode starts soon.
+            .setBackoffCriteria(BackoffPolicy.LINEAR, ASR_BACKOFF_MINUTES, TimeUnit.MINUTES)
             .build()
         WorkManager.getInstance(context).enqueueUniqueWork(
             TranscriptAsrWorker.UNIQUE_NAME,
@@ -257,6 +324,48 @@ class AdAnalysisQueue @Inject constructor(
         )
     }
 
+    /**
+     * Registers the Up Next sweep: one run shortly after launch, then every six hours.
+     *
+     * An episode added to Up Next on another device, or restored from a backup, arrives without
+     * passing through `UpNextQueueImpl`, so the queue is swept on a timer rather than only on a user
+     * action. Six hours is rare enough to cost nothing and frequent enough that an episode synced in
+     * is recognised long before it is played, when recognition is not competing with playback.
+     *
+     * The launch run is a separate one-shot because periodic work's first run is a whole interval
+     * away, and the OS may defer it further: on a phone in a busy job-quota state the periodic
+     * request sat unscheduled with no system job at all. A launch is the reliable moment to catch up.
+     */
+    fun ensureUpNextWorker() {
+        val constraints = Constraints.Builder()
+            .setRequiresBatteryNotLow(true)
+            .build()
+        val workManager = WorkManager.getInstance(context)
+
+        // One minute after launch: long enough for startup to settle, soon enough to be seen.
+        workManager.enqueueUniqueWork(
+            UpNextAnalysisWorker.UNIQUE_NAME + "-launch",
+            ExistingWorkPolicy.REPLACE,
+            OneTimeWorkRequestBuilder<UpNextAnalysisWorker>()
+                .setConstraints(constraints)
+                .setInitialDelay(UP_NEXT_INITIAL_DELAY_MINUTES, TimeUnit.MINUTES)
+                .build(),
+        )
+
+        workManager.enqueueUniquePeriodicWork(
+            UpNextAnalysisWorker.UNIQUE_NAME,
+            ExistingPeriodicWorkPolicy.KEEP,
+            PeriodicWorkRequestBuilder<UpNextAnalysisWorker>(
+                repeatInterval = UP_NEXT_INTERVAL_HOURS,
+                repeatIntervalTimeUnit = TimeUnit.HOURS,
+                flexTimeInterval = UP_NEXT_FLEX_MINUTES,
+                flexTimeIntervalUnit = TimeUnit.MINUTES,
+            )
+                .setConstraints(constraints)
+                .build(),
+        )
+    }
+
     private suspend fun isRecognised(episodeUuid: String): Boolean {
         val item = asrQueueDao.find(episodeUuid)
         if (item != null) return item.isComplete
@@ -272,5 +381,12 @@ class AdAnalysisQueue @Inject constructor(
         const val DEFERRED_RETRY_MS = 30 * 60_000L
         const val ASR_BACKOFF_MINUTES = 15L
         const val DETECTION_BACKOFF_MINUTES = 10L
+
+        /** Up Next sweep cadence; long, because every other trigger already covers a played episode. */
+        const val UP_NEXT_INTERVAL_HOURS = 6L
+        const val UP_NEXT_FLEX_MINUTES = 15L
+
+        /** Delay before the very first sweep, so a launch does not wait a whole interval for it. */
+        const val UP_NEXT_INITIAL_DELAY_MINUTES = 1L
     }
 }

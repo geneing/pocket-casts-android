@@ -186,6 +186,9 @@ class PocketCastsApplication :
         setupAnalytics()
 
         setupApp()
+        // Rows queued before the process was killed have no worker left to drain them; this is what
+        // makes recognition and detection pick up where they stopped.
+        adAnalysisQueue.resumeInterruptedWork()
         // Files restored with the app, or episodes that arrived while the analysis was off, never
         // go through the download callback, so they are picked up here.
         adAnalysisQueue.scheduleDownloadedWithoutTranscript()

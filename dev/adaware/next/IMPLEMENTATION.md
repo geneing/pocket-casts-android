@@ -76,15 +76,26 @@ a segment started where speech resumed around it, a pause inside a long segment 
 edges towards its neighbours, and flat audio collapsed into one region covering the whole
 clip. That is what made ad boundaries land in the wrong place.
 
-It is replaced by Moonshine (`ai.moonshine:moonshine-voice`), whose streaming models carry
-real word-level times from cross-attention DTW. See `dev/adaware/next/moonshine/` for the
-research, the laptop comparison against the Whisper transcripts and the integration notes.
-Until that lands, `TranscriptAdAnalyzer` only scores transcripts the app already has; an
-episode without one is left to `AudioAdAnalyzer`.
+Its first replacement, on `feature/adaware_jev_moonshine`, was Moonshine
+(`ai.moonshine:moonshine-voice`): streaming models with word-level times from cross-attention DTW,
+one bundle per language. That engine is retired on `feature/adaware_parakeet` — ONNX Runtime, the
+per-language bundles and the DTW cue rules went with it, and `dev/adaware/next/moonshine/` was
+deleted rather than carried forward, because its research and scoring described an engine that no
+longer exists.
 
-The phone app's `repositories` module keeps minSdk 26 (Moonshine's AAR declares 26, as the
-ML Kit speech SDK did), and the app no longer declares `RECORD_AUDIO`: nothing records
-audio any more.
+Speech to text is now NVIDIA **Parakeet TDT 0.6B v3**, run through MediaPipe's audio transcriber
+(`com.google.mediapipe:tasks-audio`, CPU only) from the LiteRT-LM export
+`parakeet_tdt_0.6b_v3_5s_i8_stateful.litertlm` (614 588 752 bytes, CC-BY-4.0, downloaded on demand
+into `noBackupFilesDir/parakeet-model` rather than bundled). MediaPipe reports the text as fixed ~1.25 s
+windows with a start and an end, not as sentences, so cues are assembled from the text and take their
+times from the windows those characters came from; there is no word alignment to trust and no offset
+to correct. One measured pass over a 34 s clip logged `rtf=2.05` on a cold bundle, and the measurement
+that matters is always the `rtf` on the `ParakeetStt` log line. Model install and the log field
+reference live in `dev/adaware/next/parakeet/`.
+
+The phone app's `repositories` module no longer sets `minSdk = 26`: MediaPipe's AAR declares 24, so
+the module is back on the project's floor and the engine check is the runtime one. The app still
+never records audio — it only hands the engine audio it already has.
 
 
 ### Pipeline and storage

@@ -34,8 +34,9 @@ This fork is built from a **Windows** host against a phone over USB, and the pho
 # The project has no local.properties, so Gradle needs the Windows SDK path.
 $env:ANDROID_HOME = "$env:LOCALAPPDATA\Android\Sdk"
 
-# Build, install with adb install -r, and push the on-device speech models.
-.\dev\adaware\next\moonshine\install-app.ps1
+# Fetch the 586 MiB Parakeet speech model once (resumable), then build, install and push it.
+.\dev\adaware\next\parakeet\download-model.ps1
+.\dev\adaware\next\parakeet\install-app.ps1
 
 .\gradlew.bat :app:assembleDebugProd          # assemble the debug .apk
 .\gradlew.bat :app:installDebugProd           # install it on a connected device

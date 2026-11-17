@@ -10,7 +10,7 @@ import androidx.work.ForegroundInfo
 import androidx.work.WorkerParameters
 import androidx.work.workDataOf
 import au.com.shiftyjelly.pocketcasts.repositories.R
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.moonshine.MoonshineStats
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.ParakeetStats
 import au.com.shiftyjelly.pocketcasts.repositories.notification.NotificationHelper
 import au.com.shiftyjelly.pocketcasts.utils.featureflag.Feature
 import au.com.shiftyjelly.pocketcasts.utils.featureflag.FeatureFlag
@@ -51,7 +51,7 @@ class TranscriptAsrWorker @AssistedInject constructor(
             val item = queue.nextAsrDue(System.currentTimeMillis()) ?: break
             val outcome = runCatching {
                 generator.run(item.episodeUuid) { progress ->
-                    val percent = MoonshineStats.percent(progress.bytesDone, progress.bytesTotal)
+                    val percent = ParakeetStats.percent(progress.bytesDone, progress.bytesTotal)
                     if (percent != lastPercent) {
                         lastPercent = percent
                         setProgressAsync(
@@ -74,8 +74,13 @@ class TranscriptAsrWorker @AssistedInject constructor(
         }
 
         // A row whose backoff has not expired yet is still work: returning retry keeps the queue
-        // alive through a metered network or a failed download without another UI event.
-        return if (queue.countAsrPending() > 0) Result.retry() else Result.success()
+        // alive through a metered network or a failed download without another UI event. The split
+        // is logged because "why is the worker still retrying" is otherwise unanswerable from a
+        // report: `due=0` means nothing could run and the next attempt is the row's own retry time.
+        val pending = queue.countAsrPending()
+        val due = queue.countAsrDue(System.currentTimeMillis())
+        LogBuffer.i(TAG, "Recognition queue: pending=$pending due=$due")
+        return if (pending > 0) Result.retry() else Result.success()
     }
 
     /** The notification that keeps a recognition pass alive past the job time limit. */
