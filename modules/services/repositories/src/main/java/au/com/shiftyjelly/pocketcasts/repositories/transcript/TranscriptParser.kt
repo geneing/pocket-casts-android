@@ -29,8 +29,18 @@ interface TranscriptParser {
     fun parse(source: BufferedSource): Result<List<TranscriptEntry>>
 }
 
+/**
+ * A parser over one of media3's subtitle formats.
+ *
+ * The delegate is created per call, not held: media3's WebVTT and SRT parsers keep their read
+ * position and cue buffer in fields, and one instance is shared by every screen that reads a
+ * transcript (the tab, the player header, chapter loading). Two of those parsing at the same time
+ * used to corrupt each other's position, and the loser reported "no transcript" for a file that was
+ * perfectly readable — a finished transcript vanished from the tab until it was reopened. A fresh
+ * delegate is a few small objects, which is nothing against the file read.
+ */
 internal abstract class SubtitleParser(
-    private val delegate: Media3SubtitleParser,
+    private val delegateFactory: () -> Media3SubtitleParser,
 ) : TranscriptParser {
     override fun parse(source: BufferedSource) = runCatching {
         val data = source.use { it.readByteArray() }
@@ -42,6 +52,7 @@ internal abstract class SubtitleParser(
     }
 
     private fun parseAll(data: ByteArray): List<CuesWithTiming> {
+        val delegate = delegateFactory()
         return buildList {
             delegate.parse(data, 0, data.size, Media3SubtitleParser.OutputOptions.allCues()) {
                 add(it)
@@ -52,7 +63,7 @@ internal abstract class SubtitleParser(
     protected abstract fun toEntries(cue: Cue, startTimeMs: Long, endTimeMs: Long): List<TranscriptEntry>
 }
 
-internal class WebVttParser : SubtitleParser(WebvttParser()) {
+internal class WebVttParser : SubtitleParser(::WebvttParser) {
     override val type get() = TranscriptType.Vtt
 
     override fun toEntries(cue: Cue, startTimeMs: Long, endTimeMs: Long): List<TranscriptEntry> {
@@ -75,7 +86,7 @@ internal class WebVttParser : SubtitleParser(WebvttParser()) {
     }
 }
 
-internal class SrtParser : SubtitleParser(SubripParser()) {
+internal class SrtParser : SubtitleParser(::SubripParser) {
     override val type get() = TranscriptType.Srt
 
     override fun toEntries(cue: Cue, startTimeMs: Long, endTimeMs: Long): List<TranscriptEntry> {
