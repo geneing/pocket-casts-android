@@ -3,13 +3,15 @@ package au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert
 import com.google.ai.edge.litert.Accelerator
 
 /**
- * Which hardware the encoder and decoder run on.
+ * Which hardware the encoder runs on.
  *
- * The three are not interchangeable on speed, which is the whole reason the choice exists: the TDT
- * decoder runs 60-90 tiny sequential invocations per window, and an accelerator that pays a queue
- * round trip for each of those loses to a CPU that does not. [CPU] is the default because it measured
- * fastest end to end on the Pixel 11 (rtf 5.06 against the NPU's 2.97 and the GPU's 0.47); [NPU] is
- * kept because its encoder was twice the CPU's and that advantage should grow on long episodes.
+ * Only the encoder is offered to an accelerator. The mel front end is a few milliseconds of work, and
+ * the TDT decoder is 60-100 *single-token* runs per window, where the per-run dispatch an accelerator
+ * pays costs more than the multiply-adds it replaces; both stay on the CPU on every backend.
+ *
+ * [CPU] runs the 4-bit encoder, which is the export this model was measured on and the default. [GPU]
+ * and [NPU] run the float16 encoder, whose graph is not part of an install: a pass only asks for it
+ * when pinned, so the plumbing stays reachable without making every phone store another gigabyte.
  */
 enum class ParakeetBackend(val label: String, val accelerator: Accelerator) {
     NPU("npu", Accelerator.NPU),
@@ -19,12 +21,11 @@ enum class ParakeetBackend(val label: String, val accelerator: Accelerator) {
 
     companion object {
         /**
-         * The backend a pass uses unless it is pinned: always the portable graph on the CPU.
+         * The backend a pass uses unless it is pinned: the 4-bit encoder on the CPU.
          *
-         * The NPU is not picked even on a Google Tensor phone. Over a 33.6 s clip it was slower for
-         * the whole pass (rtf 2.97 against 5.06) because only the encoder can use it: the decoder's
-         * per-token dispatch and the CPU-only mel front end decide the pass, and the NPU also pays a
-         * two-graph load. That is the measurement to beat before this returns [NPU].
+         * That is the pair `litert-community/parakeet-redux` measures as its CPU form, and the only
+         * one whose graph a normal install carries. A pinned backend has to have the float16 encoder
+         * pushed to the device first (`install-model.ps1 -WithF16`).
          */
         fun preferred(): ParakeetBackend = CPU
 

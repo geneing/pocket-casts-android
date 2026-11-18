@@ -7,12 +7,12 @@ import java.util.Locale
 /**
  * Turns token ids into words with times, and stitches those words across overlapping windows.
  *
- * The bundle's sliding window is 5 s with a 2 s overlap, so every window re-recognises the last 2 s
- * of the one before it. MediaPipe hid that behind `TimestampTextMerger`; here the merge is done on
- * the times the decoder already reports. A word is only final once a later window starts after it:
- * that window has more left context and cannot see the word again, so nothing can revise it after
- * that point. Words still inside the overlap wait for the next window's version, which is the whole
- * reason the seam does not stutter.
+ * A window is 10 s and steps 8 s, so every window re-recognises the last 2 s of the one before it.
+ * MediaPipe hid that behind `TimestampTextMerger`; here the merge is done on the times the decoder
+ * already reports. A word is only final once a later window starts after it: that window has more
+ * left context and cannot see the word again, so nothing can revise it after that point. Words still
+ * inside the overlap wait for the next window's version, which is the whole reason the seam does not
+ * stutter.
  */
 internal class ParakeetWords(
     private val tokenizer: ParakeetTokenizer,

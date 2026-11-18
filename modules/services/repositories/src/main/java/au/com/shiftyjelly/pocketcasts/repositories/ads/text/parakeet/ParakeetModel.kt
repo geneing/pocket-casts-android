@@ -22,40 +22,51 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 
 /**
- * The Parakeet files this app runs, and where they live.
+ * The Parakeet Redux files this app runs, and where they live.
  *
- * One model covers every supported language: Parakeet TDT 0.6B v3 is multilingual, so unlike the
- * per-language models it replaces there is no language allowlist or per-language cache key to consult
- * before checking for it. A pass needs three files:
+ * One model covers every supported language: Parakeet TDT 0.6B v3 is multilingual, so there is no
+ * language allowlist or per-language model to pick before checking for it. Redux is the same weights
+ * with a ternary encoder, exported by `litert-community/parakeet-redux` as four files because the
+ * conversion splits what the old bundle kept together:
  *
- * - `parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite`, 614 261 072 bytes: the portable export the CPU and
- *   GPU run, and the one every pass uses by default.
- * - `tokenizer.json`, 1 159 960 bytes: a `.tflite` graph stops at token ids, so the BPE table the
- *   model was converted with has to sit beside it.
- * - optionally, `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite`, 1 303 768 096 bytes:
- *   AOT-compiled for the Pixel 11's NPU and only runnable there. It is not part of a normal install;
- *   only a pass pinned to [ParakeetBackend.NPU] asks for it (see [assets]), because the NPU measured
- *   slower end to end and only won the encoder.
+ * - `parakeet_redux_mel_10s.tflite`, 1 608 068 bytes: the log-mel front end for 10 s of 16 kHz
+ *   audio. It replaces the Kotlin mel implementation and is the only one that matches the weights.
+ * - `parakeet_redux_encoder_10s_i4.tflite`, 345 895 584 bytes: the FastConformer at 4-bit weights —
+ *   the CPU encoder, and the default on every device.
+ * - `parakeet_redux_decoder_i8.tflite`, 17 866 768 bytes: the TDT prediction and joint networks, run
+ *   on the CPU by every backend.
+ * - `tokenizer.json`, 1 159 960 bytes: a `.tflite` graph stops at token ids, so the BPE table has to
+ *   sit beside it.
+ *
+ * Optionally `parakeet_redux_encoder_10s_f16.tflite`, 1 194 680 560 bytes, is the float16 encoder the
+ * GPU and NPU can use. It is not part of a normal install: only a pass pinned to [ParakeetBackend.GPU]
+ * or [ParakeetBackend.NPU] asks for it (see [assets]).
  *
  * None fits in an APK, so a private build pushes them onto the device
  * (`dev/adaware/next/parakeet/install-model.ps1`) and a download is the fallback for when they are
  * missing. Both paths land in `noBackupFilesDir/parakeet-model/`. No file needs a cache directory:
- * LiteRT compiles and caches nothing for an AOT-compiled graph, so a half-written artifact can never
- * be mistaken for a missing model.
+ * LiteRT compiles and caches nothing for these graphs, so a half-written artifact can never be
+ * mistaken for a missing model.
  */
 @Singleton
 class ParakeetModel @Inject constructor(
     @ApplicationContext private val context: Context,
     @Downloads private val httpClient: Lazy<OkHttpClient>,
 ) {
-    /** Absolute path of the graph [backend] runs, whether or not a byte of it is on disk. */
-    fun file(backend: ParakeetBackend = ParakeetBackend.preferred()): File = File(modelDirectory(), graphOf(backend).name)
+    /** Absolute path of the mel front end, whether or not a byte of it is on disk. */
+    fun melFile(): File = File(modelDirectory(), MEL.name)
+
+    /** Absolute path of the encoder [backend] runs, whether or not a byte of it is on disk. */
+    fun encoderFile(backend: ParakeetBackend = ParakeetBackend.preferred()): File = File(modelDirectory(), encoderOf(backend).name)
+
+    /** Absolute path of the prediction and joint networks. The same file on every backend. */
+    fun decoderFile(): File = File(modelDirectory(), DECODER.name)
 
     /** Absolute path of the tokenizer, whether or not it is on disk. Never creates anything. */
     fun tokenizerFile(): File = File(modelDirectory(), TOKENIZER.name)
 
     /**
-     * The directory both files sit in, created on demand. A download and an `adb push` both write
+     * The directory every file sits in, created on demand. A download and an `adb push` both write
      * here, so it has to exist before either runs.
      */
     fun directory(): File = modelDirectory().apply { mkdirs() }
@@ -72,9 +83,9 @@ class ParakeetModel @Inject constructor(
     internal fun partFile(asset: ParakeetAsset): File = File(modelDirectory(), "${asset.name}.part")
 
     /**
-     * True when both files are on disk and whole. Never touches the network, and it is the first
-     * thing [ensureDownloaded] asks, so a private build with the files already pushed never opens a
-     * connection.
+     * True when every file [backend] needs is on disk and whole. Never touches the network, and it
+     * is the first thing [ensureDownloaded] asks, so a private build with the files already pushed
+     * never opens a connection.
      *
      * The length is part of the check rather than a plain existence check: a copy killed mid-write
      * leaves a short file, and trusting it makes LiteRT fail inside its native loader where nothing
@@ -84,7 +95,7 @@ class ParakeetModel @Inject constructor(
     fun isPresent(backend: ParakeetBackend = ParakeetBackend.preferred()): Boolean = assets(backend).all { fileOf(it).isPresent(it.bytes) }
 
     /**
-     * True when the active network may be used for the 1.2 GiB download. Not a condition for
+     * True when the active network may be used for the 366 MB download. Not a condition for
      * transcription: it only decides whether missing files are fetched now or once Wi-Fi returns.
      */
     fun canDownload(): Boolean = !isActiveNetworkMetered(context)
@@ -94,7 +105,7 @@ class ParakeetModel @Inject constructor(
      *
      * Blocking network IO, so it runs on [Dispatchers.IO]. A killed download leaves `<name>.part`
      * and the next call resumes it with a `Range` request, which matters at this size: a dropped
-     * connection near the end would otherwise throw away over a gigabyte. The metered check happens
+     * connection near the end would otherwise throw away most of a file. The metered check happens
      * before the first request, so a phone on cellular reports
      * [ModelDownload.NeedsUnmeteredNetwork] instead of spending someone's data allowance.
      */
@@ -245,48 +256,70 @@ class ParakeetModel @Inject constructor(
 
     companion object {
         /**
-         * The portable graph: the same weights in a form the CPU and GPU can run on any device.
-         * This is what a phone without a Google Tensor NPU uses, and what the GPU measurement runs.
+         * The log-mel front end for one 10 s window. Small enough to be an afterthought in time and
+         * size, but the only implementation whose features the Redux encoder was trained on.
          */
-        internal val GRAPH = ParakeetAsset(
-            name = "parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite",
-            url = "https://huggingface.co/litert-community/parakeet-tdt-0.6b-v3/resolve/main/" +
-                "parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite",
-            bytes = 614_261_072L,
+        internal val MEL = ParakeetAsset(
+            name = "parakeet_redux_mel_10s.tflite",
+            url = "https://huggingface.co/litert-community/parakeet-redux/resolve/main/" +
+                "parakeet_redux_mel_10s.tflite",
+            bytes = 1_608_068L,
         )
 
         /**
-         * The graph compiled for the Google Tensor G6 NPU. Not part of a normal install: it is only
-         * needed when a pass pins [ParakeetBackend.NPU], and it cannot stand in for the portable
-         * graph anywhere else because its compiled ops are a `DISPATCH_OP` no CPU or GPU accelerator
-         * can execute.
+         * The CPU encoder: the same FastConformer weights as the float16 export, ternary in the
+         * linear layers and packed at 4 bits, which is what makes it a third of the size and the
+         * fastest whole pass measured.
          */
-        internal val NPU_GRAPH = ParakeetAsset(
-            name = "parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite",
-            url = "https://huggingface.co/litert-community/parakeet-tdt-0.6b-v3/resolve/main/" +
-                "parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite",
-            bytes = 1_303_768_096L,
+        internal val ENCODER_I4 = ParakeetAsset(
+            name = "parakeet_redux_encoder_10s_i4.tflite",
+            url = "https://huggingface.co/litert-community/parakeet-redux/resolve/main/" +
+                "parakeet_redux_encoder_10s_i4.tflite",
+            bytes = 345_895_584L,
+        )
+
+        /**
+         * The float16 encoder the GPU and NPU can take. Not part of a normal install: only a pass
+         * pinned to one of those backends asks for it, because the CPU encoder is faster end to end
+         * than the decoder's per-token dispatch on an accelerator.
+         */
+        internal val ENCODER_F16 = ParakeetAsset(
+            name = "parakeet_redux_encoder_10s_f16.tflite",
+            url = "https://huggingface.co/litert-community/parakeet-redux/resolve/main/" +
+                "parakeet_redux_encoder_10s_f16.tflite",
+            bytes = 1_194_680_560L,
+        )
+
+        /**
+         * The TDT prediction (`predict`) and joint (`joint`) networks. Tiny next to the encoder and
+         * strictly sequential, so every backend runs it on the CPU.
+         */
+        internal val DECODER = ParakeetAsset(
+            name = "parakeet_redux_decoder_i8.tflite",
+            url = "https://huggingface.co/litert-community/parakeet-redux/resolve/main/" +
+                "parakeet_redux_decoder_i8.tflite",
+            bytes = 17_866_768L,
         )
 
         internal val TOKENIZER = ParakeetAsset(
             name = "tokenizer.json",
-            url = "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/resolve/main/tokenizer.json",
+            url = "https://huggingface.co/litert-community/parakeet-redux/resolve/main/tokenizer.json",
             bytes = 1_159_960L,
         )
 
-        /** The graph a [backend] runs; the NPU is the only one that needs its own compilation. */
-        internal fun graphOf(backend: ParakeetBackend): ParakeetAsset = if (backend == ParakeetBackend.NPU) NPU_GRAPH else GRAPH
+        /** The encoder a [backend] runs; only the CPU has its own export. */
+        internal fun encoderOf(backend: ParakeetBackend): ParakeetAsset = if (backend == ParakeetBackend.CPU) ENCODER_I4 else ENCODER_F16
 
-        /** The graph's file name, kept named for the installer scripts and the device test. */
-        val FILE_NAME: String get() = GRAPH.name
+        /** The CPU encoder's file name, the one a normal install pushes. */
+        val ENCODER_NAME: String get() = ENCODER_I4.name
 
-        /** The graph's size, which is the presence check a truncated push has to fail. */
-        val EXPECTED_BYTES: Long get() = GRAPH.bytes
+        /** Its size, which is the presence check a truncated push has to fail. */
+        val ENCODER_BYTES: Long get() = ENCODER_I4.bytes
 
-        val URL: String get() = GRAPH.url
+        val ENCODER_URL: String get() = ENCODER_I4.url
 
-        /** Every file a pass on [backend] needs, in the order they are downloaded. */
-        internal fun assets(backend: ParakeetBackend): List<ParakeetAsset> = listOf(graphOf(backend), TOKENIZER)
+        /** Every file a pass on [backend] needs, smallest first so an interrupted fetch is useful. */
+        internal fun assets(backend: ParakeetBackend): List<ParakeetAsset> = listOf(TOKENIZER, MEL, DECODER, encoderOf(backend))
 
         /** Prefix of the `sttVersion` stamped on analyses; OnDeviceTranscriptGenerator matches on it. */
         const val ENGINE_TAG = "parakeet"
@@ -301,13 +334,12 @@ class ParakeetModel @Inject constructor(
         const val CUES_REVISION = "cues1"
 
         /**
-         * Engine + model + cue-rule identity, stamped on every analysis. The NPU graph produces the
-         * same words and is not named, because either path can only be reached by pinning the
-         * backend; changing the portable graph, the runtime or the cue rules invalidates every stored
-         * transcript, which is the point.
+         * Engine + model + cue-rule identity, stamped on every analysis. Changing any of the four
+         * files, the runtime or the cue rules invalidates every stored transcript, which is the
+         * point: Redux does not produce the same words as the export it replaces.
          */
         val version: String =
-            "$ENGINE_TAG-tdt-0.6b-v3/i8-stateful/tflite-$RUNTIME_VERSION/$CUES_REVISION"
+            "$ENGINE_TAG-tdt-0.6b-v3-redux/i4/tflite-$RUNTIME_VERSION/$CUES_REVISION"
     }
 }
 

@@ -1,14 +1,16 @@
-# Pushes the Parakeet speech files onto a device for a private build.
+# Pushes the Parakeet Redux files onto a device for a private build.
 #
-# The app never bundles the model: it looks for two files at
-#   <noBackupFilesDir>/parakeet-model/parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite
+# The app never bundles the model: it looks for four files at
+#   <noBackupFilesDir>/parakeet-model/parakeet_redux_mel_10s.tflite
+#   <noBackupFilesDir>/parakeet-model/parakeet_redux_decoder_i8.tflite
+#   <noBackupFilesDir>/parakeet-model/parakeet_redux_encoder_10s_i4.tflite
 #   <noBackupFilesDir>/parakeet-model/tokenizer.json
 # which is /data/user/0/<package>/no_backup/parakeet-model/ for the ".debug" application id. This
-# script writes those two files and nothing else; LiteRT compiles nothing for the graph, so there is
-# no cache directory to seed or clear.
+# script writes those four files and nothing else; LiteRT compiles nothing for them, so there is no
+# cache directory to seed or clear.
 #
-# -WithNpu also pushes the Tensor G6 graph. It is not part of a normal install: only a pass pinned to
-# the NPU asks for it, and the NPU measured slower end to end than the CPU.
+# -WithF16 also pushes the float16 encoder (1.1 GiB). It is not part of a normal install: only a pass
+# pinned to the GPU or NPU asks for it.
 #
 # Re-running the script is cheap: a copy that is already on the device with the right size is
 # skipped. It is safe to run before the app has ever launched (the app's data directory exists from
@@ -16,7 +18,7 @@
 #
 # Example:
 #   .\dev\adaware\next\parakeet\install-model.ps1
-#   .\dev\adaware\next\parakeet\install-model.ps1 -WithNpu
+#   .\dev\adaware\next\parakeet\install-model.ps1 -WithF16
 #   .\dev\adaware\next\parakeet\install-model.ps1 -Only tokenizer.json -Verbose
 
 [CmdletBinding()]
@@ -27,8 +29,8 @@ param(
     # Directory holding the files, as produced by download-model.ps1.
     [string]$Source = (Join-Path $PSScriptRoot "model"),
 
-    # Also push the Tensor G6 graph, needed only for a pass pinned to the NPU.
-    [switch]$WithNpu,
+    # Also push the float16 encoder, needed only for a pass pinned to the GPU or NPU.
+    [switch]$WithF16,
 
     # Limit the push to one file, by name, e.g. "tokenizer.json".
     [string]$Only,
@@ -44,15 +46,17 @@ param(
 # through $LASTEXITCODE instead, so failures still stop the script.
 $ErrorActionPreference = "Continue"
 
-# Mirrors ParakeetModel in the app: one graph and one tokenizer, each with an exact size, plus the
-# optional NPU graph. The app treats a file of any other size as absent, so both the local and the
-# device copy are checked against it. The big NPU graph is last.
+# Mirrors ParakeetModel in the app: the four CPU files with exact sizes, plus the optional float16
+# encoder. The app treats a file of any other size as absent, so both the local and the device copy
+# are checked against it. Smallest first, so an interrupted run still leaves the cheap files usable.
 $files = @(
     @{ Name = "tokenizer.json"; Bytes = [long]1159960 },
-    @{ Name = "parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite"; Bytes = [long]614261072 }
+    @{ Name = "parakeet_redux_mel_10s.tflite"; Bytes = [long]1608068 },
+    @{ Name = "parakeet_redux_decoder_i8.tflite"; Bytes = [long]17866768 },
+    @{ Name = "parakeet_redux_encoder_10s_i4.tflite"; Bytes = [long]345895584 }
 )
-if ($WithNpu) {
-    $files += @{ Name = "parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite"; Bytes = [long]1303768096 }
+if ($WithF16) {
+    $files += @{ Name = "parakeet_redux_encoder_10s_f16.tflite"; Bytes = [long]1194680560 }
 }
 if ($Only) {
     $files = @($files | Where-Object { $_.Name -eq $Only })

@@ -302,40 +302,40 @@ Use `AnalyticsTracker` service for event tracking. Analytics are integrated with
 ### On-device speech to text (ad skipping)
 
 Ad detection reads only a transcript the app produced on the device with NVIDIA Parakeet TDT 0.6B
-v3, run through the LiteRT runtime. A transcript the show or our servers publish is never used for
-detection or navigation: its cue times do not match the audio and it is missing ad reads.
+v3 Redux, run through the LiteRT runtime. A transcript the show or our servers publish is never used
+for detection or navigation: its cue times do not match the audio and it is missing ad reads.
 
 - Engine: LiteRT, `com.google.ai.edge.litert:litert:2.3.2` with `litert-gpu` and
   `litert-npu-runtime-google-tensor`. MediaPipe (`tasks-audio`) is gone: its audio transcriber loads
   the `.litertlm` bundle on the CPU only, so it can never reach the phone's NPU.
-- Model: two required files in `noBackupFilesDir/parakeet-model`, never bundled in the APK.
-  - `parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite`, exactly 614 261 072 bytes (~586 MiB): the portable
-    export every pass runs, on the CPU.
+- Model: Redux (`litert-community/parakeet-redux`, the ternary-encoder conversion of
+  `moondream/parakeet-redux`) as four required files in `noBackupFilesDir/parakeet-model`, never
+  bundled in the APK.
+  - `parakeet_redux_mel_10s.tflite`, 1 608 068 bytes: the log-mel front end for 10 s of audio. It is
+    in the graph, not in Kotlin, and is the only implementation that matches the weights.
+  - `parakeet_redux_decoder_i8.tflite`, 17 866 768 bytes: the TDT prediction (`predict`) and joint
+    (`joint`) networks, on the CPU on every backend.
+  - `parakeet_redux_encoder_10s_i4.tflite`, exactly 345 895 584 bytes (~330 MiB): the 4-bit encoder
+    every pass runs on the CPU.
   - `tokenizer.json`, 1 159 960 bytes: a `.tflite` graph stops at token ids, so the 8 192-piece BPE
     table has to sit beside it.
-  Both are downloaded on demand (unmetered only) into `noBackupFilesDir/parakeet-model`, and a file
-  of any other size counts as absent, so a truncated copy falls back to the download instead of
+  All four are downloaded on demand (unmetered only) into `noBackupFilesDir/parakeet-model`, and a
+  file of any other size counts as absent, so a truncated copy falls back to the download instead of
   failing inside the interpreter.
-- NPU: kept as plumbing, not installed. `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite`
-  (1 303 768 096 bytes) is AOT-compiled for the Pixel 11's NPU and is only asked for by a pass pinned
-  to `ParakeetBackend.NPU`; push it with `install-model.ps1 -WithNpu`. Its compiled ops are a
-  `DISPATCH_OP` only the Tensor dispatch library executes, so it cannot stand in for the portable
-  graph on CPU or GPU. If it is picked up again, the `_stateful_` export is required: the stateless
-  G6 export has no `decode_1`, so the decoder stops when its stateless token slots fill and loses the
-  tail of every window.
-- Licence: the model is NVIDIA's under CC-BY-4.0 (LiteRT is Apache-2.0). CC-BY-4.0 requires visible
-  attribution to NVIDIA wherever the app is distributed, and the licences screen is built from the
-  Gradle dependency graph, so it will never list the model — the note a release checklist has to
-  find is in `dev/adaware/next/parakeet/README.md`.
-- Backends: `ParakeetBackend` picks the accelerator and the default is **CPU**, on every device
-  including Google Tensor: the portable graph on the CPU measured fastest end to end (rtf 5.06
-  against the NPU's 2.97 and the GPU's 0.47 on a 33.6 s clip). `GPU` is only run when a test pins it —
-  the TDT decoder is dozens of single-token invocations per window, so per-step GPU dispatch latency
-  loses, and its shader compile costs ~50 s on the first run. `NPU` is plumbing kept for later: on it
-  only `encode` goes to the NPU (the decoder's per-token dispatch measured 2.9x the CPU's, so
-  `ParakeetRecognizer` opens the portable graph on the CPU for that half and copies a quarter of a
-  megabyte across per window). `ParakeetEpisodeTranscriber.backend` is the knob; the whole table and
-  how to reproduce it are in `dev/adaware/next/parakeet/README.md`.
+- Accelerators: kept as plumbing, not installed. `parakeet_redux_encoder_10s_f16.tflite`
+  (1 194 680 560 bytes) is the float16 encoder the GPU and NPU can take, and is only asked for by a
+  pass pinned to `ParakeetBackend.GPU` or `NPU`; push it with `install-model.ps1 -WithF16`. Only the
+  encoder moves: the mel graph is a few milliseconds and the decoder is 60-100 single-token runs per
+  window, where per-run dispatch costs more than the work.
+- Licence: the model is NVIDIA's (via moondream) under CC-BY-4.0 (LiteRT is Apache-2.0). CC-BY-4.0
+  requires visible attribution to NVIDIA wherever the app is distributed, and the licences screen is
+  built from the Gradle dependency graph, so it will never list the model — the note a release
+  checklist has to find is in `dev/adaware/next/parakeet/README.md`.
+- Backends: `ParakeetBackend` picks the encoder's accelerator and the default is **CPU**, on every
+  device: the 4-bit encoder is the export's own CPU form and the only one a normal install carries.
+  `GPU` and `NPU` are only run when a test pins them, and only after the float16 encoder has been
+  pushed. `ParakeetEpisodeTranscriber.backend` is the knob; the whole table and how to reproduce it
+  are in `dev/adaware/next/parakeet/README.md`.
 - The APK is built with `packaging.jniLibs.useLegacyPackaging = true`, because the Google Tensor
   dispatch library is looked up by name in `nativeLibraryDir`; with the default (`extractNativeLibs
   = false`) the environment logs "NPU accelerator could not be loaded and registered" and every NPU
@@ -343,22 +343,21 @@ detection or navigation: its cue times do not match the audio and it is missing 
 - On a device, a private build gets the files with `dev/adaware/next/parakeet/install-app.ps1`
   (builds `:app:assembleDebugProd`, `adb install -r`, then pushes with `install-model.ps1`;
   `-SkipBuild`/`-SkipModels` skip either half, and a push is skipped when the device copy is already
-  the right size). There is no cache directory: LiteRT compiles nothing for an AOT-compiled graph.
+  the right size). There is no cache directory: LiteRT compiles nothing for these graphs.
 - Language: Parakeet covers 25 European languages (bg, hr, cs, da, nl, el, en, et, fi, fr, de, hu,
   it, lv, lt, mt, pl, pt, ro, sk, sl, es, sv, ru, uk), chosen from `Podcast.podcastLanguage` by
   primary subtag (`es-us` -> `es`) and defaulting to English when the podcast declares nothing. Any
   other language makes the engine unavailable for that episode, which leaves it without on-device
   detection instead of falling back to a published transcript.
-- Chunks: Parakeet is not a streaming model. One graph run covers 5 s, so a pass slices the episode
-  into 5 s windows that step 3 s (`ParakeetWindowBuffer`); the 2 s overlap is what lets
-  `ParakeetWords` settle a word spoken across a boundary. The mel front end (`ParakeetMel`) is the
-  app's own work now — 0.97 pre-emphasis, 512-point Hann STFT at a 10 ms hop, 128 Slaney bins,
-  natural log, per-feature mean/std — and must stay that way: the graph has no preprocessor.
-- Timestamps: the TDT decoder reports the encoder frame each token starts on (80 ms), so words carry
-  their own start and end and cues are sentence-level, built by `ParakeetCues` and stored as WebVTT
-  through `LocalTranscriptStore`. Nothing else may supply times: no DTW, no energy regions, no
-  constant offset. When cue positions look wrong, read `segment_ms_median`, `encode_ms` and
-  `decode_ms` in the pass log before changing anything.
+- Chunks: Parakeet is not a streaming model. One window is 10 s, so a pass slices the episode into
+  10 s windows that step 8 s (`ParakeetWindowBuffer`); the 2 s overlap is what lets `ParakeetWords`
+  settle a word spoken across a boundary. The mel graph's `frame_mask` says how many encoder frames
+  are real, so a short final window is decoded for exactly what it holds.
+- Timestamps: the TDT decoder reports the encoder frame each token starts on (80 ms: a 10 ms mel hop
+  subsampled 8x), so words carry their own start and end and cues are sentence-level, built by
+  `ParakeetCues` and stored as WebVTT through `LocalTranscriptStore`. Nothing else may supply times:
+  no DTW, no energy regions, no constant offset. When cue positions look wrong, read
+  `segment_ms_median`, `encode_ms` and `decode_ms` in the pass log before changing anything.
 - Recognition always runs for a queued episode. Scheduling drops the published transcript rows so
   the transcript tab and tap-to-seek can only read the recognized text. `AdAnalysisQueue.schedule`
   runs from every path that can start an episode: download completion, playback start (which is how

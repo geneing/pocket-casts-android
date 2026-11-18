@@ -26,17 +26,18 @@ import org.junit.runner.RunWith
 /**
  * Runs the real pipeline on the phone once per installed accelerator and reports how fast each one is.
  *
- * This is the measurement the LiteRT port exists for. The backends run the same mel front end, the
- * same decoder and the same word merging; only the accelerator differs, so the `rtf` each pass logs is
- * a like-for-like comparison. A backend whose graph is not installed is skipped, which is why the NPU
- * only appears after its graph has been pushed with `install-model.ps1 -WithNpu`.
+ * This is the measurement the LiteRT port exists for. The backends run the same mel graph and the
+ * same CPU decoder; only the encoder's accelerator differs, so the `rtf` each pass logs is a
+ * like-for-like comparison. A backend whose encoder is not installed is skipped, which is why the GPU
+ * and NPU only appear after the float16 encoder has been pushed with
+ * `install-model.ps1 -WithF16`.
  *
  * Two numbers come out of every pass:
  *
- * - `rtf` — audio time over wall time for the whole pass, including the CPU-only mel front end and
- *   the cue bookkeeping.
- * - `model_rtf` — audio time over the time the graph itself took (`encode_ms + decode_ms`), which is
- *   what says whether the NPU is actually earning its place.
+ * - `rtf` — audio time over wall time for the whole pass, including the CPU mel graph and the cue
+ *   bookkeeping.
+ * - `model_rtf` — audio time over the time the graphs themselves took (`encode_ms + decode_ms`),
+ *   which is what says whether an accelerator is actually earning its place.
  *
  * The files are installed by `dev/adaware/next/parakeet/install-app.ps1`; the audio clip is copied in
  * by hand, because a usable minute of podcast is too big to keep in the repository:
@@ -72,10 +73,10 @@ class ParakeetBackendBenchmarkTest {
         assumeTrue("Could not read the duration of ${clip.absolutePath}", clipMs > 0L)
 
         Log.i(TAG, "Google Tensor NPU supported: ${NpuCompatibilityChecker.GoogleTensor.isDeviceSupported()}")
-        Log.i(TAG, "SoC ${android.os.Build.SOC_MODEL}, ${clipMs}ms of audio, ${model.file().length()} byte graph")
+        Log.i(TAG, "SoC ${android.os.Build.SOC_MODEL}, ${clipMs}ms of audio, ${model.encoderFile().length()} byte encoder")
 
-        // Only the backends whose graph is on the device: the NPU graph is not part of a normal
-        // install (a CPU pass is the default), so pushing it is what adds the NPU row here.
+        // Only the backends whose encoder is on the device: the float16 export is not part of a
+        // normal install (a CPU pass is the default), so pushing it is what adds the GPU and NPU rows.
         val backends = ParakeetBackend.entries.filter { model.isPresent(it) }
         Log.i(TAG, "Measuring ${backends.map { it.label }}; skipped ${(ParakeetBackend.entries - backends.toSet()).map { it.label }}")
 

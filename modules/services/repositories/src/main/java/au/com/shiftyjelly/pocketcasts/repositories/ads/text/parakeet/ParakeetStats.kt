@@ -26,9 +26,9 @@ data class ParakeetPass(
      * nothing about the device.
      */
     val backend: String? = null,
-    /** Windows the encoder ran; each carries 5 s of audio and steps 3 s. */
+    /** Windows the encoder ran; each carries 10 s of audio and steps 8 s. */
     val windows: Int? = null,
-    /** Wall time in the mel front end, the encoder and the TDT decoder, summed over the windows. */
+    /** Wall time in the mel graph, the encoder and the TDT decoder, summed over the windows. */
     val melMs: Long? = null,
     val encodeMs: Long? = null,
     val decodeMs: Long? = null,

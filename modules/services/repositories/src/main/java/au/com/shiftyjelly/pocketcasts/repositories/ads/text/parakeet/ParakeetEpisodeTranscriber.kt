@@ -14,7 +14,6 @@ import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptResult
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptSource
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.downloadAudioStream
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.ParakeetBackend
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.ParakeetMel
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.ParakeetRecognizer
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.ParakeetTokenizer
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.ParakeetWindowBuffer
@@ -34,22 +33,22 @@ import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import okhttp3.OkHttpClient
-import timber.log.Timber
 
 /**
- * On-device transcription of Parakeet TDT 0.6B v3 through LiteRT.
+ * On-device transcription of Parakeet TDT 0.6B v3 Redux through LiteRT.
  *
- * One multilingual graph replaces the previous engine's per-language models, so there is exactly one
+ * One multilingual model replaces the previous engine's per-language models, so there is exactly one
  * recogniser per pass and no language-specific loading: the episode's language only decides whether
- * the pass runs at all. The graph and its tokenizer are expected to be on the device; a download is
- * the fallback for when they are missing, and it is refused on a metered network.
+ * the pass runs at all. The mel graph, the encoder, the decoder and the tokenizer are expected to be
+ * on the device; a download is the fallback for when they are missing, and it is refused on a metered
+ * network.
  *
- * Parakeet is not a streaming model: one graph run covers a fixed 5 s of audio, so the pass slices
- * the episode into 5 s windows that step forward 3 s at a time. The 2 s overlap is what lets
- * [ParakeetWords] settle the seam; without it a word spoken across a boundary would be cut in two.
- * The audio arrives already mono at a constant 16 kHz from [AudioFeed], which is the rate the mel
- * front end expects, and every window's words are reported in the pass's clock, so a resumed pass
- * adds its origin once and reports episode time from then on.
+ * Parakeet is not a streaming model: one window is 10 s of audio, so the pass slices the episode into
+ * 10 s windows that step forward 8 s at a time. The 2 s overlap is what lets [ParakeetWords] settle
+ * the seam; without it a word spoken across a boundary would be cut in two. The audio arrives already
+ * mono at a constant 16 kHz from [AudioFeed], which is the rate the mel graph expects, and every
+ * window's words are reported in the pass's clock, so a resumed pass adds its origin once and reports
+ * episode time from then on.
  *
  * Everything the engine needs from the rest of the app arrives in the [TranscriptRequest]: no
  * database lookups happen here, which is what lets a worker, a benchmark or a test run a pass with
@@ -62,8 +61,8 @@ class ParakeetEpisodeTranscriber @Inject constructor(
 ) : EpisodeTranscriber {
 
     /**
-     * Which hardware the recogniser runs on. The preferred backend by default; public so the device
-     * benchmark can pin each of the three and measure the same pipeline.
+     * Which hardware the encoder runs on. The preferred backend by default; public so the device
+     * benchmark can pin each one and measure the same pipeline.
      */
     var backend: ParakeetBackend = ParakeetBackend.preferred()
 
@@ -164,7 +163,7 @@ class ParakeetEpisodeTranscriber @Inject constructor(
             } catch (e: Exception) {
                 LogBuffer.e(ParakeetStats.TAG, e, "Parakeet could not transcribe ${request.episodeUuid}")
                 TranscriptResult.Failed(
-                    "parakeet failed for $language at ${model.file(backend).absolutePath}: " +
+                    "parakeet failed for $language at ${model.encoderFile(backend).absolutePath}: " +
                         (e.message ?: e.javaClass.simpleName),
                 )
             }
@@ -172,12 +171,12 @@ class ParakeetEpisodeTranscriber @Inject constructor(
     }
 
     /**
-     * Runs one pass over [file], a 5 s window at a time.
+     * Runs one pass over [file], a 10 s window at a time.
      *
-     * The recogniser, the mel front end and the tokenizer are created once per pass: opening the
-     * graph is the slow part (a second or more on a cold process) and redoing it per window would
-     * dominate everything else. Window words arrive in pass time, which is what the cue conversion
-     * expects; [ParakeetWords] only releases a word once a later window has started after it.
+     * The recogniser and the tokenizer are created once per pass: opening the three graphs is the
+     * slow part (a second or more on a cold process) and redoing it per window would dominate
+     * everything else. Window words arrive in pass time, which is what the cue conversion expects;
+     * [ParakeetWords] only releases a word once a later window has started after it.
      */
     private suspend fun transcribeAudio(
         request: TranscriptRequest,
@@ -206,7 +205,6 @@ class ParakeetEpisodeTranscriber @Inject constructor(
         var encodeMs = 0L
         var decodeMs = 0L
         var windows = 0
-        var reportedFirstWindow = false
 
         val progress = Channel<List<TranscriptCue>>(Channel.CONFLATED)
 
@@ -252,21 +250,21 @@ class ParakeetEpisodeTranscriber @Inject constructor(
             logProgress(now)
         }
 
-        val mel = ParakeetMel()
         val tokenizer = ParakeetTokenizer.parse(model.tokenizerFile().readText())
         val recognizer = ParakeetRecognizer(
             context = context,
-            encodeFile = model.file(backend),
-            // The NPU graph cannot decode: its compiled ops run nowhere else, and its per-token
-            // dispatch is slower than the CPU for the decoder's tiny sequential steps.
-            decodeFile = if (backend == ParakeetBackend.NPU) model.file(ParakeetBackend.CPU) else model.file(backend),
+            melFile = model.melFile(),
+            encoderFile = model.encoderFile(backend),
+            // The decoder is 60-100 single-token runs per window on every backend; an accelerator's
+            // per-run dispatch costs more than the work, so it stays on the CPU.
+            decoderFile = model.decoderFile(),
             backend = backend,
         )
         val words = ParakeetWords(tokenizer)
         LogBuffer.i(
             ParakeetStats.TAG,
             "$language start: ${file.name} ${ParakeetStats.duration(request.durationMs)} " +
-                "from ${request.startMs}ms on ${backend.label}, graph opened in ${recognizer.loadMs}ms",
+                "from ${request.startMs}ms on ${backend.label}, graphs opened in ${recognizer.loadMs}ms",
         )
 
         val feed: AudioFeed.Result
@@ -278,21 +276,11 @@ class ParakeetEpisodeTranscriber @Inject constructor(
                     for (partial in progress) onPartialCues(partial)
                 }
                 try {
-                    val buffer = ParakeetWindowBuffer { startMs, samples ->
+                    val buffer = ParakeetWindowBuffer(windowSamples = recognizer.windowSamples) { startMs, samples ->
                         if (failure == null) {
                             try {
-                                val melStartedAt = SystemClock.elapsedRealtime()
-                                val features = mel.process(samples)
-                                melMs += SystemClock.elapsedRealtime() - melStartedAt
-                                if (!reportedFirstWindow) {
-                                    reportedFirstWindow = true
-                                    Timber.tag(ParakeetStats.TAG).d(
-                                        "first window: mel ${features.size} floats " +
-                                            "min=${features.minOrNull()} max=${features.maxOrNull()} " +
-                                            "mean=${features.average()}",
-                                    )
-                                }
-                                val window = recognizer.transcribe(features)
+                                val window = recognizer.transcribe(samples)
+                                melMs += window.melMs
                                 encodeMs += window.encodeMs
                                 decodeMs += window.decodeMs
                                 windows++
@@ -411,7 +399,7 @@ class ParakeetEpisodeTranscriber @Inject constructor(
         return file
     }
 
-    private fun modelMissingMessage(): String = "the parakeet speech model is not installed at ${model.file(backend).absolutePath} and was not downloaded"
+    private fun modelMissingMessage(): String = "the parakeet speech model is not installed at ${model.encoderFile(backend).absolutePath} and was not downloaded"
 
     private companion object {
         /** How often the partial cue list is published while a pass runs. */

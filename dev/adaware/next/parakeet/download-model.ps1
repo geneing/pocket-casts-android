@@ -1,15 +1,18 @@
-# Downloads the Parakeet files the app runs into dev/adaware/next/parakeet/model/.
+# Downloads the Parakeet Redux files the app runs into dev/adaware/next/parakeet/model/.
 #
-# The app never bundles the model: it looks for two files of exact sizes at
-#   <noBackupFilesDir>/parakeet-model/parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite
+# The app never bundles the model: it looks for four files of exact sizes at
+#   <noBackupFilesDir>/parakeet-model/parakeet_redux_mel_10s.tflite
+#   <noBackupFilesDir>/parakeet-model/parakeet_redux_decoder_i8.tflite
+#   <noBackupFilesDir>/parakeet-model/parakeet_redux_encoder_10s_i4.tflite
 #   <noBackupFilesDir>/parakeet-model/tokenizer.json
 # and treats any other size as absent. This script produces those files locally;
 # install-model.ps1 pushes them to a device. Keep the names and byte counts in step with
-# ParakeetModel.GRAPH and ParakeetModel.TOKENIZER.
+# ParakeetModel.MEL, ParakeetModel.DECODER, ParakeetModel.ENCODER_I4 and ParakeetModel.TOKENIZER.
 #
-# The portable i8 graph is what every pass uses: it is the fastest of the three accelerators measured
-# on the Pixel 11. -WithNpu also fetches the Tensor G6 graph, which is only asked for by a pass pinned
-# to the NPU and is not part of a normal install.
+# These four are the CPU set and what every pass uses: the mel graph, the int8 prediction/joint
+# networks, the 4-bit encoder and the tokenizer, 366 MB together. -WithF16 also fetches the float16
+# encoder, which is only asked for by a pass pinned to the GPU or NPU and is not part of a normal
+# install.
 #
 # Every download is resumable: curl writes to <name>.part and the bytes already on disk are kept if
 # the connection drops, so re-running picks up where it stopped. Only a file of exactly the right
@@ -17,7 +20,7 @@
 #
 # Example:
 #   .\dev\adaware\next\parakeet\download-model.ps1
-#   .\dev\adaware\next\parakeet\download-model.ps1 -WithNpu
+#   .\dev\adaware\next\parakeet\download-model.ps1 -WithF16
 #   .\dev\adaware\next\parakeet\download-model.ps1 -Destination D:\models
 
 [CmdletBinding()]
@@ -25,42 +28,35 @@ param(
     # Directory the files are written to. Created when it does not exist.
     [string]$Destination = (Join-Path $PSScriptRoot "model"),
 
-    # Also fetch the Tensor G6 graph, needed only for a pass pinned to the NPU.
-    [switch]$WithNpu,
+    # Also fetch the float16 encoder, needed only for a pass pinned to the GPU or NPU.
+    [switch]$WithF16,
 
-    # Only fetch the named files, e.g. "tokenizer.json" or the G6 graph.
+    # Only fetch the named files, e.g. "tokenizer.json" or the float16 encoder.
     [string[]]$Names
 )
 
 # curl's exit codes are checked by hand below; with "Stop" a retried transfer would still throw.
 $ErrorActionPreference = "Continue"
 
-# Mirrors ParakeetModel in the app: one graph, one tokenizer, and one optional NPU graph.
-$graphFile = "parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite"
-$npuGraphFile = "parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite"
+# Mirrors ParakeetModel in the app: the four CPU files, plus one optional accelerator encoder.
 $tokenizerFile = "tokenizer.json"
+$melFile = "parakeet_redux_mel_10s.tflite"
+$decoderFile = "parakeet_redux_decoder_i8.tflite"
+$encoderFile = "parakeet_redux_encoder_10s_i4.tflite"
+$f16EncoderFile = "parakeet_redux_encoder_10s_f16.tflite"
+$repo = "https://huggingface.co/litert-community/parakeet-redux/resolve/main"
 
 $files = @(
-    @{
-        Name = $tokenizerFile
-        Bytes = [long]1159960
-        Url = "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/resolve/main/$tokenizerFile"
-    },
-    @{
-        Name = $graphFile
-        Bytes = [long]614261072
-        Url = "https://huggingface.co/litert-community/parakeet-tdt-0.6b-v3/resolve/main/$graphFile"
-    }
+    @{ Name = $tokenizerFile; Bytes = [long]1159960; Url = "$repo/$tokenizerFile" },
+    @{ Name = $melFile; Bytes = [long]1608068; Url = "$repo/$melFile" },
+    @{ Name = $decoderFile; Bytes = [long]17866768; Url = "$repo/$decoderFile" },
+    @{ Name = $encoderFile; Bytes = [long]345895584; Url = "$repo/$encoderFile" }
 )
-if ($WithNpu) {
-    $files += @{
-        Name = $npuGraphFile
-        Bytes = [long]1303768096
-        Url = "https://huggingface.co/litert-community/parakeet-tdt-0.6b-v3/resolve/main/$npuGraphFile"
-    }
+if ($WithF16) {
+    $files += @{ Name = $f16EncoderFile; Bytes = [long]1194680560; Url = "$repo/$f16EncoderFile" }
 }
 if ($Names) {
-    $known = @($graphFile, $npuGraphFile, $tokenizerFile)
+    $known = @($tokenizerFile, $melFile, $decoderFile, $encoderFile, $f16EncoderFile)
     $files = @($files | Where-Object { $Names -contains $_.Name })
     if (-not $files) { throw "-Names must contain at least one of: $($known -join ', ')" }
 }

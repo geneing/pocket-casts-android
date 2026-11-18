@@ -187,7 +187,6 @@ media3-ui-compose = { module = "androidx.media3:media3-ui-compose", version.ref 
 litert = { module = "com.google.ai.edge.litert:litert", version.ref = "litert" }
 litert-gpu = { module = "com.google.ai.edge.litert:litert-gpu", version.ref = "litert" }
 litert-npu-google-tensor = { module = "com.google.ai.edge.litert:litert-npu-runtime-google-tensor", version.ref = "litert" }
-jlibrosa = { module = "com.litongjava:jlibrosa", version = "1.1.8" }
 
 # Mockito
 mockito-android = { module = "org.mockito:mockito-android", version.ref = "mockito" }

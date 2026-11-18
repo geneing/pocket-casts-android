@@ -23,11 +23,11 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 /**
- * Runs the real speech engine on the device, over a clip the graph and the decoder can both handle.
+ * Runs the real speech engine on the device, over a clip the graphs and the decoder can both handle.
  *
- * This is the only check that covers what unit tests cannot: that the LiteRT interpreter loads this
- * graph on this ABI, that the pushed files are the ones the engine expects, that the mel front end
- * and the 5 s window feed agree with the graph, and how fast it all is. Both files are installed by
+ * This is the only check that covers what unit tests cannot: that LiteRT loads these graphs on this
+ * ABI, that the pushed files are the ones the engine expects, that the 10 s window feed agrees with
+ * the mel graph, and how fast it all is. Every file is installed by
  * `dev/adaware/next/parakeet/install-app.ps1` (or downloaded on Wi-Fi by the app itself); the audio
  * clip is copied in by hand, because a usable minute of podcast is too big to keep in the
  * repository:
@@ -55,16 +55,20 @@ class ParakeetDeviceTranscriptionTest {
         // The real files, not a presence check: a wrong path or a truncated download is exactly the
         // failure this test exists to catch, and the message has to name where it looked and how
         // many bytes it found.
-        val graph = model.file()
-        assertEquals("The graph belongs at ${graph.absolutePath}", ParakeetModel.FILE_NAME, graph.name)
+        val encoder = model.encoderFile()
+        assertEquals("The encoder belongs at ${encoder.absolutePath}", ParakeetModel.ENCODER_NAME, encoder.name)
         assertEquals(
-            "The graph at ${graph.absolutePath} is not the whole ${ParakeetModel.EXPECTED_BYTES} bytes",
-            ParakeetModel.EXPECTED_BYTES,
-            graph.length(),
+            "The encoder at ${encoder.absolutePath} is not the whole ${ParakeetModel.ENCODER_BYTES} bytes",
+            ParakeetModel.ENCODER_BYTES,
+            encoder.length(),
         )
         val tokenizer = model.tokenizerFile()
-        assumeTrue("Push ${tokenizer.name} beside the graph first", tokenizer.isFile)
-        Log.i(TAG, "Graph ${graph.name}: ${graph.length()} bytes; tokenizer ${tokenizer.length()} bytes")
+        assumeTrue("Push ${tokenizer.name} beside the encoder first", tokenizer.isFile)
+        Log.i(
+            TAG,
+            "Encoder ${encoder.name}: ${encoder.length()} bytes; mel ${model.melFile().length()}, " +
+                "decoder ${model.decoderFile().length()}, tokenizer ${tokenizer.length()} bytes",
+        )
 
         val transcriber = ParakeetEpisodeTranscriber(
             context = context,

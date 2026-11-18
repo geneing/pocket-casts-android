@@ -6,8 +6,8 @@
 #   3. make sure the Parakeet files are on this machine (download-model.ps1 when they are missing)
 #   4. push them into the app's private model directory (install-model.ps1)
 #
-# Step 4 is what keeps the app from downloading 1.2 GiB of weights on first use; the download stays
-# as a fallback for a device that does not have them. The push is skipped when the device copy
+# Step 4 is what keeps the app from downloading the 366 MB of weights on first use; the download
+# stays as a fallback for a device that does not have them. The push is skipped when the device copy
 # already has the right size, so re-running with -SkipBuild is cheap.
 #
 # The application id is shared by the staging "debug" and the production "debugProd" build, so
@@ -82,13 +82,15 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 if (-not $SkipModels) {
-    # The files are not in git (1.2 GiB of weights), so a fresh checkout has to fetch them once.
+    # The files are not in git (366 MB of weights), so a fresh checkout has to fetch them once.
     # Doing that here, rather than leaving it to a separate command, is what makes plain
     # `install-app.ps1` leave a phone that can transcribe: without them the app waits for Wi-Fi and
     # downloads them itself.
     $modelFiles = @(
-        @{ Name = "parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite"; Bytes = [long]614261072 },
-        @{ Name = "tokenizer.json"; Bytes = [long]1159960 }
+        @{ Name = "tokenizer.json"; Bytes = [long]1159960 },
+        @{ Name = "parakeet_redux_mel_10s.tflite"; Bytes = [long]1608068 },
+        @{ Name = "parakeet_redux_decoder_i8.tflite"; Bytes = [long]17866768 },
+        @{ Name = "parakeet_redux_encoder_10s_i4.tflite"; Bytes = [long]345895584 }
     )
     $missing = @($modelFiles | Where-Object {
         $path = Join-Path (Join-Path $PSScriptRoot "model") $_.Name

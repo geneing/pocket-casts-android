@@ -24,43 +24,53 @@ class ParakeetModelTest {
     private val context: Context = RuntimeEnvironment.getApplication()
 
     @Test
-    fun `the portable graph path is the one the installer pushes to, under noBackupFilesDir`() {
+    fun `the encoder path is the one the installer pushes to, under noBackupFilesDir`() {
         val model = model()
 
-        // Start from a state where the directory is gone, so the check below is about file() rather
-        // than about an earlier test's leftovers.
-        model.file().parentFile?.deleteRecursively()
-        assertEquals(File(File(context.noBackupFilesDir, "parakeet-model"), ParakeetModel.FILE_NAME), model.file())
+        // Start from a state where the directory is gone, so the check below is about encoderFile()
+        // rather than about an earlier test's leftovers.
+        model.encoderFile().parentFile?.deleteRecursively()
+        assertEquals(File(File(context.noBackupFilesDir, "parakeet-model"), ParakeetModel.ENCODER_NAME), model.encoderFile())
         // Building the path must not create anything: it is called to answer "is a download needed?"
         // long before a pass is allowed to write.
-        assertFalse(model.file().exists())
-        assertFalse(model.file().parentFile?.exists() ?: true)
+        assertFalse(model.encoderFile().exists())
+        assertFalse(model.encoderFile().parentFile?.exists() ?: true)
     }
 
     @Test
-    fun `each backend names its own graph and they are not the same file`() {
+    fun `every file of a pass sits in the same directory`() {
         val model = model()
 
-        assertEquals("parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite", model.file(ParakeetBackend.NPU).name)
-        assertEquals("parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite", model.file(ParakeetBackend.CPU).name)
-        // The GPU runs the portable export too: the NPU graph's compiled ops cannot execute anywhere
-        // but the NPU, so it can never stand in for the CPU/GPU one.
-        assertEquals(model.file(ParakeetBackend.CPU), model.file(ParakeetBackend.GPU))
-        assertNotEquals(model.file(ParakeetBackend.CPU), model.file(ParakeetBackend.NPU))
-        assertEquals(model.file(ParakeetBackend.CPU).parentFile, model.tokenizerFile().parentFile)
+        val directory = model.encoderFile().parentFile
+        assertEquals(directory, model.melFile().parentFile)
+        assertEquals(directory, model.decoderFile().parentFile)
+        assertEquals(directory, model.tokenizerFile().parentFile)
+        assertEquals("parakeet_redux_mel_10s.tflite", model.melFile().name)
+        assertEquals("parakeet_redux_decoder_i8.tflite", model.decoderFile().name)
+        assertEquals("tokenizer.json", model.tokenizerFile().name)
+    }
+
+    @Test
+    fun `the CPU runs the 4-bit encoder and the accelerators the float16 one`() {
+        val model = model()
+
+        assertEquals("parakeet_redux_encoder_10s_i4.tflite", model.encoderFile(ParakeetBackend.CPU).name)
+        assertEquals("parakeet_redux_encoder_10s_f16.tflite", model.encoderFile(ParakeetBackend.GPU).name)
+        assertEquals("parakeet_redux_encoder_10s_f16.tflite", model.encoderFile(ParakeetBackend.NPU).name)
+        assertNotEquals(model.encoderFile(ParakeetBackend.CPU), model.encoderFile(ParakeetBackend.GPU))
     }
 
     @Test
     fun `the part file sits beside the file it belongs to, under that file's own name`() {
         val model = model()
 
-        val graphPart = model.partFile(ParakeetModel.GRAPH)
-        assertEquals(File(model.directory(), "${ParakeetModel.FILE_NAME}.part"), graphPart)
-        assertEquals(model.file().parentFile, graphPart.parentFile)
+        val encoderPart = model.partFile(ParakeetModel.ENCODER_I4)
+        assertEquals(File(model.directory(), "${ParakeetModel.ENCODER_NAME}.part"), encoderPart)
+        assertEquals(model.encoderFile().parentFile, encoderPart.parentFile)
 
-        val npuPart = model.partFile(ParakeetModel.NPU_GRAPH)
-        assertEquals(File(model.directory(), "${ParakeetModel.NPU_GRAPH.name}.part"), npuPart)
-        assertEquals(model.file(ParakeetBackend.NPU).parentFile, npuPart.parentFile)
+        val f16Part = model.partFile(ParakeetModel.ENCODER_F16)
+        assertEquals(File(model.directory(), "${ParakeetModel.ENCODER_F16.name}.part"), f16Part)
+        assertEquals(model.encoderFile(ParakeetBackend.GPU).parentFile, f16Part.parentFile)
 
         val tokenizerPart = model.partFile(ParakeetModel.TOKENIZER)
         assertEquals(File(model.directory(), "tokenizer.json.part"), tokenizerPart)
@@ -68,40 +78,39 @@ class ParakeetModelTest {
     }
 
     @Test
-    fun `a missing graph is not present`() {
+    fun `a missing model is not present`() {
         assertFalse(model().isPresent())
-        assertFalse(model().isPresent(ParakeetBackend.NPU))
+        assertFalse(model().isPresent(ParakeetBackend.GPU))
     }
 
     @Test
-    fun `a graph without its tokenizer is not present, so the next pass downloads both`() {
+    fun `an encoder without its mel graph, decoder or tokenizer is not present`() {
         val model = model()
         model.directory()
-        writeSized(model.file(), ParakeetModel.EXPECTED_BYTES)
+        writeSized(model.encoderFile(), ParakeetModel.ENCODER_BYTES)
 
         assertFalse(model.isPresent(ParakeetBackend.CPU))
     }
 
     @Test
-    fun `the portable graph alone is enough for the CPU but not for the NPU`() {
+    fun `the CPU files alone are enough for the CPU but not for an accelerator`() {
         val model = model()
         model.directory()
-        writeSized(model.file(), ParakeetModel.EXPECTED_BYTES)
-        writeSized(model.tokenizerFile(), ParakeetModel.TOKENIZER.bytes)
+        writeCpuFiles(model)
 
         assertTrue(model.isPresent(ParakeetBackend.CPU))
-        assertFalse("a CPU pass has no NPU graph, so an NPU pass would have to fetch one", model.isPresent(ParakeetBackend.NPU))
+        assertFalse(
+            "a CPU install has no float16 encoder, so an accelerator pass would have to fetch one",
+            model.isPresent(ParakeetBackend.GPU),
+        )
     }
 
     @Test
-    fun `all three files at exactly their expected sizes are present on every backend`() {
+    fun `the float16 encoder adds every backend`() {
         val model = model()
         model.directory()
-        // The rule reads the length, so the length is what this sets. The graphs are extended without
-        // being filled, because writing 1.8 GiB of zeros to prove a size check is not worth the disk.
-        writeSized(model.file(), ParakeetModel.EXPECTED_BYTES)
-        writeSized(model.file(ParakeetBackend.NPU), ParakeetModel.NPU_GRAPH.bytes)
-        writeSized(model.tokenizerFile(), ParakeetModel.TOKENIZER.bytes)
+        writeCpuFiles(model)
+        writeSized(model.encoderFile(ParakeetBackend.GPU), ParakeetModel.ENCODER_F16.bytes)
 
         ParakeetBackend.entries.forEach { backend -> assertTrue(backend.label, model.isPresent(backend)) }
     }
@@ -110,8 +119,7 @@ class ParakeetModelTest {
     fun `installed files never reach the network`() = runTest {
         val model = model()
         model.directory()
-        writeSized(model.file(), ParakeetModel.EXPECTED_BYTES)
-        writeSized(model.tokenizerFile(), ParakeetModel.TOKENIZER.bytes)
+        writeCpuFiles(model)
 
         // The client would fail the test through its interceptor if any request were attempted, so a
         // Present here pins the presence check that keeps a private build off the network entirely.
@@ -119,34 +127,47 @@ class ParakeetModelTest {
     }
 
     @Test
-    fun `the model identity is stable because changing it re-downloads gigabytes`() {
-        assertEquals("parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite", ParakeetModel.FILE_NAME)
-        assertEquals(614_261_072L, ParakeetModel.EXPECTED_BYTES)
+    fun `the model identity is stable because changing it re-downloads hundreds of megabytes`() {
+        assertEquals("parakeet_redux_encoder_10s_i4.tflite", ParakeetModel.ENCODER_NAME)
+        assertEquals(345_895_584L, ParakeetModel.ENCODER_BYTES)
         assertEquals("parakeet", ParakeetModel.ENGINE_TAG)
-        assertTrue(ParakeetModel.URL.endsWith("/${ParakeetModel.FILE_NAME}"))
+        assertTrue(ParakeetModel.ENCODER_URL.endsWith("/${ParakeetModel.ENCODER_NAME}"))
     }
 
     @Test
-    fun `the default pass runs on the portable graph and asks for nothing else`() {
+    fun `the default pass runs on the 4-bit encoder and asks for nothing else`() {
         assertEquals(ParakeetBackend.CPU, ParakeetBackend.preferred())
         assertEquals(
-            listOf("parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite", "tokenizer.json"),
+            listOf(
+                "tokenizer.json",
+                "parakeet_redux_mel_10s.tflite",
+                "parakeet_redux_decoder_i8.tflite",
+                "parakeet_redux_encoder_10s_i4.tflite",
+            ),
             ParakeetModel.assets(ParakeetBackend.preferred()).map { it.name },
         )
-        // The NPU graph is plumbing for a later experiment, not part of an install: only a pass pinned
-        // to the NPU asks for it.
+        // The float16 encoder is plumbing for a later experiment, not part of an install: only a pass
+        // pinned to an accelerator asks for it.
         assertEquals(
-            listOf("parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite", "tokenizer.json"),
-            ParakeetModel.assets(ParakeetBackend.NPU).map { it.name },
+            "parakeet_redux_encoder_10s_f16.tflite",
+            ParakeetModel.assets(ParakeetBackend.GPU).last().name,
         )
     }
 
     @Test
     fun `the version names the engine, the model, the runtime and the cue rules`() {
-        assertEquals("parakeet-tdt-0.6b-v3/i8-stateful/tflite-2.3.2/cues1", ParakeetModel.version)
+        assertEquals("parakeet-tdt-0.6b-v3-redux/i4/tflite-2.3.2/cues1", ParakeetModel.version)
         // An analysis is recognised as on-device by this prefix, so the engine tag has to stay at the
         // front of the stamped string.
         assertTrue(ParakeetModel.version.startsWith(ParakeetModel.ENGINE_TAG))
+    }
+
+    /** Every file a CPU pass needs, set to its exact length without writing the bytes. */
+    private fun writeCpuFiles(model: ParakeetModel) {
+        writeSized(model.melFile(), ParakeetModel.MEL.bytes)
+        writeSized(model.encoderFile(ParakeetBackend.CPU), ParakeetModel.ENCODER_I4.bytes)
+        writeSized(model.decoderFile(), ParakeetModel.DECODER.bytes)
+        writeSized(model.tokenizerFile(), ParakeetModel.TOKENIZER.bytes)
     }
 
     private fun writeSized(file: File, bytes: Long) {
@@ -157,7 +178,7 @@ class ParakeetModelTest {
 
     /**
      * Any request fails the test instead of leaving the device, so a presence check that missed would
-     * say so immediately rather than streaming gigabytes from Hugging Face.
+     * say so immediately rather than streaming hundreds of megabytes from Hugging Face.
      */
     private val client = OkHttpClient.Builder()
         .addInterceptor(

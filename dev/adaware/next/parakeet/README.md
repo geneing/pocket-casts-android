@@ -10,36 +10,40 @@ briefly; this directory holds the tooling for the engine that runs now.
 | | |
 |---|---|
 | Engine | LiteRT runtime, `com.google.ai.edge.litert:litert:2.3.2` (CPU, GPU) + `litert-npu-runtime-google-tensor` (Tensor NPU, pinned only) |
-| Model | NVIDIA **Parakeet TDT 0.6B v3**, portable INT8 stateful export, 5 s chunks — **the default** |
-| Graph | `parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite` — 614 261 072 bytes (~586 MiB) |
+| Model | NVIDIA **Parakeet TDT 0.6B v3 Redux** (ternary encoder), 4-bit CPU encoder, 10 s windows — **the default** |
+| Mel graph | `parakeet_redux_mel_10s.tflite` — 1 608 068 bytes (<https://huggingface.co/litert-community/parakeet-redux>) |
+| Encoder | `parakeet_redux_encoder_10s_i4.tflite` — 345 895 584 bytes (~330 MiB) |
+| Decoder | `parakeet_redux_decoder_i8.tflite` — 17 866 768 bytes (`predict` + `joint`) |
 | Tokenizer | `tokenizer.json`, 8 192 BPE pieces — 1 159 960 bytes |
-| Optional | `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite`, 1 303 768 096 bytes (~1.21 GiB), only for a pass pinned to the NPU |
-| Graph source | <https://huggingface.co/litert-community/parakeet-tdt-0.6b-v3/resolve/main/parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite> |
-| Tokenizer source | <https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/resolve/main/tokenizer.json> |
-| Licences | model: NVIDIA, CC-BY-4.0 · LiteRT: Apache-2.0 |
+| Optional | `parakeet_redux_encoder_10s_f16.tflite`, 1 194 680 560 bytes (~1.11 GiB), only for a pass pinned to the GPU or NPU |
+| Licences | model: NVIDIA / moondream, CC-BY-4.0 · LiteRT: Apache-2.0 |
 
-### Why LiteRT and not the `.litertlm` bundle
+### Why Redux, and why three graphs
 
-The `.litertlm` bundle is CPU/GPU only: MediaPipe's `AudioTranscriber` loads it and cannot reach the
-NPU. LiteRT can, on an SoC-specific graph, and that is the experiment this branch exists for. Two
-Parakeet exports exist for Google Tensor:
+`litert-community/parakeet-redux` is `moondream/parakeet-redux` — the Parakeet TDT 0.6B v3 weights
+with a ternary encoder — converted to LiteRT. Compared with the earlier export it is a third of the
+size on the CPU path (`i4`, 365 MB with the mel and decoder) and much faster, because it splits what
+the `.litertlm` bundle kept in one graph:
 
-| File | Signatures | What happens |
+| Graph | Signatures | What it does |
 |---|---|---|
-| `parakeet_tdt_0.6b_v3_5s_f32_Google_Tensor_G6.tflite` | `encode`, `decode` | the decoder stops once its stateless token slots are full, losing the tail of every window |
-| `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite` | `encode`, `decode`, `decode_1` | stateful decoding: the first tokens come from `decode`, then `decode_1` advances the LSTM one token at a time |
+| `parakeet_redux_mel_10s` | `audio`, `n_valid` → `features`, `mel_mask`, `frame_mask` | the log-mel front end, in the graph rather than in Kotlin: pre-emphasis, 512-point STFT at a 10 ms hop, 128 Slaney bins, log and per-window normalisation |
+| `parakeet_redux_encoder_10s_i4` / `_f16` | `features`, `mel_mask` → `enc` | the FastConformer: `[1, 128, 1000]` in, `[1, 125, 640]` out |
+| `parakeet_redux_decoder_i8` | `predict` (`token`, `h`, `c` → `dec_out`, `h_out`, `c_out`) and `joint` (`enc_frame`, `dec_out` → `logits`) | the TDT prediction and joint networks: 8 198 logits = 8 193 token logits (8 192 is the blank) + 5 durations |
 
-If the NPU path is picked up again, use the `_stateful_` one. `ParakeetRecognizer` is written for it:
-it decodes the first few tokens statelessly, switches to `decode_1` when the stateless slots are full,
-and carries the two LSTM state tensors forward by swapping buffers. `grep -a -c decode_1 <file>` is the
-quick way to tell them apart; the stateful export answers 179, the other answers 0.
-
-The NPU graph cannot stand in for the portable one: its compiled ops are a `DISPATCH_OP` that only the
-Tensor dispatch library executes, so on CPU or GPU the model fails to allocate its tensors.
+The mel graph is what makes the CPU path quick: the previous export needed the app's own 2 s of
+Kotlin mel work per clip, and this one produces exactly the features the encoder was trained on. The
+`frame_mask` also gives the decoder its stop point, so a short final window is a legal window rather
+than something the app has to pad and then guess about.
 
 The exact byte count of each file is the app's presence check: `ParakeetModel` treats a file of any
 other size as absent and downloads it again. A truncated push, a half-finished download or a
 different export therefore degrades to a fresh download instead of failing inside the interpreter.
+
+`graph-names.sh` prints the signature keys and tensor names baked into the three graphs — the mel and
+encoder graphs answer `serving_default`, the decoder `predict` and `joint` — which are what
+`ParakeetRecognizer` binds its buffers to by name. Run it if a graph is ever swapped for another
+export; a renamed tensor fails at open time, not silently at the decoder.
 
 **Attribution.** CC-BY-4.0 requires visible credit to NVIDIA wherever the app is distributed. The
 in-app licences screen is generated from the Gradle dependency graph, so it will never list the
@@ -51,16 +55,18 @@ find. LiteRT itself is Apache-2.0 and is a normal Gradle dependency.
 ```
 /data/user/0/au.com.shiftyjelly.pocketcasts.debug/   # package of the ".debug" application id
 └── no_backup/parakeet-model/
-    ├── parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite        # the graph every pass uses
-    └── tokenizer.json                                    # the id → piece table
+    ├── tokenizer.json                                 # the id → piece table
+    ├── parakeet_redux_mel_10s.tflite                  # the log-mel front end
+    ├── parakeet_redux_decoder_i8.tflite               # predict + joint
+    └── parakeet_redux_encoder_10s_i4.tflite           # the encoder every pass uses
 ```
 
-`no_backup` is deliberate: 586 MiB of re-downloadable weights must never be backed up. A phone that
-also carries `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite` next to them is a phone
-that has had the NPU experiment pushed to it; nothing needs it otherwise. There is no cache directory
-any more — LiteRT compiles nothing for an AOT-compiled graph, unlike MediaPipe. Keep the directory and
-file names in step with `ParakeetModel.GRAPH`, `ParakeetModel.NPU_GRAPH` and
-`ParakeetModel.TOKENIZER` in
+`no_backup` is deliberate: 366 MB of re-downloadable weights must never be backed up. A phone that
+also carries `parakeet_redux_encoder_10s_f16.tflite` next to them is a phone that has had the
+accelerator experiment pushed to it; nothing needs it otherwise. There is no cache directory: LiteRT
+compiles nothing for these graphs. Keep the directory and file names in step with
+`ParakeetModel.MEL`, `ParakeetModel.DECODER`, `ParakeetModel.ENCODER_I4`, `ParakeetModel.ENCODER_F16`
+and `ParakeetModel.TOKENIZER` in
 `modules/services/repositories/.../repositories/ads/text/parakeet/ParakeetModel.kt`.
 
 ## The scripts
@@ -81,8 +87,8 @@ All three are Windows PowerShell, like the rest of this checkout's build loop (s
 # Models changed or phone wiped, APK already installed.
 .\dev\adaware\next\parakeet\install-model.ps1
 
-# Also push the Tensor G6 graph, for a pass pinned to the NPU.
-.\dev\adaware\next\parakeet\install-model.ps1 -WithNpu
+# Also push the float16 encoder, for a pass pinned to the GPU or NPU.
+.\dev\adaware\next\parakeet\install-model.ps1 -WithF16
 
 # Only the small tokenizer, e.g. after editing how it is read.
 .\dev\adaware\next\parakeet\install-model.ps1 -Only tokenizer.json
@@ -96,14 +102,14 @@ All three are Windows PowerShell, like the rest of this checkout's build loop (s
 
 - `download-model.ps1` uses `curl.exe -L -C -`, so re-running it resumes an interrupted transfer.
   Bytes live in `<name>.part` until the size check passes; only a file of exactly the right size is
-  renamed, and a file that is too long is deleted as the wrong export. `-Destination`, `-WithNpu` and
+  renamed, and a file that is too long is deleted as the wrong export. `-Destination`, `-WithF16` and
   `-Names` override where it goes and what it fetches.
 - `install-model.ps1` pushes through `/data/local/tmp` and copies across with
   `run-as <package> cp`, because adb cannot write app-private storage (and `run-as` cannot read the
   app's external files directory). It skips a push when the device copy already has the right size,
   removes a stale `.part` and any wrong-sized copy, and fails loudly when the local file is missing or
   the wrong size. It does not need the app to have been launched — only for the package to be
-  installed. `-WithNpu` adds the G6 graph, and `-Only <name>` pushes just one file.
+  installed. `-WithF16` adds the float16 encoder, and `-Only <name>` pushes just one file.
 - `install-app.ps1` is the loop above: `:app:assembleDebugProd`, `adb install -r`, the download when
   this machine does not have the files yet, then `install-model.ps1`; `-SkipBuild` and `-SkipModels`
   skip either half. Switching between the staging `debug` and the production `debugProd` build
@@ -111,77 +117,70 @@ All three are Windows PowerShell, like the rest of this checkout's build loop (s
   with the account and library — the next `install-app.ps1` pushes them again. Use `debugProd` unless
   a staging server is what is being tested.
 
-## Backends: NPU, GPU, CPU
+## Backends: CPU, GPU, NPU
 
-The graph runs on three accelerators and the app picks one:
+The encoder is the only part that can move; the mel graph and the TDT decoder stay on the CPU on
+every backend.
 
 | Backend | When | Notes |
 |---|---|---|
-| `CPU` | **default everywhere**, including Google Tensor phones | the portable i8 graph; measured fastest end to end |
-| `NPU` | only when pinned (`ParakeetBackend.NPU`) | `encode` on the G6 graph on the NPU, `decode` on the portable graph on the CPU; needs the G6 graph pushed with `-WithNpu`, and the APK built with `useLegacyPackaging = true` so the dispatch library can be loaded by name |
-| `GPU` | never by default | the TDT decoder is dozens of single-token invocations per window, and per-step dispatch latency dominates; its shader compile also costs ~50 s on the first run |
+| `CPU` | **default everywhere**, including Google Tensor phones | the 4-bit encoder; the export's own CPU form and the one a normal install carries |
+| `GPU` | only when pinned (`ParakeetBackend.GPU`) | the float16 encoder on the GPU, mel and decoder on the CPU; needs `-WithF16`, and pays a long shader compile on the first run |
+| `NPU` | only when pinned (`ParakeetBackend.NPU`) | the float16 encoder on the NPU, mel and decoder on the CPU; a partially delegated graph still runs its leftover ops on the CPU |
 
-Two graphs exist because one cannot serve all three: the G6 export's compiled ops are a `DISPATCH_OP`
-that only the NPU executes, so the CPU and GPU run the portable i8 export of the same weights. Only
-the portable one is part of an install; the G6 graph is kept as plumbing for the NPU work.
+The decoder is 60-100 *single-token* `predict`/`joint` runs per window, so offering it to an
+accelerator would pay a dispatch round trip per token and lose to the CPU; that is why only the
+encoder moves. Neither the GPU nor the NPU encoder is part of an install: they stay as plumbing, and
+`ParakeetEpisodeTranscriber.backend` plus `-WithF16` is the knob and the file that reach them.
 
 `ParakeetEpisodeTranscriber.backend` is the knob; the benchmark below pins each installed one in turn.
 
 ## Measuring it on the phone
 
 `app/src/androidTest/.../ParakeetBackendBenchmarkTest.kt` runs the **same clip through every
-installed backend** — the NPU row only appears once its graph has been pushed with `-WithNpu` — and
-logs, per backend:
+installed backend** — the GPU and NPU rows only appear once the float16 encoder has been pushed with
+`-WithF16` — and logs, per backend:
 
 ```
-BENCH backend=npu audio_ms=33623 wall_ms=... rtf=... cues=..
+BENCH backend=cpu audio_ms=33623 wall_ms=... rtf=... cues=..
 en pass: model_load_ms=.. audio_ms=33623 wall_ms=.. rtf=.. segments=.. cues=..
-         segment_ms_median=.. backend=npu windows=11 mel_ms=.. encode_ms=.. decode_ms=.. model_rtf=..
+         segment_ms_median=.. backend=cpu windows=.. mel_ms=.. encode_ms=.. decode_ms=.. model_rtf=..
 ```
 
-- `rtf` — audio time over wall time for the whole pass, including the CPU-only mel front end.
-- `model_rtf` — audio time over `encode_ms + decode_ms`, i.e. the graph alone. This is the number
-  that says whether the NPU is earning its place, because the front end runs on the CPU whatever the
-  backend is.
+- `rtf` — audio time over wall time for the whole pass, including the CPU mel graph.
+- `model_rtf` — audio time over `encode_ms + decode_ms`, i.e. the encoder and decoder alone. This is
+  the number that says whether an accelerator is earning its place, because the mel graph and the
+  decoder run on the CPU whatever the backend is.
 
 `rtf` is audio time divided by wall time, so **above 1 means faster than real time**, and 6.0 means an
-hour of audio in ten minutes. Short clips understate every backend because opening the graph is paid
+hour of audio in ten minutes. Short clips understate every backend because opening the graphs is paid
 once per pass, so treat the ordering as the result and the absolute number as the floor.
+
+For reference, the export's own README measures the CPU form (10/20/30 s buckets, 8 threads) at
+`rtf` 0.035 on a Galaxy S26 and 0.112 on a Pixel 8a — 29x and 9x real time. This app asks the encoder
+for every window at 10 s, which only costs the padding it would have had on a longer bucket.
 
 ### Measured on the Pixel 11 (Tensor G6), 33.6 s clip, 2026-11-17
 
-One pass per backend over the same clip, same 5 s/3 s windows, same mel front end, warm phone:
+One pass per backend over the same clip, the same 10 s/8 s windows, warm phone:
 
-| Backend | Where the model ran | Wall | `rtf` | `model_rtf` | mel | encode | decode | graph load |
+| Backend | Where the encoder ran | Wall | `rtf` | `model_rtf` | mel | encode | decode | graph load |
 |---|---|---|---|---|---|---|---|---|
-| **CPU** | portable i8 graph, CPU | 6.65 s | **5.06** | 10.50 | 1.99 s | 1.86 s | 1.34 s | 1.0 s |
-| **NPU** | G6 graph on NPU for `encode`, portable i8 on CPU for `decode` | 11.32 s | 2.97 | 8.93 | 2.66 s | **0.98 s** | 2.78 s | 4.1 s |
-| **GPU** | portable i8 graph, GPU | 71.96 s | 0.47 | 2.51 | 3.49 s | 0.02 s | 13.37 s | 54.3 s |
+| **CPU** | 4-bit encoder, CPU | 4.76 s | **7.04** | 9.04 | 37 ms | 3.57 s | 0.14 s | 0.63 s |
 
-What the numbers say:
+- **The mel graph is essentially free**: 37 ms for four windows, against the ~2 s the Kotlin/jLibrosa
+  front end took per clip on the same phone. It is also the only version whose features the encoder
+  was trained on.
+- **The encoder is the pass now**: 3.57 s of the 4.76 s. That is the 600M-parameter FastConformer, and
+  the part an accelerator could still win.
+- **The decoder is small**: 0.14 s for four windows, ~40 ms each, because `joint` runs once per
+  encoder frame the duration skips and `predict` once per emitted token. There is nothing left in it
+  for an accelerator to save.
+- The four graphs open in 0.6 s, and the pass is 4.76 s against the previous export's 6.65 s on the
+  same clip, with 4 windows instead of 11.
 
-- **The NPU encoder is worth 2× the CPU's**: 0.98 s against 1.86 s for eleven encoder passes. That is
-  the 600M-parameter FastConformer, the part of the model with real parallelism, and it is the reason
-  to keep the NPU path.
-- **The decoder is what decides the pass.** TDT decoding is 60-90 *single-token* invocations per
-  window. On the NPU each of those pays a dispatch round trip: decoding the same clip entirely on the
-  NPU measured 8.13 s of decode, 2.9× the CPU's 2.78 s, for a `model_rtf` of 3.70 instead of 8.93. So
-  the NPU path deliberately runs only `encode` on the NPU (see `ParakeetRecognizer.decodeFile`), which
-  is the fastest NPU configuration measured.
-- **The GPU loses on both halves.** Its kernel launch cost makes the 330 sequential decoder steps the
-  slowest of the three, and its first-run shader compilation is the 54 s graph load. It stays in the
-  code as a measurement, not as a default.
-- **Pure CPU was still the fastest whole pass on this phone**, 5.06 against 2.97, because the NPU also
-  pays a 4.1 s load for two graphs and its CPU decoder was slower than the same decoder on its own
-  (2.78 s vs 1.34 s — with one graph the encoder's output buffers *are* the decoder's input buffers,
-  so the two-model path costs a copy per window and holds a second compiled model's memory).
-  `ParakeetBackend.preferred()` therefore returns CPU on every device, and the G6 graph is not part of
-  an install: the NPU stays as plumbing (`-WithNpu` pushes the graph, `ParakeetBackend.NPU` pins a
-  pass) for a later attempt. The next step for it would be proving the hybrid's decoder overhead is
-  not measurement noise, and that the encoder win grows on long episodes.
-
-The mel front end is the one cost no backend changes: 2-3.5 s per 33.6 s clip on the CPU, ~7% of real
-time, and it is the largest single item for the CPU pass after the model itself.
+GPU and NPU were not measured on this run: their float16 encoder (1.1 GiB) was not pushed. To add the
+rows, `install-model.ps1 -WithF16` and re-run the benchmark; it will log `Measuring [npu, gpu, cpu]`.
 
 
 ```powershell
@@ -235,27 +234,25 @@ en progress: chars=204 at=0:15 elapsed=0:09 audio=0:20 rtf=2.09 segments=12
 At the end of a pass:
 
 ```
-en pass: model_load_ms=1400 audio_ms=33623 wall_ms=16396 rtf=2.05 segments=340 cues=11
-         segment_ms_median=240 backend=npu windows=11 mel_ms=900 encode_ms=1200 decode_ms=2100 model_rtf=10.2
+en pass: model_load_ms=631 audio_ms=33623 wall_ms=4764 rtf=7.06 segments=84 cues=9
+         segment_ms_median=240 backend=cpu windows=4 mel_ms=37 encode_ms=3574 decode_ms=144 model_rtf=9.04
 ```
 
-`segment_ms_median` is about 240 ms now: the recogniser reports words, not encoder windows, and the
-cue rules join them into sentences.
+`segment_ms_median` is about 240 ms: the recogniser reports words, not encoder windows, and the cue
+rules join them into sentences.
 
 ## How a pass is shaped
 
 1. `AudioFeed` decodes the episode to mono 16 kHz and hands over buffers of whatever size the codec
    produced.
-2. `ParakeetWindowBuffer` cuts those into 5 s windows that step forward 3 s, keeping the last 2 s so
+2. `ParakeetWindowBuffer` cuts those into 10 s windows that step forward 8 s, keeping the last 2 s so
    a word spoken across a boundary is heard twice.
-3. `ParakeetMel` turns each window into the encoder's flat `[128][500]` log-mel block. The `.tflite`
-   graph carries no preprocessor, so this is now the app's job (0.97 pre-emphasis, 512-point Hann
-   STFT at a 10 ms hop, 128 Slaney mel bins, natural log, per-feature mean/std).
-4. `ParakeetRecognizer` runs `encode`, then the greedy TDT decoder (`decode` → `decode_1`) and
-   returns token ids with the encoder frame each one starts on.
-5. `ParakeetWords` detokenises with `ParakeetTokenizer` and releases a word only once a later window
+3. `ParakeetRecognizer` runs the mel graph on the window, copies its `features` and `mel_mask` into the
+   encoder, runs the encoder, and then greedy-decodes with `predict` and `joint` until the mel graph's
+   `frame_mask` runs out. Token ids carry the encoder frame each one starts on.
+4. `ParakeetWords` detokenises with `ParakeetTokenizer` and releases a word only once a later window
    has started after it, which is what settles the overlap.
-6. `ParakeetCues` joins the words into sentence-level cues for the WebVTT, as before.
+5. `ParakeetCues` joins the words into sentence-level cues for the WebVTT, as before.
 
 ## Resumability, identity and what a change invalidates
 
