@@ -88,7 +88,6 @@ if (-not $SkipModels) {
     # downloads them itself.
     $modelFiles = @(
         @{ Name = "parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite"; Bytes = [long]614261072 },
-        @{ Name = "parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite"; Bytes = [long]1303768096 },
         @{ Name = "tokenizer.json"; Bytes = [long]1159960 }
     )
     $missing = @($modelFiles | Where-Object {

@@ -26,23 +26,22 @@ import okhttp3.Request
  *
  * One model covers every supported language: Parakeet TDT 0.6B v3 is multilingual, so unlike the
  * per-language models it replaces there is no language allowlist or per-language cache key to consult
- * before checking for it. It is shipped as two graphs, because one graph cannot serve all three
- * accelerators:
+ * before checking for it. A pass needs three files:
  *
  * - `parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite`, 614 261 072 bytes: the portable export the CPU and
- *   GPU run on any device.
- * - `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite`, 1 303 768 096 bytes: AOT-compiled
- *   for the Pixel 11's NPU, and only runnable there — its compiled ops are a `DISPATCH_OP` the CPU
- *   and GPU accelerators do not have.
+ *   GPU run, and the one every pass uses by default.
+ * - `tokenizer.json`, 1 159 960 bytes: a `.tflite` graph stops at token ids, so the BPE table the
+ *   model was converted with has to sit beside it.
+ * - optionally, `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite`, 1 303 768 096 bytes:
+ *   AOT-compiled for the Pixel 11's NPU and only runnable there. It is not part of a normal install;
+ *   only a pass pinned to [ParakeetBackend.NPU] asks for it (see [assets]), because the NPU measured
+ *   slower end to end and only won the encoder.
  *
- * Neither fits in an APK, so a private build pushes them onto the device
+ * None fits in an APK, so a private build pushes them onto the device
  * (`dev/adaware/next/parakeet/install-model.ps1`) and a download is the fallback for when they are
- * missing. Both paths land in `noBackupFilesDir/parakeet-model/`.
- *
- * The tokenizer is the third file. MediaPipe used to run the bundle's built-in tokenizer; a
- * `.tflite` graph stops at token ids, so the `tokenizer.json` the model was converted with has to sit
- * beside it. No file needs a cache directory: LiteRT compiles and caches nothing for an AOT-compiled
- * graph, so a half-written artifact can never be mistaken for a missing model.
+ * missing. Both paths land in `noBackupFilesDir/parakeet-model/`. No file needs a cache directory:
+ * LiteRT compiles and caches nothing for an AOT-compiled graph, so a half-written artifact can never
+ * be mistaken for a missing model.
  */
 @Singleton
 class ParakeetModel @Inject constructor(
@@ -257,9 +256,10 @@ class ParakeetModel @Inject constructor(
         )
 
         /**
-         * The graph compiled for the Google Tensor G6 NPU, and only runnable on its NPU: the compiled
-         * ops appear as a `DISPATCH_OP` a CPU or GPU accelerator cannot execute, which is why the
-         * portable graph above exists rather than one graph serving all three backends.
+         * The graph compiled for the Google Tensor G6 NPU. Not part of a normal install: it is only
+         * needed when a pass pins [ParakeetBackend.NPU], and it cannot stand in for the portable
+         * graph anywhere else because its compiled ops are a `DISPATCH_OP` no CPU or GPU accelerator
+         * can execute.
          */
         internal val NPU_GRAPH = ParakeetAsset(
             name = "parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite",
@@ -301,12 +301,13 @@ class ParakeetModel @Inject constructor(
         const val CUES_REVISION = "cues1"
 
         /**
-         * Engine + model + cue-rule identity, stamped on every analysis. Both graphs are named
-         * because either can produce a transcript on a given phone; changing either, the runtime or
-         * the cue rules invalidates every stored transcript, which is the point.
+         * Engine + model + cue-rule identity, stamped on every analysis. The NPU graph produces the
+         * same words and is not named, because either path can only be reached by pinning the
+         * backend; changing the portable graph, the runtime or the cue rules invalidates every stored
+         * transcript, which is the point.
          */
         val version: String =
-            "$ENGINE_TAG-tdt-0.6b-v3/i8+g6-stateful/tflite-$RUNTIME_VERSION/$CUES_REVISION"
+            "$ENGINE_TAG-tdt-0.6b-v3/i8-stateful/tflite-$RUNTIME_VERSION/$CUES_REVISION"
     }
 }
 

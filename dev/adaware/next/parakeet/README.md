@@ -9,29 +9,33 @@ briefly; this directory holds the tooling for the engine that runs now.
 
 | | |
 |---|---|
-| Engine | LiteRT runtime, `com.google.ai.edge.litert:litert:2.3.2` (CPU, GPU) + `litert-npu-runtime-google-tensor` (Tensor NPU) |
-| Model | NVIDIA **Parakeet TDT 0.6B v3**, AOT-compiled for **Google Tensor G6**, FP32, stateful, 5 s chunks |
-| Graph | `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite` — 1 303 768 096 bytes (~1.21 GiB) |
+| Engine | LiteRT runtime, `com.google.ai.edge.litert:litert:2.3.2` (CPU, GPU) + `litert-npu-runtime-google-tensor` (Tensor NPU, pinned only) |
+| Model | NVIDIA **Parakeet TDT 0.6B v3**, portable INT8 stateful export, 5 s chunks — **the default** |
+| Graph | `parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite` — 614 261 072 bytes (~586 MiB) |
 | Tokenizer | `tokenizer.json`, 8 192 BPE pieces — 1 159 960 bytes |
-| Graph source | <https://huggingface.co/litert-community/parakeet-tdt-0.6b-v3/resolve/main/parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite> |
+| Optional | `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite`, 1 303 768 096 bytes (~1.21 GiB), only for a pass pinned to the NPU |
+| Graph source | <https://huggingface.co/litert-community/parakeet-tdt-0.6b-v3/resolve/main/parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite> |
 | Tokenizer source | <https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/resolve/main/tokenizer.json> |
 | Licences | model: NVIDIA, CC-BY-4.0 · LiteRT: Apache-2.0 |
 
-### Why this file and not the `.litertlm` bundle
+### Why LiteRT and not the `.litertlm` bundle
 
 The `.litertlm` bundle is CPU/GPU only: MediaPipe's `AudioTranscriber` loads it and cannot reach the
-NPU, which is the whole point of this branch. NPU acceleration in LiteRT needs a graph compiled for
-the SoC, and the Parakeet export publishes one per SoC family. Two exports exist for Google Tensor:
+NPU. LiteRT can, on an SoC-specific graph, and that is the experiment this branch exists for. Two
+Parakeet exports exist for Google Tensor:
 
 | File | Signatures | What happens |
 |---|---|---|
 | `parakeet_tdt_0.6b_v3_5s_f32_Google_Tensor_G6.tflite` | `encode`, `decode` | the decoder stops once its stateless token slots are full, losing the tail of every window |
-| `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite` ⭐ | `encode`, `decode`, `decode_1` | stateful decoding: the first tokens come from `decode`, then `decode_1` advances the LSTM one token at a time |
+| `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite` | `encode`, `decode`, `decode_1` | stateful decoding: the first tokens come from `decode`, then `decode_1` advances the LSTM one token at a time |
 
-**Use the `_stateful_` one.** The app's decoder (`ParakeetRecognizer`) is written for it: it decodes
-the first few tokens statelessly, switches to `decode_1` when the stateless slots are full, and
-carries the two LSTM state tensors forward by swapping buffers. `grep -a -c decode_1 <file>` is the
+If the NPU path is picked up again, use the `_stateful_` one. `ParakeetRecognizer` is written for it:
+it decodes the first few tokens statelessly, switches to `decode_1` when the stateless slots are full,
+and carries the two LSTM state tensors forward by swapping buffers. `grep -a -c decode_1 <file>` is the
 quick way to tell them apart; the stateful export answers 179, the other answers 0.
+
+The NPU graph cannot stand in for the portable one: its compiled ops are a `DISPATCH_OP` that only the
+Tensor dispatch library executes, so on CPU or GPU the model fails to allocate its tensors.
 
 The exact byte count of each file is the app's presence check: `ParakeetModel` treats a file of any
 other size as absent and downloads it again. A truncated push, a half-finished download or a
@@ -47,13 +51,16 @@ find. LiteRT itself is Apache-2.0 and is a normal Gradle dependency.
 ```
 /data/user/0/au.com.shiftyjelly.pocketcasts.debug/   # package of the ".debug" application id
 └── no_backup/parakeet-model/
-    ├── parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite   # the graph
-    └── tokenizer.json                                                 # the id → piece table
+    ├── parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite        # the graph every pass uses
+    └── tokenizer.json                                    # the id → piece table
 ```
 
-`no_backup` is deliberate: 1.2 GiB of re-downloadable weights must never be backed up. There is no
-cache directory any more — LiteRT compiles nothing for an AOT-compiled graph, unlike MediaPipe. Keep
-the directory and file names in step with `ParakeetModel.GRAPH` and `ParakeetModel.TOKENIZER` in
+`no_backup` is deliberate: 586 MiB of re-downloadable weights must never be backed up. A phone that
+also carries `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite` next to them is a phone
+that has had the NPU experiment pushed to it; nothing needs it otherwise. There is no cache directory
+any more — LiteRT compiles nothing for an AOT-compiled graph, unlike MediaPipe. Keep the directory and
+file names in step with `ParakeetModel.GRAPH`, `ParakeetModel.NPU_GRAPH` and
+`ParakeetModel.TOKENIZER` in
 `modules/services/repositories/.../repositories/ads/text/parakeet/ParakeetModel.kt`.
 
 ## The scripts
@@ -74,6 +81,9 @@ All three are Windows PowerShell, like the rest of this checkout's build loop (s
 # Models changed or phone wiped, APK already installed.
 .\dev\adaware\next\parakeet\install-model.ps1
 
+# Also push the Tensor G6 graph, for a pass pinned to the NPU.
+.\dev\adaware\next\parakeet\install-model.ps1 -WithNpu
+
 # Only the small tokenizer, e.g. after editing how it is read.
 .\dev\adaware\next\parakeet\install-model.ps1 -Only tokenizer.json
 
@@ -86,13 +96,14 @@ All three are Windows PowerShell, like the rest of this checkout's build loop (s
 
 - `download-model.ps1` uses `curl.exe -L -C -`, so re-running it resumes an interrupted transfer.
   Bytes live in `<name>.part` until the size check passes; only a file of exactly the right size is
-  renamed, and a file that is too long is deleted as the wrong export. `-Destination` and
-  `-TokenizerOnly` override where it goes and how much it fetches.
-- `install-model.ps1` pushes through the app's own external files directory and copies across with
-  `run-as <package> cp`, because adb cannot write app-private storage. It skips a push when the
-  device copy already has the right size (which matters at 1.2 GiB), removes a stale `.part` and any
-  wrong-sized copy, and fails loudly when the local file is missing or the wrong size. It does not
-  need the app to have been launched — only for the package to be installed.
+  renamed, and a file that is too long is deleted as the wrong export. `-Destination`, `-WithNpu` and
+  `-Names` override where it goes and what it fetches.
+- `install-model.ps1` pushes through `/data/local/tmp` and copies across with
+  `run-as <package> cp`, because adb cannot write app-private storage (and `run-as` cannot read the
+  app's external files directory). It skips a push when the device copy already has the right size,
+  removes a stale `.part` and any wrong-sized copy, and fails loudly when the local file is missing or
+  the wrong size. It does not need the app to have been launched — only for the package to be
+  installed. `-WithNpu` adds the G6 graph, and `-Only <name>` pushes just one file.
 - `install-app.ps1` is the loop above: `:app:assembleDebugProd`, `adb install -r`, the download when
   this machine does not have the files yet, then `install-model.ps1`; `-SkipBuild` and `-SkipModels`
   skip either half. Switching between the staging `debug` and the production `debugProd` build
@@ -106,19 +117,21 @@ The graph runs on three accelerators and the app picks one:
 
 | Backend | When | Notes |
 |---|---|---|
-| `NPU` | default on a Google Tensor device (`NpuCompatibilityChecker.GoogleTensor`) | `encode` on the G6 graph on the NPU, `decode` on the portable graph on the CPU; `litert-npu-runtime-google-tensor` ships the dispatch library, and the APK must be built with `useLegacyPackaging = true` so it can be loaded by name |
-| `CPU` | every other device, and the fallback the NPU's partially delegated graph needs | the portable i8 graph, always available |
+| `CPU` | **default everywhere**, including Google Tensor phones | the portable i8 graph; measured fastest end to end |
+| `NPU` | only when pinned (`ParakeetBackend.NPU`) | `encode` on the G6 graph on the NPU, `decode` on the portable graph on the CPU; needs the G6 graph pushed with `-WithNpu`, and the APK built with `useLegacyPackaging = true` so the dispatch library can be loaded by name |
 | `GPU` | never by default | the TDT decoder is dozens of single-token invocations per window, and per-step dispatch latency dominates; its shader compile also costs ~50 s on the first run |
 
 Two graphs exist because one cannot serve all three: the G6 export's compiled ops are a `DISPATCH_OP`
-that only the NPU executes, so the CPU and GPU run the portable i8 export of the same weights.
+that only the NPU executes, so the CPU and GPU run the portable i8 export of the same weights. Only
+the portable one is part of an install; the G6 graph is kept as plumbing for the NPU work.
 
-`ParakeetEpisodeTranscriber.backend` is the knob; the benchmark below pins each one in turn.
+`ParakeetEpisodeTranscriber.backend` is the knob; the benchmark below pins each installed one in turn.
 
 ## Measuring it on the phone
 
-`app/src/androidTest/.../ParakeetBackendBenchmarkTest.kt` runs the **same clip through all three
-backends** and logs, per backend:
+`app/src/androidTest/.../ParakeetBackendBenchmarkTest.kt` runs the **same clip through every
+installed backend** — the NPU row only appears once its graph has been pushed with `-WithNpu` — and
+logs, per backend:
 
 ```
 BENCH backend=npu audio_ms=33623 wall_ms=... rtf=... cues=..
@@ -162,9 +175,10 @@ What the numbers say:
   pays a 4.1 s load for two graphs and its CPU decoder was slower than the same decoder on its own
   (2.78 s vs 1.34 s — with one graph the encoder's output buffers *are* the decoder's input buffers,
   so the two-model path costs a copy per window and holds a second compiled model's memory).
-  `ParakeetBackend.preferred()` still returns NPU on a Tensor device on purpose: this branch is the
-  NPU experiment. If the NPU is to be the shipping default, the next step is proving the hybrid's
-  decoder overhead is not just measurement noise, and that the encoder win grows on long episodes.
+  `ParakeetBackend.preferred()` therefore returns CPU on every device, and the G6 graph is not part of
+  an install: the NPU stays as plumbing (`-WithNpu` pushes the graph, `ParakeetBackend.NPU` pins a
+  pass) for a later attempt. The next step for it would be proving the hybrid's decoder overhead is
+  not measurement noise, and that the encoder win grows on long episodes.
 
 The mel front end is the one cost no backend changes: 2-3.5 s per 33.6 s clip on the CPU, ~7% of real
 time, and it is the largest single item for the CPU pass after the model itself.

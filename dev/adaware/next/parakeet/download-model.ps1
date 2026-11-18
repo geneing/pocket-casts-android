@@ -1,17 +1,15 @@
 # Downloads the Parakeet files the app runs into dev/adaware/next/parakeet/model/.
 #
-# The app never bundles the model: it looks for three files of exact sizes at
+# The app never bundles the model: it looks for two files of exact sizes at
 #   <noBackupFilesDir>/parakeet-model/parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite
-#   <noBackupFilesDir>/parakeet-model/parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite
 #   <noBackupFilesDir>/parakeet-model/tokenizer.json
 # and treats any other size as absent. This script produces those files locally;
 # install-model.ps1 pushes them to a device. Keep the names and byte counts in step with
-# ParakeetModel.GRAPH, ParakeetModel.NPU_GRAPH and ParakeetModel.TOKENIZER.
+# ParakeetModel.GRAPH and ParakeetModel.TOKENIZER.
 #
-# Two graphs, because one cannot serve all three accelerators: the i8 export runs on the CPU and GPU
-# of any device, while the G6 export is AOT-compiled for the Pixel 11's NPU and refuses to run
-# anywhere else. The tokenizer sits beside them because a .tflite graph stops at token ids, unlike the
-# .litertlm bundle this replaces.
+# The portable i8 graph is what every pass uses: it is the fastest of the three accelerators measured
+# on the Pixel 11. -WithNpu also fetches the Tensor G6 graph, which is only asked for by a pass pinned
+# to the NPU and is not part of a normal install.
 #
 # Every download is resumable: curl writes to <name>.part and the bytes already on disk are kept if
 # the connection drops, so re-running picks up where it stopped. Only a file of exactly the right
@@ -19,13 +17,16 @@
 #
 # Example:
 #   .\dev\adaware\next\parakeet\download-model.ps1
-#   .\dev\adaware\next\parakeet\download-model.ps1 -Names tokenizer.json
+#   .\dev\adaware\next\parakeet\download-model.ps1 -WithNpu
 #   .\dev\adaware\next\parakeet\download-model.ps1 -Destination D:\models
 
 [CmdletBinding()]
 param(
     # Directory the files are written to. Created when it does not exist.
     [string]$Destination = (Join-Path $PSScriptRoot "model"),
+
+    # Also fetch the Tensor G6 graph, needed only for a pass pinned to the NPU.
+    [switch]$WithNpu,
 
     # Only fetch the named files, e.g. "tokenizer.json" or the G6 graph.
     [string[]]$Names
@@ -34,31 +35,34 @@ param(
 # curl's exit codes are checked by hand below; with "Stop" a retried transfer would still throw.
 $ErrorActionPreference = "Continue"
 
-# Mirrors ParakeetModel in the app: two graphs and one tokenizer, each with an exact size.
+# Mirrors ParakeetModel in the app: one graph, one tokenizer, and one optional NPU graph.
 $graphFile = "parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite"
 $npuGraphFile = "parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite"
 $tokenizerFile = "tokenizer.json"
 
 $files = @(
     @{
-        Name = $npuGraphFile
-        Bytes = [long]1303768096
-        Url = "https://huggingface.co/litert-community/parakeet-tdt-0.6b-v3/resolve/main/$npuGraphFile"
+        Name = $tokenizerFile
+        Bytes = [long]1159960
+        Url = "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/resolve/main/$tokenizerFile"
     },
     @{
         Name = $graphFile
         Bytes = [long]614261072
         Url = "https://huggingface.co/litert-community/parakeet-tdt-0.6b-v3/resolve/main/$graphFile"
-    },
-    @{
-        Name = $tokenizerFile
-        Bytes = [long]1159960
-        Url = "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3/resolve/main/$tokenizerFile"
     }
 )
+if ($WithNpu) {
+    $files += @{
+        Name = $npuGraphFile
+        Bytes = [long]1303768096
+        Url = "https://huggingface.co/litert-community/parakeet-tdt-0.6b-v3/resolve/main/$npuGraphFile"
+    }
+}
 if ($Names) {
+    $known = @($graphFile, $npuGraphFile, $tokenizerFile)
     $files = @($files | Where-Object { $Names -contains $_.Name })
-    if (-not $files) { throw "-Names must contain at least one of: $((@($npuGraphFile, $graphFile, $tokenizerFile)) -join ', ')" }
+    if (-not $files) { throw "-Names must contain at least one of: $($known -join ', ')" }
 }
 
 function Get-Size {

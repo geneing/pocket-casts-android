@@ -124,10 +124,17 @@ class ParakeetModelTest {
         assertEquals(614_261_072L, ParakeetModel.EXPECTED_BYTES)
         assertEquals("parakeet", ParakeetModel.ENGINE_TAG)
         assertTrue(ParakeetModel.URL.endsWith("/${ParakeetModel.FILE_NAME}"))
+    }
+
+    @Test
+    fun `the default pass runs on the portable graph and asks for nothing else`() {
+        assertEquals(ParakeetBackend.CPU, ParakeetBackend.preferred())
         assertEquals(
             listOf("parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite", "tokenizer.json"),
-            ParakeetModel.assets(ParakeetBackend.CPU).map { it.name },
+            ParakeetModel.assets(ParakeetBackend.preferred()).map { it.name },
         )
+        // The NPU graph is plumbing for a later experiment, not part of an install: only a pass pinned
+        // to the NPU asks for it.
         assertEquals(
             listOf("parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite", "tokenizer.json"),
             ParakeetModel.assets(ParakeetBackend.NPU).map { it.name },
@@ -136,7 +143,7 @@ class ParakeetModelTest {
 
     @Test
     fun `the version names the engine, the model, the runtime and the cue rules`() {
-        assertEquals("parakeet-tdt-0.6b-v3/i8+g6-stateful/tflite-2.3.2/cues1", ParakeetModel.version)
+        assertEquals("parakeet-tdt-0.6b-v3/i8-stateful/tflite-2.3.2/cues1", ParakeetModel.version)
         // An analysis is recognised as on-device by this prefix, so the engine tag has to stay at the
         // front of the stamped string.
         assertTrue(ParakeetModel.version.startsWith(ParakeetModel.ENGINE_TAG))

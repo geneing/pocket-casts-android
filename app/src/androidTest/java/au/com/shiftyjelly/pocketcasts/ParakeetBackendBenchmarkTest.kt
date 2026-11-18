@@ -24,11 +24,14 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 /**
- * Runs the real pipeline on the phone once per accelerator and reports how fast each one is.
+ * Runs the real pipeline on the phone once per installed accelerator and reports how fast each one is.
  *
- * This is the measurement the LiteRT port exists for. The three backends run the same graph, the
- * same mel front end and the same decoder; only the accelerator differs, so the `rtf` each pass logs
- * is a like-for-like comparison. Two numbers come out of every pass:
+ * This is the measurement the LiteRT port exists for. The backends run the same mel front end, the
+ * same decoder and the same word merging; only the accelerator differs, so the `rtf` each pass logs is
+ * a like-for-like comparison. A backend whose graph is not installed is skipped, which is why the NPU
+ * only appears after its graph has been pushed with `install-model.ps1 -WithNpu`.
+ *
+ * Two numbers come out of every pass:
  *
  * - `rtf` — audio time over wall time for the whole pass, including the CPU-only mel front end and
  *   the cue bookkeeping.
@@ -71,8 +74,13 @@ class ParakeetBackendBenchmarkTest {
         Log.i(TAG, "Google Tensor NPU supported: ${NpuCompatibilityChecker.GoogleTensor.isDeviceSupported()}")
         Log.i(TAG, "SoC ${android.os.Build.SOC_MODEL}, ${clipMs}ms of audio, ${model.file().length()} byte graph")
 
+        // Only the backends whose graph is on the device: the NPU graph is not part of a normal
+        // install (a CPU pass is the default), so pushing it is what adds the NPU row here.
+        val backends = ParakeetBackend.entries.filter { model.isPresent(it) }
+        Log.i(TAG, "Measuring ${backends.map { it.label }}; skipped ${(ParakeetBackend.entries - backends.toSet()).map { it.label }}")
+
         val results = mutableMapOf<ParakeetBackend, TranscriptResult>()
-        for (backend in ParakeetBackend.entries) {
+        for (backend in backends) {
             val transcriber = ParakeetEpisodeTranscriber(context = context, model = model).apply {
                 this.backend = backend
             }

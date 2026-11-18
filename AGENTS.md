@@ -308,31 +308,34 @@ detection or navigation: its cue times do not match the audio and it is missing 
 - Engine: LiteRT, `com.google.ai.edge.litert:litert:2.3.2` with `litert-gpu` and
   `litert-npu-runtime-google-tensor`. MediaPipe (`tasks-audio`) is gone: its audio transcriber loads
   the `.litertlm` bundle on the CPU only, so it can never reach the phone's NPU.
-- Model: two files in `noBackupFilesDir/parakeet-model`, never bundled in the APK.
-  - `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite`, exactly 1 303 768 096 bytes
-    (~1.21 GiB), AOT-compiled for the Tensor G6 NPU and still runnable on CPU/GPU.
+- Model: two required files in `noBackupFilesDir/parakeet-model`, never bundled in the APK.
+  - `parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite`, exactly 614 261 072 bytes (~586 MiB): the portable
+    export every pass runs, on the CPU.
   - `tokenizer.json`, 1 159 960 bytes: a `.tflite` graph stops at token ids, so the 8 192-piece BPE
     table has to sit beside it.
   Both are downloaded on demand (unmetered only) into `noBackupFilesDir/parakeet-model`, and a file
   of any other size counts as absent, so a truncated copy falls back to the download instead of
   failing inside the interpreter.
-- `_stateful_` matters: the stateless G6 export (`…_f32_Google_Tensor_G6.tflite`) has only `encode`
-  and `decode`, so the decoder stops when its stateless token slots fill and loses the tail of every
-  window. The stateful export adds `decode_1`, which the app's TDT loop switches to.
+- NPU: kept as plumbing, not installed. `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite`
+  (1 303 768 096 bytes) is AOT-compiled for the Pixel 11's NPU and is only asked for by a pass pinned
+  to `ParakeetBackend.NPU`; push it with `install-model.ps1 -WithNpu`. Its compiled ops are a
+  `DISPATCH_OP` only the Tensor dispatch library executes, so it cannot stand in for the portable
+  graph on CPU or GPU. If it is picked up again, the `_stateful_` export is required: the stateless
+  G6 export has no `decode_1`, so the decoder stops when its stateless token slots fill and loses the
+  tail of every window.
 - Licence: the model is NVIDIA's under CC-BY-4.0 (LiteRT is Apache-2.0). CC-BY-4.0 requires visible
   attribution to NVIDIA wherever the app is distributed, and the licences screen is built from the
   Gradle dependency graph, so it will never list the model — the note a release checklist has to
   find is in `dev/adaware/next/parakeet/README.md`.
-- Backends: `ParakeetBackend` picks the accelerator. `NPU` on a Google Tensor device, `CPU`
-  everywhere else (and as the fallback a partially delegated NPU graph needs), and `GPU` only when a
-  test pins it — the TDT decoder is dozens of single-token invocations per window, so per-step GPU
-  dispatch latency usually loses. On the NPU only `encode` runs on the NPU: `decode` is 60-90
-  sequential single-token runs, and per-token NPU dispatch measured 2.9x the CPU's, so
-  `ParakeetRecognizer` opens the portable graph on the CPU for that half (a quarter-megabyte copy per
-  window). `ParakeetEpisodeTranscriber.backend` is the knob. Measured on a Pixel 11 over a 33.6 s
-  clip: CPU `rtf` 5.06, NPU (hybrid) 2.97, GPU 0.47 — the NPU encoder is 2x the CPU's, but the
-  decoder and the mel front end decide the pass, so pure CPU was still fastest end-to-end. The whole
-  table and how to reproduce it are in `dev/adaware/next/parakeet/README.md`.
+- Backends: `ParakeetBackend` picks the accelerator and the default is **CPU**, on every device
+  including Google Tensor: the portable graph on the CPU measured fastest end to end (rtf 5.06
+  against the NPU's 2.97 and the GPU's 0.47 on a 33.6 s clip). `GPU` is only run when a test pins it —
+  the TDT decoder is dozens of single-token invocations per window, so per-step GPU dispatch latency
+  loses, and its shader compile costs ~50 s on the first run. `NPU` is plumbing kept for later: on it
+  only `encode` goes to the NPU (the decoder's per-token dispatch measured 2.9x the CPU's, so
+  `ParakeetRecognizer` opens the portable graph on the CPU for that half and copies a quarter of a
+  megabyte across per window). `ParakeetEpisodeTranscriber.backend` is the knob; the whole table and
+  how to reproduce it are in `dev/adaware/next/parakeet/README.md`.
 - The APK is built with `packaging.jniLibs.useLegacyPackaging = true`, because the Google Tensor
   dispatch library is looked up by name in `nativeLibraryDir`; with the default (`extractNativeLibs
   = false`) the environment logs "NPU accelerator could not be loaded and registered" and every NPU
