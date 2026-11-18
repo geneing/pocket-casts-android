@@ -71,9 +71,7 @@ class LocalTranscriptStore @Inject constructor(
     suspend fun saveProgress(episodeUuid: String, cues: List<TranscriptCue>) {
         fileLock.withLock {
             withContext(Dispatchers.IO) {
-                val target = file(episodeUuid)
-                target.parentFile?.mkdirs()
-                target.writeText(toVtt(cues))
+                writeAtomically(file(episodeUuid), toVtt(cues))
                 transcriptDao.upsert(
                     Transcript(
                         episodeUuid = episodeUuid,
@@ -86,6 +84,27 @@ class LocalTranscriptStore @Inject constructor(
             }
         }
         _updates.tryEmit(episodeUuid)
+    }
+
+    /**
+     * Writes [content] to [target] through a sibling temporary file, then renames it into place.
+     *
+     * Recognition rewrites the whole transcript after every completed line (every few seconds) while
+     * the transcript tab is reading the same file. Writing in place truncates it first, and a reader
+     * that opens the file in that window parses a half-written cue and throws — the tab then shows
+     * "no transcript" for a transcript that exists, permanently for a finished episode because
+     * nothing rewrites the file again. A rename inside one directory is atomic, so a reader sees
+     * either the previous transcript or the new one, never a torn one.
+     */
+    private fun writeAtomically(target: File, content: String) {
+        target.parentFile?.mkdirs()
+        val temporary = File(target.parentFile, "${target.name}.tmp")
+        temporary.writeText(content)
+        if (temporary.renameTo(target)) return
+        // renameTo replaces an existing file on Android's filesystems; this path is for the odd one
+        // that refuses, and keeps the same guarantee by copying before removing the temporary.
+        temporary.copyTo(target, overwrite = true)
+        temporary.delete()
     }
 
     /**
