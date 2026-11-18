@@ -19,9 +19,10 @@ abstract class AdAwareModule {
     abstract fun provideAdSegmentManager(adSegmentManagerImpl: AdSegmentManagerImpl): AdSegmentManager
 
     /**
-     * The only speech recognizer: Parakeet TDT 0.6B v3 on MediaPipe's LiteRT-LM audio transcriber,
-     * with the 586 MiB bundle installed on device or downloaded on Wi-Fi. One multilingual bundle
-     * covers every allowed language, so there is nothing per-language to bind.
+     * The only speech recognizer: Parakeet TDT 0.6B v3 on LiteRT, on the Tensor G6's NPU when the
+     * phone has one and on the CPU otherwise, with the graph and tokenizer installed on device or
+     * downloaded on Wi-Fi. One multilingual graph covers every allowed language, so there is nothing
+     * per-language to bind.
      */
     @Binds
     @Singleton

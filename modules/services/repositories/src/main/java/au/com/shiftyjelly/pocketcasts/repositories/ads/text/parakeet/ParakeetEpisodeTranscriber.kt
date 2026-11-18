@@ -13,11 +13,13 @@ import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptRequest
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptResult
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptSource
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.downloadAudioStream
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.ParakeetBackend
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.ParakeetMel
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.ParakeetRecognizer
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.ParakeetTokenizer
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.ParakeetWindowBuffer
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.ParakeetWords
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
-import com.google.mediapipe.tasks.audio.audiotranscriber.AudioTranscriber
-import com.google.mediapipe.tasks.audio.audiotranscriber.AudioTranscriberResult
-import com.google.mediapipe.tasks.core.BaseOptions
-import com.google.mediapipe.tasks.core.Delegate
 import dagger.hilt.android.qualifiers.ApplicationContext
 import java.io.File
 import javax.inject.Inject
@@ -35,17 +37,19 @@ import okhttp3.OkHttpClient
 import timber.log.Timber
 
 /**
- * On-device transcription through MediaPipe's audio transcriber running Parakeet TDT 0.6B v3.
+ * On-device transcription of Parakeet TDT 0.6B v3 through LiteRT.
  *
- * One multilingual bundle replaces the previous engine's per-language models, so there is exactly
- * one transcriber per pass and no language-specific loading: the episode's language only decides
- * whether the pass runs at all. The bundle is expected to be on the device; a download is the
- * fallback for when it is missing, and it is refused on a metered network.
+ * One multilingual graph replaces the previous engine's per-language models, so there is exactly one
+ * recogniser per pass and no language-specific loading: the episode's language only decides whether
+ * the pass runs at all. The graph and its tokenizer are expected to be on the device; a download is
+ * the fallback for when they are missing, and it is refused on a metered network.
  *
- * The audio arrives already mono at a constant 16 kHz from [AudioFeed], which is what lets a single
- * stateful session be created with one fixed rate and never be restarted. Segments come back with
- * start and end times relative to the first sample fed, so a resumed pass adds its origin once and
- * reports episode time from then on.
+ * Parakeet is not a streaming model: one graph run covers a fixed 5 s of audio, so the pass slices
+ * the episode into 5 s windows that step forward 3 s at a time. The 2 s overlap is what lets
+ * [ParakeetWords] settle the seam; without it a word spoken across a boundary would be cut in two.
+ * The audio arrives already mono at a constant 16 kHz from [AudioFeed], which is the rate the mel
+ * front end expects, and every window's words are reported in the pass's clock, so a resumed pass
+ * adds its origin once and reports episode time from then on.
  *
  * Everything the engine needs from the rest of the app arrives in the [TranscriptRequest]: no
  * database lookups happen here, which is what lets a worker, a benchmark or a test run a pass with
@@ -58,7 +62,13 @@ class ParakeetEpisodeTranscriber @Inject constructor(
 ) : EpisodeTranscriber {
 
     /**
-     * The analysis identity: the engine, the exact bundle and the cue rules, all in one string that
+     * Which hardware the recogniser runs on. The preferred backend by default; public so the device
+     * benchmark can pin each of the three and measure the same pipeline.
+     */
+    var backend: ParakeetBackend = ParakeetBackend.preferred()
+
+    /**
+     * The analysis identity: the engine, the exact graph and the cue rules, all in one string that
      * [ParakeetModel] owns. One model covers every allowed language, so there is no per-language tag
      * to fold in; any change invalidates every stored transcript, which is the point.
      */
@@ -66,13 +76,12 @@ class ParakeetEpisodeTranscriber @Inject constructor(
 
     /**
      * The client for the rare streamed-episode pass. The model owns the downloads client and does
-     * not expose it, and a streamed episode is one plain GET of one file per pass, so a client of
-     * this singleton's own is cheaper than widening the injected graph for that path.
+     * not expose it, so this one is only ever used for the audio file itself.
      */
     private val httpClient by lazy { OkHttpClient() }
 
     /**
-     * API 24 is the AAR's declared floor, and the app installs on that floor too, so the runtime
+     * LiteRT declares API 24 as its floor, and the app installs on that floor too, so the runtime
      * gate agrees with the manifest instead of asking for more than the platform the app ships on.
      */
     override fun isAvailable(): Boolean = Build.VERSION.SDK_INT >= Build.VERSION_CODES.N
@@ -80,9 +89,9 @@ class ParakeetEpisodeTranscriber @Inject constructor(
     override fun availability(podcastLanguage: String?): TranscriptAvailability {
         if (!isAvailable()) return TranscriptAvailability.EngineUnavailable
         if (parakeetLanguage(podcastLanguage) == null) return TranscriptAvailability.UnsupportedLanguage
-        // A presence check is one file lookup; it is what keeps a private build with the bundle
+        // A presence check is two file lookups; it is what keeps a private build with the files
         // already pushed from ever touching the network.
-        if (model.isPresent()) return TranscriptAvailability.Ready
+        if (model.isPresent(backend)) return TranscriptAvailability.Ready
         return if (model.canDownload()) {
             TranscriptAvailability.Ready
         } else {
@@ -130,7 +139,7 @@ class ParakeetEpisodeTranscriber @Inject constructor(
             try {
                 // One presence check happens inside ensureDownloaded before any request, so an
                 // installed model never costs a byte of traffic.
-                val download = model.ensureDownloaded(onModelProgress)
+                val download = model.ensureDownloaded(backend, onModelProgress)
                 if (download is ModelDownload.NeedsUnmeteredNetwork) {
                     // The "unmetered" wording is what makes OnDeviceTranscriptGenerator defer the
                     // episode instead of retrying it: the download is not a failure, it is a wait.
@@ -155,7 +164,7 @@ class ParakeetEpisodeTranscriber @Inject constructor(
             } catch (e: Exception) {
                 LogBuffer.e(ParakeetStats.TAG, e, "Parakeet could not transcribe ${request.episodeUuid}")
                 TranscriptResult.Failed(
-                    "parakeet failed for $language at ${model.file().absolutePath}: " +
+                    "parakeet failed for $language at ${model.file(backend).absolutePath}: " +
                         (e.message ?: e.javaClass.simpleName),
                 )
             }
@@ -163,12 +172,12 @@ class ParakeetEpisodeTranscriber @Inject constructor(
     }
 
     /**
-     * Runs one transcriber session over [file].
+     * Runs one pass over [file], a 5 s window at a time.
      *
-     * The session is created once per pass, at the one sample rate the feed produces, and is fed one
-     * chunk at a time; nothing restarts it mid-episode. Segment times are therefore relative to the
-     * first sample fed — which is [AudioFeed.Result.originMs] in the container, not the resume point
-     * — and the cue conversion adds that origin exactly once.
+     * The recogniser, the mel front end and the tokenizer are created once per pass: opening the
+     * graph is the slow part (a second or more on a cold process) and redoing it per window would
+     * dominate everything else. Window words arrive in pass time, which is what the cue conversion
+     * expects; [ParakeetWords] only releases a word once a later window has started after it.
      */
     private suspend fun transcribeAudio(
         request: TranscriptRequest,
@@ -182,39 +191,37 @@ class ParakeetEpisodeTranscriber @Inject constructor(
         val isActive = { job?.isActive == true && SystemClock.elapsedRealtime() < deadlineAt }
 
         /**
-         * Segments keyed by their start time. Which segments a call returns depends on the bundle:
-         * a cumulative result re-reports everything it knows (same start, more text), an
-         * incremental one only reports what is new. Keying on the start makes both converge on the
-         * same map — a re-reported segment replaces its earlier text instead of being stored twice
-         * — and the key is also what keeps a segment's debug line from being logged repeatedly.
-         *
-         * Everything here runs on the calling coroutine: the feed, the transcribe calls and the
-         * snapshots, so no synchronisation is needed.
+         * Final words keyed by their start time. Which words a window reports depends on how much
+         * audio it was given; keying on the start makes a word that two windows both recognise one
+         * entry instead of two, and it is the map the cue conversion reads.
          */
         val segments = LinkedHashMap<Long, RawSegment>()
-        val finalised = HashSet<Long>()
         val passStartedAt = SystemClock.elapsedRealtime()
         var originMs = 0L
         var fedAudioMs = 0L
-        var modelLoadMs = 0L
         var failure: Throwable? = null
         var lastPublishAt = 0L
         var lastProgressAt = 0L
+        var melMs = 0L
+        var encodeMs = 0L
+        var decodeMs = 0L
+        var windows = 0
+        var reportedFirstWindow = false
 
         val progress = Channel<List<TranscriptCue>>(Channel.CONFLATED)
 
         /**
-         * The segments as cues in the episode timeline. [ParakeetCues] adds [originMs] and clamps to
+         * The words as cues in the episode timeline. [ParakeetCues] adds [originMs] and clamps to
          * the episode, so a resumed pass reports episode time even though it started at a keyframe
          * before [TranscriptRequest.startMs].
          */
         fun snapshotCues(): List<TranscriptCue> = ParakeetCues.toCues(segments.values.toList(), originMs, request.durationMs)
 
         /**
-         * One line every [PROGRESS_LOG_INTERVAL_MS] of wall time, never more: the pass calls into
-         * the recognizer for every chunk, and without the throttle this would bury every other log
-         * line. With it, a stall shows up as a gap between two progress lines while the audio clock
-         * is still moving.
+         * One line every [PROGRESS_LOG_INTERVAL_MS] of wall time, never more: a pass runs dozens of
+         * graph runs per minute, and without the throttle this would bury every other log line.
+         * With it, a stall shows up as a gap between two progress lines while the audio clock is
+         * still moving.
          */
         fun logProgress(now: Long) {
             if (now - lastProgressAt < PROGRESS_LOG_INTERVAL_MS) return
@@ -233,9 +240,9 @@ class ParakeetEpisodeTranscriber @Inject constructor(
 
         /**
          * Publishes the transcript so far, at most every [PUBLISH_INTERVAL_MS]. Rebuilding the cue
-         * list and writing it to the store costs far more than a chunk of audio, and detection
+         * list and writing it to the store costs far more than a window of audio, and detection
          * batches its own work by cues and minutes, so a finer interval would only spend CPU the
-         * recognizer needs.
+         * recogniser needs.
          */
         fun publish() {
             val now = SystemClock.elapsedRealtime()
@@ -245,89 +252,78 @@ class ParakeetEpisodeTranscriber @Inject constructor(
             logProgress(now)
         }
 
-        /** Collects one call's segments into [segments] and logs the ones that just became final. */
-        fun addSegments(result: AudioTranscriberResult?) {
-            result ?: return
-            for (segment in result.segments()) {
-                // MediaPipe's Segment accessors are plain methods, not getters, so none of these is
-                // a Kotlin property except isFinal.
-                val text = segment.transcript()?.trim().orEmpty()
-                if (text.isEmpty()) continue
-                val fromMs = segment.fromTimestampMs()
-                val raw = RawSegment(
-                    text = text,
-                    startMs = fromMs,
-                    endMs = segment.toTimestampMs(),
-                    isFinal = segment.isFinal,
-                )
-                segments[fromMs] = raw
-                if (raw.isFinal && finalised.add(fromMs)) {
-                    Timber.tag(ParakeetStats.TAG).d(
-                        "[%d..%d] %s",
-                        raw.startMs,
-                        raw.endMs,
-                        raw.text.take(SEGMENT_LOG_CHARS),
-                    )
-                }
-            }
-        }
+        val mel = ParakeetMel()
+        val tokenizer = ParakeetTokenizer.parse(model.tokenizerFile().readText())
+        val recognizer = ParakeetRecognizer(
+            context = context,
+            encodeFile = model.file(backend),
+            // The NPU graph cannot decode: its compiled ops run nowhere else, and its per-token
+            // dispatch is slower than the CPU for the decoder's tiny sequential steps.
+            decodeFile = if (backend == ParakeetBackend.NPU) model.file(ParakeetBackend.CPU) else model.file(backend),
+            backend = backend,
+        )
+        val words = ParakeetWords(tokenizer)
+        LogBuffer.i(
+            ParakeetStats.TAG,
+            "$language start: ${file.name} ${ParakeetStats.duration(request.durationMs)} " +
+                "from ${request.startMs}ms on ${backend.label}, graph opened in ${recognizer.loadMs}ms",
+        )
 
-        val transcriber = createTranscriber()
         val feed: AudioFeed.Result
         try {
             coroutineScope {
                 // Persisting a cue is milliseconds of file IO; handing it to its own coroutine keeps
-                // the transcriber fed while the transcript and its queue rows are written.
+                // the recogniser fed while the transcript and its queue rows are written.
                 val writer = launch(Dispatchers.IO) {
                     for (partial in progress) onPartialCues(partial)
                 }
                 try {
-                    // MediaPipe compiles the bundle into its cache directory on first use, so this
-                    // is the slow part of the first pass on a device and worth its own number. It is
-                    // near zero on later passes, when the compiled artifact is already cached.
-                    val loadStartedAt = SystemClock.elapsedRealtime()
-                    transcriber.prewarm()
-                    modelLoadMs = SystemClock.elapsedRealtime() - loadStartedAt
-                    LogBuffer.i(
-                        ParakeetStats.TAG,
-                        "$language start: ${file.name} ${ParakeetStats.duration(request.durationMs)} " +
-                            "from ${request.startMs}ms, engine warmed in ${modelLoadMs}ms",
-                    )
-                    feed = AudioFeed.decode(
-                        file = file,
-                        startPositionMs = request.startMs,
-                        isActive = isActive,
-                        onOrigin = { origin -> originMs = origin },
-                    ) { samples, sampleRate, positionMs ->
-                        fedAudioMs = maxOf(fedAudioMs, positionMs + samples.size * 1000L / sampleRate)
+                    val buffer = ParakeetWindowBuffer { startMs, samples ->
                         if (failure == null) {
-                            // One call per chunk, as the task expects; interim results are off, so
-                            // everything it returns is a segment that can already be stored. The
-                            // second argument is endOfStream (a Java method, so positional): false
-                            // here because the pass ends with finishStream() below.
                             try {
-                                addSegments(transcriber.transcribe(samples, false))
+                                val melStartedAt = SystemClock.elapsedRealtime()
+                                val features = mel.process(samples)
+                                melMs += SystemClock.elapsedRealtime() - melStartedAt
+                                if (!reportedFirstWindow) {
+                                    reportedFirstWindow = true
+                                    Timber.tag(ParakeetStats.TAG).d(
+                                        "first window: mel ${features.size} floats " +
+                                            "min=${features.minOrNull()} max=${features.maxOrNull()} " +
+                                            "mean=${features.average()}",
+                                    )
+                                }
+                                val window = recognizer.transcribe(features)
+                                encodeMs += window.encodeMs
+                                decodeMs += window.decodeMs
+                                windows++
+                                for (segment in words.accept(startMs, window.tokens)) {
+                                    segments[segment.startMs] = segment
+                                }
+                                publish()
                             } catch (e: CancellationException) {
                                 throw e
                             } catch (e: Exception) {
                                 failure = e
                             }
-                            publish()
                         }
                     }
-                    // The last chunk can leave a segment open; finishStream flushes it, and the
-                    // flushed segment counts like any other.
-                    try {
-                        addSegments(transcriber.finishStream())
-                    } catch (e: CancellationException) {
-                        throw e
-                    } catch (e: Exception) {
-                        if (failure == null) failure = e
+                    feed = AudioFeed.decode(
+                        file = file,
+                        startPositionMs = request.startMs,
+                        isActive = isActive,
+                        onOrigin = { origin -> originMs = origin },
+                    ) { samples, _, positionMs ->
+                        fedAudioMs = maxOf(fedAudioMs, positionMs + samples.size * 1000L / AudioFeed.TARGET_SAMPLE_RATE)
+                        buffer.accept(samples)
                     }
+                    // The tail of the episode is a window too: it is zero padded to 5 s, and its
+                    // words are the ones no later window can confirm for us.
+                    buffer.finish()
+                    for (segment in words.finish()) segments[segment.startMs] = segment
                 } finally {
                     // Closing releases the native session; the flush above has already run, so the
-                    // snapshot taken next includes its segments.
-                    runCatching { transcriber.close() }
+                    // snapshot taken next includes its words.
+                    runCatching { recognizer.close() }
                     progress.trySend(snapshotCues())
                     progress.close()
                     writer.join()
@@ -341,7 +337,7 @@ class ParakeetEpisodeTranscriber @Inject constructor(
         val wallMs = SystemClock.elapsedRealtime() - passStartedAt
         val cues = snapshotCues()
         val pass = ParakeetPass(
-            modelLoadMs = modelLoadMs,
+            modelLoadMs = recognizer.loadMs,
             audioMs = feed.audioMs,
             wallMs = wallMs,
             segments = segments.size,
@@ -349,6 +345,11 @@ class ParakeetEpisodeTranscriber @Inject constructor(
             segmentMsMedian = ParakeetStats.median(segments.values.map { it.endMs - it.startMs }),
             modelDownloadMs = (download as? ModelDownload.Downloaded)?.wallMs,
             modelBytes = (download as? ModelDownload.Downloaded)?.bytes,
+            backend = backend.label,
+            windows = windows,
+            melMs = melMs,
+            encodeMs = encodeMs,
+            decodeMs = decodeMs,
         )
         // Logged for a failed pass too: the numbers are the only way to tell a wedged device from a
         // slow one, and a failure is exactly when they are wanted.
@@ -386,50 +387,6 @@ class ParakeetEpisodeTranscriber @Inject constructor(
     }
 
     /**
-     * Opens the bundle, preferring the architecture the bundle itself declares.
-     *
-     * `AUTO` asks MediaPipe to detect the family from the bundle's header, which is the right answer
-     * for the LiteRT-LM Parakeet file this app ships; `OMNI` is the fallback for open-weights
-     * bundles, so one the detection refuses can still run instead of leaving the episode without a
-     * transcript. Which one worked is logged because the two can differ in speed on the same phone.
-     */
-    private fun createTranscriber(): AudioTranscriber {
-        try {
-            return AudioTranscriber.createFromOptions(
-                context,
-                options(AudioTranscriber.ModelArchitecture.AUTO),
-            ).also { LogBuffer.i(ParakeetStats.TAG, "Opened ${model.file().name} with the AUTO architecture") }
-        } catch (e: Exception) {
-            LogBuffer.w(
-                ParakeetStats.TAG,
-                "AUTO architecture could not open ${model.file().name}: ${e.message}; retrying with OMNI",
-            )
-        }
-        return AudioTranscriber.createFromOptions(
-            context,
-            options(AudioTranscriber.ModelArchitecture.OMNI),
-        ).also { LogBuffer.i(ParakeetStats.TAG, "Opened ${model.file().name} with the OMNI fallback architecture") }
-    }
-
-    /**
-     * One set of task options. The sample rate is the feed's constant 16 kHz because the session is
-     * created once and keeps decoder state: it must never be asked to reinterpret a buffer at a
-     * rate it was not opened with.
-     */
-    private fun options(architecture: AudioTranscriber.ModelArchitecture): AudioTranscriber.AudioTranscriberOptions = AudioTranscriber.AudioTranscriberOptions.builder()
-        .setBaseOptions(
-            BaseOptions.builder()
-                .setModelAssetPath(model.file().absolutePath)
-                .setDelegate(Delegate.CPU)
-                .build(),
-        )
-        .setSampleRateHz(AudioFeed.TARGET_SAMPLE_RATE)
-        .setEnableInterimResults(false)
-        .setModelArchitecture(architecture)
-        .setCacheDir(model.cacheDirectory().absolutePath)
-        .build()
-
-    /**
      * Fetches a streamed episode into the cache so it can be decoded like a download. The file is
      * deleted after the pass; [STALE_STREAM_MS] clears anything a killed process left behind.
      */
@@ -454,7 +411,7 @@ class ParakeetEpisodeTranscriber @Inject constructor(
         return file
     }
 
-    private fun modelMissingMessage(): String = "the parakeet speech model is not installed at ${model.file().absolutePath} and was not downloaded"
+    private fun modelMissingMessage(): String = "the parakeet speech model is not installed at ${model.file(backend).absolutePath} and was not downloaded"
 
     private companion object {
         /** How often the partial cue list is published while a pass runs. */
@@ -467,9 +424,9 @@ class ParakeetEpisodeTranscriber @Inject constructor(
         const val SEGMENT_LOG_CHARS = 96
 
         /**
-         * How long one pass may take, whatever the source. Parakeet measured 2x real time on a short
-         * cold-bundle clip and should do better on a full episode, so this is not a working limit: it
-         * only keeps a wedged pass from holding the worker forever.
+         * How long one pass may take, whatever the source. Parakeet measured 10x real time on a
+         * short clip even on the CPU, so this is not a working limit: it only keeps a wedged pass
+         * from holding the worker forever.
          */
         const val TRANSCRIBE_BUDGET_MS = 45 * 60_000L
 
@@ -484,17 +441,11 @@ class ParakeetEpisodeTranscriber @Inject constructor(
 }
 
 /**
- * The language allowlist, as a pure function of the podcast's declared language.
+ * The podcast language, if this engine covers it.
  *
- * `Podcast.podcastLanguage` is free-form server data (`"en"`, `"es-us"`, `"pt-BR"`, `""`), while
- * Parakeet v3 was trained on a fixed set of European languages. Reducing to the primary subtag is
- * what makes `"es-us"` and `"pt_BR"` match their language.
- *
- * A show that declares nothing gets English: plenty of feeds omit `<language>` entirely, and
- * skipping those would leave their episodes without a transcript for no reason. A show that does
- * declare a language the model was not trained on (Japanese, Chinese, ...) is skipped instead —
- * running the model over audio it does not know would produce confident nonsense, which is worse
- * than leaving the episode without on-device detection.
+ * Parakeet picks the language itself from the audio and reports it in the transcript, but running it
+ * over audio it does not know would produce confident nonsense, which is worse than leaving the
+ * episode without on-device detection.
  */
 internal fun parakeetLanguage(podcastLanguage: String?): String? {
     val normalised = podcastLanguage?.trim()?.lowercase()?.takeIf { it.isNotEmpty() } ?: return ENGLISH_LANGUAGE
@@ -509,6 +460,7 @@ private val PARAKEET_LANGUAGES = setOf(
     "cs",
     "da",
     "nl",
+    "el",
     "en",
     "et",
     "fi",

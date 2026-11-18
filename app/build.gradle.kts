@@ -21,6 +21,15 @@ android {
         multiDexEnabled = true
     }
 
+    packaging {
+        jniLibs {
+            // The Google Tensor NPU runtime is loaded by name out of nativeLibraryDir, so its dispatch
+            // library has to be extracted from the APK instead of mmapped in place. Without this the
+            // environment reports "NPU accelerator could not be loaded and registered".
+            useLegacyPackaging = true
+        }
+    }
+
     sourceSets {
         getByName("androidTest") {
             assets.directories.add("$rootDir/modules/services/model/schemas")
@@ -148,6 +157,7 @@ dependencies {
     androidTestImplementation(libs.androidx.preference.ktx)
     androidTestImplementation(libs.androidx.recyclerview)
     androidTestImplementation(libs.androidx.test.core)
+    androidTestImplementation(libs.litert)
     androidTestImplementation(libs.androidx.test.espresso.core)
     androidTestImplementation(libs.androidx.test.junit.ext)
     androidTestImplementation(libs.androidx.test.rules)

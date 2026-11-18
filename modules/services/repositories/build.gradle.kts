@@ -62,7 +62,12 @@ dependencies {
     implementation(libs.media3.exoplayer.hls)
     api(libs.media3.session)
     implementation(libs.media3.ui)
-    implementation(libs.mediapipe.tasks.audio)
+    // json-simple drags junit 4.10 into the app's runtime classpath, which breaks androidTest's
+    // consistent resolution; the mel front end never touches jlibrosa's WAV/JSON code.
+    implementation(libs.jlibrosa) { exclude(group = "com.googlecode.json-simple") }
+    implementation(libs.litert)
+    implementation(libs.litert.gpu)
+    implementation(libs.litert.npu.google.tensor)
     implementation(libs.play.auth)
     implementation(libs.play.cast)
     implementation(libs.protobuf.javalite)

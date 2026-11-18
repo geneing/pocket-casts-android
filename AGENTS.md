@@ -302,34 +302,60 @@ Use `AnalyticsTracker` service for event tracking. Analytics are integrated with
 ### On-device speech to text (ad skipping)
 
 Ad detection reads only a transcript the app produced on the device with NVIDIA Parakeet TDT 0.6B
-v3, run through MediaPipe's audio transcriber (`com.google.mediapipe:tasks-audio`, CPU only) on a
-LiteRT-LM export. A transcript the show or our servers publish is never used for detection or
-navigation: its cue times do not match the audio and it is missing ad reads.
+v3, run through the LiteRT runtime. A transcript the show or our servers publish is never used for
+detection or navigation: its cue times do not match the audio and it is missing ad reads.
 
-- Model: one bundle, `parakeet_tdt_0.6b_v3_5s_i8_stateful.litertlm`, exactly 614 588 752 bytes
-  (~586 MiB), from the `litert-community/parakeet-tdt-0.6b-v3` Hugging Face repo. Downloaded on
-  demand (unmetered only) into `noBackupFilesDir/parakeet-model`, never bundled: half a gigabyte of
-  weights for a gated feature does not belong in the APK. A file of any other size counts as
-  absent, so a truncated copy falls back to the download instead of failing inside the interpreter.
-- Licence: the model is NVIDIA's under CC-BY-4.0 and MediaPipe is Apache-2.0. CC-BY-4.0 requires
-  visible attribution to NVIDIA wherever the app is distributed, and the licences screen is built
-  from the Gradle dependency graph, so it will never list the model — the note a release checklist
-  has to find is in `dev/adaware/next/parakeet/README.md`.
-- On a device, a private build gets the bundle with `dev/adaware/next/parakeet/install-app.ps1`
-  (builds `:app:assembleDebugProd`, `adb install -r`, then pushes it with `install-model.ps1`;
-  `-SkipBuild`/`-SkipModels` skip either half, and the push is skipped when the device copy is
-  already the right size). MediaPipe compiles the bundle into `noBackupFilesDir/parakeet-cache` on
-  first use; nothing is pushed there and nothing in it is worth backing up.
-- Language: Parakeet covers 25 European languages (bg, hr, cs, da, nl, en, et, fi, fr, de, hu, it,
-  lv, lt, mt, pl, pt, ro, sk, sl, es, sv, ru, uk), chosen from `Podcast.podcastLanguage` by primary
-  subtag (`es-us` -> `es`) and defaulting to English when the podcast declares nothing. Any other
-  language makes the engine unavailable for that episode, which leaves it without on-device
+- Engine: LiteRT, `com.google.ai.edge.litert:litert:2.3.2` with `litert-gpu` and
+  `litert-npu-runtime-google-tensor`. MediaPipe (`tasks-audio`) is gone: its audio transcriber loads
+  the `.litertlm` bundle on the CPU only, so it can never reach the phone's NPU.
+- Model: two files in `noBackupFilesDir/parakeet-model`, never bundled in the APK.
+  - `parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite`, exactly 1 303 768 096 bytes
+    (~1.21 GiB), AOT-compiled for the Tensor G6 NPU and still runnable on CPU/GPU.
+  - `tokenizer.json`, 1 159 960 bytes: a `.tflite` graph stops at token ids, so the 8 192-piece BPE
+    table has to sit beside it.
+  Both are downloaded on demand (unmetered only) into `noBackupFilesDir/parakeet-model`, and a file
+  of any other size counts as absent, so a truncated copy falls back to the download instead of
+  failing inside the interpreter.
+- `_stateful_` matters: the stateless G6 export (`…_f32_Google_Tensor_G6.tflite`) has only `encode`
+  and `decode`, so the decoder stops when its stateless token slots fill and loses the tail of every
+  window. The stateful export adds `decode_1`, which the app's TDT loop switches to.
+- Licence: the model is NVIDIA's under CC-BY-4.0 (LiteRT is Apache-2.0). CC-BY-4.0 requires visible
+  attribution to NVIDIA wherever the app is distributed, and the licences screen is built from the
+  Gradle dependency graph, so it will never list the model — the note a release checklist has to
+  find is in `dev/adaware/next/parakeet/README.md`.
+- Backends: `ParakeetBackend` picks the accelerator. `NPU` on a Google Tensor device, `CPU`
+  everywhere else (and as the fallback a partially delegated NPU graph needs), and `GPU` only when a
+  test pins it — the TDT decoder is dozens of single-token invocations per window, so per-step GPU
+  dispatch latency usually loses. On the NPU only `encode` runs on the NPU: `decode` is 60-90
+  sequential single-token runs, and per-token NPU dispatch measured 2.9x the CPU's, so
+  `ParakeetRecognizer` opens the portable graph on the CPU for that half (a quarter-megabyte copy per
+  window). `ParakeetEpisodeTranscriber.backend` is the knob. Measured on a Pixel 11 over a 33.6 s
+  clip: CPU `rtf` 5.06, NPU (hybrid) 2.97, GPU 0.47 — the NPU encoder is 2x the CPU's, but the
+  decoder and the mel front end decide the pass, so pure CPU was still fastest end-to-end. The whole
+  table and how to reproduce it are in `dev/adaware/next/parakeet/README.md`.
+- The APK is built with `packaging.jniLibs.useLegacyPackaging = true`, because the Google Tensor
+  dispatch library is looked up by name in `nativeLibraryDir`; with the default (`extractNativeLibs
+  = false`) the environment logs "NPU accelerator could not be loaded and registered" and every NPU
+  pass falls back to the CPU.
+- On a device, a private build gets the files with `dev/adaware/next/parakeet/install-app.ps1`
+  (builds `:app:assembleDebugProd`, `adb install -r`, then pushes with `install-model.ps1`;
+  `-SkipBuild`/`-SkipModels` skip either half, and a push is skipped when the device copy is already
+  the right size). There is no cache directory: LiteRT compiles nothing for an AOT-compiled graph.
+- Language: Parakeet covers 25 European languages (bg, hr, cs, da, nl, el, en, et, fi, fr, de, hu,
+  it, lv, lt, mt, pl, pt, ro, sk, sl, es, sv, ru, uk), chosen from `Podcast.podcastLanguage` by
+  primary subtag (`es-us` -> `es`) and defaulting to English when the podcast declares nothing. Any
+  other language makes the engine unavailable for that episode, which leaves it without on-device
   detection instead of falling back to a published transcript.
-- Timestamps: MediaPipe reports segments with a start and an end and no word-level alignment, so
-  cues are sentence-level, built from completed segments and stored as WebVTT through
-  `LocalTranscriptStore`. Nothing else may supply times: no DTW, no energy regions, no constant
-  offset. When cue positions look wrong, read `segment_ms_median` in the pass log before changing
-  anything.
+- Chunks: Parakeet is not a streaming model. One graph run covers 5 s, so a pass slices the episode
+  into 5 s windows that step 3 s (`ParakeetWindowBuffer`); the 2 s overlap is what lets
+  `ParakeetWords` settle a word spoken across a boundary. The mel front end (`ParakeetMel`) is the
+  app's own work now — 0.97 pre-emphasis, 512-point Hann STFT at a 10 ms hop, 128 Slaney bins,
+  natural log, per-feature mean/std — and must stay that way: the graph has no preprocessor.
+- Timestamps: the TDT decoder reports the encoder frame each token starts on (80 ms), so words carry
+  their own start and end and cues are sentence-level, built by `ParakeetCues` and stored as WebVTT
+  through `LocalTranscriptStore`. Nothing else may supply times: no DTW, no energy regions, no
+  constant offset. When cue positions look wrong, read `segment_ms_median`, `encode_ms` and
+  `decode_ms` in the pass log before changing anything.
 - Recognition always runs for a queued episode. Scheduling drops the published transcript rows so
   the transcript tab and tap-to-seek can only read the recognized text. `AdAnalysisQueue.schedule`
   runs from every path that can start an episode: download completion, playback start (which is how
@@ -339,14 +365,14 @@ navigation: its cue times do not match the audio and it is missing ad reads.
   through `UpNextQueueImpl`.
 - The pipeline is two durable queues (`episode_asr_queue`, `ad_detection_queue`) drained by one
   worker each, so several playlist episodes add rows instead of starting several passes. Each pass
-  resumes from the last stored cue: cues are written after every completed segment, and the
+  resumes from the last stored cue: cues are written after every completed window, and the
   detection queue records the end of the last scored cue. Failures and metered-network deferrals
   stay in the row with a retry time, so a process death or a dropped connection does not restart the
   episode.
-- A transcript belongs to the engine and model identity that produced it. A different MediaPipe
-  version or a different bundle invalidates the stored transcript and the ad analysis built from it,
-  so a model swap is followed by a full re-transcription of the library. That is intended: old cues
-  need not agree with the new engine's segments.
+- A transcript belongs to the engine and model identity that produced it. A different LiteRT
+  version, a different graph or a changed cue rule invalidates the stored transcript and the ad
+  analysis built from it, so a model swap is followed by a full re-transcription of the library. That
+  is intended: old cues need not agree with the new engine's words.
 - The queue is durable and serialised, but the work that drains it is one unique chain, so a
   *retrying* head blocks whatever is appended behind it. Work-level backoff is therefore LINEAR at 1
   minute, and the real retry schedule is the row's `next_attempt_at`. Never put exponential backoff
@@ -364,10 +390,13 @@ navigation: its cue times do not match the audio and it is missing ad reads.
   stored cue.
 - Logging: `ParakeetStats` writes the trace under the `ParakeetStt` tag. Progress lines carry
   `chars=`, `at=`, `elapsed=`, `audio=`, `rtf=` and `segments=`; the pass line is
-  `pass: model_load_ms=… audio_ms=… wall_ms=… rtf=… segments=… cues=… segment_ms_median=…`.
-  `rtf` is audio time over wall time, so above 1 is faster than real time. One measured pass over a
-  34 s clip logged `rtf=2.05` with a cold bundle; a full episode should be better because the first
-  call pays for loading. The logged number, not that expectation, is the measurement.
-- Where: `modules/services/repositories/.../repositories/ads/text/parakeet/` for the engine and
-  `dev/adaware/next/parakeet/` for the model scripts (`download-model.ps1`, `install-model.ps1`,
-  `install-app.ps1`) plus the log/RTF field reference in its `README.md`.
+  `pass: model_load_ms=… audio_ms=… wall_ms=… rtf=… segments=… cues=… segment_ms_median=…
+  backend=… windows=… mel_ms=… encode_ms=… decode_ms=… model_rtf=…`. `rtf` is audio time over wall
+  time, so above 1 is faster than real time; `model_rtf` counts only the graph, so the CPU-only mel
+  front end cannot flatter an accelerator. The logged numbers, not an expectation, are the
+  measurement; `app/src/androidTest/.../ParakeetBackendBenchmarkTest.kt` runs all three backends over
+  one clip and logs each.
+- Where: `modules/services/repositories/.../repositories/ads/text/parakeet/` for the engine (the
+  LiteRT part is in its `litert/` subpackage) and `dev/adaware/next/parakeet/` for the model scripts
+  (`download-model.ps1`, `install-model.ps1`, `install-app.ps1`) plus the log/RTF field reference in
+  its `README.md`.

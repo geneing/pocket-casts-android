@@ -6,10 +6,10 @@ import kotlin.math.roundToInt
 /**
  * What one transcription pass measured.
  *
- * Split out of the transcriber so the numbers can be logged and unit-tested without MediaPipe, an
+ * Split out of the transcriber so the numbers can be logged and unit-tested without LiteRT, an
  * audio file or a model. [segmentMsMedian] is the number to read first when cues look wrong: it is
- * how long the engine's own segments are, and therefore how much of the transcript's shape comes
- * from the bundle rather than from the cue rules.
+ * how long the engine's own pieces are — words here, not encoder windows — and therefore how much of
+ * the transcript's shape comes from the recogniser rather than from the cue rules.
  */
 data class ParakeetPass(
     val modelLoadMs: Long,
@@ -20,8 +20,26 @@ data class ParakeetPass(
     val segmentMsMedian: Long,
     val modelDownloadMs: Long? = null,
     val modelBytes: Long? = null,
+    /**
+     * Which accelerator ran the pass. The three are far apart on speed for this model - the TDT
+     * decoder is dozens of single-token invocations per window - so a number without it says
+     * nothing about the device.
+     */
+    val backend: String? = null,
+    /** Windows the encoder ran; each carries 5 s of audio and steps 3 s. */
+    val windows: Int? = null,
+    /** Wall time in the mel front end, the encoder and the TDT decoder, summed over the windows. */
+    val melMs: Long? = null,
+    val encodeMs: Long? = null,
+    val decodeMs: Long? = null,
 ) {
     val rtf: Double get() = ParakeetStats.rtf(audioMs, wallMs)
+
+    /** Audio time over the time the model itself took, without the CPU-only front end. */
+    val modelRtf: Double get() = when {
+        encodeMs == null || decodeMs == null -> 0.0
+        else -> ParakeetStats.rtf(audioMs, encodeMs + decodeMs)
+    }
 }
 
 /** Pure arithmetic and formatting for [ParakeetPass], so the numbers are unit-testable. */
@@ -82,8 +100,8 @@ object ParakeetStats {
     /**
      * One line while a pass runs.
      *
-     * MediaPipe reports segments as callbacks and there is no other way to see that a long pass is
-     * moving: [chars] is how much text has been produced, [atMs] where the newest segment ends,
+     * The recogniser reports words as they become final and there is no other way to see that a long
+     * pass is moving: [chars] is how much text has been produced, [atMs] where the newest word ends,
      * [elapsedMs] how long the pass has been running, [fedAudioMs] how much audio has been handed
      * over, and [segments] how many final segments have arrived. The two clocks side by side turn
      * the line into a live speed reading.
@@ -114,6 +132,14 @@ object ParakeetStats {
         append(" segments=").append(pass.segments)
         append(" cues=").append(pass.cues)
         append(" segment_ms_median=").append(pass.segmentMsMedian)
+        pass.backend?.let { append(" backend=").append(it) }
+        pass.windows?.let { append(" windows=").append(it) }
+        pass.melMs?.let { append(" mel_ms=").append(it) }
+        pass.encodeMs?.let { append(" encode_ms=").append(it) }
+        pass.decodeMs?.let {
+            append(" decode_ms=").append(it)
+            append(" model_rtf=").append(formatRtf(pass.modelRtf))
+        }
         pass.modelDownloadMs?.let { append(" model_download_ms=").append(it) }
         pass.modelBytes?.let { append(" model_bytes=").append(it) }
     }

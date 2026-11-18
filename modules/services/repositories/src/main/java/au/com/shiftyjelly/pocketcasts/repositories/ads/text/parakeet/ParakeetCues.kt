@@ -3,32 +3,32 @@ package au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptCue
 import kotlin.math.roundToLong
 
-/** One segment as MediaPipe reported it, already in the audio clock of the pass. */
+/** One recognised word, already in the audio clock of the pass. */
 internal data class RawSegment(val text: String, val startMs: Long, val endMs: Long, val isFinal: Boolean)
 
 /**
- * Turns MediaPipe's segments into the sentence-level cues that are stored as WebVTT.
+ * Turns recognised words into the sentence-level cues that are stored as WebVTT.
  *
- * The bundle does not report sentences. A measured pass on a phone returns fixed ~1.25 s windows
- * ("Glue", "the sheet to the dark blue", "background."), so a segment boundary is where the
- * decoder's window happened to close, not where a thought ended. Storing one cue per segment would
- * put those arbitrary cuts into the transcript, the classifier prompt and the gap logic, all of
- * which were tuned on sentence-sized cues.
+ * The recogniser does not report sentences. A pass returns words with the frame each one starts on,
+ * so a word boundary is where the decoder emitted a token, not where a thought ended. Storing one cue
+ * per word would put those arbitrary cuts into the transcript, the classifier prompt and the gap
+ * logic, all of which were tuned on sentence-sized cues.
  *
- * A cue is therefore built from the **text**: the final segments are laid end to end, the result is
- * split where a sentence actually ends, and each sentence gets its times from the segments its
- * characters came from. Inside one segment there are no per-character times, so a cut inside a
- * segment is placed proportionally over that segment's own span — the sentence's first and last
- * characters are still the only positions the model gave us, and the result can never leave the
- * audio the segment covers.
+ * A cue is therefore built from the **text**: the final words are laid end to end, the result is
+ * split where a sentence actually ends, and each sentence gets its times from the words its
+ * characters came from. Between two words there is no finer timing than their own boundaries, so a
+ * cut inside a word is placed proportionally over that word's own span — the sentence's first and
+ * last characters are still the only positions the model gave us, and the result can never leave the
+ * audio those words cover.
  *
  * That proportional placement is the one invented number in this class, and it is deliberate: a
- * sentence end inside a 1.25 s window sits where the speaker paused, and cutting at the window
- * boundary instead would move the cue by up to a whole window. It is never used to move a cue
- * across segments, and never without text to justify it.
+ * sentence end inside a two-word span sits where the speaker paused, and cutting at the word
+ * boundary instead would move the cue. It is never used to move a cue across words, and never
+ * without text to justify it.
  *
- * Only final segments are used. A partial segment is rewritten on the next callback, so a cue built
- * from one would move under the transcript and, worse, under an ad analysis that already scored it.
+ * Only final words are used. A word inside a window's overlap is still provisional — the next window
+ * may replace it — so a cue built from one would move under the transcript and, worse, under an ad
+ * analysis that already scored it.
  */
 internal object ParakeetCues {
     /**

@@ -64,6 +64,48 @@ class ParakeetStatsTest {
     }
 
     @Test
+    fun `the backend, the window count and the stage times are on the line when they were measured`() {
+        val pass = ParakeetPass(
+            modelLoadMs = 1_400,
+            audioMs = 60_000,
+            wallMs = 24_000,
+            segments = 120,
+            cues = 12,
+            segmentMsMedian = 480,
+            backend = "npu",
+            windows = 19,
+            melMs = 900,
+            encodeMs = 2_000,
+            decodeMs = 4_000,
+        )
+
+        assertEquals(
+            "pass: model_load_ms=1400 audio_ms=60000 wall_ms=24000 rtf=2.50 segments=120 cues=12 " +
+                "segment_ms_median=480 backend=npu windows=19 mel_ms=900 encode_ms=2000 decode_ms=4000 " +
+                "model_rtf=10.00",
+            ParakeetStats.logLine(pass),
+        )
+    }
+
+    @Test
+    fun `model rtf counts only the graph, so the CPU-only front end cannot flatter an accelerator`() {
+        val pass = ParakeetPass(
+            modelLoadMs = 0,
+            audioMs = 60_000,
+            wallMs = 24_000,
+            segments = 1,
+            cues = 1,
+            segmentMsMedian = 1_000,
+            encodeMs = 2_000,
+            decodeMs = 3_000,
+        )
+
+        assertEquals(12.0, pass.modelRtf, 0.0001)
+        // A pass with no per-stage split reports zero rather than the whole-pass ratio.
+        assertEquals(0.0, pass.copy(encodeMs = null).modelRtf, 0.0)
+    }
+
+    @Test
     fun `the pass exposes the same ratio it logs`() {
         val pass = ParakeetPass(
             modelLoadMs = 0,

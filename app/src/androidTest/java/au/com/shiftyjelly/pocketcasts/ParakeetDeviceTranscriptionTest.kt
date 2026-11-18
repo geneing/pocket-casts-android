@@ -23,11 +23,11 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 /**
- * Runs the real speech engine on the device, over a clip the bundle and the decoder can both handle.
+ * Runs the real speech engine on the device, over a clip the graph and the decoder can both handle.
  *
- * This is the only check that covers what unit tests cannot: that the LiteRT-LM interpreter loads on
- * this ABI, that the pushed bundle is the one the engine expects, that MediaPipe accepts our 16 kHz
- * PCM feed, and how fast it all is. The bundle is installed by
+ * This is the only check that covers what unit tests cannot: that the LiteRT interpreter loads this
+ * graph on this ABI, that the pushed files are the ones the engine expects, that the mel front end
+ * and the 5 s window feed agree with the graph, and how fast it all is. Both files are installed by
  * `dev/adaware/next/parakeet/install-app.ps1` (or downloaded on Wi-Fi by the app itself); the audio
  * clip is copied in by hand, because a usable minute of podcast is too big to keep in the
  * repository:
@@ -52,17 +52,19 @@ class ParakeetDeviceTranscriptionTest {
         assumeTrue("Push a $FIXTURE_NAME clip onto the device first, see the class comment", clip.isFile)
 
         val model = ParakeetModel(context, Lazy { OkHttpClient() })
-        // The real file, not a presence check: a wrong path or a truncated bundle is exactly the
+        // The real files, not a presence check: a wrong path or a truncated download is exactly the
         // failure this test exists to catch, and the message has to name where it looked and how
         // many bytes it found.
-        val bundle = model.file()
-        assertEquals("The bundle belongs at ${bundle.absolutePath}", ParakeetModel.FILE_NAME, bundle.name)
+        val graph = model.file()
+        assertEquals("The graph belongs at ${graph.absolutePath}", ParakeetModel.FILE_NAME, graph.name)
         assertEquals(
-            "The bundle at ${bundle.absolutePath} is not the whole ${ParakeetModel.EXPECTED_BYTES} bytes",
+            "The graph at ${graph.absolutePath} is not the whole ${ParakeetModel.EXPECTED_BYTES} bytes",
             ParakeetModel.EXPECTED_BYTES,
-            bundle.length(),
+            graph.length(),
         )
-        Log.i(TAG, "Bundle ${bundle.name}: ${bundle.length()} bytes at ${bundle.absolutePath}")
+        val tokenizer = model.tokenizerFile()
+        assumeTrue("Push ${tokenizer.name} beside the graph first", tokenizer.isFile)
+        Log.i(TAG, "Graph ${graph.name}: ${graph.length()} bytes; tokenizer ${tokenizer.length()} bytes")
 
         val transcriber = ParakeetEpisodeTranscriber(
             context = context,

@@ -1,27 +1,32 @@
-# Pushes the Parakeet speech bundle onto a device for a private build.
+# Pushes the Parakeet speech files onto a device for a private build.
 #
-# The app never bundles the model: it looks for it at
-#   <noBackupFilesDir>/parakeet-model/parakeet_tdt_0.6b_v3_5s_i8_stateful.litertlm
-# which is /data/user/0/<package>/no_backup/parakeet-model/parakeet_tdt_0.6b_v3_5s_i8_stateful.litertlm
-# for the ".debug" application id. This script writes exactly that file and nothing else; MediaPipe
-# compiles it on first use and keeps the compiled artefacts in no_backup/parakeet-cache itself.
+# The app never bundles the model: it looks for three files at
+#   <noBackupFilesDir>/parakeet-model/parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite
+#   <noBackupFilesDir>/parakeet-model/parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite
+#   <noBackupFilesDir>/parakeet-model/tokenizer.json
+# which is /data/user/0/<package>/no_backup/parakeet-model/ for the ".debug" application id. This
+# script writes exactly those three files and nothing else; LiteRT compiles nothing for the graphs,
+# so there is no cache directory to seed or clear.
 #
 # Re-running the script is cheap: a copy that is already on the device with the right size is
-# skipped, which matters because the bundle is 586 MiB. It is safe to run before the app has ever
-# launched (the app's data directory exists from install time, and this script creates the model
-# directory under it).
+# skipped, which matters because the two graphs are 1.8 GiB together. It is safe to run before the
+# app has ever launched (the app's data directory exists from install time, and this script creates
+# the model directory under it).
 #
 # Example:
 #   .\dev\adaware\next\parakeet\install-model.ps1
-#   .\dev\adaware\next\parakeet\install-model.ps1 -Package au.com.shiftyjelly.pocketcasts.debug -Verbose
+#   .\dev\adaware\next\parakeet\install-model.ps1 -Only tokenizer.json -Verbose
 
 [CmdletBinding()]
 param(
     # Private builds are debugProd, which carries the ".debug" application id suffix.
     [string]$Package = "au.com.shiftyjelly.pocketcasts.debug",
 
-    # Directory holding the bundle, as produced by download-model.ps1.
+    # Directory holding the files, as produced by download-model.ps1.
     [string]$Source = (Join-Path $PSScriptRoot "model"),
+
+    # Limit the push to one file, by name, e.g. "tokenizer.json".
+    [string]$Only,
 
     # Device serial, only needed when more than one device is attached.
     [string]$Serial,
@@ -34,10 +39,18 @@ param(
 # through $LASTEXITCODE instead, so failures still stop the script.
 $ErrorActionPreference = "Continue"
 
-# Mirrors ParakeetModel in the app: one bundle, one exact size, one directory. The app treats a file
-# of any other size as absent, so both the local and the device copy are checked against it.
-$ModelFile = "parakeet_tdt_0.6b_v3_5s_i8_stateful.litertlm"
-$ModelBytes = [long]614588752
+# Mirrors ParakeetModel in the app: three files, each with an exact size, one directory. The app
+# treats a file of any other size as absent, so both the local and the device copy are checked
+# against it. The G6 graph is last because it is the big one.
+$files = @(
+    @{ Name = "tokenizer.json"; Bytes = [long]1159960 },
+    @{ Name = "parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite"; Bytes = [long]614261072 },
+    @{ Name = "parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite"; Bytes = [long]1303768096 }
+)
+if ($Only) {
+    $files = @($files | Where-Object { $_.Name -eq $Only })
+    if (-not $files) { throw "-Only $Only is not one of the files this script pushes." }
+}
 $deviceModelRoot = "no_backup/parakeet-model"
 
 function Invoke-Adb {
@@ -76,16 +89,18 @@ function Get-DeviceSize {
     }
 }
 
-$sourceFile = Join-Path $Source $ModelFile
-if (-not (Test-Path $sourceFile)) {
-    throw "No bundle at $sourceFile. Run download-model.ps1 first, or pass -Source <directory>."
-}
-$sourceSize = (Get-Item -LiteralPath $sourceFile).Length
-if ($sourceSize -ne $ModelBytes) {
-    throw "$sourceFile is $sourceSize bytes, but the app only accepts $ModelBytes. Delete it and re-run download-model.ps1."
+foreach ($file in $files) {
+    $sourceFile = Join-Path $Source $file.Name
+    if (-not (Test-Path $sourceFile)) {
+        throw "No $($file.Name) at $sourceFile. Run download-model.ps1 first, or pass -Source <directory>."
+    }
+    $sourceSize = (Get-Item -LiteralPath $sourceFile).Length
+    if ($sourceSize -ne $file.Bytes) {
+        throw "$sourceFile is $sourceSize bytes, but the app only accepts $($file.Bytes). Delete it and re-run download-model.ps1."
+    }
 }
 
-if (-not (Test-Path $script:Adb)) {
+if (-not (Test-Path $script:Adb) -and -not (Test-Path $Adb)) {
     throw "adb not found at $Adb. Install the Android SDK platform-tools or pass -Adb <path>."
 }
 
@@ -108,48 +123,54 @@ if ($appRoot -notmatch '^/data/') {
 }
 
 Write-Host "Package : $Package"
-Write-Host "Device  : $($appRoot)"
-Write-Host "Source  : $sourceFile"
+Write-Host "Device  : $appRoot"
+Write-Host "Source  : $Source"
 
-$devicePath = "$deviceModelRoot/$ModelFile"
+# Staging goes through /data/local/tmp: adb push cannot write into app-private storage, and run-as
+# cannot read the app's own external files directory, so tmp is the one place both sides can reach.
 $stagingDir = "/data/local/tmp/parakeet-install"
-$stagingFile = "$stagingDir/$ModelFile"
-
 Invoke-RunAs "mkdir -p $deviceModelRoot" | Out-Null
-# A copy left behind by an interrupted run can never be resumed, and the app would only ignore it.
-Invoke-RunAs "rm -f $devicePath.part" | Out-Null
 
-$deviceSize = Get-DeviceSize $devicePath
-if ($deviceSize -eq $ModelBytes) {
-    Write-Host ""
-    Write-Host ("Already on the device: $devicePath ({0:N1} MiB), nothing to push" -f ($ModelBytes / 1MB))
-} else {
+foreach ($file in $files) {
+    $sourceFile = Join-Path $Source $file.Name
+    $devicePath = "$deviceModelRoot/$($file.Name)"
+    $stagingFile = "$stagingDir/$($file.Name)"
+
+    # A copy left behind by an interrupted run can never be resumed, and the app would only ignore it.
+    Invoke-RunAs "rm -f $devicePath.part" | Out-Null
+
+    $deviceSize = Get-DeviceSize $devicePath
+    if ($deviceSize -eq $file.Bytes) {
+        Write-Host ""
+        Write-Host ("Already on the device: $devicePath ({0:N1} MiB), nothing to push" -f ($file.Bytes / 1MB))
+        continue
+    }
     if ($deviceSize -ge 0) {
         Write-Verbose "Device has $deviceSize bytes at $devicePath, replacing it"
     }
 
-    # adb push cannot write into app-private storage, so stage under /data/local/tmp and copy
-    # across with run-as, which runs as the app's own uid.
+    # adb push cannot write into app-private storage, so stage outside and copy across with run-as,
+    # which runs as the app's own uid.
     Invoke-Adb shell "rm -rf $stagingDir" | Out-Null
     Invoke-Adb shell "mkdir -p $stagingDir" | Out-Null
 
     Write-Host ""
-    Write-Host ("Pushing {0:N1} MiB. This takes a while over USB and looks silent in between." -f ($ModelBytes / 1MB))
+    Write-Host ("Pushing {0} ({1:N1} MiB). This takes a while over USB and looks silent in between." -f $file.Name, ($file.Bytes / 1MB))
     Invoke-Adb push $sourceFile $stagingFile | Out-Null
 
     # Copy to ".part" and rename only after the size check, so a half-finished copy is never a file
     # the app might try to load.
     Invoke-RunAs "cp $stagingFile $devicePath.part" | Out-Null
     $copiedSize = Get-DeviceSize "$devicePath.part"
-    if ($copiedSize -ne $ModelBytes) {
-        throw "Copying the bundle failed: device has $copiedSize bytes in $devicePath.part, expected $ModelBytes"
+    if ($copiedSize -ne $file.Bytes) {
+        throw "Copying $($file.Name) failed: device has $copiedSize bytes in $devicePath.part, expected $($file.Bytes)"
     }
     Invoke-RunAs "mv $devicePath.part $devicePath" | Out-Null
     Invoke-Adb shell "rm -rf $stagingDir" | Out-Null
 
     $checkSize = Get-DeviceSize $devicePath
-    if ($checkSize -ne $ModelBytes) {
-        throw "After the move the device has $checkSize bytes at $devicePath, expected $ModelBytes"
+    if ($checkSize -ne $file.Bytes) {
+        throw "After the move the device has $checkSize bytes at $devicePath, expected $($file.Bytes)"
     }
     Write-Host ("  installed {0}" -f $devicePath)
 }
@@ -157,4 +178,4 @@ if ($deviceSize -eq $ModelBytes) {
 $usedKb = (Invoke-RunAs "du -sk $deviceModelRoot") -split "\s+" | Select-Object -First 1
 Write-Host ("  on device: {0:N1} MiB in {1}" -f ([double]$usedKb / 1024), $deviceModelRoot)
 Write-Host ""
-Write-Host "The app finds the model on its next pass; no download is attempted while it is there."
+Write-Host "The app finds the files on its next pass; no download is attempted while they are there."

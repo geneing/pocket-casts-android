@@ -13,12 +13,12 @@ import timber.log.Timber
  * same [MediaExtractor] + [AudioAdDecoder] loop; nothing downstream knows which one it got.
  *
  * The resampling happens here rather than inside the recognizer for two reasons. First, it keeps one
- * resampler in the path instead of two. Second — the one that decides it — the MediaPipe transcriber
- * is created once with a fixed sample rate and carries decoder state across its calls, so a decoder
- * that changed its output rate mid-file (44.1 kHz to 48 kHz on a concatenated file, a format change
- * in the middle of a VBR one) would hand a stateful session a rate it was never configured for.
- * Resampling every buffer makes a rate change invisible to it: the session only ever sees the rate
- * it was opened with.
+ * resampler in the path instead of two. Second - the one that decides it - the mel front end is
+ * built for one rate and the model's 5 s windows are counted in samples, so a decoder that changed
+ * its output rate mid-file (44.1 kHz to 48 kHz on a concatenated file, a format change in the middle
+ * of a VBR one) would either be resampled twice or silently change the number of samples a window
+ * holds. Resampling every buffer makes a rate change invisible: everything downstream only ever sees
+ * [TARGET_SAMPLE_RATE].
  *
  * Positions come from the audio actually fed, not from the container: if a buffer goes missing
  * (codec error, format change) the container clock runs ahead, and the feed pads silence for the

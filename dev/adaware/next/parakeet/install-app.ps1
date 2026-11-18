@@ -3,20 +3,20 @@
 # This is the whole loop for the ad-skipping work on this laptop:
 #   1. assembleDebugProd (production servers, ".debug" application id, debuggable)
 #   2. adb install -r
-#   3. make sure the Parakeet bundle is on this machine (download-model.ps1 when it is missing)
-#   4. push it into the app's private model directory (install-model.ps1)
+#   3. make sure the Parakeet files are on this machine (download-model.ps1 when they are missing)
+#   4. push them into the app's private model directory (install-model.ps1)
 #
-# Step 4 is what keeps the app from downloading a 586 MiB bundle on first use; the download stays
-# as a fallback for a device that does not have it. The push is skipped when the device copy
+# Step 4 is what keeps the app from downloading 1.2 GiB of weights on first use; the download stays
+# as a fallback for a device that does not have them. The push is skipped when the device copy
 # already has the right size, so re-running with -SkipBuild is cheap.
 #
 # The application id is shared by the staging "debug" and the production "debugProd" build, so
 # building the other one replaces this app and wipes its data: the model, the signed-in account and
-# the downloaded episodes all go, and the next run pushes the bundle again.
+# the downloaded episodes all go, and the next run pushes the files again.
 #
 # Example:
 #   .\dev\adaware\next\parakeet\install-app.ps1
-#   .\dev\adaware\next\parakeet\install-app.ps1 -SkipBuild   # app unchanged, bundle re-checked
+#   .\dev\adaware\next\parakeet\install-app.ps1 -SkipBuild   # app unchanged, models re-checked
 #   .\dev\adaware\next\parakeet\install-app.ps1 -SkipModels  # app only
 
 [CmdletBinding()]
@@ -82,22 +82,28 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 if (-not $SkipModels) {
-    # The bundle is not in git (586 MiB), so a fresh checkout has to fetch it once. Doing that here,
-    # rather than leaving it to a separate command, is what makes plain `install-app.ps1` leave a
-    # phone that can transcribe: without the bundle the app waits for Wi-Fi and downloads it itself.
-    $modelFile = "parakeet_tdt_0.6b_v3_5s_i8_stateful.litertlm"
-    $modelBytes = [long]614588752
-    $modelSource = Join-Path (Join-Path $PSScriptRoot "model") $modelFile
-    $modelSize = if (Test-Path $modelSource) { (Get-Item -LiteralPath $modelSource).Length } else { -1 }
-    if ($modelSize -ne $modelBytes) {
+    # The files are not in git (1.2 GiB of weights), so a fresh checkout has to fetch them once.
+    # Doing that here, rather than leaving it to a separate command, is what makes plain
+    # `install-app.ps1` leave a phone that can transcribe: without them the app waits for Wi-Fi and
+    # downloads them itself.
+    $modelFiles = @(
+        @{ Name = "parakeet_tdt_0.6b_v3_5s_i8_stateful.tflite"; Bytes = [long]614261072 },
+        @{ Name = "parakeet_tdt_0.6b_v3_5s_f32_stateful_Google_Tensor_G6.tflite"; Bytes = [long]1303768096 },
+        @{ Name = "tokenizer.json"; Bytes = [long]1159960 }
+    )
+    $missing = @($modelFiles | Where-Object {
+        $path = Join-Path (Join-Path $PSScriptRoot "model") $_.Name
+        -not (Test-Path $path) -or (Get-Item -LiteralPath $path).Length -ne $_.Bytes
+    })
+    if ($missing.Count -gt 0) {
         Write-Host ""
-        Write-Host ("Speech model is not on this machine yet (found {0} of {1} bytes); fetching it once" -f $modelSize, $modelBytes)
+        Write-Host ("Speech models are not on this machine yet ({0}); fetching them once" -f ($missing.Name -join ", "))
         # A PowerShell script reports failure by throwing, not by an exit code, and $LASTEXITCODE
         # would still hold whatever the previous adb or git call left there.
         try {
             & (Join-Path $PSScriptRoot "download-model.ps1")
         } catch {
-            throw "Downloading the speech model failed: $($_.Exception.Message)"
+            throw "Downloading the speech models failed: $($_.Exception.Message)"
         }
     }
 
