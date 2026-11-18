@@ -60,6 +60,25 @@ class LocalTranscriptStoreTest {
         assertTrue(store.file(EPISODE).readText().contains("00:00:00.000 --> 00:00:03.000"))
     }
 
+    /**
+     * Recognition rewrites the file every few seconds while the transcript tab may be reading it.
+     * Writing in place truncates first, and a reader in that window parses a half-written cue and
+     * throws, which left a finished episode with no transcript on screen. The write goes through a
+     * sibling temporary file and a rename, so there is nothing half-written to see.
+     */
+    @Test
+    fun `rewriting leaves no temporary file and always a complete transcript`() = runTest {
+        repeat(5) { index ->
+            store.saveProgress(EPISODE, (0..index).map { TranscriptCue(it * 1_000L, it * 1_000L + 900, "line $it") })
+
+            assertEquals("line $index", store.readCues(EPISODE).last().text)
+            assertFalse(
+                "a save left its temporary file behind",
+                store.file(EPISODE).parentFile?.resolve("$EPISODE.vtt.tmp")?.exists() ?: false,
+            )
+        }
+    }
+
     @Test
     fun `saving registers the transcript under the local scheme`() = runTest {
         store.save(EPISODE, listOf(TranscriptCue(0, 1_000, "hello")))
