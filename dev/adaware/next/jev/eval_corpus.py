@@ -40,7 +40,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Sequence
 
-from jev_client import DEFAULT_MODEL, MissingApiKey, SystemOneError, classify_batch
+from jev_client import DEFAULT_MODEL, PROMPT_VERSION, MissingApiKey, SystemOneError, classify_batch
 
 HERE = Path(__file__).resolve().parent
 CORPUS = HERE.parent / "m0" / "corpus"
@@ -279,12 +279,14 @@ def write_cache(path: Path, rows: dict[int, dict]) -> None:
 
 
 def cached_window(rows: dict[int, dict], cues: Sequence[Cue], start: int, stop: int) -> bool:
-    """True when every cue of the window is cached, non-missing, and matches the transcript."""
+    """True when every cue of the window is cached, non-missing, matches the transcript and prompt."""
     for position in range(start, stop):
         row = rows.get(position)
         if row is None or row.get("missing"):
             return False
         if row.get("text") != cues[position].text:
+            return False
+        if row.get("prompt") != PROMPT_VERSION:
             return False
     return True
 
@@ -302,6 +304,7 @@ def rows_from_batch(batch: Any, cues: Sequence[Cue], start: int, stop: int) -> l
                 "start": cue.start,
                 "end": cue.end,
                 "text": cue.text,
+                "prompt": PROMPT_VERSION,
                 "label": getattr(result, "label", None),
                 "p_ad": probabilities.get("advertisement"),
                 "p_content": probabilities.get("content"),
@@ -891,10 +894,11 @@ def build_report(
         "   on a small thread pool; a failed window is retried 3 times with 1/2/4 s backoff.",
         "   No episode is ever sent as one request.",
         "3. **Cache.** `<episode>__take<N>.jsonl`, one line per cue with `start`, `end`, `text`,",
-        "   `label`, `p_ad`, `p_content`, `p_transition`, `missing`. Only predictions are stored;",
-        "   thresholds are applied here, at report time. Resume is on unless `--no-resume`; a",
-        "   window counts as cached only when every cue in it is present, non-missing, and its",
-        "   cached text still matches the transcript (a stale cache can never be reused).",
+        "   `prompt`, `label`, `p_ad`, `p_content`, `p_transition`, `missing`. Only predictions are",
+        "   stored; thresholds are applied here, at report time. Resume is on unless `--no-resume`;",
+        "   a window counts as cached only when every cue in it is present, non-missing, its cached",
+        "   text still matches the transcript, and its `prompt` is the current `PROMPT_VERSION`",
+        "   (a stale cache can never be reused).",
         "4. **Cue metrics.** Prediction is `p_ad >= t`; a missing answer counts as not-ad. The",
         "   variant where `p_transition >= t` also counts as ad shows the price of the",
         "   advertisement/transition boundary.",

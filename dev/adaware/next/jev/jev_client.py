@@ -72,16 +72,34 @@ MISSING_KEY_MESSAGE = (
 )
 
 INSTRUCTIONS = (
-    "Classify only the sentence with id {id}. Judge that sentence on its own wording, "
-    "using the rest of the transcript only as context. Ignore every other sentence: "
-    "they are separate questions."
+    "Classify only the sentence with id {id}. Decide whether it belongs to an advertising break, "
+    "not whether it sounds like an ad: the break starts at its spoken hand-over and ends when the "
+    "show resumes, and every sentence between those two points is part of it. Use the other "
+    "sentences only to locate those two edges. Ignore every other sentence: they are separate "
+    "questions."
 )
 
 CRITERIA = {
-    "advertisement": "Paid sponsorship, promotional content, commercial offer or call to action.",
-    "content": "Normal editorial podcast discussion.",
-    "transition": "Introduction to or return from an advertising break.",
+    "advertisement": (
+        "The paid read itself: naming or addressing the sponsor, its offer, claims, price, "
+        "instructions, call to action, or the closing terms and disclaimer. A sentence at the "
+        "seam that mixes the ad with the show belongs here."
+    ),
+    "content": (
+        "The show's own editorial discussion, outside every advertising break. A brand mentioned "
+        "in passing with no offer or call to action is content."
+    ),
+    "transition": (
+        "The spoken hand-over that opens or closes an advertising break and sells nothing: "
+        "announcing a break, naming the sponsor as a hand-over, or returning the listener to the "
+        "show. It is part of the break."
+    ),
 }
+
+#: Bumped whenever :data:`INSTRUCTIONS` or :data:`CRITERIA` changes, and kept equal to the app's
+#: ``JevPrompt.VERSION``. Cached predictions record it, so a prompt change invalidates them instead
+#: of being scored against old answers.
+PROMPT_VERSION = 3
 
 
 class SystemOneError(Exception):

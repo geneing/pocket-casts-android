@@ -97,13 +97,13 @@ class TranscriptAdAnalyzer @Inject constructor(
         val stableSize = if (asrComplete) cues.size else (cues.size - STABILITY_MARGIN_CUES).coerceAtLeast(0)
         if (stableSize == 0) return waiting(episodeUuid)
         val stable = cues.subList(0, stableSize)
-        val existingScores = adCueScoreDao.findScoresForEpisode(episodeUuid)
+        val storedScores = adCueScoreDao.findScoresForEpisode(episodeUuid)
             .filter { it.cueIndex in stable.indices }
-            .associate { it.cueIndex to it.probability.toDouble() }
+            .associateBy { it.cueIndex }
 
         // A hole can appear when an earlier pass stored a score but the window request failed
         // later; resuming at the first hole heals it instead of leaving one cue unscored forever.
-        val startIndex = stable.indices.firstOrNull { index -> existingScores[index] == null } ?: stableSize
+        val startIndex = stable.indices.firstOrNull { index -> storedScores[index] == null } ?: stableSize
         if (startIndex >= stableSize) {
             if (asrComplete) {
                 markComplete(episodeUuid, stable)
@@ -135,15 +135,20 @@ class TranscriptAdAnalyzer @Inject constructor(
             is JevClassification.Scored -> classification
         }
 
-        val pAd = MutableList<Double?>(stableSize) { index -> existingScores[index] }
+        val pAd = MutableList<Double?>(stableSize) { index -> storedScores[index]?.probability?.toDouble() }
+        val pContent = MutableList<Double?>(stableSize) { index -> storedScores[index]?.contentProbability?.toDouble() }
         scored.pAd.forEachIndexed { index, probability ->
             val cueIndex = windowStart + index
             if (cueIndex in pAd.indices) pAd[cueIndex] = probability
         }
+        scored.pContent.forEachIndexed { index, probability ->
+            val cueIndex = windowStart + index
+            if (cueIndex in pContent.indices) pContent[cueIndex] = probability
+        }
 
         val now = System.currentTimeMillis()
         val totalMs = stable.last().endMs
-        val stored = buildPods(stable, pAd).mapIndexedNotNull { index, pod ->
+        val stored = buildPods(stable, pAd, pContent).mapIndexedNotNull { index, pod ->
             val start = pod.startMs.coerceIn(0L, totalMs)
             val end = pod.endMs.coerceIn(0L, totalMs)
             if (end - start < MIN_POD_MS) {
@@ -169,6 +174,7 @@ class TranscriptAdAnalyzer @Inject constructor(
                 startTimeMs = cue.startMs,
                 endTimeMs = cue.endMs,
                 probability = probability.toFloat().coerceIn(0f, 1f),
+                contentProbability = pContent[index]?.toFloat()?.coerceIn(0f, 1f),
             )
         }
         val complete = asrComplete && pAd.all { it != null }
@@ -234,15 +240,24 @@ class TranscriptAdAnalyzer @Inject constructor(
      * A transcript made from a published VTT or by another recognizer is not this analysis: its
      * cues may have different timing and its scores may point at the wrong sentences. Clearing the
      * derived rows restarts detection over the recognized transcript.
+     *
+     * A different prompt revision or classifier model is just as stale: its scores describe
+     * sentences under another rule, so the stored segments would be served with the old edges.
      */
     private suspend fun resetIfStale(episodeUuid: String, episode: BaseEpisode) {
         val state = queue.analysisState(episodeUuid) ?: return
-        if (state.sttVersion == transcriber.version) return
         val signature = episode.audioSignature()
         val audioChanged = signature != null && state.audioSignature.isNotBlank() && state.audioSignature != signature
+        val model = jevAdModelStore.selectedJevAdModel()
+        val ruleChanged = state.modelVersion.isNotBlank() &&
+            !AnalysisIdentity.isTranscriptModelVersion(state.modelVersion, model, JevPrompt.VERSION)
+        // A re-download can carry a new ad stitch while the engine stays the same, so the audio on
+        // its own is enough to discard scores that point at sentences the listener no longer hears.
+        if (state.sttVersion == transcriber.version && !audioChanged && !ruleChanged) return
         LogBuffer.i(
             TAG,
-            "Discarding ad analysis for $episodeUuid (stt=${state.sttVersion.ifBlank { "audio" }}, audioChanged=$audioChanged)",
+            "Discarding ad analysis for $episodeUuid (stt=${state.sttVersion.ifBlank { "audio" }}, " +
+                "audioChanged=$audioChanged, rule=${state.modelVersion.ifBlank { "none" }} -> ${model.slug}#prompt${JevPrompt.VERSION})",
         )
         queue.resetDetection(episodeUuid)
     }

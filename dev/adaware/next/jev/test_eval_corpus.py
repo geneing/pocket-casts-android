@@ -27,6 +27,7 @@ def row(idx: int, start: float, end: float, p_ad=None, p_transition=None) -> dic
         "start": start,
         "end": end,
         "text": f"cue {idx}",
+        "prompt": ev.PROMPT_VERSION,
         "label": "advertisement" if (p_ad or 0) >= 0.5 else "content",
         "p_ad": p_ad,
         "p_content": None if p_ad is None else 1 - p_ad,
@@ -134,6 +135,16 @@ def test_cache_roundtrip_and_stale_detection(tmp_path: Path):
     assert ev.cached_window(ev.read_cache(path), cues, 0, 2) is True
     cues[1] = cue(1, 2.0, 4.0, "different text")
     assert ev.cached_window(ev.read_cache(path), cues, 0, 2) is False
+
+
+def test_a_prompt_change_invalidates_the_cache(tmp_path: Path):
+    path = tmp_path / "show__take0.jsonl"
+    cues = [cue(0, 0.0, 2.0, "cue 0")]
+    stale = row(0, 0.0, 2.0, 0.9)
+    stale["prompt"] = ev.PROMPT_VERSION - 1
+    ev.write_cache(path, {0: stale})
+
+    assert ev.cached_window(ev.read_cache(path), cues, 0, 1) is False
 
 
 def test_read_cache_ignores_unreadable_lines(tmp_path: Path):

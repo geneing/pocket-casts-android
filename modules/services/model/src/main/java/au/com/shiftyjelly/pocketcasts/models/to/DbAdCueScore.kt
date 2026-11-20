@@ -5,10 +5,14 @@ import androidx.room.Entity
 import androidx.room.Index
 
 /**
- * The classifier's advertisement probability for one transcript cue.
+ * The classifier's verdict for one transcript cue: [probability] is the probability that the cue
+ * belongs to an ad break, which already counts a transition verdict, and [contentProbability] is
+ * the probability that it is editorial.
  *
  * Scores are stored for every cue, not only the ones inside a detected ad, so the transcript can
- * show how the model read each sentence and not just where it decided an ad was.
+ * show how the model read each sentence and not just where it decided an ad was. Keeping content
+ * with it lets a pod's edges be widened from the stored scores, without asking the classifier
+ * again.
  */
 @Entity(
     tableName = "episode_ad_cue_scores",
@@ -23,4 +27,5 @@ data class DbAdCueScore(
     @ColumnInfo(name = "start_time") val startTimeMs: Long,
     @ColumnInfo(name = "end_time") val endTimeMs: Long,
     @ColumnInfo(name = "probability") val probability: Float,
+    @ColumnInfo(name = "content_probability") val contentProbability: Float? = null,
 )

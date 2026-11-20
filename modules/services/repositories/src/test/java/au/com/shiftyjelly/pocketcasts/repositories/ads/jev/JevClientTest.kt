@@ -36,6 +36,7 @@ class JevClientTest {
             val scored = result as JevResponse.Scored
             assertEquals("respan/span-02-20261015", scored.responseModel)
             assertEquals(0.9969, scored.sentences.getValue(1).advertisementProbability!!, 0.0001)
+            assertEquals(0.0031, scored.sentences.getValue(1).contentProbability!!, 0.0001)
             assertEquals("advertisement", scored.sentences.getValue(1).label)
             assertEquals("content", scored.sentences.getValue(2).label)
             assertEquals(0.00000132, scored.usageCostUsd!!, 1e-12)
@@ -59,15 +60,19 @@ class JevClientTest {
             assertEquals("choice", question.type)
             assertEquals(JevPrompt.CRITERIA, question.criteria)
             assertEquals(
-                "Classify only the sentence with id 1. Judge that sentence on its own wording, " +
-                    "using the rest of the transcript only as context. Ignore every other sentence: " +
-                    "they are separate questions.",
+                "Classify only the sentence with id 1. Decide whether it belongs to an advertising " +
+                    "break, not whether it sounds like an ad: the break starts at its spoken hand-over " +
+                    "and ends when the show resumes, and every sentence between those two points is " +
+                    "part of it. Use the other sentences only to locate those two edges. Ignore every " +
+                    "other sentence: they are separate questions.",
                 question.instructions,
             )
             assertEquals(
-                "Classify only the sentence with id 2. Judge that sentence on its own wording, " +
-                    "using the rest of the transcript only as context. Ignore every other sentence: " +
-                    "they are separate questions.",
+                "Classify only the sentence with id 2. Decide whether it belongs to an advertising " +
+                    "break, not whether it sounds like an ad: the break starts at its spoken hand-over " +
+                    "and ends when the show resumes, and every sentence between those two points is " +
+                    "part of it. Use the other sentences only to locate those two edges. Ignore every " +
+                    "other sentence: they are separate questions.",
                 request.questions.getValue("sentence_2").instructions,
             )
         }
@@ -108,6 +113,49 @@ class JevClientTest {
 
             val scored = result as JevResponse.Scored
             assertEquals(1.0, scored.sentences.getValue(1).advertisementProbability!!, 0.0)
+        }
+    }
+
+    @Test
+    fun `a transition answer counts towards the ad break probability`() = runTest {
+        MockWebServer().use { server ->
+            server.enqueue(MockResponse().setBody(RESPONSE_TRANSITION_WITHOUT_PROBABILITIES))
+            server.start()
+            val client = client(KEY).apply { endpoint = server.url("/").toString() }
+
+            val result = client.classify(
+                model = JevAdModel.SPAN_02,
+                podcast = "Technology Today",
+                sentences = listOf(JevSentence(1, "We'll be right back after a short break.")),
+            )
+
+            val score = (result as JevResponse.Scored).sentences.getValue(1)
+            assertEquals("transition", score.label)
+            assertEquals(0.0, score.advertisementProbability!!, 0.0)
+            assertEquals(0.0, score.contentProbability!!, 0.0)
+            assertEquals(1.0, score.transitionProbability!!, 0.0)
+            assertEquals(1.0, score.adBreakProbability!!, 0.0)
+        }
+    }
+
+    @Test
+    fun `the higher of advertisement and transition wins`() = runTest {
+        MockWebServer().use { server ->
+            server.enqueue(MockResponse().setBody(RESPONSE_TRANSITION_WITH_PROBABILITIES))
+            server.start()
+            val client = client(KEY).apply { endpoint = server.url("/").toString() }
+
+            val result = client.classify(
+                model = JevAdModel.SPAN_02,
+                podcast = "Technology Today",
+                sentences = listOf(JevSentence(1, "This episode is sponsored by Acme.")),
+            )
+
+            val score = (result as JevResponse.Scored).sentences.getValue(1)
+            assertEquals(0.74, score.advertisementProbability!!, 0.0001)
+            assertEquals(0.05, score.contentProbability!!, 0.0001)
+            assertEquals(0.21, score.transitionProbability!!, 0.0001)
+            assertEquals(0.74, score.adBreakProbability!!, 0.0001)
         }
     }
 
@@ -216,6 +264,30 @@ class JevClientTest {
   "model": "respan/span-02-20261015",
   "answers": {
     "sentence_1": {"type": "choice", "choice": "advertisement"}
+  },
+  "usage": {"cost": 0.000118}
+}
+"""
+
+        const val RESPONSE_TRANSITION_WITHOUT_PROBABILITIES = """
+{
+  "model": "respan/span-02-20261015",
+  "answers": {
+    "sentence_1": {"type": "choice", "choice": "transition"}
+  },
+  "usage": {"cost": 0.000118}
+}
+"""
+
+        const val RESPONSE_TRANSITION_WITH_PROBABILITIES = """
+{
+  "model": "respan/span-02-20261015",
+  "answers": {
+    "sentence_1": {
+      "type": "choice",
+      "choice": "advertisement",
+      "probabilities": {"advertisement": 0.74, "content": 0.05, "transition": 0.21}
+    }
   },
   "usage": {"cost": 0.000118}
 }

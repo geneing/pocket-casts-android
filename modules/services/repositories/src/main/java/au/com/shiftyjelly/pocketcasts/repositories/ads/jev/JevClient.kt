@@ -146,6 +146,8 @@ class JevClient @Inject constructor(
             scores[sentence.id] = JevSentenceScore(
                 label = answer.choice,
                 advertisementProbability = answer.advertisementProbability(),
+                contentProbability = answer.contentProbability(),
+                transitionProbability = answer.transitionProbability(),
             )
         }
         if (missing > 0) {
@@ -168,6 +170,30 @@ class JevClient @Inject constructor(
         }
     }
 
+    /** The same fallback for `probabilities["content"]`, so a cue can be compared with its editorial probability. */
+    private fun JevAnswer.contentProbability(): Double? {
+        probabilities?.get(JevPrompt.CONTENT)?.let { return it }
+        return when (choice) {
+            JevPrompt.CONTENT -> 1.0
+            null -> null
+            else -> 0.0
+        }
+    }
+
+    /**
+     * The same fallback for `probabilities["transition"]`. A response that carries no transition
+     * probability but answers `transition` reads as 1.0: the label is the verdict, and an
+     * introduction to or return from a break is skipped along with the break itself.
+     */
+    private fun JevAnswer.transitionProbability(): Double? {
+        probabilities?.get(JevPrompt.TRANSITION)?.let { return it }
+        return when (choice) {
+            JevPrompt.TRANSITION -> 1.0
+            null -> null
+            else -> 0.0
+        }
+    }
+
     companion object {
         private const val TAG = "JevClient"
         const val SYSTEM_ONE_ENDPOINT = "https://openrouter.ai/api/v1/systemone"
@@ -177,25 +203,36 @@ class JevClient @Inject constructor(
 }
 
 /**
- * The prompt is part of the analysis identity: bump [VERSION] whenever the wording changes so
- * segments scored by the previous prompt are re-classified instead of served.
+ * The prompt is part of the analysis identity: bump [VERSION] whenever the wording or the way a
+ * label is scored changes, so segments scored under the old rule are re-classified instead of served.
  */
 object JevPrompt {
-    const val VERSION = 1
+    const val VERSION = 3
 
     const val ADVERTISEMENT = "advertisement"
     const val CONTENT = "content"
     const val TRANSITION = "transition"
 
+    /**
+     * Each label is defined by the sentence's job in the episode rather than its tone, because a
+     * host-read sponsor line opens like show talk and a hand-over line is ordinary speech.
+     */
     val CRITERIA: Map<String, String> = linkedMapOf(
-        ADVERTISEMENT to "Paid sponsorship, promotional content, commercial offer or call to action.",
-        CONTENT to "Normal editorial podcast discussion.",
-        TRANSITION to "Introduction to or return from an advertising break.",
+        ADVERTISEMENT to "The paid read itself: naming or addressing the sponsor, its offer, claims, " +
+            "price, instructions, call to action, or the closing terms and disclaimer. A sentence at " +
+            "the seam that mixes the ad with the show belongs here.",
+        CONTENT to "The show's own editorial discussion, outside every advertising break. A brand " +
+            "mentioned in passing with no offer or call to action is content.",
+        TRANSITION to "The spoken hand-over that opens or closes an advertising break and sells " +
+            "nothing: announcing a break, naming the sponsor as a hand-over, or returning the listener " +
+            "to the show. It is part of the break.",
     )
 
-    fun instructions(sentenceId: Int): String = "Classify only the sentence with id $sentenceId. Judge that sentence on its own wording, " +
-        "using the rest of the transcript only as context. Ignore every other sentence: " +
-        "they are separate questions."
+    fun instructions(sentenceId: Int): String = "Classify only the sentence with id $sentenceId. Decide whether it belongs to an advertising " +
+        "break, not whether it sounds like an ad: the break starts at its spoken hand-over and ends " +
+        "when the show resumes, and every sentence between those two points is part of it. Use the " +
+        "other sentences only to locate those two edges. Ignore every other sentence: they are " +
+        "separate questions."
 }
 
 /** One sentence of a window, with an id that is local to the request. */
@@ -203,7 +240,24 @@ object JevPrompt {
 data class JevSentence(val id: Int, val text: String)
 
 /** The classifier's verdict for one sentence. */
-data class JevSentenceScore(val label: String?, val advertisementProbability: Double?)
+data class JevSentenceScore(
+    val label: String?,
+    val advertisementProbability: Double?,
+    val contentProbability: Double?,
+    val transitionProbability: Double?,
+) {
+    /**
+     * Probability that the sentence belongs to an ad break. A transition — an introduction to or a
+     * return from a break — is skipped along with the break, so it counts at its own probability
+     * and a `transition` label without probabilities still skips the sentence.
+     */
+    val adBreakProbability: Double?
+        get() = when {
+            advertisementProbability == null -> transitionProbability
+            transitionProbability == null -> advertisementProbability
+            else -> maxOf(advertisementProbability, transitionProbability)
+        }
+}
 
 /** Outcome of one classification request. A missing answer is left out of [Scored.sentences]. */
 sealed interface JevResponse {

@@ -92,6 +92,13 @@ Two levels are reported:
   than the cue numbers; a coverage diagnostic sits next to it to separate "not found"
   from "found with loose edges".
 
+The app's pod builder goes one step past the threshold: a pod's edges grow over the
+adjacent cues whose ad-break probability still beats their content probability, so the
+spoken hand-over before the read and the return after it are skipped with it, and the walk
+stops where the show resumes. It is capped at 30 s only as a guard. A prompt or rule change
+therefore requires a fresh corpus pass — each cached row records the prompt revision, and a
+mismatch is never reused.
+
 `--report-only` scores the cache without a call, `--no-resume` ignores it, and a window
 is cached only when every cue is present, non-missing and its text still matches the
 transcript. A hard quota error (`429 FreeUsageLimitError`) stops the run instead of
@@ -124,11 +131,11 @@ User-Agent: pocket-casts-adaware/0.1
   "questions": {
     "sentence_2": {
       "type": "choice",
-      "instructions": "Classify only the sentence with id 2. Judge that sentence on its own wording, using the rest of the transcript only as context. Ignore every other sentence: they are separate questions.",
+      "instructions": "Classify only the sentence with id 2. Decide whether it belongs to an advertising break, not whether it sounds like an ad: the break starts at its spoken hand-over and ends when the show resumes, and every sentence between those two points is part of it. Use the other sentences only to locate those two edges. Ignore every other sentence: they are separate questions.",
       "criteria": {
-        "advertisement": "Paid sponsorship, promotional content, commercial offer or call to action.",
-        "content": "Normal editorial podcast discussion.",
-        "transition": "Introduction to or return from an advertising break."
+        "advertisement": "The paid read itself: naming or addressing the sponsor, its offer, claims, price, instructions, call to action, or the closing terms and disclaimer. A sentence at the seam that mixes the ad with the show belongs here.",
+        "content": "The show's own editorial discussion, outside every advertising break. A brand mentioned in passing with no offer or call to action is content.",
+        "transition": "The spoken hand-over that opens or closes an advertising break and sells nothing: announcing a break, naming the sponsor as a hand-over, or returning the listener to the show. It is part of the break."
       }
     }
   }

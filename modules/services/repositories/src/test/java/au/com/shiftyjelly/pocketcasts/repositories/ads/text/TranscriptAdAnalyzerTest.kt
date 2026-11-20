@@ -59,7 +59,12 @@ class TranscriptAdAnalyzerTest {
         whenever(transcriptStore.readCues(EPISODE)).thenReturn(cues)
         whenever(adCueScoreDao.findScoresForEpisode(EPISODE)).thenReturn(emptyList())
         whenever(classifier.classify(any(), any(), any())).thenReturn(
-            JevClassification.Scored(pAd = listOf(0.95, 0.05), responseModel = null, usageCostUsd = 0.01),
+            JevClassification.Scored(
+                pAd = listOf(0.95, 0.05),
+                pContent = listOf(0.05, 0.95),
+                responseModel = null,
+                usageCostUsd = 0.01,
+            ),
         )
         whenever(adSegmentDao.findSegmentsForEpisode(EPISODE)).thenReturn(emptyList())
 
@@ -112,13 +117,48 @@ class TranscriptAdAnalyzerTest {
         )
         whenever(adCueScoreDao.findScoresForEpisode(EPISODE)).thenReturn(emptyList())
         whenever(classifier.classify(any(), any(), any())).thenReturn(
-            JevClassification.Scored(pAd = listOf(0.9), responseModel = null, usageCostUsd = null),
+            JevClassification.Scored(
+                pAd = listOf(0.9),
+                pContent = listOf(0.1),
+                responseModel = null,
+                usageCostUsd = null,
+            ),
         )
 
         assertEquals(DetectionOutcome.Completed, analyzer().run(EPISODE))
 
         verify(queue).resetDetection(EPISODE)
         verify(transcriber, never()).transcribe(any(), any(), any())
+    }
+
+    @Test
+    fun `an analysis scored under an older prompt is discarded and restarted`() = runTest {
+        givenEpisode(audioFile())
+        givenQueued(detection = detectionItem(), asr = asrItem(complete = true))
+        whenever(queue.analysisState(EPISODE)).thenReturn(
+            AdAnalysisState(
+                episodeUuid = EPISODE,
+                isComplete = true,
+                sttVersion = ENGINE,
+                modelVersion = "respan/span-02-20261015#prompt2",
+            ),
+        )
+        whenever(transcriptStore.readCues(EPISODE)).thenReturn(
+            listOf(TranscriptCue(0, 60_000, "recognised on device.")),
+        )
+        whenever(adCueScoreDao.findScoresForEpisode(EPISODE)).thenReturn(emptyList())
+        whenever(classifier.classify(any(), any(), any())).thenReturn(
+            JevClassification.Scored(
+                pAd = listOf(0.9),
+                pContent = listOf(0.1),
+                responseModel = "respan/span-02-20261015",
+                usageCostUsd = null,
+            ),
+        )
+
+        assertEquals(DetectionOutcome.Completed, analyzer().run(EPISODE))
+
+        verify(queue).resetDetection(EPISODE)
     }
 
     @Test
@@ -153,7 +193,12 @@ class TranscriptAdAnalyzerTest {
             },
         )
         whenever(classifier.classify(any(), any(), any())).thenReturn(
-            JevClassification.Scored(pAd = List(9) { 0.1 }, responseModel = null, usageCostUsd = null),
+            JevClassification.Scored(
+                pAd = List(9) { 0.1 },
+                pContent = List(9) { 0.9 },
+                responseModel = null,
+                usageCostUsd = null,
+            ),
         )
 
         assertEquals(DetectionOutcome.Completed, analyzer().run(EPISODE))

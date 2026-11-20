@@ -141,7 +141,7 @@ import au.com.shiftyjelly.pocketcasts.localization.R as LR
         AsrQueueItem::class,
         AdDetectionQueueItem::class,
     ],
-    version = 145,
+    version = 146,
     exportSchema = true,
     autoMigrations = [
         AutoMigration(from = 81, to = 82, spec = AppDatabase.Companion.DeleteSilenceRemovedMigration::class),
@@ -1647,6 +1647,14 @@ abstract class AppDatabase : RoomDatabase() {
             )
         }
 
+        /**
+         * The model's content probability beside the ad-break probability, so a pod's edges can be
+         * widened from the stored scores without asking the classifier again.
+         */
+        val MIGRATION_145_146 = addMigration(145, 146) { database ->
+            database.execSQL("ALTER TABLE `episode_ad_cue_scores` ADD COLUMN `content_probability` REAL")
+        }
+
         fun addMigrations(databaseBuilder: Builder<AppDatabase>, context: Context) {
             databaseBuilder.addMigrations(
                 addMigration(1, 2) { },
@@ -2081,6 +2089,7 @@ abstract class AppDatabase : RoomDatabase() {
                 MIGRATION_142_143,
                 MIGRATION_143_144,
                 MIGRATION_144_145,
+                MIGRATION_145_146,
             )
         }
 

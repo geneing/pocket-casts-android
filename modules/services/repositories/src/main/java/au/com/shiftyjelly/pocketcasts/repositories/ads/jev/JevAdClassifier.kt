@@ -9,9 +9,13 @@ import kotlinx.coroutines.ensureActive
 
 /** Outcome of scoring one episode's transcript with jev. */
 sealed interface JevClassification {
-    /** Per-cue advertisement probability, in cue order; complete, so no cue is `null`. */
+    /**
+     * Per-cue ad-break probability and per-cue content probability, in cue order and aligned with
+     * the cues that were classified; complete, so no cue is `null`.
+     */
     data class Scored(
         val pAd: List<Double?>,
+        val pContent: List<Double?>,
         val responseModel: String?,
         val usageCostUsd: Double?,
     ) : JevClassification
@@ -37,6 +41,10 @@ data class JevPod(
 /**
  * Scores a transcript cue by cue with jev and merges the result into ad pods.
  *
+ * A cue's score is the probability that it belongs to an ad break, which includes a `transition`
+ * verdict: an introduction to or a return from a break is skipped with the break itself, so its
+ * own probability counts as well as `advertisement`.
+ *
  * Cues go out in non-overlapping windows of [WINDOW_CUES], one request per window and one window
  * at a time: the analyzer's mutex already guarantees one episode at a time, and sequential
  * requests keep the cost predictable on a metered connection.
@@ -52,6 +60,7 @@ class JevAdClassifier @Inject constructor(
     ): JevClassification {
         if (cues.isEmpty()) return JevClassification.Failed("no cues to classify")
         val pAd = MutableList<Double?>(cues.size) { null }
+        val pContent = MutableList<Double?>(cues.size) { null }
         var responseModel: String? = null
         var cost = 0.0
         var failedWindows = 0
@@ -71,7 +80,8 @@ class JevAdClassifier @Inject constructor(
                     for ((id, score) in response.sentences) {
                         val index = start + id - 1
                         if (index in pAd.indices) {
-                            pAd[index] = score.advertisementProbability
+                            pAd[index] = score.adBreakProbability
+                            pContent[index] = score.contentProbability
                         }
                     }
                 }
@@ -96,6 +106,7 @@ class JevAdClassifier @Inject constructor(
         }
         return JevClassification.Scored(
             pAd = pAd,
+            pContent = pContent,
             responseModel = responseModel,
             usageCostUsd = cost.takeIf { it > 0.0 },
         )
@@ -113,25 +124,52 @@ class JevAdClassifier @Inject constructor(
  * Builds ad pods from per-cue probabilities: keep cues at or above [threshold], bridge runs that
  * are separated by at most [maxGapCues] non-ad cues, and drop pods shorter than [minPodMs].
  *
+ * A seed only marks where an ad is certain. [pContent] is then used to decide where the break
+ * around it ends: each edge grows over the cues that still lean break rather than content, which is
+ * the spoken hand-over before the read and the return after it, and stops at the first cue content
+ * explains better. That rule needs no extra threshold and no fixed number of sentences; [maxEdgeMs]
+ * is only a guard so one long low-confidence stretch cannot swallow the show. Without [pContent]
+ * the pods are the seeds alone.
+ *
  * The one-cue gap tolerance follows the labelled-corpus evaluation: whisper cues straddle pod
  * edges, so a single content-scored cue inside an ad read is expected rather than a real break.
- * Pure, so the threshold and pod rules are testable without a network or a database.
+ * Pure, so the threshold, edge and pod rules are testable without a network or a database.
  */
 fun buildPods(
     cues: List<TranscriptCue>,
     pAd: List<Double?>,
+    pContent: List<Double?> = emptyList(),
     threshold: Float = AD_PROBABILITY_THRESHOLD,
     maxGapCues: Int = MAX_GAP_CUES,
     minPodMs: Long = MIN_POD_MS,
+    maxEdgeMs: Long = MAX_EDGE_MS,
 ): List<JevPod> {
     require(cues.size == pAd.size) { "cues and probabilities must be the same length" }
+    require(pContent.isEmpty() || pContent.size == cues.size) { "content probabilities must match the cues" }
     require(maxGapCues >= 0) { "maxGapCues must be non-negative" }
 
-    val pods = mutableListOf<JevPod>()
+    val runs = seedRuns(pAd, threshold, maxGapCues)
+        .map { seed -> extendRun(cues, pAd, pContent, seed, maxEdgeMs) }
+        .fold(mutableListOf<IntRange>()) { merged, run ->
+            val previous = merged.lastOrNull()
+            if (previous != null && run.first <= previous.last + 1) {
+                merged[merged.lastIndex] = previous.first..run.last
+            } else {
+                merged += run
+            }
+            merged
+        }
+    return runs.map { run -> podOf(cues, pAd, run.first, run.last) }
+        .filter { it.endMs - it.startMs >= minPodMs }
+}
+
+/** The runs of cues at or above [threshold], bridging gaps of at most [maxGapCues] cues. */
+private fun seedRuns(pAd: List<Double?>, threshold: Float, maxGapCues: Int): List<IntRange> {
+    val runs = mutableListOf<IntRange>()
     var first = -1
     var last = -1
     var gap = 0
-    for (index in cues.indices) {
+    for (index in pAd.indices) {
         val probability = pAd[index]
         if (probability != null && probability >= threshold) {
             if (first < 0) {
@@ -144,16 +182,49 @@ fun buildPods(
         if (first < 0) continue
         gap++
         if (gap > maxGapCues) {
-            pods += podOf(cues, pAd, first, last)
+            runs += first..last
             first = -1
             gap = 0
         }
     }
     if (first >= 0) {
-        pods += podOf(cues, pAd, first, last)
+        runs += first..last
     }
-    return pods.filter { it.endMs - it.startMs >= minPodMs }
+    return runs
 }
+
+/**
+ * Grows [seed] outwards over adjacent cues that belong to the break. A cue is part of the break
+ * when its ad-break probability beats its content probability, so the walk ends where the show
+ * resumes instead of after a fixed number of sentences.
+ */
+private fun extendRun(
+    cues: List<TranscriptCue>,
+    pAd: List<Double?>,
+    pContent: List<Double?>,
+    seed: IntRange,
+    maxEdgeMs: Long,
+): IntRange {
+    if (pContent.isEmpty()) return seed
+    var start = seed.first
+    while (start > 0 &&
+        extendsBreak(pAd[start - 1], pContent[start - 1]) &&
+        cues[seed.first].startMs - cues[start - 1].startMs <= maxEdgeMs
+    ) {
+        start--
+    }
+    var end = seed.last
+    while (end < cues.lastIndex &&
+        extendsBreak(pAd[end + 1], pContent[end + 1]) &&
+        cues[end + 1].endMs - cues[seed.last].endMs <= maxEdgeMs
+    ) {
+        end++
+    }
+    return start..end
+}
+
+/** True when the cue is more likely part of the break than of the show's editorial. */
+private fun extendsBreak(pAd: Double?, pContent: Double?): Boolean = pAd != null && pContent != null && pAd > pContent
 
 private fun podOf(
     cues: List<TranscriptCue>,
@@ -185,3 +256,11 @@ const val MAX_GAP_CUES = 1
 
 /** Predicted pods shorter than this are dropped. */
 const val MIN_POD_MS = 8_000L
+
+/**
+ * How far a pod edge may grow outwards, in milliseconds.
+ *
+ * A guard, not the rule: the edge is decided by whether the cue reads as break or content, and
+ * this only stops one long ambiguous stretch from swallowing the show.
+ */
+const val MAX_EDGE_MS = 30_000L
