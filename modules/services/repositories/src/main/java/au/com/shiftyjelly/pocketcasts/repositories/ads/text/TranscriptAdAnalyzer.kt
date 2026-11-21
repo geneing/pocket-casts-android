@@ -148,7 +148,7 @@ class TranscriptAdAnalyzer @Inject constructor(
 
         val now = System.currentTimeMillis()
         val totalMs = stable.last().endMs
-        val stored = buildPods(stable, pAd, pContent).mapIndexedNotNull { index, pod ->
+        val stored = buildPods(stable, pAd).mapIndexedNotNull { index, pod ->
             val start = pod.startMs.coerceIn(0L, totalMs)
             val end = pod.endMs.coerceIn(0L, totalMs)
             if (end - start < MIN_POD_MS) {

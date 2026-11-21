@@ -203,11 +203,12 @@ class JevClient @Inject constructor(
 }
 
 /**
- * The prompt is part of the analysis identity: bump [VERSION] whenever the wording or the way a
- * label is scored changes, so segments scored under the old rule are re-classified instead of served.
+ * The prompt is part of the analysis identity: bump [VERSION] whenever the wording, the way a
+ * label is scored or the rule that turns scores into pods changes, so segments produced under the
+ * old behaviour are re-classified instead of served.
  */
 object JevPrompt {
-    const val VERSION = 3
+    const val VERSION = 4
 
     const val ADVERTISEMENT = "advertisement"
     const val CONTENT = "content"

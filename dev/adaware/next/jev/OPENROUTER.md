@@ -93,8 +93,8 @@ a single question for N sentences answers the whole state once, which is useless
 
 | model id | response model | latency (K=20) | cost / K=20 request | notes |
 |---|---|---|---|---|
-| `respan/span-02` (default) | `respan/span-02-20261015` | ~1.2 s | $0.000118 | 19/20 on a synthetic mix; once called a plain sponsor sentence `transition` (p_ad 0.15) |
-| `typesafe/jev-1.14` | `typesafe/jev-1.14-20261014` | ~0.38 s | $0.000134 | 20/20 on the same mix |
+| `respan/span-02` | `respan/span-02-20261015` | ~1.2 s | $0.000118 | 19/20 on a synthetic mix; once called a plain sponsor sentence `transition` (p_ad 0.15) |
+| `typesafe/jev-1.14` (default) | `typesafe/jev-1.14-20261014` | ~0.38 s | $0.000134 | 20/20 on the same mix |
 
 `"type": "score"` questions are unsupported by the upstream model (HTTP 422 on opencode,
 "Endpoint is unavailable"). Use `choice` only.

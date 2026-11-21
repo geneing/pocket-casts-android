@@ -88,94 +88,33 @@ class JevAdClassifierTest {
     }
 
     @Test
-    fun `a leading cue that still leans break is pulled into the pod`() {
-        val cues = listOf(cue(0, 10), cue(10, 20), cue(20, 30), cue(30, 40))
+    fun `a transition at the threshold is an ad and below it is not`() = runTest {
+        withClassifier(ANSWER_TRANSITION_AROUND_THRESHOLD) { classifier ->
+            val cues = listOf(cue(0, 10), cue(10, 20))
 
-        val pods = buildPods(
-            cues = cues,
-            pAd = listOf(0.3, 0.45, 0.9, 0.05),
-            pContent = listOf(0.6, 0.4, 0.05, 0.9),
-        )
+            val scored = classifier.classify(cues, SHOW, JevAdModel.JEV_1_14) as JevClassification.Scored
 
-        assertEquals(1, pods.size)
-        assertEquals(10_000L, pods[0].startMs)
-        assertEquals(30_000L, pods[0].endMs)
-        assertEquals(1, pods[0].firstCue)
-        assertEquals(2, pods[0].lastCue)
+            assertEquals(listOf(0.5, 0.49), scored.pAd)
+            val pods = buildPods(cues, scored.pAd)
+            assertEquals(1, pods.size)
+            assertEquals(0L, pods[0].startMs)
+            assertEquals(10_000L, pods[0].endMs)
+        }
     }
 
     @Test
-    fun `a trailing cue that still leans break is pulled into the pod`() {
-        val cues = listOf(cue(0, 10), cue(10, 20), cue(20, 30), cue(30, 40))
+    fun `an advertisement at the threshold is an ad and below it is not`() = runTest {
+        withClassifier(ANSWER_ADVERTISEMENT_AROUND_THRESHOLD) { classifier ->
+            val cues = listOf(cue(0, 10), cue(10, 20))
 
-        val pods = buildPods(
-            cues = cues,
-            pAd = listOf(0.05, 0.9, 0.45, 0.3),
-            pContent = listOf(0.9, 0.05, 0.4, 0.6),
-        )
+            val scored = classifier.classify(cues, SHOW, JevAdModel.JEV_1_14) as JevClassification.Scored
 
-        assertEquals(1, pods.size)
-        assertEquals(10_000L, pods[0].startMs)
-        assertEquals(30_000L, pods[0].endMs)
-    }
-
-    @Test
-    fun `a cue the show explains better stops the extension`() {
-        val cues = listOf(cue(0, 10), cue(10, 20), cue(20, 30))
-
-        val pods = buildPods(
-            cues = cues,
-            pAd = listOf(0.35, 0.9, 0.35),
-            pContent = listOf(0.5, 0.05, 0.5),
-        )
-
-        assertEquals(1, pods.size)
-        assertEquals(10_000L, pods[0].startMs)
-        assertEquals(20_000L, pods[0].endMs)
-        assertEquals(1, pods[0].firstCue)
-        assertEquals(1, pods[0].lastCue)
-    }
-
-    @Test
-    fun `the edge grows no further than the guard distance`() {
-        val cues = listOf(cue(0, 20), cue(20, 40), cue(40, 60), cue(60, 80))
-
-        val pods = buildPods(
-            cues = cues,
-            pAd = listOf(0.45, 0.45, 0.9, 0.0),
-            pContent = listOf(0.4, 0.4, 0.05, 0.95),
-            maxEdgeMs = 25_000L,
-        )
-
-        assertEquals(1, pods.size)
-        assertEquals(20_000L, pods[0].startMs)
-        assertEquals(60_000L, pods[0].endMs)
-    }
-
-    @Test
-    fun `edges that grow into each other become one pod`() {
-        val cues = listOf(cue(0, 20), cue(20, 40), cue(40, 60), cue(60, 80))
-
-        val pods = buildPods(
-            cues = cues,
-            pAd = listOf(0.9, 0.45, 0.45, 0.9),
-            pContent = listOf(0.05, 0.4, 0.4, 0.05),
-        )
-
-        assertEquals(1, pods.size)
-        assertEquals(0L, pods[0].startMs)
-        assertEquals(80_000L, pods[0].endMs)
-    }
-
-    @Test
-    fun `without content probabilities the pods are the seeds alone`() {
-        val cues = listOf(cue(0, 10), cue(10, 20), cue(20, 30))
-
-        val pods = buildPods(cues, listOf(0.45, 0.9, 0.45))
-
-        assertEquals(1, pods.size)
-        assertEquals(10_000L, pods[0].startMs)
-        assertEquals(20_000L, pods[0].endMs)
+            assertEquals(listOf(0.5, 0.49), scored.pAd)
+            val pods = buildPods(cues, scored.pAd)
+            assertEquals(1, pods.size)
+            assertEquals(0L, pods[0].startMs)
+            assertEquals(10_000L, pods[0].endMs)
+        }
     }
 
     @Test
@@ -183,7 +122,6 @@ class JevAdClassifierTest {
         assertEquals(0.5f, AD_PROBABILITY_THRESHOLD)
         assertEquals(1, MAX_GAP_CUES)
         assertEquals(8_000L, MIN_POD_MS)
-        assertEquals(30_000L, MAX_EDGE_MS)
         assertEquals(20, JevAdClassifier.WINDOW_CUES)
     }
 
@@ -274,5 +212,17 @@ class JevAdClassifierTest {
         const val ANSWER_TRANSITION_NO_PROBABILITIES =
             """{"model":"respan/span-02-20261015","answers":{""" +
                 """"sentence_1":{"type":"choice","choice":"transition"}}}"""
+        const val ANSWER_TRANSITION_AROUND_THRESHOLD =
+            """{"model":"typesafe/jev-1.14-20261014","answers":{""" +
+                """"sentence_1":{"type":"choice","choice":"transition",""" +
+                """"probabilities":{"advertisement":0.1,"content":0.4,"transition":0.5}},""" +
+                """"sentence_2":{"type":"choice","choice":"transition",""" +
+                """"probabilities":{"advertisement":0.11,"content":0.4,"transition":0.49}}}}"""
+        const val ANSWER_ADVERTISEMENT_AROUND_THRESHOLD =
+            """{"model":"typesafe/jev-1.14-20261014","answers":{""" +
+                """"sentence_1":{"type":"choice","choice":"advertisement",""" +
+                """"probabilities":{"advertisement":0.5,"content":0.4,"transition":0.1}},""" +
+                """"sentence_2":{"type":"choice","choice":"advertisement",""" +
+                """"probabilities":{"advertisement":0.49,"content":0.4,"transition":0.11}}}}"""
     }
 }

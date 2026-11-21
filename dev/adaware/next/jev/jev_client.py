@@ -96,9 +96,10 @@ CRITERIA = {
     ),
 }
 
-#: Bumped whenever :data:`INSTRUCTIONS` or :data:`CRITERIA` changes, and kept equal to the app's
-#: ``JevPrompt.VERSION``. Cached predictions record it, so a prompt change invalidates them instead
-#: of being scored against old answers.
+#: Bumped whenever :data:`INSTRUCTIONS` or :data:`CRITERIA` changes. Cached predictions record it,
+#: so a prompt change invalidates them instead of being scored against old answers. This tracks the
+#: wording the corpus was scored with, not the app's analysis identity (which also pins the pod
+#: rule in ``JevPrompt.VERSION``).
 PROMPT_VERSION = 3
 
 

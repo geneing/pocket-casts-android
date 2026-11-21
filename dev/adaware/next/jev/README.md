@@ -92,10 +92,10 @@ Two levels are reported:
   than the cue numbers; a coverage diagnostic sits next to it to separate "not found"
   from "found with loose edges".
 
-The app's pod builder goes one step past the threshold: a pod's edges grow over the
-adjacent cues whose ad-break probability still beats their content probability, so the
-spoken hand-over before the read and the return after it are skipped with it, and the walk
-stops where the show resumes. It is capped at 30 s only as a guard. A prompt or rule change
+The app's pod builder is a plain threshold on that probability: a cue is an ad when its
+advertisement or transition probability is at least 0.5, and a pod is the run of such cues,
+bridged across one non-ad cue and dropped under 8 s. Nothing widens a pod, so the edges are
+exactly the first and last sentences the model put in the break. A prompt or model change
 therefore requires a fresh corpus pass — each cached row records the prompt revision, and a
 mismatch is never reused.
 
