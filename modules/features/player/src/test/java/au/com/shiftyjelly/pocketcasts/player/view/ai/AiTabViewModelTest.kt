@@ -10,11 +10,14 @@ import au.com.shiftyjelly.pocketcasts.repositories.transcript.TranscriptManager
 import au.com.shiftyjelly.pocketcasts.sharedtest.MainCoroutineRule
 import kotlinx.coroutines.CompletableDeferred
 import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.emptyFlow
 import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.mockito.kotlin.mock
@@ -27,13 +30,24 @@ class AiTabViewModelTest {
 
     private val transcriptManager = mock<TranscriptManager>()
 
+    @Before
+    fun setup() {
+        whenever(transcriptManager.observeIsTranscriptAvailable(org.mockito.kotlin.any())).thenReturn(emptyFlow())
+        whenever(transcriptManager.observeTranscriptUpdated(org.mockito.kotlin.any())).thenReturn(emptyFlow())
+    }
+
     private fun viewModel(
         client: FakeAiChatClient = FakeAiChatClient(),
-    ) = AiTabViewModel(chatClient = client, transcriptManager = transcriptManager)
+    ) = AiTabViewModel(
+        chatClient = client,
+        transcriptManager = transcriptManager,
+        episodeManager = mock(),
+        showNotesManager = mock(),
+    )
 
     @Test
     fun `a first question is answered from the episode transcript`() = runTest {
-        whenever(transcriptManager.loadTranscript(EPISODE)).thenReturn(transcript("One.", "Two."))
+        whenever(transcriptManager.loadChatTranscript(EPISODE)).thenReturn(transcript("One.", "Two."))
         val client = FakeAiChatClient()
         val viewModel = viewModel(client).apply { onEpisodeChanged(EPISODE) }
 
@@ -55,7 +69,7 @@ class AiTabViewModelTest {
 
     @Test
     fun `a follow-up question carries the earlier turns`() = runTest {
-        whenever(transcriptManager.loadTranscript(EPISODE)).thenReturn(transcript("One."))
+        whenever(transcriptManager.loadChatTranscript(EPISODE)).thenReturn(transcript("One."))
         val client = FakeAiChatClient()
         val viewModel = viewModel(client).apply { onEpisodeChanged(EPISODE) }
 
@@ -76,7 +90,7 @@ class AiTabViewModelTest {
 
     @Test
     fun `the loading flag is set while the answer is on its way`() = runTest {
-        whenever(transcriptManager.loadTranscript(EPISODE)).thenReturn(transcript("One."))
+        whenever(transcriptManager.loadChatTranscript(EPISODE)).thenReturn(transcript("One."))
         val gate = CompletableDeferred<Unit>()
         val client = FakeAiChatClient(gate = gate)
         val viewModel = viewModel(client).apply { onEpisodeChanged(EPISODE) }
@@ -100,7 +114,7 @@ class AiTabViewModelTest {
 
     @Test
     fun `a failed request shows an inline error and keeps the question`() = runTest {
-        whenever(transcriptManager.loadTranscript(EPISODE)).thenReturn(transcript("One."))
+        whenever(transcriptManager.loadChatTranscript(EPISODE)).thenReturn(transcript("One."))
         val client = FakeAiChatClient(result = AiChatResult.Failed("HTTP 500"))
         val viewModel = viewModel(client).apply { onEpisodeChanged(EPISODE) }
 
@@ -115,7 +129,7 @@ class AiTabViewModelTest {
 
     @Test
     fun `a build without a key shows the unavailable error`() = runTest {
-        whenever(transcriptManager.loadTranscript(EPISODE)).thenReturn(transcript("One."))
+        whenever(transcriptManager.loadChatTranscript(EPISODE)).thenReturn(transcript("One."))
         val client = FakeAiChatClient(result = AiChatResult.NoApiKey)
         val viewModel = viewModel(client).apply { onEpisodeChanged(EPISODE) }
 
@@ -140,25 +154,23 @@ class AiTabViewModelTest {
     }
 
     @Test
-    fun `a web transcript is treated as missing`() = runTest {
-        whenever(transcriptManager.loadTranscript(EPISODE)).thenReturn(
-            Transcript.Web(
-                url = "https://example.com/episode.html",
-                isGenerated = false,
-                episodeUuid = EPISODE,
-                podcastUuid = PODCAST,
-            ),
-        )
+    fun `waiting chat becomes available when recognition finishes`() = runTest {
+        val updates = MutableSharedFlow<Unit>(extraBufferCapacity = 1)
+        whenever(transcriptManager.observeTranscriptUpdated(EPISODE)).thenReturn(updates)
+        whenever(transcriptManager.loadChatTranscript(EPISODE)).thenReturn(null, transcript("Ready."))
         val viewModel = viewModel().apply { onEpisodeChanged(EPISODE) }
-
         assertEquals(TranscriptAvailability.Missing, viewModel.state.value.transcript)
-        assertFalse(viewModel.state.value.canSend)
+
+        updates.emit(Unit)
+
+        assertEquals(TranscriptAvailability.Available, viewModel.state.value.transcript)
+        assertTrue(viewModel.state.value.canSend)
     }
 
     @Test
     fun `switching episodes starts a fresh conversation`() = runTest {
-        whenever(transcriptManager.loadTranscript(EPISODE)).thenReturn(transcript("One."))
-        whenever(transcriptManager.loadTranscript(OTHER_EPISODE)).thenReturn(transcript("Other."))
+        whenever(transcriptManager.loadChatTranscript(EPISODE)).thenReturn(transcript("One."))
+        whenever(transcriptManager.loadChatTranscript(OTHER_EPISODE)).thenReturn(transcript("Other."))
         val viewModel = viewModel().apply { onEpisodeChanged(EPISODE) }
         viewModel.send("Summarize the podcast")
         assertEquals(2, viewModel.state.value.messages.size)
@@ -173,7 +185,7 @@ class AiTabViewModelTest {
 
     @Test
     fun `a blank question is ignored`() = runTest {
-        whenever(transcriptManager.loadTranscript(EPISODE)).thenReturn(transcript("One."))
+        whenever(transcriptManager.loadChatTranscript(EPISODE)).thenReturn(transcript("One."))
         val client = FakeAiChatClient()
         val viewModel = viewModel(client).apply { onEpisodeChanged(EPISODE) }
 
@@ -187,7 +199,7 @@ class AiTabViewModelTest {
     @Test
     fun `a long transcript is capped before it reaches the client`() = runTest {
         val longLine = "b".repeat(MAX_TRANSCRIPT_CHARS * 2)
-        whenever(transcriptManager.loadTranscript(EPISODE)).thenReturn(transcript("start", longLine, "end"))
+        whenever(transcriptManager.loadChatTranscript(EPISODE)).thenReturn(transcript("start", longLine, "end"))
         val client = FakeAiChatClient()
         val viewModel = viewModel(client).apply { onEpisodeChanged(EPISODE) }
 

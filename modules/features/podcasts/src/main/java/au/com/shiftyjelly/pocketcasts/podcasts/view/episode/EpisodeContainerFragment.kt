@@ -32,7 +32,6 @@ import au.com.shiftyjelly.pocketcasts.player.view.transcript.TranscriptTabFragme
 import au.com.shiftyjelly.pocketcasts.player.viewmodel.BookmarksViewModel
 import au.com.shiftyjelly.pocketcasts.podcasts.databinding.FragmentEpisodeContainerBinding
 import au.com.shiftyjelly.pocketcasts.podcasts.view.episode.EpisodeFragment.EpisodeFragmentArgs
-import au.com.shiftyjelly.pocketcasts.repositories.transcript.TranscriptManager
 import au.com.shiftyjelly.pocketcasts.ui.theme.Theme
 import au.com.shiftyjelly.pocketcasts.ui.theme.ThemeColor
 import au.com.shiftyjelly.pocketcasts.utils.extensions.requireParcelable
@@ -44,9 +43,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.lifecycle.withCreationCallback
-import javax.inject.Inject
 import kotlin.time.Duration
-import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
@@ -142,9 +139,6 @@ class EpisodeContainerFragment :
         get() = if (forceDarkTheme && theme.isLightTheme) Theme.ThemeType.DARK else theme.activeTheme
 
     private lateinit var adapter: ViewPagerAdapter
-
-    @Inject
-    lateinit var transcriptManager: TranscriptManager
 
     private val viewModel: EpisodeContainerFragmentViewModel by viewModels()
     private val bookmarksViewModel: BookmarksViewModel by viewModels()
@@ -258,14 +252,9 @@ class EpisodeContainerFragment :
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                combine(
-                    chaptersViewModel.uiState.map { it.showChaptersTab },
-                    transcriptManager.observeIsTranscriptAvailable(episodeUUID),
-                ) { showChapters, hasTranscript -> showChapters to hasTranscript }
+                chaptersViewModel.uiState.map { it.showChaptersTab }
                     .distinctUntilChanged()
-                    .collect { (showChapters, hasTranscript) ->
-                        adapter.update(addChapters = showChapters, addTranscript = hasTranscript)
-                    }
+                    .collect { showChapters -> adapter.update(addChapters = showChapters) }
             }
         }
     }
@@ -344,16 +333,14 @@ class EpisodeContainerFragment :
             )
         }
 
-        private var sections = listOf(Section.Details, Section.Bookmarks)
+        private var sections = listOf(Section.Details, Section.Transcript, Section.Ai, Section.Bookmarks)
 
-        fun update(addTranscript: Boolean, addChapters: Boolean) {
+        fun update(addChapters: Boolean) {
             val currentSections = sections
             val newSections = buildList {
                 add(Section.Details)
-                if (addTranscript) {
-                    add(Section.Transcript)
-                    add(Section.Ai)
-                }
+                add(Section.Transcript)
+                add(Section.Ai)
                 if (addChapters) {
                     add(Section.Chapters)
                 }

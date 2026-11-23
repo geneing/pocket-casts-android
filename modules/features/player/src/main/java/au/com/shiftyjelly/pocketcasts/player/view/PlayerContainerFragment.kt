@@ -57,7 +57,6 @@ import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.lifecycle.withCreationCallback
 import javax.inject.Inject
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import timber.log.Timber
@@ -240,8 +239,18 @@ class PlayerContainerFragment :
             tab.setText(adapter.pageTitle(position))
         }.attach()
 
+        fun updateTabs(update: () -> Unit) {
+            val selectedPosition = viewPager.currentItem.coerceIn(0, adapter.itemCount - 1)
+            val selectedId = adapter.getItemId(selectedPosition)
+            update()
+            val newPosition = adapter.indexOfItem(selectedId)
+            if (newPosition >= 0 && newPosition != viewPager.currentItem) {
+                viewPager.setCurrentItem(newPosition, false)
+            }
+        }
+
         viewModel.listDataLive.observe(viewLifecycleOwner) {
-            adapter.updateNotes(addNotes = !it.podcastHeader.isUserEpisode)
+            updateTabs { adapter.updateNotes(addNotes = !it.podcastHeader.isUserEpisode) }
             val upNextCount = it.upNextEpisodes.size
             val drawableId = when {
                 upNextCount == 0 -> R.drawable.mini_player_upnext
@@ -269,19 +278,8 @@ class PlayerContainerFragment :
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 chaptersViewModel.uiState.collect {
-                    adapter.updateChapters(addChapters = it.showChaptersTab)
+                    updateTabs { adapter.updateChapters(addChapters = it.showChaptersTab) }
                 }
-            }
-        }
-
-        viewLifecycleOwner.lifecycleScope.launch {
-            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                shelfSharedViewModel.uiState
-                    .map { state -> state.isTranscriptAvailable }
-                    .distinctUntilChanged()
-                    .collect { available ->
-                        adapter.updateTranscript(addTranscript = available)
-                    }
             }
         }
 
@@ -429,7 +427,7 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
         data object Ai : Section(LR.string.player_tab_ai)
     }
 
-    private var sections = listOf(Section.Player, Section.Bookmarks)
+    private var sections = listOf(Section.Player, Section.Transcript, Section.Ai, Section.Bookmarks)
 
     val indexOfPlayer: Int
         get() = sections.indexOf(Section.Player)
@@ -454,25 +452,18 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
         updateSections(hasChapters = addChapters)
     }
 
-    fun updateTranscript(addTranscript: Boolean) {
-        // The AI tab is a chat over the transcript, so it lives and dies with it.
-        updateSections(hasTranscript = addTranscript, hasAi = addTranscript)
-    }
-
     // Stable IDs via getItemId/containsItem allow FragmentStateAdapter to efficiently diff fragments
     @SuppressLint("NotifyDataSetChanged")
     private fun updateSections(
         hasNotes: Boolean = sections.contains(Section.Notes),
         hasChapters: Boolean = sections.contains(Section.Chapters),
-        hasTranscript: Boolean = sections.contains(Section.Transcript),
-        hasAi: Boolean = sections.contains(Section.Ai),
     ) {
         val currentSections = sections
         val newSections = buildList {
             add(Section.Player)
             if (hasNotes) add(Section.Notes)
-            if (hasTranscript) add(Section.Transcript)
-            if (hasAi) add(Section.Ai)
+            add(Section.Transcript)
+            add(Section.Ai)
             if (hasChapters) add(Section.Chapters)
             add(Section.Bookmarks)
         }
@@ -489,6 +480,8 @@ private class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Life
     override fun containsItem(itemId: Long): Boolean {
         return sections.map { it.hashCode().toLong() }.contains(itemId)
     }
+
+    fun indexOfItem(itemId: Long): Int = sections.indexOfFirst { it.hashCode().toLong() == itemId }
 
     override fun getItemCount(): Int {
         return sections.size

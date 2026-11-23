@@ -52,7 +52,6 @@ import au.com.shiftyjelly.pocketcasts.compose.extensions.verticalScrollBar
 import au.com.shiftyjelly.pocketcasts.compose.theme
 import au.com.shiftyjelly.pocketcasts.models.to.AdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
-import au.com.shiftyjelly.pocketcasts.models.to.Transcript
 import au.com.shiftyjelly.pocketcasts.models.to.TranscriptEntry
 import au.com.shiftyjelly.pocketcasts.player.viewmodel.ShelfSharedViewModel
 import au.com.shiftyjelly.pocketcasts.repositories.ads.AdSegmentManager
@@ -164,42 +163,22 @@ class TranscriptTabFragment : Fragment() {
      * segments arrive after the transcript is shown and when the listener deselects one of them.
      */
     private fun observeTranscript(episodeUuid: String): Flow<TranscriptTabState> {
-        return transcriptManager.observeIsTranscriptAvailable(episodeUuid)
-            .distinctUntilChanged()
-            .flatMapLatest { isAvailable ->
-                // Clearing first keeps the previous episode's transcript from showing meanwhile.
-                val entries = if (isAvailable) {
-                    // The tab is often the first place an episode is read, before it is played.
-                    // Starting the analysis here fills in the probabilities without waiting.
-                    if (FeatureFlag.isEnabled(Feature.AD_SKIPPING)) {
-                        adSegmentManager.analyze(episodeUuid)
-                    }
-                    // Recognition rewrites the on-device transcript after every completed line, so
-                    // a tab that is already open grows with it. The analysis also replaces a
-                    // published transcript, which is why the entries are re-read on every update.
-                    transcriptManager.observeTranscriptUpdated(episodeUuid)
-                        .debounce(TRANSCRIPT_REFRESH_MS)
-                        .onStart { emit(Unit) }
-                        .map {
-                            transcriptManager.invalidateTranscript(episodeUuid)
-                            loadEntries(episodeUuid)
-                        }
-                } else {
-                    flowOf(emptyList())
-                }
-                combine(
-                    entries,
-                    adSegmentManager.observeSegments(episodeUuid),
-                    adSegmentManager.observeCueScores(episodeUuid),
-                ) { transcriptEntries, adSegments, cueScores ->
-                    TranscriptTabState(entries = transcriptEntries, adSegments = adSegments, cueScores = cueScores)
-                }
-            }
+        if (FeatureFlag.isEnabled(Feature.AD_SKIPPING)) adSegmentManager.analyze(episodeUuid)
+        val entries = transcriptManager.observeTranscriptUpdated(episodeUuid)
+            .debounce(TRANSCRIPT_REFRESH_MS)
+            .onStart { emit(Unit) }
+            .map { loadEntries(episodeUuid) }
+        return combine(
+            entries,
+            adSegmentManager.observeSegments(episodeUuid),
+            adSegmentManager.observeCueScores(episodeUuid),
+        ) { transcriptEntries, adSegments, cueScores ->
+            TranscriptTabState(entries = transcriptEntries, adSegments = adSegments, cueScores = cueScores)
+        }
     }
 
     private suspend fun loadEntries(episodeUuid: String): List<TranscriptEntry.Text> {
-        val transcript = transcriptManager.loadTranscript(episodeUuid)
-        return (transcript as? Transcript.Text)?.entries
+        return transcriptManager.loadOnDeviceTranscript(episodeUuid)?.entries
             ?.filterIsInstance<TranscriptEntry.Text>()
             ?.filter { it.startTimeMs >= 0 }
             .orEmpty()
@@ -241,12 +220,6 @@ private fun TranscriptTabPage(
     val timestampColor = if (usePlayerColors) colors.playerContrast02 else colors.primaryText02
     val highlightColor = if (usePlayerColors) colors.playerContrast06 else colors.primaryUi05
     if (entries.isEmpty()) {
-        Text(
-            text = stringResource(LR.string.transcript_not_available),
-            style = MaterialTheme.typography.body2,
-            color = timestampColor,
-            modifier = Modifier.padding(24.dp),
-        )
         return
     }
     // Ad segment times are in the timeline of the played audio, the same timeline as the entries,

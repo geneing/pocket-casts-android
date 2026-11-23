@@ -12,6 +12,12 @@ interface TranscriptManager {
         episodeUuid: String,
     ): Transcript?
 
+    /** The locally recognised transcript, including a pass in progress. */
+    suspend fun loadOnDeviceTranscript(episodeUuid: String): Transcript.Text? = loadTranscript(episodeUuid) as? Transcript.Text
+
+    /** Published text if available, otherwise a completed on-device transcript. */
+    suspend fun loadChatTranscript(episodeUuid: String): Transcript.Text? = loadTranscript(episodeUuid) as? Transcript.Text
+
     suspend fun loadGeneratedTranscript(
         episodeUuid: String,
     ): Transcript.Text?

@@ -115,7 +115,8 @@ class OpenRouterChatClient @Inject constructor(
             add(AiChatRequestMessage(role = AiChatMessage.Role.User.wireValue, content = question))
         },
         maxTokens = AiChatPrompt.MAX_TOKENS,
-        plugins = listOf(AiChatPlugin(id = WEB_PLUGIN_ID, maxResults = WEB_SEARCH_RESULTS)),
+        plugins = listOf(AiChatPlugin(id = WEB_PLUGIN_ID, enabled = false)),
+        tools = if (isEpisodeSummary(question)) null else listOf(AiChatTool(type = "openrouter:web_search")),
     )
 
     /**
@@ -163,7 +164,7 @@ class OpenRouterChatClient @Inject constructor(
     }
 
     /**
-     * Appends the pages the web search plugin grounded the answer in, when the model cited any.
+     * Appends the pages web search grounded the answer in, when the model cited any.
      *
      * The citations arrive as `url_citation` annotations rather than as text, so without this the
      * answer would read as if it had been pulled out of thin air.
@@ -197,15 +198,8 @@ class OpenRouterChatClient @Inject constructor(
         private const val TAG = "OpenRouterChatClient"
         const val CHAT_COMPLETIONS_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
 
-        /**
-         * OpenRouter's web search plugin. It runs server-side, so the app needs no search API, no
-         * tool-calling loop and no scraping: the results arrive attached to the prompt, and the
-         * citations come back as `url_citation` annotations on the answer.
-         */
+        /** Disable the legacy search plugin even when enabled in the account defaults. */
         private const val WEB_PLUGIN_ID = "web"
-
-        /** Enough to look a name or an event up, without turning every question into a research bill. */
-        private const val WEB_SEARCH_RESULTS = 3
 
         /** Citations are a reading aid, not the answer; a handful is all a bubble can show. */
         private const val MAX_SOURCES = 5
@@ -216,24 +210,31 @@ class OpenRouterChatClient @Inject constructor(
     }
 }
 
+internal fun isEpisodeSummary(question: String): Boolean =
+    Regex(
+        """(?i)^\s*(?:please\s+)?(?:summarize|summarise|summary of)\s+""" +
+            """(?:(?:the|this)\s+)?(?:episode|podcast)[.!?]*\s*$""",
+    )
+        .matches(question)
+
 @JsonClass(generateAdapter = true)
 internal data class AiChatRequest(
     val model: String,
     val messages: List<AiChatRequestMessage>,
     @Json(name = "max_tokens") val maxTokens: Int,
-    /**
-     * Server-side plugins OpenRouter runs before the model sees the request. The `web` plugin
-     * searches the web and attaches the results (with citations) to the prompt, which is what lets
-     * the answer reach outside the episode without this app downloading or scraping anything.
-     */
+    /** The legacy web plugin is disabled; the model can invoke the server tool instead. */
     val plugins: List<AiChatPlugin>? = null,
+    val tools: List<AiChatTool>? = null,
 )
 
 @JsonClass(generateAdapter = true)
 internal data class AiChatPlugin(
     val id: String,
-    @Json(name = "max_results") val maxResults: Int? = null,
+    val enabled: Boolean? = null,
 )
+
+@JsonClass(generateAdapter = true)
+internal data class AiChatTool(val type: String)
 
 @JsonClass(generateAdapter = true)
 internal data class AiChatRequestMessage(
@@ -256,7 +257,7 @@ internal data class AiChatChoice(val message: AiChatResponseMessage? = null)
 internal data class AiChatResponseMessage(
     val role: String? = null,
     val content: String? = null,
-    /** `url_citation` entries the web search plugin attached to the answer, if it ran. */
+    /** `url_citation` entries attached to the answer, if search ran. */
     val annotations: List<AiChatAnnotation>? = null,
 )
 

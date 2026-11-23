@@ -14,6 +14,13 @@ import org.junit.Test
 class OpenRouterChatClientTest {
     private val moshi = Moshi.Builder().build()
 
+    @Test
+    fun `episode summaries do not request web search`() {
+        assertTrue(isEpisodeSummary("Summarize the episode"))
+        assertTrue(isEpisodeSummary("Please summarise this podcast."))
+        assertFalse(isEpisodeSummary("What happened after the episode?"))
+    }
+
     private fun client(key: String?) = OpenRouterChatClient(
         okHttpClient = OkHttpClient(),
         apiKey = if (key == null) Optional.empty<String>() else Optional.of(key),
@@ -54,12 +61,13 @@ class OpenRouterChatClientTest {
             assertTrue(raw, raw.contains("\"model\":\"${AiChatPrompt.MODEL}\""))
             assertTrue(raw, raw.contains("\"max_tokens\":${AiChatPrompt.MAX_TOKENS}"))
             // Web search is OpenRouter's job; the request only has to ask for it.
-            assertTrue(raw, raw.contains("\"plugins\":[{\"id\":\"web\",\"max_results\":3}]"))
+            assertTrue(raw, raw.contains("\"plugins\":[{\"id\":\"web\",\"enabled\":false}]"))
 
             val request = moshi.adapter(AiChatRequest::class.java).fromJson(raw)!!
             assertEquals(AiChatPrompt.MODEL, request.model)
             assertEquals(AiChatPrompt.MAX_TOKENS, request.maxTokens)
             assertEquals(listOf("web"), request.plugins?.map { it.id })
+            assertEquals(listOf("openrouter:web_search"), request.tools?.map { it.type })
             assertEquals(listOf("system", "user", "assistant", "user"), request.messages.map { it.role })
 
             val system = request.messages[0].content
@@ -84,6 +92,8 @@ class OpenRouterChatClientTest {
             val request = moshi.adapter(AiChatRequest::class.java).fromJson(raw)!!
             assertEquals(listOf("system", "user"), request.messages.map { it.role })
             assertEquals("Summarize the podcast", request.messages[1].content)
+            assertTrue(request.tools.orEmpty().isEmpty())
+            assertEquals(false, request.plugins?.single()?.enabled)
         }
     }
 

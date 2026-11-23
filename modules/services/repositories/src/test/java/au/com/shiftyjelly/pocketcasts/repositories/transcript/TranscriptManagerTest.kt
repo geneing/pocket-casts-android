@@ -52,6 +52,7 @@ import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.mockito.kotlin.any
@@ -85,6 +86,14 @@ class TranscriptManagerTest {
     private val context = mock<Context> {
         on { getSystemService(Context.CONNECTIVITY_SERVICE) } doReturn connectivityManager
     }
+    private val localTranscriptStore: LocalTranscriptStore = mock()
+
+    @Before
+    fun setUpTranscriptSources() = runBlocking {
+        FeatureFlag.setEnabled(Feature.AD_SKIPPING, false)
+        whenever(localTranscriptStore.isComplete(any(), any())).thenReturn(false)
+        Unit
+    }
 
     private val vttDbTranscript = createDbTranscript("text/vtt")
     private val srtDbTranscript = createDbTranscript("application/srt")
@@ -99,6 +108,35 @@ class TranscriptManagerTest {
         publishedDate = Date(),
         hasGeneratedTranscript = true,
     )
+
+    @Test
+    fun `chat uses published text while on-device recognition is incomplete`() = runTest {
+        localTranscriptsFlow.value = listOf(
+            vttDbTranscript.copy(url = "local-generated://episode-id", isGenerated = true),
+            vttDbTranscript,
+        )
+
+        val transcript = transcriptManager.loadChatTranscript("episode-id")
+
+        assertEquals("transcript-url", transcript?.url)
+        assertNull(transcriptManager.loadOnDeviceTranscript("episode-id"))
+    }
+
+    @Test
+    fun `chat does not use an unfinished on-device transcript`() = runTest {
+        localTranscriptsFlow.value = listOf(vttDbTranscript.copy(url = "local-generated://episode-id", isGenerated = true))
+
+        assertNull(transcriptManager.loadChatTranscript("episode-id"))
+    }
+
+    @Test
+    fun `navigation does not use published timing when ad skipping is enabled`() = runTest {
+        FeatureFlag.setEnabled(Feature.AD_SKIPPING, true)
+        localTranscriptsFlow.value = listOf(vttDbTranscript)
+
+        assertNull(transcriptManager.loadTranscript("episode-id"))
+        assertNotNull(transcriptManager.loadChatTranscript("episode-id"))
+    }
 
     private val transcriptManager = TranscriptManagerImpl(
         transcriptDao = mock {
@@ -115,7 +153,8 @@ class TranscriptManagerTest {
         parsers = parsers,
         eventHorizon = EventHorizon(eventSink),
         context = context,
-        localTranscriptStore = mock(),
+        localTranscriptStore = localTranscriptStore,
+        episodeTranscriber = mock { on { version } doReturn "test-version" },
     )
 
     @Test
@@ -486,6 +525,7 @@ class TranscriptManagerTest {
             eventHorizon = EventHorizon(eventSink),
             context = context,
             localTranscriptStore = mock(),
+            episodeTranscriber = mock(),
         )
 
         assertEquals(GeneratedChaptersResult.Loaded, managerWithChapters.loadGeneratedChapters("episode-id"))

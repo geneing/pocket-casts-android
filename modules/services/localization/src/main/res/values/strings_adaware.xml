@@ -6,7 +6,7 @@
     <string name="player_ai_input_hint">Ask about this episode</string>
     <string name="player_ai_send">Send</string>
     <string name="player_ai_thinking">Thinking…</string>
-    <string name="player_ai_transcript_missing">An AI chat needs a transcript, and this episode doesn\'t have one yet.</string>
+    <string name="player_ai_transcript_missing">Waiting for transcript</string>
     <string name="player_ai_unavailable">AI chat isn\'t available in this build.</string>
     <string name="player_effects_skip_ads">Skip Ads</string>
     <string name="player_effects_skip_ads_detail_off">Automatically skip ads and sponsor reads in episodes</string>

@@ -10,6 +10,7 @@ import au.com.shiftyjelly.pocketcasts.models.to.DbChapter
 import au.com.shiftyjelly.pocketcasts.models.to.Transcript
 import au.com.shiftyjelly.pocketcasts.models.to.TranscriptType
 import au.com.shiftyjelly.pocketcasts.repositories.BuildConfig
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.EpisodeTranscriber
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.LocalTranscriptStore
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.ChapterManager
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
@@ -17,6 +18,8 @@ import au.com.shiftyjelly.pocketcasts.repositories.podcast.GeneratedChaptersAvai
 import au.com.shiftyjelly.pocketcasts.repositories.shownotes.generatedTranscriptUrl
 import au.com.shiftyjelly.pocketcasts.servers.podcast.TranscriptService
 import au.com.shiftyjelly.pocketcasts.utils.Network
+import au.com.shiftyjelly.pocketcasts.utils.featureflag.Feature
+import au.com.shiftyjelly.pocketcasts.utils.featureflag.FeatureFlag
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
 import com.automattic.eventhorizon.EventHorizon
 import com.automattic.eventhorizon.GeneratedChaptersDownloadTriggerType
@@ -40,6 +43,7 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.asFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.map
@@ -68,6 +72,7 @@ class TranscriptManagerImpl @Inject constructor(
     private val eventHorizon: EventHorizon,
     @ApplicationContext private val context: Context,
     private val localTranscriptStore: LocalTranscriptStore,
+    private val episodeTranscriber: EpisodeTranscriber,
 ) : TranscriptManager {
     private val transcriptUrlBlacklist = ConcurrentHashMap<String, String>()
     private val lruCache = LruCache<String, Transcript>(maxSize = 20)
@@ -92,7 +97,11 @@ class TranscriptManagerImpl @Inject constructor(
         // timings and the missing ad reads that made tap-to-seek and skipping wrong. Reading it
         // fresh (rather than from the cache) is what lets an in-progress transcript grow.
         val local = readStoredLocalTranscript(episodeUuid)
-        val transcript = local ?: lruCache[episodeUuid] ?: findAndCacheTranscript(episodeUuid)
+        val transcript = local ?: if (FeatureFlag.isEnabled(Feature.AD_SKIPPING)) {
+            null
+        } else {
+            lruCache[episodeUuid] ?: findAndCacheTranscript(episodeUuid)
+        }
 
         val message = if (transcript != null) {
             "Transcript loaded for episode $episodeUuid: ${transcript.type} ${transcript.url}"
@@ -104,8 +113,27 @@ class TranscriptManagerImpl @Inject constructor(
         return transcript
     }
 
+    override suspend fun loadOnDeviceTranscript(episodeUuid: String): Transcript.Text? = readStoredLocalTranscript(episodeUuid)
+
+    override suspend fun loadChatTranscript(episodeUuid: String): Transcript.Text? {
+        val published = transcriptDao.observeTranscripts(episodeUuid).first()
+            .filterNot { it.url.startsWith(LocalTranscriptStore.SCHEME) }
+            .sortedWith(TranscriptsComparator)
+            .asFlow()
+            .mapNotNull(::associateWithParser)
+            .mapNotNull(::readTranscript)
+            .mapNotNull { it as? Transcript.Text }
+            .firstOrNull { it.entries.isNotEmpty() }
+        return published ?: if (localTranscriptStore.isComplete(episodeUuid, episodeTranscriber.version)) {
+            readStoredLocalTranscript(episodeUuid)
+        } else {
+            null
+        }
+    }
+
     override suspend fun loadGeneratedTranscript(episodeUuid: String): Transcript.Text? {
         return readStoredLocalTranscript(episodeUuid) ?: run {
+            if (FeatureFlag.isEnabled(Feature.AD_SKIPPING)) return null
             val generated = loadLocalTranscripts(episodeUuid).firstOrNull { it.isGenerated } ?: return null
             generatedLruCache[generated.url]?.let { return it }
             val parserWithTranscript = associateWithParser(generated) ?: return null

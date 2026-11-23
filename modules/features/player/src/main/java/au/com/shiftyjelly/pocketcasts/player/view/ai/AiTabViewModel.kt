@@ -2,19 +2,24 @@ package au.com.shiftyjelly.pocketcasts.player.view.ai
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import au.com.shiftyjelly.pocketcasts.models.to.Transcript
 import au.com.shiftyjelly.pocketcasts.models.to.TranscriptEntry
 import au.com.shiftyjelly.pocketcasts.repositories.ai.AiChatClient
 import au.com.shiftyjelly.pocketcasts.repositories.ai.AiChatMessage
 import au.com.shiftyjelly.pocketcasts.repositories.ai.AiChatResult
+import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
+import au.com.shiftyjelly.pocketcasts.repositories.shownotes.ShowNotesManager
 import au.com.shiftyjelly.pocketcasts.repositories.transcript.TranscriptManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 import kotlin.coroutines.cancellation.CancellationException
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.merge
+import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
@@ -26,9 +31,12 @@ import kotlinx.coroutines.launch
  * conversation: the previous episode's transcript would answer the wrong questions.
  */
 @HiltViewModel
+@OptIn(ExperimentalCoroutinesApi::class)
 class AiTabViewModel @Inject constructor(
     private val chatClient: AiChatClient,
     private val transcriptManager: TranscriptManager,
+    private val episodeManager: EpisodeManager,
+    private val showNotesManager: ShowNotesManager,
 ) : ViewModel() {
 
     private val mutableState = MutableStateFlow(AiTabState())
@@ -50,7 +58,25 @@ class AiTabViewModel @Inject constructor(
             mutableState.update { it.copy(transcript = TranscriptAvailability.Missing) }
             return
         }
-        transcriptJob = viewModelScope.launch { loadTranscript(episodeUuid) }
+        viewModelScope.launch {
+            try {
+                episodeManager.findByUuid(episodeUuid)?.let { episode ->
+                    showNotesManager.loadShowNotes(episode.podcastUuid, episodeUuid)
+                }
+            } catch (error: CancellationException) {
+                throw error
+            } catch (_: Exception) {
+                // Recognition can still supply a transcript when show notes are unavailable.
+            }
+        }
+        transcriptJob = viewModelScope.launch {
+            merge(
+                transcriptManager.observeIsTranscriptAvailable(episodeUuid).map { },
+                transcriptManager.observeTranscriptUpdated(episodeUuid),
+            ).onStart { emit(Unit) }.collect {
+                if (transcriptContext == null) loadTranscript(episodeUuid)
+            }
+        }
     }
 
     /** Keeps the field's text in the state so it survives configuration changes and episode switches. */
@@ -93,7 +119,7 @@ class AiTabViewModel @Inject constructor(
     }
 
     private suspend fun loadTranscript(episodeUuid: String) {
-        val transcript = runCatching { transcriptManager.loadTranscript(episodeUuid) }
+        val transcript = runCatching { transcriptManager.loadChatTranscript(episodeUuid) }
             .getOrElse { error ->
                 if (error is CancellationException) throw error
                 null
@@ -101,7 +127,7 @@ class AiTabViewModel @Inject constructor(
         // The episode may have changed while the transcript was being read.
         if (episodeUuid != this.episodeUuid) return
 
-        val text = (transcript as? Transcript.Text)
+        val text = transcript
             ?.entries
             ?.filterIsInstance<TranscriptEntry.Text>()
             ?.joinToString(separator = "\n") { entry -> entry.value.trim() }
@@ -144,7 +170,7 @@ enum class AiTabError {
 }
 
 /** The longest transcript sent to the model, in characters. */
-internal const val MAX_TRANSCRIPT_CHARS = 120_000
+internal const val MAX_TRANSCRIPT_CHARS = 800_000
 
 internal const val TRANSCRIPT_TRUNCATION_MARKER = "\n\n[... transcript truncated ...]\n\n"
 
