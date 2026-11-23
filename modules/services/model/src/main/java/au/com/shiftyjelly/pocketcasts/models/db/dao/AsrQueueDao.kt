@@ -56,6 +56,13 @@ abstract class AsrQueueDao {
     )
     abstract suspend fun markComplete(episodeUuid: String, processedUntilMs: Long)
 
+    /** Keeps an expired transcript from being recreated by the downloaded-episode sweep. */
+    @Query(
+        "UPDATE episode_asr_queue SET is_complete = 1, processed_until_ms = 0, attempts = 0, " +
+            "next_attempt_at = 0, last_error = :reason WHERE episode_uuid IS :episodeUuid",
+    )
+    abstract suspend fun markExpired(episodeUuid: String, reason: String)
+
     @Query(
         "UPDATE episode_asr_queue SET attempts = attempts + 1, " +
             "next_attempt_at = :nextAttemptAt, last_error = :error WHERE episode_uuid IS :episodeUuid",

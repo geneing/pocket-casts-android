@@ -48,6 +48,7 @@ class OnDeviceTranscriptGenerator @Inject constructor(
     private val transcriptStore: LocalTranscriptStore,
     private val fileStorage: FileStorage,
     private val queue: AdAnalysisQueue,
+    private val writeGuard: AnalysisWriteGuard,
 ) {
     private val mutex = Mutex()
 
@@ -61,6 +62,7 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         episodeUuid: String,
         onModelProgress: (ModelDownloadProgress) -> Unit = {},
     ): AsrOutcome = mutex.withLock {
+        val startingGeneration = writeGuard.generation(episodeUuid)
         try {
             runPass(episodeUuid, onModelProgress)
         } catch (e: CancellationException) {
@@ -72,7 +74,9 @@ class OnDeviceTranscriptGenerator @Inject constructor(
             // the pass itself is resumable, so the retry only redoes what was missing.
             LogBuffer.e(TAG, e, "Recognition of $episodeUuid threw before it could report")
             runCatching {
-                queue.failAsr(episodeUuid, "crashed: ${e.javaClass.simpleName}: ${e.message}", ASR_RETRY_DELAY_MS)
+                writeGuard.ifCurrent(episodeUuid, startingGeneration) {
+                    queue.failAsr(episodeUuid, "crashed: ${e.javaClass.simpleName}: ${e.message}", ASR_RETRY_DELAY_MS)
+                }
             }
             AsrOutcome.Retry
         }
@@ -82,12 +86,12 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         episodeUuid: String,
         onModelProgress: (ModelDownloadProgress) -> Unit,
     ): AsrOutcome {
+        var generation = writeGuard.generation(episodeUuid)
         var item = queue.asrItem(episodeUuid) ?: return AsrOutcome.NotQueued
         if (item.isComplete) return AsrOutcome.Completed
 
         val episode = episodeManager.findByUuid(episodeUuid) ?: run {
-            queue.forget(episodeUuid)
-            return AsrOutcome.Unsupported
+            return if (queue.forgetIfCurrent(episodeUuid, generation)) AsrOutcome.Unsupported else AsrOutcome.NotQueued
         }
         val podcast = podcastManager.findPodcastByUuid(episode.podcastUuid)
         val source = resolveSource(episode) ?: run {
@@ -95,40 +99,48 @@ class OnDeviceTranscriptGenerator @Inject constructor(
             // stream copy with its own ad stitch. The download path calls AdAnalysisQueue.schedule
             // when the file is written, which releases this row: nothing here waits or polls.
             LogBuffer.i(TAG, "Waiting for the download of $episodeUuid before recognising it")
-            queue.deferUntilAudio(episodeUuid)
-            return AsrOutcome.Retry
+            return writeGuard.ifCurrent(episodeUuid, generation) {
+                queue.deferUntilAudio(episodeUuid)
+                AsrOutcome.Retry
+            } ?: AsrOutcome.NotQueued
         }
 
         // A re-download, a new ad stitch or an engine update makes the stored transcript and every
         // score built from it stale. Restarting here is what keeps the source of truth unambiguous.
-        resetIfStale(episodeUuid, source)
+        generation = resetIfStale(episodeUuid, source, generation) ?: return AsrOutcome.NotQueued
         item = queue.asrItem(episodeUuid) ?: return AsrOutcome.NotQueued
 
         val audioSignature = AnalysisIdentity.audioSignature(source)
         if (transcriptNeedsRestart(episode, item, source, audioSignature)) {
-            queue.resetAnalysis(episodeUuid)
-            item = queue.asrItem(episodeUuid) ?: return AsrOutcome.NotQueued
+            generation = queue.resetAnalysisIfCurrent(episodeUuid, generation) ?: return AsrOutcome.NotQueued
         }
+        item = queue.asrItem(episodeUuid) ?: return AsrOutcome.NotQueued
 
         when (val availability = transcriber.availability(podcast?.podcastLanguage)) {
             TranscriptAvailability.Ready -> Unit
 
             TranscriptAvailability.ModelNeedsUnmeteredNetwork -> {
                 LogBuffer.i(TAG, "Speech model download for $episodeUuid is waiting for an unmetered network")
-                queue.deferAsr(episodeUuid, REASON_METERED)
-                return AsrOutcome.Deferred
+                return writeGuard.ifCurrent(episodeUuid, generation) {
+                    queue.deferAsr(episodeUuid, REASON_METERED)
+                    AsrOutcome.Deferred
+                } ?: AsrOutcome.NotQueued
             }
 
             TranscriptAvailability.UnsupportedLanguage -> {
                 LogBuffer.i(TAG, "No speech model for the language of $episodeUuid")
-                abandon(episodeUuid, episode.durationMs.toLong())
-                return AsrOutcome.Unsupported
+                return writeGuard.ifCurrent(episodeUuid, generation) {
+                    abandon(episodeUuid, episode.durationMs.toLong())
+                    AsrOutcome.Unsupported
+                } ?: AsrOutcome.NotQueued
             }
 
             TranscriptAvailability.EngineUnavailable -> {
                 LogBuffer.i(TAG, "On-device speech recognition is unavailable, leaving $episodeUuid alone")
-                abandon(episodeUuid, episode.durationMs.toLong())
-                return AsrOutcome.Unsupported
+                return writeGuard.ifCurrent(episodeUuid, generation) {
+                    abandon(episodeUuid, episode.durationMs.toLong())
+                    AsrOutcome.Unsupported
+                } ?: AsrOutcome.NotQueued
             }
         }
 
@@ -138,13 +150,19 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         lastDetectionAt = 0L
         val durationMs = episode.durationMs.toLong()
         if (durationMs > 0 && startMs >= durationMs - COMPLETE_MARGIN_MS) {
-            complete(episodeUuid, startMs)
-            return AsrOutcome.Completed
+            return writeGuard.ifCurrent(episodeUuid, generation) {
+                complete(episodeUuid, startMs)
+                AsrOutcome.Completed
+            } ?: AsrOutcome.NotQueued
         }
 
         // Recorded before the first window is read, so a process killed mid-pass leaves the next one
         // able to tell whether the audio it resumes on is the audio these cues were made from.
-        transcriptStore.recordAudio(episodeUuid, audioSignature)
+        val recorded = writeGuard.ifCurrent(episodeUuid, generation) {
+            transcriptStore.recordAudio(episodeUuid, audioSignature)
+            true
+        } ?: false
+        if (!recorded) return AsrOutcome.NotQueued
 
         val result = transcriber.transcribe(
             request = TranscriptRequest(
@@ -160,17 +178,23 @@ class OnDeviceTranscriptGenerator @Inject constructor(
             if (merged.size == existing.size && merged.lastOrNull() == existing.lastOrNull()) {
                 return@transcribe
             }
-            persist(episodeUuid, merged)
-            if (shouldWakeDetection(merged.size)) {
-                queue.enqueueDetectionNow(episodeUuid)
+            writeGuard.ifCurrent(episodeUuid, generation) {
+                persist(episodeUuid, merged)
+                if (shouldWakeDetection(merged.size)) {
+                    queue.enqueueDetectionNow(episodeUuid)
+                }
             }
         }
 
         return when (result) {
             is TranscriptResult.Success -> {
                 val merged = mergeCues(existing, result.cues, resumeAtMs = startMs)
-                persist(episodeUuid, merged)
-                complete(episodeUuid, merged.lastOrNull()?.endMs ?: durationMs)
+                val saved = writeGuard.ifCurrent(episodeUuid, generation) {
+                    persist(episodeUuid, merged)
+                    complete(episodeUuid, merged.lastOrNull()?.endMs ?: durationMs)
+                    true
+                } ?: false
+                if (!saved) return AsrOutcome.NotQueued
                 LogBuffer.i(
                     TAG,
                     "Recognised $episodeUuid: ${merged.size} cues from ${startMs}ms, ${result.engine}",
@@ -180,14 +204,18 @@ class OnDeviceTranscriptGenerator @Inject constructor(
 
             is TranscriptResult.Unavailable -> {
                 if (result.reason.contains("unmetered", ignoreCase = true)) {
-                    queue.deferAsr(episodeUuid, result.reason)
-                    AsrOutcome.Deferred
+                    writeGuard.ifCurrent(episodeUuid, generation) {
+                        queue.deferAsr(episodeUuid, result.reason)
+                        AsrOutcome.Deferred
+                    } ?: AsrOutcome.NotQueued
                 } else {
                     LogBuffer.i(TAG, "On-device transcription unavailable for $episodeUuid: ${result.reason}")
                     // HLS or a missing file may become transcribable after a download; only an
                     // unsupported language or engine is final.
-                    queue.failAsr(episodeUuid, result.reason, ASR_RETRY_DELAY_MS)
-                    AsrOutcome.Retry
+                    writeGuard.ifCurrent(episodeUuid, generation) {
+                        queue.failAsr(episodeUuid, result.reason, ASR_RETRY_DELAY_MS)
+                        AsrOutcome.Retry
+                    } ?: AsrOutcome.NotQueued
                 }
             }
 
@@ -197,9 +225,11 @@ class OnDeviceTranscriptGenerator @Inject constructor(
                 LogBuffer.e(TAG, "Transcription failed for $episodeUuid: ${result.message}")
                 // Score what was recognized before the failure, even if it is below a full batch:
                 // the transcript tab is already showing it.
-                queue.enqueueDetectionNow(episodeUuid)
-                queue.failAsr(episodeUuid, result.message, ASR_RETRY_DELAY_MS)
-                AsrOutcome.Retry
+                writeGuard.ifCurrent(episodeUuid, generation) {
+                    queue.enqueueDetectionNow(episodeUuid)
+                    queue.failAsr(episodeUuid, result.message, ASR_RETRY_DELAY_MS)
+                    AsrOutcome.Retry
+                } ?: AsrOutcome.NotQueued
             }
         }
     }
@@ -236,20 +266,20 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         queue.completeAsr(episodeUuid, processedUntilMs)
     }
 
-    private suspend fun resetIfStale(episodeUuid: String, source: TranscriptSource) {
-        val state: AdAnalysisState = queue.analysisState(episodeUuid) ?: return
+    private suspend fun resetIfStale(episodeUuid: String, source: TranscriptSource, generation: Long): Long? {
+        val state: AdAnalysisState = queue.analysisState(episodeUuid) ?: return generation
         val signature = AnalysisIdentity.audioSignature(source)
         val staleAudio = state.audioSignature.isNotBlank() && state.audioSignature != signature
         val staleEngine = state.sttVersion.isNotBlank() && state.sttVersion != transcriber.version
         val fromPublishedTranscript = state.sttVersion.isNotBlank() &&
             !state.sttVersion.startsWith(ParakeetModel.ENGINE_TAG)
-        if (!staleAudio && !staleEngine && !fromPublishedTranscript) return
+        if (!staleAudio && !staleEngine && !fromPublishedTranscript) return generation
         LogBuffer.i(
             TAG,
             "Resetting transcript analysis for $episodeUuid " +
                 "(audioChanged=$staleAudio, engineChanged=$staleEngine, published=$fromPublishedTranscript)",
         )
-        queue.resetAnalysis(episodeUuid)
+        return queue.resetAnalysisIfCurrent(episodeUuid, generation)
     }
 
     /**

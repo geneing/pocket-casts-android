@@ -9,6 +9,7 @@ import au.com.shiftyjelly.pocketcasts.models.to.AdSegment
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdCueScore
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdSegment
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.AdAnalysisQueue
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.AnalysisWriteGuard
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.time.Duration.Companion.milliseconds
@@ -22,6 +23,7 @@ class AdSegmentManagerImpl @Inject constructor(
     private val adAnalysisDao: AdAnalysisDao,
     private val adCueScoreDao: AdCueScoreDao,
     private val queue: AdAnalysisQueue,
+    private val writeGuard: AnalysisWriteGuard,
 ) : AdSegmentManager {
     override fun observeSegments(episodeUuid: String): Flow<List<AdSegment>> {
         return adSegmentDao.observeSegmentsForEpisode(episodeUuid)
@@ -50,7 +52,7 @@ class AdSegmentManagerImpl @Inject constructor(
         adSegmentDao.setDeselected(episodeUuid, segmentIndex, deselected)
     }
 
-    override suspend fun clear(episodeUuid: String) {
+    override suspend fun clear(episodeUuid: String) = writeGuard.invalidate(listOf(episodeUuid)) {
         adSegmentDao.replaceAll(episodeUuid, emptyList())
         adCueScoreDao.replaceAll(episodeUuid, emptyList())
         adAnalysisDao.delete(episodeUuid)

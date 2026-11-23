@@ -1,8 +1,12 @@
 package au.com.shiftyjelly.pocketcasts.repositories.ads.text
 
+import androidx.room.Room
+import au.com.shiftyjelly.pocketcasts.models.db.AppDatabase
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdAnalysisDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdCueScoreDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdSegmentDao
+import au.com.shiftyjelly.pocketcasts.models.di.ModelModule
+import au.com.shiftyjelly.pocketcasts.models.di.addTypeConverters
 import au.com.shiftyjelly.pocketcasts.models.entity.Podcast
 import au.com.shiftyjelly.pocketcasts.models.entity.PodcastEpisode
 import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
@@ -10,28 +14,42 @@ import au.com.shiftyjelly.pocketcasts.models.to.AdDetectionQueueItem
 import au.com.shiftyjelly.pocketcasts.models.to.AsrQueueItem
 import au.com.shiftyjelly.pocketcasts.models.to.DbAdCueScore
 import au.com.shiftyjelly.pocketcasts.models.type.EpisodeDownloadStatus
+import au.com.shiftyjelly.pocketcasts.repositories.ads.AdAnalysisCleanup
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevAdClassifier
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevAdModel
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevAdModelStore
 import au.com.shiftyjelly.pocketcasts.repositories.ads.jev.JevClassification
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.PodcastManager
+import com.squareup.moshi.Moshi
 import java.io.File
 import java.util.Date
+import kotlinx.coroutines.CompletableDeferred
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.async
+import kotlinx.coroutines.test.runCurrent
 import kotlinx.coroutines.test.runTest
+import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
+import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TemporaryFolder
+import org.junit.runner.RunWith
 import org.mockito.kotlin.any
 import org.mockito.kotlin.argumentCaptor
+import org.mockito.kotlin.doSuspendableAnswer
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.never
 import org.mockito.kotlin.verify
 import org.mockito.kotlin.verifyNoInteractions
 import org.mockito.kotlin.whenever
+import org.robolectric.RobolectricTestRunner
+import org.robolectric.RuntimeEnvironment
 
+@OptIn(ExperimentalCoroutinesApi::class)
+@RunWith(RobolectricTestRunner::class)
 class TranscriptAdAnalyzerTest {
     @get:Rule
     val folder = TemporaryFolder()
@@ -46,6 +64,78 @@ class TranscriptAdAnalyzerTest {
     private val transcriptStore: LocalTranscriptStore = mock()
     private val jevAdModelStore: JevAdModelStore = mock()
     private val queue: AdAnalysisQueue = mock()
+    private val writeGuard = AnalysisWriteGuard()
+    private lateinit var database: AppDatabase
+
+    @Before
+    fun setUp() {
+        database = Room.inMemoryDatabaseBuilder(RuntimeEnvironment.getApplication(), AppDatabase::class.java)
+            .addTypeConverters(ModelModule.provideRoomConverters(Moshi.Builder().build()))
+            .build()
+    }
+
+    @After
+    fun tearDown() = database.close()
+
+    @Test
+    fun `a result arriving after reset is discarded`() = runTest {
+        givenEpisode(audioFile())
+        givenQueued(detection = detectionItem(), asr = asrItem(complete = true))
+        whenever(transcriptStore.readCues(EPISODE)).thenReturn(listOf(TranscriptCue(0, 60_000, "old cue")))
+        whenever(adCueScoreDao.findScoresForEpisode(EPISODE)).thenReturn(emptyList())
+        val reply = CompletableDeferred<JevClassification>()
+        whenever(classifier.classify(any(), any(), any())).doSuspendableAnswer { reply.await() }
+
+        val result = async { analyzer().run(EPISODE) }
+        runCurrent()
+        AdAnalysisCleanup(
+            transcriptStore = transcriptStore,
+            adSegmentDao = adSegmentDao,
+            adCueScoreDao = adCueScoreDao,
+            adAnalysisDao = adAnalysisDao,
+            asrQueueDao = mock(),
+            detectionQueueDao = mock(),
+            writeGuard = writeGuard,
+        ).clearAnalysisForEpisodes(listOf(EPISODE))
+        reply.complete(JevClassification.Scored(listOf(0.9), listOf(0.1), null, null))
+
+        assertEquals(DetectionOutcome.NotQueued, result.await())
+        verify(adSegmentDao, never()).replacePreservingSelections(any(), any())
+        verify(adCueScoreDao).replaceAll(EPISODE, emptyList())
+        verify(adAnalysisDao, never()).upsert(any())
+        verify(queue, never()).recordDetectionProgress(any(), any(), any())
+    }
+
+    @Test
+    fun `recognition cannot republish cues after reset`() = runTest {
+        givenEpisode(audioFile())
+        givenQueued(detection = detectionItem(), asr = asrItem(complete = false))
+        whenever(transcriber.availability("en")).thenReturn(TranscriptAvailability.Ready)
+        whenever(transcriptStore.readCues(EPISODE)).thenReturn(emptyList())
+        whenever(transcriptStore.recognisedAudio(EPISODE)).thenReturn(null)
+        whenever(transcriptStore.hasTranscript(EPISODE)).thenReturn(false)
+        val ready = CompletableDeferred<Unit>()
+        val finish = CompletableDeferred<Unit>()
+        val cues = listOf(TranscriptCue(0, 10_000, "old cue"))
+        whenever(transcriber.transcribe(any(), any(), any())).doSuspendableAnswer { invocation ->
+            ready.complete(Unit)
+            finish.await()
+            invocation.getArgument<suspend (List<TranscriptCue>) -> Unit>(2)(cues)
+            TranscriptResult.Success(cues, ENGINE)
+        }
+
+        val result = async { generator().run(EPISODE) }
+        runCurrent()
+        if (!ready.isCompleted && result.isCompleted) error("Recognition ended before starting: ${result.await()}")
+        assertTrue("Recognition did not start", ready.isCompleted)
+        writeGuard.invalidate(listOf(EPISODE)) { }
+        finish.complete(Unit)
+
+        assertEquals(AsrOutcome.NotQueued, result.await())
+        verify(transcriptStore, never()).saveProgress(any(), any())
+        verify(transcriptStore, never()).markComplete(any(), any(), any())
+        verify(queue, never()).enqueueDetectionNow(any())
+    }
 
     @Test
     fun `only the on-device transcript cues are scored`() = runTest {
@@ -278,6 +368,8 @@ class TranscriptAdAnalyzerTest {
         transcriptStore = transcriptStore,
         jevAdModelStore = jevAdModelStore,
         queue = queue,
+        writeGuard = writeGuard,
+        database = database,
     )
 
     private fun generator() = OnDeviceTranscriptGenerator(
@@ -287,6 +379,7 @@ class TranscriptAdAnalyzerTest {
         transcriptStore = transcriptStore,
         fileStorage = mock(),
         queue = queue,
+        writeGuard = writeGuard,
     )
 
     private companion object {

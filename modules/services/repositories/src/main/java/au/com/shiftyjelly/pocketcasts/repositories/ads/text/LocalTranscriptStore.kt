@@ -5,6 +5,7 @@ import au.com.shiftyjelly.pocketcasts.models.db.dao.TranscriptDao
 import au.com.shiftyjelly.pocketcasts.models.entity.Transcript
 import dagger.hilt.android.qualifiers.ApplicationContext
 import java.io.File
+import java.io.IOException
 import java.util.Locale
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -43,6 +44,37 @@ class LocalTranscriptStore @Inject constructor(
     fun localUrl(episodeUuid: String) = "$SCHEME$episodeUuid"
 
     suspend fun hasTranscript(episodeUuid: String): Boolean = withContext(Dispatchers.IO) { file(episodeUuid).exists() }
+
+    /** Reads a transcript for a screen or chat and records when it was last used. */
+    suspend fun readForDisplay(episodeUuid: String): String? = fileLock.withLock {
+        withContext(Dispatchers.IO) {
+            val target = file(episodeUuid)
+            if (!target.isFile) return@withContext null
+            val contents = target.readText()
+            if (!target.setLastModified(System.currentTimeMillis())) {
+                throw IOException("Could not update transcript access time for $episodeUuid")
+            }
+            contents
+        }
+    }
+
+    suspend fun idleTranscriptUuids(cutoffMs: Long): List<String> = fileLock.withLock {
+        withContext(Dispatchers.IO) {
+            dir().listFiles().orEmpty().filter { it.isFile && it.name.endsWith(".vtt") && it.lastModified() in 1..cutoffMs }
+                .map { it.name.removeSuffix(".vtt") }
+        }
+    }
+
+    /** Rechecks the access time while holding the file lock, before removing the transcript. */
+    suspend fun deleteIfIdle(episodeUuid: String, cutoffMs: Long, beforeDelete: suspend () -> Boolean): Boolean = fileLock.withLock {
+        withContext(Dispatchers.IO) {
+            val target = file(episodeUuid)
+            if (!target.isFile || target.lastModified() !in 1..cutoffMs) return@withContext false
+            if (!beforeDelete()) return@withContext false
+            deleteFilesAndRow(episodeUuid)
+            true
+        }
+    }.also { deleted -> if (deleted) _updates.tryEmit(episodeUuid) }
 
     /**
      * Records the audio a recognition pass is about to read, before it reads any of it.
@@ -151,13 +183,20 @@ class LocalTranscriptStore @Inject constructor(
     suspend fun delete(episodeUuid: String) {
         fileLock.withLock {
             withContext(Dispatchers.IO) {
-                file(episodeUuid).delete()
-                completionFile(episodeUuid).delete()
-                audioFile(episodeUuid).delete()
-                transcriptDao.deleteGenerated(episodeUuid, localUrl(episodeUuid))
+                deleteFilesAndRow(episodeUuid)
             }
         }
         _updates.tryEmit(episodeUuid)
+    }
+
+    private suspend fun deleteFilesAndRow(episodeUuid: String) {
+        val target = file(episodeUuid)
+        // Keep the VTT until the sidecars are gone, so a failed cleanup is discovered on the next sweep.
+        listOf(completionFile(episodeUuid), audioFile(episodeUuid), File(target.parentFile, "${target.name}.tmp"), target)
+            .forEach { item ->
+                if (item.exists() && !item.delete()) throw IOException("Could not delete ${item.name}")
+            }
+        transcriptDao.deleteGenerated(episodeUuid, localUrl(episodeUuid))
     }
 
     private fun dir(): File = File(context.filesDir, "on-device-transcripts").apply { mkdirs() }

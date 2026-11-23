@@ -20,14 +20,18 @@ import au.com.shiftyjelly.pocketcasts.models.entity.BaseEpisode
 import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
 import au.com.shiftyjelly.pocketcasts.models.to.AsrQueueItem
 import au.com.shiftyjelly.pocketcasts.repositories.file.FileStorage
+import au.com.shiftyjelly.pocketcasts.repositories.playback.UpNextQueue
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
 import au.com.shiftyjelly.pocketcasts.utils.featureflag.Feature
 import au.com.shiftyjelly.pocketcasts.utils.featureflag.FeatureFlag
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
+import dagger.Lazy
 import dagger.hilt.android.qualifiers.ApplicationContext
+import java.io.IOException
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 import javax.inject.Singleton
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
@@ -36,6 +40,9 @@ import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.sync.Mutex
+import kotlinx.coroutines.sync.withLock
+import kotlinx.coroutines.withContext
 
 /**
  * The two global ad-analysis queues.
@@ -60,8 +67,12 @@ class AdAnalysisQueue @Inject constructor(
     private val transcriptStore: LocalTranscriptStore,
     private val episodeManager: EpisodeManager,
     private val fileStorage: FileStorage,
+    private val writeGuard: AnalysisWriteGuard,
+    private val upNextQueue: Lazy<UpNextQueue>,
     @ApplicationScope private val scope: CoroutineScope,
 ) {
+    private val schedulingMutex = Mutex()
+
     /**
      * Queues the episode for on-device recognition. A transcript written before the queue existed
      * is registered as already recognised, so an upgrade scores it instead of recognising it again.
@@ -69,39 +80,48 @@ class AdAnalysisQueue @Inject constructor(
     fun schedule(episodeUuid: String) {
         if (!isEnabled()) return
         scope.launch(Dispatchers.IO) {
-            val queued = asrQueueDao.find(episodeUuid)
-            if (queued != null) {
-                if (queued.isComplete) {
-                    // A finished transcript is only the episode's reading for the audio it was
-                    // recognised from: a download that landed afterwards, or a stream stitched with
-                    // different ads, has moved every cue. Recognising it again is the only repair.
-                    if (transcriptUsesOtherAudio(queued)) {
-                        LogBuffer.i(TAG, "Recognising $episodeUuid again: its transcript was made from other audio")
-                        resetAnalysis(episodeUuid)
-                        ensureAsrWorker()
-                        return@launch
-                    }
-                    val detection = detectionQueueDao.find(episodeUuid)
-                    if (detection == null || !detection.isComplete) enqueueDetectionNow(episodeUuid)
-                } else {
-                    // The download worker calls this the moment it has written the file, which is the
-                    // only reason a pass would be parked waiting for one.
-                    wakeIfAudioArrived(episodeUuid)
+            schedulingMutex.withLock { scheduleLocked(episodeUuid) }
+        }
+    }
+
+    internal suspend fun scheduleLocked(episodeUuid: String) {
+        val queued = asrQueueDao.find(episodeUuid)
+        if (queued != null) {
+            if (queued.isComplete) {
+                if (queued.lastError == REASON_TRANSCRIPT_EXPIRED) {
+                    resetAnalysis(episodeUuid)
                     ensureAsrWorker()
+                    return
                 }
-                return@launch
-            }
-            val legacyCues = transcriptStore.readCues(episodeUuid)
-            if (legacyCues.isNotEmpty() && transcriptStore.isComplete(episodeUuid, transcriber.version)) {
-                asrQueueDao.enqueueCompleted(episodeUuid, legacyCues.last().endMs, System.currentTimeMillis())
-                enqueueDetectionNow(episodeUuid)
+                // A finished transcript is only the episode's reading for the audio it was
+                // recognised from: a download that landed afterwards, or a stream stitched with
+                // different ads, has moved every cue. Recognising it again is the only repair.
+                if (transcriptUsesOtherAudio(queued)) {
+                    LogBuffer.i(TAG, "Recognising $episodeUuid again: its transcript was made from other audio")
+                    resetAnalysis(episodeUuid)
+                    ensureAsrWorker()
+                    return
+                }
+                val detection = detectionQueueDao.find(episodeUuid)
+                if (detection == null || !detection.isComplete) enqueueDetectionNow(episodeUuid)
             } else {
-                // A file without the completion marker is either a pass killed before it finished
-                // or a transcript from an older pipeline; neither may be mixed with fresh cues.
-                if (legacyCues.isNotEmpty()) transcriptStore.delete(episodeUuid)
-                asrQueueDao.enqueue(episodeUuid, System.currentTimeMillis())
+                // The download worker calls this the moment it has written the file, which is the
+                // only reason a pass would be parked waiting for one.
+                wakeIfAudioArrived(episodeUuid)
                 ensureAsrWorker()
             }
+            return
+        }
+        val legacyCues = transcriptStore.readCues(episodeUuid)
+        if (legacyCues.isNotEmpty() && transcriptStore.isComplete(episodeUuid, transcriber.version)) {
+            asrQueueDao.enqueueCompleted(episodeUuid, legacyCues.last().endMs, System.currentTimeMillis())
+            enqueueDetectionNow(episodeUuid)
+        } else {
+            // A file without the completion marker is either a pass killed before it finished
+            // or a transcript from an older pipeline; neither may be mixed with fresh cues.
+            if (legacyCues.isNotEmpty()) transcriptStore.delete(episodeUuid)
+            asrQueueDao.enqueue(episodeUuid, System.currentTimeMillis())
+            ensureAsrWorker()
         }
     }
 
@@ -136,14 +156,21 @@ class AdAnalysisQueue @Inject constructor(
             val downloaded = runCatching { episodeManager.findDownloadedEpisodesFlow().first() }
                 .onFailure { LogBuffer.e(TAG, it, "Could not list downloaded episodes for recognition") }
                 .getOrDefault(emptyList())
-            val pending = ArrayList<String>(MAX_QUEUED_PER_LAUNCH)
+            val pending = ArrayList<BaseEpisode>(MAX_QUEUED_PER_LAUNCH)
             for (episode in downloaded) {
                 if (pending.size >= MAX_QUEUED_PER_LAUNCH) break
-                if (!isRecognised(episode)) pending += episode.uuid
+                if (!isRecognised(episode)) pending += episode
             }
             if (pending.isEmpty()) return@launch
             LogBuffer.i(TAG, "Queueing on-device recognition for ${pending.size} downloaded episode(s)")
-            pending.forEach(::schedule)
+            pending.forEach { episode ->
+                scope.launch(Dispatchers.IO) {
+                    schedulingMutex.withLock {
+                        // Retention may have expired this transcript since the initial scan.
+                        if (!isRecognised(episode)) scheduleLocked(episode.uuid)
+                    }
+                }
+            }
         }
     }
 
@@ -181,6 +208,7 @@ class AdAnalysisQueue @Inject constructor(
      * to drain it — the queue was durable and still did nothing.
      */
     fun resumeInterruptedWork() {
+        TranscriptRetentionWorker.schedule(context)
         if (!isEnabled()) return
         scope.launch(Dispatchers.IO) {
             // Registered before the pending check: the sweep has to exist even when both queues are
@@ -214,8 +242,10 @@ class AdAnalysisQueue @Inject constructor(
 
     fun cancel(episodeUuid: String) {
         scope.launch(Dispatchers.IO) {
-            asrQueueDao.deleteForEpisodes(listOf(episodeUuid))
-            detectionQueueDao.deleteForEpisodes(listOf(episodeUuid))
+            writeGuard.invalidate(listOf(episodeUuid)) {
+                asrQueueDao.deleteForEpisodes(listOf(episodeUuid))
+                detectionQueueDao.deleteForEpisodes(listOf(episodeUuid))
+            }
         }
     }
 
@@ -261,6 +291,8 @@ class AdAnalysisQueue @Inject constructor(
      */
     suspend fun deferUntilAudio(episodeUuid: String) {
         asrQueueDao.markFailure(episodeUuid, System.currentTimeMillis() + WAITING_FOR_AUDIO_RETRY_MS, REASON_WAITING_FOR_AUDIO)
+        // The download may have completed just before the waiting state was written.
+        wakeIfAudioArrived(episodeUuid)
     }
 
     /**
@@ -277,7 +309,13 @@ class AdAnalysisQueue @Inject constructor(
     }
 
     /** Drops an episode that no longer exists from both queues. */
-    suspend fun forget(episodeUuid: String) {
+    suspend fun forget(episodeUuid: String) = writeGuard.invalidate(listOf(episodeUuid)) {
+        forgetContents(episodeUuid)
+    }
+
+    suspend fun forgetIfCurrent(episodeUuid: String, generation: Long): Boolean = writeGuard.invalidateIfCurrent(episodeUuid, generation) { forgetContents(episodeUuid) } != null
+
+    private suspend fun forgetContents(episodeUuid: String) {
         asrQueueDao.deleteForEpisodes(listOf(episodeUuid))
         detectionQueueDao.deleteForEpisodes(listOf(episodeUuid))
         transcriptStore.delete(episodeUuid)
@@ -287,7 +325,13 @@ class AdAnalysisQueue @Inject constructor(
     }
 
     /** Throws away a transcript and every result derived from it, and restarts both queues. */
-    suspend fun resetAnalysis(episodeUuid: String) {
+    suspend fun resetAnalysis(episodeUuid: String) = writeGuard.invalidate(listOf(episodeUuid)) {
+        resetAnalysisContents(episodeUuid)
+    }
+
+    suspend fun resetAnalysisIfCurrent(episodeUuid: String, generation: Long): Long? = writeGuard.invalidateIfCurrent(episodeUuid, generation) { resetAnalysisContents(episodeUuid) }
+
+    private suspend fun resetAnalysisContents(episodeUuid: String) {
         asrQueueDao.reset(episodeUuid)
         detectionQueueDao.reset(episodeUuid)
         transcriptStore.delete(episodeUuid)
@@ -315,9 +359,64 @@ class AdAnalysisQueue @Inject constructor(
         detectionQueueDao.defer(episodeUuid, System.currentTimeMillis() + delayMs)
     }
 
-    suspend fun deleteQueueRows(episodeUuids: Collection<String>) {
+    suspend fun deleteQueueRows(episodeUuids: Collection<String>) = writeGuard.invalidate(episodeUuids) {
         asrQueueDao.deleteForEpisodes(episodeUuids)
         detectionQueueDao.deleteForEpisodes(episodeUuids)
+    }
+
+    /** Removes idle transcripts while preserving work that could still be using them. */
+    suspend fun expireIdleTranscripts(nowMs: Long): Int = withContext(Dispatchers.IO) {
+        val cutoff = nowMs - TRANSCRIPT_RETENTION_MS
+        var deleted = 0
+        var failures = 0
+        for (episodeUuid in transcriptStore.idleTranscriptUuids(cutoff)) {
+            try {
+                if (expireIdleTranscript(episodeUuid, cutoff, nowMs)) deleted++
+            } catch (error: CancellationException) {
+                throw error
+            } catch (error: Exception) {
+                failures++
+                LogBuffer.e(TAG, error, "Could not remove idle transcript for $episodeUuid")
+            }
+        }
+        if (failures > 0) throw IOException("Could not remove $failures idle transcript(s)")
+        deleted
+    }
+
+    internal suspend fun expireIdleTranscript(episodeUuid: String, cutoffMs: Long, nowMs: Long): Boolean = schedulingMutex.withLock {
+        writeGuard.invalidateIf(
+            episodeUuid = episodeUuid,
+            condition = { canExpireTranscript(episodeUuid) },
+            action = {
+                transcriptStore.deleteIfIdle(episodeUuid, cutoffMs) {
+                    // The episode may have entered Up Next while the file lock was held by a reader.
+                    if (!canExpireTranscript(episodeUuid)) return@deleteIfIdle false
+                    if (episodeManager.findByUuid(episodeUuid) != null) {
+                        asrQueueDao.enqueue(episodeUuid, nowMs)
+                        asrQueueDao.markExpired(episodeUuid, REASON_TRANSCRIPT_EXPIRED)
+                    } else {
+                        asrQueueDao.deleteForEpisodes(listOf(episodeUuid))
+                    }
+                    detectionQueueDao.deleteForEpisodes(listOf(episodeUuid))
+                    adSegmentDao.replaceAll(episodeUuid, emptyList())
+                    adCueScoreDao.replaceAll(episodeUuid, emptyList())
+                    adAnalysisDao.delete(episodeUuid)
+                    true
+                }
+            },
+        )
+    }
+
+    private suspend fun canExpireTranscript(episodeUuid: String): Boolean {
+        val asr = asrQueueDao.find(episodeUuid)
+        val detection = detectionQueueDao.find(episodeUuid)
+        val episode = episodeManager.findByUuid(episodeUuid)
+        val liveUpNext = upNextQueue.get()
+        return asr?.isComplete != false && detection?.isComplete != false &&
+            episode?.downloadStatus?.isCancellable != true &&
+            upNextDao.countByEpisodeBlocking(episodeUuid) == 0 &&
+            liveUpNext.currentEpisode?.uuid != episodeUuid &&
+            liveUpNext.queueEpisodes.none { it.uuid == episodeUuid }
     }
 
     fun ensureAsrWorker() {
@@ -355,7 +454,7 @@ class AdAnalysisQueue @Inject constructor(
             .build()
         WorkManager.getInstance(context).enqueueUniqueWork(
             AdDetectionWorker.UNIQUE_NAME,
-            ExistingWorkPolicy.KEEP,
+            ExistingWorkPolicy.APPEND_OR_REPLACE,
             request,
         )
     }
@@ -402,8 +501,9 @@ class AdAnalysisQueue @Inject constructor(
         )
     }
 
-    private suspend fun isRecognised(episode: BaseEpisode): Boolean {
+    internal suspend fun isRecognised(episode: BaseEpisode): Boolean {
         val item = asrQueueDao.find(episode.uuid)
+        if (item?.lastError == REASON_TRANSCRIPT_EXPIRED) return true
         if (item != null) return item.isComplete && !transcriptUsesOtherAudio(episode, item)
         return transcriptStore.hasTranscript(episode.uuid) && transcriptStore.isComplete(episode.uuid, transcriber.version)
     }
@@ -436,6 +536,8 @@ class AdAnalysisQueue @Inject constructor(
 
     private companion object {
         const val TAG = "AdAnalysisQueue"
+        const val REASON_TRANSCRIPT_EXPIRED = "transcript expired"
+        const val TRANSCRIPT_RETENTION_MS = 30L * 24 * 60 * 60 * 1000
         const val MAX_QUEUED_PER_LAUNCH = 3
         const val DETECTION_WAKE_DELAY_MS = 60_000L
         const val DEFERRED_RETRY_MS = 30 * 60_000L
@@ -453,7 +555,7 @@ class AdAnalysisQueue @Inject constructor(
          * minutes.
          */
         const val ASR_BACKOFF_MINUTES = 1L
-        const val DETECTION_BACKOFF_MINUTES = 10L
+        const val DETECTION_BACKOFF_MINUTES = 1L
 
         /** Up Next sweep cadence; long, because every other trigger already covers a played episode. */
         const val UP_NEXT_INTERVAL_HOURS = 6L

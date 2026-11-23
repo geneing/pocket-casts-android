@@ -1,5 +1,7 @@
 package au.com.shiftyjelly.pocketcasts.repositories.ads.text
 
+import androidx.room.withTransaction
+import au.com.shiftyjelly.pocketcasts.models.db.AppDatabase
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdAnalysisDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdCueScoreDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdSegmentDao
@@ -69,33 +71,38 @@ class TranscriptAdAnalyzer @Inject constructor(
     private val transcriptStore: LocalTranscriptStore,
     private val jevAdModelStore: JevAdModelStore,
     private val queue: AdAnalysisQueue,
+    private val writeGuard: AnalysisWriteGuard,
+    private val database: AppDatabase,
 ) {
     private val mutex = Mutex()
 
     suspend fun run(episodeUuid: String): DetectionOutcome = mutex.withLock { runAnalysis(episodeUuid) }
 
     private suspend fun runAnalysis(episodeUuid: String): DetectionOutcome {
+        val generation = writeGuard.generation(episodeUuid)
+        val episode = episodeManager.findByUuid(episodeUuid) ?: run {
+            queue.forgetIfCurrent(episodeUuid, generation)
+            return DetectionOutcome.NotQueued
+        }
+        if (!resetIfStale(episodeUuid, episode, generation)) return DetectionOutcome.NotQueued
         if (queue.detectionItem(episodeUuid) == null) return DetectionOutcome.NotQueued
         val asr = queue.asrItem(episodeUuid)
         val cues = transcriptStore.readCues(episodeUuid)
         val asrComplete = asr?.isComplete != false
         if (cues.isEmpty()) {
             if (asrComplete) {
-                queue.recordDetectionProgress(episodeUuid, 0L, isComplete = true)
-                return DetectionOutcome.Completed
+                return writeGuard.ifCurrent(episodeUuid, generation) {
+                    queue.recordDetectionProgress(episodeUuid, 0L, isComplete = true)
+                    DetectionOutcome.Completed
+                } ?: DetectionOutcome.NotQueued
             }
-            return waiting(episodeUuid)
+            return waiting(episodeUuid, generation)
         }
 
-        val episode = episodeManager.findByUuid(episodeUuid) ?: run {
-            queue.forget(episodeUuid)
-            return DetectionOutcome.NotQueued
-        }
         val podcast = podcastManager.findPodcastByUuid(episode.podcastUuid)
-        resetIfStale(episodeUuid, episode)
 
         val stableSize = if (asrComplete) cues.size else (cues.size - STABILITY_MARGIN_CUES).coerceAtLeast(0)
-        if (stableSize == 0) return waiting(episodeUuid)
+        if (stableSize == 0) return waiting(episodeUuid, generation)
         val stable = cues.subList(0, stableSize)
         val storedScores = adCueScoreDao.findScoresForEpisode(episodeUuid)
             .filter { it.cueIndex in stable.indices }
@@ -106,13 +113,15 @@ class TranscriptAdAnalyzer @Inject constructor(
         val startIndex = stable.indices.firstOrNull { index -> storedScores[index] == null } ?: stableSize
         if (startIndex >= stableSize) {
             if (asrComplete) {
-                markComplete(episodeUuid, stable)
-                return DetectionOutcome.Completed
+                return writeGuard.ifCurrent(episodeUuid, generation) {
+                    markComplete(episodeUuid, stable)
+                    DetectionOutcome.Completed
+                } ?: DetectionOutcome.NotQueued
             }
-            return waiting(episodeUuid)
+            return waiting(episodeUuid, generation)
         }
         val newCues = stableSize - startIndex
-        if (!asrComplete && newCues < MIN_BATCH_CUES) return waiting(episodeUuid)
+        if (!asrComplete && newCues < MIN_BATCH_CUES) return waiting(episodeUuid, generation)
 
         val windowStart = (startIndex - CONTEXT_CUES).coerceAtLeast(0)
         val window = stable.subList(windowStart, stableSize)
@@ -122,14 +131,18 @@ class TranscriptAdAnalyzer @Inject constructor(
         val scored = when (val classification = classifier.classify(window, podcastTitle, model)) {
             is JevClassification.Unavailable -> {
                 LogBuffer.i(TAG, "jev classification unavailable for $episodeUuid: ${classification.reason}")
-                queue.failDetection(episodeUuid, classification.reason, UNAVAILABLE_RETRY_MS)
-                return DetectionOutcome.Retry
+                return writeGuard.ifCurrent(episodeUuid, generation) {
+                    queue.failDetection(episodeUuid, classification.reason, UNAVAILABLE_RETRY_MS)
+                    DetectionOutcome.Retry
+                } ?: DetectionOutcome.NotQueued
             }
 
             is JevClassification.Failed -> {
                 LogBuffer.e(TAG, "jev classification failed for $episodeUuid: ${classification.reason}")
-                queue.failDetection(episodeUuid, classification.reason, NETWORK_RETRY_MS)
-                return DetectionOutcome.Retry
+                return writeGuard.ifCurrent(episodeUuid, generation) {
+                    queue.failDetection(episodeUuid, classification.reason, NETWORK_RETRY_MS)
+                    DetectionOutcome.Retry
+                } ?: DetectionOutcome.NotQueued
             }
 
             is JevClassification.Scored -> classification
@@ -181,34 +194,32 @@ class TranscriptAdAnalyzer @Inject constructor(
         val signature = episode.audioSignature()
         val modelVersion = AnalysisIdentity.transcriptModelVersion(scored.responseModel, model, JevPrompt.VERSION)
 
-        var podCount = 0
-        withContext(NonCancellable) {
-            val previous = adSegmentDao.findSegmentsForEpisode(episodeUuid)
-            val deselected = previous.filter { it.deselected }.associateBy { it.startTimeMs / 1000 }
-            val merged = stored.map { segment ->
-                val previousChoice = deselected[segment.startTimeMs / 1000]
-                if (previousChoice != null) segment.copy(deselected = true) else segment
-            }
-            podCount = merged.size
-            adSegmentDao.replaceAll(episodeUuid, merged)
-            adCueScoreDao.replaceAll(episodeUuid, cueScores)
-            adAnalysisDao.upsert(
-                AdAnalysisState(
-                    episodeUuid = episodeUuid,
-                    analyzedUntilMs = totalMs,
-                    isComplete = complete,
-                    updatedAt = System.currentTimeMillis(),
-                    audioSignature = signature.orEmpty(),
-                    modelVersion = modelVersion,
-                    sttVersion = transcriber.version,
-                ),
-            )
-            queue.recordDetectionProgress(episodeUuid, totalMs, isComplete = complete)
+        val committed = withContext(NonCancellable) {
+            writeGuard.ifCurrent(episodeUuid, generation) {
+                database.withTransaction {
+                    adSegmentDao.replacePreservingSelections(episodeUuid, stored)
+                    adCueScoreDao.replaceAll(episodeUuid, cueScores)
+                    adAnalysisDao.upsert(
+                        AdAnalysisState(
+                            episodeUuid = episodeUuid,
+                            analyzedUntilMs = totalMs,
+                            isComplete = complete,
+                            updatedAt = System.currentTimeMillis(),
+                            audioSignature = signature.orEmpty(),
+                            modelVersion = modelVersion,
+                            sttVersion = transcriber.version,
+                        ),
+                    )
+                    queue.recordDetectionProgress(episodeUuid, totalMs, isComplete = complete)
+                }
+                true
+            } ?: false
         }
+        if (!committed) return DetectionOutcome.NotQueued
         LogBuffer.i(
             TAG,
             "Transcript ad detection for $episodeUuid: cues $windowStart..$stableSize scored, " +
-                "$podCount pods, complete=$complete, costUsd=${scored.usageCostUsd}",
+                "${stored.size} pods, complete=$complete, costUsd=${scored.usageCostUsd}",
         )
         return if (complete) DetectionOutcome.Completed else DetectionOutcome.Progressed
     }
@@ -216,25 +227,27 @@ class TranscriptAdAnalyzer @Inject constructor(
     private suspend fun markComplete(episodeUuid: String, cues: List<TranscriptCue>) {
         val state = adAnalysisDao.findState(episodeUuid)
         val episodes = episodeManager.findByUuid(episodeUuid)
-        adAnalysisDao.upsert(
-            AdAnalysisState(
-                episodeUuid = episodeUuid,
-                analyzedUntilMs = cues.lastOrNull()?.endMs ?: 0L,
-                isComplete = true,
-                updatedAt = System.currentTimeMillis(),
-                audioSignature = episodes?.audioSignature().orEmpty(),
-                modelVersion = state?.modelVersion.orEmpty(),
-                sttVersion = transcriber.version,
-            ),
-        )
-        queue.recordDetectionProgress(episodeUuid, cues.lastOrNull()?.endMs ?: 0L, isComplete = true)
+        database.withTransaction {
+            adAnalysisDao.upsert(
+                AdAnalysisState(
+                    episodeUuid = episodeUuid,
+                    analyzedUntilMs = cues.lastOrNull()?.endMs ?: 0L,
+                    isComplete = true,
+                    updatedAt = System.currentTimeMillis(),
+                    audioSignature = episodes?.audioSignature().orEmpty(),
+                    modelVersion = state?.modelVersion.orEmpty(),
+                    sttVersion = transcriber.version,
+                ),
+            )
+            queue.recordDetectionProgress(episodeUuid, cues.lastOrNull()?.endMs ?: 0L, isComplete = true)
+        }
     }
 
     /** Parks the episode until the recognizer writes more cues; not a failure, so attempts stay. */
-    private suspend fun waiting(episodeUuid: String): DetectionOutcome {
+    private suspend fun waiting(episodeUuid: String, generation: Long): DetectionOutcome = writeGuard.ifCurrent(episodeUuid, generation) {
         queue.deferDetection(episodeUuid, WAITING_RETRY_MS)
-        return DetectionOutcome.Waiting
-    }
+        DetectionOutcome.Waiting
+    } ?: DetectionOutcome.NotQueued
 
     /**
      * A transcript made from a published VTT or by another recognizer is not this analysis: its
@@ -244,8 +257,8 @@ class TranscriptAdAnalyzer @Inject constructor(
      * A different prompt revision or classifier model is just as stale: its scores describe
      * sentences under another rule, so the stored segments would be served with the old edges.
      */
-    private suspend fun resetIfStale(episodeUuid: String, episode: BaseEpisode) {
-        val state = queue.analysisState(episodeUuid) ?: return
+    private suspend fun resetIfStale(episodeUuid: String, episode: BaseEpisode, generation: Long): Boolean {
+        val state = queue.analysisState(episodeUuid) ?: return true
         val signature = episode.audioSignature()
         val audioChanged = signature != null && state.audioSignature.isNotBlank() && state.audioSignature != signature
         val model = jevAdModelStore.selectedJevAdModel()
@@ -253,13 +266,16 @@ class TranscriptAdAnalyzer @Inject constructor(
             !AnalysisIdentity.isTranscriptModelVersion(state.modelVersion, model, JevPrompt.VERSION)
         // A re-download can carry a new ad stitch while the engine stays the same, so the audio on
         // its own is enough to discard scores that point at sentences the listener no longer hears.
-        if (state.sttVersion == transcriber.version && !audioChanged && !ruleChanged) return
+        if (state.sttVersion == transcriber.version && !audioChanged && !ruleChanged) return true
         LogBuffer.i(
             TAG,
             "Discarding ad analysis for $episodeUuid (stt=${state.sttVersion.ifBlank { "audio" }}, " +
                 "audioChanged=$audioChanged, rule=${state.modelVersion.ifBlank { "none" }} -> ${model.slug}#prompt${JevPrompt.VERSION})",
         )
-        queue.resetDetection(episodeUuid)
+        return writeGuard.ifCurrent(episodeUuid, generation) {
+            queue.resetDetection(episodeUuid)
+            true
+        } ?: false
     }
 
     private fun BaseEpisode.audioSignature(): String? {

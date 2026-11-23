@@ -29,6 +29,18 @@ abstract class AdSegmentDao {
         }
     }
 
+    /** Preserve a listener's choices in the same transaction as replacing the detected segments. */
+    @Transaction
+    open suspend fun replacePreservingSelections(episodeUuid: String, segments: List<DbAdSegment>) {
+        val deselected = findSegmentsForEpisode(episodeUuid).filter { it.deselected }.associateBy { it.startTimeMs / 1000 }
+        replaceAll(
+            episodeUuid,
+            segments.map { segment ->
+                if (deselected.containsKey(segment.startTimeMs / 1000)) segment.copy(deselected = true) else segment
+            },
+        )
+    }
+
     @Query("SELECT * FROM episode_ad_segments WHERE episode_uuid IS :episodeUuid ORDER BY start_time ASC")
     protected abstract fun observeRawSegmentsForEpisode(episodeUuid: String): Flow<List<DbAdSegment>>
 

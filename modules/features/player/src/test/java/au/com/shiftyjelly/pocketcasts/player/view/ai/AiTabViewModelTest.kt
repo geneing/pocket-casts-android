@@ -20,6 +20,7 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
+import org.mockito.kotlin.doSuspendableAnswer
 import org.mockito.kotlin.mock
 import org.mockito.kotlin.whenever
 
@@ -165,6 +166,59 @@ class AiTabViewModelTest {
 
         assertEquals(TranscriptAvailability.Available, viewModel.state.value.transcript)
         assertTrue(viewModel.state.value.canSend)
+    }
+
+    @Test
+    fun `a transcript update replaces the context for the next answer`() = runTest {
+        val updates = MutableSharedFlow<Unit>(extraBufferCapacity = 1)
+        whenever(transcriptManager.observeTranscriptUpdated(EPISODE)).thenReturn(updates)
+        whenever(transcriptManager.loadChatTranscript(EPISODE)).thenReturn(transcript("Old."), transcript("New."))
+        val client = FakeAiChatClient()
+        val viewModel = viewModel(client).apply { onEpisodeChanged(EPISODE) }
+        viewModel.send("First?")
+
+        updates.emit(Unit)
+        viewModel.send("Next?")
+
+        assertEquals("Old.", client.calls[0].transcript)
+        assertEquals("New.", client.calls[1].transcript)
+        assertEquals(2, client.calls[1].history.size)
+    }
+
+    @Test
+    fun `a changed transcript cancels an answer using the old context`() = runTest {
+        val updates = MutableSharedFlow<Unit>(extraBufferCapacity = 1)
+        whenever(transcriptManager.observeTranscriptUpdated(EPISODE)).thenReturn(updates)
+        whenever(transcriptManager.loadChatTranscript(EPISODE)).thenReturn(transcript("Old."), transcript("New."))
+        val gate = CompletableDeferred<Unit>()
+        val viewModel = viewModel(FakeAiChatClient(gate = gate)).apply { onEpisodeChanged(EPISODE) }
+        viewModel.send("First?")
+
+        updates.emit(Unit)
+        gate.complete(Unit)
+
+        assertFalse(viewModel.state.value.isLoading)
+        assertEquals(1, viewModel.state.value.messages.size)
+    }
+
+    @Test
+    fun `frequent transcript updates do not prevent a slow load from finishing`() = runTest {
+        val updates = MutableSharedFlow<Unit>(extraBufferCapacity = 1)
+        val firstLoad = CompletableDeferred<Transcript.Text?>()
+        var reads = 0
+        whenever(transcriptManager.observeTranscriptUpdated(EPISODE)).thenReturn(updates)
+        whenever(transcriptManager.loadChatTranscript(EPISODE)).doSuspendableAnswer {
+            if (reads++ == 0) firstLoad.await() else transcript("New.")
+        }
+        val client = FakeAiChatClient()
+        val viewModel = viewModel(client).apply { onEpisodeChanged(EPISODE) }
+
+        updates.emit(Unit)
+        updates.emit(Unit)
+        firstLoad.complete(transcript("Old."))
+        viewModel.send("Question?")
+
+        assertEquals("New.", client.calls.single().transcript)
     }
 
     @Test

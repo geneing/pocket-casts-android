@@ -17,6 +17,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.conflate
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.merge
 import kotlinx.coroutines.flow.onStart
@@ -26,9 +27,8 @@ import kotlinx.coroutines.launch
 /**
  * Chat over the current episode's transcript.
  *
- * The transcript is loaded once per episode and capped in the ViewModel, so a follow-up question
- * does not re-read it and cannot send an unbounded prompt. Switching episodes starts a fresh
- * conversation: the previous episode's transcript would answer the wrong questions.
+ * Transcript updates refresh the context for future questions; an answer still in flight is
+ * cancelled if its context changes. Switching episodes starts a fresh conversation.
  */
 @HiltViewModel
 @OptIn(ExperimentalCoroutinesApi::class)
@@ -73,8 +73,8 @@ class AiTabViewModel @Inject constructor(
             merge(
                 transcriptManager.observeIsTranscriptAvailable(episodeUuid).map { },
                 transcriptManager.observeTranscriptUpdated(episodeUuid),
-            ).onStart { emit(Unit) }.collect {
-                if (transcriptContext == null) loadTranscript(episodeUuid)
+            ).onStart { emit(Unit) }.conflate().collect {
+                loadTranscript(episodeUuid)
             }
         }
     }
@@ -133,11 +133,15 @@ class AiTabViewModel @Inject constructor(
             ?.joinToString(separator = "\n") { entry -> entry.value.trim() }
             ?.trim()
             ?.takeIf { it.isNotEmpty() }
-        if (text == null) {
-            mutableState.update { it.copy(transcript = TranscriptAvailability.Missing) }
-        } else {
-            transcriptContext = capTranscript(text)
-            mutableState.update { it.copy(transcript = TranscriptAvailability.Available) }
+        val updatedContext = text?.let { capTranscript(it) }
+        val changed = transcriptContext != updatedContext
+        transcriptContext = updatedContext
+        if (changed) answerJob?.cancel()
+        mutableState.update {
+            it.copy(
+                transcript = if (updatedContext == null) TranscriptAvailability.Missing else TranscriptAvailability.Available,
+                isLoading = if (changed) false else it.isLoading,
+            )
         }
     }
 }

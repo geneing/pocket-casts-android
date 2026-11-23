@@ -43,8 +43,8 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.asFlow
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.filter
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.mapNotNull
@@ -53,8 +53,8 @@ import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
 import okhttp3.CacheControl
 import okhttp3.HttpUrl.Companion.toHttpUrl
+import okio.Buffer
 import okio.buffer
-import okio.source
 import retrofit2.HttpException
 import timber.log.Timber
 import au.com.shiftyjelly.pocketcasts.models.entity.Transcript as DbTranscript
@@ -236,11 +236,10 @@ class TranscriptManagerImpl @Inject constructor(
         transcript: DbTranscript,
         podcastUuid: String?,
     ): Transcript.Text? {
-        val file = localTranscriptStore.file(transcript.episodeUuid)
-        if (!file.exists()) return null
         return runCatching {
+            val contents = localTranscriptStore.readForDisplay(transcript.episodeUuid) ?: return null
             val entries = withContext(Dispatchers.Default) {
-                parser.parse(file.source().buffer()).getOrThrow().sanitize()
+                parser.parse(Buffer().writeUtf8(contents)).getOrThrow().sanitize()
             }
             Transcript.Text(
                 entries = entries,
