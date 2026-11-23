@@ -15,10 +15,11 @@ import au.com.shiftyjelly.pocketcasts.models.db.dao.AdCueScoreDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdDetectionQueueDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AdSegmentDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.AsrQueueDao
-import au.com.shiftyjelly.pocketcasts.models.db.dao.TranscriptDao
 import au.com.shiftyjelly.pocketcasts.models.db.dao.UpNextDao
+import au.com.shiftyjelly.pocketcasts.models.entity.BaseEpisode
 import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
 import au.com.shiftyjelly.pocketcasts.models.to.AsrQueueItem
+import au.com.shiftyjelly.pocketcasts.repositories.file.FileStorage
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
 import au.com.shiftyjelly.pocketcasts.utils.featureflag.Feature
 import au.com.shiftyjelly.pocketcasts.utils.featureflag.FeatureFlag
@@ -54,11 +55,11 @@ class AdAnalysisQueue @Inject constructor(
     private val adAnalysisDao: AdAnalysisDao,
     private val adSegmentDao: AdSegmentDao,
     private val adCueScoreDao: AdCueScoreDao,
-    private val transcriptDao: TranscriptDao,
     private val upNextDao: UpNextDao,
     private val transcriber: EpisodeTranscriber,
     private val transcriptStore: LocalTranscriptStore,
     private val episodeManager: EpisodeManager,
+    private val fileStorage: FileStorage,
     @ApplicationScope private val scope: CoroutineScope,
 ) {
     /**
@@ -68,16 +69,24 @@ class AdAnalysisQueue @Inject constructor(
     fun schedule(episodeUuid: String) {
         if (!isEnabled()) return
         scope.launch(Dispatchers.IO) {
-            // A published transcript is not a usable reading of this episode: its cue times do not
-            // match the audio and it is missing ad reads. The tab may only show the recognized one,
-            // so the server rows are dropped as soon as the episode is queued for recognition.
-            transcriptDao.deleteRemoteForEpisodes(listOf(episodeUuid))
             val queued = asrQueueDao.find(episodeUuid)
             if (queued != null) {
                 if (queued.isComplete) {
+                    // A finished transcript is only the episode's reading for the audio it was
+                    // recognised from: a download that landed afterwards, or a stream stitched with
+                    // different ads, has moved every cue. Recognising it again is the only repair.
+                    if (transcriptUsesOtherAudio(queued)) {
+                        LogBuffer.i(TAG, "Recognising $episodeUuid again: its transcript was made from other audio")
+                        resetAnalysis(episodeUuid)
+                        ensureAsrWorker()
+                        return@launch
+                    }
                     val detection = detectionQueueDao.find(episodeUuid)
                     if (detection == null || !detection.isComplete) enqueueDetectionNow(episodeUuid)
                 } else {
+                    // The download worker calls this the moment it has written the file, which is the
+                    // only reason a pass would be parked waiting for one.
+                    wakeIfAudioArrived(episodeUuid)
                     ensureAsrWorker()
                 }
                 return@launch
@@ -130,7 +139,7 @@ class AdAnalysisQueue @Inject constructor(
             val pending = ArrayList<String>(MAX_QUEUED_PER_LAUNCH)
             for (episode in downloaded) {
                 if (pending.size >= MAX_QUEUED_PER_LAUNCH) break
-                if (!isRecognised(episode.uuid)) pending += episode.uuid
+                if (!isRecognised(episode)) pending += episode.uuid
             }
             if (pending.isEmpty()) return@launch
             LogBuffer.i(TAG, "Queueing on-device recognition for ${pending.size} downloaded episode(s)")
@@ -241,6 +250,30 @@ class AdAnalysisQueue @Inject constructor(
 
     suspend fun deferAsr(episodeUuid: String, reason: String) {
         asrQueueDao.markFailure(episodeUuid, System.currentTimeMillis() + DEFERRED_RETRY_MS, reason)
+    }
+
+    /**
+     * Parks a pass whose audio file does not exist yet.
+     *
+     * The retry is a safety net for an episode that never gets its file (a download cancelled or
+     * failed): the waiting row is released by [schedule] the moment the download writes the audio,
+     * so a long download costs nothing and a short one is recognised as soon as it lands.
+     */
+    suspend fun deferUntilAudio(episodeUuid: String) {
+        asrQueueDao.markFailure(episodeUuid, System.currentTimeMillis() + WAITING_FOR_AUDIO_RETRY_MS, REASON_WAITING_FOR_AUDIO)
+    }
+
+    /**
+     * Releases a row parked by [deferUntilAudio] once its audio exists.
+     *
+     * Only a row that is still waiting for its audio is made due, so an ordinary failure keeps its
+     * own backoff, and nothing happens when [schedule] is called for an episode whose file is not
+     * written yet.
+     */
+    private suspend fun wakeIfAudioArrived(episodeUuid: String) {
+        val episode = episodeManager.findByUuid(episodeUuid) ?: return
+        if (AnalysisIdentity.audioFile(episode, fileStorage) == null) return
+        asrQueueDao.wakeWaitingForAudio(episodeUuid, System.currentTimeMillis(), REASON_WAITING_FOR_AUDIO)
     }
 
     /** Drops an episode that no longer exists from both queues. */
@@ -369,10 +402,34 @@ class AdAnalysisQueue @Inject constructor(
         )
     }
 
-    private suspend fun isRecognised(episodeUuid: String): Boolean {
-        val item = asrQueueDao.find(episodeUuid)
-        if (item != null) return item.isComplete
-        return transcriptStore.hasTranscript(episodeUuid) && transcriptStore.isComplete(episodeUuid, transcriber.version)
+    private suspend fun isRecognised(episode: BaseEpisode): Boolean {
+        val item = asrQueueDao.find(episode.uuid)
+        if (item != null) return item.isComplete && !transcriptUsesOtherAudio(episode, item)
+        return transcriptStore.hasTranscript(episode.uuid) && transcriptStore.isComplete(episode.uuid, transcriber.version)
+    }
+
+    private suspend fun transcriptUsesOtherAudio(item: AsrQueueItem): Boolean {
+        val episode = episodeManager.findByUuid(item.episodeUuid) ?: return false
+        return transcriptUsesOtherAudio(episode, item)
+    }
+
+    /**
+     * True when the transcript [item] finished was recognised from audio the episode no longer has.
+     *
+     * The transcript records the audio it read. A marker written before that record existed can only
+     * be judged by timing, which is what [AnalysisIdentity.transcriptBelongsToAudio] does with the
+     * row's queue time and the episode's length.
+     */
+    private suspend fun transcriptUsesOtherAudio(episode: BaseEpisode, item: AsrQueueItem): Boolean {
+        val file = AnalysisIdentity.audioFile(episode, fileStorage) ?: return false
+        val recorded = transcriptStore.recognisedAudio(episode.uuid)
+        return !AnalysisIdentity.transcriptBelongsToAudio(
+            recordedSignature = recorded,
+            audioFile = file,
+            queuedAtMs = item.enqueuedAt,
+            transcriptEndMs = item.processedUntilMs,
+            episodeDurationMs = episode.durationMs,
+        )
     }
 
     private fun isEnabled() = FeatureFlag.isEnabled(Feature.AD_SKIPPING) && transcriber.isAvailable()
@@ -382,6 +439,12 @@ class AdAnalysisQueue @Inject constructor(
         const val MAX_QUEUED_PER_LAUNCH = 3
         const val DETECTION_WAKE_DELAY_MS = 60_000L
         const val DEFERRED_RETRY_MS = 30 * 60_000L
+
+        /** Marks a row that is only waiting for its audio, so the download can release it early. */
+        const val REASON_WAITING_FOR_AUDIO = "waiting for the episode's audio"
+
+        /** Safety net for a download that never writes its file; the completion normally wakes it. */
+        const val WAITING_FOR_AUDIO_RETRY_MS = 30 * 60_000L
 
         /**
          * How long the worker chain waits after a retry. Not the retry schedule for an episode: that

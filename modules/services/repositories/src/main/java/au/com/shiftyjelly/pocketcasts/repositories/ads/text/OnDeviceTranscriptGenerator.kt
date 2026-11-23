@@ -2,6 +2,7 @@ package au.com.shiftyjelly.pocketcasts.repositories.ads.text
 
 import au.com.shiftyjelly.pocketcasts.models.entity.BaseEpisode
 import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
+import au.com.shiftyjelly.pocketcasts.models.to.AsrQueueItem
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.ParakeetModel
 import au.com.shiftyjelly.pocketcasts.repositories.file.FileStorage
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
@@ -11,12 +12,8 @@ import java.io.File
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlinx.coroutines.CancellationException
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.firstOrNull
-import kotlinx.coroutines.flow.mapNotNull
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
-import kotlinx.coroutines.withTimeoutOrNull
 
 /** What one recognition pass did for an episode. */
 sealed interface AsrOutcome {
@@ -94,15 +91,24 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         }
         val podcast = podcastManager.findPodcastByUuid(episode.podcastUuid)
         val source = resolveSource(episode) ?: run {
-            LogBuffer.i(TAG, "Episode $episodeUuid has no audio yet, trying again later")
-            queue.failAsr(episodeUuid, "no audio source", ASR_RETRY_DELAY_MS)
+            // The file is the audio playback will read, so the pass parks instead of transcribing a
+            // stream copy with its own ad stitch. The download path calls AdAnalysisQueue.schedule
+            // when the file is written, which releases this row: nothing here waits or polls.
+            LogBuffer.i(TAG, "Waiting for the download of $episodeUuid before recognising it")
+            queue.deferUntilAudio(episodeUuid)
             return AsrOutcome.Retry
         }
 
-        // A re-download or an engine update makes the stored transcript and every score built from
-        // it stale. Restarting here is what keeps the selected source of truth unambiguous.
+        // A re-download, a new ad stitch or an engine update makes the stored transcript and every
+        // score built from it stale. Restarting here is what keeps the source of truth unambiguous.
         resetIfStale(episodeUuid, source)
         item = queue.asrItem(episodeUuid) ?: return AsrOutcome.NotQueued
+
+        val audioSignature = AnalysisIdentity.audioSignature(source)
+        if (transcriptNeedsRestart(episode, item, source, audioSignature)) {
+            queue.resetAnalysis(episodeUuid)
+            item = queue.asrItem(episodeUuid) ?: return AsrOutcome.NotQueued
+        }
 
         when (val availability = transcriber.availability(podcast?.podcastLanguage)) {
             TranscriptAvailability.Ready -> Unit
@@ -135,6 +141,10 @@ class OnDeviceTranscriptGenerator @Inject constructor(
             complete(episodeUuid, startMs)
             return AsrOutcome.Completed
         }
+
+        // Recorded before the first window is read, so a process killed mid-pass leaves the next one
+        // able to tell whether the audio it resumes on is the audio these cues were made from.
+        transcriptStore.recordAudio(episodeUuid, audioSignature)
 
         val result = transcriber.transcribe(
             request = TranscriptRequest(
@@ -243,36 +253,56 @@ class OnDeviceTranscriptGenerator @Inject constructor(
     }
 
     /**
+     * True when the cues stored for [item] were recognised from audio other than [source].
+     *
+     * A pass records the audio it reads before its first window, so a resumed pass can tell a
+     * transcript that belongs to this audio from one made from another copy of the episode: a
+     * re-download, or a stream that the CDN stitched with different ads, moves every cue. Cues
+     * written before the audio was recorded are judged by [AnalysisIdentity.transcriptBelongsToAudio].
+     */
+    private suspend fun transcriptNeedsRestart(
+        episode: BaseEpisode,
+        item: AsrQueueItem,
+        source: TranscriptSource,
+        audioSignature: String,
+    ): Boolean {
+        val recorded = transcriptStore.recognisedAudio(item.episodeUuid)
+        if (recorded != null) return recorded != audioSignature
+        val file = (source as? TranscriptSource.Downloaded)?.file ?: return false
+        if (!transcriptStore.hasTranscript(item.episodeUuid)) return false
+        return !AnalysisIdentity.transcriptBelongsToAudio(
+            recordedSignature = null,
+            audioFile = file,
+            queuedAtMs = item.enqueuedAt,
+            transcriptEndMs = item.processedUntilMs,
+            episodeDurationMs = episode.durationMs,
+        )
+    }
+
+    /**
      * Where to recognise from, preferring the downloaded file.
      *
      * The download worker asks for the analysis as soon as the file is written, before the episode
      * row records its path, so the recorded path is often still empty at this point. The download
-     * location is deterministic from the episode uuid, and a downloaded episode whose file is not
-     * resolvable yet is given a bounded wait for the row to catch up. An episode that is not
-     * downloaded at all is recognised straight from its stream; an HLS stream travels with its
-     * flag so the recognizer can refuse it instead of decoding a playlist.
+     * location is deterministic from the episode uuid, which is what finds a file whose path the row
+     * has not caught up with yet.
+     *
+     * A download that is queued or running is not streamed in the meantime: the two copies of one
+     * episode do not have to carry the same ads, and cue times from one point at the wrong words in
+     * the other. Null therefore means "the file is coming", and the caller parks the row until the
+     * download writes it. A download parked on a constraint is different — it may never run, and the
+     * listener is streaming the episode now, so the stream is the only audio there will be.
      */
-    private suspend fun resolveSource(episode: BaseEpisode): TranscriptSource? {
+    private fun resolveSource(episode: BaseEpisode): TranscriptSource? {
         resolveAudioFile(episode)?.let { return TranscriptSource.Downloaded(it) }
-        if (episode.isDownloaded) {
-            awaitAudioFile(episode.uuid)?.let { return TranscriptSource.Downloaded(it) }
-        }
+        val fileIsComing = episode.isDownloaded || episode.isDownloading || episode.isQueuedForDownload
+        if (fileIsComing) return null
         return episode.streamUrl
             ?.takeIf { it.isNotBlank() }
             ?.let { TranscriptSource.Stream(it, isHls = episode.isStreamUrlHls) }
     }
 
-    private fun resolveAudioFile(episode: BaseEpisode): File? {
-        val recorded = episode.downloadedFilePath?.let(::File)?.takeIf { it.isFile }
-        if (recorded != null) return recorded
-        return fileStorage.getOrCreatePodcastEpisodeFile(episode)?.takeIf { it.isFile && it.length() > 0L }
-    }
-
-    private suspend fun awaitAudioFile(episodeUuid: String): File? = withTimeoutOrNull(WAIT_FOR_DOWNLOAD_MS) {
-        episodeManager.findEpisodeByUuidFlow(episodeUuid)
-            .mapNotNull { resolveAudioFile(it) }
-            .firstOrNull()
-    }
+    private fun resolveAudioFile(episode: BaseEpisode): File? = AnalysisIdentity.audioFile(episode, fileStorage)
 
     /**
      * Combines the cues stored before the pass with the snapshot the recognizer has produced so far.
@@ -313,7 +343,6 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         const val TAG = "OnDeviceTranscript"
         const val DEDUPE_WINDOW_MS = 250L
         const val COMPLETE_MARGIN_MS = 1_000L
-        const val WAIT_FOR_DOWNLOAD_MS = 30_000L
         const val ASR_RETRY_DELAY_MS = 15 * 60_000L
         const val DETECTION_BATCH_CUES = 12
         const val DETECTION_MAX_DELAY_MS = 60_000L

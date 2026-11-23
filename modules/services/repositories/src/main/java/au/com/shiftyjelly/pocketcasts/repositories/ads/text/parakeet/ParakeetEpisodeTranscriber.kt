@@ -18,7 +18,9 @@ import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.Para
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.ParakeetTokenizer
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.ParakeetWindowBuffer
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.litert.ParakeetWords
+import au.com.shiftyjelly.pocketcasts.servers.di.Downloads
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
+import dagger.Lazy
 import dagger.hilt.android.qualifiers.ApplicationContext
 import java.io.File
 import javax.inject.Inject
@@ -32,7 +34,7 @@ import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import okhttp3.OkHttpClient
+import okhttp3.Call
 
 /**
  * On-device transcription of Parakeet TDT 0.6B v3 Redux through LiteRT.
@@ -58,6 +60,13 @@ import okhttp3.OkHttpClient
 class ParakeetEpisodeTranscriber @Inject constructor(
     @ApplicationContext private val context: Context,
     private val model: ParakeetModel,
+    /**
+     * The client for the rare streamed-episode pass, the same one the download worker fetches with:
+     * the request has to look like the one the listener's audio came from. A publisher's ad server
+     * can stitch a bare client a different, often shorter, set of ads, and a transcript of that copy
+     * cannot be shown against this one.
+     */
+    @Downloads private val downloads: Lazy<Call.Factory>,
 ) : EpisodeTranscriber {
 
     /**
@@ -72,12 +81,6 @@ class ParakeetEpisodeTranscriber @Inject constructor(
      * to fold in; any change invalidates every stored transcript, which is the point.
      */
     override val version: String get() = ParakeetModel.version
-
-    /**
-     * The client for the rare streamed-episode pass. The model owns the downloads client and does
-     * not expose it, so this one is only ever used for the audio file itself.
-     */
-    private val httpClient by lazy { OkHttpClient() }
 
     /**
      * LiteRT declares API 24 as its floor, and the app installs on that floor too, so the runtime
@@ -390,7 +393,7 @@ class ParakeetEpisodeTranscriber @Inject constructor(
         }
         val target = File(directory, "$episodeUuid.audio")
         val startedAt = System.currentTimeMillis()
-        val file = downloadAudioStream(httpClient, url, target) ?: return null
+        val file = downloadAudioStream(downloads.get(), url, target) ?: return null
         LogBuffer.i(
             ParakeetStats.TAG,
             "Fetched ${file.length() / MEGABYTE} MB of stream audio for $episodeUuid in " +

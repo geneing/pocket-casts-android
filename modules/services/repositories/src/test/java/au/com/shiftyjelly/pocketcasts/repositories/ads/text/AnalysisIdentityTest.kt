@@ -82,6 +82,47 @@ class AnalysisIdentityTest {
     }
 
     @Test
+    fun `a transcript belongs to the audio it recorded, not to the episode`() {
+        val file = folder.newFile("episode.mp3")
+        file.writeBytes(ByteArray(10))
+        file.setLastModified(42_000)
+        val signature = AnalysisIdentity.audioSignature(file)
+
+        assertTrue(belongs(signature, file))
+
+        file.writeBytes(ByteArray(20))
+        file.setLastModified(43_000)
+        assertFalse("a re-download with a new ad stitch moved the cues", belongs(signature, file))
+    }
+
+    /**
+     * Everything written before the audio was recorded is judged by timing alone: a file written
+     * after the row was queued may have replaced the stream an earlier pass read, and a transcript
+     * that stops well short of the episode is the shape of one made from the ad-free copy.
+     */
+    @Test
+    fun `an unrecorded transcript is distrusted only when the audio could have changed and is longer`() {
+        val file = folder.newFile("episode.mp3")
+        file.writeBytes(ByteArray(10))
+        file.setLastModified(1_000)
+
+        assertTrue("the file predates the pass", belongs(null, file, queuedAtMs = 2_000, transcriptEndMs = 100_000, durationMs = 300_000))
+        assertTrue("the transcript reaches the end", belongs(null, file, queuedAtMs = 500, transcriptEndMs = 299_000, durationMs = 300_000))
+        assertFalse(
+            "the file landed after the pass was queued and the audio is longer than the transcript",
+            belongs(null, file, queuedAtMs = 500, transcriptEndMs = 100_000, durationMs = 300_000),
+        )
+    }
+
+    private fun belongs(
+        signature: String?,
+        file: File,
+        queuedAtMs: Long = 1,
+        transcriptEndMs: Long = 1_000,
+        durationMs: Int = 1_000,
+    ) = AnalysisIdentity.transcriptBelongsToAudio(signature, file, queuedAtMs, transcriptEndMs, durationMs)
+
+    @Test
     fun `a transcript identity matches the answering model by prefix and the prompt revision`() {
         val span = AnalysisIdentity.transcriptModelVersion("respan/span-02-20261015", JevAdModel.SPAN_02, 1)
 

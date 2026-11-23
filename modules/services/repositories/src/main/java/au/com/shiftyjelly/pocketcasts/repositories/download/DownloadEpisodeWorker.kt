@@ -161,6 +161,8 @@ class DownloadEpisodeWorker @AssistedInject constructor(
         return when (val result = timedValue.value) {
             is DownloadResult.Success -> {
                 resolvedEpisode?.let { episodeDurationFixer.fixMissingDuration(it, result.file) }
+                // The file exists from here on, so this is the event that lets a recognition pass
+                // parked waiting for this episode's audio run on the copy playback will read.
                 args.episodeUuid.takeIf { it.isNotEmpty() }?.let(adAnalysisQueue::schedule)
                 val data = Data.Builder()
                     .putString(DOWNLOAD_FILE_PATH_KEY, result.file.path)

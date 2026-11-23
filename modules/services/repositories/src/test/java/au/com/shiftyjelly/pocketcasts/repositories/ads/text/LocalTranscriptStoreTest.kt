@@ -3,6 +3,9 @@ package au.com.shiftyjelly.pocketcasts.repositories.ads.text
 import android.content.Context
 import au.com.shiftyjelly.pocketcasts.models.db.dao.TranscriptDao
 import au.com.shiftyjelly.pocketcasts.models.entity.Transcript
+import kotlinx.coroutines.CoroutineStart
+import kotlinx.coroutines.async
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import org.junit.After
 import org.junit.Assert.assertEquals
@@ -33,6 +36,7 @@ class LocalTranscriptStoreTest {
     fun tearDown() {
         store.file(EPISODE).delete()
         store.file(EPISODE).parentFile?.resolve("$EPISODE.complete")?.delete()
+        store.file(EPISODE).parentFile?.resolve("$EPISODE.audio")?.delete()
     }
 
     @Test
@@ -131,6 +135,57 @@ class LocalTranscriptStoreTest {
 
         store.delete(EPISODE)
         assertFalse(store.isComplete(EPISODE, "engine-v1"))
+    }
+
+    @Test
+    fun `completion wakes a waiting transcript observer`() = runTest {
+        val update = async(start = CoroutineStart.UNDISPATCHED) { store.updates.first() }
+
+        store.markComplete(EPISODE, "engine-v1")
+
+        assertEquals(EPISODE, update.await())
+    }
+
+    /**
+     * The stream and the download of one episode can carry different ad stitches, so a transcript
+     * has to remember which audio it heard: it is the only way to know a finished transcript cannot
+     * be shown against the audio playing now.
+     */
+    @Test
+    fun `a completion marker records the audio the transcript was recognised from`() = runTest {
+        store.markComplete(EPISODE, "engine-v1", audioSignature = "1000:1700000000000")
+
+        assertEquals("1000:1700000000000", store.recognisedAudio(EPISODE))
+        assertTrue(store.isComplete(EPISODE, "engine-v1"))
+
+        store.recordAudio(EPISODE, "2000:1800000000000")
+        store.markComplete(EPISODE, "engine-v1")
+        assertEquals("2000:1800000000000", store.recognisedAudio(EPISODE))
+    }
+
+    @Test
+    fun `audio recorded before a pass survives a process death without claiming a version`() = runTest {
+        store.recordAudio(EPISODE, "1000:1700000000000")
+
+        assertEquals("1000:1700000000000", store.recognisedAudio(EPISODE))
+        assertFalse("an unfinished pass is not a finished transcript", store.isComplete(EPISODE, "engine-v1"))
+    }
+
+    @Test
+    fun `a marker from before the audio was recorded has no signature`() = runTest {
+        store.markComplete(EPISODE, "engine-v1")
+        assertTrue(store.isComplete(EPISODE, "engine-v1"))
+        assertEquals(null, store.recognisedAudio(EPISODE))
+    }
+
+    @Test
+    fun `deleting a transcript deletes the audio it recorded`() = runTest {
+        store.recordAudio(EPISODE, "1000:1700000000000")
+        store.markComplete(EPISODE, "engine-v1")
+
+        store.delete(EPISODE)
+
+        assertEquals(null, store.recognisedAudio(EPISODE))
     }
 
     private companion object {

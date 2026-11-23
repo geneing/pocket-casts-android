@@ -375,6 +375,18 @@ for detection or navigation: its cue times do not match the audio and it is miss
   version, a different graph or a changed cue rule invalidates the stored transcript and the ad
   analysis built from it, so a model swap is followed by a full re-transcription of the library. That
   is intended: old cues need not agree with the new engine's words.
+- A transcript belongs to the **audio** it was recognised from as well. The stream and the download
+  of one episode can carry different ad stitches (the same URL served an ad-free 36:10 copy to a bare
+  `OkHttpClient` and a 42:32 copy with a pre-roll to the download, which shifted every cue). A pass
+  never streams an episode whose download is queued or running: `resolveSource` returns no source and
+  parks the row with `AdAnalysisQueue.deferUntilAudio`, and the download worker's existing
+  `schedule` call releases it through `wakeWaitingForAudio` the moment the file exists, so nothing
+  waits on a timeout or polls. A download parked on a constraint is streamed, because it may never
+  run. `LocalTranscriptStore` records the audio signature beside the transcript (`.audio` sidecar at
+  pass start, in `.complete` at the end), and `AdAnalysisQueue.schedule` recognises the episode again
+  when the recorded audio differs from the current file — including a pre-provenance transcript whose
+  file was written after its queue row and which stops short of the episode. The stream fetch itself
+  uses `@Downloads Call.Factory`, so it looks like the download request and is stitched the same way.
 - The queue is durable and serialised, but the work that drains it is one unique chain, so a
   *retrying* head blocks whatever is appended behind it. Work-level backoff is therefore LINEAR at 1
   minute, and the real retry schedule is the row's `next_attempt_at`. Never put exponential backoff

@@ -82,7 +82,7 @@ class ParakeetBackendBenchmarkTest {
 
         val results = mutableMapOf<ParakeetBackend, TranscriptResult>()
         for (backend in backends) {
-            val transcriber = ParakeetEpisodeTranscriber(context = context, model = model).apply {
+            val transcriber = ParakeetEpisodeTranscriber(context = context, model = model, downloads = Lazy { OkHttpClient() }).apply {
                 this.backend = backend
             }
             val startedAt = SystemClock.elapsedRealtime()

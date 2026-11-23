@@ -38,23 +38,64 @@ class LocalTranscriptStore @Inject constructor(
 
     private fun completionFile(episodeUuid: String): File = File(dir(), "$episodeUuid.complete")
 
+    private fun audioFile(episodeUuid: String): File = File(dir(), "$episodeUuid.audio")
+
     fun localUrl(episodeUuid: String) = "$SCHEME$episodeUuid"
 
     suspend fun hasTranscript(episodeUuid: String): Boolean = withContext(Dispatchers.IO) { file(episodeUuid).exists() }
 
     /**
-     * Records the engine version that recognised the whole episode. Without it a transcript is
-     * assumed to be partial (or from an older pipeline) and is recognised again, which is what keeps
-     * a pre-queue file with reconstructed timings out of the analysis.
+     * Records the audio a recognition pass is about to read, before it reads any of it.
+     *
+     * Cues are written while the pass runs, so a process killed mid-pass leaves a partial transcript
+     * behind. Recording the audio first is what lets the next pass tell whether it is resuming over
+     * the same copy of the episode: a download that landed in between, or a stream the CDN stitched
+     * with different ads, has moved every cue that was written from the other copy.
      */
-    suspend fun markComplete(episodeUuid: String, version: String) {
+    suspend fun recordAudio(episodeUuid: String, audioSignature: String) {
         withContext(Dispatchers.IO) {
-            completionFile(episodeUuid).apply { parentFile?.mkdirs() }.writeText(version)
+            audioFile(episodeUuid).apply { parentFile?.mkdirs() }.writeText(audioSignature)
         }
     }
 
+    /**
+     * Records the engine version that recognised the whole episode, and the audio it recognised.
+     *
+     * [audioSignature] is what makes the marker answer "does this transcript belong to the audio
+     * playing now?": the stream and the download of one episode can carry different ad stitches, and
+     * cue times do not survive the switch. When it is not given, the audio recorded by [recordAudio]
+     * is kept, so a marker written for cues collected across several passes names the audio they
+     * were actually read from rather than the audio that happens to be current.
+     */
+    suspend fun markComplete(episodeUuid: String, version: String, audioSignature: String? = null) {
+        withContext(Dispatchers.IO) {
+            val audio = audioSignature?.takeIf { it.isNotBlank() }
+                ?: passAudio(episodeUuid)
+                ?: readCompletion(episodeUuid)?.second?.takeIf { it.isNotBlank() }
+            val text = if (audio == null) version else "$version\n$audio"
+            completionFile(episodeUuid).apply { parentFile?.mkdirs() }.writeText(text)
+        }
+        _updates.tryEmit(episodeUuid)
+    }
+
     suspend fun isComplete(episodeUuid: String, version: String): Boolean = withContext(Dispatchers.IO) {
-        completionFile(episodeUuid).takeIf { it.exists() }?.readText() == version
+        readCompletion(episodeUuid)?.first == version
+    }
+
+    /**
+     * The audio this transcript was recognised from, or null when nothing recorded it and the
+     * transcript cannot say which copy of the episode it heard.
+     */
+    suspend fun recognisedAudio(episodeUuid: String): String? = withContext(Dispatchers.IO) {
+        readCompletion(episodeUuid)?.second?.takeIf { it.isNotBlank() } ?: passAudio(episodeUuid)
+    }
+
+    /** The audio the last pass read, recorded before its first window. */
+    private fun passAudio(episodeUuid: String): String? = audioFile(episodeUuid).takeIf { it.exists() }?.readText()?.trim()?.takeIf { it.isNotBlank() }
+
+    private fun readCompletion(episodeUuid: String): Pair<String, String?>? = completionFile(episodeUuid).takeIf { it.exists() }?.let { file ->
+        val lines = file.readText().lineSequence().toList()
+        lines.firstOrNull()?.trim().orEmpty() to lines.getOrNull(1)?.trim()
     }
 
     /** The cues already recognised for the episode, in episode time; empty when there are none. */
@@ -107,26 +148,16 @@ class LocalTranscriptStore @Inject constructor(
         temporary.delete()
     }
 
-    /**
-     * Stores the on-device transcript as the episode's only one, dropping any transcript the show or
-     * our servers published. Ad analysis and navigation are based on the recognized text only, so a
-     * published transcript must not stay behind as an alternative reading of the same episode.
-     */
-    suspend fun replaceRemoteAndSave(episodeUuid: String, cues: List<TranscriptCue>) {
-        withContext(Dispatchers.IO) {
-            transcriptDao.deleteRemoteForEpisodes(listOf(episodeUuid))
-        }
-        saveProgress(episodeUuid, cues)
-    }
-
     suspend fun delete(episodeUuid: String) {
         fileLock.withLock {
             withContext(Dispatchers.IO) {
                 file(episodeUuid).delete()
                 completionFile(episodeUuid).delete()
+                audioFile(episodeUuid).delete()
                 transcriptDao.deleteGenerated(episodeUuid, localUrl(episodeUuid))
             }
         }
+        _updates.tryEmit(episodeUuid)
     }
 
     private fun dir(): File = File(context.filesDir, "on-device-transcripts").apply { mkdirs() }

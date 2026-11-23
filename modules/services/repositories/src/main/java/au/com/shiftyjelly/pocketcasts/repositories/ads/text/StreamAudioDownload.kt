@@ -3,7 +3,7 @@ package au.com.shiftyjelly.pocketcasts.repositories.ads.text
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
 import java.io.File
 import java.io.IOException
-import okhttp3.OkHttpClient
+import okhttp3.Call
 import okhttp3.Request
 
 /**
@@ -19,7 +19,7 @@ import okhttp3.Request
  * partial file is deleted so a retry never reads a truncated episode.
  */
 internal fun downloadAudioStream(
-    client: OkHttpClient,
+    client: Call.Factory,
     url: String,
     target: File,
 ): File? {

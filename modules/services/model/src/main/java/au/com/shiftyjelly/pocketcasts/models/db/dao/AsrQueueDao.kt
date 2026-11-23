@@ -62,6 +62,19 @@ abstract class AsrQueueDao {
     )
     abstract suspend fun markFailure(episodeUuid: String, nextAttemptAt: Long, error: String?)
 
+    /**
+     * Makes a row that is parked waiting for its audio due now, and only such a row.
+     *
+     * The park's own retry time is only a safety net for a download that never finishes; the
+     * download path calls this when it writes the file, so recognition starts on that audio at once
+     * instead of at the end of a timeout the download may outlive.
+     */
+    @Query(
+        "UPDATE episode_asr_queue SET next_attempt_at = :now, last_error = NULL " +
+            "WHERE episode_uuid IS :episodeUuid AND is_complete IS 0 AND last_error IS :reason",
+    )
+    abstract suspend fun wakeWaitingForAudio(episodeUuid: String, now: Long, reason: String)
+
     /** Restarts recognition from the beginning, used when the audio or the engine changed. */
     @Query(
         "UPDATE episode_asr_queue SET processed_until_ms = 0, is_complete = 0, attempts = 0, " +

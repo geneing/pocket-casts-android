@@ -73,6 +73,7 @@ class ParakeetDeviceTranscriptionTest {
         val transcriber = ParakeetEpisodeTranscriber(
             context = context,
             model = model,
+            downloads = Lazy { OkHttpClient() },
         )
         // The real length, not a constant: a fixture swapped for a shorter clip would otherwise make
         // the rtf in the log a fiction, which is the one number this test exists to report.
