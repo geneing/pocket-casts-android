@@ -441,6 +441,22 @@ enum class Feature(
         hasDevToggle = true,
         addedOn = LocalDate.parse("2026-11-04"),
     ),
+
+    /**
+     * Recognise episodes with a remote model over OpenRouter instead of Parakeet on the device.
+     * Off by default: every episode transcribed this way is paid for and uploaded. The local engine
+     * stays the default anywhere the flag is off, and the choice only lasts until the next launch
+     * when it is set from the dev toggle.
+     */
+    REMOTE_TRANSCRIPTION(
+        key = "remote_transcription",
+        title = "Recognise speech in the cloud instead of on the device",
+        defaultValue = false,
+        tier = FeatureTier.Free,
+        hasFirebaseRemoteFlag = false,
+        hasDevToggle = true,
+        addedOn = LocalDate.parse("2026-11-25"),
+    ),
 }
 
 sealed class FeatureTier {

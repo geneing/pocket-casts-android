@@ -1,0 +1,3 @@
+# Test audio fetched or cut by openrouter_stt.py: a podcast episode is tens of megabytes.
+data/
+__pycache__/

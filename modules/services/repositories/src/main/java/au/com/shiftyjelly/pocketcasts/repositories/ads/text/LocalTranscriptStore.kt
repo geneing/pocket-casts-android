@@ -41,6 +41,8 @@ class LocalTranscriptStore @Inject constructor(
 
     private fun audioFile(episodeUuid: String): File = File(dir(), "$episodeUuid.audio")
 
+    private fun costFile(episodeUuid: String): File = File(dir(), "$episodeUuid.cost")
+
     fun localUrl(episodeUuid: String) = "$SCHEME$episodeUuid"
 
     suspend fun hasTranscript(episodeUuid: String): Boolean = withContext(Dispatchers.IO) { file(episodeUuid).exists() }
@@ -125,6 +127,45 @@ class LocalTranscriptStore @Inject constructor(
     /** The audio the last pass read, recorded before its first window. */
     private fun passAudio(episodeUuid: String): String? = audioFile(episodeUuid).takeIf { it.exists() }?.readText()?.trim()?.takeIf { it.isNotBlank() }
 
+    /**
+     * Adds one request's price to what this episode has cost so far.
+     *
+     * A remote pass bills per chunk and a resumed pass bills again, so the total is accumulated
+     * rather than reported per pass. The sidecar is appended to, never rewritten: two passes never
+     * race on it, and a half-written line is skipped by [totalCost] instead of failing the pass.
+     */
+    suspend fun addCost(episodeUuid: String, usd: Double) {
+        if (usd <= 0.0) return
+        withContext(Dispatchers.IO) {
+            costFile(episodeUuid).apply { parentFile?.mkdirs() }.appendText("$usd\n")
+        }
+    }
+
+    /** The price of every remote request this transcript has been billed for, or null if none. */
+    suspend fun totalCost(episodeUuid: String): Double? = withContext(Dispatchers.IO) {
+        costFile(episodeUuid).takeIf { it.isFile }?.readLines()
+            ?.mapNotNull { it.trim().toDoubleOrNull() }
+            ?.takeIf { it.isNotEmpty() }
+            ?.sum()
+    }
+
+    /**
+     * Appends the price of the remote pass to the end of the transcript, where a listener can see
+     * it. The on-device engine records no cost, so this is a no-op there.
+     *
+     * The line is a cue rather than a WebVTT `NOTE` because the transcript tab renders cues and
+     * silently drops notes, and "show the cost at the end of the transcript" is exactly what a cue
+     * at the end shows. It starts after the last cue so it never competes with speech for a timestamp.
+     */
+    suspend fun appendCostSummary(episodeUuid: String) {
+        val usd = totalCost(episodeUuid) ?: return
+        val cues = readCues(episodeUuid)
+        if (cues.any { it.text.startsWith(COST_PREFIX) }) return
+        val startMs = (cues.lastOrNull()?.endMs ?: 0L) + COST_CUE_GAP_MS
+        val label = String.format(Locale.US, "\$%.4f", usd)
+        saveProgress(episodeUuid, cues + TranscriptCue(startMs, startMs + COST_CUE_MS, "$COST_PREFIX $label"))
+    }
+
     private fun readCompletion(episodeUuid: String): Pair<String, String?>? = completionFile(episodeUuid).takeIf { it.exists() }?.let { file ->
         val lines = file.readText().lineSequence().toList()
         lines.firstOrNull()?.trim().orEmpty() to lines.getOrNull(1)?.trim()
@@ -192,7 +233,13 @@ class LocalTranscriptStore @Inject constructor(
     private suspend fun deleteFilesAndRow(episodeUuid: String) {
         val target = file(episodeUuid)
         // Keep the VTT until the sidecars are gone, so a failed cleanup is discovered on the next sweep.
-        listOf(completionFile(episodeUuid), audioFile(episodeUuid), File(target.parentFile, "${target.name}.tmp"), target)
+        listOf(
+            completionFile(episodeUuid),
+            audioFile(episodeUuid),
+            costFile(episodeUuid),
+            File(target.parentFile, "${target.name}.tmp"),
+            target,
+        )
             .forEach { item ->
                 if (item.exists() && !item.delete()) throw IOException("Could not delete ${item.name}")
             }
@@ -255,6 +302,12 @@ class LocalTranscriptStore @Inject constructor(
 
     companion object {
         const val SCHEME = "local-generated://"
+
+        /** How a remote pass's price is written at the end of the transcript. */
+        const val COST_PREFIX = "Remote transcription cost:"
+
+        private const val COST_CUE_GAP_MS = 1_000L
+        private const val COST_CUE_MS = 2_000L
 
         private val TIMESTAMP_LINE = Regex("(\\d{2}:\\d{2}:\\d{2}\\.\\d{3}) --> (\\d{2}:\\d{2}:\\d{2}\\.\\d{3})")
     }

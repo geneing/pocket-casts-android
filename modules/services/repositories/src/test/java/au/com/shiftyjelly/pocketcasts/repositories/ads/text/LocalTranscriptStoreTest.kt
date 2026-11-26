@@ -188,6 +188,53 @@ class LocalTranscriptStoreTest {
         assertEquals(null, store.recognisedAudio(EPISODE))
     }
 
+    @Test
+    fun `remote costs accumulate across passes and are written after the last cue`() = runTest {
+        store.save(EPISODE, listOf(TranscriptCue(0, 4_000, "the only line")))
+        // One pass bills per chunk, and a resumed pass bills again: the total is what was spent.
+        store.addCost(EPISODE, 0.0004)
+        store.addCost(EPISODE, 0.00025)
+
+        assertEquals(0.00065, store.totalCost(EPISODE)!!, 1e-9)
+
+        store.appendCostSummary(EPISODE)
+
+        val cues = store.readCues(EPISODE)
+        assertEquals(2, cues.size)
+        assertEquals("the only line", cues.first().text)
+        assertEquals("Remote transcription cost: \$0.0007", cues.last().text)
+        assertTrue("the price is written after the speech, not over it", cues.last().startMs >= cues.first().endMs)
+    }
+
+    @Test
+    fun `the cost line is written once even when completion runs twice`() = runTest {
+        store.save(EPISODE, listOf(TranscriptCue(0, 4_000, "the only line")))
+        store.addCost(EPISODE, 0.002)
+
+        store.appendCostSummary(EPISODE)
+        store.appendCostSummary(EPISODE)
+
+        assertEquals(2, store.readCues(EPISODE).size)
+    }
+
+    @Test
+    fun `an on-device transcript has no cost line`() = runTest {
+        store.save(EPISODE, listOf(TranscriptCue(0, 4_000, "the only line")))
+
+        store.appendCostSummary(EPISODE)
+
+        assertEquals(1, store.readCues(EPISODE).size)
+    }
+
+    @Test
+    fun `deleting a transcript deletes the cost it recorded`() = runTest {
+        store.addCost(EPISODE, 0.001)
+
+        store.delete(EPISODE)
+
+        assertEquals(null, store.totalCost(EPISODE))
+    }
+
     private companion object {
         const val EPISODE = "transcript-store-test-episode"
     }

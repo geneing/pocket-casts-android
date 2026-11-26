@@ -36,6 +36,11 @@ def openRouterApiKey = {
 def openRouterApiKeyLiteral = '"' + openRouterApiKey + '"'
 
 android {
+    // Instrumentation tests must run against debugProd, the variant this checkout carries on the
+    // phone. Both variants share the `.debug` application id, so installing the `debug` test build
+    // would replace the app and wipe its data — the sign-in, the library and the pushed speech model.
+    testBuildType = 'debugProd'
+
     defaultConfig {
         // The phone app targets API 33+; the shared library modules stay at the lower floor that
         // wear, automotive and tv still support.

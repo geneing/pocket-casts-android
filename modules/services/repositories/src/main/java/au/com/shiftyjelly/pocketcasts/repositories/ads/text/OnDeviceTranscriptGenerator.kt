@@ -4,11 +4,13 @@ import au.com.shiftyjelly.pocketcasts.models.entity.BaseEpisode
 import au.com.shiftyjelly.pocketcasts.models.to.AdAnalysisState
 import au.com.shiftyjelly.pocketcasts.models.to.AsrQueueItem
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.ParakeetModel
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.remote.RemoteEpisodeTranscriber
 import au.com.shiftyjelly.pocketcasts.repositories.file.FileStorage
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.EpisodeManager
 import au.com.shiftyjelly.pocketcasts.repositories.podcast.PodcastManager
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
 import java.io.File
+import java.util.Locale
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlinx.coroutines.CancellationException
@@ -191,13 +193,18 @@ class OnDeviceTranscriptGenerator @Inject constructor(
                 val merged = mergeCues(existing, result.cues, resumeAtMs = startMs)
                 val saved = writeGuard.ifCurrent(episodeUuid, generation) {
                     persist(episodeUuid, merged)
+                    // The price is recorded before the transcript is marked complete: the marker is
+                    // what appends the closing line, and a crash between the two keeps the cost so a
+                    // retry does not lose it.
+                    result.costUsd?.let { cost -> transcriptStore.addCost(episodeUuid, cost) }
                     complete(episodeUuid, merged.lastOrNull()?.endMs ?: durationMs)
                     true
                 } ?: false
                 if (!saved) return AsrOutcome.NotQueued
                 LogBuffer.i(
                     TAG,
-                    "Recognised $episodeUuid: ${merged.size} cues from ${startMs}ms, ${result.engine}",
+                    "Recognised $episodeUuid: ${merged.size} cues from ${startMs}ms, ${result.engine}" +
+                        (result.costUsd?.let { cost -> String.format(Locale.US, " (cost \$%.6f)", cost) } ?: ""),
                 )
                 AsrOutcome.Completed
             }
@@ -257,6 +264,8 @@ class OnDeviceTranscriptGenerator @Inject constructor(
 
     private suspend fun complete(episodeUuid: String, processedUntilMs: Long) {
         transcriptStore.markComplete(episodeUuid, transcriber.version)
+        // Last, so the closing line is the end of the transcript as it stands.
+        transcriptStore.appendCostSummary(episodeUuid)
         queue.completeAsr(episodeUuid, processedUntilMs)
         queue.enqueueDetectionNow(episodeUuid)
     }
@@ -271,8 +280,7 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         val signature = AnalysisIdentity.audioSignature(source)
         val staleAudio = state.audioSignature.isNotBlank() && state.audioSignature != signature
         val staleEngine = state.sttVersion.isNotBlank() && state.sttVersion != transcriber.version
-        val fromPublishedTranscript = state.sttVersion.isNotBlank() &&
-            !state.sttVersion.startsWith(ParakeetModel.ENGINE_TAG)
+        val fromPublishedTranscript = state.sttVersion.isNotBlank() && !isRecognisedByThisApp(state.sttVersion)
         if (!staleAudio && !staleEngine && !fromPublishedTranscript) return generation
         LogBuffer.i(
             TAG,
@@ -281,6 +289,15 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         )
         return queue.resetAnalysisIfCurrent(episodeUuid, generation)
     }
+
+    /**
+     * True when [sttVersion] was written by one of this app's engines rather than by a transcript the
+     * show or our servers published. A version this build does not know is a published transcript and
+     * its analysis has to be thrown away; a version from the other engine is only stale, which the
+     * version comparison above already handles.
+     */
+    private fun isRecognisedByThisApp(sttVersion: String): Boolean = sttVersion.startsWith(ParakeetModel.ENGINE_TAG) ||
+        sttVersion.startsWith(RemoteEpisodeTranscriber.ENGINE_TAG)
 
     /**
      * True when the cues stored for [item] were recognised from audio other than [source].

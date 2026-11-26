@@ -1,7 +1,7 @@
 package au.com.shiftyjelly.pocketcasts.repositories.ads
 
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.EpisodeTranscriber
-import au.com.shiftyjelly.pocketcasts.repositories.ads.text.parakeet.ParakeetEpisodeTranscriber
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.SelectingEpisodeTranscriber
 import au.com.shiftyjelly.pocketcasts.repositories.di.OpenRouterApiKey
 import dagger.Binds
 import dagger.BindsOptionalOf
@@ -19,14 +19,14 @@ abstract class AdAwareModule {
     abstract fun provideAdSegmentManager(adSegmentManagerImpl: AdSegmentManagerImpl): AdSegmentManager
 
     /**
-     * The only speech recognizer: Parakeet TDT 0.6B v3 on LiteRT, on the Tensor G6's NPU when the
-     * phone has one and on the CPU otherwise, with the graph and tokenizer installed on device or
-     * downloaded on Wi-Fi. One multilingual graph covers every allowed language, so there is nothing
-     * per-language to bind.
+     * The recogniser: remote Nemotron over OpenRouter when the remote flag is on and the build has
+     * a key, Parakeet TDT 0.6B v3 on LiteRT otherwise. [SelectingEpisodeTranscriber] makes that
+     * choice per pass, so the dev toggle takes effect without a restart, and its version follows
+     * the engine it picked so transcripts from the other one are recognised again.
      */
     @Binds
     @Singleton
-    abstract fun provideEpisodeTranscriber(impl: ParakeetEpisodeTranscriber): EpisodeTranscriber
+    abstract fun provideEpisodeTranscriber(impl: SelectingEpisodeTranscriber): EpisodeTranscriber
 
     /**
      * The OpenRouter key is optional so every app variant's graph stays valid: the app binds it

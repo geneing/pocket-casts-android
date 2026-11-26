@@ -414,3 +414,74 @@ for detection or navigation: its cue times do not match the audio and it is miss
   LiteRT part is in its `litert/` subpackage) and `dev/adaware/next/parakeet/` for the model scripts
   (`download-model.ps1`, `install-model.ps1`, `install-app.ps1`) plus the log/RTF field reference in
   its `README.md`.
+
+### Remote speech to text (the alternative engine)
+
+The same pipeline can recognise the episode in the cloud instead: `nvidia/nemotron-3.5-asr-streaming-multilingual-0.6b`
+through OpenRouter's speech-to-text endpoint. `SelectingEpisodeTranscriber` picks the engine per pass
+from `Feature.REMOTE_TRANSCRIPTION` (`remote_transcription`, off by default, dev toggle). Everything
+downstream — the queue, the WebVTT store, ad detection, the transcript tab — is unchanged.
+
+- The endpoint takes **inline audio only**. `source_url` is refused for this model ("The selected
+  model does not support audio from a URL"), `format: "pcm"` is refused as malformed, and
+  `stream: true` is accepted and ignored — there is no streaming variant and no chunk size to look
+  for, only a **50 MiB request body** limit (`413`). `verbose_json` does return `words[]` and
+  `segments[]` with times, so cues need no estimation. Prices come back in `usage.cost`
+  (about $0.0000033/s, ~25× real time). The measurements are in `dev/adaware/remote-asr/README.md`
+  and the probe that produced them is `dev/adaware/remote-asr/openrouter_stt.py`.
+- The splitter set follows what the library publishes: an audit of 119 feeds found 115 on `audio/mpeg`,
+  one on `audio/x-m4a` and one mixed, and three shows with a WAV episode in their current window — no
+  Ogg/Vorbis, WebM, ADTS AAC or FLAC anywhere. The MP3 copy and the MP4 remux carry the library; the WAV
+  episode is a real case that still re-encodes; the rest of the fallback set is insurance.
+- A compressed episode file under 24 MiB is uploaded **as it is** (~32 MiB of base64, clear of the
+  50 MiB body limit and of a phone's heap; about 25 min at 128 kbit/s). Bigger files are **cut, not
+  re-encoded** (`AudioSplitter`): an MP3 is a chain of frames with no container, so `Mp3Frames` indexes
+  the four-byte headers and copies whole frames, and an MP4/M4A is remuxed sample-for-sample through
+  `MediaExtractor` + `MediaMuxer`. That is a byte copy of the episode in 10 minute chunks — 238 MB
+  indexed in 120 ms on the dev machine, against the minutes a decode + AAC encode spends. On the phone
+  a 70 minute mp3 (66.9 MB) copied its 7 chunks in 148 ms and the whole pass took 160 s, all of it the
+  network; the same audio as m4a cost 37 s of muxing (5.5 s per chunk, the muxer writing 10 MB each
+  time). Only a WAV
+  over the limit, an unknown extension, a resumed pass, or a codec the muxer cannot write (Vorbis in
+  ogg, WebM) is decoded with `AudioFeed` and re-encoded to 32 kbit/s mono AAC (`AacChunks`, MediaCodec
+  + MediaMuxer — Android ships no MP3 encoder). A WAV that fits whole is uploaded as it is, and no WAV
+  is ever chunked raw: it is eight times the bytes for the same words. With its input queues batched the
+  fallback encoder runs at ~9x realtime (11 s of WAV encoded in 1.25 s), so a full-length WAV episode is
+  minutes of CPU, not hours.
+- A chunk's cues are clamped twice, and both clamps are load-bearing (`RemoteCues.toCues` takes
+  `audioMs` and `notBeforeMs`): to the audio that chunk actually carried, because the model places its
+  last words past the end of what it was given (4.5 s past a 606 s chunk was measured), and to the end
+  of the previous chunk's cues, because a sentence starting just inside a window may already be covered
+  by the previous chunk's last one. Without both, two cues overlap — which the VTT, the transcript tab
+  and the ad analysis all assume cannot happen. A window that carries less than it asked for (the byte
+  cap, the end of the file) advances the cursor to where it really ended, never to the requested end.
+- A compressed file can only be cut between frames, so a chunk does not begin exactly where it was
+  asked to: 26 ms per MP3 frame, 21 ms per AAC frame. `ChunkAudio.originMs` is the frame's **real**
+  position, read from the file, and every cue of that chunk is placed by it. Recomputing it from the
+  requested position would put each chunk's cues up to a frame late, once per chunk.
+- Do not add FFmpeg (ffmpeg-kit is retired and archived; its continuation FFmpegKitNext is source-only,
+  so the app would build and ship its own 15-30 MB of native libraries per ABI, plus 16 KB page builds
+  and LGPL paperwork) or Media3 Transformer (MP4 output only; its fast trim is an experimental MP4
+  edit list whose start position it never reports) for this: the platform's own extractor and muxer
+  copy the samples, and Media3 Transformer is not a dependency here.
+- Chunks overlap by 3 s on each side and `RemoteCues` keeps only the cues that *start* inside a
+  chunk's own window. A hard cut was measured to lose ~2.5 s of speech at the seam.
+- Cue times are the model's own word times, run through `ParakeetCues` so the cue shape stays the one
+  the classifier prompt and the gap logic were tuned on. Both engines stamp `version`, and
+  `OnDeviceTranscriptGenerator` treats a version from either as locally produced
+  (`isRecognisedByThisApp`); a version it does not know is a published transcript and is reset.
+- The price of a remote pass is accumulated in a `.cost` sidecar and written as one final cue,
+  `Remote transcription cost: $0.0042`, by `LocalTranscriptStore.appendCostSummary`. The on-device
+  engine records none. `TranscriptResult.Success.costUsd` carries it from the engine.
+- Temporary audio lives only in `cacheDir/remote-asr-audio` and only `RemoteAudioCache` names it: a
+  chunk is deleted the moment its bytes are in memory (before the upload), a pass deletes its
+  episode's files before it starts and again when it ends, and `TranscriptRetentionWorker` sweeps
+  anything older than an hour at launch and once a day. A process killed mid-pass therefore leaves at
+  most one file per episode, and the next pass or the daily sweep removes it; never write these files
+  under `filesDir` and never leave a chunk to be cleaned up by cache eviction.
+- `RemoteSttClient` logs under `RemoteAsr`: one `chunk N: format=… split=yes|no prepare=…ms
+  request=…ms upload=…B span=… cues=… cost=…` line per request and `pass: model=… audio_ms=…
+  wall_ms=… copy=…ms encode=…ms requests=…ms requests=… upload=…B cues=… cost=…` at the end, with the
+  copy (or re-encode) and the network reported separately. `split=yes` means no decoder ran for that
+  chunk; if it never appears on an mp3 or m4a episode, read the `Could not copy` warning above it — the
+  pass fell back to `AacChunks`. Read those before changing chunking or compression.

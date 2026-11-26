@@ -9,6 +9,7 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.WorkerParameters
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.remote.RemoteAudioCache
 import au.com.shiftyjelly.pocketcasts.utils.log.LogBuffer
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
@@ -21,10 +22,15 @@ class TranscriptRetentionWorker @AssistedInject constructor(
     @Assisted context: Context,
     @Assisted params: WorkerParameters,
     private val queue: AdAnalysisQueue,
+    private val remoteAudio: RemoteAudioCache,
 ) : CoroutineWorker(context, params) {
     override suspend fun doWork(): Result = try {
         val deleted = queue.expireIdleTranscripts(System.currentTimeMillis())
         LogBuffer.i(TAG, "Removed $deleted idle transcript(s)")
+        // Temporary remote audio is removed as soon as a pass reads it, so anything left here is what
+        // a killed process wrote and nothing has removed yet.
+        val (files, bytes) = remoteAudio.deleteStale()
+        if (files > 0) LogBuffer.i(TAG, "Removed $files leftover remote audio file(s), $bytes bytes")
         Result.success()
     } catch (error: CancellationException) {
         throw error

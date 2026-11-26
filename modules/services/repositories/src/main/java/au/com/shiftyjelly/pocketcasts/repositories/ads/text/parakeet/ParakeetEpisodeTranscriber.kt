@@ -7,6 +7,7 @@ import au.com.shiftyjelly.pocketcasts.repositories.ads.text.AudioFeed
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.EpisodeTranscriber
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.ModelDownload
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.ModelDownloadProgress
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.SpeechLanguage
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptAvailability
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptCue
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptRequest
@@ -438,43 +439,7 @@ class ParakeetEpisodeTranscriber @Inject constructor(
  * over audio it does not know would produce confident nonsense, which is worse than leaving the
  * episode without on-device detection.
  */
-internal fun parakeetLanguage(podcastLanguage: String?): String? {
-    val normalised = podcastLanguage?.trim()?.lowercase()?.takeIf { it.isNotEmpty() } ?: return ENGLISH_LANGUAGE
-    val primary = normalised.substringBefore('-').substringBefore('_')
-    return primary.takeIf { it in PARAKEET_LANGUAGES }
-}
-
-/** The languages `parakeet_tdt_0.6b_v3` covers; anything else is skipped rather than guessed. */
-private val PARAKEET_LANGUAGES = setOf(
-    "bg",
-    "hr",
-    "cs",
-    "da",
-    "nl",
-    "el",
-    "en",
-    "et",
-    "fi",
-    "fr",
-    "de",
-    "hu",
-    "it",
-    "lv",
-    "lt",
-    "mt",
-    "pl",
-    "pt",
-    "ro",
-    "sk",
-    "sl",
-    "es",
-    "sv",
-    "ru",
-    "uk",
-)
-
-/** What a podcast that declares no language is transcribed as. */
-private const val ENGLISH_LANGUAGE = "en"
+internal fun parakeetLanguage(podcastLanguage: String?): String? = SpeechLanguage.primary(podcastLanguage)
 
 /** A playlist URL can never be decoded as audio, whatever the flag on the source says. */
 private fun String.isPlaylistUrl(): Boolean = substringBefore('?').lowercase().endsWith(".m3u8")

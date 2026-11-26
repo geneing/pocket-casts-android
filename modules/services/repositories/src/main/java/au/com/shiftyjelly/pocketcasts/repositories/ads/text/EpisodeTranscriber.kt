@@ -13,7 +13,12 @@ data class TranscriptCue(val startMs: Long, val endMs: Long, val text: String)
 internal const val ON_DEVICE_TRANSCRIPT_VERSION = "on-device-transcript/0"
 
 sealed interface TranscriptResult {
-    data class Success(val cues: List<TranscriptCue>, val engine: String) : TranscriptResult
+    /**
+     * [costUsd] is what the provider charged for this pass when it reports a price; the on-device
+     * engine leaves it null because it costs nothing to run. The caller shows it at the end of the
+     * transcript, which is the only place a listener can see what a remote pass spent.
+     */
+    data class Success(val cues: List<TranscriptCue>, val engine: String, val costUsd: Double? = null) : TranscriptResult
     data class Unavailable(val reason: String) : TranscriptResult
     data class Failed(val message: String) : TranscriptResult
 }

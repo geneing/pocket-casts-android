@@ -210,12 +210,11 @@ class OpenRouterChatClient @Inject constructor(
     }
 }
 
-internal fun isEpisodeSummary(question: String): Boolean =
-    Regex(
-        """(?i)^\s*(?:please\s+)?(?:summarize|summarise|summary of)\s+""" +
-            """(?:(?:the|this)\s+)?(?:episode|podcast)[.!?]*\s*$""",
-    )
-        .matches(question)
+internal fun isEpisodeSummary(question: String): Boolean = Regex(
+    """(?i)^\s*(?:please\s+)?(?:summarize|summarise|summary of)\s+""" +
+        """(?:(?:the|this)\s+)?(?:episode|podcast)[.!?]*\s*$""",
+)
+    .matches(question)
 
 @JsonClass(generateAdapter = true)
 internal data class AiChatRequest(

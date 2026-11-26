@@ -16,6 +16,9 @@ internal object AudioAdDecoder {
     private const val TAG = "AdAnalysis"
     private const val PROGRESS_STEP_MS = 30_000L
 
+    /** How many samples are queued per wait for output; the whole input queue of every codec fits. */
+    private const val MAX_INPUT_BATCH = 8
+
     data class Result(
         val completed: Boolean,
         val lastPositionMs: Long,
@@ -111,19 +114,24 @@ internal object AudioAdDecoder {
             var nextProgressMs = startPositionMs + PROGRESS_STEP_MS
 
             while (!outputDone && isActive()) {
-                if (!inputDone) {
-                    val inputIndex = codec.dequeueInputBuffer(TIMEOUT_US)
-                    if (inputIndex >= 0) {
-                        val inputBuffer = codec.getInputBuffer(inputIndex)
-                        val size = if (inputBuffer == null) -1 else extractor.readSampleData(inputBuffer, 0)
-                        if (size < 0) {
-                            codec.queueInputBuffer(inputIndex, 0, 0, 0, MediaCodec.BUFFER_FLAG_END_OF_STREAM)
-                            inputDone = true
-                            Timber.tag(TAG).d("Input exhausted at %dms", lastPositionMs)
-                        } else {
-                            codec.queueInputBuffer(inputIndex, 0, size, extractor.sampleTime, 0)
-                            extractor.advance()
-                        }
+                // Fill the decoder before waiting for it: hand it every sample it will take without
+                // blocking, then wait for the output that batch produces. One sample per round trip
+                // cost 10ms of waiting on each ~26ms buffer of a 44.1 kHz mp3, which held the whole
+                // decode to 1.6x realtime; a batch is what turns the waits into actual decoding.
+                var queued = 0
+                while (!inputDone && queued < MAX_INPUT_BATCH) {
+                    val inputIndex = codec.dequeueInputBuffer(0)
+                    if (inputIndex < 0) break
+                    val inputBuffer = codec.getInputBuffer(inputIndex)
+                    val size = if (inputBuffer == null) -1 else extractor.readSampleData(inputBuffer, 0)
+                    if (size < 0) {
+                        codec.queueInputBuffer(inputIndex, 0, 0, 0, MediaCodec.BUFFER_FLAG_END_OF_STREAM)
+                        inputDone = true
+                        Timber.tag(TAG).d("Input exhausted at %dms", lastPositionMs)
+                    } else {
+                        codec.queueInputBuffer(inputIndex, 0, size, extractor.sampleTime, 0)
+                        extractor.advance()
+                        queued++
                     }
                 }
 
