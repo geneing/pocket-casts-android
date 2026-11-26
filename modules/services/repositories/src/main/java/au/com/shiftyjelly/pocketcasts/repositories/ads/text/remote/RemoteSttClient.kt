@@ -47,8 +47,16 @@ sealed interface RemoteSttResult {
     /** No OpenRouter key is configured in this build, so there is nothing to call. */
     data object NoApiKey : RemoteSttResult
 
-    /** A transport, HTTP or response problem. The pass can be retried as it is. */
-    data class Failed(val message: String) : RemoteSttResult
+    /**
+     * A transport, HTTP or response problem, classified by [kind] so the app can tell a retired
+     * model or an empty account from a network that was briefly down. [status] is the HTTP status
+     * when the provider answered at all.
+     */
+    data class Failed(
+        val kind: RemoteSttFailureKind,
+        val message: String,
+        val status: Int? = null,
+    ) : RemoteSttResult
 }
 
 /**
@@ -83,6 +91,8 @@ class RemoteSttClient @Inject constructor(
     @NoCache okHttpClient: OkHttpClient,
     @OpenRouterApiKey private val apiKey: Optional<String>,
     moshi: Moshi,
+    /** Records what failed, so repeated failures suspend the engine and reach the user. */
+    private val health: RemoteAsrHealth,
 ) {
     @VisibleForTesting
     internal var endpoint: String = TRANSCRIPTIONS_ENDPOINT
@@ -106,7 +116,7 @@ class RemoteSttClient @Inject constructor(
     suspend fun transcribe(audio: ByteArray, format: String, language: String?): RemoteSttResult {
         val key = apiKey.orElse("").trim()
         if (key.isEmpty()) return RemoteSttResult.NoApiKey
-        if (audio.isEmpty()) return RemoteSttResult.Failed("empty audio chunk")
+        if (audio.isEmpty()) return fail(RemoteSttFailureKind.Api, "empty audio chunk")
 
         val payload = runCatching {
             requestAdapter.toJson(
@@ -123,7 +133,7 @@ class RemoteSttClient @Inject constructor(
             )
         }.getOrElse { error ->
             LogBuffer.e(TAG, error, "Could not serialise the transcription request")
-            return RemoteSttResult.Failed("request serialisation failed")
+            return fail(RemoteSttFailureKind.Api, "request serialisation failed")
         }
 
         val request = Request.Builder()
@@ -135,11 +145,12 @@ class RemoteSttClient @Inject constructor(
             .header("X-Title", APP_TITLE)
             .build()
 
-        val response = execute(request) ?: return RemoteSttResult.Failed("network failure")
+        val response = execute(request) ?: return fail(RemoteSttFailureKind.Network, "could not reach OpenRouter")
         if (response.code !in 200..299) {
             val body = scrub(response.body.take(LOG_BODY_CHARS), key)
             LogBuffer.e(TAG, "OpenRouter returned HTTP ${response.code} for $MODEL: $body")
-            return RemoteSttResult.Failed("HTTP ${response.code}: $body")
+            val kind = kindOf(response.code, body)
+            return fail(kind, "HTTP ${response.code}: $body", response.code)
         }
         return parse(response.body, key)
     }
@@ -148,13 +159,14 @@ class RemoteSttClient @Inject constructor(
         val parsed = runCatching { responseAdapter.fromJson(body) }
             .getOrElse { error ->
                 LogBuffer.e(TAG, error, "Malformed transcription response")
-                return RemoteSttResult.Failed("malformed response")
+                return fail(RemoteSttFailureKind.Api, "malformed response")
             }
-            ?: return RemoteSttResult.Failed("empty response")
+            ?: return fail(RemoteSttFailureKind.Api, "empty response")
 
         // An error object can arrive with a 200 from an upstream provider; it is not a transcript.
         if (parsed.text == null && parsed.error != null) {
-            return RemoteSttResult.Failed(scrub("provider error: ${parsed.error.message}", key))
+            val message = scrub("provider error: ${parsed.error.message}", key)
+            return fail(kindOf(parsed.error.code, message), message, parsed.error.code)
         }
         val transcript = RemoteTranscript(
             words = parsed.words.orEmpty().mapNotNull { word ->
@@ -176,9 +188,47 @@ class RemoteSttClient @Inject constructor(
         )
         if (transcript.words.isEmpty() && transcript.segments.isEmpty() && parsed.text.isNullOrBlank()) {
             LogBuffer.e(TAG, "Transcription response carried no text")
-            return RemoteSttResult.Failed("response has no text")
+            return fail(RemoteSttFailureKind.Api, "response has no text")
         }
+        health.recordSuccess()
         return RemoteSttResult.Success(transcript)
+    }
+
+    /**
+     * Reports one failed request and files it: every failure path goes through here, so the app's
+     * idea of whether remote transcription works can never drift from what the endpoint answered.
+     */
+    private fun fail(kind: RemoteSttFailureKind, message: String, status: Int? = null): RemoteSttResult.Failed {
+        health.recordFailure(kind, status, message)
+        return RemoteSttResult.Failed(kind, message, status)
+    }
+
+    /**
+     * The kind of a refusal, from the status and from the provider's own words.
+     *
+     * The body decides first because OpenRouter reports a retired model and an empty account through
+     * more than one status — a model with no provider left has come back as 404 with "No endpoints
+     * found", and credits run out with a 402, or with a 200 whose body carries an error object.
+     */
+    @VisibleForTesting
+    internal fun kindOf(status: Int?, body: String): RemoteSttFailureKind {
+        val text = body.lowercase()
+        return when {
+            OUT_OF_FUNDS_MARKERS.any { text.contains(it) } -> RemoteSttFailureKind.OutOfFunds
+
+            // Both halves are needed: a message about the model that refuses *this* request ("does
+            // not support audio from a URL") is an API error, not a model that stopped existing.
+            text.contains("model") && MODEL_UNAVAILABLE_MARKERS.any { text.contains(it) } ->
+                RemoteSttFailureKind.ModelUnavailable
+
+            status == 402 -> RemoteSttFailureKind.OutOfFunds
+
+            status == 404 -> RemoteSttFailureKind.ModelUnavailable
+
+            status == null || status == 408 || status == 429 || status >= 500 -> RemoteSttFailureKind.Network
+
+            else -> RemoteSttFailureKind.Api
+        }
     }
 
     private suspend fun execute(request: Request): RawResponse? = suspendCancellableCoroutine { continuation ->
@@ -222,6 +272,31 @@ class RemoteSttClient @Inject constructor(
         private const val APP_TITLE = "Pocket Casts"
         private const val REDACTED = "[redacted]"
         private const val LOG_BODY_CHARS = 300
+
+        /** What an empty balance reads like in a provider answer, with or without a 402. */
+        private val OUT_OF_FUNDS_MARKERS = listOf(
+            "insufficient credit",
+            "insufficient fund",
+            "out of credit",
+            "credit limit",
+            "no credit",
+            "not enough credit",
+            "quota exceeded",
+            "payment required",
+        )
+
+        /** What a model that is no longer served reads like, beyond a plain 404. */
+        private val MODEL_UNAVAILABLE_MARKERS = listOf(
+            "not found",
+            "no endpoints",
+            "not available",
+            "unavailable",
+            "does not exist",
+            "unknown model",
+            "invalid model",
+            "not a valid model",
+        )
+
         private const val CALL_TIMEOUT_MINUTES = 15L
         private const val READ_TIMEOUT_SECONDS = 600L
         private const val WRITE_TIMEOUT_SECONDS = 300L

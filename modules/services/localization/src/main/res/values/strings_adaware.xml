@@ -16,6 +16,13 @@
     <string name="player_ad_probability">Ad %1$d%%</string>
     <string name="transcript_ad_score">%1$d%%</string>
     <string name="player_tab_ai" translatable="false">Ask AI</string>
+    <string name="remote_asr_problem_model_unavailable">Remote transcription stopped: the speech model is no longer available. New transcripts are made on this device.</string>
+    <string name="remote_asr_problem_out_of_funds">Remote transcription stopped: the OpenRouter account is out of credit. New transcripts are made on this device.</string>
+    <string name="remote_asr_problem_network">Remote transcription kept failing to reach OpenRouter. New transcripts are made on this device.</string>
+    <string name="remote_asr_problem_api">Remote transcription failed with an API error (%1$s). New transcripts are made on this device.</string>
+    <string name="remote_asr_problem_api_unknown_status">no status</string>
+    <string name="remote_asr_problem_dismiss">Dismiss</string>
+    <string name="remote_asr_problem_retry">Retry remote</string>
     <string name="transcript_generating">Generating transcript…</string>
     <string name="transcript_not_available">No transcript for this episode yet</string>
     <string name="transcript_jump_to_current">Jump to current</string>

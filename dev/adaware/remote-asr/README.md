@@ -73,6 +73,33 @@ missing at the seam. That is why chunks overlap.
    `Remote transcription cost: $0.0042`, accumulated across chunks and passes in a `.cost` sidecar
    next to the WebVTT. The on-device engine records none and writes no line.
 
+## What happens when the endpoint refuses
+
+Every refusal is classified by `RemoteSttClient` from the provider's own message first and the HTTP
+status second, because both lie on their own: a model with no provider left answers 404 "No endpoints
+found", an empty account answers 402 "Insufficient credits" but has also answered 200 with an
+`error` object, and a 400 that only says "does not support audio from a URL" is a request this model
+will always refuse, not a model that has gone away.
+
+| kind | the user is told | suspends remote on |
+|---|---|---|
+| `ModelUnavailable` | the speech model is no longer available | the first failure |
+| `OutOfFunds` | the OpenRouter account is out of credit | the first failure |
+| `Network` | OpenRouter could not be reached | the second failure in a row |
+| `Api` | an API error, with its HTTP status | the second failure in a row |
+
+A success resets the count. The two permanent kinds need no second sample because no retry can fix
+them; the other two do, because one dropped request on a seven-chunk pass is not a broken service.
+Suspending flips `SelectingEpisodeTranscriber` to Parakeet and raises a bar in the app (`Dismiss` and
+`Retry remote`), which stays up — across launches — until it is dismissed. Dismissing it keeps the
+on-device engine; only `Retry remote` brings the cloud back.
+
+A pass that fails on the remote engine while the suspension trips finishes on the device in the same
+worker run instead of waiting out the 15-minute retry. It resets the episode's analysis first: a
+transcript may not mix two engines, and the engine that wrote the stored cues is recorded in an
+`.engine` sidecar next to `.audio` so a later pass by another engine starts over rather than resuming
+mid-word.
+
 ## What the library actually publishes
 
 An audit of a 119-feed podcast list, counting the format of each feed's newest enclosures, found 115

@@ -33,6 +33,13 @@ sealed interface AsrOutcome {
 
     /** The episode is no longer in the queue. */
     data object NotQueued : AsrOutcome
+
+    /**
+     * The pass failed on the remote engine while the suspension tripped, so the episode has to be
+     * recognised on the device. [OnDeviceTranscriptGenerator.run] resets the analysis and starts it
+     * again there; this is never the outcome the caller sees.
+     */
+    data object RemoteFallback : AsrOutcome
 }
 
 /**
@@ -64,29 +71,47 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         episodeUuid: String,
         onModelProgress: (ModelDownloadProgress) -> Unit = {},
     ): AsrOutcome = mutex.withLock {
-        val startingGeneration = writeGuard.generation(episodeUuid)
-        try {
-            runPass(episodeUuid, onModelProgress)
-        } catch (e: CancellationException) {
-            throw e
-        } catch (e: Throwable) {
-            // A row that throws before it can record its own failure is picked again on every pass,
-            // and the worker drains in arrival order, so one bad episode would keep every episode
-            // added after it from ever running. Recording the failure is what lets the queue move on;
-            // the pass itself is resumable, so the retry only redoes what was missing.
-            LogBuffer.e(TAG, e, "Recognition of $episodeUuid threw before it could report")
-            runCatching {
-                writeGuard.ifCurrent(episodeUuid, startingGeneration) {
-                    queue.failAsr(episodeUuid, "crashed: ${e.javaClass.simpleName}: ${e.message}", ASR_RETRY_DELAY_MS)
+        // The generation is read per attempt, not once: a fallback resets the episode's analysis,
+        // which invalidates it, and a crash after that still has to be recorded against the row.
+        var allowRemoteFallback = true
+        var outcome: AsrOutcome = AsrOutcome.Retry
+        while (true) {
+            val startingGeneration = writeGuard.generation(episodeUuid)
+            outcome = try {
+                runPass(episodeUuid, onModelProgress, allowRemoteFallback)
+            } catch (e: CancellationException) {
+                throw e
+            } catch (e: Throwable) {
+                // A row that throws before it can record its own failure is picked again on every
+                // pass, and the worker drains in arrival order, so one bad episode would keep every
+                // episode added after it from ever running. Recording the failure is what lets the
+                // queue move on; the pass itself is resumable, so the retry only redoes what was
+                // missing.
+                LogBuffer.e(TAG, e, "Recognition of $episodeUuid threw before it could report")
+                runCatching {
+                    writeGuard.ifCurrent(episodeUuid, startingGeneration) {
+                        queue.failAsr(episodeUuid, "crashed: ${e.javaClass.simpleName}: ${e.message}", ASR_RETRY_DELAY_MS)
+                    }
                 }
+                return@withLock AsrOutcome.Retry
             }
-            AsrOutcome.Retry
+            if (outcome != AsrOutcome.RemoteFallback) break
+            // The cues the remote engine wrote are its own reading of the audio and cannot be
+            // resumed by Parakeet, so the episode starts over rather than continuing mid-word.
+            queue.resetAnalysis(episodeUuid)
+            allowRemoteFallback = false
         }
+        outcome
     }
 
+    /**
+     * [allowRemoteFallback] is false on the pass that runs after a fallback: the first pass may
+     * hand the episode to the device engine once, and a second fallback would only repeat it.
+     */
     private suspend fun runPass(
         episodeUuid: String,
         onModelProgress: (ModelDownloadProgress) -> Unit,
+        allowRemoteFallback: Boolean = true,
     ): AsrOutcome {
         var generation = writeGuard.generation(episodeUuid)
         var item = queue.asrItem(episodeUuid) ?: return AsrOutcome.NotQueued
@@ -146,6 +171,20 @@ class OnDeviceTranscriptGenerator @Inject constructor(
             }
         }
 
+        // One transcript is one engine's reading of the audio: the engine that wrote the stored
+        // cues places words and times its own way, so a pass by another engine may not resume over
+        // them. This is what a dev toggle and a remote fallback both land on.
+        val engineVersion = transcriber.version
+        val storedEngine = transcriptStore.storedEngine(episodeUuid)
+        if (storedEngine != null && storedEngine != engineVersion) {
+            LogBuffer.i(
+                TAG,
+                "Resetting the transcript of $episodeUuid: recognised by $storedEngine, recognizing with $engineVersion",
+            )
+            generation = queue.resetAnalysisIfCurrent(episodeUuid, generation) ?: return AsrOutcome.NotQueued
+            item = queue.asrItem(episodeUuid) ?: return AsrOutcome.NotQueued
+        }
+
         val existing = transcriptStore.readCues(episodeUuid)
         val startMs = maxOf(item.processedUntilMs, existing.lastOrNull()?.endMs ?: 0L)
         lastDetectionCueCount = existing.size
@@ -153,7 +192,7 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         val durationMs = episode.durationMs.toLong()
         if (durationMs > 0 && startMs >= durationMs - COMPLETE_MARGIN_MS) {
             return writeGuard.ifCurrent(episodeUuid, generation) {
-                complete(episodeUuid, startMs)
+                complete(episodeUuid, startMs, engineVersion)
                 AsrOutcome.Completed
             } ?: AsrOutcome.NotQueued
         }
@@ -162,9 +201,17 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         // able to tell whether the audio it resumes on is the audio these cues were made from.
         val recorded = writeGuard.ifCurrent(episodeUuid, generation) {
             transcriptStore.recordAudio(episodeUuid, audioSignature)
+            transcriptStore.recordEngine(episodeUuid, engineVersion)
             true
         } ?: false
         if (!recorded) return AsrOutcome.NotQueued
+
+        // The engine is read before the pass, because the pass itself is what trips the suspension:
+        // a remote request that fails consistently leaves the remote engine unusable from then on,
+        // and this same pass can finish the episode on the device instead of retrying into a
+        // service that is down.
+        val selector = transcriber as? SelectingEpisodeTranscriber
+        val usedRemote = allowRemoteFallback && selector?.isRemoteActive() == true
 
         val result = transcriber.transcribe(
             request = TranscriptRequest(
@@ -188,6 +235,15 @@ class OnDeviceTranscriptGenerator @Inject constructor(
             }
         }
 
+        if (usedRemote && result is TranscriptResult.Failed && selector.isRemoteSuspended() == true) {
+            // The remote engine is out for now, and the episode was asked to be recognised anyway.
+            LogBuffer.w(
+                TAG,
+                "Remote transcription failed for $episodeUuid, recognising it on device instead: ${result.message}",
+            )
+            return AsrOutcome.RemoteFallback
+        }
+
         return when (result) {
             is TranscriptResult.Success -> {
                 val merged = mergeCues(existing, result.cues, resumeAtMs = startMs)
@@ -197,7 +253,7 @@ class OnDeviceTranscriptGenerator @Inject constructor(
                     // what appends the closing line, and a crash between the two keeps the cost so a
                     // retry does not lose it.
                     result.costUsd?.let { cost -> transcriptStore.addCost(episodeUuid, cost) }
-                    complete(episodeUuid, merged.lastOrNull()?.endMs ?: durationMs)
+                    complete(episodeUuid, merged.lastOrNull()?.endMs ?: durationMs, engineVersion)
                     true
                 } ?: false
                 if (!saved) return AsrOutcome.NotQueued
@@ -262,8 +318,8 @@ class OnDeviceTranscriptGenerator @Inject constructor(
         return true
     }
 
-    private suspend fun complete(episodeUuid: String, processedUntilMs: Long) {
-        transcriptStore.markComplete(episodeUuid, transcriber.version)
+    private suspend fun complete(episodeUuid: String, processedUntilMs: Long, engineVersion: String) {
+        transcriptStore.markComplete(episodeUuid, engineVersion)
         // Last, so the closing line is the end of the transcript as it stands.
         transcriptStore.appendCostSummary(episodeUuid)
         queue.completeAsr(episodeUuid, processedUntilMs)

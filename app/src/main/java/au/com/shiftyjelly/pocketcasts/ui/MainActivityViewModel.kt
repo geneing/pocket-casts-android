@@ -13,6 +13,8 @@ import au.com.shiftyjelly.pocketcasts.models.type.SignInState
 import au.com.shiftyjelly.pocketcasts.models.type.Subscription
 import au.com.shiftyjelly.pocketcasts.player.view.bookmark.BookmarkArguments
 import au.com.shiftyjelly.pocketcasts.preferences.Settings
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.remote.RemoteAsrAlert
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.remote.RemoteAsrHealth
 import au.com.shiftyjelly.pocketcasts.repositories.bookmark.BookmarkManager
 import au.com.shiftyjelly.pocketcasts.repositories.endofyear.EndOfYearManager
 import au.com.shiftyjelly.pocketcasts.repositories.playback.PlaybackManager
@@ -57,6 +59,7 @@ class MainActivityViewModel
     private val bookmarkManager: BookmarkManager,
     private val eventHorizon: EventHorizon,
     private val whatsNewManager: WhatsNewManager,
+    private val remoteAsrHealth: RemoteAsrHealth,
 ) : ViewModel() {
     private val _state = MutableStateFlow(State())
     val state = _state.asStateFlow()
@@ -78,6 +81,13 @@ class MainActivityViewModel
 
     val playbackNoticeFlow: StateFlow<PlaybackNoticeInfo?> = playbackNoticeManager.playbackNotice
         .stateIn(viewModelScope, started = SharingStarted.WhileSubscribed(5_000), initialValue = null)
+
+    /**
+     * A remote-transcription problem the user has not dismissed, if any. It is read from the health
+     * state rather than from a pass, so a failure found by a background worker is still waiting here
+     * when the app is next opened, every launch, until it is dismissed.
+     */
+    val remoteAsrAlert: StateFlow<RemoteAsrAlert?> = remoteAsrHealth.alert
     val shouldShowStoriesModal = MutableStateFlow(false)
     var waitingForSignInToShowStories = false
 
@@ -103,6 +113,12 @@ class MainActivityViewModel
         settings.setWhatsNewVersionCode(Settings.WHATS_NEW_VERSION_CODE)
         _state.update { state -> state.copy(shouldShowWhatsNew = false) }
     }
+
+    /** Hides the remote-transcription banner; the on-device engine keeps running the queue. */
+    fun dismissRemoteAsrAlert() = remoteAsrHealth.dismiss()
+
+    /** Brings remote transcription back after it was suspended for consistent failures. */
+    fun retryRemoteTranscription() = remoteAsrHealth.resumeRemote()
 
     val playbackState = playbackManager.playbackStateFlow.conflate()
 

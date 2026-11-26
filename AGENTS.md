@@ -479,6 +479,26 @@ downstream — the queue, the WebVTT store, ad detection, the transcript tab —
   anything older than an hour at launch and once a day. A process killed mid-pass therefore leaves at
   most one file per episode, and the next pass or the daily sweep removes it; never write these files
   under `filesDir` and never leave a chunk to be cleaned up by cache eviction.
+- Failures are classified, not flattened: `RemoteSttClient` files every refusal as `ModelUnavailable`,
+  `OutOfFunds`, `Network` or `Api` (with the HTTP status), reading the provider's message first because
+  a retired model has answered 404 "No endpoints found" and an empty account a 402, a 402-like message
+  inside a 200, or a bare 400. `RemoteAsrHealth` suspends the remote engine on the first failure for
+  the two kinds no retry can fix, and after two in a row for the other two; one success resets the
+  count. Suspension and the alert live in `POCKETCASTS_REMOTE_ASR` prefs, so a background failure is
+  still shown on the next launch and survives a restart, and it is only lifted by "Retry remote" in
+  the bar; "Dismiss" hides the bar and leaves the on-device engine running the queue.
+- While suspended, `SelectingEpisodeTranscriber` reports Parakeet's `version`, so the transcripts it
+  makes are on-device transcripts and are not reset by the next remote pass that would not match them.
+  A remote pass that fails as the suspension trips finishes on the device in the same worker run
+  (`OnDeviceTranscriptGenerator` resets the episode's analysis first, then re-enters the pass with
+  `allowRemoteFallback = false`). The engine that wrote stored cues is recorded in an `.engine`
+  sidecar beside `.audio`; a pass by a different engine resets the analysis instead of resuming over
+  another engine's cues, which is the same rule a dev-toggle flip needs.
+- The bar is `RemoteAsrProblemBar` in `MainActivity`'s bottom container (the slot above the bottom
+  navigation that also carries the playback problem), fed by `MainActivityViewModel.remoteAsrAlert`.
+  It names the kind of failure — a retired model, an empty account, an unreachable network and a
+  refused request read differently — and carries `Retry remote` and `Dismiss`. It is in-app only: a
+  background failure is waiting there on the next launch.
 - `RemoteSttClient` logs under `RemoteAsr`: one `chunk N: format=… split=yes|no prepare=…ms
   request=…ms upload=…B span=… cues=… cost=…` line per request and `pass: model=… audio_ms=…
   wall_ms=… copy=…ms encode=…ms requests=…ms requests=… upload=…B cues=… cost=…` at the end, with the

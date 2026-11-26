@@ -445,8 +445,8 @@ enum class Feature(
     /**
      * Recognise episodes with a remote model over OpenRouter instead of Parakeet on the device.
      * Off by default: every episode transcribed this way is paid for and uploaded. The local engine
-     * stays the default anywhere the flag is off, and the choice only lasts until the next launch
-     * when it is set from the dev toggle.
+     * stays the default anywhere the flag is off. The dev toggle writes to the debug build's feature
+     * preferences, so it survives a restart until it is turned off again.
      */
     REMOTE_TRANSCRIPTION(
         key = "remote_transcription",

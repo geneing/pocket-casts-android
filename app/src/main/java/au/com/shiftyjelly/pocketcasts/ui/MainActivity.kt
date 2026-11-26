@@ -24,6 +24,7 @@ import androidx.compose.animation.expandVertically
 import androidx.compose.animation.shrinkVertically
 import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutVertically
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
@@ -543,37 +544,54 @@ class MainActivity :
             setContent {
                 val playbackNotice by viewModel.playbackNoticeFlow.collectAsStateWithLifecycle()
                 val playerOpen by viewModel.isPlayerOpenFlow.collectAsStateWithLifecycle()
+                val remoteAsrAlert by viewModel.remoteAsrAlert.collectAsStateWithLifecycle()
 
                 AppTheme(theme.activeTheme) {
-                    AnimatedNonNullVisibility(
-                        item = if (playerOpen) null else playbackNotice,
-                        enter = slideInVertically(initialOffsetY = { it }) + expandVertically(expandFrom = Alignment.Top),
-                        exit = slideOutVertically(targetOffsetY = { it }) + shrinkVertically(shrinkTowards = Alignment.Top),
-                    ) { notice ->
-                        LaunchedEffect(notice) {
-                            if (!viewModel.isPlayerOpen) {
-                                eventHorizon.track(PlaybackErrorShownEvent(playerSource = PlayerErrorBannerSource.MiniPlayer))
-                            }
-                        }
-                        PlaybackErrorInfoBar(
-                            message = notice.message,
-                            linkText = notice.linkText,
-                            onClick = when (notice.type) {
-                                PlaybackNoticeType.PLAYBACK -> {
-                                    {
-                                        if (!viewModel.isPlayerOpen) {
-                                            eventHorizon.track(PlaybackErrorTappedEvent(playerSource = PlayerErrorBannerSource.MiniPlayer))
-                                        }
-                                        PlaybackIssuesBottomSheetFragment.show(supportFragmentManager, notice.supportUrl)
-                                    }
+                    Column {
+                        AnimatedNonNullVisibility(
+                            item = if (playerOpen) null else playbackNotice,
+                            enter = slideInVertically(initialOffsetY = { it }) + expandVertically(expandFrom = Alignment.Top),
+                            exit = slideOutVertically(targetOffsetY = { it }) + shrinkVertically(shrinkTowards = Alignment.Top),
+                        ) { notice ->
+                            LaunchedEffect(notice) {
+                                if (!viewModel.isPlayerOpen) {
+                                    eventHorizon.track(PlaybackErrorShownEvent(playerSource = PlayerErrorBannerSource.MiniPlayer))
                                 }
+                            }
+                            PlaybackErrorInfoBar(
+                                message = notice.message,
+                                linkText = notice.linkText,
+                                onClick = when (notice.type) {
+                                    PlaybackNoticeType.PLAYBACK -> {
+                                        {
+                                            if (!viewModel.isPlayerOpen) {
+                                                eventHorizon.track(PlaybackErrorTappedEvent(playerSource = PlayerErrorBannerSource.MiniPlayer))
+                                            }
+                                            PlaybackIssuesBottomSheetFragment.show(supportFragmentManager, notice.supportUrl)
+                                        }
+                                    }
 
-                                PlaybackNoticeType.CONNECTION_LOST -> null
+                                    PlaybackNoticeType.CONNECTION_LOST -> null
 
-                                PlaybackNoticeType.RECOVERY -> null
-                            },
-                            modifier = Modifier.fillMaxWidth(),
-                        )
+                                    PlaybackNoticeType.RECOVERY -> null
+                                },
+                                modifier = Modifier.fillMaxWidth(),
+                            )
+                        }
+                        // Remote transcription failing is not a playback problem: it keeps its own
+                        // bar so a notice for it is never hidden by, or mistaken for, the player's.
+                        AnimatedNonNullVisibility(
+                            item = if (playerOpen) null else remoteAsrAlert,
+                            enter = slideInVertically(initialOffsetY = { it }) + expandVertically(expandFrom = Alignment.Top),
+                            exit = slideOutVertically(targetOffsetY = { it }) + shrinkVertically(shrinkTowards = Alignment.Top),
+                        ) { alert ->
+                            RemoteAsrProblemBar(
+                                alert = alert,
+                                onDismiss = viewModel::dismissRemoteAsrAlert,
+                                onRetry = viewModel::retryRemoteTranscription,
+                                modifier = Modifier.fillMaxWidth(),
+                            )
+                        }
                     }
                 }
             }

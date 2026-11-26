@@ -41,6 +41,8 @@ class LocalTranscriptStore @Inject constructor(
 
     private fun audioFile(episodeUuid: String): File = File(dir(), "$episodeUuid.audio")
 
+    private fun engineFile(episodeUuid: String): File = File(dir(), "$episodeUuid.engine")
+
     private fun costFile(episodeUuid: String): File = File(dir(), "$episodeUuid.cost")
 
     fun localUrl(episodeUuid: String) = "$SCHEME$episodeUuid"
@@ -91,6 +93,31 @@ class LocalTranscriptStore @Inject constructor(
             audioFile(episodeUuid).apply { parentFile?.mkdirs() }.writeText(audioSignature)
         }
     }
+
+    /**
+     * Records the engine a recognition pass is about to use, before it writes any cue.
+     *
+     * Cues are written while the pass runs, so an engine that changes between passes — the dev
+     * toggle, or remote transcription falling back to the device — must not resume a half-written
+     * transcript: two engines place the same word differently and the cues would not join. The
+     * sidecar is what makes the next pass able to see that and start over.
+     */
+    suspend fun recordEngine(episodeUuid: String, version: String) {
+        withContext(Dispatchers.IO) {
+            engineFile(episodeUuid).apply { parentFile?.mkdirs() }.writeText(version)
+        }
+    }
+
+    /**
+     * The engine that produced the cues stored for the episode, whether the pass finished or not:
+     * the completion marker for a whole transcript, the pass sidecar otherwise. Null when nothing
+     * recorded it, which is a transcript from before the sidecar existed.
+     */
+    suspend fun storedEngine(episodeUuid: String): String? = withContext(Dispatchers.IO) {
+        readCompletion(episodeUuid)?.first?.takeIf { it.isNotBlank() } ?: passEngine(episodeUuid)
+    }
+
+    private fun passEngine(episodeUuid: String): String? = engineFile(episodeUuid).takeIf { it.exists() }?.readText()?.trim()?.takeIf { it.isNotBlank() }
 
     /**
      * Records the engine version that recognised the whole episode, and the audio it recognised.
@@ -236,6 +263,7 @@ class LocalTranscriptStore @Inject constructor(
         listOf(
             completionFile(episodeUuid),
             audioFile(episodeUuid),
+            engineFile(episodeUuid),
             costFile(episodeUuid),
             File(target.parentFile, "${target.name}.tmp"),
             target,

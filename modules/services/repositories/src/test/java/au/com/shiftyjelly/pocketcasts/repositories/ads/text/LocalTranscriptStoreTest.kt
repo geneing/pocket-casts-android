@@ -37,6 +37,7 @@ class LocalTranscriptStoreTest {
         store.file(EPISODE).delete()
         store.file(EPISODE).parentFile?.resolve("$EPISODE.complete")?.delete()
         store.file(EPISODE).parentFile?.resolve("$EPISODE.audio")?.delete()
+        store.file(EPISODE).parentFile?.resolve("$EPISODE.engine")?.delete()
     }
 
     @Test
@@ -176,6 +177,32 @@ class LocalTranscriptStoreTest {
         store.markComplete(EPISODE, "engine-v1")
         assertTrue(store.isComplete(EPISODE, "engine-v1"))
         assertEquals(null, store.recognisedAudio(EPISODE))
+    }
+
+    /**
+     * Cues are written mid-pass, so a partial transcript has to say which engine wrote them: two
+     * engines place the same word differently and a pass may not resume over the other one's cues.
+     */
+    @Test
+    fun `the engine of an unfinished pass is recorded until the transcript is complete`() = runTest {
+        store.recordAudio(EPISODE, "1000:1700000000000")
+        store.recordEngine(EPISODE, "remote-nemotron/v2")
+
+        assertEquals("remote-nemotron/v2", store.storedEngine(EPISODE))
+
+        // The completion marker is the whole transcript's engine and wins over the pass sidecar.
+        store.markComplete(EPISODE, "parakeet-tdt/v3")
+        assertEquals("parakeet-tdt/v3", store.storedEngine(EPISODE))
+
+        store.delete(EPISODE)
+        assertEquals(null, store.storedEngine(EPISODE))
+    }
+
+    @Test
+    fun `a transcript with no recorded engine answers null instead of guessing`() = runTest {
+        store.save(EPISODE, listOf(TranscriptCue(0, 1_000, "hello")))
+
+        assertEquals(null, store.storedEngine(EPISODE))
     }
 
     @Test

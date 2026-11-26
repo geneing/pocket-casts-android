@@ -9,6 +9,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptRequest
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptResult
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.TranscriptSource
+import au.com.shiftyjelly.pocketcasts.repositories.ads.text.remote.RemoteAsrHealth
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.remote.RemoteAudioCache
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.remote.RemoteEpisodeTranscriber
 import au.com.shiftyjelly.pocketcasts.repositories.ads.text.remote.RemoteSttClient
@@ -101,7 +102,7 @@ class RemoteDeviceTranscriptionTest {
         val httpClient = OkHttpClient()
         val transcriber = RemoteEpisodeTranscriber(
             cache = RemoteAudioCache(context),
-            client = RemoteSttClient(httpClient, Optional.of(key), Moshi.Builder().build()),
+            client = RemoteSttClient(httpClient, Optional.of(key), Moshi.Builder().build(), RemoteAsrHealth(context)),
             downloads = Lazy { httpClient },
         )
         assertTrue("A build with a key should report the engine as available", transcriber.isAvailable())
